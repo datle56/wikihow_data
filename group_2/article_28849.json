@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Countdown-Program-in-Python",
+  "title": "How to Code a Python Countdown Timer: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Open your text editor or IDE.",
+      "content": "Open your text editor or IDE. On Windows, the easiest option is to use IDLE, which is installed with Python."
+    },
+    {
+      "title": "Open a new file.",
+      "content": "Open a new file. In many text editors, you can do this by going to the file menu and clicking on New Window or pressing Ctrl + N ."
+    },
+    {
+      "title": "Import the time module.",
+      "content": "Import the time module. The time contains many Python functions related to time, for example, getting the current time or waiting a specified amount of time (the latter is what you will need for this program). To import the module, type: import time"
+    },
+    {
+      "title": "Define a countdown function.",
+      "content": "Define a countdown function. You can give the function any name you want, but usually, you should use something descriptive. In this case, you could name it countdown() . Add the following code: def countdown ( t ):"
+    },
+    {
+      "title": "Write a while loop.",
+      "content": "Write a while loop. A while loop repeats the code inside it if its condition is true. In this case, you want the countdown to continue until the number reaches 0. So, you need to write: while t > 0 : Notice the spaces at the beginning of the line. These tell Python that this line of code is part of the definition of the countdown function and not just some code below it. You can use any number of spaces, but you need to use the same amount before any line you want to indent once. You will need to indent the next code lines twice because they are both part of the function definition and part of the while-loop. This is done by using twice as many spaces."
+    },
+    {
+      "title": "Print the current number.",
+      "content": "Print the current number. This does not mean using a printer to get it on paper, \"printing\" is a word that means \"displaying on the screen\". This will let you see how far the countdown has progressed. print ( t )"
+    },
+    {
+      "title": "Count down the number.",
+      "content": "Count down the number. Make it 1 less. This is done with the following code: t = t - 1 Alternatively, if you don't want to type so much, you can instead write: t -= 1"
+    },
+    {
+      "title": "Make the program wait a second.",
+      "content": "Make the program wait a second. Otherwise, it would be counting down the numbers way too fast, and the countdown would be finished before you could even read it. For waiting a second, use the sleep function of the time module that you had previously imported: time . sleep ( 1 )"
+    },
+    {
+      "title": "Do something when the countdown reaches zero.",
+      "content": "Do something when the countdown reaches zero. To print out \"BLAST OFF!\" when the countdown reaches zero, add this line: print ( \"BLAST OFF!\" ) Note that this line is only indented once . This is because it is no longer part of the while loop. This code is only run after the while loop finishes."
+    },
+    {
+      "title": "Ask the user from which number to start the countdown.",
+      "content": "Ask the user from which number to start the countdown. This will give your program some flexibility instead of always counting from the same number. Print the question to the user. They need to know what they are supposed to enter. print ( \"How many seconds to count down? Enter an integer:\" ) Get the answer. Store the answer in a variable so that you can do something with it later. seconds = input () While the user's answer is not an integer, ask the user for another integer. You can do this with a while loop. If the first answer is already an integer, the program will not enter the loop and just proceed with the next code. while not seconds . isdigit (): print ( \"That wasn't an integer! Enter an integer:\" ) seconds = input () Now you can be sure the user entered an integer. However, it is still stored inside a string ( input() always returns a string because it can't know whether the user will enter text or numbers). You need to convert it to an integer: seconds = int ( seconds ) If you would have tried to convert a string whose content isn't an integer into an integer, you would get an error. This is why the program checked whether the answer was an integer first."
+    },
+    {
+      "title": "Call the countdown() function.",
+      "content": "Call the countdown() function. You had previously defined it, but defining a function doesn't do what is written inside it. To actually run the countdown code, call the countdown() function with the number of seconds that the user inputted: countdown ( seconds )"
+    },
+    {
+      "title": "Check your finished code.",
+      "content": "Check your finished code. It should look like this: import time def countdown ( t ): while t > 0 : print ( t ) t -= 1 time . sleep ( 1 ) print ( \"BLAST OFF!\" ) print ( \"How many seconds to count down? Enter an integer:\" ) seconds = input () while not seconds . isdigit (): print ( \"That wasn't an integer! Enter an integer:\" ) seconds = input () seconds = int ( seconds ) countdown ( seconds ) The empty lines are only there to make the code easier to read. They are not required, and Python ignores them. You can write t = t - 1 instead of t -= 1 if you prefer."
+    }
+  ]
+}

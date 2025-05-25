@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/What-Is-the-Command-Prompt-for-Windows-10-Safe-Mode",
+  "title": "How to Start Windows 10 in Safe Mode (Using the Command Prompt)",
+  "steps": [
+    {
+      "title": "Safe Mode.",
+      "content": "Safe Mode. Safe Mode is the standard diagnostic startup mode for Windows. When you boot into Safe Mode, only the basic device drivers will load—you won't have internet access, and no third-party apps or drivers will launch at boot time. You can uninstall software, remove files, run your antivirus scanner, and perform tasks in the Command Prompt in regular Safe Mode."
+    },
+    {
+      "title": "Safe Mode with Networking.",
+      "content": "Safe Mode with Networking. This version of Safe Mode is the same as the original Safe Mode, except Windows will also load your network card drivers so you can connect to the internet. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Use this version of Safe Mode if you want to download files, run updates, or do anything else that requires network access."
+    },
+    {
+      "title": "Safe Mode with Command Prompt.",
+      "content": "Safe Mode with Command Prompt. All versions of Safe Mode have access to the Command Prompt, but this version will only give you the Command Prompt. You won't have your typical Start menu or icons to click—just a simple admin-level Command Prompt window, making this mode useful only to IT professionals and system administrators."
+    },
+    {
+      "title": "Use this method if you can't boot into Windows and you need to use the Command Prompt.",
+      "content": "Use this method if you can't boot into Windows and you need to use the Command Prompt. This method is essentially a workaround to getting an administrator-level command prompt when you can't boot into Windows. Even if your screen is blank or you can't get to the login screen, you'll be able to get a Command Prompt in Windows 10 thanks to the built-in recovery environment WinRE. You will still need your administrator password to sign in. If you don't have the administrator password, you can still use this method to boot into Safe Mode. If you deleted the recovery partition, WinRE won't work without a bootable Windows 10 DVD or flash drive, but we'll get to that soon."
+    },
+    {
+      "title": "If you can get to the sign-in screen, try this first.",
+      "content": "If you can get to the sign-in screen, try this first. Reboot your PC to the sign-in screen. Hold down the Shift key as you click the Power icon and choose Restart . Now skip to Step 4."
+    },
+    {
+      "title": "Enter the Windows Recover (WinRE) environment.",
+      "content": "Enter the Windows Recover (WinRE) environment. If you are unable to get to the sign-in screen, you can still get to a Command Prompt for troubleshooting using the power button your PC to enter a special diagnostic mode. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Warning: this involves a lot of turning your PC off and back on again: Start with your PC on. Hold down the power button on your computer for 10 seconds—your PC will turn off. Press the power button again to turn the PC back on. As soon as the computer turns back on (you'll usually see the manufacturer's logo), press and hold the power button for 10 seconds to turn it off again. Press the power button again to turn the PC back on. Again, as soon as the computer turns back on , press and hold the power button for 10 seconds to turn it off. Press the Power button again and allow your PC to boot into WinRE. If this doesn't work, you may have deleted the recovery partition. You can boot your PC from a bootable Windows 10 DVD or USB drive . Once you boot from that media, continue to the next step."
+    },
+    {
+      "title": "Click Troubleshoot on the \"Choose an option\" screen.",
+      "content": "Click Troubleshoot on the \"Choose an option\" screen. This is a blue screen with several icons."
+    },
+    {
+      "title": "Click Advanced options.",
+      "content": "Click Advanced options . It's at the bottom of the screen."
+    },
+    {
+      "title": "Click Command Prompt.",
+      "content": "Click Command Prompt . Choose this option if all you want is a Command Prompt. This option gives you a safe administrator prompt that you can use to diagnose problems with your PC. What it won't give you is a Windows desktop or Start menu. If you'd rather start your PC in Safe Mode so you can use your typical menus and icons as well as have the option to launch the Command Prompt, choose Startup Settings , click Restart , and then press 4 or F4 to start Safe Mode (with no internet/network support) or 5 or F5 to start Safe Mode with Networking. You can launch the Command Prompt from either of these two modes."
+    },
+    {
+      "title": "Reboot your PC into Safe Mode.",
+      "content": "Reboot your PC into Safe Mode. If you want to access the Command Prompt while you're in Safe Mode to run commands, it's easy. To restart your computer in Safe Mode from the Windows desktop: [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Open the Start menu and click Settings . Click Update & Security . Click Recovery . Click Restart now under \"Advanced startup.\" When the computer reboots, click Troubleshoot and select Advanced options . Click Startup Settings . Click Restart . When the Safe Mode menu appears, press 5 or F5 to start Safe Mode with Networking, or press 4 or F4 to start Safe Mode without internet support."
+    },
+    {
+      "title": "Press the Windows key and type cmd.",
+      "content": "Press the Windows key and type cmd . A list of matching results will appear."
+    },
+    {
+      "title": "Right-click Command Prompt and choose Run as administrator.",
+      "content": "Right-click Command Prompt and choose Run as administrator . If you don't need to perform administrative tasks, you can open a regular Command Prompt window just by left-clicking Command Prompt in the search results."
+    },
+    {
+      "title": "Try a simpler way to get to Safe Mode first.",
+      "content": "Try a simpler way to get to Safe Mode first. Getting into Safe Mode from the Command Prompt is a lot more complicated than any other way you could access Safe Mode. This is because you'll need to run commands that edit your PC's boot configuration, making it so your PC only boots in Safe Mode until you change it back. If possible, use the steps in the \"Get a Command Prompt in Safe Mode\" method to get to Safe Mode instead—if that doesn't work, you can continue with this method. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. If you want to be able to reboot Windows into Safe Mode using the command line, you can do so by modifying the boot record, and then changing it back after you're finished in Safe Mode. To get started: Press Windows key + S to activate the Search bar. Type cmd . Right-click Command Prompt and select Run as administrator ."
+    },
+    {
+      "title": "Run the command to reboot into Safe Mode.",
+      "content": "Run the command to reboot into Safe Mode. You can start three types of safe mode from the command line—regular Safe Mode (with no network support), Safe Mode with Networking , and Safe Mode with Command Prompt . [5] X Research source Type the command for the type of Safe Mode you want to use, and then press Enter . This will force the computer to reboot into that version of safe mode immediately after rebooting. Safe Mode: bcdedit /set {current} safeboot minimal Safe Mode with Networking: bcdedit /set {current} safeboot network Safe Mode with Command Prompt: Most people won't need to use this, as you can access the Command Prompt from both other Safe Modes. But if you prefer just a Command Prompt window without icons or menus, you'll need to enter two commands: Type bcdedit /set {current} safeboot minimal and press Enter . Type bcdedit /set {current} safebootalternateshell yes and press Enter ."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. If you're unable to restart normally for any reason, you can restart from the command line by typing shutdown /r and pressing Enter . When the computer restarts, it'll boot into Safe Mode."
+    },
+    {
+      "title": "Perform tasks in Safe Mode.",
+      "content": "Perform tasks in Safe Mode. Now that you're in Safe Mode, you can perform diagnostics, remove viruses and malware, uninstall software and drivers, or any other business you need to attend to."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. Before you get out of Safe Mode, you will need to undo the command you did earlier so Windows can boot normally. Just open Windows Search, type cmd , right-click Command Prompt , and then choose Run as administrator as you did earlier to get started."
+    },
+    {
+      "title": "Run the command to exit Safe Mode.",
+      "content": "Run the command to exit Safe Mode. When you type this command and press Enter , you'll remove the \"safeboot\" value from the boot configuration, which allows Windows to boot normally next time: bcdedit /deletevalue {current} safeboot . [6] X Research source"
+    },
+    {
+      "title": "Reboot your PC.",
+      "content": "Reboot your PC. This time, your Windows PC will reboot into your normal login screen and desktop."
+    }
+  ]
+}

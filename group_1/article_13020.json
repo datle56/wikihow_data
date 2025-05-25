@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Disable-Xbox-Game-Bar",
+  "title": "How to Turn Off Xbox Game Bar & Game Mode on Your PC",
+  "steps": [
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. You can get there quickly by pressing Windows key + i , or by clicking Settings in the Windows menu."
+    },
+    {
+      "title": "Click System.",
+      "content": "Click System . It's at the top-left corner."
+    },
+    {
+      "title": "Click System Components.",
+      "content": "Click System Components . You'll need to scroll down a little bit on the right panel to find it."
+    },
+    {
+      "title": "Click the three dots next to Game Bar and select Advanced options.",
+      "content": "Click the three dots next to Game Bar and select Advanced options ."
+    },
+    {
+      "title": "Click the \"Background component permissions\" menu.",
+      "content": "Click the \"Background component permissions\" menu. You'll see this below the \"Component permissions\" section. \"Power optimized (recommend)\" is usually selected by default."
+    },
+    {
+      "title": "Select Never.",
+      "content": "Select Never . This prevents Game Bar from running in the background and responding to the Windows key + G keyboard shortcut."
+    },
+    {
+      "title": "Disable \"Allow your controller to open Game Bar.\"",
+      "content": "Disable \"Allow your controller to open Game Bar.\" If Game Bar still pops up when you plug in a controller, you can disable that, too. Here's how: Click Gaming in the left panel of the Settings window. Click Game Bar . Toggle off the switch next to \"Allow your controller to open Game Bar.\" At this point, Game Bar features that could get in the way should now stay out of your sight. However, you may still see some annoying pop-ups when you play certain games or plug in a controller. The only fix is to delete Game Bar permanently—jump down to Deleting Xbox Game Bar Permanently to learn how."
+    },
+    {
+      "title": "Turn off Game Mode (optional).",
+      "content": "Turn off Game Mode (optional). If you don't want Windows to disable background apps when you're gaming, you can turn this feature off: Click the back button to return to the Gaming menu, or click the Gaming tab in the left panel. Click Game Mode Click the \"Game Mode\" switch to turn the feature off. If Game Mode won't turn off, jump down to our quick fix ."
+    },
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. You can get there quickly by pressing Windows key + i , or by clicking Settings in the Windows menu. This method will disable Game Bar and prevent it from opening when you use keyboard shortcuts or a gaming controller."
+    },
+    {
+      "title": "Click Gaming.",
+      "content": "Click Gaming . This option has an Xbox logo."
+    },
+    {
+      "title": "Click the switch to toggle off Xbox Game Bar.",
+      "content": "Click the switch to toggle off Xbox Game Bar. The switch is at the top of the right panel. Game Bar is now disabled. If you want to go a step further and permanently uninstall it, jump down to Deleting Xbox Game Bar Permanently . If you want Game Bar back, you can return to this screen and select Power optimized (recommended) from the menu."
+    },
+    {
+      "title": "Turn off Game Mode (optional).",
+      "content": "Turn off Game Mode (optional). If you don't want Windows to disable background apps when you're gaming, you can click the \"Game Mode\" switch to turn the feature off. [1] X Research source If Game Mode won't turn off, jump down to our quick fix ."
+    },
+    {
+      "title": "Open PowerShell as an administrator.",
+      "content": "Open PowerShell as an administrator. If you want to remove Game Bar permanently on Windows 10 or 11, you'll first need to remove the preinstalled package in PowerShell , and then add a few registry keys if Game Bar errors still pop up. To open PowerShell as an administrator: Type powershell into the Windows search bar. Right-click Windows PowerShell . Select Run as administrator… Click Yes ."
+    },
+    {
+      "title": "Run the PowerShell command to remove the package.",
+      "content": "Run the PowerShell command to remove the package. Paste this line into PowerShell and press Enter : [2] X Research source Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage"
+    },
+    {
+      "title": "Remove Xbox Game Bar from the registry.",
+      "content": "Remove Xbox Game Bar from the registry. If you still see notifications that say \"You'll need a new app to open this ms-gamingoverlay\" when you try to play certain games, you'll also need to add some registry keys to remove Game Bar permanently. You can do this from PowerShell by pasting these two lines, pressing Enter after each. reg add HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR /f /t REG_DWORD /v \"AppCaptureEnabled\" /d 0 reg add HKEY_CURRENT_USER\\System\\GameConfigStore /f /t REG_DWORD /v \"GameDVR_Enabled\" /d 0 The Game Bar should now be removed. If you want it back, you can reinstall it from the Microsoft Store."
+    },
+    {
+      "title": "Game Bar is great for playing Xbox games on your PC.",
+      "content": "Game Bar is great for playing Xbox games on your PC. Most people don't need to turn off Game Bar , and can even benefit from features like accessing audio settings and performance stats without Alt-Tabbing out of your game. [3] X Research source There are also plenty of Xbox social features , and the ability to screen-record gameplay with a quick keyboard shortcut. [4] X Research source"
+    },
+    {
+      "title": "You might want to turn off Game Bar if you have performance issues.",
+      "content": "You might want to turn off Game Bar if you have performance issues. If your PC feels slow , disabling background apps like Game Bar can help speed things up. Also, if you have a high-end graphics card with similar software and overlays (such as NVIDIA Shadowplay or GeForce Experience), having both Game Bar and that software running could be rough on your CPU."
+    },
+    {
+      "title": "Still seeing a \"Game Mode\" notification on the screen after turning off Game Mode?",
+      "content": "Still seeing a \"Game Mode\" notification on the screen after turning off Game Mode? This notification usually pops up when you're using a TV as a monitor. In this case, try switching to a different HDMI port on the TV. If that doesn't work, go into your TV's HDMI settings, look in the menus for \"Game Mode,\" and turn it off."
+    }
+  ]
+}

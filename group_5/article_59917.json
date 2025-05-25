@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Set-up-DHCP-on-a-Local-Area-Network",
+  "title": "How to Set up DHCP on a Local Area Network",
+  "steps": [
+    {
+      "title": "Decide what range of IP addresses you would like to use.",
+      "content": "Decide what range of IP addresses you would like to use. You should use a \"Private IP Range\", otherwise you may well have problems related to traffic to and from your network being routed incorrectly. For a simple LAN, stick with 192.168.0.100, a subnet mask of 255.255.255.0, and a pool size of 50. This will allow up to 50 machines to be set up on your network without having to change anything."
+    },
+    {
+      "title": "Set the IP address of your computer to 192.168.0.2 with a subnet mask of 255.255.255.0 (an address in the same subnet as the addresses in the pool, but not an address in the pool itself!",
+      "content": "Set the IP address of your computer to 192.168.0.2 with a subnet mask of 255.255.255.0 (an address in the same subnet as the addresses in the pool, but not an address in the pool itself! )"
+    },
+    {
+      "title": "Download tftpd32 from http://tftpd32.jounin.net/",
+      "content": "Download tftpd32 from http://tftpd32.jounin.net/"
+    },
+    {
+      "title": "Unzip the file to your computer and run tftpd32.exe.",
+      "content": "Unzip the file to your computer and run tftpd32.exe."
+    },
+    {
+      "title": "Click Settings.",
+      "content": "Click Settings."
+    },
+    {
+      "title": "Select the DHCP tab in the Settings window.",
+      "content": "Select the DHCP tab in the Settings window."
+    },
+    {
+      "title": "Set the \"IP pool starting address\" to the address you want the first computer to use DHCP to have.",
+      "content": "Set the \"IP pool starting address\" to the address you want the first computer to use DHCP to have. (192.168.0.100 if you're not sure!)"
+    },
+    {
+      "title": "Set the \"Size of pool\" to a little more than the number of computers and devices you think you'll need on your LAN.",
+      "content": "Set the \"Size of pool\" to a little more than the number of computers and devices you think you'll need on your LAN. (if in doubt, 50 is a nice number)"
+    },
+    {
+      "title": "Leave the \"Boot File\" field blank",
+      "content": "Leave the \"Boot File\" field blank"
+    },
+    {
+      "title": "Enter the IP address you gave the computer (192.168.0.2) in the field \"Def.",
+      "content": "Enter the IP address you gave the computer (192.168.0.2) in the field \"Def. Router (Opt 3) If you have a DNS server on your network, or one accessible to the machines on your network, enter its IP address in the \"WINS/DNS Server\" box. If you don't or don't know what it means, leave it blank."
+    },
+    {
+      "title": "Set \"Mask\" to your subnet mask.",
+      "content": "Set \"Mask\" to your subnet mask. If you don't know what that is, follow my addressing scheme and set it to 255.255.255.0"
+    },
+    {
+      "title": "Leave the \"Domain Name\" and \"Additional Option\" boxes as they are.",
+      "content": "Leave the \"Domain Name\" and \"Additional Option\" boxes as they are."
+    },
+    {
+      "title": "Press \"OK\".",
+      "content": "Press \"OK\". Your DHCP server is now set up!"
+    }
+  ]
+}

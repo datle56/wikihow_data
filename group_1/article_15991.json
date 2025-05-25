@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Ethernet-Doesn%27t-Have-a-Valid-IP-Configuration",
+  "title": "How to Fix Ethernet Doesn't Have a Valid IP Configuration on Windows",
+  "steps": [
+    {
+      "title": "Give your Windows PC a quick reboot.",
+      "content": "Give your Windows PC a quick reboot. If you just started seeing the \"Ethernet doesn't have a valid IP configuration\" error, you may be able to resolve it by rebooting your computer."
+    },
+    {
+      "title": "The Windows 10 & 11 network troubleshooter can help resolve network problems.",
+      "content": "The Windows 10 & 11 network troubleshooter can help resolve network problems. If you haven't tried to repair your connection when running the troubleshooter, follow these steps: Type network troubleshooter into the Windows Search bar. Click Identify and repair network problems or Find and fix network problems , depending on your Windows version. Click Next and then Troubleshoot my connection to the internet . Click Details about errors. If you still see \"Ethernet doesn't have a valid IP configuration,\" continue with troubleshooting."
+    },
+    {
+      "title": "Power down and unplug all network devices.",
+      "content": "Power down and unplug all network devices. This includes your modem, router, and any switches you may be connected to . Disconnect the power cable and the ethernet cable from your router (and modem, if separate), and leave everything turned off for at least 30 seconds before reconnecting. Once your router is back online and reconnected to your computer, try connecting to the internet again. If you still can't connect, run the network troubleshooter again to see if you're still getting the \"Ethernet doesn't have a valid IP configuration\" error."
+    },
+    {
+      "title": "Disabling and reenabling your network adapter may fix the problem.",
+      "content": "Disabling and reenabling your network adapter may fix the problem. The steps are the same whether you're using Windows 10 or 11: Type network connections into the Windows Search bar. Click View network connections . Right-click your Ethernet adapter and click Disable . Once disabled, right-click Ethernet again and select Enable . Once enabled, start the network troubleshooter again."
+    },
+    {
+      "title": "Open a Command Prompt window.",
+      "content": "Open a Command Prompt window. To do this, type cmd into the Window Search bar, then click Command Prompt in the search results."
+    },
+    {
+      "title": "Type ipconfig /release and press ↵ Enter.",
+      "content": "Type ipconfig /release and press ↵ Enter . This releases the last IP address and displays several \"disconnected\" messages in the window."
+    },
+    {
+      "title": "Type ipconfig /renew and press ↵ Enter.",
+      "content": "Type ipconfig /renew and press ↵ Enter . Windows will request a new IP address from your router. Once your IP address is renewed, you should see an IPv4 and/or an IPv6 address under your ethernet adapter. If you see the error \"This operation failed as no adapter is in the state permissible for this operation,\" you have configured a static IP address for your PC. If your IP address is supposed to be dynamically assigned by your router, you will need to open your TCP/IP settings and select \"Obtain an IP address automatically.\""
+    },
+    {
+      "title": "Incorrect IP address settings can prevent a valid IP configuration.",
+      "content": "Incorrect IP address settings can prevent a valid IP configuration. Your PC may be trying to use a specific IP address instead of DHCP (or vice-versa). It's also possible that IPv6 is disabled, which many Windows users report causes this error. [1] X Research source Here's where to look: Type network connections into the Windows Search bar. Click View network connections . Right-click your Ethernet adapter and select Properties . If the box next to \"Internet Protocol Version 6 (TCP/IPv6)\" is not checked, click the box to enable it now. Select \"Internet Protocol Version 6 (TCP/IPv6)\" and click the Properties button. Make sure \"Obtain an IPv6 address automatically\" is selected, and then click OK . Select Internet Protocol Version 4 (TCP/IPv4) and click the Properties button. Make sure \"Obtain an IP address automatically\" is selected. If you are supposed to have a static IP address assigned by your router, verify that the IP address, subnet mask , and default gateway are correct. If this all sounds strange to you, just choose \"Obtain an IP address automatically\" instead. Click OK and then click Close . If you made any changes, restart your PC and restart your router."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. If you're using Windows 11, you can open Terminal as an administrator instead if you prefer—either will work. Type cmd or terminal into the Windows Search bar. Right-click Command Prompt (or Terminal) and select Run as administrator . Click Yes ."
+    },
+    {
+      "title": "Type netsh int ip reset and press ↵ Enter.",
+      "content": "Type netsh int ip reset and press ↵ Enter . This resets TCP/IP by overwriting its registry keys. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type netsh winsock reset and press ↵ Enter.",
+      "content": "Type netsh winsock reset and press ↵ Enter . You should see the message \"Successfully reset the Winsock Catalog. You must restart the computer to complete the reset.\" A quick way to reboot from Command Prompt is to type shutdown /r /t 0 and press Enter ."
+    },
+    {
+      "title": "If you're connected to a switch, bypassing it may resolve the problem.",
+      "content": "If you're connected to a switch, bypassing it may resolve the problem. Once connected directly to the router, try running the internet troubleshooter again to see if you're still getting the \"Ethernet doesn't have a valid IP configuration\" error. If you can connect to the internet directly through the router but not through the switch , your switch is likely cabled or misconfigured."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. You can do this quickly by right-clicking the Start menu and selecting Device Manager . If your computer is not currently connected to the internet, a default ethernet driver will be installed once you uninstall your current driver. However, it's better to use this method if you can connect to the internet, even if you have to head to a café or other location with Wi-Fi."
+    },
+    {
+      "title": "Click the arrow next to \"Network adapters.\"",
+      "content": "Click the arrow next to \"Network adapters.\" A list of network adapters will expand."
+    },
+    {
+      "title": "Right-click your ethernet card and click Uninstall device.",
+      "content": "Right-click your ethernet card and click Uninstall device . If prompted, click Uninstall to confirm. This removes the driver from your PC."
+    },
+    {
+      "title": "Restart your PC",
+      "content": "Restart your PC . When Windows restarts, it will automatically install the best-fitting driver for the card. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . This method will delete all your saved network settings, including any Wi-Fi passwords and VPN settings you've added. However, it may also resolve the \"Ethernet doesn't have a valid IP configuration\" error."
+    },
+    {
+      "title": "Click Network & Internet.",
+      "content": "Click Network & Internet . This opens your internet settings."
+    },
+    {
+      "title": "Click Advanced Network Settings (Windows 11 only).",
+      "content": "Click Advanced Network Settings (Windows 11 only). You can skip this step if you're using Windows 10."
+    },
+    {
+      "title": "Click Network Reset.",
+      "content": "Click Network Reset . If you're using Windows 10, it'll be a text link at the bottom of the right panel. On Windows 11, it's under the \"More Settings\" header."
+    },
+    {
+      "title": "Click Reset now.",
+      "content": "Click Reset now . This deletes your entire network configuration and replaces it with the default settings."
+    },
+    {
+      "title": "Restart your router.",
+      "content": "Restart your router. Now that your network settings are cleared, power down your router and disconnect the ethernet cable from your PC. After a few moments, turn the router back on, then plug the ethernet cable back in. Wait 3 to 4 minutes."
+    },
+    {
+      "title": "If the error persists, the issue might be router related.",
+      "content": "If the error persists, the issue might be router related. If you configured your router yourself, log in to it as an administrator and verify that DHCP is enabled . Or, if your router is set to assign your PC a specific static IP address, make sure the address it's assigning matches the one you've configured in your IP settings . If you got your router from your ISP and haven't changed any of its settings, try resetting it by inserting an extended paperclip or SIM tool into the small reset hole on its back side. After several minutes, the router will return to its default configuration."
+    },
+    {
+      "title": "Try to establish an ethernet connection to a different router.",
+      "content": "Try to establish an ethernet connection to a different router. If you can get online when connected to a different network, the problem is unrelated to your computer. Your router may need to be replaced. In this case, contact your ISP (if they issued your router), or contact the router manufacturer for instructions on replacement or repair."
+    }
+  ]
+}

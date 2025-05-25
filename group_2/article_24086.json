@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Install-Steam-on-Linux",
+  "title": "Easily Install Steam on Any Distribution of Linux",
+  "steps": [
+    {
+      "title": "Go to https://store.steampowered.com/ in a web browser.",
+      "content": "Go to https://store.steampowered.com/ in a web browser. You can use any web browser. You can use the DEB file you download from the official website to install Steam on any Debian-based version of Linux, including Ubuntu, Linux Mint, Kali, and more."
+    },
+    {
+      "title": "Download the Steam DEB file.",
+      "content": "Download the Steam DEB file. To do so, click Install Steam in the upper-right corner. Then click Install Steam in the center of the page."
+    },
+    {
+      "title": "Open the DEB file.",
+      "content": "Open the DEB file. To do so, right-click the steam_latest.deb file and click Open With Other Application . Select Software Install or Install Manager or something similar."
+    },
+    {
+      "title": "Select Software Install.",
+      "content": "Select Software Install . It's the second option in the menu. This opens the page for the Steam launcher."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . This will start installing Steam. Once Steam is installed, you can open it in your Apps menu. [1] X Research source If you are asked to install the required files needed to install Steam, press Enter and select Yes to install the required files."
+    },
+    {
+      "title": "Click .",
+      "content": "Click . It's the icon with 9 squares in a grid. It's in the lower-left corner by default. This opens the Dash. The Dash displays all apps you have installed on your Ubuntu system. You may have the Ubuntu Software app in your dock on the side of your screen."
+    },
+    {
+      "title": "Find and click the Ubuntu Software app.",
+      "content": "Find and click the Ubuntu Software app. This app looks like an orange bag icon with a white \"A\" on it. You can type the app name in Dash to quickly find it."
+    },
+    {
+      "title": "Click the search icon at the top.",
+      "content": "Click the search icon at the top. This displays a search bar that allows you to search for apps available for Ubuntu in Software Center."
+    },
+    {
+      "title": "Type Steam in the search bar and press ↵ Enter on your keyboard.",
+      "content": "Type Steam in the search bar and press ↵ Enter on your keyboard. The official Steam app will show up at the top of the results."
+    },
+    {
+      "title": "Click Steam.",
+      "content": "Click Steam . It has a blue icon with an image that resembles a white rotary piston. Click the app icon to display the information page."
+    },
+    {
+      "title": "Click the Install below the Steam icon.",
+      "content": "Click the Install below the Steam icon. This will install the latest release of the official Steam app on your Ubuntu Linux computer."
+    },
+    {
+      "title": "Enter your user password and click Authenticate.",
+      "content": "Enter your user password and click Authenticate . In order to install new software in Ubuntu, you must enter your user password. Enter the password for your Ubuntu login and click Authenticate . This will install the Steam for Ubuntu. When you launch Steam, it may need to be updated. Once the update is completed, you can sign in to your Steam account."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. On most Linux distros, you can open the Terminal by pressing Ctrl + Alt + T to open the Terminal. Alternatively, you can press the Super (Windows or Command) key (or click the Dash icon) to open the Dash and type Terminal in the search bar. This method works on RPM-based Linux distros like Fedora."
+    },
+    {
+      "title": "Type sudo add-apt-repository multiverse and press ↵ Enter.",
+      "content": "Type sudo add-apt-repository multiverse and press ↵ Enter . This command will add the required repository for installation. If you're prompted, enter your Ubuntu user password and press Enter to proceed."
+    },
+    {
+      "title": "Type and run sudo apt update and press ↵ Enter .",
+      "content": "Type and run sudo apt update and press ↵ Enter . This will update the repository with the latest version."
+    },
+    {
+      "title": "Type and run sudo apt install steam and press ↵ Enter.",
+      "content": "Type and run sudo apt install steam and press ↵ Enter . This will install Steam from the default Ubuntu repositories. You can launch the Steam app on your computer after your installation is finished. [2] X Research source If you are asked if you want to continue with the installation, press \"Y\" and then press \" Enter \"."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. On most Linux distros, you can open the Terminal by pressing Ctrl + Alt + T to open the Terminal. Alternatively, you can press the Super (Windows or Command) key (or click the Dash icon) to open the Dash and type Terminal in the search bar. RPM-based Linux distributions include Fedora, CentOS, OpenSUSE, Red Hat Linux, and more."
+    },
+    {
+      "title": "Type sudo dnf update and press ↵ Enter.",
+      "content": "Type sudo dnf update and press ↵ Enter . This updates the dnf repositories on your system."
+    },
+    {
+      "title": "Type sudo dnf upgrade and press ↵ Enter.",
+      "content": "Type sudo dnf upgrade and press ↵ Enter . This ensures your system is up to date. It may take a while depending on how often you update your system."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. To restart your computer, either click the power icon on your computer and click Restart or open the Terminal and type \" sudo reboot \" and press Enter ."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. Once your computer restarts, open the Terminal once again."
+    },
+    {
+      "title": "Run the following command and press ↵ Enter.",
+      "content": "Run the following command and press ↵ Enter . The following command will configure RPM Fusion, which is a third-party repository for apps that don't ship with Fedora or Red Hat. RPM Fusion is only available for 32-bit architectures but should work in 64-bit architectures. Enter the following command in the Terminal and press Enter to configure RPM: sudo dnf install mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm Alternatively, if you are using Fedora, you can Launch Fedora Software and click the icon with three horizontal lines ( ☰ ) in the upper-right corner. Click Software Repositories and click Enable next to \"Fedora 31 -Nonfree – Steam.\" [3] X Research source"
+    },
+    {
+      "title": "Type sudo dnf install steam and press ↵ Enter.",
+      "content": "Type sudo dnf install steam and press ↵ Enter . This installs Steam on your RPM-based system. Once Steam is finished installing, it will most likely need to be updated. Then you can log in to your Steam account. [4] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. On most Linux distros, you can open the Terminal by press Ctrl + Alt + T to open the Terminal."
+    },
+    {
+      "title": "Open the pacman.conf file.",
+      "content": "Open the pacman.conf file. Enter the following command and press enter to open the pacman.conf file in Nano: sudo nano /etc/pacman.conf ."
+    },
+    {
+      "title": "Enable the \"multilib\" repository.",
+      "content": "Enable the \"multilib\" repository. The \"multilib\" section of the file contains three lines that have a \"#\" in front of them. The \"#\" tells the operating system to ignore these lines. Delete the \"#\" in front of these lines to enable this section of the script. Remove the \"#\" in front of the following lines: #[multilib] #SigLevel = PackageRequired #Include = /etc/pacman.d/mirrorlist"
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. To save and exit the file in Nano, press Ctrl + X . Then press Y followed by Enter to confirm you want to save the file. [5] X Research source"
+    },
+    {
+      "title": "Update the list of repositories.",
+      "content": "Update the list of repositories. Open the Terminal again if it's not already open. Enter the following command and press Enter to update the list of repositories: sudo pacman -Syu"
+    },
+    {
+      "title": "Install Steam.",
+      "content": "Install Steam. Now you can enter the Terminal command to install Steam. Enter the following command and press Enter to install Steam: sudo pacman -S steam"
+    }
+  ]
+}

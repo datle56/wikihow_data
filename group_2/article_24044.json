@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Install-Pip-on-Mac",
+  "title": "3 Easy Ways to Download & Install Pip on Your Mac",
+  "steps": [
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you haven't done so, you can open a Terminal from the Launchpad. The Ensurepip Python module is the most straightforward way to install Pip on both macOS and Linux."
+    },
+    {
+      "title": "Check to see if Pip is already installed.",
+      "content": "Check to see if Pip is already installed. If you installed Python 3.9 or later from Python.org, by using Homebrew, or by installing the Xcode command line tools, you should already have Pip. To check, type python3 -m pip --version into your terminal and press Return . [1] X Research source If pip3 is not found, continue with this method to install it. If needed, you can update Pip to the latest version using the command python -m pip install --upgrade pip . [2] X Research source"
+    },
+    {
+      "title": "Type python3 -m ensurepip --default-pip and press ⏎ Return.",
+      "content": "Type python3 -m ensurepip --default-pip and press ⏎ Return . If Pip was not installed, this command will install it to your current Python 3 installation. If Pip was installed, you'll see a message that says \"Requirement already satisfied.\" If you only want to install Pip for the current user (not machine-wide), use the command python3 -m ensurepip --upgrade --user instead."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you installed Python 3.4 or later using Homebrew, you will already have Pip installed. If you don't have Python 3.4, you can install it easily with Homebrew, which will give you the latest version of Pip. If you want to upgrade the version of Pip you installed with Homebrew, use the command python3 -m pip install --upgrade pip . [3] X Research source To see which version of Pip is installed, use the command python3 -m pip --version ."
+    },
+    {
+      "title": "Install Homebrew.",
+      "content": "Install Homebrew. If you haven’t already installed Homebrew, type /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" and press Return . [4] X Research source"
+    },
+    {
+      "title": "Install Python3 and Pip.",
+      "content": "Install Python3 and Pip. Installing Python also installs Pip. To install, type brew install python3 and press Return ."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you installed Python from source code but don't have Pip, you can use a simple script to install it. Don't use this method if you installed Python through Homebrew or another package manager, as the script will not interact with those tools. [5] X Research source You can check your current Pip version using the command python3 -m pip --version . Or, if you just want to update Pip, use the command python3 -m pip install --upgrade pip ."
+    },
+    {
+      "title": "Download the script.",
+      "content": "Download the script. You can use the curl command to do this. Just type curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py and press Return to save the script to the current directory. [6] X Research source"
+    },
+    {
+      "title": "Type python3 get-pip.py and press ⏎ Return.",
+      "content": "Type python3 get-pip.py and press ⏎ Return . This runs the downloaded script, which will then install Pip, SetupTools, and Wheel for your current Python 3 environment."
+    }
+  ]
+}

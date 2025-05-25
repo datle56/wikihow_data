@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Use-Google-Fonts-in-CSS",
+  "title": "How to Use Google Fonts in CSS: Importing Google Fonts to CSS Files",
+  "steps": [
+    {
+      "title": "Select a font style.",
+      "content": "Select a font style. Go to https://fonts.google.com and click the font you want to use. [1] X Research source Scroll down the list to view all styles, and then click ' Select this style on the style you like most. [2] X Research source"
+    },
+    {
+      "title": "Copy the code.",
+      "content": "Copy the code. Under \"Use on the web\" on the right side of the page, select the circle next to \"@import\". Now you'll see some code appear in the box. Just copy the part of the code between the <style></style> tags, e.g., @import url(' https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap' ); . [3] X Research source"
+    },
+    {
+      "title": "Open your CSS file or HTML document.",
+      "content": "Open your CSS file or HTML document. If you're using a separate style sheet, open the .css file that you want to edit in your text editor. If you're doing in-line CSS, open the HTML file in which you want to use the font."
+    },
+    {
+      "title": "Paste the copied code into your style sheet.",
+      "content": "Paste the copied code into your style sheet. If you're editing a separate CSS file, paste the copied @import information to the top of the sheet—the very first line(s). [4] X Research source If you're working in an HTML file, paste the copied code between your <style></style> tags, which should be in your header. [5] X Research source If you're working with an HTML file, your font information should look something like this: <!DOCTYPE html> < html > < head > < title > Title </ title > < style > @ import url ( 'https://fonts.googleapis.com/css2?family=Lora&display=swap' ) ; </ style > </ head > < body > < h1 > Lorem Ipsum </ h1 > </ body > </ html > If you're working in a separate style sheet, you'll have something like this as the first line of your CSS file: @ import url ( 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap' ) ;"
+    },
+    {
+      "title": "Define styles using the Google fonts.",
+      "content": "Define styles using the Google fonts. Now that you've added the code that makes the font available for use, you can define it in styles, such as for the body and h1 elements. For example, if you want to make your standard body text the Lora font at 20px, you could enter this into your style sheet or between your style tags: [6] X Research source body { font-family : 'Lora' ; font-size : 20 px ; } You can change the color and text appearance of your font in the \"color\" and \"font-weight\" properties. If you want to add more text effects, check out Google's list of supported text effects at https://developers.google.com/fonts/docs/getting_started . There are tons of cool effects, including fire-animation, neon, and anaglyph!"
+    },
+    {
+      "title": "Save your CSS or HTML file.",
+      "content": "Save your CSS or HTML file. Once you add the font to some CSS declarations and save your file, you're all set! Load up the page in your web browser—the browser will fetch the Google fonts and display them with the properties you specified. You can include more than one Google font in your CSS code at a time. Just be aware that since the fonts are being imported into your CSS, using multiple fonts can impact loading speed. If you want to include multiple Google fonts, you'll just need to copy the code for each font you want to use and paste it into your code the same way you did here."
+    }
+  ]
+}

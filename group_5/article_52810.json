@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Create-an-Email-Link-in-HTML",
+  "title": "How to Create an Email Link in HTML",
+  "steps": [
+    {
+      "title": "Type the anchor tag <a href= in your HTML document.",
+      "content": "Type the anchor tag <a href= in your HTML document . The \"<a href=\" attribute begins the link in your HTML document. The \"<a href=\" tag generally tells the browser that the following item is a link. [1] X Research source You'll need to add all HTML code up to this point before crossing any further into the document."
+    },
+    {
+      "title": "Type mailto:",
+      "content": "Type mailto: after the \"=\" sign. This tells the web browser that the following link is to an email address, rather than a web page. [2] X Research source"
+    },
+    {
+      "title": "Type the users email next.",
+      "content": "Type the users email next. A properly formatted command so-far would be <a href=mailto:<nowiki> agentavery@sample.com \" . [3] X Research source"
+    },
+    {
+      "title": "Add a pre-made subject-line (optional).",
+      "content": "Add a pre-made subject-line (optional). If you wish to add a pre-made subject, type a question mark (?) after the user's email address, followed by the word \"subject\" (without the quotation marks), followed by an equals sign (=), followed by the subject inside a pair of quotation marks. [4] X Research source If you want to add this to your command, it should look like this so far: <a href=mailto:<nowiki>agentavery@sample.com?subject=\"subject text\" Try not to use characters that aren't alphanumeric in the subject line . There are ways to work around this so your link doesn't get stumped and thinks it's part of something else\". While most often not used, it is possible to add information to prefill the subject line via the mailto syntax. However, it's more often used when the mail is being sent to a server inside a robot that handles incoming mail so it can be processed later (so it can be filtered). You can add \"body\" as well as a cc or a bcc line using a similar syntax. Just make sure to use a question mark followed by the term \"body\",\"cc\", or \"bcc\" followed by an equals sign followed by the text for that line in a pair of quotation marks."
+    },
+    {
+      "title": "Type > to add a closing bracket.",
+      "content": "Type > to add a closing bracket. So far, our HTML commands tell the web browser what email address to link to, and to add a subject/cc/bcc. The closing bracket \">\" tells the web browser that there are no more commands to execute when the link is clicked."
+    },
+    {
+      "title": "Type link text.",
+      "content": "Type link text . This is the text the user clicks on to open the email link. It goes after the closing bracket. This can be a word, a phrase, or even a duplicate copy of the person's email address this is being sent to. Most often, this can be the phrase \"here\" or \"this\" or something of that sort."
+    },
+    {
+      "title": "Type </a> after the link text.",
+      "content": "Type </a> after the link text. This closes the HTML command. HTML anchor tags must have closure for this trick to work and not make the remainder of the page become an extension of the anchor tag. [5] X Research source The entire HTML email link command should look something like this: <a href=mailto:<nowiki>agentavery@sample.com?subject=\"HTML link\">Click here to send us an email!!!</a>"
+    },
+    {
+      "title": "Continue the remainder of the HTML document.",
+      "content": "Continue the remainder of the HTML document. Be sure to save your work. If you have more HTML to add to your document, continue your work."
+    }
+  ]
+}

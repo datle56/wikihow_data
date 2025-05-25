@@ -1,0 +1,170 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Private-or-Incognito-Browsing",
+  "title": "Turn Off and Disable Private Browsing on Any Web Browser",
+  "steps": [
+    {
+      "title": "Turn off Incognito Mode on Google Chrome for desktop.",
+      "content": "Turn off Incognito Mode on Google Chrome for desktop. Use the following steps to turn off Incognito Mode in Google Chrome on your PC or Mac: Click Incognito in the upper-right corner. Click Close Incognito . Alternatively, just tap the x button at the top right (Windows) or top left (Mac) of the Incognito window to close it. [1] X Research source Open a new window or tab."
+    },
+    {
+      "title": "Turn off Incognito Mode on Google Chrome for mobile.",
+      "content": "Turn off Incognito Mode on Google Chrome for mobile. Use the following steps to turn off Incognito Mode for Google Chrome on mobile devices: Tap the icon that resembles a square with numbers (tabs) in the upper-right corner (Android) or lower right corner (iPhone/iPad). If you’re in Incognito mode, you’ll be in the Incognito tab at the top of the page, which looks like a hat and glasses. Tap the tabs icon at the top center of the page to switch to normal browsing. You can also tap the x at the top right corner of any Incognito tabs to close them. [2] X Research source Tap the Plus (+) icon to open a new tab."
+    },
+    {
+      "title": "Turn off Private Browsing in Safari for Mac.",
+      "content": "Turn off Private Browsing in Safari for Mac. Use the following steps to turn off private browsing for Safari on a Mac: Close any windows that are open in Private Browsing mode. Click File in the menu bar at the top. Click New Window ."
+    },
+    {
+      "title": "Turn off Private Browsing in Safari for iPhone.",
+      "content": "Turn off Private Browsing in Safari for iPhone. Use the following steps to turn off Private Browsing on Safari for iPhone Tap the icon that resembles 2 squares stacked on top of each other in the lower-right corner. In the Private tab at the bottom of the screen, tap the x in the top right corner of any private tabs you’d like to close. Tap the \" # Tabs \" button at the bottom of the screen to open regular browsing mode. Select one of the tabs that’s already open on this screen, or tap the plus (+) icon to start a new tab."
+    },
+    {
+      "title": "Turn off Private Browsing in Safari for iPad.",
+      "content": "Turn off Private Browsing in Safari for iPad. Use the following steps to turn off Private Browsing in Safari for iPad: Tap the icon that resembles a screen with a menu in the upper-left corner. Tap Start Page at the top of the menu. Tap the plus (+) icon to start a new tab."
+    },
+    {
+      "title": "Turn off InPrivate browsing in Microsoft Edge for desktop.",
+      "content": "Turn off InPrivate browsing in Microsoft Edge for desktop. Use the following steps to turn off InPrivate browsing in Microsoft Edge: Click the icon with three dots ( ⋯ ) in the upper-right corner. Click New Windows ."
+    },
+    {
+      "title": "Turn off InPrivate browsing in Microsoft Edge for mobile.",
+      "content": "Turn off InPrivate browsing in Microsoft Edge for mobile. Use the following steps to turn off InPrivate browsing on Microsoft Edge for mobile: Tap the icon that resembles a square with numbers in the menu bar at the bottom. Tap Tabs at the top. Tap the plus (+) icon to open a new tab."
+    },
+    {
+      "title": "Turn off Private Browsing in Firefox for desktop.",
+      "content": "Turn off Private Browsing in Firefox for desktop. Use the following steps to turn off Private Browsing in Firefox for PC or Mac: Click the icon with three lines ( ☰ ) in the upper-right corner. Click New Window . You can also go to File > New Window . If you wish, close any open Incognito windows or tabs."
+    },
+    {
+      "title": "Turn off Private Browsing in Firefox for mobile.",
+      "content": "Turn off Private Browsing in Firefox for mobile. Use the following steps to turn off Private Browsing in Firefox for mobile: Tap the icon that resembles a square with numbers (tabs) in the lower-right corner. Tap the same icon again next to the icon that resembles a mask in the bar at the top. Tap the plus (+) icon in the lower-right corner. If you wish, you can also close any open tabs in the Incognito menu."
+    },
+    {
+      "title": "Consider backing up your PC.",
+      "content": "Consider backing up your PC. Since this method involves editing sensitive components of your computer's operating system, backing up your information before continuing will prevent you from losing your data if your computer crashes."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. You must be logged in as an administrator to do this. Use the following steps to open the Command Prompt as an administrator: Click the Windows Start menu. Type CMD . RIght-click the Command Prompt icon. Click Run as administrator ."
+    },
+    {
+      "title": "Enter one of the following commands and press ↵ Enter.",
+      "content": "Enter one of the following commands and press ↵ Enter . This will create a new registry rule that disables private browsing for your web browser in Windows. Copy and paste one of the following commands into the Command Prompt and press Enter : [3] X Research source Disable Google Chrome Incognito Mode: REG ADD HKLM\\SOFTWARE\\Policies\\Google\\Chrome /v IncognitoModeAvailability /t REG_DWORD /d 1 Disable Google Chrome Guest Mode: REG ADD HKLM\\SOFTWARE\\Policies\\Google\\Chrome /v BrowserGuestModeEnabled /t REG_DWORD /d 0 Disable Microsoft Edge InPrivate Mode: REG ADD HKLM\\SOFTWARE\\Policies\\Microsoft\\Edge /v InPrivateModeAvailability /t REG_DWORD /d 1 Disable Microsoft Edge Guest Mode: REG ADD HKLM\\SOFTWARE\\Policies\\Microsoft\\Edge /v BrowserGuestModeEnabled /t REG_DWORD /d 0 Disable Firefox Private Mode: REG ADD HKLM\\SOFTWARE\\Policies\\Mozilla\\Firefox /v DisablePrivateBrowsing /t REG_DWORD /d 1 Disable Brave Incognito Mode: REG ADD HKLM\\SOFTWARE\\Policies\\BraveSoftware\\Brave /v IncognitoModeAvailability /t REG_DWORD /d 1 Disable Brave Guest Mode: REG ADD HKLM\\SOFTWARE\\Policies\\BraveSoftware\\Brave /v BrowserGuestModeEnabled /t REG_DWORD /d 0 Disable Brave Incognito Mode with Tor: REG ADD HKLM\\SOFTWARE\\Policies\\BraveSoftware\\Brave /v TorDisabled /t REG_DWORD /d 1"
+    },
+    {
+      "title": "Type yes and press ↵ Enter.",
+      "content": "Type yes and press ↵ Enter . If there is already a registry item for Incognito Mode Availability, you will be asked if you want to overwrite it. Type yes and press Enter ."
+    },
+    {
+      "title": "Restart your web browser.",
+      "content": "Restart your web browser. If your web browser is currently open, close it and then reopen it."
+    },
+    {
+      "title": "Close your web browser.",
+      "content": "Close your web browser. If you have a browser open, you'll need to close it in order for these steps to work."
+    },
+    {
+      "title": "Open the Terminal .",
+      "content": "Open the Terminal . Use the following steps to open the Terminal on your Mac: Click the magnifying glass icon in the upper-right corner. Enter Terminal into the search bar. Click the Terminal app."
+    },
+    {
+      "title": "Enter one of the following terminal commands and press ↵ Enter.",
+      "content": "Enter one of the following terminal commands and press ↵ Enter . This will create a new system setting that disables Private or Incognito mode on your Mac. Copy and paste one of the following commands into the Terminal and press Enter : [4] X Research source Disable Google Chrome Incognito Mode: defaults write com.google.chrome IncognitoModeAvailability -integer 1z Disable Google Chrome Guest Mode: defaults write com.google.Chrome BrowserGuestModeEnabled -bool false Disable Firefox Private Mode: defaults write /Library/Preferences/org.mozilla.firefox DisablePrivateBrowsing -bool TRUE Disable Microsoft Edge InPrivate Mode: defaults write com.microsoft.edge InPrivateModeAvailability -integer 1 Disable Microsoft Edge Guest Mode: defaults write com.microsoft.edge BrowserGuestModeEnabled -integer 0 Disabling Brave Incognito Mode: defaults write com.brave.Browser IncognitoModeAvailability -integer 1 Disable Brave Guest Mode: defaults write com.brave.Browser BrowserGuestModeEnabled -bool false"
+    },
+    {
+      "title": "Restart your Mac.",
+      "content": "Restart your Mac. For the changes to take effect, you must restart your Mac. Click the Apple icon in the upper-left corner and click Restart to restart your Mac. To reinstate Incognito Mode again, re-enter the command in the Terminal and change the integer value to \"0\" instead of \"1\"."
+    },
+    {
+      "title": "Click the Apple icon.",
+      "content": "Click the Apple icon. It's in the upper-left corner of the Window. This displays a drop-down menu."
+    },
+    {
+      "title": "Click System Settings or System Preferences.",
+      "content": "Click System Settings or System Preferences . It's in the Apple menu."
+    },
+    {
+      "title": "Click Screen Time.",
+      "content": "Click Screen Time . On newer versions of macOS, it's in the menu bar to the left. It has an icon that resembles an hourglass."
+    },
+    {
+      "title": "Click Content & Privacy.",
+      "content": "Click Content & Privacy . It's next to a red icon that has a circle with a line through it."
+    },
+    {
+      "title": "Click the toggle switch next to \"Content & Privacy.\"",
+      "content": "Click the toggle switch next to \"Content & Privacy.\" It's at the top of the page. This enables Content & Privacy restrictions. You may be prompted to enter your administrative password before you can make any changes to your Screen Time settings."
+    },
+    {
+      "title": "Click Store, Web, Siri, & Game Center Content.",
+      "content": "Click Store, Web, Siri, & Game Center Content . It’s at the top of the Content & Privacy menu."
+    },
+    {
+      "title": "Select Limit Adult Websites.",
+      "content": "Select Limit Adult Websites . This option is in the dropdown menu next to “Access to Web Content” under the Safari header. Click Done to confirm. If you want to allow certain websites, click Customize… under “Access to Web Content.” Click + under Allowed and enter the websites you want to allow. Once this setting is enabled, the New Private Window option will be greyed out in the Safari File menu."
+    },
+    {
+      "title": "Download the Google Family Link app.",
+      "content": "Download the Google Family Link app. It has an icon that resembles a blue, green, and yellow striped kite. You can find the Family Link app in the Google Play Store on Android. [5] X Research source You must have a Google account for yourself on your devices and a child's account to link to."
+    },
+    {
+      "title": "Set up Google Family Link.",
+      "content": "Set up Google Family Link. Once you download the app, you'll need to log into your Google account and link your child's Google account. This is how you can set parental controls on their devices . Once connected, you'll be able to edit permissions and access."
+    },
+    {
+      "title": "Make sure your child is logged into their account.",
+      "content": "Make sure your child is logged into their account. Your child will need to be signed into their Google account on their device. Once they are logged into their Google account on their device, Incognito mode will be disabled in Google Chrome. [6] X Research source"
+    },
+    {
+      "title": "Tap your child's account.",
+      "content": "Tap your child's account. This should be on the Family Link's home page."
+    },
+    {
+      "title": "Tap Content restrictions.",
+      "content": "Tap Content restrictions . It's on the main page of your child's account."
+    },
+    {
+      "title": "Make sure all Google Play content requires approval.",
+      "content": "Make sure all Google Play content requires approval. Since the Family Link app only applies to Google Chrome, you will need to make sure your child cannot download any other web browsers. Use the following steps to require approval for all Google Play purchases and downloads: Tap Google Play . Tap Require Approval for . Tap the radio option next to \"All content.\""
+    },
+    {
+      "title": "Open your iPhone's/iPad's Settings .",
+      "content": "Open your iPhone's/iPad's Settings . It's a grey app with gears that you'll likely find on the Home Screen."
+    },
+    {
+      "title": "Tap Screen Time.",
+      "content": "Tap Screen Time . It's next to a purple icon that resembles a magnifying glass. This displays the Screen Time Settings."
+    },
+    {
+      "title": "Tap Content & Privacy Restrictions.",
+      "content": "Tap Content & Privacy Restrictions . It's next to a red icon with a cross-circle."
+    },
+    {
+      "title": "Tap the toggle switch next to \"Content & Privacy Restrictions.\"",
+      "content": "Tap the toggle switch next to \"Content & Privacy Restrictions.\" This enables content and privacy restrictions on your device."
+    },
+    {
+      "title": "Tap iTunes & App Store Purchases.",
+      "content": "Tap iTunes & App Store Purchases . It’s right under the Content & Privacy Restrictions setting."
+    },
+    {
+      "title": "Tap Installing Apps and select Don’t Allow.",
+      "content": "Tap Installing Apps and select Don’t Allow . This will make it impossible to download new apps (including other browsers) from the App Store."
+    },
+    {
+      "title": "Tap Back, then tap <.",
+      "content": "Tap Back , then tap < . This will return you to the Content & Privacy Restrictions menu."
+    },
+    {
+      "title": "Tap Store, Web, Siri & Game Center Content.",
+      "content": "Tap Store, Web, Siri & Game Center Content . It’s in the first group of options under the Content & Privacy Restrictions setting."
+    },
+    {
+      "title": "Tap Web Content.",
+      "content": "Tap Web Content . It’s roughly halfway down the menu."
+    },
+    {
+      "title": "Tap Limit Adult Websites.",
+      "content": "Tap Limit Adult Websites . It's the second option in the menu. In addition to restricting adult content, this option also disables Private browsing. If you want to allow certain websites, tap Add Website under the “Always Allow” header and enter the websites you approve of."
+    }
+  ]
+}

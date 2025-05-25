@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Total-Resistance-in-Circuits",
+  "title": "How to Calculate Total Resistance in Circuits",
+  "steps": [
+    {
+      "title": "Identify a series circuit.",
+      "content": "Identify a series circuit . A series circuit is a single loop, with no branching paths. All the resistors or other components are arranged in a line. [1] X Research source"
+    },
+    {
+      "title": "Add all resistances together.",
+      "content": "Add all resistances together. In a series circuit, the total resistance is equal to the sum of all resistances. The same current passes through each resistor, so each resistor does its job as you would expect. [2] X Research source For example, a series circuit has a 2 Ω (ohm) resistor, a 5 Ω resistor, and a 7 Ω resistor. The total resistance of the circuit is 2 + 5 + 7 = 14 Ω."
+    },
+    {
+      "title": "Start with current and voltage instead.",
+      "content": "Start with current and voltage instead. If you don't know the individual resistance values, you can rely on Ohm's Law instead: V = IR, or voltage = current x resistance. The first step is to find the circuit's current and total voltage: [3] X Research source The current of a series circuit is the same at all points on the circuit. If you know the current at any point, you can use that value in this equation. The total voltage is equal to the voltage of the supply (the battery). It is not equal to the voltage across one component. [4] X Research source"
+    },
+    {
+      "title": "Insert these values into Ohm's Law.",
+      "content": "Insert these values into Ohm's Law . Rearrange V = IR to solve for resistance: R = V / I (resistance = voltage / current). Plug the values you found into this formula to solve for total resistance. [5] X Research source For example, a series circuit is powered by a 12 volt battery, and the current is measured at 8 amps. The total resistance across the circuit must be R T = 12 volts / 8 amps = 1.5 ohms."
+    },
+    {
+      "title": "Understand parallel circuits.",
+      "content": "Understand parallel circuits . A parallel circuit branches into multiple paths, which then join back together. Current flows through each branch of the circuit. [6] X Research source If your circuit has resistors on the main path (before or after the branched area), or if there are two or more resistors on a single branch, Skip down to the combination circuit instructions instead."
+    },
+    {
+      "title": "Calculate the total resistance from the resistance of each branch.",
+      "content": "Calculate the total resistance from the resistance of each branch. Since each resistor only slows current passing through one branch, it only has a small effect on the total resistance of the circuit. The formula for total resistance R T is 1 R T = 1 R 1 + 1 R 2 + 1 R 3 + . . . 1 R n {\\displaystyle {\\frac {1}{R_{T}}}={\\frac {1}{R_{1}}}+{\\frac {1}{R_{2}}}+{\\frac {1}{R_{3}}}+...{\\frac {1}{R_{n}}}} , where R 1 is the resistance of the first branch, R 2 is the resistance of the second branch, and so on up to the last branch R n . [7] X Research source For example, a parallel circuit has three branches, with resistances of 10 Ω, 2 Ω, and 1 Ω. Use the formula 1 R T = 1 10 + 1 2 + 1 1 {\\displaystyle {\\frac {1}{R_{T}}}={\\frac {1}{10}}+{\\frac {1}{2}}+{\\frac {1}{1}}} and solve for R T : Convert fractions to a common denominator : 1 R T = 1 10 + 5 10 + 10 10 {\\displaystyle {\\frac {1}{R_{T}}}={\\frac {1}{10}}+{\\frac {5}{10}}+{\\frac {10}{10}}} 1 R T = 1 + 5 + 10 10 = 16 10 = 1.6 {\\displaystyle {\\frac {1}{R_{T}}}={\\frac {1+5+10}{10}}={\\frac {16}{10}}=1.6} Multiply both sides by R T : 1 = 1.6R T R T = 1 / 1.6 = 0.625 Ω."
+    },
+    {
+      "title": "Begin with total current and voltage instead.",
+      "content": "Begin with total current and voltage instead. If you don't know the individual resistances, you'll need the current and voltage instead: [8] X Research source In a parallel circuit, the voltage across one branch is the same as the total voltage across the circuit. As long as you know the voltage across one branch, you're good to go. The total voltage is also equal to the voltage of the circuit's power source, such as a battery. In a parallel circuit, the current may be different along each branch. You need to know the total current, or you won't be able to solve for total resistance."
+    },
+    {
+      "title": "Use these values in Ohm's Law.",
+      "content": "Use these values in Ohm's Law . If you know the total current and the voltage across the whole circuit, you can find the total resistance using Ohm's Law: R = V / I. [9] X Research source For example, a parallel circuit has a voltage of 9 volts and total current of 3 amps. The total resistance R T = 9 volts / 3 amps = 3 Ω."
+    },
+    {
+      "title": "Watch out for branches with zero resistance.",
+      "content": "Watch out for branches with zero resistance. If a branch on the parallel circuit has no resistance, all of the current will flow through that branch. The resistance of the circuit is zero ohms. In practical applications, this usually means a resistor has failed or been bypassed (short-circuited), and the high current could damage other parts of the circuit. [10] X Research source"
+    },
+    {
+      "title": "Break down your circuit into series sections and parallel sections.",
+      "content": "Break down your circuit into series sections and parallel sections. A combination circuit has some components linked together in series (one after the other), and others in parallel (on different branches). Look for areas of your diagram that simplify to a single series or parallel section. [11] X Expert Source Marvin Woo Licensed Electrician Expert Interview. 31 January 2022. Circle each one to help you keep track of them. For example, a circuit has a 1 Ω resistor and a 1.5 Ω resistor connected in series. After the second resistor, the circuit splits into two parallel branches, one with a 5 Ω resistor and the other with a 3 Ω resistor. Circle the two parallel branches to separate them from the rest of the circuit."
+    },
+    {
+      "title": "Find the resistance of each parallel section.",
+      "content": "Find the resistance of each parallel section. Use the parallel resistance formula 1 R T = 1 R 1 + 1 R 2 + 1 R 3 + . . . 1 R n {\\displaystyle {\\frac {1}{R_{T}}}={\\frac {1}{R_{1}}}+{\\frac {1}{R_{2}}}+{\\frac {1}{R_{3}}}+...{\\frac {1}{R_{n}}}} to find the total resistance of a single parallel section of the circuit. [12] X Expert Source Marvin Woo Licensed Electrician Expert Interview. 31 January 2022. The example circuit has two branches with resistance R 1 = 5 Ω and R 2 = 3 Ω. 1 R p a r a l l e l = 1 5 + 1 3 {\\displaystyle {\\frac {1}{R_{parallel}}}={\\frac {1}{5}}+{\\frac {1}{3}}} 1 R p a r a l l e l = 3 15 + 5 15 = 3 + 5 15 = 8 15 {\\displaystyle {\\frac {1}{R_{parallel}}}={\\frac {3}{15}}+{\\frac {5}{15}}={\\frac {3+5}{15}}={\\frac {8}{15}}} R p a r a l l e l = 15 8 = 1.875 {\\displaystyle R_{parallel}={\\frac {15}{8}}=1.875} Ω"
+    },
+    {
+      "title": "Simplify your diagram.",
+      "content": "Simplify your diagram. Once you've found the total resistance of a parallel section, you can cross out that whole section on your diagram. Treat that area as a single wire with resistance equal to the value you found. [13] X Research source In the example above, you can ignore the two branches and treat them as one resistor with resistance 1.875Ω."
+    },
+    {
+      "title": "Add up resistances in series.",
+      "content": "Add up resistances in series. Once you've replaced each parallel section with a single resistance, your diagram should be a single loop: a series circuit. The total resistance of a series circuit is equal to the sum of all individual resistances, so just add them up to get your answer. [14] X Research source The simplified diagram has a 1 Ω resistor, 1.5 Ω resistor, and the section with 1.875 Ω you just calculated. These are all connected in series, so R T = 1 + 1.5 + 1.875 = 4.375 {\\displaystyle R_{T}=1+1.5+1.875=4.375} Ω."
+    },
+    {
+      "title": "Use Ohm's Law to find unknown values.",
+      "content": "Use Ohm's Law to find unknown values. If you do not know the resistance in one component of your circuit, look for ways to calculate it. If you know the voltage V and current I across that component, find its resistance using Ohm's Law: R = V / I. [15] X Research source"
+    },
+    {
+      "title": "Learn the formula for power.",
+      "content": "Learn the formula for power. Power is the rate that the circuit consumes energy, and the rate it delivers energy to whatever the circuit is powering (such as a light bulb). [16] X Research source The total power of a circuit is equal to the product of the total voltage and the total current. Or in equation form: P = VI. [17] X Research source Remember, when solving for total resistance, you need to know the total power of the circuit. It's not enough to know the power flowing through one component."
+    },
+    {
+      "title": "Solve for resistance using power and current.",
+      "content": "Solve for resistance using power and current. If you know these two values, you can combine two formulas to solve for resistance: [18] X Research source P = VI (power = voltage x current) Ohm's Law tells us that V = IR. Substitute IR for V in the first formula: P = (IR)I = I 2 R. Rearrange to solve for resistance: R = P / I 2 . In a series circuit, the current across one component is the same as the total current. This is not true for a parallel circuit."
+    },
+    {
+      "title": "Find resistance from power and voltage.",
+      "content": "Find resistance from power and voltage. If you only know the power and voltage, you can use a similar approach to find resistance. Remember to use the total voltage across the circuit, or the voltage of the battery powering the circuit: [19] X Research source P = VI Rearrange Ohm's Law in terms of I: I = V / R. Substitute V / R for I in the power formula: P = V(V/R) = V 2 /R. Rearrange to solve for resistance: R = V 2 /P. In a parallel circuit, the voltage across one branch is the same as the total voltage. This is not true for a series circuit: the voltage across one component is not the same as the total voltage. Alternatively, you can isolate the circuit and physically test resistance using a multimeter. [20] X Expert Source Marvin Woo Licensed Electrician Expert Interview. 31 January 2022."
+    }
+  ]
+}

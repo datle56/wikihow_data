@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Uninstall-Ubuntu-Software",
+  "title": "How to Uninstall Ubuntu Applications in Terminal or GUI",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open a Terminal window.",
+      "content": "Press Ctrl + Alt + T to open a Terminal window. Alternatively, you can open a Terminal by searching for it in Activities view. [1] X Research source"
+    },
+    {
+      "title": "View a list of installed packages.",
+      "content": "View a list of installed packages. To uninstall a program, you will need to find the name of the package. To see a list of all installed DEB packages , type dpkg -l into Terminal, then press ↵ Enter . [2] X Research source If you are looking for a specific package, you can use grep to search the results of the package list. For example, if you're looking for bind, use dpkg -i | grep bind to find all packages containing that string. Another option is to use sudo apt list . If you want to see which files are in the package you'll be removing, use the command dpkg -L packagename ."
+    },
+    {
+      "title": "Use sudo apt remove packagename to uninstall.",
+      "content": "Use sudo apt remove packagename to uninstall. This command will uninstall the software but keep the configuration files in case you want to reinstall. For example, if you want to uninstall LibreOffice, you'd type sudo apt remove libreoffice and press Enter . If you want to get rid of the configuration files as well, use sudo apt purge packagename instead. [3] X Research source When prompted, press y and then ↵ Enter to confirm. To clean up the cache and remove any unneeded dependencies post-uninstall, use sudo apt clean && sudo apt autoremove ."
+    },
+    {
+      "title": "Open the App Center.",
+      "content": "Open the App Center. If you want to uninstall a graphical program, whether installed from a DEB or Snap package, you can use the App Center in Ubuntu. To open it, click the App Center in the dock, or search for it in Activities view. [4] X Research source If another application on the system requires the application you are uninstalling, both applications will be removed."
+    },
+    {
+      "title": "Click Installed at the top.",
+      "content": "Click Installed at the top. This displays all installed applications you can remove with App Center."
+    },
+    {
+      "title": "Select an application and click Remove.",
+      "content": "Select an application and click Remove . When prompted, enter your password to confirm. This uninstalls the selected application from Ubuntu."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a Terminal window.",
+      "content": "Press Ctrl + Alt + T to open a Terminal window. Alternatively, you can open a Terminal by searching for it in Activities view. [5] X Research source"
+    },
+    {
+      "title": "View the list of installed snaps.",
+      "content": "View the list of installed snaps. To uninstall a snap, you will need to find the name of the package. You can do so easily in a Terminal by typing snap list and pressing ↵ Enter . If you have a lot of snaps installed, you can search for a specific program using grep. For example, to find the Firefox snap, you'd use snap list . Snaps with green checkmarks were created by verified developers. [6] X Research source"
+    },
+    {
+      "title": "Use sudo snap remove package_name to uninstall the snap.",
+      "content": "Use sudo snap remove package_name to uninstall the snap. Enter your password when prompted, and the snap will be uninstalled from Ubuntu."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. Alternatively, you can open a Terminal by searching for it in Activities view. [7] X Research source"
+    },
+    {
+      "title": "Find the Flatpak you want to uninstall.",
+      "content": "Find the Flatpak you want to uninstall. To list both applications and runtimes you've installed, type flatpak list and press ↵ Enter . If you only want to see installed applications, type flatpak list --app and press ↵ Enter |. [8] X Research source Search for a specific program using flatpak list | grep name ."
+    },
+    {
+      "title": "Use flatpak uninstall program_name to uninstall.",
+      "content": "Use flatpak uninstall program_name to uninstall. This will uninstall the program but leave the associated data in ~/.var/app/ in case you ever want to install it again. If you want to remove the associated app data as well, use flatpak uninstall --delete-data program_name . [9] X Research source For example, if you want to uninstall GIMP and all associated user data, use flatpak uninstall --delete-data org.gimp.GIMP . If you want to remove runtimes and extensions that aren't being used by other programs, use flatpak uninstall --unused . [10] X Research source"
+    },
+    {
+      "title": "Open Synaptic.",
+      "content": "Open Synaptic. If you want to uninstall a package in Ubuntu, you can use Synaptic. Type synaptic into Activities view to get started–you will be prompted to enter your password to open the package manager. [11] X Research source"
+    },
+    {
+      "title": "Click Status to view installed packages.",
+      "content": "Click Status to view installed packages. You will see this option in the left panel."
+    },
+    {
+      "title": "Right-click a package and select Mark for Removal.",
+      "content": "Right-click a package and select Mark for Removal . Repeat this for each piece of software you want to uninstall. [12] X Research source This will only remove the selected program(s) and not the associated user data. If you also want to delete user data, select Mark for Complete Removal instead."
+    },
+    {
+      "title": "Click Apply to uninstall the selected software.",
+      "content": "Click Apply to uninstall the selected software. Alternatively, you can use the keyboard shortcut Ctrl + P . This deletes the selected programs from Ubuntu Linux."
+    },
+    {
+      "title": "Open Ubuntu Software.",
+      "content": "Open Ubuntu Software. If you're using an older version of Ubuntu (before Ubuntu 16.04), you can uninstall software using Ubuntu Software. Type ubuntu software into Activities view to find it."
+    },
+    {
+      "title": "Click the Installed tab.",
+      "content": "Click the Installed tab. This tab is at the top of the Ubuntu Software window."
+    },
+    {
+      "title": "Find the program that you want to uninstall.",
+      "content": "Find the program that you want to uninstall. Scroll through the list of installed programs until you arrive at the one that you want to uninstall, or type the name of an installed program into the search bar in the top-right corner of the window."
+    },
+    {
+      "title": "Click Remove on a program to uninstall it.",
+      "content": "Click Remove on a program to uninstall it. It's to the right of the program that you want to uninstall. [13] X Research source If asked to confirm, click Remove again, or click OK ."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a Terminal window.",
+      "content": "Press Ctrl + Alt + T to open a Terminal window. Alternatively, you can open the Terminal by searching for it in Activities view. [14] X Research source You can use this method if you want to uninstall a DEB package you installed using any method. This method will only uninstall the package and not any dependencies. If you also want to remove the dependencies, use Apt instead."
+    },
+    {
+      "title": "View a list of installed packages.",
+      "content": "View a list of installed packages. To uninstall a program, you will need to find the name of the package. To see a list of all installed DEB packages, type dpkg -l into Terminal, then press ↵ Enter . [15] X Research source If you are looking for a specific package, you can search the results. For example, if you're looking for GIMP, use dpkg -i | grep gimp to find all packages containing that string. If you want to see which files are in the package you'll be removing, use the command dpkg -L packagename ."
+    },
+    {
+      "title": "Uninstall the package.",
+      "content": "Uninstall the package. To do so, type dpkg -r package_name and press ↵ Enter . The software is now removed from Ubuntu."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. Alternatively, you can open a Terminal by searching for it in Activities view. [16] X Research source Use this method to uninstall orphaned packages, which are packages that were automatically installed as dependencies while installing other software but are no longer needed. This method will also remove old kernels–all except the one you're currently using."
+    },
+    {
+      "title": "Delete the unneeded dependencies.",
+      "content": "Delete the unneeded dependencies. To do this, type sudo apt autoremove and press ↵ Enter . After you enter your password to confirm, Apt will look for and remove any dependencies that aren't required by software on your computer."
+    },
+    {
+      "title": "Delete leftover configuration files (optional).",
+      "content": "Delete leftover configuration files (optional). If you uninstalled packages without purging their configuration files, you can purge all leftover configuration files at once with this command: dpkg -l | grep \"^rc\" | awk '{print $2}' | sudo xargs dpkg -P"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. If you added a repository to install software on Ubuntu, you can use this method to uninstall all software you installed from that repository, as well as remove the repository itself. If you installed a nightly build of software that came with Ubuntu, like VLC, the original version will be restored. [17] X Research source"
+    },
+    {
+      "title": "Find the repository name.",
+      "content": "Find the repository name. If you don't remember it, you can see which repository you installed software from using the command apt policy package_name ."
+    },
+    {
+      "title": "Use the ppa-purge command to remove the repository and its packages.",
+      "content": "Use the ppa-purge command to remove the repository and its packages. This command will remove the repository and uninstall any packages you installed from it. If earlier versions of the software came with Ubuntu, the software will be reverted to those versions. The syntax for the command is sudo ppa-purge ppa:repositoryname/ For example, if you installed Firefox and want to remove the Mozilla repository and uninstall the version of Firefox you got from it, you would use sudo ppa-purge ppa:mozillateam/ppa ."
+    }
+  ]
+}

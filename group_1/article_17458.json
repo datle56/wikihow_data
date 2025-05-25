@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Fix-Full-Screen-in-Command-Prompt-(CMD)",
+  "title": "How to Fix Full Screen in Command Prompt (CMD)",
+  "steps": [
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. Windows Vista introduced new graphics drivers that enable effects such as the Aero desktop and better hardware acceleration. One of the downsides of these new drivers is that full-screen is no longer supported for console (Command Prompt) applications. This means that you can no longer make the Command Prompt full-screen in Windows Vista, 7, 8, or 8.1. You can use the following workaround to make the window take up the whole screen, but it won't be true full-screen. Windows 10 allows you switch the Command Prompt to full-screen by pressing Alt + ↵ Enter . You can disable your video card drivers, but you'll lose the Aero theme in Windows and your screen resolution will max out at 800 x 600. See the next section for details. If you run a lot of DOS programs and want to use them in full-screen mode, you may want to try the DOSBox emulator. This program emulates the DOS environment and allows you to run programs full-screen. See the last section for details."
+    },
+    {
+      "title": "Open the Start menu.",
+      "content": "Open the Start menu. You'll need to start the Command Prompt as an administrator, which you can do from the Start menu."
+    },
+    {
+      "title": "Right-click \"Command Prompt\" and select \"Run as administrator\".",
+      "content": "Right-click \"Command Prompt\" and select \"Run as administrator\". If you aren't logged in with an administrator account, you'll need to enter the administrator password."
+    },
+    {
+      "title": "Type wmic in the Command Prompt and press .",
+      "content": "Type wmic in the Command Prompt and press . ↵ Enter . This will load the Windows Management Instrumentation Command-line (WMIC). Don't worry about using this tool, you'll only be using it to trick the Command Prompt into maximizing the window. You'll notice that the prompt will change."
+    },
+    {
+      "title": "Maximize the window once WMIC is open.",
+      "content": "Maximize the window once WMIC is open. Click the Maximize button in the corner of the Command Prompt window. It should now take up the whole screen, but will still have borders and the title bar."
+    },
+    {
+      "title": "Exit WMIC by typing exit and then pressing .",
+      "content": "Exit WMIC by typing exit and then pressing . ↵ Enter . You will be taken back to the regular Command Prompt. The window will stay maximized. You can now start using the Command Prompt in a window that takes up the whole screen."
+    },
+    {
+      "title": "Close and reopen Command Prompt.",
+      "content": "Close and reopen Command Prompt. Your changes will stay in effect even after you close the Command Prompt. The changes will even take effect in the regular version of Command Prompt. [1] X Research source"
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. Microsoft introduced a new display driver in Windows Vista, which enables the Aero effects. Because of this new driver, Windows Vista, 7, 8, and 8.1 do not support full-screen command prompt. If you absolutely need the Command Prompt to be full-screen, you can disable this new driver. This will limit your image options and restrict your display to 800 x 600, but it will allow you to use the Command Prompt in full-screen. If you need to return to your normal display, you just need to re-enable the drivers."
+    },
+    {
+      "title": "Open the Control Panel.",
+      "content": "Open the Control Panel. You can find the Control Panel in the Start menu. In Windows 8.1, right-click the Start button and select \"Control Panel\" from the list."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. If you're in Category view, select \"Hardware and Sound\" and then select \"Device Manager\"."
+    },
+    {
+      "title": "Expand the \"Display adapters\" section.",
+      "content": "Expand the \"Display adapters\" section. This will list all of the display adapters (video cards) that you have installed. Most users will have one or two adapters listed here."
+    },
+    {
+      "title": "Right-click a display adapter and select \"Disable\".",
+      "content": "Right-click a display adapter and select \"Disable\". You'll be asked to confirm that you want to turn it off. Your screen will likely shut off for a moment and restart in a lower resolution. If you have multiple adapters, you'll need to disable your primary adapter. If you don't know which one this is, just disable all of them."
+    },
+    {
+      "title": "Switch the Command Prompt to full-screen.",
+      "content": "Switch the Command Prompt to full-screen. Open the Command Prompt and press Alt + ↵ Enter to make it full-screen. Press the keys again to switch it back. You can continue to do this for as long as the drivers are disabled."
+    },
+    {
+      "title": "Re-enable the drivers.",
+      "content": "Re-enable the drivers. If you need to use your display drivers again, you can quickly re-enable them from the Device Manager. Right-click on the disabled driver and select \"Enable\" to turn it back on. You may have to restart your computer. [2] X Research source"
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. DOSBox is a free MS-DOS emulator that can run your old DOS programs in Windows. If you run old DOS programs through the Command Prompt and want to display them full-screen, DOSBox is the easiest way to do that. This is especially useful for old games. Because DOSBox is focused on games, it has limited networking and printing support. In theory, however, it should be able to run any DOS program."
+    },
+    {
+      "title": "Download and install DOSBox.",
+      "content": "Download and install DOSBox. You can download the DOSBox installer for free from dosbox.com/wiki/Releases . Run the installer after downloading, and follow the prompts to install DOSBox. During installation, choose a location at the root of your hard drive. For example, if your hard drive is \"C:\\\", install DOSBox at C:\\DOSBox ."
+    },
+    {
+      "title": "Create a folder for your programs.",
+      "content": "Create a folder for your programs. DOSBox will use this folder to act as its own \"C:\\\" drive. Place this folder in the same location that your DOSBox folder is located. Name the folder something easy to access and remember, such as C:\\DOSPrograms or C:\\oldgames ."
+    },
+    {
+      "title": "Add your old programs to this folder.",
+      "content": "Add your old programs to this folder. Each program should be contained within a separate folder in your programs folder."
+    },
+    {
+      "title": "Launch DOSBox.",
+      "content": "Launch DOSBox. You'll be taken to the DOSBox command line, and will need to configure a few things before you can start using it."
+    },
+    {
+      "title": "Mount the programs folder.",
+      "content": "Mount the programs folder. Type MOUNT C C:\\DOSPrograms and press ↵ Enter . Replace C:\\DOSPrograms with the folder you created for your DOS programs. If you're running a program from a CD, type MOUNT D D:\\ -t cdrom to mount the CD drive instead."
+    },
+    {
+      "title": "Open the folder for the program you want to run.",
+      "content": "Open the folder for the program you want to run. Type cd folderName to open the program's folder. Replace folderName with the name of the folder for the program you want to run."
+    },
+    {
+      "title": "Start the program.",
+      "content": "Start the program. Type dir to see a list of files in the directory. Find the EXE file and type it into the command line. This will start the DOS program."
+    },
+    {
+      "title": "Switch to full-screen.",
+      "content": "Switch to full-screen. Once you've got the program running, you can switch to full-screen mode by pressing Alt + ↵ Enter . [3] X Research source"
+    }
+  ]
+}

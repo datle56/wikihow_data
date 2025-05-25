@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Flush-DNS",
+  "title": "How to Flush DNS (Clear the Cache) in All Major Operating Systems",
+  "steps": [
+    {
+      "title": "Open a Command Prompt window as an administrator.",
+      "content": "Open a Command Prompt window as an administrator. The easiest way to open Command Prompt with elevated access is: [1] X Research source Press the Windows key on your keyboard and type cmd . Right-click Command Prompt in the search results. Click Run as administrator . Click Yes to confirm."
+    },
+    {
+      "title": "Type ipconfig /flushdns at the prompt and press ↵ Enter.",
+      "content": "Type ipconfig /flushdns at the prompt and press ↵ Enter . This immediately flushes your PC's DNS cache. [2] X Research source If you just want to see the contents of your DNS cache without flushing it, run the command ipconfig /displaydns instead. This command also displays entries from your hosts file . If your PC is a part of an Active Directory network, you may also need to run the command ipconfig /registerdns if you can't resolve other hostnames on your network. If you're still having trouble accessing websites after clearing your DNS cache, you may also need to clear your browser cache ."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. There are two easy ways to open Terminal on your Mac: Open Finder, click the Go menu, select Utilities , and then select Terminal . [3] X Research source Click the Spotlight icon (the magnifying glass) at the top-right corner of your desktop, type terminal , and then double-click Terminal . You can also press ⌘ Command + Space to open Spotlight."
+    },
+    {
+      "title": "Type the DNS flush command for your version of macOS.",
+      "content": "Type the DNS flush command for your version of macOS. The command you'll need to type depends on your version of macOS: [4] X Research source Big Sur (macOS 11) and later: sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder El Capitan, Sierra, High Sierra, Mojave, & Catalina: sudo killall -HUP mDNSResponder Yosemite: sudo discoveryutil udnsflushcaches Lion, Mountain Lion, & Mavericks: sudo killall -HUP mDNSResponder"
+    },
+    {
+      "title": "Press ⏎ Return to run the command.",
+      "content": "Press ⏎ Return to run the command. This clears your Mac's DNS cache. If prompted, enter your password to run the command. This will be the password you enter when logging in to your Mac. Terminal won't show your keystrokes as you type, but it will detect them. If you're still having trouble accessing websites, check out our guide to fixing common computer network issues. You can also try resetting your network . [5] X Research source"
+    },
+    {
+      "title": "Open a new Terminal window.",
+      "content": "Open a new Terminal window. If you're logged in on your Linux desktop, you can press Ctrl + Alt + T to open a new Terminal quickly . [6] X Research source"
+    },
+    {
+      "title": "Run the DNS flush command for your Linux variant.",
+      "content": "Run the DNS flush command for your Linux variant. The command you'll use will be different depending on which version of Linux you're using: Ubuntu & Debian: Type sudo systemd-resolve --flush-caches and press Enter . In newer version of Ubuntu you may have to use command sudo resolvectl flush-caches instead. [7] X Research source To make sure the command worked, run the command sudo systemd-resolve --statistics to make sure the cache is empty. In newer version of Ubuntu you may have to use command sudo resolvectl statistics instead. [8] X Research source RedHat & CentOS: Type systemctl restart dnsmasq.service and press Enter . You won't see any confirmation or errors, so don't worry if you don't get any feedback."
+    },
+    {
+      "title": "Open a new browser tab or window.",
+      "content": "Open a new browser tab or window. To flush your DNS on a Chromebook, you'll need to use the hidden Net-Internals feature in Chrome. [9] X Research source"
+    },
+    {
+      "title": "",
+      "content": "Go to chrome://net-internals in your browser. This opens a page where you can access a few handy network troubleshooting tools."
+    },
+    {
+      "title": "Click DNS in the left panel.",
+      "content": "Click DNS in the left panel. Now you'll see the DNS Lookup page, where you can look up any domain or host name. You'll also see a button below this option to clear your host cache."
+    },
+    {
+      "title": "Click Clear host cache.",
+      "content": "Click Clear host cache . This flushes the DNS cache in Chrome (or on your Chromebook). [10] X Research source Don't be alarmed if you don't see a prompt or confirmation, as everything happens quietly in the background. If you're still having trouble accessing websites, you can also try clearing your browser cache . [11] X Research source"
+    }
+  ]
+}

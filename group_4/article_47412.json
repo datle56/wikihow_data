@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Watch-Star-Wars-on-Command-Prompt",
+  "title": "How to Watch Star Wars via Telnet: Windows CMD & Mac Terminal",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. The easiest way to do this is to press Windows key + S to activate the search bar, type cmd , and then click Command Prompt in the search results. If you're not already connected to the internet , make sure you do so before you continue."
+    },
+    {
+      "title": "Check to see if telnet is installed.",
+      "content": "Check to see if telnet is installed. Telnet is a tool used to make connections to remote servers. Because telnet isn't as widely used as it used to be (and more secure options exist), it no longer comes preinstalled on most Windows systems. To find out if you have telnet: Type telnet at the command prompt and press Enter . If you see \"Welcome to Microsoft Telnet Client\" and a prompt that begins with Microsoft Telnet> , you have telnet. For now, just type a q and press Enter to quit telnet and return to the prompt. If you see an error that says \"'telnet' is not recognized as an internal or external command, operable program or batch file,\" you must install telnet."
+    },
+    {
+      "title": "Install telnet if it's not installed.",
+      "content": "Install telnet if it's not installed. If you already have telnet, skip to the next step. If not, here's how you can easily install it: Windows 10 Right-click the Windows Start menu and select Programs and Features . [1] X Research source Click Turn Windows features on or off in the left panel. Scroll down, check the box next to \"Telnet Client,\" and click OK . Close and re-open the Command Prompt. Windows 11 Press the Windows key and type control . Click Control Panel in the search results. Under \"Programs,\" click Uninstall a program . Click Turn Windows features on or off in the left panel. Scroll down, check the box next to \"Telnet Client,\" and click OK . Close and re-open the Command Prompt."
+    },
+    {
+      "title": "Type telnet at the prompt and press ↵ Enter.",
+      "content": "Type telnet at the prompt and press ↵ Enter . This opens the telnet interface."
+    },
+    {
+      "title": "Type o and press ↵ Enter.",
+      "content": "Type o and press ↵ Enter . \"O\" stands for \"open,\" and this command tells telnet to open a connection. The command line will change to ( to ) ."
+    },
+    {
+      "title": "Type towel.blinkenlights.nl and press ↵ Enter.",
+      "content": "Type towel.blinkenlights.nl and press ↵ Enter . This connects you to the server that hosts the Star Wars animation. After rolling some credits, the movie will begin! To stop the animation and exit telnet , press Ctrl + ] . Sadly, the server is not up as often as it used to be. If you see an error that says, \"Could not open connection to the host, on port 23: Connect failed,\" the server is not currently accepting connections. You can still watch the movie in your web browser at http://www.asciimation.co.nz/index.php ."
+    },
+    {
+      "title": "Open Terminal on your Mac.",
+      "content": "Open Terminal on your Mac. An easy way to do this is to click the Launchpad icon (the multicolored squares on the dock), type terminal , and then click the Terminal icon. [2] X Research source You can also open Terminal in Finder—just open the Applications folder, double-click the Utilities folder, and then double-click Terminal."
+    },
+    {
+      "title": "Install Homebrew.",
+      "content": "Install Homebrew. As of macOS Mojave, telnet is no longer installed by default. To install it quickly and easily, you can use Homebrew. Here's how: If you're not already connected to the internet, make sure you do so before you continue. Type: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" . [3] X Research source Press Return . Follow the on-screen instructions to install Homebrew."
+    },
+    {
+      "title": "Type brew install telnet and press ⏎ Return.",
+      "content": "Type brew install telnet and press ⏎ Return . This installs telnet on your Mac. [4] X Research source"
+    },
+    {
+      "title": "Type telnet and press ⏎ Return.",
+      "content": "Type telnet and press ⏎ Return . This opens telnet."
+    },
+    {
+      "title": "Type o and press ⏎ Return.",
+      "content": "Type o and press ⏎ Return . This is the command to open a Telnet connection (the \"o\" stands for \"open\")."
+    },
+    {
+      "title": "Type towel.blinkenlights.nl and press ⏎ Return.",
+      "content": "Type towel.blinkenlights.nl and press ⏎ Return . This opens a connection to the host that hosts the Star Wars animation. After some opening credits, the movie will begin to play. To stop the animation and exit telnet, press Ctrl + C . Sadly, the server is not up as often as it used to be. If you see an error that says, \"Could not open connection to the host, on port 23: Connect failed,\" the server is not currently accepting connections. You can still watch the movie in your web browser at http://www.asciimation.co.nz/index.php ."
+    }
+  ]
+}

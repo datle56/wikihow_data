@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/You-Need-Permission-to-Perform-This-Action",
+  "title": "You Need Permission to Perform This Action: How to Fix This Windows Error",
+  "steps": [
+    {
+      "title": "You may be signed in as a guest or a standard account.",
+      "content": "You may be signed in as a guest or a standard account. To check what type of account you have, press Win + R to open Run. Type “Control Panel” into Run and click Ok. Click User accounts , followed by User Accounts again. Check what type of account you have under your username and email address to the left. If you have a standard or guest account, you may need to sign in as an administrator and make your account an administrative account. If you don’t have access to an administrative account, you may need to contact the system administrator and ask them to change your account type. The account types are as follows: Administrator: An administrator has full access to the system and other user accounts. They can access and modify any file, install or uninstall programs, run any program, as well as make changes to the security settings. Standard: A standard user can run programs and access their personal files. They can change settings that do not affect the entire system or other user accounts. They can run most programs installed on the computer, but they may be restricted in what programs they can install and uninstall. Guest: Guest accounts have minimum privileges. They are for users who need to use a computer temporarily. They cannot access private files, install programs, or make changes to the system."
+    },
+    {
+      "title": "You can use the administrative account to change your account and permission settings.",
+      "content": "You can use the administrative account to change your account and permission settings. If you are the owner of your computer and your main account is not an administrative account, you may be able to activate the built-in administrative account. You can then log in to the administrative account, change your local user account to an administrative account, access files, and install programs as an administrator. Use the following steps to activate the administrative account: Click the Windows Start menu. Type “CMD”. Click Command Prompt . Type “net user administrator /active:yes” and press Enter . Restart your computer."
+    },
+    {
+      "title": "Using administrative privileges allows standard users to make administrative actions.",
+      "content": "Using administrative privileges allows standard users to make administrative actions. If you get this error message while trying to run or install a program, you may be able to complete the action by running the file or program as an administrator. To do so, make sure you have the administrative account activated. Right-click the executable (“.exe” or “.msi” file) or right-click the program in the Windows Start menu. Click Run as administrator ."
+    },
+    {
+      "title": "The security permissions may be restricting your access to the file or folder.",
+      "content": "The security permissions may be restricting your access to the file or folder. If you are signed into an administrative account, you may be able to change the security permissions to grant yourself (and other users) full permission to access or change the file or folder. Use the following steps to do so: Right-click the file or folder. Click Properties . Click the Security tab. Click Edit . Click your username in the window at the top. Click the checkbox next to “Full Control.” Click Apply followed by Ok."
+    },
+    {
+      "title": "You may not be the owner of the file or folder.",
+      "content": "You may not be the owner of the file or folder. If Windows doesn’t have your user account listed as the owner of the file or folder you are trying to make changes to, you may get the “You need permission to perform this action” error message. Use the following steps to take ownership of the file or folder: [1] X Research source Right-click the file or folder. Click Properties . Click the Security tab. Click Advanced towards the bottom of the Window. Click Change next to “Owner” at the top. Click Advanced at the bottom of the window (Windows 11). Click Find Now on the side. Select your account username and click Ok . Click Ok again. Check “Replace all child object permissions with inheritable permissions from this object” at the bottom. Click Apply , followed by Ok ."
+    },
+    {
+      "title": "You may not have administrative privileges.",
+      "content": "You may not have administrative privileges. If you're not using a standard account or using Windows Home Edition, you may be able to add yourself to the administrators group. This will give you permission to access all files and folders. Use the following steps to add yourself to the administrators group: Right-click the Windows Start menu. Click Computer Management . Expand Local Users and Groups (this option is not available on Windows Home Edition). Click the Users folder. Right-click your username and click Properties . Click the Member of tab. Click Add . Enter “Administrators” in the “Enter the object names to select” field. Click Ok ."
+    },
+    {
+      "title": "Your account may not have administrative privileges.",
+      "content": "Your account may not have administrative privileges. If you are using a standard account, you may be able to sign into the built-in administrative account and change your account type to an administrative account. To do so, restart your computer and select the administrative account on the sign-in screen. By default, the built-in administrative account does not have a password (if you cannot log into the administrative account, you will need to contact the administrator and have them change your account type). Once you are logged in as an administrator, use the following steps to change your account type: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start button. Click the Gear/Settings icon. Click Accounts . Click Other accounts . Click your user account. Click Change account type . Select Administrator below “Account Type.” Click Ok . Restart your computer. Sign in to your account."
+    },
+    {
+      "title": "Another user may have password-protected the file or folder.",
+      "content": "Another user may have password-protected the file or folder. If the file or folder was created by another user, they may have encrypted the file or folder. If this is the case, you will need to contact the original owner of the file or folder and ask them to share the password or unencrypt the file for you."
+    },
+    {
+      "title": "You may be able to bypass permission issues by copying the file or folder.",
+      "content": "You may be able to bypass permission issues by copying the file or folder. When you copy a file or folder, the copy may not have the same restrictions that the original owner placed on it. Right-click the file or folder you are trying to access and click Copy . Then right-click any location on your computer and click Paste. Try to access the copy of the file or folder you made."
+    },
+    {
+      "title": "User Account Control settings may be interfering with your access.",
+      "content": "User Account Control settings may be interfering with your access. You can change or disable user account control settings in the Control Panel. Use the following steps to do so: Click the Windows Start button. Type “Control Panel.” Click Control Panel . Click User accounts . Click User accounts again. Click Change User Account Control Settings. Drag the slider bar down to Never notify . Click Ok."
+    },
+    {
+      "title": "Third-party security software may be blocking your access.",
+      "content": "Third-party security software may be blocking your access. If you are running any third-party security software, such as third-party antivirus programs, they may be blocking access to your files, folders, and software. Disable any third-party security software that is running and try the action again. To do so, press Ctrl + Alt + Del and click Task Manager . Select any third-party security software that is running and click End Task ."
+    },
+    {
+      "title": "There may be an issue with Windows.",
+      "content": "There may be an issue with Windows. If there’s a problem with your Windows system, you may be able to complete the action in Safe Mode. Use the following steps to boot into Safe Mode : [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start menu. Click the Gear/Settings icon. Click System (Windows 11) or Update & Security (Windows 10). Click Recovery . Click Restart now under “Advanced Startup.” [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click Troubleshoot in Windows Recovery Environment. Click Advanced options . Click Startup Settings . Click Restart . Press 5 ."
+    },
+    {
+      "title": "You may have a virus or malware.",
+      "content": "You may have a virus or malware. Viruses and malware can corrupt your system and cause all kinds of errors. You can use Windows Defender to run a virus scan. Use the following steps to do so: Click the Windows Start menu. Type “Windows Security” Click Windows Security . Click Virus & threat protection . Click Scan options . Select Full scan . Click Scan now ."
+    },
+    {
+      "title": "The file or your system may be corrupt.",
+      "content": "The file or your system may be corrupt. Windows has several built-in file checkers you can use to scan your files and system folders and check for errors. Chkdsk can scan your disk for errors and attempt to repair them. Use the following steps to run System File Checker and Chkdsk: Click the Windows Start menu. Type “CMD.” Right-click the Command Prompt and click Run as administrator . Type “sfc /scannow” and press Enter. Type “DISM/online/cleanup-image.restorehealth” and press Enter . Type “chkdsk /r” and press Enter ."
+    },
+    {
+      "title": "There may be a problem with the software installation.",
+      "content": "There may be a problem with the software installation. If you get this error when trying to run a program or application, try uninstalling and reinstalling it. To reinstall the program, download the installation file from the software website or distributor. Use the following steps to uninstall an application : Click the Windows Start menu. Click the Gear/Settings icon. Click Apps . Click Installed Apps . Click the icon with three dots ( ⋯ ) next to the app (Windows 11). Click Uninstall ."
+    },
+    {
+      "title": "Your Windows installation may be corrupt.",
+      "content": "Your Windows installation may be corrupt. If you’re getting this error message a lot, there may be a problem with your Windows installation. You may need to reinstall Windows . During the reset process, you are given the option to keep your files or erase everything. Try to keep your files first. If this doesn’t work, you may need to erase everything. If you have to erase everything, you will lose all the files and data on your computer. Be sure to back up your computer before resetting it. Use the following steps to reset your computer: Click the Windows Start menu. Click the Gear/Settings icon. Click System (Windows 11) or Update & Security (Windows 10). Click Recovery . Click Get Started or Reset PC under “Reset this PC.” Click Keep my files or Remove everything . Click Next . Click Reset . Follow the instructions to reinstall Windows."
+    }
+  ]
+}

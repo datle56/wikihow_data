@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Break-WEP-Encryption",
+  "title": "How to Break WEP Encryption",
+  "steps": [
+    {
+      "title": "Purchase a wireless adapter that supports monitor mode and packet injection.",
+      "content": "Purchase a wireless adapter that supports monitor mode and packet injection. While your laptop computer or smartphone may have a built-in wireless adapter, chances are it does not support monitor mode or packet injection. For this, you will need to purchase a separate wireless adapter. You can order a compatible wireless adapter online. Most range in price from $30 to $70. The following is a list of suitable wireless adapters: [2] X Research source Alfa AWUS036NH Alfa AWUS036NHA Alfa AWUS036NEH Panda PAU09 N600 Panda PAU 06"
+    },
+    {
+      "title": "Install Kali Linux.",
+      "content": "Install Kali Linux. It is highly recommended that you use Linux when trying to break a WEP encryption. Kali Linux (formerly known as Backtrack) is a Linux distribution that is specifically designed for network penetration testing and security research. It comes with all the tools and software you need pre-installed. You can download Kali Linux for free here . Kali Linux can be installed as your primary operating system, or on a virtual machine . It can also be installed on a Raspberry Pi or on a bootable CD or USB drive. If you boot Linux from a CD or USB drive, all data will be lost when you reboot your computer, unless you allocate a partition on a USB drive for persistent storage. [3] X Research source"
+    },
+    {
+      "title": "Install Aircrack-ng (if needed).",
+      "content": "Install Aircrack-ng (if needed). Aircrack-ng is a suite of software tools used to assess, attack, and crack wireless networks. Kali Linux comes with Aircrack-ng already installed. If you are using a different Linux distribution, such as Ubuntu, you will need to use the following steps to install Aircrack-ng: [4] X Research source Press Ctrl + Alt + T to open the Terminal. Type sudo apt-get update Type sudo apt-get install -y aircrack-ng Enter your user password. Press Y when prompted."
+    },
+    {
+      "title": "Get within range of a WEP-enabled Wi-Fi network.",
+      "content": "Get within range of a WEP-enabled Wi-Fi network. You should be well within range to pick up a strong signal from the network. Additionally, the network should have at least 1 person connected to it. The more people using the network, the more data you will be able to collect in order to break the network encryption. Ideally, the network should have multiple people using the network and connecting and disconnecting their devices."
+    },
+    {
+      "title": "Connect your network adapter to your Linux computer.",
+      "content": "Connect your network adapter to your Linux computer. This should be a network adapter that supports packet injection and monitor mode. You can connect it to any free USB port on your computer."
+    },
+    {
+      "title": "Boot into Linux.",
+      "content": "Boot into Linux. If Linux is your primary operating system, simply boot up your computer. If you are using a virtual machine, open your virtual machine software and launch the virtual machine that has Linux installed. If you have a bootable CD or USB drive, make sure your boot order is set to boot from that drive first in the BIOS. Then insert the disk drive and boot up your computer."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to launch the Terminal.",
+      "content": "Press Ctrl + Alt + T to launch the Terminal. On most Linux distributions, the Terminal has an icon that resembles a black screen with a white text cursor. You can click the Terminal icon or use the keyboard shortcut ( Ctrl + Alt + T ) to open the Terminal."
+    },
+    {
+      "title": "Find your network adapter's name.",
+      "content": "Find your network adapter's name. To do so, type ifconfig and press Enter . This displays all network adapters you have connected to your computer. You will need to know the name of the network adapter you have connected to your computer. It will most likely be named \"wlan0,\" or \"wlan1\" or something similar. If you receive an error message that says \"Command 'ifconfig' not found\" or something similar, type sudo apt install net-tools and press Enter to install the network tools."
+    },
+    {
+      "title": "Use Airmon-ng to put your network adapter in monitor mode.",
+      "content": "Use Airmon-ng to put your network adapter in monitor mode. To do so, type sudo airmon-ng start [network adapter name] and press Enter . Replace \"[network adapter name]\" with the name of your network adapter you got from the \"ifconfig\" command. This puts the network adapter in monitor mode. It will also likely change the name of your network adapter. Take note of any name changes your network adapter is given. If you are not sure what the new network adapter name is, simply run the \"ifconfig\" command again."
+    },
+    {
+      "title": "Use Airodump-ng to search for a WEP-enabled network.",
+      "content": "Use Airodump-ng to search for a WEP-enabled network. To do so, type sudo airodump-ng [network adapter name] --encrypt WEP and press Enter . Replace \"[network adapter name]\" with the current name for your network adapter. This searches the network for packets sent using WEP encryption using Airodump-ng. If any networks are discovered, they will be listed with \"WEP\" below \"ENC\" in the read-out."
+    },
+    {
+      "title": "Note the channel number and the BSSID.",
+      "content": "Note the channel number and the BSSID. Once you discover a WEP network, write down the network MAC address listed below \"BSSID\" and also the channel number listed below \"CH\" in the read-out."
+    },
+    {
+      "title": "Use Besside-ng to attack the network.",
+      "content": "Use Besside-ng to attack the network. To do so, type sudo besside-ng -c [channel number] -b [BSSID number] [network adapter name] and press Enter . Replace \"[channel number] with the channel number you got from the airodump-ng command. Replace \"[BSSID number]\" with the network MAC address you got from the airodump-ng command. Finally, replace \"[network adapter name]\" with the current name for your network adapter. This launches an attack against the network using the \"Besside-ng\" tool. The attack should take about 2 - 10 minutes. The \"Besside-ng\" tool first attacks first using packet injection and then by flooding the network. All data that it gathers is saved to a \".cap\" file. [5] X Research source Warning: Entering the \"Besside-ng\" command without the proper network parameters will result in the Besside-ng tool attacking all available networks in range. Warning: Launching an attack against a network that you do not have authorization to audit or attack is illegal. Law enforcement will often set up WEP-encrypted networks specifically to catch criminal hackers. If you get an error that says \"Network is down\" or similar during the attack, simply run the command again to continue. You can also run the type the command airmon-ng check kill to automatically stop any processes that may be taking your network adapter out of monitor mode."
+    },
+    {
+      "title": "Use Aircrack-ng to get the network key.",
+      "content": "Use Aircrack-ng to get the network key. To do so, simply type sudo aircrack-ng ./wep.cap and press Enter . This reads back the \".cap\" file that all the network data that Besside-ng has gathered back to you. It will display a list of networks it has encountered."
+    },
+    {
+      "title": "Select the network you want to crack and press ↵ Enter.",
+      "content": "Select the network you want to crack and press ↵ Enter . When you see the network you want to break, press the number that corresponds to that network and press Enter . Aircrack-ng will start cracking the code. When it is finished, it will display the network key next to \"Key Found!\" in both hex code format as well as the standard alpha-numeric version next to \"ASCII\". You can use the \"ASCII\" key to log into the network."
+    },
+    {
+      "title": "Advise the network administrator to change their encryption.",
+      "content": "Advise the network administrator to change their encryption. This article demonstrates just how easy it is to break WEP encryptions. Once someone is on your network, they can launch a man-in-the-middle attack, route you to fake websites, and control your internet experience. If you or anybody you know is still using WEP encryption, advise them to immediately change their encryption to something newer and more secure, such as WPA/WPA2 or WPA3."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Reclaim-Plex-Server",
+  "title": "5 Simple Steps to Reclaim a Plex Server",
+  "steps": [
+    {
+      "title": "Access the Plex web app in your web browser.",
+      "content": "Access the Plex web app in your web browser. The steps for this are a little different depending on how your media server is stored. [1] X Research source If the Plex server is on the computer you're using right now, go to http://localhost:32400/web or http://127.0.0.1:32400/web . If the server is on the same local network, go to http://[Plex Server IP Address]:32400/web . For example, http://192.168.1.25:32400/web . If the server is on a different network, you'll need to use SSH to create a tunnel. If you're using Windows, use PuTTY . On a Mac, you can use a Terminal. Windows: Open PuTTY and type the IP address of your Plex server into the \"Host Name\" field. Then, go to Connection > SSH > Tunnels . For Source Port, type 8888 . For Destination, type localhost:32400 . Click Add , and then click Open to start the tunnel. Mac: In a Terminal , use this command to start the SSH tunnel to your Plex server, replacing \"ip.address\" with the IP address of the server: ssh ip.address -L 8888:localhost:32400 Both Windows and Mac: Once the tunnel is created, go to http://localhost:8888/web in your web browser. [2] X Research source"
+    },
+    {
+      "title": "Open the Plex app on your computer.",
+      "content": "Open the Plex app on your computer. On Windows, right-click the > icon in your system tray, then click Open Plex . To open Plex on a Mac, click the > arrow in your Mac's menu bar, then click Open Plex . If you have at least v1.29.2, opening Plex now will automatically reclaim your server. In this case, you won't have to complete the remaining steps."
+    },
+    {
+      "title": "Click the Settings icon.",
+      "content": "Click the Settings icon. It looks like a wrench in the top right corner of the application. [3] X Research source"
+    },
+    {
+      "title": "Click General.",
+      "content": "Click General . You'll see this in the menu on the left side of the window. [4] X Research source"
+    },
+    {
+      "title": "Click Claim Server.",
+      "content": "Click Claim Server . Enter your login information when prompted and you'll reclaim your server. [5] X Research source"
+    }
+  ]
+}

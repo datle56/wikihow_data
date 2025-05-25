@@ -1,0 +1,142 @@
+{
+  "url": "https://www.wikihow.com/Install-Laravel-Framework-in-Windows",
+  "title": "How to Install Laravel Framework in Windows",
+  "steps": [
+    {
+      "title": "Open the XAMPP download page.",
+      "content": "Open the XAMPP download page. Go to https://www.apachefriends.org/download.html in your computer's web browser."
+    },
+    {
+      "title": "Scroll down to the \"7.2.8 / PHP 7.2.8\" heading.",
+      "content": "Scroll down to the \"7.2.8 / PHP 7.2.8\" heading. You'll find it near the bottom of the list of downloads. This is important; since Laravel requires PHP 7.13 or higher, you'll need to make sure you don't accidentally install an older version of XAMPP."
+    },
+    {
+      "title": "Click Download (32 bit).",
+      "content": "Click Download (32 bit) . It's a blue button to the right of the \"7.2.8 / PHP 7.2.8\" heading. This will download the XAMPP setup file onto your computer."
+    },
+    {
+      "title": "Open the XAMPP setup file.",
+      "content": "Open the XAMPP setup file. Double-click the downloaded setup file to do so."
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. This will open the XAMPP setup window."
+    },
+    {
+      "title": "Navigate through the XAMPP setup process.",
+      "content": "Navigate through the XAMPP setup process. Click through the XAMPP menus by doing the following: Click Next three times. Uncheck the \"Learn more about Bitnami for XAMPP\" box. Click Next twice."
+    },
+    {
+      "title": "Click Finish when prompted.",
+      "content": "Click Finish when prompted. This will open the XAMPP language preferences pop-up window."
+    },
+    {
+      "title": "Click Save when prompted.",
+      "content": "Click Save when prompted. Doing so will save your default language settings and open the XAMPP dashboard."
+    },
+    {
+      "title": "Start Apache.",
+      "content": "Start Apache. Click Start to the right of each of the \"Apache\" heading. This will turn on Apache. At this point, you're ready to install Composer. You can also do the same with the \"MySQL\" heading, but you'll need to have MySQL installed in order to do so."
+    },
+    {
+      "title": "Open the Composer website.",
+      "content": "Open the Composer website. Go to https://getcomposer.org/download/ in your computer's web browser."
+    },
+    {
+      "title": "Select the Composer download link.",
+      "content": "Select the Composer download link. Click the Composer-Setup.exe link near the top of the page."
+    },
+    {
+      "title": "Open the downloaded Composer setup file.",
+      "content": "Open the downloaded Composer setup file. Double-click the \"Composer-Setup\" file to do so."
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. This will open the Composer installation window."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's at the bottom of the window."
+    },
+    {
+      "title": "Select XAMPP if necessary.",
+      "content": "Select XAMPP if necessary. If you have multiple different command line-based PHP options installed on your computer, click the one listed in the drop-down box at the top of the window, then click C:\\xampp\\php\\php.exe in the drop-down menu."
+    },
+    {
+      "title": "Click Next twice.",
+      "content": "Click Next twice. This option is at the bottom of the menu."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . It's at the bottom of the window. Composer will begin installing."
+    },
+    {
+      "title": "Click Finish when prompted.",
+      "content": "Click Finish when prompted. Doing so signifies that Composer has been installed successfully."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows icon in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Search for Command Prompt.",
+      "content": "Search for Command Prompt. Type in command prompt to do so."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt. You should see it appear at the top of the Start window. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . It's in the drop-down menu."
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. Doing so opens Command Prompt with administrator privileges."
+    },
+    {
+      "title": "Enter the Composer validation command.",
+      "content": "Enter the Composer validation command. Type in php composer.phar and press ↵ Enter ."
+    },
+    {
+      "title": "Wait for Composer to finish updating.",
+      "content": "Wait for Composer to finish updating. Once the update completes, you can proceed with installing Laravel . If you receive an error when you run the \"php composer.phar\" command, you'll need to manually change the Composer directory before you proceed with installing Laravel."
+    },
+    {
+      "title": "Close Command Prompt.",
+      "content": "Close Command Prompt. If the last attempt to install Composer didn't work, you can use a PHP script in Command Prompt to manually install Laravel."
+    },
+    {
+      "title": "Copy the installation script.",
+      "content": "Copy the installation script. Select the entire script in the code box below, then press Ctrl + C to copy it. php - r \"copy('https://getcomposer.org/installer', 'composer-setup.php');\" php - r \"if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;\" php composer - setup . php php - r \"unlink('composer-setup.php');\""
+    },
+    {
+      "title": "Re-open Command Prompt.",
+      "content": "Re-open Command Prompt. Doing so ensures that Command Prompt won't return any errors due to other commands interfering with your script."
+    },
+    {
+      "title": "Paste in the script.",
+      "content": "Paste in the script. Press Ctrl + V to add the script to Command Prompt. The script will automatically begin running."
+    },
+    {
+      "title": "Remove the installer once the installation is complete.",
+      "content": "Remove the installer once the installation is complete. Simply press ↵ Enter once you see the \"php -r \"unlink('composer-setup.php');\"\" line appear to do so."
+    },
+    {
+      "title": "Re-run the Composer command.",
+      "content": "Re-run the Composer command. Type the following into Command Prompt, then press ↵ Enter : php composer . phar"
+    },
+    {
+      "title": "Close and re-open Command Prompt.",
+      "content": "Close and re-open Command Prompt. Doing so ensures that you don't have any interference from past commands."
+    },
+    {
+      "title": "Enter the Laravel installation command.",
+      "content": "Enter the Laravel installation command. Type in composer global require \"laravel/installer\" and press ↵ Enter . Laravel will immediately begin to install."
+    },
+    {
+      "title": "Wait for Laravel to install.",
+      "content": "Wait for Laravel to install. Once Laravel finishes installing, you'll see the regular Command Prompt tag (e.g., \"system32>\") appear below the list of commands. At this point, you can begin using Laravel as needed."
+    }
+  ]
+}

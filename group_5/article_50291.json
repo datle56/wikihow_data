@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Add-a-Drop-Down-Box-in-Excel-2007",
+  "title": "How to Add a Drop Down Box in Excel 2007",
+  "steps": [
+    {
+      "title": "Type the list of items to appear in the drop-down.",
+      "content": "Type the list of items to appear in the drop-down. In a single column, type each item you want to appear in the drop-down menu in the order you'd like it to appear. You can create the list of items for your drop-down on the same sheet as the menu itself. If you create the item list on a different worksheet, you can add them to the drop-down by creating a named range that you can reference. After typing the list items on another sheet, follow these steps to name the range: Highlight the list items on your other sheet. Click the Insert tab and choose Define Name… Type a name and click OK . You can protect or hide the separate worksheet to prevent other users from making changes to the list."
+    },
+    {
+      "title": "Click the cell in which you'd like the drop-down to appear.",
+      "content": "Click the cell in which you'd like the drop-down to appear. This selects the cell."
+    },
+    {
+      "title": "Click the Data tab.",
+      "content": "Click the Data tab. You'll see it in the toolbar running along the top of Excel."
+    },
+    {
+      "title": "Click Data Validation on the toolbar.",
+      "content": "Click Data Validation on the toolbar. It's in the \"Data Tools\" group at the top of Excel. This opens the Data Validation window. The Data Validation window should automatically open to the Settings tab. If it doesn't, click the tab to activate it."
+    },
+    {
+      "title": "Click the \"Allow\" menu and select List.",
+      "content": "Click the \"Allow\" menu and select List . This tells Excel which data format to use for the cell. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select your range.",
+      "content": "Select your range. There are two ways you can do this: If you created a list on the same sheet as your drop-down menu, click the toggle button on the right side of the \"Source\" box, then click and drag to select all of the cells containing your list items. If your list is on another sheet and you named the range, type = RANGENAME , where RANGENAME is the name you gave your range."
+    },
+    {
+      "title": "Choose your preferences for the list.",
+      "content": "Choose your preferences for the list. You'll see two drop-down boxes in the top-right area of the Settings tab. Make sure \"In-cell dropdown\" is selected, as this is what turns your list of cells into a drop-down menu. You can also check the box next to \"Ignore blank\" if you don't want to include blank cells in your list."
+    },
+    {
+      "title": "Click the Input Message tab to show a pop-up when the cell is clicked (optional).",
+      "content": "Click the Input Message tab to show a pop-up when the cell is clicked (optional). If you want to add any instructions or details for your menu that will appear when a user clicks the cell, you can do so on this tab. Check the box next to \"Show input message when cell is selected.\" Enter a title and message for your information box. The title will appear in bold letters at the top of the message."
+    },
+    {
+      "title": "Click the Error Alert to create a custom error message (optional).",
+      "content": "Click the Error Alert to create a custom error message (optional). If you want to display an error message when the user selects an invalid option, you can create the error message on this tab. Check the box next to \"Show error alert after invalid data is entered.\" To display a warning or information while allowing the user to still select the invalid option, select either Warning or Information from the \"Style\" menu. If you don't want to allow the user to select an invalid option, select Stop from the \"Style\" menu instead. Type a title and error message for your error box into the fields."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This saves your drop-down list and closes the Data Validation window. You'll now see an arrow on the right side of your new cell. Clicking this arrow expands the items you placed in the drop-down list."
+    }
+  ]
+}

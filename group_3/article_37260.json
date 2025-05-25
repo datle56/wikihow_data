@@ -1,0 +1,162 @@
+{
+  "url": "https://www.wikihow.com/Reset-Windows-7-Administrator-Password",
+  "title": "How to Reset Windows 7 Administrator Password",
+  "steps": [
+    {
+      "title": "Log in with a different administrator account.",
+      "content": "Log in with a different administrator account. If you’re unable to access one administrator account (such as the user called Administrator), log in as any other user with administrative privileges. It’s likely that the first account you created when setting up the computer has these privileges. If you don’t have another administrator account, try a different method."
+    },
+    {
+      "title": "Open the Start menu and select “Control Panel.”",
+      "content": "Open the Start menu and select “Control Panel.” If you don’t see a link to Control Panel on the Start menu, try pressing ⊞ Win + S to launch the search box, then type Control . When “Control Panel” appears in the search results, click on it."
+    },
+    {
+      "title": "Click “Add or remove user accounts.”",
+      "content": "Click “Add or remove user accounts.” Windows will ask you to confirm your password to proceed. [1] X Research source"
+    },
+    {
+      "title": "Click the name of the account you want to change.",
+      "content": "Click the name of the account you want to change. Administrator accounts can change the password of any account on the system. If the account you want to change is called Administrator, click that account. [2] X Research source"
+    },
+    {
+      "title": "Click “Change Password.”",
+      "content": "Click “Change Password.” Follow the on-screen instructions to set a new password. You’ll need to type it twice in order to confirm the change. Once Windows accepts the new password, you’ll be able to log in with that account."
+    },
+    {
+      "title": "Locate your password reset disc.",
+      "content": "Locate your password reset disc. You’ll need to have already created a password reset CD or USB flash drive at an earlier date. If you haven’t done that, try a different method. Note that you won't be able to borrow a password reset disc from a friend, as these discs are keyed to your account. [3] X Research source"
+    },
+    {
+      "title": "Try to log into Windows as an administrator.",
+      "content": "Try to log into Windows as an administrator. When the login fails, you’ll see an error that says “Username or password is incorrect.” Click “OK.”"
+    },
+    {
+      "title": "Insert the password disc.",
+      "content": "Insert the password disc. Use the eject button on your optical drive to open its tray. If you're using a password reset flash drive, plug that in now."
+    },
+    {
+      "title": "Click “Reset Password.”",
+      "content": "Click “Reset Password.” This will launch the Password Reset Wizard. [4] X Research source"
+    },
+    {
+      "title": "Click “Next” to type a new password.",
+      "content": "Click “Next” to type a new password. Choose something you’ll remember. You’ll be prompted to enter it a second time to make sure you typed it correctly, so type it once more. [5] X Research source"
+    },
+    {
+      "title": "Click “finish.”",
+      "content": "Click “finish.” You can now log in with your new password."
+    },
+    {
+      "title": "Put the system repair CD or DVD into the optical drive.",
+      "content": "Put the system repair CD or DVD into the optical drive. If you didn’t make a system repair disc on a prior date, ask someone else who uses Windows 7 to make one for you. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Boot from the disc.",
+      "content": "Boot from the disc. Restart the computer and wait for a message that says “Press any key to boot from CD or DVD.” Press any key on the keyboard. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don’t see this and you wind up back at the login screen, your computer may not be set up to boot from CD/DVD. Check the boot settings in the system BIOS. If it’s still not booting from the disc, try burning a new disc on another system."
+    },
+    {
+      "title": "Select the operating system and drive.",
+      "content": "Select the operating system and drive. Unless you have multiple operating systems and hard drives, you may only see one option. Choose the one marked “Windows 7” and make note of the drive letter (it’s probably C: or D:). Put a check next to “Use recovery tools” and click “Next” to proceed."
+    },
+    {
+      "title": "Select “Command Prompt” from the list of repair options.",
+      "content": "Select “Command Prompt” from the list of repair options. This will launch a window where you will type the following commands to rename files: Type C: or D: (the drive letter you made note of earlier) and press ↵ Enter Type windows\\system32 and press ↵ Enter Type ren utilman.exe utilhold.exe and press ↵ Enter . Utilman.exe is a file associated with the Ease of Access center. You’ll need to rename it temporarily for this method to work. Type copy cmd.exe utilman.exe and press ↵ Enter Type exit and press ↵ Enter"
+    },
+    {
+      "title": "Press the eject button on the CD/DVD drive and reboot the computer.",
+      "content": "Press the eject button on the CD/DVD drive and reboot the computer. Ejecting the disc ensures that the computer will not try to boot from the CD/DVD."
+    },
+    {
+      "title": "Click the Ease of Access button on the lower left corner of the login screen.",
+      "content": "Click the Ease of Access button on the lower left corner of the login screen. It’s a tiny blue button that usually opens various accessibility options. This time it will launch the command prompt (you’ll change it back in a few minutes)."
+    },
+    {
+      "title": "Set your new password.",
+      "content": "Set your new password. Type net user Administrator newpassword , but replace “newpassword” with a new password. Press ↵ Enter ."
+    },
+    {
+      "title": "Type exit to close the command prompt.",
+      "content": "Type exit to close the command prompt. You’ll be returned to the sign-in screen."
+    },
+    {
+      "title": "Log in with your new password.",
+      "content": "Log in with your new password. Use the new password to log back in."
+    },
+    {
+      "title": "Press ⊞ Win+S to open the search box.",
+      "content": "Press ⊞ Win + S to open the search box. Now you’ll undo the changes you made to the Ease of Access Center. Type command into the text field and wait for “Command Prompt” to appear in the search results. Use the right mouse button to click “Command Prompt” and select “Run as Administrator.”"
+    },
+    {
+      "title": "Type the following commands into the command prompt.",
+      "content": "Type the following commands into the command prompt. Type C: (or whichever drive letter you made note of earlier) and press ↵ Enter . Type cd windows\\system32 and press ↵ Enter Type copy utilhold.exe utilman.exe and press ↵ Enter Type exit and press ↵ Enter ."
+    },
+    {
+      "title": "Insert the Windows 7 Setup DVD or flash drive.",
+      "content": "Insert the Windows 7 Setup DVD or flash drive. The Windows 7 Setup DVD is the disc you used to install Windows 7 (or the Windows install disc that came with your computer). You also may have burned a Setup DVD on an earlier date using the Windows USB/DVD tool. [8] X Research source If you created a Windows 7 Setup flash drive at a previous time, you can use that in place of a DVD. If you don’t have either, you can borrow one or the other from a friend."
+    },
+    {
+      "title": "Restart the computer to boot from DVD or USB flash drive.",
+      "content": "Restart the computer to boot from DVD or USB flash drive. [9] X Research source Verify that your computer is configured to boot from CD/DVD ROM or USB flash drives in the BIOS. When you see “Press any key to boot from CD or DVD\" (or \"Press F12 to select a boot device\"), follow the on-screen instructions."
+    },
+    {
+      "title": "Click the “X” in the corner of the Language window.",
+      "content": "Click the “X” in the corner of the Language window. Windows thinks it will be installing a brand new operating system, but you’ll really just be temporarily changing the name of a program called Sticky Keys."
+    },
+    {
+      "title": "Press ⇧ Shift+F10 at the Startup screen.",
+      "content": "Press ⇧ Shift + F10 at the Startup screen. This will open the command prompt, where you’ll type the following commands: Type copy d:\\windows\\system32\\sethc.exe d:\\ and then press ↵ Enter . If Windows is not installed on the D: drive, use the drive letter where Windows is located (such as E: or F:). You’ll know if it’s the wrong drive if you see the message “The system cannot find the specified path.” Type copy /y d:\\windows\\system32\\cmd.exe d:\\windows\\system32\\sethc.exe and press ↵ Enter . Again, if Windows is not installed on the D: drive, use the proper drive letter. Type exit then press ↵ Enter ."
+    },
+    {
+      "title": "Eject the Windows DVD or flash drive and restart the computer.",
+      "content": "Eject the Windows DVD or flash drive and restart the computer. This will ensure that your computer doesn’t try to boot from the DVD or flash drive."
+    },
+    {
+      "title": "Press the ⇧ Shift key 5 times (quickly) at the login screen.",
+      "content": "Press the ⇧ Shift key 5 times (quickly) at the login screen. Usually this action will launch the program Sticky Keys, but this time it will launch the command prompt. Type the following commands: Type net user Administrator PASSWORD and press ↵ Enter . Replace “PASSWORD” with a new password for the Administrator account. Type copy /y d:\\sethc.exe d:\\windows\\system32\\sethc.exe and press ↵ Enter . Replace d: with a different drive letter if necessary. This will rename the Sticky Keys program we modified earlier. Type exit and then press ↵ Enter ."
+    },
+    {
+      "title": "Reboot the computer.",
+      "content": "Reboot the computer. You can now log in with the Administrator account."
+    },
+    {
+      "title": "Insert a Windows 7 installation CD/DVD into the computer’s CD/DVD-ROM.",
+      "content": "Insert a Windows 7 installation CD/DVD into the computer’s CD/DVD-ROM."
+    },
+    {
+      "title": "Boot the computer from CD/DVD.",
+      "content": "Boot the computer from CD/DVD. (Here is the step-by-step guide)"
+    },
+    {
+      "title": "Once your computer start and boot from your Windows 7 disc, it will ask you to press a key to continue.",
+      "content": "Once your computer start and boot from your Windows 7 disc, it will ask you to press a key to continue. Just hit a key on your keyboard."
+    },
+    {
+      "title": "PC successfully boots from CD/DVD.",
+      "content": "PC successfully boots from CD/DVD. Windows Install screen appears. Select “Next”."
+    },
+    {
+      "title": "Select “Repair your computer”.",
+      "content": "Select “Repair your computer”."
+    },
+    {
+      "title": "In the “System Recovery Options” window, it will show you where your Windows 7 installation is.",
+      "content": "In the “System Recovery Options” window, it will show you where your Windows 7 installation is. In this guide, the Windows 7 was installed on D drive. Click “Next”."
+    },
+    {
+      "title": "Select “Command Prompt”.",
+      "content": "Select “Command Prompt”."
+    },
+    {
+      "title": "Command Prompt window appears.",
+      "content": "Command Prompt window appears. Use the following commands to replace “cmd.exe” with “sethc.exe”. Type “d:” and then press “Enter”. Note: If your Windows 7 installation is on C drive, please replace “d:” with “c:” in the command. Type “cd windows” and then press “Enter”. Type “cd system32” and then press “Enter”. Type “ren sethc.exe sethc_bak.exe” and then press “Enter”. Type “copy cmd.exe sethc.exe” and then press “Enter”."
+    },
+    {
+      "title": "Close Command Prompt and then click “Restart”.",
+      "content": "Close Command Prompt and then click “Restart”."
+    },
+    {
+      "title": "Once Windows 7 login screen appears, hit “Shift” key five times to run “sethc.exe”.",
+      "content": "Once Windows 7 login screen appears, hit “Shift” key five times to run “sethc.exe”. In the sethc window, type “net user” and press “Enter”. All local user accounts include the built-in administrator will be shown. To enable the built-in administrator account, type “net user administrator /active:yes” and then press “Enter”. If you forget the administrator password, type “net user administrator 123456” and then press “Enter”. The administrator is now enabled and the password has been reset to “123456”. Close sethc window and restart the computer. When Windows 7 login screen appears, select administrator and enter the password “123456” to log on."
+    }
+  ]
+}

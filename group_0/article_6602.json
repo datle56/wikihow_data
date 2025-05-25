@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Change-Text-Color-in-HTML",
+  "title": "How to Change Text Color in HTML and CSS",
+  "steps": [
+    {
+      "title": "Open your HTML file.",
+      "content": "Open your HTML file. The best way to change the color of your text is by using CSS. The old HTML <font> attribute is no longer supported in HTML5. The preferred method is to use CSS to define the style of your elements. Go ahead and open or create a new HTML document . This method will also work with separate CSS files that are linked to your HTML document. The examples used in this article are for an HTML file using an internal stylesheet."
+    },
+    {
+      "title": "Place your cursor inside the head of your HTML file.",
+      "content": "Place your cursor inside the head of your HTML file. When you are using an internal style sheet for a specific HTML file, it is usually placed within the head of the HTML file. The head is at the top of the sheet in between the opening <head> tag, and the closing </head> tag. [1] X Research source If your HTML document does not have a head, go ahead and enter the opening and closing head tags at the top of your HTML file."
+    },
+    {
+      "title": "Type the opening and closing tags for the style sheet.",
+      "content": "Type the opening and closing tags for the style sheet. All CSS elements that affect the style of the webpage go in between the opening and closing style tags within the head section of your HTML document. Type <style> in the \"head\" section to create the opening style tag. Then type </style> a couple of lines down to create the closing style tag. When you're finished, the beginning of your HTML file should look something like this: [2] X Research source <!DOCTYPE html> < html > < head > < style > </ style > </ head >"
+    },
+    {
+      "title": "Type the element you want to change the text color for followed by the opening and closing brackets.",
+      "content": "Type the element you want to change the text color for followed by the opening and closing brackets. Elements you can change include the text body ( body ), paragraph text (\"<p>\"), as well as headers (\"<h1>\", \"<h2>\", \"<h3>\", etc.). Then enter the opening bracket (\"{\") one space after. Then add the closing bracket (\"}\") a few lines down. In this example, we will be changing the \"body\" text. The beginning of your HTML file should look something like the following: [3] X Research source <!DOCTYPE html> < html > < head > < style > body { } </ style > </ head >"
+    },
+    {
+      "title": "Add the color attribute into the element section of the CSS.",
+      "content": "Add the color attribute into the element section of the CSS. Type color: in between the opening and closing brackets of the text element you just created. The \"color:\" attribute will tell the page what text color to use for that element. So far, the head of your HTML file should look something like the following: [4] X Research source <!DOCTYPE html> < html > < head > < style > body { color : } </ style > </ head >"
+    },
+    {
+      "title": "Type in a color for the text followed by a semi-colon (\";\").",
+      "content": "Type in a color for the text followed by a semi-colon (\";\"). There are three ways you can enter a color: the name, the hex value, or the RGB value. For example, for the color blue you could type blue; for the color name, rgb(0, 0, 255); for the RGB value, or #0000FF; for the hex value . Your HTML page should look something like the following: [5] X Research source <!DOCTYPE html> < html > < head > < style > body { color : red ; } </ style > </ head >"
+    },
+    {
+      "title": "Add other selectors to change the color of various elements.",
+      "content": "Add other selectors to change the color of various elements. You can use different selectors to change the color of different text elements. If you want the header to be a different color than the paragraph text or body text, you will need to create a different selector for each element within the \"<style>\" section. In the following example, we change the color of the body text to red, the header text to green, and the paragraph text to blue: [6] X Research source <!DOCTYPE html> < html > < head > < style > body { color : red ; } h1 { color : #00FF00 ; } p { color : rgb ( 0 , 0 , 255 ) } </ style > </ head > < body > < h1 > This header will be green. </ h1 > < p > This paragraph will be blue. </ p > This body text will be red. </ body > </ html >"
+    },
+    {
+      "title": "Define a CSS class that changes text color.",
+      "content": "Define a CSS class that changes text color. In CSS, you can define a class rather than using the existing elements. You can apply the class to any text element within your HTML document. To do so, type a period (\".\") followed by the name of the class you'd like to define. In the following example, we define a new class called \".redtext\", which changes the color of the text to red. Then we apply it to the header at the top of the HTML document. Checkout the following example: [7] X Research source <!DOCTYPE html> < html > < head > < style > . redtext { color : red ; } </ style > </ head > < body > < h1 class = \"redtext\" > This heading will be red </ h1 > < p > This paragraph will be normal. </ p > < p class = \"redtext\" > This paragraph will be red </ p > </ body > </ html >"
+    },
+    {
+      "title": "Open your HTML file.",
+      "content": "Open your HTML file. You can use inline HTML style attributes to change the style of a single element on your page. This can be useful for one or two quick changes to the style but is not recommended for widespread use. It's best to use CSS for comprehensive changes. Go ahead and open or create a new HTML document ."
+    },
+    {
+      "title": "Find the text element in the file that you want to change.",
+      "content": "Find the text element in the file that you want to change. You can use inline style attributes to change the text color of any of your text elements, including paragraph text (\"<p>\"\"), or your headline text (\"<h1>\"). <!DOCTYPE html> < html > < body > < h1 > This is the header you want to change </ h1 > </ body > </ html >"
+    },
+    {
+      "title": "Add the style attribute to the element.",
+      "content": "Add the style attribute to the element. To do so, Type style=\"\" inside the opening tag for the element you want to change. In the following example, we have added the style attribute to the header text: <!DOCTYPE html> < html > < body > < h1 style = \"\" > This is the header you want to change </ h1 > </ body > </ html >"
+    },
+    {
+      "title": "Type the color: attribute inside the quotation marks.",
+      "content": "Type the color: attribute inside the quotation marks. Type \"color\" with a colon (\":\") within the quotation marks after the style attribute. So far, your HTML file should look something like the following: [8] X Research source <!DOCTYPE html> < html > < body > < h1 style = \"color:\" > This is the header you want to change </ h1 > </ body > </ html >"
+    },
+    {
+      "title": "Type the color you want to change the text to followed by a semi-colon (\";\").",
+      "content": "Type the color you want to change the text to followed by a semi-colon (\";\"). There are three ways you can express a color. You can type the name of the color, you can enter the RGB value, or you can enter the hex value. For example, to change the color to yellow, you could type yellow; for the color name, rgb(255,255,0); for the RGB value, or #FFFF00; to use the hex value. In the following example, we change the headline color to yellow using the hex value: <!DOCTYPE html> < html > < body > < h1 style = \"color:#FFFF00;\" > This header is now yellow </ h1 > </ body > </ html >"
+    }
+  ]
+}

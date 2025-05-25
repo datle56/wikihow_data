@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Save-Linux-Files",
+  "title": "How to Save Linux Files",
+  "steps": [
+    {
+      "title": "Open your file in Vi or Vim.",
+      "content": "Open your file in Vi or Vim. If you want to edit an existing text file, just type vi filename at the prompt and press Enter . To create a new file, just type vi and press Enter . Vi and Vim both automatically open up in Command mode. If you're using Vim, replace vi with vim . The text editors Vi and Vim have most of the same functions, although vim is a bit more verbose and includes color highlighting."
+    },
+    {
+      "title": "Press i on the keyboard.",
+      "content": "Press i on the keyboard. This puts you into Insert mode, which is how you can type into the file."
+    },
+    {
+      "title": "Edit your file.",
+      "content": "Edit your file. Make any changes you need while in insert mode."
+    },
+    {
+      "title": "Press Esc to return to Command mode.",
+      "content": "Press Esc to return to Command mode. Now you'll be able to use Vi or Vim commands, including the command to save. You can use this key to switch back and forth between Command and Input modes."
+    },
+    {
+      "title": "Type :w filename and press ↵ Enter.",
+      "content": "Type :w filename and press ↵ Enter . You can skip entering the file name if you're editing an existing file and want to save your changes to that same file. For example, if you're editing a file that already has a file name and want to save the changes you've made, type :w and press Enter . But if you're editing a brand new file and want to call it wikiHow , you'd use :w wikiHow instead."
+    },
+    {
+      "title": "Type :q and press ↵ Enter to quit.",
+      "content": "Type :q and press ↵ Enter to quit. This exists Vi (or Vim) and returns you to the command line."
+    },
+    {
+      "title": "Type your command at the command prompt.",
+      "content": "Type your command at the command prompt. Don't press Enter to run it just yet—simply type the command first. For example, if you want to list the contents of the current directory and save the output to a new file, you could type ls -a now."
+    },
+    {
+      "title": "Type a space and then >.",
+      "content": "Type a space and then > . Using the prior example, your command would now look like this: ls -a > . If you want to append the output to an existing file, use >> instead of > ."
+    },
+    {
+      "title": "Type a space and enter the name of the file you want to create.",
+      "content": "Type a space and enter the name of the file you want to create. If you wanted to save the results to a file called filelist , the command would look like ls -a > filelist . If you're appending the output to an existing file, you'd use ls -a >> filename ."
+    },
+    {
+      "title": "Press ↵ Enter to run the command.",
+      "content": "Press ↵ Enter to run the command. This creates a file in the current directory called filelist that contains the output of the ls -a command."
+    },
+    {
+      "title": "Use the cd command to enter the directory of the file you want to copy.",
+      "content": "Use the cd command to enter the directory of the file you want to copy. For example, if you want to copy a file from /home/wikiHow/personal to a new file, you'd type cd /home/wikiHow/personal and press Enter ."
+    },
+    {
+      "title": "Type cp filename newfilename and press ↵ Enter.",
+      "content": "Type cp filename newfilename and press ↵ Enter . This saves Just make sure a file with the new name doesn't already exist, as it will be automatically overwritten, if so. For example, if the file you want to copy is called Staff.txt and you want to save it as a new file called Staff-old.txt , you'd type cp Staff.txt Staff-old.txt and press Enter . If you want to keep the file name but save the file to a new folder (for example, /home/wikHow/backups ), you'd use cp Staff.txt /home/wikiHow/backups . If you want to copy the file to another folder and give it a new name, you'd use cp Staff.txt /home/wikiHow/backups/Staff-old.txt ."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Convert-a-Computer-ATX-Power-Supply-to-a-Lab-Power-Supply",
+  "title": "How to Convert a Computer Power Supply to a Lab Power Supply",
+  "steps": [
+    {
+      "title": "Acquire an ATX computer power supply.",
+      "content": "Acquire an ATX computer power supply. You can |purchase an ATX power supply from your local computer store or an online computer parts distributor. Alternatively, you can dismantle an old computer and remove the power supply from the case. Some older ATX models include an additional -5 V line. Some online websites you can purchase an ATX power supply: Amazon Newegg.com www.atxpowersupplies.com"
+    },
+    {
+      "title": "Unplug the power cable from the power supply and turn it off.",
+      "content": "Unplug the power cable from the power supply and turn it off. Not all power supply units have a power switch, but it is generally on the back. Also, be sure you are not grounded so that the remaining voltage doesn't flow through you to the ground. To avoid receiving an electric shock from the power supply unit, wear shoes with rubber soles and avoid touching anything metal while handling the electronic components."
+    },
+    {
+      "title": "Remove the power supply from the computer.",
+      "content": "Remove the power supply from the computer. First, remove the screws that attach the power supply to the computer case. Detach the wires from the motherboard and other computer components. Then, remove the power supply."
+    },
+    {
+      "title": "Discharge the power supply.",
+      "content": "Discharge the power supply. To do so, simply let the power supply sit unconnected and unplugged for a few days. Warning: Some people suggest attaching a 10-ohm resistor between a black and red wire (from the power cables on the output side); however, this is only guaranteed to drain the low voltage capacitors on the output - which really aren't dangerous. It could also leave the high-voltage capacitors charged, resulting in a potentially dangerous—or even lethal—situation. Warning: If you suspect the power supply is damaged, do not use it! If it is damaged, the protection circuitry may not work. Normally, a protection circuit will slowly discharge the high-voltage capacitors, but if the supply were connected to 240V while set at 120V (for example), the protection circuits would probably be destroyed. If so, the power supply might not shut down when it is overloaded or when it begins to fail."
+    },
+    {
+      "title": "Gather the parts you need:",
+      "content": "Gather the parts you need: For this build, you're going to need the following items: 6 Binding posts (terminals). A power resistor (10-ohms). 2 LED (recommended one green and one red). 2 dropping resistors (330-ohms). An SPST switch. A drill A Soldering iron Wire cutters Heat shrink tubing"
+    },
+    {
+      "title": "Open up the power supply unit.",
+      "content": "Open up the power supply unit. Remove the screws connecting the top and the bottom of the PSU case. Then, carefully remove the case. Warning: Be very careful around the black capacitor caps and all the wires leading to them. They may discharge a strong electric current. Warning: This will certainly void any warranty you may have on the power supply unit. Warning: Do not remove the circuit board unless necessary. The traces and solder on the underside could still discharge high voltage if you didn't let the PSU sit long enough. If you must remove it, use a multimeter to check for voltage on the pins of the largest capacitors. When you replace the board, make sure that the plastic sheet goes back under the board. Only power supply technicians should attempt this. Warning: Anything above 30 milliamps/volts can kill you or, at the very least, give you a painful shock. Ensure you remove the power cord before the conversion and discharge the capacitors by letting it rest for a few days. If in doubt, use a multimeter to check the voltage."
+    },
+    {
+      "title": "Cut the connectors off of the wires.",
+      "content": "Cut the connectors off of the wires. The connectors are the plastic parts connecting to the computer's motherboard and other components. Leave a few inches of wire on the connectors so you can use them later on for other projects."
+    },
+    {
+      "title": "Bundle wires of the same colors together.",
+      "content": "Bundle wires of the same colors together. Some power supply units may have additional colors, such as brown. The color code for the wires is as follows: [1] X Research source Red = +5V. Yellow = +12V. Blue = -12V. Orange = +3.3V. White = -5V (older power supply units only). Purple = +5V Standby. Black = Ground (0V), Gray = power is on (output). Green = PS_ON# (turn DC on by shorting to ground)."
+    },
+    {
+      "title": "Mark where the parts will go on the power supply unit casing.",
+      "content": "Mark where the parts will go on the power supply unit casing. Use a permanent marker to mark where all the parts are going to go on the side of the power supply unit that doesn't have any vents, fans, or other components. Mark where you want to put each binding post and what voltage it corresponds to. Also, mark where you want to place the LEDs, the switch, and any additional components you want to use. To get more room, mount the fan outside the PSU case or remove it. You can also attach more fans if you are using a high-wattage power supply. If you don't have enough room inside the power supply, you can mount all the components to a separate board outside the power supply unit."
+    },
+    {
+      "title": "Drill holes in a free area of the power supply case.",
+      "content": "Drill holes in a free area of the power supply case. Use a Dremel to drill the starting holes, followed by a hand reamer to enlarge them until they are large enough to fit your binding posts. Also, drill holes for the \"Power ON\" LED, \"Standby\" LED, and switch. Make sure you don't put any holes where the binding posts will be touching anything inside the power supply. Be careful not to leave any metal fillings or debris inside the circuitry of the power supply unit."
+    },
+    {
+      "title": "Drill holes for the LED lights.",
+      "content": "Drill holes for the LED lights. Use a drill to drill holes big enough for the LED lights to fit through."
+    },
+    {
+      "title": "Cut holes for the switch and any additional components.",
+      "content": "Cut holes for the switch and any additional components. If you don't have the tools to cut a straight line through metal, you can use a drill to drill holes all along the shape of the cut you want to make. Then, use wire cutters to cut the space between each hole. Then, you will need to file the edges of the hole down to make them smooth."
+    },
+    {
+      "title": "Attach the binding posts to the holes.",
+      "content": "Attach the binding posts to the holes. Screw the binding posts into their corresponding holes and attach the nut on the back. Make sure they do not touch anything inside the power supply."
+    },
+    {
+      "title": "Connect the 10-ohm load resistor.",
+      "content": "Connect the 10-ohm load resistor. Connect one of the red wires to the power resistor and one black wire to the other end of the 10-ohm power resistor. This acts as a load, which the power supply unit needs to function properly. The power resistor will give off a lot of heat and should be mounted on the metal wall for proper cooling (or a heat sink mount). Make sure it doesn't short-circuit anything. You can also consider using a lighted 12v switch, which will act as the load necessary to turn on the power supply. If you aren't afraid of some soldering, you can replace the 10w power resistor with the cooling fan that was originally inside the PSU. Be careful with the polarity, though - match the red and black wires to each other."
+    },
+    {
+      "title": "Connect the switch.",
+      "content": "Connect the switch. Connect one green (PS_ON) wire to one end of the SPST switch. Connect the other end of the switch to a black ground wire. Some power supplies need the grey and green to be connected to run. If you don't want to use an additional switch, just connect the green and black wires together. The PSU will be controlled by the rear switch, if there is one. You also don't need an LED; just ignore the gray wire. Cut it short and insulate it from the rest."
+    },
+    {
+      "title": "Connect the Power-On LED.",
+      "content": "Connect the Power-On LED. Connect the grey (Power On) wire to the anode (long end) to the red LED. This will be your power-on light."
+    },
+    {
+      "title": "Connect the Power-On LED to a 330-ohm resistor.",
+      "content": "Connect the Power-On LED to a 330-ohm resistor. Connect the cathode (short end) of the LED to one end of the 330 ohm dropping resistors. Then, connect the other end of the dropping resistor to a black ground wire. Once the LED is connected, you can use hot glue or super glue to mount the LED in its place. You can solder the wires directly to resistors and the anodes and cathodes of the LEDs. Cover the wires with heat shrink tubes. You can cover the resistors with heat shrink tubes, too. Resistors are non-polarized. It does not matter which side you connect a resistor to."
+    },
+    {
+      "title": "Connect the Standby LED.",
+      "content": "Connect the Standby LED. Connect the purple (standby) wire to the anode (long end) to the green LED. This will be your standby light. The +5VSB line is +5V standby (so the motherboard's power buttons, Wake on LAN, etc. work). This typically provides 500-1000 mA of current, even when the main DC outputs are \"off\". It might be useful to drive an LED from this as an indication that the mains are on."
+    },
+    {
+      "title": "Connect the Standby LED to the 330-ohm resistor.",
+      "content": "Connect the Standby LED to the 330-ohm resistor. Connect the cathode (short end) of the LED to the anode of one of the 330-ohm dropping resistors. Connect the other end of the resistor to a black ground wire. Cover the wires with heat shrink tubes. You can cover the resistors with heat shrink tubes, too."
+    },
+    {
+      "title": "Connect the white to the -5V binding post (if present).",
+      "content": "Connect the white to the -5V binding post (if present). -5V lines are only used on older ATX power supplies. Connect the white wire to the -5V binding post, if you have one. Make sure the wires are covered with heat shrink tubes (recommended) or electrical tape. Look for ATX power supplies with a 20-pin connector, a 20+4-pin connector, or an AT power supply if you need -5V."
+    },
+    {
+      "title": "Connect the remaining red wires to the +5V binding post.",
+      "content": "Connect the remaining red wires to the +5V binding post. Strip all the red wires so that bare wire is exposed at the ends of the red wires. Then, solder them all together and solder them to the +5V binding post. Make sure the wires are covered with heat shrink tubing. If you only have three red wires, another wire (sometimes pink) must be connected to them."
+    },
+    {
+      "title": "Connect the yellow wires to the +12V binding post.",
+      "content": "Connect the yellow wires to the +12V binding post. Strip all the yellow wires so that bare wire is exposed at the ends of the yellow wires. Then, solder them all together and solder them to the +12V binding post. Make sure the wires are covered with heat shrink tubing."
+    },
+    {
+      "title": "Connect the orange wires to the 3.3V binding post.",
+      "content": "Connect the orange wires to the 3.3V binding post. Strip all the orange wires so that bare wire is exposed at the ends of the orange wires. Then, solder them all together and solder them to the +3.3V binding post. Make sure the wires are covered with heat shrink tubing. Note that some power supplies may have a gray or brown wire representing \"power good\"/\"power ok\". Most PSUs have a smaller orange wire used for sensing— 3.3V—usually paired at the connector to another orange wire. Make sure this wire is connected to the other orange wires. Otherwise, your lab power supply won't stay on.) This wire should be connected to either an orange wire (+3.3V) or a red wire (+5V) for the power supply to function. When in doubt, try the lower voltage first (+3.3V). Some newer power supplies will have \"voltage sense\" wires that need to be connected to the actual voltage wires for proper operation. If you have two or fewer orange wires, you should also have a brown wire that must be connected to the orange."
+    },
+    {
+      "title": "Connect the remaining black wires to the ground binding post.",
+      "content": "Connect the remaining black wires to the ground binding post. Strip all the black wires so that bare wire is exposed at the ends of the black wires. Then, solder them all together and solder them to the +3.3V bind post. Make sure the wires are covered with heat shrink tubing. Check for loose connections by gently tugging on them. Inspect for bare wires and cover them to prevent a short circuit. If you don't feel like soldering nine wires together to a binding post (as is the case with the ground wires), you can snip them at the PCB. 1-3 wires should be fine. This includes cutting any wires that you don't ever plan on using."
+    },
+    {
+      "title": "Test the power supply.",
+      "content": "Test the power supply. Plug the power cable into the back of the power supply and into an AC socket. Flip the main cutoff switch on the PSU if there is one. Check to see if the standby LED light comes on. Then flip the switch and make sure the Power On LED comes on. Use a digital voltmeter to test each binding post. Make sure you do not short any wires out. It should look good and work like a charm!"
+    },
+    {
+      "title": "Reattach the casing.",
+      "content": "Reattach the casing. Once everything is working, you can go ahead and reattach the casing with all the binding posts, switch, and LEDs to the rest of the power supply unit. The voltages that can be output by this unit are 24v (+12, -12), 17v (+5, -12), 12v (+12, GND), 10v (+5, -5), 7v (+12, +5), 5v (+5, GND) which should be sufficient for most electrical testing."
+    }
+  ]
+}

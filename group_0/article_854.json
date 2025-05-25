@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Add-or-Change-the-Default-Gateway-in-Linux",
+  "title": "How to Add or Change the Default Gateway in Linux",
+  "steps": [
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. You can open the Terminal from the side bar, or by pressing Ctrl + Alt + T . [1] X Research source"
+    },
+    {
+      "title": "View your current default gateway.",
+      "content": "View your current default gateway. You can check what your default gateway is set to by typing route and pressing ↵ Enter . The address next to \"default\" shows your default gateway, and the interface it is assigned to is displayed on the right side of the table."
+    },
+    {
+      "title": "Delete your current default gateway.",
+      "content": "Delete your current default gateway. If you have more than one default gateway set, you'll run into connection conflicts. Delete your existing default gateway if you intend to change it. Type sudo route delete default gw IP Address Adapter . For example, to delete the default gateway 10.0.2.2 on the eth0 adapter, type sudo route delete default gw 10.0.2.2 eth0 ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . sudo route add default gw IP Address Adapter . For example, to change the default gateway of the eth0 adapter to 192.168.1.254, you would type sudo route add default gw 192.168.1.254 eth0 . [2] X Research source You'll be prompted for your user password in order to complete the command."
+    },
+    {
+      "title": "Open the configuration file in an editor.",
+      "content": "Open the configuration file in an editor. Type sudo nano /etc/network/interfaces to open the file in the nano editor. Editing your configuration file will keep your changes every time the system restarts. [3] X Research source"
+    },
+    {
+      "title": "Navigate to the correct section.",
+      "content": "Navigate to the correct section. Find the section for the adapter you want to change the default gateway for. For a wired connection, this is usually eth0 ."
+    },
+    {
+      "title": "Add .",
+      "content": "Add . gateway IP Address to the section. For example, type gateway 192.168.1.254 to make the default gateway 192.168.1.254. [4] X Research source"
+    },
+    {
+      "title": "Save your changes and exit.",
+      "content": "Save your changes and exit. Press Ctrl + X and then Y to save your changes and exit."
+    },
+    {
+      "title": "Restart your network.",
+      "content": "Restart your network. Restart your network by typing sudo /etc/init.d/networking restart . [5] X Research source"
+    }
+  ]
+}

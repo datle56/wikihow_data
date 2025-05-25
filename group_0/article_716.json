@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Add-Two-Numbers-in-Visual-Basic.NET",
+  "title": "How to Add Two Numbers in Visual Basic.NET",
+  "steps": [
+    {
+      "title": "Open your preferred Visual Basic editor.",
+      "content": "Open your preferred Visual Basic editor. If you want to test your program later, make sure that you have a program which supports debugging (e.g., Visual Basic 2017). If you don't have a Visual Basic editor, you can use Notepad ++ or download the official Visual Basic 2017 program ."
+    },
+    {
+      "title": "Add the initial line.",
+      "content": "Add the initial line. Type Private Class Form1 into the Visual Basic editor, then press ↵ Enter . This sets up the rest of your document. The \"Private Class\" tag in Visual Basic is similar to the \"<html>\" tag in HTML."
+    },
+    {
+      "title": "Set up your document to recognize variables.",
+      "content": "Set up your document to recognize variables. Since you'll be adding two integers to each other to find the sum, you'll need to prompt Visual Basic to recognize numbers as variables. To do so: Type in Private Sub Button1_Click(sender As Object, e As EventArgs) and press ↵ Enter . Type in Handle(Button1_Click) and press ↵ Enter . Type in Dim sum As Integer and press ↵ Enter . Type in Dim a As Integer and press ↵ Enter . Type in Dim b As Integer and press ↵ Enter ."
+    },
+    {
+      "title": "Create an exception for the text boxes.",
+      "content": "Create an exception for the text boxes. This will prompt your program to result in an error if you don't fill in a box. To do so: Type in Label4.Visible = True and press ↵ Enter . Type in If TextBox1.Text = \"\" Then and press ↵ Enter . Type in Label4.Visible = False and press ↵ Enter . Type in MessageBox.Show(\"Sorry, box cannot be empty.\") and press ↵ Enter . Type in TextBox1.Focus() and press ↵ Enter . Type in End If and press ↵ Enter ."
+    },
+    {
+      "title": "Create text boxes for your numbers.",
+      "content": "Create text boxes for your numbers. This will be the interface that you use to enter your numbers. To do so: Type in a = Val(TextBox1.Text) and press ↵ Enter . Type in b = Val(TextBox2.Text) and press ↵ Enter . Type in sum = (a + b) and press ↵ Enter . Type in Label4.Text = \"The sum of\" & a & \" and \" & b & \" is \" & sum & \".\" and press ↵ Enter ."
+    },
+    {
+      "title": "End the button-click section.",
+      "content": "End the button-click section. Type in End Sub and press ↵ Enter ."
+    },
+    {
+      "title": "Create a new section.",
+      "content": "Create a new section. Type in Private Sub Form1_Load(sender As Object, e as EventArgs) Handles MyBase.Load and press ↵ Enter ."
+    },
+    {
+      "title": "Add a false label tag.",
+      "content": "Add a false label tag. Type in Label4.Visible = False and press ↵ Enter , then type in End Sub and press ↵ Enter ."
+    },
+    {
+      "title": "Create the final section.",
+      "content": "Create the final section. Type in Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click and press ↵ Enter ."
+    },
+    {
+      "title": "Add references to the text boxes.",
+      "content": "Add references to the text boxes. This will allow you to add numbers in your completed program. To do so: Type in TextBox1.Text = \"\" and press ↵ Enter . Type in TextBox2.Text = \"\" and press ↵ Enter . Type in Label4.Text = \"\" and press ↵ Enter . Type in TextBox1.Focus() and press ↵ Enter ."
+    },
+    {
+      "title": "Create the \"addition\" command.",
+      "content": "Create the \"addition\" command. Type in Sum = Val(TextBox1.Text) + Val(TextBox2.Text) and press ↵ Enter ."
+    },
+    {
+      "title": "Add the \"sum\" command.",
+      "content": "Add the \"sum\" command. Type in TextBox3.Text = Sum and press ↵ Enter ."
+    },
+    {
+      "title": "Close the code.",
+      "content": "Close the code. Type in End Sub and press ↵ Enter to close the final section, then type in End Class to close the whole program."
+    },
+    {
+      "title": "Debug your program.",
+      "content": "Debug your program. Click the Debug tab, click Start Debugging , and wait for the debugging process to complete. Once your program has been completely debugged, a window with three text boxes and an addition button should open; you can then add a number to the top two boxes and click the button to add the numbers together. If you're using a basic text editor to create your Visual Basic code, you won't have a Debug tab. Consider opening your project in Visual Studio 2017 to debug and run the program. If you're using Notepad or TextEdit to create your code, make sure to save the final file in \".vb\" format rather than \".txt\" or \".text\"."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Simple-CSS-Stylesheet-Using-Notepad",
+  "title": "How to Create a Simple CSS Stylesheet Using Notepad",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Open Start , type in notepad , and click the blue Notepad app at the top of the Start window."
+    },
+    {
+      "title": "Indicate the document type.",
+      "content": "Indicate the document type. Type <!DOCTYPE html> into Notepad, then press ↵ Enter to start a new line."
+    },
+    {
+      "title": "Add the HTML tag.",
+      "content": "Add the HTML tag. Type in <html> and press ↵ Enter ."
+    },
+    {
+      "title": "Enter the BODY tag.",
+      "content": "Enter the BODY tag. Type in <body> and press ↵ Enter . You can now begin entering your webpage's information."
+    },
+    {
+      "title": "Add a header.",
+      "content": "Add a header. Type in <h1>TEXT</h1> , making sure to replace \"TEXT\" with your preferred page heading, and press ↵ Enter . For example, to create a page header that says \"Welcome!\", you would type <h1>Welcome!</h1> into Notepad."
+    },
+    {
+      "title": "Add text below the header.",
+      "content": "Add text below the header. Type in <p1>TEXT</p1> , making sure to replace \"TEXT\" with your preferred message, and press ↵ Enter . For example, to add text that says \"I am an iguana\", you would enter <p1>I am an iguana</p1> into Notepad."
+    },
+    {
+      "title": "Add more headers and paragraphs.",
+      "content": "Add more headers and paragraphs. Each subsequent header and paragraph must have an ascending number applied to it; for example, your second header will have <h2></h2> tags around it, and the second paragraph will have <p2></p2> tags. Make sure that you're continuing to press ↵ Enter after each line of code."
+    },
+    {
+      "title": "Close the BODY and HTML tags.",
+      "content": "Close the BODY and HTML tags. Once you've entered your last line of code, type in </body> on its own line and press ↵ Enter , then type in </html> . Your document is now ready to be styled with CSS."
+    },
+    {
+      "title": "Understand how CSS works.",
+      "content": "Understand how CSS works. You use CSS to change the appearance of an HTML element (e.g., a paragraph). CSS is typically written in the following line-by-line format: [1] X Research source element tag { (for example, p { ) modifier: property; (for example, font-size: 20px; ) modifier: property; (for example, color: black; ) }"
+    },
+    {
+      "title": "Place a space between the <html> and <body> tags.",
+      "content": "Place a space between the <html> and <body> tags. These should be near the top of the page."
+    },
+    {
+      "title": "Enter a HEAD tag.",
+      "content": "Enter a HEAD tag. Type in <head> and press ↵ Enter ."
+    },
+    {
+      "title": "Add a STYLE tag.",
+      "content": "Add a STYLE tag. Type in <style> and press ↵ Enter ."
+    },
+    {
+      "title": "Change your webpage's background color.",
+      "content": "Change your webpage's background color. To do so: Type in body { and press ↵ Enter . Type in background-color: lightblue; and press ↵ Enter . You can use any supported color here, as well as \"light\" or \"dark\" modifiers. Type in } and press ↵ Enter ."
+    },
+    {
+      "title": "Style your first header.",
+      "content": "Style your first header. Type in h1 { and press ↵ Enter , add a modifier and press ↵ Enter , and type in } and press ↵ Enter . You can add multiple modifiers to one element as long as each modifier is on its own line. Common modifiers include the following: Text size - Type in font-size: 30px; to set your text as 30-point font. Substitute any number that you want to use. Text color - Type in color: black; to make black text. Substitute any color that you want to use. Text alignment - Type in text-align: center; to center the text. You can also type left or right to align the text appropriately. Font used - Type in font-family: times new roman; to set your font as Times New Roman. You can also use fonts like verdana or georgia ."
+    },
+    {
+      "title": "Style your first paragraph.",
+      "content": "Style your first paragraph. Type in p1 { and press ↵ Enter , add a modifier and press ↵ Enter , and type in } and press ↵ Enter . The modifiers that you can use here are identical to the ones used for the header."
+    },
+    {
+      "title": "Style the rest of your document.",
+      "content": "Style the rest of your document. You can style any element by referencing its tag text and placing an open curly bracket ({), adding modifiers, and then closing the bracket (})."
+    },
+    {
+      "title": "Close the STYLE and HEAD tags.",
+      "content": "Close the STYLE and HEAD tags. On a new line below your last styling text, type in </style> and press ↵ Enter , then type in </head> and press ↵ Enter . Your CSS sheet is complete, meaning that you can now review and save it."
+    },
+    {
+      "title": "Review your CSS stylesheet.",
+      "content": "Review your CSS stylesheet. Your CSS document will vary slightly, but it should look something like this: <!DOCTYPE html> <html> <head> <style> body { background-color: lightblue; } h1 { font-size: 45px; } p1 { color: black; } </style> </head> <body> <h1>Hi!</h1> <p1>I am an iguana</p1> </body> </html>"
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . It's in the top-left corner of the Notepad window. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Save As….",
+      "content": "Click Save As… . You'll see this near the bottom of the drop-down menu. Clicking it prompts a window to open."
+    },
+    {
+      "title": "Select a save location.",
+      "content": "Select a save location. Click a folder (e.g., Desktop ) on the left side of the window."
+    },
+    {
+      "title": "Click the \"Save as type\" drop-down box.",
+      "content": "Click the \"Save as type\" drop-down box. A drop-down menu will appear."
+    },
+    {
+      "title": "Click All Files.",
+      "content": "Click All Files . It's in the drop-down menu."
+    },
+    {
+      "title": "Name your file with a \".html\" extension.",
+      "content": "Name your file with a \".html\" extension. In the \"File name\" text field, type in your preferred document name (e.g., \"index\") followed by .html . For example, if you name your file \"index\", you'd type index.html into the field. If you create an external CSS file to style your web page, you will need to link it within the <head></head> section using the <link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\"> tag of your HTML file. Additionally, make sure to save your CSS file with the .css extension."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's on the bottom-right side of the \"Save As\" window. This will save your HTML file with the CSS snippet included in an executable format, allowing you to open it in your preferred browser (e.g., Microsoft Edge, Google Chrome, Safari) or an HTML editor, instead of Notepad."
+    },
+    {
+      "title": "To test the file in a web browser, right-click on the index.html, select \"Open with,\" and choose your web browser.",
+      "content": "To test the file in a web browser, right-click on the index.html , select \"Open with,\" and choose your web browser."
+    }
+  ]
+}

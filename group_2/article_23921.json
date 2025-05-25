@@ -1,0 +1,206 @@
+{
+  "url": "https://www.wikihow.com/Install-Arch-Linux",
+  "title": "How to Install Arch Linux",
+  "steps": [
+    {
+      "title": "Back up your computer",
+      "content": "Back up your computer to an external hard drive. You'll be erasing your current operating system, so make sure that you have a backup of anything that you want to keep before continuing."
+    },
+    {
+      "title": "Download the Arch installation image.",
+      "content": "Download the Arch installation image. Arch Linux can be downloaded in ISO format, from which point you can burn it onto a blank DVD in order to run the image on your computer. To download this image: Make sure that you have either BitTorrent or uTorrent installed. Go to https://www.archlinux.org/download/ in your browser. Click the Torrent link below the \"BitTorrent\" heading. Open the downloaded torrent in BitTorrent or uTorrent. Wait for the Arch Linux torrent file to finish downloading."
+    },
+    {
+      "title": "Burn the image onto a blank DVD",
+      "content": "Burn the image onto a blank DVD . Once your Arch Linux ISO file finishes downloading via your torrent client, you'll burn it onto a blank DVD using your computer's DVD drive. Once the burning is complete, leave the DVD in your computer. If your computer does not have a DVD drive, you'll need to buy an external DVD drive and attach it to your computer via USB cable."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Click Start , click Power , and click Restart in the menu. On a Mac, you'll instead click the Apple menu , click System Preferences... , click Startup , click External Drive , and then restart by clicking Restart... in the Apple menu and clicking Restart when prompted."
+    },
+    {
+      "title": "Press the key that allows you to change the boot order.",
+      "content": "Press the key that allows you to change the boot order. On most newer computers, this is F12 , though the exact key should be displayed on the screen during boot up. If there is no key to change boot order, press the BIOS Setup key (usually F1 , F2 , F10 , or Del ). Skip this step on a Mac."
+    },
+    {
+      "title": "Select your installation drive as the primary boot drive.",
+      "content": "Select your installation drive as the primary boot drive. Set the drive (e.g., \"DVD Drive\" or \"Disk Drive\") that contains your Arch Linux DVD as the primary drive by selecting it and pressing the + key until it's at the top of the menu. Skip this step on a Mac. On some PCs, you may first have to open an \"Advanced\" tab or select a \"Boot Options\" section."
+    },
+    {
+      "title": "Save and exit the \"Boot Options\" screen.",
+      "content": "Save and exit the \"Boot Options\" screen. You should see a key at the bottom or in the bottom-right corner of the screen that you can press to save and exit. After doing so, your computer will resume restarting. Skip this step on a Mac."
+    },
+    {
+      "title": "Select Boot Arch Linux and press ↵ Enter.",
+      "content": "Select Boot Arch Linux and press ↵ Enter . This will launch the Arch Linux installer, at which point you can proceed with partitioning your hard drive."
+    },
+    {
+      "title": "Set up a Wi-Fi connection.",
+      "content": "Set up a Wi-Fi connection. If your computer is plugged into your router via ethernet, you can skip this step. Using ethernet is preferable to using Wi-Fi. [1] X Research source Arch Linux has a easy-to-use utility for wireless networks called iwctl, as recommended when starting up . More info can be found here: https://wiki.archlinux.org/title/Iwd Note: This isn't automatically installed onto your system, in order to do so you must download the iwd package. After that, enter systemctl enable --now iwd You also will have to download a DHCP Client. Download dhcpcd and enable the dhcpd daemon via systemctl enable --now dhcpcd"
+    },
+    {
+      "title": "Using iwctl",
+      "content": "Using iwctl Type iwctl and press ↵ Enter Type station list and find what your network interface is. It is usually wlan0 Next, you should try finding what network name you want to connect to. Type station interface connect \"ssid\" (network name) If your network is password protected, you should enter your password to connect to your wifi. More info: https://wiki.archlinux.org/title/Network_configuration/Wireless"
+    },
+    {
+      "title": "Check your existing drives.",
+      "content": "Check your existing drives. You'll have at least two drives available: your computer's hard drive, and the Arch Linux installation media. To check your current drives: Type in fdisk -l and press ↵ Enter . Find the name of the largest hard drive on the results screen. The name will be something like \"/dev/sda\" and can be found to the right of the \"Disk\" heading."
+    },
+    {
+      "title": "Bring up the partition page.",
+      "content": "Bring up the partition page. Type in cfdisk [drive name] , making sure to replace [drive name] with your hard drive's name, and press ↵ Enter , then select DOS and press ↵ Enter again. For example: if the drive is named \"/dev/sda\", you would type cfdisk /dev/sda into the terminal."
+    },
+    {
+      "title": "Delete the hard drive's contents.",
+      "content": "Delete the hard drive's contents. Select a partition in the middle of the screen, select Delete at the bottom of the screen, press ↵ Enter , and repeat for any other partitions in the middle of the screen. You should ultimately be left with a line entitled Pri/Log Free Space ."
+    },
+    {
+      "title": "Create a \"swap\" partition.",
+      "content": "Create a \"swap\" partition. This partition will function as your system's backup memory if and when you are consuming all of your RAM. To do so: Select New and press ↵ Enter . Select Primary and press ↵ Enter . Type in a number of megabytes (e.g., 1024 for one gigabyte) and press ↵ Enter . As a rule of thumb, you should make the swap partition 2 or 3 times your RAM (e.g., if you have 4 gigabytes of RAM, you should make the swap partition 8192 or 12288 megabytes). Select End and press ↵ Enter ."
+    },
+    {
+      "title": "Create your main hard drive partition.",
+      "content": "Create your main hard drive partition. This is the partition on which your Arch Linux operating system, files, and other information will be stored. To do this: Make sure that the Pri/Log Free Space partition is selected. Select New and press ↵ Enter . Select Primary and press ↵ Enter . Make sure that the number next to the \"Size (in MB)\" heading is correct. Press ↵ Enter . Select the primary partition again. Select Bootable and press ↵ Enter ."
+    },
+    {
+      "title": "Label the \"swap\" partition.",
+      "content": "Label the \"swap\" partition. This will set it as your system's RAM: Select the \"swap\" partition. Select Type and press ↵ Enter . Type in 82 and press ↵ Enter . With the \"swap\" partition still selected, select Write and press ↵ Enter . Type in yes and press ↵ Enter ."
+    },
+    {
+      "title": "Note the names of your partitions.",
+      "content": "Note the names of your partitions. In the \"Name\" column on the far-left side of the screen, you should see a name (e.g., \"sda1\") next to your \"swap\" partition, and a similar name (e.g., \"sda2\") next to the primary partition. You'll need both of these names in order to format your partitions."
+    },
+    {
+      "title": "Exit the \"cfdisk\" utility.",
+      "content": "Exit the \"cfdisk\" utility. Select Quit and press ↵ Enter to do so."
+    },
+    {
+      "title": "Format your primary partition.",
+      "content": "Format your primary partition. This will make it usable with your operating system. To do this, type in mkfs.ext4 /dev/[primary partition name] and press ↵ Enter . For a partition named \"sda2\", you'd enter mkfs.ext4 /dev/sda2 here."
+    },
+    {
+      "title": "Mount the formatted partition.",
+      "content": "Mount the formatted partition. Type in mount /dev/[partition name] /mnt and press ↵ Enter . This will make the partition into a usable drive."
+    },
+    {
+      "title": "Add a swap file to the \"swap\" partition.",
+      "content": "Add a swap file to the \"swap\" partition. Type in mkswap /dev/[partition name] and press ↵ Enter , then type in swapon /dev/sda1 and press ↵ Enter again. After completing this step, you can proceed with installing Arch Linux. For a \"swap\" partition named \"sda1\", for example, you'd enter mkswap /dev/sda1 and then swapon /dev/sda1 here."
+    },
+    {
+      "title": "UEFI Systems:",
+      "content": "UEFI Systems: Nowadays we've completely moved from BIOS to UEFI, this makes the installation slightly more confusing as now we have more steps. For example: we may have a EFI Partition already created (more on that later) or we may have windows installed. For this reason, if you aren't sure what you should do, search it up: for example \"How do i duel boot in windows\"? Its recommended to follow the arch wiki as its the most accurate source for anything arch-related Select gpt if you see the option Partitioning in some aspects are easier in UEFI: People used to bios may notice that when creating a partition, you do not need to choose a primary or extended device."
+    },
+    {
+      "title": "Create an EFI Partition if not yet created with more than 512 MB",
+      "content": "Create an EFI Partition if not yet created with more than 512 MB Make sure to set the Partition to the EFI Type, Find Type and find \"EFI System\", select that. If you see that there already is an EFI Partition, this usually means that you have some Operating System installed. If this is the case be very careful and don't blindly enter commands while formatting."
+    },
+    {
+      "title": "(Optional but strongly recommended) Create a swap file.",
+      "content": "( Optional but strongly recommended ) Create a swap file. Select the type as \"Linux swap\". A basic rule of thumb is the double amount of your ram. For example: if you have 8 GB of ram create a 16 GB Swap file. If you want to save space, you can set it to the amount of ram you have."
+    },
+    {
+      "title": "Create a Root Partition.",
+      "content": "Create a Root Partition. This will be the rest of our data. Select the rest of the space left. Make sure it is at least 2 GB, however its recommended to be as much as you can."
+    },
+    {
+      "title": "Formatting our Partitions.",
+      "content": "Formatting our Partitions. Linux makes this very simple. Most every filesystem command starts with mkfs ."
+    },
+    {
+      "title": "Format our EFI System.",
+      "content": "Format our EFI System. We can now format our EFI system. Here we choose FAT32, but you can chose what you want. mkfs.fat -F32 /dev/sdX{EFI PARTITION} if you already have something on your EFI Partition DO NOT ENTER THE COMMAND. This will completely erase your current operating system's bootloader and can complicate the install process. Make sure you know that you are formatting the right device. If not, enter fdisk --list"
+    },
+    {
+      "title": "Make the Swap file.",
+      "content": "Make the Swap file. If you created one, simply create a swap file by entering mkswap /dev/sdX{SWAP PARTITION}"
+    },
+    {
+      "title": "After making a swap file, enter swapon /dev/sdX{SWAP PARTITION}.",
+      "content": "After making a swap file, enter swapon /dev/sdX{SWAP PARTITION}."
+    },
+    {
+      "title": "Format our root system.",
+      "content": "Format our root system. There are many file systems, like btrfs, zfs, and many more, however those are out of the scope of this guide. Here we will be using the standard filesystem ext4. enter mkfs.ext4 /dev/sdX{ROOT}"
+    },
+    {
+      "title": "We've finally formatted our partitions, all that is left is that we mount our root partition to mount via:",
+      "content": "We've finally formatted our partitions, all that is left is that we mount our root partition to mount via: mount /dev/sdX{Root]"
+    },
+    {
+      "title": "Install the base system.",
+      "content": "Install the base system. Type in pacstrap /mnt base base-devel linux linux-firmware and press ↵ Enter . The system will begin installing onto your computer. Note: this does not include a text editor nor other tools you may expect, if you didn't install one, chroot (after generating the fstab file) into /mnt and do pacman -S nano [1] This process will usually take around 15-30 minutes depending on your Internet connection speed."
+    },
+    {
+      "title": "Generate a fstab file.",
+      "content": "Generate a fstab file. This file will help linux remember what to mount and where. In order to generate this, enter genfstab -U / mnt >> /mnt/etc/fstab"
+    },
+    {
+      "title": "Open \"chroot\" access.",
+      "content": "Open \"chroot\" access. Type in arch-chroot /mnt and press ↵ Enter . This will allow you to change aspects of the root directory, including the password."
+    },
+    {
+      "title": "(Optional)",
+      "content": "(Optional) Set a password. This is the password that you'll use to log into the root account . To do so: Type in passwd and press ↵ Enter . Type in a password and press ↵ Enter . Retype your password and press ↵ Enter ."
+    },
+    {
+      "title": "Set a language.",
+      "content": "Set a language. To do so: Type in nano /etc/locale.gen and press ↵ Enter . Scroll down to select your preferred language. Select the letter directly in front of the \"#\" symbol behind your language and press Del . Delete the \"#\" symbol from any other versions of your language (e.g., all versions of \"en_US\"). Press Ctrl + O (or ⌘ Command + O on a Mac), then press ↵ Enter . Exit by pressing Ctrl + X or ⌘ Command + X . Type in locale-gen and press ↵ Enter to finish setting up your language."
+    },
+    {
+      "title": "Select a time zone.",
+      "content": "Select a time zone. To do so: Type in cd usr/share/zoneinfo and press ↵ Enter . Type in ls and press ↵ Enter . Find your country or region, then type in cd usr/share/zoneinfo/ country (e.g., America ) and press ↵ Enter . Type in ls again and press ↵ Enter . Find your preferred time zone, then type in ln -s /usr/share/zoneinfo/ country / timezone /etc/localtime and press ↵ Enter ."
+    },
+    {
+      "title": "Setting the hostname is quite easy.",
+      "content": "Setting the hostname is quite easy. Open /etc/hostname with your text editor of choice, if you don't have one use nano and enter your hostname of choice, make sure your hostname is not capitalized. Optionally, you can use cat. For example, if you want your hostname to be panda enter echo panda > /etc/hostname here."
+    },
+    {
+      "title": "Download the GRUB bootloader.",
+      "content": "Download the GRUB bootloader. This is the program that will install your Arch Linux for you. To do so: Type in pacman -S grub and press ↵ Enter . Type in y and press ↵ Enter ."
+    },
+    {
+      "title": "Install GRUB.",
+      "content": "Install GRUB. Make sure that when you do this, you install it on your actual hard drive (e.g., \"sda\"), not the partition (e.g., \"sda1\") unless you're installing it in UEFI, in that case do not install it using these methods as this is exclusive to BIOS. To install GRUB: Type in grub-install /dev/ drive name (e.g., grub-install /dev/sda and press ↵ Enter ."
+    },
+    {
+      "title": "Create a configuration file for GRUB.",
+      "content": "Create a configuration file for GRUB. To do so, type in grub-mkconfig -o /boot/grub/grub.cfg and press ↵ Enter ."
+    },
+    {
+      "title": "Install GRUB.",
+      "content": "Install GRUB. Grub is the most common bootloader as of writing and one of the simplest to install. For this reason, we will be installing GRUB."
+    },
+    {
+      "title": "Make sure to mount your EFI Partition you created.",
+      "content": "Make sure to mount your EFI Partition you created. If you haven't enter these commands: mkdir /boot/efi (to create a efi directory. Note this is case sensitive) mount /dev/sdX(EFI PARTITION) /boot/efi make sure you mount these. Some people mount the efi directory in places such as boot or efi, however, this could cause issues."
+    },
+    {
+      "title": "Installing Grub.",
+      "content": "Installing Grub. You may have installed grub at some point, if you did do not ignore this step (if not, install via pacman -S grub). You have to add a package so that grub can support efi based systems. Download the package: pacman -S efibootmgr. you may also need some additional packages"
+    },
+    {
+      "title": "Using the grub-install command.",
+      "content": "Using the grub-install command. Now its time to actually install grub, we do this by using the grub-install command."
+    },
+    {
+      "title": "After installing grub, we now need to generate a cfg file.",
+      "content": "After installing grub, we now need to generate a cfg file. You can do this by entering grub-mkconfig -o /boot/grub/grub.cfg"
+    },
+    {
+      "title": "In rare cases, you will have to generate an initramfs file, however this should have already been done while installing the kernel with pacstrap.",
+      "content": "In rare cases, you will have to generate an initramfs file, however this should have already been done while installing the kernel with pacstrap . If not you may have not installed the linux kernel. If you have, you will have to manually create an initramfs file. Enter the command mkinitcpio -P There are reasons that aren't strictly rare cases, such as installing RAID or LVM, however these are out of the scope of this guide."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. To do so, type in umount /mnt and press ↵ Enter , type in reboot , press ↵ Enter , remove your installation media, and wait for your system to finish rebooting."
+    },
+    {
+      "title": "Log into your account.",
+      "content": "Log into your account. Type root into the \"login\" field and press ↵ Enter , then type your password in and press ↵ Enter . You have successfully installed and opened Arch Linux on your computer."
+    },
+    {
+      "title": "After installing Arch Linux, you'll quickly find out that you don't have GUI, this is because you haven't installed a Desktop Environment Yet.",
+      "content": "After installing Arch Linux, you'll quickly find out that you don't have GUI, this is because you haven't installed a Desktop Environment Yet. No Internet Solution: If you are wireless and have made sure to install iwd, start the daemon, and enable iwd via systemctl and have no internet, it is likely you forgot to install dhcpc."
+    }
+  ]
+}

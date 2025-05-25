@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Use-Rufus",
+  "title": "Using Rufus to Create Bootable USB Drives: A Step-By-Step Guide",
+  "steps": [
+    {
+      "title": "Launch Rufus.",
+      "content": "Launch Rufus. By default, your downloaded files can be found in your Downloads folder. Double-click on Rufus to launch the application when the download is complete. No additional installation steps are necessary. You can download Rufus at https://rufus.ie/en/ . Be sure to download the correct version from your system's processor (i.e., 64-bit, 32-bit, ARM64). To find out your system architecture, click the Windows Start icon and then click the Settings icon. Click System followed by About . Check your system architecture next to \"System Type.\""
+    },
+    {
+      "title": "Insert a USB drive.",
+      "content": "Insert a USB drive. You can insert it in any free USB port on your PC. You'll need a USB drive that is big enough to hold the \".ISO\" file you want to write to the USB drive. Most modern operating systems require a USB drive with at least 4 GB of hard drive space. You should get a USB drive with 8 GB or more of hard drive space. Rufus will format and erase all data from your USB drive. Transfer any personal files stored on the USB drive to your computer before using Rufus."
+    },
+    {
+      "title": "Select your USB drive if needed.",
+      "content": "Select your USB drive if needed. When you insert a USB drive, Rufus will usually detect it automatically. If needed, select your USB drive using the \"Devices\" drop-down menu. [1] X Research source In most cases, your USB drive will be listed as “No_Label.”"
+    },
+    {
+      "title": "Click SELECT.",
+      "content": "Click SELECT . It's the button on the right-hand side. This opens a file browser that you can use to select an ISO image. [2] X Research source Alternatively, if you want to download a Windows ISO file, click the arrow pointing down next to the \"Select\" button and select DOWNLOAD . Then click the DOWNLOAD button. Use the drop-down menu to select the version of Windows you want to download and click Continue ."
+    },
+    {
+      "title": "Select an ISO file.",
+      "content": "Select an ISO file. Navigate to where you downloaded the ISO file you want to write to the USB drive and select it. Then click Open . [3] X Research source In most cases, you will want to leave the \"Partition Scheme,\" \"Target System,\" and \"Image Option\" as the default. Rufus can detect these settings automatically. You can download the Linux Ubuntu ISO file from https://ubuntu.com/download ."
+    },
+    {
+      "title": "Give the volume label a name (optional).",
+      "content": "Give the volume label a name (optional). If you want to give your USB drive a name, enter it in the \"Volume Label\" field. Otherwise, leave it as is."
+    },
+    {
+      "title": "Click START.",
+      "content": "Click START . It's at the bottom in the lower-right corner. This will start writing the ISO file for Rufus. This may take several minutes. You may receive a message warning you that any data on the USB drive will be destroyed. This is normal. Click OK to continue. [4] X Research source"
+    },
+    {
+      "title": "Place a checkmark next to “List USB Hard Drives.”",
+      "content": "Place a checkmark next to “List USB Hard Drives.” Rufus fails to detect your USB drive. Some USB drives may not be compatible with Rufus. Click the arrow icon next to \"Show advanced drive properties\" and click the checkbox next to \"List USB Hard Drives.\" [5] X Research source"
+    },
+    {
+      "title": "Try using another USB flash drive.",
+      "content": "Try using another USB flash drive. If you receive an error message that says the USB drive doesn't have enough space or that it has no media on it, you will need to use another USB drive."
+    },
+    {
+      "title": "Try re-enabling automounting on your computer if you receive the message, “Error:",
+      "content": "Try re-enabling automounting on your computer if you receive the message, “Error: [0x00000015] The device is not ready.” This error may occur if you previously disabled automounting. [6] X Research source Type “cmd” into the search box in Start or Windows Explorer. Right-click “cmd.exe,” then select “Run as administrator.” Type “mountvol /e” into the dialog box, then press “Enter.” Close the command prompt window, then try using Rufus again."
+    },
+    {
+      "title": "Change your PC's boot order.",
+      "content": "Change your PC's boot order. To boot from a USB drive, you will need to boot into your computer's BIOS and set the boot order to boot from a USB drive before your hard drive."
+    }
+  ]
+}

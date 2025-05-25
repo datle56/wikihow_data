@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Enable-Sidecar-on-Unsupported-Macs",
+  "title": "How to Enable Sidecar on Unsupported Macs",
+  "steps": [
+    {
+      "title": "Connect your iPad to your Mac with a cable.",
+      "content": "Connect your iPad to your Mac with a cable. Your iPad should have come with a lightning to USB cable that you'll want to use. The lightning port is at the bottom of your iPad and the USB port on your computer is either on the back or sides of the monitor."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can find it in the Utilities folder in Finder, or by pressing Cmd + Spacebar to open Spotlight."
+    },
+    {
+      "title": "Enter the following code.",
+      "content": "Enter the following code. defaults write com.apple.sidecar.display AllowAllDevices -bool true; defaults write com.apple.sidecar.display hasShownPref -bool true; open /System/Library/PreferencePanes/Sidecar.prefPane"
+    },
+    {
+      "title": "Press Return.",
+      "content": "Press Return . This will run the command you typed into Terminal. Typos will return an error, so if you don't get the result you want, you'll need to type it in again. If prompted enter your password. You'll know if this code was successful if your System Preferences opens with an option for \"Sidecar.\" [2] X Research source"
+    }
+  ]
+}

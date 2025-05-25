@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Import-Xyz-Coordinates-from-Excel-to-AutoCAD",
+  "title": "How to Import X, Y, Z Coordinates from Excel to AutoCAD (in Just 10 Steps)",
+  "steps": [
+    {
+      "title": "Open your project in Excel.",
+      "content": "Open your project in Excel. You can open the program from the Start menu in Windows or in the Applications in Finder on Mac; then click File > Open . You can also open your file from your file manager by right-clicking it and selecting Open with > Excel . You're going to create the script file from the Excel data."
+    },
+    {
+      "title": "Select and copy your data.",
+      "content": "Select and copy your data. Simply click to select the first cell with data and drag and drop your cursor to the last cell that contains data. To copy, press Ctrl + C (Windows) or Cmd + C (Mac)."
+    },
+    {
+      "title": "Paste the copied data to a Notepad or TextEdit file.",
+      "content": "Paste the copied data to a Notepad or TextEdit file. You'll find Notepad in the Start menu of Windows and TextEdit in the Applications folder in Finder for Mac. To paste, press Ctrl + V (Windows) or Cmd + V (Mac). The data will appear in your text file along with spaces to look like the original source."
+    },
+    {
+      "title": "Use the \"Find and Replace\" tool to get rid of the spaces.",
+      "content": "Use the \"Find and Replace\" tool to get rid of the spaces. Select (drag and drop) a space, then go to Edit > Replace then you should see the space in the \"Find what\" text field (Mac users may need to select \"Use selection for Find\"). Enter a comma in the \"Replace with\" field and click Replace All . When you replace all the characters, you'll see your data set without the spaces, but instead with commas."
+    },
+    {
+      "title": "Add \"_MULTIPLE _POINT\" to the top of the list.",
+      "content": "Add \"_MULTIPLE _POINT\" to the top of the list. AutoCAD recognizes the underscore mark as a command and spaces as enters, so it will run the \"MULTIPLE\" and \"POINT\" commands separately."
+    },
+    {
+      "title": "Save the file as an SCR file.",
+      "content": "Save the file as an SCR file. Go to File > Save As then change the \"Save as type\" drop-down and select \"All Files.\" For Mac, hold the Option key as you click File to get \"Save As.\" Name the file then add \".scr\" to the end and click Save ."
+    },
+    {
+      "title": "Open AutoCAD.",
+      "content": "Open AutoCAD. You can launch this app from your Start menu in Windows or the Applications folder in Finder on Mac."
+    },
+    {
+      "title": "Type \"SCR\" and press Enter or Return.",
+      "content": "Type \"SCR\" and press Enter or Return . You'll see the SCRIPT command appear above the command bar at the bottom of your screen as you type and your file manager will open when you press the Enter/Return key."
+    },
+    {
+      "title": "Navigate to and double-click your SCR file.",
+      "content": "Navigate to and double-click your SCR file. When you double-click to select it, AutoCAD will read the commands on the first line of the document and automatically import the X, Y, Z coordinates."
+    },
+    {
+      "title": "Press Esc and double-click your mouse in the drawing area.",
+      "content": "Press Esc and double-click your mouse in the drawing area. Pressing Esc closes the last command (which was the POINT command) and double-clicking will zoom out so you can see all the coordinates you imported."
+    }
+  ]
+}

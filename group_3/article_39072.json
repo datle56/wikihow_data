@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Setup-Outlook-for-Military-Email",
+  "title": "How to Access Military Email from Anywhere: Easy Outlook Setup",
+  "steps": [
+    {
+      "title": "Download InstallRoot from the DoD Cyber Exchange.",
+      "content": "Download InstallRoot from the DoD Cyber Exchange. Before you can access your military email, you'll need to make sure you have the correct certificates installed on your computer. You can do this easily with a graphical program called InstallRoot. Here's how to get it: Go to https://public.cyber.mil/pki-pke/tools-configuration-files . Click the latest non-administrator Windows installer. At the time of writing, this is InstallRoot 5.6 NIPR Non-Administrator 64-bit Windows Installer (for 64-bit systems ). If you have a 32-bit PC, install the 32-bit version instead. If you're not sure whether your computer is 32-bit or 64-bit , type system into the Windows search bar, click System Information , then look next to \"System Type.\" You'll see x64 for a 64-bit system, or x86 for a 32-bit system. If prompted, click Save or Yes to download the file."
+    },
+    {
+      "title": "Run the installer.",
+      "content": "Run the installer. The file you downloaded, InstallRoot_5.6x64_NonAdmin.msi (the name will vary depending on when you download it), is executable. Just double-click the file, click Yes , and follow the on-screen prompts to install. While installing, accept the default installation location. When prompted to install features, select both \"Graphical Interface\" and \"Command-Line Tool.\" Once the tool is finished installing, click Run InstallRoot ."
+    },
+    {
+      "title": "Click the Install Certificates button.",
+      "content": "Click the Install Certificates button. InstallRoot will now install the certificates and prompt you to select Yes for each."
+    },
+    {
+      "title": "Install ActivClient (if needed).",
+      "content": "Install ActivClient (if needed). This is not required for all operating systems and branches. In most cases, if you're using Windows 10 or 11, you won't need to do this unless you're not using Chrome or Microsoft Edge. To find out if you need to install ActivClient, visit https://militarycac.com/activclient.htm and select your military branch. [1] X Research source"
+    },
+    {
+      "title": "Insert your CAC reader into an available port.",
+      "content": "Insert your CAC reader into an available port. If it's your first time doing so, it may take a few moments for the reader's drivers to install."
+    },
+    {
+      "title": "Download the DoD certificate bundle.",
+      "content": "Download the DoD certificate bundle. Go to https://public.cyber.mil/pki-pke/admins/#:~:text=Additional%20Considerations . [2] X Research source Locate the latest certificates in the table under \"Additional considerations.\" To do this, scroll down to the table, then type or paste PKCS# DoD into the Search bar at its top-right corner. You'll see a few different download links. Download the latest certificate package. At the time of writing, it'll be version 5.15. [3] X Research source Unzip the file once the download is complete."
+    },
+    {
+      "title": "Open the Keychain Access app on your Mac.",
+      "content": "Open the Keychain Access app on your Mac. You can find it by searching for \"Keychain Access\" in Spotlight."
+    },
+    {
+      "title": "Click the login folder in the left panel.",
+      "content": "Click the login folder in the left panel. You'll see it under \"Keychains.\""
+    },
+    {
+      "title": "Drag the certificates into Keychain Access.",
+      "content": "Drag the certificates into Keychain Access. To do this, select all the files you unzipped from the downloaded certificate bundle, then drag them into the main Keychain Access window. Click Add when prompted to add each certificate (you'll be prompted to add multiple certificates)."
+    },
+    {
+      "title": "Trust the root certificates.",
+      "content": "Trust the root certificates. Here's how: Double-click DoD Root CA3 and select Trust . From the \"When using this certificate\" drop-down menu, select Always Trust . Double-click DoD Root CA4 , and select Trust . From the \"When using this certificate\" drop-down menu, select Always Trust . [4] X Research source When prompted, enter your password to confirm."
+    },
+    {
+      "title": "Insert your CAC card into a CAC reader.",
+      "content": "Insert your CAC card into a CAC reader. Your CAC contains information required to verify your identity, including your digital fingerprints and public key certificate (PKI). [5] X Research source If you don't have a CAC, you may still need to visit a RAPIDS site to complete your final verification. If you've already completed RAPIDS verification, follow up with your sponsor. [6] X Research source You can use any CAC reader that's compatible with your PC or Mac to read your CAC card. If you're not using Chrome or Edge, you may need to install middleware like ActivClient to access your certificates properly."
+    },
+    {
+      "title": "Go to the Outlook Web Access sign-in screen.",
+      "content": "Go to the Outlook Web Access sign-in screen. In Chrome or Edge , most people will need to go to https://webmail.apps.mil/mail or https://portal.apps.mil to access military email, including Army 365 webmail and Navy. In some cases, you may need to go to a different site: [7] X Research source US Coast Guard: Go to https://mail.uscg.mil/owa . [8] X Research source US Marines: Go to https://owa.usmc.mil . US Air Force: If you cannot log in with the other sites, try https://www.my.af.mil , click login , and select your certificate when prompted."
+    },
+    {
+      "title": "Select the Authentication/16-digit certificate.",
+      "content": "Select the Authentication/16-digit certificate . Depending on how you're accessing your email, you may be prompted to select a certificate before logging in. If prompted, do not choose the \"email\" certificate—you'll need to choose the one called Authentication . [9] X Research source You may be prompted to install Citrix software if you're using a DLA device. If you are, go to https://www.dla.mil/Remote-VDI/ to download and install the software."
+    },
+    {
+      "title": "Enter your email address and select Sign in with CAC/PIV.",
+      "content": "Enter your email address and select Sign in with CAC/PIV . This allows you to enter your CAC PIN and Personal Identity Verification (PIV) certificate to authenticate instead of a traditional password. A note for army personnel: If your email address used to end with @mail.mil, you will need to replace \"mail.mil\" with \"army.mil\" to log in. Enter your email address and select Sign in with CAC/PIV . If you're unable to access your Army email, you may need to migrate to Army365. Call the Army Enterprise Service Desk at 1-866-335-2769 for assistance. [10] X Research source"
+    },
+    {
+      "title": "Enter your CAC PIN.",
+      "content": "Enter your CAC PIN. If you're not sure what your CAC PIN is, don't guess—too many incorrect guesses can lock you out of your account. Contact your local IT support team for help if you're not sure which PIN to enter here. [11] X Research source"
+    },
+    {
+      "title": "Click OK on the DoD warning window.",
+      "content": "Click OK on the DoD warning window. This provides your consent to access a US government information system and logs you in to your military email account. [12] X Research source"
+    }
+  ]
+}

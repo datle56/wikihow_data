@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Powershell-How-to-Run-Exe",
+  "title": "Running EXE Files in PowerShell: Simple Commands",
+  "steps": [
+    {
+      "title": "Use cd to enter the directory that contains the EXE file.",
+      "content": "Use cd to enter the directory that contains the EXE file. For example, if you want to run notepad.exe from PowerShell , type cd \"C:\\Windows\\\" and press Enter ."
+    },
+    {
+      "title": "Enter the command to run the EXE file.",
+      "content": "Enter the command to run the EXE file. To run an EXE file from the current directory in PowerShell, you'll need to preface the filename with .\\ . For example, to run notepad.exe, type .\\notepad.exe and press Enter . Typing the .\\ before the filename tells PowerShell you want to run the EXE file from the current directory. If you want to run the EXE file from a different directory, use the call operator (&) ."
+    },
+    {
+      "title": "Use Get-ChildItem to locate EXE filenames (if needed).",
+      "content": "Use Get-ChildItem to locate EXE filenames (if needed). If you get an error that says, \"The term (EXE file name) is not recognized as a name of a cmdlet, function, script file, or executable program,\" you're either entering the wrong file name or in the wrong directory. Get-ChildItem shows you all files and permissions in the current directory. To show only EXE files, use Get-ChildItem *.exe . [1] X Research source You can also use Get-ChildItem to list files in other directories. For example, to show all executable files in C:\\Program Files\\Ableton\\Live 11 Lite\\Program, you'd use \"C:\\Program Files\\Ableton\\Live 11 Lite\\Program\\*.exe\" ."
+    },
+    {
+      "title": "& \"C:",
+      "content": "& \"C: \\Windows\\notepad.exe\" . In PowerShell scripting , you can run any command that's stored in a variable by prefacing its path with an ampersand (&). [2] X Research source Similarly, you can use the call operator to run an EXE file from the PowerShell prompt."
+    },
+    {
+      "title": "Start-Process -FilePath \"filename.exe\"",
+      "content": "Start-Process -FilePath \"filename.exe\" . This command will run the executable file called filename.exe from the current directory. If you're not already in the same directory as the EXE file, use the full path to the file, e.g., Start-Process -FilePath \"C:\\path to\\filename.exe\" . If you need to run an EXE with parameters, enter the parameters after the executable's name. For example, to open Notepad with the window maximized , you'd use Start-Process -FilePath \"C:\\Windows\\notepad.exe\" -Wait -WindowStyle Maximized . [3] X Research source"
+    },
+    {
+      "title": "Invoke-Expression -Command \"C:",
+      "content": "Invoke-Expression -Command \"C: \\path to\\filename.exe\" . Invoke-Expression is typically used in PowerShell scripts to evaluate expressions, run scripts, and run commands in variables. You can also use it to run any EXE file at the prompt. Microsoft cautions against using Invoke-Expression in PowerShell scripts that accept user input unless the script can verify that the command is safe to run. [4] X Trustworthy Source Science Direct Online archive of peer-reviewed research on scientific, technical and medical topics Go to source"
+    }
+  ]
+}

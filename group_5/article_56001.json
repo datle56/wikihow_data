@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Initialize-a-List-in-Java",
+  "title": "7 Quick & Simple Ways to Initialize a List (or Array) in Java",
+  "steps": [
+    {
+      "title": "Create an ArrayList.",
+      "content": "Create an ArrayList . If you already have an ArrayList you can skip this, but if not, create one. Use the following code snippet to create your ArrayList where <Object> is your data type and capacity is how many elements will be in the list. Strings can hold a range of characters (including numbers). Integers are numbers that you can do integer operations on (i.e. addition, subtraction). If you don't know how many elements will be in the list, you can leave capacity blank. The array will then resize itself if it goes over the default capacity of 10. ArrayList < Object > listName = new ArrayList < Object >( capacity );"
+    },
+    {
+      "title": "Add elements to the list with the add() method.",
+      "content": "Add elements to the list with the add() method. The add() method can be used to add elements to a list (or various other types of collections). The add() method allows you to add one element at a time and is an easy way to initialize your list with some values. Below is an example of how to use the add() method to add some string values to a list. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.ArrayList ; public class ExampleList { public static void main ( String [] args ) { // create a new ArrayList ArrayList < String > listDogs = new ArrayList < String >(); // elements being added to the list listDogs . add ( \"poodle\" ); listDogs . add ( \"golden retriever\" ); listDogs . add ( \"chihuahua\" ); // print the contents of the list System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Declare an array with some initial elements.",
+      "content": "Declare an array with some initial elements. The Array.asList() method will convert an array into a List collection. This List is immutable, which means you cannot add or remove elements from it. String [] dogs = { \"poodle\" , \"golden retriever\" , \"chihuahua\" };"
+    },
+    {
+      "title": "Call the Arrays.asList() method.",
+      "content": "Call the Arrays.asList() method. The array you created will be used as the argument for this method. List < String > listDogs = Arrays . asList ( dogs );"
+    },
+    {
+      "title": "Use the object you created to access the element.",
+      "content": "Use the object you created to access the element. You can use this object to print the list, for example. The complete snippet to print this list using the Arrays.asList() method is below. Replace dogs , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.Arrays ; import java.util.List ; public class ExampleList { public static void main ( String [] args ) { // create a new array String [] dogs = { \"poodle\" , \"golden retriever\" , \"chihuahua\" }; // pass the array as an argument List < String > listDogs = Arrays . asList ( dogs ); // print the contents of the list System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Create a mutable list by combining ArrayList and Arrays.asList().",
+      "content": "Create a mutable list by combining ArrayList and Arrays.asList() . By using the Arrays.asList() method as an argument for a new ArrayList , you can combine methods to make a list that can be changed (a mutable list). Use the following code snippet to make your mutable list: List < String > listDogs = new ArrayList <>( Arrays . asList ( dogs ));"
+    },
+    {
+      "title": "Use the add() method to add to your list.",
+      "content": "Use the add() method to add to your list. The following code will print your initial list and your modified list. Remember to add each new element with a separate add() method. import java.util.ArrayList ; import java.util.Arrays ; import java.util.List ; public class ExampleList { public static void main ( String args []) { // create a new array String [] dogs = { \"poodle\" , \"golden retriever\" , \"chihuahua\" }; // create a mutable list with the initial array List < String > listDogs = new ArrayList <>( Arrays . asList ( dogs )); // print the contents of the list System . out . println ( \"List : \" + listDogs . toString ()); // add something to the list listDogs . add ( \"german shepherd\" ); // print the contents of the updated list System . out . println ( \"Modified list : \" + listDogs . toString ()); } }"
+    },
+    {
+      "title": "Create a new list.",
+      "content": "Create a new list. You can use either ArrayList or List , though we've used ArrayList for this example. Using either one will still allow this list to be mutable. ArrayList < String > listDogs = new ArrayList < String >();"
+    },
+    {
+      "title": "Initialize the list using Collections.addAll().",
+      "content": "Initialize the list using Collections.addAll() . This method first defines the collection (ArrayList or List) and then includes the elements that should be included in the list. Collections . addAll ( listDogs , \"poodle\" , \"golden retriever\" , \"chihuahua\" );"
+    },
+    {
+      "title": "Combine the list and the Collections.addAll() method.",
+      "content": "Combine the list and the Collections.addAll() method. You can print the list you've created like the methods before. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. Note that if you used List instead of ArrayList , add import java.util.List; to the top of your code. You must keep the ArrayList package, as it's utilized in creating your list. import java.util.Collections ; import java.util.ArrayList ; public class ExampleList { public static void main ( String args []) { // create a new list ArrayList < String > listDogs = new ArrayList < String >(); // initialize the list Collections . addAll ( listDogs , \"poodle\" , \"golden retriever\" , \"chihuahua\" ); // print the list contents System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Use the add() method to add to your list.",
+      "content": "Use the add() method to add to your list. The following code will print your initial list as well as your modified list. Remember to add each new element with a separate add() method. import java.util.Collections ; import java.util.ArrayList ; public class ExampleList { public static void main ( String args []) { // create a new list ArrayList < String > listDogs = new ArrayList < String >(); // initialize the list Collections . addAll ( listDogs , \"poodle\" , \"golden retriever\" , \"chihuahua\" ); // print the list contents System . out . println ( \"List : \" + listDogs . toString ()); // add something to the list listDogs . add ( \"german shepherd\" ); // print the contents of the updated list System . out . println ( \"Modified list : \" + listDogs . toString ()); } }"
+    },
+    {
+      "title": "Create an immutable list using unmodifiableList().",
+      "content": "Create an immutable list using unmodifiableList() . If you want a list that cannot be altered, you can use the unmodifiableList() method with the Collections class. List < String > listDogs = Collections . unmodifiableList ( Arrays . asList ( \"poodle\" , \"golden retriever\" , \"chihuahua\" ));"
+    },
+    {
+      "title": "Add the list to your code.",
+      "content": "Add the list to your code. Once you've set this list, you cannot change it using add() or any other method. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.List ; import java.util.Arrays ; import java.util.Collections ; public class ExampleList { public static void main ( String args []) { // create the list List < String > listDogs = Collections . unmodifiableList ( Arrays . asList ( \"poodle\" , \"golden retriever\" , \"chihuahua\" )); // print the list System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Create a list with one element using singletonList().",
+      "content": "Create a list with one element using singletonList() . If you want a list that holds only one element, you can use the singletonList() method with the Collections class. This list is immutable. List < String > listDogs = Collections . singletonList ( \"poodle\" );"
+    },
+    {
+      "title": "Add the list to your code.",
+      "content": "Add the list to your code. Once you've set this list, you cannot change it using add() or any other method. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.List ; import java.util.Collections ; public class ExampleList { public static void main ( String args []) { // create the list List < String > listDogs = Collections . singletonList ( \"poodle\" ); // print the list System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Use the Stream.of() method introduced in Java 8.",
+      "content": "Use the Stream.of() method introduced in Java 8. There are a few syntaxes you can use with Stream.of() , but all of them start with the same code snippet: List < String > listDogs = Stream . of ( \"poodle\" , \"golden retriever\" , \"chihuahua\" )"
+    },
+    {
+      "title": "Complete your Stream.of() method.",
+      "content": "Complete your Stream.of() method. You can end the method in three ways using the {{kbd|collect()} method. These methods will all return similar-looking lists, though each one works a bit differently: [2] X Research source .collect(Collectors.toList()); collects the elements and displays them as a list. .collect(Collectors.toCollection(ArrayList::new)); collects the elements and displays them as an array. .collect(Collectors.collectingAndThen(Collectors.toList(),Collections::unmodifiableList)); collects the elements and displays them as an immutable list."
+    },
+    {
+      "title": "Add the Stream.of() list into your code.",
+      "content": "Add the Stream.of() list into your code. The example below completes the stream with .collect(Collectors.toList()); ; if you'd like to use a different method, replace .collect(Collectors.toList()); with the method of your choice from the list above. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.List ; import java.util.stream.Collectors ; import java.util.stream.Stream ; public class ExampleList { public static void main ( String args []) { // creating a list using the toList syntax List < String > listDogs = Stream . of ( \"poodle\" , \"golden retriever\" , \"chihuahua\" ) . collect ( Collectors . toList ()); // printing the list System . out . println ( listDogs ); } }"
+    },
+    {
+      "title": "Create an unmodifiable list using List.of().",
+      "content": "Create an unmodifiable list using List.of() . With Java 9, you can use the List.of() method to create a simple, unmodifiable list. [3] X Research source List < String > listDogs = List . of ( \"poodle\" , \"golden retriever\" , \"chihuahua\" );"
+    },
+    {
+      "title": "Combine the list with the rest of your code.",
+      "content": "Combine the list with the rest of your code. You can print your immutable list by using the following code. Replace ExampleList , listDogs , and the arguments \"poodle\", \"golden retriever\", and \"chihuahua\" with your own data. import java.util.List ; public class ExampleList { public static void main ( String args []) { // creating an unmodifiable List.of list List < String > listDogs = List . of ( \"poodle\" , \"golden retriever\" , \"chihuahua\" ); // printing the list System . out . println ( listDogs ); } }"
+    }
+  ]
+}

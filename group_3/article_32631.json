@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Permanently-Disable-Airplane-Mode-on-Windows-10",
+  "title": "How to Permanently Disable Airplane Mode on Windows 10",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R ."
+    },
+    {
+      "title": "Type cmd into the box that comes up.",
+      "content": "Type cmd into the box that comes up. Do not click OK."
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+↵ Enter at the same time.",
+      "content": "Press Ctrl + ⇧ Shift + ↵ Enter at the same time."
+    },
+    {
+      "title": "Click Yes on the UAC dialog that comes up.",
+      "content": "Click Yes on the UAC dialog that comes up. If you do not have administrator permissions, then you cannot do this."
+    },
+    {
+      "title": "Type the following command inside of the Command Prompt window:",
+      "content": "Type the following command inside of the Command Prompt window: SC CONFIG RmSvc START= DISABLED"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . The command prompt should then report that it was successful."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Click Start , Power , and then \"Restart\". This will apply the changes."
+    }
+  ]
+}

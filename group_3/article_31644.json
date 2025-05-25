@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Open-Windows-Services",
+  "title": "How to Open Windows Services: The Complete Guide",
+  "steps": [
+    {
+      "title": "Use the Run dialog.",
+      "content": "Use the Run dialog. Press the ⊞ Win + R keys simultaneously. Alternatively, right-click the Start menu and select Run . Type services.msc . Click OK or hit ↵ Enter ."
+    },
+    {
+      "title": "Use Windows Search.",
+      "content": "Use Windows Search. Click the Start menu (or press the Windows key on your keyboard). Type services . Click Services in the search results."
+    },
+    {
+      "title": "Use the Task Manager.",
+      "content": "Use the Task Manager. Press Ctrl + ⇧ Shift + Esc to open Task Manager. Click the Services tab."
+    },
+    {
+      "title": "Use the Command Prompt.",
+      "content": "Use the Command Prompt. Open the Command Prompt . Type services.msc . Hit ↵ Enter ."
+    },
+    {
+      "title": "Use the Start menu (Windows 11).",
+      "content": "Use the Start menu (Windows 11). Click the Start menu or press the Windows key. Click All to display all programs. Scroll down and click Windows Tools . Double-click Services."
+    },
+    {
+      "title": "Use the Start menu (Windows 10).",
+      "content": "Use the Start menu (Windows 10). Click the Start menu or press the Windows key. Scroll down and click Windows Administrative Tools . Click Services ."
+    },
+    {
+      "title": "Use File Explorer.",
+      "content": "Use File Explorer. Click the folder icon on the taskbar to open File Explorer . Navigate to the drive that Windows is installed on. Double-click the Windows folder. Double-click the System32 folder. Double-click services or services.msc ."
+    },
+    {
+      "title": "Use Control Panel.",
+      "content": "Use Control Panel. Open Control Panel . Click System and Security . Click Windows Tools . Double-click Services ."
+    },
+    {
+      "title": "Use the Power User menu.",
+      "content": "Use the Power User menu. Right-click the Start menu (or press Ctrl + X . Click Computer Management . Click Services and Applications in the left panel. Double-click Services in the center panel."
+    },
+    {
+      "title": "View the status of services.",
+      "content": "View the status of services. Now that you know how to open services in Windows, you can use Services.msc to stop, start, restart, and refresh services, as well as manage how services start. If a service is running, you'll see Running beside it in the Status column. If not, the column will be blank. The Startup Type column tells you whether a service starts automatically or manually. You can learn more about a service you don't recognize by double-clicking the service."
+    },
+    {
+      "title": "Stop a service.",
+      "content": "Stop a service. If you need to stop a service that's running: Right-click the service you want to stop. Click Stop to stop the service. Alternatively, you can double-click the service and then click the Stop button, or select the service and click the Stop button in the menu bar. If you don't want to stop a service but want to clear its cache, you can click Refresh instead to refresh its memory."
+    },
+    {
+      "title": "Start or restart a service.",
+      "content": "Start or restart a service. If a service isn't running, or you want it to stop and restart it: Right-click the service. Select Start to start the service, or Restart to briefly stop and restart it."
+    },
+    {
+      "title": "Pause or resume a service.",
+      "content": "Pause or resume a service. If you don't want to stop a service completely, you can pause it instead. Pausing a service preserves its cache so it can pick up where it left off once resumed. To pause or resume a service: Right-click a service. Select Pause to pause it. To resume, right-click the service and select Resume ."
+    },
+    {
+      "title": "Change a service's startup type.",
+      "content": "Change a service's startup type. You can choose whether a service starts automatically or manually in Services.msc. Just right-click the service and select Properties (or double-click the service to open Properties), then choose your preferred startup type: Automatic : Starts automatically when Windows starts. Most critical Windows services are set to Automatic to ensure your PC is always ready to support other services. Automatic (Delayed Start): Starts shortly after Windows boots, but not during the initial boot process. This can come in handy if a necessary service is making your PC take a long time to boot . Automatic (Trigger Start): Can start automatically if triggered by an event. [1] X Research source Manual : Doesn't start at boot time, but is allowed to start if prompted. Manual (Trigger Start): Doesn't start at boot time, but it may start if triggered by an event. Disabled: This service will not be started by any program or service. To start the service, you'll need to do so manually."
+    },
+    {
+      "title": "Find the name of the service you want to stop or start.",
+      "content": "Find the name of the service you want to stop or start. The easiest way to do this from the command prompt is to open Services.msc, double-click the service, and find the name next to \"Service Name.\" For example, the service name for the DNS Client service is dnscache . Another option is to open the command prompt and run the command sc query , though that'll give you a long list that's difficult to browse. To make the results more useful, type sc query > servicelist.txt to add them to a plain text file. [2] X Research source Then, to view the file, type notepad servicelist.txt and press Enter ."
+    },
+    {
+      "title": "Start or stop a service.",
+      "content": "Start or stop a service. To start a service, type sc start <servicename> and press Enter. For example, sc start WbioSrvc . To stop a service, use sc stop <servicename> Another way to stop and restart services is to use net start <servicename> or net start <servicename> . When you use sc , stopping and starting services is immediate. When using net , the service will wait for confirmation before stopping and starting. It is typical to use sc when stopping and starting services manually and net to stop and start services in your batch files. [3] X Research source"
+    },
+    {
+      "title": "Why can't I open services.msc?",
+      "content": "Why can't I open services.msc? You must be an administrator to view, start, or stop services in Windows. If you're an administrator and see the error \"MMC cannot open tunable to open services.msc”, you may be dealing with some system file corruption–in an administrator-level command prompt window: Run sfc /scannow to check for and repair errors. Run the following commands in order: Dism /Online /Cleanup-Image /ScanHealth Dism /Online /Cleanup-Image /CheckHealth DISM /Online /Cleanup-image /RestoreHealth"
+    },
+    {
+      "title": "What's the difference between pausing and stopping a service?",
+      "content": "What's the difference between pausing and stopping a service? When you pause a Windows service, its internal state and cache remain intact, so it can quickly pick up where it left off upon restart. Stopping a service discards the internal state and cache–if the service has pending tasks, they will be lost if stopped. [4] X Research source"
+    },
+    {
+      "title": "How do I enable or disable all services in Windows?",
+      "content": "How do I enable or disable all services in Windows? To enable every service, you'll need to use MSConfig: Type msconfig into the Windows search bar and press Enter . Select Normal startup on the General tab. Click the Services tab. If you don't want to enable or disable Microsoft services, select \"Hide all Microsoft services\". Click Enable all to enable all services or Disable all to disable them. Click OK and then Restart . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "How do you restart a Windows service in command prompt?",
+      "content": "How do you restart a Windows service in command prompt? You can't–you can only use the command prompt to stop and start services. To restart a service, right-click it in Services.msc and select Restart ."
+    }
+  ]
+}

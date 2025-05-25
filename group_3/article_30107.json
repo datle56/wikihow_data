@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Web-Browser",
+  "title": "How to Make a Web Browser",
+  "steps": [
+    {
+      "title": "Install Visual Studio on your computer.",
+      "content": "Install Visual Studio on your computer. You can download it from the Visual Studio website ."
+    },
+    {
+      "title": "Run Visual Studio and start a new project by going to the File menu and clicking on \"New Project.\"",
+      "content": "Run Visual Studio and start a new project by going to the File menu and clicking on \"New Project.\""
+    },
+    {
+      "title": "Browse over \"Text\" and select \"Web Browser\" in the form page that appears.",
+      "content": "Browse over \"Text\" and select \"Web Browser\" in the form page that appears."
+    },
+    {
+      "title": "Go to \"View\" in the top menu bar, browse over \"Other Windows\" and click on \"Toolbox.\"",
+      "content": "Go to \"View\" in the top menu bar, browse over \"Other Windows\" and click on \"Toolbox.\" This will display the toolbox. [1] X Research source"
+    },
+    {
+      "title": "Double-click on the Web browser tool in the toolbox.",
+      "content": "Double-click on the Web browser tool in the toolbox."
+    },
+    {
+      "title": "Press the right arrow icon on the top-right of the form and click on \"Undock in Parent Container.\"",
+      "content": "Press the right arrow icon on the top-right of the form and click on \"Undock in Parent Container.\" This will change the view of the form from full-screen to a smaller window within the Visual Studio Interface. [2] X Research source"
+    },
+    {
+      "title": "Resize the web browser form to your desired size using the clickable outline around it.",
+      "content": "Resize the web browser form to your desired size using the clickable outline around it. [3] X Research source"
+    },
+    {
+      "title": "Set the URL (Uniform Resource Locator) property to a website address that you wish to visit.",
+      "content": "Set the URL (Uniform Resource Locator) property to a website address that you wish to visit. This will open up a default website on open so you can see what a website will look like when opened through your Internet browser."
+    },
+    {
+      "title": "Create a new button and assign the following properties to it.",
+      "content": "Create a new button and assign the following properties to it. The text on the button should say \"Go.\" Name the button \"GoBtn.\""
+    },
+    {
+      "title": "Trigger the button by double-clicking on it.",
+      "content": "Trigger the button by double-clicking on it. This will pop up a private sub. Enter the following code between the private and end subs (you can replace \"URL\" with any website address). [4] X Research source WebBrowser1.Navigate(URL)"
+    },
+    {
+      "title": "Test the button by clicking on it.",
+      "content": "Test the button by clicking on it. It should take you away from the default website to the destination website assigned for the button."
+    },
+    {
+      "title": "Select the TextBox tool from the toolbox.",
+      "content": "Select the TextBox tool from the toolbox."
+    },
+    {
+      "title": "Drag the TextBox tool and drop it on the custom web browser form that you are creating.",
+      "content": "Drag the TextBox tool and drop it on the custom web browser form that you are creating."
+    },
+    {
+      "title": "Name the text box as \"address it.\"",
+      "content": "Name the text box as \"address it.\""
+    },
+    {
+      "title": "Go back to the button you created earlier and replace the URL with \"addressTxt.Text.\"",
+      "content": "Go back to the button you created earlier and replace the URL with \"addressTxt.Text.\" This indicates that you want to use the button to go to whatever URL is typed in the address bar."
+    },
+    {
+      "title": "Test the address bar by using it to visit different websites.",
+      "content": "Test the address bar by using it to visit different websites."
+    },
+    {
+      "title": "Save the web browser that you have just created as a program through Visual Studio by selecting the option to save through the File menu.",
+      "content": "Save the web browser that you have just created as a program through Visual Studio by selecting the option to save through the File menu. [5] X Research source"
+    }
+  ]
+}

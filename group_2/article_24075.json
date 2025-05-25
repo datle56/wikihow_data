@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Install-Software-from-Unsigned-Developers-on-a-Mac",
+  "title": "3 Easy Ways to Allow Mac Apps from Unknown Developers",
+  "steps": [
+    {
+      "title": "Download the software as you normally would from the Internet.",
+      "content": "Download the software as you normally would from the Internet. If asked if you want to \"keep\" or \"discard\" the file, select Keep . Note that you should only do this if you are certain you trust the publisher of the software."
+    },
+    {
+      "title": "Open your software's setup file.",
+      "content": "Open your software's setup file. Double-click the file and follow the on-screen instructions. Your Mac may allow you to run the install file, then give you a warning message once you try to run the app itself. If Apple can’t verify the developer or check the file for malware, this will prompt a pop-up with an error message that says \"[Name] can't be opened because Apple cannot check it for malicious software\" or \"[Name] can’t be opened because it is from an unidentified developer\" or something similar. [1] X Research source Depending on your security settings, you might also get a warning if you didn’t download the app from the App Store, even if Apple can verify the developer. If you’ve set your Mac to allow software that doesn’t come from the App Store, you’ll simply get a pop-up stating that the app was downloaded from the Internet and asking if you want to open it anyway. If this happens, just click Open to proceed. If you don’t allow apps that aren’t from the App Store, you can change that in your settings. Go to Apple menu > System Settings > Privacy & Security and check the radio button next to App Store and identified developers under the Security header. Enter your admin username and password if prompted."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This will close the pop-up window."
+    },
+    {
+      "title": "Open the Apple menu and click System Settings.",
+      "content": "Open the Apple menu and click System Settings . This option is near the top of the drop-down menu. [2] X Research source In older versions of macOS, this will be called System Preferences instead."
+    },
+    {
+      "title": "Click Privacy & Security.",
+      "content": "Click Privacy & Security . You’ll find this option in the menu bar on the left side of the System Settings window. [3] X Research source In older versions of macOS, it will be near the top of the main System Preferences window."
+    },
+    {
+      "title": "Click Open Anyway.",
+      "content": "Click Open Anyway . Scroll down in the Privacy & Security window until you see a message about the app you just tried to open. Click the Open Anyway button. [4] X Research source In some versions of macOS, you may need to click the lock icon in the Security & Privacy window and enter your username and password to make any changes."
+    },
+    {
+      "title": "Click Open when prompted.",
+      "content": "Click Open when prompted. A window will pop up asking you to confirm that you really want to open the file. Clicking Open will open your file and continue with the installation (or launch the app if it’s already installed). Your choice should now be saved in your security settings, meaning that from now on you can open the app just by double-clicking on it."
+    },
+    {
+      "title": "Open Spotlight.",
+      "content": "Open Spotlight. Click the magnifying glass icon in the top-right corner of the screen. To allow all software installations, you'll first need to restore an installation option that macOS Sierra got rid of."
+    },
+    {
+      "title": "Type in terminal, then click Terminal.",
+      "content": "Type in terminal , then click Terminal. It should appear directly below the Spotlight search bar."
+    },
+    {
+      "title": "Type sudo spctl --master-disable into Terminal and press ⏎ Return.",
+      "content": "Type sudo spctl --master-disable into Terminal and press ⏎ Return . This is the code that enables the installation option."
+    },
+    {
+      "title": "Enter your password.",
+      "content": "Enter your password. To run the command you just entered, you’ll have to type your admin password into Terminal. This is the password you use to sign into your Mac. Doing so will restore the option you need in the Privacy & Security menu. You won’t be able to see your password as you type it in."
+    },
+    {
+      "title": "Open the Apple menu and click System Settings.",
+      "content": "Open the Apple menu and click System Settings . This option is near the top of the drop-down menu. In older versions of macOS, this is called System Preferences instead."
+    },
+    {
+      "title": "Click Privacy & Security.",
+      "content": "Click Privacy & Security . Scroll down to find this option in the left-hand menu bar in the System Settings window. If you’re using an older version of macOS, look for Security & Privacy in the main System Preferences window."
+    },
+    {
+      "title": "Select Anywhere under the Security header.",
+      "content": "Select Anywhere under the Security header. Scroll down to Security and look at the options under the text “Allow applications downloaded from” to make sure Anywhere is selected. Once you enter the command in Terminal, this option may be selected automatically. If it’s not, click the radio button next to Anywhere . You will be prompted to enter your admin password to change which option is selected. In older versions of macOS, click the lock icon in the bottom left corner of the Security & Privacy window and enter your admin login information, then make your selection."
+    },
+    {
+      "title": "Click Allow From Anywhere when prompted.",
+      "content": "Click Allow From Anywhere when prompted. When you select Anywhere , a warning window will pop up explaining that this option can make your Mac less secure. Click Allow From Anywhere to proceed. Doing this will allow you to install software from unsigned developers without having to do any special overrides (such as confirming from within the Privacy & Security menu). If you don't install any unsigned software within 30 days, you'll have to re-enable this setting or use one of the other workarounds described in this article. In older versions of macOS, click the lock icon if you'd like to prevent further changes."
+    },
+    {
+      "title": "Install your software.",
+      "content": "Install your software. You should now be able to install your software as you usually would."
+    },
+    {
+      "title": "Find the unsigned app in Finder.",
+      "content": "Find the unsigned app in Finder. You can also override your Mac’s security settings by using the context menu when you open an unsigned app in Finder. To get started, click the Finder icon in your Dock and navigate to the location of the program file you want to open (e.g., in Applications or Downloads ). [5] X Research source With the release of macOS Sequoia, the Ctrl-click method of bypassing Gatekeeper no longer works. [6] X Research source You'll either need to bypass Gatekeeper in Settings each time you run an unsigned app or disable it in Terminal ."
+    },
+    {
+      "title": "Control-click the app.",
+      "content": "Control-click the app. Click on the unsigned app and press the Control key at the same time. A context menu will open."
+    },
+    {
+      "title": "Select Open.",
+      "content": "Select Open . Choose the Open option from the menu. A warning window will pop up asking if you want to proceed."
+    },
+    {
+      "title": "Click Open in the window.",
+      "content": "Click Open in the window. In the window that pops up, click Open . You may be prompted to enter your username and password to continue. Once you do this, the software should run, and the app will also be saved as an exception to your security settings."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Unlock-Bitlocker-Encrypted-Drive-from-Command-Prompt",
+  "title": "How to Unlock Bitlocker Encrypted Drive from Command Prompt",
+  "steps": [
+    {
+      "title": "Run Command Prompt",
+      "content": "Run Command Prompt as an administrator. On Windows 10: On the bottom-left corner of the screen, type in \"cmd\" on the search box. Right-click on the search result of Command Prompt, and then select “Run as administrator”. On Windows 10/8/7: Press “Win+R” keys to open Run application. Type in: cmd, and then press “Shift+Ctrl+Enter” keys. Click on Yes on User Account Control screen, then the Command Prompt will be opened as an administrator."
+    },
+    {
+      "title": "On Command Prompt screen, type in the command line and execute it.",
+      "content": "On Command Prompt screen, type in the command line and execute it. Type in command line: Manage-bde -unlock E: -password And then press Enter to execute it."
+    },
+    {
+      "title": "Type in password to unlock Bitlocker drive.",
+      "content": "Type in password to unlock Bitlocker drive. If the command above executes successfully, you will get the message asking to enter the password to unlock this volume. Type your Bitlocker drive encrypted password, and then press Enter. The password is invisible on the Command Prompt screen, so make sure the password you type in is correct, or you will need to type in the command again. If the password is correct, you will get the message saying “the password successfully unlocked volume X:”, which means the Bitlocker drive was unlocked with the password from Command Prompt."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. Press “Win+R” keys to open Run application. Type in: cmd, and then press “Shift+Ctrl+Enter” keys on keyboard at the same time. Click on Yes on User Account Control screen, then the Command Prompt will be opened as an administrator."
+    },
+    {
+      "title": "Type in the command line.",
+      "content": "Type in the command line. Type in the command line: manage-bde –unlock X: -RecoveryPassword XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX- XXXXXX-XXXXXX-XXXXXX “X:” is the letter of Bitlocker encrypted drive and the 48 characters of the recovery key. Remember to change the X to your recovery key. For example: manage-bde –unlock L: -RecoveryPassword 007953-464848-680316-372767-326479-044872-075570-707442"
+    },
+    {
+      "title": "Run the command line to unlock Bitlocker drive.",
+      "content": "Run the command line to unlock Bitlocker drive. Press Enter to execute the command If you run the command successfully, you will get the message saying “The password successfully unlock volume X:”."
+    }
+  ]
+}

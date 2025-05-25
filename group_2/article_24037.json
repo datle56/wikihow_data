@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Install-Oracle-Java-JRE-on-Ubuntu-Linux",
+  "title": "How to Install Oracle Java JRE on Ubuntu Linux",
+  "steps": [
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click the Terminal app icon, which resembles a black box, in the bar on the left side of the screen. You can also press Alt + Ctrl + T to bring up the Terminal window."
+    },
+    {
+      "title": "Enter the Java install command.",
+      "content": "Enter the Java install command. Type in sudo apt install jre and press ↵ Enter . This command prompts Linux to begin searching for the JRE installation site."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted. Type in the password you use to log into your computer, then press ↵ Enter . The installation will commence."
+    },
+    {
+      "title": "Allow the JRE files to install.",
+      "content": "Allow the JRE files to install. This will take a few minutes. When you see the terms of use prompt appear, you may proceed."
+    },
+    {
+      "title": "Select <Yes> when prompted.",
+      "content": "Select <Yes> when prompted. Press the left arrow key, then press ↵ Enter . Java will resume installing."
+    },
+    {
+      "title": "Wait for Java to finish installing.",
+      "content": "Wait for Java to finish installing. Once you see your username appear at the bottom of Terminal, you can continue."
+    },
+    {
+      "title": "Check your Java version.",
+      "content": "Check your Java version. Type in java -version and press ↵ Enter , then wait for the Java version number to appear. If doing this results in an error, Java didn't install correctly. You may need to try installing it manually ."
+    },
+    {
+      "title": "Remove unnecessary files.",
+      "content": "Remove unnecessary files. You can get rid of temporary files installed by Java by doing the following: Type in sudo apt autoremove and press ↵ Enter . Type in y and press ↵ Enter ."
+    },
+    {
+      "title": "Open the Java download site.",
+      "content": "Open the Java download site. Go to https://www.java.com/en/download/ in your computer's web browser."
+    },
+    {
+      "title": "Click Free Java Download.",
+      "content": "Click Free Java Download . It's a red button in the middle of the page. Doing so opens the Downloads page."
+    },
+    {
+      "title": "Click the Linux link.",
+      "content": "Click the Linux link. This option is near the middle of the page. Clicking it should prompt the Java folder to begin downloading. You may first have to click Save to prompt the download to begin."
+    },
+    {
+      "title": "Open the \"Downloads\" folder.",
+      "content": "Open the \"Downloads\" folder. Click the Files app icon—which resembles a grey filing cabinet drawer on the left side of the screen—then double-click the \"Downloads\" folder."
+    },
+    {
+      "title": "Extract the downloaded folder.",
+      "content": "Extract the downloaded folder. Right-click the \"jre-#####-linux\" folder, then click Extract Here in the resulting drop-down menu. You should see a new, regular folder with a similar name appear in the \"Downloads\" folder."
+    },
+    {
+      "title": "Move the extracted folder if necessary.",
+      "content": "Move the extracted folder if necessary. If you want to install Java in a location other than the \"Downloads\" folder, do the following: Click once the extracted folder to select it. Press Ctrl + X to cut the folder. Go to the folder you want to use as an installation location and open it. Press Ctrl + V to paste in the extracted Java folder."
+    },
+    {
+      "title": "Find the extracted folder's \"bin\" folder.",
+      "content": "Find the extracted folder's \"bin\" folder. Open the extracted folder, then double-click the folder with the Java version number as its name. This will open the Java folder; you should see a folder entitled \"bin\" here."
+    },
+    {
+      "title": "Find the \"bin\" folder's path.",
+      "content": "Find the \"bin\" folder's path. To do so: Right-click the \"bin\" folder. Click Properties . Expand the \"Properties\" window by clicking and dragging right its right side until the entire \"Location\" path is visible. Select the \"Location\" path by clicking and dragging your mouse across it. Press Ctrl + C to copy the path."
+    },
+    {
+      "title": "Open the \".profile\" document.",
+      "content": "Open the \".profile\" document. The easiest way to do this is through Terminal: Open Terminal. Type in gedit .profile and press ↵ Enter ."
+    },
+    {
+      "title": "Create a new line at the bottom of the document.",
+      "content": "Create a new line at the bottom of the document. Scroll all the way down to the bottom of the document, then click below the bottom text entry."
+    },
+    {
+      "title": "Enter the Java \"Home\" path.",
+      "content": "Enter the Java \"Home\" path. The home path is the line export JAVA_HOME=/path where \"/path\" refers to the path you copied from the \"bin\" folder; you can paste in the copied path by pressing Ctrl + V . Your end result should resemble something like the following: [1] X Research source export JAVA_HOME=/home/name/java/jre1.8.0_181"
+    },
+    {
+      "title": "Press ↵ Enter to create a new line.",
+      "content": "Press ↵ Enter to create a new line. This new line should be directly beneath the \"export JAVA_HOME=\" line."
+    },
+    {
+      "title": "Specify the PATH variable.",
+      "content": "Specify the PATH variable. Type in PATH=\"$PATH:$JAVA_HOME/bin\" and then press ↵ Enter ."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's in the top-right corner of the window. Doing so saves your changes to the \".profile\" document."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. This will apply your changes, thus installing Java: Click in the top-right corner of the screen. Click in the resulting drop-down menu. Click Restart when prompted."
+    }
+  ]
+}

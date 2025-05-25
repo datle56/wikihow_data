@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Change-Startup-Programs-in-Windows-7",
+  "title": "How to Add and Remove Startup Programs in Windows 7",
+  "steps": [
+    {
+      "title": "Find the Startup folder in your Start menu.",
+      "content": "Find the Startup folder in your Start menu. Click the Windows \"Start\" button, select \"'All Programs'\", and then scroll to the folder called \"Startup.\""
+    },
+    {
+      "title": "Right-click the Startup folder and select Open.",
+      "content": "Right-click the Startup folder and select Open . This opens a folder in File Explorer that contains programs that start automatically when you sign into Windows 7. If you want to change the startup programs for all users on your PC, select Open all users instead. If you want to remove a startup program, simply delete it from the Startup folder. To do so, right-click the file and select \"'Delete'\". Don't worry, this won't delete the program from your computer. If you don't see the startup program you want to remove, see the MSConfig method to learn another way to find startup programs."
+    },
+    {
+      "title": "Create a shortcut to the program or file you want to run at startup.",
+      "content": "Create a shortcut to the program or file you want to run at startup. Right-click the program you want to start automatically, then select \"'Create shortcut'\". This creates a shortcut at the current location. Startup items can be either programs or other files. For example, you can set a word processing document to open upon startup."
+    },
+    {
+      "title": "Drag (or cut and paste) the shortcut icon into the Startup folder.",
+      "content": "Drag (or cut and paste) the shortcut icon into the Startup folder. The program will now open the next time you start the computer. To cut and paste: Right-click the shortcut you created for the program and select Cut . Then, in the Startup folder, right-click any white space in the window and select \"'Paste'\"."
+    },
+    {
+      "title": "Open MSConfig.",
+      "content": "Open MSConfig. This tool allows you to see all of your system's startup applications and disable them as needed. To open it, click the Windows \"Start\" button, type msconfig , and then click \"'MSConfig'\" in the search results. While you can disable startup programs with MSConfig, you won't be able to add new programs to the list. Before making changes that you are unsure of, use System Restore to create a \"restore point\" that you can revert to if something goes wrong."
+    },
+    {
+      "title": "Click the Startup tab.",
+      "content": "Click the Startup tab. This gives you a view of the programs installed as startup options on your computer. Note that not all startup items will be shown. If you see a program you don't recognize, head to Identifying Startup Programs to find out what it is. If you don't see the program you're looking for, use the startup folder method instead."
+    },
+    {
+      "title": "Check the box beside the startup program(s) you want to change.",
+      "content": "Check the box beside the startup program(s) you want to change. If you want a program to start automatically, check its box. If not, leave the checkbox blank. To automatically remove all startup programs in MSConfig, click Disable all . Or, to reenable all programs, click \"'Enable all'\"."
+    },
+    {
+      "title": "Click Apply and then OK.",
+      "content": "Click Apply and then OK . This will save the changes you made to your startup items."
+    },
+    {
+      "title": "Reboot your Windows 7 computer to finalize your changes.",
+      "content": "Reboot your Windows 7 computer to finalize your changes. A popup window will ask if you want to reboot the computer. Click \"'Restart'\" to reboot the computer and save the changes. When you have deselected an item in MSConfig, you will be starting in \"Selective startup\" mode. You'll see this in the \"General\" tab in MSConfig. If you want to change back to your normal startup program settings, you can return to MSConfig, click the \"'General'\" tab, and select \"'Normal Startup'\"."
+    },
+    {
+      "title": "Open the program you want to start (or not start) automatically.",
+      "content": "Open the program you want to start (or not start) automatically. Depending on the program, you may be able to choose whether it starts automatically when you sign in to Windows 7 from within the program's own settings."
+    },
+    {
+      "title": "Go to the program's settings.",
+      "content": "Go to the program's settings. You'll usually find settings in a menu called Settings , Options , Preferences , Tools , or similar. For example, in Skype, click your profile photo and go to Settings ."
+    },
+    {
+      "title": "Find the app's startup settings.",
+      "content": "Find the app's startup settings. Using Skype as an example again, you'll find the \"Automatically start Skype\" option on the \"'General'\" tab. [1] X Research source"
+    },
+    {
+      "title": "Enable or disable automatic startup.",
+      "content": "Enable or disable automatic startup. This differs from program to program and requires you to search for the startup setting by looking through menus such as \"options,\" \"preferences,\" \"settings,\" or \"tools,\" system tray icons, and so forth. To find out how to change a particular program's startup settings, look at the program's \"Help\" offerings or do an internet search . As another example, in Dropbox, a file sharing and storage program, you can enable or disable automatic startup in \"'Settings'\"> \"'General'\"> \"'Start Dropbox on system startup'\". [2] X Research source"
+    },
+    {
+      "title": "Check the manufacturer name in MSConfig.",
+      "content": "Check the manufacturer name in MSConfig. Many startup items have somewhat descriptive names, but others are obscure abbreviations and have functions that are difficult to identify. If you see a startup program you don't recognize when using MSConfig, you can see the name of its developer in the \"Manufacturer\" column. For example, if the manufacturer is Microsoft, the startup program is related to Windows, Office, or other Microsoft programs."
+    },
+    {
+      "title": "View the startup program's location.",
+      "content": "View the startup program's location. Seeing the name of the folder the startup program runs from will be helpful in finding out what the program does. If you're using the Startup folder method, right-click the startup program and select \"'Properties'\". On the \"'Shortcut'\" tab, you'll find the path to the program next to \"Start in.\" If you're using MSConfig, look at the Command column on the Startup tab to see where the program is located. If the path is cut off, hover your mouse cursor over the light gray bar to the right of \"Command\" in the bar above the list until the cursor changes to arrows, then drag the cursor right to expand the column. The path to the program should give you clues as to what the program does."
+    },
+    {
+      "title": "Do an internet search or use a program list.",
+      "content": "Do an internet search or use a program list. Try searching Google or Bing for the name of the program and the word \"Windows\" to see what it does. You can also look the program file's name up in one of these databases: https://www.processlibrary.com/en/ https://www.file.net/process https://www.shouldiremoveit.com/"
+    }
+  ]
+}

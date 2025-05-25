@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Encrypt-an-External-Drive-Using-Veracrypt",
+  "title": "How to Encrypt an External Drive Using Veracrypt",
+  "steps": [
+    {
+      "title": "Connect your external drive to your computer.",
+      "content": "Connect your external drive to your computer. You may use a flash drive, external SSD, or external HDD. Any external drive will work. Do not unplug your external drive during the process of encryption."
+    },
+    {
+      "title": "Launch VeraCrypt.",
+      "content": "Launch VeraCrypt. VeraCrypt can be used on Windows, Mac OS, and Linux. The instructions in this article were written using Windows 11."
+    },
+    {
+      "title": "Click “Create Volume.”",
+      "content": "Click “Create Volume.” This will open up the VeraCrypt Volume Creation Wizard. This wizard will allow you to specify how you want to encrypt your external drive."
+    },
+    {
+      "title": "Select “Create an encrypted file container” and click “Next.”",
+      "content": "Select “Create an encrypted file container” and click “Next.” Creating an encrypted file container will allow you to make only a section of your external drive encrypted. This is the most common way to encrypt your external drive (Griffith, 2015)."
+    },
+    {
+      "title": "Select “Standard VeraCrypt volume” and click “Next.”",
+      "content": "Select “Standard VeraCrypt volume” and click “Next.” A standard VeraCrypt volume is the normal way to create an encrypted volume on your external drive. A hidden volume is used for situations where you may be forced to give someone your password, but cannot let them access your data (Griffith, 2015)."
+    },
+    {
+      "title": "Click the “Select File” button to navigate to your external drive, name your volume, and click “Next.”",
+      "content": "Click the “Select File” button to navigate to your external drive, name your volume, and click “Next.” On Windows, this will open Windows File Explorer. Navigate to your external drive in the navigation pane on the left. Name your new VeraCrypt volume and click save. This will bring you back to the VeraCrypt Volume Creation Wizard. This step will use a different application to save your new VeraCrypt volume when running on a different operating system than Windows 11."
+    },
+    {
+      "title": "Set the encryption algorithm to AES, set the hash algorithm to SHA-256, and click “Next.”",
+      "content": "Set the encryption algorithm to AES, set the hash algorithm to SHA-256, and click “Next.” AES encryption algorithm is an industry standard and is acceptable to be left as the default (Simplilearn, 2022). SHA-256 is recommended as it is a commonly used and widely compatible hash algorithm (Sectigo, 2021)."
+    },
+    {
+      "title": "Type the size that you want to volume to be, select the size denomination, and click “Next.”",
+      "content": "Type the size that you want to volume to be, select the size denomination, and click “Next.” Set the volume size to the size that you require. If you want the volume to fill the entirety of your external drive, enter the number and denomination of the free space on the drive. Ensure that your volume is at least the minimum size allowed for the format used on your external drive."
+    },
+    {
+      "title": "Create a strong password and click “Next.”",
+      "content": "Create a strong password and click “Next.” To learn more about creating a strong password, check out this article on “4 Ways to Create a Secure Password” https://www.wikihow.tech/Create-a-Secure-Password ."
+    },
+    {
+      "title": "Set your desired settings for the volume’s filesystem and click “Format.”",
+      "content": "Set your desired settings for the volume’s filesystem and click “Format.” Select “Quick Format” to speed up the formatting process. This is best used for new drives or drives that you know aren’t corrupted. The cluster menu is used for advanced situations only. Randomly move your mouse within the VeraCrypt window. This will increase the cryptographic strength of the encryption. exFAT is best for external drives due to its excellent compatibility. Its maximum file size is 16EB (Norem, 2016). NTFS is Windows’ filesystem. Use this if you will primarily be using your external drive on Windows devices (Norem, 2016). FAT32 is an older version of exFAT. It doesn’t allow file sizes over 4GB. It is best used for compatibility (Norem, 2016)."
+    },
+    {
+      "title": "Select “OK” and click “Exit.”",
+      "content": "Select “OK” and click “Exit.” Your external drive now has an encrypted volume on it. To access this volume, you must mount it in VeraCrypt."
+    },
+    {
+      "title": "Select your volume and choose a drive letter.",
+      "content": "Select your volume and choose a drive letter. To select a file, click on the “Select File” button. Navigate to the volume you created on your external drive and open it. Then click on a drive letter and click “Mount.”"
+    },
+    {
+      "title": "Enter the password you created in step nine and click “OK.”",
+      "content": "Enter the password you created in step nine and click “OK.” The volume you created can now be accessed via the drive letter you assigned it."
+    },
+    {
+      "title": "Click “Dismount” when you are finished using your external drive.",
+      "content": "Click “Dismount” when you are finished using your external drive."
+    },
+    {
+      "title": "Connect your external drive to your computer.",
+      "content": "Connect your external drive to your computer. You may use a flash drive, external SSD, or external HDD."
+    },
+    {
+      "title": "Launch VeraCrypt.",
+      "content": "Launch VeraCrypt. VeraCrypt can be used on Windows, Mac OS, and Linux. The instructions in this article are written using Windows 11."
+    },
+    {
+      "title": "Click “Create Volume.”",
+      "content": "Click “Create Volume.” This will open up the VeraCrypt Volume Creation Wizard. This wizard will allow you to specify how you want to encrypt your external drive."
+    },
+    {
+      "title": "Select “Encrypt a non-system partition/drive” and click “Next.”",
+      "content": "Select “Encrypt a non-system partition/drive” and click “Next.” This will allow you to encrypt your entire drive instead of just a portion of it."
+    },
+    {
+      "title": "Select “Standard VeraCrypt volume” and click “Next.”",
+      "content": "Select “Standard VeraCrypt volume” and click “Next.” A standard VeraCrypt volume is the normal way to create an encrypted volume on your external drive. A hidden volume is used for situations where you may be forced to give someone your password, but cannot let them access your data (Griffith, 2015)."
+    },
+    {
+      "title": "Choose the external drive partition you want to encrypt.",
+      "content": "Choose the external drive partition you want to encrypt. Click “Select Device” and select the external drive partition you want to encrypt. Click “OK” and then click “Next.\" Select the partition under the listed disk, not the disk itself."
+    },
+    {
+      "title": "Choose whether you want to encrypt the data currently on your external drive or have it wiped.",
+      "content": "Choose whether you want to encrypt the data currently on your external drive or have it wiped. If you select “Create encrypted volume and format it,” your entire external drive will be wiped. This is the fastest way to encrypt your drive. If you select “Encrypt partition in place,” your data will remain on the drive. This option will be slower than formatting the drive."
+    },
+    {
+      "title": "Set the encryption algorithm to AES, set the hash algorithm to SHA-256, and click “Next.”",
+      "content": "Set the encryption algorithm to AES, set the hash algorithm to SHA-256, and click “Next.” AES encryption algorithm is an industry standard and is acceptable to be left as the default (Simplilearn, 2022). SHA-256 is recommended as it is a commonly used and widely compatible hash algorithm (Sectigo, 2021)."
+    },
+    {
+      "title": "Click “Next” to verify that the volume size of the selected partition is correct.",
+      "content": "Click “Next” to verify that the volume size of the selected partition is correct."
+    },
+    {
+      "title": "Create a strong password and click “Next.”",
+      "content": "Create a strong password and click “Next.” To learn more about creating a strong password, check out this article on “4 Ways to Create a Secure Password” https://www.wikihow.tech/Create-a-Secure-Password ."
+    },
+    {
+      "title": "Choose whether you want to store files larger than 4GB on your external drive and click “Next.”",
+      "content": "Choose whether you want to store files larger than 4GB on your external drive and click “Next.” This will allow VeraCrypt to set a default file system on the next step."
+    },
+    {
+      "title": "Set your desired settings for the volume’s filesystem and click “Format.”",
+      "content": "Set your desired settings for the volume’s filesystem and click “Format.” Select “Quick Format” to speed up the formatting process. This is best used for new drives or drives that you know aren’t corrupted. The cluster menu is used for advanced situations only. Randomly move your mouse within the VeraCrypt window. This will increase the cryptographic strength of the encryption. exFAT is best for external drives due to its excellent compatibility. Its maximum file size is 16EB (Norem, 2016). NTFS is Windows’ filesystem. Use this if you will primarily be using your external drive on Windows devices (Norem, 2016). FAT32 is an older version of exFAT. It doesn’t allow file sizes over 4GB. It is best used for compatibility (Norem, 2016)."
+    },
+    {
+      "title": "Click “OK” and then click “Exit.”",
+      "content": "Click “OK” and then click “Exit.” Your drive has now been encrypted. To access your encrypted drive, you must mount it in VeraCrypt."
+    },
+    {
+      "title": "Select your external drive’s encrypted partition and choose a drive letter.",
+      "content": "Select your external drive’s encrypted partition and choose a drive letter. Click “Select Device” and select your external drive’s encrypted partition. Click “OK.” Select a drive letter. Click “Mount.”"
+    },
+    {
+      "title": "Enter the password you created in step 10 and click “OK.”",
+      "content": "Enter the password you created in step 10 and click “OK.” Your external drive can now be accessed via the drive letter you assigned it."
+    },
+    {
+      "title": "Click “Dismount” when you are finished using your external drive.",
+      "content": "Click “Dismount” when you are finished using your external drive."
+    }
+  ]
+}

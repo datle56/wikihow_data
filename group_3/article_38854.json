@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Set-Java-Home",
+  "title": "How to Set JAVA_HOME for JDK & JRE: A Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Find your Java installation directory.",
+      "content": "Find your Java installation directory. Assuming that you didn't change the path for the JDK during installation, it should be in a directory under C:\\Program Files\\Java. There are a few ways to find the full path: Open File Explorer, click This PC in the left panel, then navigate to C:\\Program Files\\Java. The directory you're looking for should have the name of the JDK version, such as C:\\Program Files\\Java\\jdk-23. You can also open the command prompt and run the command wmic product where \"Name like '%%Java%%'\" get installlocation,Name . This will tell you the full path of the JDK, even if you haven't yet set JAVA_HOME."
+    },
+    {
+      "title": "Open your Advanced System Settings.",
+      "content": "Open your Advanced System Settings. Here's how: Press the Windows key on your keyboard and type advanced system . Click View advanced system settings in the search results."
+    },
+    {
+      "title": "Click the Environment Variables button.",
+      "content": "Click the Environment Variables button. You'll see it at the bottom-right corner of the System Properties window."
+    },
+    {
+      "title": "Click the New… button under \"User variables.\"",
+      "content": "Click the New… button under \"User variables.\" You'll have two sections on this window—\"User variables\" and \"System variables.\" You'll want to make sure you're clicking New under the first box (User variables). If you have multiple JDK installations and want to change JAVA_HOME to your new installation, select the current JAVA_HOME user variable and click Edit… instead."
+    },
+    {
+      "title": "Type JAVA_HOME as the \"Variable name.\"",
+      "content": "Type JAVA_HOME as the \"Variable name.\" If you're editing the current JAVA_HOME path, you'll already have JAVA_HOME here. So, you can skip this step."
+    },
+    {
+      "title": "Enter the full path to your JDK installation.",
+      "content": "Enter the full path to your JDK installation. For example, if the path is C:\\Program Files\\Java\\jdk-23, enter that full path into the \"Variable value\" field. [1] X Research source If you're adding a second path to JAVA_HOME, just type a semicolon (;) after the first path, then enter the second path. If you're replacing an old JAVA_HOME path, just delete the current path and enter the new one."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This takes you back to the Environment Variables window."
+    },
+    {
+      "title": "Select the Path user variable and click Edit.",
+      "content": "Select the Path user variable and click Edit . You should already have a variable in the \"User variables\" section called \"Path.\" To make sure you can run the Java binaries, you'll need to edit your path to add the location of the JDK bin directory. If you want other users on this PC to be able to access Java binaries from the command line, repeat this step for the \"Path\" variable under \"System variables\" as well."
+    },
+    {
+      "title": "Append the path to your Java /bin directory to the end of the path.",
+      "content": "Append the path to your Java /bin directory to the end of the path. You'll already have at least one directory in your path, which needs to stay in place. Here's how to add the Java bin directory: Click the New button at the top. Enter the full path to the JDK with \\bin at the end. For example, C:\\Program Files\\Java\\jdk-23.0.2\\bin. Click OK."
+    },
+    {
+      "title": "Click OK on all subsequent windows.",
+      "content": "Click OK on all subsequent windows. This updates your JAVA_HOME variable and adds the Java binaries to your path. You won't need to restart your computer for the changes to take effect, but you will need to relaunch any apps that were trying to access Java. Open a new command prompt window and run the command echo %JAVA_HOME% to display the new path to JAVA_HOME. Make sure this is a new command prompt window. If you still have the same window open, the command will fail because it doesn't have the new environment variables."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. To open Terminal , search for Terminal in Spotlight. You can also open Finder, click the Go menu, select Utilities , and choose the Terminal app."
+    },
+    {
+      "title": "Type /usr/libexec/java_home and press ⏎ Return.",
+      "content": "Type /usr/libexec/java_home and press ⏎ Return . This handy utility that comes preinstalled on macOS will tell you the full path to your Java installation , which you'll need to set JAVA_HOME. If you have more than one Java installation and want to see the paths to all of them, use /usr/libexec/java_home -V instead."
+    },
+    {
+      "title": "Copy the path and paste it somewhere handy.",
+      "content": "Copy the path and paste it somewhere handy. Highlight the path to the Java installation you want to use as JAVA_HOME, press Cmd + V to copy it, then paste it into a sticky note or text file."
+    },
+    {
+      "title": "Open your .zshrc file in a text editor.",
+      "content": "Open your .zshrc file in a text editor. As long as you're using macOS Catalina or later, you'll be using the zsh shell by default, which means you'll add JAVA_HOME and the path to your .zshrc file. [2] X Research source If you're using an earlier version of macOS (or prefer the bash shell), replace .zshrc with .bashrc in these commands instead. Here's the easiest way to open the file: Type cd ~ and press Return . Type open .zshrc and press Return . This should open the file in a text editor. If the file is not found, type echo > .zshrc and press Return . Then, run open .zshrc again."
+    },
+    {
+      "title": "Add these lines to the bottom of the file.",
+      "content": "Add these lines to the bottom of the file. Adding these lines ensures that JAVA_HOME will be set correctly even after you log off or open another window. If the file has existing contents, just scroll down past them to enter the following text on individual lines: export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-23.0.2.jdk/Contents/Home Replace /Library/Java/JavaVirtualMachines/jdk-23.0.2.jdk/Contents/Home with the full path to the /Contents/Home directory of your Java installation if it's different. export PATH=$JAVA_HOME/bin:$PATH Save the file and exit the text editor when you're finished."
+    },
+    {
+      "title": "Type source .zshrc and press ⏎ Return.",
+      "content": "Type source .zshrc and press ⏎ Return . Once you've edited your profile, this command ensures that your environment variables will be updated for the current terminal window (and any other windows you open from now on)."
+    },
+    {
+      "title": "Type echo $JAVA_HOME and press ⏎ Return to confirm JAVA_HOME.",
+      "content": "Type echo $JAVA_HOME and press ⏎ Return to confirm JAVA_HOME. You should now see the full path to JAVA_HOME. If you have any other open windows attempting to find Java binaries, close and reopen them."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're logged in to your desktop environment, you can press Ctrl + Alt + T to launch a terminal window. This method will work in just about any version of Linux, including Ubuntu and Redhat."
+    },
+    {
+      "title": "Find the location of your Java installation.",
+      "content": "Find the location of your Java installation. One way you might find the Java install location is to run the which javac command, but this will only give you a symbolic link. Instead, run this command to find the location of the executable file: readlink -f `which javac` If that doesn't work, try running update-alternatives --list java . If neither of these commands works, run whereis java , which will usually result in a symbolic link like /usr/bin/java. Once you get the directory, find out where it links using ls -la /bin/java . If that points you to another directory, e.g., /etc/alternatives/java, run ls -la /etc/alternatives/java . At that point, you should see a much longer directory, which is actually the home to the Java binaries. For example, usr/lib/jvm/java-23-openjdk-arm64/bin/java . This is the directory you want."
+    },
+    {
+      "title": "Set the JAVA_HOME path.",
+      "content": "Set the JAVA_HOME path. Now that you have the location of Java, you can add the path to your .bashrc file (if you're using the bash shell ), .zshrc (for the zsh shell), or the equivalent for your shell. [3] X Research source Run both of the following commands, replacing the path with the path to your JDK or JRE installation, and \"bashrc\" with your shell's login script: echo \"export JAVA_HOME=/usr/lib/jvm/java-23-openjdk-arm64\" >> ~/.bashrc echo \"export PATH=$PATH:$JAVA_HOME/bin\" >> ~/.bashrc"
+    },
+    {
+      "title": "Type source .bashrc to apply the changes to the current terminal window.",
+      "content": "Type source .bashrc to apply the changes to the current terminal window. Though you've already set the home for Java and added the path to its binaries permanently, the changes won't take effect in your current terminal window until you run this command. At this point, you can run echo $JAVA_HOME to see the location of Java on your system."
+    }
+  ]
+}

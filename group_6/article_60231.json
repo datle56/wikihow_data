@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Sort-by-Number-on-Google-Sheets-on-PC-or-Mac",
+  "title": "The 3 Easiest Ways to Sort by Number in Google Sheets",
+  "steps": [
+    {
+      "title": "Freeze your header row (if you haven't already).",
+      "content": "Freeze your header row (if you haven't already). If there's a header above the numbers you want to sort, you'll want to freeze the row before sorting. To freeze the header row: Click the row number on the left side of the sheet. Right-click the highlighted row. Select View more row actions > Freeze 1 row . [1] X Research source"
+    },
+    {
+      "title": "Make sure your numbers are stored as numbers (not text).",
+      "content": "Make sure your numbers are stored as numbers (not text). Here's how: Select the numerical cells you want to sort ( not including the header row—just the cells with numbers). Click the Format menu at the top. Select the Number menu. Select a number option that best describes your data. For example, use Number for regular numbers or Currency for prices."
+    },
+    {
+      "title": "Highlight the cells you want to sort.",
+      "content": "Highlight the cells you want to sort. You can click the column letter above the numbers to select the entire column."
+    },
+    {
+      "title": "Click the Data tab at the top of Google Sheets.",
+      "content": "Click the Data tab at the top of Google Sheets. It will open a drop-down menu."
+    },
+    {
+      "title": "Click Sort range on the Data menu.",
+      "content": "Click Sort range on the Data menu. This option will allow you to customize your sorting settings."
+    },
+    {
+      "title": "Select Advanced range sorting options.",
+      "content": "Select Advanced range sorting options . It's at the bottom of the menu."
+    },
+    {
+      "title": "Check the box next to \"Data has header row.\"",
+      "content": "Check the box next to \"Data has header row.\" This ensures your header row won't get mixed up in the numbers when you sort."
+    },
+    {
+      "title": "Select a sorting order.",
+      "content": "Select a sorting order. Select A to Z to sort numbers in ascending order (lowest number at the top), or Z to A to sort in descending order. Even though you're seeing \"A to Z\" and \"Z to A,\" sorting with this method also works on numbers ( not just letters ). A is equivalent to your lowest number, and Z is the highest number."
+    },
+    {
+      "title": "Click Sort.",
+      "content": "Click Sort . Your numbers are now in the selected order."
+    },
+    {
+      "title": "Make sure there's a header above your numbers.",
+      "content": "Make sure there's a header above your numbers. To sort numbers with a filter, the cell above your number list must be a header cell. For example, if you're sorting a list of prices, you may want to make the header \"Prices\" for that column."
+    },
+    {
+      "title": "Make sure your numbers are stored as numbers (not text).",
+      "content": "Make sure your numbers are stored as numbers (not text). Here's how: Select the numerical cells you want to sort ( not including the header row—just the cells with numbers). Click the Format menu at the top. Select the Number menu. Select a number option that best describes your data. For example, use Number for regular numbers or Currency for prices."
+    },
+    {
+      "title": "Select the column you want to sort.",
+      "content": "Select the column you want to sort. Click the letter above the column to select all the numbers and the header row at once."
+    },
+    {
+      "title": "Click the Data tab and select Create a filter.",
+      "content": "Click the Data tab and select Create a filter . This adds a small funnel icon to the header cell, which indicates that you can now easily sort the column."
+    },
+    {
+      "title": "Click the filter icon and select a sorting option.",
+      "content": "Click the filter icon and select a sorting option. Select A to Z to sort numbers in ascending order (lowest number at the top), or Z to A to sort in descending order. Once you make your selection, the numbers in the column will sort in ascending or descending order. Even though you see \"A to Z\" and \"Z to A,\" sorting with this method also works on numbers. A is equivalent to your lowest number, and Z is the highest number."
+    },
+    {
+      "title": "Store your numbers in a numerical format.",
+      "content": "Store your numbers in a numerical format. If the numbers you want to sort are stored as plain text in Google Sheets, they won't sort correctly. Here's what you'll need to do: Select the numerical cells you want to sort ( not the header row—just the cells with numbers). Click the Format menu at the top. Select the Number menu. Select a number option that best describes your data. For example, use Number for regular numbers or Currency for prices."
+    },
+    {
+      "title": "Create a formula with the SORT function.",
+      "content": "Create a formula with the SORT function. The syntax is =SORT( RANGE:RANGE , sort_column , TRUE / FALSE ) . Replace RANGE:RANGE with the range you want to sort, e.g., E2:E40 . sort_column is the number of the column you want to sort by, based on how many columns you selected. If you're only sorting one column, the value is 1 . If you're sorting multiple columns based on the numbers in the second selected column, you'd enter 2 . [2] X Research source To sort in ascending order, with the lowest number at the top, use TRUE . For descending order, use FALSE . For example, to sort only column E (in this case, cells E2: E40) in numerical order, you'd use =SORT(E2:E40, 1, TRUE) . To sort the data in column D as well, based on E2:E40, you'd use =SORT(E2:E40, D2:D40, 2, TRUE) ."
+    }
+  ]
+}

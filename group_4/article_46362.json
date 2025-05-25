@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Use-Summation-Formulas-in-Microsoft-Excel",
+  "title": "How to Use the SUM Function in Excel to Add Cells, Ranges, & Numbers",
+  "steps": [
+    {
+      "title": "Enter the formula into a new cell.",
+      "content": "Enter the formula into a new cell. Make a new spreadsheet . Then, select a cell and type an equals sign (=). Then, alternate between clicking a cell with a value, and typing “+”. Your formula should end with the final cell you want to sum. Your finished formula should look like cell1 + cell2 + cell3 . Hit the Enter key when you complete your formula. For example, =C4+C5+C6+C7 will sum the values of the four cells, C4, C5, C6, and C7. Each time you click on another cell, Excel will insert the cell reference for you (C4, for example), which tells Excel which spreadsheet cell contains the number (for C4, it's the cell in column C, in row 4). If you know which cells you want to calculate, you can type them out instead of clicking them individually. Excel functions will recognize a combination of numbers and cell references in formulas. For example, you could type “=5000+C5+25.2+B7”. If you’re looking for subtraction information, check out our guide on how to subtract in Excel ."
+    },
+    {
+      "title": "Use the SUM function to add two or more cells.",
+      "content": "Use the SUM function to add two or more cells. Select the cell you want the summation to output to. Then, type an equals sign (=), SUM, and the cells you’re summing enclosed in parenthesis. The function should look like this: =SUM(your numbers here) . For example, =SUM(C4,C5,C6,C7) will add the numbers contained in the 4 cells within the parentheses."
+    },
+    {
+      "title": "Use the SUM function to add a range of cells.",
+      "content": "Use the SUM function to add a range of cells. If you provide a starting and ending cell, separated by a colon (:), you can sum large sections of the spreadsheet. The function should look like this: =SUM(cell1:cell2)' where “cell1” and “cell2” are your starting and ending cell respectively. For example, =SUM(C4:C7) sums the values in C4 to C7. You don't have to type out “C4:C7”. After typing “=SUM(” you can select a range by clicking and dragging your cursor from cell C4 to C7. The range will appear in the formula following the open parenthesis. Add the closing parenthesis at the end, and you're done! For a large range of numbers, this is much faster than clicking on each cell individually."
+    },
+    {
+      "title": "Use the AutoSum Wizard.",
+      "content": "Use the AutoSum Wizard. If you’re using Excel 2007 or later, an alternative to typing “=SUM” is using AutoSum. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Select the cell you want the summation to output to. Go to the Format tab > AutoSum drop-down arrow > Sum . Select the range of cells you want to sum. AutoSum might be limited to contiguous cell ranges in some versions of Excel; if you want to skip cells in your calculation, it may not work correctly."
+    },
+    {
+      "title": "Copy/paste data into other cells.",
+      "content": "Copy/paste data into other cells. Since the cell with the function holds both the sum value and the sum function, you have to consider which you want copied. Copy the cell with the summation by pressing Ctrl + c (Windows) or Cmd + c (Mac). Then, select another cell and go to the Home tab > Clipboard drop-down and select either Paste Formulas or Paste Values ."
+    },
+    {
+      "title": "Reference sums in other functions.",
+      "content": "Reference sums in other functions. You can use the value of your summation cell in other functions. Rather than making a new summation or typing out the number value of your previous function, you can reference the original sum cell in other calculations. For example, let’s say you create a summation function for column C in C20 and column D in D20. You can add these sums by selecting a new cell and typing “=SUM(C20, D20)” This essentially nests your two summations into a third summation formula. Then, if your summation of C or D changes, this third summation will automatically update."
+    },
+    {
+      "title": "Use the basic SUMIF function.",
+      "content": "Use the basic SUMIF function. The SUMIF function allows you to sum values when they meet a criteria. The criteria can be within the range of values itself, or in a different range that is the same size as the values range. If the criteria is in the range itself, follow these steps: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Type =SUMIF( in a new cell. Select or type the range of cells you want to sum, then type a comma (,). Type a numerical criteria in double quotation marks, then type a closing parenthesis. For example, if you want to only sum numbers in a range that are greater than 10, you could type “=SUM(C1:C10, “>10”)”"
+    },
+    {
+      "title": "Set up your data for SUMIF.",
+      "content": "Set up your data for SUMIF. If you’re using the optional parameter [sum_range], you’ll need separate columns for the range you want compared to the criteria and the range you want to sum. There are multiple ways to format a spreadsheet , but here’s a basic setup for SUMIF: Create one column with number values and a second column with a conditional value, like “yes” and “no”. For example, a column with 4 rows with values 1, 2, 3, and 4 and a second column with values of “yes” or “no”. This setup is similar to using VLOOKUP ."
+    },
+    {
+      "title": "Enter the function into a cell.",
+      "content": "Enter the function into a cell. To create a SUMIF formula using the optional [sum_range], follow these steps: Select a new cell and enter “=SUMIF(” range — Select or type a range of values to compare to the criteria. Then type a comma (,). This will be the range in the column where you placed your conditional values. criteria — Type in the criteria. This can be numerical, text-based, or boolean (TRUE/FALSE). Enclose this criteria with double-quotation marks. Then type a comma (,). sum_range — Select or type a range of values to sum. This will be the column you created with number values. The sum_range argument should be the same shape and size as range . The SUMIF formula will check the value in each range cell and add the respective sum_range cell to the sum. For example: “=SUMIF(C1:C4, “yes”, B1:B4)” will sum values in the range B1:B4 if the cell in C1:C4 is the string “yes”."
+    },
+    {
+      "title": "Setup your data table.",
+      "content": "Setup your data table. The setup is similar to SUMIF, but can support multiple criteria with multiple ranges. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Create one column with number values. These are the values you’ll sum if the criteria in the criteria ranges are met. Create multiple columns containing conditional values (e.g. yes/no, TRUE/FALSE, locations, dates, numeric values)."
+    },
+    {
+      "title": "Enter your SUMIFS function.",
+      "content": "Enter your SUMIFS function. To create a SUMIFS formula using multiple criteria, follow these steps: Select a new cell and enter “=SUMIFS(” sum_range — Select or type a range of cells to sum. Then type a comma (,). This will be the range in the column where you typed your number values. criteria_range1 — Select or type a range of values to compare to criteria1 . Then type a comma (,). This will be one range in a column where you placed conditional values. criteria1 — Type in a criteria. This can be numerical, text-based, or boolean (TRUE/FALSE). Enclose this criteria with double-quotation marks. Then type a comma (,). criteria_range2 — Select or type a range of values to compare to criteria2 . Then type a comma (,). This will be the second range in a column where you placed conditional values. criteria2 — Type in a criteria. This can be numerical, text-based, or boolean (TRUE/FALSE). Enclose this criteria with double-quotation marks. Then type a comma (,). Continue creating additional criteria_range and criteria as needed. The sum_range argument should be the same shape and size as every criteria_range . The SUMIFS formula will check the value in each criteria_range cell and add the respective sum_range cell to the sum. For example: “=SUMIFS(B1:B4, C1:C4, “yes”, D1:D4, “california”)” will sum values in the range B1:B4 if the cell in C1:C4 is the string “yes” and the cell in D1:D4 is the string “california”."
+    }
+  ]
+}

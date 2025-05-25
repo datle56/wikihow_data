@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Root-an-Android-Without-a-PC",
+  "title": "How to Root Your Android Device Without a PC",
+  "steps": [
+    {
+      "title": "Unlock your device’s bootloader.",
+      "content": "Unlock your device’s bootloader. The bootloader is responsible for loading the kernel, one of the core programs on your Android that helps manage a wide variety of basic tasks. [1] X Research source Unlocking the bootloader is a critical step in the process of rooting your phone or tablet. [2] X Research source Always back up any data on your device that you want to keep before proceeding, since this process will factory reset and erase your Android. Here’s how to unlock the bootloader: [3] X Research source Put your device in bootloader mode. If you have the Android Debug Bridge (ADB) installed, you can use it to send the command adb reboot bootloader . Otherwise, check your phone or tablet’s documentation for information on how to boot into the bootloader. For example, you can do this on many devices by holding the volume down button while booting up. Run the command fastboot flashing unlock . If this doesn’t work, you’ll need to enable OEM Unlocking first: Boot to the Home Screen. Open Settings > System > Developer options . Enable OEM unlocking. Accept the warning about unofficial images, then wait for your device to reset and reboot."
+    },
+    {
+      "title": "Enable your Android’s developer options.",
+      "content": "Enable your Android’s developer options. If you haven’t already enabled developer options, you’ll need to do so before you can root your device. The exact process for doing this varies depending on your device model, but typically, you will go to Settings > About (or About phone ) > Build Number . Tap Build Number 7 times, or until you see a message that says “You are now a developer!” [4] X Research source On some devices, the path is something like Settings > About > Software Information > Build number . To look up the exact path for this option on your device, check out this article from Android ."
+    },
+    {
+      "title": "Turn on USB Debugging.",
+      "content": "Turn on USB Debugging. This feature is located in the Developer Options menu. To enable it, go to Settings > System > Developer options and toggle on USB debugging . [5] X Research source On some Androids, you may need to go to Settings > System > Advanced > Developer options > USB debugging . Note that not all Androids support rooting without a PC , even if you’ve enabled all these settings. If you’re unable to use the process described below, you may need to try a more standard rooting method ."
+    },
+    {
+      "title": "Download the Shizuku app.",
+      "content": "Download the Shizuku app. This app is available in the Google Play Store . Download and install it on your Android phone or tablet. [6] X Research source Shizuku allows you to manage permissions that you normally can’t get to without root-level access on your Android. You’ll be using this app, in combination with another app called Termux, to root your device without a PC."
+    },
+    {
+      "title": "Start Shizuku with wireless debugging.",
+      "content": "Start Shizuku with wireless debugging. Once Shizuku is installed, launch the app and follow the setup instructions. When you’re able to, select Start via Wireless Debugging ."
+    },
+    {
+      "title": "Let Shizuku run commands.",
+      "content": "Let Shizuku run commands. Follow the prompts to give Shizuku permission to run commands on your Android."
+    },
+    {
+      "title": "Install Termux on your device.",
+      "content": "Install Termux on your device. Termux is a terminal emulator that allows you to run commands using code in a command-line interface. You can install it from the Google Play Store or from F-Droid . https://magiskmodule.gitlab.io/blog/root-android-without-pc/ You’ll use Termux in combination with the Shizuku app to root your Android."
+    },
+    {
+      "title": "Update your Termux packages.",
+      "content": "Update your Termux packages. Once you’ve installed Termux, run the commands pkg update and pkg upgrade . This will ensure that you’re running the most up-to-date version of the app."
+    },
+    {
+      "title": "Run a command to install the tools you need.",
+      "content": "Run a command to install the tools you need. Once you’ve updated Termux, run the command pkg install curl wget unzip . This will install tools that will allow you to flash recoveries and more."
+    },
+    {
+      "title": "Install ADB.",
+      "content": "Install ADB. ADB, or Android Debug Bridge, is an Android command line tool that allows you to run a variety of commands you’ll need during the rooting process. [7] X Research source Here’s how to install it in the Termux app: [8] X Research source Run the command pgk install root-repo . Enter the command pkg install android-tools . Type adb version to verify that ADB is installed. This will also tell you which version you have."
+    },
+    {
+      "title": "Download the TWRP or OrangeFox image.",
+      "content": "Download the TWRP or OrangeFox image. Next, you will be flashing a custom recovery for your Android. The custom recovery will allow you to create a custom ROM, back up your system, and root your device. The most popular custom recovery options are TWRP and OrangeFox. Download the image file for your preferred option to your Android device. [9] X Research source You can download the TWRP image here . The Orange Fox image is available here . If multiple options are available, choose the one that’s compatible with your specific Android device."
+    },
+    {
+      "title": "Boot up in fastboot mode in the Termux app.",
+      "content": "Boot up in fastboot mode in the Termux app. Open Termux on your Android and enter the following command: adb reboot bootloader ."
+    },
+    {
+      "title": "Flash your preferred recovery.",
+      "content": "Flash your preferred recovery. The command will be slightly different depending on which option you chose. Enter one of the following commands in Termux: For TWRP: fastboot flash recovery twrp-x.x.x-x-device.img . Replace “x.x.x-x-device” with the appropriate version number and device name for the image you downloaded. For OrangeFox: fastboot flash recovery recovery.img . You may need to change “recovery.img” to the actual name of the recovery file you downloaded. [10] X Research source"
+    },
+    {
+      "title": "Reboot from fastboot mode.",
+      "content": "Reboot from fastboot mode. In Termux, enter the command fastboot reboot . This will restart your device."
+    },
+    {
+      "title": "Download the Magisk zip.",
+      "content": "Download the Magisk zip. You can find it here . You’ll use Magisk to complete the rooting process. [11] X Research source"
+    },
+    {
+      "title": "Boot up in recovery mode using Termux.",
+      "content": "Boot up in recovery mode using Termux. Launch the Termux app, then enter the command adb reboot recovery . Your device will reboot using the custom recovery you flashed."
+    },
+    {
+      "title": "Flash Magisk using your custom recovery.",
+      "content": "Flash Magisk using your custom recovery. The way you do this will vary slightly depending on which recovery you chose, but you should see an obvious “Install” option that will allow you to flash Magisk. For example, in TWRP, tap Install , then select the Magisk zip file. Swipe to flash. Once the process is complete, select Reboot > System . Your device is now rooted! You can use Magisk to do things like installing root-only apps or granting root permissions to trusted apps."
+    },
+    {
+      "title": "Keep your device up to date.",
+      "content": "Keep your device up to date. After you root your Android, it’s especially important to regularly update your apps and system. This will help prevent security problems and compatibility issues. [12] X Research source The correct way to update your system on a rooted Android depends on your type of device. Read a detailed guide here . Disable automatic updates, since they can cause problems on a rooted device."
+    },
+    {
+      "title": "Back up your device frequently.",
+      "content": "Back up your device frequently. Rooting your Android can potentially destabilize it. Use your custom recovery to make backups on a regular basis so you can restore your phone or tablet if something goes wrong. You can easily back up and restore your device with the custom recovery you installed. For example, if you have TWRP, boot up in recovery mode (you can do this in Termux with the command adb reboot recovery ). Tap Backup and follow the prompts on screen to create your backup. If you already have a backup and need to restore from it, tap Restore instead. [13] X Research source"
+    },
+    {
+      "title": "Use recovery mode to escape a boot loop or fix other common issues.",
+      "content": "Use recovery mode to escape a boot loop or fix other common issues. If your rooted Android gets stuck in a boot loop, you may be able to get out of it by booting up in recovery mode. If you can’t enter commands, you can forcefully enter fastboot mode by holding the right button combination for your device (such as power and volume down).​​ [14] X Research source Once you’re in recovery mode, you can restore from a backup and even reflash your custom recovery and root if necessary. You can also use this method to reflash your root package if root access isn’t working or your device becomes unresponsive."
+    },
+    {
+      "title": "Try one of these workarounds if you get security alerts.",
+      "content": "Try one of these workarounds if you get security alerts. Some apps won’t work on your Android if they detect Magisk. For instance, you might get a security alert error message when you try to use a banking app. If this happens, you can use a few possible methods to hide Magisk from the app: [15] X Research source Install the Shamiko module, which has advanced hiding capabilities. Read a detailed guide here . Enable DenyList. This allows you to hide Magisk from individual apps. Check out this detailed guide . Reinstall the app. Sometimes, uninstalling and reinstalling the problematic app will solve the problem. Try installing a custom ROM . A ROM that passes SafetyNet checks may help hide root better."
+    },
+    {
+      "title": "Try one-tap root options at your own risk.",
+      "content": "Try one-tap root options at your own risk. Apps like KingoRoot, KingRoot, and OneClickRoot may work for rooting your Android without a PC. Theoretically, this is quicker and easier than using the Magisk method. However, these solutions are unreliable, and many users claim they are potentially malicious."
+    }
+  ]
+}

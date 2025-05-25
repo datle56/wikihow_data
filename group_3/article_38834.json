@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Set-Administrator-Password",
+  "title": "How to Change the Windows Administrator Password",
+  "steps": [
+    {
+      "title": "Understand the different types of administrator accounts.",
+      "content": "Understand the different types of administrator accounts. Windows creates a disabled Administrator account automatically in all versions of Windows after XP. This account is disabled for security reasons, as the first personal account you create is an administrator by default. The following method will detail enabling the disabled Administrator account and then setting a password for it. If you want to change your personal administrator account's password, open the Control Panel and select the \"User Accounts\" option. Select your personal administrator account and then click \"Create a password\" or \"Change your password\"."
+    },
+    {
+      "title": "Press the .",
+      "content": "Press the . ⊞ Win key and type \"cmd\". You should see \"Command Prompt\" appear in the list of search results."
+    },
+    {
+      "title": "Right-click on \"Command Prompt\" and select \"Run as administrator\".",
+      "content": "Right-click on \"Command Prompt\" and select \"Run as administrator\"."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . net user administrator /active:yes and press ↵ Enter . This will enable the Administrator account on the computer. The most common reason for activating the Administrator account is to perform automation work without having to deal with the User Access Control message appearing every time a system setting is changed."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . net user administrator * and press ↵ Enter . This will allow you to change the Administrator password."
+    },
+    {
+      "title": "Type the password you want to use.",
+      "content": "Type the password you want to use. Characters will not appear as you type. Press ↵ Enter after typing the password."
+    },
+    {
+      "title": "Retype the password to confirm it.",
+      "content": "Retype the password to confirm it. If the passwords do not match, you'll have to try again."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . net user administrator /active:no and press ↵ Enter . This will disable the Administrator account. It is not recommended to keep the Administrator account active when you're not using it. Once you've set your password and performed any actions you need to as the Administrator, disable it through the Command Prompt."
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. You can use Single User Mode to reset the administrator password for your Mac in case you have forgotten it. You don't need administrator access to perform this procedure."
+    },
+    {
+      "title": "Reboot the computer and hold .",
+      "content": "Reboot the computer and hold . ⌘ Command + S . If you continue to hold these keys as the computer boots, you will be taken to the command line."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . fsck -fy and press ⏎ Return . This will scan your hard drive for errors, which may take a few minutes. It is required in order to proceed."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . mount -uw / and press ⏎ Return . This allows you to make changes to the filesystem."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . passwd Administrator and press ⏎ Return . You can change the password for any user account by entering the user account name instead of \"Administrator\"."
+    },
+    {
+      "title": "Enter your new password twice.",
+      "content": "Enter your new password twice. You'll be prompted to enter your new password and then enter it again to confirm it. You won't see the password as you're typing."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . reboot and press ⏎ Return . This will reboot your computer and load OS X as normal. Your Administrator account will now use the new password. [1] X Research source"
+    },
+    {
+      "title": "Understand the risks before proceeding.",
+      "content": "Understand the risks before proceeding. Linux is designed so that you can perform administrator tasks without actually logging in as the administrator, or \"root\", user. As such, it is highly recommended that you use the sudo command to perform actions that require root access instead of logging in as root. Since you can use sudo combined with your own user password to make root changes, you don't actually need to set a root password. If you do want to set one, read on."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. You'll be changing the password through the Terminal, which can be opened from the task bar or by pressing Ctrl + Alt + T ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . sudo passwd and press ↵ Enter . You will be prompted for your user password."
+    },
+    {
+      "title": "Enter your new root password.",
+      "content": "Enter your new root password. After entering your user password, you'll be prompted to create the new root password. You'll be prompted to enter it twice to confirm it. You won't see the password on the screen as you type it. [2] X Research source"
+    }
+  ]
+}

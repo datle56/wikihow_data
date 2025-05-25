@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/A-Device-Attached-to-the-System-Is-Not-Functioning",
+  "title": "How to Fix \"A Device Attached to the System Is Not Functioning\"",
+  "steps": [
+    {
+      "title": "The device may not be securely plugged in.",
+      "content": "The device may not be securely plugged in. The easiest fix to try before anything else is to disconnect the USB device and plug it back in. Make sure that the device is connected securely. If the device has an external power source, make sure it is plugged in, and that the outlet is working."
+    },
+    {
+      "title": "There could be a problem with the USB port.",
+      "content": "There could be a problem with the USB port. If you're still getting \"A device attached to the system is not functioning,\" try connecting the device to a different USB port on your computer. Or, if you're using a USB hub, try removing it from the equation and plugging it into one of the computer's USB ports directly. Also, see if any other devices are having issues connecting to the USB port that is having problems. This will rule out issues with the USB port."
+    },
+    {
+      "title": "There may be a minor glitch in your system.",
+      "content": "There may be a minor glitch in your system. You can usually fix minor glitches in Windows by restarting your computer. Not only can this fix any minor issues, but it can also install any pending updates. Click the Windows Start icon and then click the Power icon. Then click Restart ."
+    },
+    {
+      "title": "The USB device drivers may be outdated.",
+      "content": "The USB device drivers may be outdated. You can update the device drivers using Device Manager. Use the following steps to update drivers for the USB device as well as the USB controller: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Right-click the Windows Start menu. Click Device Manager . Expand the menu for the device category you have connected. Also check \"Universal Serial Bus controllers,\" \"Universal Serial Bus devices,\" and \"USB Connector Managers.\" Right-click the malfunctioning device. Click Update driver . Click Search automatically for drivers . Follow the prompts if a new driver is detected."
+    },
+    {
+      "title": "The driver may be corrupt.",
+      "content": "The driver may be corrupt. If updating the device driver doesn't get rid of the error, you may want to try uninstalling the driver. Windows will automatically reinstall the driver upon restarting. Use the following steps to uninstall a device driver: Right-click the Windows Start menu. Click Device Manager . Expand the menu for the device category you have connected. Also try \"Universal Serial Bus controllers,\" \"Universal Serial Bus devices,\" and \"USB Connector Managers.\" Right-click the malfunctioning device. Click Uninstall driver . Click Uninstall . Restart your computer."
+    },
+    {
+      "title": "A Windows update may fix the error.",
+      "content": "A Windows update may fix the error. Microsoft frequently releases Windows updates that patch out known bugs and security issues. Similarly, most drivers are updated with Windows Update, so running an update will often fix errors like \"A Device Attached to the System Is Not Functioning.\" Try updating Windows to see if this fixes the issue. Use the following steps to do so: Click the Windows Start menu. Type Windows Update . Click Windows Update settings . Click Check for updates . Click Download & install if an update is available. Click Advanced Options in the Update Settings menu. Click Optional Updates . Click Download & install next to any optional updates."
+    },
+    {
+      "title": "A recent Windows update may be interfering with your drivers.",
+      "content": "A recent Windows update may be interfering with your drivers. In rare cases, a Windows Update can break things, including certain USB devices. If you notice the error started occurring after a Windows update, try rolling back to a previous Windows version. Use the following steps to do so: Click the Windows Start menu. Type Windows Update . Click Windows Update settings . Click Update history . Click Uninstall updates . Click Uninstall next to the most recent update."
+    },
+    {
+      "title": "If the USB device is a storage device, format it.",
+      "content": "If the USB device is a storage device, format it. When a USB drive or storage device is not formatted properly , or formatted with a file system that Windows doesn't recognize, it may not be able to load on your computer. You can fix this by reformatting the drive. WARNING: This will erase all data on the drive. Only do this if you cannot access the drive on any machine. Use the following steps to format a USB drive: Insert the USB drive. Press Win + E to launch File Explorer. Click This PC in the menu bar to the left. Right-click your USB drive. Click Format . Click Start ."
+    },
+    {
+      "title": "There may be some corrupt files on the drive.",
+      "content": "There may be some corrupt files on the drive. If there are any corrupt files on Windows, it could make external unusable. Luckily, Windows has a built-in tool that can scan for errors and fix them. Use the following steps to run System File Checker in the Windows Command Prompt : Click the Windows Start menu. Type CMD . RIght-click the Command Prompt . Click Run as Administrator . Type sfc /scannow and press Enter ."
+    },
+    {
+      "title": "There may be corrupt files that are harder to fix.",
+      "content": "There may be corrupt files that are harder to fix. If System File Checker doesn't fix the issue, Deployment Imaging Service Management (DISM) is a more advanced tool that may be able to fix files that other disk scanning tools can't fix. It can scan disks, drivers, and Windows image files. [2] X Research source Use the following steps to run DISM: Click the Windows Start menu. Type CMD . RIght-click the Command Prompt . Click Run as Administrator . Type DISM.exe /Online /Cleanup-image /Restorehealth and press Enter ."
+    }
+  ]
+}

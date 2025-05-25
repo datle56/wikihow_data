@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Check-the-IP-Address-in-Linux",
+  "title": "How to Check the IP Address in Linux",
+  "steps": [
+    {
+      "title": "Understand when to use this method.",
+      "content": "Understand when to use this method. The public IP address is what websites and services see when you access them from your computer. If you want to try to connect to your computer via a remote connection that isn't on the same network, you'll need the public IP address."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click or double-click the Terminal app icon, or press Ctrl + Alt + T to bring up the Terminal window."
+    },
+    {
+      "title": "Enter the public IP command.",
+      "content": "Enter the public IP command. Type curl ifconfig.me into the Terminal window. This command retrieves your public IP address from a website. [1] X Research source"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so runs the command."
+    },
+    {
+      "title": "Wait for your public IP address to appear.",
+      "content": "Wait for your public IP address to appear. The IP address that appears below the command you entered is the public IP address for your network."
+    },
+    {
+      "title": "Understand when to use this method.",
+      "content": "Understand when to use this method. If you're trying to find the IP address of your computer within your Wi-Fi network (e.g., if you want to forward your router for your computer), you'll need to know the IP address."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click or double-click the Terminal app icon, or press Ctrl + Alt + T to bring up the Terminal window."
+    },
+    {
+      "title": "Enter the \"Show IP\" command.",
+      "content": "Enter the \"Show IP\" command. Type ifconfig into the Terminal window. Other commands you can try include the following: ip addr ip a"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so runs your command and displays the IP address information of any network items, including your computer."
+    },
+    {
+      "title": "Find your computer's heading.",
+      "content": "Find your computer's heading. You'll usually find your computer's information under the \"wlo1\" (or \"wlan0\") heading, just right of the \"inet\" tag."
+    },
+    {
+      "title": "Review the private IP address.",
+      "content": "Review the private IP address. The IPv4 address is to the right of the \"inet\" tag. This is the IP address of your computer on your current network. You can usually see the IPv6 address next to the \"inet6\" tag. The IPv6 address is less commonly used than the IPv4 address."
+    },
+    {
+      "title": "Try the \"hostname\" command.",
+      "content": "Try the \"hostname\" command. On some Linux versions, such as Ubuntu, you can bring up your computer's IP address by typing in hostname -I (that's a capital \"i\", not a lower-case \"L\") and pressing ↵ Enter ."
+    }
+  ]
+}

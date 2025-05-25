@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Install-PHPMailer",
+  "title": "How to Install PHPMailer",
+  "steps": [
+    {
+      "title": "Go to https://getcomposer.org/download/.",
+      "content": "Go to https://getcomposer.org/download/ . Composer is a dependency manager for PHP, which means it manages everything your PHP code needs, including libraries and extensions. This is also the easiest method of installing and managing PHPMailer. You'll need to have XAMPP or WAMP installed to use the PHPMailer in a coding environment. You'll find the link to download under the “Windows Installer” header."
+    },
+    {
+      "title": "Click the downloaded file to start the installation process.",
+      "content": "Click the downloaded file to start the installation process. Follow the instructions on-screen to install Composer. Choose a PHP executable when prompted to “choose the command-line PHP you want to use.” All executables will end in .exe."
+    },
+    {
+      "title": "Create a new “Composer” folder.",
+      "content": "Create a new “Composer” folder. You'll want to navigate in file browser to the location you will eventually install Composer. Navigate to and double-click the Xampp partition in your file browser, right-click and choose to “Add a New Folder” and name it “Composer.”"
+    },
+    {
+      "title": "Search for and open “Command Prompt” in your Start Menu.",
+      "content": "Search for and open “Command Prompt” in your Start Menu. You can also access the search window by pressing ⊞ Win + S . A command-line terminal will load."
+    },
+    {
+      "title": "Navigate to the directory where you want to install PHPMailer.",
+      "content": "Navigate to the directory where you want to install PHPMailer. For example, type cd C:/xampp/composer . The terminal will confirm it's in that folder."
+    },
+    {
+      "title": "Type \"composer require phpmailer/phpmailer\" and press ↵ Enter.",
+      "content": "Type \" composer require phpmailer/phpmailer \" and press ↵ Enter . Terminal will display a wall of text as it installs Composer."
+    },
+    {
+      "title": "Composer is installed with an “autoload.php” file you can use.",
+      "content": "Composer is installed with an “autoload.php” file you can use. For example, you can type the following code in your PHP to include PHPMailer: <?php use PHPMailer\\PHPMailer\\PHPMailer ; use PHPMailer\\PHPMailer\\Exception ; require 'C:\\xampp\\composer\\vendor\\autoload.php' ; $email = new PHPMailer ( TRUE ); /* ... */"
+    },
+    {
+      "title": "Go to https://github.com/PHPMailer/PHPMailer.",
+      "content": "Go to https://github.com/PHPMailer/PHPMailer . Here you can download the PHPMailer source files directly."
+    },
+    {
+      "title": "Click Clone or download on the right side of the page.",
+      "content": "Click Clone or download on the right side of the page. You won't need XAMPP, WAMP, or any other PHP environment."
+    },
+    {
+      "title": "Unzip the installed file where you want to install PHPMailer.",
+      "content": "Unzip the installed file where you want to install PHPMailer. When you double-click the installed file, you are prompted for the unzipped files location."
+    },
+    {
+      "title": "Add the following code into your PHP to include PHPMailer:",
+      "content": "Add the following code into your PHP to include PHPMailer: <?php use PHPMailer\\PHPMailer\\PHPMailer ; use PHPMailer\\PHPMailer\\Exception ; /* Exception class. */ require 'C:\\PHPMailer\\src\\Exception.php' ; /* The main PHPMailer class. */ require 'C:\\PHPMailer\\src\\PHPMailer.php' ; /* SMTP class, needed if you want to use SMTP. */ require 'C:\\PHPMailer\\src\\SMTP.php' ; $email = new PHPMailer ( TRUE ); /* ... */ PHPMailer is installed and ready to go on your PHP script."
+    }
+  ]
+}

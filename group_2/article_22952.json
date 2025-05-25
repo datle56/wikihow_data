@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/How-Do-You-Write-an-if-then-Formula-in-Excel",
+  "title": "How to Create an IF-THEN Formula in Excel: Basic Syntax, Multiple Conditions, & More",
+  "steps": [
+    {
+      "title": "=IF(logical_test, value_if_true, value_if_false).",
+      "content": "=IF( logical_test , value_if_true , value_if_false ). An IF statement makes a logical comparison based on whether a condition is true or false. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source logical_test: This is the condition that you want to test (required). value_if_true: The value you want returned if logical_test is true (required). value_if_false: The value you want returned if logical_test is not true (optional)."
+    },
+    {
+      "title": "=IF(B3>C3, \"Goal Met\", \"Goal Not Met\").",
+      "content": "=IF(B3>C3, \"Goal Met\", \"Goal Not Met\"). [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In this example, the condition is B3>C3 , meaning \"If the value of B3 is greater than C3.\" If the value of B3 is greater than C3, then Goal Met will appear in the cell. If the value of B3 is less than the value of C3, then Goal Not Met will appear in the cell."
+    },
+    {
+      "title": "=IF(B3=C3, \"Goal Met\").",
+      "content": "=IF(B3=C3, \"Goal Met\"). In this example, the condition is B3=C3 , meaning, \"If the value of B3 is equal to the value of C3.\" If the values are equal, \"Goal Met\" will appear in the cell. If the values are not equal, a zero will appear in the field because we did not define a third (ELSE) value. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "=IF(B3*2>C3, C3*400, \"Good\").",
+      "content": "=IF(B3*2>C3, C3*400, \"Good\"). In this example the condition is B3*2>C3 , meaning \"If the value of B3 multiplied by 2 is greater than the value of C3.\" If the value of B3*2 is greater than the value of C3, the value of C3 multiplied by 400 will appear in this cell. If the value of B3*2 is not greater than the value of C3, the word \"Good\" will appear in the cell."
+    },
+    {
+      "title": "=IF(B3=\"Sold\", \"1\", \"\"",
+      "content": "=IF(B3=\"Sold\", \"1\", \"\" ) In this example, the condition is B3=\"Sold\" , meaning \"If the value of cell B3 contains the word Sold .\" If B3 contains the word \"Sold,\" a \"1\" will appear in the cell. If B3 says anything other than the word \"Sold,\" the condition is false. Since our ELSE value is \" \" , which is two double quote marks with nothing in between, the cell value will be blank."
+    },
+    {
+      "title": "=IF(D3=\"Taxed\", F3*.07, \"0\").",
+      "content": "=IF(D3=\"Taxed\", F3*.07, \"0\"). In this example, the condition is D3=\"Taxed\" , meaning \"If the value of D3 is the word Taxed .\" If D3 contains the word \"Taxed,\" the result will be the value of F3 multiplied by .07. If D3 contains anything other than the word \"Taxed,\" the result will be 0."
+    },
+    {
+      "title": "Things to remember.",
+      "content": "Things to remember. An IF statement can have two different results—one result if the condition is true, and another result if the condition is false. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source The ELSE value, which is what will happen if the result is false, is optional—if you don't specify what to place in the cell if the condition is false, a \"0\" will appear in the cell. If you'd rather the cell be blank, make your ELSE value \"\" . When referring to specific text in a condition or THEN/ELSE value, always surround that text in quotation marks."
+    },
+    {
+      "title": "You can nest up to 64 IF/THEN statements in a single formula.",
+      "content": "You can nest up to 64 IF/THEN statements in a single formula. For example, let's say you want to create a formula that calculates sales tax for purchases made from Alaska, California, Oregon, and Washington. Since each of these four states has its own tax rate, we'll need to create a formula that contains four IF/THEN statements to test four conditions. Assuming the sale amount is in G1 and the purchaser's state is in F1, our formula would look like this, using the 2022 tax rates for these 4 states: =IF(F1=\"Alaska\", G1*0,IF(F1=\"California\",G1*0.0725,IF(F1=\"Oregon\",G1*0,IF(F1=\"Washington\", G1*0.065))))"
+    },
+    {
+      "title": "Nesting many IF/THEN statements can be challenging.",
+      "content": "Nesting many IF/THEN statements can be challenging. Aside from the very long formulas, creating very long IF/THEN statements may become cumbersome if you have to frequently change them. In our previous example, we'd need to update our IF/THEN statements any time a state's tax rate changed. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source A good alternative to IF/THEN statements in this situation would be to add the values to a single table and use a VLOOKUP formula to query the table for the proper rates. For example, if we add a list of our states to column A and their corresponding tax rates in column B, we could write a VLOOKUP formula that does the math for us without specifying the amounts in the formula itself. The shortened version of the above nested IF/THEN formula would be =G1*VLOOKUP(F1,A:B,2,TRUE) . If you had to update a tax rate, you'd now only have to update it in the referenced table, not all of your formulas."
+    },
+    {
+      "title": "The result is zero (0).",
+      "content": "The result is zero (0). This means that you didn't specify a value for either the value_if_true or value_if_false arguments. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don't specify a value_if_false value, the result will always be 0 if the condition is false."
+    },
+    {
+      "title": "The result is the #NAME?",
+      "content": "The result is the #NAME? error. This indicates that a syntax error—make sure you've surrounded the formula after = with parentheses, your arguments are separated by commas, and that any plain text is surrounded by quotation marks. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, this IF/THEN statement will result in the #NAME? error because there are no quotation marks around the value OK : =IF(A2>1,OK) . The correct syntax would be =IF(A2>1,\"OK\")"
+    }
+  ]
+}

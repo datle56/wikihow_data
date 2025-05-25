@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Switch-Monitors-1-and-2-on-a-PC",
+  "title": "How to Switch Monitors 1 and 2 on a Windows Computer",
+  "steps": [
+    {
+      "title": "Right-click",
+      "content": "Right-click any blank space on your desktop. Whether you're using Windows 10 or Windows 11, right-click any part of your main desktop that doesn't have any apps, programs, or icons. This will display a menu. Use this method if you're using two monitors and want to make Monitor 2 your main display instead of Monitor 1. Even though this method will not change the numbers you see on your monitors, it will set your secondary monitor as your primary monitor, which should solve screen-sharing problems. If you are using dual desktop monitors (not a laptop screen) and need to switch the numbers of your monitors, you can edit your registry ."
+    },
+    {
+      "title": "Click Display settings on the menu.",
+      "content": "Click Display settings on the menu. This opens your Display Settings."
+    },
+    {
+      "title": "Drag your monitors into the desired order.",
+      "content": "Drag your monitors into the desired order. Each monitor is represented by a number in this window. You'll usually want your displays arranged to replicate how you have your monitors positioned. For example, if display 1 is your laptop screen and your external monitor , display 2, is to the left of your laptop on your desk, you'd want to drag display 2 to the left of display 1. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you only see one monitor number or are unable to drag your monitors to different locations, make sure Extend these displays is selected. If you're unsure which monitor corresponds to which number, click one of the displays and click the Identify button. This makes a \"1\" or \"2\" appear at the bottom-left corner of each monitor. If you make any changes, click Apply to save them. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the monitor you want to set as your primary display.",
+      "content": "Click the monitor you want to set as your primary display. This selects the monitor. [3] X Research source"
+    },
+    {
+      "title": "Check the box next to \"Make this my main display\" .",
+      "content": "Check the box next to \"Make this my main display\" . If you're using Windows 10, you'll need to scroll down to see it. On Windows 11, you may need to click the Multiple displays menu first. To change the primary display to a different monitor, click that monitor at the top, and then check the box next to \"Make this my main display\" once selected."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . This will apply the new display settings and swap the monitors."
+    },
+    {
+      "title": "Disconnect all monitors except the primary monitor.",
+      "content": "Disconnect all monitors except the primary monitor. To swap the monitor numbers on your Windows PC, you'll need to change which port each monitor is connected to. However, just plugging each monitor into a different port isn't enough—you'll have to remove the registry keys that remember the monitor numbers so Windows can properly detect the new monitor order. Before opening the editor, unplug all monitors that aren't the one that's currently set as the primary monitor. The primary monitor must be the one that your PC currently recognizes as \"Monitor 1.\" This method will not work to make a laptop screen Monitor 2 and a secondary monitor Monitor 1. The built-in monitor on your laptop can only be Monitor 1."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. To open the Registry Editor , type regedit into the Windows search bar, and then click Registry Editor in the search results."
+    },
+    {
+      "title": "Go to HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\GraphicsDrivers.",
+      "content": "Go to HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\GraphicsDrivers . An easy way to do this is to copy that address, paste it into the address bar at the top of the Registry Editor, and then press Enter . Another option is to navigate there using these steps: [4] X Research source Double-click HKEY_LOCAL_MACHINE in the left panel. Double-click the System folder beneath that. Double-click the CurrentControlSet folder beneath that. Double-click the Control folder beneath that. Double-click the GraphicsDrivers folder beneath that."
+    },
+    {
+      "title": "Rename the \"Configuration\" key to Configuration.old.",
+      "content": "Rename the \"Configuration\" key to Configuration.old . The idea is to delete this key, but renaming it can help you restore it in case anything goes wrong. Here's how: Right-click the \"Configuration\" folder in the left panel. Click Rename . Type Configuration.old . Press Enter . If anything goes wrong later (it shouldn't), you can always return here and rename the new \"Configuration.old\" folder to \"Configuration\" to restore your previous settings."
+    },
+    {
+      "title": "Rename the \"Connectivity\" key to Connectivity.old.",
+      "content": "Rename the \"Connectivity\" key to Connectivity.old . Here's how: Right-click the Connectivity folder in the left panel. Click Rename . Type Connectivity.old . Press Enter . As with the last step, if anything goes wrong with your settings, you can return here and rename the new \"Connectivity.old\" folder to \"Connectivity\" to restore your settings."
+    },
+    {
+      "title": "Shut down",
+      "content": "Shut down your PC. Don't restart it—you'll want to shut it down. To do this, just click the Windows Start menu, click the Power icon at the bottom-left, and then select Shut down . Continue to the next step once your computer is shut down."
+    },
+    {
+      "title": "Connect only the monitor you want to set as Monitor 1.",
+      "content": "Connect only the monitor you want to set as Monitor 1. This monitor must be connected to your PC's primary' video port. If you have a multiple-port video card, plug it into the first port. If you have a monitor port built into your motherboard , that one is usually the primary port (Monitor 1). [5] X Research source If you have multiple video cards, there's no surefire way to know which is the primary other than simply trying the reverse order. Do not plug in your second monitor yet."
+    },
+    {
+      "title": "Power on your PC",
+      "content": "Power on your PC . Press the power button on your laptop or desktop tower to do so. If your monitor is turned off, turn that back on as well."
+    },
+    {
+      "title": "Right-click the desktop and select Display settings.",
+      "content": "Right-click the desktop and select Display settings . This opens the Display settings window."
+    },
+    {
+      "title": "Plug in the second monitor.",
+      "content": "Plug in the second monitor . Windows will automatically detect the monitor and install any necessary drivers. Once the monitor is detected, you should see two monitors under \"Multiple displays\" in the right panel. The monitor labeled \"Monitor 1\" is the one that's now plugged into the primary port. The one labeled \"Monitor 2\" is now the second one you just plugged in. If you connect a third monitor, it will be detected as Monitor 3, and so on. If you don't see the second (and/or third) monitor in the Display Settings window, click the Detect button under \"Multiple displays\" to detect it now. Windows has automatically recreated the registry entries you renamed earlier, so there's no need to return to the registry."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Compile-a-C-Program",
+  "title": "How to Compile a C Program",
+  "steps": [
+    {
+      "title": "Go to https://cygwin.com/install.html.",
+      "content": "Go to https://cygwin.com/install.html . Cygwin is a free Windows tool that allows you to use the GCC C compiler from a Unix command line."
+    },
+    {
+      "title": "Click the setup-x86.exe file for your Windows version.",
+      "content": "Click the setup-x86.exe file for your Windows version. If you're using the 64-bit version of Windows, download setup-x86_64.exe . If you have the 32-bit version, download setup-x86.exe ."
+    },
+    {
+      "title": "Run the installer.",
+      "content": "Run the installer. Double-click the downloaded file to open the setup wizard. Downloaded files usually save to the Downloads folder. If prompted to give permission for the installer to run, click Yes ."
+    },
+    {
+      "title": "Click Next on the first screen.",
+      "content": "Click Next on the first screen."
+    },
+    {
+      "title": "Select Install from Internet and click Next.",
+      "content": "Select Install from Internet and click Next ."
+    },
+    {
+      "title": "Choose where to install the app and click Next.",
+      "content": "Choose where to install the app and click Next ."
+    },
+    {
+      "title": "Select local package directory and click Next.",
+      "content": "Select local package directory and click Next . This is where packages you download will be saved."
+    },
+    {
+      "title": "Choose your internet settings and click Next.",
+      "content": "Choose your internet settings and click Next . The installer will connect to the internet and then display a list of download sites."
+    },
+    {
+      "title": "Select a download site and click Next.",
+      "content": "Select a download site and click Next . These sites all host the same files. This downloads the installation files to your computer. If there's a problem with one site, try another on the list."
+    },
+    {
+      "title": "Select packages to install.",
+      "content": "Select packages to install. Follow these steps to ensure the C compiler is installed: Click the + next to \"Devel\" to expand the options. Scroll down and click the down-arrow next to gcc core . Click the most recent (highest) version number."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's at the bottom-right corner. A confirmation message will appear."
+    },
+    {
+      "title": "Click Next to start the installation.",
+      "content": "Click Next to start the installation. Cygwin will now download all selected tools and install them on your computer. Follow the on-screen instructions to complete the installation."
+    },
+    {
+      "title": "Open Cygwin.",
+      "content": "Open Cygwin. It'll be in the Start menu (called either Cygwin64 or Cygwin32 , depending on your version)."
+    },
+    {
+      "title": "Use the cd command to navigate to the location of your C code.",
+      "content": "Use the cd command to navigate to the location of your C code. You're looking for the file you coded with \".c\" at the end. For example, if your code is located in your Documents folder, you would type cd c:\\Users\\(yourusername)\\Documents and press ↵ Enter . [1] X Research source A quick way to find the full path to your file: Press ⊞ Win + E to open the File Explorer, go to the folder that contains your file, click the file once to select it, then click Copy Path at the top of the screen. Now you can right-click the Cygwin command line and select Paste ."
+    },
+    {
+      "title": "Type gcc yourcode.c –o yourcode.exe and press ↵ Enter.",
+      "content": "Type gcc yourcode.c –o yourcode.exe and press ↵ Enter . Replace \"yourcode.c\" with the name of the file, and \"yourcode.exe\" with the name of your program. [2] X Research source Your code is now compiled."
+    },
+    {
+      "title": "Open Developer Command Prompt for VS.",
+      "content": "Open Developer Command Prompt for VS. This app is separate than the main Visual Studio app. To find it, click the Start menu, expand the Visual Studio 2017 folder, then click Developer Command Prompt for VS 2017 (or your version number). [3] X Research source"
+    },
+    {
+      "title": "Use the cd command to navigate to the location of your C code.",
+      "content": "Use the cd command to navigate to the location of your C code. You're looking for the file you coded with \".c\" at the end. For example, if your code is located in your Documents folder, you would type cd c:\\Users\\(yourusername)\\Documents and press ↵ Enter Your code must be in a file that ends with the \".c\" extension to use this method."
+    },
+    {
+      "title": "Type cl yourcode.c and press ↵ Enter.",
+      "content": "Type cl yourcode.c and press ↵ Enter . Replace \"yourcode.c\" with the name of your file. This creates a file called yourcode.exe from your code file."
+    },
+    {
+      "title": "Install Xcode on your Mac.",
+      "content": "Install Xcode on your Mac. [4] X Research source Mavericks (10.9) and later: Open the App Store and search for xcode . Click GET to install, and follow any on-screen instructions. Lion and Mountain Lion (10.7 and 10.8): Follow the instructions for Mavericks and later. Once installed, open the app (it's in the Applications folder), click the File menu and then Preferences . Click the Downloads tab, then click Install next to \"Command Line Tools.\""
+    },
+    {
+      "title": "Open Xcode.",
+      "content": "Open Xcode. Now that it's installed, you'll find it in the Applications folder."
+    },
+    {
+      "title": "Click the File and select Open.",
+      "content": "Click the File and select Open ."
+    },
+    {
+      "title": "Select your code file and click Open.",
+      "content": "Select your code file and click Open . The contents of your code will appear."
+    },
+    {
+      "title": "Click the Product menu.",
+      "content": "Click the Product menu. It's at the top of the screen."
+    },
+    {
+      "title": "Click Archive.",
+      "content": "Click Archive . This compiles and links your C code. When it's ready to be exported, a window containing options will appear."
+    },
+    {
+      "title": "Select Export as an Xcode Archive and click Next.",
+      "content": "Select Export as an Xcode Archive and click Next . Xcode will create a new folder (inside the folder where your code is saved) and place the executable file inside."
+    }
+  ]
+}

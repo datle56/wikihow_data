@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Install-Linux",
+  "title": "How to Install Linux on Your Computer",
+  "steps": [
+    {
+      "title": "Download a Linux distribution ISO file.",
+      "content": "Download a Linux distribution ISO file. There are many different Linux distributions you can choose from. Many Linux distributions are built for a specific purpose. Go to the official web page of your chosen distribution and download the ISO file for that version of Linux. The following are some Linux distributions (or distros) you can choose from: Ubuntu: Ubuntu is one of the most popular Linux distributions. It is user-friendly and easy to learn. It is good for both experienced and beginner Linux users. You can download Ubuntu from: https://ubuntu.com/download/desktop Linux Mint: Linux Mint is good for beginner Linux users. It comes bundled with lots of applications that provide full multimedia support. The graphical user interface (GUI) is designed to look and feel similar to Windows, making the transition from Windows to Linux a little easier. You can download Linux Mint from https://linuxmint.com/ Red Hat Enterprise Linux: Red Hat Enterprise Linux (RHEL) is one of the few commercial versions of Linux that you have to pay for. It is designed for business use and is one of the only Linux distros that has customer support. You can buy RHEL from: https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux Fedora: Fedora is a free Linux distribution based on RHEL. It features many of the same programs that are available on RHEL as well as some more experimental programs that are not available on RHEL. Fedora aims to be the cutting edge in open-source software. You can download Fedora from: https://fedoraproject.org/ Kali Linux: Kali Linux is a Linux distribution designed for network penetration testing, security research, computer forensics, and reverse engineering. This is the hacker's Linux distribution choice. You can download it from: https://www.kali.org/ Arch Linux: Arch Linux is an extremely light-weight Linux distribution for more advanced users. It's a lot more complicated to install than other Linux distributions and requires extensive knowledge of Bash Terminal commands. It comes with no graphical user interface out of the box, and requires you to install one. This is for Linux users who know what they are doing and want to create their own customized version of Linux to suit their needs. You can download Arch Linux from: https://archlinux.org/download/"
+    },
+    {
+      "title": "Download Rufus.",
+      "content": "Download Rufus. Rufus is a free Windows program you can use to create a bootable USB drive from an ISO file. Use the following steps to download and install Rufus: Go to https://rufus.ie/en/ in a web browser. If you are using a Mac, you can download Balena Etcher from https://etcher.balena.io/ instead. Scroll down and click rufus-4.1.exe below \"Downloads.\" If you have an older 32-bit version of Windows, click rufus-4.1_x86.exe instead. If you have an ARM processor, click rufus-4.1_arm64.exe ."
+    },
+    {
+      "title": "Open Rufus.",
+      "content": "Open Rufus. By default, your downloaded files can be found in your Downloads folder. Rufus has an icon that resembles a USB drive. Double-click the Rufus \".exe\" file to open Rufus. If you are creating a bootable CD or DVD, place a writable disk in your disk drive. Right-click the ISO file you downloaded and click Burn disk image . Select the drive you want to burn the ISO file to and click Burn ."
+    },
+    {
+      "title": "Insert your USB drive.",
+      "content": "Insert your USB drive. Make sure you have a USB drive that is at least 32 GBs. Insert your USB drive into a free USB port on your PC."
+    },
+    {
+      "title": "Select your USB drive.",
+      "content": "Select your USB drive. Use the drop-down menu below \"Device\" to select your USB drive. Warning: This process will wipe any data that is stored on your USB drive. Make sure you back up any files that you want to keep on your USB drive."
+    },
+    {
+      "title": "Select your ISO file.",
+      "content": "Select your ISO file. Make sure your Rufus window is open and use the following steps to select your ISO file. Make sure it says \"Disk or ISO image\" below \"Disk Selection.\" Click Select . Navigate to and click the Linux ISO file you downloaded. Click Open ."
+    },
+    {
+      "title": "Click Start.",
+      "content": "Click Start . It's at the bottom of Rufus. This starts writing the ISO file to your USB drive. This may take several minutes."
+    },
+    {
+      "title": "Boot into your BIOS.",
+      "content": "Boot into your BIOS. When booting up your computer, press the button displayed on the screen to boot into the BIOS. This is different on each computer model. F12 is the most common key, but Escape, F10, and F2 are also pretty common. If your computer boots too fast to be able to press the key, you can use the following steps to boot into the BIOS from within Windows: [1] X Research source [2] X Research source Click Start . Click Settings . Click Update & Security (Windows 10) or System (Windows 11). Click Recovery . Click Advanced Start Up . Click Restart Now . Click Restart Now again. Click Troubleshoot . Click Advanced Options . Click UEFI Firmware Settings . Click Restart ."
+    },
+    {
+      "title": "Change your boot order to boot from the USB drive first.",
+      "content": "Change your boot order to boot from the USB drive first. The BIOS menu is different depending on what type of computer you have. Look for an option that says \"Boot Order\" or something similar. Select this option. Then arrange your available drives to boot from your USB drive first. Then select the option to save and exit the BIOS."
+    },
+    {
+      "title": "Boot from the USB drive.",
+      "content": "Boot from the USB drive. To do so, simply place your USB drive into an available USB port. Then restart your computer. When your computer boots up, it will boot from the USB drive before your standard hard drive."
+    },
+    {
+      "title": "Try out the Linux distribution before installing.",
+      "content": "Try out the Linux distribution before installing. Most Live CDs and USBs can launch a \"live environment\", giving you the ability to test it out before making the switch. You won’t be able to create files, but you can navigate around the interface and decide if it’s right for you."
+    },
+    {
+      "title": "Start the installation process.",
+      "content": "Start the installation process. The installation process for each Linux distribution is different. The process is fairly similar If you’re trying out the distro, you can launch the installation from the application on the desktop. If you decided not to try out the distribution, you can start the installation from the boot menu. The installation process for Arch Linux is a bit more complicated and is entirely done using a command-line interface. Make sure you have a good how-to guide if you are installing Arch Linux."
+    },
+    {
+      "title": "Select your language, keyboard layout, and time zone.",
+      "content": "Select your language, keyboard layout, and time zone. Generally, the first step in the installation process is some basic configuration. You will need to select your language, keyboard layout, and time zone or region from the available menus. Click the appropriate responses and click Next ."
+    },
+    {
+      "title": "Connect to the internet.",
+      "content": "Connect to the internet. Most Linux distributions require you to connect to the internet during the installation process. You can either connect using an ethernet cable, or you can select the option to connect to Wi-Fi and then select your Wi-Fi network and enter your Wi-Fi password."
+    },
+    {
+      "title": "Create a username and password.",
+      "content": "Create a username and password. You will need to create login information to install Linux. A password will be required to log into your account and perform administrative tasks."
+    },
+    {
+      "title": "Set up the partition if you are dual-booting Linux.",
+      "content": "Set up the partition if you are dual-booting Linux. If you intend to install Linux alongside another operating system (such as Windows), you will need to create a separate partition for Linux. Select the option to install Linux alongside your other operating system. Then set how big of a partition you want to create for Linux. Finally, select which partition you want to install Linux on. Distros such as Ubuntu will set a recommended partition automatically. You can then adjust this manually yourself. Most Linux installations require at least 20 GB, so be sure to set aside enough room for both the Linux operating system and any other programs you may install and files you may create. It is recommended you partition at least 40 GB for most Linux distributions. If the installation process does not give you automatic partitions, you will need to create a partition manually. Make sure that the partition you create is formatted as Ext4. If you are installing Linux as the only operating system on your computer, select the option to erase or format your hard drive and install Linux. [3] X Research source"
+    },
+    {
+      "title": "Boot into Linux.",
+      "content": "Boot into Linux. Once the installation is finished, your computer will reboot. You will see a new screen when your computer boots up called “GNU GRUB”. This is a boot loader that handles Linux installations. Pick your new Linux distro from the list. This screen may not show up if you only have one operating system on your computer. If this screen isn't being presented to you automatically, then you can get it back by hitting shift right after the manufacturer splash screen. If you install multiple distros on your computer, they will all be listed here. Make sure you remove your bootable USB drive before attempting to boot into Linux."
+    },
+    {
+      "title": "Check your hardware.",
+      "content": "Check your hardware. Most hardware should work out of the box with your Linux distro, though you may need to download some additional drivers to get everything working. Some hardware requires proprietary drivers to work correctly in Linux. This is most common with graphics cards. There is typically an open-source driver that will work, but to get the most out of your graphics cards you will need to download the proprietary drivers from the manufacturer. In Ubuntu, you can download proprietary drivers through the System Settings menu. Select the Additional Drivers option, and then select the graphics driver from the list. Other distros have specific methods for obtaining extra drivers. You can find other drivers from this list as well, such as Wi-Fi drivers."
+    },
+    {
+      "title": "Start using Linux.",
+      "content": "Start using Linux. Once your installation is complete and you’ve verified that your hardware is working, you’re ready to start using Linux . Most distros come with several popular programs installed, and you can download many more from their respective file repositories."
+    }
+  ]
+}

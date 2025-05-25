@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Install-a-Tgz-File-in-Linux",
+  "title": "How to Install Linux Programs from TGZ Files: 7 Easy Steps",
+  "steps": [
+    {
+      "title": "An easy way to do this is to do so through your file manager.",
+      "content": "An easy way to do this is to do so through your file manager. Just navigate to the TGZ file in your file manager, right-click an empty space in the folder, and then select Open in Terminal . [1] X Research source You can also use the cd command in a Terminal window to enter the directory. For example, if the TGZ file is on your Desktop, you'd use cd Desktop to enter that directory. While installing software from a TGZ isn't difficult or uncommon, it's usually faster and easier to install software using a package manager ."
+    },
+    {
+      "title": "Run the command tar -xzvf filename.tgz.",
+      "content": "Run the command tar -xzvf filename .tgz . Replace filename with the name of your own file. This extracts the files from the TGZ file to the current directory. [2] X Research source Run ls -a to view the files in the current directory. You should now see a new directory that contains the files you've just extracted. Some tar files come in a non-gzip format, and unzipping them with these arguments could give an error. In that case, run the command tar xf filename.tar ."
+    },
+    {
+      "title": "Use cd to enter the new directory.",
+      "content": "Use cd to enter the new directory. For example, if you unpacked a file called program.tgz and now have a directory called program in the current directory, you'd use cd program to enter the program directory. [3] X Research source"
+    },
+    {
+      "title": "In most cases, you'll find a text file called README or INSTALL.",
+      "content": "In most cases, you'll find a text file called README or INSTALL. This file contains specific instructions for compiling and installing the program. You'll want to read the contents of this file so you know about any installation requirements or quirks. There are a few ways you can read the contents of the file: To view the whole file at once, use cat README . If the file is several pages long, it'll be easier to use more README to read the file one page at a time. Just press the down arrow or the spacebar to move through the pages. If the README or INSTALL file instructs you to make changes to a particular file, you can do so by editing the file using nano or vim ."
+    },
+    {
+      "title": "Look for a file called configure in the new directory.",
+      "content": "Look for a file called configure in the new directory. If there is a configure script, run ./configure . The configure script prepares the software for your particular computer and creates a Makefile. [4] X Research source If the configure script throws an error due to a missing dependency, you'll need to install the missing dependencies before you'll be able to compile and install the program. You can install the missing dependencies easily using a package manager like Synaptic, apt-get, or dpkg . If there is no configure script, double-check the README or INSTALL file. You may have to run a script that has a different name, such as install.sh . Before running that script, make it executable using chmod u+x install.sh . Then, run it by typing ./install.sh ."
+    },
+    {
+      "title": "Run the make command.",
+      "content": "Run the make command. This uses the information in the new Makefile to compile the program, which you'll then be able to install. [5] X Research source When the program is finished compiling, you'll return to the prompt."
+    },
+    {
+      "title": "Run sudo make install and enter your password.",
+      "content": "Run sudo make install and enter your password. Once your password is accepted, the compiled program will install. [6] X Research source If you try to run the program at the command line and get \"command not found,\""
+    }
+  ]
+}

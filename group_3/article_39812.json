@@ -1,0 +1,170 @@
+{
+  "url": "https://www.wikihow.com/Skip-Surveys",
+  "title": "How to Skip Surveys",
+  "steps": [
+    {
+      "title": "Open Chrome.",
+      "content": "Open Chrome. The ScriptSafe plugin only works in Google Chrome. [1] X Research source"
+    },
+    {
+      "title": "Go to the ScriptSafe plugin page.",
+      "content": "Go to the ScriptSafe plugin page. Go to https://chrome.google.com/webstore/detail/scriptsafe/oiigbmnaadbkfbmpbfijlflahbdbdgdf?hl=en-US in your Chrome browser."
+    },
+    {
+      "title": "Click ADD TO CHROME.",
+      "content": "Click ADD TO CHROME . It's a blue button in the upper-right side of the ScriptSafe window. [2] X Research source"
+    },
+    {
+      "title": "Click Add extension when prompted.",
+      "content": "Click Add extension when prompted. This will install ScriptSafe on your Chrome browser. [3] X Research source"
+    },
+    {
+      "title": "Try visiting a site that uses a survey content blocker.",
+      "content": "Try visiting a site that uses a survey content blocker. The survey should be blocked by the plugin, though ScriptSafe doesn't have a 100% accuracy rating. [4] X Research source"
+    },
+    {
+      "title": "Open Firefox.",
+      "content": "Open Firefox. The NoScript plugin will only work on the Firefox browser. [5] X Research source"
+    },
+    {
+      "title": "Go to the NoScript download site.",
+      "content": "Go to the NoScript download site. Go to https://noscript.net/ in your Firefox browser."
+    },
+    {
+      "title": "Click INSTALL.",
+      "content": "Click INSTALL . It's on the far-left side of the NoScript page. [6] X Research source"
+    },
+    {
+      "title": "Click Allow if prompted.",
+      "content": "Click Allow if prompted. Sometimes Firefox will block applications from installing; click Allow if prompted to make an exception for NoScript. [7] X Research source"
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . It's in the upper-left corner of the page. [8] X Research source"
+    },
+    {
+      "title": "Click Restart Now when prompted.",
+      "content": "Click Restart Now when prompted. This will restart your Firefox browser with the NoScript plugin installed. [9] X Research source"
+    },
+    {
+      "title": "Try visiting a site that uses a survey content blocker.",
+      "content": "Try visiting a site that uses a survey content blocker. The survey should be blocked by the plugin, though there is no guarantee that this will always work. [10] X Research source Sometimes survey-using sites will detect NoScript and deny you access to the page. If the file you are trying to access requires completing the survey, then you won’t be able to get the file."
+    },
+    {
+      "title": "Open up Microsoft Edge.",
+      "content": "Open up Microsoft Edge. If it’s your usual web browser, it may be helpful to block surveys on Microsoft Edge. [11] X Research source"
+    },
+    {
+      "title": "Click the 3 horizontal dots to open the “more” menu.",
+      "content": "Click the 3 horizontal dots to open the “more” menu. They’re on the upper right hand corner of the screen. [12] X Research source"
+    },
+    {
+      "title": "Find “Settings,” then click “Advanced settings.”",
+      "content": "Find “Settings,” then click “Advanced settings.” This will take you to more options where you can specify what’s allowed on your web browser. [13] X Research source"
+    },
+    {
+      "title": "Enable “Block Pop-Ups.”",
+      "content": "Enable “Block Pop-Ups.” This should stop the majority of the surveys that pop up in your web browser. Be warned, though, that some surveys know how to get around this block feature on Microsoft Edge, so you may still see a few. [14] X Research source"
+    },
+    {
+      "title": "Open Google Chrome.",
+      "content": "Open Google Chrome. You will need Chrome for the developer tools included in the program. This will allow you to scan the website for all the links it contains, potentially allowing you to find the download link you need without completing the survey. [15] X Research source Go to the survey site you were trying to access. You should see the survey window pop up. Extracting links only works if the link to the download or site you need is on the same page as the survey."
+    },
+    {
+      "title": "Click ⋮.",
+      "content": "Click ⋮ . It's in the top-right corner of the Chrome browser. [16] X Research source"
+    },
+    {
+      "title": "Select More tools, then click Developer tools.",
+      "content": "Select More tools , then click Developer tools . This will open Chrome's developer window on the right side of the Chrome window. [17] X Research source"
+    },
+    {
+      "title": "Click the Console tab.",
+      "content": "Click the Console tab. This is at the top of the developer frame."
+    },
+    {
+      "title": "Paste the URL retrieval code into the console.",
+      "content": "Paste the URL retrieval code into the console. Copy and paste the following code into the console and then press ↵ Enter : urls = $$('a'); for (url in urls) console.log ( urls[url].href );"
+    },
+    {
+      "title": "Look for the link you want.",
+      "content": "Look for the link you want. After running the command, you will be presented with a list of all of the links on that website. If the download or page you need is on the site, you will be able to access it by clicking the correct link. Links ending in .css or .js are not download links, but links to other elements for the website. These can be ignored."
+    },
+    {
+      "title": "Visit a website with a survey.",
+      "content": "Visit a website with a survey. You can use any of the major web browsers (e.g., Chrome, Firefox, Edge, Safari) to perform this method. [18] X Research source"
+    },
+    {
+      "title": "Open the element inspector.",
+      "content": "Open the element inspector. The easiest way to do this on any browser is to press the F12 key, but there are other ways to open the element inspector: [19] X Research source Chrome - Click ⋮ , select More tools , and click Developer tools . Firefox - Click ☰ , click Developer , click Web Console , and click the Inspector tab. Edge - Click ... , click F12 Developer Tools , and click DOM Explorer . Safari - Click Safari , click Preferences , click the Advanced tab, check the \"Show Develop menu in menu bar\" box, exit Preferences, click Develop , and click Show Web Inspector ."
+    },
+    {
+      "title": "Search for the survey box's code.",
+      "content": "Search for the survey box's code. Move your mouse cursor over each line of code in the element inspector and wait for the survey box to be highlighted in the main window. Once you see the survey box flash, you've found the line of code for the survey box. [20] X Research source You may need to expand certain lines of code by clicking the triangle next to a specific line of code. If you can't find the code, try right-clicking the survey while looking at the element inspector. If text appears near a line of code, the line of code is the survey box."
+    },
+    {
+      "title": "Delete the survey box's line of code.",
+      "content": "Delete the survey box's line of code. Click the line of code, then press your computer's Delete key. You can also right-click the line of code and click Delete or Remove . [21] X Research source"
+    },
+    {
+      "title": "Search for the overlay code line.",
+      "content": "Search for the overlay code line. There will still be a transparent screen over the webpage that prevents you from accessing the content; disabling the overlay will remove this screen. The whole page will be highlighted when you select the overlay code line. [22] X Research source"
+    },
+    {
+      "title": "Delete the overlay code line.",
+      "content": "Delete the overlay code line. You should now be able to access the links or content on the page. [23] X Research source This will not work if the survey was essential to load the page's content. Deleting the overlay may remove the scroll bar. You can use your mouse to scroll to get around this."
+    },
+    {
+      "title": "Open Google Chrome, then click on Settings.",
+      "content": "Open Google Chrome, then click on Settings. It looks like 3 stacked horizontal lines on the left side of the screen. [24] X Research source"
+    },
+    {
+      "title": "Select “Options,” then “Advanced System Settings.”",
+      "content": "Select “Options,” then “Advanced System Settings.” This will take you to a new page where you can select the options of what’s allowed on your web browser. [25] X Research source"
+    },
+    {
+      "title": "Enable “Do not allow any site to run Javascript.”",
+      "content": "Enable “Do not allow any site to run Javascript.” This will block the sites you’re using from running JavaScript so they hopefully can’t show you a survey. [26] X Research source"
+    },
+    {
+      "title": "Close Google Chrome and open it again.",
+      "content": "Close Google Chrome and open it again. When you open it up again, the websites won’t be allowed to run JavaScript. Now you can go to any website without the threat of survey popups. [27] X Research source"
+    },
+    {
+      "title": "Open the “Settings” app.",
+      "content": "Open the “Settings” app. It looks like a gray box with a spinning gear on the inside. [28] X Research source"
+    },
+    {
+      "title": "Tap “Safari.”",
+      "content": "Tap “Safari.” It should be near the bottom of the screen, so you might have to scroll down a little bit. [29] X Research source"
+    },
+    {
+      "title": "Turn on “Block Pop-ups and Fraudulent Website Warning.”",
+      "content": "Turn on “Block Pop-ups and Fraudulent Website Warning.” This will block any website from showing you a popup when you use Safari, or at least warn you about it. Now you can browse through webpages without any annoying surveys. [30] X Research source"
+    },
+    {
+      "title": "Visit a survey bypass website.",
+      "content": "Visit a survey bypass website. There are a few different survey bypass tools you can choose from, so you can pick the one that sounds the best for you. A few trusted survey bypass tools include: Surveybypass.com Surveysmasher.com Survey Remover Tool"
+    },
+    {
+      "title": "Enter the site URL.",
+      "content": "Enter the site URL. If you come across a website that has an unskippable survey, head to the survey remover website. Copy and paste the website URL into the website, then hit “enter.”"
+    },
+    {
+      "title": "Copy and paste the new URL.",
+      "content": "Copy and paste the new URL. The survey removal tool will run a few different lines of code on the website you pasted in and delete the survey itself. Then, you’ll get a new URL to use that you can copy and paste into your web browser. [31] X Research source You may have to copy and paste a few lines of code into your web browser if the survey tool asks you to."
+    },
+    {
+      "title": "Generate a fake name with a fake name generator.",
+      "content": "Generate a fake name with a fake name generator. Some surveys have algorithms that will catch obviously fake information. To make up a name and address that sounds believable, head to a fake name generator to make one up. [32] X Research source FakeNameGenerator.com is a good website to use for this."
+    },
+    {
+      "title": "Copy and paste the fake information into the survey.",
+      "content": "Copy and paste the fake information into the survey. Although this isn’t bypassing it, it is a way to get the survey to disappear without giving out your real info. Use a fake name, number, and email address to avoid spam or potential hacking."
+    },
+    {
+      "title": "Create a fake email account if you need to.",
+      "content": "Create a fake email account if you need to. Again, this can be tedious, so it isn’t the best option here. However, some surveys are so smart that they won’t accept an invalid email address, so you might have to create a new one. You can do that by making a new Gmail account quickly with a random email address and password. You can also enter in an existing email address that isn’t your own."
+    }
+  ]
+}

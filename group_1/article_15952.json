@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Error-0x8007016a",
+  "title": "How to Fix OneDrive Error “Cloud File Provider Is Not Running” (0x8007016a)",
+  "steps": [
+    {
+      "title": "The KB4457128 update has issues with OneDrive.",
+      "content": "The KB4457128 update has issues with OneDrive. To update Windows 10 , press Win + I to open Settings, then go to Update & Security and click Check for updates . If an update is available, click Download and install . Skip this step if you're using an updated version of Windows 10 or Windows 11."
+    },
+    {
+      "title": "Open your OneDrive.",
+      "content": "Open your OneDrive. For some computers, OneDrive is a program that you can open by clicking the cloud icon in your taskbar. Others can open File Explorer, then right-click the folder next to the OneDrive icon and select Settings ."
+    },
+    {
+      "title": "Uncheck the box next to \"Save space…\" or click Download all files.",
+      "content": "Uncheck the box next to \"Save space…\" or click Download all files . Doing so will turn off Files On-Demand and keep all your files downloaded to your computer. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press ⊞ Win+R and enter wsreset.exe.",
+      "content": "Press ⊞ Win + R and enter wsreset.exe . Click Ok to run that command and a blank Command Prompt window will open. After 10 seconds, the window will close, and a Microsoft Store window will open that you can close. [2] X Research source"
+    },
+    {
+      "title": "Use different commands to get your OneDrive to reset.",
+      "content": "Use different commands to get your OneDrive to reset. Press Win + R to open the Run prompt and enter %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset then press Enter . If you see a \"Windows cannot find…\" error, enter C:\\Program Files\\Microsoft OneDrive\\onedrive.exe /reset and press Enter . Use C:\\Program Files (x86)\\Microsoft OneDrive\\onedrive.exe /reset and press Enter if you still encounter an error. If you're still seeing an error after using the different commands, you don't have OneDrive installed on your computer. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Not allowing OneDrive to sync will cause the \"Error 0x8007016A\" message.",
+      "content": "Not allowing OneDrive to sync will cause the \"Error 0x8007016A\" message. Type Onedrive into your search bar and click the app result. This will allow OneDrive to start and sync your files. OneDrive may not automatically start when you turn on your computer. You can change this to prevent the error in the future by opening Startup Apps in Settings."
+    },
+    {
+      "title": "Syncing will automatically pause if your device uses battery-saving mode.",
+      "content": "Syncing will automatically pause if your device uses battery-saving mode. You can either disable this setting in your OneDrive settings or you can open Control Panel and change your laptop's power plan in Power Options."
+    }
+  ]
+}

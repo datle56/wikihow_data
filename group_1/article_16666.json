@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Find-All-Commands-of-CMD-in-Your-Computer",
+  "title": "How to Display and Use CMD Commands: A List and Guide",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. To do so, click the WIndows Start menu and click type \"CMD\". Click Command Prompt . For access to more functions, right-click the Command Prompt and click Run as Administrator ."
+    },
+    {
+      "title": "Retrieve the list of commands.",
+      "content": "Retrieve the list of commands. To do so, type help and press Enter . A list of all the available commands will be displayed with a short description of each command. The listed is sorted alphabetically. [1] X Research source Note that this is not a complete list of commands you can use in the Command Prompt. For a full list, check out https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands The list is usually larger than the Command Prompt window, so you may need to scroll up to find the command you want. The list varies slightly depending on which Windows version you are using, as commands are occasionally added or removed."
+    },
+    {
+      "title": "Get help with a command.",
+      "content": "Get help with a command. If you want more information about what you can do with a command, enter the command followed by /? and press Enter ."
+    },
+    {
+      "title": "Find a list of system programs you can run from CMD.",
+      "content": "Find a list of system programs you can run from CMD. To do so, type dir c:/windows/system32/*.exe and press Enter . This displays a list of system programs you can run from the command prompt. To run a program from the command prompt, simply type the program name and press Enter ."
+    },
+    {
+      "title": "Navigate in the command prompt.",
+      "content": "Navigate in the command prompt. Use the following commands to navigate to different folders in the Command Prompt: cd —Change directory or folder. Type \"cd\" followed the path to a directory (i.e. cd c:\\windows\\system32 ) to change to a different directory. cd/ —Change to root directory. This takes you back to the beginning folder of whatever drive you are in. Change drive —To change drives, simply type the drive letter (i.e. D:\\ ) and press Enter . dir —Display the contents of current directory you are in. tree —Displays the folder structure of your system."
+    },
+    {
+      "title": "Copy, create, and move files and folders.",
+      "content": "Copy, create, and move files and folders. Use the following commands to copy, create, move, or delete files and folders in the Command Prompt: mkdir —Make directory or folder. To create a new directory in a folder, type mkdir followed by the directory name (i.e. mkdir wikihow and press Enter . rmdir —Deletes a directory or folder. To delete a directory or folder, type rmdir followed by the directory name (i.e. rmdir wikihow .) copy —Copies a file or folder. To copy a file or folder from one location to another type copy followed by the file you want to copy, followed by the location you want to copy it to (i.e. copy C:\\Users\\Public\\Downloads\\selfie.jpg C:\\Users\\Public\\Pictures\\selfie.jpg move —Moves or cuts a file to another directory. To move a file to another directory, type move followed by the path and file name of the file you want to move, followed by the path and file name you want to move the file to (i.e. move C:\\Users\\Public\\Downloads\\selfie.jpg C:\\Users\\Public\\Pictures\\selfie.jpg .) rename —Rename a file or folder If you want to rename a file or folder, type rename or ren followed the file you want to rename, followed by the file name you want to rename it to (i.e. rename C:\\Users\\Public\\Pictures\\selfie.jpg me.jpg .) del —Deletes a file or folder. If you want to delete a file or folder, type del followed by the location and the file or folder you want to delete (i.e. del sample_text.txt .)"
+    },
+    {
+      "title": "Get system information.",
+      "content": "Get system information. Use the following commands to find information about your system in the Command Prompt: systeminfo —Displays information about your computer, including your Windows version, hardware information BIOS information, and more. winver —Displays which version of Windows you have. getmac —Display your computer's MAC address."
+    },
+    {
+      "title": "System commands.",
+      "content": "System commands. Use the following commands to complete tasks using the command prompt: Start a program —To start a program, navigate to the folder that contains the program executable and then type file executable file name (i.e. cmd.exe ) and press Enter . tasklist —Displays a list of tasks and applications that are currently running along with their PID number. taskkill —Kills a task. To forceful kill a task, type taskkill followed by the PID number, followed by /f (i.e. taskkill 13560 /f ) and press Enter . diskpart —Runs the disk partition program in the Command Prompt, which you can use to manage, format, and partition disk drives on your computer. Use this command to start Diskpart, and then press ? and press Enter to see all the Diskpart commands. date —Displays and allows you to change the system date. It will first display the current date, and then ask you to enter a new date. Press Enter to skip changing the date. time —Displays and allows you to change the system time. It will first display the current time and then ask you to enter a new time. Press Enter to skip changing the time. color —Changes the color of the command prompt text. Type color followed by the number that corresponds to a color (i.e. color 4 ) and press Enter to change the color. Type color /? and press Enter to display the color options. shutdown /s —Shuts down your computer."
+    },
+    {
+      "title": "Get network information.",
+      "content": "Get network information. You can use the following commands to gather information about your network connection and troubleshoot problems with your network: ipconfig: —Displays your IP address, subnet mask, and default gateway. ping —Send test packets. This is useful for troubleshooting connection issues. Type ping followed by a website or IP address to send test packets {{i.e. ping google.com ) and press Enter . Press Enter again to stop pinging. tracert —Traces the path packets take to reach the host connection. This is useful for diagnosing where problems occur in a network connection. netsh —Activates Netsh, which allows you to configure your network connection. After activating Netsh, type ? and press Enter to see all Netsh commands. ipconfig /flushdns —Clear your DNS cache and renew your DNS connection."
+    },
+    {
+      "title": "Troubleshoot your computer.",
+      "content": "Troubleshoot your computer. Use the following commands to troubleshoot problems with your computer: [2] X Research source chkdsk —Checks your computer file system for errors. You can enter a drive letter or file name to scan a specific drive or file. To scan your entire filesystem and fix errors, type chkdsk /f and press Enter . sfc /scannow —Runs System File Checker, which scans your Windows file system for errors and attempts to fix them."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Spearman%27s-Rank-Correlation-Coefficient",
+  "title": "How to Calculate Spearman's Rank Correlation Coefficient",
+  "steps": [
+    {
+      "title": "Draw your data table.",
+      "content": "Draw your data table. This will organize the information you need to calculate Spearman's Rank Correlation Coefficient. You will need: [1] X Research source 6 Columns, with headers as shown below. As many rows as you have pairs of data."
+    },
+    {
+      "title": "Fill in the first two columns with your pairs of data.",
+      "content": "Fill in the first two columns with your pairs of data."
+    },
+    {
+      "title": "In your third column rank the data in your first column from 1 to n (the number of data you have).",
+      "content": "In your third column rank the data in your first column from 1 to n (the number of data you have). Give the lowest number a rank of 1, the next lowest number a rank of 2, and so on."
+    },
+    {
+      "title": "In your fourth column do the same as in step 3, but instead rank the second column.",
+      "content": "In your fourth column do the same as in step 3, but instead rank the second column. If two (or more) pieces of data in one column are the same, find the mean of the ranks as if those pieces of data had been ranked normally, then rank the data with this mean. In the example at right, there are two 5s that would otherwise have ranks of 2 and 3. Since there are two 5s, take the mean of their ranks. The mean of 2 and 3 is 2.5, so assign the rank 2.5 to both 5s."
+    },
+    {
+      "title": "In the \"d\" column calculate the difference between the two numbers in each pair of ranks.",
+      "content": "In the \"d\" column calculate the difference between the two numbers in each pair of ranks. That is, if one is ranked 1 and the other 3 the difference would be 2. (The sign doesn't matter, since the next step is to square this number.) [2] X Research source"
+    },
+    {
+      "title": "Square each of the numbers in the \"d\" column and write these values in the \"d2\" column.",
+      "content": "Square each of the numbers in the \"d\" column and write these values in the \"d 2 \" column."
+    },
+    {
+      "title": "Add up all the data in the \"d2\" column.",
+      "content": "Add up all the data in the \"d 2 \" column. This value is Σd 2 ."
+    },
+    {
+      "title": "Choose one of these formulae:",
+      "content": "Choose one of these formulae: If there was no tie in previous steps, insert this value into the simplified Spearman's Rank Correlation Coefficient formula and replace the \"n\" with the number of pairs of data you have to calculate the answer. [3] X Research source If there were ties in any of previous steps, use the standard Spearman's Rank Correlation Coefficient formula instead:"
+    },
+    {
+      "title": "Interpret your result.",
+      "content": "Interpret your result. It can vary between -1 and 1. Close to -1 - Negative correlation. Close to 0 - No linear correlation. Close to 1 - Positive correlation."
+    },
+    {
+      "title": "Create new columns with the ranks of your existing columns.",
+      "content": "Create new columns with the ranks of your existing columns. For example, if your data is in Column A2:A11, you want to use the formula \"=RANK(A2,A$2:A$11)\", and copy it down and across for all your rows and columns. [4] X Research source"
+    },
+    {
+      "title": "Break ties as described in step 3, 4 method 1.",
+      "content": "Break ties as described in step 3, 4 method 1."
+    },
+    {
+      "title": "In a new cell, do a correlation between the two rank columns with something like \"=CORREL(C2:C11,D2:D11)\".",
+      "content": "In a new cell, do a correlation between the two rank columns with something like \"=CORREL(C2:C11,D2:D11)\". In this case, C and D would correspond to the rank columns. The correlation cell will have your Spearman's Rank Correlation."
+    },
+    {
+      "title": "Get R if you don't already have it.",
+      "content": "Get R if you don't already have it. (See http://www.r-project.org .)"
+    },
+    {
+      "title": "Save your data as a CSV file with the data you want to correlate in the first two columns.",
+      "content": "Save your data as a CSV file with the data you want to correlate in the first two columns. You can typically do this through the \"Save as\" menu."
+    },
+    {
+      "title": "Open the R editor.",
+      "content": "Open the R editor. If you are on the terminal, simply run R. From the desktop, you want to click on the R logo."
+    },
+    {
+      "title": "Type the commands:",
+      "content": "Type the commands: d <- read.csv(\"NAME_OF_YOUR_CSV.csv\") and hit enter cor(rank(d[,1]),rank(d[,2])) [5] X Research source"
+    }
+  ]
+}

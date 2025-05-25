@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Hide-a-File-in-an-Image-File",
+  "title": "How to Hide a File in an Image File",
+  "steps": [
+    {
+      "title": "Copy the file(s)",
+      "content": "Copy the file(s) and the image to your desktop. Select the files you want to hide, press Ctrl + C , go to your desktop, and press Ctrl + V , then do the same with the image you want to use."
+    },
+    {
+      "title": "Select the file(s) you want to hide.",
+      "content": "Select the file(s) you want to hide. Click and drag your mouse cursor across the list of files you want to hide. If you're just hiding one file, click once the file to select it."
+    },
+    {
+      "title": "Right-click a selected file.",
+      "content": "Right-click a selected file. Doing so will prompt a drop-down menu. If your mouse doesn't have a right-click button, click the right side of the mouse, or use two fingers to click the mouse. If your computer uses a trackpad instead of a mouse, use two fingers to tap the trackpad or press the bottom-right side of the trackpad."
+    },
+    {
+      "title": "Select Send to.",
+      "content": "Select Send to . It's near the middle of the drop-down menu. A pop-out menu will appear."
+    },
+    {
+      "title": "Click Compressed (zipped) folder.",
+      "content": "Click Compressed (zipped) folder . This option is near the top of the pop-out menu. Doing this creates a new ZIP folder with your files inside."
+    },
+    {
+      "title": "Enter a name for the ZIP folder.",
+      "content": "Enter a name for the ZIP folder. After the ZIP folder appears, type in whatever you want to name the ZIP folder and press ↵ Enter . It's best if you choose a one-word name for the ZIP folder."
+    },
+    {
+      "title": "Right-click the image.",
+      "content": "Right-click the image. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties . It's at the bottom of the drop-down menu."
+    },
+    {
+      "title": "Check the image's extension.",
+      "content": "Check the image's extension. In the parentheses next to the \"Type of file\" heading, you'll see the type of file your image is (this will usually be either \".jpg\" or \".png\")."
+    },
+    {
+      "title": "Copy the image's location.",
+      "content": "Copy the image's location. Click and drag your mouse cursor across the address to the right of the \"Location\" heading, then press Ctrl + C . This will ensure that you enter the path to your files correctly. You can close the Properties window after doing this."
+    },
+    {
+      "title": "Open Command Prompt.",
+      "content": "Open Command Prompt. Open Start , type in command prompt , and click Command Prompt at the top of the Start menu."
+    },
+    {
+      "title": "Change the directory to your desktop.",
+      "content": "Change the directory to your desktop. Type in cd and press the spacebar, then press Ctrl + V to paste in the copied address and press ↵ Enter . This will change Command Prompt's focus to use the desktop."
+    },
+    {
+      "title": "Type in the \"Copy\" command.",
+      "content": "Type in the \"Copy\" command. The command to place the file(s) in your image is as follows: copy /b image.extension + folder.zip image.extension where \"image.extension\" is replaced by the image's name and its extension (e.g., \"hello.jpg\") and \"folder.zip\" is replaced by the ZIP folder's name and extension (e.g., \"hi.zip\"). For example, if your ZIP folder is named \"Secret\" and your image is a JPG named \"Hide\", you would type in copy /b Hide.jpg+Secret.zip Hide.jpg here."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so runs the command and places the ZIP folder inside of the image."
+    },
+    {
+      "title": "View your hidden files.",
+      "content": "View your hidden files. Once your image contains the ZIP folder, you can double-click the image file to open the image as-is; however, if you want to view the image's hidden files, do the following: Install WinRAR if you don't have it. Open File Explorer . Click the View tab. Check the \"File extensions\" box in the \"Show/hide\" section. Go to the image file you used, right-click it, and click Rename . Replace the image file's extension with \"rar\" (e.g., \"Hide.jpg\" would become \"Hide.rar\"). Press ↵ Enter , then click Yes when prompted. Double-click the image file to open it in WinRAR."
+    },
+    {
+      "title": "Copy the file(s) and the image to your desktop.",
+      "content": "Copy the file(s) and the image to your desktop. Select the files you want to hide, press ⌘ Command + C , go to your desktop, and press ⌘ Command + V , then do the same with the image you want to use."
+    },
+    {
+      "title": "Select the file(s) you want to hide.",
+      "content": "Select the file(s) you want to hide. Click and drag your mouse cursor across the list of files you want to hide. If you're just hiding one file, click once the file to select it."
+    },
+    {
+      "title": "Control-click one of the selected files.",
+      "content": "Control-click one of the selected files. Doing so will prompt a drop-down menu to appear. You can also use two fingers to press the mouse button."
+    },
+    {
+      "title": "Click Compress Items.",
+      "content": "Click Compress Items . It's in the drop-down menu; you should see the number of items you've selected there as well (e.g., Compress 4 Items ). Doing so creates a ZIP folder named \"Archive\". [1] X Research source If you're only compressing on file, you'll click Compress [file name] here."
+    },
+    {
+      "title": "Check your image's extension.",
+      "content": "Check your image's extension. Before you can hide your ZIP folder in the image, you'll need to know your image's extension: Click the image once to select it. Click File . Click Get Info . Look at the tag after the period in the file's name at the top of the Get Info window."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click Spotlight , type in terminal , and double-click the Terminal app icon."
+    },
+    {
+      "title": "Change to the desktop directory.",
+      "content": "Change to the desktop directory. Type in cd Desktop and press ⏎ Return to do so."
+    },
+    {
+      "title": "Enter the \"Hide\" command.",
+      "content": "Enter the \"Hide\" command. The command for hiding a ZIP folder inside of an image is as follows: cat image.extension Archive.zip > image2.extension where \"image.extension\" is your image's name and extension (e.g., \"Hide.jpg\"), \"Archive.zip\" is your ZIP folder's name and extension (in most cases, it literally will be \"Archive.zip), and \"image2.extension\" is whatever you want your output image's name and extension to be. For example, if your image file is a JPG named \"Secret\" and your ZIP folder is named \"Archive.zip\", you would create a hidden file image named \"Normal\" by typing cat Secret.jpg Archive.zip > Normal.jpg here."
+    },
+    {
+      "title": "Press ⏎ Return.",
+      "content": "Press ⏎ Return . Doing so runs the command and places the ZIP folder inside of the output image."
+    },
+    {
+      "title": "View the hidden files.",
+      "content": "View the hidden files. While double-clicking the output image will open the image like usual, you can view the image's hidden files by doing the following: [2] X Research source Place the image on your desktop if it isn't already there. Open Terminal and type in cd Desktop . Type in unzip image.extension where \"image.extension\" is your output image's name and extension. Press ⏎ Return . Follow any in-Terminal prompts. Open the folder that appears on your Mac's Desktop to view the files."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Tab-in-Latex",
+  "title": "How to Tab in LaTeX: Quickstart Guide",
+  "steps": [
+    {
+      "title": "Type \\begin{tabbing}.",
+      "content": "Type \\begin{tabbing} . This will initiate the tabbing environment in your LaTeX code. This method manually sets tab stops in your text. [1] X Research source If you’re just getting started, check out our guides on installing LaTeX and coding ."
+    },
+    {
+      "title": "Type the first line of text.",
+      "content": "Type the first line of text. This is just normal text that we’ll add tab stops to in the next step. Make sure to end each line of text with \\\\ to end the line and start a new line."
+    },
+    {
+      "title": "Insert \\= for tab stops.",
+      "content": "Insert \\= for tab stops. Place this syntax in the first line of text wherever you want there to be tab stops."
+    },
+    {
+      "title": "Type the second line of text.",
+      "content": "Type the second line of text. This is normal text in which we’ll add tab stop advances. Don’t forget to add a \\\\ at the end!"
+    },
+    {
+      "title": "Insert \\> for tab stop advances.",
+      "content": "Insert \\> for tab stop advances. Place this syntax in the second line of text where you want the text to be inline with the tab stops placed in the first line. After this, you can repeat this process with new lines of text until you’ve completed your document."
+    },
+    {
+      "title": "Type \\end{tabbing}.",
+      "content": "Type \\end{tabbing} . Type this code after the end of your text to close tabbing mode. [2] X Research source You’re done! As you continue your math journey, check out our guide on how to learn math for general tips!"
+    },
+    {
+      "title": "Insert \\quad.",
+      "content": "Insert \\quad . This code will create a space of 18 mu wherever you place it. This is great for consistent paragraph indenting. [3] X Research source “mu” is a LaTeX length unit equal to 1/18 em. An “em” is about the width of an uppercase “M” in the font you’re using. [4] X Research source"
+    },
+    {
+      "title": "Insert \\qquad.",
+      "content": "Insert \\qquad . This code has a space length of 36 mu, twice the length of \\quad. This is great for organizing text by using indentation to indicate nesting. [5] X Research source"
+    },
+    {
+      "title": "Insert \\hspace{5cm}.",
+      "content": "Insert \\hspace{5cm} . This code will create a space 5 centimeters (cm) wide. This is great for creating spacing dependent on length rather than font (unlike \\quad). [6] X Research source Vary the distance inside the {} to get the spacing you need. You can use multiple \\hspace of different lengths to organize your text."
+    },
+    {
+      "title": "Insert \\hfill.",
+      "content": "Insert \\hfill . This code fills the remaining space in the line of text (to the right-side margin). This is helpful if you’re writing a resume in LaTex and you want to right-align the dates. [7] X Research source For example, if you type: Hello \\hfill World “Hello” will be on the left side of the text box, and “World” will be on the right side, against the right margin."
+    }
+  ]
+}

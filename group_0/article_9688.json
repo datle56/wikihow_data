@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Convert-Txt-to-Json",
+  "title": "How to Convert Txt to Json",
+  "steps": [
+    {
+      "title": "Go to https://anyconv.com/txt-to-json-converter/ in a web browser.",
+      "content": "Go to https://anyconv.com/txt-to-json-converter/ in a web browser. You can use any web browser to convert TXT to JSON."
+    },
+    {
+      "title": "Click Choose File.",
+      "content": "Click Choose File . It's centered in the page; doing so will bring up your file manager."
+    },
+    {
+      "title": "Navigate to and double-click to open your TXT file.",
+      "content": "Navigate to and double-click to open your TXT file. Your TXT file needs to be smaller than 50mb to do this."
+    },
+    {
+      "title": "Click Convert.",
+      "content": "Click Convert . The drop-down should already display \"JSON\" as the file type you're converting to. The conversion process may take a while depending on the size of the file and your internet connection."
+    },
+    {
+      "title": "Click Download.",
+      "content": "Click Download . Your file manager will open for you to choose a save location and file name before saving."
+    },
+    {
+      "title": "Open the TXT document in Microsoft Visual Studio.",
+      "content": "Open the TXT document in Microsoft Visual Studio. You'll find this program in your Start menu or the Applications folder in Finder. If you don't have Visual Studio, you can download it and start a free trial from https://visualstudio.microsoft.com/downloads/ ."
+    },
+    {
+      "title": "Enter the following code after your TXT:",
+      "content": "Enter the following code after your TXT: # Python program to convert text [[ Image : Convert Txt to Json Step 6 Version 2. jpg | center ]] # file to JSON import json [[ Image : Convert Txt to Json Step 7 Version 2. jpg | center ]] # the file to be converted to [[ Image : Convert Txt to Json Step 8 Version 2. jpg | center ]] # json format filename = ' EXAMPLE . txt ' # dictionary where the lines from # text will be stored dict1 = {} # creating dictionary with open ( filename ) as fh : for line in fh : # reads each line and trims of extra the spaces # and gives only the valid words command , description = line . strip (). split ( None , 1 ) dict1 [ command ] = description . strip () # creating json file # the JSON file is named as test1 out_file = open ( \"test1.json\" , \"w\" ) json . dump ( dict1 , out_file , indent = 4 , sort_keys = False ) out_file . close () You need to change the first filename listed to your TXT file; the second filename will be the name of the converted file, so you might need to change that name too. This code example taken from: https://www.geeksforgeeks.org/convert-text-file-to-json-in-python/ ."
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. You can either use the keyboard shortcut ( Ctrl/Cmd + S ) to save or navigate to File > Save ."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Update-Your-Computer%27s-BIOS",
+  "title": "Easy Guide to Updating the BIOS on a Computer (Windows)",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen. You can also press the ⊞ Win key to access the Start menu."
+    },
+    {
+      "title": "Open System Information.",
+      "content": "Open System Information. Type msinfo into the Start window, then click System Information at the top of the Start window. [1] X Research source"
+    },
+    {
+      "title": "Click System Summary.",
+      "content": "Click System Summary . In the System Information app, click the System Summary header on the left side of the window."
+    },
+    {
+      "title": "Check your computer's model name.",
+      "content": "Check your computer's model name. Next to the \"System Model\" heading, you'll see a list of numbers and letters; this is your computer's model name. You'll need this information when you search for the BIOS update file. Skip this step if you have a custom-built computer."
+    },
+    {
+      "title": "Find your BIOS version number.",
+      "content": "Find your BIOS version number . Scroll down in the menu. Next to the \"BIOS Version/Date\" heading, you'll see a company name, your computer's model name, and a number after a period. The number after the period is your BIOS version. [2] X Research source For a computer with the model number \"Q553UB\" and a BIOS set to version 202, for example, you would see \"Q553UB.202\" here. If you're using a custom-built computer, you'll need to find your motherboard's model instead of using the computer's model number. You can also find the BIOS with the command prompt by typing in the command wmic bios get biosversion ."
+    },
+    {
+      "title": "Check the BIOS Mode line to see if you have BIOS or UEFI.",
+      "content": "Check the BIOS Mode line to see if you have BIOS or UEFI. A few lines under the BIOS Version/Date header, check the BIOS Mode line. This will tell you whether you have a true BIOS or a UEFI."
+    },
+    {
+      "title": "Open your BIOS manufacturer's support site.",
+      "content": "Open your BIOS manufacturer's support site. Generally, the easiest way to do this is by typing your computer's manufacturer name, your computer's model name, and \"drivers\" or \"BIOS\" into Google and then selecting the proper link. This process will vary depending on your computer's manufacturer, so you may have to click through a few different links before you find the correct one. If you're using a custom-built computer, you'll need to look up your computer's motherboard name along with \"BIOS\" or \"UEFI\" and \"update\" and then open the manufacturer's website."
+    },
+    {
+      "title": "Find the BIOS update file.",
+      "content": "Find the BIOS update file. Depending on the website, you may have to open the \"Updates\", \"Support\", or \"Downloads\" section first, or click a \"BIOS\" heading. Once you've found the BIOS file, you can proceed. Again, this may involve some trial and error."
+    },
+    {
+      "title": "Make sure the update file is newer than your BIOS version.",
+      "content": "Make sure the update file is newer than your BIOS version. In the file's name, you should see a version number. If this version number is higher than your BIOS version number, your BIOS is outdated and thus can be updated. If the version number on the website matches your BIOS version number, your BIOS is up-to-date and does not need updating. Even if your current BIOS version is a whole number (e.g., 301) and the file on the site is listed as a higher decimal (e.g., 301.1), the site's file is a higher version than your BIOS uses."
+    },
+    {
+      "title": "Download the update file.",
+      "content": "Download the update file. Click the Download link, button, or icon to do so. Once your BIOS update file finishes downloading, you can proceed with updating your BIOS. In some cases, you may have to click the file's name to prompt it to download. Most BIOS update files will download inside of a ZIP folder."
+    },
+    {
+      "title": "Make sure your computer is plugged into a reliable power source.",
+      "content": "Make sure your computer is plugged into a reliable power source. Since you can permanently ruin your BIOS if your computer turns itself off during the update process, you'll want to use a reliable power source. [3] X Research source If you're using a laptop, your computer's battery should be fully charged in addition to the laptop being plugged in."
+    },
+    {
+      "title": "Extract your BIOS file.",
+      "content": "Extract your BIOS file. In most cases, you'll have to extract (or \"unzip\") the BIOS update file from within its folder: Double-click the downloaded ZIP file to open it. Click the Extract tab at the top of the window. Click Extract all . Click Extract when prompted. Wait for the extracted folder to open."
+    },
+    {
+      "title": "Read your BIOS file's README document if applicable.",
+      "content": "Read your BIOS file's README document if applicable. If a text document labeled \"README\" or similar is available, double-click it to open it and read the entire document before proceeding. If the README file's instructions for updating your BIOS contradict the instructions in the rest of this article, make sure you follow the README's instructions instead. For some older or custom-made computers, you may need to run the BIOS installer from a USB flash drive instead of directly from the computer’s hard drive. However, this isn’t necessary for most modern PCs. Check the README file to be sure."
+    },
+    {
+      "title": "Access the BIOS page",
+      "content": "Access the BIOS page . Prompt your computer to restart by clicking Start , clicking Power , and clicking Restart , then immediately begin pressing the key your computer's manufacturer assigned to the BIOS startup. If the BIOS doesn't launch, you'll need to restart again and try a different key. For most computers, this key is one of the function keys (e.g., F12 ), though some computers use the Del key or the Esc key. If you don't know your computer's BIOS key, look it up by typing your computer's manufacturer name, model name, and \"BIOS key\" into a search engine. In Windows 10 or 11, you can also access the BIOS settings from the Settings menu. From Settings , navigate to Update & Security > Recovery > Restart Now (under Advanced startup) . In the window that pops up, select Troubleshoot > Advanced options > UEFI Firmware Settings > Restart . [4] X Research source"
+    },
+    {
+      "title": "Back up your BIOS if possible.",
+      "content": "Back up your BIOS if possible. If you see a \"Backup\" or \"Save\" option on the BIOS' main screen (or if you see a Backup tab at the top of the screen), select it and follow any on-screen instructions. This will ensure that you can restore your BIOS settings later if your BIOS update doesn't pair well with your computer. You may instead be prompted to back up your BIOS once you initiate the backup process. Not all BIOS pages allow you to back up their settings."
+    },
+    {
+      "title": "Enable and use your BIOS update tool.",
+      "content": "Enable and use your BIOS update tool. Each BIOS will have a slightly different way of accessing the BIOS update tool, so you may have to consult your BIOS manufacturer's support site for a direct explanation of how to do so. In many cases, you'll select the Boot tab, ensure that your USB flash drive shows up, enable any backup or \"Flash\" options in the menu, and then select the Start Flash option from the Advanced tab. [5] X Research source Sometimes, pressing the BIOS key while a USB drive is plugged in will bring up a unique menu that allows you to select an Update option and follow the on-screen instructions. This is common on Dell computers. [6] X Research source"
+    },
+    {
+      "title": "Allow your computer's BIOS to update.",
+      "content": "Allow your computer's BIOS to update. This process can take a few minutes to over an hour depending on your computer and the depth of the BIOS update. Once your BIOS is finished updating, your computer should restart itself, though you may be prompted to confirm this decision. [7] X Research source Do not turn off your computer while the BIOS is updating. Doing so can cause the BIOS to become corrupted, meaning that your computer will be unable to start, complete the BIOS installation, or otherwise run at all."
+    }
+  ]
+}

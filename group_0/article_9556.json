@@ -1,0 +1,154 @@
+{
+  "url": "https://www.wikihow.com/Control-Fan-Speed-on-a-Windows-10-Laptop",
+  "title": "How to Control Fan Speed on a Windows 10 or 11 PC",
+  "steps": [
+    {
+      "title": "Download SpeedFan.",
+      "content": "Download SpeedFan. If SpeedFan is compatible with your laptop or desktop computer's motherboard , you can use it to adjust your PC's fan speeds if your motherboard is supported . To download SpeedFan: Go to [1] X Research source and click the first link in the \"Download\" section. When the file is finished downloading, double-click it to start the installer. Click Yes to run the file. Review the agreement and click I Agree . Click Next . Click Install ."
+    },
+    {
+      "title": "Open SpeedFan.",
+      "content": "Open SpeedFan. Once the app is installed, you'll find it in your Windows Start menu. You may have to click Yes to permit SpeedFan to access your PC's settings. After a few moments, you will see some information about your PC on the main screen. The fans and their current speeds should appear in the box just below the \"CPU usage\" bar. If you don't see any fans here, or the only fans you see are listed as \"0 RPM,\" your motherboard is not supported by SpeedFan."
+    },
+    {
+      "title": "Click the Configure button.",
+      "content": "Click the Configure button. It's in the upper-right area of the window."
+    },
+    {
+      "title": "Click the Advanced tab.",
+      "content": "Click the Advanced tab. It's at the top of the window. [2] X Research source"
+    },
+    {
+      "title": "Select your CPU from the \"Chip\" menu.",
+      "content": "Select your CPU from the \"Chip\" menu. It's at the top of the screen. It's the entry that begins with \"IT\" and ends with \"ISA. [3] X Research source \" In the bottom section, you'll see several properties, a few of which should begin with \"PWM (a number) mode.\" If you don't see your CPU in the menu, go through the other options and look for one with \"PWM mode\" entries in the Property box. If you don't see any options that display a \"PWM mode\" option in the Property box, you won't be able to change your fan speed in this program. Try changing your power settings or checking the BIOS for fan control settings instead."
+    },
+    {
+      "title": "Set your PWM modes to \"Software controlled.\"",
+      "content": "Set your PWM modes to \"Software controlled.\" To do so, click the first PWM mode entry and select Software controlled from the drop-down menu at the bottom. Repeat this for each PWM mode entry (PWM 1 mode, PWM 2 mode, etc.). [4] X Research source When this default option is set for any PWM modes, your PC will self-regulate the fan speeds instead of allowing you to make changes. [5] X Research source"
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This takes you back to the main SpeedFan screen."
+    },
+    {
+      "title": "Find which PWM controls each component's fan.",
+      "content": "Find which PWM controls each component's fan. Look at each fan speed in the box on the left side of the window. You'll also see each of the PWMs listed just beneath this box, each with its own percentage value. Grab a sheet of paper or open a blank text file and log the following: Write down the percentage of the first PWM setting. Now set the first PWM to 0%. After a moment or two, one of the temperatures in the right-hand box will begin to rise and turn red. The component with the raised temperature is the one affected by that PWM. Write that down. Enter the original percentage back into the box. Repeat for all other PWMs until you know a) which PWM controls which components' fans, and b) what the default values are for each PWM. Check the box next to \"Remember it\" to make sure your settings don't revert. [6] X Research source"
+    },
+    {
+      "title": "Adjust the fan speeds by raising or lowering the percentage for each PWM.",
+      "content": "Adjust the fan speeds by raising or lowering the percentage for each PWM. Start by making small adjustments, raising or lowering the speed by just 1 or 2 at first. Watch the temperatures in the right panel to make sure you don't cause any overheating, while also paying attention to how your changes affect performance. If you don't want to keep these settings on all the time and instead would rather them kick into gear once the CPU temp reaches a certain degree, you can set up fan control in Speedfan. Click the Fan Control tab, check the box next to \"Advanced fan control,\" give the control a name, and click OK . Then, you can return to the Fan Control tab, select your fan control, and adjust your settings based on temperature. [7] X Research source"
+    },
+    {
+      "title": "Install Fan Control for Windows.",
+      "content": "Install Fan Control for Windows. Fan Control is a free, open-source system fan control program for Windows laptops and desktop PCs. You can download a portable or installable version of the software from getfancontrol.com . If you download the portable version, it'll download as a ZIP file. Just extract the ZIP, open the new folder, and double-click FanControl.exe to run the program. If you see an error warning you that the program is unsafe because it's from an unsigned developer, or you see \"Windows protected your PC,\" we can confirm that it's safe to click More info and then choose the option to run the program anyway. Most laptop manufacturers do not allow you to control fan speeds because those controls are preconfigured in the BIOS. Controlling your fans with software will usually only work on desktop computers and some gaming laptops. [8] X Research source"
+    },
+    {
+      "title": "Open Fan Control and complete the assisted setup.",
+      "content": "Open Fan Control and complete the assisted setup. The first time you launch Fan Control, click OK to open Assisted Setup. You can then choose which sensors to enable or disable, or just keep the defaults and select OK to continue. Once you're finished, Fan Control will do some tests to see if it can control your fan speed. When it's finished, you'll see your fan controls appear. [9] X Research source During tests, you will likely hear your fans spin. Not all fans can be controlled with this software. You likely cannot use Fan Control if you don't see controls for your fans. Try changing your power settings or checking the BIOS for fan control settings instead."
+    },
+    {
+      "title": "Identify your fans and click OK.",
+      "content": "Identify your fans and click OK . When the tests are complete, you'll see a list of fans you can control with the software, and their current speeds. Click OK to return to the control panel. [10] X Research source If you want Fan Control to launch automatically, you can check the box when prompted."
+    },
+    {
+      "title": "Click the + and select Graph.",
+      "content": "Click the + and select Graph . You will see the plus sign at the bottom-right corner. A graph will appear."
+    },
+    {
+      "title": "Select the temperature source you want to use.",
+      "content": "Select the temperature source you want to use. You'll be able to control the fans based on the temperature of your preferred device. For example, you can select your GPU to make the fan spin faster or slower at certain temperatures. [11] X Research source"
+    },
+    {
+      "title": "Click Edit to open the graph.",
+      "content": "Click Edit to open the graph. Now you'll see a graph you can modify. [12] X Research source"
+    },
+    {
+      "title": "Move the graph line to reflect your desired fan speed.",
+      "content": "Move the graph line to reflect your desired fan speed. For example, if you want the fan to spin at 100% any time the sensor reaches 100 degrees, drag the larger dot to the top (100%) and over to the 100-degree mark. [13] X Research source Use the smaller dot to create a ramp up to the top speed."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This saves your fan controls."
+    },
+    {
+      "title": "Enable the fans you want to control.",
+      "content": "Enable the fans you want to control. Each fan that Fan Control can control has its own slider. To use your new settings to control a specific fan, toggle on its switch, then click its drop-down menu and select Graph . The fans will now spin as fast or slow as your graph allows. [14] X Research source"
+    },
+    {
+      "title": "Boot your PC into the BIOS/UEFI.",
+      "content": "Boot your PC into the BIOS/UEFI. Depending on your laptop's model and motherboard, you may be able to control fan speeds in the BIOS or UEFI . [15] X Research source Save any work you have open, and then do the following: Press the Windows key + i to open your Settings. Click Update & security (Windows 10) or System (Windows 11). Click Recovery . Click Restart now under \"Advanced startup\" in the right panel. Click Troubleshoot and then Advanced options . Click UEFI Firmware settings and select Restart . This reboots your PC into the BIOS/UEFI."
+    },
+    {
+      "title": "Locate the menu related to your fans.",
+      "content": "Locate the menu related to your fans. The location will vary, but check the various menus for anything having to do with fans, fan speed, cooling, or temperature. You may have to select a menu called Advanced or System Configuration first. [16] X Research source"
+    },
+    {
+      "title": "Choose a fan speed setting or profile.",
+      "content": "Choose a fan speed setting or profile. The options you can select also vary by manufacturer. You will typically have the option to adjust the temperature at which the fan will speed up, and often the speed itself. If your issue is that the fans are too loud and come on too often, you'd want to increase the temperature at which they activate. Just be careful not to let your PC run too hot, as you could damage your hardware. Depending on your device, you may have to select a fan and choose between fan control modes, such as PWM or DC mode. If the fan you want to control has a 3-pin connector, this typically means the fan operates at a fixed speed, though some motherboards will let you control the fan speed by voltage (DC). If the fan has a 4-pin connector, it's a PWM fan, which means you can better fine-tune the fan speed. In this case, you'll usually be able to move a slider to adjust the fan speed curve. [17] X Research source"
+    },
+    {
+      "title": "Save and exit the BIOS.",
+      "content": "Save and exit the BIOS. The exact key you'll need to press will appear with \"Save Changes and Exit\" toward the bottom of the screen. Press that key to save and exit. When your PC boots back up, it will be using the new fan settings you've set."
+    },
+    {
+      "title": "Open Control Panel.",
+      "content": "Open Control Panel. You may be able to control fan speed on your Windows laptop by adjusting the system cooling policy in your power settings. If you're using Windows 10, these settings will be easy to find. On Windows 11, you'll have to make a quick change to your settings to make the system cooling policy option available. If you're using Windows 11, perform these steps first: Press the Windows key and type cmd . Right-click \"Command Prompt\" and select Run as administrator . Click Yes . Enter the following command to add the system cooling policy back to the registry: REG ADD HKLM\\SYSTEM\\CurrentControlSet\\Control\\Power\\PowerSettings\\54533251-82be-4824-96c1-47b60b740d00\\94d3a615-a899-4ac5-ae2b-e4d8f634367f /v Attributes /t REG_DWORD /d 2 /f . [18] X Research source To open Control Panel, press the Windows key , type control panel , and click Control Panel in the search results."
+    },
+    {
+      "title": "Click Hardware and Sound.",
+      "content": "Click Hardware and Sound . Your hardware settings will appear."
+    },
+    {
+      "title": "Click Power Options.",
+      "content": "Click Power Options . It's right next to the battery icon."
+    },
+    {
+      "title": "Click Change plan settings next to your power plan.",
+      "content": "Click Change plan settings next to your power plan. The general power settings for your laptop will appear."
+    },
+    {
+      "title": "Click Change advanced power settings.",
+      "content": "Click Change advanced power settings . It's one of the two small blue links at the bottom. A new dialog window with more settings will appear. If you're currently using \"High performance\" mode, you'll likely hear the fans run faster because the CPU always operates at top speed. For the best balance between CPU power and fan speed/activity, enable Balanced mode."
+    },
+    {
+      "title": "Expand the \"Processor Power Management\" menu.",
+      "content": "Expand the \"Processor Power Management\" menu. More options will appear."
+    },
+    {
+      "title": "Expand the \"System cooling policy\" menu.",
+      "content": "Expand the \"System cooling policy\" menu. If this menu appears for you, you can use it to control fan speed for when your laptop is plugged in or unplugged. [19] X Research source Use Passive to slow down the processor before increasing the fan speed. This option is the default, prioritizing keeping your laptop cool over better CPU performance. Use Active to increase the fan speed before slowing down the processor. This option is best if operating your laptop at top speeds is important. Because your CPU performance will be prioritized, your fans will spin more often to keep the system cool."
+    },
+    {
+      "title": "Install Argus Monitor on your laptop or desktop PC.",
+      "content": "Install Argus Monitor on your laptop or desktop PC. You can use this free application to control connected fans, even fans connected to an external controller. There's a free 30-day trial of the software, but you can get the full version for a low one-time fee–thankfully, no subscription is required. [20] X Research source Go to argusmonitor.com and click Free Download . Double-click the installer and follow the on-screen instructions. Argus Monitor doesn't support as many laptop motherboards as it does desktop motherboards. To learn more about supported hardware, visit their website ."
+    },
+    {
+      "title": "Open Argus Monitor and click the Mainboard tab.",
+      "content": "Open Argus Monitor and click the Mainboard tab. If you don't see this tab, the software does not support your motherboard. [21] X Research source Instead, try changing your power settings or checking the BIOS for fan control settings."
+    },
+    {
+      "title": "Click the Fan Control tab.",
+      "content": "Click the Fan Control tab. This displays the fan controls, including the ability to control the speed of supported system fans."
+    },
+    {
+      "title": "Control the fan speed.",
+      "content": "Control the fan speed. For supported system fans, you can control the speed by dragging the points on a curve or specifying a temperature source to monitor. [22] X Research source If you can't change the speed of a fan, it might have incorrect settings in the BIOS. See Using the BIOS method to learn how to change your fan settings. [23] X Research source"
+    },
+    {
+      "title": "If you have a hardware fan controller, use your controller's software.",
+      "content": "If you have a hardware fan controller, use your controller's software. For example, if you have a Corsair fan controller and fans, you can use Corsair's iCue software to control fan speed (and, in the case of Corsair's controller, fan color). [24] X Research source"
+    },
+    {
+      "title": "Can I control the fan speed on my laptop?",
+      "content": "Can I control the fan speed on my laptop? It depends on the computer. Some PC laptops allow you to control fan speed in the BIOS or UEFI settings, while others only offer fixed speeds. It is more common to be able to control the fan speed on your laptop if you have a gaming laptop. Some laptops come with fan control software, such as Dell's Optimizer or Power Manager. If yours does, you can use that to control fan speed on your laptop. [25] X Research source If your laptop doesn't offer options to fine-tune fan speed, you can adjust your power settings to control when the laptop fans run for a better balance between performance and fan activity."
+    },
+    {
+      "title": "Why is my PC fan so loud?",
+      "content": "Why is my PC fan so loud? When a CPU or GPU accumulates dust, it will often become very noisy. You can often fix a loud PC fan by cleaning out the vents. If dust isn't the issue, there could be a broken fan blade, worn-out bearings, or loose screws. [26] X Research source"
+    },
+    {
+      "title": "Can I make my PC fan quieter?",
+      "content": "Can I make my PC fan quieter? You can make your fan quieter by cleaning out the vents and the fan itself and removing any obstructions that could block proper ventilation. To rule out hardware issues, run a hardware diagnostic test on your PC. [27] X Research source"
+    }
+  ]
+}

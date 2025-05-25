@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Fix-502-Bad-Gateway-on-Mac",
+  "title": "How to Fix 502 Bad Gateway Errors on Mac: 10 Easy Methods",
+  "steps": [
+    {
+      "title": "Sometimes 502 errors resolve on their own.",
+      "content": "Sometimes 502 errors resolve on their own. In many cases, it is enough to simply wait a few minutes, then reload the page . Hit your browser’s Refresh button, which is located near the address bar on most browsers. Or, use the keyboard shortcut command + R . You can also try a hard refresh, which will clear the cache for that specific page and may help get rid of lingering errors. To do a hard refresh, press command + shift + R or hold down shift while clicking the Refresh button."
+    },
+    {
+      "title": "The problem might not be on your end.",
+      "content": "The problem might not be on your end. If you’re getting 502 errors, there’s a good chance that the problem is with the website you’re trying to visit. Before getting too carried away with complicated troubleshooting techniques, check a website like https://downdetector.com/ or https://downforeveryoneorjustme.com/ to see if other visitors are also reporting problems with the site."
+    },
+    {
+      "title": "Your browser cache can save outdated site information.",
+      "content": "Your browser cache can save outdated site information. When you go to a website, your browser saves information about it to help it load faster next time you visit. This is usually helpful, but it can cause problems if the cache happens to save outdated information. Try clearing your cache , then reload the page and see if the problem persists. In Safari : Click the Safari menu at the top of your screen and select Settings or Preferences . In the Advanced tab, check the box next to Show Develop menu in menu bar . If it’s already checked, leave it alone. Open the Develop menu at the top of the screen and click Empty Caches . This will empty your caches without also deleting data like cookies or your browsing history . If you want to clear cookies as well, go to Safari > Settings (or Preferences ) and click the Privacy tab. Click Manage Website Data and click Remove All . In Chrome : Click the Chrome menu at the top of your screen and select Clear Browsing Data . Check the boxes next to all the types of data you want to clear (e.g., history, cookies, cached files and images), then click Clear data . You can also select the timeframe you want to clear in the dropdown at the top. In Firefox : Click History in the menu bar at the top of the screen. Select Clear Recent History . Check off Caches , Cookies , and any other data you want to clear and click Clear Now ."
+    },
+    {
+      "title": "This will help determine if the problem is with your browser.",
+      "content": "This will help determine if the problem is with your browser. Sometimes an extension or plugin can prevent a site from loading properly. Browsing in incognito mode deactivates all your add-ons, which may resolve the issue. If it works, try turning off your extensions and turning them back on one by one until you find the culprit. You can also try visiting the page in a different browser. If it works, you’ll know the issue was with the browser you were using."
+    },
+    {
+      "title": "A software glitch could be to blame.",
+      "content": "A software glitch could be to blame. There’s a reason why “try turning it off and turning it back on” is classic IT advice. A lot of problems can be solved by restarting your computer—sometimes even less obvious ones, like a bad gateway error. To reboot your Mac, click the Apple menu at the top of the screen and select Restart . Wait for your Mac to boot back up and try visiting the website again. While you’re at it, check for updates to macOS and your browser(s) , since outdated software can cause a variety of errors."
+    },
+    {
+      "title": "Your internet hardware might be causing connection issues.",
+      "content": "Your internet hardware might be causing connection issues. It may be enough to simply reboot your modem or router. To do so, unplug the device, wait 30 seconds, and plug it back in. If that doesn’t work, try resetting your network to default settings . If you have more than one Wi-Fi network available, try connecting to a different one and see if that fixes the problem."
+    },
+    {
+      "title": "DNS servers help direct your internet traffic.",
+      "content": "DNS servers help direct your internet traffic. If something goes wrong with your default DNS servers, it can cause connection issues such as bad gateway errors. To resolve this issue, you might need to switch to a new DNS server. Here’s how to do it on a Mac: [1] X Research source If you’re using Ventura: Click the Apple menu and select System Settings . Select Network in the sidebar on the left. Click the type of network you want to use (e.g., “Wi-Fi” or “Ethernet”), then click Details next to your specific network on the next page. Click the DNS tab on the left side of the window, then click + . Enter a new DNS, such as Google’s public DNS server (8.8.8.8) or the free Cloudflare DNS (1.1.1.1). Click OK when you’re done. You can also click a server that’s already on the list and click the - button to remove it. If you’re using Monterey or earlier: Click the Apple menu and select System Preferences . Click the Network icon. If you see a lock icon at the bottom of the Network pane, you’ll need to click it and enter your administrator ID to make changes. Select the network service you want to modify in the list on the left, then click Advanced . Click DNS . Click the + button and enter your DNS server of choice (such as 8.8.8.8 or 1.1.1.1). You can also click any server on the list and select - to remove it. Click OK when you’re done."
+    },
+    {
+      "title": "This can sometimes fix persistent connection problems.",
+      "content": "This can sometimes fix persistent connection problems. If a lot of outdated information has built up in your computer’s local DNS cache, it can disrupt your ability to connect to some websites. To flush your cache: Open the Launchpad in your Dock and search for Terminal . Click on the result. If you’re using Monterey or later, enter the command sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder and press return . For earlier versions of macOS, check out our guide to flushing your DNS cache . Enter your administrator password when prompted and press return again."
+    },
+    {
+      "title": "Your VPN could be interfering with your connection.",
+      "content": "Your VPN could be interfering with your connection. Try disabling it and see if that resolves the 502 error. Alternatively, if you’re not using a VPN , turning one on could help if the problem is with your ISP (internet service provider)."
+    },
+    {
+      "title": "If lots of visitors are reporting 502 errors, the problem might on your end.",
+      "content": "If lots of visitors are reporting 502 errors, the problem might on your end. As a website developer, there are a few things you can try to fix this issue: Temporarily turn off your CDN (content delivery network) and see if the problem goes away. The correct way to do this depends on which CDN you’re using. Try turning off or reconfiguring your firewall. It might be blocking traffic to your server. Run a traceroute to see if your server is currently accessible. Test your website for script errors that could be causing problems. Contact your website’s hosting company and find out if they’re experiencing any problems."
+    }
+  ]
+}

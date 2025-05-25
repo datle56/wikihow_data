@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Convert-Media-with-FFmpeg",
+  "title": "How to Convert Media with FFmpeg on Windows, Mac, & Linux",
+  "steps": [
+    {
+      "title": "Windows",
+      "content": "Windows The fastest and easiest way to install FFmpeg on Windows is to use the winget command in Command Prompt. This will also add FFmpeg to your path environment variable, which allows you to run the ffmpeg command without entering the full path. Open the Command Prompt . Type winget install \"FFmpeg (Essentials Build)\" and press ↵ Enter . [1] X Research source Wait a few moments for FFmpeg to install. Once you see \"Successfully installed,\" close the Command Prompt window you used to install it. Because the installation added FFmpeg to your path environment variable , you'll need to start with a fresh CMD window to run FFmpeg commands."
+    },
+    {
+      "title": "Mac",
+      "content": "Mac FFmpeg is easiest to install as part of the Homebrew package manager, which you can quickly install via Terminal: [2] X Research source If you haven’t already done so, install the Xcode Command Line Tools for Apple developers. Homebrew needs some of these tools to operate correctly. Open Terminal and enter the command xcode-select --install . Follow the prompts on the screen to finish the installation. Go to [3] X Research source in your browser. Copy the code below the \"Install Homebrew\" heading by clicking the clipboard icon. Open Spotlight , type in terminal , and double-click Terminal . Paste the copied code by pressing ⌘ Command + V . Press ⏎ Return , then wait for the installation to complete. Type in brew install ffmpeg and press ⏎ Return ."
+    },
+    {
+      "title": "Linux",
+      "content": "Linux The easiest way to install FFmpeg is by using a package manager . On Debian, Ubuntu, Linux Mint, and other systems that use Apt, type sudo apt install ffmpeg . If you're using Red Hat, Fedora, CentOS, or another version of Linux that uses the dnf package manager, use sudo dnf install ffmpeg ."
+    },
+    {
+      "title": "Place the video or song file in a convenient location.",
+      "content": "Place the video or song file in a convenient location. For example, if the file you want to convert is buried in a deep folder structure, move it to your desktop."
+    },
+    {
+      "title": "Determine your file's current format and name.",
+      "content": "Determine your file's current format and name. You can do this by right-clicking or control-clicking the file and selecting Properties or Get Info . Look for \"Kind\" or \"Type of file\" to determine the file type. You'll need to know your media file's current format to tell FFmpeg which file to convert."
+    },
+    {
+      "title": "Figure out which format to convert the file into.",
+      "content": "Figure out which format to convert the file into. The format is the \"container\" for the file, typically represented by the extension at the end of the file name (e.g., .mp4). For a full list of formats that FFmpeg can convert media files from and to, type the command ffmpeg -formats and press ↵ Enter or ⏎ Return .You can convert video-to-video, video-to-audio, and audio-to-audio in just about any format, including: [4] X Research source Video - MP4, MOV, WEBM, FLV, AIFF, GIF, Matroska (MKV), and AVI Audio - MP3, WAV, WMA, FLAC, M4A, AAC, Matroska (MKA), and OGG"
+    },
+    {
+      "title": "Open Command Prompt or Terminal.",
+      "content": "Open Command Prompt or Terminal. FFmpeg has a command-line interface, so you'll need access to your computer's command line. Windows: Click the Start menu, type cmd , and press ↵ Enter . Mac: Click Terminal on your Launchpad or search for it in Spotlight. Linux: Press Ctrl + Alt + T ."
+    },
+    {
+      "title": "Enter the folder/directory that contains the file you want to convert.",
+      "content": "Enter the folder/directory that contains the file you want to convert. For example, if you want to convert a file that's in your Desktop folder, type cd Desktop and press ↵ Enter or ⏎ Return . If you're using OneDrive on Windows to keep your files backed up, it kind of messes with your folder structure. If the media file is on your desktop or in your Downloads folder, use cd OneDrive/Desktop or cd OneDrive/Downloads ."
+    },
+    {
+      "title": "Enter the conversion command.",
+      "content": "Enter the conversion command. The basic conversion command structure is ffmpeg -i <input file> <output file> . You'll replace <input file> with the name of the file you want to convert (e.g., Kitties.mkv ) and <output file> with the name of the file you want it to produce (e.g., Kitties.mp4 ). For example, to convert a lossless Matroska video called \"Kitties.mkv\" into an MP4 video file called \"Kitties.mp4\", you would type in ffmpeg -i Kitties.webm Kitties.mp4 here. The command works the same when converting audio in FFmpeg. For example, to convert an MP3 file called Puppies.mp3 into an OGG file called Puppies.ogg, you'd use ffmpeg -i Puppies.mp3 Puppies.ogg . Be sure to keep your file name exactly as it appears (for example, if your file name uses a capital letter, enter it using the capital letter in the command line). Type your file name exactly as it appears. The terminal is case-sensitive. If your file name contains spaces, you can place the video's name and extension in quotes. For example, YouTube Drama.mp4 would become \"YouTube Drama.mp4\" ."
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return to start the conversion.",
+      "content": "Press ↵ Enter or ⏎ Return to start the conversion. Media conversion can take a long time, so you'll need to be patient–especially if you're working with larger or lossless file types . As long the file into which you're converting the original file is in a valid format, and your original file's name is correct, the file will begin converting. Don't close the command prompt or terminal window until the file is finished converting. If you don't specify a codec when converting, FFmpeg will determine the codec to use based on the file extension. For example, when converting a video file to MP4, FFmpeg will use the H.264 codec for video and the AAC codec for audio. This is the most basic example of converting in FFmpeg. Depending on the type of video you want to convert and the container and codec you want to convert it to, you may have to enter some additional flags and commands to get the conversion to work exactly as you want. Jump down to Using Codecs for more options and examples."
+    },
+    {
+      "title": "Specify a codec when converting.",
+      "content": "Specify a codec when converting. If you don't specify any codecs when converting, FFmpeg will use the default codecs for the file extension of the output file. If you want to specify a codec for your output file, you can do so using the -c:v option for a video codec and -c:a for an audio codec. For example, let's say we want to convert an MP4 video to the AVI format using the H.264 codec: ffmpeg -i input.mp4 -c:v libx264 output.avi Now let's say we want to specify an audio codec. In this example, we'll use the PCM codec for audio, which produces a lossless audio file: ffmpeg -i input.mp4 -c:v libx264 -c:a pcm_s16le output.avi Run the command ffmpeg -encoders to view a list of all installed encoders, along with how you should reference them in your FFmpeg commands. For a list of all FFmpeg-supported codecs, check out the FFmpeg Codec Documentation ."
+    },
+    {
+      "title": "Keep the same codecs but change the file type (container).",
+      "content": "Keep the same codecs but change the file type (container). Let's say you want to convert an MP4 file to an AVI file but keep the same codecs from the original file. In this case, you will use the -c copy option. Doing this copies the audio and video streams from the original file to the new file without re-encoding them. In this example, we'll change the container of the file (e.g., change an MP4 to an AVI file) but keep the same codecs from the original file: ffmpeg -i input.mp4 -c copy output.avi But what if we want to keep the same video codec from the original file and change the audio codec? ffmpeg -i input.mp4 -c:v copy -c:a pcm_s16le output.avi"
+    },
+    {
+      "title": "Use presets to control video quality and conversion speed.",
+      "content": "Use presets to control video quality and conversion speed. FFmpeg has lots of easy presets for converting videos with certain encoding speed-to-compression ratios. The slower the preset, the better the quality of the resulting file. Using a faster preset converts the file faster, but at the expense of video quality. You can specify a preset using the -preset option. [5] X Research source The preset options are ultrafast, superfast, veryfast, faster, fast, medium, slow, slower, and veryslow . Ultrafast is the lowest quality, while veryslow is the best quality. The default preset is medium . In this example, we'll convert a MOV file to MP4 using the H.264 video codec at the best possible video quality and keep the same audio: ffmpeg -i input.mov -c:v libx264 -preset veryslow -c:a copy output.mp4"
+    },
+    {
+      "title": "Specify audio bitrate during conversion.",
+      "content": "Specify audio bitrate during conversion. If you know the bitrate you want to use in your resulting converted file, you can specify it during conversion. For example, if you're starting with a high-quality audio file, such as a FLAC or WAV file, and want to convert it to an MP3 with the best possible quality, you can use the -ab option to specify the bitrate, or the -q:a 0 option to instruct the converter to use the best possible bitrate. In this example, we'll specify 320 kbps for our MP3 file, which is considered \"CD quality.\" ffmpeg -i input.flac -ab 320k output.mp3 This time, we'll convert a WAV file to an MP3 file at the best possible audio quality. ffmpeg -i input.wav -q:a 0 output.mp3 A -q:a value of 0 is lossless, which means you'll be producing a very large file. You can increase the value (e.g., -q:a 5) to decrease the quality."
+    },
+    {
+      "title": "Specify video bitrate.",
+      "content": "Specify video bitrate. When converting video with FFmpeg, you can specify a constant bitrate using the -b:v option, or -crf to set a variable bitrate (which adjusts based on the video content). In this example, we'll specify a bitrate of 2000 kbps (2 Mbps) for an MP4 file: ffmpeg -i input.mp4 -b:v 2000k output.mp4 Now we'll use FFmpeg to set a variable bitrate for an MP4 video using the H.264 codec: ffmpeg -i input.mp4 -c:v libx264 -crf 23 output.mp4 23 is the default value. The range for -crf is 0-51, with 0 being lossless and 51 being the lowest quality (but the smallest file size). FFmpeg recommends using values between 17 and 28 as the \"sane range.\" [6] X Research source"
+    },
+    {
+      "title": "Convert video to audio.",
+      "content": "Convert video to audio. If you want to create an audio file from the audio in a video file, you can extract the audio from the video in FFmpeg. The most basic way to extract video from audio in FFmpeg follows this format: ffmpeg -i input.mp4 -vn output.mp3 . Let's say we want to create a high-quality MP3 file from the audio in an MP4 video: ffmpeg -i input.mp4 -vn -c:a libmp3lame -q:a 0 output.mp3 [7] X Research source If we want to extract audio from an MKV file, you'll want to find out if it contains multiple audio streams. If it does, you can use the -map option to select a stream. To see the audio streams in the MKV file, use ffprobe -i input.mkv -show_streams -select_streams . To extract the second stream and save it as a WAV file, you'd use {{kbd|ffmpeg -i input.mkv -vn -c:a copy -map 0:1 output.wav."
+    },
+    {
+      "title": "Preserve metadata when converting.",
+      "content": "Preserve metadata when converting. When converting audio files like FLAC and MP3s, you'll lose metadata like artist names and song titles unless you use the -map_metadata option. It's also a good idea to include the -id3v2_version 3 option to ensure the ID3 tags are compatible with most devices. This command will convert a FLAC file to MP3 at the highest possible quality while also preserving its metadata: ffmpeg -i input.flac -q:a 0 -map_metadata 0 -id3v2_version 3 output.mp3"
+    },
+    {
+      "title": "Basic conversion.",
+      "content": "Basic conversion. To turn a video into a GIF you can share in various apps, you can use the command ffmpeg -i input.mp4 output.gif , just like when converting a video to a different video type. However, depending on the size and length of your original video, you may want to modify your command a bit. Create a GIF from a video beginning at the 15-second mark that plays for a duration of 7 seconds: ffmpeg -ss 00:00:15 -t 7 -i input.mp4 output.gif Create the same GIF as above, but reduce the file size by reducing the frame rate (fps) to 10 fps: ffmpeg --ss 00:00:15 -t 7 -i input.mp4 -r 10 output.gif"
+    }
+  ]
+}

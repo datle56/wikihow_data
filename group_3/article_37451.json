@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Restart-Windows-Update-if-It-Does-Not-Make-Download-Progress-in-Windows-10",
+  "title": "How to Restart Windows Update if It Does Not Make Download Progress in Windows 10",
+  "steps": [
+    {
+      "title": "Restart Windows 10",
+      "content": "Restart Windows 10 . Click the Start button, then click Power , after, click Restart ."
+    },
+    {
+      "title": "Log into an administrator's account.",
+      "content": "Log into an administrator's account."
+    },
+    {
+      "title": "Open Windows Services",
+      "content": "Open Windows Services . Click the Start button, type services.msc , then press ↵ Enter after it finishes searching."
+    },
+    {
+      "title": "Stop the Background Intelligent Transfer Service service.",
+      "content": "Stop the Background Intelligent Transfer Service service. Find Background Intelligent Transfer Service , right click it, then click Stop ."
+    },
+    {
+      "title": "Stop the Windows Update service.",
+      "content": "Stop the Windows Update service. Find Windows Update , right click it, then click Stop ."
+    },
+    {
+      "title": "Open the Run dialog.",
+      "content": "Open the Run dialog. Press ⊞ Win + R ."
+    },
+    {
+      "title": "Type %windir%\\SoftwareDistribution and click OK.",
+      "content": "Type %windir%\\SoftwareDistribution and click OK ."
+    },
+    {
+      "title": "Delete everything",
+      "content": "Delete everything in the folder that opens. Press Ctrl + A to select all of the files in the folder, then press ⇧ Shift + Delete and click Yes to permanently delete the files."
+    },
+    {
+      "title": "Restart services previously stopped.",
+      "content": "Restart services previously stopped. In the Services.msc window, right click Background Intelligent Transfer Service and click Start , then right click Windows Update and click Start ."
+    },
+    {
+      "title": "Download the updates again.",
+      "content": "Download the updates again. Open Windows Update then check for updates."
+    }
+  ]
+}

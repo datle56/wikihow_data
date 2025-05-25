@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Move-Files-in-Ubuntu",
+  "title": "How to Move Files in Ubuntu",
+  "steps": [
+    {
+      "title": "Click the Files app.",
+      "content": "Click the Files app. It's the white folder icon on your application dock, which is usually on the left side of the screen. This displays the files and folders on your computer. [1] X Research source"
+    },
+    {
+      "title": "Double-click a folder to view the files inside.",
+      "content": "Double-click a folder to view the files inside. The folders are organized in a straightforward way—there's a Downloads folder where your downloads are saved by default, a folder for your Photos , etc."
+    },
+    {
+      "title": "Click the file or folder you want to move.",
+      "content": "Click the file or folder you want to move. Clicking the file or folder once will select it rather than opening it. You can also move a file or folder by simply clicking and dragging it to a new location."
+    },
+    {
+      "title": "Press Ctrl+X to \"cut\" the file.",
+      "content": "Press Ctrl + X to \"cut\" the file. If you want to completely move the file to another location rather than copy it, this key combination is the one you'll want. If you want to copy the file so a version still remains in the original folder, use Ctrl + C instead."
+    },
+    {
+      "title": "Double-click the folder where you want to move the file.",
+      "content": "Double-click the folder where you want to move the file. You can move the file to any folder as long as it isn't a read-only system folder."
+    },
+    {
+      "title": "Click inside the folder and press Ctrl+V.",
+      "content": "Click inside the folder and press Ctrl + V . This pastes the file or folder (whether you cut or copied it) to its new location."
+    },
+    {
+      "title": "Press Ctrl+Alt+T.",
+      "content": "Press Ctrl + Alt + T . This opens a terminal window to the command prompt."
+    },
+    {
+      "title": "Learn the syntax of the mv command.",
+      "content": "Learn the syntax of the mv command. You'll be using the Linux mv command to move a file or folder from one directory to another. The command is used like this: mv source destination . The \"source\" is the file or folder you're moving, and \"destination\" is the place you're moving it to. If you place a -i after the mv command, you'll be prompted if moving the file to the new location will overwrite another file in the destination directory. For specific flags and instructions on the mv command, type man mv at the prompt and press Enter to view its manual page. If you want to copy the file instead of moving it, you'll use cp source destination instead. This will leave the original version of the file in place."
+    },
+    {
+      "title": "Type mv -i filename newlocation and press ↵ Enter.",
+      "content": "Type mv -i filename newlocation and press ↵ Enter . If the directory you're moving the file to is not a subfolder of your current directory, be sure to include the full path. For example, if you're moving a folder called photos from your home directory to a folder called /home/family, enter mv -i photos /home/family . If a file or folder with the same name exists, you'll be prompted to enter Y to confirm or N to cancel. Enter your selection and press Enter when prompted."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/504-Gateway-Timeout",
+  "title": "How to Fix 504 Gateway Timeout Errors (For Users & Webmasters)",
+  "steps": [
+    {
+      "title": "504 Gateway Timeout means a server took too long to complete a request.",
+      "content": "504 Gateway Timeout means a server took too long to complete a request. When you go to a website, your browser sends a request to the website's server to load the webpage. If the website's server takes too long to reply to that request, you can get a 504 Gateway Timeout error. [1] X Research source"
+    },
+    {
+      "title": "504 is what's known as an HTTP response status code.",
+      "content": "504 is what's known as an HTTP response status code. There are many of these codes ranging from 1xx to 5xx. 5xx codes indicate a server-side problem, which means a 504 error is most likely not the fault of the website user. Despite this, there are some fixes website users can try. You can read about them below . Website owners can check out some solutions in this article, too ."
+    },
+    {
+      "title": "Refresh the page.",
+      "content": "Refresh the page. The first thing to try is refreshing the page. The 504 error may be due to a random glitch, and refreshing the page can fix that error."
+    },
+    {
+      "title": "Check your network settings.",
+      "content": "Check your network settings. If you use a proxy or a VPN , try temporarily disabling them. You may also want to check your firewall settings to ensure your settings aren't set too strictly. On Windows, search for \"proxy\" or \"firewall\" in the taskbar search bar to pull up your proxy or firewall settings. You can also search for \"network troubleshooter\" to use the built-in troubleshooter to fix any network issues. On Mac, open the Apple menu and go to System Settings > Network . Choose either Proxies or Firewall to edit these settings. If you have a VPN, each VPN program will be set up slightly differently. Open your VPN program and look for an option or toggle to turn it off."
+    },
+    {
+      "title": "Flush your DNS cache.",
+      "content": "Flush your DNS cache. If your network settings seem normal, you can try flushing your DNS cache . This can resolve some network connectivity issues and will remove old, bad, and corrupt data from your DNS cache. Windows: Search \"cmd\" in the taskbar search bar, then right-click Command Prompt and select Run as administrator . Then, type ipconfig /flushdns and press ↵ Enter to flush your DNS. Mac: Press ⌘ Cmd + Space and search for the Terminal app, then open it. Type sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder . Press ⏎ Return and enter your admin password."
+    },
+    {
+      "title": "Restart your router and/or modem.",
+      "content": "Restart your router and/or modem. If you're getting 504 errors on every site, the problem may be with your network devices. Unplug your router and/or modem from the wall for at least 30 seconds, then plug it back in. Once your internet connection is restored, try accessing the site again. Many people have combination routers and modems, so you'll only need to unplug one device."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. If restarting your router and/or modem doesn't fix the issue, you can try restarting your entire computer. While it may not seem like it, restarting your computer can fix a whole host of seemingly random issues, including network issues that cause problems accessing websites."
+    },
+    {
+      "title": "Wait it out.",
+      "content": "Wait it out. If nothing else works, the issue is likely server-side and must be fixed by the website owner. If you can access other web pages on the site or know the website's contact info, you can contact the site to report the error. You can also check with your ISP to see if the issue is on their end."
+    },
+    {
+      "title": "Check your DNS propagation.",
+      "content": "Check your DNS propagation. If you recently transferred your website to a different server, your domain's DNS may not be propagated fully yet. Use https://dnschecker.org to see if your site's DNS is propagated. You may want to also check your domain's DNS settings to ensure there are no errors."
+    },
+    {
+      "title": "Disable your CDN.",
+      "content": "Disable your CDN. If you use a CDN like Cloudflare, you may want to try temporarily disabling it if you're encountering 504 errors on your site. The CDN could be causing the error by not giving a timely response to the origin server's request."
+    },
+    {
+      "title": "Check for spam or DDoS attacks.",
+      "content": "Check for spam or DDoS attacks. If malicious bots are spamming your website, it can lead to all visitors getting a 504 error. Check your site's access logs to see if there's an influx of suspicious IPs visiting your site, then block them. If you encounter a lot of DDoS attacks, consider using DDoS protection. Many cloud services, including Cloudflare, Amazon Web Services, and Microsoft Azure, offer DDoS protection."
+    },
+    {
+      "title": "Extend your API request timeout limit.",
+      "content": "Extend your API request timeout limit. If you're using NGINX, you may be encountering 504 errors due to your API calls taking too long to complete. If this is the case, you can extend your API request timeout limit. Go to /etc/nginx/sites-available/default or /etc/nginx/nginx.conf . Add the following: proxy_connect_timeout 240; proxy_send_timeout 240; proxy_read_timeout 240; send_timeout 240; Run sudo nginx -t to check syntax. Run sudo service nginx restart . [2] X Research source"
+    },
+    {
+      "title": "There are a number of error messages you might see for a 504 error.",
+      "content": "There are a number of error messages you might see for a 504 error. 504 error messages do not always have the same wording. However, the message should say \"504\" somewhere in the error. These are some of the common error messages you might see when you're encountering a 504 error: 504 Gateway Timeout 504 Gateway Timeout NGINX Gateway Timeout Error Gateway Timeout (504) HTTP 504 HTTP Error 504 - Gateway Timeout 504 Error"
+    }
+  ]
+}

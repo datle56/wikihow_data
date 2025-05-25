@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Compile-and-Run-Java-Program-by-Notepad",
+  "title": "How to Compile and Run Java Programs Using Notepad++",
+  "steps": [
+    {
+      "title": "Make sure you have the latest version of Java SDK and Jave RTE.",
+      "content": "Make sure you have the latest version of Java SDK and Jave RTE . Java Software Development Kit (SDK) allows you to write programs for Java on your computer. Java Runtime Environment allows you to run Java programs on your computer. Even if you have both installed on your computer, check to make sure you are running the latest version of both Java SDK and Java RTE. You can download and install both Java SDK and Java RTE from the following links: Java RTE: https://www.java.com/en/download/manual.jsp Java SDK: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html"
+    },
+    {
+      "title": "Download and install Notepad++.",
+      "content": "Download and install Notepad++. Notepad++ is not the same as Notepad that comes pre-installed on most Windows computers. Notepad++ is a separate free program you need to download and install. Notepad++ has autofill options for Java and other programming languages. It also allows you to install plugins that can be used to compile Java and other languages. You cannot compile Java in the regular version of Notepad. Use the following steps to download and install Notepad++: Go to https://notepad-plus-plus.org/downloads/ in a web browser. Click the latest release of Notepad++ at the top of the list. Scroll down and click Installer below \"Download 64-bit x64.\" Click the installer file in your web browser or Downloads folder. Follow the instructions to complete the installation."
+    },
+    {
+      "title": "Open Notepad++.",
+      "content": "Open Notepad++. It has an icon that resembles a pencil drawing on a sheet of paper. Use the following steps to open Notepad++ : Click the Windows Start icon. Type \"Notepad\". Click the Notepad++ icon (not Notepad)."
+    },
+    {
+      "title": "Open the Plugins Admin or Plugins Manager.",
+      "content": "Open the Plugins Admin or Plugins Manager. The Plugins Admin or Plugins Manager allow you to install plugins for Notepad++. If you are using a newer version of Notepad++, this is listed as \"plugins Admin.\" On older versions of Notepad++, it will be listed as \"Plugins Manager.\" Use the following steps to open the Plugins Admin or Manager: Click Plugins in the menu bar at the top. Click Plugins Admin or Plugins Manager . Click Show Plugins Manager ."
+    },
+    {
+      "title": "Click the checkbox next to \"NppExec\" and click Install.",
+      "content": "Click the checkbox next to \"NppExec\" and click Install . NppExec is the plugin that is needed to compile and run Java programs in Notepad++."
+    },
+    {
+      "title": "Click Yes.",
+      "content": "Click Yes . This confirms you want to install the plugin and installs the NppExec. It will take a few minutes for the plugin to finish installing. Notepad++ will restart when the installation is complete."
+    },
+    {
+      "title": "Open File Explorer .",
+      "content": "Open File Explorer . It has an icon that resembles a folder with a blue clip. You can click the icon in the taskbar at the bottom or press Windows Key + E to open File Explorer."
+    },
+    {
+      "title": "Right-click \"This PC\" and click Properties.",
+      "content": "Right-click \"This PC\" and click Properties . \"This PC\" is in the menu bar to the left. Right-click this option to display a pop-up menu. Then click Properties at the bottom of the pop-up menu. This opens the \"About\" menu in Windows Settings."
+    },
+    {
+      "title": "Click Advanced system settings.",
+      "content": "Click Advanced system settings . It's in the menu to the right below \"Related settings\" menu on the right. This opens the System Properties menu."
+    },
+    {
+      "title": "Click Environment Variables.",
+      "content": "Click Environment Variables . It's near the bottom of the System Properties menu."
+    },
+    {
+      "title": "Click New below the System Variables box.",
+      "content": "Click New below the System Variables box. There are two boxes in the Environment Variables menu. The one labeled \"System Variables\" is the one on the bottom. This opens a dialogue box that allows you to create a new system variable."
+    },
+    {
+      "title": "Type JAVA_HOME next to \"Variable Name.\"",
+      "content": "Type JAVA_HOME next to \"Variable Name.\" It's the first bar at the top."
+    },
+    {
+      "title": "Click Browse Directory.",
+      "content": "Click Browse Directory . It's the first button on the bottom. This opens a file browser that allows you to browse to the location of your Java installation."
+    },
+    {
+      "title": "Click the folder containing your Java installation and click Ok.",
+      "content": "Click the folder containing your Java installation and click Ok . On most Windows computers, you can find the Java installation by opening the following folders Click This PC . Click C:(OS) . Click Program Files . Click Java . Click jdk-[latest version] Click Ok ."
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . This saves the new system variable."
+    },
+    {
+      "title": "Click the \"PATH\" system variable and click Edit.",
+      "content": "Click the \"PATH\" system variable and click Edit . It's the variable labeled \"Path\" is in the box on the bottom. Click this variable to select it. Then click Edit below the box on the bottom."
+    },
+    {
+      "title": "Click New.",
+      "content": "Click New . It's the first option to the right. This creates a new blank environment variable at the bottom."
+    },
+    {
+      "title": "Type %JAVA_HOME%\\bin and click Ok.",
+      "content": "Type %JAVA_HOME%\\bin and click Ok . This is the text you need to use to fill in the blank new system variable at the bottom. This creates a new environment variable that allows NotePad++ to access the \"bin\" folder. [1] X Research source"
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . It's in the lower-right corner at the bottom of the \"edit environment variables\" menu. This saves the new environment variable path"
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . It's at the bottom of the environment variables menu. This saves all of your changes and closes the menu."
+    },
+    {
+      "title": "Open Notepad++.",
+      "content": "Open Notepad++. It has an icon that resembles a pencil drawing on a sheet of paper. Use the following steps to open Notepad++: Click the Windows Start icon. Type \"Notepad\". Click the Notepad++ icon (not Notepad)."
+    },
+    {
+      "title": "Use Notepad++ to write a Java program.",
+      "content": "Use Notepad++ to write a Java program . Use Notepad++ to enter your Java code. It works like a regular Notepad, but also has predictive text and autofill features for most programming languages. This makes it much easier to write code in Notepad++ rather than regular Notepad."
+    },
+    {
+      "title": "Save your program as a Java file.",
+      "content": "Save your program as a Java file. It is recommended that you create a specific folder on your computer to save your Java program files in. Use the following steps to save your text files as Java files: Click File in the menu bar at the top. Click Save as in the drop-down menu. Select the folder you want to save your file in. Type a name for your file next to \"File name.\" Select Java source file (*.java) in the drop-down menu next to \"Save as Type.\" Click Save ."
+    },
+    {
+      "title": "Launch the NppExec plugin.",
+      "content": "Launch the NppExec plugin. You can do so in the plugins menu. Use the following steps to execute the NppExec plugin: Click Plugins in the menu bar at the top. Hover your mouse cursor over NppExec . Click Execute ."
+    },
+    {
+      "title": "Type the following commands in the Command(s) box.",
+      "content": "Type the following commands in the Command(s) box. This is the script needed to compile Java programs. There are three commands you need to type. The first command opens the directory the current Java file is saved to. The second command compiles the current Java file. The third command executes the main class in the Java file. Place each of these commands on a separate line. Type each of the following commands and press Enter: [2] X Research source cd $(CURRENT_DIRECTORY) javac $(FILE_NAME) java $(NAME_PART)"
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's the second button at the bottom of the screen. This displays a pop-up that allows you to name the script."
+    },
+    {
+      "title": "Type Java_Compile_Run as the script name and click Save.",
+      "content": "Type Java_Compile_Run as the script name and click Save . This gives the script a name. You can reuse this script anytime you need to compile a Java program inside Notepad++. It's a good idea to name it something that indicates that this script compiles Java programs."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . This saves the script used to compile Java programs."
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . This displays the console at the bottom of Notepad++ and compiles the program."
+    },
+    {
+      "title": "Compile Java programs using the Java_Compile_Run script.",
+      "content": "Compile Java programs using the Java_Compile_Run script. Use the following steps to compile future programs using this script you just created: Click Plugins in the menu bar at the top. Hover over NppExec . Click Execute Select \"Java_Compile_Run\" in the drop-down menu at the bottom. Click Ok ."
+    }
+  ]
+}

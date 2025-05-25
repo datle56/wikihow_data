@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Gmail-Blue-Checkmark",
+  "title": "Verified Blue Checkmark in Gmail: What It Means & How to Get One",
+  "steps": [
+    {
+      "title": "The blue tick means the sender’s identity is verified.",
+      "content": "The blue tick means the sender’s identity is verified. Google uses these blue ticks the same way a lot of social media platforms do: it means they’ve confirmed the identity of the organization or person that sent the message. The blue verified checkmark is a great way to prevent phishing, spoofing, and other scams where senders pretend to be someone else (like a bank or social media support account) to trick people into giving them sensitive information."
+    },
+    {
+      "title": "These checks are mostly for businesses rather than individuals.",
+      "content": "These checks are mostly for businesses rather than individuals. While some public figures or celebrities may be able to get blue checks, Google mostly uses them to identify organizations and companies. For example, emails from a major retailer, bank, hospital, or social media platform might feature a blue check next to the sender’s logo."
+    },
+    {
+      "title": "Set up SPF, DKIM, and DMARC for your web domain.",
+      "content": "Set up SPF, DKIM, and DMARC for your web domain. If you run a business or other organization and you want to get a blue verified checkmark from Google, there are several steps involved. First, you’ll need to set up a few security features for your organization’s web domain. To do this, you’ll need to: [1] X Research source Get administrator login information for your domain provider. For example, if your business’s domain is hosted by a company like Squarespace or IONOS, you’ll need to sign in at their website to turn on these security features for your domain. Create an SPF (Sender Policy Framework) record for your domain. This will help recipients verify that emails sent from your specified domains and servers really come from your organization. For detailed instructions, check out this page from Google Support . Add an encrypted digital signature to your emails with DKIM. For detailed instructions, check out this guide from Google . Turn on DMARC to catch messages from spoofers pretending to be your organization. DMARC works with SPF and DKIM to help screen out messages that don’t pass those verification checks. Get the full breakdown from Google ."
+    },
+    {
+      "title": "Upload a brand logo file for outgoing messages.",
+      "content": "Upload a brand logo file for outgoing messages. This logo will appear on all outgoing messages from your organization in the place where you’d normally see a Gmail profile picture or sender initials. You’ll need to format the image as an SVG (Scalable Vector Graphic) and upload it to a public web server that shares the same domain as your outgoing email server. For full instructions on how to format and upload your SVG logo file correctly, see this document from Google . Make sure to read the instructions from Google carefully. You’ll need to use a text editor to add some special attributes to your SVG file so it meets Gmail’s requirements. Copy and save the URL for this file once you upload it to your domain."
+    },
+    {
+      "title": "Get a VMC to verify your logo ownership.",
+      "content": "Get a VMC to verify your logo ownership. Once you’ve created your brand logo, you’ll need to register it as a trademark and get a VMC (Verified Mark Certificate). After you secure the trademark, contact either Digicert or Entrust to request your VMC. [2] X Research source Whichever organization you use to get your VMC will send you a PEM (Privacy Enhanced Mail) file, which you’ll need to use along with your logo to verify outgoing emails. Upload the PEM to your public server. You might also receive other certificate files, which you’ll need to append to the PEM. Copy and save the URL for the PEM and any appended files once you’ve uploaded it. For more detailed information, check out this guide from Google ."
+    },
+    {
+      "title": "Set up a BIMI TXT record with your domain provider.",
+      "content": "Set up a BIMI TXT record with your domain provider. Setting up BIMI (Brand Indicators for Message Identification) is the last step in attaching your verified logo to your emails and getting a Google checkmark. Use the instructions and template here and plug in the URLs you saved for the SVG and PEM files on your server. It may take up to 48 hours for BIMI to start working. Once it does, emails from your organization should display both your logo and a blue checkmark. If your logo and blue checkmark still aren’t showing up after 48 hours, or if your organization’s messages are getting marked as spam, try some of these troubleshooting steps ."
+    }
+  ]
+}

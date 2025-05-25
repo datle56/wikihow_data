@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Git-How-to-Undo-a-Merge",
+  "title": "Git: How to Undo a Merge Locally or After Pushing to a Repository",
+  "steps": [
+    {
+      "title": "Determine if you should use git reset over git revert.",
+      "content": "Determine if you should use git reset over git revert . The git reset command will roll the branch back to a previous commit, essentially erasing part of your repository's history. If you're working with Git locally, this may not be a big deal to you. [1] X Research source If you don't want to alter your repository's history, consider using the git revert method listed below. When using git reset , you don't need to remember the commit hash, which can save some time."
+    },
+    {
+      "title": "Run git log or git reflog to get the commit hash before the merge.",
+      "content": "Run git log or git reflog to get the commit hash before the merge. Alternatively, you can use HEAD~1 to reference the commit before the current head or ORIG_HEAD to reference the commit before the last merge."
+    },
+    {
+      "title": "Determine if you should use the --merge flag or --hard flag.",
+      "content": "Determine if you should use the --merge flag or --hard flag. If your branch has any uncommitted changes, --merge will keep them. --hard will remove all changes after the merge, including any uncommitted changes. If you are certain that there have been no additional uncommitted changes after merging, you can use the --hard flag. However, --merge is usually the safer option. Alternatively, if you want to use the --hard flag but want to save any uncommitted changes, you can use the git stash command. Use git stash to stash away your uncommitted changes, then use git stash pop or git stash apply to reapply your stashed changes. \"Pop\" will remove the changes from your stash and apply them to your working copy, and \"apply\" will keep the changes in your stash and apply them to your working copy. [2] X Research source"
+    },
+    {
+      "title": "Run git reset [flag] [commit before merge].",
+      "content": "Run git reset [flag] [commit before merge] . Replace [flag] with --merge or --hard (as determined in step 3) and replace [commit before merge] with the commit hash, HEAD~1 , or ORIG_HEAD (as determined in step 2). The branch will be rolled back to the commit hash specified, and any history after that commit will be discarded."
+    },
+    {
+      "title": "Determine if you should use git revert over git reset.",
+      "content": "Determine if you should use git revert over git reset . If you've already pushed a merge to a remote repository , resetting the commit may create issues if a colleague has already pulled the change. [3] X Research source Using git revert is a better option for pushed merges because it won't erase the merge history and will make a new commit that undoes the changes. You can use git revert with a local merge as well, but git reset may be beneficial because you don't necessarily need to know the commit hash."
+    },
+    {
+      "title": "Run git log or git reflog to get the commit hash.",
+      "content": "Run git log or git reflog to get the commit hash. Unlike the previous method, make sure you grab the commit hash for the merge that you want to undo, not the hash before the merge. Use git reflog for more readability, but either command will work."
+    },
+    {
+      "title": "Run git revert -m 1 [merge commit hash].",
+      "content": "Run git revert -m 1 [merge commit hash] . Running this command will create a new commit that undoes the changes in the merge. In this command, -m 1 signifies that Git should keep the side of the branch you merged into (such as main or another branch name). If you want to keep the side of the branch you merged, change -m 1 to -m 2 ."
+    }
+  ]
+}

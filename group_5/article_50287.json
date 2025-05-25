@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Add-a-Custom-Field-in-Pivot-Table",
+  "title": "How to Add Custom Calculated Fields to Pivot Tables in Excel",
+  "steps": [
+    {
+      "title": "Open your workbook.",
+      "content": "Open your workbook. Double-click the file that has the source data and pivot table you'll be working with. [1] X Research source Keep in mind that calculated fields can't use references or named ranges in formulas —this means you can't use functions like INDEX, OFFSET, or VLOOKUP in your custom field. However, functions like IF, SUM, COUNT, and any others that don't require references or named ranges are fine."
+    },
+    {
+      "title": "Click the pivot table you want to edit.",
+      "content": "Click the pivot table you want to edit. When you click the pivot table, the \"PivotTable Fields\" panel will expand on the right. You'll also see the PivotTable Analyze menu at the top of Excel."
+    },
+    {
+      "title": "Click the PivotTable Analyze tab.",
+      "content": "Click the PivotTable Analyze tab. You'll see this tab at the top of Excel. The PivotTable Analyze menu is only visible when you click to activate the pivot table. If the menu ever disappears, just click the pivot table again to bring it back up. This tab is called Analyze in some versions of Excel."
+    },
+    {
+      "title": "Click the Fields, Items, & Sets menu.",
+      "content": "Click the Fields, Items, & Sets menu. You'll see this in the \"Calculations\" area of the toolbar at the top of Excel. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Calculated Field….",
+      "content": "Click Calculated Field… . Once you click this menu option, the \"Insert Calculated Field\" dialog box will appear. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Enter a name for the field.",
+      "content": "Enter a name for the field. Type a descriptive column label for your custom field into the \"Name\" box."
+    },
+    {
+      "title": "Create a formula for your custom field.",
+      "content": "Create a formula for your custom field. In the \"Formula\" box, type the formula you want to use to calculate your custom field. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, to find the tax rate for the \"Items\" field at 8.5%, you could name your custom field \"Tax\" and use this formula: =Items * 8.5% . Another example: If you want to divide values in the \"Sales\" column by values in the \"Quantity\" column, you could use: =Sales/Quantity . To insert data from another pivot table field in your formula, select the field and click Insert Field ."
+    },
+    {
+      "title": "Click Add.",
+      "content": "Click Add . This adds your custom field to the Fields list."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This closes the \"Insert Calculated Field\" box and returns you to the pivot table."
+    },
+    {
+      "title": "Find your new field in the \"Values\" area.",
+      "content": "Find your new field in the \"Values\" area. Now that you've added a new field, you'll see it in the \"PivotTable Fields\" panel on the right side of your sheet in the \"Values\" column."
+    },
+    {
+      "title": "Drag your new field to the desired area.",
+      "content": "Drag your new field to the desired area. You can now drag your custom calculated field from the Values area to Filters, Rows, or Columns to apply the formula to your data."
+    },
+    {
+      "title": "Select the pivot table containing the field you want to edit.",
+      "content": "Select the pivot table containing the field you want to edit. Editing the formula in this one calculated field is much easier than creating—and later editing—a formula in the source data. This can be useful when the amount by which you are calculating your field changes often. Clicking the pivot table will activate the PivotTable Analyze or Analyze menu at the top of Excel."
+    },
+    {
+      "title": "Click the PivotTable Analyze or Analyze tab.",
+      "content": "Click the PivotTable Analyze or Analyze tab. You'll see these at the top of Excel. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Fields, Items, & Sets menu.",
+      "content": "Click the Fields, Items, & Sets menu. You'll see this in the \"Calculations\" area of the toolbar at the top of Excel."
+    },
+    {
+      "title": "Click Calculated Field….",
+      "content": "Click Calculated Field… . Once you click this menu option, the \"Insert Calculated Field\" dialog box will appear. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select the field you want to edit.",
+      "content": "Select the field you want to edit. All fields, including your custom fields, appear in the \"Fields\" area. When you click your custom field, you'll see its formula in the \"Formula\" box, and its name in the \"Name\" box."
+    },
+    {
+      "title": "Modify the field's name or formula.",
+      "content": "Modify the field's name or formula. You can now make any adjustments you need to your custom field. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you want to delete the field, just click Delete instead."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Your field is now updated. If your pivot table doesn't refresh automatically, right-click the table and select Refresh to see your new calculations."
+    }
+  ]
+}

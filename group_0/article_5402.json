@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Calculate-RSD-in-Excel",
+  "title": "How to Calculate RSD in Excel",
+  "steps": [
+    {
+      "title": "Open the Excel sheet that contains your data.",
+      "content": "Open the Excel sheet that contains your data. Before you can find the RSD of a range, you’ll need to use the STDEV formula to calculate the standard deviation."
+    },
+    {
+      "title": "Type =(STDEV( into a blank cell.",
+      "content": "Type =(STDEV( into a blank cell. This starts the formula. [1] X Research source"
+    },
+    {
+      "title": "Highlight the range.",
+      "content": "Highlight the range. This adds the range to the formula. For example, to calculate the standard deviation for the values of cells A2 through A10, highlight cells A2 through A10. A2:A10 will be added to the formula. You can also type the range into the formula manually."
+    },
+    {
+      "title": "Type ) after the range in the formula.",
+      "content": "Type ) after the range in the formula. The formula should now look like this (if the values are A2:10): =(STDEV(A2:A10)"
+    },
+    {
+      "title": "Type /AVERAGE(.",
+      "content": "Type /AVERAGE( . Type this right after the last character of the formula."
+    },
+    {
+      "title": "Highlight the range again.",
+      "content": "Highlight the range again. Just as you did before, drag the mouse over the range of values, or manually type the same range for which you just calculated the standard deviation."
+    },
+    {
+      "title": "Type )).",
+      "content": "Type )) . The formula should now look like this (using the example): =(STDEV(A2:A10)/AVERAGE(A2:A10)) ."
+    },
+    {
+      "title": "Type *100.",
+      "content": "Type *100 . This tells Excel to multiply the result of the formula by 100. This step ensures that the RSD displays in the correct format (as a percentage). The full formula should now look like this: =(STDEV(A2:A10)/AVERAGE(A2:A10))*100"
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . The RSD for the range now appears in the cell in which you typed the formula. If the value displays a decimal instead of a percentage, click the cell once to select it, click the small arrow next to ″Number Format″ on the Home tab, then select Percentage . [2] X Research source"
+    }
+  ]
+}

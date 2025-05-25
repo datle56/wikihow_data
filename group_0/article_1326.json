@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Antimalware-Service-Executable-High-Cpu",
+  "title": "How to Fix High CPU Usage from Antimalware Service Executable",
+  "steps": [
+    {
+      "title": "AntiMalware Service is a background component of Windows Defender.",
+      "content": "AntiMalware Service is a background component of Windows Defender. Windows Defender is the built-in virus protection software that comes with every copy of Windows 10 and 11. Defender is responsible for scanning your PC for threats, neutralizing viruses, and protecting your PC from malicious links. Anti-Malware Service Executable is a part of Windows Defender that runs in the background while you use your computer. [1] X Research source Because AntiMalware Service Executable is a background process, you’ll likely only ever notice it in your task manager if it’s hogging power. AntiMalware Service Executable is the same thing as msmpeng.exe in your task manager."
+    },
+    {
+      "title": "AntiMalware Service requires a lot of power when it’s running full scans.",
+      "content": "AntiMalware Service requires a lot of power when it’s running full scans. Whenever Defender runs a full scan of your device, it’s AntiMalware Service Executable’s time to shine. The program fires on all cylinders to scan through your entire PC and find anything that doesn’t belong. This process requires a fair bit of power, so your CPU (central processing unit) can run quite hot while Defender does its thing. You’re unlikely to notice any CPU hogging if your computer is newer, you have an SSD instead of an HDD, or your PC has a lot of RAM. The CPU bottlenecking typically only occurs if your computer doesn’t have a lot of multitasking power. Can I just force AntiMalware Service Executable to shut down? Unless you have another antivirus program you’re prepared to run right now, it’s not recommended to stop AntiMalware Service Executable from completing its task."
+    },
+    {
+      "title": "Wait 5-10 minutes to see if the problem resolves itself.",
+      "content": "Wait 5-10 minutes to see if the problem resolves itself. AntiMalware Service Executable will typically stop hogging the juice after it finishes scanning your device. If the problem resolves itself in a few minutes, your AntiMalware Service Executable process (and your PC as a whole) is working as intended. You do not have to “fix” anything, in other words. You may be able to minimize the impact on your PC in the future by increasing your RAM , clearing up storage space , and uninstalling programs you don’t use anymore."
+    },
+    {
+      "title": "Run a separate malware scan to confirm it isn’t a virus.",
+      "content": "Run a separate malware scan to confirm it isn’t a virus. Because AntiMalware Service Executable is one of those “don’t stop it or bad things happen” services on your PC, many bad actors will name their malware “AntiMalware Service Executable” to try and trick people into letting it run. Download Malwarebytes or some other free antivirus software and run a full scan to see if anything comes up. If you can, disable Defender and force stop AntiMalware Service Executable while running this second scan. After the scan is over, if there are no issues, turn Defender back on and uninstall the malware software. If your anti-malware software does detect a problem, resolve the underlying problem and restart your PC to confirm the problem is gone."
+    },
+    {
+      "title": "Prevent scan loops by skipping AntiMalware Service’s own folder.",
+      "content": "Prevent scan loops by skipping AntiMalware Service’s own folder. Many users have noticed that AntiMalware Service Executable can end up in a “loop” where it scans its own folder, scans itself, and runs into a bug. Just skip Defender’s own folder and this problem should resolve itself. [2] X Research source Here’s how to do it: Press the Windows key or select the gear icon in the Start menu to open Settings. Select Update & Security and then Virus & Threat Protection . Under “Virus & Threat Protection Settings,” tap on Manage Settings . Scroll down to “Exclusions” and add the folder for Windows Defender (usually it’s C:\\Program Files\\Windows Defender)."
+    },
+    {
+      "title": "Reschedule Defender scans to run when you aren’t using the PC.",
+      "content": "Reschedule Defender scans to run when you aren’t using the PC. If, at the end of the day, AntiMalware Service Executable is still just a power hog, reschedule Windows Defender to only run these active scans in the middle of the workday when you aren’t home, or late at night when you’re asleep. [3] X Research source Here’s how to do it: In the Windows search box, enter “Task Scheduler” and open the app. Expand Task Scheduler Library , select Microsoft , then, Windows . Open the Windows Defender folder and click Windows Defender Scheduled Scan in the middle column. In the “Windows Defender Scheduled Scan Properties (Local Computer)” window, click Triggers and then New . Select when you want your scans to start and restart your PC."
+    },
+    {
+      "title": "Disable Defender and use a less intensive malware service.",
+      "content": "Disable Defender and use a less intensive malware service. Don’t get us wrong, Windows Defender is great, but it does tend to hog memory and CPU power. If you’d like to use another antivirus software, that may help. Bitdefender, Malwarebytes, and Sophos are all great options. Install one of those and disable Defender. [4] X Research source The only way to permanently disable Defender is to install a replacement antimalware product. You can’t actually uninstall Defender otherwise, but you can disable it temporarily . To disable Defender: Open the Start menu and search for \"Windows Security.\" Select the Windows Security App from the search results. Go to Virus & Threat Protection and select Manage Settings . Set “Real-time Protection” to “Off.”"
+    }
+  ]
+}

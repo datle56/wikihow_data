@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Connect-to-a-Server-on-a-Mac",
+  "title": "How to Connect to a Server on a Mac",
+  "steps": [
+    {
+      "title": "Open the Finder .",
+      "content": "Open the Finder . It has an icon that resembles a blue and white smiley face. It's in the Dock at the bottom of the window. [1] X Research source Alternatively, you can click the magnifying glass icon in the upper-right corner and type terminal in the search bar and click the terminal in the list of search results."
+    },
+    {
+      "title": "Click the Applications folder.",
+      "content": "Click the Applications folder. It's in the sidebar to the left of the Finder. This displays a list of all applications you have installed on your Mac."
+    },
+    {
+      "title": "Open the Utilities folder.",
+      "content": "Open the Utilities folder. It has an icon that resembles a blue folder with tools on the front. It's in your Applications folder. This displays a list of system-related applications."
+    },
+    {
+      "title": "Launch the Terminal application .",
+      "content": "Launch the Terminal application . It has an icon that resembles a black screen with a white text cursor. Click this icon to open the terminal."
+    },
+    {
+      "title": "Type the following command into Terminal:",
+      "content": "Type the following command into Terminal: tell app \"Finder\" to open location . This is the start of the command to open a location in the Finder. Don't press Enter just yet. There is still more to add to the line."
+    },
+    {
+      "title": "Add the following syntax to the terminal command:",
+      "content": "Add the following syntax to the terminal command: \"protocol://username:password@ipaddress/folder\" . In this syntax, type the server protocol (i.e, ftp, smb) in place of \"protocol\". Type the actual username and password needed to log in in place of \"username\" and \"password\". Type the IP address of the server in place of \"ipaddress\". Finally, type the name of the shared folder in place of \"folder\". For a local server, type \"local\" in place of \"ipaddress\". The full command should look something similar to this: tell app \"Finder\" to open location \"ftp://admin:admin@192.168.127.2/pictures\""
+    },
+    {
+      "title": "Press ↵ Enter on your keyboard.",
+      "content": "Press ↵ Enter on your keyboard. This executes the command. Your Mac will now be connected to the server you specified."
+    },
+    {
+      "title": "Open a new Finder window .",
+      "content": "Open a new Finder window . The Finder has an icon that resembles a blue and white smiley face. Click on it in the Dock at the bottom of the screen to open a new Finder window. [2] X Research source"
+    },
+    {
+      "title": "Click Go.",
+      "content": "Click Go . It's in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Click Connect to Server.",
+      "content": "Click Connect to Server . It's at the bottom of the menu that drops down when you click \"Go\". [3] X Research source"
+    },
+    {
+      "title": "Click Browse.",
+      "content": "Click Browse . It's the first option in the lower-right corner of the \"Connect to Server\" window. This displays a list of servers available on the network."
+    },
+    {
+      "title": "Click the server you want to connect to.",
+      "content": "Click the server you want to connect to. You can connect to it in the Network window, or the sidebar to the left."
+    },
+    {
+      "title": "Select \"Guest\" or \"Registered User\".",
+      "content": "Select \"Guest\" or \"Registered User\". If you are a registered user of the server, click the radio button next to \"Registered User\". If you are not a registered user, click the radio button next to \"Guest\". These options are next to \"Connect as\" in the window."
+    },
+    {
+      "title": "Type your username and password into the fields provided.",
+      "content": "Type your username and password into the fields provided. If you are a registered user, type the username and password in the fields provided. [4] X Research source"
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . You will now be connected to that particular server. [5] X Research source"
+    },
+    {
+      "title": "Open a new Finder window .",
+      "content": "Open a new Finder window . The Finder has an icon that resembles a blue and white smiley face. Click on it in the Dock at the bottom of the screen to open a new Finder window. [6] X Research source"
+    },
+    {
+      "title": "Click Go.",
+      "content": "Click Go . It's in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Click Connect to Server.",
+      "content": "Click Connect to Server . It's at the bottom of the menu that drops down when you click \"Go\". [7] X Research source"
+    },
+    {
+      "title": "Type the address of the server into the “Server Address” field.",
+      "content": "Type the address of the server into the “Server Address” field. The network address should consist of a protocol (such as afp://, smb://, or ftp:// depending on the server type) followed by the Domain Name System (DNS) name, and the pathname for the computer."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . It's in the lower-right corner of the Connect to Server window."
+    },
+    {
+      "title": "Select \"Guest\" or \"Registered User\".",
+      "content": "Select \"Guest\" or \"Registered User\". If you are a registered user of the server, click the radio button next to \"Registered User\". If you are not a registered user, click the radio button next to \"Guest\". These options are next to \"Connect as\" in the window."
+    },
+    {
+      "title": "Type your username and password into the fields provided.",
+      "content": "Type your username and password into the fields provided. If you are a registered user, type the username and password in the fields provided. [8] X Research source"
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . You will now be connected to that particular server."
+    },
+    {
+      "title": "Click on the Apple menu .",
+      "content": "Click on the Apple menu . It's the icon that resembles an Apple logo in the menu bar in the upper-left corner. [9] X Research source"
+    },
+    {
+      "title": "Place the mouse cursor over Recent items.",
+      "content": "Place the mouse cursor over Recent items . This displays a list of recent servers and folder locations you have visited. [10] X Research source If you have not connected to any servers recently, none will be listed."
+    },
+    {
+      "title": "Click on the name of the server you recently connected to.",
+      "content": "Click on the name of the server you recently connected to. It's under \"Servers\" in the list of recent items. Your Mac will reconnect you to the server, and display the server files in a new Finder window. [11] X Research source You may need to enter the username and password to connect to the server."
+    }
+  ]
+}

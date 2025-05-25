@@ -1,0 +1,142 @@
+{
+  "url": "https://www.wikihow.com/Find-System-Specs",
+  "title": "How to Check PC Specs on a Computer, Phone, or Tablet",
+  "steps": [
+    {
+      "title": "Press the Windows key on your keyboard and type msinfo32.",
+      "content": "Press the Windows key on your keyboard and type msinfo32 . You'll see \"System Information\" appear at the top of the search results in all versions of Windows, including Windows 11, 10, 8, and 7."
+    },
+    {
+      "title": "Click System Information.",
+      "content": "Click System Information . This opens the System Information panel on your PC, where you can find out detailed information about your system specs. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Review the System Summary tab to view basic system information.",
+      "content": "Review the System Summary tab to view basic system information. The default view of the System Information panel gives you lots of system specifications in one useful panel, including: OS Name and Version: Use this information to learn which version of Windows is running on your PC. System Manufacturer and System Model: The manufacturer of your computer and the model. System Type: This indicates whether your processor is 64-bit or 32-bit. Processor: The speed and model of your CPU. If your processor has multiple cores, they will be displayed here. If you have overclocked your CPU, the new results likely will not appear here. See Check CPU Speed to learn how to measure processing speed. Installed Physical Memory (RAM): How much RAM is in your PC. Baseboard Manufacturer/Product/Version: The manufacturer and model of your motherboard."
+    },
+    {
+      "title": "Expand the \"Components\" section.",
+      "content": "Expand the \"Components\" section. The Components section lets you see details about your graphics card (GPU) and drives."
+    },
+    {
+      "title": "Expand the \"Storage\" section to view storage information.",
+      "content": "Expand the \"Storage\" section to view storage information. Expand the Drives section to see a list of storage devices, including internal and external drives. You'll see the size of your drive(s), as well how much space remains on each. Expand the Disks section to see information about internal and external drives, including whether your drive is SSD (solid state drive) or HDD (traditional platter hard drive). Expand the SCSI and IDE sections to view information about your hard drive controllers."
+    },
+    {
+      "title": "Select Display to view GPU specs.",
+      "content": "Select Display to view GPU specs. This will show you the specs for your graphics card. Many games and video editing apps work best with a speedy GPU. If your motherboard has integrated graphics and you have a graphics card installed, you'll see two different sets of system specs."
+    },
+    {
+      "title": "Explore the other sections.",
+      "content": "Explore the other sections. The above information should allow you to determine your specs when referring to the system requirements for software or hardware. These are just the basics though, and you can find a lot of detailed information in each of the entries. The \"Software Environment\" section will show all of your drivers , running processes, and startup programs. If you're working with a technician to troubleshoot your computer, they may want to see a document of your computer specs. You can export your system specs by clicking the File menu and selecting Export . Give the file a name and it will be saved as a text file."
+    },
+    {
+      "title": "Click the Apple menu and select About This Mac.",
+      "content": "Click the Apple menu and select About This Mac . This will display some basic specs for your Mac desktop or MacBook."
+    },
+    {
+      "title": "Click More Info… (macOS Ventura only).",
+      "content": "Click More Info… (macOS Ventura only). If you're using macOS Monterey or earlier, you can skip this step. [2] X Research source"
+    },
+    {
+      "title": "Click System Report.",
+      "content": "Click System Report . You'll see this button on the About screen on all versions of macOS."
+    },
+    {
+      "title": "Expand the Hardware tab to view the hardware overview.",
+      "content": "Expand the Hardware tab to view the hardware overview. The Hardware section displays some helpful details about your Mac's hardware, including: Your Mac's model name and identifier. Processor type, speed, and number of cores. RAM (Memory)."
+    },
+    {
+      "title": "Click the Memory tab to view RAM specs.",
+      "content": "Click the Memory tab to view RAM specs. On this tab, you'll see how much RAM you have, whether the RAM in your Mac is upgradeable, and the size and speed of each installed RAM chip."
+    },
+    {
+      "title": "Click the Graphics/Displays menu to view GPU specs.",
+      "content": "Click the Graphics/Displays menu to view GPU specs. Here you'll learn about your Mac's graphics card, including how much VRAM it has, as well as its maximum resolution."
+    },
+    {
+      "title": "Click the Storage tab.",
+      "content": "Click the Storage tab. This displays information about the internal and external hard drives or SSDs in your Mac . You'll see the total amount of space on the drive, available space, type of drive (e.g., SSD or HDD), and S.M.A.R.T status here."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. On most versions of Linux, including all Ubuntu desktop environments, you can open a terminal window by pressing Ctrl + Alt + T ."
+    },
+    {
+      "title": "Install lshw (if necessary).",
+      "content": "Install lshw (if necessary). Many Linux distributions, including Ubuntu and Mint, include lshw. Use one of the following commands to install lshw . If you already have it, you'll be informed that it's already installed. Debian/Ubuntu: sudo apt-get install lshw Red Hat/Fedora: sudo yum install lshw"
+    },
+    {
+      "title": "Type sudo lshw and press ↵ Enter.",
+      "content": "Type sudo lshw and press ↵ Enter . This displays a readout of your Linux PC's system specs."
+    },
+    {
+      "title": "Find the items you're looking for.",
+      "content": "Find the items you're looking for. Now you can browse the results to view all system specs, including details about your processor (name, speed, and cores), drives and interfaces, and memory (including RAM speed and size)."
+    },
+    {
+      "title": "Create a text file of your hardware specs (optional).",
+      "content": "Create a text file of your hardware specs (optional). This can be useful if someone is helping you troubleshoot, or you want to sell the computer. Type sudo lshw > specs.txt . You can rename the file to whatever you'd like. You'll find the text file in your /home folder. You can also type sudo lshw -html > specs.html . This will create an HTML file that may be easier to read when opened in a web browser."
+    },
+    {
+      "title": "Install the GUI (optional).",
+      "content": "Install the GUI (optional). This will allow you to view your hardware in a graphical window that you can navigate through. This can be more comfortable for users coming from Windows or OS X. Type sudo apt-get install lshw-gtk (Debian) or sudo yum install lshw-gui (RH/Fedora). Type sudo lshw -X to launch the GUI for lshw. The GUI uses the \"3-frame\" layout. When you expand something in the left frame, the sub-sections will appear in the frame to the right. Expand the different categories to find your specs."
+    },
+    {
+      "title": "Install the Cog system viewer app.",
+      "content": "Install the Cog system viewer app. This free app makes it easy to view system specs on your Chromebook, including detailed information about the CPU, RAM, and more. While there's no official Cog app in the Play Store, you can install the web version on your Chromebook . Here's how to get it: Go to the Cog page on the Chrome Web Store. Click Add to Chrome and select Add App ."
+    },
+    {
+      "title": "Click Launch app to open Cog.",
+      "content": "Click Launch app to open Cog. You'll see this on the Cog installation page."
+    },
+    {
+      "title": "View your system specs.",
+      "content": "View your system specs. In the Cog app, you'll find the following helpful information about your system: CPU, including the model, speed, architecture, and added features. Internal and external storage, including the built-in drive and any connected external drives. Memory, which tells you how much RAM you have, and how much is in use at the moment. Display information, including screen resolution and DPI."
+    },
+    {
+      "title": "Install the Inware app on your Android.",
+      "content": "Install the Inware app on your Android. Inware is a free handy app that quickly displays all of your Android's system specs. You can install the app for free from the Play Store ."
+    },
+    {
+      "title": "Open Inware and provide all necessary permissions.",
+      "content": "Open Inware and provide all necessary permissions. The Inware app requires access to your Android to display your system specs, so approve all permissions as requested."
+    },
+    {
+      "title": "Tap Device to view basic system specs for your Android.",
+      "content": "Tap Device to view basic system specs for your Android. Here you'll see the brand, manufacturer, and model of your phone or tablet, screen size and resolution, and aspect ratio."
+    },
+    {
+      "title": "Tap Hardware to see detailed hardware specs.",
+      "content": "Tap Hardware to see detailed hardware specs. Here you'll find information about the processor in your Android, including its model, speed, and number of cores."
+    },
+    {
+      "title": "Tap Memory to view RAM specs.",
+      "content": "Tap Memory to view RAM specs. This area tells you how much RAM is in your Android."
+    },
+    {
+      "title": "Tap Camera to see your camera specs.",
+      "content": "Tap Camera to see your camera specs. This area tells you the details about the camera in your Android, including the resolution and megapixel count."
+    },
+    {
+      "title": "Open the Settings app.",
+      "content": "Open the Settings app. To view system specs on your iPhone or iPad, tap the gear icon on your Home screen or in your app library. The specs available on your phone or tablet are limited to model name, number, serial number, and capacity. However, once you can identify your iPhone model, you can easily look up more detailed specs about processor speed, camera details, resolution, and more on Apple's website."
+    },
+    {
+      "title": "Tap General.",
+      "content": "Tap General . You'll see this in the third group of settings."
+    },
+    {
+      "title": "Tap About.",
+      "content": "Tap About . It's at the top of the menu."
+    },
+    {
+      "title": "View your basic system specs.",
+      "content": "View your basic system specs. On the About screen, you'll find the following system specs: Model name (e.g., iPad Pro), model number, and serial number. Capacity, which tells you how much total space is on your iPhone or iPad. You'll also see the available space below \"Capacity.\""
+    },
+    {
+      "title": "View advanced system specs on Apple's website.",
+      "content": "View advanced system specs on Apple's website. Go to https://support.apple.com/en-us/HT201296 and select the tech specs link below your model of iPhone or iPad. On this page, you'll find more in-depth specs, including: Detailed display information, including screen size, resolution, and haptic touch support. Chip (CPU) details, including speed, cores, and GPU info. Camera specs, including resolution/megapixels, zoom capabilities, lens details, and more."
+    }
+  ]
+}

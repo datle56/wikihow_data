@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Set-a-Date-in-Excel",
+  "title": "How to Set a Date and Time in Microsoft Excel",
+  "steps": [
+    {
+      "title": "Type the desired date into a cell.",
+      "content": "Type the desired date into a cell. Double-click the cell in which you want to type the date, and then enter the date using any recognizable date format. You can enter the date in a variety of different formats. [1] X Research source Using January 3 as an example, some recognizable formats are \"Jan 03,\" \"January 3\", \"1/3,\" and \"01-3.\""
+    },
+    {
+      "title": "Press the ↵ Enter key.",
+      "content": "Press the ↵ Enter key. As long as Excel recognizes the date format, it will re-format the cell as a date, which is usually mm/dd/yyyy or dd/mm/yyyy, depending on your locale. If the text automatically aligned to the right, then Excel recognized it as a date and re-formatted it. If the text stayed aligned to the left, Excel is treating the input as text rather than a date. This could be because it cannot recognize your input as a date, or because that cell's format is set to something besides a date."
+    },
+    {
+      "title": "Right-click the date cell and select Format Cells.",
+      "content": "Right-click the date cell and select Format Cells . A new window will pop up."
+    },
+    {
+      "title": "Click the Number tab.",
+      "content": "Click the Number tab. It's the first tab."
+    },
+    {
+      "title": "Select Date in the \"Category\" panel.",
+      "content": "Select Date in the \"Category\" panel. A variety of date formats will appear on the right side of the window."
+    },
+    {
+      "title": "Select your desired date format under \"Type.\"",
+      "content": "Select your desired date format under \"Type.\" This reformats the selected cell to display in this format. You can also change your locale to access date formats used in your location."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . The selected cell(s) will now display dates in the selected format."
+    },
+    {
+      "title": "Click the cell in which you want today's date to appear.",
+      "content": "Click the cell in which you want today's date to appear. This can be in an existing formula, or in a new cell."
+    },
+    {
+      "title": "Type an equal sign = followed by the formula TODAY().",
+      "content": "Type an equal sign = followed by the formula TODAY() . If you wish to retrieve the current time as well, use NOW() instead of TODAY() . [2] X Research source"
+    },
+    {
+      "title": "Hit ↵ Enter.",
+      "content": "Hit ↵ Enter . Excel will return today's date as the cell value. This is a dynamic date, meaning it will change depending on when you are viewing the sheet. Use the shortcuts Ctrl + ; and Ctrl + Shift + ; instead to set a cell's value to today's date and time respectively as a static value. These values will not update, and act as a timestamp."
+    },
+    {
+      "title": "Click the cell in which you want to type the date.",
+      "content": "Click the cell in which you want to type the date."
+    },
+    {
+      "title": "Type an equal sign = followed by the date formula DATE(year, month, day).",
+      "content": "Type an equal sign = followed by the date formula DATE(year, month, day) . Year, month, and day should be numerical inputs."
+    },
+    {
+      "title": "Hit ↵ Enter.",
+      "content": "Hit ↵ Enter . Excel will return the default date format, which is usually mm/dd/yyyy or dd/mm/yyyy depending on your locale."
+    },
+    {
+      "title": "Expand on the formula if required.",
+      "content": "Expand on the formula if required. You can set formulas for the year, month, and day values. Or, you can use the DATE function within other formulas. For instance, DATE(2010,MONTH(TODAY()),DAY(TODAY())) sets the cell's value as today's month and day in 2010. The formula DATE(2020,1,1)-10 sets the value to 10 days before 1/1/2020."
+    },
+    {
+      "title": "Type the desired date into a cell.",
+      "content": "Type the desired date into a cell. Double-click the cell in which you want to type the date, and then enter the date using any recognizable date format. You can enter the date in a variety of different formats. Using January 3 as an example, some recognizable formats are \"Jan 03,\" \"January 3\", \"1/3,\" and \"01-3.\""
+    },
+    {
+      "title": "Hit ↵ Enter.",
+      "content": "Hit ↵ Enter . Excel will re-format the cell and align the text to the right if it has recognized it as a date."
+    },
+    {
+      "title": "Select all the cells you wish to fill with dates.",
+      "content": "Select all the cells you wish to fill with dates. Include the cell in which you just entered the date. To select, drag your mouse over all the cells, select an entire column or row, or hold Ctrl (PC) or ⌘ Cmd (Mac) while clicking each cell."
+    },
+    {
+      "title": "Click Fill on the Home tab.",
+      "content": "Click Fill on the Home tab. It's at the top of Excel in the \"Editing\" section and looks like a white box with a blue down arrow."
+    },
+    {
+      "title": "Click Series….",
+      "content": "Click Series… . It is near the bottom."
+    },
+    {
+      "title": "Select a \"Date unit.\"",
+      "content": "Select a \"Date unit.\" Excel will use this to fill the blank cells based on this setting. For instance, if you select \"Weekday,\" all the blank cells will populate with the weekdays following the initial input date."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Make sure the are dates filled in correctly."
+    }
+  ]
+}

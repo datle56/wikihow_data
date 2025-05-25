@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Uninstall-Dropbox-from-a-Mac",
+  "title": "How to Completely Uninstall Dropbox from a Mac Computer",
+  "steps": [
+    {
+      "title": "Find Dropbox on your Mac menu bar.",
+      "content": "Find Dropbox on your Mac menu bar. Click on the Dropbox icon. [1] X Research source"
+    },
+    {
+      "title": "Quit Dropbox.",
+      "content": "Quit Dropbox. Click your user icon, which may be a profile picture or your initials. Then, select Quit ."
+    },
+    {
+      "title": "Delete Dropbox from your Applications folder.",
+      "content": "Delete Dropbox from your Applications folder. Delete it by either Ctrl-clicking and selecting Move to Trash or dragging it to your Trash Can ."
+    },
+    {
+      "title": "End any active Dropbox processes if you can’t uninstall.",
+      "content": "End any active Dropbox processes if you can’t uninstall. If you get an error message saying Dropbox can’t be uninstalled, you might need to end any processes related to the program that are still running. Here’s how to do it: Click the Spotlight search icon on the top right side of your Mac’s desktop, then type in activity monitor . Click Activity Monitor in the results. Scroll through your processes or use the search bar at the top of the window to locate any Dropbox processes. Select each process and click the X button at the top of the window to end it. Try again to uninstall Dropbox. If you successfully ended all the associated processes, it should work now."
+    },
+    {
+      "title": "Locate your Dropbox folder to delete it, too, if desired.",
+      "content": "Locate your Dropbox folder to delete it, too, if desired. Either Ctrl-click on the folder and select Move to Trash , or drag it to your Trash Can . Note that deleting the folder will also delete the contents. If these files are not saved in the cloud in your Dropbox account, you may want to copy them to another safe folder before deleting the Dropbox folder."
+    },
+    {
+      "title": "Remove Dropbox from your Finder Sidebar, if necessary.",
+      "content": "Remove Dropbox from your Finder Sidebar, if necessary. If you'd like to do this, Ctrl-click on the Dropbox name and select Remove from Sidebar . [2] X Research source"
+    },
+    {
+      "title": "Open your Finder.",
+      "content": "Open your Finder. If you want to remove the Dropbox icon from the toolbar at the top of your Finder window, you can do so using the Customize Toolbar feature."
+    },
+    {
+      "title": "Click on View and then Customize Toolbar.",
+      "content": "Click on View and then Customize Toolbar ."
+    },
+    {
+      "title": "Locate the Dropbox icon in your current Toolbar set.",
+      "content": "Locate the Dropbox icon in your current Toolbar set."
+    },
+    {
+      "title": "Click and hold the Dropbox icon.",
+      "content": "Click and hold the Dropbox icon. Drag it down into the customization area and release so it disappears. Click Done ."
+    },
+    {
+      "title": "Check your Applications and Library folders.",
+      "content": "Check your Applications and Library folders. If you’ve recently updated to Dropbox for macOS using File Provider, you might still have an older version of Dropbox in your system. This can cause problems when you’re trying to sync your files. [3] X Research source To find out if you have an extra copy in your system, check the following locations: Go to your Applications folder and see if you have a copy of Dropbox there. In Finder, click Go > Go to Folder and type or paste ~/Library/Application Support/Dropbox . See if there is anything in that location."
+    },
+    {
+      "title": "Delete the second file if applicable.",
+      "content": "Delete the second file if applicable. If you find a copy of the Dropbox app at ~/Library/Application Support/Dropbox as well as in your Applications folder, delete the copy in the Application Support folder. If you see the Dropbox app in Application Support but not in Applications, move the file to the Applications folder."
+    },
+    {
+      "title": "Restart Dropbox.",
+      "content": "Restart Dropbox. If you successfully deleted the extra copy of Dropbox, the app should now be able to sync your files. If you’re still having trouble, contact Dropbox support ."
+    },
+    {
+      "title": "Open Terminal on your Mac.",
+      "content": "Open Terminal on your Mac. Sometimes, even after uninstalling Dropbox, there will still be remnants of the app in your system that are hard to get rid of. If you keep seeing notifications that Dropbox wants to run in the background when you start up your Mac—even after uninstalling it—it might still be in your “login items.” [4] X Research source To get rid of it, you’ll need to enter a command in your Terminal app. You can launch Terminal from your Launchpad in the Dock, or find it in Applications > Utilities . To check your login items, go to Apple menu > System Settings > General > Login Items . You’ll see a list of apps that open at login. You can also see a list of apps that are allowed to run in the background (and toggle that option on or off for each app). While you should theoretically be able to remove Dropbox from the list and tell it not to run in the background, these options might not work if the app didn’t uninstall correctly."
+    },
+    {
+      "title": "Run the following command in Terminal.",
+      "content": "Run the following command in Terminal. In the Terminal window, paste the following commands and hit Return after each one: cd ~/Library/LaunchAgents rm com.dropbox.DropboxMacUpdate.agent.plist Dropbox should now be deleted from your login items."
+    },
+    {
+      "title": "Open the Terminal app.",
+      "content": "Open the Terminal app. If you suspect there might still be remnants of Dropbox in your system, including app settings and configurations, you can delete them in Terminal. This can be especially helpful when you’re trying to reinstall Dropbox and set up a new account from scratch, and you want to get rid of old settings and data. [5] X Research source To get started, open Terminal . You can find it in Applications > Utilities . If you haven’t already uninstalled Dropbox, do so now. Then, restart your Mac."
+    },
+    {
+      "title": "Copy and paste each of the following commands into Dropbox.",
+      "content": "Copy and paste each of the following commands into Dropbox. Don’t try to type in the commands—just copy them exactly as you see them and paste them in, one at a time. Press Return after each command. If your Dropbox files are installed in a custom location, you’ll need to replace “/Dropbox” with that location (e.g., “/Volumes/MyStuff/Dropbox”). sudo chown \"$USER\" \"$HOME\" sudo chown -R \"$USER\" ~/Dropbox sudo chmod -R u+rw ~/Dropbox sudo mv ~/.dropbox ~/.Trash/dropbox.old sudo chmod -N ~ sudo mv /Library/DropboxHelperTools ~/DropboxHelperTools.old"
+    },
+    {
+      "title": "Enter your Mac’s administrator password when prompted.",
+      "content": "Enter your Mac’s administrator password when prompted. At some point during this process, Terminal will ask you to enter your password. Note that this is the password you use to log in on your Mac, not your Dropbox password. Type in the password and hit Return . You won’t see your password as you’re typing it in. Once the process is complete, you’ll see the same prompt that appeared when you initially opened Terminal (e.g., “yourusername@yournames-MacBook-Pro ~ %”). If you want, you can now install a newer version of Dropbox and configure it however you like."
+    }
+  ]
+}

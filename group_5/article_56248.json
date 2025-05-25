@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Java-Macos-Uninstall",
+  "title": "How to Uninstall Java & JDK on Mac: Step-by-Step Tutorial",
+  "steps": [
+    {
+      "title": "Ensure you have administrator privileges.",
+      "content": "Ensure you have administrator privileges. Only administrators can uninstall Java via the Terminal. If you're using the first account created on your Mac, it's an administrator by default, so you can skip this step. Otherwise, you can add or remove administrators in the Users & Groups section of an administrator account's System Settings. For a more in-depth guide on how to set your account as an administrator on Mac, check out this wikiHow article ."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. There are a couple of ways you can do this: Click the magnifying glass in the upper-right corner and search for \"Terminal.\" Open the Finder and go to Utilities > Terminal ."
+    },
+    {
+      "title": "Run the following commands.",
+      "content": "Run the following commands. These commands should be run one at a time. To run them, copy and paste a command into your Terminal and press Return . Repeat this for all three commands. sudo rm -fr /Library/Internet\\ Plug-Ins/JavaAppletPlugin.plugin sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane sudo rm -fr ~/Library/Application\\ Support/Oracle/Java After you run a sudo command for the first time, the Terminal will ask for a password. Enter the password you use to login to your computer."
+    },
+    {
+      "title": "Close the Terminal.",
+      "content": "Close the Terminal. After all three commands have been run, you can exit the Terminal. If you have the Java Software Development Kit (JDK) installed, jump to this section to learn how to uninstall it. If you don't have the JDK installed, you can instead jump to this section to learn how to remove the Java Deployment cache."
+    },
+    {
+      "title": "Open the Java installer.",
+      "content": "Open the Java installer. If you still have the Java installer on your Mac, you can use it to uninstall Java. If you have the most recent version of Java installed but don't still have the installer, you can download the installer from Java's website . However, if you have an older version of Java, running the installer may install the newer Java version alongside the older Java version instead of replacing it. If you have an old Java version, it's better to uninstall via the Terminal, explained above ."
+    },
+    {
+      "title": "Enter your computer's admin password if prompted.",
+      "content": "Enter your computer's admin password if prompted. If you've only ever had one account on your Mac, the first one you created is automatically an administrator. However, if you need to make your account an administrator, you can do so in the Users & Groups section of an administrator account's System Settings. For a more in-depth guide on how to set your account as an administrator on Mac, check out this wikiHow article ."
+    },
+    {
+      "title": "Click Remove.",
+      "content": "Click Remove . It's in the bottom-right corner of the \"Welcome to Java\" dialog box. Allow the uninstaller to finish processing before moving on."
+    },
+    {
+      "title": "Click the Apple menu and select System Settings….",
+      "content": "Click the Apple menu and select System Settings… . If you're on an older version of macOS, you will see System Preferences… instead."
+    },
+    {
+      "title": "Look for the Java panel at the bottom of the sidebar.",
+      "content": "Look for the Java panel at the bottom of the sidebar. If you still see it, Ctrl+click on it and select \"Remove Java Settings pane\". After removing the Java Settings pane, you can exit your System Settings menu."
+    },
+    {
+      "title": "Click on the Finder, then navigate to Go > Go to Folder.",
+      "content": "Click on the Finder, then navigate to Go > Go to Folder . Alternatively, you can press Cmd+Shift+G to open the Go to Folder window."
+    },
+    {
+      "title": "Go to the following locations and delete any remaining Java files or folders.",
+      "content": "Go to the following locations and delete any remaining Java files or folders. Copy and paste each file path below into Go to Folder, look for any files or folders with \"Java\" in the name, and drag those files/folders to the Trash. /Library/Application Support/Oracle /Library/Java/ /Library/Internet Plug-ins/ /Library/PreferencePanes"
+    },
+    {
+      "title": "Empty the Trash.",
+      "content": "Empty the Trash. Open the Trash folder on your desktop and empty it to fully delete any and all straggling Java files you found buried in your computer's directories. If you have the Java Software Development Kit (JDK) installed, jump to this section to learn how to uninstall it. If you don't have the JDK installed, you can instead jump to this section to learn how to remove the Java Deployment cache."
+    },
+    {
+      "title": "Ensure you have administrator privileges.",
+      "content": "Ensure you have administrator privileges. Only administrators can uninstall JDK. If you're using the first account created on your Mac, it's an administrator by default, so you can skip this step. Otherwise, you can add or remove administrators in the Users & Groups section of an administrator account's System Settings. For a more in-depth guide on how to set your account as an administrator on Mac, check out this wikiHow article ."
+    },
+    {
+      "title": "Uninstall the Java Runtime Environment before uninstalling the JDK.",
+      "content": "Uninstall the Java Runtime Environment before uninstalling the JDK. We explain how to do this earlier in the article. Check out the first section to uninstall Java with the terminal and the second section to uninstall Java with the installer."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. There are a couple of ways you can do this: Click the magnifying glass in the upper-right corner and search for \"Terminal.\" Open the Finder and go to Utilities > Terminal ."
+    },
+    {
+      "title": "Change the directory of the Terminal to your Java Virtual Machines folder.",
+      "content": "Change the directory of the Terminal to your Java Virtual Machines folder. To do this, copy and paste the following command into the Terminal and hit Return . [1] X Research source cd /Library/Java/JavaVirtualMachines"
+    },
+    {
+      "title": "Run a list command to see which versions of JDK you have installed (optional).",
+      "content": "Run a list command to see which versions of JDK you have installed (optional). If you know which JDK version you have installed, you can skip this step. If you aren't sure which JDK version(s) you have installed, copy and paste the following command into the Terminal and press Return : ls --directory *jdk* The Terminal will list all of your JDK versions in the format jdk-1.#.jdk , with the hashtag (#) being the number of your version."
+    },
+    {
+      "title": "Run a remove command to remove your desired JDK version(s).",
+      "content": "Run a remove command to remove your desired JDK version(s). Copy and paste the command below into Terminal and press Return to run it. Make sure to replace the hashtag (#) with the JDK version number you want to remove. sudo rm -rf jdk-1.#.jdk After you run a sudo command for the first time, the Terminal will ask for a password. Enter the password you use to login to your computer. If you want to remove more than one JDK installation, add more JDK paths separated with a space. Just be sure to change the hashtag (#) to the correct version number."
+    },
+    {
+      "title": "Run the Java command to ensure it's removed.",
+      "content": "Run the Java command to ensure it's removed. Enter java into the Terminal and press Return . You should get an error that says \"No Java runtime present, requesting install.\" If you don't get an error stating that Java is uninstalled, follow the steps in this guide again. Once Java and the JDK are uninstalled, continue to this section to learn how to remove the Java Deployment cache."
+    },
+    {
+      "title": "Ensure you have administrator privileges.",
+      "content": "Ensure you have administrator privileges. If you're using the first account created on your Mac, it's an administrator by default, so you can skip this step. Otherwise, you can add or remove administrators in the Users & Groups section of an administrator account's System Settings. For a more in-depth guide on how to set your account as an administrator on Mac, check out this wikiHow article ."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. There are a couple of ways you can do this: Click the magnifying glass in the upper-right corner and search for \"Terminal.\" Open the Finder and go to Utilities > Terminal ."
+    },
+    {
+      "title": "Run the following command.",
+      "content": "Run the following command. Copy and paste the command below into the Terminal and press Return to run it and remove the Java Deployment cache. The Java Deployment cache stores various Java files and settings, but isn't always removed when you uninstall Java or JDK. sudo rm -r ~/\"Library/Application Support/Oracle/Java\" After you run a sudo command for the first time, the Terminal will ask for a password. Enter the password you use to login to your computer."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Play-Games-in-Your-Mac-Terminal",
+  "title": "How to Play Games on Terminal in macOS",
+  "steps": [
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. If you don’t see the Terminal application in your Dock, click the Spotlight icon at the top right side of your screen and type in terminal . Click on the first search result to launch the app."
+    },
+    {
+      "title": "Install Homebrew.",
+      "content": "Install Homebrew. Unless you’re using an old version of macOS, you probably don’t have Emacs installed on your computer. This is an application you’ll need to play old-school games in Terminal. In order to get Emacs, first you need to install Homebrew, a package manager that allows you to make special modifications to your Mac. [1] X Research source To install it: First, install Apple’s Command Line toolkit if you haven’t already done so. In Terminal, enter the command xcode-select --install and press Return . If a window pops up asking if you want to install the Command Line, click Install . Follow the prompts to finish the installation process. You’ll see an error message if you’ve already installed the Command Line toolkit in the past. If you’re using macOS Catalina or later, switch to the bash shell before you continue. To do this, enter chsh -s /bin/bash , type in your Mac’s administrator password, and then restart Terminal. Enter the following command and then press Return : /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh )\" When prompted, enter your administrator password and press Return , then press Return again. Wait for the installation to complete."
+    },
+    {
+      "title": "Enter the command brew install --cask emacs.",
+      "content": "Enter the command brew install --cask emacs . This will install Emacs on your Mac. This process may take several minutes. [2] X Research source If you have an older Mac and you suspect you might have an outdated version of Emacs installed, run the following commands first to uninstall it: [3] X Research source sudo rm /usr/bin/emacs sudo rm -rf /usr/share/emacs"
+    },
+    {
+      "title": "Type in the command emacs -q --no-splash -f (game).",
+      "content": "Type in the command emacs -q --no-splash -f (game) . Replace “(game)” with the name of the game you want to play (no parentheses). A new window will pop up with your game in it! [4] X Research source For example, if you want to play Tetris , enter the command emacs -q --no-splash -f tetris . Check out this list of Terminal games and commands to run them ."
+    },
+    {
+      "title": "Type the command emacs -q --no-splash -f tetris.",
+      "content": "Type the command emacs -q --no-splash -f tetris . Press Return to run the game. A window should appear, and Tetris blocks will start falling."
+    },
+    {
+      "title": "Move and rotate the blocks with the arrow keys.",
+      "content": "Move and rotate the blocks with the arrow keys. You can move the blocks from side to side with the left and right arrows. Rotate them with the up and down arrows. Your score should be on the right side of your playing area, together with Rows and Shapes. If you don't know how to play Tetris, see How to Play Tetris ."
+    },
+    {
+      "title": "Type the command emacs -q --no-splash -f snake.",
+      "content": "Type the command emacs -q --no-splash -f snake . A window will appear with a yellow “snake” made of blocks moving around inside it."
+    },
+    {
+      "title": "Control the snake's movement with the arrow keys.",
+      "content": "Control the snake's movement with the arrow keys. Try to collect the beads that appear on the screen. The objective of Snake is to guide your snake around the screen, collecting beads as they appear. The more you eat, the more your score rises, but the snake also gets longer. Hitting the side of the screen or hitting your tail will kill your snake, and you will lose. Other commands include n (to start a new game), p (to pause your game), and q (to end the game). It can be a little tricky to switch to the new window quickly enough to start playing before your snake hits a wall. You may need to press n to start a new game."
+    },
+    {
+      "title": "Type the command emacs -q --no-splash -f gomoku.",
+      "content": "Type the command emacs -q --no-splash -f gomoku . A window should appear with a screen full of dots."
+    },
+    {
+      "title": "Type y or n.",
+      "content": "Type y or n . This will select who goes first (y will let the computer start, n will let you start)."
+    },
+    {
+      "title": "Move your selector around with the arrow keys and select with x.",
+      "content": "Move your selector around with the arrow keys and select with x. Try to make horizontal, vertical, or diagonal row of 5 X’s or O’s before the computer does. Gomoku is like Connect 4, only you need 5 in a row to win."
+    },
+    {
+      "title": "Type the command emacs -q --no-splash -f pong.",
+      "content": "Type the command emacs -q --no-splash -f pong . A window should appear with two yellow paddles on each side and a red ball bouncing around."
+    },
+    {
+      "title": "Move the paddles with the arrows and number keys.",
+      "content": "Move the paddles with the arrows and number keys. Move the paddle on the left with the left and right arrows or the 4 and 6 keys , and the one on the right with the up and down arrows . The score is under the playing screen. You might need to maximize the window to see both paddles. The objective of pong is to send the ball into the opponent's area. The only defense they have is the paddle, which is used to re-send the ball to you."
+    },
+    {
+      "title": "Enter the command emacs -q --no-splash -f doctor.",
+      "content": "Enter the command emacs -q --no-splash -f doctor . Some text should appear saying \"I am the psychotherapist. Please, describe your problems. Each time you are finished talking, type RET twice.\" You are now conversing with your Mac's inner doctor!"
+    },
+    {
+      "title": "Type out whatever you want to share with the doctor.",
+      "content": "Type out whatever you want to share with the doctor. Have fun with it, but beware––it will eventually get annoying. This is a version of Eliza, one of the earliest chatbots. You can play with a version of the original Eliza here ."
+    },
+    {
+      "title": "Explore more games.",
+      "content": "Explore more games. There are lots of games available in Emacs. If you keep Emacs updated, new ones may be added. Explore a list of available games here . Some popular games include: Solitaire Dunnet 5x5 Bubbles"
+    },
+    {
+      "title": "Download new games.",
+      "content": "Download new games. There are several add-on games available for Emacs, many of which are also listed in the Emacs Wiki . If you want to add a new game, visit the developer’s page and read their user documentation for instructions. For example, to install Pacmacs (a Pacman-style game for Emacs), see the installation instructions in the developer’s ReadMe file on GitHub."
+    }
+  ]
+}

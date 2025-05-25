@@ -1,0 +1,174 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-SFML-in-a-Project-on-Visual-Studio",
+  "title": "How to Set Up SFML in a Project on Visual Studio",
+  "steps": [
+    {
+      "title": "Highlight what you expect to do.",
+      "content": "Highlight what you expect to do. Highlight a step or sub-step you expect to do and then do it. See as example picture above."
+    },
+    {
+      "title": "Download Visual Studio 2022.",
+      "content": "Download Visual Studio 2022. If you have not done so you can download it from https://www.visualstudio.com/downloads . Check the Desktop development with C++ workload box as you download. If necessary scroll down the page (see below image). Click \"Language pack\" and check \"English\" box. During installation, in \"Personalize your Visual Studio experience\" wizard, in \"Development settings\" menu, click \"General\" > click \"Visual C++\" > hit Start Visual Studio ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP"
+    },
+    {
+      "title": "Download the latest stable version of SFML.",
+      "content": "Download the latest stable version of SFML. Right click on the following address and select Open Link in New Window https://www.sfml-dev.org/download/sfml/2.5.1/ . Click the first button, today Download 16.3 MB , next to \"Visual C++ 15 (2017) - 32-bit\" (see image above). Open folder C:\\ GL. In the new File Explorer click folder \"SFML-2.5.1\" > click it again and drag into folder C:\\GL. Copy SFMLx32 and once copying and pasting of the folder is complete, click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in folder GL you have folder \"SFMLx32\". Close downloading new File Explorer window > close SFML window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SFMLx32-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In \"Add New Item\" wizard instead of \"FileName\", type Main > hit ↵ Enter . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project SFMLx32-0 > select \"Properties\" (the last one). In \"SFMLx32-0 Property Pages\" wizard, 1. Main menu. In Configuration entry select Active(Debug) > Platform: Win32 or x86 > click Configuration Manager . \"Configuration Manager\" wizard \"Active solution platform:\" select x86 or Win32 \"Platform\" Win32 or x86 is automatically selected Click Close . 2. Additional Include Directories. Double click C/C++ > click General > Additional Include Directories > down arrow at the end of the field > click <Edit...>. Copy C:\\GL\\SFMLx32\\include > click first icon in Additional Include Directories wizard > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories. In the \"SFMLx32 Property Pages\" wizard, double click Linker > click General > Additional Library Directories > down arrow at the end of the field > click <Edit... >. Copy C:\\GL\\SFMLx32\\lib and paste as before. Click OK in Additional Library Directories wizard. 4. Additional Dependencies. In \"Linker\" drop down menu, click Input > Additional Dependencies > down arrow at the end of the field > click <Edit...>. Copy the following .lib file names and paste in \"Additional Dependencies\" wizard's upper-most text box: opengl32.lib; flac.lib; freetype.lib; ogg.lib; openal32.lib; sfml-audio.lib; sfml-graphics.lib; sfml-window.lib; sfml-system.lib; sfml-main.lib; sfml-network.lib; vorbis.lib; vorbisenc.lib; vorbisfile.lib In \"Additional Dependencies\" wizard click OK . Click Apply and then OK ."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\SFMLx32\\bin > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"SFMLx32-0.sln\", the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following address and select Open Link in New Window https://www.sfml-dev.org/tutorials/2.5/start-vc.php scroll down the page and copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear: one black (the console) and one small with a green circle on a black background. Good job."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy C:\\GLP\\SFMLx32-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 3, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folder SFMLx32 exists in C:\\GL. If it exists, go to previous Part, step 1, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. Also to sub step 4. Additional Dependencies. . Thrown wizard about System or file .dll, go to previous Part step 2 and follow instructions. For other errors, if you can not correct them, close Visual Studio > delete project folder SFMLx32-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 3. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu. While \"SFMLx32-0\" is open , click Project > Export Template... . In Choose Template Type menu, leave Project template checked. Click Next... . In Select Template Options , Template name: should be SFMLx32-0 > click Finish . The template is created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create Project.",
+      "content": "Create Project. In Visual Studio main menu click File > New > Project... . In Create a new project wizard, in the list of templates, select SFMLx32-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, Project name: should be SFMLx32-01 . Location should be C:\\GLP\\. If it's not, delete path, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked. Click Create . In Visual Studio's GUI main menu, select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job. TIP. When you create project with this template remember in Visual Studio main menu select x86 ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download the latest stable version of SFML 64 bit.",
+      "content": "Download the latest stable version of SFML 64 bit. Right click on the following address and select Open Link in New Window https://www.sfml-dev.org/download/sfml/2.5.1/ . Click the first button in the right list, today Download 18.0 MB next to \"Visual C++ 15 (2017) - 64-bit\" (see image above). Open folder C:\\ GL. In the new File Explorer, click folder \"SFML-2.5.1\" > click it again and drag into folder C:\\GL. Copy SFMLx64 and once copying and pasting of the folder is complete, click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in folder GL you have folder \"SFMLx64\". Close downloading window > close SFML window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SFMLx64-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" Copy Main > in the \"Add New Item\" wizard delete \"FileName\" > paste > click Add . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project SFMLx64-0 > select \"Properties\" (the last one). In \"SFMLx64-0 Property Pages\" wizard, 1. Main menu: In Configuration entry select Active(Debug) > in Platform: entry, select x64 > Click Configuration manager... In Configuration Manager wizard, in Active solution platform: select x64 In Platform entry, x64 is selected automatically. Click Close 2. Additional Include Directories: In SFMLx64-0 Property Pages window double click C/C++ > click General > Additional Include Directories > down arrow at the end of the field > click <Edit...>. Copy C:\\GL\\SFMLx64\\include > in Additional Include Directories wizard click first icon > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories: In the \"SFMLx64 Property Pages\" wizard, double click Linker > click General > Additional Library Directories > down arrow at the end of the field > click <Edit... >. Copy C:\\GL\\SFMLx64\\lib and paste as before. Click OK in Additional Library Directories wizard. 4. Additional Dependencies: In \"Linker\" drop down menu, click Input > Additional Dependencies > down arrow at the end of the field > click <Edit...>. Copy the following .lib file names and paste in \"Additional Dependencies\" wizard's upper-most text box: opengl32.lib; flac.lib; freetype.lib; ogg.lib; openal32.lib; sfml-audio.lib; sfml-graphics.lib; sfml-window.lib; sfml-system.lib; sfml-main.lib; sfml-network.lib; vorbis.lib; vorbisenc.lib; vorbisfile.lib In \"Additional Dependencies\" wizard click OK . Click Apply and then OK in \"Project's Property Pages\" wizard."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\SFMLx64\\bin > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"SFMLx64-0.sln\", the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following address and select Open Link in New Window https://www.sfml-dev.org/tutorials/2.5/start-vc.php scroll down the page and copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear: one black (the console) and one small with a green circle on a black background. Good job."
+    },
+    {
+      "title": "Correct any errors.",
+      "content": "Correct any errors. Files are missing. Copy C:\\GLP\\SFMLx64-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 7, step 4, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folder SFMLx64 exists in C:\\GL. If it exists, go to previous Part, step 1, Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, Additional Library Directories , and follow instructions. Also to Additional Dependencies . Thrown wizard about System or file .dll, go to previous Part step 2 and follow instructions. For other errors, if you can not correct them, close Visual Studio > delete project folder SFMLx64 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 7 Installing SFMLx64 in the Project . Good job."
+    },
+    {
+      "title": "Tip:",
+      "content": "Tip: Even if in Property Pages main settings it is Platform: x64 , click Configuration manager... and in Active solution platform: select x64."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu. While \"SFMLx64-0\" is open , click Project > Export Template... . In Choose Template Type menu, leave Project template checked. Click Next... . In Select Template Options , Template name: should be SFMLx64-0 > click Finish . The template is created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create Project.",
+      "content": "Create Project. In Visual Studio main menu click File > New > Project... . In Create a new project wizard select SFMLx64-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, Project name should be SFMLx64-01 . Location should be C:\\GLP\\. If it's not, delete path, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked. Click Create , and wait till project be created. In Visual Studio GUI's main menu, select x64 . Hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job."
+    },
+    {
+      "title": "TIP:",
+      "content": "TIP: In every project you create with this template, remember, in Visual Studio GUI main menu, select x64 (next to Debug)."
+    },
+    {
+      "title": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide.",
+      "content": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide. It is also important that binaries you get target x64 platform."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download CMake.",
+      "content": "Download CMake. Right-click on the following address and select Open Link in New Window https://cmake.org/download/ . Scroll down the page and find \"Latest Release (3.31.6)\", (or latest). In second \"Platform\" list (Binary distributions:), find (see image below) \"Windows x64 ZIP\" and click the beside entry cmake-3.31.6-windows-x86_64.zip (or latest)."
+    },
+    {
+      "title": "Copy and unzip the zip folder.",
+      "content": "Copy and unzip the zip folder. Open folder C:\\GL In the new File Explorer, click unzip folder cmake-3.31.6-windows-x86_64 > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy CMake > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the \"CMake\" window. Double click folder \"CMake\" > double click folder bin > inside you should see CMake's logo next to file name cmake-gui > double click this file. Now on your screen you have CMake GUI > go back to GL folder. Each time you need CMake, navigate to C:\\ > GL > double click folder CMake > double click \"bin\" > double click file cmake-gui (the one with CMake's logo)."
+    },
+    {
+      "title": "Download source code.",
+      "content": "Download source code. Right-click on the following address and select Open Link in New Window https://www.sfml-dev.org/download/sfml/2.5.1/ . Scroll down to the bottom (see above image). In All select Source code and click Download 22.2 MB ."
+    },
+    {
+      "title": "Copy and unzip folder.",
+      "content": "Copy and unzip folder. Open folder C:\\ GL. In the new File Explorer, click folder \"SFML-2.5.1\" (or the most recent version) and drag into C:\\GL. Copy SFMLsrc and once copying and pasting of the folder is complete, click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in folder GL you have folder \"SFMLsrc\". Close downloading window > close SFML window."
+    },
+    {
+      "title": "Build SFML by CMake and Visual Studio.",
+      "content": "Build SFML by CMake and Visual Studio. Go to CMake GUI. See above image. In text field next to Where is the source code (first text field), type (or copy and paste, attention: do not copy any space) C:/GL/SFMLsrc In text field next to Where to build the binaries (second text field), type (or copy and paste, attention: do not copy any space) C:/GL/SFMLsrc/build Configure and generate. In CMake GUI, click Configure > in wizard Create Directory click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". If, instead, wizard \"Error\" is thrown, click OK > click \"File\" > click \"Delete Cache\" > in thrown wizard \"Delete Cache\", click Yes ."
+    },
+    {
+      "title": "Build your solution.",
+      "content": "Build your solution. Copy C:\\GL\\SFMLsrc\\build and paste in File Explorer Address bar > hit ↵ Enter > double click \"SFML.sln\", or \"SFML\", or \"ALL_BUILD.vcxproj\". An instance of Visual Studio appears. In the main menu, click \"Build\" > click \"Build Solution\". Wait till you read the last line in \"Output\" window: ========== Build: 8 succeeded, 0 failed, 0 up-to-date, 1 skipped ========== TIP: Number of \"succeeded\" changes in SFML versions. Today(09-Nov-2022) is 8. Close this instance of Visual Studio > close CMake GUI."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SFMLsrc-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" Copy Main > in the \"Add New Item\" wizard delete \"FileName\" > paste > click Add . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure project's Properties.",
+      "content": "Configure project's Properties . In Solution Explorer wizard, right click Project's name that is SFMLsrc-0 > select Properties (the last one). In \"SFMLsrc-0 Property Pages\" wizard, . 1. main menu. In Platform entry select x64 > click Configuration Manager... . In Active solution platform: select x64 . In Platform entry, x64 is automatically selected. Click Close . 2. Additional Include Directories . Click C/C++ > General > In beside menu select the first one, Additional Include Directories > click the down arrow at the end of the field > click <Edit...>. Copy C:\\GL\\SFMLsrc\\include > in \"Additional Include Directories\" wizard, click the first icon > paste. In \"Additional Include Directories\" wizard, click OK . 3. Additional Library Directories . Double click Linker > click General > Additional Library Directories > click the down arrow at the end of the field > click <Edit...>. Copy C:\\GL\\SFMLsrc\\build\\lib\\Debug > in \"Additional Library Directories\" wizard, click the first icon > paste. In \"Additional Library Directories\" wizard, click OK . 4. Additional Dependencies . In Linker drop-down menu select Input > in beside menu select the first one, Additional Dependencies > click the down arrow at the end of the field > click <Edit...> Copy opengl32.lib; sfml-audio-d.lib; sfml-graphics-d.lib; sfml-main-d.lib; sfml-network-d.lib; sfml-system-d.lib; sfml-window-d.lib and paste in Additional Dependencies wizard's upper-most text box. In Additional Dependencies wizard click OK . In \"SFMLsrc Property Pages\" wizard, click Apply and then OK ."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\SFMLsrc\\build\\lib\\Debug > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click SFMLsrc-0.sln, the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following address and select Open Link in New Window https://www.sfml-dev.org/tutorials/2.5/start-vc.php scroll down the page and copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear: one black (the console) and one small with a green circle on a black background."
+    },
+    {
+      "title": "Correct any errors.",
+      "content": "Correct any errors. Files are missing. Copy C:\\GLP\\SFMLsrc-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 12, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folder SFMLsrc exists in C:\\GL. If it exists, go to previous Part step 1, sub step 2. Additional Include Directories . file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories . Also to sub step 4. Additional Dependencies . Thrown wizard about System or file .dll, go to previous Part, steps 2 and 3. For other errors, if you can not correct them, close Visual Studio > delete project folder SFMLsrc-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 12. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu. While \"SFMLsrc-0\" is open , click Project > Export Template... . In Choose Template Type menu, leave Project template checked. Click Next... . In Select Template Options , Template name: should be SFMLsrc-0 > click Finish . The template is created. Delete thrown window with template's path."
+    },
+    {
+      "title": "Create Project.",
+      "content": "Create Project. Go to Visual Studio main menu and click File > New > Project... . In Create a new project wizard select SFMLsrc-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, Project name should be SFMLsrc-01 . Location should be C:\\GLP\\. If it's not, delete path, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked. Click Create , and wait till project be created. In Visual Studio main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job."
+    },
+    {
+      "title": "TIP:",
+      "content": "TIP: Remember, in every project you create with this template, select x64 (next to Debug) in Visual Studio's GUI."
+    },
+    {
+      "title": "In this tutorial you learn 3 was to set up SFML in Project with Visual Studio.",
+      "content": "In this tutorial you learn 3 was to set up SFML in Project with Visual Studio. Set up binaries x86 (32 bits). It's the easiest. You should start learning set up from here. Set up binaries x64 (64 bits). It targets x64 platform. Choose it only when you have specific reason for doing so. Compile SFML source, and set up in project. Targets x64 too.The most difficult. The best though."
+    }
+  ]
+}

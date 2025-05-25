@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Unroot-Android",
+  "title": "How to Unroot Android",
+  "steps": [
+    {
+      "title": "Open a root file manager on your device.",
+      "content": "Open a root file manager on your device. There are lots of different file managers available on the Play Store that you can use to browse your Android device's root files. Popular file managers include Root Browser, ES File Explorer, and X-Plore File Manager. [1] X Research source"
+    },
+    {
+      "title": "Find and press /system/bin/.",
+      "content": "Find and press /system/bin/ ."
+    },
+    {
+      "title": "Find and delete the file named su.",
+      "content": "Find and delete the file named su . You can press and hold on the file and then select \"Delete\" from the menu that appears. There may not be a su file here depending on how you rooted your device."
+    },
+    {
+      "title": "Press /system/xbin/.",
+      "content": "Press /system/xbin/ . [2] X Research source"
+    },
+    {
+      "title": "Delete the su file here as well.",
+      "content": "Delete the su file here as well."
+    },
+    {
+      "title": "Find and press /system/app/.",
+      "content": "Find and press /system/app/ ."
+    },
+    {
+      "title": "Delete the Superuser.apk file.",
+      "content": "Delete the Superuser.apk file. [3] X Research source"
+    },
+    {
+      "title": "Reboot your device.",
+      "content": "Reboot your device."
+    },
+    {
+      "title": "Launch the SuperSU app.",
+      "content": "Launch the SuperSU app. If you haven't installed a custom recovery image, you should be able to use the SuperSU app on your device to unroot."
+    },
+    {
+      "title": "Tap the \"Settings\" tab.",
+      "content": "Tap the \"Settings\" tab."
+    },
+    {
+      "title": "Scroll down to the \"Cleanup\" section.",
+      "content": "Scroll down to the \"Cleanup\" section."
+    },
+    {
+      "title": "Tap \"Full unroot\".",
+      "content": "Tap \"Full unroot\". [5] X Research source"
+    },
+    {
+      "title": "Read the confirmation prompt and then tap \"Continue\".",
+      "content": "Read the confirmation prompt and then tap \"Continue\"."
+    },
+    {
+      "title": "Reboot your device once SuperSU closes.",
+      "content": "Reboot your device once SuperSU closes. For most devices, this will perform the unroot. Some custom firmware images will automatically re-root the device when booting, rendering this process ineffective. [6] X Research source"
+    },
+    {
+      "title": "Use an Unroot app if this method fails.",
+      "content": "Use an Unroot app if this method fails. The Universal unroot app, available on the Play Store, can unroot a lot of different Android devices. It costs $0.99, but can be very helpful. This app will not work for Samsung devices (see the next section)."
+    },
+    {
+      "title": "Download the stock firmware for your device.",
+      "content": "Download the stock firmware for your device. In order to unroot your Galaxy device, you'll need the stock firmware for your device and carrier. There are various places that you can find this firmware online. Use a search engine and search for your Galaxy model and carrier, along with the phrase \"stock firmware\". Unzip the firmware after downloading it to find the .tar.md5 file."
+    },
+    {
+      "title": "Download and install Odin3.",
+      "content": "Download and install Odin3. This is an Android developer tool that will allow you to push your stock firmware from your computer to your Android device. You can find the installation files at Odin's XDA thread here ."
+    },
+    {
+      "title": "Download and install the Samsung drivers.",
+      "content": "Download and install the Samsung drivers. If you haven't connected your device to your computer before, you'll need to install the Samsung USB drivers. The quickest way to do this is to download the drivers from Samsung here . Download the ZIP file, double-click it to open it, and then extract the installer. Run the installer to install the drivers."
+    },
+    {
+      "title": "Power your device down.",
+      "content": "Power your device down. You'll need to reboot it in a special mode."
+    },
+    {
+      "title": "Hold the Volume Down, Home, and Power buttons.",
+      "content": "Hold the Volume Down, Home, and Power buttons. This will boot the device in Download mode. Connect it to your computer via USB."
+    },
+    {
+      "title": "Launch Odin3.",
+      "content": "Launch Odin3. You should see a green box on the left side of the \"ID:COM\" section. If you don't see this, your Samsung USB drivers are not properly installed. [7] X Research source"
+    },
+    {
+      "title": "Click the .",
+      "content": "Click the . PDA button in Odin3. Browse for the .tar.md5 stock firmware file that you downloaded."
+    },
+    {
+      "title": "Check the \"AP or PDA\" and \"Auto Reboot\" boxes.",
+      "content": "Check the \"AP or PDA\" and \"Auto Reboot\" boxes. Make sure all of the other boxes are unchecked."
+    },
+    {
+      "title": "Click the .",
+      "content": "Click the . Start button to begin the unroot process. This may take about 5-10 minutes. When the process is complete, you'll see \"PASS!\" in the top box in Odin3. Your Galaxy should boot into the normal TouchWiz operating system."
+    },
+    {
+      "title": "Perform a factory reset to fix a boot loop.",
+      "content": "Perform a factory reset to fix a boot loop. If your phone gets stuck in an infinite boot loop after unlocking, you'll need to perform a factory reset. This will delete everything on the device. [8] X Research source Press and hold the Power button to shut off the device. Press and hold Volume Up, Home, and Power to boot into the Recovery menu. Use the Volume buttons to select \"wipe data/factory reset\" and press the Power button to select it. Select \"wipe data partition\" and then \"reboot system now\". Your Galaxy will reboot and wipe all of the data, returning it to factory settings."
+    }
+  ]
+}

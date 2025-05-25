@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/See-Who-Is-Connected-to-Your-Wireless-Network",
+  "title": "How to See Who Is Connected to Your Wireless Network",
+  "steps": [
+    {
+      "title": "Find your router's IP address.",
+      "content": "Find your router's IP address. You'll need your router's IP address to access your router's user interface. You may be able to find the default IP address in your router's manual or documentation, or it could be printed on a sticker on the router. You can also use these steps: Windows: Press the Windows key , type cmd , and click Command Prompt . Type ipconfig /all , press Enter , and find the router's IP address next to \"Default Gateway.\" Mac: Click the Apple menu and go to System Settings > Network > Wi-Fi . Click Details to find the IP address next to \"Router.\" [1] X Research source Chromebook: Click the time in the lower-right corner, click the gear, and go to Network > Wi-Fi > (your network's name). Your router's IP address is below \"Gateway.\" Linux: In a terminal window, type route -n and press Enter . Your router's IP address is below \"Gateway.\""
+    },
+    {
+      "title": "Type the IP address of your router in your browser's address bar.",
+      "content": "Type the IP address of your router in your browser's address bar. You can use a web browser to log in to the web interface for your router . [2] X Research source Common router IP addresses include 192.168.1.1 , and 10.0.0.1 ."
+    },
+    {
+      "title": "Enter your username and password.",
+      "content": "Enter your username and password. [3] X Research source If you haven't changed the password , you'll usually find the login information on the router itself. You can also try a common username and password combination like \"admin\" and \"password,\" or simply leaving one or both fields blank. You can also find the default login information by searching for your router model online and the words \"admin password.\" [4] X Research source"
+    },
+    {
+      "title": "Look for a list of devices.",
+      "content": "Look for a list of devices. You can find a list of connected devices in the web interface, but the location differs depending on the model of your router. It may be under Wi-Fi network , \"Connected devices,\" \"Attached devices,\" \"DHCP Clients\" or similar. This will show the device name and MAC address for each device connected. If you notice any devices that don't belong, change your Wi-Fi password . Be sure to use WPA2-PSK encryption if available. This will force all connected devices to re-enter the new password to reconnect. [5] X Research source If you're not sure what a listed device is, check the device name on all the devices connected to your wireless network to see if they all match. You can also find the IP address on all your devices and make sure they match."
+    },
+    {
+      "title": "Open your Command Prompt or Terminal.",
+      "content": "Open your Command Prompt or Terminal. Windows: Press the Windows key , type cmd , and click Command Prompt . Mac: Click the magnifying glass icon in the upper-right corner, type terminal in the search bar, and then click the terminal. Chromebook: You will need to install the Linux development environment to access the terminal. To do so, click the time in the lower-right corner, click the gear icon, click Advanced , and click Turn On next to \"Linux development environment. Follow the on-screen instructions, then the terminal will open. Linux: Press Ctrl + Alt + T ."
+    },
+    {
+      "title": "Type arp -a into the window and press ↵ Enter or ⏎ Return.",
+      "content": "Type arp -a into the window and press ↵ Enter or ⏎ Return . This will display a list of devices connected to your wireless network. If this command does not work in Linux, type sudo apt install net-tools and press Enter to install Net Tools."
+    },
+    {
+      "title": "Look at the IP addresses.",
+      "content": "Look at the IP addresses. The IP addresses that start with the same numbers as your router's IP address (i.e., 192.168) are connected to your router. This shows the IP address and MAC address of each connected device. Every device that connects to the internet has a unique MAC address. Generally, you can find the MAC address for a device in the Settings menu under the Network or Internet Settings, or the about device info. You can find the MAC address for Windows, Mac, iPhone , Samsung Galaxy ."
+    },
+    {
+      "title": "Go to https://www.nirsoft.net/utils/wireless_network_watcher.html in a web browser.",
+      "content": "Go to https://www.nirsoft.net/utils/wireless_network_watcher.html in a web browser. You can use any web browser. [6] X Research source Other apps you can use include GlassWire, and Fing, which is available on desktop computer's and mobile devices."
+    },
+    {
+      "title": "Scroll down and click Download Wireless Network Watcher with full install.",
+      "content": "Scroll down and click Download Wireless Network Watcher with full install . It's the second link below \"Feedback\" on the page. [7] X Research source"
+    },
+    {
+      "title": "Click the install file and follow the instructions.",
+      "content": "Click the install file and follow the instructions. By default, your downloaded files can be found in your Downloads folder . Double-click the file that says \"wnetwatcher_setup.exe, and follow the on-screen instructions to finish the installation. Wireless Network Watcher will open when it finishes installing. [8] X Research source"
+    },
+    {
+      "title": "Open Wireless Network Watcher.",
+      "content": "Open Wireless Network Watcher. It has an icon that resembles an eyeball over a wireless router. To locate it, click the Windows Start menu and type Wiress Network Watcher . Wireless Network Watcher will automatically scan your network and display a list of connected devices after launching. [9] X Research source Use the \"Device Name\" column to see the name of each device connected to the network and the router it's connected to."
+    },
+    {
+      "title": "Click the 'Play' triangle icon.",
+      "content": "Click the 'Play' triangle icon. It's in the upper-left corner of Wireless Network Watcher. This rescans your network and displays a list of connected devices."
+    }
+  ]
+}

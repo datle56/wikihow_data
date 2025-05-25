@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Secure-Boot-Can-Be-Enabled-when-System-in-User-Mode",
+  "title": "Why Secure Boot Can't Be Enabled on a PC or Laptop & How to Fix it",
+  "steps": [
+    {
+      "title": "Secure Boot is a security feature to protect your computer during start-up.",
+      "content": "Secure Boot is a security feature to protect your computer during start-up. It prevents malicious software from installing when your computer is vulnerable. This error can appear in multiple forms including: Secure Boot can be enabled when Platform is in User Mode. Repeat operation after enrolling Platform Key (PM). System in Setup Mode! Secure Boot can be enabled when system is in User Mode. Repeat operation after enrolling Platform Key (PK)."
+    },
+    {
+      "title": "You can see this message for multiple reasons, including:",
+      "content": "You can see this message for multiple reasons, including: User Mode is not enabled. Unsupported Firmware. Corrupted Boot Configuration Data. Hardware issues."
+    },
+    {
+      "title": "Enter BIOS.",
+      "content": "Enter BIOS. As soon as you see the manufacturer’s logo, press the key indicated on the screen to enter Setup or BIOS. The key you'll need to use varies by manufacturer and model. Keep pressing it over and over again until you enter the BIOS. Here's a list of some of the most common setup keys by manufacturer: Acer : F2 or Del ASUS : F2 or Del Dell : F2 or F12 HP : ESC or F10 Lenovo Desktops : F1 or F2 (hold down the Fn key if your F keys are blue or orange) Lenovo IdeaPad : F9 or Fn + F9 Lenovo ThinkPad, ThinkCentre, & ThinkStation : F1 or Enter MSI : Del for both MSI motherboards and PCs Microsoft Surface Tablets : Press and hold the volume-up button. Origin PC : F2 Samsung : F2 Sony : F1, F2, or F3 Toshiba : F2 If you don’t hit the key in time, Windows will load, and you will have to reboot and try again."
+    },
+    {
+      "title": "Select the Advanced tab.",
+      "content": "Select the Advanced tab. If your mouse doesn't work, you can use the arrow keys on your keyboard to navigate and press Enter to make a selection. Some motherboards, like the MSI motherboard, have a directory instead, like Settings\\Advanced\\Windows OS\\Configuration\\Secure Boot ."
+    },
+    {
+      "title": "Change the \"Windows OS Configuration\" mode to Custom.",
+      "content": "Change the \"Windows OS Configuration\" mode to Custom . You might see this option next to \"Secure Boot Mode.\""
+    },
+    {
+      "title": "Select Enroll all Factory Default keys.",
+      "content": "Select Enroll all Factory Default keys . This will use the factory default keys. [1] X Research source Select Yes to continue when you're asked if you're sure that you want to use factory default keys. Select No when prompted if you want to reset without saving."
+    },
+    {
+      "title": "Enable Secure Boot.",
+      "content": "Enable Secure Boot. Select Secure Boot and click Enabled ."
+    },
+    {
+      "title": "Change the \"Windows OS Configuration\" mode to Standard.",
+      "content": "Change the \"Windows OS Configuration\" mode to Standard . You might see this option next to \"Secure Boot Mode.\" Click Yes to use default keys. Click No' to the prompt to reset without saving."
+    },
+    {
+      "title": "Save configuration and restart.",
+      "content": "Save configuration and restart. Click the \"x\" to get out of BIOS, and you'll be asked to save and reset to apply your changes. Click Yes to continue. [2] X Research source If you are using an ASRock Phantom Gaming UEFI, go to Settings > Security > Secure Boot > Key Management > Platform Key > Generate , then go back to the BIOS and use your default keys to enable Secure Boot. [3] X Research source"
+    },
+    {
+      "title": "Check whether the system is already using MBR or GPT.",
+      "content": "Check whether the system is already using MBR or GPT. UEFI systems are more secure than the legacy BIOS, and old BIOS systems are triggering the \"Secure Boot can be enabled when system in user mode\" message. This is useful if the Secure Boot option in BIOS is greyed out. Here's how to check your current setup: Open Disk Management. Right-click the drive with the Windows installation and select Properties . Click the Volumes tab. Look next to \"Partition style\": If you see \"GUID Partition Table (GPT)\", nothing needs to be converted. If you see \"Master Boot Record (MBR)\", you need to convert the files. Click Cancel to close the \"Properties\" window. If you are converting files, make sure the website for your device manufacturer says that your hardware supports UEFI."
+    },
+    {
+      "title": "Convert the partition style from MBR to GPT.",
+      "content": "Convert the partition style from MBR to GPT. It's best to do this offline to avoid any potential problems and here's how you can do it: Open Settings and go to Update & Security > Recovery > Restart now (Under Advanced Startup) . Select Troubleshoot > Advanced options > Command Prompt . Choose your account and sign in, if prompted. If needed, navigate to the System32 folder. Enter mbr2gpt /validate . Press Enter after the command. Enter mbr2gpt /convert . Press Enter after the command to start converting your partition style. Command Prompt will tell you to restart your computer to finalize the process. Close the Command Prompt window by clicking the \"x\" in the top right corner, then turn off your computer. You won't be able to boot your computer completely until you change the motherboard's settings."
+    },
+    {
+      "title": "Change the firmware mode from BIOS to UEFI.",
+      "content": "Change the firmware mode from BIOS to UEFI. Turn on your PC and press the BIOS key (F1, F2, F3, F10, Del, or Esc). Navigate to the Boot menu. Enable the UEFI option. You can also enable Secure Boot now if it was previously greyed out. Close the menu and restart your PC."
+    },
+    {
+      "title": "Double-check your changes.",
+      "content": "Double-check your changes. Once your computer restarts, open Device Manager again to make sure your changes applied. Right-click the drive where Windows is installed and select Properties . Look next to \"Partition style\" to make sure it says \"GUID Partition Table (GPT).\" To make sure the firmware has changed from BIOS to UEFI and that Secure Boot is enabled, do the following: Open System Information. Select System Summary on the left. Check that \"BIOS Mode\" says \"UEFI.\" Check that \"Secure Boot State\" says \"On.\" [4] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Raspberry-Pi-Web-Server",
+  "title": "How to Make a Raspberry Pi Web Server",
+  "steps": [
+    {
+      "title": "Obtain a copy of the Raspberry Pi OS (Operating System) from the link in the sources section.",
+      "content": "Obtain a copy of the Raspberry Pi OS (Operating System) from the link in the sources section. There are a few different distributions available, but for this article, we will be using the \"Raspbian\" version."
+    },
+    {
+      "title": "Extract the image to the SD card.",
+      "content": "Extract the image to the SD card. To do this, we need a tool called the Win32 Disc Imager. A link for this is also available in the sources section. Now open the tool, navigate to the drive letter that your SD card is in, select the location of the Raspberry Pi OS image, and select burn. Wait for it to finish."
+    },
+    {
+      "title": "Open the SD card in Windows Explorer.",
+      "content": "Open the SD card in Windows Explorer. Just create a file with the name ssh . This is a security update introduced since Raspbian Jessie."
+    },
+    {
+      "title": "Eject the SD card, and place it into your Raspberry Pi, then plug in the rest of the cords, being sure to plug in the mini USB last.",
+      "content": "Eject the SD card, and place it into your Raspberry Pi, then plug in the rest of the cords, being sure to plug in the mini USB last."
+    },
+    {
+      "title": "Log in once the operating system loads up.",
+      "content": "Log in once the operating system loads up. The default username is \"pi\", and the default password is \"raspberry\". Newer versions of Raspbian have auto-login enabled by default."
+    },
+    {
+      "title": "Start by changing the password.",
+      "content": "Start by changing the password. From the command line type: sudo passwd pi."
+    },
+    {
+      "title": "You can also change your password by typing sudo raspi-config and selecting Change User Password or going to the System Configuration.",
+      "content": "You can also change your password by typing sudo raspi-config and selecting Change User Password or going to the System Configuration."
+    },
+    {
+      "title": "Enter your new password and then confirm it.",
+      "content": "Enter your new password and then confirm it. Please note, the cursor will not move when typing passwords but you are entering text."
+    },
+    {
+      "title": "Get started with updates.",
+      "content": "Get started with updates. Because you are running a fresh version of Debian, you will need to do some housecleaning, updating, and installing. First, we are going to update the clock, update our sources, then upgrade any pre-installed packages. Type the following at the command line (press return/enter after each line): sudo dpkg-reconfigure tzdata sudo apt-get update sudo apt-get upgrade"
+    },
+    {
+      "title": "Set the date and time.",
+      "content": "Set the date and time. From the command line type (replace parts as necessary): sudo date --set = \"30 December 2013 10:00:00\""
+    },
+    {
+      "title": "Install Hexxeh's RPI update tool to help keep Raspberry Pi up to date.",
+      "content": "Install Hexxeh's RPI update tool to help keep Raspberry Pi up to date. To do this, run the following commands (press return/enter after each line): sudo apt-get install ca-certificates sudo apt-get install git-core sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update sudo rpi-update sudo shutdown -r now"
+    },
+    {
+      "title": "Set up SSH so that we can do everything else from a different computer.",
+      "content": "Set up SSH so that we can do everything else from a different computer. To do this, first note the IP address of the Raspberry Pi hostname -I You should see something like this: 192 .168.1.17 What appears is the IP address of your Raspberry Pi."
+    },
+    {
+      "title": "Enable SSH and reboot (press return/enter after each line):",
+      "content": "Enable SSH and reboot (press return/enter after each line): After noting the inet addr use: sudo /etc/init.d/ssh start for every time you boot up the pi. Hint: If an error occurs, use the command below, and then the command up above. sudo apt-get install ssh Then, restart your pi: sudo shutdown -r now"
+    },
+    {
+      "title": "Unplug the cords for your USB keyboard and your monitor.",
+      "content": "Unplug the cords for your USB keyboard and your monitor. These are no longer necessary, as everything else will be done over SSH."
+    },
+    {
+      "title": "Download an SSH client like PuTTy (www.putty.org) which can be downloaded for free from Google and connect to the IP address of your Raspberry Pi logging in with the username \"pi\" and the password you set earlier.",
+      "content": "Download an SSH client like PuTTy (www.putty.org) which can be downloaded for free from Google and connect to the IP address of your Raspberry Pi logging in with the username \"pi\" and the password you set earlier."
+    },
+    {
+      "title": "Install Apache and PHP.",
+      "content": "Install Apache and PHP. To do this, execute the following commands: sudo apt-get install apache2 php5 libapache2-mod-php5"
+    },
+    {
+      "title": "Restart the service:",
+      "content": "Restart the service: sudo service apache2 restart OR sudo /etc/init.d/apache2 restart"
+    },
+    {
+      "title": "Enter the I.P.",
+      "content": "Enter the I.P. address of your Raspberry Pi into your web browser. You should see a simple page that says \"It Works!\""
+    },
+    {
+      "title": "Install MySQL.",
+      "content": "Install MySQL. To do this, install a few packages with the following command: sudo apt-get install mysql-server mysql-client php5-mysql"
+    },
+    {
+      "title": "Install FTP to allow transferring files to and from your Raspberry Pi.",
+      "content": "Install FTP to allow transferring files to and from your Raspberry Pi."
+    },
+    {
+      "title": "Take ownership of the web root:",
+      "content": "Take ownership of the web root: sudo chown -R pi /var/www"
+    },
+    {
+      "title": "Install vsftpd:",
+      "content": "Install vsftpd: sudo apt-get install vsftpd"
+    },
+    {
+      "title": "Edit your vsftpd.conf file:",
+      "content": "Edit your vsftpd.conf file: sudo nano /etc/vsftpd.conf"
+    },
+    {
+      "title": "Make the following changes:",
+      "content": "Make the following changes: anonymous_enable=YES to anonymous_enable=NO Uncomment local_enable=YES and write_enable=YES by deleting the # symbol in front of each line then go to the bottom of the file and add force_dot_files=YES ."
+    },
+    {
+      "title": "Save and exit the file by pressing CTRL-O, CTRL-X.",
+      "content": "Save and exit the file by pressing CTRL-O, CTRL-X."
+    },
+    {
+      "title": "Restart vsftpd:",
+      "content": "Restart vsftpd: sudo service vsftpd restart"
+    },
+    {
+      "title": "Create a shortcut from the Pi user's home folder to /var/www:",
+      "content": "Create a shortcut from the Pi user's home folder to /var/www: ln -s /var/www/ ~/www"
+    },
+    {
+      "title": "You can now FTP using the Pi user and access the /var/www folder via a shortcut that should appear on login.",
+      "content": "You can now FTP using the Pi user and access the /var/www folder via a shortcut that should appear on login."
+    }
+  ]
+}

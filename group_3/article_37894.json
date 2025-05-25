@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Run-a-Program-on-Command-Prompt",
+  "title": "How to Run a Program at the Windows Command Prompt: 2 Ways",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. You can launch the command prompt by pressing the Windows key on your keyboard, typing cmd , and clicking Command Prompt in the search results. This method will allow you to start any program on your PC that's in the C:\\Windows\\System32 folder, which are many of the built-in applications like File Explorer, Calculator, and Notepad . To run programs from other folders at the prompt, see this method ."
+    },
+    {
+      "title": "Type start into at the prompt and press the space bar.",
+      "content": "Type start into at the prompt and press the space bar. [1] X Research source"
+    },
+    {
+      "title": "Type the name of the program you want to run.",
+      "content": "Type the name of the program you want to run. This must be the file's system name, not its shortcut name. For example, Command Prompt's system name is cmd . Common programs you can launch from Command Prompt include: File Explorer: explorer Calculator: calc Notepad: notepad Character Map: charmap Paint: mspaint Command Prompt (new window): cmd Task Manager : taskmgr"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This launches the program from the Command Prompt in a new window. If you want to use Notepad or Paint to open a file from the prompt, just type the full path to the file after the program name. For example, start notepad C:\\Users\\Me\\Documents\\file.txt or start mspaint C:\\Users\\me\\Pictures\\picture.png ."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. You can open the prompt by pressing the Windows key , typing cmd , and clicking Command Prompt in the search results. Use this method to start any program on your PC. Most programs end with the .EXE file extension, but you can also run other program types like .bin, .bat, .msi, and .cab, as well as Visual Basic formats like .vbs, .vb, and .vbscript. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the program you want to run requires administrator privileges, launch the command prompt as an administrator instead. Instead of clicking Command Prompt in the search results, right-click Command Prompt and select Run as administrator . [3] X Research source"
+    },
+    {
+      "title": "Open File Explorer (optional).",
+      "content": "Open File Explorer (optional). If you don't know the full path to the program you want to run from the Command Prompt, you can easily find it in File Explorer. To open File Explorer, press Windows key + E , or right-click the Windows Start menu and select File Explorer . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you already know the path to the program, skip to Step 5 ."
+    },
+    {
+      "title": "Go to the folder the program is in.",
+      "content": "Go to the folder the program is in. Open the folder that has the program you want to run by clicking on any folders needed to get to it. When the icon for the program you want to open in Command Prompt displays in the right panel of File Explorer, you're in the correct folder. You can use this method to start a program from any location, not just the folders in your system path . For example, if you wrote and compiled a C program and saved it to your Documents folder, just open your Documents folder to find the program."
+    },
+    {
+      "title": "Copy the path to the open folder.",
+      "content": "Copy the path to the open folder. Doing so is super easy: Click the address bar at the top of the window. Press Ctrl + C to copy."
+    },
+    {
+      "title": "In the Command Prompt window, type cd and press the spacebar.",
+      "content": "In the Command Prompt window, type cd and press the spacebar. You'll use the \"cd\" command, which stands for Change Directories , to enter the folder that contains the program you want to run from the Command Prompt. [5] X Research source"
+    },
+    {
+      "title": "Type or paste the full path to the folder that contains your program.",
+      "content": "Type or paste the full path to the folder that contains your program. If you copied the path from File Explorer earlier, press Ctrl + V to paste the copied path. Otherwise, type the full path now. For example, if your program is in C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat, your command will be cd C:\\Program Files\\Adobe\\Acrobat DC\\Acrobat ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This takes you to the correct folder, which you'll now see at the beginning of the prompt."
+    },
+    {
+      "title": "Type start and press the space bar.",
+      "content": "Type start and press the space bar. Now that you're in the right folder, starting the program is easy. [6] X Research source"
+    },
+    {
+      "title": "Type the name of the program you want to run.",
+      "content": "Type the name of the program you want to run. For example, to start the program called acrobat.exe in the current folder, you'd now have start acrobat.exe at the prompt. [7] X Research source If there are spaces in the program's name, surround the file name with double quotation marks. For example, \"system shock.exe\" instead of system shock.exe ). If you need to start the program with a specific switch, type a space after the program name, then type the switch. For example, to start Microsoft Word in Safe Mode, you'll type start winword.exe /safe . [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press ↵ Enter to run the program.",
+      "content": "Press ↵ Enter to run the program. The program will now open in its own window. [9] X Research source If you want the program you're running to open a specific file at the prompt, you can usually just type the full path to the file name after the program name. For example, to open a PDF in Acrobat from the prompt, you'd use start acrobat.exe C:\\Users\\Me\\Documents\\file.pdf . If the file name has spaces (e.g., My File.pdf), surround the entire path with double quotation marks. For example, start acrobat.exe \"C:\\Users\\Me\\Documents\\My File.pdf\" ."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Use-Cygwin",
+  "title": "Using Cygwin on Windows: Installing, Terminal Commands, & More",
+  "steps": [
+    {
+      "title": "Download and run the Cygwin installer.",
+      "content": "Download and run the Cygwin installer. Go to https://www.cygwin.com and click Install Cygwin in the left column. Click the setup-x86_64.exe link to download the installer to your PC. Once downloaded, double-click the downloaded file and click Next to start the setup wizard. Choose \"Install from Internet\" and click Next to run the Cygwin installer."
+    },
+    {
+      "title": "Set your installation directory and preferences.",
+      "content": "Set your installation directory and preferences. For most users, leaving the default installation directory (c:\\cygwin\\) and the other default settings is fine. You can also choose to install for All Users here or Just Me . Click Next to continue."
+    },
+    {
+      "title": "Choose a temporary directory and click Next.",
+      "content": "Choose a temporary directory and click Next . This is where Cygwin will store the packages you download. Any temporary directory will work. Like Linux, you can install software in Cygwin from packages. Instead of using a package manager like Apt or Yum , you'll use the graphical package installer in the setup wizard."
+    },
+    {
+      "title": "Select \"Direct Connection\" and click Next.",
+      "content": "Select \"Direct Connection\" and click Next . Alternatively, if you use a proxy server to access the internet, enter that information now."
+    },
+    {
+      "title": "Select a mirror and click Next.",
+      "content": "Select a mirror and click Next . You will now be presented with a list of Cygwin mirrors. You can choose any mirror, as they all contain the same software. If the installation takes too long, you can always return to select another mirror. [1] X Research source"
+    },
+    {
+      "title": "Choose your software packages and click Next.",
+      "content": "Choose your software packages and click Next . Only the software in the \"Base\" category is installed by default. [2] X Research source This includes common Linux tools like the bash shell, coreutils, gzip, tar, and necessary Cygwin libraries. To install other software, such as Python or Ruby, you'll need to select \"Install\" from its corresponding menu. You can rerun the installer anytime to install and update packages."
+    },
+    {
+      "title": "Click Next to install Cygwin and your selected software.",
+      "content": "Click Next to install Cygwin and your selected software. This installs Cygwin and all the software you've selected. This process can take a while, depending on what you're installing. Once the installation is complete, you'll be asked if you want to add Cygwin's icons to your desktop and the Start menu. It's usually a good idea to at least add Cygwin to the Start menu so you can find it easily."
+    },
+    {
+      "title": "Open the Cygwin terminal.",
+      "content": "Open the Cygwin terminal. To get to the terminal, just click the Cygwin64 Terminal in the Start menu. This opens a basic bash shell and prompt, just like in Linux."
+    },
+    {
+      "title": "Find a file.",
+      "content": "Find a file. The search and comparison tools are some of the most basic commands you can use in Cygwin. To find a file , you can input the following command: $ find . -name EXAMPLE . This will show you all of your files with that name. However, it is case-sensitive."
+    },
+    {
+      "title": "Find a word within a file.",
+      "content": "Find a word within a file. If you would like to find certain text within a file, you need to incorporate the \"grep\" command . Thus, to find all instances of \"EXAMPLE,\" you would need to input $ grep 'EXAMPLE' EXAMPLE.txt . This will provide you with all the instances of the text \"EXAMPLE\" within the EXAMPLE.txt file. However, this particular command is case-sensitive. To find all instances of \"EXAMPLE\" regardless of case, continue to the next step."
+    },
+    {
+      "title": "Find text regardless of case.",
+      "content": "Find text regardless of case. To find text regardless of case, simply add -i after the grep command. It should look something like this: $ grep -i 'EXAMPLE' EXAMPLE.txt ."
+    },
+    {
+      "title": "Compare two files.",
+      "content": "Compare two files. If you would like to compare two files, you can easily do so by entering the diff command. Simply input the command followed by the names of the two files you wish to compare: diff EXAMPLE.txt PRACTICE.txt . This will then present you with the two files, one after another."
+    },
+    {
+      "title": "Install more software in Cygwin.",
+      "content": "Install more software in Cygwin. If you want to update or download more Cygwin-compatible software, just run the installer again (the file you downloaded). If it's been a while since you installed it, you can get the latest version from https://www.cygwin.com/install.html . [3] X Research source Run the installer and go through the basic installation steps until you get to the \"Select Packages\" screen. Search for a package to update or install, then select Install or Reinstall . Complete the installer to install or update your packages."
+    },
+    {
+      "title": "",
+      "content": "Some basic Linux commands you can use in Cygwin are listed in the table below, alongside their corresponding commands in Windows. Action Windows Cygwin list directory dir ls clear console cls clear copy file(s) copy cp move file(s) move mv delete file(s) del rm create directory md mkdir remove directory rd rm -rf change current directory cd cd search find grep display/output text echo echo"
+    }
+  ]
+}

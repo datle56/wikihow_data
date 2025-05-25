@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Transpose-a-Matrix",
+  "title": "A Beginner's Guide to Transposing Matrices (with Examples)",
+  "steps": [
+    {
+      "title": "Start with any matrix.",
+      "content": "Start with any matrix. You can transpose any matrix, regardless of how many rows and columns it has. Square matrices, with an equal number of rows and columns, are most commonly transposed, so we'll use a simple square matrix as an example: [2] X Research source matrix A = 1 2 3 4 5 6 7 8 9"
+    },
+    {
+      "title": "Turn the first row of the matrix into the first column of its transpose.",
+      "content": "Turn the first row of the matrix into the first column of its transpose. Rewrite row one of the matrix as a column: [3] X Research source transpose of matrix A = A T first column of A T : 1 2 3"
+    },
+    {
+      "title": "Repeat for the remaining rows.",
+      "content": "Repeat for the remaining rows. The second row of the original matrix becomes the second column of its transpose. Repeat this pattern until you have turned every row into a column: [4] X Research source A T = 1 4 7 2 5 8 3 6 9"
+    },
+    {
+      "title": "Practice on a non-square matrix.",
+      "content": "Practice on a non-square matrix. The transposition is exactly the same for a non-square matrix. You rewrite the first row as the first column, the second row as the second column, and so forth. Here's an example with color-coding to show you where the elements end up: matrix Z = 4 7 2 1 3 9 8 6 matrix Z T = 4 3 7 9 2 8 1 6"
+    },
+    {
+      "title": "Express the transposition mathematically.",
+      "content": "Express the transposition mathematically. The concept is pretty simple, but it's good to be able to describe it in mathematics. No jargon is required beyond basic matrix notation: If matrix B is an m x n matrix (m rows and n columns), the transposed matrix B T is an n x m matrix (n rows and m columns). [5] X Research source For each element b xy ( x th row, y th column) in B, the matrix B T has an equal element at b yx ( y th row, x th column)."
+    },
+    {
+      "title": "(MT)T = M.",
+      "content": "(M T )T = M. The transpose of a transpose is the original matrix. [6] X Research source This is pretty intuitive, since all you're doing is switching the rows and columns. If you switch them again, you're back where you started."
+    },
+    {
+      "title": "Flip square matrices over the main diagonal.",
+      "content": "Flip square matrices over the main diagonal. In a square matrix, transposition \"flips\" the matrix over the main diagonal. In other words, the elements in a diagonal line from element a 11 to the bottom right corner will remain the same. Each other elements will move across the diagonal and end up at the same distance from the diagonal, on the opposite side. If you can't visualize this, draw a 4x4 matrix on a piece of paper. Now fold is over the main diagonal. See how elements a 14 and a 41 touch? They trade places in the transpose, as does each other pair that touches when folded."
+    },
+    {
+      "title": "Transpose a symmetric matrix.",
+      "content": "Transpose a symmetric matrix. A symmetric matrix is symmetric across the main diagonal. If we use the \"flip\" or \"fold\" description above, we can immediately see that nothing changes. All the element pairs that trade places were already identical. [7] X Research source In fact, this is the standard way to define a symmetric matrix. If matrix A = A T , then matrix A is symmetric."
+    },
+    {
+      "title": "Start with a complex matrix.",
+      "content": "Start with a complex matrix. Complex matrices have elements with a real and imaginary component. While you can take an ordinary transpose of these matrices, most practical calculations involve the conjugate transpose instead. [8] X Research source Matrix C = 2+ i 3-2 i 0+ i 5+0 i"
+    },
+    {
+      "title": "Take the complex conjugate.",
+      "content": "Take the complex conjugate. The complex conjugate changes the sign of the imaginary components, without altering the real components. Perform this operation for all elements of the matrix. [9] X Research source complex conjugate of C = 2- i 3+2 i 0- i 5-0 i"
+    },
+    {
+      "title": "Transpose the results.",
+      "content": "Transpose the results. Take an ordinary transposition of the result. The matrix you end up with is the conjugate transpose of the original matrix. [10] X Research source conjugate transpose of C = C H = 2- i 0- i 3+2 i 5-0 i"
+    }
+  ]
+}

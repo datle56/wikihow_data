@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Fake-Discord-Messages-Using-Inspect-Element",
+  "title": "How to Make Fake Discord Messages With Inspect Element",
+  "steps": [
+    {
+      "title": "Log in to Discord on the web.",
+      "content": "Log in to Discord on the web. Go to https://discord.com , then click Open Discord in your browser . You must be using Google Chrome (or a Chromium-based browser like Opera), Safari, or Mozilla Firefox."
+    },
+    {
+      "title": "Open Inspect Element.",
+      "content": "Open Inspect Element. The easiest way to do this is by clicking Ctrl + ⇧ Shift + I on your keyboard (or ⌘ Cmd + ⌥ Option + I on Mac). The Inspect window will open either on the side of your webpage or at the bottom, depending on which browser you're using."
+    },
+    {
+      "title": "Click the arrow button in the top-left corner of the Inspect window.",
+      "content": "Click the arrow button in the top-left corner of the Inspect window. This will allow you to select anything on the page and open it in the Inspect window."
+    },
+    {
+      "title": "Click the message you want to edit.",
+      "content": "Click the message you want to edit. Make sure to click a little to the side of the message so the entire message is highlighted. The pop-up window should say div#message-content not span ."
+    },
+    {
+      "title": "Click the arrow to expand the message.",
+      "content": "Click the arrow to expand the message. The Inspect window will have a tag highlighted. Click the arrow next to this tag to expand it, and the message you highlighted will be visible."
+    },
+    {
+      "title": "Double-click the message.",
+      "content": "Double-click the message. The message will be in one or more <span> tags. Double-click the first tag to highlight the text and make it editable."
+    },
+    {
+      "title": "Write your fake message.",
+      "content": "Write your fake message. If there's only one <span> tag, you can change that one and move to the next step. If there are multiple <span> tags, change the first one, then right-click the other <span> tags and select Delete element ."
+    },
+    {
+      "title": "Add emojis to your message (optional).",
+      "content": "Add emojis to your message (optional). To add an emoji to your message, first send the emoji to yourself, or find another message where someone sent the emoji you want to include. You can do this with standard emojis or custom emojis. Click the arrow button in the top-left of the Inspect window, then click on the emoji you want to add to your message. Right-click the element that starts with <img aria-label and select Copy > Copy element . Return to your fake message. Right-click the element that starts with <div id=\"message-content and select Paste . The emoji will be added to your message. Discord has two emoji sizes: a smaller size for in-line text, and a bigger size when the emoji is sent on its own. If you paste the emoji into your message and it looks too big, go to the emoji element and change class=\"emoji jumboable\" to class=\"emoji\" . If there isn't a space between the emoji and the text, go to the <span> tag with your message and add a space to the end of it. If you want to add an emoji to your message and have text on either side, right-click the <span> tag with your fake message text and click Copy > Copy element . Then, right-click the element that starts with <div id=\"message-content and select Paste . Add a space before the text in the second <span> tag to insert a space after the emoji."
+    },
+    {
+      "title": "Change the username of the person who sent the fake message.",
+      "content": "Change the username of the person who sent the fake message. Click the arrow button in the top-left, then click the username of the person who sent the message. In the Inspect window, double-click their username and change it to something else. You can change a username's color by double-clicking on the code color: rgb(#, #, #) and replacing the three numbers with the RGB values of any color, making sure each number is separated by commas. Use RGB Color Picker to find the RGB values of your desired color."
+    },
+    {
+      "title": "Change the avatar of the person who sent the fake message.",
+      "content": "Change the avatar of the person who sent the fake message. Click the arrow button in the top-left, then click the avatar of the person who sent the message. Double-click on the URL after <img src=\" and paste a new image URL. While the code will resize any image you link here, it looks best if the image is square."
+    },
+    {
+      "title": "Change the date of the fake message.",
+      "content": "Change the date of the fake message. Click the arrow button in the top-left, then click the date of the fake message. Click the arrows to expand the code in the Inspect window until you see text surrounded by quotes before a tag that says </time> . Change this text to the date you want. Make sure to get the timestamp correct so the message is believable! Discord has three different timestamps: For messages sent today, the timestamp says Today at ##:## AM/PM . For messages sent yesterday, the timestamp says Yesterday at ##:## AM/PM . For messages sent earlier than one day ago, the timestamp says MM/DD/YYYY ##:## AM/PM ."
+    },
+    {
+      "title": "Take a screenshot of your finished message.",
+      "content": "Take a screenshot of your finished message. When you use Inspect Element to edit a Discord message, it will only show up on your screen until you refresh the page. If you want someone else to see the message, you'll need to take a screenshot of it. Make sure to close the Inspect window before you take the screenshot. Use image editing software to crop your screenshot as needed."
+    }
+  ]
+}

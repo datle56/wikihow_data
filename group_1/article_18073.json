@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Forge-Email",
+  "title": "How to Forge Email",
+  "steps": [
+    {
+      "title": "Understand what you are looking for.",
+      "content": "Understand what you are looking for. An SMTP (simple mail transfer protocol) server is a mail server that transfers mail between users. Mail often bounces through several SMTP servers on its way to its destination. You will need to find a SMTP server that allows for \"open relaying\". This is next to impossible these days, but you may be able to find one or two out there."
+    },
+    {
+      "title": "Find a list of SMTP servers.",
+      "content": "Find a list of SMTP servers. There are several places online that you can find lists of popular SMTP servers. Finding an open relay one will be more difficult, and will require a lot of trial and error. Try small businesses and local companies, as they are less likely to have configured their SMTP server properly. Using an SMTP server without authorization is illegal."
+    },
+    {
+      "title": "Test the SMTP server.",
+      "content": "Test the SMTP server. You need to find out if the SMTP server is open before you can connect to it. Open the Command Prompt or Terminal . Type telnet smpt.server 25 and press Enter. Replace smpt.server with the address of the server you are trying to connect to. For example Google's SMTP server is smtp.gmail.com (it's not an open relay server, so don't bother trying). If the SMTP server is an open relay, you will be connected to the server. If the server is not an open relay, you will see the message Could not open connection to the host on port 25: Connect failed and will need to find another server."
+    },
+    {
+      "title": "Start communication with the server.",
+      "content": "Start communication with the server. If you are able to connect to the server, start off with the HELO (Hello) command, followed by the email address you want to use (this can be anything you want). For example, upon successful connection, you could type HELO fakemail@hotmail.com . fakemail@hotmail.com will be the address that the recipient sees. You should see a \"Hello\" response from the server."
+    },
+    {
+      "title": "Create the mail using your fake address.",
+      "content": "Create the mail using your fake address. Type MAIL FROM:fakemail@hotmail.com . This will start the message creation process using the email address that you provide."
+    },
+    {
+      "title": "Enter in the recipient's address.",
+      "content": "Enter in the recipient's address. Type RCPT TO: recipientaddress@server.com . Make sure that your recipient's address is entered correctly."
+    },
+    {
+      "title": "Start entering the email information.",
+      "content": "Start entering the email information. Type DATA and press Enter to start entering the actual data of the email. This will let the SMTP server know that you are entering the data of the email."
+    },
+    {
+      "title": "Create the header.",
+      "content": "Create the header. The first thing you will need to do when you start entering data is to create your fake header. This will appear at the top of the email that your recipient receives. Enter the following information, replacing the data with your desired content: Type Date: DD Mon YY XX:XX:XX and press Enter. Replace DD Mon YY XX:XX:XX with the date you want to use. For example Date: 17 Jun 07 12:24:13 Type From: fakemail@hotmail.com and press Enter. Make sure you enter the same address you entered when you opened the connection. Type To: recipientaddress@server.com and press Enter. Ensure that you enter the same address that you entered above. Type Subject: Your subject and press Enter. Try to keep your subject short."
+    },
+    {
+      "title": "Type the body of your email.",
+      "content": "Type the body of your email. After typing the subject and pressing Enter, everything you type will be the body of the email. Type in whatever you'd like. You can press Enter to move to a new line and start a new paragraph. After finishing your email, press Enter to move to a new line."
+    },
+    {
+      "title": "Send the email.",
+      "content": "Send the email. Type . on a new line and press Enter. This will send the email to the address. You will receive a Mail accepted message when the email is sent. [1] X Research source"
+    }
+  ]
+}

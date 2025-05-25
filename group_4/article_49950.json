@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Your-Device-Is-Missing-Important-Security-and-Quality-Fixes",
+  "title": "How to Fix Windows Update Error: 5 Troubleshooting Tips",
+  "steps": [
+    {
+      "title": "Before trying any fixes, restart your computer fully.",
+      "content": "Before trying any fixes, restart your computer fully. If you have a lot of updates backed up, some require a full restart before it can move onto the next update. Click Shut down , wait 30 seconds, and then turn on your computer again."
+    },
+    {
+      "title": "Open the settings.",
+      "content": "Open the settings. Click the Start menu and click the cog icon."
+    },
+    {
+      "title": "Click Update & Security.",
+      "content": "Click Update & Security . You can find this towards the bottom of the window."
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . This is next to a wrench icon."
+    },
+    {
+      "title": "Click Windows Update.",
+      "content": "Click Windows Update . You can find this underneath the Troubleshoot header."
+    },
+    {
+      "title": "Click Run the troubleshooter.",
+      "content": "Click Run the troubleshooter . This may take a few moments. If Windows finds any errors, it will notify you and fix them."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. Click the Start menu and type \"cmd\". Right-click Command Prompt and select Run as administrator. A System Filter Checker (SFC) scan can find problems with files on your computer. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source ."
+    },
+    {
+      "title": "Type DISM.exe /Online /Cleanup-image /Restorehealth and press ↵ Enter.",
+      "content": "Type DISM.exe /Online /Cleanup-image /Restorehealth and press ↵ Enter . This may take a few moments to finish. Once you see The operation completed successfully , continue to the next step."
+    },
+    {
+      "title": "Type sfc /scannow and press ↵ Enter.",
+      "content": "Type sfc /scannow and press ↵ Enter . The scan will take a few moments. You should see Verification 100% complete when it's finished. If Windows finds any errors , you'll see the action listed below."
+    },
+    {
+      "title": "Stop the Windows Update service.",
+      "content": "Stop the Windows Update service. Before you can delete temporary files, make sure this program is fully closed. Do the following: Click the Start menu. Type \"services\". Click Services . Right-click Windows Update . Click Stop ."
+    },
+    {
+      "title": "Navigate to This PC > C drive > Windows > SoftwareDistribution > Download.",
+      "content": "Navigate to This PC > C drive > Windows > SoftwareDistribution > Download . This is the path needed to find the SoftwareDistribution folder."
+    },
+    {
+      "title": "Select all files in the \"Downloads\" folder.",
+      "content": "Select all files in the \"Downloads\" folder. You can press Ctrl + A to quickly select all files."
+    },
+    {
+      "title": "Right-click the files and select Delete.",
+      "content": "Right-click the files and select Delete . This will delete the temporary files."
+    },
+    {
+      "title": "Resume the Windows Update services.",
+      "content": "Resume the Windows Update services. Once the temporary files have been deleted, you can start the services again. Do the following: Click the Start menu. Type \"services\". Click Services . Right-click Windows Update . Click Start ."
+    },
+    {
+      "title": "Open the Services app.",
+      "content": "Open the Services app. Click the Start menu and type in \"services\". Click the first option. This method can fix error code 0x800700c1 ."
+    },
+    {
+      "title": "Double-click Windows Update.",
+      "content": "Double-click Windows Update ."
+    },
+    {
+      "title": "Select the \"Startup type\" drop-down menu.",
+      "content": "Select the \"Startup type\" drop-down menu. This is in the General tab."
+    },
+    {
+      "title": "Select Automatic.",
+      "content": "Select Automatic ."
+    },
+    {
+      "title": "Click Apply, then OK.",
+      "content": "Click Apply , then OK . The changes will be saved."
+    }
+  ]
+}

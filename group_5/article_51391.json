@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Percentage-in-Java",
+  "title": "How to Calculate Percentage in Java",
+  "steps": [
+    {
+      "title": "Plan your program",
+      "content": "Plan your program . Though calculating percentage isn't difficult, it is always a good practice to plan your program before beginning to code . Try finding the answers of the following questions: [1] X Research source Is your program going to handle large numbers? If yes, then try thinking about ways in which your program can handle large range of numbers. One way of doing this is using a float or long variable instead of int ."
+    },
+    {
+      "title": "Write the code",
+      "content": "Write the code . To calculate percentage, you will need two parameters: The total score (or the maximum possible score); and, The obtained score whose percentage you wish to calculate. For example: If a student scores 30 marks out of 100 in a test, and you wish to calculate the percentage marks scored by the student, 100 is the total marks (or the maximum possible score). 30 is the obtained score whose percentage you wish to calculate. The formula to calculate percentage is: Percentage = (Obtained score x 100) / Total Score To get these parameters (inputs) from the user, try using the Scanner function in Java."
+    },
+    {
+      "title": "Calculate the percentage.",
+      "content": "Calculate the percentage. Use the formula given in the previous step to calculate the percentage. Make sure that the variable used for storing the value of percentage is of type float. If not, the answer may not be correct. This is because, the float data-type is 32 bit single precision that even considers decimals in mathematical calculations . Thus, using a float variable, the answer for a mathematical calculation like 5 / 2 (5 divided by 2) will be 2.5 If the same calculation (5 / 2) if done using an int variable, the answer will be 2. However, the variables in which you stored the total score and obtained score can be int . Using a float variable for the percentage will automatically convert the int to float ; and the total calculation will be done in float instead of int."
+    },
+    {
+      "title": "Display the percentage to the user.",
+      "content": "Display the percentage to the user. Once the program has calculated the percentage, display it to the user. Use the System.out.print or System.out.println (to print on a new line) function, in Java, for this. [2] X Research source"
+    }
+  ]
+}

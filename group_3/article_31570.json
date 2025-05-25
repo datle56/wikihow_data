@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Open-EXE-Files",
+  "title": "How to Open EXE Files",
+  "steps": [
+    {
+      "title": "Double-click an EXE file to run it.",
+      "content": "Double-click an EXE file to run it. EXE files are Windows executable files designed to run as programs. Double-clicking any EXE file will start it. If the EXE file was downloaded from the internet , you'll be asked to confirm that you want to run it. Be wary when running EXE files from unknown sources, as this is the easiest way to get infected with a virus. Never open an EXE file downloaded as an email attachment, even if you know the sender. EXE files might not run properly if they were designed for an outdated version of Windows. You can try adjusting the compatibility settings by right-clicking on the file, selecting \"Properties\", and then clicking the Compatibility tab. You can set what version of Windows you want to run the EXE file as, but this is not guaranteed to solve the problem."
+    },
+    {
+      "title": "Open the Registry Editor if you can't run EXE files.",
+      "content": "Open the Registry Editor if you can't run EXE files. If you get error messages when you try to run an EXE file or nothing happens, there may be a problem with your Windows registry settings. Editing your registry may seem a little daunting, but it should only take a few minutes. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source To open the Registry Editor, press the Windows key + R and type regedit ."
+    },
+    {
+      "title": "Navigate to .",
+      "content": "Navigate to . HKEY_CLASSES_ROOT\\.exe . Use the navigation tree on the left to open this directory. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Right-click on the \"(Default)\" entry and select \"Modify\".",
+      "content": "Right-click on the \"(Default)\" entry and select \"Modify\". This will open a new window. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type .",
+      "content": "Type . exefile into the \"Value data\" field. Click OK to save the changes."
+    },
+    {
+      "title": "Navigate to .",
+      "content": "Navigate to . HKEY_CLASSES_ROOT\\exefile . Use the navigation tree on the left to open this directory."
+    },
+    {
+      "title": "Right-click on the \"(Default)\" entry and select \"Modify\".",
+      "content": "Right-click on the \"(Default)\" entry and select \"Modify\". This will open a new window."
+    },
+    {
+      "title": "Enter .",
+      "content": "Enter . \"%1\" %* into the \"Value data\" field. <r Click OK to save the changes. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Navigate to .",
+      "content": "Navigate to . KEY_CLASSES_ROOT\\exefile\\shell\\open . Use the navigation tree on the left to open this directory."
+    },
+    {
+      "title": "Right-click on the \"(Default)\" entry and select \"Modify\".",
+      "content": "Right-click on the \"(Default)\" entry and select \"Modify\". This will open a new window."
+    },
+    {
+      "title": "Enter .",
+      "content": "Enter . \"%1\" %* into the \"Value data\" field. Click OK to save the changes. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Reboot",
+      "content": "Reboot your computer. After editing the three entries above, close the Registry Editor and reboot your computer. You should be able to open EXE files again. It is highly recommended that you try to track down what caused this problem in the first place. You may have a virus or malware infection , which could cause the same problem again in the future."
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. EXE files are not designed for OS X, so you'll need to use special software to get them to run. You'll be installing the open-source \"wine\" utility, which adds a Windows \"wrapper\" to the EXE file, giving it access to the essential Windows files that it needs to run. The wine utility does not work with every Windows EXE file, and some programs work better than others. You do not need a Windows disc to install wine. [6] X Research source"
+    },
+    {
+      "title": "Download",
+      "content": "Download and install Xcode from the Mac App Store. This is a free development tool that is required to compile software code. You won't be using it directly, but the tools you'll be installing to open EXE files rely on it. [7] X Research source Start Xcode after you finish downloading it, and click the \"Xcode\" menu. Select \"Preferences\" and then click the \"Downloads\" tab. Click the Install button next to \"Command Line Tools\"."
+    },
+    {
+      "title": "Download and install MacPorts.",
+      "content": "Download and install MacPorts. This is a free utility that simplifies the compiling process, which you'll be using to build your version of wine. You can download MacPorts from macports.org/install.php . Click the link for the version of OS X that you are using, and then double-click the .pkg file downloaded to your computer to install MacPorts."
+    },
+    {
+      "title": "Open",
+      "content": "Open the Terminal. You'll need to use the Terminal to adjust some of MacPorts' settings. You can open the Terminal from the Utility folder."
+    },
+    {
+      "title": "Copy and paste the following command.",
+      "content": "Copy and paste the following command. Paste this command into the Terminal window and press Return: echo export PATH=/opt/local/bin:/opt/local/sbin:\\$PATH$'\\n'export MANPATH=/opt/local/man:\\$MANPATH | Sudo tee -a /etc/profile"
+    },
+    {
+      "title": "Enter your admin password.",
+      "content": "Enter your admin password . You will be prompted for your admin password before the command can run. You won't see anything as you type the password. Press Return after you have finished typing the password. If you don't have a password associated with the admin account, the process will fail."
+    },
+    {
+      "title": "Copy and paste",
+      "content": "Copy and paste the following command. This command will tell MacPorts whether or not you have a 64-bit system. Paste the following command and press Return: if [ `sysctl -n hw.cpu64bit_capable` -eq 1 ]; then echo \"+universal\" | Sudo tee -a /opt/local/etc/MacPorts/variants.conf; else echo \"n/a\"; fi"
+    },
+    {
+      "title": "Enter the command to agree to the Xcode license.",
+      "content": "Enter the command to agree to the Xcode license. This quick command will tell Xcode that you agree to the license agreement, allowing you to compile code. Close and reopen the Terminal window after running this command: sudo xcodebuild -license"
+    },
+    {
+      "title": "Enter the command to install wine.",
+      "content": "Enter the command to install wine. Once you've reopened the Terminal window, you can start installing wine. You may be prompted for the admin password again. The installation process may take a while to complete. You'll know that it's finished when you are returned to the Terminal input: sudo port install wine"
+    },
+    {
+      "title": "Navigate to the location of the EXE file.",
+      "content": "Navigate to the location of the EXE file. Use the cd command to navigate to the location where your EXE file is stored on your Mac. You'll need to do this through the Terminal."
+    },
+    {
+      "title": "Use wine to run the EXE file.",
+      "content": "Use wine to run the EXE file. Enter the following command to run an EXE file that's in your current directory. Replace fileName with the actual file's name: wine fileName .exe"
+    },
+    {
+      "title": "Use the program as you normally would.",
+      "content": "Use the program as you normally would. If the EXE file is a standalone program, you'll be able to start using it immediately. If it's a setup file for a program, you'll be able to proceed through the installation prompts as if you were using Windows. Not every program works with wine. For a full list of compatible programs, visit appdb. wine ha.org ."
+    },
+    {
+      "title": "Open programs that have been installed.",
+      "content": "Open programs that have been installed. If you used an EXE file to install a program, you'll need to use wine to run the installed program file. Type cd ~/.wine/drive_c/Program\\ Files/ to open the Program Files directory that your wine programs are installed to. Type ls to see a list of all of your installed programs. Type cd programName to open a program's directory. If the program's directory has a space, you'll need to include a \\ before the space. For example, Microsoft Office would be cd Microsoft\\ Office . Type ls again in the program's directory to find the EXE file. Type wine fileName .exe to run the program."
+    },
+    {
+      "title": "Install the Mono libraries if the program requires .NET.",
+      "content": "Install the Mono libraries if the program requires .NET. .NET is a software library for many Windows programs, and Mono is the open-source replacement that wine can use. you only need to install this if your programs require .NET. Type sudo port install winetricks and press Return. Type winetricks mono210 and press Return to install Mono."
+    },
+    {
+      "title": "Download and install 7-Zip.",
+      "content": "Download and install 7-Zip. 7-Zip is a free, open-source archive program that can open EXE files as if they were an archive like a ZIP or RAR file. This will work with many EXE files, but not everyone. You can download 7-Zip from 7-zip.org"
+    },
+    {
+      "title": "Right-click on the EXE file and select \"7-Zip\" → \"Open archive\".",
+      "content": "Right-click on the EXE file and select \"7-Zip\" → \"Open archive\". This will open the EXE file in the 7-Zip archive explorer. If you don't have the 7-Zip options when you right-click on a file, open 7-Zip from the Start menu and then browse for the EXE file that you want to open. 7-Zip cannot open all EXE files. You may get an error when attempting to open certain EXE files. You can try using a different archive program, such as WinRAR , but chances are you won't be able to open the file due to the way it was originally compiled."
+    },
+    {
+      "title": "Browse for the file or files that you want to extract.",
+      "content": "Browse for the file or files that you want to extract. When you open the EXE file in 7-Zip, you'll be shown a list of files and folders that the EXE file contains. You can double-click folders to see the files stored inside. You can select multiple files by holding Ctrl and clicking each one."
+    },
+    {
+      "title": "Click the \"Extract\" button after selecting the files.",
+      "content": "Click the \"Extract\" button after selecting the files. You'll be prompted to select a location, which will default to the same location as the EXE file."
+    }
+  ]
+}

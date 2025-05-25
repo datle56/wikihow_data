@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Check-PHP-Version",
+  "title": "3 Ways to See Which PHP is Installed + Troubleshooting",
+  "steps": [
+    {
+      "title": "Open a text or code editor.",
+      "content": "Open a text or code editor. You can use Notepad, TextEdit, Vim , or any other text editor. Because you'll be creating a plain text file, it's better to use a text editor rather than a word processing program like Microsoft Word."
+    },
+    {
+      "title": "Enter the following code.",
+      "content": "Enter the following code. This small piece of code will return the PHP version information when it is run on your web server. [1] X Research source <?php echo 'Current PHP version: ' . phpversion (); ?>"
+    },
+    {
+      "title": "Save the file as a PHP file.",
+      "content": "Save the file as a PHP file. Call the file version.php ."
+    },
+    {
+      "title": "Create a more detailed report (optional).",
+      "content": "Create a more detailed report (optional). The file above will output your current PHP version number only. If you want more information, such as system info, build dates, available commands, and API information, you can use the phpinfo() function. Create a new text file containing the following code, and save it as info.php . <?php phpinfo (); ?>"
+    },
+    {
+      "title": "Upload the file(s) to your web server.",
+      "content": "Upload the file(s) to your web server. If you edited the text file directly on your web server , just make sure to move the PHP file into your website's root directory. If you created the file on your computer, upload it to your web server's root web directory (often www , public_html , or htdocs ). You can do this through your web host's admin control panel or an FTP client , depending on your web host. If you also created an info.php file, upload that to the same location."
+    },
+    {
+      "title": "Open the file in your web browser.",
+      "content": "Open the file in your web browser. Once you've uploaded your PHP version file, use your web browser to view the file. Navigate to the location of the file on your server. For example, if you placed it in the root directory of your domain, you would visit www.yourdomain.com/version.php . [2] X Research source To see the full readout, visit www.yourdomain.com/info.php ."
+    },
+    {
+      "title": "Delete your PHP version text file(s).",
+      "content": "Delete your PHP version text file(s). Once you've checked your PHP version, delete the version.php file and the info.php file if you created one. Leaving these files in your web directory makes it easy for hackers to find out which version of PHP you're using, which could leave you open to exploitation."
+    },
+    {
+      "title": "Open a Terminal or Command Prompt.",
+      "content": "Open a Terminal or Command Prompt. If you have PHP installed locally, you can use the Command Prompt or Terminal to check the version. This also works if you log in to the server remotely using SSH or another remote connection method to access the command line. Windows Command Prompt: Press Windows key + S , type cmd , and click Command Prompt . Mac Terminal: Open Terminal from the Utilities folder, on the Launchpad, or by searching for it with Spotlight. [3] X Research source Linux Terminal : Press Ctrl + Alt + T . [4] X Research source"
+    },
+    {
+      "title": "Type php -v and press ↵ Enter or ⏎ Return.",
+      "content": "Type php -v and press ↵ Enter or ⏎ Return . When you run the command, the installed version of PHP will be displayed."
+    },
+    {
+      "title": "Log in to your WordPress dashboard.",
+      "content": "Log in to your WordPress dashboard. If you're using WordPress, you can check your PHP version using the built-in Site Health tool."
+    },
+    {
+      "title": "Click Tools in the left panel.",
+      "content": "Click Tools in the left panel. A menu will expand. [5] X Research source"
+    },
+    {
+      "title": "Click Site Health.",
+      "content": "Click Site Health . You'll see this option on the menu. This takes you to the Status tab of the Site Health tool. [6] X Research source"
+    },
+    {
+      "title": "Click the Info tab.",
+      "content": "Click the Info tab. It's near the top of the Site Health tool."
+    },
+    {
+      "title": "Scroll down to find the PHP version.",
+      "content": "Scroll down to find the PHP version. The currently installed version of PHP appears next to \"PHP version\" in the \"Server\" section of the tool. [7] X Research source If you need to update PHP for WordPress, you can usually do so through your website's admin control panel (not through WordPress itself). If there is no option to update PHP through your control panel, your web host may need to update it for you."
+    },
+    {
+      "title": "Find out if PHP is installed.",
+      "content": "Find out if PHP is installed. If you see the error 'php' is not recognized as an internal or external command , it's usually because PHP isn't in your Windows system path. Before you can fix the error, you'll need to determine whether PHP is installed, and where it's installed. In most cases, it's installed in the root of one of your Windows drives, e.g., C:\\php or D:\\php . [8] X Research source Here's the best way to search: Press Windows key + E to open File Explorer . Click This PC in the left panel. In the search box at the top-right, type php.exe and press Enter . If PHP is not found, you'll need to install it. You can download the latest version as a ZIP file from https://windows.php.net/download/ and extract it to the C:\\php or D:\\php folder."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. To do this, type cmd into the Windows search bar, right-click \"Command Prompt,\" and then select Run as administrator ."
+    },
+    {
+      "title": "Add the PHP install location to your path.",
+      "content": "Add the PHP install location to your path. At the prompt, type or paste set PATH=%PATH%;C:\\php\\php.exe and press Enter . Replace the path with the path to your php.exe file."
+    },
+    {
+      "title": "Close and reopen your Command Prompt window.",
+      "content": "Close and reopen your Command Prompt window. Once you've added PHP to your system path , you'll need to start with a new Command Prompt window to check the version. Now, type php -v and press Enter to see which version of PHP you're running."
+    }
+  ]
+}

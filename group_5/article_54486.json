@@ -1,0 +1,118 @@
+{
+  "url": "https://www.wikihow.com/Fix-SSL-Certificate-Errors-on-PC-or-Mac",
+  "title": "Common SSL Certificate Errors and How to Fix Them",
+  "steps": [
+    {
+      "title": "Check the error message.",
+      "content": "Check the error message. The errors look different on each web browser, but you can often figure out whether the certificate error is on your end (the computer you're using) or on the server's end if you can decipher the error message. If the problem is with the website, it must be fixed by the website administrator . If you see any of the following errors, the problem is with the website, not your computer: NET::ERR_CERT_AUTHORITY_INVALID NET::ERR_CERT_COMMON_NAME_INVALID NET::ERR_CERT_REVOKED NET::ERR_CERT_AUTHORITY_INVALID ERR_SSL_WEAK_EPHEMERAL_DH_KEY ERR_SSL_VERSION_OR_CIPHER_MISMATCH"
+    },
+    {
+      "title": "Make sure your computer's date and time settings are correct.",
+      "content": "Make sure your computer's date and time settings are correct. If you don't see one of the previous errors, the issue might be with your computer reporting the incorrect date or time. To make sure your system date and time aren't causing the issue, set your computer to obtain the date and time automatically. Here's how: Right-click the date and time in the taskbar. Click Adjust date and time . Ensure Set time automatically is checked. Ensure Set timezone automatically is checked."
+    },
+    {
+      "title": "Open Internet Options.",
+      "content": "Open Internet Options. Here's how: Press the Windows key . Type internet options . Click Internet Options ."
+    },
+    {
+      "title": "Add the website you want to visit to the list of trusted sites.",
+      "content": "Add the website you want to visit to the list of trusted sites. Only do this if you are sure the website is safe: Click the Security tab. Click the checkmark icon above \"Trusted sites.\" Click Sites . Copy and paste the URL for the website below \"Add this site to the zone.\" Click Add . Click Close . Click Apply ."
+    },
+    {
+      "title": "Disable certificate revocation checks.",
+      "content": "Disable certificate revocation checks. You should only do this temporarily while visiting a particular site. To ensure you are secure while browsing, reenable these features when you are done. Make sure you still have the Internet Options menu open and use the following steps to disable certificate revocation checks: [1] X Research source Click the Advanced tab. Uncheck \"Check for publisher's certificate revocation\" below \"Security.\" Uncheck \"Check for server certificate revocation\" below \"Security.\" Click Apply ."
+    },
+    {
+      "title": "Clear your computer's SSL state.",
+      "content": "Clear your computer's SSL state. If you're seeing an SSL error when using a different application on your computer, such as an email or SFTP app, clearing the SSL state could resolve the issue. If your computer has saved an incorrect version of the SSL certificate, you can delete it. [2] X Research source In the Internet Options window, click the Content tab. Click Clear SSL state ."
+    },
+    {
+      "title": "Clear your cache and cookies.",
+      "content": "Clear your cache and cookies. You can often resolve SSL errors by deleting certain files that websites save to your computer. Clearing your cookies , as well as clearing your cache, can fix a wide variety of browsing errors in addition to certificate malfunctions."
+    },
+    {
+      "title": "Update your browser.",
+      "content": "Update your browser. Using an older version of a web browser may result in SSL certificate errors and general odd behaviors. Check for and install any updates available for your browser. You can also try a different web browser to see if that resolves the issue. For example, if you're using Microsoft Edge , try installing Chrome and checking to see if you can view the website there. If you get an SSL error on two different browsers, there's probably an issue with the certificate itself."
+    },
+    {
+      "title": "Restore your browser's default settings.",
+      "content": "Restore your browser's default settings. If clearing your browser data and updating your software didn't work, your problem may be related to your browser settings. In that case, resetting your browser to its original settings will disable extensions and settings that might interfere with the certificate. You can generally reset your browser's settings in the Settings menu, or by uninstalling and reinstalling your browser."
+    },
+    {
+      "title": "Contact the website administrator.",
+      "content": "Contact the website administrator. If you can't bypass the SSL certificate error on your end, the problem is most likely with the web server. If you can, contact the server administrator to let them know of the problem so they can resolve it."
+    },
+    {
+      "title": "Check the error message.",
+      "content": "Check the error message. The errors look slightly different depending on the browser you're using, but you can often figure out whether the certificate error is on your end or the website itself. If you see any of the following errors, the problem is with the website, not your computer: NET::ERR_CERT_AUTHORITY_INVALID NET::ERR_CERT_COMMON_NAME_INVALID NET::ERR_CERT_REVOKED NET::ERR_CERT_AUTHORITY_INVALID ERR_SSL_WEAK_EPHEMERAL_DH_KEY ERR_SSL_VERSION_OR_CIPHER_MISMATCH"
+    },
+    {
+      "title": "Make sure your computer's date and time settings are correct.",
+      "content": "Make sure your computer's date and time settings are correct. Your Mac may be reporting the incorrect date or time. To make sure your system date and time aren't causing the issue, set your computer to obtain the date and time automatically. Here's how: Click the Apple icon. Click System Settings or System Preferences . Click General . Click Date & Time . Ensure \"Set date and time automatically\" is enabled."
+    },
+    {
+      "title": "Set your Mac to trust the certificate.",
+      "content": "Set your Mac to trust the certificate. If you see an SSL error when using a different application on your computer, such as an email or SFTP app, clearing your SSL state could resolve the issue. If your computer has saved an incorrect version of the SSL certificate, you can delete them. [3] X Research source Press Command + Spacebar to open Spotlight search. Type keychain . Click Keychain Access to open the app. Click Login in the left pane. Click Certificates under \"Category\" in the menu to the left. Double-click the certificate that is giving you trouble. Expand the menu below \"Trust.\" Select Always trust next to \"When using this certificate.\" Enter your Mac password and click Update settings . If the certificate continues to give you trouble, you can right-click it and delete it. [4] X Research source"
+    },
+    {
+      "title": "Clear the SSL state.",
+      "content": "Clear the SSL state. If trusting the SSL certificate doesn't work or if your computer has saved an incorrect version of the SSL certificate, you can delete it. [5] X Research source Press Command + Spacebar to open Spotlight search. Type keychain . Click ' Keychain Access to open the app. Click Login in the left pane. Click Certificates under \"Category\" on the left. Right-click the SSL certificate that is giving you trouble. Click Delete . [6] X Research source"
+    },
+    {
+      "title": "Clear your cache and cookies.",
+      "content": "Clear your cache and cookies. You can often resolve SSL errors by deleting certain files that websites save to your computer. Clearing your cookies and cache can fix many browsing errors in addition to certificate problems."
+    },
+    {
+      "title": "Update your browser.",
+      "content": "Update your browser. Using an older version of a web browser may result in SSL certificate errors and general odd behaviors. Check for and install any updates available for your browser. You can also try a different web browser to see if that resolves the issue. For example, if you're using Safari , try installing Chrome and checking to see if you can view the website there. If you get an SSL error on two different browsers, there's probably an issue with the certificate."
+    },
+    {
+      "title": "Restore your browser's default settings.",
+      "content": "Restore your browser's default settings. If clearing your browser data and updating your software didn't work, your problem may be related to your browser settings. In that case, resetting your browser to its original settings will disable extensions and settings that might interfere with the certificate. You can generally reset your browser's settings in the Settings menu, or by uninstalling and reinstalling your browser."
+    },
+    {
+      "title": "Contact the website administrator.",
+      "content": "Contact the website administrator. If you can't bypass the SSL certificate error on your end, the problem is most likely with the web server. Contact the server administrator to inform them of the problem so they can resolve it."
+    },
+    {
+      "title": "Use an SSL checker to diagnose the problem.",
+      "content": "Use an SSL checker to diagnose the problem. You can use many online tools to check your SSL certificate that will report any errors with the certificate. Online tools include SSL Checker , DigiCert Diagnostic tool , and Qualys SSL Labs ."
+    },
+    {
+      "title": "Make sure your SSL certificate is installed properly.",
+      "content": "Make sure your SSL certificate is installed properly. Many, if not most, client-side SSL errors are caused by improper installation. Make sure you install the SSL certificate properly."
+    },
+    {
+      "title": "Check to make sure HTTPS and SSL are turned on.",
+      "content": "Check to make sure HTTPS and SSL are turned on. If your SSL certificate is properly installed and you are still getting SSL certificate errors, make sure you have enabled SSL and/or HTTPS in your website's host settings. [7] X Research source"
+    },
+    {
+      "title": "Check to see if your certificate is still valid.",
+      "content": "Check to see if your certificate is still valid. SSL certificates have a lifespan of 398 days. Make sure your SSL certificate has not expired. If it is expired, you will need to renew the expired certificate."
+    },
+    {
+      "title": "Verify the hostname and contact information on the certificate.",
+      "content": "Verify the hostname and contact information on the certificate. Make sure the hostname on the certificate matches your website's URL. Also, make sure the certificate covers all domains and subdomains across your entire website. Also check that the contact information, such as the email, is the same as the one under which your website is registered. You can get a wildcard SSL certificate to cover multiple subdomains as well as your main domain."
+    },
+    {
+      "title": "Make sure your certificate hasn't been revoked.",
+      "content": "Make sure your certificate hasn't been revoked. If a certificate authority suspects your certificate is compromised, they can revoke it before it expires. If this happens, you will need to investigate why it was revoked (an online SSL checker can help with that} and replace the certificate with a valid one."
+    },
+    {
+      "title": "Get an SSL certificate from a reliable certificate authority.",
+      "content": "Get an SSL certificate from a reliable certificate authority. If you receive an \"SSL not trusted\" error, the certificate is from a certificate authority not trusted by the web browser. This most commonly happens when the SSL certificate is a self-signed certificate issued by the server itself. If this is the case, you must get a new SSL certificate from a trusted authority."
+    },
+    {
+      "title": "Make sure you are not using secured and unsecured content.",
+      "content": "Make sure you are not using secured and unsecured content. If you get a \"mixed content\" error message, a portion of a page is from an unsecured source. You may have an image, iframe, or a snippet of JavaScript being loaded from an unsecured source. You will need to edit the source code for your website and remove the content from the unsecured source."
+    },
+    {
+      "title": "Use current encryption algorithms.",
+      "content": "Use current encryption algorithms. If your server uses an outdated encryption algorithm, such as SHA-1, you'll need to update your algorithms and get a new certificate. [8] X Research source"
+    },
+    {
+      "title": "Check your firewall settings.",
+      "content": "Check your firewall settings. If everything is set up properly and you are still getting SSL certificate errors, your firewall or security software settings may be blocking or interfering with your SSL connections. Adjust your firewall or security software settings to fix the problem."
+    }
+  ]
+}

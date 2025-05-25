@@ -1,0 +1,266 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-SDL-with-Visual-Studio",
+  "title": "How to Set Up SDL with Visual Studio",
+  "steps": [
+    {
+      "title": "Highlight what you expect to do.",
+      "content": "Highlight what you expect to do. Highlight step or sub-step you expect to do and then do it. See as example picture above."
+    },
+    {
+      "title": "Download Visual Studio 2022.",
+      "content": "Download Visual Studio 2022. If you have not done so you can download it from https://www.visualstudio.com/downloads . Check the Desktop development with C++ workload box as you download. If necessary scroll down the page (see below image). Click \"Language pack\" and check \"English\" box. During installing, in \"Personalize your Visual Studio experience\" wizard, in \"Development settings\" menu click \"General\" > click \"Visual C++\" > click Start Visual Studio ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download the latest version of SDL3.",
+      "content": "Download the latest version of SDL3 . Right click on the following link and select Open Link in New Window https://www.libsdl.org/ In the left column, below Download click SDL Releases > scroll the new page to the bottom > click version (in image above, it's an old version, but it makes no difference) SDL3-devel-3.2.8-VC.zip or latest. The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL . In the new File Explorer click folder SDL3-3.2.8 , (or latest) > click it again and drag into C:\\GL. Once copying and pasting of the folder is complete, copy SDLbin > click folder > right click > click Rename (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in folder GL you have folder SDLbin . Close new File Explorer window > close SDL window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find (see image above) Empty Project Start from scratch with C++ for Windows. Provides no starting files. (if necessary scroll down the list or type Empty Project in search box above the list and hit ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SDLx32-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add\" > \"New Item…\" In the \"Add New Item\" wizard delete \"FileName\" and type Main instead > click Add . The file will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure project's Properties.",
+      "content": "Configure project's Properties . In \"Solution Explorer\" right click on the name of your project, that is SDLx32-0 (in image it is different, it doesn't matter), and select \"Properties\" (the last entry). In \"SDLx32-0 Property Pages\" wizard, 1. Main menu. In Configuration: select Active(Debug) > Platform: Win32 or x86 > click Configuration Manager . \"Configuration Manager\" wizard In \"Active solution platform:\" select x86 or Win32 In \"Platform\", Win32 or x86 is automatically selected Click Close . 2. Additional Include Directories. See below for images. Open the C/C++ drop-down menu. Click General > Additional Include Directories > down arrow at the right of the field > click <Edit...> Copy C:\\GL\\SDLbin\\include > in \"Additional Include Directories\" wizard click first icon > paste. In \"Additional Include Directories\" wizard click OK . 3. Additional Library Directories Open the \"Linker\" drop-down menu (see below image), and click \"General\" > click \"Additional Library Directories\" entry > down arrow at the end of the field > \"Edit\". Copy C:\\GL\\SDLbin\\lib\\x86 > in \"Additional Library Directories\" wizard click first icon > paste. In \"Additional Library Directories\" wizard click OK . 4. Additional Dependencies In the \"Linker\" drop-down menu (see below image), click \"Input\" > the \"Additional Dependencies\" entry > down arrow at the right of the field > \"Edit\". Copy opengl32.lib; SDL2.lib;SDL2main.lib > paste in \"Additional Dependencies\" wizard's most-top text box. In \"Additional Dependencies\" wizard click OK . Click Apply > OK on the \"SDLx32-0 Property Pages\" wizard."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search box on the taskbar (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\SDLbin\\lib\\x86 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"SDLx32-0.sln\". Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Copy the following code and paste in Main.cpp code area > in main menu select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". The project was correctly set up if a black window with the message \"SDL initialization succeeded!\" appears. If you do not see that, do the below step. You are now ready to program with SDL. If you do not see that, do the below step."
+    },
+    {
+      "title": "Correct errors.",
+      "content": "Correct errors. Files are missing. Copy C:\\GLP\\SDLx32-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 3, step 2, and add it now. In \"Error List\" if you see error cannot open file SDL.h, Check whether folder SDLbin exists in C:\\GL. If it exists go to previous Part, step 1, Configure project's Properties , sub-step 2. Configure \"Additional Include Directories\" and follow instructions. Also check whether folder SDLbin exists in C:\\GL. cannot open file SDL2.lib or SDL2main.lib, go to previous Part, step 1, sub-step 3. Configure \"Additional Library Directories\" and follow instructions. Also to sub-step 4. Configure \"Additional Dependencies\" . Thrown wizard about dll file, go to previous Part step 2, and follow instructions For other errors. Check whether you have added source file. If you cannot correct them, close Visual Studio > delete project folder SDLx32-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 3. Good job."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio (see below image) and, while \"SDLx32-0\" is open , click \"Project\" > \"Export Template...\". On \"Export template Wizard\" check \"Project Template\", if it's not checked. Click Next > . On Select Template Options , for Template name: If it is \"SDLx32-0\" it's okay. If it's not, copy SDLx32-0 and paste. Output Location: (something like C:\\Users\\utilisateur\\Documents\\Visual Studio 2019\\My Exported Templates\\Project-1.zip ) is okay. Click Finish . Template has been created. Delete the thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu, click File > New > Project... . In Create a new project wizard select SDLx32-0 (if necessary scroll down the list of templates or type it in search box above the list and hit ↵ Enter ) > click Next . In Configure your new project wizard, if \"Project name\" is SDLx32-01 it's okay. If it's not, copy SDLx32-01 and paste. Location should be C:\\GLP, if it's not, copy (attention: do not copy any space) C:\\GLP and paste > Be sure Place solution and project in the same directory is checked > click Create . In Visual Studio's GUI main menu, select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". The project was correctly set up if a black window with the message \"SDL initialization succeeded!\" appears. You are now ready to program with SDL. TIP. When you create project with this template remember in Visual Studio main menu select x86 ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C:. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download SDL3.",
+      "content": "Download SDL3. If you have not already downloaded it, go to Part 2, step 2, and download it."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find (see image above), Empty Project Start from scratch with C++ for Windows. Provides no starting files. (if necessary scroll down the list or type Empty Project in search box above the list and hit ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SDLx64-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add\" > \"New Item…\" In the \"Add New Item\" wizard delete \"FileName\" and type Main instead > click Add . The file will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Project's Property Pages.",
+      "content": "Project's Property Pages. Go to \"Solution Explorer\" > right click on the name of your project SDLx64-0 > select \"Properties\" (the last entry). In SDLx64-0 Property Pages wizard, 1. Main menu: In Configuration entry select Active(Debug) > in Platform: entry, select x64 > Click Configuration manager... In Configuration Manager wizard, in Active solution platform: select x64 In Platform entry, x64 is selected automatically. Click Close 2. Additional Include Directories: See below for images. In SDLx64-0 Property Pages window double click C/C++ > click General > Additional Include Directories > down arrow at the end of the field > click <Edit...>. Copy C:\\GL\\SDLbin\\include and paste in Additional Include Directories wizard's upper-most text field. In Additional Include Directories wizard click OK . 3. Additional Library Directories: In the \"SDLx64-0 Property Pages\" wizard, open Linker (see below image) > click General > Additional Library Directories > down arrow at the end of the field > click <Edit... >. Copy C:\\GL\\SDLbin\\lib\\x64 and paste in Additional Library Directories wizard's upper-most text field. Click OK in Additional Library Directories wizard. 4. Additional Dependencies: In \"Linker\" drop-down menu (see below image), click \"Input\" > the \"Additional Dependencies\" entry > down arrow at the right of the field > \"Edit\". Copy opengl32.lib; SDL2.lib;SDL2main.lib and paste in top-most text box in \"Additional Dependencies\" wizard. In \"Additional Dependencies\" wizard click OK . Click Apply and then OK in \"Project's Property Pages\" wizard."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search box on the taskbar (bottom left of the screen) type envir > hit ↵ Enter . \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environement variable\" wizard is thrown. Copy C:\\GL\\SDLbin\\lib\\x64 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. Select the file SDLx64-0.sln from the \"Open recent\" list. Your project is now available for testing."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Copy the following code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". The project was correctly set up if a black window with the message \"SDL initialization succeeded!\" appears. If you do not see that, do the below step. You can now use SDL to program."
+    },
+    {
+      "title": "Correct errors.",
+      "content": "Correct errors. Files are missing. Copy C:\\GLP\\SDLx64-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 7, step 4, and add it now. In \"Error List\" if you see error cannot open file SDL.h, Check whether folder SDLbin exists in C:\\GL. If it exists go to previous Part, step 1, sub-step 2 Additional Include Directories , and follow instructions. cannot open file SDL2.lib or SDL2main.lib, go to previous Part, step 1, sub-step 3 Additional Library Directories and follow instructions. Also to sub-step 4 Configure Additional Dependencies . Thrown wizard about dll file, go to previous Part step 2, and follow instructions For other errors. If you can't correct them, close Visual Studio > delete project folder SDLx64-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 7. Good job. TIP: Even if in Property Pages main settings it is Platform: x64 , click Configuration manager... and in Active solution platform: select x64."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio (see below image) and, while \"SDLx64-0\" is open , click \"Project\" > \"Export Template...\". On \"Export template Wizard\" check \"Project Template\", if it's not checked. Click Next > . On Select Template Options , if Template name: is SDLx64-0 it's okay. If it's not copy SDLx64-0 and paste. Output Location: (something like C:\\Users\\utilisateur\\Documents\\Visual Studio 2019\\My Exported Templates\\Project-1.zip ) is okay. Click Finish . Template has been created. Close the thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu, click File > New > Project... . In Create a new project wizard in the list of templates select SDLx64-0 (if necessary scroll down the list or type it in search box above the list and hit ↵ Enter ) > click Next . In Configure your new project wizard, if \"Project name\" is SDLx64-01 it's okay. If it's not copy SDLx64-01 and paste. Location should be C:\\GLP. If it's not, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked > click Create . In Visual Studio GUI's main menu, select x64 . Hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". TIP: Remember in every project you create with this template, select x64 (next to Debug) in Visual Studio's GUI."
+    },
+    {
+      "title": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide.",
+      "content": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide. It is also important that binaries you get target x64 platform."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download CMake.",
+      "content": "Download CMake. Right-click on the following address and select Open Link in new File Explorer window https://cmake.org/download/ . Below \"Latest Release (3.31.6)\" (or latest), in second \"Platform\" list (Binary distributions:), find (see image below) \"Windows x64 ZIP\" and click the beside entry cmake-3.31.6-windows-x86_64.zip (or latest). The unzipped folder ought to appear in a new File Explorer."
+    },
+    {
+      "title": "Copy and paste the unzip folder.",
+      "content": "Copy and paste the unzip folder. Open folder C:\\GL In the new File Explorer click unzip folder cmake-3.31.6-windows-x86_64 > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy CMake > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new File Explorer > close the \"CMake\" window. Double click folder \"CMake\" > double click folder bin > inside you should see CMake's logo next to file name cmake-gui > double click this file. Now on your screen you have CMake GUI > go back to GL folder. Each time you need CMake, navigate to C:\\ > GL > double click folder CMake > double click \"bin\" > double click file cmake-gui (the one with CMake's logo)."
+    },
+    {
+      "title": "Download the latest version of SDL3.",
+      "content": "Download the latest version of SDL3 . Right click on the following link and select Open Link in New Window https://www.libsdl.org/ In the left column, below Download click SDL Releases > scroll the new page to the bottom > click version (see image above) Source code (zip) . The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL . In the new File Explorer, you have the folder SDL-release-3.2.8 , (or latest). Click it > click it again and drag into C:\\GL. Once copying and pasting of the folder is complete, copy SDLsrc > click folder > right click > click Rename (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in folder GL you have folder SDLsrc . Close the new File Explorer > close SDL window."
+    },
+    {
+      "title": "Compile source by Cmake and Visual Studio.",
+      "content": "Compile source by Cmake and Visual Studio. See above for image. Copy ( attention do not copy any space) C:/GL/SDLsrc and paste into the first text field of the CMake GUI. Copy ( attention do not copy any space) C:/GL/SDLsrc/build and paste into the second text field. Configure and generate. In CMake GUI, click Configure > in wizard Create Directory click Yes > in wizard \"Specify the generator for this project\", click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\"."
+    },
+    {
+      "title": "Build your solution.",
+      "content": "Build your solution. Copy C:/GL/SDLsrc/build and paste in File Explorer's Address bar > hit ↵ Enter > double click \"SDL2.sln\", or \"SDL2\", or \"ALL_BUILD.vcxproj\" > in thrown wizard select \"Microsoft Visual Studio 2022\" > click OK . An instance of Visual Studio appears. In the main menu, click \"Build\" > \"Build Solution\". Wait till in \"Output\" window last line you read: ========== Build: X succeeded, 0 failed, 0 up-to-date, Y skipped\" ========== TIP: Numbers X of \"succeeded\" and Y \"skipped\" change in SDL3 versions. Today (March 14, 2023) are 7 and 2 respectively. Copy C:\\GL\\SDLsrc\\build\\Debug and paste in File Explorer's Address Bar > hit ↵ Enter . You should see four .lib files among others. Close this instance of Visual Studio > close Cmake."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find (see image above) Empty Project Start from scratch with C++ for Windows. Provides no starting files. (if necessary scroll down the list or type Empty Project in search box above the list and hit ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) SDLsrc-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add source file.",
+      "content": "Add source file. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add\" > \"New Item…\" In the \"Add New Item\" wizard delete \"FileName\" and type Main instead > click Add . The file will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure project's Properties.",
+      "content": "Configure project's Properties . In Solution Explorer wizard, right click Project's name that is SDLsrc-0 > select Properties (the last entry). In \"SDLsrc-0 Property Pages\" wizard, 1. Main menu. In \"Configuration:\" entry select \"Active(Debug)\". In Platform: entry select x64 > click Configuration Manager... . In Active solution platform: select x64 . In Platform entry, x64 is automatically selected. Click Close . 2. Additional Include Directories . Open C/C++ entry > click General > In beside menu select the first one, Additional Include Directories > click the down arrow at the end of the field > click Edit... . Copy C:\\GL\\SDLsrc\\include > in Additional Include Directories wizard click first icon > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories . Open Linker entry > click General > Additional Library Directories > click the down arrow at the end of the field > click Edit... . Copy C:\\GL\\SDLsrc\\build\\Debug > in Additional Library Directories wizard click first icon > paste. In Additional Library Directories wizard click OK . 4. Additional Dependencies . In Linker drop-down menu select Input > in beside menu select the first one, Additional Dependencies > click the down arrow at the end of the field > Edit... . Copy opengl32.lib; SDL2maind.lib; SDL2d.lib and paste in Additional Dependencies wizard's upper-most text box > click OK . Click Apply and OK in SDLsrc-0 Property Pages wizard."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\SDLsrc\\build\\Debug > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"SDLsrc-0.sln\". Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Copy following code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". If a black window with message \"SDL initialization succeeded!\" appears, then the project was set up correctly. If you do not see that, do the below step. You are now ready to program with SDL."
+    },
+    {
+      "title": "Correct errors.",
+      "content": "Correct errors. Files are missing. Copy C:\\GLP\\SDLsrc-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 12, step 2, and add it now. In \"Error List\" if you see error cannot open file SDL.h, Check whether folder SDLsrc exists in C:\\GL. If it exists go to Part 13, step 1, sub-step 2 Additional Include Directories , and follow instructions. cannot open file SDL2.lib or SDL2main.lib, go to part 13, step 1, sub-step 3 Additional Library Directories and follow instructions. Also to sub-step 4 Configure Additional Dependencies . Thrown wizard about dll file go to previous Part step 2, and follow instructions For other errors. If you can't correct them, close Visual Studio > delete project folder SDLsrc-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 12. Good job. TIP: Even if in Property Pages main settings it is Platform: x64 , click Configuration manager... and in Active solution platform: select x64."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio and, while \"SDLsrc-0\" is open , click \"Project\" > \"Export Template...\". On \"Export template Wizard\" check \"Project Template\", if it's not checked. Click Next > . On Select Template Options , if Template name: is SDLsrc-0 , it's okay. If it's not, type (or copy and paste) SDLsrc-0 and paste. Output Location: (something like C:\\Users\\utilisateur\\Documents\\Visual Studio 2019\\My Exported Templates\\Project-1.zip ) is okay. Click Finish . Template has been created. Delete thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu, select x64 > click File > New > Project... . In Create a new project wizard in the list of templates select SDLsrc-0 (if necessary scroll down the list or type it in search box above the list and hit ↵ Enter ) > click Next . In Configure your new project wizard, if \"Project name\" is SDLsrc-01 it's okay. If it's not, type (or copy and paste) SDLsrc-01 Location should be C:\\GLP. If it's not, delete anything, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked. Click Create . In Visual Studio main menu, select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job"
+    },
+    {
+      "title": "TIP:",
+      "content": "TIP: Remember, in every project you create with this template, select x64 (next to Debug) in Visual Studio's GUI."
+    },
+    {
+      "title": "In this tutorial you learn 3 was to set up SDL in Project with Visual Studio.",
+      "content": "In this tutorial you learn 3 was to set up SDL in Project with Visual Studio. Set up binaries x86 (32 bits). It's the easiest. You should start learning set up from here. Set up binaries x64 (64 bits). It targets x64 platform. Choose it only when you are sure your project needs it. Compile SDL source, and set up in project. Targets x64 too.The most difficult. The best though."
+    },
+    {
+      "title": "Create an SDL folder on your computer.",
+      "content": "Create an SDL folder on your computer. You'll be downloading and unzipping several files, so it's good to keep them all in a single folder. Keep it simple—create the folder in the root of your C: or D: drive, e.g. C:\\SDL ."
+    },
+    {
+      "title": "Download the latest version of SDL2 from http://libsdl.org/download-2.0.php.",
+      "content": "Download the latest version of SDL2 from http://libsdl.org/download-2.0.php . The file you need is the ZIP file containing the development libraries, so select SDL2-devel-2.0.12-VC.zip . [1] X Research source"
+    },
+    {
+      "title": "Unzip the files and move them to your SDL folder.",
+      "content": "Unzip the files and move them to your SDL folder. Here's an easy way to do this: Open your default Downloads folder and scroll to SDL2-devel-2.0.12-VC.zip . Right-click SDL2-devel-2.0.12-VC.zip and select Extract Here . Click Extract without changing the folder path. This unzips the files and displays a File Explorer window containing a folder called \"SDL-2.0.12.\" Double-click the new folder to open it. You'll see three folders and several files. Highlight all of the files and sub-folders and press Control + X . In the same File Explorer window, navigate to the SDL folder you created and double-click it to open it. Right-click a blank area in the folder and select Paste . The files are now moved into the correct folder."
+    },
+    {
+      "title": "Adding Media Support.",
+      "content": "Adding Media Support. Install the files necessary for including images in your program. If you'll be using any graphics in your program, you'll want to set up image file support for both X86 (32-bit) and X64 (64-bit) systems. To install the image support files: Download and extract the file: Go to https://www.libsdl.org/projects/SDL_image . Below Development Libraries: find and download SDL2_image-devel-2.0.5-VC.zip . Right-click the downloaded file called SDL2_image-devel-2.0.5-VC.zip and select Extract All . Click Extract . Move the SDL_image.h file to SDL's include folder. In File Explorer navigate ... Downloads > SDL2_image-devel-2.0.5-VC.zip > SDL2_image-2.0.5 > include > click file SDL_image.h > right click > select Copy . Go to C:\\SDL\\include > right click in blank area > Paste . Move the x64 files to the appropriate folder. Double-click the new folder called SDL2_image-2.0.5 . Double-click the lib folder and then the x64 folder. Select all the folder's contents and press Ctrl + X . In the same window, navigate to the SDL folder you created (e.g., C:\\SDL\"). Double-click the lib and then the x64 folder. Right-click a blank area of the folder and click Paste . Move the x86 files to the appropriate library folder. Return to the Downloads folder and double-click the unzip SDL2_image-2.0.5 folder. Double-click the lib folder and then the x86 folder. Select all of the folder's contents and press Ctrl + X . In the same window, navigate to the SDL folder you created (e.g., D:\\SDL\"). Double-click the lib and then the x86 folder. Right-click a blank area of the folder and click Paste ."
+    },
+    {
+      "title": "Install the files necessary to support True Type fonts.",
+      "content": "Install the files necessary to support True Type fonts. Like with image support, you'll need to download libraries to support any True Type fonts you want to include in your program. And like image support, you'll have to copy the x86 and x64 files to their own library folders: Download and unzip the file: Go to https://www.libsdl.org/projects/SDL_ttf and, below Development Libraries: find and download the file called SDL2_ttf-devel-2.0.15-VC.zip . Right-click SDL2_ttf-2.0.15 folder in your Downloads folder and select Extract All . Click Extract . Move SDL_ttf.h file to SDL's include folder. Go to Downloads > SDL2_ttf-devel-2.0.15-VC.zip > SDL2_ttf-2.0.15 > include > click SDL2_ttf.h file > right click > select Copy . Go to C:\\SDL\\include > right click > select Paste . Move the x64 files to the appropriate library folder. Double-click the SDL2_ttf-2.0.15 folder in your Downloads. You find it in unzip folder SDL2_ttf-devel-2.0.15-VC . Double-click lib and then x64 . Select all the files and press Ctrl + X . In the same File Explorer window, navigate to the SDL folder you created (e.g., C:\\SDL\"). Double-click the lib folder Double-click the x64 folder. Right-click a blank area of the folder and select Paste . Move the x86 files to the appropriate library folder. Return to the Downloads folder and double-click the SDL2_ttf-2.0.15 . Double-click the lib folder and then the x86 folder. Select all of the folder's contents and press Ctrl + X . In the same window, navigate to the SDL folder you created (e.g., C:\\SDL). Double-click the lib and then the x86 folder. Right-click a blank area of the folder and click Paste ."
+    },
+    {
+      "title": "Install support for sound files.",
+      "content": "Install support for sound files. If you want any sounds in your program, you'll need sound support. The process is just like setting up image and True Type support. Download and unzip: Go to https://www.libsdl.org/projects/SDL_mixer and below Development Libraries: find and download SDL2_mixer-devel-2.0.4-VC.zip . Right-click the downloaded file and select Extract All and then Extract . Move the SDL2_mixer.h file into SDL's include folder. Go to Downloads > SDL2_mixer-devel-2.0.4-VC.zip > SDL2_mixer-2.0.4 > include > click file SDL2_mixer.h > right click > select Copy . Go to C:\\SDL\\include > in blank area right click > select Paste . Move the x64 files to the appropriate library folder. Double-click the SDL_mixer-2.0.4 folder in your Downloads. Double-click lib and then x64 . Select all of the files and press Ctrl + X . In the same File Explorer window, navigate to the SDL folder you created (e.g., C:\\SDL\"). Double-click the lib folder and then the x64 folder. Right-click a blank area of the folder and select Paste . Move the x86 files to the appropriate library folder. Return to the Downloads folder and double-click the SDL_mixer-2.0.4 . Double-click the lib folder and then the x86 folder. Select all of the folder's contents and press Ctrl + X . In the same window, navigate to the SDL folder you created (e.g., C:\\SDL ). Double-click the lib and then the x86 folder. Right-click a blank area of the folder and click Paste ."
+    },
+    {
+      "title": "Setting Up a Visual Studio Project.",
+      "content": "Setting Up a Visual Studio Project. Open Visual Studio 2019. You'll find it in your Start menu."
+    },
+    {
+      "title": "Click Create a new project.",
+      "content": "Click Create a new project . It'll appear once Visual Studio launches. [2] X Research source ."
+    },
+    {
+      "title": "Create a new empty C++ project.",
+      "content": "Create a new empty C++ project. To do this, search for \"Empty Project\" in the template search bar and click Empty Project (the one that's labeled with \"C++\") when it appears. Then, click Next to continue."
+    },
+    {
+      "title": "Enter your project name and saving location.",
+      "content": "Enter your project name and saving location. Name the project and choose a location to save it. [3] X Research source Also, check \"Place solution and project in the same directory\" on this screen."
+    },
+    {
+      "title": "Click Create.",
+      "content": "Click Create . It's at the bottom-right corner. This opens your empty project."
+    },
+    {
+      "title": "Add your source files to the project.",
+      "content": "Add your source files to the project. Here's how: Right-click Source Files in the Solution Explorer window. Select Add > New Item… In the \"Add New Item - Project-0\" window, click C++ File (.cpp) . Change the name if you'd like. The \"Location\" should be C:\\SDL\\Project-0\\ (or whatever path you're using). If it's not, click … to the right of the field, navigate to the correct folder, and click Select folder . Click Add to open the file in the main editor."
+    },
+    {
+      "title": "Right-click the project and select Properties.",
+      "content": "Right-click the project and select Properties . You'll do this in the Solution Explorer window."
+    },
+    {
+      "title": "Include the paths to SDL.",
+      "content": "Include the paths to SDL. Here's how: Select All Platforms from the \"Platform\" menu at the top of the window. Expand the C/C++ menu in the left panel and select General . [4] X Research source In the right panel, click Additional Include Directories , down arrow at the end of the field, Edit . At the top of the \"Additional Include Directories\" wizard, click the brown folder icon (the first icon), and then click ... next to the text box. In the \"Select Directory\" window, navigate to C:\\SDL (or wherever your SDL folder is), select the include folder, and then click Select Folder . Click OK on the \"Additional Include Directories\" window. Select x64 from the menu and click Yes , if prompted, to save. Now, click Linker, General, Additional Library Directories in the right panel, the down arrow at the end of the field, and select Edit . Click the brown folder icon, the ... and navigate to C:\\SDL\\lib (or wherever your SDL folder is), select the x64 folder, and then click Select Folder . Click OK on the Additional Library Directories window. Now select x86 (or win32) from the \"Platform\" menu. Click Yes to save if prompted. Again, click Additional Library Directories in the right panel, the down arrow at the end of the field, and select Edit . Click the brown folder icon, and then … . Navigate to C:\\SDL\\lib (or wherever your SDL folder is), select the x86 folder, and then click Select Folder . Click OK on the Additional Library Directories window. Leave the properties window open, though."
+    },
+    {
+      "title": "Add the library files.",
+      "content": "Add the library files. Here's how: On the Properties window, select x86 (or win32) from the \"Platform\" menu and click Yes if prompted. Expand the Linker menu in the left panel and select Input . Click the Additional Dependencies option in the right panel, the down arrow at the end of the field, and select Edit . Copy SDl2.lib; SDL2_mixer.lib; SDL2_ttf.lib; SDL2_image.lib; SDL2main.lib and paste into upper most text area of \"Additional Dependencies\" wizard. Click OK . Switch to the x64 platform using the Platform menu and click Yes if prompted. Click the Additional Dependencies option in the right panel, the down arrow at the end of the field, and select Edit . Copy SDl2.lib; SDL2_mixer.lib; SDL2_ttf.lib; SDL2_image.lib; SDL2main.lib and paste into upper most text area of \"Additional Dependencies\" wizard. Click OK . Click Apply at the bottom. Don't close the window."
+    },
+    {
+      "title": "Copy the DLLs to the folder in which your program will run.",
+      "content": "Copy the DLLs to the folder in which your program will run. You should still be your project's properties window: Expand the Linker menu in the left panel and select System . Switch to the x86 (or Win32) platform. In the right panel, click SubSystem . Click the down-arrow and select Console (/SUBSYSTEM:CONSOLE) . Click Apply . Switch to the x64 platform. Click the down-arrow and select Console (/SUBSYSTEM:CONSOLE) again. Click Apply and then OK . Press Windows key + E to open the File Explorer. Navigate to C:\\SDL\\lib\\x64 (unless you're using a 32-bit version of Windows, in which case, use the x86 folder). When you're there, select all of the .DLL files you'll need for this project (at the very list, SDL2.dll —but if you're using images, sdl2_image.dll , etc.) and select Copy . Navigate to C:\\SDL\\Project-0 (or whatever your project folder is called). When there, right-click a blank location in the folder and select Paste ."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Copy following code and paste in Source.cpp code area. In Visual Studio main menu switch to x64. Hit Ctrl + F5 . If a black window with the message \"SDL initialization succeeded!\" appears, then the project was set up correctly. You are now ready to program with SDL."
+    },
+    {
+      "title": "Fix the error \"Cannot open file SDL.h.\"",
+      "content": "Fix the error \"Cannot open file SDL.h.\" If you see this error, return to the project's properties, and double-check the folders in \"Additional include Directories."
+    },
+    {
+      "title": "Fix the error \"cannot open file SDL2.lib or SDL2main.lib.\"",
+      "content": "Fix the error \"cannot open file SDL2.lib or SDL2main.lib.\" Make sure all directories are correct in properties and that you've added all library files to Linker > Input > Additional Dependencies ."
+    },
+    {
+      "title": "Fix the error \"entry point must be defined.\"",
+      "content": "Fix the error \"entry point must be defined.\" Return to Linker > System and make sure the Subsystem value is correct."
+    },
+    {
+      "title": "Fix the error \"file SDL2.dll is missing.\"",
+      "content": "Fix the error \"file SDL2.dll is missing.\" Make sure SDL2.dll is pasted into your project's folder."
+    },
+    {
+      "title": "Click the Project menu in Visual Studio.",
+      "content": "Click the Project menu in Visual Studio. Now that you've created a project, it can be helpful to save it as a template that you can use to create new projects with all necessary paths set up and ready to use. [5] X Research source"
+    },
+    {
+      "title": "Click Export Template on the menu.",
+      "content": "Click Export Template on the menu. This opens the Export Template wizard."
+    },
+    {
+      "title": "Select \"Project template\" and click Next.",
+      "content": "Select \"Project template\" and click Next ."
+    },
+    {
+      "title": "Enter your template options.",
+      "content": "Enter your template options. Here you'll enter a name for the template, a description, icon, and preview image. Give the template a name like \"SDL\" or \"SDL template\" so you know what it's for everything you select will appear in the dialog window when you create a new project from a template. If you don't want to load the template into VS immediately, remove the checkmark from \"Automatically import the template into Visual Studio.\""
+    },
+    {
+      "title": "Click Finish to create the template.",
+      "content": "Click Finish to create the template. This saves the template to a ZIP file in the \"My Exported Templates\" folder, which you'll find in your user folder under \\Documents\\Visual Studio 2019\\Templates\\Project Templates. Each time you create a project with this template copy dll files and paste into project-folder. Remember in Visual Studio main menu switch to x64. [6] X Research source"
+    }
+  ]
+}

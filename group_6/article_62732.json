@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Yum-Uninstall",
+  "title": "Yum Uninstall Guide: Remove Packages and Dependencies",
+  "steps": [
+    {
+      "title": "Get the package name.",
+      "content": "Get the package name. If you're not sure what the exact name of the package is that you want to uninstall, there's an easy way to find it: To see a list of all installed packages , run yum list installed . However, this can be a lengthy list if you've installed a lot of packages. [1] X Research source To search for a package that contains a certain keyword, run the command yum list installed | grep keyword . Replace keyword with anything that describes the package you're looking for. For example, if you're looking for a package related to BIND, you'd use yum list installed | grep bind to display all installed packages with \"bind\" in the name."
+    },
+    {
+      "title": "Run yum remove packagename to uninstall the package.",
+      "content": "Run yum remove packagename to uninstall the package. For example, to uninstall BIND, run yum remove bind . Enter your password when prompted, press y , and then press Enter to uninstall the package with yum. You can also use yum erase packagename , as erase works the same as remove . If you're not logged in as root, you'll need to preface the yum command with sudo ."
+    },
+    {
+      "title": "Use yum autoremove packagename to uninstall a package and its dependencies.",
+      "content": "Use yum autoremove packagename to uninstall a package and its dependencies. This command not only uninstalls the package, but also deletes any dependencies you'll no longer need once the package is removed."
+    },
+    {
+      "title": "Remove dependencies automatically (optional).",
+      "content": "Remove dependencies automatically (optional). If you want to automatically remove dependencies when you run the yum remove command instead of running yum autoremove every time, just make a quick change to /etc/yum.conf: Open /etc/yum.conf in any text editor, such as nano or vi. Add the line clean_requirements_on_remove=1 . [2] X Research source Save the file."
+    },
+    {
+      "title": "Run the command yum remove package1 package2 package3.",
+      "content": "Run the command yum remove package1 package2 package3 . To uninstall more than one package at a time with yum, type each package name after the \"yum remove\" command, separated by single spaces."
+    },
+    {
+      "title": "Decide whether to remove all packages in a group, or just those not in use.",
+      "content": "Decide whether to remove all packages in a group, or just those not in use. When you uninstall a group with yum, you'll be uninstalling all packages in that group, even if a package is part of another installed group or a dependency of another installed package. If you only want to uninstall packages from a group that aren't required by other packages or groups, you'll need to edit /etc/yum.conf first: Use any text editor to open /etc/yum.conf for editing. Add groupremove_leaf_only=1 to the \"[main]\" section of the config file. [3] X Research source Save the file."
+    },
+    {
+      "title": "Use the command yum grouplist to view all installed groups.",
+      "content": "Use the command yum grouplist to view all installed groups. To uninstall a package group with yum, you'll need the group's name. This displays all package groups you've installed. For example, if you want to uninstall the KDE Plasma Workspaces group, the group name you're looking for is \"KDE Plasma Workspaces\". If you don't see the group you're looking for, use yum grouplist hidden to include hidden package groups. [4] X Research source To see which packages will be removed when you uninstall the group, use the command yum groupinfo groupname . [5] X Research source"
+    },
+    {
+      "title": "Use yum groupremove groupname to remove the group.",
+      "content": "Use yum groupremove groupname to remove the group. This uninstalls all packages that were installed with that group. If the group name contains spaces, surround it in quotes. For example, yum groupremove \"KDE Plasma Workspaces\" ."
+    },
+    {
+      "title": "Trying to remove \"yum\", which is protected",
+      "content": "Trying to remove \"yum\", which is protected error. You'll see this error if you try uninstalling a package that yum depends on, such as python or gawk. You'll also see this error if you try removing a package relied on by systemd, such as binutils. Technically, you could uninstall a package required by yum using the command rpm -e --nodeps packagename , but you'll likely break things and wind up needing to reinstall yum. This is not recommended. [6] X Research source"
+    },
+    {
+      "title": "No match for argument",
+      "content": "No match for argument error. If you can't uninstall a package because of the \"No match\" error, the package name is incorrect, or you didn't install it with yum (for example, you compiled it from source)."
+    },
+    {
+      "title": "Yum uninstalls aren't removing everything.",
+      "content": "Yum uninstalls aren't removing everything. When you uninstall a package with yum, it only removes the software from the package—any configuration files or directories created by the software itself will remain unless you manually delete them ."
+    },
+    {
+      "title": "You uninstalled the system version of python and now yum isn't working.",
+      "content": "You uninstalled the system version of python and now yum isn't working. As yum requires python, it'll stop working if you remove python from your system. Unfortunately, there's not an easy fix, as the version of python that comes with your Linux system is the one yum relies on. Make a backup of your files and reinstall the OS."
+    }
+  ]
+}

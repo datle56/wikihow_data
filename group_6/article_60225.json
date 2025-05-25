@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Sorry-No-Manipulations-with-Clipboard-Allowed",
+  "title": "How to Fix Clipboard Errors on Mac: 9 Troubleshooting Tips to Try",
+  "steps": [
+    {
+      "title": "\"Sorry, No Manipulations with Clipboard Allowed\" is a clipboard error.",
+      "content": "\"Sorry, No Manipulations with Clipboard Allowed\" is a clipboard error. When you copy and paste something, you use the \"clipboard\" on your Mac. This clipboard stores the data you're copying until you paste it. When you see \"Sorry, No Manipulations with Clipboard Allowed,\" that means something is wrong with the copy and paste feature."
+    },
+    {
+      "title": "Clipboard glitches or crashing can cause this error.",
+      "content": "Clipboard glitches or crashing can cause this error. It could also mean that your Mac's cache is full, or that the cache's data is old or corrupt. A cache is a group of temporary files that are used to make certain processes run faster, but corrupt data or a full cache can cause other issues—such as this clipboard error."
+    },
+    {
+      "title": "Restart the pboard process to fix your clipboard errors.",
+      "content": "Restart the pboard process to fix your clipboard errors. \"Pboard\" refers to Pasteboard, which is the process that manages the clipboard on your computer. If your clipboard has stopped working, restarting Pasteboard can fix the problem. Restarting the pboard process can be done via Activity Monitor: Open the Activity Monitor . You can do this easily by pressing Cmd + Space on your keyboard and typing \"Activity Monitor.\" [1] X Research source Search for pboard in the Activity Monitor search bar, then double-click the pboard process. Click Quit or Force Quit to quit pboard. The pboard will automatically restart itself, as it's a core Mac function that can't be fully stopped. Once you've quit the pboard process, you can immediately attempt to copy and paste to see if the error has been fixed. You can also quit pboard with the Terminal. Open a terminal window and execute the command killall pboard or sudo killall pboard . The sudo command runs the killall pboard command with admin privileges, and you'll have to enter your password to use it."
+    },
+    {
+      "title": "Restart the WindowServer process if restarting pboard doesn't work.",
+      "content": "Restart the WindowServer process if restarting pboard doesn't work. WindowServer is the process that manages your on-screen windows. Issues with WindowServer can cause your clipboard to stop working, and resetting WindowServer can fix these issues. Note that when you restart WindowServer, you'll lose any unsaved data open on your Mac. Save any open files before continuing. Open the Activity Monitor. You can do this easily by pressing Cmd + Space on your keyboard and typing \"Activity Monitor.\" Search for WindowServer in the Activity Monitor search bar, then double-click the WindowServer process. Click Quit or Force Quit to quit WindowServer. When you do this, all your open windows will be closed, and you'll be logged out of your Mac. You can log back in after this, and all your open windows will relaunch. Attempt to copy and paste again. Once you've quit the WindowServer process and logged back in, you can immediately attempt to copy and paste to see if the error has been fixed."
+    },
+    {
+      "title": "Restart your Mac to clear out the clipboard.",
+      "content": "Restart your Mac to clear out the clipboard. Sometimes, random bugs or glitches can be fixed by restarting your computer. Restarting your computer also clears out the clipboard, which can wipe away any corrupt data that might be lingering, causing the issue. Save any open files, then click on the Apple menu and select Restart . Once your computer restarts, you can attempt to copy and paste again to see if the error has been fixed."
+    },
+    {
+      "title": "Check to see if macOS is up to date, and install any pending updates if not.",
+      "content": "Check to see if macOS is up to date, and install any pending updates if not. The clipboard error you're experiencing could be a bug that has been fixed in a newer version of macOS. If you have any pending macOS updates, install them to see if it fixes this issue. From the Apple menu click on System Settings or System Preferences (the wording varies based on your macOS version). Then go to General > Software Update and install any pending updates. Once your Mac has updated, you can try copying and pasting again to see if the error has been fixed."
+    },
+    {
+      "title": "Try clearing out your Mac's cache to get rid of any old or corrupt data.",
+      "content": "Try clearing out your Mac's cache to get rid of any old or corrupt data. Cache files are used to make certain processes on your computer work more quickly, but sometimes these files become corrupt. This can cause a myriad of issues, including causing clipboard errors. A full cache could also cause clipboard errors. Open the Finder menu and click Go . Then, while holding down the Option key, click on Library . This will allow you to see the Caches folder. Go into the Caches folder and delete all the files and folders inside, but don't delete the Caches parent folder. Try to copy and paste again. If you're still getting an error, try restarting your computer after clearing the cache and then attempt to copy and paste one more time."
+    },
+    {
+      "title": "Uninstall any clipboard managers you've installed.",
+      "content": "Uninstall any clipboard managers you've installed. There are many third-party clipboard managers, and while these are usually fine to use, sometimes they can cause issues with your Mac's native clipboard system. If nothing else is working, try uninstalling any third-party clipboard managers. To uninstall a third-party clipboard manager, simply drag the app to the Trash."
+    },
+    {
+      "title": "Manually run maintenance scripts to clear out old or corrupt data.",
+      "content": "Manually run maintenance scripts to clear out old or corrupt data. Maintenance scripts help keep your computer running smoothly by clearing out old system logs and files you no longer need. These scripts run automatically, but sometimes they fail to run, or you encounter an issue between runs. Press Cmd + Space and type Terminal . Open the Terminal application. Enter the command sudo periodic daily weekly monthly . You'll be prompted to enter your password. After you do, the maintenance script will run. Once the script has completed, you can try copying and pasting again."
+    },
+    {
+      "title": "Check for malware, which is a rare issue that may create this error.",
+      "content": "Check for malware, which is a rare issue that may create this error. Malware isn't common on a Mac, but it can infect your computer. If no other methods have fixed your clipboard error, you may want to check for malware. Mac computers have built-in antivirus protection, but users can't use these tools to do a manual scan for viruses and malware. If you want to scan for malware, you'll need to download a third-party antivirus such as Kaspersky or Bitdefender."
+    },
+    {
+      "title": "Contact Apple for support if you can't resolve the issue.",
+      "content": "Contact Apple for support if you can't resolve the issue. Apple Support can help you troubleshoot and make a service appointment for your computer if needed. Start by going to Apple's Support page and select Mac > Apps & Software > macOS . Click Continue and then scroll down to the \"Contact\" heading, where you can choose to chat online with or call a Support representative."
+    }
+  ]
+}

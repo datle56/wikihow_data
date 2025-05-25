@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Call-a-Function-in-VB",
+  "title": "Calling Functions in VB & VBA: Syntax, Examples, & More",
+  "steps": [
+    {
+      "title": "The syntax for calling a function in VB and VBA is lvalue = functionName (argument1, argument2).",
+      "content": "The syntax for calling a function in VB and VBA is lvalue = functionName (argument1, argument2) . If there is more than one argument (like in this example), you'll separate the arguments with commas. [1] X Research source You must provide values for all arguments that aren't optional. But if there are no arguments, you can omit the parentheses or just leave them blank () . [2] X Research source When you call a function, its statements run beginning with the first executable statement after the Function statement until End Function , Return , or Exit Function is encountered. [3] X Research source Unlike when calling a subroutine, you usually won't need to include the Call keyword when calling a function. [4] X Research source If you use the Call keyword, no value will be returned. If you're using VBA in a cell within an Excel spreadsheet, the syntax is =functionName(argument1, argument2) . If you're writing code in the Excel VB editor, you'll use the standard syntax. But in a cell, you'll need to preface the call with an equals sign as you would when writing a formula."
+    },
+    {
+      "title": "In this example, we'll write a function that finds the hypotenuse of a right triangle.",
+      "content": "In this example, we'll write a function that finds the hypotenuse of a right triangle. [5] X Research source Then, we'll call that function to find the hypotenuse for a triangle if one of the lines is 2.3 . First, let's create the function. Function hypotenuse ( ByVal side1 As Single , ByVal side2 As Single ) As Single Return Math . Sqrt (( side1 ^ 2 ) + ( side2 ^ 2 )) End Function And here's how we'd call the function if one side is 2.3 . Dim testLength , testHypotenuse As Single testHypotenuse = hypotenuse ( testLength , 2.3 )"
+    },
+    {
+      "title": "We can also call functions using expressions.",
+      "content": "We can also call functions using expressions. In this example, we'll call the MsgBox function, which displays a message box to the user and accepts input. There are 5 possible named arguments for MsgBox in Visual Basic and VBA— prompt , buttons , title , helpfile , and context . [6] X Research source We want to pass two arguments—one to display a message, and another to display yes and no buttons: Dim intResponse As Integer intResponse = MsgBox ( \"Are you sure you want to proceed?\" , vbYesNo ) If intResponse = vbYes Then End End If"
+    },
+    {
+      "title": "Now we'll create a function that adds two numbers together.",
+      "content": "Now we'll create a function that adds two numbers together. First we'll write a function called Add , and then we'll call the function to add the numbers 32 and 64 . First, here's the function: [7] X Research source Function Add ( ByVal x As Integer , ByVal y As Integer ) As Integer Dim Res as integer Res = x + y Add = Res End Function Now, let's call the function in a subroutine to add our numbers: Sub Form_Load () Dim a As Integer Dim b As Integer Dim c As Integer a = 32 b = 64 c = Add ( a , b ) MsgBox ( \"Sum is : \" & c ) End Sub"
+    }
+  ]
+}

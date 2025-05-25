@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Hack-a-Website-with-Basic-HTML-Coding",
+  "title": "How to Hack a Website with Basic HTML Coding",
+  "steps": [
+    {
+      "title": "Go to the login page of a SQL-based website.",
+      "content": "Go to the login page of a SQL-based website. If you don't see the fields asking for your username and password, click the Log In or Sign In link on the homepage to get there. Most developers have wised up to SQL injection hacks, so this probably won't work on the majority of websites. Still, if you find an older website with a login page, you may be able to use this hack to gain access without knowing a password."
+    },
+    {
+      "title": "Check the website for SQL vulnerabilities.",
+      "content": "Check the website for SQL vulnerabilities. The simplest way to do this is to enter ' (this is the single quote mark) into the username field, and then click the Log In or Sign In button. [2] X Research source Leave the password field blank. If you see an error message that contains a bunch of SQL code including QUERY: SELECT * FROM , the website is vulnerable. If you get a simple error that says the username or password is incorrect, this method won't work."
+    },
+    {
+      "title": "Enter the injection code into the \"Password\" field.",
+      "content": "Enter the injection code into the \"Password\" field. If the single quote you entered into the Username field before is still there, delete it—you'll want that field to be blank. In the password field, type ' or 1=1--+ ."
+    },
+    {
+      "title": "Click the Login button.",
+      "content": "Click the Login button. If you were able to log in successfully, great! If this didn't work, it could be because some sites block 1--+ . Try using one of these as the password instead (still leaving the Username field blank): ' or 1=1# or ' or 1=1-- . [3] X Research source If you're able to gain access to the database , the ethical thing to do would be to alert the administrator. If you're still not able to log in, the site is protected against this type of hack."
+    },
+    {
+      "title": "Go to the login page of the website you want to hack.",
+      "content": "Go to the login page of the website you want to hack. You can use any modern web browser, including Chrome , Firefox , or Safari. Passwords are encrypted the vast majority of the time—it's extremely rare that websites and login forms are coded in basic, unsecured HTML. You may be able to use this method if you find a very basic website from a long time ago, or maybe the website of a new-to-HTML student."
+    },
+    {
+      "title": "Go to the \"Login\" section.",
+      "content": "Go to the \"Login\" section. If the website has a dedicated login section, click the Log In or Sign In link or button to go there. If the website loads to a login screen (or if the login section is on the home page), you can skip this step."
+    },
+    {
+      "title": "Press ⌘ Command+U (Mac) or Control+U (PC) to open the website's source code.",
+      "content": "Press ⌘ Command + U (Mac) or Control + U (PC) to open the website's source code. This displays the HTML source code of the current page in a new tab."
+    },
+    {
+      "title": "Press ⌘ Command+F (Mac) or Control+F (PC).",
+      "content": "Press ⌘ Command + F (Mac) or Control + F (PC). This opens the Find tool, which lets you search through the document."
+    },
+    {
+      "title": "Type password into the search box.",
+      "content": "Type password into the search box. This identifies all instances of the word \"password\" in the code. Use the arrows next to the search field to scroll through the results. If you don't see any results, shorten the search to pass and repeat, then do the same with user , username , login , and other keywords which may describe login information. If you're attempting to hack the website by logging in under the website's administrator credentials, the username may be something like \"admin\" or \"root\"."
+    },
+    {
+      "title": "Try entering an incorrect username and password combination.",
+      "content": "Try entering an incorrect username and password combination. If you've combed through the HTML with no adequate search results, do the following: Close the source tab. Type in random letters for the username (or email address) and password fields. Click the Log In button. Re-open the source page by pressing Command + U or Control + U ."
+    },
+    {
+      "title": "Look for login credentials on the error page.",
+      "content": "Look for login credentials on the error page. Once you've updated the source code to reflect what's on the failed login attempt page, you can resume using the search bar to look for keywords pertaining to the login information."
+    },
+    {
+      "title": "Enter any found login credentials on the site.",
+      "content": "Enter any found login credentials on the site. If you were able to retrieve some form of username and password from the website's HTML, try using the credentials in the website's login section. If they work, you've found the correct credentials. Again, the chances of anything you found in the HTML working as a successful login are extremely low."
+    }
+  ]
+}

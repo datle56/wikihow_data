@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Identify-and-Resolve-Hardware-Failure-Issues",
+  "title": "How to Identify and Resolve Hardware Failure Issues",
+  "steps": [
+    {
+      "title": "Try to identify bad sectors.",
+      "content": "Try to identify bad sectors. Bad sectors are sectors on a hard drive that can no longer be used. This may be due to permanent damage or the inability of the OS to access them. If you find your system freezing, getting stop errors, or other errors this may be due to bad sectors. Use chkdsk and repair these problems."
+    },
+    {
+      "title": "Run chkdsk.",
+      "content": "Run chkdsk. To do that, click on Start (in the bottom left-hand corner), and then you would see several options and select computer. Right-click the volume that you wish to check and click on properties. In the Properties dialogue box, click on the Tools tab. Under Error-Checking there is a button that says Check Now. Click on this to start chkdsk. In the Check Disk dialogue box, select the options you wish to run. To attempt to fix bad sectors you must check the second option, Scan For and Attempt Recovery of Bad Sectors. If you are checking the system volume, you will see the message “Windows can’t check the disk while it’s in use. Do you want to check for hard disk errors the next time you start your computer?” Click Schedule Disk Check to run the check next time you start your computer."
+    },
+    {
+      "title": "Run chkdsk from the command line:",
+      "content": "Run chkdsk from the command line: Click Start, type cmd, then right click cmd and select Run as Administrator. Type chkdsk without parameters to see the status of the disk. Chkdsk /? Will display all of the possible parameters. Type chkdsk c: \\f \\v to check and repair the disk as well as displaying any clean-up messages. 5. If you wish to check a volume other than c: change to the appropriate letter. If you are checking your system volume, you will see a message saying: “The type of file system is NTFS. Cannot lock current drive. Chkdsk cannot run because the volume is in use by another process. Would you to schedule this volume to be checked the next time the system restarts? (Y/N)” Type Y, and then restart your computer. A message will appear saying that chkdsk is running. When this finishes, Windows will start automatically."
+    },
+    {
+      "title": "Diagnose memory issues.",
+      "content": "Diagnose memory issues. A faulty RAM can cause problems with a system. Some of the more common signs of a memory problem are stop errors of the system failing to start."
+    },
+    {
+      "title": "If the system fails to start, the first thing that you should try is Startup Repair.",
+      "content": "If the system fails to start, the first thing that you should try is Startup Repair. This will attempt to resolve any errors on the hard disk, or problems with software configuration that may stop the computer from starting normally. If the computer still fails to start after this, launch the Windows Memory Diagnostic in Windows Boot Manager."
+    },
+    {
+      "title": "Note that Windows Memory Diagnostic cannot be run while Windows in running.",
+      "content": "Note that Windows Memory Diagnostic cannot be run while Windows in running. Thus, you can schedule it to run the next time you start your computer. To do this, go to Control Panel, click on System and Security, and then on Administrative tools. Double click on Windows Memory Diagnostic, and then select the appropriate option."
+    },
+    {
+      "title": "Open the Windows memory Diagnostic Scheduler.",
+      "content": "Open the Windows memory Diagnostic Scheduler. Type mdsched at the command prompt, or by clicking Start and typing mdssched."
+    },
+    {
+      "title": "Start Windows Memory Diagnostic through Windows Boot Manager if your computer is not winning.",
+      "content": "Start Windows Memory Diagnostic through Windows Boot Manager if your computer is not winning. To access this, repeatedly press the space bar as the system starts. Press Tab to select Windows Memory Diagnostic is also available through System Recovery Options."
+    },
+    {
+      "title": "Note that, by default, Windows Memory Diagnostic runs a standard test with two passes.",
+      "content": "Note that, by default, Windows Memory Diagnostic runs a standard test with two passes. There are three levels of testing, Basic, Standard, and Extended."
+    },
+    {
+      "title": "Choose the number of passes that are performed by the tests.",
+      "content": "Choose the number of passes that are performed by the tests. More passes takes longer, but it more likely to find any intermittent memory problems."
+    },
+    {
+      "title": "Power down and unplug the computer immediately if there is smoke coming out of it.",
+      "content": "Power down and unplug the computer immediately if there is smoke coming out of it. Use a fire extinguisher if necessary. Make sure that the fire extinguisher is approved for use on electrical devices."
+    },
+    {
+      "title": "If the computer doesn’t do anything when you have pressed the power button, the first thing to do is check that it is plugged in and the wall outlet is switched on.",
+      "content": "If the computer doesn’t do anything when you have pressed the power button, the first thing to do is check that it is plugged in and the wall outlet is switched on. Check that the wall outlet is working. You can do this by plugging in something that you know works and seeing if it will power on."
+    },
+    {
+      "title": "Ensure that the power cords are connected to the motherboard.",
+      "content": "Ensure that the power cords are connected to the motherboard."
+    },
+    {
+      "title": "Check that the power cable works properly.",
+      "content": "Check that the power cable works properly. You can do this using a multimeter or by just swapping the cable for one that you know works."
+    },
+    {
+      "title": "Check that any internal or external power switches are turned on.",
+      "content": "Check that any internal or external power switches are turned on."
+    },
+    {
+      "title": "Check that the voltage is set correctly on the power supply.",
+      "content": "Check that the voltage is set correctly on the power supply."
+    },
+    {
+      "title": "Test the power supply by using it in another computer.",
+      "content": "Test the power supply by using it in another computer. It is fails to work then replace it."
+    },
+    {
+      "title": "If the computer freezes before the operating system starts, it is possible that the power supply may not be powerful enough.",
+      "content": "If the computer freezes before the operating system starts, it is possible that the power supply may not be powerful enough. Check that the power supply provides the necessary wattage to power the machine."
+    },
+    {
+      "title": "Note that, if the computer shuts down at random intervals, the problem may be with the power supply fan.",
+      "content": "Note that, if the computer shuts down at random intervals, the problem may be with the power supply fan. Verify that the fan is working."
+    },
+    {
+      "title": "Check that the fan on the motherboard is working correctly.",
+      "content": "Check that the fan on the motherboard is working correctly. The system may be shutting down because it is overheating. Make sure that your system is clean of dust, if necessary, replace the fan."
+    },
+    {
+      "title": "Run the motherboard's diagnostic software (if supplied by manufacturer) to ensure that the motherboard isn’t faulty.",
+      "content": "Run the motherboard's diagnostic software (if supplied by manufacturer) to ensure that the motherboard isn’t faulty."
+    },
+    {
+      "title": "Troubleshoot when you do not hear beep codes of see any video:",
+      "content": "Troubleshoot when you do not hear beep codes of see any video: Ensure that the computer is receiving power and that the monitor is switched on and connected. Remove all external accessories such as wireless cards or external drives. Check that the power supply fan is running. If it is not then the problem is most likely to be with the power supply. Open the computer and visually inspect the motherboard. If it is blackened or melted, replace the motherboard. Ensure that all necessary power connectors are plugged in to the motherboard and that any internal power switch is power turned on. Also check that the power supply is set to the correct voltage. Ensure that the motherboard, RAM, and CPU are seated properly. If there are any jumpers on the motherboard, check the manual to make sure that they are in the correct position."
+    },
+    {
+      "title": "If none of these steps have worked, set the BIOS back to its default settings by removing the battery from the motherboard for 30 minutes.",
+      "content": "If none of these steps have worked, set the BIOS back to its default settings by removing the battery from the motherboard for 30 minutes."
+    },
+    {
+      "title": "Take action if you are hearing beep codes but the computer does not start:",
+      "content": "Take action if you are hearing beep codes but the computer does not start: Remove all external accessories such as wireless cared or external drives. Just leave the monitor, keyboard and mouse connected. By doing this you're singling out the devices that could be causing the beep codes. Refer to the manual or manufacturer website to check the meaning of the beep code that you hear."
+    },
+    {
+      "title": "Losing power after a few minutes of running is a symptom of overheating.",
+      "content": "Losing power after a few minutes of running is a symptom of overheating."
+    },
+    {
+      "title": "Check that the CPU fan is working.",
+      "content": "Check that the CPU fan is working."
+    },
+    {
+      "title": "Change the position of the computer to make sure that air can circulate around it.",
+      "content": "Change the position of the computer to make sure that air can circulate around it. This especially important with laptops, make sure that none of the cooling ports are blocked."
+    },
+    {
+      "title": "Make sure that none of the fans are blocked.",
+      "content": "Make sure that none of the fans are blocked. This will obviously cause the cooled area to overheat. The fan can also burn out."
+    },
+    {
+      "title": "If possible, check the computer's temperatures from the BIOS or a diagnostic program.",
+      "content": "If possible, check the computer's temperatures from the BIOS or a diagnostic program."
+    },
+    {
+      "title": "Remove any dust build-up inside the computer.",
+      "content": "Remove any dust build-up inside the computer."
+    },
+    {
+      "title": "Run Windows Memory Diagnostic to check that the RAM isn’t faulty.",
+      "content": "Run Windows Memory Diagnostic to check that the RAM isn’t faulty."
+    },
+    {
+      "title": "Use motherboard diagnostic software to determine if the motherboard is the source of the problem.",
+      "content": "Use motherboard diagnostic software to determine if the motherboard is the source of the problem. The diagnostic software can be obtained from the motherboard manufacturer"
+    },
+    {
+      "title": "Ask a professional.",
+      "content": "Ask a professional. There's nothing wrong with asking for help. A professional may notice something you might have missed."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Err-Ssl-Protocol-Error",
+  "title": "How to Fix ERR SSL PROTOCOL ERROR in Chrome and Edge",
+  "steps": [
+    {
+      "title": "This error means your browser can't load a website securely.",
+      "content": "This error means your browser can't load a website securely. When you try to view a website that begins with \"https://\", your web browser requests the site's SSL certificate to ensure a secure connection—a process called a \"TLS handshake.\" Oppido explains the handshake is like a conversation between the browser and the website, as if to say, \"I have today's security certificates, do you have today's security certificate that checks on your thing? Is the date correct? Okay, we can communicate.\" If part of that process fails, your browser cannot verify the certificate, resulting in errors like ERR_SSL_PROTOCOL_ERROR and \"This site can't provide a secure connection.\""
+    },
+    {
+      "title": "The most common causes of ERR_SSL_PROTOCOL_ERROR:",
+      "content": "The most common causes of ERR_SSL_PROTOCOL_ERROR: The date and time on the device you're browsing is incorrect. The website's SSL certificate has expired or is misconfigured. The website does not have SSL installed, has not configured it properly, or it's outdated. A browser extension is preventing the website from loading. There is a problem with the browser cache or saved cookies. Your antivirus software or firewall is preventing the device from loading the website. Your ISP's security policies may be interfering with the TLS handshake process."
+    },
+    {
+      "title": "Check the date and time on your computer.",
+      "content": "Check the date and time on your computer. According to Oppido, one of the most common causes of SSL errors is setting the date and time incorrectly on your PC or Mac. \"Setting the system back to proper date and time allows the certificate to come through and allow the website to authenticate properly,\" he explains. To rule out this issue, make sure your computer is set to obtain the time and date automatically. On Windows, open Settings and navigate to Time & Language > Date & time . Ensure \"Set time automatically\" and \"Set time zone automatically\" are both selected. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source On a Mac, click the Apple menu and go to System Settings > General > Date & Time . Enable \"Set time and date automatically,\" then click Time Zone and ensure \"Set time zone automatically using current location\" is selected (and that your time zone location is correct). [2] X Research source"
+    },
+    {
+      "title": "Check the SSL certificate.",
+      "content": "Check the SSL certificate. ERR_SSL_PROTOCOL_ERROR often indicates an expired, revoked, or improperly installed SSL certificate . Whether you are the site owner or just trying to load a website, you can check a website's SSL certificate using Qualys's SSL Server Test . Just enter the URL of the site you're trying to view, click Submit , and look for TLS handshake error or others. If you are the website owner, verify SSL is correctly installed on your website, that your certificate is valid, and that all libraries are up to date. Also make sure your pages do not contain mixed (both http and https) content, and that you've updated your web server configuration (or .htaccess file ) to redirect all http:// traffic to https://. If the certificate is for a new domain or subdomain, or you recently changed the DNS records for the domain or subdomain, there's a chance your DNS changes haven't propagated throughout the internet yet. Depending on the TTL specified in your zone file, DNS propagation can take several hours."
+    },
+    {
+      "title": "Clear your web browsing data.",
+      "content": "Clear your web browsing data. An easy way to see if cache and/or cookies are the culprit is to try loading the website in a different browser (e.g., if you're using Chrome, try Safari or Edge). If the website loads in a different browser, try clearing the cache and cookies to fix ERR_SSL_PROTOCOL_ERROR."
+    },
+    {
+      "title": "Disable web browser extensions.",
+      "content": "Disable web browser extensions. Some browser extensions, especially privacy-related ones, can block the certificate and handshake. Try opening the site in Incognito or Private browsing mode. If you don't see ERR_SSL_PROTOCOL_ERROR, disable your browser extensions to fix the error. If you're not sure which extension is the culprit, try disabling all but one at first. Try viewing the website with one extension enabled. If it works, activate the next extension and try again. Repeat until you find the problematic browser extension."
+    },
+    {
+      "title": "Disable the QUIC protocol in Chrome.",
+      "content": "Disable the QUIC protocol in Chrome. This experimental protocol, which is enabled by default, can cause certificate errors, including ERR_SSL_PROTOCOL_ERROR. To disable: Type or paste chrome://flags into the Chrome address bar and press Enter or Return . Type quic into the search bar at the top to filter the experimental options. Click the drop-down menu next to \"Experimental QUIC protocol\" and select Disabled . Click Relaunch Now to restart Chrome and try loading the website again. [3] X Research source"
+    },
+    {
+      "title": "Adjust your antivirus and/or firewall settings.",
+      "content": "Adjust your antivirus and/or firewall settings. Your firewall settings (or your antivirus settings) may sometimes falsely flag a trustworthy website as it loads, interrupting the loading process and causing the ERR_SSL_PROTOCOL_ERROR. Try disabling your antivirus software and/or firewall and loading the website. If the website loads without error, you can whitelist the website in your settings."
+    },
+    {
+      "title": "Clear the SSL state.",
+      "content": "Clear the SSL state. If the site still doesn't load, you may need to clear the SSL state. On Windows, you can clear the SSL state for all browsers at once in your settings. On a Mac, clearing the SSL state is as simple as deleting your web browsing history. Windows (All browsers) Press Windows key + R . Type inetcpl.cpl and press Enter . Click the Content tab. Click Clear SSL state . [4] X Research source Mac (Safari) Click the Safari menu and select Settings . If you already cleared the cache and cookies, that action also cleared the SSL state. There's no need to complete the steps, if so. Click the Privacy tab. Click Manage Website Data . Click Remove all and confirm. Clearing your web browsing data also clears the SSL state in Safari. Mac (Chrome) Click the menu icon at the top-right and select History . If you already cleared the cache and cookies, that action also cleared the SSL state. There's no need to complete the steps, if so. Click History on the sub-menu. Click Clear Browsing Data . Select \"All Time\" as the Time Range. Click Clear Data ."
+    },
+    {
+      "title": "Change your DNS servers.",
+      "content": "Change your DNS servers. If the device you're using to browse the internet is set to obtain DNS server information automatically, you may be able to fix ERR_SSL_PROTOCOL_ERROR by switching to Google's public DNS servers. You'll just need to make a quick change in your settings. Google's DNS server addresses: [5] X Research source IPv4: 8.8.8.8 and/or 8.8.44 IPv6: 2001:4860:4860::8888 and/or 2001:4860:4860::8844 Change DNS in Windows 11: Open your Windows Settings . Click Network & internet . Click Wi-Fi . Click your current connection. Next to \"DNS server assignment,\" click the Edit button. Select Manual . Turn on IPv4 (and IPv6, if you're using it). Enter the server addresses from above and save your changes. Change DNS on Windows 10: Open your Windows Settings . Click Network & internet . Click Change Adapter Options . Right-click your connection and select Properties . Select Internet Protocol Version 4 and select Properties . Choose \"Use the following DNS server addresses and enter the IPv4 addresses. Click OK , then repeat for Internet Protocol Version 6 . Change DNS on a Mac: Open System Settings . Click Network . Select your network service and click Details . [6] X Research source Click DNS . Click + and enter the IPv4 (and IPv6, if you're using it) name server addresses from above. Remove any you're not using and click OK . [7] X Research source"
+    },
+    {
+      "title": "Connect with a VPN to rule out ISP issues.",
+      "content": "Connect with a VPN to rule out ISP issues. If the issue persists, the ISP you're connected to may have implemented security measures that prevent your device from making a successful encrypted connection with the website. If you don't have a VPN, you can use Proton VPN for free . [8] X Research source If you can load the website when connected to a VPN, the issue is likely your ISP's security policy blocking the SSL certificate or the way they are routing your traffic. In this case, you will need to contact your ISP and let them know of the problem."
+    }
+  ]
+}

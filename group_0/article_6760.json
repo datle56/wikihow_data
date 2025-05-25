@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Change-a-Computer%27s-Mac-Address-in-Windows",
+  "title": "3 Ways to Change a Computer's Mac Address in Windows",
+  "steps": [
+    {
+      "title": "Go to https://technitium.com/tmac/ and download the software.",
+      "content": "Go to https://technitium.com/tmac/ and download the software. Using this software, you don't need to edit anything that you might not be comfortable with!"
+    },
+    {
+      "title": "Open Technitium and select your network adapter.",
+      "content": "Open Technitium and select your network adapter. You'll see more details for your network adapter at the bottom of the window. [1] X Research source"
+    },
+    {
+      "title": "Enter a new MAC address under the \"Change MAC address\" field.",
+      "content": "Enter a new MAC address under the \"Change MAC address\" field. If you don't see this, make sure the Information tab is active. [2] X Research source Click \"Random MAC address\" if you don't know one and the field will fill automatically."
+    },
+    {
+      "title": "Click Change Now!.",
+      "content": "Click Change Now! . You'll see this button become interactable once you enter a new MAC address. [3] X Research source You can easily return to your original MAC address by clicking the Restore Original button. [4] X Research source"
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. You can access the Device Manager from the Control Panel . It will be located in the System and Security section if you are using Category View. To find it easily on newer Windows computers, press Win + X and click \"Device Manager\"."
+    },
+    {
+      "title": "Expand the Network Adapters section.",
+      "content": "Expand the Network Adapters section. In your Device Manager, you will see a list of all of the hardware installed on your computer. These are sorted into categories. Expand the Network Adapters section to see all of your installed network adapters. If you are not sure which adapter you are using, see Step 1 of the second method to find your device's Description."
+    },
+    {
+      "title": "Right-click on your adapter and select Properties.",
+      "content": "Right-click on your adapter and select Properties . The network adapter's Properties window will open."
+    },
+    {
+      "title": "Click the Advanced tab.",
+      "content": "Click the Advanced tab. You'll see this tab along the top of the window."
+    },
+    {
+      "title": "Select the \"Network Address\" or \"Locally Administered Address\" entry.",
+      "content": "Select the \"Network Address\" or \"Locally Administered Address\" entry. The wording will depend on the type of network adapter you have. [5] X Research source Selecting it will reveal options on the right side of the window. Not all adapters can be changed this way. If you can't find either of these entries, you need to use one of the other methods in this article."
+    },
+    {
+      "title": "Click the radio button to enable the \"Value\" field.",
+      "content": "Click the radio button to enable the \"Value\" field."
+    },
+    {
+      "title": "Enter your new MAC address.",
+      "content": "Enter your new MAC address. MAC addresses are 12-digit values and should be entered without any dashes or colons. For example, if you want to make the MAC address \"2A:1B:4C:3D:6E:5F\", you would enter \"2A1B4C3D6E5F\"."
+    },
+    {
+      "title": "Reboot your computer",
+      "content": "Reboot your computer to enable the changes. You can also disable and re-enable your adapter within Windows for the change to become effective without rebooting. Just sliding the Wi-Fi's On/Off switch like the slider found on ThinkPads and VaiOs won't satisfactorily disable/re-enable the card."
+    },
+    {
+      "title": "Check that the changes took effect.",
+      "content": "Check that the changes took effect. Once you've rebooted the computer, open the Command Prompt and enter ipconfig /all , and note the Physical Address of your adapter. It should be your new MAC address. [6] X Research source"
+    },
+    {
+      "title": "Find your network adapter's ID information.",
+      "content": "Find your network adapter's ID information. In order to easily identify your network adapter in the Windows Registry, you'll want to gather some basic information about it through the Command Prompt. You can open the Command Prompt by typing \"cmd\" into the Run box (Windows key + R). Type ipconfig /all and press Enter. Note the Description and Physical Address for the active network device. Ignore devices that aren't active (Media Disconnected). [7] X Research source Type net config rdr and press Enter. Note the GUID, which is displayed between the \"{}\" brackets next to the Physical Address you recorded earlier."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. You can start the Registry Editor by opening the Run dialog box (Windows key + R) and typing \"regedit\". This will open the Registry Editor, which will allow you to change the settings for your network card. Making incorrect changes to the registry can cause your system to malfunction."
+    },
+    {
+      "title": "Navigate to the registry key.",
+      "content": "Navigate to the registry key. Go to HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}. Expand it by clicking the arrow."
+    },
+    {
+      "title": "Find your adapter.",
+      "content": "Find your adapter. There will be several folders labeled \"0000\", \"0001\", etc. Open each of these and compare the DriverDesc field to the Description you noted in the first step. To be completely sure, check the NetCfgInstanceID field and match it with the GUID from the first step. [8] X Research source"
+    },
+    {
+      "title": "Right-click on the folder that matches your device.",
+      "content": "Right-click on the folder that matches your device. For example, if the \"0001\" folder matches your device, right-click on the folder. Select New → String Value. Name the new value \"NetworkAddress\". [9] X Research source"
+    },
+    {
+      "title": "Double-click the new Network Address entry.",
+      "content": "Double-click the new Network Address entry. In the \"Value data\" field, enter your new MAC address. MAC addresses are 12-digit values, and should be entered without any dashes or colons. For example, if you want to make the MAC address \"2A:1B:4C:3D:6E:5F\", you would enter \"2A1B4C3D6E5F\".."
+    },
+    {
+      "title": "Ensure that the MAC address is formatted properly.",
+      "content": "Ensure that the MAC address is formatted properly. Some adapters (especially Wi-Fi cards) are unforgiving of MAC addresses changes if the first octet's 2nd half isn't a 2,6,A,E or begins with a zero. This requirement has been observed as far back as Windows XP and is formatted as: D2XXXXXXXXXX D6XXXXXXXXXX DAXXXXXXXXXX DEXXXXXXXXXX"
+    },
+    {
+      "title": "Reboot your computer to enable the changes.",
+      "content": "Reboot your computer to enable the changes. You can also disable and re-enable your adapter within Windows for the change to become effective without rebooting. Just sliding the Wi-Fi's On/Off switch like the slider found on ThinkPads and VaiOs won't satisfactorily disable/re-enable the card."
+    },
+    {
+      "title": "Check that the changes took effect.",
+      "content": "Check that the changes took effect. Once you've rebooted the computer, open the Command Prompt and enter ipconfig /all and note the Physical Address of your adapter. It should be your new MAC address. [10] X Research source"
+    }
+  ]
+}

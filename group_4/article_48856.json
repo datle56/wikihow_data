@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/WiFi-Doesnt-Have-a-Valid-IP-Configuration",
+  "title": "Troubleshoot the “WiFi Doesn't Have a Valid IP Configuration” Error",
+  "steps": [
+    {
+      "title": "The error indicates a router IP and wireless adapter IP mismatch.",
+      "content": "The error indicates a router IP and wireless adapter IP mismatch. Keep in mind that the router connects your network to the internet (it's also called an internet gateway) and the wireless adapter is a device on your router that allows you to connect wirelessly (Wi-Fi). So your router assigns a private IP to your wireless adapter; some circumstances can cause this to get mixed up (like an OS update, or a random glitch)."
+    },
+    {
+      "title": "Restart your router.",
+      "content": "Restart your router. This is most likely where the problem stems from, so restart your router to clear any temporary and random glitches. It may seem like it's too easy of a fix, but it's most likely the right one. Here's how you restart your router: unplug it from power for a few minutes, then plug it back in. Give your router plenty of time to reset (think 30 minutes), then see if the error is gone. A static IP address may be causing the issue if you have it set up. In that case, turn it off. You'll find the steps to do so in Network and Sharing Center (Control Panel) > Change adapter settings > Your Internet Connection > Properties > Internet Protocol version 6/4 (TCP/IPv6 or TCP/IPv4) > Properties > Obtain an IP address automatically ."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. If you've restarted the router and are still seeing the issue, you will need to restart your Windows computer that's getting the error message. Doing this allows your Wi-Fi adapter to refresh and get the same IP address as the router. Restart by clicking the Start menu, then clicking the Power menu and selecting Restart ."
+    },
+    {
+      "title": "Reset network adapter IP address configuration and TCP/IP settings.",
+      "content": "Reset network adapter IP address configuration and TCP/IP settings. This is a more advanced solution, and doing this will allow your router and network adapter to refresh and get the same IP address to fix your problem. To do this, follow these steps: Open Command Prompt as an administrator. You can search for it in the Start menu or press Win + R and enter cmd . Right-click the system application and select Run as administrator . Enter the following commands, pressing Enter at the end of each one: ipconfig /release ipconfig /all ipconfig /renew netsh int ip set dns netsh winsock reset Close the Command Prompt and restart your computer. [1] X Research source"
+    },
+    {
+      "title": "Check if the Network Service is running.",
+      "content": "Check if the Network Service is running. This service automatically manages networks on your PC. So any changes or glitches can prevent this from running and trigger the \"WiFi doesn't have a valid IP configuration\" error. To check this, follow these steps: Press the Win key and enter services . Click the system application to run it. Right-click WLAN AutoConfig and select Properties . Make sure the \"Service Status\" is Running and the \"Startup type\" is Automatic . If you made any changes, restart your PC and see if the issue is resolved."
+    },
+    {
+      "title": "Update your drivers.",
+      "content": "Update your drivers. Outdated drivers can cause many problems, like triggering this communication error. Running a system update will also update any drivers, but you can also do so manually in Device Manager by downloading the update from the manufacturer's website and opting to manually update."
+    },
+    {
+      "title": "Turn off any manual proxy settings.",
+      "content": "Turn off any manual proxy settings. These can be getting in the way and causing the two IP addresses to not match. Find these settings in Settings > Network & Internet > Proxy ."
+    },
+    {
+      "title": "Check your IP address.",
+      "content": "Check your IP address. Find your IP address and make sure it's not something like 169.254.x.x. If it looks like that, Windows can't get an IP address from your router. This can be due to two things: A static IP address. The fix for this is in the first step. Disabled DHCP. The fix for this varies between router manufacturers. Your manual will tell you how to enable DHCP or you can search the internet using the make and model of your router. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Usually, to enable DHCP you can log into your router online and find DHCP in Network Setup or LAN setup."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Linux-How-to-Find-Large-Files",
+  "title": "How to Find the Largest Files on Your Linux System",
+  "steps": [
+    {
+      "title": "Find the largest files in a directory.",
+      "content": "Find the largest files in a directory. To see the top 10 largest files and their sizes in a directory, use du -ah /directory/name . To find the largest files in the current directory, omit the directory name from the command. You can replace -10 after head -n with your preferred number of large files to display."
+    },
+    {
+      "title": "Find the largest files on the entire system.",
+      "content": "Find the largest files on the entire system. To see the ten largest files on your Linux system, use sudo du -aBm / 2>/dev/null . Because you're finding the largest files in all directories, you'll need to use the sudo command to get root privileges . This command can take a long time to run, as it needs to search all files on the system."
+    },
+    {
+      "title": "Find large files in a directory.",
+      "content": "Find large files in a directory. To find the 10 largest files in a directory, use find /directory/name -type f -exec ls -sh {} \\; . This command displays the ten largest files in the current directory and their sizes, with the largest file at the top of the list. You can replace 10 with your preferred number of files, such as 20 to see the 20 largest files. To find the largest files in the current directory, omit the directory name or replace it with . ."
+    },
+    {
+      "title": "Find files above a specific size in a directory.",
+      "content": "Find files above a specific size in a directory. To find all large files above 500 MB in a directory, use find /directory/name -type f -size +500M . Replace 500M with your preferred file size. To search the current directory, replace the directory name with . ."
+    },
+    {
+      "title": "Find all the large files on your entire Linux system.",
+      "content": "Find all the large files on your entire Linux system. To find all files above a certain size on the entire filesystem, use sudo find / -type f -size +500M -ls . In this command, only files larger than 500 MB will appear in the results, along with their size, owner, and permissions."
+    },
+    {
+      "title": "Use df -h to see which file systems take up the most space.",
+      "content": "Use df -h to see which file systems take up the most space. This command is handy for determining the percentage of your total disk space used by each mounted filesystem."
+    },
+    {
+      "title": "Filelight.",
+      "content": "Filelight. This KDE app, which is available from Ubuntu Software (or use sudo apt install filelight at the prompt), makes it easy to find large files in Linux. It also displays the large files as a nice visual so you can get an idea of how your storage is being used. [1] X Research source"
+    },
+    {
+      "title": "QDirStat.",
+      "content": "QDirStat. Another great GUI tool that will help you find and visualize large files on Linux is QDirStat, which you can install using the command sudo apt install qdirstat (Debian, Linux Mint, and Ubuntu) or sudo dnf install qdirstat (Fedora and Redhat). Once installed, select any directory, including the root directory, to find large files."
+    }
+  ]
+}

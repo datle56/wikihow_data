@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Clear-the-Record-of-USB-Plug-in-Equipment",
+  "title": "How to Clear the Record of USB Plug in Equipment",
+  "steps": [
+    {
+      "title": "Disconnect all USB drives and peripherals from the PC.",
+      "content": "Disconnect all USB drives and peripherals from the PC. If anything is plugged into any of your USB ports right now, save any open files and unplug the accessory safely."
+    },
+    {
+      "title": "Go to https://www.nirsoft.net/utils/usb_devices_view.html.",
+      "content": "Go to https://www.nirsoft.net/utils/usb_devices_view.html . This is the website of USBDeview, a free tool that allows you to view and delete all records of USB drives and other peripherals from the Windows registry. This tool is recommended by Microsoft TechNet Community Support and is completely free. USBDeview works on all versions of Windows from Windows 2000-Windows 10. [1] X Research source"
+    },
+    {
+      "title": "Scroll down and click Download USBDeview.",
+      "content": "Scroll down and click Download USBDeview . If you're using a 64-bit version of Windows, click the Download USBDeview for x64 systems link instead. Both links are all the way down near the bottom of the page. A ZIP file will now download to your default download location."
+    },
+    {
+      "title": "Extract the ZIP file.",
+      "content": "Extract the ZIP file. The file you need to extract is called USBDeview.zip (32-bit systems) or USBDeview-x64.zip (64-bit systems). To do this: Open the folder containing the downloaded file (it's usually called Downloads). Right-click the file and select Extract All… Click Extract . When the files are extracted, a window containing its contents will appear."
+    },
+    {
+      "title": "Double-click USBDeview.exe.",
+      "content": "Double-click USBDeview.exe . This opens the application and displays a list of USB devices that have connected to the PC."
+    },
+    {
+      "title": "Click the Options menu.",
+      "content": "Click the Options menu. It's at the top of the app."
+    },
+    {
+      "title": "Locate a USB entry you'd like to remove.",
+      "content": "Locate a USB entry you'd like to remove. It can be tough to figure out which entry belongs to which device based on the list. To get more information about an entry, double-click it to view its details on one window. The \"date\" field indicates the last date the device was plugged in. This can be helpful for identifying older connections, like a flash drive you used last January. Driver information for the device, including the full name of the driver file, appears in the left column. Don't uninstall any devices listed as Connected. If you see \"Yes\" in the \"Connected\" section for an entry, it's usually something internal, like an input controller, audio interface, or sound module."
+    },
+    {
+      "title": "Right-click the USB device and select Uninstall Selected Devices.",
+      "content": "Right-click the USB device and select Uninstall Selected Devices . A confirmation message will appear."
+    },
+    {
+      "title": "Click Yes to confirm.",
+      "content": "Click Yes to confirm. This deletes the registry entry for the selected device. Depending on your settings, you may have to click Yes again and/or enter your admin password to save the change."
+    },
+    {
+      "title": "Click the Refresh icon or press the F5 key.",
+      "content": "Click the Refresh icon or press the F5 key. The Refresh icon (the sheet of paper with two green arrows) is in the toolbar at the top of the app. This refreshes the list so the entry you deleted no longer appears. You can now delete additional entries as needed."
+    }
+  ]
+}

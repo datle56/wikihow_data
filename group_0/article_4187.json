@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Block-a-WiFi-Network-on-PC-or-Mac",
+  "title": "How to Block a WiFi Network on PC or Mac",
+  "steps": [
+    {
+      "title": "Get the network name or SSID you want to block.",
+      "content": "Get the network name or SSID you want to block. Click the Wi-Fi icon on the taskbar in the lower-right corner of your screen, and note down the network name you want to block."
+    },
+    {
+      "title": "Click the search icon on the lower-left corner.",
+      "content": "Click the search icon on the lower-left corner. This button looks like a magnifier icon next to the Start menu button. It will open your search panel. If you're using Cortana, you'll see a white circle instead of a magnifier icon here."
+    },
+    {
+      "title": "Enter cmd into the search.",
+      "content": "Enter cmd into the search. Matching results will appear as you type. Command Prompt should be the best match at the top of the results."
+    },
+    {
+      "title": "Right-click Command Prompt on the list.",
+      "content": "Right-click Command Prompt on the list. This will open your right-click options on a drop-down menu."
+    },
+    {
+      "title": "Select Run as administrator on the right-click menu.",
+      "content": "Select Run as administrator on the right-click menu. This will open Command Prompt in a new window, and allow you to execute admin processes."
+    },
+    {
+      "title": "Type netsh wlan add filter permission=block ssid=\"Network Name\" networktype=infrastructure in Command Prompt.",
+      "content": "Type netsh wlan add filter permission=block ssid=\"Network Name\" networktype=infrastructure in Command Prompt. This command will allow you to block a Wi-Fi network from connecting to your computer. Replace \"Network Name\" in the command with the name of the Wi-Fi network you want to block."
+    },
+    {
+      "title": "Press ↵ Enter on your keyboard.",
+      "content": "Press ↵ Enter on your keyboard. This will execute the command, and add this network to your blacklist filter. It will no longer appear in your network list. If you want to remove the block and add the network again, just replace add filter in the command with delete filter . For an easier approach, try clicking the Network icon in the lower right corner of your screen. Click Network and Internet settings, then Wi-Fi settings. Under Manage known networks, click the network you want to delete, then click Forget. [1] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020."
+    },
+    {
+      "title": "Open the System Preferences menu on your Mac.",
+      "content": "Open the System Preferences menu on your Mac. The System Preferences app looks like a gray gear icon. You can find it in your Applications folder. Alternatively, you can click the Apple icon in the upper-left corner of your screen, and click System Preferences here."
+    },
+    {
+      "title": "Click Network in System Preferences.",
+      "content": "Click Network in System Preferences. [2] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020. This option looks like a gray globe icon on the third row of System Preferences."
+    },
+    {
+      "title": "Select your Wi-Fi connection on the sidebar.",
+      "content": "Select your Wi-Fi connection on the sidebar. Find Wi-Fi on the left sidebar, and click on it. This will open your Wi-Fi settings on the right-hand side."
+    },
+    {
+      "title": "Click the Advanced button on the bottom-right.",
+      "content": "Click the Advanced button on the bottom-right. This will open your advanced Wi-Fi settings in a new window. [3] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020."
+    },
+    {
+      "title": "Click the Wi-Fi tab at the top.",
+      "content": "Click the Wi-Fi tab at the top. This button is in the upper-left corner of the Advanced window. You will find a list of all your \"Preferred Networks\" on this page."
+    },
+    {
+      "title": "Select the network you want to block on the \"Preferred Networks\" list.",
+      "content": "Select the network you want to block on the \"Preferred Networks\" list. Scroll down the list, and click on the network you want to block."
+    },
+    {
+      "title": "Click the – button below the \"Preferred Networks\" list.",
+      "content": "Click the – button below the \"Preferred Networks\" list. This will remove the selected Wi-Fi network from the list, and prevent your computer from automatically connecting to this network in the future. You can also uncheck the Auto Join box next to the Wi-Fi network, if you prefer. [4] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020."
+    }
+  ]
+}

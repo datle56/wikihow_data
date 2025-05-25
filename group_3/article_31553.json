@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Open-Applications-With-Root-Privileges-on-a-Mac",
+  "title": "How to Run Apps with Root Permissions on a Mac",
+  "steps": [
+    {
+      "title": "Log in to your Mac as an administrator.",
+      "content": "Log in to your Mac as an administrator. The “sudo” command is short for “superuser do.” Using this command in Terminal allows you to run commands as the root account, also known as the superuser, without actually logging into your Mac as root. This is the safest way to run apps and other processes as root. However, you’ll need access to an administrator account to do it. [1] X Research source If you aren’t already on an admin account, you can either restart your Mac and log in as an admin, or go to Apple menu > Log Out [your username] and log back in as an administrator. Check out how to set up quick account switching on your Mac . If you don’t want to log into your Mac as an administrator, you can switch to an admin account in Terminal with the command su adminUsername . Replace “adminUsername” with the name of the admin account you want to use. You’ll be prompted to enter the correct password to continue."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can either open it from Launchpad in the Dock, or click the Spotlight Search icon in your menu bar and search for terminal , then hit Return ."
+    },
+    {
+      "title": "Enter the sudo command followed by the path to the app.",
+      "content": "Enter the sudo command followed by the path to the app. You may need to look up the correct path and name for your specific app, but you can typically open an app as root using the following command: sudo /Applications/YourAppName.app/Contents/MacOS/YourAppName Replace “YourAppName” with the name of the app you want to run. If the app name contains spaces, put quotation marks around the entire path to ensure that Terminal recognizes it. Press Return to execute the command and run the app. You may be prompted to enter the password for your administrator account. You won’t be able to see it as you type it in."
+    },
+    {
+      "title": "Use the “Show Package Contents” method if the command doesn’t work.",
+      "content": "Use the “Show Package Contents” method if the command doesn’t work. If the path you entered isn’t exactly correct, the command won’t execute, and you’ll get an error message that says “command not found.” If this happens, try the following solution: Open Finder and locate your app in the Applications folder. Right-click or Ctrl -click the name of the app and select Show Package Contents . Locate the executable file inside the package and right-click or Ctrl -click it, then press Option while the menu is open. Select Copy “YourAppName” as Pathname (where “YourAppName” is the name of the app). In Terminal , type sudo and paste in the path you just copied, then press Return . Enter your administrator password when prompted."
+    },
+    {
+      "title": "Disable System Integrity Protection if you still can’t open the app.",
+      "content": "Disable System Integrity Protection if you still can’t open the app. In recent versions of macOS, some commands are disabled even when you’re using root privileges. When you execute the command, you may get an error message that the process was “killed,” along with a crash report for the app you tried to open. If this happens, follow the steps in the method for disabling SIP below."
+    },
+    {
+      "title": "Be aware that this method is risky.",
+      "content": "Be aware that this method is risky. To run apps with root privileges without having to use Terminal, you can log into your Mac using the root or superuser account. This method can destabilize your system or leave you open to security threats, so only use it if absolutely necessary. [2] X Research source As soon as you’re done, log out and disable the root user again. If you’re using macOS X 10.11 or later, you may need to disable System Integrity Protection before you can perform all the actions you want, even when you’re logged in as root. [3] X Research source"
+    },
+    {
+      "title": "Open the Directory Utility.",
+      "content": "Open the Directory Utility. The easiest way to do this is to click the Spotlight Search icon in the menu bar at the top of the screen, then type in directory utility . Press Return to open the utility."
+    },
+    {
+      "title": "Click the padlock icon at the bottom of the window.",
+      "content": "Click the padlock icon at the bottom of the window. This will allow you to make changes to the directory. You’ll be prompted to enter your Mac’s administrator name and password."
+    },
+    {
+      "title": "Click Edit > Enable Root User.",
+      "content": "Click Edit > Enable Root User . This option is in the Edit menu in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Enter a password for the root user.",
+      "content": "Enter a password for the root user. You’ll use this when you log in as the root account. You can always change this password later by clicking the padlock icon, then selecting Edit > Change Root Password ."
+    },
+    {
+      "title": "Log in as the root user from the Apple menu.",
+      "content": "Log in as the root user from the Apple menu. Click the Apple menu icon at the top left corner of your screen, then select Log Out . At the login window, enter the username root along with the password you set in the Directory Utility. If you just see a list of usernames instead of having the option to enter one, select Other , then log in with the root user credentials."
+    },
+    {
+      "title": "Open the app you want to run.",
+      "content": "Open the app you want to run. Once you’re logged in as root, any action you take will be executed with root privileges. This should include opening apps. When you’re done using the root account, log out and log in again using a regular admin account. Return to the Utility Directory, click the padlock icon, and select Edit > Disable Root User to keep your system secure."
+    },
+    {
+      "title": "Reboot your Mac in Recovery Mode.",
+      "content": "Reboot your Mac in Recovery Mode. If you can’t launch an app with root privileges, it’s possible that your computer’s System Integrity Protection is preventing it. SIP was first introduced with macOS 10.11 (El Capitan), so you may encounter this issue if you’re using any recent version of macOS. To disable SIP, you’ll first need to boot up in Recovery Mode: [4] X Research source Macs with an Apple silicon chip: [5] X Research source Shut down your Mac, then press and hold the power button. Keep holding the button during startup until you see a screen that says “Loading startup options” or displays an “Options” icon. Click Options , then click Continue under the Options icon. Select your startup disk (usually Macintosh HD) if prompted to do so. You may also need to select a user and enter your password. Select an administrator account (or root, if you’re using the root account method ). Your Mac should now start up in Recovery. You’ll see a screen with the Recovery Utilities menu. Macs with an Intel processor: [6] X Research source Shut down your Mac, then press and release the power button. Immediately press and hold Command and R on your keyboard. Keep holding them until an Apple logo or spinning globe appears. Choose a Wi-Fi network if prompted to do so. Select a user (either a regular administrator account or root, if it’s enabled) and enter the password. You should now see the Recovery Utilities menu. Keep in mind that disabling SIP can put your computer at risk. You could accidentally destabilize your system or leave it vulnerable to security threats. Always re-enable SIP as soon as you’re done."
+    },
+    {
+      "title": "Launch Terminal from the Utilities menu.",
+      "content": "Launch Terminal from the Utilities menu. Click Utilities in the menu bar at the top of the screen, then select Terminal ."
+    },
+    {
+      "title": "Enter the command csrutil disable.",
+      "content": "Enter the command csrutil disable . Press Return to run the command."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. System Integrity Protection should now be disabled. You can now attempt to run your app as root again, either in Terminal using sudo or while logged in with the root account . When you’re ready to re-enable SIP, reboot in Recovery Mode again, then launch the Terminal. Enter the command csrutil enable ."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Run-Files-in-Linux",
+  "title": "How to Run Files in Linux",
+  "steps": [
+    {
+      "title": "Open a file manager application.",
+      "content": "Open a file manager application. Most Linux distributions come with a default file manager program. This may be Nautilus, Thunar, Dolphin, Krusader, Konqueror, or PCManFM. Most of these programs work very similarly. To open your file manager, click the icon that resembles a file cabinet, or a folder that says \"Home\" on your desktop, dock, or Activities menu. [1] X Research source If you are not sure where to locate your file browser app, you can press the Super (Windows) key and type \"Files\" (or the name of the file manager) in the search bar. If you don't like the file manager that came with your Linux distribution, you can install a different file manager in the Terminal. To do so on Debian / Ubuntu , open the Terminal and type sudo apt install <app name> and press Enter . On Fedora , open the Terminal and type sudo dnf install <app name> and press Enter . Replace \"<app name>\" with the name of the app you want to install. [2] X Research source"
+    },
+    {
+      "title": "Navigate to the folder the file is located in.",
+      "content": "Navigate to the folder the file is located in. Most file managers have a large panel that allows you to browse folders. Double-click a folder to open it. Navigate to the folder with the file you want to run."
+    },
+    {
+      "title": "Right-click the file you want to run.",
+      "content": "Right-click the file you want to run. This displays a drop-down menu. Alternatively, you can double-click the file to run it using the default application that the file type is associated with."
+    },
+    {
+      "title": "Click Open With or Open With Other Appllicaiton.",
+      "content": "Click Open With or Open With Other Appllicaiton . This displays a list of applications you can use to run the file."
+    },
+    {
+      "title": "Double-click the application you want to run the file with.",
+      "content": "Double-click the application you want to run the file with. This runs the file in the application you choose. If you don't see the application you use to run the file, click View All Applications or Other . This displays a list of all installed apps categorized by type. Click the category of the app you want to run the file in. Then double-click the app you want to run the file in."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal . You can open the Terminal by clicking the icon that resembles a black screen with a white text cursor in your Apps menu, or by press Ctrl+Alt+T on your keyboard. [3] X Research source"
+    },
+    {
+      "title": "Change the directory to the folder with the file you want to run.",
+      "content": "Change the directory to the folder with the file you want to run. To change the directory in the Terminal, type cd followed by the path of the directory and press Enter . For example, if the file is in your documents folder, you would type cd /Documents ."
+    },
+    {
+      "title": "Type sudo chmod +x <filename> and press ↵ Enter.",
+      "content": "Type sudo chmod +x <filename> and press ↵ Enter . Replace \"<filename>\" with the actual name of the file (it cannot contain any spaces). This command sets the user permissions so that you can run and edit the file. If asked to do so, enter the password you use to log into your Linux computer and press Enter ."
+    },
+    {
+      "title": "Type the command to run the file.",
+      "content": "Type the command to run the file. The command you use to open the file is going to be a different depending on the file type. Enter one of the following commands and press Enter to run the file. Replace \"<filename>\" with the actual filename for the file (i.g. \"textfile.txt\"). The filename cannot have any spaces. The following are some commands you can use to run a file in the Terminal: Run a file: sudo ./<filename> . This includes \".sh\", \".run\", and \".bin\" files. Open a file in it's default application: xdg-open <filename> Display an image file: display <filename> . You must have ImageMagick installed. Display a text file in the Terminal: cat <filename> . Display a text file one page at a time: less <filename> Display a text file with numbered lines: nl <filename> [4] X Research source"
+    }
+  ]
+}

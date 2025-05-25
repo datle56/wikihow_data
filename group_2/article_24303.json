@@ -1,0 +1,202 @@
+{
+  "url": "https://www.wikihow.com/Install-the-Homebrew-Channel-on-the-Wii-U",
+  "title": "How to Install Homebrew on Wii U",
+  "steps": [
+    {
+      "title": "Insert a blank SD card into your computer.",
+      "content": "Insert a blank SD card into your computer. You'll need to load a few files on an SD card from your computer in order to install the Homebrew channel on your Wii U. Insert an SD card that's blank or that you don't need for anything else into your computer's card reader. If you don't have a card reader, you can get a USB adapter for a few dollars online."
+    },
+    {
+      "title": "Format the SD card as FAT32.",
+      "content": "Format the SD card as FAT32. Most SD cards will already be in this format, but it doesn't hurt to check before you get started. Formatting the card will delete all of its contents. Windows - Press Win + E and right-click your inserted SD card. Select \"Format\" and then choose \"FAT32\" as the \"File system.\" [1] X Research source If it doesn't give you the FAT32 format option, go to this link and follow the instructions there. Mac - Open the Disk Utility from the Utilities folder in your Applications folder. Select your SD card from the left frame. Click the \"Erase\" button at the top of the window, then select \"FAT32\" from the \"Format\" menu. [2] X Research source Linux - Open GParted . If you don't have it, you can install it from your package manager (or if you have Ubuntu, you can use the live CD), open it, and click the drive that closely matches the size of the card (16 GB may show up as 14.5 for example), and if the file system does not show up as \"fat32\", go to the \"Partition\" tab, click \"Format to\", and select \"fat32\". Then click the check mark."
+    },
+    {
+      "title": "Download the Homebrew environment from Aroma.",
+      "content": "Download the Homebrew environment from Aroma. Aroma has assembled some zip files that contains all the files needed to hack and install Homebrew on your Wii U already pre-organized exactly how they need to be organized on your SD card. Use the following steps to download the Homebrew environment from Aroma. Go to https://aroma.foryour.cafe/ in a web browser. Click Download Payloads\", \"Download Base Aroma\", and if you want any, select any Additional Plugins or Modules, select \"Download Additional Plugins and Modules"
+    },
+    {
+      "title": "Extract and copy the contents of the Aroma ZIP file to the root of your SD card.",
+      "content": "Extract and copy the contents of the Aroma ZIP file to the root of your SD card. Go ahead and extract the contents of the Aroma zip files you just downloaded. If your SD card is already inserted in your computer, you can copy the contents directly to the SD card, or you can extract the contents to your computer's hard drive and then copy the files to your SD card. Make sure you copy the contents to the root of the SD card. If you have any other folders or directories on the SD card, do not put the contents of the Aroma zip files in those folders."
+    },
+    {
+      "title": "Download the SigPatches Module.",
+      "content": "Download the SigPatches Module. You will also need to download the SigPatches module and copy it to the SD card. Use the following steps to download the PayloadLoaderInstaller. Go to https://github.com/marco-calautti/SigpatchesModuleWiiU/releases Click the Zip file at the top of the list of assets."
+    },
+    {
+      "title": "Extract the Contents of the zip file to the \"wiiu\" folder on the SD card.",
+      "content": "Extract the Contents of the zip file to the \"wiiu\" folder on the SD card. By default, your downloaded files should be your Downloads folder. Make sure you copy the PayloadLoaderInstaller to the \"wiiu\" folder on your SD card. Use the following steps to do so: [3] X Research source Extract the \"01_sigpatches.rpx\" file from the PayloadLoaderInstaller Zip file you downloaded. Right-click the 01_sigpatches.rpx file and click Copy . Open your SD card. Open the wiiu folder. Open the environments folder. Open the aroma folder. Open the modules folder. Open the setup folder. Right-click anywhere in the folder. Click Paste . If your computer asks if you want to overwrite an existing file, click Yes ."
+    },
+    {
+      "title": "Install the HB App Store:",
+      "content": "Install the HB App Store: This is the Homebrew App Store that lets you browse and download Homebrew Apps to your Wii U. Download the \"appstore.wuhb\" file from here. Right-click the 01_sigpatches.rpx file and click Copy . Open the wiiu folder. Open the \"apps\" folder. Right-click anywhere in the folder. Click Paste . If your computer asks if you want to overwrite an existing file, click Yes ."
+    },
+    {
+      "title": "Download any Homebrew apps you want to use.",
+      "content": "Download any Homebrew apps you want to use. The Aroma environment doesn't come with any software, it simply allows you to use Homebrew software. You'll need to download this software yourself and add it to the SD card. Homebrew apps are usually added to the \"wiiu/apps\" directory on your SD card. There are a variety of Homebrew apps that you can find online designed for the Wii U. Below are a few examples you can look for to get started: Save Mii Mod WUT Port: This allows you to manage your Wii U and vWii save data. Download the zip file by clicking here and then copy the zip file to the root of your SD card. Bloopair: This lets you pair connect wireless Bluetooth controllers with your Wii U. You can download it from the Aroma website if you haven't done so already. WUDD - This is the Wii U disc dumper, allowing you to create local copies of your Wii U games. Download it from here ."
+    },
+    {
+      "title": "Insert the SD card in your Wii U.",
+      "content": "Insert the SD card in your Wii U. Once the SD card is ready, you can eject it from your computer and then insert it in your Wii U. [4] X Research source Open the front panel on your Wii U. Insert the SD card into the SD card slot with the label facing up."
+    },
+    {
+      "title": "Open your Wii U's Internet Browser.",
+      "content": "Open your Wii U's Internet Browser. You'll be performing the exploit using your Wii U's web browser. You can find the button for this at the very bottom center of the Wii U main menu."
+    },
+    {
+      "title": "Reset your web browser's save data.",
+      "content": "Reset your web browser's save data. This will prevent your web browser from freezing when you run the exploit. Use the following steps to reset your browser's save data. Tap the Settings button in the upper-right corner of the start page. Tap Reset your data ."
+    },
+    {
+      "title": "Run the browser exploit.",
+      "content": "Run the browser exploit. Use the following steps to do so: [5] X Research source Navigate to wiiuexploit.xyz in the Wii U web browser. Click or tap Run Exploit or hold the \"B\" button until you see a menu."
+    },
+    {
+      "title": "Launch the Nanddumper.",
+      "content": "Launch the Nanddumper. To do so, navigate to Nanddumper in the menu and press A ."
+    },
+    {
+      "title": "Backup your NAND to your SD card.",
+      "content": "Backup your NAND to your SD card. Backing up your NAND can help you restore your Wii U or Virtual Wii system if you accidentally brick it. However, doing so requires additional hardware and micro-soldering skills. Your NAND is either 32 GB or 8 GB depending on what model you have. If your SD card is not big enough to back up your entire NAND, you can skip backing up your MLC files, which include your game, and save data. Select the following configuration in the menu and press A to start backing up your NAND to your SD card: Dump SLC: Yes Dump SLCCMPT: Yes Dump MLC: Yes if you have space on your SD card, No if you do not. Dump OTP: Yes Dump SEEPROM: Yes"
+    },
+    {
+      "title": "Back up your NAND files to your computer.",
+      "content": "Back up your NAND files to your computer. Once the NAND dumping process is complete, go ahead and power off your Wii U and remove the SD card. Insert the SD card in your computer and copy the following files to your computer and delete them off your SD card in order to free up space: Do not lose these files: [6] X Research source slc.bin slccmpt.bin seeprom.bin otp.bin Every mlc.bin.part file (if you choose to backup your MLC)."
+    },
+    {
+      "title": "Insert the SD card back into your Wii U and power it on.",
+      "content": "Insert the SD card back into your Wii U and power it on. If your SD card is not currently inserted into your Wii U, go ahead and insert it into you Wii U and power it on."
+    },
+    {
+      "title": "Install the PayloadLoader.",
+      "content": "Install the PayloadLoader. The PayloadLoader will allow you to access Aroma by running the Health and Safety Information app. Use the following steps to install the PayloadLoader. [7] X Research source Open the web browser and navigate to wiiuexploit.xyz once again. Select Run Exploit . Press and hold the \"X\" button until the Environment Loader appears. Navigate to the Aroma environment using the D-pad and press \"A\". Press A to launch the Wii U Menu with CFW. Launch the PayloadLoaderInstaller (the app with the big blue A) from the Wii U Menu. Select Install / Update using the \"A\" button. Select Install and press \"A.\" Press \"A\" to shut down the console once the installation is complete."
+    },
+    {
+      "title": "Set Aroma to autoboot upon boot up.",
+      "content": "Set Aroma to autoboot upon boot up. Currently, you will need to go into the Health and Safety Information app every time you want to launch Aroma. If you want it to boot up automatically upon boot up, use the following steps to set it up: [8] X Research source Boot up the Wii U. Launch the Health and Safety Information app from the Wii U menu. Press and hold \"X\" to open the Environment Loader menu. Navigate to the Aroma environment using the D-pad and press \"A\". Press A to launch the Wii U Menu with CFW. Launch the PayloadLoaderInstaller (the app with the big blue A) from the Wii U Menu again. Select Check and press \"A.\" Select Boot Options . Press \"A\" to select PayloadLoader . Press \"A\" to shut down the console once the process is finished."
+    },
+    {
+      "title": "Set up the Environment Loader, PayloadLoader and Aroma.",
+      "content": "Set up the Environment Loader, PayloadLoader and Aroma. This will make the Aroma environment start automatically when your console autoboots the Health and Safety Information app. Use the following steps to do so: [9] X Research source Power on your Wii U. Navigate to aroma using the D-pad and press \"Y\" to set it as the default environment. Press and hold \"X\" while your Wii U is booting up to enter the Environment Loader in the future. Press \"A\" to launch into Aroma. You may get a red warning screen about how updates aren't blocked properly. Press \"A\" to continue anyway. Press \"Y\" to set the Wii U Menu as the default autobooting option. Press and hold \"Start\" while your Wii U boots up to enter the Aroma Boot Selector in the future. Press \"A\" to launch into the Wii U Menu."
+    },
+    {
+      "title": "Download UFDiine.",
+      "content": "Download UFDiine. UFDiine is a Homebrew app that allows you to delete the Update folder to prevent your Wii U from updating. Homebrew relies on a system exploit to run. It is possible that Nintendo could release a system update that patches the exploit out of the system. It is recommended that you block updates to prevent this from happening. Use the following steps to download UFDiine: Go to https://hb-app.store/wiiu/UFDiine-wuhb on your computer Click Download to download the file to your computer."
+    },
+    {
+      "title": "Insert the SD card into your computer.",
+      "content": "Insert the SD card into your computer. Remove the SD card from your Wii U and insert it into your computer."
+    },
+    {
+      "title": "Copy the \"ufdiine.zip\" file to the root of your SD card.",
+      "content": "Copy the \"ufdiine.zip\" file to the root of your SD card. By default, your downloaded files can be found in your Downloads folder. Copy the entire ZIP file and paste it into the root of the SD card. Do not paste it into any other folders on your SD card."
+    },
+    {
+      "title": "Insert the SD card into your Wii U and power it on.",
+      "content": "Insert the SD card into your Wii U and power it on. Your Wii U should boot into Aroma automatically. If you Wii U does not boot into Aroma automatically, select it and press \"A.\" Launch UFDiine (the app with the garbage can) from the Wii U Menu."
+    },
+    {
+      "title": "Press A to delete the Updates folder.",
+      "content": "Press A to delete the Updates folder. You should see a confirmation that says \"Update folder is deleted.\" You can now power off your console, It should not receive any more system updates. [10] X Research source"
+    },
+    {
+      "title": "Insert the SD card you use to hack your Wii U into your computer.",
+      "content": "Insert the SD card you use to hack your Wii U into your computer. If you want to install Homebrew on your Virtual Wii (vWii), you will need to download some additional files and copy them to your SD card. Go ahead and insert the SD card you downloaded all your Wii U Homebrew files into your computer. You cannot use the same files you use to install Homebrew on a Wii console . They will not work for vWii on your Wii U and will permanently disable it. Make sure you have no \".wad\" files in the apps folder on your SD card. You also need to have the Aroma zip file that you downloaded in the previous part extracted and copied to the root of your SD card."
+    },
+    {
+      "title": "Download the vWii-compat-installer.",
+      "content": "Download the vWii-compat-installer. Use the following steps to do so: Go to [1] Click Download to download the file to download the compat installer. Extract the contents of the ZIP file to the root of your SD card. Do not put the contents of the zip file inside any other folders on your SD card. Just copy it to the root of your ZIP file. If you already have an \"apps\" folder on the root of your SD card, you can combine the contents of this folder with the contents of the existing folder on your SD card."
+    },
+    {
+      "title": "Extract the contents of the \"vWii Combat Installer\" file to the \"wiiu/apps\" folder on your SD card. By default, your downloaded files can be found in your Downloads folder. Extract the contents of the \"vWii Compat Installer.zip\" file directly to the \"wiiu/apps\" directory on the root of your SD card.",
+      "content": "Extract the contents of the \"vWii Combat Installer\" file to the \"wiiu/apps\" folder on your SD card. By default, your downloaded files can be found in your Downloads folder. Extract the contents of the \"vWii Compat Installer.zip\" file directly to the \"wiiu/apps\" directory on the root of your SD card."
+    },
+    {
+      "title": "Copy the \"compat-installer\" folder to the \"wiiu/apps\" folder on your SD card.",
+      "content": "Copy the \"compat-installer\" folder to the \"wiiu/apps\" folder on your SD card. By default, your downloaded files can be found in your Downloads folder. Copy the \"compat_installer\" folder to the \"apps\" folder within the \"wiiu\" folder. Do not copy the file to \"apps\" folder on the root of your SD card."
+    },
+    {
+      "title": "Download the d2x cIOS installer.",
+      "content": "Download the d2x cIOS installer. Use the following steps to do so: Go to [2] in a web browser. Click on d2x_cIOS installer to download it. Extract the contents of the \"d2x_cIOS_Installer.zip\" file to the \"apps\" folder on your SD card. By default, your downloaded files can be found in your Downloads folder. Extract the contents of the \"d2x_cIOS_Installer.zip\" file directly to the \"apps\" folder on the root of your SD card."
+    },
+    {
+      "title": "Download Wii Mod Lite.",
+      "content": "Download Wii Mod Lite. Follow these instructions to do so: Go to [3] in a web browser. Click the Wii Mod Lite ZIP file to download it. Optional: Click the Wii Mod Lite Forwarder ZIP file to download if you want a forwarder. Extract the contents of the ZIP file(s) to the root of your SD Card. If on Mac, you may have to select Merge."
+    },
+    {
+      "title": "Download LibreShop.",
+      "content": "Download LibreShop. This allows you to download Homebrew apps you want directly to your Wii. Follow these instructions: Go to [4] on a web browser. Download the LibreShop ZIP file. Extract the contents to the root of your SD card. (Not any other folder!)"
+    },
+    {
+      "title": "Download the Wii Mii Channel.",
+      "content": "Download the Wii Mii Channel. The Mii Channel on the vWii lacks some features, such as connecting to a DS and moving Mii’s onto a Wii remote. You have the option of downloading the original Mii Channel WAD from Nintendo and installing it with Wii Mod Lite. Download this script for Windows or this script for Mac/Linux. For Windows, right-click the file and select \"Run with PowerScript\", then type \"R\". For Mac, Double-click on the file and it will automatically run. On Linux, Open a terminal in the directory of the file, then type ./Wii_Mii_Channel_Unix.command When you are done, place the Mii Channel v6 (Wii).wad in a folder on your SD card titled WAD. You can make one if it does not exist."
+    },
+    {
+      "title": "If you also modded the Wii U side, download Enhanced vWii.",
+      "content": "If you also modded the Wii U side, download Enhanced vWii. Go to [5] in a web browser. Download and extract the files to the root of the SD card."
+    },
+    {
+      "title": "Download any other Homebrew apps you want to use.",
+      "content": "Download any other Homebrew apps you want to use. You can download some apps now! Patched IOS 80 Installer for vWii is a homebrew app that will take your current install of IOS 80 and patch it to be able to use fakesigned channels on the SD card menu. Download it here. Photo Upgrader is a homebrew app that allows photo channel 1.1 to be installed on the vWii even though it is normally not possible. Download it here. 43db patcher is a homebrew app that will patch your WiiWare and virtual console titles to force the 16:9 aspect ratio. Download it here."
+    },
+    {
+      "title": "Insert the SD card into your Wii U.",
+      "content": "Insert the SD card into your Wii U. Once you have downloaded and transferred all the necessary files to install Homebrew on the Virtual Wii to your SD card, go ahead and remove it from your computer and insert it into your Wii U and power it on."
+    },
+    {
+      "title": "Launch into the Aroma environment.",
+      "content": "Launch into the Aroma environment. If you set your Wii U to boot into the Tiramisu autoload the Aroma environment, it should do so automatically. If it does not automatically boot into the Aroma environment, select it from the bootloader menu and press \"A.\""
+    },
+    {
+      "title": "Install the compat installer.",
+      "content": "Install the compat installer. To do so, select the compat installer (the app that looks like a Wii channel, but with a green arrow) from within the Wii U Menu. Then press \"A.\" This will begin installing the Homebrew Channel on the Virtual Wii."
+    },
+    {
+      "title": "Return to the Wii U menu.",
+      "content": "Return to the Wii U menu. Once the Homebrew Channel is finished installing, press the \"Home\" button to return to the Wii U Menu."
+    },
+    {
+      "title": "Launch the Virtual Wii channel.",
+      "content": "Launch the Virtual Wii channel. To so so, select the channel that says \"Wii\" on the Wii U menu."
+    },
+    {
+      "title": "Select the Homebrew Channel on the Virtual Wii.",
+      "content": "Select the Homebrew Channel on the Virtual Wii. It has a blue icon that says \"The Homebrew Channel.\" Select it on the Virtual Wii menu and select Start ."
+    },
+    {
+      "title": "Launch the d2x cIOS installer.",
+      "content": "Launch the d2x cIOS installer. It should be in the Homebrew Channel and select Load . The d2x cIOS installer allows you to play games on the Virtual Wii."
+    },
+    {
+      "title": "Install d2X cIOS with the correct settings and press A.",
+      "content": "Install d2X cIOS with the correct settings and press A . Set the following settings in the menu and press \"A\" to install d2x cIOS with these settings: Select cIOS: d2x-v11-beta1-vWii Select cIOS base: 56 Select cIOS slot: 249"
+    },
+    {
+      "title": "Install d2X cIOS with the correct settings and press A.",
+      "content": "Install d2X cIOS with the correct settings and press A . You will also need to set the following settings in the menu and press \"A\" to install d2x cIOS with these settings: Select cIOS: d2x-v11-beta1-vWii Select cIOS base: 57 Select cIOS slot: 250"
+    },
+    {
+      "title": "Install d2X cIOS with the correct settings and press A.",
+      "content": "Install d2X cIOS with the correct settings and press A . Set the following settings in the menu and press \"A\" to install d2x cIOS with these settings: Select cIOS: d2x-v11-beta1-vWii Select cIOS base: 58 Select cIOS slot: 251"
+    },
+    {
+      "title": "Press B to exit.",
+      "content": "Press B to exit. Once you have finished installing d2x cIOS with all the proper settings, press \"B.\" to exit the d2x cIOS installer."
+    },
+    {
+      "title": "Launch the Patched IOS80 installer if you got it.",
+      "content": "Launch the Patched IOS80 installer if you got it. Select the \"Patch IOS80 Installer app on the Homebrew Channel on your Virtual Wii. Then select Load . The IOS80 patch allows you to run emulators on the Homebrew Channel."
+    },
+    {
+      "title": "Wait 30 seconds and press any button.",
+      "content": "Wait 30 seconds and press any button. When you launch the Patch IOS80 Installer, there will be a long warning screen. You have to wait 30 seconds for the screen to pass. Once you are given the option, press any button to start installing the iOS0 patch. Homebrew is now installed on your Virtual Wii and ready to play games and emulators. [11] X Research source"
+    },
+    {
+      "title": "Install the new Mii Channel.",
+      "content": "Install the new Mii Channel. Launch Wii Mod lite. Navigate to WAD Manager and select it."
+    },
+    {
+      "title": "Press A to search on \"Wii SD Slot\".",
+      "content": "Press A to search on \"Wii SD Slot\". Navigate to \"Mii Channel v6 (Wii).wad\" and select it. Press A to install the WAD. Press HOME to return to the Homebrew Channel."
+    }
+  ]
+}

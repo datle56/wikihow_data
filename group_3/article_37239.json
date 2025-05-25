@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Reset-Network-Settings-on-PC-or-Mac",
+  "title": "How to Reset Network Settings on PC or Mac",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+S.",
+      "content": "Press ⊞ Win + S . This opens the search bar."
+    },
+    {
+      "title": "Type cmd into the search bar.",
+      "content": "Type cmd into the search bar. A list of matching results will appear."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt . A menu will expand."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This opens an administrator-level terminal window containing a command prompt. Depending on your settings, you may have to enter your administrator password before the command prompt appears."
+    },
+    {
+      "title": "Type netsh advfirewall reset at the prompt and press ↵ Enter.",
+      "content": "Type netsh advfirewall reset at the prompt and press ↵ Enter ."
+    },
+    {
+      "title": "Type netsh int ip reset and press ↵ Enter.",
+      "content": "Type netsh int ip reset and press ↵ Enter ."
+    },
+    {
+      "title": "Type netsh int ipv6 reset and press ↵ Enter.",
+      "content": "Type netsh int ipv6 reset and press ↵ Enter ."
+    },
+    {
+      "title": "Type netsh winsock reset and press ↵ Enter.",
+      "content": "Type netsh winsock reset and press ↵ Enter . Now that you've issued all of these commands, your network settings are completely reset. [1] X Research source"
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. To do this, click the menu, click , then select Restart . Your computer will shut down and restart. Since your network settings will have been cleared, you'll have to re-enable Wi-Fi and connect to your network again as though you're doing so for the first time."
+    },
+    {
+      "title": "Back up your Mac.",
+      "content": "Back up your Mac. Resetting your network settings in macOS requires deleting certain system configuration files. [2] X Research source For tips on backing up your Mac, see Back Up a Mac ."
+    },
+    {
+      "title": "Close any apps that use the network.",
+      "content": "Close any apps that use the network. For example, you'll want to close your web browser, messaging, and social media apps."
+    },
+    {
+      "title": "Turn off Wi-Fi.",
+      "content": "Turn off Wi-Fi. To do this, click the Wi-Fi icon in the menu bar and select Turn Wi-Fi Off ."
+    },
+    {
+      "title": "Click the Finder icon.",
+      "content": "Click the Finder icon. It's the two-toned smiling Mac logo in the Dock, which is usually at the bottom of the screen."
+    },
+    {
+      "title": "Press ⌘ Command+⇧ Shift+G.",
+      "content": "Press ⌘ Command + ⇧ Shift + G . This opens the Go To Folder window."
+    },
+    {
+      "title": "Type or paste /Library/Preferences/SystemConfiguration/ into the blank.",
+      "content": "Type or paste /Library/Preferences/SystemConfiguration/ into the blank."
+    },
+    {
+      "title": "Click Go.",
+      "content": "Click Go . This opens a list of System Configuration files."
+    },
+    {
+      "title": "Select all of the network-related files in the folder.",
+      "content": "Select all of the network-related files in the folder. Here's how: Press and hold the ⌘ Command key. Click all of the following files (while continuing to hold ⌘ Command ): com.apple.airport.preferences.plist com.apple.network.eapolclient.configuration.plist com.apple.wifi.message-tracer.plist NetworkInterfaces.plist preferences.plist All selected files should now be highlighted in blue."
+    },
+    {
+      "title": "Drag the selected files to another location.",
+      "content": "Drag the selected files to another location. You can drag them to your desktop or any other folder on your computer. It's just important that they are no longer in the SystemConfiguration folder."
+    },
+    {
+      "title": "Reboot your Mac.",
+      "content": "Reboot your Mac. To do this, click the menu and click Restart . Your computer will shut down and restart. Since your network settings will have been cleared, you'll have to re-enable Wi-Fi and connect to your network again as though you're doing so for the first time."
+    }
+  ]
+}

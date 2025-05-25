@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Find-Your-Windows-7-Product-Key",
+  "title": "How to Find Your Windows 7 Product Key: CMD, Registry & More",
+  "steps": [
+    {
+      "title": "If your PC came preinstalled with Windows 7, you should be able to find a Certificate of Authenticity (COA) sticker on your computer.",
+      "content": "If your PC came preinstalled with Windows 7, you should be able to find a Certificate of Authenticity (COA) sticker on your computer. This sticker often has a holographic or rainbow label, but sometimes will just be a plain white sticker. If you're using a tower/desktop computer, it'll usually be on the side or back of the unit. On a laptop, it's typically on the bottom of the unit or under the battery . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Use the Windows Command Prompt to find the product key.",
+      "content": "Use the Windows Command Prompt to find the product key. This is a handy way to display your Windows 7 product key if you can no longer read what's on the sticker or can't find it elsewhere. As long as Windows 7 was installed on this computer when you purchased it, you'll be able to pull up the key this way. Click the Start menu and select Run . Type cmd and click OK to open Command Prompt . At the prompt, type wmic path softwarelicensingservice get OA3xOriginalProductKey and press Enter . Find the 25-digit product key on the next line."
+    },
+    {
+      "title": "Open the Registry Editor on your Windows 7 PC.",
+      "content": "Open the Registry Editor on your Windows 7 PC. In most cases, you can locate the product key in your registry. To open the registry editor: Press Windows key + R to open the Run dialog. Type regedit . Click OK"
+    },
+    {
+      "title": "Navigate to the correct registry key.",
+      "content": "Navigate to the correct registry key. The path you'll need to access is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Install\\UserData. Here's how to get there: Expand the HKEY_LOCAL_MACHINE folder in the left panel. Expand the SOFTWARE folder beneath it. Expand the MICROSOFT folder. Expand the Windows folder. Expand the CurrentVersion folder. Expand the Install folder. Expand the UserData folder."
+    },
+    {
+      "title": "Press Ctrl + F and type ProductID.",
+      "content": "Press Ctrl + F and type ProductID . This allows you to search for the product key."
+    },
+    {
+      "title": "Click Find Next.",
+      "content": "Click Find Next . Now you'll see a \"ProductID\" entry in the right panel. You can double-click this entry to display an easy-to-copy version of your 25-digit Windows 7 product key."
+    },
+    {
+      "title": "Download ProduKey from https://www.nirsoft.net/utils/product_cd_key_viewer.html.",
+      "content": "Download ProduKey from https://www.nirsoft.net/utils/product_cd_key_viewer.html . This simple free tool can display product keys for many older Microsoft products, including Windows 7, 8, Vista, Microsoft Office, and SQL Server. [2] X Research source To download, click the Download ProduKey (In Zip file) link to download the ZIP file, unzip the file , then double-click the file ending with .exe to display your 25-digit product key. This tool is often falsely flagged as a virus, even though it's totally safe. The only reason it's flagged is because the tool is capable of viewing your product key, which many antivirus apps think can be used to pirate software. As long as you download the tool directly from Nirsoft, it's safe and you can ignore any virus warnings. [3] X Research source If you can't get Nirsoft's tool to work, try ShowKeyPlus, which you can download from https://github.com/Superfly-Inc/ShowKeyPlus/releases . [4] X Research source You can then unzip the downloaded file and run the Showkeyplus.exe file inside to display your product key."
+    },
+    {
+      "title": "Open Notepad on your Windows 7 PC.",
+      "content": "Open Notepad on your Windows 7 PC. you still can't find the product key, you can paste a simple Visual Basic script into a text file and run it like an application to display your product key. Start by launching Notepad, which you'll find in your Start menu's Accessories folder."
+    },
+    {
+      "title": "Paste this code into a blank Notepad file.",
+      "content": "Paste this code into a blank Notepad file. Just copy and paste this block of code into your blank new text file. [5] X Research source Set WshShell = CreateObject ( \"WScript.Shell\" ) MsgBox ConvertToKey ( WshShell . RegRead ( \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\DigitalProductId\" )) Function ConvertToKey ( Key ) Const KeyOffset = 52 i = 28 Chars = \"BCDFGHJKMPQRTVWXY2346789\" Do Cur = 0 x = 14 Do Cur = Cur * 256 Cur = Key ( x + KeyOffset ) + Cur Key ( x + KeyOffset ) = ( Cur \\ 24 ) And 255 Cur = Cur Mod 24 x = x - 1 Loop While x >= 0 i = i - 1 KeyOutput = Mid ( Chars , Cur + 1 , 1 ) & KeyOutput If ((( 29 - i ) Mod 6 ) = 0 ) And ( i <> - 1 ) Then i = i - 1 KeyOutput = \"-\" & KeyOutput End If Loop While i >= 0 ConvertToKey = KeyOutput End Function"
+    },
+    {
+      "title": "Save the file as productkey.vbs.",
+      "content": "Save the file as productkey.vbs. To do this, just click File > Save as , choose a location you'll remember (your desktop is a good option), type productkey.vbs as the file name, and then click Save ."
+    },
+    {
+      "title": "Double-click the productkey.vbs file you've created.",
+      "content": "Double-click the productkey.vbs file you've created. For example, if you saved the file to your desktop, just double-click the productkey.vbs icon on your desktop. This displays a pop-up window that contains your Windows 7 product key."
+    },
+    {
+      "title": "If you bought a physical copy of Windows 7 and still have the box, look for the product key sticker on the software.",
+      "content": "If you bought a physical copy of Windows 7 and still have the box, look for the product key sticker on the software. Sometimes this sticker is affixed to the outside of the Windows 7 box or CD packaging while other times it may be on a card insert inside the box. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "If you ordered Windows 7 online, the product key should be on your confirmation email message or receipt.",
+      "content": "If you ordered Windows 7 online, the product key should be on your confirmation email message or receipt. Search your email for a confirmation message from Microsoft (or from whoever you purchased the software) and you'll find the 25-character product key."
+    },
+    {
+      "title": "If you're still not able to pull up the product key, the manufacturer of your PC may be able to help.",
+      "content": "If you're still not able to pull up the product key, the manufacturer of your PC may be able to help. As long as you purchased a computer that came with Windows 7 from a manufacturer like Dell, HP, or Lenovo, a technician should be able to provide you with any tools you'll need to pull up your product key."
+    }
+  ]
+}

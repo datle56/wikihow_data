@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Solve-Parallel-Circuits",
+  "title": "How to Solve Parallel Circuits",
+  "steps": [
+    {
+      "title": "Identify parallel circuits.",
+      "content": "Identify parallel circuits. A parallel circuit has two or more branches that all lead from point A to point B. A single stream of electrons divides to flow through multiple branches, then merge back into one stream on the other side. Most problems involving parallel circuits will ask you to identify the total voltage, resistance, or current across the circuit (point A to point B). [1] X Research source Components \"connected in parallel\" are each located on a separate branch."
+    },
+    {
+      "title": "Understand current and resistance in parallel circuits.",
+      "content": "Understand current and resistance in parallel circuits. Imagine a freeway with multiple lanes, and toll booths in each lane slowing down traffic. Building a new lane gives the cars another path to take, so it will always speed up traffic even though you're adding a new toll booth as well. Similarly, adding a new branch to a parallel circuit gives current an additional path to take. No matter how much resistance that new branch has, the total resistance of the circuit will decrease, and total current of the circuit will increase. [2] X Research source"
+    },
+    {
+      "title": "Sum currents in each branch to find total current.",
+      "content": "Sum currents in each branch to find total current. If you know the current in each branch, just add them together to find the total current. This is the amount of current flowing in the circuit after all the branches come together. In formulaic terms: I T = I 1 + I 2 + I 3 + ... [3] X Research source"
+    },
+    {
+      "title": "Solve for total resistance.",
+      "content": "Solve for total resistance. To find total resistance R T across the circuit, solve for it in the equation 1 / R T = 1 / R 1 + 1 / R 2 + 1 / R 3 + ... where each R on the right-hand side represents the resistance on one branch of the circuit. [4] X Research source For example, a circuit has two resistors in parallel, each with 4Ω resistance. 1 / R T = 1 /4Ω + 1 /4Ω → 1 / R T = 1 /2Ω → R T = 2Ω. In other words, two branches of equal resistance are exactly twice as easy to get through as one branch alone. If one branch has no resistance (0Ω), all the current goes through that branch. The total resistance is 0. [5] X Research source"
+    },
+    {
+      "title": "Remember what voltage describes.",
+      "content": "Remember what voltage describes. Voltage is the difference in electric potential between two points. Since you're comparing two points, not examining a path of movement, the voltage will remain the same no matter which branch you're looking at. [6] X Research source V T = V 1 = V 2 = V 3 = ..."
+    },
+    {
+      "title": "Find missing values with Ohm's Law.",
+      "content": "Find missing values with Ohm's Law. Ohm's Law describes the relation between voltage V, current I, and resistance R: V = IR . If you know two of these values, use this formula to solve for the third. [7] X Research source Make sure every value refers to the same portion of the circuit. You may use Ohm's Law to examine the total circuit (V = I T R T ) or a single branch (V = I 1 R 1 )."
+    },
+    {
+      "title": "Make a chart to keep track of your work.",
+      "content": "Make a chart to keep track of your work. If you have a parallel circuit with several unknown values, a chart will help you organize your information. [8] X Research source Here's an example chart for a circuit with three parallel branches. Note that branches are often referred to as R followed by a subscript number. R 1 R 2 R 3 Total Units V volts I amperes R ohms"
+    },
+    {
+      "title": "Fill in all the information given by the problem.",
+      "content": "Fill in all the information given by the problem. For our example, we'll use a circuit powered by a 12 volt battery. The circuit has three parallel branches, with resistances 2Ω, 4Ω, and 9Ω. Add this information to your chart: R 1 R 2 R 3 Total Units V 12 volts I amperes R 2 4 9 ohms"
+    },
+    {
+      "title": "Copy the voltage value to each branch.",
+      "content": "Copy the voltage value to each branch. Remember that the voltage across the whole circuit equals the voltage across each branch of a parallel circuit. R 1 R 2 R 3 Total Units V 12 12 12 12 volts I amperes R 2 4 9 ohms"
+    },
+    {
+      "title": "Use Ohm's Law to find the current in each branch.",
+      "content": "Use Ohm's Law to find the current in each branch. Each column in your chart includes voltage, current, and resistance. This means you can always solve for a missing value as long as you have the other two values in the same column. If you need a reminder, Ohm's Law is V = IR. The missing value is current in our example, so we can rearrange this as I = V/R. [9] X Research source R 1 R 2 R 3 Total Units V 12 12 12 12 volts I 12/2 = 6 12/4 = 3 12/9 = ~1.33 amperes R 2 4 9 ohms"
+    },
+    {
+      "title": "Solve for total current.",
+      "content": "Solve for total current. This is an easy value to find, since the total current equals the sum of the currents in each branch. [10] X Research source R 1 R 2 R 3 Total Units V 12 12 12 12 volts I 6 3 1.33 6 + 3 + 1.33 = 10.33 amperes R 2 4 9 ohms"
+    },
+    {
+      "title": "Solve for total resistance.",
+      "content": "Solve for total resistance. You can find this in two different ways. You can use the resistance row to calculate it using the formula 1 / R T = 1 / R 1 + 1 / R 2 + 1 / R 3 . However, it's often easier to solve for it using Ohm's Law and the total V and I values. When solving for resistance, rearrange Ohm's Law as R = V/I R 1 R 2 R 3 Total Units V 12 12 12 12 volts I 6 3 1.33 10.33 amperes R 2 4 9 12 / 10.33 = ~1.17 ohms"
+    },
+    {
+      "title": "Calculate power.",
+      "content": "Calculate power. As in any circuit, power P = IV. If you've solved for power along each of the branches, the total power P T equals the sum of all branch power values (P 1 + P 2 + P 3 + ...). [11] X Research source"
+    },
+    {
+      "title": "Find total resistance for a two-branch circuit.",
+      "content": "Find total resistance for a two-branch circuit. If there are exactly two resistors in parallel, you can simplify the equation to the \"product over sum\" equation: R T = R 1 R 2 / (R 1 + R 2 )"
+    },
+    {
+      "title": "Find total resistance when all resistors are identical.",
+      "content": "Find total resistance when all resistors are identical. If every resistor in parallel has the same resistance value, the equation becomes much simpler. R T = R 1 / N, where N is the number of resistors. [12] X Research source For example, two identical resistors in parallel provides ½ the total resistance of one resistor alone. Eight identical resistors provide ⅛ of the total resistance."
+    },
+    {
+      "title": "Calculate branch currents without voltage.",
+      "content": "Calculate branch currents without voltage. This equation, called Kirchhoff's current divider rule, lets you solve for individual branch currents even if you don't know the circuit voltage. [13] X Research source You'll need to know the resistance of each branch, and the total current f the circuit: Two resistors in parallel: I 1 = I T R 2 / (R 1 + R 2 ) More than two resistors in parallel: To solve for I 1 , find the combined resistance of all resistors besides R 1 . Remember to use the formula for resistors in parallel. Now use the equation about, replacing R 2 with your answer."
+    }
+  ]
+}

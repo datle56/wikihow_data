@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Find-the-Inverse-of-a-3x3-Matrix",
+  "title": "How to Find the Inverse of a 3x3 Matrix",
+  "steps": [
+    {
+      "title": "Check the determinant of the matrix.",
+      "content": "Check the determinant of the matrix . You need to calculate the determinant of the matrix as an initial step. If the determinant is 0, then your work is finished, because the matrix has no inverse. The determinant of matrix M can be represented symbolically as det(M). [1] X Research source For a 3x3 matrix, find the determinant by first"
+    },
+    {
+      "title": "Transpose the original matrix",
+      "content": "Transpose the original matrix . Transposing means reflecting the matrix about the main diagonal, or equivalently, swapping the (i,j)th element and the (j,i)th. When you transpose the terms of the matrix, you should see that the main diagonal (from upper left to lower right) is unchanged. [2] X Research source Another way to think of transposing is that you rewrite the first row as the first column, the middle row becomes the middle column, and the third row becomes the third column. Notice the colored elements in the diagram above and see where the numbers have changed position."
+    },
+    {
+      "title": "Find the determinant of each of the 2x2 minor matrices.",
+      "content": "Find the determinant of each of the 2x2 minor matrices. Every item of the newly transposed 3x3 matrix is associated with a corresponding 2x2 “minor” matrix. [3] X Research source To find the right minor matrix for each term, first highlight the row and column of the term you begin with. This should include five terms of the matrix. The remaining four terms make up the minor matrix. [4] X Research source In the example shown above, if you want the minor matrix of the term in the second row, first column, you highlight the five terms that are in the second row and the first column. The remaining four terms are the corresponding minor matrix. Find the determinant of each minor matrix by cross-multiplying the diagonals and subtracting, as shown. For more on minor matrices and their uses, see Understand the Basics of Matrices ."
+    },
+    {
+      "title": "Create the matrix of cofactors.",
+      "content": "Create the matrix of cofactors. Place the results of the previous step into a new matrix of cofactors by aligning each minor matrix determinant with the corresponding position in the original matrix. Thus, the determinant that you calculated from item (1,1) of the original matrix goes in position (1,1). You must then reverse the sign of alternating terms of this new matrix, following the “checkerboard” pattern shown. [5] X Research source When assigning signs, the first element of the first row keeps its original sign. The second element is reversed. The third element keeps its original sign. Continue on with the rest of the matrix in this fashion. Note that the (+) or (-) signs in the checkerboard diagram do not suggest that the final term should be positive or negative. They are indicators of keeping (+) or reversing (-) whatever sign the number originally had. The final result of this step is called the adjugate matrix of the original. This is sometimes referred to as the adjoint matrix. The adjugate matrix is noted as Adj(M)."
+    },
+    {
+      "title": "Divide each term of the adjugate matrix by the determinant.",
+      "content": "Divide each term of the adjugate matrix by the determinant. Recall the determinant of M that you calculated in the first step (to check that the inverse was possible). You now divide every term of the matrix by that value. Place the result of each calculation into the spot of the original term. The result is the inverse of the original matrix. [6] X Research source For the sample matrix shown in the diagram, the determinant is 1. Therefore, dividing every term of the adjugate matrix results in the adjugate matrix itself. (You won’t always be so lucky.) Instead of dividing, some sources represent this step as multiplying each term of M by 1/det(M). Mathematically, these are equivalent."
+    },
+    {
+      "title": "Adjoin the identity matrix to the original matrix.",
+      "content": "Adjoin the identity matrix to the original matrix . Write out the original matrix M, draw a vertical line to the right of it, and then write the identity matrix to the right of that. [7] X Expert Source Mario Banuelos, PhD Associate Professor of Mathematics Expert Interview. 19 January 2021. You should now have what appears to be a matrix with three rows of six columns each. [8] X Research source Recall that the identity matrix is a special matrix with 1s in each position of the main diagonal from upper left to lower right, and 0s in all other positions."
+    },
+    {
+      "title": "Perform linear row reduction operations.",
+      "content": "Perform linear row reduction operations. Your objective is to create the identity matrix on the left side of this newly augmented matrix. As you perform row reduction steps on the left, you must consistently perform the same operations on the right, which began as your identity matrix. [9] X Expert Source Mario Banuelos, PhD Associate Professor of Mathematics Expert Interview. 19 January 2021. Remember that row reductions are performed as a combination of scalar multiplication and row addition or subtraction, in order to isolate individual terms of the matrix. For a more complete review, see Row-Reduce Matrices."
+    },
+    {
+      "title": "Continue until you form the identity matrix.",
+      "content": "Continue until you form the identity matrix. Keep repeating linear row reduction operations until the left side of your augmented matrix displays the identity matrix (diagonal of 1s, with other terms 0). When you have reached this point, the right side of your vertical divider will be the inverse of your original matrix. [10] X Research source"
+    },
+    {
+      "title": "Write out the inverse matrix.",
+      "content": "Write out the inverse matrix. Copy the elements now appearing on the right side of the vertical divider as the inverse matrix. [11] X Expert Source Mario Banuelos, PhD Associate Professor of Mathematics Expert Interview. 19 January 2021."
+    },
+    {
+      "title": "Select a calculator with matrix capabilities.",
+      "content": "Select a calculator with matrix capabilities. Simple 4-function calculators will not be able to help you directly find the inverse. However, due to the repetitive nature of the calculations, an advanced graphing calculator , such as the Texas Instruments TI-83 or TI-86, can greatly reduce the work. [12] X Research source"
+    },
+    {
+      "title": "Enter your matrix into the calculator.",
+      "content": "Enter your matrix into the calculator. First, enter your calculator’s Matrix function by pressing the Matrix key, if you have one. On the Texas Instruments calculators, you may need to press 2 nd Matrix. [13] X Research source"
+    },
+    {
+      "title": "Select the Edit submenu.",
+      "content": "Select the Edit submenu. To reach the submenu, you may need to use the arrow buttons or choose the appropriate function key at the top of your calculator’s keypad, depending on the layout of your calculator. [14] X Research source"
+    },
+    {
+      "title": "Select a name for your matrix.",
+      "content": "Select a name for your matrix. Most calculators are equipped to work with anywhere from 3 to 10 matrices, labeled with letters A through J. Typically, just choose [A] to work with. Hit the Enter key after making your selection. [15] X Research source"
+    },
+    {
+      "title": "Enter the dimensions of your matrix.",
+      "content": "Enter the dimensions of your matrix. This article is focusing on 3x3 matrices. However, the calculator can handle larger sizes. Enter the number of rows, then press Enter, and then the number of columns, and Enter. [16] X Research source"
+    },
+    {
+      "title": "Enter each element of the matrix.",
+      "content": "Enter each element of the matrix. The calculator screen will show a matrix. If you previously were working with the matrix function, the prior matrix will appear on the screen. The cursor will highlight the first element of the matrix. Type in the value of the matrix you wish to solve, and then Enter. The cursor will move automatically to the next element of the matrix, overwriting any previous numbers. [17] X Research source If you wish to enter a negative number, use your calculator’s negative button (-) and not the minus key. The matrix function will not read the number properly. If necessary, you can use your calculator’s arrow keys to jump around the matrix."
+    },
+    {
+      "title": "Quit the Matrix function.",
+      "content": "Quit the Matrix function. After you have entered all values of the matrix, press the Quit key (or 2 nd Quit, if necessary). This will exit you from the Matrix function and return you to the main display screen of your calculator. [18] X Research source"
+    },
+    {
+      "title": "Use the inverse key to find the inverse matrix.",
+      "content": "Use the inverse key to find the inverse matrix. First, reopen the Matrix function and use the Names button to select the matrix label that you used to define your matrix (probably [A]). Then, press your calculator’s inverse key, x − 1 {\\displaystyle x^{-1}} . This may require using the 2 nd button, depending on your calculator. Your screen display should show A − 1 {\\displaystyle A^{-1}} . Press Enter, and the inverse matrix should appear on your screen. [19] X Research source Do not use the ^ button on your calculator to try entering A^-1 as separate keystrokes. The calculator will not understand this operation. If you receive an error message when you enter the inverse key, chances are that your original matrix does not have an inverse. You may want to go back and calculate the determinant to find out."
+    },
+    {
+      "title": "Convert your inverse matrix to exact answers.",
+      "content": "Convert your inverse matrix to exact answers. The first calculation that the calculator will give you is in decimal form. This is not considered “exact” for most purposes. You should convert the decimal answers to fractional form, as necessary. (If you are very lucky, all your results will be integers, but this is rare.) [20] X Research source Your calculator probably has a function that will automatically convert the decimals to fractions . For example, using the TI-86, enter the Math function, then select Misc, and then Frac, and Enter. The decimals will automatically appear as fractions."
+    },
+    {
+      "title": "Most graphing calculators also have square bracket keys (on TI-84 it's 2nd + x and 2nd + -) which can be used to type in a matrix without using the matrix function.",
+      "content": "Most graphing calculators also have square bracket keys (on TI-84 it's 2nd + x and 2nd + -) which can be used to type in a matrix without using the matrix function. Note: The calculator will not format the matrix until after the enter/equals key has been used (i.e. everything will be one line and not pretty)."
+    }
+  ]
+}

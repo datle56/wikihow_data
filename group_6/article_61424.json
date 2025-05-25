@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Undervolt-Gpu",
+  "title": "How to Undervolt a GPU to Lower Temps and Reduce Power Usage",
+  "steps": [
+    {
+      "title": "Understand which graphics card can be undervolted.",
+      "content": "Understand which graphics card can be undervolted. Not all NVIDIA GPUs can be undervolted. NVIDIA cards released before the NVIDIA GTX 10 series have a locked voltage and cannot be undervolted (at least not with the standard undervolting tools). Newer NVIDIA cards, including the NVIDIA RTX series, can be undervolted."
+    },
+    {
+      "title": "Download and install MSI Afterburner.",
+      "content": "Download and install MSI Afterburner. You need to use this program to undervolt an NVIDIA graphics card. It is a free program. Use the following steps to download it: Go to https://www.msi.com/Landing/afterburner/graphics-cards in a web browser. Click Download Afterburner . Open the ZIP file in your Downloads folder. Double-click the MSIAfterburnerSetup465.exe Follow the prompts to install MSI Afterburner. Ensure both Afterburner and Rivatuner Statistics Tuner are checked when prompted. Follow the prompts to install RivaTuner after Afterburner is finished installing."
+    },
+    {
+      "title": "Restart your PC and launch MSI Afterburner.",
+      "content": "Restart your PC and launch MSI Afterburner. After installing Afterburner, restart your computer. Then click the Windows Start menu and type \"Afterburner.\" Click the Afterburner icon to launch Afterburner."
+    },
+    {
+      "title": "Set up Afterburner.",
+      "content": "Set up Afterburner. There's just a little bit of a setup process in Afterburner. GPU1 typically refers to your GPU card. GPU2 usually refers to your onboard GPU. Use the following steps to set up Afterburner: Click the gear/settings icon on the left-hand side. Click the checkbox next to \"Unlock voltage control\" and \"Unlock voltage monitoring.\" Click the Monitoring tab at the top. Ensure \"GPU1 temperature\" and check the \"Show in On-screen Display\" checkbox below the box. Ensure \"GPU1 Usage\" is checked and check \"Show in On-screen Display.\" Ensure \"GPU1 Core clock\" is checked and check \"Show in On-screen Display.\" Ensure \"GPU1 Power\" is checked and check \"Show in On-screen Display.\" Ensure \"GPU1 Voltage\" is checked and check \"Show in On-screen Display.\" Ensure \"Framerate\" is checked and check \"Show in On-screen Display.\" Click the On-screen Display tab at the top. Enter a button you want to use to display the on-screen monitor in the \"Toggle On-screen Display\" box (i.e., \"/\"). Click Apply followed by Ok . Restart Afterburner."
+    },
+    {
+      "title": "Open RivaTuner.",
+      "content": "Open RivaTuner. To do so, click the Windows Start menu and type \"RivaTuner.\" Then click the RivaTuner Statistics Server app. It has an icon that resembles a blue computer screen. This will open RivaTuner in the background. To bring it to the foreground, click the arrow bracket in your Windows taskbar next to the clock to show hidden icons. Click the RivaTuner icon."
+    },
+    {
+      "title": "Ensure \"Start with Windows\" and \"Show On-screen display\" are turned on.",
+      "content": "Ensure \"Start with Windows\" and \"Show On-screen display\" are turned on. These options are at the top of the RivaTuner General Properties window. You can also use the slider bar next to \"On-screen display zoom\" to adjust the text size."
+    },
+    {
+      "title": "Run a benchmark test.",
+      "content": "Run a benchmark test. To do so, you'll need to launch a game. It should be a relatively modern game with high-end graphics that will push your GPU to the limit. Go into the game's settings, set the graphics options to high, and turn off any framerate limits. Allow the game to run for about 15 minutes or so. You should see the GPU stats in the upper-left corner of the screen as you play. Write down the stats, particularly the voltage and core clock refresh rate. The display in the upper-left corner displays your GPU's core temperature (in Celsius), the percentage of the GPU being used, the GPU core clock (MHz), the GPU power draw (in watts), the GPU voltage, and the framerate (FPS). If you don't see the GPU stats in the upper-right corner. Press the key you assigned to the on-screen display toggle in Afterburner. Some laptops don't support voltage monitoring. If your laptop doesn't display the voltage, don't worry. Just write down the core clock refresh rate. You can find out your voltage later. Alternatively, instead of playing a game, you can use a benchmark program, like Heaven Benchmark , which is used when overclocking or fine-tuning your hardware."
+    },
+    {
+      "title": "Open Afterburner with the game still running in the background.",
+      "content": "Open Afterburner with the game still running in the background. Press the Windows key to display the taskbar. If Afterburner is not running, click the Windows Start menu and open Afterburner."
+    },
+    {
+      "title": "Click Curve Editor.",
+      "content": "Click Curve Editor . It's at the bottom of the \"Voltage\" box on the left. This displays a graph that shows your GPU's voltage on the left axis, and the core clock refresh rate (Frequency) at the bottom. If your laptop doesn't support voltage monitoring, find your core clock refresh rate in the Frequency axis on the left side. Trace that refresh rate to the right and click the dot in the line curve that corresponds to that refresh rate. The voltage is highlighted in a white box in the Voltage axis at the bottom of the screen. Write this number down."
+    },
+    {
+      "title": "Lower the voltage by about 50 mV while maintaining the same core clock refresh rate.",
+      "content": "Lower the voltage by about 50 mV while maintaining the same core clock refresh rate. To do so, locate the dot in the graph that intersects where your average voltage and core clock speed intersect. Move to the left and find the dot that is about 50 mV lower in the graph. This dot will have a slightly lower core clock refresh rate in the graph. Hold ' Shift and drag this dot (and the entire graph) up so that this dot intersects with your previous core clock refresh rate in the Frequency axis to the left."
+    },
+    {
+      "title": "Flatten the curve after the voltage you just selected.",
+      "content": "Flatten the curve after the voltage you just selected. To do so, hold Shift and highlight the point you just moved and every point to the right of it. Then hold Shift and press Enter twice to flatten the curve. After making the changes, click over to the Afterburner main window and click the icon that resembles a circle with a checkmark at the bottom of the window to apply the changes."
+    },
+    {
+      "title": "Return to your game and play for a few minutes.",
+      "content": "Return to your game and play for a few minutes. Play for a few minutes to ensure your GPU remains stable at the current voltage. You should be getting the same core clock refresh rate and framerate at the current voltage setting."
+    },
+    {
+      "title": "Reset the curve editor.",
+      "content": "Reset the curve editor. To do so, open Afterburner and click the icon resembling a circle with an arrow at the bottom of the window."
+    },
+    {
+      "title": "Lower the voltage by another 25 mV and test.",
+      "content": "Lower the voltage by another 25 mV and test. Open the Curve Editor and select the dot that is 25 mV lower than the previous dot you chose. Hold Shift and drag that dot up to the stock core clock refresh rate you got on your initial benchmark test. Then, hold shift and highlight all the dots in the curve after that dot. Hold Shift and press Enter twice to flatten the curve. Then click the Apply button in Afterburner. Then, go into your game or Heaven Benchmark to test for stability."
+    },
+    {
+      "title": "Repeat until your GPU crashes.",
+      "content": "Repeat until your GPU crashes. After each test, reset the Curve Editor in Afterburner and use the Curve Editor to lower the voltage by another 25 mV, flatten the curve, and apply your settings. Run another test using a game or Heaven Benchmark to check for stability. Keep repeating until you see a significant reduction in framerate or your GPU crashes. Note which voltage your GPU crashed."
+    },
+    {
+      "title": "Increase the voltage by 10 mV and test.",
+      "content": "Increase the voltage by 10 mV and test. After you find the voltage point at which your GPU crashes, open Afterburner and reset the curve. Use the Curve Editor to increase the voltage by about 10 mV. Make sure you remember to flatten the curve at the point and apply your settings. Run another test for stability. Keep increasing the voltage by 10 mV until you get a stable test."
+    },
+    {
+      "title": "Save your settings.",
+      "content": "Save your settings. Once you discover the lowest point your GPU can maintain stability, open the Afterburner window and click the Save button at the bottom of the screen. It's the icon that resembles a floppy disk. Then click one of the numbered profile slots on the right side to save your profile."
+    },
+    {
+      "title": "Continue testing.",
+      "content": "Continue testing. Continue playing your game. Play other games as well. If your GPU crashes or you experience a significant reduction in framerate at any time, increase the voltage by 10 mV in the Curve Editor, apply your settings, and save the profile. [1] X Research source"
+    },
+    {
+      "title": "Open AMD Adrenaline.",
+      "content": "Open AMD Adrenaline. AMD Adrenaline is the program that gets installed on your computer when you install the drivers for your AMD card . Click the Windows Start menu and type \"Adrenaline.\" Then click the AMD Software: Adrenaline Edition app. If you don't have AMD Adrenaline installed, download and install it from https://www.amd.com/en/technologies/software . You can also use MSI Afterburner to undervolt an AMD GPU, similar to how you would with an NVIDIA GPU ."
+    },
+    {
+      "title": "Navigate to the Overlay window.",
+      "content": "Navigate to the Overlay window. Use the following steps to do so: Click the Performance tab at the top. Click the Metrics tab below the main tabs at the top. Click the Overlay tab in the upper-right corner."
+    },
+    {
+      "title": "Click the toggle switch next to \"Show metrics overlay.\"",
+      "content": "Click the toggle switch next to \"Show metrics overlay.\" This displays the overlay window in the upper-right corner, which displays information such as the framerate (FPS), GPU utilization (percent of GPU being used), GPU power (in watts), GPU current temperature (in Celcius), and the GPU clock speed (in MHz) in the upper-right corner of the screen. If you want you can click the Tracking tab and toggle CPU and RAM off. You don't need to monitor that information to undervolt your GPU."
+    },
+    {
+      "title": "Enable GPU custom tuning.",
+      "content": "Enable GPU custom tuning. Use the following steps to do so: Click the Tuning tab at the top. Expand the \"GPU\" tuning menu (you can close the \"System\" and \"CPU\" menus if they are expanded.) Click Custom below \"Manual tuning\" on the right. Click the toggle switch to enable \"GPU tuning.\" Click the toggle switch to enable \"Advanced control.\""
+    },
+    {
+      "title": "Run a benchmark test.",
+      "content": "Run a benchmark test. To do so, you'll need to launch a game. It should be a relatively modern game with high-end graphics that will push your GPU to the limit. Go into the game's settings and set the graphics options to high. Turn off any framerate limits. Allow the game to run for about 15 minutes or so. Note the framerate and core temperature in the overlay menu. Alternatively, instead of playing a game, you can use a benchmark program, like Heaven Benchmark Test , which is used when overclocking or fine-tuning your hardware."
+    },
+    {
+      "title": "Lower the voltage by 50 mV.",
+      "content": "Lower the voltage by 50 mV. Go back into Adrenaline and use the slider bar, or enter a number in the box below \"Voltage.\" Lower the voltage by 50 mV. Then click the red button that says Apply changes in the upper-right corner."
+    },
+    {
+      "title": "Test for stability.",
+      "content": "Test for stability. To test for stability, you can either play a game with high-end graphics or use a benchmark testing application like Heaven Benchmark Test to test for stability. Play for a few minutes and check to make sure your GPU doesn't crash or that you don't see a significant drop in framerate."
+    },
+    {
+      "title": "Lower the voltage by 25 mV and test.",
+      "content": "Lower the voltage by 25 mV and test. If you get a stable test, go back into AMD Adrenaline and lower the voltage another 25 mV in the Tuning menu. Then click Apply changes in the upper-right corner. Use your game or Heaven Benchmark to test for stability."
+    },
+    {
+      "title": "Repeat until your GPU crashes.",
+      "content": "Repeat until your GPU crashes. Keep lowering the voltage by 25 mV and running a test to check for stability. Keep going until your GPU crashes or you see a significant reduction in framerate. When your GPU crashes, note the voltage your GPU crashed at."
+    },
+    {
+      "title": "Increase the GPU by 10 mV.",
+      "content": "Increase the GPU by 10 mV. When you discover the voltage at which your GPU crashes, go back into Adrenaline and increase the voltage by 10 mV. Run another test for stability. The goal is to find the lowest voltage your GPU can run stable at."
+    },
+    {
+      "title": "Save the profile.",
+      "content": "Save the profile. Once you discover the lowest voltage your GPU can run stable at, use the following steps to save the profile: Click the Save Profile icon, which resembles a square with a curved arrow pointing outward. It's in the upper-right corner. Enter a name for the profile (i.e., \"Undervolt\"). Click Save"
+    },
+    {
+      "title": "Continue testing.",
+      "content": "Continue testing. Continue playing the game you use to test your GPU. Play other games as well. If your GPU crashes or you experience any reduction in framerates, increase the voltage by 10 mV and save the profile. [2] X Research source"
+    }
+  ]
+}

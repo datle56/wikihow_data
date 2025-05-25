@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Change-Process-Priorities-in-Windows-Task-Manager",
+  "title": "Changing Process Priorities Temporarily & Permanently",
+  "steps": [
+    {
+      "title": "Open Task Manager.",
+      "content": "Open Task Manager. Press Ctrl + Shift + Esc or right-click the taskbar and select Task Manager ."
+    },
+    {
+      "title": "Click the Details tab.",
+      "content": "Click the Details tab. This option is at the top (Win 10) or side (Win 11) of the Task Manager window. If you don't see it, wait a second because it might take a moment to load."
+    },
+    {
+      "title": "Find a process.",
+      "content": "Find a process. On the Details tab, scroll down until you find the process for which you want to change the priority. If you want to find the process for a currently running program, click the Processes tab, find the program for which you want to change the priority, right-click the program, and click Go to details in the drop-down menu."
+    },
+    {
+      "title": "Right-click your selected process.",
+      "content": "Right-click your selected process. A drop-down menu will appear on top of the process. If you came here from the Processes tab, your process should be highlighted. If your mouse doesn't have a right-click button, click the right side of the mouse, or use two fingers to click the mouse. If your computer uses a trackpad instead of a mouse, use two fingers to tap the trackpad or press the bottom-right side of the trackpad."
+    },
+    {
+      "title": "Select Set priority.",
+      "content": "Select Set priority . It's in the middle of the drop-down menu. Selecting it will cause a pop-up menu to appear."
+    },
+    {
+      "title": "Select a priority level.",
+      "content": "Select a priority level. Click one of the following options, from fastest to slowest: Realtime - Highest priority, never set this manually. High - Highest priority that you should use. Above normal Normal Below normal Low - Lowest priority."
+    },
+    {
+      "title": "Click Change Priority when prompted.",
+      "content": "Click Change Priority when prompted. Doing so will confirm your decision and change the selected process's priority. Keep in mind that changing a system priority can cause your computer to freeze or crash."
+    },
+    {
+      "title": "Close Task Manager.",
+      "content": "Close Task Manager. Click the X in the top-right corner of the Task Manager window. Restarting the game will revert the priority to the default settings. However, you can avoid this by creating a shortcut with a specific priority . Third-party applications, like Bills2 Process Manager, offer to permanently change the priority of programs, but you can create a shortcut with a specific priority instead and not download another program."
+    },
+    {
+      "title": "Right-click your desktop to create a shortcut.",
+      "content": "Right-click your desktop to create a shortcut. Right-clicking will prompt a menu to open where your mouse is. Note that this may not work with programs within launchers, like Call of Duty, which is opened by the Blizzard launcher."
+    },
+    {
+      "title": "Hover your mouse over \"New\" and select Shortcut.",
+      "content": "Hover your mouse over \"New\" and select Shortcut . This will open a new window so you can create a new shortcut."
+    },
+    {
+      "title": "Enter the .exe name for your program and add \"\\\".",
+      "content": "Enter the .exe name for your program and add \"\\\". You can find this location by following these steps: Right-click the program in your Start menu Hover over \"More\" and select Open File Location If you are seeing another shortcut, repeat those steps again until you find a file location (the \"Type\" should not be \"Shortcut,\" but \"Application\" instead) Copy the address in the address bar. It's the bar with the folder location at the top of File Explorer. Paste it into the \"Create Shortcut\" window under \"Type the location of the item.\" Add a backslash after the location."
+    },
+    {
+      "title": "Click Browse.",
+      "content": "Click Browse . This opens a new window with more file options."
+    },
+    {
+      "title": "Select the .exe file and click OK.",
+      "content": "Select the .exe file and click OK . You can use the browsing tool to find your program without entering the location first (like we did in the previous steps), but it's a little confusing that way. Notice that the shortcut tool includes quotation marks (\") before and after the file location."
+    },
+    {
+      "title": "Enter the following code at the beginning:",
+      "content": "Enter the following code at the beginning: cmd /c start \"\" /PRIORITY . This command should be added to the shortcut code before the first quotation mark. Replace \"PRIORITY\" with the priority you want it to run as. You can use: \"low,\" \"belownormal,\" \"normal,\" \"abovenormal,\" or \"high.\" For example, your code should look like this: cmd /c start \"\" /high \"E:/Games....exe\" Click Next to continue."
+    },
+    {
+      "title": "Name your shortcut something you'll recognize.",
+      "content": "Name your shortcut something you'll recognize. For example, if the shortcut is for a game with a \"high\" priority, you could name it something like CODHigh . Click Finish . The shortcut appears on your desktop, but it has a generic icon. If you want to change the icon, right-click the shortcut and go to Properties > Shortcut > Change Icon > Browse . Find the program again, double-click the .exe file, and click OK . It should have the correct icon now. Whenever you launch the shortcut, it will start with the set priority. You can test this by launching it, then double-checking in Task Manager. [1] X Research source"
+    }
+  ]
+}

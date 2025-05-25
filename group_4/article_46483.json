@@ -1,0 +1,118 @@
+{
+  "url": "https://www.wikihow.com/Use-Youtube%E2%80%90dl",
+  "title": "How to Download Videos from YouTube with youtube-dl",
+  "steps": [
+    {
+      "title": "Open the Terminal or Command Prompt.",
+      "content": "Open the Terminal or Command Prompt. If you are using Windows, open the Command Prompt . If you are using a Mac open the Terminal in the Utilities folder or using the Spotlight search bar. On Linux, press Ctrl + Alt + T to open a Terminal. If you haven't installed YouTube-dl yet, follow the install instructions for Windows , Mac , and Linux . If you just installed YouTube-dl on your Mac or Linux machine, open a new Terminal instead of reusing the one you used to install YouTube-dl."
+    },
+    {
+      "title": "Change to the directory you want to download videos to.",
+      "content": "Change to the directory you want to download videos to. YouTube-dl will download the videos to whichever folder you are in in the Terminal or Command Prompt. To change directories in the Terminal type cd <directory location> and press Enter or Return ."
+    },
+    {
+      "title": "Copy the URL to a YouTube video.",
+      "content": "Copy the URL to a YouTube video. Go to the YouTube video you want to download in your preferred web browser, and copy the URL from the address bar. To copy, highlight the URL, right-click it (or Ctrl-click if you're using a Mac without a right mouse button), then select Copy ."
+    },
+    {
+      "title": "Download a video:",
+      "content": "Download a video: Enter the following command in the Terminal or Command Prompt: Type youtube-dl <url_to_video> and press Enter or Return . To paste the video URL, press Ctrl + V on a PC, or Command + V on a Mac. This will download the video without subtitles or a description. It automatically chooses the best video and audio quality."
+    },
+    {
+      "title": "Download audio only.",
+      "content": "Download audio only. If you only want to save the audio from a YouTube video as an MP3, MP4, or other format, you can use the -x option: youtube-dl -x <url_to_video> : This downloads the audio as an m4a file. If you'd rather download a different audio format, such as MP3, you can specify the format with this command: youtube-dl -x --audio-format mp3 url_to_video . If you're having trouble downloading audio, make sure you’ve installed FFmpeg . Check the method below for your operating system to learn how."
+    },
+    {
+      "title": "Download a playlist.",
+      "content": "Download a playlist . You will need to copy the URL to the playlist. Then use one of the following commands to download a playlist: Download a playlist in order: Type youtube-dl <url_to_playlist> and press Enter . Download playlist in reverse order: Type youtube-dl --playlist-reverse <url_to_playlist> and press Enter . Download playlist in random order: Type youtube-dl --playlist-random <url_to_playlist> and press Enter . Download a section of a playlist: Type youtube-dl --playlist-start <number> --playlist-end <number> <url_to_playlist> and press Enter ."
+    },
+    {
+      "title": "Download a specific video or audio format.",
+      "content": "Download a specific video or audio format. Use the following commands to download a video in a specific audio or video format: [1] X Research source List available formats: Type youtube-dl --list-format <url_to_video> and press Enter to list all available formats and their format codes. Download a specific format: Type youtube-dl -format <format_code> <url_to_video> and press Enter Merging formats: Sometimes you can get better quality by merging a video format with an audio-only format. Sometimes, there are even only video-only formats and audio-only formats. In that case, you can merge two formats into a single file. To merge two formats, type youtube-dl -f <video format code> + <audio format code> <format output> <url_to_video> and press Enter . Note that the order is not interchangeable. Specifying the audio first and then the video will result in an error. Format outputs can be \"mkv,\" \"mp4,\" \"ogg,\" \"webm,\" and \"flv.\""
+    },
+    {
+      "title": "Download information about a video.",
+      "content": "Download information about a video. This is useful when you only want to get some information, such as a list of the subtitles, or the thumbnail picture, but not the video itself. Type youtube-dl --skip-download <url_to_video> and press Enter to download information about the video."
+    },
+    {
+      "title": "Download the subtitles.",
+      "content": "Download the subtitles. Use the following commands to download subtitles for a video: List all available subtitles: Type youtube-dl --list-subs <url_to_video> and press Enter . Download subtitles: Type youtube-dl --write-sub <url_to_video> and press Enter . Download automatically generated subtitles: Type youtube-dl ---write-auto-sub <url_to_video> and press Enter . Download all subtitles: Type youtube-dl --all-subs <url_to_video> and press Enter . Specify subtitle language: Type youtube-dl --sub-lang <language tag(s)> <url_to_video> to specify a subtitle language. You can download more than one language at a time. Separate each language tag with a comma."
+    },
+    {
+      "title": "Get more information about a video.",
+      "content": "Get more information about a video. Use one of the following commands to get additional information about a video: Download video description: Type youtube-dl --write-description <url_to_video> and press Enter . Download video metadata: Type youtube-dl --write-info-json <url_to_video> and press Enter . Download annotations: Type youtube-dl --write-annotations <url_to_video> and press Enter . Download thumbnail image: Type youtube-dl --write-thumbnail <url_to_video> and press Enter ."
+    },
+    {
+      "title": "Update YouTube-dl if it suddenly stops working.",
+      "content": "Update YouTube-dl if it suddenly stops working. YouTube regularly changes its way of storing videos, and the old YouTube-dl scripts can stop working. If this happens, you may need to update YouTube-dl. To do so, type youtube-dl -U and press Enter . Depending on how you installed YouTube-dl, you may need to use sudo youtube-dl -U instead on Linux because you don't have the necessary permissions otherwise. If you downloaded YouTube-dl for Windows, or you used a package manager to install YouTube-dl on Mac or Linux, you may need to uninstall and reinstall the latest version of YouTube-dl."
+    },
+    {
+      "title": "Download geo-restricted videos.",
+      "content": "Download geo-restricted videos. If you want to download a video that is restricted in your country, you can still do so using a proxy server. You can find a list of free proxy servers at http://free-proxy.cz/en/ . Some may work, and some may not. It may take several tries. Use the following steps to download a geo-restricted video: [2] X Research source Type youtube-dl --proxy <proxy IP address>:<port number> <url_to_video> Type youtube-dl --geo-verification-proxy <proxy IP address>:<port number> <url_to_video> Type youtube-dl --geo-bypass <url_to_video> Type youtube-dl --geo-bypass-country <ISO country code> <url_to_video>"
+    },
+    {
+      "title": "Install Microsoft Visual C++ 2010 Redistributable Package.",
+      "content": "Install Microsoft Visual C++ 2010 Redistributable Package. You'll need the x86 version to make Youtube-dl work. To download directly from Microsoft, just click this link and save the installer to your PC. Then, double-click the downloaded file and follow the on-screen instructions to install."
+    },
+    {
+      "title": "Download the Windows binary of Youtube-dl.",
+      "content": "Download the Windows binary of Youtube-dl. Use the following steps to do so: Go to https://github.com/ytdl-org/youtube-dl/releases in a browser. Click the youtube-dl.exe link under \"Assets\" near the bottom of the page. Save the downloaded file to your PC."
+    },
+    {
+      "title": "Create a new folder for the YouTube-dl.exe file.",
+      "content": "Create a new folder for the YouTube-dl.exe file. If you want YouTube-dl to be available to all users, you should create a new folder in your \"C:/Program Files/\" folder. Otherwise, you can create a folder anywhere you'd like. Name the folder youtube-dl . Use the following steps to create a new folder : Press Windows Key + E to open File Explorer. Navigate to where you want to create a new folder for YouTube-dl, such as C:\\Program Files. Click New in the menu bar at the top and select Folder . Type youtube-dl and press Enter ."
+    },
+    {
+      "title": "Copy the youtube-dl.exe file to the new folder.",
+      "content": "Copy the youtube-dl.exe file to the new folder. By default, your downloaded files can be found in your Downloads folder. Navigate to your Downloads folder inside File Explorer and right-click the youtube-dl.exe file. Click Copy . Then navigate to the folder you created for YouTube-dl. Right-click inside the folder and click Paste ."
+    },
+    {
+      "title": "Add the youtube-dl folder to your system path.",
+      "content": "Add the youtube-dl folder to your system path. This allows you to run Youtube-dl commands from the command prompt in any directory. To add YouTube-dl to your PATH environment variables : Press the Windows key on your keyboard and type path . Click Edit the system environment variables . Click Environment variables… Select Path in the \"System variables\" panel and click Edit . Click New in the menu to the left. Type or paste the path to the \"YouTube-dl\" folder you created. For example, C:\\Program Files\\youtube-dl. Click Ok and OK again."
+    },
+    {
+      "title": "Install FFmpeg.",
+      "content": "Install FFmpeg. If you want to be able to convert YouTube videos to audio formats like MP3, you'll need to download the FFmpeg binaries and save them to your YouTube-dl folder. The easiest way to do this: Go to https://ffmpeg.org/download.html and click the Windows icon. Click Windows builds by BtbN . Click ffmpeg-master-latest-win64-gpl.zip to download. Unzip the file once downloaded, then open the extracted folder. Copy the files ffmpeg.exe and ffprobe.exe to your YouTube-dl folder (e.g., C:\\Program Files\\youtube-dl). You can ignore the one called \"ffplay.exe.\""
+    },
+    {
+      "title": "Install a media player if you haven't yet.",
+      "content": "Install a media player if you haven't yet. YouTube videos are usually stored in MP4 format and you can use a media player such as VLC player to view your videos. You can download the VLC multimedia player from the following link: http://www.videolan.org/vlc/#download ."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. You can find it in the Utilities folder and on your Launchpad. Alternatively, you can use the following steps to open Terminal: Click the magnifying glass icon in the upper-right corner. Type Terminal in search bar. Click Terminal.app ."
+    },
+    {
+      "title": "Install Homebrew.",
+      "content": "Install Homebrew. If you haven't already installed Homebrew, you can do so easily in the Terminal. Homebrew is an open-source package management system for Mac that allows you to install applications Type or paste /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" into the Terminal. Press Return . [3] X Research source If you are having trouble installing or using Homebrew, you can try installing MacPorts instead. You can download and install MacPorts from https://www.macports.org/install.php ."
+    },
+    {
+      "title": "Install YouTube-dl.",
+      "content": "Install YouTube-dl. To install YouTube-dl, type sudo brew install youtube-dl in the Terminal and press Return . It may take a while to download and install YouTube-dl. If you would rather install YouTube-dl using MacPorts, type sudo port install youtube-dl in the Terminal and press Enter ."
+    },
+    {
+      "title": "Install FFmpeg.",
+      "content": "Install FFmpeg. If you want to make sure you can convert YouTube videos to audio, you'll need download the FFmpeg. To do this, just type brew install ffmpeg to install with Homebrew, or sudo port install ffmpeg to use MacPorts."
+    },
+    {
+      "title": "Install a media player application if you need to.",
+      "content": "Install a media player application if you need to. YouTube videos are usually stored in the FLV or MP4 formats and you can use a media player such as VLC player to view your videos. You can download the VLC multimedia player from http://www.videolan.org/vlc"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. This is the keyboard shortcut to open the Terminal. Alternatively, you can open the Terminal in the Applications menu."
+    },
+    {
+      "title": "Download the Linux binary and make it executable.",
+      "content": "Download the Linux binary and make it executable. You can install using curl or wget: Using curl: Download the binary to /usr/local/bin: sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl Make the binary executable: sudo chmod a+rx /usr/local/bin/youtube-dl Using wget: Download the binary to /usr/local/bin: sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl Make the binary executable: sudo chmod a+rx /usr/local/bin/youtube-dl ."
+    },
+    {
+      "title": "Install FFmpeg.",
+      "content": "Install FFmpeg. If you want to be able to convert YouTube videos to audio, you'll need download the FFmpeg. You can get it from your distro's repository. E.g., if you're using Ubuntu or another Debian-based Linux, you can use sudo apt install ffmpeg ."
+    },
+    {
+      "title": "Install a media player if you haven't yet.",
+      "content": "Install a media player if you haven't yet. YouTube videos are stored in different formats, some of the most common are MP4, MKV and WEBM. To view the videos, you need a media player. Some options are MPV or VLC. You can install these through your system's package manager. Use the following steps to download and install VLC: Type sudo apt update and press Enter to update your software repository. Type sudo apt install vlc or sudo apt install mpv , depending on which program you want to install. Then press Enter ."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Print-in-Javascript",
+  "title": "4 Ways to Print in JavaScript: Console, Window Alert, & More",
+  "steps": [
+    {
+      "title": "Type <p id= in the body of your HTML document.",
+      "content": "Type <p id= in the body of your HTML document. This is the opening HTML tag for paragraph text with a specific id. For more information on how to write HTML code, check out How to Create a Simple Web Page with HTML ."
+    },
+    {
+      "title": "Type a name for the paragraph element in quotes followed by >.",
+      "content": "Type a name for the paragraph element in quotes followed by > . This assigns the paragraph text element an ID that can be recalled in JavaScript. For example, \"<p id=\"math\">\". You can also use other text HTML elements, such as header <h1 id=>"
+    },
+    {
+      "title": "Type </p> immediately after the \"<p id=\"[id]\">\" tag.",
+      "content": "Type </p> immediately after the \"<p id=\"[id]\">\" tag. This adds a closing tag for the opening paragraph HTML element"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This adds a new line to your HTML."
+    },
+    {
+      "title": "Type <script> and press ↵ Enter.",
+      "content": "Type <script> and press ↵ Enter . This is the opening tag for your JavaScript. All JavaScript coding should go after this tag."
+    },
+    {
+      "title": "Type document.getElementById.",
+      "content": "Type document.getElementById . This is the JavaScript code to call an HTML element by its ID."
+    },
+    {
+      "title": "Type the ID of the paragraph element in quotes inside parenthesis.",
+      "content": "Type the ID of the paragraph element in quotes inside parenthesis. If your paragraph element is \"<p id=\"math\">\", your JavaScript code would read \"document.getElementById(\"math\")\"."
+    },
+    {
+      "title": "Type .InnerHTML= after the parenthesis.",
+      "content": "Type .InnerHTML= after the parenthesis. This command is used to display text outputs using the HTML element."
+    },
+    {
+      "title": "Type what you want to print followed by a semicolon (;).",
+      "content": "Type what you want to print followed by a semicolon ( ; ). You can display text, a variable, numbers, or a math equation. For example, type \"document.getElementById(\"demo\").innerHTML = 27 + 33;\" to print the sum of 27 + 33."
+    },
+    {
+      "title": "Press ↵ Enter and type </script>.",
+      "content": "Press ↵ Enter and type </script> . This tag closes your JavaScript code. Type this tag when you are finished, and enter all your lines of JavaScript. When you load the HTML document in a web browser, it will print inside the HTML document."
+    },
+    {
+      "title": "Type <script> in the body of your HTML document.",
+      "content": "Type <script> in the body of your HTML document. This is the opening tag for your JavaScript."
+    },
+    {
+      "title": "Press ↵ Enter and type alert.",
+      "content": "Press ↵ Enter and type alert . This is the JavaScript command to open a pop-up window alert."
+    },
+    {
+      "title": "Type what you want to print in parentheses.",
+      "content": "Type what you want to print in parentheses. You can type text, a variable, numbers, or a math equation. For example, \"alert(\"Hello Sweety!\")\" to display \"Hello Sweety!\" in a pop-up window."
+    },
+    {
+      "title": "Add a semi-colon (;) at the end.",
+      "content": "Add a semi-colon ( ; ) at the end. This closes your line of JavaScript. The entire line should look something like \"alert(\"Hello Sweety!\");\"."
+    },
+    {
+      "title": "Press ↵ Enter and type </script>.",
+      "content": "Press ↵ Enter and type </script> . This tag closes your JavaScript code. Type this tag when you are finished entering all your lines of JavaScript. Loading your HTML document in a web browser will display the text you want to print in a pop-up window. You can also create a button that displays printed text in a pop-up window. To do so, type \"<button type=\"button\" onclick=\"alert([text you want to display])\">Button text</button>\"."
+    },
+    {
+      "title": "Type <script> in the body of your HTML document.",
+      "content": "Type <script> in the body of your HTML document. This is the opening tag for your JavaScript."
+    },
+    {
+      "title": "Press ↵ Enter and type console.log.",
+      "content": "Press ↵ Enter and type console.log . This is the javascript command for a console log. A console log is the closest thing to a Print command in the typical coding sense. It doesn't display text on your web page, but it does display text inside the console when you run your HTML/JavaScript inside a web browser. This is useful for debugging."
+    },
+    {
+      "title": "Type the text you want to log in parenthesis.",
+      "content": "Type the text you want to log in parenthesis. It can be text (a string), a variable, numbers, or a math equation. For example, \"console.log(I am printing in Javascript)."
+    },
+    {
+      "title": "Add a semi-colon (;) at the end.",
+      "content": "Add a semi-colon ( ; ) at the end. This closes your line of JavaScript. The entire line should look something like \"nowiki>console.log(I am printing in JavaScript)</nowiki>"
+    },
+    {
+      "title": "Press ↵ Enter and type </script>.",
+      "content": "Press ↵ Enter and type </script> . This tag closes your JavaScript code. Type this tag when you are finished entering all your lines of JavaScript."
+    },
+    {
+      "title": "Save your HTML document.",
+      "content": "Save your HTML document. Use the following steps to save your HTML document. Click File at the top of your text editor or HTML editing program. Click Save as . Type a file name for the HTML document. Ensure it saves as a \".html\" document. Click Save ."
+    },
+    {
+      "title": "Open the HTML document in a web browser.",
+      "content": "Open the HTML document in a web browser. Open any web browser of your choice and type the file location of the HTML document in the address bar at the top. This will open the HTML document in your web browser."
+    },
+    {
+      "title": "Press F12.",
+      "content": "Press F12 . This opens Developer Mode in your web browser. You will see a new window displaying the HTML, CSS, and JavaScript code."
+    },
+    {
+      "title": "Click Console.",
+      "content": "Click Console . It's at the top of the developer mode window."
+    },
+    {
+      "title": "Refresh your browser .",
+      "content": "Refresh your browser . It's the icon that resembles a circular arrow at the top of your web browser. This reloads the HTML document in the web browser. As the web browser processes the HTML and JavaScript, it will display the console log text inside the console in the Developer Mode window."
+    },
+    {
+      "title": "Type <button onclick= in the body of your HTML document.",
+      "content": "Type <button onclick= in the body of your HTML document. This is the opening HTML tag to create a button within your HTML."
+    },
+    {
+      "title": "Type \"window.print()\"> after the equals (=) sign.",
+      "content": "Type \"window.print()\"> after the equals (=) sign. The \"window.print()\" command is the JavaScript command to print the contents of your web browser window. The bracket (>) finishes the opening tag of the HTML button."
+    },
+    {
+      "title": "Type the text you want to go into the button.",
+      "content": "Type the text you want to go into the button. This should go right after the bracket (>). For example, you could type \"Click here to print\" or something similar."
+    },
+    {
+      "title": "Type </button>.",
+      "content": "Type </button> . This closes out the HTML button element. When you render your HTML in a web browser, it will create a button you can click to print the contents of your web browser. [1] X Research source"
+    }
+  ]
+}

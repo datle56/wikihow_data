@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Delete-a-Message-in-Discord-on-a-PC-or-Mac",
+  "title": "How to Delete a Message in Discord on a PC or Mac",
+  "steps": [
+    {
+      "title": "Navigate to a Direct Message.",
+      "content": "Navigate to a Direct Message. To find a list of your open DMs, click the Discord icon in the top-left corner. Select a user from underneath the Direct Messages header."
+    },
+    {
+      "title": "Hover your mouse over the message you want to delete.",
+      "content": "Hover your mouse over the message you want to delete. Some icons will appear on the right side of the screen (parallel to the message)."
+    },
+    {
+      "title": "Click ••• .",
+      "content": "Click ••• . It's one of the icons on the right side of the message. A menu will open. You can also right-click the message to open this menu."
+    },
+    {
+      "title": "Click Delete Message on the menu.",
+      "content": "Click Delete Message on the menu. A confirmation message will expand, asking if you're sure you want to delete the message. If you just want to rephrase what you said, you can edit the message instead of deleting it. To do so, click Edit Message to open the message for editing, make your changes, and then press Enter or Return to save it. [1] X Research source"
+    },
+    {
+      "title": "Click the red Delete button to confirm.",
+      "content": "Click the red Delete button to confirm. The selected message is now removed from the conversation. Neither you nor the other parties involved in the conversation can see the message now that it's been deleted. Once you delete a message in a Direct Message, it is gone forever. There is no way to restore it. However, keep in mind that the other party may have taken a screenshot beforehand."
+    },
+    {
+      "title": "Navigate to a server channel.",
+      "content": "Navigate to a server channel. You'll see a list of all joined servers on the left side of Discord. Once you select a server, click the channel with the message you want to delete."
+    },
+    {
+      "title": "Hover your mouse over the message you want to delete.",
+      "content": "Hover your mouse over the message you want to delete. Some icons will appear on the right side of the screen (parallel to the message)."
+    },
+    {
+      "title": "Click ••• .",
+      "content": "Click ••• . It's one of the icons on the right side of the message. A menu will open. You can also right-click the message to open this menu."
+    },
+    {
+      "title": "Click Delete Message on the menu.",
+      "content": "Click Delete Message on the menu. A confirmation message will expand, asking if you're sure you want to delete the message. If you just want to rephrase what you said, you can edit the message instead of deleting it. To do so, click Edit Message to open the message for editing, make your changes, and then press Enter or Return to save it."
+    },
+    {
+      "title": "Click the red Delete button to confirm.",
+      "content": "Click the red Delete button to confirm. The selected message is now removed from the conversation. Neither you nor the other parties involved in the conversation can see the message now that it's been deleted. Once you delete a message in a server, it is gone forever. There is no way to restore it. The only exception is if an admin placed a bot on the channel that tracks deleted messages, they may be able to use bot commands to view deleted messages."
+    },
+    {
+      "title": "Add the MEE6 bot to your Discord server.",
+      "content": "Add the MEE6 bot to your Discord server. You must have the proper permission to add a Discord bot . Be sure to give MEE6 a moderator role so it's allowed to delete messages. Keep in mind that MEE6 can only delete messages within the past 2 weeks. MEE6 is a popular bot, but you can use any Discord bot that is programmed to delete messages."
+    },
+    {
+      "title": "Navigate to the channel.",
+      "content": "Navigate to the channel. MEE6 can clear the last 100 (or more) messages in a text channel at once."
+    },
+    {
+      "title": "Type !clear 100 and press ↵ Enter.",
+      "content": "Type !clear 100 and press ↵ Enter . This will send the command to MEE6, which will then delete the last 100 messages in the text channel. Repeat this step as many times as needed or in other channels as needed."
+    },
+    {
+      "title": "Download and set up AutoHotKey.",
+      "content": "Download and set up AutoHotKey. AutoHotkey allows you to program different actions using a script. You can download the installer from the official website . Then, run the installation file to set it up. This method will only work on Windows devices."
+    },
+    {
+      "title": "Create a new AutoHotkey script.",
+      "content": "Create a new AutoHotkey script. To do this, right-click your desktop, hover over New , and select AutoHotkey Script ."
+    },
+    {
+      "title": "Right-click the file and select Edit Script.",
+      "content": "Right-click the file and select Edit Script . This should open the script in a Notepad file. If it doesn't open in Notepad, right-click the file, select Open with , and select Notepad ."
+    },
+    {
+      "title": "Replace everything in the script with the code.",
+      "content": "Replace everything in the script with the code. Select everything in the script and delete it so you have a blank slate. [2] X Research source Then, copy and paste the following code: t :: Loop , 100000 { send , { Up } send , ^ a send , { BS } send , { Enter } send , { Enter } sleep , 100 } Return"
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. You can name the file anything."
+    },
+    {
+      "title": "Launch Discord and navigate to the chat.",
+      "content": "Launch Discord and navigate to the chat. This script can delete messages from a Direct Message or server channel."
+    },
+    {
+      "title": "Press T to start deleting.",
+      "content": "Press T to start deleting. The script will start deleting messages in bulk. Do not use your keyboard or move away from Discord while this is happening."
+    },
+    {
+      "title": "Click H and select Pause Script.",
+      "content": "Click H and select Pause Script . The H will be on the right side of your taskbar. The script will stop, and the messages will be deleted."
+    },
+    {
+      "title": "Yes, you can delete Discord messages.",
+      "content": "Yes, you can delete Discord messages. However, this only applies to messages you send. You won't be able to delete a message sent by someone else. The only exception is if the message was sent in a server in which you have moderator or administrator permission. If you delete someone else's message as a server's moderator or administrator, the action can be found in the server's Audit Log. The action looks like: [user(you)] deleted a message by [user] in [#channel] . The Audit Log will not show the deleted message unless you have a dedicated bot or service to log messages."
+    }
+  ]
+}

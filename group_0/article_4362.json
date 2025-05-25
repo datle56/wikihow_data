@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Boot-from-USB-in-Windows-7",
+  "title": "How to Boot from USB in Windows 7",
+  "steps": [
+    {
+      "title": "Understand how booting from a USB works.",
+      "content": "Understand how booting from a USB works. By default, your computer starts up by reading the operating system information from its built-in hard drive. You can change this by telling it to prioritize plugged-in USB items over the built-in hard drive. The settings for your computers boot behavior are in a menu called the BIOS, which is a pre-startup menu you can access by pressing a key specific to your computer model as your computer turns on. In order to boot from a USB flash drive, the flash drive must be set up as a bootable item, and it must have a disk image (ISO) file with an operating system or similar service installed on it."
+    },
+    {
+      "title": "Determine your computer's BIOS key.",
+      "content": "Determine your computer's BIOS key. The key that you press to access the BIOS varies depending on your computer manufacturer and model. You can look up your computer's BIOS key by typing your computer's manufacturer and model name, along with \"bios key\", into a search engine and reviewing the results, or you can consult your computer's manual if you still have it. Most computers use one of the function keys (e.g., F12 ) as the BIOS key, though some computers will use the Esc key or the Del key."
+    },
+    {
+      "title": "Plug your USB flash drive into your computer.",
+      "content": "Plug your USB flash drive into your computer. The USB flash drive should plug into one of the rectangular USB ports on your computer's housing. On a laptop, the USB ports are typically on the sides of the housing, while desktop computers typically have the USB ports on the front or back of the tower."
+    },
+    {
+      "title": "Make the USB flash drive bootable",
+      "content": "Make the USB flash drive bootable . If your flash drive isn't already bootable, use the Command Prompt or one of the Windows installation tools to make it so."
+    },
+    {
+      "title": "Add the file to which you want to boot to the flash drive.",
+      "content": "Add the file to which you want to boot to the flash drive. Copy the ISO file you want to boot from by clicking it once and then pressing Ctrl + C , then open your flash drive and press Ctrl + V to paste in the file. For example, if you're attempting to install or use Ubuntu Linux from the flash drive, you would paste the Ubuntu ISO file into the flash drive's window. Skip this step if you created a bootable USB using the Windows 7 or 10 installation tool."
+    },
+    {
+      "title": "Save and close any open work.",
+      "content": "Save and close any open work. Before you proceed with accessing the BIOS, you'll want to save any open work and then close any open programs to avoid losing your progress."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the multicolored Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Click Shut down.",
+      "content": "Click Shut down . It's on the right side of the Start menu. Doing so will prompt the computer to begin shutting down. You may have to confirm this decision."
+    },
+    {
+      "title": "Wait for your computer to finish shutting down.",
+      "content": "Wait for your computer to finish shutting down. Once your computer falls completely silent, you can proceed."
+    },
+    {
+      "title": "Press your computer's Power button .",
+      "content": "Press your computer's Power button . Your computer will begin to start up."
+    },
+    {
+      "title": "Immediately begin tapping the BIOS key.",
+      "content": "Immediately begin tapping the BIOS key. You'll want to do this as soon as you release the Power button, and don't stop until the BIOS screen appears."
+    },
+    {
+      "title": "Stop pressing the BIOS key when the BIOS page loads.",
+      "content": "Stop pressing the BIOS key when the BIOS page loads. The BIOS page usually resembles a blue screen with white letters, though your BIOS may look different. At this point, you're free to change your computer's boot order."
+    },
+    {
+      "title": "Find the \"Boot Order\" section.",
+      "content": "Find the \"Boot Order\" section. You may see this option on the main BIOS screen, but you'll most likely have to scroll left or right (using the left and right arrow keys, respectively) through the tabs at the top of the screen until you find the \"Boot Order\" section. You'll probably find this section on the Advanced tab, though many BIOS variations have dedicated Boot Order tabs as well."
+    },
+    {
+      "title": "Open the \"Boot Order\" menu.",
+      "content": "Open the \"Boot Order\" menu. If the \"Boot Order\" section is a menu item instead of a heading, select it by using the arrow keys and then press ↵ Enter ."
+    },
+    {
+      "title": "Select the \"USB\" option.",
+      "content": "Select the \"USB\" option. Find and scroll down to the \"USB\" option in the list of boot locations."
+    },
+    {
+      "title": "Look for the key legend.",
+      "content": "Look for the key legend. You'll usually find this in the lower-right side of the screen, though it may be at the bottom of the screen instead."
+    },
+    {
+      "title": "Determine which key to use to move up the selected option.",
+      "content": "Determine which key to use to move up the selected option. Usually you'll press the + key to move up the selected option, but check the key legend's information to be sure."
+    },
+    {
+      "title": "Move the \"USB\" option to the top of the list.",
+      "content": "Move the \"USB\" option to the top of the list. Press the proper key until the selected \"USB\" option is at the top of the \"Boot Order\" list. This ensures that, when you boot up your computer again, your computer will look for a bootable USB option instead of defaulting to the hard drive."
+    },
+    {
+      "title": "Save your changes and exit the BIOS.",
+      "content": "Save your changes and exit the BIOS. Press the \"Save and Exit\" key as specified by the key legend, then press the \"Confirm\" key when prompted. For example, you might press Esc to save your changes and then press Y to confirm that you want to save and exit. On some computers, like HP or Dell, you can select the boot device temporarily, so you don't have to change the boot order of your machine. After you install what you need from the selected boot device, your computer will restart and boot to the hard drive as usual."
+    },
+    {
+      "title": "Restart your computer if necessary.",
+      "content": "Restart your computer if necessary. If your computer doesn't boot from the USB flash drive the first time, it might have already selected your hard drive as the boot location. If so, you'll need to restart your computer (with the USB flash drive plugged in) before proceeding."
+    },
+    {
+      "title": "Wait for your USB program's menu to appear.",
+      "content": "Wait for your USB program's menu to appear. Once your computer recognizes the USB flash drive as a bootable location, you should see the USB flash drive's installed program, service, or menu appear."
+    },
+    {
+      "title": "Follow any on-screen instructions.",
+      "content": "Follow any on-screen instructions. When the menu appears, you can proceed with running and/or installing your USB flash drive's program or service."
+    }
+  ]
+}

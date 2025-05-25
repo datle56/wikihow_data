@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Underline-Text-in-HTML",
+  "title": "2 Easy Ways to Underline Text in CSS and HTML",
+  "steps": [
+    {
+      "title": "Use the \"text-decoration\" CSS style property.",
+      "content": "Use the \"text-decoration\" CSS style property. The Text-decoration property sets the appearance of decorative lines on text in CSS. [1] X Research source Text-decoration is shorthand for text-decoration-line , text-decoration-color , text-decoration-style , and text-decoration-thickness . In older versions of HTML, this element used to be known as the \"Underline\" element. Using the <u> tag is deprecated, meaning it is still allowed but not recommended to use. Using the \"text-decoration\" property is a newer, better alternative to underlining. You can use Windows Notepad to create a simple CSS stylesheet ."
+    },
+    {
+      "title": "Use the <span> tag when you want to underline a certain piece of text.",
+      "content": "Use the <span> tag when you want to underline a certain piece of text. Place the opening tag along with the \"text-decoration\" property where you want to start underlining. Place the closing </span> where you want it to stop. [2] X Research source < span style = \"text-decoration: underline;\" > This will be underlined. </ span >"
+    },
+    {
+      "title": "Declare HTML elements in the <style> section of your page.",
+      "content": "Declare HTML elements in the <style> section of your page. You can also do this on the CSS style sheet. You can make the underlining process much easier by declaring HTML elements to style. For example, to make all of your level 3 headers underlined, add the following to your CSS style section: < html > < head > < style > h3 { text-decoration : underline ; } </ style > </ head > < body > < h3 > This header will be underlined </ h3 > </ body > </ html >"
+    },
+    {
+      "title": "Define a CSS Class Style",
+      "content": "Define a CSS Class Style . You'll be able to quickly underline at any time. In your style sheet or <style> section, you can create classes to call later. The class can have any name you'd like. < html > < head > < style > . underline { text-decoration : underline ; } </ style > </ head > < body > You can use this class to < div class = \"underline\" > quickly underline </ div > different parts < div class = \"underline\" > of your content </ div > </ body > </ html >"
+    },
+    {
+      "title": "Consider other methods for highlighting text.",
+      "content": "Consider other methods for highlighting text. Underlining should be avoided to keep from confusing your reader. One popular method is to use the <em> tag, which italicizes text. You can use CSS to further define this tag for unique emphasis. < html > < head > < style > em { color : red ; } </ style > </ head > < body > Anything that uses the em element will be < em > italicized (because of the default settings), as well as red </ em > because of the additional style settings added above. </ body > </ html >"
+    },
+    {
+      "title": "Avoid using the old <u></u> tags.",
+      "content": "Avoid using the old <u></u> tags. This has been \"deprecated\", which means it works but is no longer in use or recommended. This is because HTML is not designed to style content. The <u> tag will still work, but it is now supposed to represent text that is different than the other text, such as misspelled words."
+    },
+    {
+      "title": "Use the <u></u> tags to underline (demonstration only).",
+      "content": "Use the <u></u> tags to underline (demonstration only). There is virtually no case where you should be using this method anymore. However, it can be good to know how it was used in the event you have to update an old website. < html > < body > The old underline tag in HTML < u > allowed you to underline things quickly </ u > , but it made things a mess when other style elements got involved. This is why modern underlining is accomplished using the \"text-decoration\" CSS element. </ body > </ html >"
+    }
+  ]
+}

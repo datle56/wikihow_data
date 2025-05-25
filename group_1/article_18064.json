@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Force-a-Blue-Screen-in-Windows",
+  "title": "How to Force a Blue Screen in Windows",
+  "steps": [
+    {
+      "title": "Save",
+      "content": "Save your work. Forcing a Blue Screen on your computer will cause you to lose any unsaved changes, therefore it is very important for you to save anything you were working on before continuing."
+    },
+    {
+      "title": "Search \"regedit.\" To do this, go to Start and then enter it in the search bar without the quotation marks.",
+      "content": "Search \"regedit.\" To do this, go to Start and then enter it in the search bar without the quotation marks. If you have Windows XP, go to \"Run,\" type \"regedit,\" and then press \"Enter.\""
+    },
+    {
+      "title": "Select the following path in the Registry Editor:",
+      "content": "Select the following path in the Registry Editor: HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\i8042prt\\Parameters if you are using a PS/2 keyboard. If you are using a USB keyboard, select HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\kbdhid\\Parameters). [1] X Research source You can tell whether you have a PS/2 or USB keyboard by looking at the plug that connects it to your computer. A PS/2 keyboard will have a round plug whereas a USB keyboard will have a rectangular plug."
+    },
+    {
+      "title": "Enter a new DWORD Value.",
+      "content": "Enter a new DWORD Value. You can do this by selecting \"Edit\" and then going to \"New.\" Enter \"CrashOnCtrlScroll\" without the quotation marks and make sure the value below it is set to 1. Your default may already be set to this option. [2] X Research source"
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. Close the Registry Editor and restart your computer in order for the changes to take effect."
+    },
+    {
+      "title": "Force a Blue Screen.",
+      "content": "Force a Blue Screen. You can do this by holding down the furthest most right \"Control\" key then pressing the \"Scroll Lock\" key twice. Once this is completed, a blue screen should pop up. If you are using Windows 8 or later, the Blue Screen is slightly different. Rather than lines of code, Windows 8 (and later) presents you with a sad emoticon and an error message. This, however, is still the BSoD. [3] X Research source"
+    },
+    {
+      "title": "Save your work.",
+      "content": "Save your work. Forcing a Blue Screen on your computer will cause you to lose any unsaved changes, therefore it is very important for you to save anything you were working on before continuing."
+    },
+    {
+      "title": "Open the Task Manager.",
+      "content": "Open the Task Manager . This method will only work for Windows 8 and lower. You can open Task Manager by right-clicking on the taskbar at the bottom of your screen and finding \"Start Task Manager\" in the drop down menu that appears."
+    },
+    {
+      "title": "Select the \"Details\" tab.",
+      "content": "Select the \"Details\" tab. If you are prompted for an administrator password, enter the password and click OK."
+    },
+    {
+      "title": "Select \"Windows Startup Application\" or wininit.exe.",
+      "content": "Select \"Windows Startup Application\" or wininit.exe. Once you have done so, select \"End Task.\" (be sure you press processes from all users if you are using Windows 7 or earlier)"
+    },
+    {
+      "title": "Wait for a dialog box to appear.",
+      "content": "Wait for a dialog box to appear. In this dialog box, tick the box next to \"Abandon unsaved data and shut down\" and click \"Shut Down.\""
+    },
+    {
+      "title": "Enjoy your blue screen!",
+      "content": "Enjoy your blue screen! You can get rid of the blue screen by restarting your computer."
+    },
+    {
+      "title": "Save your work.",
+      "content": "Save your work. Forcing a Blue Screen on your computer will cause you to lose any unsaved changes, therefore you need to save anything you were working on before continuing."
+    },
+    {
+      "title": "Run PowerShell as an Administrator.",
+      "content": "Run PowerShell as an Administrator. Right-click the Start button (the leftmost icon in the taskbar), and select \"Windows PowerShell (Administrator)\". If prompted, click Yes in the User Account Control dialog box. If you are using Windows 11, click \"Terminal (Administrator)\". Windows Terminal loads PowerShell by default. If it doesn't, click the arrow next to the plus button, and select Windows PowerShell."
+    },
+    {
+      "title": "Wait for it to load and type \"wininit\" and hit enter.",
+      "content": "Wait for it to load and type \"wininit\" and hit enter."
+    },
+    {
+      "title": "Enjoy your blue screen!",
+      "content": "Enjoy your blue screen! You can get rid of the blue screen by restarting your computer."
+    }
+  ]
+}

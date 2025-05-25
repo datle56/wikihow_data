@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Cracked-Minecraft-Server",
+  "title": "How to Make a Cracked Minecraft Server",
+  "steps": [
+    {
+      "title": "Assign a static IP address to your computer.",
+      "content": "Assign a static IP address to your computer. This will ensure that the port you forward later will remain attached to your computer. To assign a static IP address, access your router's page , then do the following: [1] X Research source Find your router's list of connected items. This will vary from router to router. If you can't find a way to assign a static IP address, consult your router's documentation for specific instructions. Select your computer. Change your computer's number if necessary. Click Save or Apply . Wait for your router to finish rebooting if necessary."
+    },
+    {
+      "title": "Forward the Minecraft port for your router",
+      "content": "Forward the Minecraft port for your router . Once your computer has a specific IP address assigned to it, you can proceed with forwarding the Minecraft port (25565 by default): Find the \"Port Forwarding\" section (again, consult your router's manual or online documentation for model-specific instructions) and create a new rule if necessary. Enter \"Minecraft\" as the description or title. Enter your computer's static IP address (usually \"192.168.2.number\") in the \"IP\" or \"Address\" section of the rule. Select TCP & UDP from the \"TCP\" or \"UDP\" menu. Enter 25565 in both port text boxes. Ensure that the rule is enabled by checking its box or clicking the On button. Save and apply your settings by clicking Save or Apply ."
+    },
+    {
+      "title": "Create a new folder called \"Minecraft Server\" on your computer.",
+      "content": "Create a new folder called \"Minecraft Server\" on your computer. This process will vary slightly depending on your computer's operating system: Windows — Right-click the desktop, select New , click Folder , type in Minecraft Server , and press ↵ Enter . Mac — Click the desktop, click File , click New Folder in the drop-down menu, type in Minecraft Server , and press ⏎ Return ."
+    },
+    {
+      "title": "Open a text editor.",
+      "content": "Open a text editor. The default text editor on Windows is Notepad, while Mac users will open TextEdit: Windows — Click Start , type in notepad , and click Notepad . Mac — Click Spotlight , type in textedit , and double-click TextEdit , then click New Document ."
+    },
+    {
+      "title": "Enter the launch parameters.",
+      "content": "Enter the launch parameters. Type java -Xmx3G -Xms1G -jar server.jar into the text file. If the server file's name is something other than \"server.jar\", replace the \"server.jar\" part of the text with the file's name and \".jar\" instead. The \"Xmx3G\" and \"Xms1G\" lines refer to the amount of computer RAM used (3 gigabytes at most, 1 gigabyte to start up). If your computer can't handle these specifications, you can lower them. You can also use \"M\" instead of \"G\" to indicate megabytes instead of gigabytes if you want to use under a gigabyte of RAM."
+    },
+    {
+      "title": "Save the file as a launch file in the \"Minecraft Server\" folder.",
+      "content": "Save the file as a launch file in the \"Minecraft Server\" folder. Again, this will vary depending on your computer: Windows — Click File , click Save As... , type run.bat into the \"File name\" text box, click the \"Save as type\" drop-down box and click All Files , select your \"Minecraft Server\" folder, and click Save . Mac — Click Format , click Make Plain Text , click OK when prompted, click File , click Save , type in run , click the downward-facing arrow to the right of the \"Name\" field, uncheck the \"Hide Extension\" box, replace the \".txt\" part of the name with \".command\", click Save , and click Use .command when prompted."
+    },
+    {
+      "title": "Make sure that Java is up to date.",
+      "content": "Make sure that Java is up to date. If your computer's Java isn't up to date, you may run into issues while hosting your server: [2] X Research source Windows — Go to https://java.com/en/download/installed.jsp in Internet Explorer (other browsers won't work), then click Agree and Continue and follow any on-screen prompts. Mac — Go to https://www.java.com/en/download/ , click Free Java Download , open the setup file, and follow any setup instructions."
+    },
+    {
+      "title": "Install the Java SDK if you haven't done so.",
+      "content": "Install the Java SDK if you haven't done so. This is necessary to have installed on your computer before running any Java commands: Go to the JDK webpage Check the \"Accept License Agreement\" box below the \"Java SE Development Kit 8u171\" heading. Click the download link to the right of your operating system. Double-click the install file, then follow the on-screen instructions (on a Mac, you'll drag the Java icon onto the \"Applications\" folder)."
+    },
+    {
+      "title": "Download the server JAR file.",
+      "content": "Download the server JAR file. Go to https://www.minecraft.net/en-us/download/server in your computer's web browser, then click the minecraft_server.1.16.5.jar link in the middle of the page."
+    },
+    {
+      "title": "Move the server file into your \"Minecraft Server\" folder.",
+      "content": "Move the server file into your \"Minecraft Server\" folder. Click and drag the downloaded JAR file onto the \"Minecraft Server\" folder, then drop it there. You can also click the JAR file, press Ctrl + C (Windows) or ⌘ Command + C (Mac), open the \"Minecraft Server\" folder, and press Ctrl + V (Windows) or ⌘ Command + V (Mac)."
+    },
+    {
+      "title": "Run the server file.",
+      "content": "Run the server file. Open the \"Minecraft Server\" folder, then double-click the server.jar (or server ) file you moved into the \"Minecraft Server\" folder. Doing so will prompt a few files to appear in the folder."
+    },
+    {
+      "title": "Accept the server's terms of use.",
+      "content": "Accept the server's terms of use. Once you see a text file entitled \"eula\" appear in the folder, double-click \"eula\" to open it, then replace the \"eula=false\" line at the bottom of the document with eula=true . You can then save the changes by pressing Ctrl + S (Windows) or ⌘ Command + S (Mac) and close the document."
+    },
+    {
+      "title": "Double-click the server file again.",
+      "content": "Double-click the server file again. It will resume running; a pop-up window with the server's progress will appear, and more files will add to the \"Minecraft Server\" folder."
+    },
+    {
+      "title": "Stop the server once it finishes running.",
+      "content": "Stop the server once it finishes running. Once you see \"Done!\" at the bottom of the pop-up window, you can type stop into the bottom text field in the pop-up window and press ↵ Enter . The server will save its progress and quit. This is the safest way to quit the server any time you're done using it."
+    },
+    {
+      "title": "Find the \"server.properties\" file.",
+      "content": "Find the \"server.properties\" file. It's in your \"Minecraft Server\" folder."
+    },
+    {
+      "title": "Rename the file.",
+      "content": "Rename the file. In order to edit the file, you'll need to remove the period between \"server\" and \"properties\". To do so, right-click the file, click Rename in the resulting drop-down menu, and delete the period. Press ↵ Enter and then click Yes when prompted. On a Mac, you can also click the file, click File , and click Rename... to bring up the rename text box."
+    },
+    {
+      "title": "Open the file.",
+      "content": "Open the file. Once you've renamed the file, you can open it by doing the following: Windows — Double-click the file, then click Notepad in the resulting window and click OK . Mac — Click the file, click File , select Open With , and click TextEdit ."
+    },
+    {
+      "title": "Configure the server's IP address.",
+      "content": "Configure the server's IP address. Type your computer's static IP address on the other side of the \"server-ip=\" line of text near the top of the file. For example, if your computer's static IP address is \"192.168.2.25\", you would have server-ip=192.168.2.25 here."
+    },
+    {
+      "title": "Remove online verification.",
+      "content": "Remove online verification. Find the \"online-mode=true\" line of text, then replace \"true\" with false . This is what will allow players who have cracked Minecraft accounts to join your server."
+    },
+    {
+      "title": "Save your changes.",
+      "content": "Save your changes. Press either Ctrl + S (Windows) or ⌘ Command + S (Mac), then close the document. This will apply your new settings to your server the next time you run it."
+    },
+    {
+      "title": "Find your computer's public IP address.",
+      "content": "Find your computer's public IP address. This process is as simple as going to https://www.whatismyip.com/ in your computer's web browser and looking at the number to the right of the \"Your Public IPv4 is:\" heading, though you can also just type what is my ip into Google to see the result displayed at the top of the page."
+    },
+    {
+      "title": "Start your server.",
+      "content": "Start your server. Close the server if it's currently running, then double-click the run file that you created in your \"Minecraft Server\" folder and wait for it to finish loading before proceeding. The server window must always be open while you're hosting your server."
+    },
+    {
+      "title": "Open Minecraft.",
+      "content": "Open Minecraft. Double-click the Minecraft app icon, which resembles a grassy block of dirt, then click PLAY at the bottom of the launcher. You may be prompted to log in with your Minecraft email address and password if you haven't opened Minecraft in a long time."
+    },
+    {
+      "title": "Click Multiplayer.",
+      "content": "Click Multiplayer . It's in the Minecraft menu."
+    },
+    {
+      "title": "Click Add Server.",
+      "content": "Click Add Server . You'll find this button in the lower-right side of the window."
+    },
+    {
+      "title": "Enter a server name.",
+      "content": "Enter a server name. In the \"Server Name\" text box at the top of the window, type in whatever you want to name your Minecraft server."
+    },
+    {
+      "title": "Enter your computer's address.",
+      "content": "Enter your computer's address. In the \"Server Address\" text box, type in your computer's static IP address. In some cases, you can also type localhost into this box; however, this won't work on all networks, so you should stick to entering your computer's IP address."
+    },
+    {
+      "title": "Click Done.",
+      "content": "Click Done . It's at the bottom of the window. This will create your server."
+    },
+    {
+      "title": "Select the server.",
+      "content": "Select the server. Click the server's name at the top of the window."
+    },
+    {
+      "title": "Click Join Server.",
+      "content": "Click Join Server . It's at the bottom of the window. This will open your server's world."
+    },
+    {
+      "title": "Invite friends to join.",
+      "content": "Invite friends to join. You can do this by sending your public IP address to up to 19 of your friends and having them do the following: [3] X Research source Open Minecraft and click Multiplayer Click Direct Connect Enter your computer's public IP address ( not the local IP address that you enter to host the server). Click Join Server"
+    },
+    {
+      "title": "Disable your firewall",
+      "content": "Disable your firewall if necessary. If your friends are unable to join your game, you may have to disable your computer's firewall. Keep in mind that this opens up your computer to attacks from intruders, so you should only do this when playing with trustworthy people."
+    }
+  ]
+}

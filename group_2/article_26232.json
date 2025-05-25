@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Log-in-As-an-Administrator-in-Windows-10",
+  "title": "Quick Ways to Log In as Administrator in Windows 10",
+  "steps": [
+    {
+      "title": "Open the Control Panel.",
+      "content": "Open the Control Panel. If you want to make your own account an administrator on this PC or give admin rights to another account, you can do so in the Control Panel. You will need the current administrator password to do this. To get started, type control panel into the Windows search bar, then click Control Panel . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Alternatively, you can use the command line to open the control panel. You can also use this method to give administrator rights to another user account on this PC."
+    },
+    {
+      "title": "Click User Accounts.",
+      "content": "Click User Accounts . It's the green text next to an icon that resembles a person. It's on the right side."
+    },
+    {
+      "title": "Click User Accounts again.",
+      "content": "Click User Accounts again. It's next to an icon that resembles two people. This will show you a page with information about the Windows user account you are currently logged in to."
+    },
+    {
+      "title": "Check the status of your account.",
+      "content": "Check the status of your account. In the profile box on the right side of the User Accounts page, you’ll see “Administrator” under the username if the account is an administrator. If you're already an administrator, you don't need to proceed—you have full admin access to the system. You can check the status of other accounts by click Manage another account in this menu. If you are not using a Microsoft account, you will see \"Local Account\" above \"Administrator.\""
+    },
+    {
+      "title": "Change the status of your account.",
+      "content": "Change the status of your account. If your account isn’t an administrator, you can change it to one (if you know the administrator login information). To do so: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click Change your account type . Click the Administrator option. Click Change account type . Type the admin password when prompted. You’re done! Your user account can now perform all tasks as an administrator."
+    },
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. If you want to make your own account an administrator on this PC, or give admin rights to another account, it's easy to do in Settings. You will need to be using an administrator account to do this, or have the password for an administrator-level account. Start by opening the Start menu and selecting Settings ."
+    },
+    {
+      "title": "Click Accounts.",
+      "content": "Click Accounts . This opens the Accounts settings."
+    },
+    {
+      "title": "Click Family & other users.",
+      "content": "Click Family & other users . You'll see this in the left panel on Windows 10. If you're using Windows 11, select Other users in the right panel instead. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Change account type.",
+      "content": "Click Change account type . You may need to click the name of the user first."
+    },
+    {
+      "title": "Select \"Administrator\" and click OK.",
+      "content": "Select \"Administrator\" and click OK . When prompted, enter the administrator password or click Yes to confirm. This makes the selected account an administrator. The \"Administrator\" account type gives the selected account full admin permissions. Whenever this account logs in to this particular computer, it will be an administrator and can perform all tasks that the administrator account can."
+    },
+    {
+      "title": "Search for “cmd” in the search bar of your Start Menu.",
+      "content": "Search for “cmd” in the search bar of your Start Menu. If you want to be able to log in with the \"Administrator\" username and password, you will need to enable the Administrator account, which is disabled by default. To get started, press the Windows key and type cmd . [4] X Research source You will need to be logged in to an account that has administrative permissions to enable the Administrator account in Windows 10."
+    },
+    {
+      "title": "Right-click \"Command Prompt\" and select Run as Administrator.",
+      "content": "Right-click \"Command Prompt\" and select Run as Administrator . Click Yes in the box that pops up to continue."
+    },
+    {
+      "title": "Type net user administrator /active:yes and press ↵ Enter.",
+      "content": "Type net user administrator /active:yes and press ↵ Enter . You’ll see text confirming your entry. If you see an error, you may have mistyped the command. The default Windows 10 administrative account is active but not password protected."
+    },
+    {
+      "title": "Set a password for the administrator account.",
+      "content": "Set a password for the administrator account. To log in as an administrator, the account will need a password. To set the admin password , type net user administrator * and press Enter . When prompted, enter and confirm a new password for the administrator account. [5] X Research source"
+    },
+    {
+      "title": "Log out of your current session.",
+      "content": "Log out of your current session. You can access the option to Sign out from your profile picture in the Start Menu. Or, to keep your account logged in, select Switch User instead to return to the login screen."
+    },
+    {
+      "title": "Click the Administrator user account.",
+      "content": "Click the Administrator user account. If you don't see it, click Other Accounts and enter .\\Administrator as the username."
+    },
+    {
+      "title": "Type the password for the account and click the submit arrow.",
+      "content": "Type the password for the account and click the submit arrow. Click the submit arrow button. This will log you into Windows as an administrator."
+    },
+    {
+      "title": "Open PowerShell as an administrator.",
+      "content": "Open PowerShell as an administrator. To enable the administrator account in PowerShell, you'll need to run PowerShell as an administrator. To do this: Press the Windows key on your keyboard. Type powershell into the Search bar. Right-click Windows PowerShell and select Run as administrator . Click Yes to continue."
+    },
+    {
+      "title": "Enter the command to enable the administrator user.",
+      "content": "Enter the command to enable the administrator user. At the prompt, type net user administrator /active:yes and press Enter . This enables the \"Administrator\" user, but it will not work until you create a password."
+    },
+    {
+      "title": "Enter the command to set an admin password.",
+      "content": "Enter the command to set an admin password. To do this, you'll need to enter the following command, but replace \"NewPassword\" with the password you would like to assign to the Administrator account: Set-LocalUser -Name \"Administrator\" -Password (ConvertTo-SecureString -AsPlainText \"NewPassword\" -Force) . Once the password is assigned, you can now log in with the Administrator account."
+    },
+    {
+      "title": "Log out of your current session.",
+      "content": "Log out of your current session. If you're logged in to Windows already and want to switch to an Administrator account, you can click the Start menu, select your profile photo, and click Sign Out to return to the login screen. Alternatively, click your profile photo and select Switch user if you don’t want to log your current account out of the system. If you're at the login screen, skip to step 3 instead."
+    },
+    {
+      "title": "Select Other user.",
+      "content": "Select Other user . If you are not prompted to enter a username, choose this option to bring up the username and password fields. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Enter the administrator username.",
+      "content": "Enter the administrator username. If you're signing in as the local \"Administrator\" account, type .\\Administrator as the username, then type the password of the local admin account. Once your password is accepted, you'll be logged in to the computer as an administrator. If you need to log in as the domain administrator , use domain_name \\Adminstrator instead."
+    },
+    {
+      "title": "Enter the password and sign in.",
+      "content": "Enter the password and sign in. After entering your password, click the arrow to log in as an administrator."
+    }
+  ]
+}

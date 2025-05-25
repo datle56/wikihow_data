@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Resize-iFrames-in-HTML",
+  "title": "How to Resize iFrames in HTML",
+  "steps": [
+    {
+      "title": "Open up your HTML file.",
+      "content": "Open up your HTML file. HTML files have a the file extension \".html\" or \".htm\" after the file name. You can edit an HTML file using an text editor, such as Notepad, or TextEdit. You can also use an HTML editor such as Adobe Dreamweaver, Codepen, or HTML Online. To open an HTML file in the text editor or code editor of your choice, right-click the HTML file. Then place the mouse cursor over Open with . Click the program or application you want to use to edit the HTML file."
+    },
+    {
+      "title": "Look for the iFrame element.",
+      "content": "Look for the iFrame element. iFrames are usually found below the \"<body>\" section of the HTML document. Look for the tag \"<iframe src=\" followed by the URL of the content that is contained within the iFrame in quotations."
+    },
+    {
+      "title": "Edit the width attribute.",
+      "content": "Edit the width attribute. You should see the attribute \"width=\" after the URL in the iframe tag. Edit the width in pixels in quotations (\" \") after the \"width=\" attribute. For example, if you want the width to be 300 pixels, you would enter \"width=\"300px\"\" after the URL in the tag. You can enter the width attribute anywhere after the URL and before the closing bracket (>). Alternatively, if you want the iframe to adjust automatically based on the width of the user's screen or web browser, you enter a percentage instead of a fixed width. For example, if you want the iframe to use up 90% of the width, you would add the attribute \"width=\"90%\".\" If you do not see a \"width=\" attribute in the iframe tag, you can add it to the tag. It is also possible that the size of the iframe may be determined by the CSS code instead of the HTML tag."
+    },
+    {
+      "title": "Edit the height attribute.",
+      "content": "Edit the height attribute. You should see the \"height=\" in the iframe tag. Edit the width in pixels in quotations (\" \") after the \"height=\" attribute. For example, if you want the height to be 200 pixels, you would enter \"height=\"200px\"\" as the height attribute. You can enter the height attribute anywhere after the URL and before the closing bracket (\">\"). [2] X Research source Alternatively, if you want the iframe to automatically adjust it size based on the space available, you can enter a percentage instead of a fixed height. For example, if you want the iframe to use 90% of the available space, you would enter \"height=\"90%\"\" as the attribute. You can also use the attribute \"height=\"auto\"\" to adjust the height automatically relative to the width. [3] X Research source If you do not see a \"height=\" attribute in the iFrame tag, you can add it to the iframe tag. It is also possible that the size of the iFrame may be determined by the CSS code instead of the HTML tag. Additionally, if you need your iframe to be able to scroll, you can add \"scroll=\"true\"\" after height attribute before the closing bracket."
+    },
+    {
+      "title": "Ensure there is a closing tag.",
+      "content": "Ensure there is a closing tag. Immediately after the iframe tag with all the attributes, there should be a closing tag. [4] X Research source The closing tag is simply </iframe> . Your iframe HTML code should look something like the following: < iframe src = \"iframe_contents.html\" width = \"300px\" height = \"200px\" scroll = \"true\" ></ iframe >"
+    },
+    {
+      "title": "Save the HTML file.",
+      "content": "Save the HTML file. When you are finished editing your HTML file, you can typically save the file by clicking File in the menu bar at the top, followed by Save ."
+    },
+    {
+      "title": "Render the HTML.",
+      "content": "Render the HTML. Rendering the HTML file allows you to see what it looks like and make sure you got the width and height just right. You can render the HTML file in any web browser of your choice. You can double-click the HTML file to open it in your default web browser. Alternatively, you can right-click the file, hover over Open with and select a web browser to open the file in."
+    },
+    {
+      "title": "Open the HTML or CSS file.",
+      "content": "Open the HTML or CSS file. CSS can be embedded within an HTML file, or it can be a separate CSS (.css) document linked within the HTML file. You can usually find the CSS portion of an HTML document below the \"<style>\" tag. It is usually in the \"<head>\" section of the HTML document. There you will find the CSS code or a link to the external CSS document. If there is a separate CSS document linked within your HTML code, you can find the CSS document in the tag that resembles \"<link rel=\"stylesheet\" href=\"css_document.css\">.\" It is usually found within the \"<head>\" section."
+    },
+    {
+      "title": "Locate the iframe element.",
+      "content": "Locate the iframe element. In CSS, the iframe element tag looks like \"iframe {\". Locate the iframe element within the CSS code. All the attributes are listed below the CSS element tag. Alternatively, the size of an iframe can be controlled by a division class. If that is the case, you can find the name of the division class next to the tag \"<div id=\" in the HTML code. Then you can locate the division class name in the CSS code and edit the attributes below the division class name."
+    },
+    {
+      "title": "Edit the width attribute.",
+      "content": "Edit the width attribute. Enter the width of the iframe in pixels after the \"width:\" attribute in the list of attributes below the iframe element. Then place a semicolon (\";\") after the attribute. [5] X Research source For example, if you want the iframe to be 300 pixels, the width attribute would be \"width: 300px;\" Alternatively, if you want the width of the iframe to adjust automatically based on the size of the user's screen or web browser window, you can enter a percentage instead of a fixed size. For example, if you enter the attribute \"width: 100%;\", this will tell the iframe to use 100% of the horizontal space available. If there is no width attribute, go ahead and add one. xz"
+    },
+    {
+      "title": "Edit the height attribute.",
+      "content": "Edit the height attribute. Enter the height of the iframe in pixels after the \"height:\" attribute in the list of attributes below the iframe element. Then place a semicolon (\";\")after the attribute. For example, if you want the iframe to be 200 pixels high, the height attribute would be \"height: 200px;\" Alternatively, if you want the height of the iframe to adjust automatically based on the size of the user's screen or web browser window, you can enter a percentage instead of a fixed size. For example, if you enter the attribute \"height: 100%;\", this will tell the iframe to use 100% of the vertical space available. You can also enter \"height: auto;\" to automatically adjust the height relative to the width. If there is no height attribute, go ahead and add one. Additionally, if you want the iframe to be able to scroll, you can add the attribute \"overflow: auto;\" to add a scroll bar when necessary."
+    },
+    {
+      "title": "Ensure there is a closing tag.",
+      "content": "Ensure there is a closing tag. When you have entered all the attributes to the iframe element that you want, be sure to close the iframe element by placing a \"}\" at the bottom of the list. The iframe attribute properties will be applied to all iframes in your HTML code. [6] X Research source Your CSS iframe element should look something like the following: iframe { width : 300 px ; height : 200 px ; overflow : auto ; }"
+    },
+    {
+      "title": "Add an iframe to your HTML document.",
+      "content": "Add an iframe to your HTML document. If there is not already an iframe tag in your HTML document, you can add one. It will go in the \"<body>\" section of your HTML You do not need to add \"height\" or \"width\" attributes to the HTML tag. Enter the following code to your HTML document to add an iframe. Replace '[content_url]\" with the URL for the content goes inside the iframe: <iframe src=\"[content_url]\"></iframe>"
+    },
+    {
+      "title": "Save the HTML file.",
+      "content": "Save the HTML file. When you are finished editing your HTML file, you can typically save the file by clicking File in the menu bar at the top, followed by Save ."
+    },
+    {
+      "title": "Render the HTML.",
+      "content": "Render the HTML. Rendering the HTML file allows you to see what it looks like and make sure you got the width and height just right. You can render the HTML file in any web browser of your choice. You can double-click the HTML file to open it in your default web browser. Alternatively, you can right-click the file, hover over Open with and select a web browser to open the file in."
+    },
+    {
+      "title": "Open the HTML and/or CSS file.",
+      "content": "Open the HTML and/or CSS file. In addition to using individual CSS attributes to control the size of all iframes in your HTML document, you can also use a division class to control the size of an iframe or other content. Division classes act as a container that holds HTML code that is separate from the rest of the document. You can have multiple division classes, and they can each be styled using CSS."
+    },
+    {
+      "title": "Navigate to the CSS section.",
+      "content": "Navigate to the CSS section. CSS can be embedded within an HTML file, or it can be a separate CSS (.css) document linked within the HTML file. You can usually find the CSS portion of an HTML document below the \"<style>\" tag. It is usually below the \"<head>\" section of the HTML file. There you will find the CSS code or a link to the CSS document. If there is a separate CSS file link to the HTML code, you can find the CSS file in the tag that resembles \"<link rel=\"stylesheet\" href=\"css_file.css\">\" below the \"<head>\" section of the document."
+    },
+    {
+      "title": "Create a new division class ID.",
+      "content": "Create a new division class ID. To create a new division class, type a period (\".\") followed by the division class name. Then add a \"{\" at the end to open the division class element. You can name the division class anything you want, but it cannot contain any spaces. For example .iframe_container { ."
+    },
+    {
+      "title": "Add a width attribute.",
+      "content": "Add a width attribute. To add a width attribute, type \"width:\" followed by the width in pixels below the division class element. Then add a semicolon at the end (i.e. \"width: 300px;\"). Alternatively, if you want the width of the division class to adjust automatically based on the size of the user's screen or web browser window, you can enter a percentage instead of a fixed size. For example, if you enter the attribute \"width: 100%;\", this will tell the division class to use 100% of the horizontal space available."
+    },
+    {
+      "title": "Add a height attribute.",
+      "content": "Add a height attribute. To add a width attribute, type \"height:\" followed by the width in pixels below the division class attribute. Then add a semicolon at the end (i.e. \"width: 200px;\"). Alternatively, if you want the height of the division class to adjust automatically based on the size of the user's screen or web browser window, you can enter a percentage instead of a fixed size. For example, if you enter the attribute \"height: 100%;\", this will tell the division class to use 100% of the vertical space available. Additionally, If you want the division class to be able to scroll, you can add the attribute \"overflow: auto;\" to add a scroll bar when necessary."
+    },
+    {
+      "title": "Close the division class.",
+      "content": "Close the division class. Once you are finished adding all the CSS attributes you want to add to the division class, add a \"}\" at the bottom of the list of attributes to close out the division class element in your CSS."
+    },
+    {
+      "title": "Add the division class container to your HTML file.",
+      "content": "Add the division class container to your HTML file. Go to where you want to add an iframe in your HTML document. Then type \"<div id=\"\" followed by the division class id in quotations. Then add a closing bracket (\">\") at the end of the tag. (i.e.: \"<div id=\"iframe_container\">)."
+    },
+    {
+      "title": "Add the iframe tag below the division class tag.",
+      "content": "Add the iframe tag below the division class tag. You don't need to add any height or width attributes to the iframe HTML tag. The division class will determine the height and width of the iframe. Enter the following code to your HTML document to add an iframe. Replace '[content_url]\" with the URL for the content goes inside the iframe: <iframe src=\"[content_url]\"></iframe>"
+    },
+    {
+      "title": "Close the division class in your HTML document.",
+      "content": "Close the division class in your HTML document. To close the HTML type </div> after the iframe tag and any other contents you want to go inside the iframe. [7] X Research source Your HTML document with the CSS should look something like the following: [8] X Research source < HTML > < head > < style > . iframe_container { width : 300 px ; height : 200 px ; overflow : auto ; } </ style > </ head > < body > < div id = \"iframe_container> <iframe src=\" [ content_URL ]\" ></ iframe > </ div > </ body > </ html >"
+    },
+    {
+      "title": "Save the HTML file.",
+      "content": "Save the HTML file. When you are finished editing your HTML file, you can typically save the file by clicking File in the menu bar at the top, followed by Save ."
+    },
+    {
+      "title": "Render the HTML.",
+      "content": "Render the HTML. Rendering the HTML file allows you to see what it looks like and make sure you got the width and height just right. You can render the HTML file in any web browser of your choice. You can double-click the HTML file to open it in your default web browser. Alternatively, you can right-click the file, hover over Open with and select a web browser to open the file in."
+    }
+  ]
+}

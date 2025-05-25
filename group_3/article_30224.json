@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Make-an-Easy-E-Bomb-Using-Notepad",
+  "title": "How to Make an Easy E Bomb Using Notepad",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Batch (.BAT) files contain text commands that instruct the computer what to do. To write your own simple .BAT file, you don't need special editing software - just Windows' basic Notepad program. Notepad can usually be found in the Start menu, or, alternatively, in the \"Accessories\" folder."
+    },
+    {
+      "title": "Type \"@echo off\", then, on a new line, \"CLS\".",
+      "content": "Type \"@echo off\", then, on a new line, \"CLS\". By default, .BAT files open up a command prompt window and display the commands being run. @echo off and CLS stop the commands in the command prompt window from appearing, making the processes that are taking place invisible to the user being pranked."
+    },
+    {
+      "title": "Write a command to open multiple (or infinite) windows.",
+      "content": "Write a command to open multiple (or infinite) windows. Now, it's time to write a series of commands that will cause your fake virus to open either lots of program windows or an infinite amount of program windows. This is an important distinction - leaving a program running which opens an infinite amount of windows will eventually crash a computer. See below for instructions on making both kinds of \"virus\": To open a finite number of windows, start a new line and type the following command into your notepad window: start (program name here) . In place of the phrase of parentheses, put the name of a program on your computer or its precise file location. This command causes the computer to open a window of the program you specify. For example, start iexplore.exe will open a window of Internet Explorer. Repeat this \"start\" command as many times as you'd like - your \"virus\" will open a window for every time you repeat this command. Here are just a few ideas for programs you may want to enter after \"start\": iexplore.exe - Internet calc.exe - Calculator notepad.exe - Notepad winword.exe - Microsoft Word (tested with version 2013, may work with other versions) To open an infinite number of windows, first start a new line and type :A , including the colon. Then, in the line under that, type start iexplore.exe (or use some other program). Finally, in the line under that, type goto A . This will cause the computer to open a window of Internet Explorer (or whatever program you specified) and then immediately return to the point in the instructions before it opened the program, effectively causing it to open new windows until the command prompt is closed or the computer crashes."
+    },
+    {
+      "title": "Give your \"virus\" a message.",
+      "content": "Give your \"virus\" a message. For startling effect, you may want to add a message to your \"virus\" that makes the user think his or her computer is experiencing an error. To display a message, start a new line and type echo Your Message Here , typing your desired message where indicated. Then, start a new line and type pause . This causes your desired message to pop up in a command prompt window. To make your prank more believable, use a message that sounds like something your computer might actually display in the event of an error. For instance, you might try: Fatal Error. C:// directory corrupted."
+    },
+    {
+      "title": "Save your file as a batch file.",
+      "content": "Save your file as a batch file. When you're finished, select File > Save As... , then make a file name ending in \".bat\" (for example, pinball.bat). In the dropdown window next to \"Save as type:\", be sure to select \"All files\". Save your file anywhere on the computer."
+    },
+    {
+      "title": "Get the user to open the file.",
+      "content": "Get the user to open the file. Now, all you've got to do to \"detonate\" your E-bomb is to trick someone into opening it! You can do this any way you like. One of the most sure-fire ways to trick someone into opening one is to create a shortcut of your batch file, then change its icon to something the user usually uses, then change the shortcut's name to match the new icon. Sit back and watch your results from a good vantage point!"
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Like the trick above, this requires you to write a few simple commands in Notepad. However, its effect is different - instead of opening a series of program windows, this trick creates a series of error messages which allow you to fool the user into thinking his or her computer is experiencing an error or being hacked."
+    },
+    {
+      "title": "",
+      "content": "Type \"x=msgbox(\"Error message here\", 5+16, \"Error title here\"). Type this command (including the parentheses and quotation marks), adding an appropriate error message and error title. This command opens a Windows error dialog box with your specified message in the body of the dialog and your specified title as the dialogue's header. To make your prank believable, try to use error messages and titles that sound like real ones. For instance, try \"Terminal Error\" as your error title and \"Critical fault detected at C://Users/Windows/system32\" as your error message. You might also want to go in a \"hacking\" direction by using a message like, \"I have total access to your system. Prepare to be hacked.\" This never actually happens in the event of actual hacking, so this will work best on people who don't know much about computers. The \"5+16\" in the command above tells the computer to create a dialog box with a critical icon and two buttons - \"Retry\" and \"Cancel.\" By changing the numbers, you can custom-create different error boxes. Simply swap out any of the single-digit numbers below for 5 and any of the double digit numbers below for 16: 0 (OK Button) 1 (OK and Cancel Buttons) 2 (Abort, Retry and Ignore Buttons) 3 (Yes, No, and Cancel Buttons) 4 (Yes and No Buttons) 5 (Retry and Cancel Button﻿s) 16 (Critical Icon) 32 (Help Icon) 48 (Warning Icon) 64 (Information Icon)"
+    },
+    {
+      "title": "Repeat as many error message commands as you'd like.",
+      "content": "Repeat as many error message commands as you'd like. Repeat the above command as many times as you'd like with as many different error messages as you'd like. The messages will appear in sequence - in other words, once a user exits one, the next will appear. You can easily take advantage of this fact to create a long string of error messages that seem to grow in urgency!"
+    },
+    {
+      "title": "Save as a Visual Basic (VBA) file.",
+      "content": "Save as a Visual Basic (VBA) file. When you've entered all the error messages you would like, save your file. Select File > Save As... , then give your file a name ending in \".vba\". Be sure to select \"All files\" from the \"Save as type:\" dropdown menu. Now, all you've got to do is trick someone into opening your E-bomb - the exact same tricks as in Method 1 will work just as well here."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. This E-bomb uses Notepad commands to cause the computer to randomly open programs until the batch file is disabled or the computer crashes. To make this E-bomb, you just need to copy and paste the pre-written commands in this section. However, note that this may not work on all computers."
+    },
+    {
+      "title": "Copy and paste the following commands:",
+      "content": "Copy and paste the following commands: @echo offclsbegingoto %random%:1start cmd.exegoto begin:2start mspaint.exegoto begin:3start pinball.exegoto begin:4start iexplore.exegoto begin:5start explorer.exegoto begin:6start solitaire.exegoto begin:7start explorer.exegoto begin:8start edit.exegoto begin:9start iexplore.exegoto begin:0start mspaint.exegoto begin"
+    },
+    {
+      "title": "Modify as you see fit.",
+      "content": "Modify as you see fit. This program randomly opens the programs listed after each \"start\" indefinitely. You may notice some of these programs have been repeated. Feel free to change the programs listed to whichever ones you would like. Note that some of the program names listed above may not be accurate for your specific machine - for instance, some computers won't contain \"pinball.exe\" You may want to double-check to see if each program exists before executing your E-bomb. If in doubt about the name of a specific program, remember that its precise file pathway is also valid. For instance, \"iexplore.exe\" can also be written as \"C:\\Program Files\\Internet Explorer\"."
+    },
+    {
+      "title": "Save as a batch file, then run the file (if you dare).",
+      "content": "Save as a batch file, then run the file (if you dare). Save the file using the \".bat\" extension (being sure to select \"All files\" from the \"Save as type:\" menu) When you trick the user into opening it, it will begin opening seemingly randomly programs on the computer without stopping. For a bit of fun, try replacing one of the 'start *.exe' commands with the path of a notepad file on the person's computer or something like that. Use the following command: edit (path to file) goto begin This will open their file in a DOS-based text editor, making it look like a hacker is reading their personal documents. Try it!"
+    },
+    {
+      "title": "Learn the meaning of commands to be able to modify your E-bomb.",
+      "content": "Learn the meaning of commands to be able to modify your E-bomb. Even if you don't understand how they work, E-bombs can be great pranks, but you'll be able to get even more enjoyment out of them if you know exactly what's happening when one is run. As an added bonus, once you understand how E-bombs work, you can start writing your own! Here is a list of the commands we used in this article, along with a brief description of each: @echo off - Turns command prompt comments off cls - Clears the command prompt screen. This just makes the command prompt appear neater. goto - Go to whatever flag you specify immediately after \"goto\". %random% - A windows variable that randomly generates a number between (and including) 0-9. :(number, letter, or word) - A flag. \"Goto\" commands send the program to whatever flag they specify. Note: in our example above, we have 10 flags. If we leave a number out, the program should close when %random% generates that number."
+    }
+  ]
+}

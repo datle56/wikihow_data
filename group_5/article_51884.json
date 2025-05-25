@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Check-Null-in-C",
+  "title": "How to Check Null in C",
+  "steps": [
+    {
+      "title": "Use the standard null check code.",
+      "content": "Use the standard null check code. The following is the most obvious way to write a null check. We'll use ptr in this article as the name of the pointer you're checking. if(ptr == NULL) { // code if pointer is NULL } else { // code if not NULL }"
+    },
+    {
+      "title": "Test for any value but NULL.",
+      "content": "Test for any value but NULL. Sometimes it's more convenient to test for inequality instead. No surprises here: if (ptr != NULL) { // code if not NULL }"
+    },
+    {
+      "title": "Write the NULL first to avoid errors (optional).",
+      "content": "Write the NULL first to avoid errors (optional). The main disadvantage to the PTR == NULL method is the chance that you'll accidentally type ptr = NULL instead, assigning the NULL value to that pointer. This can cause a major headache. Since testing for (in)equality treats the operands symmetrically, you can get exactly the same result by writing if (NULL == ptr) instead. This is more typo-resistant, since an accidental NULL = ptr creates a simple compile error. This looks a little awkward to some programmers, but it's perfectly valid. Which approach you use just depends on personal preference, and how good your compiler is at detecting the if (ptr = NULL) error."
+    },
+    {
+      "title": "Test whether the variable is true.",
+      "content": "Test whether the variable is true. A simple if (ptr) tests whether ptr is TRUE. It will return FALSE if ptr is NULL, or if ptr is 0. The distinction doesn't matter in many cases, but be aware that these are not identical in all architectures. [1] X Research source The reverse of this is if (!ptr) , which will return TRUE if ptr is FALSE."
+    },
+    {
+      "title": "Set a pointer before checking for NULL.",
+      "content": "Set a pointer before checking for NULL. One common mistake is to assume that a newly created pointer has a NULL value. This is not true. An unassigned pointer still points to a memory address, just not one that you have specified. It's common practice to set newly created or newly freed pointers to NULL to make sure you don't use this unhelpful address by accident. Avoid this mistake: char *ptr; if(ptr == NULL) { //This will return FALSE. The pointer has been assigned a valid value. } Instead write: char *ptr = NULL; //This assigns the pointer to NULL if(ptr == NULL) { //This will return TRUE if the pointer has not been reassigned. }"
+    },
+    {
+      "title": "Pay attention to functions that could return NULL.",
+      "content": "Pay attention to functions that could return NULL. If a function can return NULL, think about whether this is a possibility, and whether that would cause problems later in your code. Here's an example of the malloc function using the null check ( if (ptr) ) to ensure it only handles pointers with valid values: int *ptr = malloc(N * sizeof(int)); if (ptr) { int i; for (i = 0; i < N; ++i) ptr[i] = i; }"
+    },
+    {
+      "title": "Understand that NULL is 0 but you should always use NULL instead of 0 when working with pointers for clarity.",
+      "content": "Understand that NULL is 0 but you should always use NULL instead of 0 when working with pointers for clarity. Historically, C represented NULL as the number 0 (that is, 0x00). Nowadays it can get a bit more complicated, and varies by operating system. You can usually check for NULL using ptr == 0 , but there are corner cases where this can cause an issue. Perhaps more importantly, using NULL makes it obvious that you are working with pointers for other people reading your code. [2] X Research source"
+    }
+  ]
+}

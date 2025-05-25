@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Map-a-Folder-to-a-Drive-Letter-in-Windows",
+  "title": "How to Map a Folder to a Drive Letter in Windows",
+  "steps": [
+    {
+      "title": "Open a command prompt window.",
+      "content": "Open a command prompt window. On Windows Vista or Windows 7, open the command prompt as default user, not as Administrator. The reason will be explained later."
+    },
+    {
+      "title": "Use the SUBST command to map your folder to a drive letter.",
+      "content": "Use the SUBST command to map your folder to a drive letter. For example: SUBST X: \"D:\\Documents\\John\\Letters\"."
+    },
+    {
+      "title": "To try it, open a windows explorer window.",
+      "content": "To try it, open a windows explorer window. You should see a newly created drive letter X:, with which you can access your mapped folder directly."
+    },
+    {
+      "title": "To un-map the previously created drive letter, type SUBST X:",
+      "content": "To un-map the previously created drive letter, type SUBST X: /D"
+    },
+    {
+      "title": "Note that when you reboot your computer, all mapped drive letters will be reset.",
+      "content": "Note that when you reboot your computer, all mapped drive letters will be reset. To automatically map your folder when your system starts, put the SUBST command in a batch file, and put the batch file in your Autostart folder in the start menu. Advanced users can use the windows task scheduler, however this is not covered here."
+    },
+    {
+      "title": "Execute the SUBST command using the account that issued it.",
+      "content": "Execute the SUBST command using the account that issued it. These mappings are only created for the user who originally issued the SUBST command. When you login as \"John\", and you open a command prompt as \"Administrator\" and execute the SUBST command, \"John\" will not be able to see any mapped drive letters because the mapping was created for \"Administrator\". This is why you need to open the command prompt as a default user in Windows Vista and Windows 7. When using the task scheduler, again make sure that the command is executed under the default user account."
+    },
+    {
+      "title": "Open My Computer from your Windows desktop.",
+      "content": "Open My Computer from your Windows desktop."
+    },
+    {
+      "title": "Click Map Network Drive from the Tools menu.",
+      "content": "Click Map Network Drive from the Tools menu."
+    },
+    {
+      "title": "Select a drive letter that you want to assign to the mapped folder in the Drive box.",
+      "content": "Select a drive letter that you want to assign to the mapped folder in the Drive box. You will be able to rename this mapped drive to anything you want."
+    },
+    {
+      "title": "Type the server and share name of the computer or folder you want or Click Browse to find the computer or folder, in the Folder box.",
+      "content": "Type the server and share name of the computer or folder you want or Click Browse to find the computer or folder, in the Folder box."
+    },
+    {
+      "title": "Click the Finish button.",
+      "content": "Click the Finish button."
+    }
+  ]
+}

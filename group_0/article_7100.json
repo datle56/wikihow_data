@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Check-Logs-in-Unix",
+  "title": "How to Check Logs in Unix Systems",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T.",
+      "content": "Press Ctrl + Alt + T . This opens the shell prompt."
+    },
+    {
+      "title": "Type cd /var/log and press ↵ Enter.",
+      "content": "Type cd /var/log and press ↵ Enter . This takes you to /var/log, the location of your Linux log files. If you're using Solaris, your logs are located in /var/adm."
+    },
+    {
+      "title": "Type ls -a and press ↵ Enter.",
+      "content": "Type ls -a and press ↵ Enter . This displays a list of all files in the directory."
+    },
+    {
+      "title": "Learn the common logs.",
+      "content": "Learn the common logs. The logs you'll find depend on a number of factors, including the version of Linux you're running and the software and services you use. Here's an overview of the most common log files (if you're using Solaris, just replace /var/log with /var/adm ): /var/log/auth.log: Authentication logs (both successful and failed attempts) on Debian/Ubuntu Linux and FreeBSD. [1] X Research source Solaris users will use /var/adm/authlog. [2] X Research source /var/log/boot.log: Startup messages and boot info. /var/log/cron: All cron-related messages for most Unix versions. If you're using Solaris, your cron log is at /var/cron/log. /var/log/daemon.log: Running background services. /var/log/dmesg: Device driver messages. This is a binary file, not a text file—to view this log you'll need to use the dmesg command. /var/log/faillog: Failed logins only. /var/log/httpd or /var/log/apache2: Apache web server logs. /var/log/maillog or var/log/mail.log: Mail server info. /var/log/lastlog: Shows all users' last logins. This is a binary file, not a text file—to view this log you'll need to use the lastlog command. /var/log/messages: General system messages for Solaris and FreeBSD, as well as the Linux versions Fedora, RedHat, and CentOS: [3] X Research source /var/log/secure: Authentication logs (successful and failed attempts) for RedHat/CentOS. /var/log/syslog: General system messages for Ubuntu Linux, Linux Mint, and Debian Linux-based systems. If you're using Solaris, this is where you'll find mail-related messages. /var/log/utmp: Current login states for each user. /var/log/wtmp: User login and logout times."
+    },
+    {
+      "title": "Use the cat command to view all contents of a log.",
+      "content": "Use the cat command to view all contents of a log. As long as the log is a flat text file, you can run cat logname to view the entire log. If you don't already have root access, use sudo before each command."
+    },
+    {
+      "title": "Use more to view a log's contents screen-by-screen.",
+      "content": "Use more to view a log's contents screen-by-screen. Since many of these logs can get large, cat might be frustrating to use. If you want to view the log screen-by-screen, try more logname instead so you can page through the log screen-by-screen. Use the Enter key to scroll one line at a time, or the Spacebar to scroll one screen at a time. To go back, press b . To return to the prompt, press q ."
+    },
+    {
+      "title": "Use the tail -f to view a log in real time.",
+      "content": "Use the tail -f to view a log in real time. This displays a live version of the log that constantly updates as new items write to it. For example, if you're having trouble with Apache, it may be helpful to run tail -f /var/log/httpd and leave it open in a terminal window while you troubleshoot. If you just want to view the end of the log but don't care whether it updates in real time, run tail -20 /var/log/httpd to view its last 20 lines. You could replace \"20\" with any number of lines from the bottom you want to see. You can also parse what you see with tail (or pretty much any other command) by piping it out to grep . For example, tail -f /var/log/auth.log | grep 'Invalid user' will display all invalid \"Piping out\" a command means redirecting the output to another command. Basically, it lets you use two or more commands at once."
+    },
+    {
+      "title": "Use vi to open the log.",
+      "content": "Use vi to open the log. You can use any text editor, such as vi or vim to open most logs for viewing. To do so, just use vi /var/log/auth.log (or the desired log name). You can then freely navigate through the log as needed, as well as use the editor's search tools. In vi and vim , you can search for strings of text using a forward slash in command mode. For example, typing /smtp and pressing Enter will find the next instance of \"smtp\" in the file. Press n to move to the next instance of the search string, or N (uppercase) to go back to the previous."
+    },
+    {
+      "title": "Use dmesg to view messages from the kernel.",
+      "content": "Use dmesg to view messages from the kernel. When you want to view /var/log/dmesg, you'll need to use this command. [4] X Research source To move through the log screen by screen, run dmesg | more . Use dmesg with grep to search for specific entries. For example, to view only hard disk entries, run dmesg | grep -i sda . -i tells grep to ignore the case. To see just the first 10 lines of the log, run dmesg | head -10 . Replace \"10\" with the number of lines from the top of the file you want to see. To do the same with the end of the file, run dmesg | tail -10 ."
+    },
+    {
+      "title": "Use lastlog to view the last login dates for each user.",
+      "content": "Use lastlog to view the last login dates for each user. /var/log/lastlog, like /var/log/dmesg, is a binary file that requires the use of a command for viewing. You can just type lastlog and press Enter to view the log, or pipe it out (| = pipe) for easier viewing—for example, lastlog | more lets you read the log screen-by-screen, and lastlog | grep root would only display root login info."
+    }
+  ]
+}

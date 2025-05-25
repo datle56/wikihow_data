@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Detect-Pegasus-Spyware",
+  "title": "How to Check Your Smartphone for Pegasus Spyware",
+  "steps": [
+    {
+      "title": "Visit https://imazing.com/guides/detect-pegasus-and-other-spyware-on-iphone on your Mac or PC.",
+      "content": "Visit https://imazing.com/guides/detect-pegasus-and-other-spyware-on-iphone on your Mac or PC. Software developers iMazing have set up an easy way for iPhone owners to scan for Pegasus spyware. iMazing's tool emulates the original Mobile Verification Kit from Amnesty International . Amnesty's tool requires prior configuration on a MacOS or Linux device, however, so iPhone users are advised to use iMazing's simpler alternative."
+    },
+    {
+      "title": "Download iMazing.",
+      "content": "Download iMazing. Click the Free Download button to download iMazing onto your computer. The free application allows you to manage your iPhone from your Mac or PC. Most importantly, it contains the spyware detection tool we need to search for Pegasus. [2] X Research source iMazing offers a paid version, but its free trial includes the spyware detection tool without time limit or restriction."
+    },
+    {
+      "title": "Connect your iPhone or iPad to your computer.",
+      "content": "Connect your iPhone or iPad to your computer. Use the USB cable that came with your phone or tablet or a compatible replacement. If you have previously backed up your device to iMazing, you can scan that backup without connecting a device."
+    },
+    {
+      "title": "Launch iMazing.",
+      "content": "Launch iMazing. The application should detect your phone immediately. You will have to enter your phone's passcode to complete the pairing process. Make sure your phone is unlocked while pairing it with iMazing. Make sure you have an internet connection on both devices."
+    },
+    {
+      "title": "Click Detect Spyware in the Actions panel.",
+      "content": "Click Detect Spyware in the Actions panel. On the right-hand side of the iMazing client is a list of all the actions you may take. Scroll down until you find Detect Spyware and click it. It is represented by a \"toxic\" icon. If you have multiple Apple devices synced with iMazing, make sure you have the appropriate one selected in the left sidebar."
+    },
+    {
+      "title": "Follow the on-screen instructions to select your preferences.",
+      "content": "Follow the on-screen instructions to select your preferences. iMazing will provide you with some information. Click Next to proceed to configuration, where you can accept the default settings and click Next again. The configuration page allows you to choose between a .csv and .xlsx file for your exported report. The default .csv should be fine, as you can always convert it to an .xlsx later. You will also be asked about creating a backup of your device. You may skip this step, or create a backup if you so choose."
+    },
+    {
+      "title": "Click Start Analysis to start the scan.",
+      "content": "Click Start Analysis to start the scan. If you chose to create a backup, iMazing will carry that process out first, which may take a while depending upon your device's storage."
+    },
+    {
+      "title": "Interpret your results.",
+      "content": "Interpret your results. Once the scan is done, a pop-up will report the scan's findings. A clean scan will include the phrase No signs of infection detected . If iMazing detects spyware, it will say Possible infection detected . [3] X Research source If you have a clean scan, you do not need to open your report. While false positives can happen, false negatives are not a concern."
+    },
+    {
+      "title": "Open and read your report.",
+      "content": "Open and read your report. iMazing's report will detail all critical detections. Pay particular attention to the Malware column and search for the term Pegasus . If you do not see any of the detected malware labeled as Pegasus , you do not have to worry about Pegasus spyware. Of course, you should still work to rid your device of any detected malware."
+    },
+    {
+      "title": "Send your report to iMazing to check for false positives.",
+      "content": "Send your report to iMazing to check for false positives. Visit the website to share your report. The developer promises to get back to you quickly. [4] X Research source If iMazing confirms your positive scan, they will connect you with the help needed to clean your device. Keep in mind their tool is purely a detection service. While waiting for a response from iMazing, you may continue to use your device, but you should refrain from communicating with others to not expose them to the malware."
+    },
+    {
+      "title": "Visit https://github.com/mvt-project/mvt on Linux or macOS.",
+      "content": "Visit https://github.com/mvt-project/mvt on Linux or macOS. If you want to know if Pegasus is on your Android phone, you will have to use the official detection tool from Amnesty International. This tool is designed for forensics experts and only available for Linux and macOS. There's no graphical user interface, so you'll need to use the command line. You won't see any obvious \"You have Pegasus!\" notifications. However, you can use this tool to gather evidence that will be useful to share with experts. The Amnesty MVT can only offer limited insights on Android devices, as Androids do not store as much diagnostic information as iPhones. [5] X Research source"
+    },
+    {
+      "title": "If you're using a Mac, install Xcode and Homebrew.",
+      "content": "If you're using a Mac, install Xcode and Homebrew. If you already have these tools installed you can skip this step. First, open your Mac's App Store, search for Xcode , and install it. Then, open a Terminal window.4 [6] X Research source Type this command and then press Return : /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" . [7] X Research source Type export PATH=\"/usr/local/opt/python/libexec/bin:$PATH\" and press Return ."
+    },
+    {
+      "title": "Download Python.",
+      "content": "Download Python. You will need Python 3.6 or later installed on your computer to run MVT. Linux: Check your Python version by running python at the prompt. If it's an older version, use sudo apt-get install python (Ubuntu) or sudo yum install python (Redhat/Fedora) to update. Mac: The version of Python that comes with macOS is dated, so run the command brew install python to get the latest version."
+    },
+    {
+      "title": "Install the dependencies.",
+      "content": "Install the dependencies. We need to install some basic dependencies that will allow us to run MVT. Linux: Run sudo apt install python3 python3-pip libusb-1.0-0 sqlite3 . macOS: Run brew install python3 libusb sqlite3 ."
+    },
+    {
+      "title": "Install Android SDK Platform Tools for Linux.",
+      "content": "Install Android SDK Platform Tools for Linux. This contains the tools you'll need to interact with your Android, including adb (Android Debug Bridge). You can download it from https://developer.android.com/studio/releases/platform-tools on Linux, or run brew install --cask android-platform-tools to install it on a Mac. [8] X Research source"
+    },
+    {
+      "title": "Install MVT.",
+      "content": "Install MVT. Here's how: Run export PATH=$PATH:~/.local/bin make sure your path is set to install Pypi binaries. Run pip3 install mvt to install using Python's package manager. If you'd rather compile from source code: First, run git clone https://github.com/mvt-project/mvt.git to download the source code. Then run cd mvt to enter the directory. Last, run pip3 install to compile and install."
+    },
+    {
+      "title": "Enable debugging on your Android.",
+      "content": "Enable debugging on your Android. If you haven't already done so, open your Android's Settings , tap About phone , then tap \"Build Number\" 7 times. [9] X Research source Tap the back button and you'll now see a menu called \"Developer Options.\" [10] X Research source Once enabled, you can turn on USB debugging: In your Settings , go to System > Advanced > Developer Options . Enable the \"USB debugging\" switch if disabled."
+    },
+    {
+      "title": "Connect your Android",
+      "content": "Connect your Android to your PC with a USB cable. Ensure your device is unlocked and connected to the internet. When prompted on your Android, select Trust . MVT can only analyze SMS messages containing links, but these tend to be the most high-risk messages anyway. [11] X Research source MVT may request some extra permissions to scan parts of your device, but this would require you to jailbreak your device, which would only further expose your device to malware. Simply deny these permissions and accept the available scan."
+    },
+    {
+      "title": "Run mvt-android download-iocs.",
+      "content": "Run mvt-android download-iocs . With the MVT installed, Python can now interpret its commands. This command downloads files ending with the .stix2 file extension and saves them to the app directory. [12] X Research source Run the ls -a command to find the files if you're not sure where they are. You'll need to specify the path to your .stix2 file to check for Pegasus."
+    },
+    {
+      "title": "Run mvt-android check-adb --iocs /path/to/stix.file --output /path/to/results.",
+      "content": "Run mvt-android check-adb --iocs /path/to/stix.file --output /path/to/results . This command will use all of MVT's options to check your Android over USB using the debug bridge, which can take a while. As data is compared to the specified .stix file, results will be recorded to the specified results folder. Possible matches will be indicated with a \"WARNING\" message, though the warnings may indicate spyware other than Pegasus. If you don’t want to scan your entire Android, run mvt-android without any arguments to see which individual options are available. But if you're really concerned, just run through all of the checks with mvt-android ."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Update-Pip",
+  "title": "How to Upgrade Pip: Quick Guide for Beginners & Experts",
+  "steps": [
+    {
+      "title": "Open a Terminal or Command Prompt window.",
+      "content": "Open a Terminal or Command Prompt window. The most straightforward way to update Pip is from the command line. Because Python 3.4 and later comes with Pip, you can easily update it without downloading a new package. [1] X Research source Mac: Type Terminal in Launchpad and select Terminal . [2] X Research source Linux: Press Ctrl + Alt + T or click Terminal in your app list. Windows: Type command prompt into the Windows search bar and click Command Prompt . [3] X Research source open command prompt windows 11"
+    },
+    {
+      "title": "Check the current Pip version (optional).",
+      "content": "Check the current Pip version (optional). Run the command pip -V to see which version of Pip is installed. This command will print the version number to the terminal. If you have both Python 2 and Python 3 installed, the pip command may evoke Python 2 instead of the latest version. Use pip3 -V to check the version of Pip for Python 3, and pip2 -V to check for Python 2. If you're using Python 3.4 or earlier, Pip may not be installed. In this case, use python -m ensurepip --upgrade to install it now. If you're using Windows and get the error \"pip is not recognized as an internal or external command,\" make sure you've installed Python . If you have installed Python and get this error, you'll need to add Python to your Windows path and then relaunch Command Prompt. To learn how, see Adding the Python Path to Windows ."
+    },
+    {
+      "title": "Run the command python -m pip install --upgrade pip to update Pip.",
+      "content": "Run the command python -m pip install --upgrade pip to update Pip. If this command doesn't work on Windows, use py -m pip install --upgrade pip instead. If you get permissions errors in Linux, run sudo python -m pip install --upgrade pip . If you have both Python 2 and Python 3, update Pip for each version separately: [4] X Research source python3 -m pip install --upgrade pip python2 -m pip install --upgrade pip"
+    },
+    {
+      "title": "Open a Terminal or Command Prompt window.",
+      "content": "Open a Terminal or Command Prompt window. If you're using a version of Python 3 older than Python 3.4, you can use a script to install the latest version of Pip . This method will not work for deprecated versions of Python, including Python 2. [5] X Research source Mac: Type Terminal into Spotlight search and select Terminal . Linux: Press Ctrl + Alt + T or click Terminal in your app list. [6] X Research source Windows: Type command prompt into the Windows search bar and click Command Prompt . [7] X Research source"
+    },
+    {
+      "title": "Download the script file.",
+      "content": "Download the script file. You can do this easily using curl on any operating system, as it's preinstalled. Just run the command curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py at the prompt and wait for the script to download. [8] X Research source"
+    },
+    {
+      "title": "Install the latest version of Pip.",
+      "content": "Install the latest version of Pip. To do so, run the downloaded script using the command python3 get-pip.py . This installs the latest version of Pip for Python 3."
+    },
+    {
+      "title": "Check your Pip version.",
+      "content": "Check your Pip version. In the Terminal or Command Prompt window, run the command pip3 -v"
+    },
+    {
+      "title": "Check your current Python version.",
+      "content": "Check your current Python version. If you want to update both Python and Pip, you can download and install the latest version of Python. Before you do this, make sure you're not already using the latest version. To check, open Command Prompt or Terminal and run python --version . [9] X Research source Only use this method if you want to update Python as well as Pip. If Python is already up to date on your PC or Mac, update pip via Python instead. If the version number starts with 2 instead of 3, run python3 --version to see if Python 3 is also installed and find the version number."
+    },
+    {
+      "title": "Find the latest version at https://www.python.org/downloads.",
+      "content": "Find the latest version at https://www.python.org/downloads . Compare your version of Python to the version in the yellow \"Download Python\" button at the top of the page."
+    },
+    {
+      "title": "Download the Python installer.",
+      "content": "Download the Python installer. If you're using an older Python version than the latest release, click the yellow Download button to download the latest installer."
+    },
+    {
+      "title": "Run the installer.",
+      "content": "Run the installer. Double-click the downloaded file and follow the on-screen instructions to install. Once Python is installed, you'll have the latest version of Pip. On Windows, make sure to check the box next to \"Add python.exe to PATH\" at the bottom of the installer to ensure you can run Python and Pip commands from any location."
+    },
+    {
+      "title": "Check your Pip version.",
+      "content": "Check your Pip version. In a new Command Prompt or Terminal window, run the command pip -v to check the Pip version. If you have both Python 2 and Python 3, run pip3 -v to check the Pip version of Python 3."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. You can do so on most Linux distributions by pressing Ctrl + Alt + T . [10] X Research source Use this method if you want to update both Python and Pip at the same time."
+    },
+    {
+      "title": "Check your current Python version.",
+      "content": "Check your current Python version. If you're already using the latest version of Python, there's no need to use this method. Run the command python3 --version to check. Then, compare your version to the latest stable release at https://www.python.org/downloads ."
+    },
+    {
+      "title": "Update your system's repository list.",
+      "content": "Update your system's repository list. Ubuntu and Debian: sudo apt update CentOS, Fedora, Redhat: sudo dnf upgrade"
+    },
+    {
+      "title": "Install Python 3 from your distro's package manager.",
+      "content": "Install Python 3 from your distro's package manager. Once you run the command to install the latest version of Python 3, Pip will also be upgraded. Ubuntu and Debian: sudo apt install python3 CentOS, Fedora, Redhat: sudo dnf install python3 ."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. You can update both Python and Pip using Homebrew if you prefer. You should only use this method if you need to upgrade Python as well as Pip. Before you continue, make sure Homebrew is installed. To check, type brew -v and press Return . If the command is not found, you'll need to install Homebrew using this command: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" [11] X Research source To check your Python version, run the command python3 --version . Compare your version to the latest stable release available from https://www.python.org/downloads/macos/ . If the command is not found, Python 3 is not installed. Continue with this method to install it."
+    },
+    {
+      "title": "Run the command brew install pyenv.",
+      "content": "Run the command brew install pyenv . This command installs a library that can help you manage your Python versions."
+    },
+    {
+      "title": "Run the command pyenv install -l to view all versions of Python.",
+      "content": "Run the command pyenv install -l to view all versions of Python. To make sure you're getting the latest version of Python (and the latest version of pip), you can run this command to find the most recent version number."
+    },
+    {
+      "title": "Run the command pyenv install version-number.",
+      "content": "Run the command pyenv install version-number . For example, to install Python 3.11.5, you'd type pyenv install 3.11.5 and press Return . This installs the latest version of Python 3 and pip. [12] X Research source Now that you have the latest pip version, you can update it in the future using the command python3 -m pip install --upgrade pip ."
+    }
+  ]
+}

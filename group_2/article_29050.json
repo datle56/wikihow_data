@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Game-with-Notepad",
+  "title": "3 Cool Ways to Make Your Own Game with Notepad",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Notepad has an icon that resembles a blue Notepad. Use the following steps to open Notepad in Windows. Click the Windows Start menu. Type \"notepad\". Click Notepad."
+    },
+    {
+      "title": "Copy the following script.",
+      "content": "Copy the following script. This is a batch script that can be used to create a guessing game. Highlight the entire script below. Then right-click it and click Copy . The script is as follows: [1] X Research source @ echo off color 0b title Guessing Game by seJma set /a guessnum = 0 set /a answer =% RANDOM % set variable1 = surf33 echo ---------------------------------------------------------------- echo This Is a Guessing Game Made in Notepad!!! echo . echo What Number Am I Thinking Of? echo ---------------------------------------------------------------- echo . : top echo . set /p guess = echo . if %guess% GTR %answer% ECHO Lower! if %guess% LSS %answer% ECHO Higher! if %guess% == %answer% GOTO EQUAL set /a guessnum =% guessnum % + 1 if %guess% == %variable1% ECHO Found the backdoor hey?, the answer is: %answer% goto top : equal echo Congratulations, You guessed right!!! echo . echo It took you %guessnum% guesses. echo . pause"
+    },
+    {
+      "title": "Paste the script into Notepad.",
+      "content": "Paste the script into Notepad. Click back over to your black Notepad document. Right-click the text cursor at the top and click Paste . This will paste the script into your Notepad document."
+    },
+    {
+      "title": "Save the Notepad document as a batch file.",
+      "content": "Save the Notepad document as a batch file. By saving it as a batch file, you can run it in Windows as though it were an executable (.exe) file. You don't need to install a scripting language or compile the source code. Windows already has everything you need. Use the following steps to save the document as a batch file: Click File in the menu bar at the top. Click Save as . Click the drop-down menu next to \"Save as type\". Select All files (*.*) . Type a name for the file next to \"File name\" (i.e. Guessing Game). Add \".bat\" to the end of the file name (.i.e. Guessing Game.bat). Click Save ."
+    },
+    {
+      "title": "Double-click the Batch file.",
+      "content": "Double-click the Batch file. Navigate to where you saved the batch file using File Explorer. Then double-click the batch file to launch it. This will launch the guessing game in the Windows Command Prompt. Type a number and press Enter to guess. The program will tell you to guess higher or lower. When you guess right, it will tell you how many guesses it took. If you want to edit the batch file script, right-click the batch file and click Edit . Try editing the batch file script. See if you can figure out how to change the text, or maybe even change the color of the text."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Notepad has an icon that resembles a blue Notepad. Use the following steps to open Notepad in Windows. Click the Windows Start menu. Type \"notepad\". Click Notepad."
+    },
+    {
+      "title": "Copy the following HTML script.",
+      "content": "Copy the following HTML script. The following script is written in HTML. This creates the head of the HTML document, the body and a title within the body. Highlight the entire script. Then right-click it and click Copy The script is as follows: [2] X Research source <!DOCTYPE html> < html > < head > < title > Snake </ title > </ head > < body > < h3 > Snake </ h3 > </ body > </ html >"
+    },
+    {
+      "title": "Paste the script into your Notepad document.",
+      "content": "Paste the script into your Notepad document. Click back over to your Notepad document. Then right-click the text cursor at the top and click Paste to paste the script into your Notepad document."
+    },
+    {
+      "title": "Copy the following JavaScript.",
+      "content": "Copy the following JavaScript. This is the actual script that will create a game. This script is written in JavaScript. Highlight entire code below. Then right-click it and click Copy . The code is as follows: < canvas id = \"gc\" width = \"400\" height = \"400\" >< /canvas> < script > window . onload = function () { canv = document . getElementById ( \"gc\" ); ctx = canv . getContext ( \"2d\" ); document . addEventListener ( \"keydown\" , keyPush ); setInterval ( game , 1000 / 15 ); } px = py = 10 ; gs = tc = 20 ; ax = ay = 15 ; xv = yv = 0 ; trail = []; tail = 5 ; function game () { px += xv ; py += yv ; if ( px < 0 ) { px = tc - 1 ; } if ( px > tc - 1 ) { px = 0 ; } if ( py < 0 ) { py = tc - 1 ; } if ( py > tc - 1 ) { py = 0 ; } ctx . fillStyle = \"black\" ; ctx . fillRect ( 0 , 0 , canv . width , canv . height ); ctx . fillStyle = \"lime\" ; for ( var i = 0 ; i < trail . length ; i ++ ) { ctx . fillRect ( trail [ i ]. x * gs , trail [ i ]. y * gs , gs - 2 , gs - 2 ); if ( trail [ i ]. x == px && trail [ i ]. y == py ) { tail = 5 ; } } trail . push ({ x : px , y : py }); while ( trail . length > tail ) { trail . shift (); } if ( ax == px && ay == py ) { tail ++ ; ax = Math . floor ( Math . random () * tc ); ay = Math . floor ( Math . random () * tc ); } ctx . fillStyle = \"red\" ; ctx . fillRect ( ax * gs , ay * gs , gs - 2 , gs - 2 ); } function keyPush ( evt ) { switch ( evt . keyCode ) { case 37 : xv =- 1 ; yv = 0 ; break ; case 38 : xv = 0 ; yv =- 1 ; break ; case 39 : xv = 1 ; yv = 0 ; break ; case 40 : xv = 0 ; yv = 1 ; break ; } } < /script>"
+    },
+    {
+      "title": "Paste the JavaScript into the body of the HTML script.",
+      "content": "Paste the JavaScript into the body of the HTML script. Click the area in your Notepad HTML document below the the tag that says \"<h3>Snake</h3>\". Right-click and click Paste . This will paste the JavaScript into your HTML document."
+    },
+    {
+      "title": "Save the Notepad document as an HTML file.",
+      "content": "Save the Notepad document as an HTML file. Most scripting language require you to install additional software to be able to run them. With HTML and JavaScript, you already have the software needed to run them. They can run inside your web browser. This is why HTML is one of the most common languages on the internet. Use the following steps to save the document as an HTML file: Click File in the menu bar at the top. Click Save as . Click the drop-down menu next to \"Save as type\". Select All files (*.*) . Type a name for the file next to \"File name\" (i.e. Snake). Add \".html\" to the end of the file name (.i.e. Snake.html). Click Save ."
+    },
+    {
+      "title": "Open the HTML file in a web browser.",
+      "content": "Open the HTML file in a web browser. When you open the HTML file, you will see a black screen at the top of the page. Make sure Javacript is enabled in your web browser. Press the arrow keys to move and change the direction of the snake. Eat the red dots to grow. Use the following steps to try to open the HTML document in your web browser: Navigate to the HTML file using File Explorer Right-click the HTML file and click Open with . Click a web browser of your choice."
+    },
+    {
+      "title": "Download and Install Visual Studio.",
+      "content": "Download and Install Visual Studio. This game is created using C++. While you can program in C++ using Notepad, Notepad does not have the ability to compile C++ or any other language into an runnable program. For that you will need to use a compiler. Visual Studio is Microsoft's compiler and integrated development environment. Use the following steps to download Visual Studio: Go to https://visualstudio.microsoft.com/vs/features/cplusplus/ in a web browser. Click Visual Studio C++ . Click Community 2019 Open the \"vs_community....exe file in your web browser or Downloads folder. Click Yes Click Continue Click Install Close the installer when the installation is finished."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Notepad has an icon that resembles a blue Notepad. Use the following steps to open Notepad in Windows. Click the Windows Start menu. Type \"notepad\". Click Notepad."
+    },
+    {
+      "title": "Copy the following code.",
+      "content": "Copy the following code. If you examine the code, you can see it has three sections. It has a section that draws the board at the bottom, it also contains the script that allows both players to select and mark a square. It also contains a script that checks if either player won the game. Highlight the entire code. Right-click it and click Copy . The code is as follows: [3] X Research source #include <iostream> using namespace std ; char square [ 10 ] = { 'o' , '1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' }; int checkwin (); void board (); int main () { int player = 1 , i , choice ; char mark ; do { board (); player = ( player % 2 ) ? 1 : 2 ; cout << \"Player \" << player << \", enter a number: \" ; cin >> choice ; mark = ( player == 1 ) ? 'X' : 'O' ; if ( choice == 1 && square [ 1 ] == '1' ) square [ 1 ] = mark ; else if ( choice == 2 && square [ 2 ] == '2' ) square [ 2 ] = mark ; else if ( choice == 3 && square [ 3 ] == '3' ) square [ 3 ] = mark ; else if ( choice == 4 && square [ 4 ] == '4' ) square [ 4 ] = mark ; else if ( choice == 5 && square [ 5 ] == '5' ) square [ 5 ] = mark ; else if ( choice == 6 && square [ 6 ] == '6' ) square [ 6 ] = mark ; else if ( choice == 7 && square [ 7 ] == '7' ) square [ 7 ] = mark ; else if ( choice == 8 && square [ 8 ] == '8' ) square [ 8 ] = mark ; else if ( choice == 9 && square [ 9 ] == '9' ) square [ 9 ] = mark ; else { cout << \"Invalid move \" ; player -- ; cin . ignore (); cin . get (); } i = checkwin (); player ++ ; } while ( i ==- 1 ); board (); if ( i == 1 ) cout << \"==> \\a Player \" <<-- player << \" win \" ; else cout << \"==> \\a Game draw\" ; cin . ignore (); cin . get (); return 0 ; } /********************************************* FUNCTION TO RETURN GAME STATUS 1 FOR GAME IS OVER WITH RESULT -1 FOR GAME IS IN PROGRESS O GAME IS OVER AND NO RESULT **********************************************/ int checkwin () { if ( square [ 1 ] == square [ 2 ] && square [ 2 ] == square [ 3 ]) return 1 ; else if ( square [ 4 ] == square [ 5 ] && square [ 5 ] == square [ 6 ]) return 1 ; else if ( square [ 7 ] == square [ 8 ] && square [ 8 ] == square [ 9 ]) return 1 ; else if ( square [ 1 ] == square [ 4 ] && square [ 4 ] == square [ 7 ]) return 1 ; else if ( square [ 2 ] == square [ 5 ] && square [ 5 ] == square [ 8 ]) return 1 ; else if ( square [ 3 ] == square [ 6 ] && square [ 6 ] == square [ 9 ]) return 1 ; else if ( square [ 1 ] == square [ 5 ] && square [ 5 ] == square [ 9 ]) return 1 ; else if ( square [ 3 ] == square [ 5 ] && square [ 5 ] == square [ 7 ]) return 1 ; else if ( square [ 1 ] != '1' && square [ 2 ] != '2' && square [ 3 ] != '3' && square [ 4 ] != '4' && square [ 5 ] != '5' && square [ 6 ] != '6' && square [ 7 ] != '7' && square [ 8 ] != '8' && square [ 9 ] != '9' ) return 0 ; else return - 1 ; } /******************************************************************* FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK ********************************************************************/ void board () { system ( \"cls\" ); cout << \" \\n\\n\\t Tic Tac Toe \\n\\n \" ; cout << \"Player 1 (X) - Player 2 (O)\" << endl << endl ; cout << endl ; cout << \" | | \" << endl ; cout << \" \" << square [ 1 ] << \" | \" << square [ 2 ] << \" | \" << square [ 3 ] << endl ; cout << \"_____|_____|_____\" << endl ; cout << \" | | \" << endl ; cout << \" \" << square [ 4 ] << \" | \" << square [ 5 ] << \" | \" << square [ 6 ] << endl ; cout << \"_____|_____|_____\" << endl ; cout << \" | | \" << endl ; cout << \" \" << square [ 7 ] << \" | \" << square [ 8 ] << \" | \" << square [ 9 ] << endl ; cout << \" | | \" << endl << endl ; }"
+    },
+    {
+      "title": "Paste the code into your Notepad document.",
+      "content": "Paste the code into your Notepad document. Click back over to your blank Notepad document. Right-click near the top and click Paste ."
+    },
+    {
+      "title": "Save the Notepad document as a C++ file.",
+      "content": "Save the Notepad document as a C++ file. Use the following steps to save the document as a C++ file: Click File in the menu bar at the top. Click Save as . Click the drop-down menu next to \"Save as type\". Select All files (*.*) . Type a name for the file next to \"File name\" (i.e. TicTacToe). Add \".cpp\" to the end of the file name (.i.e. TicTacToe.cpp). Click Save ."
+    },
+    {
+      "title": "Open the Developer Command Prompt for Visual Studio.",
+      "content": "Open the Developer Command Prompt for Visual Studio. You can use the Developer Command Prompt for Visual Studio to compile a C++ program and then launch it. Use the following steps to open the Developer Command Prompt for Visual Studio: Click the Windows Start menu. Click the Visual Studio 2019 folder. Click Developer Command Prompt for VS 2019"
+    },
+    {
+      "title": "Change the directory to the path of your C++ file.",
+      "content": "Change the directory to the path of your C++ file. If the file is on another drive, first type the drive letter followed by a colon (i.e. \"D:\") and press Enter. Then use the following steps to change the directory to the path of the C++ file you just saved: Type cd in the Developer Command Prompt. Type the path of the file (i.e. \"C:\\Users\\Username\\Documents\"). Press Enter ."
+    },
+    {
+      "title": "Type cl /EHsc followed by the file name of the C++ file.",
+      "content": "Type cl /EHsc followed by the file name of the C++ file. For example, if the C++ file is called \"tictactoe.cpp\", you would type \"cl /EHsc tictactoe.cpp\". This is the command to compile the C++ file. [4] X Research source"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will compile the file. When it is finished, it will create a new executable (.exe) file with the same file name as your C++ file."
+    },
+    {
+      "title": "Type the name of the executable file and press ↵ Enter.",
+      "content": "Type the name of the executable file and press ↵ Enter . This will launch the game in the Developer Command Prompt. This is a TicTacToe game for two players. During each player's turn, they will press a number that corrosponds to the numbered squares on the TicTacToe board. This will mark the board with an \"X\" or an \"O\". The first player to get three-in-a-row wins."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Check-Transaction-Log-Size-in-a-SQL-Server",
+  "title": "How to Check Transaction Log Size in a SQL Server",
+  "steps": [
+    {
+      "title": "Log into the SQL Server Management Studio.",
+      "content": "Log into the SQL Server Management Studio. You can check the transaction log usage locally on the server or when connected remotely."
+    },
+    {
+      "title": "Select the database in the Object Explorer.",
+      "content": "Select the database in the Object Explorer. It’s in the left panel."
+    },
+    {
+      "title": "Click New Query.",
+      "content": "Click New Query . It’s in the toolbar at the top of the window."
+    },
+    {
+      "title": "Find the size of the transaction log.",
+      "content": "Find the size of the transaction log. To view the actual size of the log, as well as the maximum size it can take up in the database, type this query and then click Execute in the toolbar: [1] X Research source < USE nameofdatabase ; GO SELECT file_id , name , type_desc , physical_name , size , max_size FROM sys . database_files ; GO >"
+    },
+    {
+      "title": "Find the amount of log space in use.",
+      "content": "Find the amount of log space in use. To check how much log space is currently in use, type this query and then click Execute in the toolbar: [2] X Research source < USE nameofdatabase ; GO SELECT ( total_log_size_in_bytes - used_log_space_in_bytes ) * 1 . 0 / 1024 / 1024 AS [ free log space in MB ] FROM sys . dm_db_log_space_usage ; >"
+    }
+  ]
+}

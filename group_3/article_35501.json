@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Recover-Lost-Skype-Contacts",
+  "title": "How to Recover Lost Skype Contacts",
+  "steps": [
+    {
+      "title": "Check to make sure the data from your old account still exists on your computer.",
+      "content": "Check to make sure the data from your old account still exists on your computer. Even if you’re unable to get into the Skype account with all of your old contacts, you may still have the data for that account on your computer. If you do, you can actually get a program to read the database tables and help you find the account names of your old friends."
+    },
+    {
+      "title": "Search for the Skype location.",
+      "content": "Search for the Skype location. This works for Skype for Windows Desktop or Skype on Mac OSX. Search Windows for: %appdata%. If you’re on OSX, the default path will be: ~/Library/Preferences/Skype/"
+    },
+    {
+      "title": "Search through the folders available and find Skype.",
+      "content": "Search through the folders available and find Skype. In the Skype folder, you should see folders named after all the accounts that have ever logged into Skype on your computer."
+    },
+    {
+      "title": "Double-click the account that you want to harvest contacts from.",
+      "content": "Double-click the account that you want to harvest contacts from. There will be a folder for each account that has signed into Skype. Find your account folder and open it."
+    },
+    {
+      "title": "Find the “main.db” file.",
+      "content": "Find the “main.db” file. Once you’ve opened the account folder, find the file “main.db” (Main Database file) in the selected account folder. If you have this file, then this method will work for you. Keep note of where this file is OR copy and paste it where you can locate it easily. A good place would be your desktop. If you don’t have the Main.DB file because it has been deleted after formatting your hard drive for example, then this method won’t work unfortunately. Check every computer that you’ve used to log into Skype if you don’t have it on your computer. Find it and email it to yourself, so that you can access the file on your computer."
+    },
+    {
+      "title": "Download and install SQLite.",
+      "content": "Download and install SQLite. SQLite is free software that will read the database for you and allow you to see all of your old accounts information including contacts. Download the program from sqlitebrowser.org. You will have several options going down the right side of different versions of the application, be sure to choose the right one (Windows 32-bit/64-bit or Mac Standard). When you click the “Download” button, your download will begin immediately. After it is done, run the file and follow the wizard until the installation is complete."
+    },
+    {
+      "title": "Launch the program.",
+      "content": "Launch the program. Once SQLite has been installed, double-click its icon on the desktop or in your Programs menu list to open it."
+    },
+    {
+      "title": "Load the database with SQLite.",
+      "content": "Load the database with SQLite. You’re going to open the “main.db” file using SQLite. Once you’ve opened the software, you will see the “Open Database” button. Click it and find the “main.db” file. Once you’ve opened it, you can see all the information contained within the database file clearly."
+    },
+    {
+      "title": "Browse through the database tables.",
+      "content": "Browse through the database tables. There should be about 20 tables or so. Find the table called “Contacts” and right-click it, then select “Browse Table.” The next window you will see contains all your contact information. Under “skypename,” you will find all of the user accounts from your friends list."
+    },
+    {
+      "title": "Launch Skype messenger and log in.",
+      "content": "Launch Skype messenger and log in. By now you’ve probably set up a new Skype account. Log into Skype using this new account."
+    },
+    {
+      "title": "Start adding contacts to your new Skype.",
+      "content": "Start adding contacts to your new Skype. You can now begin using the “skypenames” contained in the database table to refill your contact list. Right under your name at the top left of your Skype window is a search field (it’s represented by a magnifying glass). Simply type in the usernames here and add all of your contacts back. One important tip: Make sure that when you add people back, you use the comment window to say who you are and explain the situation. Tell them that you’ve changed accounts and ask them to kindly accept you to their contact list."
+    },
+    {
+      "title": "Make sure you’re logging into the correct account.",
+      "content": "Make sure you’re logging into the correct account. This might seem self-explanatory, but double-check that you’re actually on the right account first."
+    },
+    {
+      "title": "Use the Skype directory to add people back if possible.",
+      "content": "Use the Skype directory to add people back if possible. Depending on how many Skype contacts you have, you might be able to search for their names and find them all. Once logged in, at the top left of the window under your name, you’ll find a search bar. Search for their username or their full name if you have that information. Then start adding your contacts back this way."
+    },
+    {
+      "title": "Contact Skype support and get your contact list returned to you.",
+      "content": "Contact Skype support and get your contact list returned to you. If all else fails, you can contact Skype support and ask them to give you a contact list file. They save this information for up to 90 days for you. Go to Skype support: support.skype.com/support_selection Log in using your credentials. Once logged in, choose the topic: “Account and Password” and then choose the related problem: “Contact List.” Follow the wizard and wait to speak to a Skype tech support agent. When you’ve a tech support on the line, explain the problem to them and they should be able to give you a contact list file."
+    },
+    {
+      "title": "Apply the contact list file to your account.",
+      "content": "Apply the contact list file to your account. You can take the file that you’ve received from Skype support and add it to your account. This is called a “backup” of your contact list. It is highly recommended that you create a backup list often through Skype. Especially anytime you add several new contacts. Open Skype and go to “Contacts.” Go to “Advanced” and then to “Restore Contacts from File.” From the file explorer that appears, select the file the tech support gave you, and you’re done."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Edit-APK-Files",
+  "title": "How to Edit APK Files",
+  "steps": [
+    {
+      "title": "Install Java Development kit",
+      "content": "Install Java Development kit . It is available for download at https://www.oracle.com/java/technologies/downloads/ ."
+    },
+    {
+      "title": "Install Android SDK.",
+      "content": "Install Android SDK. You also need to install Android Software Development Kit (SDK) to decompile and recompile APK files. The easiest way to install Android SDK is to download and install Android Studio from here ."
+    },
+    {
+      "title": "Create a new folder on your desktop.",
+      "content": "Create a new folder on your desktop. This is the folder you will save the APKTool and your APK files to. Use the following steps to create a new folder: [2] X Research source Right-click a black space on your desktop. Select New and then Folder."
+    },
+    {
+      "title": "Rename the folder \"APK\".",
+      "content": "Rename the folder \"APK\". To rename a folder, right-click on the folder and click Rename . Then type APK to rename the folder."
+    },
+    {
+      "title": "Right-click this link and click Save link as.",
+      "content": "Right-click this link and click Save link as . This opens a file browser you can use to select a place to save the apktool.bat file to."
+    },
+    {
+      "title": "Navigate to the APK folder and click Save.",
+      "content": "Navigate to the APK folder and click Save . Use the file browser to navigate to the APK folder you just created on your desktop. Open the folder and click Save . This saves the apktool.bat file to the APK folder."
+    },
+    {
+      "title": "Download the \"apktool.jar\" file.",
+      "content": "Download the \"apktool.jar\" file. Use the following steps to download apktool.jar: Go to https://ibotpeaches.github.io/Apktool/ in a web browser. Click Download below the latest version under \"News\"."
+    },
+    {
+      "title": "Rename the file \"apktool.jar\".",
+      "content": "Rename the file \"apktool.jar\". The file you download likely has the version number in the file name. You can remove that by right-click the file and clicking Rename . Then simply type apktool as the file name. The full file name should be \"apktool.jar\". By default, your downloaded files can be found in your \"Downloads\" folder."
+    },
+    {
+      "title": "Copy apktool.jar to the APK folder.",
+      "content": "Copy apktool.jar to the APK folder. After you finished renaming the file, right-click it and click Copy or Cut . Then open the APK folder you created on your desktop and right-click inside. Click Paste . This will paste the \"apktool.jar\" file inside the APK folder."
+    },
+    {
+      "title": "Copy the APK file to your APK folder.",
+      "content": "Copy the APK file to your APK folder. APK files are available to download from various websites. You can also retrieve an APK from your Android device by connecting it to your computer using a charging cable and unlocking the device. Navigate to the Downloads folder on the device and copy and paste an APK file into the APK folder on your Windows Desktop."
+    },
+    {
+      "title": "Open the Windows search bar and type cmd.",
+      "content": "Open the Windows search bar and type cmd . The search bar is usually located to the right of the Start menu."
+    },
+    {
+      "title": "Command Prompt",
+      "content": "Command Prompt in the search results. It has an icon that resembles a black screen with a white cursor on it."
+    },
+    {
+      "title": "Navigate to the APK folder at the command prompt.",
+      "content": "Navigate to the APK folder at the command prompt. You can open a folder inside of the command prompt by typing cd followed by the name of the folder. For example, if you are in the default \"C:\\Users\\Username>\" when you open the command prompt, you can open your desktop by typing cd desktop . If you copied the APK folder to your desktop, you could then open the APK folder by typing cd apk . It should say \"C:\\users\\username\\desktop\\apk>\" next to the prompt. [3] X Research source If your APK folder is saved to another location, type cd \\ next to the command prompt to return to the root \"C:\" drive. Then type cd followed by the full path of the APK folder."
+    },
+    {
+      "title": "Type apktool if followed by the APK file name.",
+      "content": "Type apktool if followed by the APK file name. This installs the framework for the app. For example, if the name of your APK file is \"my-first-game.apk\" you would type apk if my-first-game.apk in the command prompt."
+    },
+    {
+      "title": "Type apktool d followed by the APK filename.",
+      "content": "Type apktool d followed by the APK filename. This de-compiles the APK file. The contents of the APK file will be placed in a separate folder of the same name as the APK file in the APK folder. You can now edit the decompiled APK files. You may need some coding skills to edit certain files within the folder. Following the same example above, you would type apktool d my-first-game.apk in the command prompt."
+    },
+    {
+      "title": "Open the Windows search bar and type cmd.",
+      "content": "Open the Windows search bar and type cmd . The search bar is usually located to the right of the Start menu. After you finish editing the files within the APK file folder, you will need to recompile the folder back into an APK file."
+    },
+    {
+      "title": "Command Prompt",
+      "content": "Command Prompt in the search results. It has an icon that resembles a black screen with a white cursor on it."
+    },
+    {
+      "title": "Navigate to the APK folder at the command prompt.",
+      "content": "Navigate to the APK folder at the command prompt. You can open a folder inside of the command prompt by typing cd followed by the name of the folder. For example, if you are in the default \"C:\\Users\\Username>\" when you open the command prompt, you can open your desktop by typing cd desktop . If you copied the APK folder to your desktop, you could then open the APK folder by typing cd apk . It should say \"C:\\users\\username\\desktop\\apk>\" next to the prompt. If your APK folder is saved to another location, type cd\\ next to the command prompt to return to the root \"C:\" drive. Then type cd followed by the full path of the APK folder."
+    },
+    {
+      "title": "Type apktool b followed by the folder name of the APK you want to recompile.",
+      "content": "Type apktool b followed by the folder name of the APK you want to recompile. This re-compiles the folder into an APK file. The newly compiled APK file can be found in the \"dist\" folder inside the decompiled APK folder that Apktool created. [4] X Research source For example, if the app you are working on is called \"my-first-game.apk\", you would type apktool b my-first-game.apk in the command prompt."
+    },
+    {
+      "title": "Create a new folder called \"Signapk\" on your desktop.",
+      "content": "Create a new folder called \"Signapk\" on your desktop. To create a new folder on your desktop, right-click anywhere on your desktop and click New . Then click Folder . Right-click the new folder and click Rename . Then type \"Signapk\" as the new folder name."
+    },
+    {
+      "title": "Copy the newly compiled APK into the \"Signapk\" folder.",
+      "content": "Copy the newly compiled APK into the \"Signapk\" folder. The newly compiled APK can be found in the \"dist\" folder of the uncompiled APK folder in \"Apktool\" folder. Right-click the APK and click Copy . Then, navigate back to the \"Signapk\" folder and paste the APK file inside the folder."
+    },
+    {
+      "title": "Click here to download SignApk.zip.",
+      "content": "Click here to download SignApk.zip. This downloads the SignApk file that is needed to sign an apk file."
+    },
+    {
+      "title": "Extract the contents of SignApk.zip into the Signapk folder.",
+      "content": "Extract the contents of SignApk.zip into the Signapk folder. This extracts the \"certificate.pem\" file, the \"key.pk8\" file, and the \"signapk.jar\" into the \"Signapk\" folder."
+    },
+    {
+      "title": "Navigate to the \"Signapk\" folder in the command prompt.",
+      "content": "Navigate to the \"Signapk\" folder in the command prompt. To navigate to the Signapk folder in the command prompt, type cd \\ to return to the root directory. Then type cd followed by the full path of the Signapk folder directory. If you created the Signapk folder on your desktop, the full path is most likely \"C:\\users\\username\\desktop\\Signapk>\""
+    },
+    {
+      "title": "Type java -jar signapk.jar certificate.pem key.pk8 [apkfilename].apk [apkfilename]-signed.apk in the command prompt.",
+      "content": "Type java -jar signapk.jar certificate.pem key.pk8 [apkfilename].apk [apkfilename]-signed.apk in the command prompt. Replace \"[apkfilename]\" with the actual name of the apk file you want to sign. This creates a new signed APK file in the Signapk folder. Use this file to install the software on your Android system. [5] X Research source For example, if the app you are working on is called \"my-first-game.apk\", you would type ava -jar signapk.jar certificate.pem key.pk8 my-first-game.apk my-first-game-signed.apk in the command prompt."
+    }
+  ]
+}

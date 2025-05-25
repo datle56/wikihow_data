@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Compare-Two-Sheets-in-Google-Sheets",
+  "title": "How to Compare Two Sheets in Google Sheets",
+  "steps": [
+    {
+      "title": "Set up your two tabs in Google Sheets first.",
+      "content": "Set up your two tabs in Google Sheets first. This method will help you compare two tabs within the same Google Sheets file, so you'll need both tabs set up and ready. In other words, if you have two theoretically identical spreadsheets you want to compare to find any differences, put one in each tab. By default, these tabs will be named \"Sheet1\" and \"Sheet2,\" but you can customize the names if you'd like."
+    },
+    {
+      "title": "Create a third sheet/tab for your comparison.",
+      "content": "Create a third sheet/tab for your comparison. Click the \"+\" sign at the lower left corner to add this sheet."
+    },
+    {
+      "title": "Find cell A1 on the new comparison tab.",
+      "content": "Find cell A1 on the new comparison tab. Enter the formula =IF(Sheet1!A1<> Sheet2!A1, Sheet1!A1&\" | \"&Sheet2!A1, \"\") If you've changed your sheets so they're not called Sheet1 and Sheet2, adjust the names as needed. For example, if your first sheet is called \"Original Data\" and the second is called \"New Data,\" your formula would be =IF('Original Data'!A1<> 'New Data'!A1, 'Original Data'!A1&\" | \"&'New Data'!A1, \"\") [1] X Research source"
+    },
+    {
+      "title": "Paste this formula to every relevant cell of the comparison sheet.",
+      "content": "Paste this formula to every relevant cell of the comparison sheet. Use Ctrl + C to copy the formula, highlight all of the cells of the comparison sheet (to match the number of rows and columns used by your original two sheets), and paste using Ctrl + V ."
+    },
+    {
+      "title": "Review the results.",
+      "content": "Review the results. The comparison spreadsheet will show you where any mismatches exist between the two sheets. Where the values are different, the comparison sheet will show both versions, separated by the pipe symbol (\"|\"). If you don't see any text in the comparison sheet at all, it means the two sheets are identical. Only differences will show up."
+    }
+  ]
+}

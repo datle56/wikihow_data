@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Permutations",
+  "title": "How to Compute Permutations: A Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Start with an example problem where you'll need a number of permutations without repetition.",
+      "content": "Start with an example problem where you'll need a number of permutations without repetition. This kind of problem refers to a situation where order matters, but repetition is not allowed; once one of the options has been used once, it can't be used again (so your options are reduced each time). [3] X Research source For instance, you might be selecting 3 representatives for student government for 3 different positions from a set of 10 students. No student can be used in more than one position (no repetition), but the order still matters, since the student government positions are not interchangeable (a permutation where the first student is President is different from a permutation where they're Vice President). This kind of problem is often labeled as n P r {\\displaystyle {}_{n}P_{r}} or P ( n , r ) {\\displaystyle P(n,r)} , where n {\\displaystyle n} is the number of total options you have to choose from and r {\\displaystyle r} is how many items you need to choose."
+    },
+    {
+      "title": "Know the formula:",
+      "content": "Know the formula: n P r = n ! ( n − r ) ! {\\displaystyle {}_{n}P_{r}={\\frac {n!}{(n-r)!}}} . In the formula, n {\\displaystyle n} is the number of total options you have to choose from and r {\\displaystyle r} is how many items you need to choose, where order matters and repetition is not allowed. In this example, n {\\displaystyle n} would be the total number of students, so n {\\displaystyle n} would be 10, and r {\\displaystyle r} would be the number of people chosen, so r {\\displaystyle r} would be 3."
+    },
+    {
+      "title": "Plug your numbers in for n {\\displaystyle n} and r {\\displaystyle r} .",
+      "content": "Plug your numbers in for n {\\displaystyle n} and r {\\displaystyle r} . In this case you'd have 10 P 3 = 10 ! ( 10 − 3 ) ! {\\displaystyle {}_{10}P_{3}={\\frac {10!}{(10-3)!}}} ."
+    },
+    {
+      "title": "Solve the equation to find the number of permutations.",
+      "content": "Solve the equation to find the number of permutations. If you have a calculator handy, find the factorial setting and use that to calculate the number of permutations. If you're using Google Calculator, click on the x! button each time after entering the necessary digits. If you have to solve by hand, remember that, for each factorial , you start with the main number given and then multiply it by the next smallest number, and so on until you get down to 0. For example, you would calculate 10! by doing (10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1), which gives you 3,628,800 as a result. 7! would be (7 * 6 * 5 * 4 * 3 * 2 * 1), which would equal 5,040. You'd then calculate 3,628,800/5,040. In the example, you should get 720. That number means that, if you're picking from 10 different students for 3 student government positions, where order matters and there is no repetition, there are 720 possibilities."
+    },
+    {
+      "title": "Start with an example problem where you'll need a number of permutations where repetition is allowed.",
+      "content": "Start with an example problem where you'll need a number of permutations where repetition is allowed. For example, if you have 10 digits to choose from for a combination lock with 6 numbers to enter, and you're allowed to repeat all the digits, you're looking to find the number of permutations with repetition. A permutation with repetition of n chosen elements is also known as an \" n -tuple\". [4] X Research source"
+    },
+    {
+      "title": "Know the formula:",
+      "content": "Know the formula: n r {\\displaystyle n^{r}} . In this formula, n is the number of items you have to choose from, and r is how many items you need to choose, in a situation where repetition is allowed and order matters. [5] X Research source [6] X Research source In the example, n {\\displaystyle n} is 10 {\\displaystyle 10} , and r {\\displaystyle r} is 6 {\\displaystyle 6} ."
+    },
+    {
+      "title": "Plug in n {\\displaystyle n} and r {\\displaystyle r} .",
+      "content": "Plug in n {\\displaystyle n} and r {\\displaystyle r} . In the example, you'll get the equation 10 6 {\\displaystyle 10^{6}} ."
+    },
+    {
+      "title": "Solve for the number of permutations.",
+      "content": "Solve for the number of permutations. If you have a calculator handy, this part is easy: Just hit 10 and then the exponent key (often marked x y or ^ ), and then hit 6 . In the example, your answer would be 10 6 = 1 , 000 , 000 {\\displaystyle 10^{6}=1,000,000} . This means that, if you have a lock that requires the person to enter 6 different digits from a choice of 10 digits, and repetition is okay but order matters, there are 1,000,000 possible permutations."
+    }
+  ]
+}

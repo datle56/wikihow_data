@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Remove-RAR-Password-Using-Cmd",
+  "title": "How to Remove a RAR/WinRAR Password Using CMD",
+  "steps": [
+    {
+      "title": "Download cRARk for Windows.",
+      "content": "Download cRARk for Windows. You can grab the latest version from http://www.crark.net/#download . cRARk is a command line program that can crack RAR passwords using brute force. As long as the password is fewer than 6 characters long, you have a chance of cracking it with cRARk. [2] X Research source If you are trying to crack a password that's more than 6 characters and you have no information about the password, it's impossible to crack due to the incredibly strong encryption of RAR files. If you know a few characters in the password, you can crack passwords with cRARk up to 28 characters long. Knowing some facts about the password will really cut down on the time it takes to find it with brute force. cRARk supports GPU password recovery using CUDA and OpenCL technologies and works with NVIDIA and AMD GPUs. If you don't have a high-end GPU, finding the password will take much longer."
+    },
+    {
+      "title": "Extract the files from the RAR package.",
+      "content": "Extract the files from the RAR package. You'll need WinRAR or your preferred RAR program to do this. Just right-click the file and select Extract here to unpack the files inside."
+    },
+    {
+      "title": "Rename one of the language definition files to password.def.",
+      "content": "Rename one of the language definition files to password.def . In the extracted folder, you'll see a bunch of files that end with .def for different languages. Just right-click your language, select Rename , type password.def , and then press Enter . If you're using Windows Vista or Windows 7 and have an NVIDIA GPU, such as a GeForce, you'll also need to run the file called driver-timeout.reg in the extracted folder. [3] X Research source After running the file, reboot your computer. Since this will disable certain functions of your video card, we'll show you how to undo this action when you're finished cracking the password."
+    },
+    {
+      "title": "Open password.def in Notepad.",
+      "content": "Open password.def in Notepad. To do this, just right-click the file, select Open with , and then choose Notepad ."
+    },
+    {
+      "title": "Edit the password definition file.",
+      "content": "Edit the password definition file. Now you'll need to make some changes to the file below the two hash symbols ## so cRARk knows the rules for finding the password. Only make changes to the section below those hash marks. All lines that begin with one hash # are comments—you'll see that the only uncommented line is the one that says $a * . This means that cRARk will try to brute-force the password using only lower-case letters. Several other examples appear in the file, including the option to search for passwords that only contain numbers, or combinations of both. To use any of these other options, delete the hash symbol from the beginning of its line to uncomment it. The last two options are for if you know part of the password. For example, if you know that the password begins with certain characters and ends with a 4-digit number, you can uncomment the line MyPass $1 $1 $1 $1 and modify it so it fits your criteria. To learn more about different options for the password definition file, see http://www.crark.net/cRARk.html#41 ."
+    },
+    {
+      "title": "Save your changes.",
+      "content": "Save your changes. Just click the File menu and select Save when you're finished editing to save your new password rules."
+    },
+    {
+      "title": "Move the RAR file you want to crack into the cRARk folder.",
+      "content": "Move the RAR file you want to crack into the cRARk folder. This is just so you won't have to type long complicated paths at the command prompt. Drag the file right into the extracted folder to move it."
+    },
+    {
+      "title": "Open the command prompt to the extracted cRARk folder.",
+      "content": "Open the command prompt to the extracted cRARk folder. Here's how: First, copy the full path to the extracted folder at the top of the File Explorer window. To do so, highlight the full path and press Control + C to copy it. In the Windows Search bar, type cmd , and then click Command prompt in the search results. Type cd and press the Spacebar . Press Command + V to paste the copied URL and press Enter ."
+    },
+    {
+      "title": "Type crark yourarchivename.rar and press ↵ Enter to crack the password.",
+      "content": "Type crark yourarchivename.rar and press ↵ Enter to crack the password. Replace yourarchivename.rar with the name of the RAR file you want to crack. This will start the process of cracking the password using the definitions you specified. Once the password is cracked, you'll see the password followed by CRC OK . [4] X Research source A short simple password may only take a few minutes to crack, while more complicated passwords could take days, weeks, months, or longer. If you want to stop the process, you can press Control + C at the prompt. If that doesn't stop the cracking, just close the command prompt window. If you're using Windows 7 or Vista and ran the driver-timeout.reg file, you'll want to undo the action when you're finished with the tool. Right-click the file, select Open with > Notepad , change dword:00000000 to dword:00000001 , and save the file. Then, double-click the file to run it again, and reboot your PC."
+    }
+  ]
+}

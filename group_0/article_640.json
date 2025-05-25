@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Add-New-Options-to-Right-Click-Menu-in-Windows",
+  "title": "How to Add New Options to the Context Menu: Windows 10 & 11",
+  "steps": [
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. Press Windows key + R to open Run, type regedit into the box, and then press Enter to open Regedit . [1] X Research source"
+    },
+    {
+      "title": "Navigate to the \"ContextMenuHandlers\" folder.",
+      "content": "Navigate to the \"ContextMenuHandlers\" folder. This folder contains all of the applications, shortcuts, and other options that are present in your right-click context menu. There are different \"ContextMenuHandlers\" folders present in the registry, and you'll want to select the one that meets your needs: [2] X Research source If you wish to add options to the right-click menu for files, navigate to HKEY_CLASSES_ROOT\\*\\shellex\\ContextMenuHandlers\\ . If you wish to add options to the right-click menu for folders, navigate to HKEY_CLASSES_ROOT\\Folder\\shellex\\ContextMenuHandlers\\ . If you wish to add options to the right-click menu for the desktop, navigate to HKEY_CLASSES_ROOT\\Directory\\Background\\shellex\\ContextMenuHandlers ."
+    },
+    {
+      "title": "Add a key to the ContextMenuHandlers folder.",
+      "content": "Add a key to the ContextMenuHandlers folder. Right-click on the ContextMenuHandlers folder, move the cursor over to \"New,\" and click on \"Key.\" A sub-key will be created under the default name of \"New Key #1.\" Rename the new key to the name of the application or pathway you wish to add to the right-click context menu. For instance, if you wish to add a shortcut to the Command Prompt in the right-click menu, enter the name of the sub-key as \"Command Prompt.\" You can name the sub-key however you want; it does not affect the application or the process."
+    },
+    {
+      "title": "Change the Default Value of the sub-key.",
+      "content": "Change the Default Value of the sub-key. To change the value of the sub-key, double-click on the \"Default\" value inside the sub-key that you have created. In order for the computer to recognize the application, you must add the path to the executable (.exe) file of the application to the Default value. To find the path of a file or folder, right-click on the address bar of the window in which the file or folder is located. Left-click on \"Copy address\" and paste it into Notepad to view the address. You can also directly paste the pathway as the Default Value of the key. Make sure that you add the path of the file, application, or folder correctly into the value of the Default key. For instance, if you are adding Command Prompt to your right-click menu, enter the path \"C:\\Windows\\system32\\cmd.exe\" as the value of the Default key. Make sure you do not interfere with or edit the values of any other keys besides ContextMenuhandlers. Editing or deleting the wrong folders or keys could corrupt the operating system."
+    },
+    {
+      "title": "Check the new right-click options.",
+      "content": "Check the new right-click options. Go to your desktop (or a folder or file if that's the registry value you changed) and right-click to view and confirm that the new option has been added to the right-click context menu."
+    },
+    {
+      "title": "Revert to the old context menu (optional).",
+      "content": "Revert to the old context menu (optional). When adding items to the right-click menu, you will only be able to see them after clicking Show more options due to how Microsoft changed the context menu with the Windows 11 update. However, you can revert to the old context menu if you like to avoid this limitation: Type \"Command Prompt\" in the taskbar search box, then right-click Command Prompt and choose Run as administrator . Copy and paste the following command into the Command Prompt interface: reg add \"HKCU\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32\" /f /ve Press ↵ Enter . Restart your computer to implement the change."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. Press Windows key + R to open Run, type regedit into the box, and then press Enter to do so."
+    },
+    {
+      "title": "Navigate to HKEY_CLASSES_ROOT\\Directory\\Background\\shell.",
+      "content": "Navigate to HKEY_CLASSES_ROOT\\Directory\\Background\\shell . Copy and paste HKEY_CLASSES_ROOT\\Directory\\Background\\shell into the address bar at the top of the Registry Editor screen. [3] X Research source"
+    },
+    {
+      "title": "Right-click in the right panel and choose New > Key.",
+      "content": "Right-click in the right panel and choose New > Key . The Key option is the first option on the New list. [4] X Research source"
+    },
+    {
+      "title": "Name the key folder the program you want to add.",
+      "content": "Name the key folder the program you want to add. For example, if you wanted to add Notepad to the right-click menu, the folder would be named Notepad' . In Windows 11, you can only add programs to the right-click menu. You cannot add files or folders."
+    },
+    {
+      "title": "Double-click the (Default) item.",
+      "content": "Double-click the (Default) item. It's in the right-hand pane. Ensure that the Notebook folder is selected in the left-hand pane."
+    },
+    {
+      "title": "Add value data.",
+      "content": "Add value data. The value data should be a & sign followed by the name of the program. In the example, if you're adding Notepad to the right-click menu, you'd write &Notepad . Click OK to confirm the change."
+    },
+    {
+      "title": "Right-click in the right panel and choose New > Key.",
+      "content": "Right-click in the right panel and choose New > Key . Ensure you're still in the folder that's named after the program you want to add."
+    },
+    {
+      "title": "Name the new key Command.",
+      "content": "Name the new key Command . A folder named Command will appear under the folder that's named after the program (which is Notepad in our example)."
+    },
+    {
+      "title": "Double-click the (Default) item.",
+      "content": "Double-click the (Default) item. It's in the right-hand pane. Ensure that the Command folder is selected in the left-hand pane."
+    },
+    {
+      "title": "Add value data.",
+      "content": "Add value data. The value data should be the executable name of the program you want to add. [5] X Research source In the example, you would input Notepad.exe to add Notepad to the right-click menu. Click OK to confirm the change. If you're not sure what the executable name of the program that you're adding is, you can find it by searching for the program in your Program Files or Program Files (x86) folder."
+    },
+    {
+      "title": "Right-click on the desktop to view the context menu.",
+      "content": "Right-click on the desktop to view the context menu. If you didn't change your right-click menu to the old style, you will be able to see the item you added to the context menu after clicking Show more options . [6] X Research source"
+    },
+    {
+      "title": "Download and install Open++.",
+      "content": "Download and install Open++. Open++ is a third-party software that makes the process of adding options to the right-click menu easier and quicker. [7] X Research source Download the Open++ freeware application from any trusted website and follow the installation instructions. Read each installation screen to ensure that you aren't installing additional software. This is especially important if you are downloading Open++ from a location like Download.com or Tucows.com."
+    },
+    {
+      "title": "Access the Open++ application.",
+      "content": "Access the Open++ application. The Open++ software offers a simple layout and a window that displays all of the \"Commands\" that are currently present in the right-click menu. You can scroll down the window to see all of the commands that are present in the right-click menu for files, folders, and the desktop as well."
+    },
+    {
+      "title": "Click on \"Add\" and enter the details of the command.",
+      "content": "Click on \"Add\" and enter the details of the command. There will be a number of commands that are already present in the Open++ \"Commands\" window. Click the \"Add\" button on the right side of the window, and click on \"Command\" to add new commands to the Open++ context menu."
+    },
+    {
+      "title": "Add the new command to Open++.",
+      "content": "Add the new command to Open++. A new icon will appear in the \"Commands\" window, under the default name of \"New Command.\" In order to change the name of the command, type the new name inside the \"Title\" field. If you wish to use the command to open a particular program on the computer, use the \"Program\" field to locate the .exe file of the program. You can also choose the icon for the command by using the \"Icon\" option. You can also associate the command with particular file types by entering their format in the \"File types\" field. Once you have added the details of the command you wish to add to Open++, click \"Apply\" to save your choices."
+    },
+    {
+      "title": "Access the Open++ right-click menu extension.",
+      "content": "Access the Open++ right-click menu extension. The preset commands and the commands you have added to Open++ will be displayed in the right-click context menu. When you right-click, select the \"Open++\" option to expand an additional menu with your Open++ commands."
+    }
+  ]
+}

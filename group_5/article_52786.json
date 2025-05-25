@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Syntax-Tree",
+  "title": "How to Create a Syntax Tree",
+  "steps": [
+    {
+      "title": "Decide on your medium.",
+      "content": "Decide on your medium. There are several ways to create a syntax tree, from various types of software to even just pen and paper. While there are advantages and disadvantages to either side, the more important thing is picking whichever you are more comfortable using."
+    },
+    {
+      "title": "Write out and analyze your sentence.",
+      "content": "Write out and analyze your sentence. On a separate piece of paper, write out the sentence you will be creating a syntax tree of. This will be used as a reference throughout the project. After you have it written down, look over and analyze it. Identify any noun phrases, verbs, and prepositional or adverbial phrases in the sentence."
+    },
+    {
+      "title": "Determine which features will be checked, if any.",
+      "content": "Determine which features will be checked, if any. There are far too many possible features to check than is practical, so most trees instead focus on whatever features are most relevant to what the tree maker is trying to examine. By ignoring features that are irrelevant, you can save time and effort doing something that you don't need to do."
+    },
+    {
+      "title": "Identify the verb phrase.",
+      "content": "Identify the verb phrase. Begin by identifying which part of the sentence contains the main verb. This will be the starting point from which you can work your way up the tree. The verb phrase essentially serves as the core action of the sentence, and it usually done by the subject."
+    },
+    {
+      "title": "Construct the VP verb phrase.",
+      "content": "Construct the VP verb phrase. This will contain the verb and its object, but not the subject. Begin by creating a node labeled VP . Create two child nodes beneath it labeled V and DP . The V node will contain the verb, while the DP node will contain the object. Create two child nodes of the DP labeled D and NP . This DP is called a \"determiner phrase\", and consists of a determiner (e.g. \"the\", \"a\", \"that\" or \"this\") and a following noun phrase. The determiner will be placed under D , and the noun phrase under NP . If the noun phrase is a name, the D node should still be placed on the tree. However, its contents should be treated as null."
+    },
+    {
+      "title": "Begin to build up the vP verb phrase.",
+      "content": "Begin to build up the vP verb phrase. This is distinct from the capital VP verb phrase and when complete it will contain the verb and as its subject and objects, as well as most prepositional or adverbial phrases. Begin by creating a new node over the VP labeled v' . Next, draw a child of that new node to the left of the VP and label it v , then perform a move operation from the V node to the new v node."
+    },
+    {
+      "title": "Continue to expand on the vP verb phrase.",
+      "content": "Continue to expand on the vP verb phrase. If there are any prepositional or adverbial phrases to include, this is where they will be added. If there are none, skip this step. Create a new v' node over the one you created last step, and create a new child node labeled PP to the right. Create two children of this new node labeled P to the left and DP to the right. Write down the preposition under P and the fill out the newly-created determiner phrase. Repeat this step as many times as you have prepositional phrases, starting from the highest v' each time."
+    },
+    {
+      "title": "Complete the vP verb phrase.",
+      "content": "Complete the vP verb phrase. After any prepositional phrases have been added to the tree, create a new node over the highest v' and label it vP . Then, as a child of this new vP node, create another DP node structure beneath. This will be the subject of the verb. The vP verb phrase should be complete."
+    },
+    {
+      "title": "Identify any modal or auxiliary verbs.",
+      "content": "Identify any modal or auxiliary verbs. These are verbs that modify the main verb in some way. Common modals include examples such as \"may\", \"can\", \"shall\", and \"will\", or their past tense forms \"might\", \"could\", \"shall\", and \"would\". Auxiliary verbs are used in conjunction with participle forms on affected verbs to construct passive phrases or complex tenses. The past participle of most verbs is identical to their standard past tense, though some verbs instead end with —en : \"froze\" becomes \"froz en \" or \"broke\" becomes \"brok en \". The present participle is formed by suffixing the present tense of a verb with —ing : \"freeze\" becomes \"freez ing \" or \"break\" becomes \"break ing \". The Progressive Phrase pairs the auxiliary verb \"to be\" with the present participle of the modified verb, e.g. \"is jumping\". The Perfective Phrase pairs the auxiliary verb \"to have\" with the past participle of the modified verb, e.g. \"have jumped\". The Passive Phrase pairs the auxiliary verb \"to be\" with the past participle of the modified verb, e.g. \"is jumped\". Multiple auxiliary verbs can be used in the same sentence, and if this occurs then the lower node will be inflected to the participle used by the auxiliary closest above it. The order of priorities from highest to lowest is the Perfective Phrase, followed by the Progressive Phrase, and lastly the Passive Phrase, e.g. \"have been being told\"."
+    },
+    {
+      "title": "Add modals and auxiliary verbs above VP.",
+      "content": "Add modals and auxiliary verbs above VP. Going from the bottom up, begin with the passive phrase, followed by the Progressive, the Perfective, and finally the Modal Phrase. If any of these are not present in your sentence, skip it and move onto the next phrase that is. Beginning with the passive phrase, create a new node above vP and label it PassP . Then, create a new node beneath that and label it Pass . Under the Pass node, enter the word \"be\", inflected as appropriate. Repeat the process for the rest of the auxiliaries, using ProgP and Prog for the Progressive Phrase, PerfP and Perf for the Perfective Phrase, and ModalP and Modal for the Modal Phrase."
+    },
+    {
+      "title": "Add negation.",
+      "content": "Add negation. If your sentence contains negation, add a new node over the highest model or auxiliary node and label it NegP , then create a new child node and label it Neg . Under the new Neg node, write \"not\". If your sentence does not contain negation, skip this step."
+    },
+    {
+      "title": "Begin construction of the Tense Phrase.",
+      "content": "Begin construction of the Tense Phrase. Above either NegP (if present), the highest modal or auxiliary phrase, or vP (if none of the above are present), create a new node and label it T' . Then, create a child of this new node labeled T . This node will contain the tense of the sentence."
+    },
+    {
+      "title": "Perform a move operation to move the highest verb to the T position.",
+      "content": "Perform a move operation to move the highest verb to the T position. If there is no negation, the impact on the sentence may not be immediately visible. However, if the sentence does contain negation, the highest auxiliary or modal will be moved before NegP . If there is negation in the sentence but there are no modals or auxiliaries to move, the closest verb will be the main verb from vP . However, English does allow the vP verb to be moved before NegP . Instead, insert the word \"do\" under the T node in its place."
+    },
+    {
+      "title": "Complete the Tense Phrase.",
+      "content": "Complete the Tense Phrase. Above T' , create a new node labeled TP . Create a new child DP node structure beneath the new TP node. Perform a move operation to move the subject DP from vP to this new DP node. The tree should now be complete, if you picked this kind of simple sentence to graph."
+    }
+  ]
+}

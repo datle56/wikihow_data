@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Check-the-TLS-Version-on-a-Website",
+  "title": "How to Check the TLS Version for a Website & Your Browser",
+  "steps": [
+    {
+      "title": "Scan the website at https://www.ssllabs.com/ssltest.",
+      "content": "Scan the website at https://www.ssllabs.com/ssltest . This free TLS-checking tool scans the website and creates a report containing the TLS version, cipher suites, supported protocols, and more. Just enter the hostname (such as www.facebook.com ) into the \"Hostname\" field and click Submit to get started. [1] X Research source If you're using an ad blocker like uBlock Origin or a privacy extension like Privacy Badger, disable it before starting the scan. If you don’t want the domain you're searching for to appear on SSL Labs’ list of recent queries, check the box next to ″Do not show the results on the boards.″ The scan can take up to 3 minutes. Once the scan is complete, you'll see a letter grade (e.g., A+ or D) appear next to the server's IP address."
+    },
+    {
+      "title": "Click the site's IP address.",
+      "content": "Click the site's IP address. If the website is mapped to more than one server, you'll see the IP address of each server in the results. You can check the TLS version for each server separately."
+    },
+    {
+      "title": "Scroll down to the ″Configuration″ section to find all TLS versions marked ″Yes.",
+      "content": "Scroll down to the ″Configuration″ section to find all TLS versions marked ″Yes. ″ In the \"Protocols\" section under \"Configuration,\" you'll see a list of all TLS versions, and a simple \"Yes\" or \"No\" to indicate which of those versions are supported. All TLS versions labeled ″Yes″ are configured on this website. You'll also find supported SSL versions (if any), cipher suites, other supported protocols, and whether the site is susceptible to known vulnerabilities ."
+    },
+    {
+      "title": "Go to the website in Microsoft Edge.",
+      "content": "Go to the website in Microsoft Edge. While Google Chrome used to make it easy to find the TLS version of any website in Developer Tools, that option is no longer available. Fortunately, this information is still readily available if you're using Microsoft Edge."
+    },
+    {
+      "title": "Right-click the page and select Inspect.",
+      "content": "Right-click the page and select Inspect . If you're using a one-button mouse, Ctrl + click the page instead. This opens the developer view of the page. [2] X Research source"
+    },
+    {
+      "title": "Click the two arrows >> and select Security.",
+      "content": "Click the two arrows >> and select Security . You'll see a menu bar in the right panel with a \"Welcome\" tab on its far left side. To find the Security tab, you'll need to click >> . [3] X Research source"
+    },
+    {
+      "title": "Find the TLS version under \"Connection.\"",
+      "content": "Find the TLS version under \"Connection.\" You'll find the TLS version (e.g., TLS 1.3) and other encryption details here."
+    },
+    {
+      "title": "Go to the website in Firefox.",
+      "content": "Go to the website in Firefox. Unlike most other browsers, Firefox makes it incredibly easy to check the TLS version of any website in just a few clicks."
+    },
+    {
+      "title": "Click the padlock and select Connection secure.",
+      "content": "Click the padlock and select Connection secure . You'll see the padlock icon on the right side of the address bar. [4] X Research source"
+    },
+    {
+      "title": "Click More information.",
+      "content": "Click More information . It'll be below the certificate issuer's name. [5] X Research source"
+    },
+    {
+      "title": "Find the TLS version under \"Technical Details.\"",
+      "content": "Find the TLS version under \"Technical Details.\" This is the bottom section of the Security tab, which opens by default. The TLS version appears next to \"Connection Encrypted,\" along with other details about the website's encryption capabilities."
+    },
+    {
+      "title": "Go to https://browserleaks.com/tls to check your TLS version.",
+      "content": "Go to https://browserleaks.com/tls to check your TLS version. This site will evaluate your current web browser (including Chrome, Safari, and Edge) and report which versions of TLS it supports. Under \"Protocol Support,\" you'll see a list of all TLS versions, from TLS 1.0 to TLS 1.3. Your browser's supported versions are labeled \"Enabled\" with a green checkmark. If you're using a privacy-focused browsing extension or add-on like Privacy Badger, disable it and reload the page. Such extensions can prevent Browser Leaks from identifying your browser's TLS version."
+    }
+  ]
+}

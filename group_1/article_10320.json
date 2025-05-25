@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Could-Not-Find-the-Recovery-Environment",
+  "title": "Easy Ways to Fix the Error \"Could Not Find the Recovery Environment\"",
+  "steps": [
+    {
+      "title": "Open Command Prompt as administrator.",
+      "content": "Open Command Prompt as administrator. You can do this by searching for \" cmd \" in the Start menu, right-clicking it, and selecting Run as administrator."
+    },
+    {
+      "title": "Type the following:",
+      "content": "Type the following: reagentc/ enable . You should see a \"REAGENTC.EXE: Operation Successful\" message. Check if the error is gone; If BitLocker is enabled , it may prevent WinRE from functioning properly. You can disable BitLocker in Command Prompt by entering manage-bde -off <drive letter>: where <drive letter> is replaced with the drive you want to unlock."
+    },
+    {
+      "title": "Press the ⊞ Win key and search create.",
+      "content": "Press the ⊞ Win key and search create . A bunch of associated results will pop up; you're looking for the \"Create a recovery drive\" option."
+    },
+    {
+      "title": "Click the \"Create a recovery drive\" option.",
+      "content": "Click the \"Create a recovery drive\" option. A new window will pop up. Your USB thumb drive should be connected; if not, plug it in now. Your USB should have at least 32GB of space free for the recovery drive. You might not need all the space, but it's better to have more space than not enough! [2] X Research source"
+    },
+    {
+      "title": "Check the box next to \"Back up system files…\" and click Next.",
+      "content": "Check the box next to \"Back up system files…\" and click Next . The recovery drive aims to help you reset your PC even when it can't reset on its own. With a recovery drive, you'll also be able to reinstall Windows."
+    },
+    {
+      "title": "Make sure your USB is selected then click Next.",
+      "content": "Make sure your USB is selected then click Next . If your USB doesn't have enough space, it won't be listed. Some USB sticks aren't the size as advertised; for example, a \"32GB\" stick might show 28.8GB free. Read the instructions and text enclosing the stick carefully to find one that's the right size."
+    },
+    {
+      "title": "Press Create to continue.",
+      "content": "Press Create to continue. This can take some time to finish, so don't rush it! When it does complete, click Finish to continue. Shut down the PC."
+    },
+    {
+      "title": "Start the PC and launch the USB drive.",
+      "content": "Start the PC and launch the USB drive. Depending on your computer, you may be able to press a key to pick the media to start with. If not, you'll need to change your boot order in BIOS , and then restart again. To launch BIOS from the restarting logo, rapidly press the computer's BIOS key. As soon as the computer's startup screen appears (the screen right after the computer shuts down and is beginning to restart), begin pressing the BIOS key. Your computer's BIOS key will vary depending on the manufacturer, but it will usually be one of the function keys (e.g., F2), Esc, or Del. You can check your computer's BIOS key online or in the manual that came with your computer. Many computers will flash a \"Press [key] to enter setup\" (or similar) message at the bottom of the screen as your computer is starting up. This is the key that you should press. If you miss your opportunity and the computer finishes the restart cycle, you'll need to restart it and try again. When BIOS launches, go to the Boot Order section, which you might find in Advanced , and select your USB drive as Boot Option #1 . Most computers have directions for navigating through BIOS on the right side of the screen. Restart the PC again."
+    },
+    {
+      "title": "Select your language settings and click Next.",
+      "content": "Select your language settings and click Next . You'll see this option appear once you successfully boot from the USB drive."
+    },
+    {
+      "title": "Click the \"Install\" option, check the text box, and click Next.",
+      "content": "Click the \"Install\" option, check the text box, and click Next . You need to agree with the text to erase everything on your current drive before you can continue. If the Product Key window appears, click I don't have a product key . Windows will either automatically detect the key if it's in your firmware or check with your Microsoft account (once you sign in) to find one. Click Accept to continue."
+    },
+    {
+      "title": "Delete all partitions on Disk 0 until \"Unallocated Space\" is left.",
+      "content": "Delete all partitions on Disk 0 until \"Unallocated Space\" is left. Do not delete partitions on any other listed disks. You want there only to be one partition on Disk 0. Once there's only \"Unallocated Space\" on Disk 0, click Next ."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . Windows will begin installing on your PC, which includes restarting a few times. Once installation is complete, walk through the on-screen instructions to set up your PC. Make sure to sign into your Microsoft account so your computer can apply any product keys that aren't included in your computer's firmware. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Why am I seeing the \"Could not find the recovery environment\" error?",
+      "content": "Why am I seeing the \"Could not find the recovery environment\" error? WinRE might be missing due to it being disabled, or a corrupted image."
+    },
+    {
+      "title": "How can I prevent this in the future?",
+      "content": "How can I prevent this in the future? Sadly, there's no way to prevent WinRE issues completely, but you can create backups when your system is working to minimize future frustration. As long as the backups are frequent enough, you won't lose a lot of data when you have to start over again."
+    }
+  ]
+}

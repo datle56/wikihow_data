@@ -1,0 +1,174 @@
+{
+  "url": "https://www.wikihow.com/Start-Pxe-over-Ipv4",
+  "title": "Getting a \"Start PXE Over IPv4\" Message On Boot? Here's How to Fix It",
+  "steps": [
+    {
+      "title": "Restart your computer and open the BIOS/UEFI at the startup screen.",
+      "content": "Restart your computer and open the BIOS/UEFI at the startup screen. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo on the screen. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Look for a menu that says Boot or Boot Order.",
+      "content": "Look for a menu that says Boot or Boot Order . Each motherboard will have a slightly different BIOS/UEFI layout, so the location may vary."
+    },
+    {
+      "title": "Ensure your boot drive is the first device in the boot order.",
+      "content": "Ensure your boot drive is the first device in the boot order. Your boot drive is either a hard drive (HDD) or a solid-state drive (SSD) on your device. If you only have one drive, that one will be your boot drive by default. If your boot drive isn't first, use the BIOS/UEFI controls to change the first boot device to your boot drive."
+    },
+    {
+      "title": "Return to the main BIOS/UEFI screen and save your settings.",
+      "content": "Return to the main BIOS/UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted."
+    },
+    {
+      "title": "Restart your computer and open the BIOS/UEFI at the startup screen.",
+      "content": "Restart your computer and open the BIOS/UEFI at the startup screen. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo on the screen. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Locate the BIOS/UEFI reset button.",
+      "content": "Locate the BIOS/UEFI reset button. This button is usually near the Save / Exit buttons. The button may say Load Setup Defaults , Factory Default , Clear BIOS , or Reset to Default ."
+    },
+    {
+      "title": "Click the reset button.",
+      "content": "Click the reset button. Follow any on-screen instructions to confirm your choice."
+    },
+    {
+      "title": "Return to the main BIOS/UEFI screen and save your settings.",
+      "content": "Return to the main BIOS/UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted."
+    },
+    {
+      "title": "Open your computer.",
+      "content": "Open your computer. On a desktop, this usually involves removing the screws from the back of one of the side panels and popping it off. On a laptop, you'll need to unscrew the bottom panel and remove it. If you have a tempered glass side panel, you may not need to remove it if your computer parts are easy to see. As laptop parts are smaller, harder to see, and sometimes soldered into place, you may have difficulty following this method for laptops. If you suspect your laptop hard drive has become disconnected but you can't fix it yourself, bring your computer to a computer repair shop for assistance."
+    },
+    {
+      "title": "Locate your hard drive.",
+      "content": "Locate your hard drive. If you have an HDD or 2.5\" SSD, it is likely connected to the motherboard with a cable and is stored in a hard drive bay, which looks like a small shelf. If you have an M.2 or mSATA SSD, it will be connected directly to your motherboard. [1] X Research source M.2 slots are usually near the CPU and PCIe slots, though they may be on the back of the motherboard if you have a Mini-ITX. The mSATA slot is usually near the RAM slots."
+    },
+    {
+      "title": "Ensure your hard drive is plugged in or seated properly.",
+      "content": "Ensure your hard drive is plugged in or seated properly. If you have an HDD or 2.5\" SSD, check both the power cable (which connects to the power supply) and the data cable (which connects to the motherboard). If you have an M.2 or mSATA SSD, make sure the drive is fully and securely seated into its slot, and it's secured with a screw to hold it in place."
+    },
+    {
+      "title": "Fix any connection issues.",
+      "content": "Fix any connection issues. If you notice that your drive isn't connected properly, power down your computer (if it's not off already). Then, replug or reseat your drive as needed, making sure it's connected securely."
+    },
+    {
+      "title": "Turn your computer back on.",
+      "content": "Turn your computer back on. If the issue persists, try troubleshooting with the other methods in this article."
+    },
+    {
+      "title": "Search cmd in the taskbar search bar.",
+      "content": "Search cmd in the taskbar search bar. The CHKDSK command can potentially fix errors on storage devices, which may resolve the \"Start PXE over IPv4\" error. [2] X Research source"
+    },
+    {
+      "title": "Right-click on Command Prompt and select Run as administrator.",
+      "content": "Right-click on Command Prompt and select Run as administrator . You must run the Command Prompt as an administrator for the command to work properly."
+    },
+    {
+      "title": "Type chkdsk [drive]:",
+      "content": "Type chkdsk [drive]: /f /r /x and press Enter . Replace \"\"[drive]\"\" with the drive letter of your boot drive. Note that running CHKDSK could take several hours, so it may take some time before the command finishes up."
+    },
+    {
+      "title": "Restart your computer and open the BIOS/UEFI at the startup screen.",
+      "content": "Restart your computer and open the BIOS/UEFI at the startup screen. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo on the screen. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Look for the Security tab.",
+      "content": "Look for the Security tab. Each motherboard manufacturer has a slightly different BIOS/UEFI layout, so the location may vary depending on your model."
+    },
+    {
+      "title": "Select Secure Boot Configuration.",
+      "content": "Select Secure Boot Configuration . Depending on your motherboard manufacturer, this option may be named something slightly different."
+    },
+    {
+      "title": "Disable Secure Boot.",
+      "content": "Disable Secure Boot . Use the arrow keys to navigate to the Secure Boot option and switch it to Disabled ."
+    },
+    {
+      "title": "Return to the main BIOS/UEFI screen and save your settings.",
+      "content": "Return to the main BIOS/UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted."
+    },
+    {
+      "title": "Restart your computer and open the BIOS/UEFI at the startup screen.",
+      "content": "Restart your computer and open the BIOS/UEFI at the startup screen. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo on the screen. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Look for the Boot tab.",
+      "content": "Look for the Boot tab. Each motherboard manufacturer has a slightly different BIOS/UEFI layout, so the location may vary depending on your model."
+    },
+    {
+      "title": "Select UEFI/BIOS Boot Mode.",
+      "content": "Select UEFI/BIOS Boot Mode . Depending on your motherboard manufacturer, this option may be named something slightly different."
+    },
+    {
+      "title": "Disable Legacy.",
+      "content": "Disable Legacy . Use the arrow keys to navigate to the Legacy option and switch it to Disabled ."
+    },
+    {
+      "title": "Return to the main BIOS/UEFI screen and save your settings.",
+      "content": "Return to the main BIOS/UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted."
+    },
+    {
+      "title": "Restart your computer and open the BIOS/UEFI at the startup screen.",
+      "content": "Restart your computer and open the BIOS/UEFI at the startup screen. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo pop up. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Look for the Power tab.",
+      "content": "Look for the Power tab. Each motherboard manufacturer has a slightly different BIOS/UEFI layout, so the location may vary depending on your model."
+    },
+    {
+      "title": "Disable Wake-On-LAN.",
+      "content": "Disable Wake-On-LAN . Use the arrow keys to switch it to Disabled ."
+    },
+    {
+      "title": "Return to the main BIOS/UEFI screen and save your settings.",
+      "content": "Return to the main BIOS/UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted."
+    },
+    {
+      "title": "Determine if any bootable media is inserted into your computer.",
+      "content": "Determine if any bootable media is inserted into your computer. Bootable media includes USB drives, CDs, and DVDs. Even if the media is not formatted as a boot drive, it could still cause your computer to get confused during startup. If you have any bootable media inserted, remove it. Then, try restarting your computer again to see if the issue is resolved."
+    },
+    {
+      "title": "Insert your Windows installation or recovery media into your computer.",
+      "content": "Insert your Windows installation or recovery media into your computer. If you don't have recovery media, check out this wikiHow article to learn how."
+    },
+    {
+      "title": "Restart the computer and press the boot menu key.",
+      "content": "Restart the computer and press the boot menu key. You must press this before the Windows logo appears. This key varies based on your computer manufacturer. Below are some common manufacturers and their default boot menu key , but check your computer's documentation for the most accurate results: Acer : Del or F2 Asus : F9 Dell : F12 HP : Esc or F10 Lenovo : F1 or F2 Samsung : F2"
+    },
+    {
+      "title": "Navigate to the Command Prompt.",
+      "content": "Navigate to the Command Prompt. Click on Repair your computer > Troubleshoot > Advanced options > Command Prompt ."
+    },
+    {
+      "title": "Enter the following commands one at a time.",
+      "content": "Enter the following commands one at a time. After each command, press Enter . bootrec /fixmbr bootrec /fixboot bootrec /scanos bootrec /rebuildbcd"
+    },
+    {
+      "title": "Restart your computer to see if the issue is fixed.",
+      "content": "Restart your computer to see if the issue is fixed. If not, try troubleshooting with the other methods in this article."
+    },
+    {
+      "title": "Check your BIOS version if you can access your computer.",
+      "content": "Check your BIOS version if you can access your computer. If you can't get onto your computer, skip to the next step. Search for msinfo in the taskbar search bar. Click System Information . Note down what it says your BIOS Version is. Go to your motherboard manufacturer's website and check to see what the latest firmware version is for your motherboard. If your BIOS is outdated, continue with the next step. Note: Updating the BIOS manually can be tricky, and it can cause your computer to stop working if something goes wrong in the process. If you're not confident in updating the BIOS yourself, bring your computer to a computer repair shop and ask for assistance."
+    },
+    {
+      "title": "Download the latest BIOS firmware version.",
+      "content": "Download the latest BIOS firmware version. If you can't access your computer, you'll need to do this on a different computer."
+    },
+    {
+      "title": "Put the BIOS firmware update on a USB drive.",
+      "content": "Put the BIOS firmware update on a USB drive. If you're doing this on your own computer, you can leave the drive inserted. If you're doing this on another computer, eject the drive once the update file copies over, then insert it into your computer."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. If your computer is already turned off, you can turn it on."
+    },
+    {
+      "title": "Press the BIOS/UEFI button.",
+      "content": "Press the BIOS/UEFI button. You'll want to hit the button to open your BIOS/UEFI when you see your motherboard logo pop up on the screen. The buttons to open the BIOS/UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Update your BIOS.",
+      "content": "Update your BIOS. How you install the update varies between motherboard manufacturers, but you should see an option to Update BIOS from Drive (or something similar). You may have to go to the Boot menu first. Once the update is complete, restart your computer if it doesn't automatically restart."
+    }
+  ]
+}

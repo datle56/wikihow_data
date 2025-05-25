@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Add-Users-from-CMD",
+  "title": "How to Add Users from CMD",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Search for Command Prompt.",
+      "content": "Search for Command Prompt. Type in command prompt to do so."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt. It should be at the top of the Start window. Right-clicking it prompts a drop-down menu. [1] X Research source"
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This is in the drop-down menu. [2] X Research source"
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. Doing so opens the Command Prompt window. [3] X Research source"
+    },
+    {
+      "title": "Type in the \"add user\" command.",
+      "content": "Type in the \"add user\" command. The \"add user\" command uses the net user username password /add format, where \" username \" is the name you want to use for the user and \"password\" is the password you want to assign to the account. [4] X Research source For example, to add a user named \"Michael\" with the password \"hello123\", you would enter net user Michael hello123 /add here. If you don't want to use a password for the account, don't type in a password—just enter net user username /add instead."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so runs the command and begins creating the user account. Once you see the phrase \"The command completed successfully\" appear, your user has been added."
+    },
+    {
+      "title": "Grant the user administrator permissions.",
+      "content": "Grant the user administrator permissions. If you want to turn the user account into an administrator account, type net localgroup administrators username /add into Command Prompt—making sure to replace \"username\" with the name of the account you want to change—and press ↵ Enter . [5] X Research source For example, to make a user account named \"Michael\" an administrator, you would type in net localgroup administrators Michael /add and press ↵ Enter ."
+    }
+  ]
+}

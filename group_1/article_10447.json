@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Crack-Software-by-Modifying-DLL-Files",
+  "title": "How to Crack Software by Modifying DLL Files",
+  "steps": [
+    {
+      "title": "Learn Assembly programming and hex code manipulation.",
+      "content": "Learn Assembly programming and hex code manipulation. If you want to crack most software, you will need to have a good grasp on assembly , which is a low-level programming language. [1] X Research source Assembly is derived from machine language, and each assembly language is specific to the type of computer you are using. Most assembly language is expressed through binary and hexadecimal ."
+    },
+    {
+      "title": "Install a disassembler.",
+      "content": "Install a disassembler. To examine and modify DLLs, you will need several different tools, including a disassembler. IDA Pro is a great option, as it's a disassembler and debugger. Fortunately there's a free version available from https://www.hex-rays.com/products/ida/support/download_freeware , although it's much more limited in functionality than the Pro version. You can also try dotPeek , which is a DLL-supporting decompiler that decompiles .NET assembly code to C#. [2] X Research source Another option is OllyDBG , which lets you open DLL files for free."
+    },
+    {
+      "title": "Open the application you want to crack in your disassembler.",
+      "content": "Open the application you want to crack in your disassembler. The process is a little different depending on which disassembler you're using. This will show you what DLL files are being loaded by the program. Use the debugger to examine which functions are being called from the DLL. [3] X Research source"
+    },
+    {
+      "title": "Find the counter function.",
+      "content": "Find the counter function. Many programs use a timer for copy protection, and when the timer runs out, the user is no longer able to access the program. The goal is to find this counter code, and then bypass it. If the program you are cracking uses a different form of protection, you will need to look for that instead."
+    },
+    {
+      "title": "Set a break-point on the counter.",
+      "content": "Set a break-point on the counter. Once you've isolated the counter function, set your disassembler to break when it is encountered. This will allow you to look at the exact code that is occurring when the counter function is called."
+    },
+    {
+      "title": "Change the counter code.",
+      "content": "Change the counter code. Now that you've found the code for the counter function, you can change the code so that the counter never reaches the point where it shuts you out of the program. For example, you could make it so that the counter cannot count up to the break limit or you can bypass the counter by jumping over it.'"
+    },
+    {
+      "title": "Recompile your newly-cracked software.",
+      "content": "Recompile your newly-cracked software. After disassembling and editing, you'll need to compile the new version of the program so your changes propagate to the DLL files and other dependencies. [4] X Research source"
+    }
+  ]
+}

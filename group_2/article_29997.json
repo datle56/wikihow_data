@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Theremin",
+  "title": "How to Build Your Own DIY Theremin from Scratch",
+  "steps": [
+    {
+      "title": "Gather the essential components of a theremin.",
+      "content": "Gather the essential components of a theremin. A theremin is a box with two antennas: one vertical antenna that controls the pitch of the instrument, and one curved antenna that controls the volume. These antennas create electromagnetic fields which are “played” by moving your hands closer or farther from the antenna. Coils of tight-pack wire act as oscillators, producing signals fed into the antennae. [1] X Research source The fields are created by relatively straightforward circuitry. A theremin involves the following components, most of which you should be able to purchase at electronics supply: Pitch-reference oscillator ( variable oscillator ) Pitch-control oscillator ( fixed oscillator ) Potentiometers Mixer Volume-control oscillator (fixed oscillator) Volume-resonant circuit Voltage-controlled amplifier Audio amplifier Speaker 12-volt power supply"
+    },
+    {
+      "title": "Build a theremin from scratch with a schematic if you have electronics experience.",
+      "content": "Build a theremin from scratch with a schematic if you have electronics experience. Building a theremin from scratch isn’t a simple project for a weekender with a love for spooky sounds. If you want to wire your own, you’ll need to find a theremin schematic to follow; simply Google “theremin circuit board schematics” or take a look at this list of possible schematics from the Japan-based Art & Science Laboratory. Then, consider whether you’re comfortable with the following skills: Reading an electronic schematic Soldering electronics Wiring a potentiometer Wiring a circuit"
+    },
+    {
+      "title": "Or, build a theremin from a kit if you’re not familiar with electronics or circuitry.",
+      "content": "Or, build a theremin from a kit if you’re not familiar with electronics or circuitry. There are many different types of theremin kits available at a variety of price and difficulty levels. [2] X Research source Some come with the majority of the circuitry already soldered to a circuit board, while others come with a guide showing you where and how to connect the electrical components (depending on how complex and advanced the kit is). Building the circuitry from scratch can be daunting without prior electrical knowledge, making kits a good option. Many theremin kits can still be customized or upgraded with your preferred housing box and antennae. If you're working from a kit for your circuitry, follow the product’s instructions for wiring closely. While the general setup may be similar for most theremins, each kit is slightly different and varies in complexity."
+    },
+    {
+      "title": "Find or construct a box big enough to house the theremin's internal circuitry.",
+      "content": "Find or construct a box big enough to house the theremin's internal circuitry. A professional, full-sized theremin (the type of which can be played comfortably) should be large enough to stand in front of with your arms held shoulder-width apart. For most adults, this is about 24 inches (61 cm) wide (though the circuit board inside may be much smaller). Construct all sides of the box from wood except for the front panel, which can be metal (making the entire box metal may add too much capacitance to the antennae). Look for or build a box with a top that hinges open. This way, you can install the electrical components easily and make adjustments when necessary. Theremin housing kits are available for this purpose, which can be a good idea to get the basic housing shape, even if you still want to customize the circuitry. The theremin’s housing is simply a box that holds the circuit board and supports both antennas."
+    },
+    {
+      "title": "Install the pitch and volume antennae.",
+      "content": "Install the pitch and volume antennae. Attach a straight, monopole antenna for pitch to the top right of the box and a loop antenna for the volume to the left side of the box. The looping antenna is more difficult to find, but should be available at specialty electronics stores or online. To secure the antennas, simply drill holes big enough to fit the bases into the housing and insert them so the wiring ports face inward toward where the circuit board will go. Ensure the antennas are perpendicular to each other so they interfere with each other as little as possible. Sturdy, rigid antennas are best for mounting in this way. Build or buy antennas ⅜ inch (9.5 mm) wide. The straight antenna should be 18 inches (45.7 cm) long and the loop antenna should have a total length of 9 inches (22.9 cm). The ends of the loop antenna should be spaced 3.25 inches (8.3 cm) apart on the side of the housing box, middle to middle. While it may seem like it's more important to wire the circuits first, building the housing and antennas first helps you make sure that everything is spaced accurately and comfortably to play. Remember, you're making an instrument, not a radio, after all!"
+    },
+    {
+      "title": "Connect the pitch control circuit on your circuit board.",
+      "content": "Connect the pitch control circuit on your circuit board. The pitch of a theremin is controlled by creating a circuit between a pitch-variable oscillator and a pitch-reference oscillator (with a potentiometer ) that feeds into a mixer . Tune both oscillators to nearly the same frequency, ideally in the middle of the low frequency radio range (with the exact frequency depending on your schematic or kit) [3] X Research source . The pitch-reference oscillator should work around 172kHz, used in conjunction with a 10k potentiometer. Feed the signal this oscillator creates into the mixer with a screened cable. The pitch-variable oscillator should also work around 172khz, and will be affected by the stray capacitance of the reference unit. Feed this into the mixer as well. Wire a potentiometer into the circuit to make the relationship of your hand movement to the change in pitch more linear. Without it, the instrument's pitch would be almost impossible to control, changing wildly with only a microscopic movement of the hand. Note: The steps in this section provide general, high-level guidance for the most common theremin circuitry. Follow your schematic or kit instructions carefully for more precise details and the best results."
+    },
+    {
+      "title": "Connect the pitch-variable oscillator to the straight pitch antenna.",
+      "content": "Connect the pitch-variable oscillator to the straight pitch antenna. Using screened cable, wire the circuit of the pitch control components into the antenna when you're finished. When playing the theremin, your hand changes the capacitance of the antenna, which will change the frequency of the pitch-variable oscillator. Essentially, you're manually manipulating the signal sent into the antenna. [4] X Research source"
+    },
+    {
+      "title": "Wire a variable oscillator to the volume antenna.",
+      "content": "Wire a variable oscillator to the volume antenna. The variable oscillator should also be tuned in the low frequency radio range, operating somewhere in the neighborhood of 441kHz. This signal will be influenced directly by the volume antenna, manipulated by hand. A 10k trim potentiometer needs to be installed to enable the operator to tune the theremin appropriately. Send the output of this variable oscillator into a volume resonant circuit. The output will be a DC voltage that varies according to the output of the variable oscillator. [5] X Research source Tuned correctly, the oscillator frequency will match the tuning of the volume-resonant circuit as the operator's hand approaches the antenna, causing the signal to cut off gradually. In other words, the closer the hand to the antenna, the quieter the sound."
+    },
+    {
+      "title": "Feed the output of each pitch oscillator into a mixer.",
+      "content": "Feed the output of each pitch oscillator into a mixer. The purpose of the mixer is to compare the frequency of the variable oscillator with the reference frequency. The output will be an audio signal between 20Hz and 20kHz (depending on your schematic or kit). Assembling the mixer is the simplest step in the process. Wired with two slightly different frequencies from the pitch oscillators, the mixer will produce an output with a complex waveform, giving it the distinctive warble we associate with the sci-fi sound of the theremin. [6] X Research source The output actually contains two distinct frequencies, which require the need of a low pass filter (two 0.0047uF capacitors and a 1k resistor) used to extract the output and boost it into a listenable range."
+    },
+    {
+      "title": "Route the signal from the mixer and volume circuit into an amplifier.",
+      "content": "Route the signal from the mixer and volume circuit into an amplifier. Route the outputs of the mixer and the volume resonant circuit into a voltage-controlled amplifier . The voltage from the volume resonant circuit changes the amplitude of the audio signal from the mixer, helping to boost the sound and control the volume of the instrument. [7] X Research source"
+    },
+    {
+      "title": "Install a speaker.",
+      "content": "Install a speaker. Send the output of the voltage controlled amplifier into an audio amplifier and then to a speaker to amplify the sound created by the electromagnetic fields as you manipulate them. In a pinch, you can use the internal components or a guitar amp (simply connect it to the theremin through the jack installed in the back of the amp)."
+    },
+    {
+      "title": "Power the theremin with 12-volts AC.",
+      "content": "Power the theremin with 12-volts AC. You’ll need a power converter that operates at about 12 volts to power a basic theremin with this assembly. Build a step-down transformer that will convert the normal house voltage, or buy a power cord with a built-in converter . Connect your power cord to power lines on the circuit board (typically a red wire(s) that carry power and a black grounding wire). [8] X Research source Warning: Use extreme caution if you're not an experienced electrician. There's a fairly serious amount of voltage going through these circuits, and fire or injury can result from mistakes."
+    },
+    {
+      "title": "Tune the components with an oscilloscope",
+      "content": "Tune the components with an oscilloscope . It's important to tune your theremin accurately and make sure that you've got a playable prototype. Each module should be built, tested, and tuned so that the final assembly is the simple process of hooking everything together and performing a few final adjustments. In order to test and tune the modules, hook your theremin into the input jacks on an oscilloscope and you'll be able to see the sound waves you're creating as you manipulate the theremin. Adjust the modules accordingly, if the sound waves are off. Tuning your theremin is essentially just expanding or contracting the antennas’ magnetic fields to suit your body position and the room you’re in. Professional models have a knob for this, whereas DIY theremins usually need to have each oscillator adjusted manually. For a musical performance, adjust the pitch and volume magnetic fields so that the lowest pitch is produced when your right hand is close or over your body. [9] X Research source"
+    }
+  ]
+}

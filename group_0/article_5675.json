@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Can-Linux-Run-Exe",
+  "title": "Can Linux Run .exe Files? How to Run Windows Software on Linux",
+  "steps": [
+    {
+      "title": "Yes, you can run .exe files on Linux through Wine (a free program).",
+      "content": "Yes, you can run .exe files on Linux through Wine (a free program). Wine is a compatibility layer that acts between the operating system (Linux) and the file (written for Windows). [1] X Research source It is the only way to run .exe files without a copy of Windows. [2] X Research source Since .exe files are native to Windows operating systems, to run them, you must have a compatibility layer (like Wine) or copy of Windows via a Windows emulator (which means you'll no longer solely be using Linux). While you can run many EXE files on Linux with Wine, some may not work as expected, or not at all. If you want to make a Linux file executable rather than running a Windows EXE file on Linux, jump down to How to Execute a Linux File ."
+    },
+    {
+      "title": "Open your Linux terminal.",
+      "content": "Open your Linux terminal. To install Wine on any Debian-based Linux system (including Ubuntu, Linux Mint, and POP!_OS), you'll just need to run a few simple commands. Even though the terminal might look intimidating, don’t worry! You’re unlikely to mess anything up, and all you have to do is copy these commands."
+    },
+    {
+      "title": "Enable 32-bit support.",
+      "content": "Enable 32-bit support. If you're using a modern version of Ubuntu, or virtually any other modern Linux distribution, you'll need to enable 32-bit support to ensure Wine can run 32-bit Windows EXE programs. You can determine whether your system is 64-bit by running the command lscpu . Then, to enable 32-bit support, type sudo dpkg --add-architecture i386 and press Enter . [3] X Research source"
+    },
+    {
+      "title": "Install the Wine repository key.",
+      "content": "Install the Wine repository key. The developers of Wine say the version available in your default repository are buggy and out of date. To make sure you're installing the latest version of Wine, you'll need to get it from Wine's own repositories. First, download and add the repository key: Type sudo mkdir -pm755 /etc/apt/keyrings and press Enter . Type sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key and press Enter ."
+    },
+    {
+      "title": "Add the repository for your distribution.",
+      "content": "Add the repository for your distribution. Run the command for the version of Linux you're running: Ubuntu 24.10 (Oracular): sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/oracular/winehq-oracular.sources Ubuntu 24.04/Linux Mint 22 (Noble): sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources Ubuntu 22.04/Linux Mint 21.x (Jammy): sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources Ubuntu 20.04/Linux Mint 20.x (Focal): sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/focal/winehq-focal.sources Debian 12 (Bookworm): sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources See https://gitlab.winehq.org/wine/wine/-/wikis/Debian-Ubuntu for other versions."
+    },
+    {
+      "title": "Install Wine.",
+      "content": "Install Wine. Now you're all set to install Wine! Type sudo apt update and press Enter to update the package information. Type sudo apt install --install-recommends winehq-stable and press Enter . [4] X Research source"
+    },
+    {
+      "title": "Navigate to the directory with the file, then open the file with Wine.",
+      "content": "Navigate to the directory with the file, then open the file with Wine. In the terminal, navigate to the directory containing the file with the command cd <directory name> . [5] X Research source Then, run the file with the command wine <filename>.exe . For instance, if the file example.exe were stored on your desktop, you’d follow this procedure: [6] X Research source cd Desktop/ and press ↵ Enter wine example.exe and press ↵ Enter Some Windows EXE files will not run without some configuration tweaks. If you're seeing an error message or otherwise having trouble getting an EXE to run, check the Wine Application DB to find out about compatibility settings and configuration for specific Windows apps. [7] X Research source If you see an error message like \"cannot execute binary file: Exec format error,\""
+    },
+    {
+      "title": "Use Wine for single applications.",
+      "content": "Use Wine for single applications. This is the only option for running software designed for Windows without a true version of Windows . Wine is open-source, free software that recreates just enough of Windows to run Windows programs. As a result, you might encounter more bugs and lower performance running software through Wine."
+    },
+    {
+      "title": "Choose a virtual machine for slightly better performance.",
+      "content": "Choose a virtual machine for slightly better performance. Virtual machines are programs that run a full copy of Windows in their own window. This approach is less buggy than running apps through Wine because you technically run them in their native environment (Windows). The downside is that you’ll be running two operating systems (Linux and Windows) simultaneously, so your PC’s performance might suffer. [8] X Research source Popular virtual machines include: VirtualBox , VMware, and Linux’s built-in KVM (Kernel-based Virtual Machine). [9] X Research source Because of the computing power required to run both Linux and Windows, this approach works great for productivity apps like Microsoft Office , but not great for graphics/computing-intensive programs like many video games."
+    },
+    {
+      "title": "Use dual booting to run Windows games and complex applications.",
+      "content": "Use dual booting to run Windows games and complex applications. Dual-booting means you’ll reboot your computer into Windows so the application can run in its native environment. This method is best for games or applications that need high performance. Unfortunately, it does mean you’ll have to reboot your machine every time you want to run Windows software. [10] X Research source"
+    },
+    {
+      "title": "Consider using WSL to get the best out of both Windows and Linux.",
+      "content": "Consider using WSL to get the best out of both Windows and Linux. WSL (Windows Subsystem for Linux) is an environment that supports running Linux tools and apps with a native Linux kernel through a hypervisor layer on Windows. If you are already running Windows, you can use WSL to install a Linux distribution within Windows. [11] X Research source"
+    },
+    {
+      "title": "To execute a Linux file, you'll give it execute permissions.",
+      "content": "To execute a Linux file, you'll give it execute permissions. Once you make the file executable, you can execute it from the command line. Here’s how to make a Linux file executable so you can run it like a program: Type chmod +x file-name in the command line to make the file executable. Replace file-name with the name of the file. Type ./ file-name to execute the file. If an error pops up, type sudo ./ file-name . Typing sudo allows you to run the file with root permissions . Just be careful, since sudo allows you to make changes to your system. Software installation will often require you to type sudo ."
+    },
+    {
+      "title": "Linux does not have a direct .exe equivalent.",
+      "content": "Linux does not have a direct .exe equivalent. For Windows, .exe indicates an executable file, meaning the operating system can run the file. Linux doesn’t use file extensions to indicate which files are executable. [12] X Research source Instead, it uses permissions (the basic permissions are read r, write w, and execute x). Permissions determine which files are executable. As a result, Linux files can have different extensions (ex. .sh ) or no file extensions and still be executable."
+    }
+  ]
+}

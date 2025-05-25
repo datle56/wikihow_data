@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Clear-RAM-Cache",
+  "title": "How to Clear Your RAM Cache and Free Up Memory",
+  "steps": [
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. The easiest way to clear your RAM cache is to save your work and restart your computer. When you restart your computer, all the data in your memory cache is cleared."
+    },
+    {
+      "title": "Use RAMMap.",
+      "content": "Use RAMMap. RAMMap is a free tool you download from Microsoft to analyze your memory usage and clear the cache. [1] X Research source Go to https://learn.microsoft.com/en-us/sysinternals/downloads/rammap in a web browser and click Download RAMMap . Extract the ZIP file . Open the RAMMap folder. Right-click RAMMap.exe and click Run as administrator . Click Agree . Click Empty in the menu bar at the top. Click Empty Standby List ."
+    },
+    {
+      "title": "Make a shortcut that flushes your RAM cache.",
+      "content": "Make a shortcut that flushes your RAM cache. Use the following steps to create a desktop shortcut that will flush your RAM cache whenever you click it: Right-click a blank space on your desktop and select New > Shortcut . Enter %windir%\\system32\\rundll32.exe advapi32.dll,ProcessIdleTasks in the field where it asks you to enter the item location. Click Next . Enter a name for the shortcut (i.e., \"Flush RAM Cache\") and click Finish . Double-click the shortcut on your desktop to flush your RAM cache."
+    },
+    {
+      "title": "Close background apps.",
+      "content": "Close background apps. Closing some background tasks and apps you're not currently using can free up some memory for your computer to use and improve performance. Press Ctrl + Shift + Esc to open Task Manager. Click the Processes tab. Click a process that's taking up a lot of RAM (check the \"Memory\" column). Click End Task ."
+    },
+    {
+      "title": "Close your browser tabs.",
+      "content": "Close your browser tabs. Having too many tabs open in your browser uses a lot of RAM. Click the \"x\" icon in the tabs you're not using to close them . If you have any extensions on your browser that you don't use, you may want to remove them as well."
+    },
+    {
+      "title": "Limit the number of startup programs.",
+      "content": "Limit the number of startup programs. If your memory is getting full soon after starting your computer, you may have too many programs launching at startup. For some programs, you may need to disable launch at startup in the program's settings menu. [2] X Research source Click the Windows Start menu. Click the Settings/Gear icon. Click Apps . Click Startup Click the toggle switch next to the apps you don't want starting up with your computer."
+    },
+    {
+      "title": "Delete temp files.",
+      "content": "Delete temp files. Temp files are temporary files used by various programs to temporarily store data, move files, manage settings, and more. [3] X Research source Over time, they can accumulate and start to eat up your memory. Use the following steps to delete your temp files: Press Windows Key + R to open Run. Enter %temp% in Run and click Ok . Press Ctrl + A to select everything. Press the Delete key."
+    },
+    {
+      "title": "Update your drivers and software.",
+      "content": "Update your drivers and software. Old software versions and driver versions may take up more memory. Newer versions of software and drivers may be optimized to use fewer resources, including memory. Be sure to update all the programs you use. You can update your drivers by updating Windows. Use the following steps to do so: Click the Windows Start menu. Click the Settings/Gear icon. Click Windows Update (Windows 11) or Update & Security (Windows 10). Click Windows Update (Windows 10). Click Check for Updates . Click Install Now ."
+    },
+    {
+      "title": "Disable visual effects.",
+      "content": "Disable visual effects. Visual effects can look pleasing, but sometimes you would rather your computer run properly than look pretty. Luckily, Windows allows you to optimize visual effects for performance rather than appearance. Use the following steps to adjust your computer's visual effects: Press Windows Key + R to open Run. Enter sysdm.cpl in Run and click Ok . Click the Advanced tab. Click Settings in the \"Performance\" box. Select Adjust for best performance and click Apply ."
+    },
+    {
+      "title": "Clear the page file upon shutdown.",
+      "content": "Clear the page file upon shutdown. Page files have many functions. One of which is to store infrequently accessed data from the RAM. While RAM is cleared when you restart your computer, page files are not. Clearing the page files can help reduce the amount of RAM cache your computer uses. Use the following steps to set your system to clear the page file when your computer shuts down: Type regedit into the windows search bar and click Ok . Navigate to HKEY_LOCAL_MACHINE > SYSTEM > CurrentControlSet > Control > Session Manager > Memory Management . Double-click ClearPageFileAtShutdown Set the \"Value data\" to \" 1 \". Click OK and restart your computer."
+    },
+    {
+      "title": "Clearing RAM cache is not always the answer.",
+      "content": "Clearing RAM cache is not always the answer. Your computer uses the RAM cache to store data from frequently used applications so that it can be accessed more easily. Clearing your RAM cache may actually make those applications run slower. If it does work, it may only be a temporary fix."
+    },
+    {
+      "title": "You receive a lot of error messages.",
+      "content": "You receive a lot of error messages. If you start seeing error messages like \"Low memory\" or \"System out of resources,\" this is usually a sign that your memory is full."
+    },
+    {
+      "title": "Programs crashing or freezing.",
+      "content": "Programs crashing or freezing. If you experience frequent program crashes or freezing, this could also be a sign that you don't have enough memory to run that program."
+    },
+    {
+      "title": "Slow performance.",
+      "content": "Slow performance. If you notice your computer is slow or unresponsive, this may be a sign that your computer is running out of memory."
+    },
+    {
+      "title": "High CPU usage.",
+      "content": "High CPU usage. If you notice your computer is using more CPU than it should, this could be a sign that it doesn't have enough RAM to run the tasks it needs."
+    },
+    {
+      "title": "Add more RAM if memory problems persist.",
+      "content": "Add more RAM if memory problems persist. While freeing up RAM may temporarily boost performance on your PC, it is often a band-aid solution to a greater problem: Not having enough RAM. Most PCs have expandable RAM slots on the motherboard. You will need to research your computer model to see what type of motherboard it has and what type of RAM chips it's compatible with so you can buy more RAM and install it ."
+    }
+  ]
+}

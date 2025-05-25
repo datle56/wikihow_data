@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Derive-the-Speed-of-Light-from-Maxwell%27s-Equations",
+  "title": "How to Derive the Speed of Light from Maxwell's Equations",
+  "steps": [
+    {
+      "title": "Begin with Maxwell's Equations in vacuum.",
+      "content": "Begin with Maxwell's Equations in vacuum. In vacuum, charge density ρ = 0 {\\displaystyle \\rho =0} and current density J = 0. {\\displaystyle \\mathbf {J} =0.} ∇ ⋅ E = 0 ∇ ⋅ B = 0 ∇ × E = − ∂ B ∂ t ∇ × B = μ 0 ϵ 0 ∂ E ∂ t {\\displaystyle {\\begin{aligned}\\nabla \\cdot \\mathbf {E} &=0\\\\\\nabla \\cdot \\mathbf {B} &=0\\\\\\nabla \\times \\mathbf {E} &=-{\\frac {\\partial \\mathbf {B} }{\\partial t}}\\\\\\nabla \\times \\mathbf {B} &=\\mu _{0}\\epsilon _{0}{\\frac {\\partial \\mathbf {E} }{\\partial t}}\\end{aligned}}} where μ 0 {\\displaystyle \\mu _{0}} is the magnetic permeability constant and ϵ 0 {\\displaystyle \\epsilon _{0}} is the electric permittivity constant. The intertwining between the electric and magnetic fields is on full display here."
+    },
+    {
+      "title": "Take the curl of both sides of Faraday's Law.",
+      "content": "Take the curl of both sides of Faraday's Law. ∇ × ( ∇ × E ) = ∇ × − ∂ B ∂ t = − ∂ ∂ t ( ∇ × B ) {\\displaystyle {\\begin{aligned}\\nabla \\times (\\nabla \\times \\mathbf {E} )&=\\nabla \\times -{\\frac {\\partial \\mathbf {B} }{\\partial t}}\\\\&=-{\\frac {\\partial }{\\partial t}}(\\nabla \\times \\mathbf {B} )\\end{aligned}}} Note that partial derivatives commute with each other, given well-behaved functions."
+    },
+    {
+      "title": "Substitute the Ampere-Maxwell Law.",
+      "content": "Substitute the Ampere-Maxwell Law. Using the BAC-CAB identity ∇ × ( ∇ × E ) = ∇ ( ∇ ⋅ E ) − ∇ 2 E {\\displaystyle \\nabla \\times (\\nabla \\times \\mathbf {E} )=\\nabla (\\nabla \\cdot \\mathbf {E} )-\\nabla ^{2}\\mathbf {E} } on the left side and recognizing that ∇ ⋅ E = 0 , {\\displaystyle \\nabla \\cdot \\mathbf {E} =0,} ∇ ( ∇ ⋅ E ) − ∇ 2 E = − μ 0 ϵ 0 ∂ 2 E ∂ t 2 ∇ 2 E = μ 0 ϵ 0 ∂ 2 E ∂ t 2 . {\\displaystyle {\\begin{aligned}\\nabla (\\nabla \\cdot \\mathbf {E} )-\\nabla ^{2}\\mathbf {E} &=-\\mu _{0}\\epsilon _{0}{\\frac {\\partial ^{2}\\mathbf {E} }{\\partial t^{2}}}\\\\\\nabla ^{2}\\mathbf {E} &=\\mu _{0}\\epsilon _{0}{\\frac {\\partial ^{2}\\mathbf {E} }{\\partial t^{2}}}.\\end{aligned}}} The above equation is the wave equation in three dimensions."
+    },
+    {
+      "title": "Rewrite the wave equation in one dimension.",
+      "content": "Rewrite the wave equation in one dimension. ∂ 2 E ∂ x 2 = μ 0 ϵ 0 ∂ 2 E ∂ t 2 . {\\displaystyle {\\frac {\\partial ^{2}E}{\\partial x^{2}}}=\\mu _{0}\\epsilon _{0}{\\frac {\\partial ^{2}E}{\\partial t^{2}}}.} The general solution to this equation is f ( x − v t ) + g ( x + v t ) , {\\displaystyle f(x-vt)+g(x+vt),} where v {\\displaystyle v} is the velocity and λ {\\displaystyle \\lambda } is the wavelength. Here, f {\\displaystyle f} and g {\\displaystyle g} are two arbitrary functions that describe a wave propagating in the positive and negative directions, respectively. Since this is quite general, we can opt for the most common solution of just a sinusoidal function traveling in the direction of propagation. So we can write the solution as E = E 0 sin ⁡ ( 2 π λ ( x − v t ) ) , {\\displaystyle E=E_{0}\\sin \\left({\\frac {2\\pi }{\\lambda }}(x-vt)\\right),} where E 0 {\\displaystyle E_{0}} is the amplitude of the electric field (this quantity will cancel out later)."
+    },
+    {
+      "title": "Twice differentiate the solution with respect to x {\\displaystyle x} and t {\\displaystyle t} .",
+      "content": "Twice differentiate the solution with respect to x {\\displaystyle x} and t {\\displaystyle t} . ∂ 2 E ∂ x 2 = − E 0 ( 2 π λ ) 2 sin ⁡ ( 2 π λ ( x − v t ) ) ∂ 2 E ∂ t 2 = − E 0 ( 2 π v λ ) 2 sin ⁡ ( 2 π λ ( x − v t ) ) {\\displaystyle {\\begin{aligned}{\\frac {\\partial ^{2}E}{\\partial x^{2}}}&=-E_{0}\\left({\\frac {2\\pi }{\\lambda }}\\right)^{2}\\sin \\left({\\frac {2\\pi }{\\lambda }}(x-vt)\\right)\\\\{\\frac {\\partial ^{2}E}{\\partial t^{2}}}&=-E_{0}\\left({\\frac {2\\pi v}{\\lambda }}\\right)^{2}\\sin \\left({\\frac {2\\pi }{\\lambda }}(x-vt)\\right)\\end{aligned}}}"
+    },
+    {
+      "title": "Substitute these equations back into the wave equation.",
+      "content": "Substitute these equations back into the wave equation. Note that the sin {\\displaystyle \\sin } expressions cancel out. − E 0 ( 2 π λ ) 2 = μ 0 ϵ 0 [ − E 0 ( 2 π v λ ) 2 ] 1 = μ 0 ϵ 0 v 2 {\\displaystyle {\\begin{aligned}-E_{0}\\left({\\frac {2\\pi }{\\lambda }}\\right)^{2}&=\\mu _{0}\\epsilon _{0}\\left[-E_{0}\\left({\\frac {2\\pi v}{\\lambda }}\\right)^{2}\\right]\\\\1&=\\mu _{0}\\epsilon _{0}v^{2}\\end{aligned}}}"
+    },
+    {
+      "title": "Arrive at the answer.",
+      "content": "Arrive at the answer. v = 1 μ 0 ϵ 0 ≈ 3 × 10 8 m s − 1 . {\\displaystyle v={\\sqrt {\\frac {1}{\\mu _{0}\\epsilon _{0}}}}\\approx 3\\times 10^{8}{\\text{ m s}}^{-1}.} The expression on the right happens to equal the speed of light. In fact, light does not only travel at the speed of electromagnetic waves, it is an electromagnetic wave."
+    }
+  ]
+}

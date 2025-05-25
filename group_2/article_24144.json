@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Install-XAMPP-on-Linux",
+  "title": "How to Install XAMPP on Linux",
+  "steps": [
+    {
+      "title": "Open the XAMPP download page.",
+      "content": "Open the XAMPP download page. Go to https://www.apachefriends.org/index.html in your computer's web browser. This is the official download site for XAMPP."
+    },
+    {
+      "title": "Click XAMPP for Linux.",
+      "content": "Click XAMPP for Linux . It's in the middle of the page. This will prompt the XAMPP setup file to begin downloading onto your computer. You may have to click Save File or select the \"Downloads\" folder as your save location before proceeding."
+    },
+    {
+      "title": "Allow the download to complete.",
+      "content": "Allow the download to complete. Once XAMPP's installation file finishes downloading onto your computer, you can proceed."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click the Terminal app icon, which resembles a black box with a white \">_\" inside of it. You can also just press Alt + Ctrl + T to open a new Terminal window."
+    },
+    {
+      "title": "Change over to the \"Downloads\" directory.",
+      "content": "Change over to the \"Downloads\" directory. Type in cd Downloads and press ↵ Enter . Make sure you capitalize \"Downloads\". If your default downloads location is in a different folder, you'll have to change the directory to that folder."
+    },
+    {
+      "title": "Make the downloaded file executable.",
+      "content": "Make the downloaded file executable. Type in chmod +x xampp-linux-x64-7.2.9-0-installer.run﻿ and press ↵ Enter . [1] X Research source If you download a different version of XAMPP (e.g., version 5.9.3), you'll replace \"7.2.9\" with your XAMPP version's number."
+    },
+    {
+      "title": "Enter the installation command.",
+      "content": "Enter the installation command. Type in sudo ./xampp-linux-x64-7.2.9-0-installer.run﻿ and press ↵ Enter ."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted. Type in the password you use to log into your computer, then press ↵ Enter . The installation window will pop up. You won't see the characters appear in Terminal when you type."
+    },
+    {
+      "title": "Follow the installation prompts.",
+      "content": "Follow the installation prompts. Once the installation window appears, do the following: Click Next three times. Uncheck the \"Learn more about Bitnami for XAMPP\" box. Click Next , then click Next again to begin installing XAMPP."
+    },
+    {
+      "title": "Uncheck the \"Launch XAMPP\" box.",
+      "content": "Uncheck the \"Launch XAMPP\" box. It's in the middle of the final installation window. Since XAMPP needs a few extra steps to actually run on Linux, you'll need to finish the installation without automatically running XAMPP."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . This option is at the bottom of the window. Doing so will close the installation window. At this point, you're ready to run XAMPP ."
+    },
+    {
+      "title": "Re-open Terminal if necessary.",
+      "content": "Re-open Terminal if necessary. If you closed the Terminal window that you used to install XAMPP, re-open Terminal. XAMPP doesn't have any desktop files, so you'll need to launch it from within its installation directory via Terminal each time you want to run it."
+    },
+    {
+      "title": "Switch to the XAMPP installation directory.",
+      "content": "Switch to the XAMPP installation directory. Type in cd /opt/lampp and press ↵ Enter . [2] X Research source"
+    },
+    {
+      "title": "Enter the \"Open\" command.",
+      "content": "Enter the \"Open\" command. Type in sudo ./manager-linux-x64.run﻿ and press ↵ Enter ."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted. Type in the password you usually use to log into your computer, then press ↵ Enter ."
+    },
+    {
+      "title": "Click the Manage Servers tab.",
+      "content": "Click the Manage Servers tab. This option is at the top of the window."
+    },
+    {
+      "title": "Click Start All.",
+      "content": "Click Start All . It's at the bottom of the window. Doing so prompts any active components of XAMPP to begin running."
+    },
+    {
+      "title": "Open your computer's localhost page.",
+      "content": "Open your computer's localhost page. Go to 127.0.0.1 in your computer's web browser. You should see the XAMPP dashboard here; at this point, you're able to begin using XAMPP as you please."
+    }
+  ]
+}

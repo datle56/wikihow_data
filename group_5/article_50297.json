@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Add-a-Hyperlink-with-HTML",
+  "title": "Code a Hyperlink with HTML: A Beginner's How-To Guide",
+  "steps": [
+    {
+      "title": "Open a new document in a simple text editor.",
+      "content": "Open a new document in a simple text editor. You can use Notepad or Notepad++ on Windows, or TextEdit on a Mac. You can also use any HTML editor that you prefer."
+    },
+    {
+      "title": "Create your HTML document.",
+      "content": "Create your HTML document. All HTML documents should be formatted with the same tags to create the document, head, and body. Below is the basic structure of an HTML document and is required for all web pages. < html > < head > </ head > < body > </ body > </ html >"
+    },
+    {
+      "title": "Add the link to your document.",
+      "content": "Add the link to your document. The link should go somewhere in the head or body of your document. Begin your link by typing both the starting and end tags. Type out <a href=\" \"> followed by </a> . This is also called an anchor tag, which is what the \"a\" represents."
+    },
+    {
+      "title": "Insert the link into the HTML.",
+      "content": "Insert the link into the HTML. Copy the URL that you want to link to, and add it between the quotation marks in your code."
+    },
+    {
+      "title": "Insert the link text into the HTML.",
+      "content": "Insert the link text into the HTML. This text is what users will click on to follow the link. Insert this text between the two tags (tags are code enclosed in brackets). Example: If you wanted to link to wikiHow with the text \"Learn how to do anything\" as the link, your link should look like this: < a href = \"https://www.wikihow.com\" > Learn how to do anything </ a >"
+    },
+    {
+      "title": "Save your HTML file.",
+      "content": "Save your HTML file. To preview in most cases, you'll have to save the file and open the file later. Make sure to save your file with an .HTML file extension."
+    },
+    {
+      "title": "Preview your site.",
+      "content": "Preview your site. Simply open the HTML file in a web browser to see what your site looks like. You can also try clicking the link to make sure it works and directs you to the page you want it to go to."
+    },
+    {
+      "title": "Using an image as a link.",
+      "content": "Using an image as a link. Instead of using text as a link, you can use an image instead. Making an image link is the same format as making a text link, but instead of writing text between the <a></a> tags, you'll include an image tag. Images are added using the <img> tag. If you don't have your own server to upload images, you'll need to upload them to an image hosting site, and then use that URL in the <img> tag. If you are using an image hosting site to upload a file called \"button.png\", the <img> tag might look like this: < img src = \"https://www.imagehost.com/button.png\" > If your site is hosted on the same server as your images, you can reference the images without needing the full URL. If the \"button.png\" is uploaded to a directory called \"images\" in your server, the <img> tag might look like this: < img src = \"/images/button.png\" > Example: If you wanted to link to wikiHow with the image URL from above as the link, your link should look like this: < a href = \"https://www.wikihow.com\" >< img src = \"https://www.imagehost.com/button.png\" ></ a >"
+    },
+    {
+      "title": "Opening the link in a new tab.",
+      "content": "Opening the link in a new tab. By default, when you click on a hyperlink it will open in the same tab that you're in. This is okay if you're staying within the same webpage, but if you're linking to an external webpage, overriding the current tab with the link destination might be frustrating to users. This is easily fixed with the \"target\" attribute for the <a></a> tag. Example: To link to wikiHow with the text \"Learn to do anything,\" but the link opens in a new tab, add the target=\"_blank\" attribute to your link, like this: < a href = \"https://www.wikihow.com\" target = \"_blank\" > Learn to do anything </ a >"
+    },
+    {
+      "title": "Adding an email or telephone hyperlink.",
+      "content": "Adding an email or telephone hyperlink. While hyperlinks usually link to website URLs, you can also add a hyperlink that, when clicked or tapped, will open up a new email to an email address or start a phone call to a telephone number. To create a link to an email, you will use a mailto: link. Likewise, to create a link to a telephone number, you'll use a tel: link. Below are examples of what a mailto: or tel: link look like: mailto:email@domain.com tel:+5551234567 Example: Use the mailto: or tel: link in place of a URL in your <a></a> tag, like this: < a href = \"mailto:email@domain.com\" > Email email@domain.com </ a > < a href = \"tel:+5551234567\" > Call 555-123-4567 </ a >"
+    },
+    {
+      "title": "Understand what CSS is.",
+      "content": "Understand what CSS is. On its own, HTML can be a little plain. This is where CSS (Cascading Style Sheets) comes in—CSS is a markup language that can change how HTML elements look. While you can get very in-depth with CSS, we're just going to cover some CSS basics in this section."
+    },
+    {
+      "title": "Add style tags to your document.",
+      "content": "Add style tags to your document. CSS only works when you write it between <style></style> tags. These tags can go directly in your HTML document's head. Your HTML document, including a link, should look something like this now: < html > < head > < style > </ style > </ head > < body > < a href = \"https://www.wikihow.com\" > Learn how to do anything </ a > </ body > </ html >"
+    },
+    {
+      "title": "Add the hyperlink selector to your CSS.",
+      "content": "Add the hyperlink selector to your CSS. When writing CSS, you must use a selector to tell the webpage what elements you're trying to style. Most of the time, these selectors are the same as the HTML tag—so, the selector for a hyperlink is a . Between the <style></style> tags, write the following: a { }"
+    },
+    {
+      "title": "Add properties to style your link.",
+      "content": "Add properties to style your link. Basic CSS involves writing property/value pairs in between curly braces after the selector. What this essentially tells the browser is that every element with that selector on the page should be displayed with the styling between the curly braces. There are tons and tons of CSS selectors that you can use, but for this link we're going to change the color ( color ), font ( font-family ), and size ( font-size ). We're also going to remove the underline ( text-decoration ) that is default under all hyperlinks. After adding the values, your CSS code should look like this: a { color : font-family : font-size : text - decoration : }"
+    },
+    {
+      "title": "Add values to your CSS properties.",
+      "content": "Add values to your CSS properties. As stated above, CSS uses property/value pairs to style elements. Now that you've got your properties added to the code, you can add values. Normally, you'd write properties and values at the same time, but for the sake of going over the basics, we've split them into two steps. Once you get comfortable with CSS, you can write properties and values one after the other. If you wanted to make the links on your page red, 12px Arial font without an underline, you'd write the following: a { color : red ; font-family : arial , sans-serif ; font-size : 12 px ; text-decoration : none ; } Always end each property/value pair with a semicolon (;). This separates each CSS rule so the browser can read them properly. You can use color names in CSS (such as red, blue, yellow, etc.) but hex codes are more precise. In the example, you could replace red with #FF0000 to get the same color. When adding a font family in CSS, always include a fallback. Not every computer will be able to display every font. All of the font fallbacks in CSS are serif , sans-serif , monospace , cursive , and fantasy . In the example, we used the sans-serif fallback because Arial is a sans-serif font."
+    },
+    {
+      "title": "Test your webpage.",
+      "content": "Test your webpage. The only way to see your CSS in action is to test your webpage. If you don't like the style you've created, simply go back to the CSS and tweak it. Your final HTML code with the CSS styling should look like this: < html > < head > < style > a { color : red ; font-family : arial , sans-serif ; font-size : 12 px ; text-decoration : none ; } </ style > </ head > < body > < a href = \"https://www.wikihow.com\" > Learn how to do anything </ a > </ body > </ html > If you prefer, CSS allows you to write CSS for each link state: unvisited, visited, active, and hovered. You can use any number of these link state selectors in place of or alongside the a selector. The selectors for these states are as follows: a:link : A link the user has never clicked before. By default, these links are blue and underlined. a:visited : A link the user has clicked before. By default, these links are purple and underlined. a:active : A link that's been clicked and is in the process of loading. As Internet connections are faster today, you might not have noticed any \"active\" link styling. By default, these links are red and underlined. a:hover : A link that you are hovering over with your cursor, but haven't clicked. There is no default styling for this link state."
+    }
+  ]
+}

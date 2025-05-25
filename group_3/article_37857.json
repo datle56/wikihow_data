@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Run-Ruby-Code",
+  "title": "How to Run Ruby Code",
+  "steps": [
+    {
+      "title": "Open the Terminal app.",
+      "content": "Open the Terminal app. Your Mac has a Ruby interpreter built in to the operating system, so running Ruby scripts will be easy. To open the Terminal: Click the Launchpad icon on the Dock (the multicolored squares). Type terminal into the search field. Click the Terminal icon."
+    },
+    {
+      "title": "Install the latest version of Ruby.",
+      "content": "Install the latest version of Ruby. The version that comes with your Mac is old and doesn't update with system updates. Here's how you can install the latest version: If you don't have Homebrew installed, type /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh )\" and press Return to install Homebrew. [1] X Research source Type brew install ruby and press Return . Type open -e ~/.zshrc and press Return to open your shell configuration file in TextEdit. [2] X Research source Add the following lines to the end of the file if you have an Intel-based Mac: if [ -d \"/usr/local/opt/ruby/bin\" ]; then export PATH=/usr/local/opt/ruby/bin:$PATH export PATH=`gem environment gemdir`/bin:$PATH fi Add these lines to the end of the file if you have an Apple silicon-based Mac: if [ -d \"/opt/homebrew/opt/ruby/bin\" ]; then export PATH=/opt/homebrew/opt/ruby/bin:$PATH export PATH=`gem environment gemdir`/bin:$PATH fi Save and close the file. Close and re-open the Terminal window. Type brew pin ruby and press Return ."
+    },
+    {
+      "title": "Use the cd command to go to the proper directory.",
+      "content": "Use the cd command to go to the proper directory. When you open the Terminal, you'll be in your home directory. You'll want to open the directory in which your Ruby script is saved. For example, if your script is on your desktop, you'd type cd Desktop and press Return . You can see a list of files in the current directory by typing ls -a and pressing Return ."
+    },
+    {
+      "title": "Type ruby scriptname.rb and press ⏎ Return.",
+      "content": "Type ruby scriptname.rb and press ⏎ Return . Replace scriptname.rb with the actual name of the Ruby script you want to run. This executes your Ruby script."
+    },
+    {
+      "title": "Install Ruby on your PC.",
+      "content": "Install Ruby on your PC. If you haven't already done so, you'll need to install Ruby for Windows, which you can get at https://rubyinstaller.org/downloads . Installation is easy—just double-click the downloaded file and follow the on- screen instructions to install. If you're not sure which version to download, look in the right column of the installer's website to see which is recommended. [3] X Research source When installing, keep the defaults settings unless you know what you need to change. The defaults will add the Ruby directory to your system path so you can run the ruby command from the command prompt."
+    },
+    {
+      "title": "Open the Start Command Prompt with Ruby app.",
+      "content": "Open the Start Command Prompt with Ruby app. You'll find it in your Start menu after installing Ruby. [4] X Research source You can also just click the Search bar (or the magnifying glass icon) next to the Start button, type Command , and then click Start Command Prompt With Ruby in the search results."
+    },
+    {
+      "title": "Use cd to change the directory to that of your Ruby script.",
+      "content": "Use cd to change the directory to that of your Ruby script. When you open the Command Prompt, you'll be in your home directory (usually C:\\Users\\yourname). So if your Ruby script is on your desktop, you'd type cd Desktop or C:\\Users\\yourname\\Desktop and press Enter ."
+    },
+    {
+      "title": "Type ruby scriptname.rb and press ⏎ Return.",
+      "content": "Type ruby scriptname.rb and press ⏎ Return . Replace scriptname.rb with the actual name of the Ruby script you want to run. This runs your Ruby script."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. You can do so by pressing Control + Alt + T or by clicking the Terminal icon in your app list."
+    },
+    {
+      "title": "Type ruby -v and press ↵ Enter.",
+      "content": "Type ruby -v and press ↵ Enter . This checks your version of Ruby. If you're using a version that's earlier than 2.7.1, you'll want to upgrade."
+    },
+    {
+      "title": "Install or update Ruby if necessary.",
+      "content": "Install or update Ruby if necessary. If you don't have Ruby or are using an earlier version, here's how to get it: Type sudo apt-get update and press Enter to update your package list. Type sudo apt-get install ruby-full and press Enter to install the latest version of Ruby."
+    },
+    {
+      "title": "Use cd to change the directory to that of your Ruby script.",
+      "content": "Use cd to change the directory to that of your Ruby script. For example, if the script is in a folder called code inside of your home directory, you'd type cd code and press Enter . Type ls -a and press Enter to see which files are inside the current directory."
+    },
+    {
+      "title": "Type ruby scriptname.rb and press ↵ Enter.",
+      "content": "Type ruby scriptname.rb and press ↵ Enter . Replace scriptname.rb with the actual name of the Ruby script you want to run. This runs your Ruby script."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Edit-the-Hosts-File-on-Windows",
+  "title": "How to Edit the Hosts File on Windows 10 & 11",
+  "steps": [
+    {
+      "title": "Press the Windows key on your keyboard.",
+      "content": "Press the Windows key on your keyboard. This opens the Windows menu and the search bar. To edit the hosts file in Windows, you need to open Notepad as an administrator . This means you must be an administrator of this PC to edit the hosts file."
+    },
+    {
+      "title": "Type notepad into the search bar.",
+      "content": "Type notepad into the search bar. Don't click anything yet—just type the word and wait for the search results to appear."
+    },
+    {
+      "title": "Right-click Notepad in the search results.",
+      "content": "Right-click Notepad in the search results. A menu will expand."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This opens Notepad as an administrator. You may have to click Yes on the security warning to open Notepad as an administrator."
+    },
+    {
+      "title": "Click the File menu and select Open.",
+      "content": "Click the File menu and select Open . This opens your file browser."
+    },
+    {
+      "title": "Navigate to the path that contains the hosts file.",
+      "content": "Navigate to the path that contains the hosts file. The hosts file is usually located at c:\\Windows\\System32\\Drivers\\etc . You can paste that path into the bar at the top of the window and press Enter to go there. Don't worry–you won't see any files at first, but they are there. If Windows is installed on a different drive letter (e.g., on your D: drive instead of C:), replace the C: in the path with the correct drive letter."
+    },
+    {
+      "title": "Select All Files from the file type drop-down menu.",
+      "content": "Select All Files from the file type drop-down menu. It's the menu toward the bottom-right corner of the window. You should now see a handful of files, including the hosts file."
+    },
+    {
+      "title": "Select the hosts file and click Open.",
+      "content": "Select the hosts file and click Open . The hosts file is now open for editing."
+    },
+    {
+      "title": "Make changes to the file.",
+      "content": "Make changes to the file. Now that the file is open, you can add lines to the file or remove lines you don't need. When you add a line to the hosts file, you'll want to enter the IP address first, followed by the domain name you're mapping it to. Separate the two with a space or a tab, and keep each entry on its own line. [1] X Research source If you're editing the host file to block a website , the IP address you'll enter is 127.0.0.1 . For example, to block Facebook, you'd enter 127.0.0.1 facebook.com . Don't add \"https://\" or any other protocol before the domain name. Create a new line for each IP address and domain mapping you need to add to your hosts file. Lines that begin with a hash symbol # are considered comments, meaning they are inactive. If you want to remove a line in the hosts file, you can either delete it, or just type a # before it to comment it out. This way, you can easily reactivate the mapping if you change your mind later."
+    },
+    {
+      "title": "Click the File menu and select Save.",
+      "content": "Click the File menu and select Save . This saves your changes to the hosts file. If you are unable to save the file this way, try this: Click the File menu and select Save as . Select All Files from the \"Save as type\" menu. Click Save ."
+    },
+    {
+      "title": "Install PowerToys on your Windows PC.",
+      "content": "Install PowerToys on your Windows PC. PowerToys now offers a utility that makes it easy to edit your hosts file in Windows. [2] X Research source If you don't want to mess around with your hosts file in a text editor, the Hosts File Editor is a great way to edit your Windows hosts file. To install PowerToys: Go to the PowerToys release page on GitHub. The most current version of PowerToys is at the top of the page. Click the download link for the version you want to install and select Save . For example, if you want to install PowerToys only for yourself, not every user on your computer, and you have an Intel CPU, select the download link for \"Per user—x64.\" If you have an ARM processor and want to install PowerToys for every user on your computer, select the downloader for \"Machine wide - Arm64\". Once downloaded, double-click the installer in your default downloads folder. Check the box to agree to the terms and click Install . Click Close once the installation is complete."
+    },
+    {
+      "title": "Open PowerToys and disable the other options.",
+      "content": "Open PowerToys and disable the other options. PowerToys comes with a ton of cool new tools, but unfortunately, it enables them by default, and they might interrupt you while you're trying to edit your hosts file. For now, we'll disable the other PowerToys so you can stay on task instead of wrestling with changes to how your mouse and desktop behave. Here's what to do: If PowerToys doesn't open on its own, open it from the Start menu. Click Open Settings on the Welcome screen. Turn off the toggle switches next to all options EXCEPT \"Hosts File Editor.\""
+    },
+    {
+      "title": "Open the Hosts File Editor.",
+      "content": "Open the Hosts File Editor. Now that everything else is turned off (and you should come back and check out the other PowerToys later), click Launch Hosts File Editor to open the editor. When prompted, click Yes and then Accept to confirm that you want to edit the hosts file."
+    },
+    {
+      "title": "Click + New entry to add a new line.",
+      "content": "Click + New entry to add a new line. It's at the top-left corner. If you need to add an IP address and domain/hostname combo to your hosts file, you'll do it here."
+    },
+    {
+      "title": "Enter the IP address into the first field.",
+      "content": "Enter the IP address into the first field. For example, if you're using the Hosts File Editor to block a website, you'll enter 127.0.01 here."
+    },
+    {
+      "title": "Enter the hostname or domain name you want to map to the IP address.",
+      "content": "Enter the hostname or domain name you want to map to the IP address. For example, if you want to be taken to the IP address you entered each time you access facebook.com, you'd enter facebook.com here. Don't add \"https://\" or any other protocol before the domain name. If you're blocking a website, it's a good idea to block both the domain name and the domain name with \"www\" at the beginning, and any other subdomains you know. For example: 127.0.0.1 domain.com 127.0.0.1 www.domain.com 127.0.0.1 login.domain.com If you were instructed to enter more than one hostname or domain name, separate them with single spaces. If you'd like, you can add a comment to the \"Comment\" field that describes this entry. For example, if you're adding a line to block ads from a specific application, you might type that application's name here."
+    },
+    {
+      "title": "Click Add to add the entry to your hosts file.",
+      "content": "Click Add to add the entry to your hosts file. Once added, the line will be active in your Windows hosts file."
+    },
+    {
+      "title": "Remove or disable entries in your hosts file.",
+      "content": "Remove or disable entries in your hosts file. Each entry you see on the main screen is taken directly from your Windows hosts file, which is usually at c:\\Windows\\System32\\Drivers\\etc . You'll see there's a toggle switch next to each line. If the toggle switch next to a line in your hosts file is in the off position, that rule is inactive, so it won't be used. You can easily disable a rule in your hosts file by toggling off its switch. If you'd rather delete something from your hosts file entirely, click the trash can icon."
+    },
+    {
+      "title": "Try flushing your DNS cache.",
+      "content": "Try flushing your DNS cache. If the change you made to your hosts file isn't active yet, you may need a quick DNS flush . Here's what to do: Open the Command Prompt as an administrator. To do this: Press the Windows key and type cmd . Right-click \"Command prompt\" and select Run as administrator . Type ipconfig /flushdns and press Enter ."
+    },
+    {
+      "title": "Clear your web browser cache.",
+      "content": "Clear your web browser cache. If you added something to your hosts file that's supposed to block a website or direct you to a different IP address when you enter a hostname or domain name in your web browser, the old page may still be cached. Just clear your cache and try loading the site again."
+    },
+    {
+      "title": "Flush the Chrome DNS resolver cache.",
+      "content": "Flush the Chrome DNS resolver cache. If you're using Chrome, this trick will clear Chrome's DNS cache, which could make the changes you made in your hosts file take effect in Chrome. Type chrome://net-internals/#sockets into your address bar and press Enter . Click Flush socket pools . Click the DNS tab in the left panel. Click Clear host cache . [3] X Research source"
+    },
+    {
+      "title": "Understand the limitations.",
+      "content": "Understand the limitations. The hosts file is mainly for mapping a domain name to an IP address, similar to how DNS works on a larger scale. If your goal is to block a website, block an ad domain, or similar, the hosts file won't always be effective–not all applications prioritize the hosts file over DNS, and sometimes IP addresses and domain names change. It's better to use a website-blocking or ad-blocking tool to get the job done."
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "url": "https://www.wikihow.com/Block-Websites-on-Firefox",
+  "title": "6 Simple Ways to Block Websites on Mozilla Firefox",
+  "steps": [
+    {
+      "title": "Go to https://addons.mozilla.org/en-US/firefox/addon/block-website.",
+      "content": "Go to https://addons.mozilla.org/en-US/firefox/addon/block-website . This add-on, called Block Site (by Ray), lets you block individual websites in Firefox. It also lets you set up a private password so you'll be the only person who can remove sites from the block list. This Firefox add-on is a part of Firefox's Recommended Extensions program, which means Firefox staff has vetted its functionality and security. [1] X Research source Still, research add-ons before installing them."
+    },
+    {
+      "title": "Click the blue + Add to Firefox button.",
+      "content": "Click the blue + Add to Firefox button. You can find this next to the add-on description."
+    },
+    {
+      "title": "Click Add on the pop-up warning.",
+      "content": "Click Add on the pop-up warning. This adds the extension to Firefox."
+    },
+    {
+      "title": "Check the box next to \"Allow this extension to run in Private Windows\".",
+      "content": "Check the box next to \"Allow this extension to run in Private Windows\". This appears in the top-right corner of the browser on the \"Block Site has been added to Firefox\" window. Checking this option ensures that websites you block will remain blocked when someone tries to open a private browsing window."
+    },
+    {
+      "title": "Click the blue Okay, Got It button to confirm.",
+      "content": "Click the blue Okay, Got It button to confirm. The add-on is now ready to use."
+    },
+    {
+      "title": "Click the puzzle piece icon.",
+      "content": "Click the puzzle piece icon. This is at the top-right corner of the window, next to the menu. The Add-ons page will open."
+    },
+    {
+      "title": "Click Extensions.",
+      "content": "Click Extensions . This is in the left panel."
+    },
+    {
+      "title": "Open Block Site's options page.",
+      "content": "Open Block Site's options page. Scroll down until you find the Block Site heading, click the three horizontal dots beside it, and then select Options ."
+    },
+    {
+      "title": "Type or paste the URL of a website you want to block.",
+      "content": "Type or paste the URL of a website you want to block. This address goes into the \"Block a new hostname\" field at the top of the page. For example, if you wanted to block X (Twitter), you would type www.x.com into this text box."
+    },
+    {
+      "title": "Click Add to add the site to the block list.",
+      "content": "Click Add to add the site to the block list. The site you entered will now appear under \"Existing Rules\" at the top of the page. You can remove sites from this list at any time by clicking Remove next to its entry. If you want blocked sites to redirect to a specific page (e.g., Google), click the \"Redirect to\" text box and type an address. If you skip this step, Block Site will simply redirect people who attempt to go to the site to a page that says \"Restricted Access\". Add additional sites to the block list by entering their addresses into the \"Block a new hostname\" field and clicking Add ."
+    },
+    {
+      "title": "Create a master password.",
+      "content": "Create a master password. Scroll down to the \"Master password\" text box at the bottom of the page and type a password you'll remember. This password will be required to make changes to the blocked site list."
+    },
+    {
+      "title": "Click Save to save your changes.",
+      "content": "Click Save to save your changes. It's at the bottom of the page. Once your settings are saved, the sites you entered will be blocked to everyone who uses Firefox. When you want to edit your settings, return to the Options area of Block Site , enter the master password, and make your changes."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. Open the Start menu and search for \"cmd\". Right-click the Command Prompt and select Run as administrator . [2] X Research source"
+    },
+    {
+      "title": "Type nslookup followed by the website URL.",
+      "content": "Type nslookup followed by the website URL. Press Enter when you're finished. This will retrieve the website's IP address. Take note of the IP address."
+    },
+    {
+      "title": "Open Windows Defender Firewall.",
+      "content": "Open Windows Defender Firewall. You can type this into the Start menu or find it in the settings."
+    },
+    {
+      "title": "Click Advanced settings.",
+      "content": "Click Advanced settings . This is in the left panel. A new window will open."
+    },
+    {
+      "title": "Click New Rule….",
+      "content": "Click New Rule… . This is underneath the Actions header in the right panel."
+    },
+    {
+      "title": "Select Custom and click Next.",
+      "content": "Select Custom and click Next . This is the last option."
+    },
+    {
+      "title": "Select All programs and click Next.",
+      "content": "Select All programs and click Next . This is the top option."
+    },
+    {
+      "title": "Click Add….",
+      "content": "Click Add… . This is in the bottom section, under Which remote IP addresses does this rule apply to? ."
+    },
+    {
+      "title": "Enter the IP address of the website and click OK.",
+      "content": "Enter the IP address of the website and click OK . The window will close."
+    },
+    {
+      "title": "Select Block the connection and click Next.",
+      "content": "Select Block the connection and click Next ."
+    },
+    {
+      "title": "Enter a name and click Finish.",
+      "content": "Enter a name and click Finish . The website will now be blocked on Firefox and any other browser."
+    },
+    {
+      "title": "Open Firefox's settings.",
+      "content": "Open Firefox's settings. Click ☰ in the top-right corner and select Settings . A new window will open. Use this method to disable cookies and other site data in Firefox."
+    },
+    {
+      "title": "Click Privacy & Security.",
+      "content": "Click Privacy & Security . This is in the left panel."
+    },
+    {
+      "title": "Click Manage Exceptions….",
+      "content": "Click Manage Exceptions… . You can find this under the Cookies and Site Data header; you may need to scroll down to find it."
+    },
+    {
+      "title": "Type or paste the URL of a website.",
+      "content": "Type or paste the URL of a website. This goes in the Address of website field."
+    },
+    {
+      "title": "Click Add Exception.",
+      "content": "Click Add Exception . This will add the website to the list."
+    },
+    {
+      "title": "Click Save Changes.",
+      "content": "Click Save Changes . This is the blue button at the bottom of the window."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. To do this on your Mac, click the magnifying glass at the top-right corner of the screen to open Spotlight, type terminal into the search bar, and then press ⏎ Return . This method will block a specific website from all browsers, not just Firefox. You must have your administrator password to use this method."
+    },
+    {
+      "title": "Type sudo nano /etc/hosts and press ⏎ Return.",
+      "content": "Type sudo nano /etc/hosts and press ⏎ Return . A password prompt will appear."
+    },
+    {
+      "title": "Enter your administrator password and press ⏎ Return.",
+      "content": "Enter your administrator password and press ⏎ Return . You won't see the characters you type, but that's by design. This opens the file for editing."
+    },
+    {
+      "title": "Use the arrow keys to move to the bottom of the file.",
+      "content": "Use the arrow keys to move to the bottom of the file. You can stop moving downward once the mouse cursor is on its own new line. There should be no other characters on the line you'll be typing on."
+    },
+    {
+      "title": "Type 127.0.0.1 and press the Tab ↹ key.",
+      "content": "Type 127.0.0.1 and press the Tab ↹ key."
+    },
+    {
+      "title": "Type the web address of the site you want to block.",
+      "content": "Type the web address of the site you want to block. For example, if you want to block YouTube, type www.youtube.com . Don't include the \"https://\" or anything after the domain name. To block another site, press the Return key to open a new line, type 127.0.0.1 , press the Tab key, and then enter the next address."
+    },
+    {
+      "title": "Press Control+O.",
+      "content": "Press Control + O . This saves the file."
+    },
+    {
+      "title": "Press Control+X.",
+      "content": "Press Control + X . This exits the editor."
+    },
+    {
+      "title": "Flush your Mac's DNS cache.",
+      "content": "Flush your Mac's DNS cache. To do this on macOS Sierra and later, type sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache at the prompt and press the Return key. [3] X Research source This resets your computer’s DNS cache, allowing the blocking to begin. If you're using macOS El Capitan, use sudo killall -HUP mDNSResponder instead."
+    },
+    {
+      "title": "Visit https://addons.mozilla.org/en-US/android/addon/leechblock-ng in Firefox.",
+      "content": "Visit https://addons.mozilla.org/en-US/android/addon/leechblock-ng in Firefox. Leechblock NG is a free Firefox add-on that lets you block websites in the browser. You can even choose to block the site only during certain time periods and set a password so nobody else can edit the block list. Leechblock NG has nearly all positive ratings on the Firefox Add-ons site and is updated regularly. Still, make sure to research add-ons before installing them. This will only work for Firefox, not other browsers on your Android."
+    },
+    {
+      "title": "Tap + Add to Firefox.",
+      "content": "Tap + Add to Firefox . A warning message will show you which permissions Leechblock NG needs to work."
+    },
+    {
+      "title": "Review the warning and tap ADD.",
+      "content": "Review the warning and tap ADD . This installs the add-on."
+    },
+    {
+      "title": "Tap the menu ⋮.",
+      "content": "Tap the menu ⋮ . It's the three vertical dots at the top-right corner of Firefox."
+    },
+    {
+      "title": "Tap Add-ons on the menu.",
+      "content": "Tap Add-ons on the menu. A list of installed add-ons will appear."
+    },
+    {
+      "title": "Tap LeechBlock NG and select Options.",
+      "content": "Tap LeechBlock NG and select Options . This opens the settings page for LeechBlock. You'll see several tabs called Block Set 1, Block Set 2, etc. You can designate a tab for specific blocking settings. For example, if you want to block certain sites 100% of the time, you could add those to one tab. If you only wanted to block certain sites between midnight and 6 AM, you could add those to a separate tab."
+    },
+    {
+      "title": "Enter a name for your block set.",
+      "content": "Enter a name for your block set. You could call it \"Block List\" or something similar. If you want to create separate block lists, feel free to enter a name that's more reflective of the sites/settings you'll be using on this tab."
+    },
+    {
+      "title": "",
+      "content": "Enter the site(s) you want to block. Each blocked site should appear on its own line. Don't worry about adding the \"https://\" at the beginning. For example, if you wanted to block X, you could just enter www.x.com or x.com . To add another site, press the Enter key on your keyboard and type the next address."
+    },
+    {
+      "title": "Choose when to block the site(s).",
+      "content": "Choose when to block the site(s). You can choose times and dates if you'd like. If you want to block the site(s) all the time, tap the All Day button. Otherwise, enter your desired times. To block sites every day of the week, check the boxes next to all 7 days."
+    },
+    {
+      "title": "Tap Save Options at the bottom of the page.",
+      "content": "Tap Save Options at the bottom of the page. You can return to that tab any time you wish. Feel free to create additional tabs for other times and dates now."
+    },
+    {
+      "title": "Tap the General tab.",
+      "content": "Tap the General tab. This is where you can set a password so nobody can undo your settings."
+    },
+    {
+      "title": "Select a password option under \"Access Control.\"",
+      "content": "Select a password option under \"Access Control.\" It's the first drop-down menu on the page. For best results, select Require the user to enter a password here."
+    },
+    {
+      "title": "Enter a password you'll remember.",
+      "content": "Enter a password you'll remember. It can be as many or as few letters as you'd like."
+    },
+    {
+      "title": "Scroll down and tap Save Options & Close.",
+      "content": "Scroll down and tap Save Options & Close . Now that your options are saved, anyone who attempts to visit the selected sites in Firefox will be unable to do so. If they attempt to change the app settings, they won't be able to without your password."
+    },
+    {
+      "title": "Open your iPhone's Settings.",
+      "content": "Open your iPhone's Settings. This resembles a set of gears on a grey background. This method will also restrict websites in other web browsers on your iPhone or iPad, including Chrome and Safari."
+    },
+    {
+      "title": "Scroll down and tap Screen Time.",
+      "content": "Scroll down and tap Screen Time . It's in the second group of settings."
+    },
+    {
+      "title": "Tap Turn On Screen Time if you haven’t already.",
+      "content": "Tap Turn On Screen Time if you haven’t already. If you don’t see this option, Screen Time is already enabled and you can skip to step 6."
+    },
+    {
+      "title": "Tap Continue.",
+      "content": "Tap Continue . This turns on Screen Time, a tool that allows you to monitor and regulate your iPhone or iPad usage."
+    },
+    {
+      "title": "Tap This is My iPhone.",
+      "content": "Tap This is My iPhone . If you’re using your child’s iPhone, you can tap This is my Child’s iPhone instead, giving you other options for regulating your child’s time on this device."
+    },
+    {
+      "title": "Tap Content & Privacy Restrictions.",
+      "content": "Tap Content & Privacy Restrictions . This is towards the bottom of the page."
+    },
+    {
+      "title": "Toggle on \"Content & Privacy Restrictions\".",
+      "content": "Toggle on \"Content & Privacy Restrictions\". The switch will turn green."
+    },
+    {
+      "title": "Tap Store, Web, Siri & Game Center Content.",
+      "content": "Tap Store, Web, Siri & Game Center Content . It’s near the top of the menu."
+    },
+    {
+      "title": "Tap Web Content.",
+      "content": "Tap Web Content . It’s under the WEB CONTENT header."
+    },
+    {
+      "title": "Tap Limit Adult Websites.",
+      "content": "Tap Limit Adult Websites . This is the middle option."
+    },
+    {
+      "title": "Tap Add Website under “NEVER ALLOW.”",
+      "content": "Tap Add Website under “NEVER ALLOW.” It’s the second instance of “Add Website” on the menu (at the bottom)."
+    },
+    {
+      "title": "Enter the address of the site you want to block and tap Done.",
+      "content": "Enter the address of the site you want to block and tap Done . This adds the website to the block list and begins blocking it immediately. For example, if you wanted to block Google, you would type in www.google.com here."
+    }
+  ]
+}

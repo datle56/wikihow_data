@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Download-Garageband-on-Windows-10",
+  "title": "How to Download Garageband for Windows on Your PC",
+  "steps": [
+    {
+      "title": "Download VirtualBox.",
+      "content": "Download VirtualBox. VirtualBox is virtual machine software developed by Oracle. Use the following steps to download and install VirtualBox: Go to https://www.virtualbox.org/wiki/Downloads in a web browser. Click Windows hosts below \"VirtualBox x.x.x platform packages.\" The file will download. Click the VirtualBox \".exe\" file in your web browser or Downloads folder. Click Next . Click Next . Click Next (it is recommended you install the virtual machine at its default location. Don't change the install location unless you know what you are doing). Click Yes to acknowledge it may temporarily disconnect your internet. Click Install . [1] X Research source"
+    },
+    {
+      "title": "Download VirtualBox Expansion Pack.",
+      "content": "Download VirtualBox Expansion Pack. You will also need to download and install the VirtualBox expansion pack. This contains fixes for USB 3.0 keyboard and mouse support. Use the following steps to download and install the Virtual Box Expansion Pack: Go to https://www.virtualbox.org/wiki/Downloads in a web browser. Scroll down and click All supported platforms below \"VirtualBox x.x.x Oracle VM VirtualBox Extension Pack.\" Double-click the expansion pack file in your web browser or Downloads folder to install it. Click Install . Scroll down the to bottom of the text and click I agree ."
+    },
+    {
+      "title": "Download a disk image file for macOS Ventura or higher.",
+      "content": "Download a disk image file for macOS Ventura or higher. The latest version of GarageBand only works with macOS 13.0.0 (Ventura) or higher. If you don't have a disk image, you can get somebody who has a Mac to make one for you."
+    },
+    {
+      "title": "Install macOS in VirtualBox.",
+      "content": "Install macOS in VirtualBox. Installing macOS on a virtual machine is a bit of a lengthy process. You should follow a dedicated guide to ensure you are doing it correctly. You will need at least 8 GB of RAM, and at least 128 GB of hard drive space to set it up. The following are the general steps you need to follow to install macOS in VirtualBox: Open Virtual Box. Click New at the top to create a new virtual machine. Type a name for the machine. Select MacOS as the type, and MacOS (64-bit) as the. Set the memory size to 8 GB or more Click Create . Select a location for the virtual hard drive. Set the file size to at least 128 GB. Select VHD (Virtual Hard Disk) as the hard disk type. Click Create ."
+    },
+    {
+      "title": "Adjust the settings for the macOS virtual machine.",
+      "content": "Adjust the settings for the macOS virtual machine. Use the following steps to adjust the settings for the virtual machine: Click the macOS virtual machine. Click Settings at the top. Click System in the panel to the left. Uncheck Floppy and ensure \"ICH9\" is the selected chipset. Click the Processor tab. Allocate at least 2 CPU cores to the virtual machine (more if you can). Ensure \"Enable PAE/NX\" is checked. Click Display in the panel to the left. Allocate 128 MB of video memory. Click USB in the panel to the left. Ensure \"USB 3.0\" is selected (Requires VirtualBox Expansion Pack which is available at the VirtualBox download website)."
+    },
+    {
+      "title": "Load the macOS 11.0.0 disk image file into the virtual machine.",
+      "content": "Load the macOS 11.0.0 disk image file into the virtual machine. Use the following steps to load the macOS disk image (.iso) file into the virtual machine. Click Storage in the panel to the left under Settings. Ensure Use Host I/O Cache is checked. Click Empty below \"Storage Devices . Click the CD icon next to \"Optical Drive\". Click Choose a disk image . Click the macOS disk image (.iso) file and click Open . Click the virtual hard disk (.vhd) file below \"Storage Devices\". Use the drop-down menu next to \"Hard Disk\" to set the SATA Port to \"2.\" Select the macOS 11.0 Optical Disk and set the SATA Port to \"0.\" Set the Virtual Hard Disk (.vhd) file to \"1.\""
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . Once you are done setting all the settings for the macOS virtual machine, click Ok to save the settings."
+    },
+    {
+      "title": "Patch the virtual machine.",
+      "content": "Patch the virtual machine. After you create a macOS virtual machine, you will need to patch it in order for it to work. To do this click first you need to close VirtualBox. Click the Windows Start menu and type CMD . Right-click the Command Prompt and click Run as Administrator . Then type or copy and paste the following commands and press Enter . Replace \"[macOS_VM name]\" in the commands with the actual name you gave your virtual machine. The commands are as follows: cd \"C:\\Program Files\\Oracle\\VirtualBox\\\" VBoxManage.exe modifyvm \"[macOS_VM_Name]\" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff VBoxManage setextradata \"[macOS_VM_Name]\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemProduct\" \"iMac11,3\" VBoxManage setextradata \"[macOS_VM_Name]\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemVersion\" \"1.0\" VBoxManage setextradata \"[macOS_VM_Name]\" \"VBoxInternal/Devices/efi/0/Config/DmiBoardProduct\" \"Iloveapple\" VBoxManage setextradata \"[macOS_VM_Name]\" \"VBoxInternal/Devices/smc/0/Config/DeviceKey\" \"ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc\" VBoxManage setextradata \"[macOS_VM_Name]\" \"VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC\" 1"
+    },
+    {
+      "title": "Run the macOS Virtual Machine and format the virtual hard disk.",
+      "content": "Run the macOS Virtual Machine and format the virtual hard disk. Before you can install macOS on the virtual hard drive, you need to format it. Use the following steps to format the virtual hard disk when you run the macOS virtual machine for the first time: Open VirtualBox. Select the macOS virtual machine and click Start . Wait for it to initialize. Select your language. Click Disk Utility and click Continue . Select VBox HARDDISK Media and click Erase at the top. Type a new name for the hard disk and click Erase . Click Disk Utility at the top and click Quit Disk Utility . Click Install macOS ."
+    },
+    {
+      "title": "Go through the macOS setup process.",
+      "content": "Go through the macOS setup process. The first time you run macOS, you will need to go through a setup process. This involves selecting a language, keyboard layout, creating a new macOS username and password, creating a new Apple ID, and turning accessibility features on or off. Follow the directions to finish the macOS setup process. Once you are finished with these steps, you can log in to macOS through the virtual machine."
+    },
+    {
+      "title": "Start the macOS virtual machine.",
+      "content": "Start the macOS virtual machine. Once macOS is successfully installed on a virtual machine, open VirtualBox and select the macOS virtual machine. Then click the Start icon at the top."
+    },
+    {
+      "title": "Log in to macOS.",
+      "content": "Log in to macOS. Enter the username and password you selected as your macOS login and press Enter on the keyboard to log in."
+    },
+    {
+      "title": "Click the App Store icon .",
+      "content": "Click the App Store icon . It's the blue icon with a capital \"A\" in the middle. Click the icon in the dock at the bottom of the screen to open the App Store. If you are asked to log in with your Apple ID, enter the email address and password associated with your Apple ID and click Continue ."
+    },
+    {
+      "title": "Type GarageBand in the search bar.",
+      "content": "Type GarageBand in the search bar. Type GarageBand in the search bar and press Enter to search for GarageBand."
+    },
+    {
+      "title": "Click GET next to GarageBand.",
+      "content": "Click GET next to GarageBand. This downloads and installs GarageBand on the macOS virtual machine."
+    },
+    {
+      "title": "Launch GarageBand.",
+      "content": "Launch GarageBand. You can find apps that you have downloaded to macOS in the Applications folder. To find it, click the Finder icon in the dock at the bottom of the screen, select Applications' in the left panel, and then click the GarageBand icon."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Hide-a-Link-in-HTML",
+  "title": "How to Hide a Link in HTML with Font Color or CSS",
+  "steps": [
+    {
+      "title": "Open the code for your webpage and find your link.",
+      "content": "Open the code for your webpage and find your link. By going into the code you have written for your webpage, you can find the link you've written into the code and change all its color values to match your background. In doing this, you'll effectively render your link invisible against your background color."
+    },
+    {
+      "title": "Look up the appropriate hex color code.",
+      "content": "Look up the appropriate hex color code. HTML, CSS, and other coding languages use six digit, three-byte hexadecimal code to represent color. You'll need to find the hex code for the color that matches your background, but a few common hex codes are as follows: White: FFFFFF Black: 000000 Gray: 808080 Light Gray: D3D3D3 Blue: 0000FF Beige: F5F5DC"
+    },
+    {
+      "title": "Adjust your code.",
+      "content": "Adjust your code. Once you have found the link you want to hide in your webpage code and know your hex color code, you can begin changing the color of your link. To do so, use the following code, inserting the link you want hidden and your hex color code where appropriate: [1] X Research source [2] X Research source <style> a:link.com { color: #(insert hex color code here); } a:active { color: #(insert hex color code here); } a:visited { color: #(insert hex color code here); } a:hover { color: #(insert hex color code here); } </style>"
+    },
+    {
+      "title": "Use the \"find\" function to verify your code worked.",
+      "content": "Use the \"find\" function to verify your code worked. Though your link is now effectively hidden, you and other users will still be able to locate the link using the \"find\" feature in your browser. Whether your link is normal, visited, active, or being hovered over by a cursor, your link should now be invisible. The \"find\" function can be activated in most browsers by pressing Ctrl + F ."
+    },
+    {
+      "title": "Add a class or ID attribute to your link.",
+      "content": "Add a class or ID attribute to your link. You can do this by including additional information in your link tag. Find your link tag and include the appropriate code for either your ID or class. Your code should look like: class=Link.com id=Link.com"
+    },
+    {
+      "title": "Create a CSS rule for your class or ID.",
+      "content": "Create a CSS rule for your class or ID. You can reference the name you've created by using a \".\" for classes or the \"#\" symbol for your ID. The code of this should look similar to: Classes: .Link.com IDs: #Link.com"
+    },
+    {
+      "title": "Change the \"display\" or \"visibility\".",
+      "content": "Change the \"display\" or \"visibility\". Both of these features will have the effect of hiding your link, but each function hides the link in a different way. By changing the display feature to \"none\", you will remove the link from the page layout. [3] X Research source This may cause other elements of your page to move if they define their position in reference to your link. Changing your visibility to \"hidden\" will hide the link without influencing the page layout. [4] X Research source Your code for this stage should simply look like: display: none visibility: hidden"
+    },
+    {
+      "title": "Double check the correctness of your code.",
+      "content": "Double check the correctness of your code. Incorrect code can cause significant errors in your webpage or change important elements of your design. Your final HTML and CSS code should look like: HTML Code: <a href=Link.com class=Link.com>Link</a> CSS Code: .Link.com { display: none; }"
+    }
+  ]
+}

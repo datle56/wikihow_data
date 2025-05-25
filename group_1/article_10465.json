@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Crack-a-Windows-7-Password",
+  "title": "How to Crack a Windows 7 Password",
+  "steps": [
+    {
+      "title": "Find or create a Windows 7 installation disc.",
+      "content": "Find or create a Windows 7 installation disc. In order to crack user passwords, you'll need to boot from a Windows 7 installation disc. There are a couple of ways that you can go about getting one: [1] X Research source Any Windows 7 installation disc will work, so you may be able to borrow or find one. You can download a Windows 7 ISO and burn it to a disc to create your own installation disc. You can download the ISO legally from Microsoft here , if you have a product key. You can also download the ISO from various torrent sites. Burn the ISO to a blank DVD by right-clicking on it and selecting \"Burn to Disc\" (Windows 7 later). See How to Create a Recovery Disc in Windows 7 for more details."
+    },
+    {
+      "title": "Insert the Windows 7 installation disc and reboot the computer.",
+      "content": "Insert the Windows 7 installation disc and reboot the computer. You'll be booting from the installation disc instead of loading Windows 7 as usual."
+    },
+    {
+      "title": "Press the key to enter the computer's BIOS or BOOT menu.",
+      "content": "Press the key to enter the computer's BIOS or BOOT menu. This key varies depending on your computer's manufacturer. The key will be displayed on the screen that appears as the computer first boots up. You'll need to press this key before Windows loads. Loading the BOOT menu directly instead of the BIOS menu will be quicker, but not all computers support this. Common keys include F2 , F10 , F11 , or Del ."
+    },
+    {
+      "title": "Select your disc drive from the BOOT menu.",
+      "content": "Select your disc drive from the BOOT menu. If you loaded directly to the boot menu, select the drive that contains the Windows 7 installation disc. If you loaded to the BIOS menu, navigate to the BOOT section using the keyboard and then change the boot order so that the drive containing the Windows 7 installation disc is listed first."
+    },
+    {
+      "title": "Boot from the Windows 7 installation disc and start Windows Setup.",
+      "content": "Boot from the Windows 7 installation disc and start Windows Setup. If you were in the BIOS, save your changes and exit to reboot the computer and boot from the installation disc. Press any key when prompted to start Windows Setup."
+    },
+    {
+      "title": "Set your language and input options.",
+      "content": "Set your language and input options. In the first screen that appears, you'll be asked to set your language and input options. You can usually leave everything at the default settings."
+    },
+    {
+      "title": "Click the \"Repair your computer\" link on the \"Install now\" screen.",
+      "content": "Click the \"Repair your computer\" link on the \"Install now\" screen. Instead of clicking \"Install now\" to start the Windows 7 installation, click the \"Repair your computer\" button in the bottom-left corner of the window."
+    },
+    {
+      "title": "Select \"Windows 7\" from the list of operating systems.",
+      "content": "Select \"Windows 7\" from the list of operating systems. These are all of the operating systems installed on the computer. Most computers will only have one operating system listed here."
+    },
+    {
+      "title": "Click the \"Command Prompt\" link on the next window.",
+      "content": "Click the \"Command Prompt\" link on the next window. This will launch the Command Prompt."
+    },
+    {
+      "title": "Enter the following commands, in order.",
+      "content": "Enter the following commands, in order. The following four commands will allow you to access the Command Prompt from the Windows Login screen. This will let you reset the passwords once Windows has loaded. Enter each of these commands, in order, pressing ↵ Enter after each one: C:\\ cd windows\\system32 ren utilman.exe utilman.exe.bak copy cmd.exe utilman.exe"
+    },
+    {
+      "title": "Remove the installation disc and reboot the computer.",
+      "content": "Remove the installation disc and reboot the computer. Allow Windows 7 to load as it normally would."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ⊞ Win + U on the Windows Login screen to open the Command Prompt. This would normally load the Accessibility Manager, but the commands you entered earlier renamed the programs so that the Command Prompt loads instead."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . net user and press ↵ Enter to display the list of user names. All of the users on the computer will be displayed."
+    },
+    {
+      "title": "Change the password for the account you want to access.",
+      "content": "Change the password for the account you want to access. You can use the net user command to change any user's password to whatever you'd like. Type the following command and press ↵ Enter , replacing username with the user you want to crack. If the username has a space in it, surround it in quotes. Enter the new password twice when prompted. net user username * For example, to change the user John Everyman's password, you would type net user \"John Everyman\" * and press ↵ Enter ."
+    },
+    {
+      "title": "Use your newly-created password to log in.",
+      "content": "Use your newly-created password to log in. After changing the password in the Command Prompt, you can immediately use the new password to log in on the Windows Login screen. Just select the user that you changed the password for and then enter the new password."
+    },
+    {
+      "title": "Revert your Command Prompt changes.",
+      "content": "Revert your Command Prompt changes. Now that you've changed the password and successfully logged in, you'll want to revert utilman.exe to its original state in case someone needs the Accessibility Center. Open the Command Prompt from the Start menu and perform the following commands in order: [2] X Research source C:\\ cd windows\\system32 del utilman.exe ren utilman.exe.bak utilman.exe"
+    }
+  ]
+}

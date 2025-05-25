@@ -1,0 +1,214 @@
+{
+  "url": "https://www.wikihow.com/Use-Microsoft-Access",
+  "title": "The Ultimate Guide to Using Microsoft Access",
+  "steps": [
+    {
+      "title": "Click the File tab and Select New.",
+      "content": "Click the File tab and Select New . The database is what will contain all of your data in its various forms. You can choose to create a blank database from scratch, or choose from a variety of templates."
+    },
+    {
+      "title": "Select a template or choose Blank database.",
+      "content": "Select a template or choose Blank database . A blank database is a standard Access database and is good for local use. Creating a blank database will create one table as well. You can click any of the templates to see a preview and learn more about its capabilities. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Templates are pre-built database structures designed for a wide range of uses, such as task management, inventories , student data, and project management."
+    },
+    {
+      "title": "Name your database and click Create.",
+      "content": "Name your database and click Create . You can also change your file's save location at this time, or stick with the default folder created for Microsoft Access. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Depending on which template you selected (if applicable), you may be prompted to create a login for your database. You can add a secure login to any database upon creation."
+    },
+    {
+      "title": "Understanding Access files.",
+      "content": "Understanding Access files. An Access database is a file that stores all of your database information. Within the database, you can store and work with data in various ways. Tables: This is the main way that data is stored in your database. Tables can be compared to spreadsheets in Excel: the data is organized in rows and columns. Because of this, importing data from Excel and other spreadsheet programs is a relatively straightforward process. Forms: You can create and use forms to add, view, and edit any data in a table. Reports: These summarize and display the data in your database. Reports are for analyzing data and returning answers to specific questions, such as how much profit was made, or where customers are located. These are usually designed to be printed or shared with others. Queries: Queries are used to retrieve and filter your data. You can use queries to display specific entries from multiple tables. You can also use queries to create and update data."
+    },
+    {
+      "title": "Create a table.",
+      "content": "Create a table. When adding data to your database, you'll want to create one table for each type of data you're tracking. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, you can list your customer contact information in one table, and products for sale in another. If you are starting with a blank database, you will automatically begin with one blank table. You can begin entering your data into this table, either by hand or by copying and pasting from another source. To create a new table, click the Create tab, then click Table . You can also click Table Design on the same tab to create a table in Design View, which gives you more control over your table design. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Add fields to the table.",
+      "content": "Add fields to the table. Fields are essentially column headers that contain a single type of data, such as name, age, or address. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Each field has a data type, e.g., \"Short Text,\" \"Currency,\" or \"Long Date,\" which applies to the values in that field (in other words, the values of the column). To name a field, double-click it, then type a name. You can set the data type for a selected field by clicking the Table Fields menu at the top, choosing More Fields , and then clicking the preferred data type. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, if you create a field called \"Phone\" for customer phone numbers, you'll want to set the data type to \"Phone\" so the proper phone number format applies to the data in the column. The ID field, which is the first column, is used to store keys that uniquely identify each row (record) of data in your Access database. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source To learn more about the keys and the ID field, see Setting Table Relationships ."
+    },
+    {
+      "title": "Add field values.",
+      "content": "Add field values. Field values are the individual pieces of data added to fields. Each \"cell\" is a field value that contains information relative to the field (column) it's in. For example, if the field is \"Phone,\" each field value in that column will be a different phone number. Each row is called a record. As you generate new records by adding fields, an ID number will appear in the ID column. You can use that ID number to reference that particular record."
+    },
+    {
+      "title": "Click the External Data tab.",
+      "content": "Click the External Data tab. If you want to import from a supported file or location, you can set Access to grab the information and add it to your database. This is useful for grabbing data off of a web server or some other shared resource:"
+    },
+    {
+      "title": "Select the file type that you are importing.",
+      "content": "Select the file type that you are importing. In the \"Import & Link\" section, you will see a few options for data types. If you do not see the type you need, click New Data Source (Microsoft 365) or More to view additional options. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can import data From File ( Excel spreadsheets , HTML, XML, & text), From Database (Access, SQL Server, Azure Database, or a dBASE file), From Online Services (Dataverse, Sharepoint, or Data Services), or From Other Sources (ODBC Database and Outlook Folder). Once you select a source, the Get External Data wizard will expand."
+    },
+    {
+      "title": "Select the location of your data.",
+      "content": "Select the location of your data. Click Browse to select a file, or enter the address of the location that contains the data you want to import."
+    },
+    {
+      "title": "Choose how to import the data and click OK.",
+      "content": "Choose how to import the data and click OK . To import the data, select Import the source data into a new table in the current database . A new table will be created for the selected data unless you already have a table with the same name and fields. Alternatively, you can select Link to the data source by creating a linked table . This option creates a table in the current database for the selected data that stays linked to the original data source."
+    },
+    {
+      "title": "Understand how keys work.",
+      "content": "Understand how keys work. Each table will have one primary key that is unique for each entry. By default, Access creates an ID column that increases in number for each entry. This is set as the primary key. Tables can also have foreign keys, which are fields linked with other tables in the database. The linked fields would contain the same data. For example, in your Orders table, you may have a Customer ID field to track which customer ordered which product. You can create a relationship with the Orders table and another table by adding the same ID field to the other table. Using relationships helps keep your data consistent, efficient, and readable."
+    },
+    {
+      "title": "Click the Database Tools.",
+      "content": "Click the Database Tools . It's at the top of Access. [9] X Research source"
+    },
+    {
+      "title": "Click the Relationships button in the toolbar.",
+      "content": "Click the Relationships button in the toolbar. This will open a new window with an overview of all of the tables in the database. Each field will be listed underneath its table’s name. [10] X Research source You will need to have created the field for the foreign key before you create the relationship. For example, if you want to use the Customer ID on the Orders table, create a field in the Orders table called Customer and leave it blank. Make sure it is the same format as the field you are linking (numbers in this case)."
+    },
+    {
+      "title": "Drag the field you want to use as a foreign key.",
+      "content": "Drag the field you want to use as a foreign key. Drop it to the field that you created for the foreign key. Click Create in the window that appears to set the relationship for the fields. A line will appear between the two tables, connecting the fields. [11] X Research source Check the box to “Enforce Referential Integrity” when creating the relationship. This means that if data is changed in one field, the other field is automatically updated. This will help keep your data accurate."
+    },
+    {
+      "title": "Understand the role of queries.",
+      "content": "Understand the role of queries. Queries are actions that let you quickly view, add, and edit the data in your database. There are a wide variety of query types, ranging from simple lookups to the creation of new tables based on existing data. Queries are essential tools for building reports. Queries are broken down into two main types: Select and Action . Select queries pull data from tables and can make calculations. Action queries can add, edit, and delete data from tables. [12] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Use the Query Wizard to create a basic select query.",
+      "content": "Use the Query Wizard to create a basic select query. To do so, click the Create tab and select Query Wizard . You can now do basic select queries, including finding duplicates, finding unmatched data, and more."
+    },
+    {
+      "title": "Open the Query Design tool to do more advanced queries.",
+      "content": "Open the Query Design tool to do more advanced queries. To do this, click the Create tab and select Query Design . You can use this tool to narrow down your select query and only display the information you need. Select is selected by default, but you can also select an action to perform an action query, such as Append , Make Table , Delete , and more. In this example, we'll create a select query that displays customer names and phones numbers."
+    },
+    {
+      "title": "Select a table on which to run the query.",
+      "content": "Select a table on which to run the query. Double-click the name of the table in the right \"Add Tables\" panel\" to add it to your query."
+    },
+    {
+      "title": "Add fields to the query.",
+      "content": "Add fields to the query. In the small pop-up that contains the table name and field names, double-click each field you want to query. The fields will be added to the Design grid at the bottom."
+    },
+    {
+      "title": "Add your criteria.",
+      "content": "Add your criteria. You can use several types of criteria, such as text or functions. For example, if you wanted to only display prices higher than $50 from your “Prices” field, you would enter >=50 into the criteria. If you wanted to only show customers from the UK, you would type UK into the Criteria field. You can use multiple criteria per query."
+    },
+    {
+      "title": "Click Run to see your results.",
+      "content": "Click Run to see your results. The Run button is located on the Query Design tab at the top of Access. Your Query results will be displayed in the window. Press Ctrl + S to save the query."
+    },
+    {
+      "title": "Open the Query Design tool.",
+      "content": "Open the Query Design tool. A parameter query will allow you to specify what you want to retrieve each time the query is run. For example, if you have a database with customers from various cities, you can run a parameter query to ask which city you want to display results for."
+    },
+    {
+      "title": "Create a select query and specify the table(s).",
+      "content": "Create a select query and specify the table(s). Add fields to be retrieved in the query by double-clicking them in the table overview."
+    },
+    {
+      "title": "Add a parameter to the Criteria section.",
+      "content": "Add a parameter to the Criteria section. Parameters are denoted by “[]” around the parameter. The text inside the brackets will be shown in the prompt that appears when the query is run. For example, to prompt for the city, click the Criteria cell for the city field, and type [Which city?] . You can end parameters with “?” or “:”, but not with “!” or “.”"
+    },
+    {
+      "title": "Make a multi-parameter query.",
+      "content": "Make a multi-parameter query. You can use multiple parameters to create a custom range for your query results. For example, if the field is a Date field, you can return a range of dates by typing Between [Enter starting date:] And [Enter ending date:] . You will receive two prompts when you run the query. [13] X Research source"
+    },
+    {
+      "title": "Click the Create tab and select Query Design.",
+      "content": "Click the Create tab and select Query Design. You can use queries to pull specific data from existing tables and create a new table with this data. This is especially useful if you want to share specific parts of your database, or create specific forms for subsets of your database. You will need to create a regular select query first."
+    },
+    {
+      "title": "Select the table(s) that you want to pull data from.",
+      "content": "Select the table(s) that you want to pull data from. Double-click on the tables that you want to pull your data from. You can pull from multiple tables if necessary."
+    },
+    {
+      "title": "Select the fields that you want to retrieve data from.",
+      "content": "Select the fields that you want to retrieve data from. Double-click each field that you want to add from the table overview. It will be added to your query grid."
+    },
+    {
+      "title": "Set your criteria.",
+      "content": "Set your criteria. If you want to specify specific data from a field, use the criteria section to set the filter. See the “Creating a Select Query with Criteria” section above for more details."
+    },
+    {
+      "title": "Test your query to ensure that it returns the results you want.",
+      "content": "Test your query to ensure that it returns the results you want. Before you create your table, run the query to ensure that it is pulling all of the correct data. Adjust your criteria and fields until you get all of the data that you want."
+    },
+    {
+      "title": "Save the query.",
+      "content": "Save the query. Press Ctrl + S to save the query for later use. It will appear in your navigation frame on the left side of the screen. Click on the query to select it again and then click on the Design tab."
+    },
+    {
+      "title": "Click the “Make Table” button in the Query Type group.",
+      "content": "Click the “Make Table” button in the Query Type group. A window will appear asking for your new table name. Enter the name for the table and click OK."
+    },
+    {
+      "title": "Click the Run button.",
+      "content": "Click the Run button. Your new table will be created with the query you established. The table will appear in your navigation frame on the left."
+    },
+    {
+      "title": "Open a previously created query.",
+      "content": "Open a previously created query. You can use an append query to add data to a table that already exists from another table. This is useful if you need to add more data to a table you created with a make table query."
+    },
+    {
+      "title": "Click the Append button in the Design tab.",
+      "content": "Click the Append button in the Design tab. This will open the Append dialog box. Select the table you want to append."
+    },
+    {
+      "title": "Change the criteria of your query to match what you want to add.",
+      "content": "Change the criteria of your query to match what you want to add. For example, if you created a table with the criteria “2010” for the Year field, change it to the year you want to add, such as “2011”."
+    },
+    {
+      "title": "Set where you want the data appended.",
+      "content": "Set where you want the data appended. Make sure to set the correct fields for each column that you are appending. For example, when using the above changes, data should be appending to the Year field on the Append To row."
+    },
+    {
+      "title": "Run the query.",
+      "content": "Run the query. Click the Run button on the Design tab. The query will be run and the data will be added to the table. You can open the table to verify that the data was added correctly."
+    },
+    {
+      "title": "Select the table that you want to create a form for.",
+      "content": "Select the table that you want to create a form for. Forms allow you to easily see the data for each field, as well as quickly switch between records or create new ones. Forms are essential for extended periods of data entry, as most people find them much easier to work with than tables."
+    },
+    {
+      "title": "Click the Form button in the Create tab.",
+      "content": "Click the Form button in the Create tab. This will create a form based on the fields contained in the table automatically. Access does a pretty good job of automatically creating fields that are the correct size, but you can resize and move around any elements on the form that you want. [14] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don’t want a specific field to be displayed on the form, you can right-click on it and select Delete. If your tables have relationships, a datasheet will appear beneath each record, showing the connected data. You can edit your connected data this way much easier. For example, each sales rep in your database may have a customer database attached to their record."
+    },
+    {
+      "title": "Navigate your new form.",
+      "content": "Navigate your new form. The arrow buttons at the bottom move from record to record. The fields will be populated by your record data as you switch between them. You can use the buttons on the edges to move to the first or last record."
+    },
+    {
+      "title": "Click the datasheet button to use the table.",
+      "content": "Click the datasheet button to use the table. This is located in the upper-left corner, and will allow you to start changing the values of your table by using the form."
+    },
+    {
+      "title": "Make changes to existing records.",
+      "content": "Make changes to existing records. You can edit the text in any field of each record to change the data in the table. The changes will reflect automatically in the table, as well as in any connected tables."
+    },
+    {
+      "title": "Add new records.",
+      "content": "Add new records. Click the “Add Record” button near the navigation buttons to create a new record at the end of the list. You can then use the fields to input data into the blank record in the table. This is a much easier way to add new information than through the table view."
+    },
+    {
+      "title": "Save the form when finished.",
+      "content": "Save the form when finished. Make sure to save your form by pressing Ctrl + S so that you can easily access it again later. It will appear in your navigation frame on the left side of the screen."
+    },
+    {
+      "title": "Select your table or query.",
+      "content": "Select your table or query. Reports allow you to quickly display summaries of your data. They are often used for income and shipping reports, and can be tailored to just about any use. Reports draw data from either tables or queries that you have created."
+    },
+    {
+      "title": "Click the Create tab.",
+      "content": "Click the Create tab. Select the type of report you want to create. There are a few different ways you can go about creating a report. Access can create your report for you automatically, or you can create a custom one. [15] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Report – This will create an auto-report with all of the data from your source. Nothing will be grouped, but for small databases this is probably sufficient for showing what you need. Blank Report – This will create an empty report that you can fill with your data as you see fit. You will be able to choose from any available field to create a custom report. Report Wizard – The report wizard will guide you through the report creation process, allowing to choose and group your data, and then format it accordingly."
+    },
+    {
+      "title": "Set a source for a blank report.",
+      "content": "Set a source for a blank report. If you’ve selected to create a blank report, you’ll need to select a source for it. First, click the Arrange tab and then select Property Sheet. Alternatively, you can also press Alt + Enter. Click the down arrow next to the Record Source field. A list of your available tables and queries will appear. Select one and it will be assigned to the report."
+    },
+    {
+      "title": "Add fields to your report.",
+      "content": "Add fields to your report. Once you have a source, you can start adding fields from it to your report. Click the Format tab, and then click Add Existing Fields. The Field List will appear in the right frame. Click and drag the fields you want to add into the Design frame. The record will appear in the report. As you add additional fields, they will be lined up automatically with existing fields. You can resize fields by clicking on the edges and dragging the mouse. Delete fields from the report by clicking on the heading and pressing the Delete key."
+    },
+    {
+      "title": "Add groups to your report.",
+      "content": "Add groups to your report. Groups allow you to quickly parse information in a report, as they allow you to organize related information. For example, you may want to group sales by region or by salesperson. Groups allow you to do this. Click the Design tab, click the Group & Sort button. Right-click on any part of the field you want to add to a group. Select Group On from the menu. A header will be created for the group. You can adjust the header to whatever you want to label the group."
+    },
+    {
+      "title": "Save and share your report.",
+      "content": "Save and share your report. Once your report is finalized, you can save it and then share it or print it like any document. Use this to share company performance with investors, contact information with employees, and much more."
+    }
+  ]
+}

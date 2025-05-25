@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Format-a-Pendrive-if-Windows-is-Unable",
+  "title": "Windows Unable to Format Pendrive: What to Do to Fix This Error",
+  "steps": [
+    {
+      "title": "Connect your drive and open Disk Management.",
+      "content": "Connect your drive and open Disk Management. This is a Windows utility that allows you to manage all of your connected disks. Your drive should appear in this utility, even if it isn't formatted properly. Press the Windows key + R and type diskmgmt.msc . This will launch the Disk Management Utility. Look for your USB drive in the list of connected drives. If your USB drive is listed, it may not be formatted correctly. Click here for instructions on trying to format it. If your USB drive is not listed, read on for some troubleshooting tips."
+    },
+    {
+      "title": "Plug the drive into another USB slot.",
+      "content": "Plug the drive into another USB slot. Before continuing, the quickest troubleshooting method you can try is plugging the USB drive into another USB port on your computer. Be sure to try a port directly on the computer, not a USB hub. If the drive works in another USB port, the first one you tried is likely dead. There's not much you can do about this short of replacing your motherboard. Just try to avoid using that port in the future."
+    },
+    {
+      "title": "Plug the drive into another computer.",
+      "content": "Plug the drive into another computer. If the drive still does not appear when plugged into another computer, there's a good chance that the drive is dead. You may need to replace it. If the drive appears when plugged into another computer, there may be an issue with the drivers on your computer. See the next section for instructions on dealing with driver issues."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . the Windows key + R and type devmgmt.msc . This will open the Device Manager."
+    },
+    {
+      "title": "Expand the \"Disk drives\" category.",
+      "content": "Expand the \"Disk drives\" category. This will list all of your connected disk drives, including hard drives and USB drives."
+    },
+    {
+      "title": "Right-click on the USB drive and select \"Uninstall\".",
+      "content": "Right-click on the USB drive and select \"Uninstall\". This will remove the drivers for the USB drive from your system."
+    },
+    {
+      "title": "Unplug the USB drive and then plug it back in.",
+      "content": "Unplug the USB drive and then plug it back in. Windows will attempt to automatically install the drivers."
+    },
+    {
+      "title": "Update your USB drives.",
+      "content": "Update your USB drives. If you see a yellow exclamation icon next to any of your devices, it means there is a problem with the drivers. If this yellow exclamation mark is on your Universal Serial Bus controllers, your computer's USB drivers are acting up. Right-click on the non-working device and select \"Update Driver Software\". Follow the prompts to reinstall the drivers. [1] X Research source"
+    },
+    {
+      "title": "Press .",
+      "content": "Press . the Windows key + R and type diskmgmt.msc . This will launch the Disk Management Utility."
+    },
+    {
+      "title": "Right-click on the partition for your USB drive.",
+      "content": "Right-click on the partition for your USB drive. You will be able to see all of the partitions for each drive in the bottom frame of Disk Management."
+    },
+    {
+      "title": "Select \"Format\" from the menu.",
+      "content": "Select \"Format\" from the menu. This will open the Format tool."
+    },
+    {
+      "title": "Select \"FAT32\" as the file system.",
+      "content": "Select \"FAT32\" as the file system. This will allow the USB drive to be read by the most devices possible, including Windows, OS X, Linux, and most game consoles."
+    },
+    {
+      "title": "Uncheck \"Perform a quick format\".",
+      "content": "Uncheck \"Perform a quick format\". The formatting process will take longer, but Windows may be able to correct errors on the drive."
+    },
+    {
+      "title": "Click .",
+      "content": "Click . OK to start formatting the drive. This may take a while, but if the format is successful, the drive should appear in Windows. If the format process doesn't work, try the next section. Formatting will delete all of the data on the USB drive."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. You can start the Command Prompt from the Start menu, or by pressing the Windows key + R and typing cmd ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . diskpart and press Enter. You may be prompted for administrator access. The prompt will change to DISKPART> ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . list disk and press Enter. This will list all of your connected disks."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . select disk # and press Enter. Replace # with the number associated with your USB drive."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . clean and press Enter. This will check the disk for errors."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . create partition primary and press Enter. This will create a new partition on the disk."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . active and press Enter. this will make the newly-created partition the active partition on the USB drive."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . format fs=fat32 and press Enter. This will format the new partition using the FAT32 file system, which is compatible with most devices and computers. The format process will likely take a while to finish."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . exit and press Enter. This will close the DISKPART utility. If your USB drive will still not show up in Windows after using the DISKPART utility, or you receive errors when trying to format, your USB drive is most likely damaged and no longer functional."
+    }
+  ]
+}

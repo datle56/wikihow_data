@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Write-a-Coin-Flipping-Program-on-Python",
+  "title": "How to Write a Coin Flipping Program on Python",
+  "steps": [
+    {
+      "title": "Go to the Python website and download python.",
+      "content": "Go to the Python website and download python. Here is a shortcut to the website https://www.python.org/downloads/ . Press the \"Download Python 3.9.1\" Option"
+    },
+    {
+      "title": "Save the file to your desktop.",
+      "content": "Save the file to your desktop."
+    },
+    {
+      "title": "Open it.",
+      "content": "Open it."
+    },
+    {
+      "title": "Install the Python Program.",
+      "content": "Install the Python Program. Once the programme has finished installing, Python should be ready to use on your computer."
+    },
+    {
+      "title": "Go to the start menu and type in \"IDLE Python\".",
+      "content": "Go to the start menu and type in \"IDLE Python\". Open that file. This will open up IDLE Python."
+    },
+    {
+      "title": "Press \"CTRL\" + \"N\" or navigate to 'File' then 'New Window' to access Python Scripting Mode.",
+      "content": "Press \"CTRL\" + \"N\" or navigate to 'File' then 'New Window' to access Python Scripting Mode. This is what is used to write the program"
+    },
+    {
+      "title": "Type in \"import random\" on the first line hit then enter.",
+      "content": "Type in \"import random\" on the first line hit then enter. This will import the random module which gives access to one of the \"random\" modules we will use."
+    },
+    {
+      "title": "Type in \"print ( \"Welcome to the Coin Flipping Program\")\".",
+      "content": "Type in \"print ( \"Welcome to the Coin Flipping Program\")\". This will welcome the user to the program."
+    },
+    {
+      "title": "Type this line \" choice=input(\"Enter your side (heads or tails):",
+      "content": "Type this line \" choice=input(\"Enter your side (heads or tails): \") \" and press enter. This tells the user to type in either heads or tails. . This will make whatever the user types will turn into the \"choice\" variable."
+    },
+    {
+      "title": "Type in \" num=random.randint(1,2) \" and press enter.",
+      "content": "Type in \" num=random.randint(1,2) \" and press enter. This will randomly import a 2 number, One and Two. Python will randomly choose 'num' to become either one or two."
+    },
+    {
+      "title": "Create an if statement.",
+      "content": "Create an if statement. You will need to make a 'result' variable. If the randomly generated number is one, then the result will be \"heads. But if the random number is 2, then the result will be \"tails\"."
+    },
+    {
+      "title": "Type in \" if num==1:",
+      "content": "Type in \" if num==1: \", then press enter (Python will automatically make an indentation); after the indentation type in \" result=\"heads\" \". You will need to pay close attention and type very carefully. This step is if the 'num' variable is 1."
+    },
+    {
+      "title": "Type in \" elif num==2:",
+      "content": "Type in \" elif num==2: \", one a new line, then press enter (Python will automatically make an indentation); after the indentation type in \"result=\"tails\" \". This new if-statement is for if the 'num' variable is 2. Again, you will need to pay close attention and type carefully."
+    },
+    {
+      "title": "Make a line that compares the user's input and the 'result' variable.",
+      "content": "Make a line that compares the user's input and the 'result' variable. To do this, you will use another if-statement."
+    },
+    {
+      "title": "Start on the next line and type in \" if choice==result:",
+      "content": "Start on the next line and type in \" if choice==result: \" and then enter (Python will make an indentation); on the new line type in \" print(\"Good Job You won The coin flipped \",result) \". If the user's input is the same as the result, it will print \"Good Job You won; The coin flipped, x\" (x being either heads or tails)."
+    },
+    {
+      "title": "Start on the next line and type in \" else:",
+      "content": "Start on the next line and type in \" else: \" and then hit enter (Python will make an indentation); on the new line is, type in \" print(\"Aw... You lost. The coin flipped \", result) \". If the user's input is not the same as the result, it will print \"Aw... You lost. The coin flipped \", x\" (x being either heads or tails)."
+    },
+    {
+      "title": "Type in \" print(\"Thanks for playing.",
+      "content": "Type in \" print(\"Thanks for playing. Goodbye\") \". This will let the user know the program is over."
+    },
+    {
+      "title": "Run the program.",
+      "content": "Run the program. To do this, you need to save the file by Pressing CTRL+ \"S\". A file-saver pop-up will show. Save the file on your desktop with any name."
+    },
+    {
+      "title": "Press \"F5\" on the top row of your keyboard or navigate to 'Run' and press 'Run Module'.",
+      "content": "Press \"F5\" on the top row of your keyboard or navigate to 'Run' and press 'Run Module'. This will run your program."
+    },
+    {
+      "title": "Type in either \"heads\" or \"tails\" (depending on your choice) and press Enter.",
+      "content": "Type in either \"heads\" or \"tails\" (depending on your choice) and press Enter."
+    },
+    {
+      "title": "View the output.",
+      "content": "View the output. The program will show if you won or not. It will also tell you which side of the imaginary coin it landed on."
+    }
+  ]
+}

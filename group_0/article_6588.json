@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Change-Size-of-Header-in-CSS",
+  "title": "How to Adjust Header Size in CSS: Easy Font Property Guide",
+  "steps": [
+    {
+      "title": "Choose a unit of measurement for your header size.",
+      "content": "Choose a unit of measurement for your header size. When you use the CSS font-size property, you can change the size of your header font in two different ways: In relative units: For accessible web design , you'll usually want to adjust the font relative to other elements. This ensures the size of your headers will adjust automatically when the user resizes the window. In absolute units: If you want to be specific about the number of pixels (px), points (pt), inches (in), or other specific sizes, you can use absolute units. However, this can cause problems when it comes to responsive web design, as the user won't be able to adjust the size of the text in their browser, even when magnifying the page. [1] X Research source"
+    },
+    {
+      "title": "Common relative units.",
+      "content": "Common relative units. To make sure your header sizes stay consistent no matter the screen size of the user, you'll want to stick to relative units. The most common relative units you'll use with the font-size property are: em: Adjusts the header size relative to the font size of the element. Using em is great because it changes the size of the font based on the font the reader is using on their computer, phone, or tablet. [2] X Research source For example, using font-size: 1.2em increases the size of the heading 1.2 times, or 20% larger than the default size. [3] X Research source Or, if the header tag is inside of another element that has a font size specified, such as a div , using font-size: 1.2em in your header code would make the size of the header 20% larger than the font size specified in the div . rem: Similar to em , but changes the size based on the root (HTML) element's font size instead of the parent element. If you set your header size using rem as the unit of measurement, the header will always adjust based on that of the root element, even if the header is within another container. For example, if the HTML body font size is set to 100%, using font-size: 5rem in your H1 tag would make the H1 header size 5 times as large as the default font. vh : Changes based on the height of the viewport (the area of the screen visible to the user). [4] X Research source For example, font-size: 10.0vh makes the font 10% of the viewport's height. vw: Just like vh , vw adjusts the size relative to the viewport, but to the width rather than the height."
+    },
+    {
+      "title": "Use the font-size property to specify the font size of your header tags.",
+      "content": "Use the font-size property to specify the font size of your header tags. Once you've chosen a unit of measurement, you can change the size of a header by creating an (or editing an existing) element for your header tag in your website's CSS file or the WordPress CSS editor . Here are some examples to get you started: For example, if you want to change the size of the H1 to be 20% of the viewport size, you'd use: h1 { font-size : 20 vh ; } In this example, we'll use CSS to also adjust the size of the H2 header tag, which we want to be a little smaller than H1 tags. Let's make it 17% of the viewport height: h1 { font-size : 20 vh ; } h2 { font-size : 17 vh ; }"
+    },
+    {
+      "title": "Now, instead of using the viewport height (vh) as our measurement unit, let's use rem.",
+      "content": "Now, instead of using the viewport height (vh) as our measurement unit, let's use rem. In this example, we'll change the font size of H1, H2, and H3 relative to the size of the font set in the HTML element: html { font-size : 100 % ; } h1 { font-size : 3.5 rem ; } h2 { font-size : 2.75 rem ; } h3 { font-size : 2 rem ; }"
+    },
+    {
+      "title": "Sign in to your WordPress dashboard.",
+      "content": "Sign in to your WordPress dashboard. If you're designing a WordPress site and want to set the header sizes for your entire site, you can use the Customizer in your WordPress dashboard to change the CSS for your theme. [5] X Research source If you haven't already, see this method to learn how to change the header size with CSS."
+    },
+    {
+      "title": "Click Appearance.",
+      "content": "Click Appearance . You'll see this option in the left panel. If you haven't already, click My Site to open your site for editing. If you've installed WordPress on your own dedicated or shared web server, you may also be able to edit the CSS file directly, either by downloading the file via FTP or by editing it in your browser. The file you're looking for will be called custom.css or style.css and should be in your theme's main directory."
+    },
+    {
+      "title": "Click Customize.",
+      "content": "Click Customize . You'll see this option under Appearance in the left panel. [6] X Research source Some WordPress themes allow you to change header sizes without having to edit the CSS directly. If you see a \"Headings\" area, you can use the menus to adjust your header sizes."
+    },
+    {
+      "title": "Click Additional CSS.",
+      "content": "Click Additional CSS . You'll see this in the left panel. This opens a CSS editor that lets you add your own custom additions to the theme's existing CSS."
+    },
+    {
+      "title": "Add the desired header elements to your CSS.",
+      "content": "Add the desired header elements to your CSS. As you type or paste your preferred header sizes using the font-size property into the field, you'll see a preview in the right panel. The preview will also show you how your changes will look on different screen sizes. The CSS you enter here will override any other CSS settings in your theme. [8] X Research source ttps://wordpress.com/support/editing-css In other words, if the H1 size is set to 20px in the theme and you set the H1 to 2.75rem in Additional CSS, your changes will take precedence."
+    },
+    {
+      "title": "Click Publish to save your changes.",
+      "content": "Click Publish to save your changes. Once you've edited the global CSS for your theme, your new header sizes will apply to your entire WordPress website."
+    },
+    {
+      "title": "Expand the sidebar in the WordPress block editor.",
+      "content": "Expand the sidebar in the WordPress block editor. If you're editing a page or post on WordPress using the block editor, you can easily adjust the size of each of your header tags (H1, H2, H5, etc.) individually. This updates the CSS for the selected header automatically. If you don't see the Settings sidebar running along the right side of the editor, click the Settings menu icon at the top-right corner to display it. Unlike when editing the CSS for your theme, the block editor only lets you change header sizes on the post or page that's open for editing."
+    },
+    {
+      "title": "Click the header you want to edit.",
+      "content": "Click the header you want to edit. When you click the header, the header type (e.g., H1) appears in the pop-up window."
+    },
+    {
+      "title": "Select a header size in the Typography area of the sidebar.",
+      "content": "Select a header size in the Typography area of the sidebar. For example, if you choose XXL , the selected header will adjust to the largest size. It's best to keep your header sizes uniform—H1 should be the largest, followed by H2, etc."
+    },
+    {
+      "title": "Repeat for all other headers.",
+      "content": "Repeat for all other headers. You can now select another header on the page and adjust its size manually. Adjusting one header will not change the size of all headers on the page. In other words, making one H1 \"Large\" will not make all other H1s \"Large.\" You'll need to change the size of each header individually."
+    },
+    {
+      "title": "Click Publish to save your changes.",
+      "content": "Click Publish to save your changes. Now your new header sizes will be visible to all readers."
+    }
+  ]
+}

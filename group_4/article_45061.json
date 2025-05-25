@@ -1,0 +1,170 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Browsing-History-on-Chrome",
+  "title": "How to Turn Off and Delete Your Browsing History in Chrome",
+  "steps": [
+    {
+      "title": "Click the icon with three dots in Chrome ⋮.",
+      "content": "Click the icon with three dots in Chrome ⋮ . It’s in the upper-right corner of the Google Chrome window. This displays the menu. Google Chrome does not save your browser history when browsing in Incognito Mode. If you want to use Chrome without keeping track of the websites you visit, just make sure you browse in Incognito mode. [2] X Research source"
+    },
+    {
+      "title": "Click New Incognito Window.",
+      "content": "Click New Incognito Window . This opens a new incognito browsing window. Your browsing activity will not be saved as long as you use Incognito Mode. [3] X Research source Alternatively, you can press Ctrl + Shift + N on PC or ⌘ + Shift + N on Mac to open an incognito window. When you're finished browsing without saving your history, you can switch back to regular browsing . Create a shortcut for Incognito mode to make it easier to browse privately when you want to."
+    },
+    {
+      "title": "Tap the menu icon in Chrome.",
+      "content": "Tap the menu icon in Chrome. It'll be the three dots ••• ⋮ . It's the three horizontal dots at the bottom-right corner on an iPhone or iPad, and the three vertical dots at the top-right on an Android phone or tablet. Google Chrome does not save your browser history when browsing in Incognito Mode. If you want to use Chrome without keeping track of the websites you visit, just make sure to open an Incognito tab when browsing on your phone or tablet. [4] X Research source"
+    },
+    {
+      "title": "Tap New Incognito Tab.",
+      "content": "Tap New Incognito Tab . This opens a fresh new tab that allows you to browse the web without saving your browsing history. As long as you browse from this tab, your history will not be saved. Create a shortcut for Incognito mode to make it easier to browse privately when you want to."
+    },
+    {
+      "title": "Add the “History On/Off” extension to Google Chrome.",
+      "content": "Add the “History On/Off” extension to Google Chrome. While Google Chrome doesn’t offer a way to disable browsing history outside of Incognito mode, you can use a web browser extension to disable your browsing history. Use the following steps to add History On/Off as a browser extension: Go to the History On/Off Chrome web store page . Click Add to Chrome in the upper-right corner. Click Add extension ."
+    },
+    {
+      "title": "Click the extensions icon.",
+      "content": "Click the extensions icon. It’s the icon that resembles a puzzle piece. It’s next to the address bar in the upper-right corner of your Google Chrome window. This displays a list of your extensions."
+    },
+    {
+      "title": "Click History On/Off.",
+      "content": "Click History On/Off . It’ll be listed in your list of extensions. Clicking the extension in the list will toggle your browser history on and off. If you see a red “x” next to the extension in the extensions list, your browsing history is turned off. Click the extension again in the list to toggle it back on."
+    },
+    {
+      "title": "Go to the My Google Activity page in Chrome.",
+      "content": "Go to the My Google Activity page in Chrome. If you're not already signed in with your Google account, you'll be asked to do so. [5] X Research source You can use this method to disable history logging for Google Search, YouTube, Google-related app history (including Maps and Google Play), as well as your location history. However, this won't disable your browsing history in Chrome."
+    },
+    {
+      "title": "Click Activity Controls.",
+      "content": "Click Activity Controls . It's in the left panel. If you're using a phone or tablet, you may have to tap the menu at the top-left corner to see this option."
+    },
+    {
+      "title": "Review the information being logged by Google.",
+      "content": "Review the information being logged by Google. Google breaks this page into three sections, and you can view each section's history content by clicking Manage activity beneath the option. The three options are: Web & App Activity: This includes your Google search history, Chrome history (if selected), Maps, Android app activity, and all other Google services. Location History: This is where you've used your device, even on non-Google services. YouTube History: Includes videos you've watched and your searches."
+    },
+    {
+      "title": "Click Turn off below any of the headers.",
+      "content": "Click Turn off below any of the headers. It’s the drop-down menu in the upper-right corner below the “Web & App Activity,” “Location History,” and “YouTube History” Headers."
+    },
+    {
+      "title": "Select Turn off or Turn off and delete activity.",
+      "content": "Select Turn off or Turn off and delete activity . If you just want to turn off your Google Activity and prevent it from saving going forward, select Turn off . If you want to turn off and delete your previous activity, select Turn off and delete activity."
+    },
+    {
+      "title": "Follow the prompts.",
+      "content": "Follow the prompts. Depending on which option you select, you may be asked to pause your activity or read through some information and click Got it. Follow the prompts to disable and/or delete your activity."
+    },
+    {
+      "title": "Open the Windows Registry Editor.",
+      "content": "Open the Windows Registry Editor. You can make a change to the Windows Registry to prevent Chrome from saving your browsing history. Warning: Making changes to the Windows Registry can cause permanent damage to your operating system if you do the wrong thing. Use the following steps to open the Windows Registry Editor : Press Win + R to open Run. Enter regedit and press Enter. Click Yes when prompted."
+    },
+    {
+      "title": "Navigate to the Policies folder.",
+      "content": "Navigate to the Policies folder. Use the following steps to do so: Open Computer . Open the HKEY_LOCAL_MACHINE folder. Open the SOFTWARE folder. Open the Policies folder."
+    },
+    {
+      "title": "Create a new Google key folder in the policies folder.",
+      "content": "Create a new Google key folder in the policies folder. Use the following steps to do so: Right-click the Policies folder in the panel to the left. Select New . Select Key. Enter Google as the key’s name."
+    },
+    {
+      "title": "Open the new Google folder.",
+      "content": "Open the new Google folder. Double-click it in the panel to the left."
+    },
+    {
+      "title": "Create a new DWORD for disabling Chrome history.",
+      "content": "Create a new DWORD for disabling Chrome history. Use the following steps to do so: Right-click the blank space inside the Google key folder. Click New . Click DWORD (32-bit) Value . Enter SavingBrowserHistoryDisabled is the DWORD name."
+    },
+    {
+      "title": "Set the DWORD value to “1”.",
+      "content": "Set the DWORD value to “1”. Use the following steps to do so: Double-click SavingBrowserHistoryDisabled . Set the “Value data” to “1”. Click OK ."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. After creating a new policy key, restart your computer for the changes to take effect. This should block Google Chrome from saving your history."
+    },
+    {
+      "title": "Open Group Policy Editor.",
+      "content": "Open Group Policy Editor. Group Policy Editor is not available on the Home Edition of Windows 10 or 11. If you are using any other version of Windows, use the following steps to open Group Policy Editor: [6] X Research source Press Win + R to open Run. Enter gpedit and press Enter. Click Yes when prompted."
+    },
+    {
+      "title": "Navigate to the Google Chrome folder.",
+      "content": "Navigate to the Google Chrome folder. Use the following steps to do so: Open Computer Configuration . Open the Administrative Templates folder. Open the Google folder. Open the Google Chrome folder."
+    },
+    {
+      "title": "Double-click Disable saving browser history.",
+      "content": "Double-click Disable saving browser history . This will open the policy template."
+    },
+    {
+      "title": "Select “Enabled” and click Ok.",
+      "content": "Select “Enabled” and click Ok . Click the radio option next to “Enabled” and then click Ok to save and exit."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. After setting the new policy, restart your computer for it to take effect."
+    },
+    {
+      "title": "Windows",
+      "content": "Windows Press ⊞ Win + R to open Run. Enter one of the following locations. The shortcut for your desktop, Start menu, and Taskbar icons is stored in a different location. Enter one of the following locations into Run and click OK to navigate to the shortcut location: Desktop: %USERPROFILE%\\Desktop Start Menu: C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs Taskbar: %AppData%\\Microsoft\\Internet Explorer\\Quick Launch\\User Pinned\\TaskBar Right-click the shortcut and click Properties . Click the Shortcuts tab. Add -incognito to the end of the Target field and click Apply . The full path next to “Target” should read something like \"C:\\Program Files (x86)\\Google Chrome\\Application\\chrome.exe\" -incognito . This will set Google Chrome to open in incognito mode by default."
+    },
+    {
+      "title": "Mac",
+      "content": "Mac Open the Script Editor. To do so, click the magnifying glass/Spotlight icon in the upper-right corner. Then type script editor . Double-click Script Editor.app . This will open Script Editor with a new document. Copy and paste the following line: do shell script \"open -a /Applications/Google\\\\ Chrome.app --args --incognito\" Press ⌘ Command + S . Enter Chrome Incognito next to “Save as.” Select Desktop next to “Where.” Select Application next to \"Format.\" Click Save . This will create a shortcut on your desktop that will open Google Chrome in Incognito Mode. [7] X Research source"
+    },
+    {
+      "title": "Android",
+      "content": "Android Tap and hold the Google Chrome icon, then tap and hold Incognito tab . Tapping and holding this option will allow you to create an Incognito shortcut. Drag the shortcut to your preferred location. You can place the incognito tab anywhere on your Home screen or apps menu. Tapping this icon will open Google Chrome in an Incognito tab by default."
+    },
+    {
+      "title": "Open Chrome on your computer.",
+      "content": "Open Chrome on your computer. Blocking Google Chrome from saving your history doesn’t delete your past history. However, you can delete it manually. Try to get into the habit of deleting it after every session. According to Oppido, if you are using a public computer or a computer that belongs to someone else, you should delete your browsing history when you are finished using it. This will prevent other people from retracing your browsing history. [8] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 31 July 2019. If you are signed in to Chrome with your Google account when you delete your browsing history, it will also delete your Chrome browsing history on other devices, such as your Android, iPhone, or iPad."
+    },
+    {
+      "title": "Click the three-dot menu ⋮ and select History.",
+      "content": "Click the three-dot menu ⋮ and select History . The menu is at the top-right corner of Chrome. Then click History about halfway down the menu"
+    },
+    {
+      "title": "Click Clear browsing data.",
+      "content": "Click Clear browsing data . It’s at the bottom of the panel to the left."
+    },
+    {
+      "title": "Select All time from the drop-down menu.",
+      "content": "Select All time from the drop-down menu. This ensures that you're deleting your entire browsing history, not just from a brief period of time. Alternatively, you can select ”Last hour,” “Last 24 hours,” “Last 7 days,’ or “Last 4 weeks.”"
+    },
+    {
+      "title": "Select items to delete.",
+      "content": "Select items to delete. By default, your browsing history, cookies, site data, and cached files will all be marked for deletion. Use the checkboxes to toggle items on or off. To delete more saved info, click the Advanced tab for additional options."
+    },
+    {
+      "title": "Click Delete data.",
+      "content": "Click Delete data . A confirmation message will appear. Click Delete Data again to confirm. This deletes the selected items."
+    },
+    {
+      "title": "Open Chrome on your Android, iPhone, or iPad.",
+      "content": "Open Chrome on your Android, iPhone, or iPad. Although there's no way to turn off browsing history, you can delete it manually. Try to get into the habit of deleting it after every session. If you are signed in to Chrome with your Google account when you delete your browsing history, it will also delete your Chrome browsing history on other devices, such as your Android, iPhone, or iPad."
+    },
+    {
+      "title": "Tap the three-dot menu ⋮.",
+      "content": "Tap the three-dot menu ⋮ . It's at the top-right corner on an Android, and at the bottom-right on an iPhone/iPad."
+    },
+    {
+      "title": "Tap History on the menu.",
+      "content": "Tap History on the menu. This displays your browsing history. [9] X Research source On iPhone and iPad, skip this step and click Delete Browsing Data in the menu."
+    },
+    {
+      "title": "Tap Delete Browsing Data.",
+      "content": "Tap Delete Browsing Data . It’s the blue text at the top of the page."
+    },
+    {
+      "title": "Select All time from the \"Time Range\" menu.",
+      "content": "Select All time from the \"Time Range\" menu. This ensures that you're deleting your entire browsing history, not just from a brief period of time."
+    },
+    {
+      "title": "Select items to delete.",
+      "content": "Select items to delete. By default, your browsing history, cookies, site data, and cached files will all be marked for deletion. Use the checkboxes to toggle items on or off. Alternatively, you can select:”Last hour,” “Last 24 hours,” “Last 7 days,’ or “Last 4 weeks.”"
+    },
+    {
+      "title": "Tap Delete Data or Clear Browsing Data}.",
+      "content": "Tap Delete Data or Clear Browsing Data }. And confirm. This deletes the selected items."
+    }
+  ]
+}

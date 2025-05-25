@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Create-an-ISO-File",
+  "title": "How to Create an ISO from a Folder, File, or Disc",
+  "steps": [
+    {
+      "title": "Install WinCDEmu.",
+      "content": "Install WinCDEmu. Windows has no built-in tool to create ISO images, so you'll need to download third-party software. WinCDEmu is a free, open-source option that makes it easy to create ISOs on Windows. First, if your goal is to make a bootable Windows installation flash drive or DVD, see this wikiHow guide instead. Otherwise, go to https://wincdemu.sysprogs.org/download in a web browser. Click the green Download button and save the file to your computer. If needed, click Save to save it to your computer. Double-click the downloaded file and click Yes to give it permission to run. Click the Install button. Click OK when the installation is complete."
+    },
+    {
+      "title": "Insert the disc you want to copy (optional).",
+      "content": "Insert the disc you want to copy (optional). If you want to duplicate a CD or DVD by creating an ISO, insert that disc now."
+    },
+    {
+      "title": "Open File Explorer",
+      "content": "Open File Explorer . You can do this by pressing Windows key + E or right-clicking the Start menu and selecting File Explorer ."
+    },
+    {
+      "title": "Add the files you want in the ISO to a single folder.",
+      "content": "Add the files you want in the ISO to a single folder. Skip this step if you're starting with a CD/DVD or have already added your files to a single folder. Otherwise, here's how to create a new folder: Right-click a blank area of the right panel and select New > Folder . Type a name for the folder and press Enter . Drag all the files you want to include inside the folder. Alternatively, you can select individual files (hold down the Ctrl key as you click each file name), press Ctrl + C , and then right-click the new folder and select Paste ."
+    },
+    {
+      "title": "Right-click the folder or drive.",
+      "content": "Right-click the folder or drive. If you inserted a CD or DVD, right-click the optical drive instead of a folder. A context menu will expand. [1] X Research source"
+    },
+    {
+      "title": "Select Create ISO Image or Build ISO Image.",
+      "content": "Select Create ISO Image or Build ISO Image . The option you see depends on whether you're copying from an optical drive or using files on your computer. If you're using Windows 11, click Show more options on the menu to display this option."
+    },
+    {
+      "title": "Enter a name for the ISO.",
+      "content": "Enter a name for the ISO. The \"ISO\" file type is already selected from the drop-down menu at the bottom, so you'll just need to enter a name (e.g., MyISO) into the File Name field. If you want to choose a different location to save the ISO to, navigate to that folder now."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . WinCDEmu will begin building the ISO from the selected files. A progress bar will keep you updated on how much time remains in the process. When the process is complete, click Close on the window, and the ISO will be available at the selected location."
+    },
+    {
+      "title": "Add the files you want to include in your ISO to a folder.",
+      "content": "Add the files you want to include in your ISO to a folder. If the files are already in a folder, or if you're creating an ISO from a CD or DVD that's inserted in your optical drive, you can skip this step. Here's how you can create a new folder: Open Finder by clicking the two-toned smiley face icon on the Dock. Click the Desktop folder in the left panel, or choose another location if you want to create your new folder somewhere else. Click the File menu and select New Folder . Type a name for your folder—use something that will reflect the content of the ISO you're creating. Press Return . Drag the files you want to include into the new folder."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. An easy way to do this is to click the magnifying glass at the top-right corner to open Spotlight, type disk utility , and then click Disk Utility in the search results. You can also open Disk Utility in Finder by clicking the Go menu and selecting Utilities > Disk Utility . While Disk Utility doesn't create ISO files, you can use it to create an image in the CDR format. Once converted, you can use a simple command-line tool to convert the CDR to the ISO format."
+    },
+    {
+      "title": "Click the File menu and select New Image.",
+      "content": "Click the File menu and select New Image . A menu will expand."
+    },
+    {
+      "title": "Select Image from Folder or Image from (disc).",
+      "content": "Select Image from Folder or Image from (disc) . If you're creating an ISO from a folder, choose the Folder option. If creating one from a CD or DVD in your optical drive, select Image from (disc) , where \"(disc)\" is the name of the disc in your optical drive. [2] X Research source"
+    },
+    {
+      "title": "Select the folder with the ISO files and click Open.",
+      "content": "Select the folder with the ISO files and click Open . You can skip this step if you selected an optical drive in the last step."
+    },
+    {
+      "title": "Enter a name for your ISO.",
+      "content": "Enter a name for your ISO. Type the name you want to use into the \"Name\" field at the top of the window."
+    },
+    {
+      "title": "Select Desktop as the \"Where\" location.",
+      "content": "Select Desktop as the \"Where\" location. Choose this option, as it'll make the steps you'll need to do later more straightforward."
+    },
+    {
+      "title": "Select DVD/CD master from the \"Format\" drop-down menu.",
+      "content": "Select DVD/CD master from the \"Format\" drop-down menu. This option ensures you can use the ISO with third-party applications on different platforms."
+    },
+    {
+      "title": "Click the Save button.",
+      "content": "Click the Save button. It's at the bottom of the window. This saves the selected folder or CD/DVD as a disk image. The image will initially be created as a CDR file, which is identical to an ISO image on a Mac, but requires additional conversion to become an ISO that will work on PCs. Continue with this method to convert the file to an ISO."
+    },
+    {
+      "title": "Convert the completed file into an ISO file.",
+      "content": "Convert the completed file into an ISO file. While unnecessary if you're going to use this file on your Mac, the created CDR file won't work on a PC. Here's how to convert it to the proper format: Open a Terminal window. You can do this by opening Finder, selecting the Go menu, choosing Utilities , and then clicking Terminal . Type cd ~/Desktop and press the Return key. Type in hdiutil makehybrid -iso -joliet -o [filename].iso [filenamename].cdr , making sure to replace both [filename] sections with the CDR file's name. [3] X Research source Press Return to convert the CDR file to the ISO format. The ISO is now on your Mac's desktop."
+    }
+  ]
+}

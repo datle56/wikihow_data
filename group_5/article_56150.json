@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Install-or-Remove-an-RPM-Package",
+  "title": "How to Install or Remove an RPM Package",
+  "steps": [
+    {
+      "title": "Download your desired RPM package.",
+      "content": "Download your desired RPM package. There are many RPM depositories on the Internet, but if you're looking for Red Hat RPM packages, you can find them here: [1] X Research source The Red Hat Enterprise Linux installation media, which contain many installable RPMs. The initial RPM repositories provided with the YUM package manager. The Extra Packages for Enterprise Linux (EPEL) provides high-quality add-on packages for Red Hat Enterprise Linux."
+    },
+    {
+      "title": "Install the RPM package.",
+      "content": "Install the RPM package. Once downloaded, you have two options: [2] X Research source Double-click the package. A package management window will appear with instructions to guide you through the process. Open a terminal window, and type rpm -i *package_location_and_name* (without the spaces in and )"
+    },
+    {
+      "title": "Open a terminal window, and type:",
+      "content": "Open a terminal window, and type: rpm -e *package_name* . Do not type the extension on the file. [3] X Research source For example: rpm -e gedit"
+    },
+    {
+      "title": "The rpm -i command syntax is listed below.",
+      "content": "The rpm -i command syntax is listed below."
+    },
+    {
+      "title": "Install-specific options:",
+      "content": "Install-specific options: [4] X Research source -h (or --hash) Print hash marks (\"#\") during install --test Perform installation tests only --percent Print percentages during install --excludedocs Do not install documentation --includedocs Install documentation --replacepkgs Replace a package with a new copy of itself --replacefiles Replace files owned by another package --force Ignore package and file conflicts --noscripts Do not execute pre- and post-install scripts --prefix <path> Relocate package to <path> if possible --ignorearch Do not verify package architecture --ignoreos Do not verify package operating system --nodeps Do not check dependencies --ftpproxy<host> Use <host> as the FTP proxy --ftpport <port> Use <port> as the FTP port"
+    },
+    {
+      "title": "General Options.",
+      "content": "General Options. [5] X Research source -v Display additional information -vv Display debugging information --root <path> Set alternate root to <path> --rcfile <rcfile> Set alternate rpmrc file to <rcfile> --dbpath <path> Use <path> to find the RPM database"
+    }
+  ]
+}

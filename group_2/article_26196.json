@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Lock-the-Bootloader-on-Android",
+  "title": "How to Lock the Bootloader on Android",
+  "steps": [
+    {
+      "title": "Open a web browser on your computer.",
+      "content": "Open a web browser on your computer. You can use any web browser of your choice."
+    },
+    {
+      "title": "Navigate to https://developer.android.com/tools/releases/platform-tools.",
+      "content": "Navigate to https://developer.android.com/tools/releases/platform-tools . This is the website where you can download Android SDK. This allows you to interface with your Android system on your computer. Warning: Not every Android device has a lockable and unlockable bootloader. Many manufacturers and mobile carriers don't allow you to unlock or lock your bootloader. Warning: Locking your bootloader will most likely wipe your entire Android device. Make sure you backup your device before attempting to lock it or flash it."
+    },
+    {
+      "title": "Click the download file for your operating system.",
+      "content": "Click the download file for your operating system. You can download Android SDK for Windows, Mac, and Linux. Click the download link for whichever operating system your computer uses. All three are listed below the \"Downloads\" header."
+    },
+    {
+      "title": "Read the Terms and Conditions and click the checkbox at the bottom.",
+      "content": "Read the Terms and Conditions and click the checkbox at the bottom. The checkbox is at the bottom next to \" I have read and agree with the above terms and conditions.\" Scroll down and click the checkbox in order to continue."
+    },
+    {
+      "title": "Click the green download button.",
+      "content": "Click the green download button. It's below the text and the checkbox. This downloads a zip file containing a folder called \"platform-tools.\" This folder contains Android SDK."
+    },
+    {
+      "title": "Unzip the contents",
+      "content": "Unzip the contents of the zip file. Both File Explorer for Windows and Finder on Mac can unzip zip files . Simply double-click the zip file and then drag and drop the \"platform-tools\" folder inside the zip file to a location that you can remember and easily access."
+    },
+    {
+      "title": "Download the drivers for your Android device.",
+      "content": "Download the drivers for your Android device. Depending on your device, you may have to install drivers to make your computer recognize your Android. You can get these drivers from your phone or tablet manufacturer's website. The following are a few websites you can download drivers for your device from: Samsung LG HTC Sony Huawei"
+    },
+    {
+      "title": "Boot your phone into recovery mode.",
+      "content": "Boot your phone into recovery mode . On most Android models, you can boot into Recovery Mode by powering your device off and then pressing and holding the Power + Volume Down buttons at the same time. Once you are in the Fastboot menu, use the Volume Up and Volume Down keys to navigate the menu. Select Recovery mode and press the Power button. [1] X Research source On Samsung Galaxy devices, press and hold the Power' or \"Bixby button and Volume Up to boot into Recovery Mode."
+    },
+    {
+      "title": "Connect your Android to the computer with a USB cable.",
+      "content": "Connect your Android to the computer with a USB cable. If you don’t have the same USB cable that came with your device, make sure you’re using a safe compatible version."
+    },
+    {
+      "title": "Open the Terminal or the Command Prompt as an administrator.",
+      "content": "Open the Terminal or the Command Prompt as an administrator. If you are using a Mac or Linux computer, you will need to use the Terminal . If you are using Windows, you will need to open the Command Prompt as an Administrator. Use the following steps to open the Command Prompt or Terminal: Windows: Click the Windows Start menu and type \"CMD.\" Right-click the Command Prompt icon and click Run as Administrator . Then click Yes . [2] X Research source Mac: Click the magnifying glass icon in the upper-right corner. Type \"Terminal\" in the search bar. Click the Terminal to launch it. [3] X Research source Linux: Press \"Ctrl + Alt + T' to open the Terminal. [4] X Research source"
+    },
+    {
+      "title": "Navigate to the \"platform-tools\" folder in the Terminal or Command Prompt.",
+      "content": "Navigate to the \"platform-tools\" folder in the Terminal or Command Prompt. To navigate to the platform-tools folder, type \"cd\" followed by the path of the platform-tools folder (i.e. \"cd C:\\Users\\username\\Desktop\\platform-tools\") and press Enter' or Return. To find the path for the platform-tools folder on Windows, open the platform-tools folder in File Explorer. Then right-click the path in the address bar at the top and click Copy address as text . You can press Ctrl + V to paste the address into Command Prompt. To find the path for the platform-tools folder on Mac, right-click the platform-tools folder, and click Get Info . Highlight and copy the address next to \"Where.\" You can press Command + V to paste the address into Terminal. If you saved the platform-tools folder to another folder, such as a D: drive, you will need to switch to that drive before you can navigate to the path. To switch to a different drive, type the drive letter followed by a colon in Command Prompt or Terminal (i.e. \"D:\") and press Enter or Return ."
+    },
+    {
+      "title": "Type fastboot devices and press ↵ Enter.",
+      "content": "Type fastboot devices and press ↵ Enter . This checks to make sure your device is recognized by your system. It should return your device model. If it does recognize your device, make sure your Android device is in recover/fastboot mode. If it is not, you can type \"adb reboot bootloader\" and press Enter to boot your phone into Fastboot mode."
+    },
+    {
+      "title": "Type fastboot flashing lock and press ↵ Enter.",
+      "content": "Type fastboot flashing lock and press ↵ Enter . The command will run and lock the bootloader. If you see an error message, try one of the following commands instead: [5] X Research source fastboot oem lock oem relock"
+    },
+    {
+      "title": "Confirm that you want to lock the bootloader.",
+      "content": "Confirm that you want to lock the bootloader. Check your device. There should be a message on the screen asking you to confirm that you want to lock the bootloader. If need be, use the Volume Up and Volume Down keys to navigate the menu. Press the Power button to make your selection. Select the option to lock your bootloader or confirm that you want to lock your bootloader. Then wait for the process to finish. Warning: Do not disconnect your device until this process is complete. Any interruptions during this process may permanently damage your Android device."
+    }
+  ]
+}

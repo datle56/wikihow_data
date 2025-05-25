@@ -1,0 +1,146 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Network-and-Broadcast-Address",
+  "title": "How to Find the Network and Broadcast Address (with Examples)",
+  "steps": [
+    {
+      "title": "Go to http://jodies.de/ipcalc in a web browser.",
+      "content": "Go to http://jodies.de/ipcalc in a web browser. This handy calculator takes the pain out of calculating the network address and broadcast address."
+    },
+    {
+      "title": "Enter the IP address and subnet mask.",
+      "content": "Enter the IP address and subnet mask. In the field that says Address (Host or network), type or paste the IP address . In the \"Netmask\" field, enter the subnet mask in CIDR format (e.g., /24 for a class C network)."
+    },
+    {
+      "title": "Click Calculate.",
+      "content": "Click Calculate . It is the button below the IP address field. The network address will appear next to \"Network,\" and the broadcast address appears next to \"Broadcast.\""
+    },
+    {
+      "title": "Convert the IP address and subnet mask to binary.",
+      "content": "Convert the IP address and subnet mask to binary. To calculate the broadcast and network addresses for an IP address, you'll need to first to binary values. The easiest way to do this is to use an online IP to binary calculator, such as this one by Code Beautify. But if you're a networking student or just want to know how to do this by hand, you can check out our guide on converting decimals to binary . For example, if the IP address is 192.168.1.3, the binary address is 111000000.10101000.00000001.00000011. If the subnet mask is 255.255.224.0, which is /19 in CIDR notation, the binary address would be 11111111.11111111.11100000.00000000. We will use the /19 example in this method."
+    },
+    {
+      "title": "Count the bits in the subnet mask.",
+      "content": "Count the bits in the subnet mask. In our example, we're using a /19 network. This means that the first 19 bits of the subnet mask represents the network, and the remaining 13 bits are the host. 11111111.11111111.111 (network) 00000.00000000 (host) If you were working with a /24 network, you'd count the first 24 bits (digits) instead. For a /8 network, you'd count the first 8 bits, etc."
+    },
+    {
+      "title": "Count the bits in the IP address.",
+      "content": "Count the bits in the IP address. Now we'll want to count the first 19 digits of our converted IP address, just as we did with the subnet mask, because we're working with a /19 network. For the binary IP address 11000000.10101000.00000001.00000011, 11000000.10101000.000 , the first 19 digits, is the network. The remaining 13 digits, 00001.00000011 , represents the host."
+    },
+    {
+      "title": "Determine the network address.",
+      "content": "Determine the network address. Now let's look at the first 19 digits of our converted IP address: 11000000.10101000.000 . To find the network address, we'll simply add a period after the last number, then replace everything that comes after the first 19 bits with the last 13 digits of the converted subnet mask, which, in our example, is 00000.00000000. IP address: 11000000.10101000.000 000001.00000011 Subnet mask: 11111111.11111111.111 00000.00000000 Network address: The first 19 bits from the IP address with the last 13 bits of the subnet mask: 11000000.10101000.000.00000.00000000 Converted: 192.168.0.0"
+    },
+    {
+      "title": "Determine the broadcast address.",
+      "content": "Determine the broadcast address. Now, instead of replacing the last 13 bits of our IP address with all zeroes (00000.00000000), we'll convert all of those zeroes to ones to find the broadcast address: IP address: 11000000.10101000.000 00001.00000011 Last 13 bits of subnet mask as ones: 11111.11111111 Broadcast address: 11000000.10101000.000.11111.11111111 Converted: 192.168.0.31"
+    },
+    {
+      "title": "Determine the total number of bits used for subnetting.",
+      "content": "Determine the total number of bits used for subnetting. For a classful network total bits is 8. So Total bits = T b = 8. The total bits used for subnetting (n) is determined by the subnet mask. [1] X Research source Subnet masks can be 0, 128, 192, 224, 240, 248, 252, 254 and 255. The number of bits used for subnetting (n) to their corresponding subnet mask is as follows: 0=0, 128=1, 192=2, 224=3, 240=4, 248=5, 252=6, 254=7, and 255=8. Subnet mask 255 is default, so it'll not be considered for subnet masking. For example: Let's assume the IP address is 210.1.1.100 and Subnet mask is 255.255.255.224. The total bits= T b = 8. The number of bits used for subnetting for subnet mask 224 is 3."
+    },
+    {
+      "title": "Determine the number of bits left to host.",
+      "content": "Determine the number of bits left to host. The equation to determine the number of bits left to host is (m) = T b - n . From the previous step, you got the number of bits used for subnetting (n) and you know the total bits used \"T b =8\". then you can get the number of bits left for host by subtracting 8-n. [2] X Research source Using the example above, n=3. The number of bits left for host is (m) = 8 - 3 = 5. 5 is the number of bits you have left to host."
+    },
+    {
+      "title": "Calculate the number of subnets.",
+      "content": "Calculate the number of subnets. The number of subnets is 2 n . The number of hosts per subnet = 2 m - 2. In our example, the number of subnets is 2 n = 2 3 = 8. 8 is the total number of subnets."
+    },
+    {
+      "title": "Calculate the value of the last bit used for subnet masking.",
+      "content": "Calculate the value of the last bit used for subnet masking. The value of last bit used for subnet masking is (Δ) = 2 m . [3] X Research source In our example, the value of last bit used for subnet masking is Δ = 2 5 = 32. The value of the last bit used is 32."
+    },
+    {
+      "title": "Calculate the number of hosts per subnet.",
+      "content": "Calculate the number of hosts per subnet. The number of hosts per subnet is represented by the formula 2 m - 2 ."
+    },
+    {
+      "title": "Separate the subnets by the value of last bit used for subnet masking.",
+      "content": "Separate the subnets by the value of last bit used for subnet masking. Now you can find previously calculated number of subnets by separating subnets each having value of last bit used for subnet masking or Δ. In our example, Δ=32. So we can separate IP addresses in increments of 32. The 8 subnets (as calculated in previous step) are shown above. Each of them has 32 addresses."
+    },
+    {
+      "title": "Determine the network and broadcast addresses for the IP addresses.",
+      "content": "Determine the network and broadcast addresses for the IP addresses. The lowest address in a subnet is the network address. The highest address in a subnet is the broadcast address. [4] X Research source"
+    },
+    {
+      "title": "Determine the broadcast address for your IP address.",
+      "content": "Determine the broadcast address for your IP address. The lowest address of the subnet your IP address falls in is the network address. The highest address in the subnet your IP address falls in is the broadcast address. Our example IP address 210.1.1.100 falls in the 210.1.1.96 - 210.1.1.127 subnet (see the previous step table). So 210.1.1.96 is network address and 210.1.1.127 is broadcast address."
+    },
+    {
+      "title": "Write the bit-length prefix in bit format.",
+      "content": "Write the bit-length prefix in bit format. In CIDR, you have a IP address followed by bit-length prefix separated by slash(/). Now you can start to convert bit-length prefix to quad-dotted by separating the bit-length prefix in increments of 8 and adding the final bit number. Example: If the bit-length prefix is 27, then write it as 8 + 8 + 8 + 3 . Example: If bit-length prefix is 12, then write it as 8 + 4 + 0 + 0 . Example: Default bit-length prefix is 32, then write it as 8 + 8 + 8 + 8."
+    },
+    {
+      "title": "Convert the bit-length prefix to quad-dotted format.",
+      "content": "Convert the bit-length prefix to quad-dotted format. Convert the corresponding bit according to the above table and represent in quad-dotted decimal format. For example, bit-length 27 is represented by 8+8+8+3. This converts to 225.225.225.224. [5] X Research source Using another example, the IP address is 170.1.0.0/26 . Using above table, you can write the bit-length prefix 26 as 8+8+8+2. Using the chart above, this converts to 225.225.225.192. Now the IP address is 170.1.0.0 and subnet mask in quad-dotted decimal format is 255.255.255.192 ."
+    },
+    {
+      "title": "Determine the total number of bits.",
+      "content": "Determine the total number of bits. The total number of bits is represented using the following equation: T b = 8 ."
+    },
+    {
+      "title": "Determine the number of bits used for subnetting.",
+      "content": "Determine the number of bits used for subnetting. Subnet masks can be 0, 128, 192, 224, 240, 248, 252, 254 and 255. The table above gives you the Number of bits used for subnetting (n) to their corresponding subnet mask. [6] X Research source For subnet mask 255 is default, so it'll not consider for subnet masking. From the previous step, you got IP address = 170.1.0.0 and Sub-net mask = 255.255.255.192 Total bits = T b = 8 Number of bits used for subnetting = n. As the subnet mask = 192, its corresponding number of bits used for Subnetting is 2 from above table."
+    },
+    {
+      "title": "Calculate the number of bits left to host.",
+      "content": "Calculate the number of bits left to host. From the previous step, you got the number of bits used for subnetting (n) and you know the total bits (T b ) = 8. Then you can get number of bits left for host is (m) = T b - n or T b = m+n . In our example, the number of bits used for subnetting (n) is 2. So the number of bits left for host is m = 8 - 2 = 6. The total bits left for the host is 6."
+    },
+    {
+      "title": "Calculate the number of subnets.",
+      "content": "Calculate the number of subnets. The Number of subnets is 2 n . In our example, the number of subnets = 2 2 = 4. The total number of subnets is 4."
+    },
+    {
+      "title": "Calculate the value of last bit used for subnet masking.",
+      "content": "Calculate the value of last bit used for subnet masking. This is represented with the formula (Δ) = 2 m . In our example, the value of last bit used for subnet masking = Δ = 2 6 = 64. The value of the last bit used for subnet masking is 64."
+    },
+    {
+      "title": "Calculate the number of hosts per subnet.",
+      "content": "Calculate the number of hosts per subnet. The number of hosts per subnet is 2 m - 2."
+    },
+    {
+      "title": "Separate the subnets by the value of the last bit used for subnet masking.",
+      "content": "Separate the subnets by the value of the last bit used for subnet masking. Now you can find previously calculated number of subnets by separating subnets each having the value of last bit used for subnet masking or Δ. In our example, the last value used for subnet masking is 64. This produces 4 subnets with 64 addresses."
+    },
+    {
+      "title": "Find which subnet your IP address is in.",
+      "content": "Find which subnet your IP address is in. Our example IP is 170.1.0.0. This falls in the 170.1.0.0 - 170.1.0.63 subnet."
+    },
+    {
+      "title": "Determine your broadcast address.",
+      "content": "Determine your broadcast address. The first address in a subnet is the network address and the last number is the broadcast address. Our example IP address is 170.1.0.0. So 170.1.0.0 is network address and 170.1.0.63 is broadcast address. See CIDR Examples for more examples."
+    },
+    {
+      "title": "IP address = 100.5.150.34 and subnet mask = 255.255.240.0 Total bits = Tb = 8 Subnet Mask 0 128 192 224 240 248 252 254 255 No. of bits used for Subnetting (n) 0 1 2 3 4 5 6 7 8",
+      "content": "IP address = 100.5.150.34 and subnet mask = 255.255.240.0 Total bits = T b = 8 Subnet Mask 0 128 192 224 240 248 252 254 255 No. of bits used for Subnetting (n) 0 1 2 3 4 5 6 7 8"
+    },
+    {
+      "title": "Number of bits used for subnetting for subnet mask 240 = n1 = 4 (as subnet mask = 240 and its corresponding \"No.",
+      "content": "Number of bits used for subnetting for subnet mask 240 = n 1 = 4 (as subnet mask = 240 and its corresponding \"No. of bits used for Subnetting\" is 4 from above table) Number of bits used for subnetting for subnet mask 0 = n 2 = 0 (as subnet mask = 0 and its corresponding \"No. of bits used for Subnetting\" is 0 from above table) Number of bits left for host for subnet mask 240 = m 1 = T b - n 1 = 8 - 4 = 4 Number of bits left for host for subnet mask 0 = m 2 = T b - n 2 = 8 - 0 = 8 Number of subnets for subnet mask 240 = 2 n 1 = 2 4 = 16 Number of subnets for subnet mask 0 = 2 n 2 = 2 0 = 1 Value of last bit used for subnet masking for subnet mask 240 = Δ 1 = 2 m 1 = 2 4 = 16 Value of last bit used for subnet masking for subnet mask 0 = Δ 2 = 2 m 2 = 2 8 = 256 For subnet mask 240, addresses will be separated by 16 and for subnet mask 0, it'll be 256. Using Δ 1 and Δ 2 value, the 16 subnets are given below 100.5.0.0 - 100.5.15.255 100.5.16.0 - 100.5.31.255 100.5.32.0 - 100.5.47.255 100.5.48.0 - 100.5.63.255 100.5.64.0 - 100.5.79.255 100.5.80.0 - 100.5.95.255 100.5.96.0 - 100.5.111.255 100.5.112.0 - 100.5.127.255 100.5.128.0 - 100.5.143.255 100.5.144.0 - 100.5.159.255 100.5.160.0 - 100.5.175.255 100.5.176.0 - 100.5.191.255 100.5.192.0 - 100.5.207.255 100.5.208.0 - 100.5.223.255 100.5.224.0 - 100.5.239.255 100.5.240.0 - 100.5.255.255"
+    },
+    {
+      "title": "IP address 100.5.150.34 comes in 100.5.144.0 - 100.5.159.255.",
+      "content": "IP address 100.5.150.34 comes in 100.5.144.0 - 100.5.159.255. Hence, 100.5.144.0 is the network address and 100.5.159.255 is the broadcast address."
+    },
+    {
+      "title": "See Classful Network Examples for more examples.",
+      "content": "See Classful Network Examples for more examples."
+    },
+    {
+      "title": "IP address in CIDR is 200.222.5.100/9 9 = 8 + 1 + + 0 255 . 128 . 0 . 0",
+      "content": "IP address in CIDR is 200.222.5.100/9 9 = 8 + 1 + + 0 255 . 128 . 0 . 0 IP address = 200.222.5.100 and subnet mask = 255.128.0.0 Total bits = T b = 8 Subnet Mask 0 128 192 224 240 248 252 254 255 No. of bits used for Subnetting (n) 0 1 2 3 4 5 6 7 8 Number of bits used for subnetting for subnet mask 128 = n 1 = 1 (as subnet mask = 128 and its corresponding \"No. of bits used for Subnetting\" is 1 from above table) Number of bits used for subnetting for subnet mask 0 = n 2 = n 3 = 0 (as subnet mask = 0 and its corresponding \"No. of bits used for Subnetting\" is 0 from above table)"
+    },
+    {
+      "title": "Number of bits left for host for subnet mask 128 = m1 = Tb - n1 = 8 - 1 = 7 Number of bits left for host for subnet mask 0 = m2 = m3 = Tb - n2 = Tb - n3 = 8 - 0 = 8 Number of subnets for subnet mask 128 = 2n1 = 21 = 2 Number of subnets for subnet mask 0 = 2n2 = 2n3 = 2 = 1 Value of last bit used for subnet masking for subnet mask 128 = Δ1 = 2m1 = 27 = 128 Number of host per subnet = 2m1 - 2 = 27 - 2 = 126 Value of last bit used for subnet masking for subnet mask 0 = Δ2 = Δ3 = 2m2 = 2m3 = 28 = 256 Number of host per subnet for subnet mask 0 = 2m2 - 2 = 2m3 - 2 = 28 - 2 = 254",
+      "content": "Number of bits left for host for subnet mask 128 = m 1 = T b - n 1 = 8 - 1 = 7 Number of bits left for host for subnet mask 0 = m 2 = m 3 = T b - n 2 = T b - n 3 = 8 - 0 = 8 Number of subnets for subnet mask 128 = 2 n 1 = 2 1 = 2 Number of subnets for subnet mask 0 = 2 n 2 = 2 n 3 = 2 = 1 Value of last bit used for subnet masking for subnet mask 128 = Δ 1 = 2 m 1 = 2 7 = 128 Number of host per subnet = 2 m 1 - 2 = 2 7 - 2 = 126 Value of last bit used for subnet masking for subnet mask 0 = Δ 2 = Δ 3 = 2 m 2 = 2 m 3 = 2 8 = 256 Number of host per subnet for subnet mask 0 = 2 m 2 - 2 = 2 m 3 - 2 = 2 8 - 2 = 254"
+    },
+    {
+      "title": "For subnet mask 128, addresses will be separated by 128 and for subnet mask 0, it'll be 256.",
+      "content": "For subnet mask 128, addresses will be separated by 128 and for subnet mask 0, it'll be 256. Using Δ 1 , Δ 2 and Δ 3 value, the 2 subnets are given below 200.0.0.0 - 200.127.255.255 200.128.0.0 - 200.255.255.255"
+    },
+    {
+      "title": "IP address 200.222.5.100 comes in 200.128.0.0 - 200.255.255.255.",
+      "content": "IP address 200.222.5.100 comes in 200.128.0.0 - 200.255.255.255. Hence, 200.128.0.0 is the network address, and 200.255.255.255 is the broadcast address."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Solve-Recurrence-Relations",
+  "title": "How to Solve Recurrence Relations",
+  "steps": [
+    {
+      "title": "Consider an arithmetic sequence such as 5, 8, 11, 14, 17, 20, ....",
+      "content": "Consider an arithmetic sequence such as 5, 8, 11, 14, 17, 20, .... [1] X Research source"
+    },
+    {
+      "title": "Since each term is 3 larger than the previous, it can be expressed as a recurrence as shown.",
+      "content": "Since each term is 3 larger than the previous, it can be expressed as a recurrence as shown."
+    },
+    {
+      "title": "Recognize that any recurrence of the form an = an-1 + d is an arithmetic sequence.",
+      "content": "Recognize that any recurrence of the form a n = a n-1 + d is an arithmetic sequence. [2] X Research source"
+    },
+    {
+      "title": "Write the closed-form formula for an arithmetic sequence, possibly with unknowns as shown.",
+      "content": "Write the closed-form formula for an arithmetic sequence , possibly with unknowns as shown. [3] X Research source"
+    },
+    {
+      "title": "Solve for any unknowns depending on how the sequence was initialized.",
+      "content": "Solve for any unknowns depending on how the sequence was initialized. In this case, since 5 was the 0 th term, the formula is a n = 5 + 3n. If instead, you wanted 5 to be the first term, you would get a n = 2 + 3n."
+    },
+    {
+      "title": "Consider a geometric sequence such as 3, 6, 12, 24, 48, ....",
+      "content": "Consider a geometric sequence such as 3, 6, 12, 24, 48, ...."
+    },
+    {
+      "title": "Since each term is twice the previous, it can be expressed as a recurrence as shown.",
+      "content": "Since each term is twice the previous, it can be expressed as a recurrence as shown."
+    },
+    {
+      "title": "Recognize that any recurrence of the form an = r * an-1 is a geometric sequence.",
+      "content": "Recognize that any recurrence of the form a n = r * a n-1 is a geometric sequence."
+    },
+    {
+      "title": "Write the closed-form formula for a geometric sequence, possibly with unknowns as shown.",
+      "content": "Write the closed-form formula for a geometric sequence , possibly with unknowns as shown."
+    },
+    {
+      "title": "Solve for any unknowns depending on how the sequence was initialized.",
+      "content": "Solve for any unknowns depending on how the sequence was initialized. In this case, since 3 was the 0 th term, the formula is a n = 3*2 n . If instead, you wanted 3 to be the first term, you would get a n = 3*2 (n-1) . [4] X Research source"
+    },
+    {
+      "title": "Consider the sequence 5, 0, -8, -17, -25, -30, ...",
+      "content": "Consider the sequence 5, 0, -8, -17, -25, -30, ... given by the recursion a n = a n-1 + n 2 - 6n. [5] X Research source"
+    },
+    {
+      "title": "Any recursion of the form shown, where p(n) is any polynomial in n, will have a polynomial closed form formula of degree one higher than the degree of p.",
+      "content": "Any recursion of the form shown, where p(n) is any polynomial in n, will have a polynomial closed form formula of degree one higher than the degree of p. [6] X Research source"
+    },
+    {
+      "title": "Write the general form of a polynomial of the required degree.",
+      "content": "Write the general form of a polynomial of the required degree. In this example, p is quadratic, so we will need a cubic to represent the sequence a n . [7] X Research source"
+    },
+    {
+      "title": "Since a general cubic has four unknown coefficients, four terms of the sequence are required to solve the resulting system.",
+      "content": "Since a general cubic has four unknown coefficients, four terms of the sequence are required to solve the resulting system. Any four will do, so let's use terms 0, 1, 2, and 3. Running the recurrence backwards to find the -1 th term might make some calculations easier, but isn't necessary."
+    },
+    {
+      "title": "Either Solve the resulting system of deg(p)+2 equations in deg(p)=2 unknowns or Fit a Lagrange polynomial to the deg(p)+2 known points.",
+      "content": "Either Solve the resulting system of deg(p)+2 equations in deg(p)=2 unknowns or Fit a Lagrange polynomial to the deg(p)+2 known points . If the zeroth term was one of the terms you used to solve for the coefficients, you get the constant term of the polynomial for free and can immediately reduce the system to deg(p)+1 equations in deg(p)+1 unknowns as shown."
+    },
+    {
+      "title": "Present the closed formula for an as a polynomial with known coefficients.",
+      "content": "Present the closed formula for a n as a polynomial with known coefficients."
+    },
+    {
+      "title": "This is the first method capable of solving the Fibonacci sequence in the introduction, but the method solves any recurrence where the nth term is a linear combination of the previous k terms.",
+      "content": "This is the first method capable of solving the Fibonacci sequence in the introduction, but the method solves any recurrence where the n th term is a linear combination of the previous k terms. So let's try it on the different example shown whose first terms are 1, 4, 13, 46, 157, .... [8] X Research source"
+    },
+    {
+      "title": "Write the characteristic polynomial of the recurrence.",
+      "content": "Write the characteristic polynomial of the recurrence. This is found by replacing each a n in the recurrence by x n and dividing by x (n-k) leaving a monic polynomial of degree k and a nonzero constant term."
+    },
+    {
+      "title": "Solve the characteristic polynomial",
+      "content": "Solve the characteristic polynomial . In this case, the characteristic has degree 2 so we can use the quadratic formula to find its roots. [9] X Research source"
+    },
+    {
+      "title": "Any expression of the form shown satisfies the recursion.",
+      "content": "Any expression of the form shown satisfies the recursion. The c i are any constants and the base of the exponents are the roots to the characteristic found above. This can be verified by induction. If the characteristic has a multiple root, this step is modified slightly. If r is a root of multiplicity m, use (c 1 r n + c 2 nr n + c 3 n 2 r n + ... + c m n m-1 r n ) instead of simply (c 1 r n ). For example, the sequence starting 5, 0, -4, 16, 144, 640, 2240, ... satisfies the recursive relationship a n = 6a n-1 - 12a n-2 + 8a n-3 . The characteristic polynomial has a triple root of 2 and the closed form formula a n = 5*2 n - 7*n*2 n + 2*n 2 *2 n ."
+    },
+    {
+      "title": "Find the ci that satisfy the specified initial conditions.",
+      "content": "Find the c i that satisfy the specified initial conditions. As with the polynomial example, this is done by creating a linear system of equations from the initial terms. Since this example has two unknowns, we need two terms. Any two will do, so take the 0 th and 1 st to avoid having to raise an irrational number to a high power."
+    },
+    {
+      "title": "Solve the resulting system of equations.",
+      "content": "Solve the resulting system of equations."
+    },
+    {
+      "title": "Plug the resulting constants into the general formula as the solution.",
+      "content": "Plug the resulting constants into the general formula as the solution."
+    },
+    {
+      "title": "Consider the sequence 2, 5, 14, 41, 122 ...",
+      "content": "Consider the sequence 2, 5, 14, 41, 122 ... given by the recursion shown. This cannot be solved by any of the above methods, but a formula can be found by using generating functions. [10] X Research source"
+    },
+    {
+      "title": "Write the generating function of the sequence.",
+      "content": "Write the generating function of the sequence. A generating function is simply a formal power series where the coefficient of x n is the n th term of the sequence. [11] X Research source"
+    },
+    {
+      "title": "Manipulate the generating function as shown.",
+      "content": "Manipulate the generating function as shown. The objective in this step is to find an equation that will allow us to solve for the generating function A(x). Extract the initial term. Apply the recurrence relation to the remaining terms. Split the sum. Extract constant terms. Use the definition of A(x). Use the formula for the sum of a geometric series."
+    },
+    {
+      "title": "Find the generating function A(x).",
+      "content": "Find the generating function A(x). [12] X Research source"
+    },
+    {
+      "title": "Find the coefficient of the xn in A(x).",
+      "content": "Find the coefficient of the x n in A(x). The methods for doing this will vary depending on exactly what A(x) looks like, but the method of partial fractions, combined with knowing the generating function of a geometric sequence, works here as shown."
+    },
+    {
+      "title": "Write the formula for an by identifying the coefficient of xn in A(x).",
+      "content": "Write the formula for a n by identifying the coefficient of x n in A(x)."
+    }
+  ]
+}

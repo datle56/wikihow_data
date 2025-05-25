@@ -1,0 +1,146 @@
+{
+  "url": "https://www.wikihow.com/Set-up-a-Wireless-Network-in-Linux",
+  "title": "How to Set Up a Wireless Network in Linux: Terminal & GUI",
+  "steps": [
+    {
+      "title": "Connect your modem/router to the internet.",
+      "content": "Connect your modem/router to the internet. To do so, connect the internet cable to the \"Internet\" or \"WAN\" port on the back of your modem, then plug in your modem. The internet cable is the cable that carries the internet into your home. It may be an ethernet cable or a coaxial cable. It may be a cable that comes in from the outside, or there may be a wall outlet that you use to connect to the internet. [1] X Research source If your wireless router and modem are not a single unit, use an ethernet cable to connect your router to one of the \"LAN\" ports on the back of your modem. Then, connect the other end of the ethernet cable to the \"WAN\" or \"Internet\" port on the back of your router."
+    },
+    {
+      "title": "Connect your router to your PC.",
+      "content": "Connect your router to your PC. Initially, you'll need to use an ethernet cable so you can activate Wi-Fi. Connect an ethernet cable to one of the LAN ports on the back of the router. Then, connect it to an ethernet port on your PC. If your PC does not have an ethernet port, you can buy an ethernet-to-USB adapter , which makes it possible to connect to a network through your USB port."
+    },
+    {
+      "title": "Go to your router's IP address in a web browser.",
+      "content": "Go to your router's IP address in a web browser. This opens your router's user interface. The IP address you use to open your router's interface differs from manufacturer to manufacturer. Consult the user's manual or manufacturer's web page to find the IP address for your router's make and model. [2] X Research source Common router IP addresses include \"192.168.1.1,\" \"192.168.0.1,\" and \"10.0.0.1\". You may be able to find the IP address on a sticker on the back or bottom of your router."
+    },
+    {
+      "title": "Log in to the router.",
+      "content": "Log in to the router. If you have not set an admin username and password for your router, you can use the default username and password. Consult the user's manual or your router to find the default username and password. There may also be a sticker with the default username and password on the back or bottom of your router. [3] X Research source"
+    },
+    {
+      "title": "Enable wireless networking.",
+      "content": "Enable wireless networking. The user interface is different from one router model to the next. Locate the wireless settings in the user interface and make sure wireless networking is enabled."
+    },
+    {
+      "title": "Select WPA encryption.",
+      "content": "Select WPA encryption. When you enable wireless networking, you need to select an encryption method. The most common wireless encryption type is WPA, WPA2, or WPA3. Do not use WEP encryption. WEP is an outdated encryption method that is incredibly easy to break . For the best security, make sure you use WPA encryptions."
+    },
+    {
+      "title": "Click the Wi-Fi icon .",
+      "content": "Click the Wi-Fi icon . Computer repair specialist Blain Gunter notes that connecting to Wi-Fi on most Linux systems is similar to connecting on Windows or macOS—just click the Wi-Fi icon—typically resembling a fan with arching lines—at the upper-or lower-right corner of the screen, choose your Wi-Fi network, and enter the password."
+    },
+    {
+      "title": "Ensure Wi-Fi is enabled.",
+      "content": "Ensure Wi-Fi is enabled. Look for an option in the drop-down menu that says \"Enable Wi-Fi\" or something similar, and ensure there is a checkmark next it. It should start scanning for nearby wireless networks."
+    },
+    {
+      "title": "Select your Wi-Fi network to connect.",
+      "content": "Select your Wi-Fi network to connect. Once your wireless network is found, it should be listed below \"Wi-Fi Networks.\" Click your wireless network to display the \"Network Authentication Required\" window, where you'll enter your Wi-Fi password.. If you do not see your wireless network, click More Networks to display additional wireless networks. If you want to connect to a hidden network, click Connect to Hidden Wi-Fi Network instead. Then, enter the name of your wireless network and password. Your Wi-Fi password is set up in the router's user interface. [4] X Research source While this should work on desktop environments like KDE and GNOME, Gunter explains that all versions are different, and you may see different menu options."
+    },
+    {
+      "title": "Type iwconfig into the terminal and press ↵ Enter.",
+      "content": "Type iwconfig into the terminal and press ↵ Enter . This displays a list of network adapters connected to your computer. Network adapters that say \"no wireless extension\" are not usable. Look for a wireless adapter that says \"Mode: Managed\" and \"Access Point: Not-Associated\" in the second line below the network adapter name."
+    },
+    {
+      "title": "Activate your wireless network adapter.",
+      "content": "Activate your wireless network adapter. To do so, type sudo ifconfig [network adapter] up and press Enter . Replace [network adapter] with the name of your wireless network adapter."
+    },
+    {
+      "title": "Scan for wireless networks.",
+      "content": "Scan for wireless networks. To do so, type iwlist [network adapter name] scan and press ↵ Enter . Replace \"[network adapter name]\" with the name of the network adapter you retrieved using the \"iwconfig\" command. This uses the network adapter to scan for nearby wireless networks and displays a list of all available wireless networks."
+    },
+    {
+      "title": "Connect to a WEP network (optional).",
+      "content": "Connect to a WEP network (optional). Even though WEP is an outdated security encryption, it still exists. If your wireless network is a WEP network, enter the following command and press Enter to connect to the network. If you are using a WPA network, skip to the next step. sudo iwconfig essid [network name] key [network password] . Replace [network name] with the network name or SSID, and replace [network password] with the password needed to connect to your network. If the network password is in ASCII format, you will need to put a \"s:\" in front of the password."
+    },
+    {
+      "title": "Create a configuration file for the network name and password.",
+      "content": "Create a configuration file for the network name and password. If you are connecting to a WPA network, you will need to create a configuration file that contains the wireless network name and password. Enter the following command and press Enter to do so: sudo wpa_passphrase [network name] [network password] > /etc/wpa_supplicant.conf . Replace [network name] with the name of the wireless network and replace [network password] with the password needed to connect to the network."
+    },
+    {
+      "title": "Find the wireless driver you want to use.",
+      "content": "Find the wireless driver you want to use. To find a list of drivers that are available on your system, type wpa_supplicant and press Enter . Write down the name of the wireless driver you want to use below \"Drivers.\""
+    },
+    {
+      "title": "Connect to the network.",
+      "content": "Connect to the network. Once you have all the information you need, enter the following command and press Enter to connect to a WPA network: [5] X Research source wpa_supplicant -i [network adapter] -c /etc/wpa_supplicant.conf -B -D [wireless driver]. . Replace [network adapter] with the name of your wireless network adapter, and replace [wireless driver] with the name of the wireless driver you wrote down."
+    },
+    {
+      "title": "Type nmtui into the terminal and press ↵ Enter.",
+      "content": "Type nmtui into the terminal and press ↵ Enter . This opens the NetworkManager TUI window. [6] X Research source"
+    },
+    {
+      "title": "Select Activate a Connection and press ↵ Enter.",
+      "content": "Select Activate a Connection and press ↵ Enter . It's the second option in the NetworkManager TUI window. Use the arrow keys on your keyboard to navigate the menu options. Press Enter to select an option. [7] X Research source"
+    },
+    {
+      "title": "Select your wireless network and press ↵ Enter.",
+      "content": "Select your wireless network and press ↵ Enter . All wireless networks should be listed below \"Wi-Fi.\" Highlight the wireless network you want to use and press Enter to select it. [8] X Research source"
+    },
+    {
+      "title": "Enter your wireless password and press ↵ Enter.",
+      "content": "Enter your wireless password and press ↵ Enter . If your password is correct, you should be connected to your wireless network. You can now use your wireless network to connect to the internet. [9] X Research source"
+    },
+    {
+      "title": "Type iwconfig into the terminal and press ↵ Enter.",
+      "content": "Type iwconfig into the terminal and press ↵ Enter . This displays a list of network adapters connected to your computer. Network adapters that say \"no wireless extension\" are not usable. Look for a wireless adapter that says \"Mode: Managed\" and \"Access Point: Not-Associated\" in the second line below the network adapter name."
+    },
+    {
+      "title": "Activate your wireless network adapter.",
+      "content": "Activate your wireless network adapter. To do so, type sudo ifconfig [network adapter] up and press Enter . Replace [network adapter] with the name of your wireless network adapter."
+    },
+    {
+      "title": "Type iwlist [network adapter name] scan and press ↵ Enter.",
+      "content": "Type iwlist [network adapter name] scan and press ↵ Enter . Replace \"[network adapter name]\" with the name of the network adapter you retrieved using the \"iwconfig\" command. This uses the network adapter to scan for nearby wireless networks and displays a list of all available wireless networks."
+    },
+    {
+      "title": "Type nmcli d wifi connect.",
+      "content": "Type nmcli d wifi connect . This is the start of the command used to connect to a wireless network. Do not press \"Enter\" just yet. You still need to enter the wireless network name and password. [10] X Research source"
+    },
+    {
+      "title": "Enter the wireless network name.",
+      "content": "Enter the wireless network name. Enter the name of the wireless network you want to connect to after \"connect\" in the command. Make sure the spelling matches the network name as displayed in the list of wireless networks from the previous command. [11] X Research source"
+    },
+    {
+      "title": "Type password [password] and press ↵ Enter.",
+      "content": "Type password [password] and press ↵ Enter . Replace \"[password]\" with your wireless password. Then press Enter . If your network name and password are correct, you should see a message informing you that your network adapter device was successfully activated. You can now use your network adapter to connect to the internet. [12] X Research source"
+    },
+    {
+      "title": "Restart your modem and/or router.",
+      "content": "Restart your modem and/or router. If you are having problems connecting to the internet, the first thing you should try is restarting your modem and/or router. To do so, unplug your modem and router for about 20 seconds. Plug your modem back in, wait a minute, then plug your router back in."
+    },
+    {
+      "title": "Check if any other devices can connect to the internet.",
+      "content": "Check if any other devices can connect to the internet. If you cannot connect to the internet using any device, chances are the issue is with your internet service. Contact your internet service provider for assistance. If your Linux computer is the only device that can't connect to the internet, chances are the problem is with your computer software or hardware."
+    },
+    {
+      "title": "Check if your network adapter is supported by Linux.",
+      "content": "Check if your network adapter is supported by Linux. Linux does not support all network adapters. You can use Google to see if your network adapter model is supported by Linux. Also, most Linux distributions keep a list of supported hardware. You can check to see what network adapters are supported for Ubuntu , Arch Linux , Fedora, and OpenSUSE . Alternatively, you can use the Terminal command lshw -C network to see if Linux recognizes your network adapter. [13] X Research source"
+    },
+    {
+      "title": "Make sure your network adapter's drivers are installed.",
+      "content": "Make sure your network adapter's drivers are installed. Most network adapters that Linux supports use free and open-source drivers. However, not all manufacturers use free and open-source drivers. You can check the web page for your network adapter manufacturer to see if they have a Linux driver you can download and install. Some network adapters do not have a Linux driver. If your network adapter does not have a Linux driver, you can try installing NDISWrapper on your Linux computer. NDISWrapper allows you to use the Windows driver for some network adapter models. [14] X Research source Some network adapters may work with Linux, but not right out of the box. Some network adapters need additional configuration. If your network adapter does not work with Linux, you can use Google to check and see if anybody has figured out how to get it to work with Linux. You may find a solution on a Linux web forum or your Linux distribution's official website."
+    },
+    {
+      "title": "Get an external network adapter.",
+      "content": "Get an external network adapter. If you cannot get your computer's built-in network adapter to connect to a wireless network, you can try an external network adapter that connects to your PC through USB. Before buying, check to ensure the network adapter is on your Linux distribution's list of supported devices. You can also check the network adapter's box to see if it has the Linux penguin logo indicating it supports Linux"
+    },
+    {
+      "title": "Ensure NetworkManager is installed.",
+      "content": "Ensure NetworkManager is installed. If NetworkManager is not installed on your version of Linux, connect your computer directly to your modem using an ethernet cable and use one of the following Terminal commands to install NetworkManager: [15] X Research source [16] X Research source Debian/Ubuntu: sudo apt-get install network-manager Fedora: sudo dnf install NetworkManager Red Hat/CentOS: sudo yum install NetworkManager Arch Linux: sudo pacman -S wpa_supplicant wireless_tools networkmanager"
+    },
+    {
+      "title": "Ensure NetworkManager is running and enabled.",
+      "content": "Ensure NetworkManager is running and enabled. If you just installed NetworkManager, you'll need to enter the Terminal command to start a new session. If you want Network Manager to start up every time you boot up your PC, you will need to enable it. Use the following Terminal commands to start and enable NetworkManager: [17] X Research source Start NetworkManager: systemctl start NetworkManager Enable NetworkManager: systemctl enable NetworkManager"
+    },
+    {
+      "title": "Restart NetworkManager.",
+      "content": "Restart NetworkManager. If NetworkManager is already installed, you may need to restart it if it's not working properly. You can use the following Terminal command to restart NetworkManager: sudo service NetworkManager restart"
+    },
+    {
+      "title": "Reinstall Linux.",
+      "content": "Reinstall Linux. If you have tried everything and you still can't get your Linux computer to connect to a wireless network, the last resort is to do a [{Install-Linux|clean installation]]. This will wipe all the data on your computer, so back up everything you want to keep before you begin. Then, you will need to make an installation CD or USB drive. Boot from the USB drive and follow the instructions to perform a clean installation of your Linux operating system."
+    }
+  ]
+}

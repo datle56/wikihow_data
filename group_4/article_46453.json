@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Use-Wine-on-Linux",
+  "title": "How to Install and Use Wine on Linux",
+  "steps": [
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. Select the Terminal application from your computer's App Menu or Applications list to do so. On most Linux versions, you can also open the Terminal by pressing Ctrl+ Alt+ T . [1] X Research source Some Linux versions also have a command line textbox at the top of the screen."
+    },
+    {
+      "title": "Check your computer's architecture.",
+      "content": "Check your computer's architecture. You need to know if you are using a 32-bit or 64-bit version of Linux. Use the following steps to do so: [2] X Research source Type lscpu in the Terminal and press Enter . Check if it says \"32-bit\" or \"64-bit\" next to \"CPU op-mode(s).\""
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This will update the software repository."
+    },
+    {
+      "title": "Enter the command to download and install the 32-bit or 64-bit version of Wine.",
+      "content": "Enter the command to download and install the 32-bit or 64-bit version of Wine. Enter one of the following commands and press Enter to install Wine on a Debian-based Linux distribution, such as Ubuntu or Linux Mint : [3] X Research source For 64-bit systems: sudo apt install wine64 For 32-bit systems: sudo apt install wine32 If you are using Fedora or Redhat, install Wine using kbd sudo dnf install winehq-stable ."
+    },
+    {
+      "title": "Type y to confirm the installation.",
+      "content": "Type y to confirm the installation. When prompted to enter \"y\" or \"n,\" press \"y\" to confirm the installation."
+    },
+    {
+      "title": "Type in winecfg and press ↵ Enter.",
+      "content": "Type in winecfg and press ↵ Enter . This creates a Windows home directory for Wine. Look for a confirmation message that says something like \"created the configuration directory 'home/name/.wine'\". [4] X Research source If prompted to install any missing packages here, click Install in the prompt window and wait for the packages to install."
+    },
+    {
+      "title": "Select a Windows version and click Apply.",
+      "content": "Select a Windows version and click Apply . Click the \"Windows Version\" drop-down box at the bottom of the \"Wine configuration\" window, then click the version of Windows (e.g., Windows10 ) that you want to use. Then click Apply in the lower-right corner."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This button is at the bottom of the window. Clicking it closes the Window."
+    },
+    {
+      "title": "Download a Windows program in \".exe\" or \".msi\" format.",
+      "content": "Download a Windows program in \".exe\" or \".msi\" format. Download a Windows install file in an \".exe\" or \".msi\" version of the program that you want to use on Linux (e.g., Notepad++) and download it from the official website. It will download to your Linux \"Downloads\" folder. Once you've done this, you can move on to installing it. You can see a comprehensive list of Wine-compatible programs on Wine's website."
+    },
+    {
+      "title": "Type ~/Downloads and press ↵ Enter.",
+      "content": "Type ~/Downloads and press ↵ Enter . This switches to the Downloads folder in the Terminal where the downloaded Windows application installer is downloaded."
+    },
+    {
+      "title": "Type wine <installer file name> and press ↵ Enter.",
+      "content": "Type wine <installer file name> and press ↵ Enter . This will open the installer file using the Wine Windows program loader. [5] X Research source Alternatively, you can right-click the \".exe\" or \".msi\" file in your Downloads folder and click Open with Wine Windows Program Loader . If this option does not appear, use the Terminal command instead."
+    },
+    {
+      "title": "Follow the instructions to complete the installation.",
+      "content": "Follow the instructions to complete the installation. The Windows installation window will appear. Follow the instructions in the installation wizard to complete the installation."
+    },
+    {
+      "title": "Open Windows applications.",
+      "content": "Open Windows applications. You can open Windows applications installed using Wine by clicking their icon in the Apps Menu or Apps list, the same as you would any Linux application. This will open the application using the Wine Windows Program Loader. Alternatively, you can navigate to the location of the Windows executable file in the virtual \"C:\" drive and run the program by typing wine <executable file name> and pressing Enter . You can navigate to the folder Windows programs are installed in on the virtual \"C:\" drive by typing cd ~/.wine/drive_c/Program\\ Files and pressing Enter . Then enter the program folder with the executable file by typing cd \"<folder name>\" with the folder name in quotes and press Enter . Then enter the command to run the executable file in Wine."
+    }
+  ]
+}

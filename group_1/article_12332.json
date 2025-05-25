@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Delete-Duplicate-Records-in-Oracle",
+  "title": "Everything You Need to Know About Removing Duplicate Records in Oracle",
+  "steps": [
+    {
+      "title": "Identify the duplicate.",
+      "content": "Identify the duplicate. In this case, identify the example duplicate, \"Alan.\" Make sure that the records you are trying to delete are actually duplicates by entering the SQL below."
+    },
+    {
+      "title": "Identifying from a column named \"Names.\"",
+      "content": "Identifying from a column named \"Names.\" In the instance of a column named \"Names,\" you would replace \"column_name\" with Names. [1] X Research source"
+    },
+    {
+      "title": "Identifying from other columns.",
+      "content": "Identifying from other columns. If you were trying to identify the duplicate by a different column, for example the age of Alan rather than his name, you would enter \"Ages\" in the place of \"column_name\" and so on. [2] X Research source select column_name , count ( column_name ) from table group by column_name having count ( column_name ) > 1 ;"
+    },
+    {
+      "title": "Select \"name from names.\"",
+      "content": "Select \"name from names.\" After \"SQL,\" which stands for Standard Query Language, enter \"select name from names.\""
+    },
+    {
+      "title": "Delete all of the rows with the duplicate name.",
+      "content": "Delete all of the rows with the duplicate name. After \"SQL,\" enter \"delete from names where name='Alan';.\" Note that capitalization is important here, so this will delete all of the rows named \"Alan.\" After \"SQL,\" enter \"commit.\""
+    },
+    {
+      "title": "Renter the row without a duplicate.",
+      "content": "Renter the row without a duplicate. Now that you have deleted all rows with the example name \"Alan,\" you can insert one back by entering \"insert into name values ('Alan');.\" After \"SQL,\" enter \"commit\" to create your new row."
+    },
+    {
+      "title": "See your new list.",
+      "content": "See your new list. Once you have completed the above steps, you can check to make sure you no longer have duplicate records by entering \"select * from names.\" [3] X Research source SQL > select name from names ; NAME ------------------------------ Alan Carrie Tom Alan rows selected . SQL > delete from names where name = 'Alan' ; rows deleted . SQL > commit ; Commit complete . SQL > insert into names values ( 'Alan' ); row created . SQL > commit ; Commit complete . SQL > select * from names ; NAME ------------------------------ Alan Carrie Tom rows selected ."
+    },
+    {
+      "title": "Select the RowID you want to delete.",
+      "content": "Select the RowID you want to delete. After \"SQL,\" enter \"select rowid, name from names;.\""
+    },
+    {
+      "title": "Delete the duplicate.",
+      "content": "Delete the duplicate. After \"SQL,\" enter \"delete from names a where rowid > (select min(rowid) from names b where b.name=a.name);\" to delete duplicate records. [4] X Research source"
+    },
+    {
+      "title": "Check for duplicates.",
+      "content": "Check for duplicates. After you have completed the above, commands check to see if you still have duplicate records by entering \"select rowid,name from names;\" and then \"commit.\" SQL > select rowid , name from names ; ROWID NAME ------------------ ------------------------------ AABJnsAAGAAAdfOAAA Alan AABJnsAAGAAAdfOAAB Alan AABJnsAAGAAAdfOAAC Carrie AABJnsAAGAAAdfOAAD Tom AABJnsAAGAAAdfOAAF Alan rows selected . SQL > delete from names a where rowid > ( select min ( rowid ) from names b where b . name = a . name ); rows deleted . SQL > select rowid , name from names ; ROWID NAME ------------------ ------------------------------ AABJnsAAGAAAdfOAAA Alan AABJnsAAGAAAdfOAAC Carrie AABJnsAAGAAAdfOAAD Tom rows selected . SQL > commit ; Commit complete ."
+    },
+    {
+      "title": "Select your rows.",
+      "content": "Select your rows. After \"SQL,\" enter \"select * from names;\" to see your rows."
+    },
+    {
+      "title": "Delete duplicate rows by identifying their column.",
+      "content": "Delete duplicate rows by identifying their column. After \"SQL'\" enter \"delete from names a where rowid > (select min(rowid) from names b where b.name=a.name and b.age=a.age);\" to delete the duplicate records. [5] X Research source"
+    },
+    {
+      "title": "Check for duplicates.",
+      "content": "Check for duplicates. Once you have completed the above steps, enter \"select * from names;\" and then \"commit\" in order to check that you have deleted the duplicate records successfully. SQL > select * from names ; NAME AGE ------------------------------ ---------- Alan 50 Carrie 51 Tom 52 Alan 50 rows selected . SQL > delete from names a where rowid > ( select min ( rowid ) from names b where b . name = a . name and b . age = a . age ); row deleted . SQL > select * from names ; NAME AGE ------------------------------ ---------- Alan 50 Carrie 51 Tom 52 rows selected . SQL > commit ; Commit complete ."
+    }
+  ]
+}

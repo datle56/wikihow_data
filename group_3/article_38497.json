@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/See-Active-Network-Connections-(Windows)",
+  "title": "How to See Active Network Connections (Windows)",
+  "steps": [
+    {
+      "title": "Click the WiFi logo or globe on the taskbar.",
+      "content": "Click the WiFi logo or globe on the taskbar. On every version of Windows, the network connectivity is displayed on the taskbar. Click the little radio signal logo (WiFi) or globe (ethernet). This will not show you all of the network connections on your computer, but it will show you if you have an active internet network connection."
+    },
+    {
+      "title": "Locate your current network connection at the top.",
+      "content": "Locate your current network connection at the top. Windows will display the name of the network, the strength of the connection, whether the internet is active, and whether you’re on a secured network or not. Below your network, there may be a list of more networks if you’re looking for a specific connection."
+    },
+    {
+      "title": "Open Windows Settings .",
+      "content": "Open Windows Settings . Press the Start menu and click on the little gear icon in the bottom left to open the settings. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don’t see a gear icon, you can also just type “settings” into the search bar and click it when it pops up in the results."
+    },
+    {
+      "title": "Click Network & Internet.",
+      "content": "Click Network & Internet . You can now see the status of your network connection and the name of any internet networks you’re connected to."
+    },
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . If the Settings are pinned to your start menu, click it. Otherwise, type “settings” into the menu’s search bar and click Settings ."
+    },
+    {
+      "title": "Select Ethernet under the options of \"Network & Internet\".",
+      "content": "Select Ethernet under the options of \"Network & Internet\"."
+    },
+    {
+      "title": "Go to the Network & Internet.",
+      "content": "Go to the Network & Internet . The Network and Sharing Center is a feature of Windows 10 where you can find the status of your network, the type of connection you have, if you can connect to other computers other than your own, and if you are connected to your network or the internet. [2] X Research source"
+    },
+    {
+      "title": "Click on the icon next to Connections.",
+      "content": "Click on the icon next to Connections . This should correspond to your connection type. For example, \"Ethernet\" will be paired with an ethernet cable \"plug\" and a wireless network connection will be paired with five bars. [3] X Research source"
+    },
+    {
+      "title": "Click Details.",
+      "content": "Click Details . This will prompt a window to display the details of your network connection."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. You can use the netstat command on any version of Windows (including older versions like Windows 7 and 8.1) to view your network connections, network status, connected hosts, and other helpful details. You'll need to use an administrator-level command prompt to use the command effectively. To open the command prompt as an administrator: Press the Windows key (or click the Start menu) and type cmd . Right-click \"Command Prompt\" and select Run as administrator . Click Yes when prompted."
+    },
+    {
+      "title": "Type netstat -a and press ↵ Enter to show current connections.",
+      "content": "Type netstat -a and press ↵ Enter to show current connections. This command will show you a list of your current TCP (Transmission Control Protocol) connections and ports , physical computer names listed for local addresses, and hostnames for remote addresses. It will also tell you the state of the port (waiting, established, etc.) [4] X Research source"
+    },
+    {
+      "title": "Use netstat -b to see which programs are using connections.",
+      "content": "Use netstat -b to see which programs are using connections. This command will show you the same list as netstat -a , but it will also show you which programs are using the connections/ports. [5] X Research source"
+    },
+    {
+      "title": "Use netstat -n to see IP addresses.",
+      "content": "Use netstat -n to see IP addresses. This command will show you the same list of connections and ports but with numerical IP addresses instead of hostnames. [6] X Research source"
+    },
+    {
+      "title": "Enter netstat /?",
+      "content": "Enter netstat /? to see the different netstat command. This command will provide you with additional options for using netstat. [7] X Research source"
+    }
+  ]
+}

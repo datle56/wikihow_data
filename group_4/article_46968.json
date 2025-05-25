@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Use-the-Tellraw-Command-in-Minecraft",
+  "title": "How to Use the Tellraw Command in Minecraft",
+  "steps": [
+    {
+      "title": "Open the chat.",
+      "content": "Open the chat. Press the T key."
+    },
+    {
+      "title": "Type '/tellraw' in chat.",
+      "content": "Type '/tellraw' in chat. Use your keyboard to type /tellraw in the chat."
+    },
+    {
+      "title": "Decide who you want to see the message.",
+      "content": "Decide who you want to see the message. After typing /tellraw , you'll have to enter in a target selector, which decides who sees the message. You can use the following target selectors: @p - Sends the message to the nearest player. @r - Sends the message to a random player. @a - Sends the message to all players. @e - Sends the message to all entities. @s - Sends the message to yourself, or the one executing the command. Username - Sends the message to the player whose username is used. Be sure to actually type the player's username, and not the word 'username' itself."
+    },
+    {
+      "title": "Begin the command string.",
+      "content": "Begin the command string. After typing /tellraw and the target selector, press space and type an opening curly bracket, { ."
+    },
+    {
+      "title": "Type the message you want to send.",
+      "content": "Type the message you want to send. After beginning the command string, type \"text\":\"Example Text\" directly after the first { . Be sure to replace \"example text\" with the message you want to send."
+    },
+    {
+      "title": "Enter the color you want.",
+      "content": "Enter the color you want. If you want your text to be colored, type ,\"color\":\"dark_blue\" directly after what you typed for the text. If you don't pick any color, the text will automatically be white. You can pick from a few preset colors, or, if you're playing on version 1.16 or higher, you can use any hex code for a color. The preset colors you can use are [1] X Research source : Black Dark blue Dark green Dark aqua Dark red Dark purple Gold Gray Dark gray Blue Green Aqua Red Light purple Yellow White Note that, if a color has a space in it, like light purple, you have to enter it in with a underscore replacing the space. So it'd be typed out as light_purple ."
+    },
+    {
+      "title": "Add other formatting.",
+      "content": "Add other formatting. If you want, you can make the text bold, italic, underlined, strikethroughed, and obfuscated. You can do this by adding on the text below directly after the last syntax you added. Bold - Add on ,\"bold\":true Italic - Add on ,\"italic\":true Strikethrough - Add on ,\"strikethrough\":true Underline - Add on ,\"underline\":true Obfuscation - Add on ,\"obfuscated\":true . Making text obfuscated makes each character rapidly change between different, mostly nonsense characters. You can use multiple or even all of the formatting options for your text."
+    },
+    {
+      "title": "Add a new line.",
+      "content": "Add a new line. You can add a new line of text under the original message by removing the \" at the end of the first line and putting \\n directly after the original message. You can then type your second line. It'd look like \"text\":\"First line\\nSecond line\""
+    },
+    {
+      "title": "Add a hover event.",
+      "content": "Add a hover event. Hover events are things you can add to a tellraw command that will display certain things when you hover a mouse over the text. You can use one of the hover events listed below, and you can only use 1 hover event per message. Hover text - To show custom text when you hover over the original message, add ,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Example text\"} directly after the last thing you put. Replace example text with the text you want to show. Hover item - To show an item or block when you hover over the original text, add ,\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"oak_planks\"}} directly after the last thing you put. You can replace oak_planks with any other item or block ID. Hover text in 1.15 and below - If you're playing on version 1.15 or below, you'll have to add ,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"Example text\"}} instead. Replace example text with the text you want to show. Hover item in 1.15 and below - If you're playing on version 1.15 or below, you'll have to add ,\"hoverEvent\":{\"action\":\"show_item\",\"value\":\"{id:oak_planks,Count:1}\"}} instead. You can replace oak_planks with any other item or block ID."
+    },
+    {
+      "title": "Add a click event.",
+      "content": "Add a click event. Click events are things you can add to a tellraw command that will perform different actions when a player clicks on the message. You can use one of the click events listed below, and you can only use 1 click event per message. Run command - To run a command when a player clicks on the message, add ,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tp @p 63 64 65\"} directly after the last thing you put. You can replace /tp @p 63 64 65 with any other command. This will only work if cheats are enabled on your world. Open URL - To open a URL in a browser tab when a player clicks on the message, add ,\"clickEvent\":{\"action\":\"open_url\",\"value\":\" https://example.com \"} directly after the last thing you put. You can replace https://example.com with any URL you want to use. Suggest command - To suggest a command to a player when they click on the message, add ,\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/tp @p 64 65 66\"} directly after the last thing you put. You can replace /tp @p 64 65 66 with any other command. This will only work if cheats are enabled on your world. Copy text - To copy text to a player's clipboard when they click on the message, add ,\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"Example text\"} directly after the last thing you put. You can replace example text with any text you want."
+    },
+    {
+      "title": "End the command string.",
+      "content": "End the command string. Once you're finished making your command, end it with a closing curly bracket, } ."
+    },
+    {
+      "title": "Enter the command.",
+      "content": "Enter the command. Press the ↵ Enter key to enter the command into the console. If done correctly, your custom text should show up in the chat."
+    },
+    {
+      "title": "Open the chat.",
+      "content": "Open the chat. The chat is opened in different ways depending on what device you are playing on. On Pocket Edition, tap the small speech bubble key at the top of your screen. On console editions or when playing with a controller, press the right arrow, or right on the D-pad."
+    },
+    {
+      "title": "Type '/tellraw' in chat.",
+      "content": "Type '/tellraw' in chat. Use the pop-up keyboard to type /tellraw in the chat."
+    },
+    {
+      "title": "Decide who you want to see the message.",
+      "content": "Decide who you want to see the message. After typing /tellraw , you'll have to enter in a target selector, which decides who sees the message. You can use the following target selectors: @p - Sends the message to the nearest player. @r - Sends the message to a random player. @a - Sends the message to all players. @e - Sends the message to all entities. @s - Sends the message to yourself, or the one executing the command. Username - Sends the message to the player whose username is used. Be sure to actually type the player's username, and not the word 'username' itself."
+    },
+    {
+      "title": "Begin the command string.",
+      "content": "Begin the command string. After typing /tellraw and the target selector, type an opening curly bracket, { ."
+    },
+    {
+      "title": "Type the message you want to send.",
+      "content": "Type the message you want to send. After beginning the command string, type \"rawtext\":[{\"text\":\"Example text\"}] directly after the opening curly bracket. Be sure to replace example text with the message you want to send."
+    },
+    {
+      "title": "Enter the color you want.",
+      "content": "Enter the color you want. If you want your text to be colored, copy and paste the § symbol in front of the text, then put the number or letter corresponding to the color you want. It will look like \"rawtext\":[{\"text\":\"§1Example text\"}] . If you don't pick any color, the text will automatically be white. You can pick from a few preset colors. The preset colors you can use are: Black - §0 Dark blue - §1 Dark green - §2 Dark aqua - §3 Dark red - §4 Dark purple - §5 Gold - §6 Gray - §7 Dark gray - §8 Blue - §9 Green - §a Aqua - §b Red - §c Light purple - §d Yellow - §e White - §f Minecoin gold - §g"
+    },
+    {
+      "title": "Add other formatting.",
+      "content": "Add other formatting. If you want, you can make the text bold, italic, and obfuscated. You can do this by copy and pasting the § symbol in front of the text and then typing the letter that corresponds with it. For example, if you wanted your text to be obfuscated, it'd look like \"rawtext\":[{\"text\":\"§kExample text\"}] . You can use the following formatting codes [2] X Research source : Obfuscation - §k Bold - §l Italic - §o Reset - §r. This resets the formatting on text. You can add multiple or even all of the formatting codes on your text."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Hack-Wi-Fi-Using-Android",
+  "title": "2 Ways to Hack a Wi-Fi Password Using an Android Device",
+  "steps": [
+    {
+      "title": "Root a compatible device",
+      "content": "Root a compatible device . Not every Android phone or tablet will be able to crack a WPS PIN. The device must have a Broadcom bcm4329 or bcm4330 wireless chipset and must be rooted. The Cyanogen ROM will provide the best chance of success. Some of the known supported devices include: Nexus 7 Galaxy S1/S2/ S3 / S4 / S5 Galaxy y Nexus One Desire HD Micromax A67"
+    },
+    {
+      "title": "Download and install bcmon.",
+      "content": "Download and install bcmon. This tool enables Monitor Mode on your Broadcom chipset, which is essential for being able to crack the PIN. The bcmon APK file is available for free from the bcmon page on the Google Code website. [1] X Research source To install an APK file , you will need to allow installation from unknown sources in your Security menu."
+    },
+    {
+      "title": "Run bcmon.",
+      "content": "Run bcmon. After installing the APK file, run the app. If prompted, install the firmware and tools. Tap the \"Enable Monitor Mode\" option. If the app crashes, open it and try again. If it fails for the third time, your device is most likely not supported. Your device must be rooted in order to run bcmon."
+    },
+    {
+      "title": "Tap \"Run bcmon terminal\".",
+      "content": "Tap \"Run bcmon terminal\". This will launch a terminal similar to most Linux terminals.Type airodump-ng and tap the Enter button. AIrdump will load, and you will be taken to the command prompt again. Type airodump-ng wlan0 and tap the Enter button."
+    },
+    {
+      "title": "Identify the access point you want to crack.",
+      "content": "Identify the access point you want to crack. You will see a list of available access points. You must select an access point that is using WEP encryption."
+    },
+    {
+      "title": "Note the MAC address that appears.",
+      "content": "Note the MAC address that appears. This is the MAC address for the router. Make sure that you have the right one if there are multiple routers listed. Jot this MAC address down. Also note the Channel that the access point is broadcasting on."
+    },
+    {
+      "title": "Start scanning the channel.",
+      "content": "Start scanning the channel. You will need to collect information from the access point for several hours before you can attempt to crack the password. Type airodump-ng -c channel# --bssid MAC address -w output ath0 and tap Enter. [2] X Research source Airodump will begin scanning. You can leave the device for a while as it scans for information. Be sure to plug it in if you are running low on battery. Replace channel# with the channel number the access point is broadcasting on (e.g. 6). Replace MAC address with the MAC address of the router (e.g 00:0a:95:9d:68:16) Keep scanning until you reach at least 20,000-30,000 packets."
+    },
+    {
+      "title": "Crack the password.",
+      "content": "Crack the password. Once you have a suitable number of packets, you can start attempting to crack the password. Return to the terminal and type aircrack-ng output*.cap and tap Enter. [3] X Research source"
+    },
+    {
+      "title": "Note the hexadecimal password when finished.",
+      "content": "Note the hexadecimal password when finished. After the cracking process is complete (which could take several hours), the message Key Found! will appear, followed by the key in the hexadecimal form. Make sure that \"Probability\" is 100% or the key will not work. [4] X Research source When you enter the key, enter it without the \":\". For example, if the key was 12:34:56:78:90, you would enter 1234567890 ."
+    },
+    {
+      "title": "Root a compatible device.",
+      "content": "Root a compatible device. Not every Android phone or tablet will be able to crack a WPS PIN. The device must have a Broadcom bcm4329 or bcm4330 wireless chipset and must be rooted. The Cyanogen ROM will provide the best chance of success. Some of the known supported devices include: Nexus 7 Galaxy Ace/S1/S2/S3 Nexus One Desire HD"
+    },
+    {
+      "title": "Download and install bcmon.",
+      "content": "Download and install bcmon. This tool enables Monitor Mode on your Broadcom chipset, which is essential for being able to crack the PIN. The bcmon APK file is available for free from the bcmon page on the Google Code website. [5] X Research source To install an APK file, you will need to allow installation from unknown sources in your Security menu."
+    },
+    {
+      "title": "Run bcmon.",
+      "content": "Run bcmon. After installing the APK file, run the app. If prompted, install the firmware and tools. Tap the \"Enable Monitor Mode\" option. If the app crashes, open it and try again. If it fails for the third time, your device is most likely not supported. Your device must be rooted in order to run bcmon."
+    },
+    {
+      "title": "Download and install Reaver.",
+      "content": "Download and install Reaver. Reaver is a program developed to crack the WPS PIN in order to retrieve the WPA2 passphrase. The Reaver APK can be downloaded from the developers' thread on the XDA-developers forums. [6] X Research source"
+    },
+    {
+      "title": "Launch Reaver.",
+      "content": "Launch Reaver. Tap the Reaver for Android icon in your App drawer. After confirming that you are not using it for illegal purposes, Reaver will scan for available access points. Tap the access point you want to crack to continue. You may need to verify Monitor Mode before proceeding. If this is the case, bcmon will open again. The access point you select must accept WPS authentication. Not all routers support this."
+    },
+    {
+      "title": "Verify your settings.",
+      "content": "Verify your settings. In most cases you can leave the settings that appear at their default. Make sure that the \"Automatic advanced settings\" box is checked."
+    },
+    {
+      "title": "Start the cracking process.",
+      "content": "Start the cracking process. Tap the \"Start attack\" button at the bottom of the Reaver Settings menu. The monitor will open and you will see the results of the ongoing crack displayed. Cracking WPS can take anywhere from 2-10+ hours to complete, and it is not always successful. [7] X Research source"
+    }
+  ]
+}

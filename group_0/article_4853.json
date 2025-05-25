@@ -1,0 +1,166 @@
+{
+  "url": "https://www.wikihow.com/Build-a-Hackintosh",
+  "title": "How to Build a Hackintosh With macOS on PC",
+  "steps": [
+    {
+      "title": "Download MacOS Catalina on a Mac.",
+      "content": "Download MacOS Catalina on a Mac. You'll need access to a Mac to download macOS Catalina. You can download macOS from the App Store on a Mac computer. Once it finishes downloading, close the installer. You do not need to install macOS. Open the App Store and search macOS Click Download below macOS Catalina. Close out of the macOS installer when it appears."
+    },
+    {
+      "title": "Insert a USB flash drive.",
+      "content": "Insert a USB flash drive. You need a USB flash drive that is 16GB or larger. Make sure there are no files you want to keep on the Flash drive."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. Use the following steps to open Disk Utility: Click the Mac Spotlight magnifying glass icon in the upper-right corner of the desktop. Click Type \" disk utility.app \" in the search bar and press Enter."
+    },
+    {
+      "title": "Format the USB drive.",
+      "content": "Format the USB drive. Use the following steps to format the USB drive in Disk Utility: Select the USB drive in the sidebar to the left in Disk Utility. Click Erase at the top of Disk Utility. Type \" USB \" next to \"Name\" Click Erase ."
+    },
+    {
+      "title": "Open the terminal .",
+      "content": "Open the terminal . Use the following steps to open the Terminal: Click the Mac Spotlight magnifying glass icon in the upper-right corner of the desktop. Click Type \" terminal \" in the search bar and press Enter."
+    },
+    {
+      "title": "Enter the command to create an install disk in the terminal and press ↵ Enter.",
+      "content": "Enter the command to create an install disk in the terminal and press ↵ Enter . You will then be asked to enter the Mac user password. This creates a USB install drive from the macOS Catalina download. The command is as follows: [1] X Research source sudo /Applications/Install\\ macOS\\ Catalina.app/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/USB/"
+    },
+    {
+      "title": "Install Clover bootloader.",
+      "content": "Install Clover bootloader. Warning: Make sure to select the USB drive as the install location. If you install it on your Mac, you risk damaging your Mac bootloader. Use the following steps to install the Clover bootloader: [2] X Research source Navigate to https://github.com/CloverHackyColor/CloverBootloader/releases in your web browser. Click the latest version of the Clover \".pkg\" file (\"Clover_v2.5k_r5098.pkg\" as of November 2019). Open the .pkg file in your Downloads folder. Click Continue twice. Click Change Install Location ( Important ) Select the USB flash drive and click Continue . ( Important ). Click Customize . (if a custom install is required). Ensure Recommended Drivers is checked. Check any additional drivers needed for the computer you want to install macOS on. Click Install"
+    },
+    {
+      "title": "Download the \"FakeSMC.kext\" file.",
+      "content": "Download the \"FakeSMC.kext\" file. You only need the FakeSMC.kext file. You don't need any of the other files included in the download. Use the following steps to download the FakeSMC.kext file: Navigate to https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/ in a web browser. Click the latest version of RehabMan-FakeSMC . Open the zip file. Click and drag the \"FakeSMC.kext\" file to your desktop."
+    },
+    {
+      "title": "Download additional kext files needed for your system.",
+      "content": "Download additional kext files needed for your system. You need to know what hardware is on the computer you want to install macOS on. Use the following steps to download additional Kext files needed for your system. Go to https://hackintosher.com/downloads/kexts/ in a web browser. Click the download link for kext files needed for your hardware. Open the zip file. Click and drag the Kext file to your desktop."
+    },
+    {
+      "title": "Navigate to the kext folder of the USB drive in the Finder .",
+      "content": "Navigate to the kext folder of the USB drive in the Finder . The Finder has an icon that resembles a blue and white smiley face. Open the Finder in the the Dock at the bottom of the screen. Use the followings steps to navigate to the appropriate folder on the USB drive: Open the Finder. Click EFI in the sidebar to the left. Open the EFI folder. Open the Clover folder. Open the Kext folder. Open the Other folder."
+    },
+    {
+      "title": "Drag and drop the kext files into the \"Other\" folder.",
+      "content": "Drag and drop the kext files into the \"Other\" folder. After navigating to the \"Other\" folder in \"Kext\" on the USB drive, drag and drop the kext files you downloaded from the desktop into the folder."
+    },
+    {
+      "title": "Eject the USB drive.",
+      "content": "Eject the USB drive. Your USB drive is now ready. Click the Eject button to eject the USB flash drive and then remove it from the Mac."
+    },
+    {
+      "title": "Create a separate partition on your main drive",
+      "content": "Create a separate partition on your main drive . It is highly recommended that you create a separate partition for the macOS installation. Installing macOS on your main drive may cause permanent problems if the installation doesn't work properly."
+    },
+    {
+      "title": "Insert the USB install drive.",
+      "content": "Insert the USB install drive. Use a free USB port on the computer you want to install macOS Catalina to insert the USB drive."
+    },
+    {
+      "title": "Boot into the BIOS",
+      "content": "Boot into the BIOS . The way you boot into the BIOS is different on different computers. Some computers require you to press one of the functions keys while it boots up. Check the owner's manual or manufacturers' website to find out how to boot into the BIOS on your computer."
+    },
+    {
+      "title": "Select Load Optimized Defaults and reboot the BIOS.",
+      "content": "Select Load Optimized Defaults and reboot the BIOS. This is usually under the \"Save & Exit\" menu. Select this option and then select Save & Exit and reboot the BIOS. If you cannot find this option in the BIOS, disregard and continue."
+    },
+    {
+      "title": "Make the following changes to the BIOS.",
+      "content": "Make the following changes to the BIOS. Each BIOS menu is different. Look for the following options in the BIOS menu and make the appropriate changes. If you cannot find these options, disregard and continue: Select Profile 1 or Enable under \"Extreme Memory Profile\" in \"Advanced Memory Settings\". Disable Secure Boot. [3] X Research source Disable Fast Boot . Disable Super IO Configuration . [4] X Research source Set it to boot from \"Other OS\" next to \"Windows 8/10 Features\". Set it to boot from \"BIOS and Legacy\". Enable \"XHCI Hand-off' under \"USB Configuration\". Disable Intel's VT-d technology under the \"Chipset\" menu. Set USB drive as the default boot drive."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. After you have made all the necessary changes to the BIOS, reboot your computer and allow your computer to boot from the USB drive with macOS installed on it."
+    },
+    {
+      "title": "Boot from the UEFI version of the USB flash drive.",
+      "content": "Boot from the UEFI version of the USB flash drive. It's in the list of Boot drives. Your USB flash drive may be listed alongside a UEFI version of your USB flash drive. Select the UEFI version. This opens the Clover bootloader."
+    },
+    {
+      "title": "Press O when Clover opens.",
+      "content": "Press O when Clover opens. This opens the Options menu."
+    },
+    {
+      "title": "Type -lilubetaall in the \"Boot args\" line and press ↵ Enter.",
+      "content": "Type -lilubetaall in the \"Boot args\" line and press ↵ Enter . The \"Boot Args\" line is at the top of the list."
+    },
+    {
+      "title": "Select Return.",
+      "content": "Select Return . It's at the bottom of the Options menu. Navigate to this option at the bottom of the list and press the \"Enter\" key. This returns to the previous screen."
+    },
+    {
+      "title": "Select the macOS Catalina option.",
+      "content": "Select the macOS Catalina option. This boots macOS Catalina from the USB drive."
+    },
+    {
+      "title": "Select your language and click the arrow icon.",
+      "content": "Select your language and click the arrow icon. The first page of the macOS Catalina installation screen asks you to select your language. Select your language and click the arrow icon to continue."
+    },
+    {
+      "title": "Click the Disk Utility option.",
+      "content": "Click the Disk Utility option. It has an icon that resembles a disk drive with a stethoscope."
+    },
+    {
+      "title": "Select Show all devices.",
+      "content": "Select Show all devices . It's in the View menu at the top of the screen. This displays all disks and partitions."
+    },
+    {
+      "title": "Select the partition you want to install macOS on.",
+      "content": "Select the partition you want to install macOS on. It's in the sidebar to the left. Once again, it is recommended that you NOT install macOS on your main hard drive. Select a partition to install macOS on."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . It's the middle button at the top of the Disk Utility window."
+    },
+    {
+      "title": "Type a name for the partition.",
+      "content": "Type a name for the partition. You can name the partition with macOS \"Hackintosh\", \"macOS\", \"macOS Catalina\" or anything you want."
+    },
+    {
+      "title": "Select APFS under \"Format\".",
+      "content": "Select APFS under \"Format\". It's in the drop-down menu next to \"Format\"."
+    },
+    {
+      "title": "Select Erase.",
+      "content": "Select Erase . It's in the lower-right corner of the windows. This formats the partition you selected."
+    },
+    {
+      "title": "Click Done and close Disk Utility.",
+      "content": "Click Done and close Disk Utility. After Disk Utility is finished formatting, click Done and then click the red X icon to close Disk Utility."
+    },
+    {
+      "title": "Install macOS.",
+      "content": "Install macOS. After you finished formatting the partition you want to install macOS on, use the following steps to install macOS. Select \"Install macOS\" and click Continue . Click the arrow icon to continue. Click Agree to agree to the terms and conditions. Select the partition you want to install macOS on. Click Install ."
+    },
+    {
+      "title": "Boot from the USB flash drive.",
+      "content": "Boot from the USB flash drive. After macOS is installed you can boot into macOS using the USB flash drive and selecting the UEFI version of the flash drive. After the installation is complete, reboot your computer and boot into macOS. Follow the on-screen instructions to complete the setup process."
+    },
+    {
+      "title": "Drag and drop the kext files to your desktop.",
+      "content": "Drag and drop the kext files to your desktop. If you have kext files installed on your macOS install disk, you can drag and drop them to your desktop from the install drive. You can also download any kext files you need from a repository ]. Use the following steps to navigate to your kext files on the install drive. Insert the USB macOS installer. Open the Finder. Click EFI in the sidebar to the left. Open the EFI folder. Open the Clover folder. Open the Kext folder. Open the Other folder. Drag and drop the kext files to your desktop."
+    },
+    {
+      "title": "Navigate to the Extensions folder using the Finder .",
+      "content": "Navigate to the Extensions folder using the Finder . Use the following steps to navigate to the Exenteions folder on your Hackintosh. Click the root install drive in the sidebar to the left. Open the System folder. Open the Library folder. Open the Extensions folder."
+    },
+    {
+      "title": "Open the terminal .",
+      "content": "Open the terminal . The terminal can be found within the Utilities folder in the Applications folder, or you can use the following steps to open the terminal on your desktop. Click the magnifying glass icon in the upper-right corner. Type terminal in the search bar and press the Enter key."
+    },
+    {
+      "title": "Type the following command in the terminal:",
+      "content": "Type the following command in the terminal: sudo kextunload /System/Library/Extensions/[filename.kext] and press ↵ Enter .. Replace \"filename.kext at the end fo the command with the actual file name you are trying to install (i.e. sudo kextunload /System/Library/Extensions/realtekRTL8100.kext)."
+    },
+    {
+      "title": "Enter your macOS password and press ↵ Enter.",
+      "content": "Enter your macOS password and press ↵ Enter . You'll need to enter your password in order to install kext files on macOS. Enter the password you use to sign in to your Hackintosh and press the Enter key. [5] X Research source"
+    },
+    {
+      "title": "Repeat for all kext files.",
+      "content": "Repeat for all kext files. You'll need to repeat this command for all kext files you want to install."
+    }
+  ]
+}

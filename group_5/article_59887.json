@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-a-Custom-Banner-Message-in-Your-Ubuntu-Linux-Machine-for-Remote-Users",
+  "title": "Creating a Custom Banner and Welcome Message on Ubuntu",
+  "steps": [
+    {
+      "title": "Open /etc/issue.net in your favorite text editor.",
+      "content": "Open /etc/issue.net in your favorite text editor. This file contains the message that appears to remote users before they log in, just above the login prompt. Since this is a plain text file, you can edit it with your preferred text editor (like Nano or Vim) to create any custom welcome banner you wish. [1] X Research source Use sudo to edit the file. For example, sudo vim /etc/issue.net . /etc/issue.net is only shown to remote users. If you want the pre-login welcome message to be displayed to local users as well, edit /etc/issue instead, and delete (or rename) /etc/issue.net By default, the file displays the current version of Ubuntu."
+    },
+    {
+      "title": "Add your message and save the file.",
+      "content": "Add your message and save the file. Below the Ubuntu version, type the message you want to appear when remote users log in to the server."
+    },
+    {
+      "title": "Open /etc/ssh/sshd_config in a text editor.",
+      "content": "Open /etc/ssh/sshd_config in a text editor. To do so, use sudo vim /etc/ssh/sshd_config . However, the location of the SSH configuration file varies by Linux version and SSH version. If that file doesn't exist, try /etc/ssh/ssh_config or /etc/sshd/sshd_config."
+    },
+    {
+      "title": "Add your Banner line.",
+      "content": "Add your Banner line. First, if you see a line in ssh_config that begins with #Banner, just remove the hash symbol to uncomment it. If not, scroll to the bottom of the file and create a new line beginning with the word \"Banner,\" followed by the path to /etc/issue.net. The new line (or uncommented Banner line) should look like this: Banner /etc/issue.net"
+    },
+    {
+      "title": "Restart sshd.",
+      "content": "Restart sshd. To do so, use the command sudo systemctl restart ssh.service . When sshd restarts, you can test your new banner by connecting to the server via SSH from a remote system."
+    },
+    {
+      "title": "Navigate to /etc/update-motd.d.",
+      "content": "Navigate to /etc/update-motd.d. To customize the banner that appears to remote users after they log in to your Ubuntu server, you'll need to edit the scripts in /etc/update-motd.d. Instead of using a single file, MOTD (Message of the Day) concatenates banner fragments from a series of scripts in this directory. [2] X Research source You can edit the existing scripts and create your own to appear along with them. Use ls in /etc/update-motd.d to see the names of the scripts—notice that all begin with two numbers (00, 10, etc.). The number preceding each script's name determines the order in which it appears in the banner. For example, 00-header is the first part of the banner, and all subsequent numbers appear after it in order. To see your current MOTD banner, use the command run-parts . to run all scripts in the directory."
+    },
+    {
+      "title": "Edit an existing script.",
+      "content": "Edit an existing script. By default, you'll find 00-header, 10-help-text, 50-motd-news, 91-contract-ua-esm-status, 91-release-upgrade, and 92-unattended-upgrade, all of which are combined into a single banner message in that order. Other packages may also add their own scripts. You can edit these scripts individually by opening a script in your text editor with sudo. Unlike the welcome message you can create in /etc/issue.net that appears before login, these files must be shell scripts —not plain text files."
+    },
+    {
+      "title": "Create a new script to add to the banner.",
+      "content": "Create a new script to add to the banner. To do this, you'll want to create a new file beginning with a two-digit number representing where it should appear in the banner. For example, if you want your new addition to appear just beneath the header, you might call it 01-my_custom_msg . Remember, this must be a shell script, not plain text. After creating your script, make it executable so it can run . Use chmod +x <filename> to do so. To remove a script from the banner, make it non-executable ."
+    },
+    {
+      "title": "Test your MOTD banner.",
+      "content": "Test your MOTD banner. To do this, use the command run-parts . to run all scripts in the current directory. The banner you see here is now what remote users will see when they log into the Linux server."
+    },
+    {
+      "title": "Create your ASCII letters.",
+      "content": "Create your ASCII letters. If you're not up for creating your own ASCII art from scratch, you can use an ASCII text generator."
+    },
+    {
+      "title": "Create a new shell script in /etc/update-motd.d.",
+      "content": "Create a new shell script in /etc/update-motd.d. To do this, create a new file in the directory that begins with two numbers so the message appears where you want it in the script. For example, to make it appear after 10-help-text, you might call it 11-ascii . #!/bin/sh"
+    },
+    {
+      "title": "Paste your ASCII art into the text file.",
+      "content": "Paste your ASCII art into the text file. This will likely take up several lines in the file. You'll also need to format the art so that it is echoed to the screen. Here's an example: echo \" _) | _) | | \" echo \" \\ \\ \\ / | | / | __ | _ \\ \\ \\ \\ / \" echo \" \\_/\\_/ _| _\\_\\ _| _| _ | \\___/ \\_/\\_/ \" echo \"\" echo \"\" However, some characters need to be escaped, or the shell will think they are commands. In our example, we'd actually need to escape all backslashes (\\) and pipes (|) in the art by placing a backslash before each. But don't worry—the added slashes won't appear in your banner."
+    },
+    {
+      "title": "Save the script and make it executable.",
+      "content": "Save the script and make it executable. When you're finished editing, you'll need to use sudo chmod +x <filename> to give your script execute permissions. This ensures your banner will appear with the others in /etc/update-motd.d. You can test your new banner using run-parts . ."
+    }
+  ]
+}

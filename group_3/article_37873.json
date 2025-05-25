@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Run-a-Batch-File-from-the-Command-Line-on-Windows",
+  "title": "How to Run a Windows Batch File from the Command Line (CMD)",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. If your batch file performs administrative tasks, open Command Prompt as an administrator . If the batch file only requires access to files in your user account, you don't need to start it as an administrator. [1] X Research source Press the Windows key on your keyboard. Type cmd . If your batch file doesn't need administrator rights, click Command Prompt . If your batch file does require administrator rights: Right-click Command Prompt . Select Run as administrator . Click Yes ."
+    },
+    {
+      "title": "Type cd followed by the full path to your batch file's folder.",
+      "content": "Type cd followed by the full path to your batch file's folder. The cd command stands for \"change directories.\" For example: If the file is at D:\\Music\\MP3s\\Unsorted, you'd type cd D:\\Music\\MP3s\\Unsorted . If the batch file is on your desktop, you'd type cd \\Users\\ YourLoginName \\Desktop . If you use OneDrive to automatically back up your personal files, you'd use cd \\Users\\YourLoginName\\OneDrive\\Desktop instead. If you don’t know your login name, type cd \\Users and press Enter . Then, type dir and press Enter to see a list of users."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will move you into the folder containing your batch file. Type dir and press Enter to see a list of all files in the current folder. You should see your batch file (ending with .bat) here."
+    },
+    {
+      "title": "Type the name of the batch file and press ↵ Enter.",
+      "content": "Type the name of the batch file and press ↵ Enter . For example, if your batch file is called program.bat, type program.bat and press Enter . This runs the batch file."
+    },
+    {
+      "title": "Get the full path to your batch file.",
+      "content": "Get the full path to your batch file. If you want to run a batch file without using cd to enter its folder first, you'll just need to know the full path to the file. For example, C:\\Users\\wikiHow\\Scripts\\mybatchfile.bat. Here's an easy way to find the full path to your batch file: Navigate to your batch file. If you're not sure where you saved it, you can search for it. If you're using Windows 11 , right-click the file and select Copy as path (Windows 11). On Windows 10 and earlier, right-click the file and select Properties . Highlight the path next to \"Location\" and press Ctrl + C to copy it to your clipboard."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. If your batch file performs administrative tasks, open Command Prompt as an administrator . If it only requires access to files in your user account, you don't need to start it as an administrator. [2] X Research source Press the Windows key on your keyboard. Type cmd . If your batch file doesn't need administrator rights, click Command Prompt . If your batch file does require administrator rights: Right-click Command Prompt . Select Run as administrator . Click Yes ."
+    },
+    {
+      "title": "Type or paste the full path to your batch file.",
+      "content": "Type or paste the full path to your batch file. To paste the path you copied earlier, press Ctrl + V . Alternatively, you can type the full path to your file manually (e.g., C:\\Users\\wikiHow\\Scripts\\mybatchfile.bat). Because the .BAT extension is executable, you don't need to type any commands before pasting or entering the path to the file."
+    },
+    {
+      "title": "Press ↵ Enter to run the batch file.",
+      "content": "Press ↵ Enter to run the batch file. The batch file will now run. Any commands in the batch file will execute as specified in the script."
+    },
+    {
+      "title": "Running the batch file at the prompt just takes me to the next line.",
+      "content": "Running the batch file at the prompt just takes me to the next line. Depending on the commands in your batch file , you may not see confirmation or output when you run a .BAT file from Command Prompt. You'll only see output if there's a command in the batch file that's supposed to display output. For example, if the batch file is just working with files on your PC, such as moving, renaming, and/or deleting, you won't see the commands as they run unless @echo on is at the top of the .BAT file. [3] X Research source You can also add echo \"your text here\" to your batch file to display a custom message when run."
+    },
+    {
+      "title": "I see \"The syntax of the command is incorrect\" when I run a batch file.",
+      "content": "I see \"The syntax of the command is incorrect\" when I run a batch file. This means that there's an error with one of the commands in the batch file. The error could be due to missing or incorrect symbols, leaving out a flag required by a command, or even missing quotation marks around paths. Open the batch file in an editor like Notepad and inspect the code for errors."
+    },
+    {
+      "title": "I'm getting the error \"x is not recognized as an internal or external command.\"",
+      "content": "I'm getting the error \"x is not recognized as an internal or external command.\" This error also indicates an error in the batch file. But in this case, the error occurs because a command in the batch file is not recognized by Command Prompt. Fortunately, the error tells you exactly which command is failing, so it should be simple to fix. For example, if a command in the .BAT file is misspelled or incorrect (e.g., \"ifconfig\" instead of \"ipconfig\"), or trying to start a program using its name instead of its full path."
+    },
+    {
+      "title": "When I double-click a batch file, the window just closes.",
+      "content": "When I double-click a batch file, the window just closes. If double-clicking your .BAT file quickly opens and closes a Command Prompt window, it just means the batch file doesn't have a \"pause\" at the end. If you want to keep the window open after the commands have run, just add \"pause\" to the end of the batch file. Right-click the batch file. Select Open with > Notepad (Windows 10) or Show more options > Edit (Windows 11). Add \"pause\" to the last line of the batch file. Save the file and run it again. Now, when you run the batch file, the window will stay open while displaying \"Press any key to continue…\" Once you press a key, the window will close. [4] X Research source"
+    },
+    {
+      "title": "Double-click any .BAT file to run it instantly.",
+      "content": "Double-click any .BAT file to run it instantly. If you don't want to use the Command Prompt, you can easily run a batch file from any location on your Windows PC just by double-clicking it. If double-clicking the batch file opens and closes a window without showing you any details, see this troubleshooting tip ."
+    },
+    {
+      "title": "Use the Run dialog.",
+      "content": "Use the Run dialog. To call up a batch script from the Run dialog: Press Windows key + R to open Run. Click Browse . Navigate to and select your batch file. Click Open . Click OK to run the batch file."
+    },
+    {
+      "title": "Run the batch file at a specific time and date.",
+      "content": "Run the batch file at a specific time and date. Use Windows Task Scheduler to automatically run a batch file at the time and date of your choice. You can have the batch file run once or on a regular schedule. Press the Windows key and type task scheduler . Click Task Scheduler . Expand the \"Task Scheduler Library\" folder. Create a new folder: Right-click Task Scheduler Library , click New Folder… , type a name, and click OK . Right-click your new folder and select Create basic task . Type a name for your task and click Next . Choose when (and how often) you want the batch file to run. For example, if you want it to run at a certain date, select the date. Then, click Next . Select Start a program , click Next , and then click Browse to select your .BAT file. Click Finish . The batch file will now run automatically at the selected time and date."
+    },
+    {
+      "title": "Run the batch file automatically when Windows starts.",
+      "content": "Run the batch file automatically when Windows starts. If you want the batch file to start automatically when your PC boots into Windows, you can copy or move the file to your Windows startup scripts folder. Here's how: [5] X Research source Press Windows key + R to open the Run dialog. Type shell:startup and click OK . This opens a File Explorer window to your Startup folder. Drag or copy the .BAT file into the folder."
+    }
+  ]
+}

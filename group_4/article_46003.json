@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Use-Dolphin-Emulator-on-Android",
+  "title": "How to Use Dolphin Emulator on Android",
+  "steps": [
+    {
+      "title": "Open the Google Play Store .",
+      "content": "Open the Google Play Store . This app icon looks like a multicolored \"play\" icon."
+    },
+    {
+      "title": "Search Dolphin Emulator.",
+      "content": "Search Dolphin Emulator . You'll see the search bar at the top of your screen."
+    },
+    {
+      "title": "Tap the Dolphin Emulator search result.",
+      "content": "Tap the Dolphin Emulator search result. It's next to an icon of a dolphin and is developed by \"Dolphin Emulator.\""
+    },
+    {
+      "title": "Tap Install.",
+      "content": "Tap Install . This will install the emulator on your phone. After the emulator installs, you'll have the emulator ready to play your Wii and GameCube games ready, but how do you get games?"
+    },
+    {
+      "title": "Install the Homebrew Channel on your Wii.",
+      "content": "Install the Homebrew Channel on your Wii. If you already have that channel installed, you can skip this step. To complete this process , you'll need an SD card or USB drive, a computer, and your console game. Essentially, use your computer to download the necessary data."
+    },
+    {
+      "title": "Download CleanRip from https://code.google.com/archive/p/cleanrip/downloads.",
+      "content": "Download CleanRip from https://code.google.com/archive/p/cleanrip/downloads . You will need it to make a copy of your Wii or GameCube disc that you can play on Dolphin. Extract the ZIP file and copy the apps folder to your SD card or USB drive."
+    },
+    {
+      "title": "Insert your SD card or plug in your USB drive into the Wii and launch the Homebrew Channel.",
+      "content": "Insert your SD card or plug in your USB drive into the Wii and launch the Homebrew Channel. You should see CleanRip come up as one of the options. Select it and choose Launch. You'll see a disclaimer. After you read that, press A on your controller to continue opening the program."
+    },
+    {
+      "title": "Choose where you want to rip the game.",
+      "content": "Choose where you want to rip the game. Select if you're using an SD card or USB drive, then select whether your device is formatted with FAT32 or NTFS. Press A to continue."
+    },
+    {
+      "title": "Select No to continue.",
+      "content": "Select No to continue. This window asks if you want to download the redump.org DAT files. You can download them if you want, but they are not required and they will only work if you have an internet connection."
+    },
+    {
+      "title": "Insert a GameCube or Wii disc into your console.",
+      "content": "Insert a GameCube or Wii disc into your console. Once a game disc is inserted, press A to continue."
+    },
+    {
+      "title": "Select the chunk size that you want.",
+      "content": "Select the chunk size that you want. When you dump the game disc, it will divide the disc into a few smaller chunks. Choose either 1 GB, 2 GB, 3 GB, or full. Please note that you can only choose full if your SD card or USB drive is formatted with NTFS because FAT32 has a file size limit of 4 GB. Also select whether your disc is single layer or dual-layer, and if you want to get prompted for a new device every time a chunk finishes. There are only a few dual-layer disc games including Super Mario Smash Bros Brawl and Disney Infinity. [1] X Research source [2] X Research source You'll see a summary page when the dump is finished, outlining how long the copy took to finish. Press B to exit CleanRip."
+    },
+    {
+      "title": "Put your SD card or USB drive into your computer.",
+      "content": "Put your SD card or USB drive into your computer. Now it's time to put all your chunks together to form a full game disc that can be read by Dolphin. If you dumped the full disc, you can skip this step. Copy all the chunks to your hard drive. Then start either the Command Prompt (if you're using Windows) or the Terminal (if you're using Mac or Linux). Use CD to get to whatever directory you copied the chunks to, then follow this command to combine all of the chunks: Windows: copy /b <title_id>.part*.iso <game_title>.iso Mac or Linux: cat <title_id>.part*.iso > <game_title>.iso"
+    },
+    {
+      "title": "Transfer the files from your computer to your Android.",
+      "content": "Transfer the files from your computer to your Android. The easiest way to transfer files is using the USB that came with your phone. You can plug it into your computer, then drag and drop the ripped game files from your computer to your Android."
+    },
+    {
+      "title": "Open Dolphin Emulator.",
+      "content": "Open Dolphin Emulator. This app icon looks like a dolphin."
+    },
+    {
+      "title": "Tap the gear icon.",
+      "content": "Tap the gear icon. It's in the upper right corner of your screen and the Settings menu will open."
+    },
+    {
+      "title": "Tap Config.",
+      "content": "Tap Config . This is usually the first option in the menu."
+    },
+    {
+      "title": "Tap Advanced.",
+      "content": "Tap Advanced . You'll see this near the bottom of the menu."
+    },
+    {
+      "title": "Tap to select the box next to \"Override Emulated CPU Clock Speed.",
+      "content": "Tap to select the box next to \"Override Emulated CPU Clock Speed. \" . A checked box means that feature is enabled. Return to the previous menu by tapping your phone's back button."
+    },
+    {
+      "title": "Tap General.",
+      "content": "Tap General . You'll see this in the main Config menu."
+    },
+    {
+      "title": "Tap to select the boxes next to \"Dual Core\" and \"Enable usage statistics reporting.",
+      "content": "Tap to select the boxes next to \"Dual Core\" and \"Enable usage statistics reporting. \" Both this and \"Override\" will increase the speed and help the emulator perform better on your phone. Press the back arrows twice or three times to return to the main Settings menu."
+    },
+    {
+      "title": "Tap Graphics Settings.",
+      "content": "Tap Graphics Settings . It's usually the second item on the menu."
+    },
+    {
+      "title": "Tap to select the boxes next to \"Show FPS\" and \"Compile Shaders Before Starting.",
+      "content": "Tap to select the boxes next to \"Show FPS\" and \"Compile Shaders Before Starting. \" Not only will you see the frames per second, but the game should stutter or lag less while playing."
+    },
+    {
+      "title": "Add the game to Dolphin.",
+      "content": "Add the game to Dolphin. From the main screen, tap the + icon in the lower right corner. This will allow you to search your local storage for compatible games. [3] X Research source"
+    }
+  ]
+}

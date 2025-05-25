@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Change-a-Display-Language-on-Windows-7-Without-Vistalizator",
+  "title": "How to Change a Display Language on Windows 7 Without Vistalizator",
+  "steps": [
+    {
+      "title": "Download a Language Pack for Non-SP1 (Build 7600) or SP1 (Build 7601).",
+      "content": "Download a Language Pack for Non-SP1 (Build 7600) or SP1 (Build 7601). You can extract the language pack exe. file for lp.cab to avoid disappearing it by copying it or dragging it."
+    },
+    {
+      "title": "Go to start, search CMD and right click it and run it as an administrator.",
+      "content": "Go to start, search CMD and right click it and run it as an administrator."
+    },
+    {
+      "title": "In the command prompt, type DISM /Online /Add-Package /PackagePath:C:",
+      "content": "In the command prompt, type DISM /Online /Add-Package /PackagePath:C: \\LP-DE \\ lp.cab"
+    },
+    {
+      "title": "When it is completed, type bcdedit /set {current} locale de-DE.",
+      "content": "When it is completed, type bcdedit /set {current} locale de-DE."
+    },
+    {
+      "title": "Then type bcdboot %WinDir% /l de-DE.",
+      "content": "Then type bcdboot %WinDir% /l de-DE."
+    },
+    {
+      "title": "Then type exit or press the red X and click start, regedit, Click Yes.",
+      "content": "Then type exit or press the red X and click start, regedit, Click Yes."
+    },
+    {
+      "title": "In regedit, go to HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\MUI\\UILanguages and delete the en-us.",
+      "content": "In regedit, go to HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\MUI\\UILanguages and delete the en-us."
+    },
+    {
+      "title": "Restart your computer, windows will change the language and have fun!",
+      "content": "Restart your computer, windows will change the language and have fun!"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Print-Formatted-Text-to-a-Terminal",
+  "title": "How to Print Formatted Text to a Terminal",
+  "steps": [
+    {
+      "title": "Understand the difference between echo and echo -e.",
+      "content": "Understand the difference between echo and echo -e . echo without the -e prints whatever you type. Try typing echo \"Hello\\n\" : it will print Hello\\n . echo -e , however, will use special symbols if you put the correct letters or numbers after a backslash. Try typing echo -e \"Hello\\n\" : it will print the word Hello and a new, empty line."
+    },
+    {
+      "title": "Understand the form of escape sequences.",
+      "content": "Understand the form of escape sequences. Escape sequences are what you'll use to format your text. Every escape sequence begins with the ESC character. It is not visible and not on the keyboard. But you can still enter it with a backslash and the correct number: since this character is ASCII 27, you can write it either as \\033 (octal) or \\x1b (hexadecimal). The ESC character is followed by a [ . This square bracket marks the beginning of the actual sequence. After the [ are the numbers and letters that actually decide how a text will be coloured and formatted. You can use multiple codes at once, for example, to make a text bold and red at the same time. The different numbers and letters are then separated by a ; . The last letter is an m . It marks the end of the escape sequence."
+    },
+    {
+      "title": "Change the colour of the text.",
+      "content": "Change the colour of the text. The numbers 30 to 37 are different colours you can use for your text. For example, type echo -e \"\\033[31mHello red world\" to have the text Hello red world appear in red. Text colours Number Colour 30 black 31 red 32 green 33 yellow 34 blue 35 magenta 36 cyan 37 white"
+    },
+    {
+      "title": "Change the background colour.",
+      "content": "Change the background colour. This is done the same way as changing the text colour, but instead of 30 + some number, it's 40 + some number. For example, a red background would appear with echo -e \"\\033[41mThis has red background\" ."
+    },
+    {
+      "title": "Change the style.",
+      "content": "Change the style. The text can be made bold, italic, crossed out, hidden, and underlined. Style change codes Number Result 1 bold text 2 faint text 3 italic text 5 slowly blinking text (on some systems) 6 fast blinking text (on some systems) 8 invisible text 9 crossed out text"
+    },
+    {
+      "title": "Reset format to default settings.",
+      "content": "Reset format to default settings. When you change the background or style to some non-default value, you will notice that it is still different in the next line. Although this stops after your user- and computer name, having parts of the next line in a different format doesn't look good. It can be avoided using a reset code. Reset codes Number Resets 0 everything 22 intensity (bold/faint) 23 italics 24 underline 25 blinking (on the systems that support it) 28 invisibility 29 crossing out 39 text colour 49 background colour"
+    }
+  ]
+}

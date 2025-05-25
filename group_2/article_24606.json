@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Join-a-Computer-to-a-Domain",
+  "title": "How to Join a Domain on a Windows Computer or Mac",
+  "steps": [
+    {
+      "title": "Open the System Properties panel.",
+      "content": "Open the System Properties panel. You can do this on any version of Windows, including Windows 11 and Windows 10, from the Windows search bar . Here's how: Click the magnifying glass or search bar at the bottom of the screen or press the Windows key on your keyboard. Type sysdm.cpl and press Enter . The System Properties panel will automatically open to the Computer Name tab."
+    },
+    {
+      "title": "Click the Change… button.",
+      "content": "Click the Change… button. You will find this button in the lower-right corner. [1] X Expert Source Stan Kats Cybersecurity Expert Expert Interview. 24 June 2021."
+    },
+    {
+      "title": "Select the Domain option.",
+      "content": "Select the Domain option. You will find this option below the \"Member of\" heading at the bottom of the pop-up window. If this option is grayed out, your version of Windows is not able to join a domain. You will need Pro, Enterprise, Education, or Ultimate (if using Windows 7 and earlier) to join a domain."
+    },
+    {
+      "title": "Enter the domain's address.",
+      "content": "Enter the domain's address. Type the hostname of the domain you want to join in the \"Domain\" field. [2] X Expert Source Stan Kats Cybersecurity Expert Expert Interview. 24 June 2021."
+    },
+    {
+      "title": "Click the OK button.",
+      "content": "Click the OK button. This will save the domain address."
+    },
+    {
+      "title": "Log in to the domain.",
+      "content": "Log in to the domain. When prompted, you'll need to provide the username and password of an account that has permission to join the domain. If you're not sure which account to use, contact your domain's administrator."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Once you join the domain, you'll see a welcome message. After that, you'll be prompted to restart your computer to apply the changes. Your computer will automatically connect to the specified domain after you restart. [3] X Expert Source Stan Kats Cybersecurity Expert Expert Interview. 24 June 2021."
+    },
+    {
+      "title": "Open Directory Utility on your Mac.",
+      "content": "Open Directory Utility on your Mac. If you need to join a Mac to an AD domain, you can do so in Directory Services. To get there, just type directory utility into Spotlight search, then click Directory Utility in the search results. [4] X Research source"
+    },
+    {
+      "title": "Click Services.",
+      "content": "Click Services . It's at the top of the window."
+    },
+    {
+      "title": "Click the lock icon and sign in.",
+      "content": "Click the lock icon and sign in. You will need to unlock Directory Utility with your administrator-level account (or use Touch ID) to join a domain. [5] X Research source"
+    },
+    {
+      "title": "Select \"Active Directory\" and click the pencil icon.",
+      "content": "Select \"Active Directory\" and click the pencil icon. This allows you to edit your Active Directory domain settings."
+    },
+    {
+      "title": "Enter the domain hostname.",
+      "content": "Enter the domain hostname. If you're not sure what to enter here, contact your network administrator."
+    },
+    {
+      "title": "Enter a computer ID if needed.",
+      "content": "Enter a computer ID if needed. By default, your Mac will be identified by its regular host name. If you want to use a different hostname for the Active Directory domain, enter it into the \"Computer ID\" field. There are two situations in which you might need or want to use a computer ID: If your organization has specific host naming conventions and you don't want to change your Mac's actual name. If your Mac's hostname contains a hyphen, you won't be able to bind to a domain. In this case, enter a new computer ID that doesn't have a hyphen."
+    },
+    {
+      "title": "Set your additional options.",
+      "content": "Set your additional options. If you need to make additional changes, you can click the triangle next to \"Show Options\" to expand more options. On the User Experience panel, you can set up mobile user accounts, home folders, and more. On the Mappings panel, you can map group IDs and user IDs to Active Directory attributes. [6] X Research source On the Administrative panel, you can set this domain as your preferred controller, control whether AD admins have admin privileges on your Mac, and choose which domain users can connect to your Mac at all."
+    },
+    {
+      "title": "Click Bind.",
+      "content": "Click Bind . You'll then be prompted to enter additional information."
+    },
+    {
+      "title": "Enter the requested details and click OK.",
+      "content": "Enter the requested details and click OK . On this screen, you'll need to enter: The username and password of an Active Directory account that has permission to join a computer to a domain. The computer's OU (organizational unit). Choose whether you want to add Active Directory to the Mac's authentication and contacts search policies. Once you click OK , this will confirm the domain information and add your Mac to the domain."
+    }
+  ]
+}

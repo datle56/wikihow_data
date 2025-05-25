@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Browse-the-Internet-Using-the-Terminal-in-Linux",
+  "title": "How to Open a Browser from the Linux Terminal: CL & GUI Options",
+  "steps": [
+    {
+      "title": "Install w3m.",
+      "content": "Install w3m. You can use the text-based w3m web browser to browse the internet from the terminal. It isn't preinstalled, but you can get the package from your distribution's default repositories. If you're using Ubuntu or another Debian-based Linux , use the command sudo apt install w3m to get it. On Red Hat, Fedora, or other RH-based distros, use sudo dnf install w3m . On Arch Linux, Manjaro, or other distros that use the pacman package manager, use sudo pacman -S w3m ."
+    },
+    {
+      "title": "Consider installing xterm.",
+      "content": "Consider installing xterm. In the default terminal application, you won't be able to use w3m's handy right-click menu or view images. If you use xterm, a replacement terminal app , instead, you can right-click any page to access features like Back , View Source , Bookmark , and even a Quit option. Xterm is available through your distro's repositories—just use the installation command from above but replace w3m with xterm to install it. One installed, you can launch xterm by typing xterm at the prompt and pressing ↵ Enter or ⏎ Return , or by selecting it in from your app list."
+    },
+    {
+      "title": "Use w3m (website address) to visit a website.",
+      "content": "Use w3m (website address) to visit a website. For example, if you want to browse wikiHow's website, type w3m www.wikihow.com and press Enter or Return . If you want to see images on the page, you'll need to use a different terminal app like xterm."
+    },
+    {
+      "title": "Navigate around the site.",
+      "content": "Navigate around the site. Use the arrow keys to go up, down, left, or right, or just use your mouse. To follow a link, select it and press Enter or Return . [1] X Research source To type into a text box, click the text box with your cursor, press Enter or Return , type your text, and press Enter or Return again. To follow a link, navigate to it using the arrow keys (or click it with your cursor), then press Enter or Return . If you're using xterm instead of the default terminal app, right-click anywhere on the page to access additional options. Press B to go back. Use ⇧ Shift + T to open a new tab. In xterm, you can view an image by selecting it and pressing i . To search for text on a page, press / , type your search term, and press Enter or Return . You can press n to find the next instance of your search term, or N (capital) to go back."
+    },
+    {
+      "title": "Install Links2.",
+      "content": "Install Links2. Links2 is another web browser you can use to access the web from the Linux terminal. It even has a graphical version you can open from the command line if you prefer to see images and use your mouse to browse. If using Ubuntu and other Debian-based Linux versions, install Links2 with sudo apt install links2 . On Red Hat, Fedora, or other RH-based distros, use sudo dnf install links2 . On Arch Linux, Manjaro, or other distros that use the pacman package manager, use sudo pacman -S links2 ."
+    },
+    {
+      "title": "Use links2 (website address) to visit a website.",
+      "content": "Use links2 (website address) to visit a website. For example, if you want to browse wikiHow's website, type links2 www.wikihow.com and press Enter or Return ."
+    },
+    {
+      "title": "Use links2 -g (website address) to launch the GUI version of Links2.",
+      "content": "Use links2 -g (website address) to launch the GUI version of Links2. If you want features like images on the page, a back button at the top of the browser, and a right-click menu, include the \"-g\" option."
+    },
+    {
+      "title": "Navigate around the site.",
+      "content": "Navigate around the site. Press F9 to toggle the menu on or off. [2] X Research source Use the arrow keys or your cursor to navigate. To follow a link, select it, then press Enter or Return . Press s to access your bookmark manager, where you can add, remove, and find bookmarks."
+    },
+    {
+      "title": "Type your browser's name at the prompt, followed by an ampersand.",
+      "content": "Type your browser's name at the prompt, followed by an ampersand. Alternatively, you can enter a specific browser's application name, like google-chrome & , firefox & , or chromium-browser & . Adding the & after the command allows you to continue typing commands into the terminal and close the terminal without closing your browser. If you're writing a script, you'll definitely want to use this option. To open your default web browser from a terminal, you'd type x-www-browser & . You can also go right to a website from the command line. For example, if you want to open Chromium to wikiHow's homepage, use chromium-browser www.wikihow.com & . In Chrome, you can open your browser in Incognito mode using google-chrome --incognito & . For a complete list of Chrome command line switches, check out https://peter.sh/experiments/chromium-command-line-switches ."
+    }
+  ]
+}

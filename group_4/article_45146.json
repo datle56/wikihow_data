@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Your-Android-Phone-Without-the-Power-Button",
+  "title": "How to Turn Off Your Android Phone Without the Power Button",
+  "steps": [
+    {
+      "title": "Go to Settings.",
+      "content": "Go to Settings. You can swipe down from the top of your phone and tap the gear icon or you can find this gear icon somewhere on one of your Home screens. [1] X Research source This seems to be the easiest method that only uses your Android."
+    },
+    {
+      "title": "Turn on the Assistant menu (Samsung) or Accessibility menu.",
+      "content": "Turn on the Assistant menu (Samsung) or Accessibility menu. Tap Accessibility to open the accessibility menu from Settings. If you're using a Chinese-created OEM like Xiaomi, Vivo, OnePlus, or Huawei, you'll find \"Accessibility\" under \"Additional settings or System . If you're using a Samsung, tap Interaction and dexterity . Then tap the switch next to \"Assistant menu\" to toggle it on. If you're using a Xiaomi, Vivo, OnePlus, Huawei, or other Chinese-created OEMs, tap Accessibility menu and tap the toggle to enable it. [2] X Research source Once you've enabled either Assistant menu or Accessibility menu, you'll see a floating icon on your screen."
+    },
+    {
+      "title": "Tap the new icon.",
+      "content": "Tap the new icon. You might see it in the navigation bar at the bottom of your screen instead of a floating icon. [3] X Research source"
+    },
+    {
+      "title": "Tap the Power Off button.",
+      "content": "Tap the Power Off button. [4] X Research source You may need to tap to power off more than once."
+    },
+    {
+      "title": "Swipe down from the top of your screen two times.",
+      "content": "Swipe down from the top of your screen two times. You won't see the power icon when you swipe down once, so you'll need to get the Quick Settings. Only newer Samsungs display the power button in the Quick Settings panel."
+    },
+    {
+      "title": "Tap .",
+      "content": "Tap . The Power button is located at the top of your screen."
+    },
+    {
+      "title": "Tap Power Off.",
+      "content": "Tap Power Off . You can opt to turn off your phone, restart it, or turn on/off emergency mode."
+    },
+    {
+      "title": "Enable USB Debugging",
+      "content": "Enable USB Debugging on your phone. First, you'll need to turn on Developer Mode. Go to Settings > About phone and tap Build Number 7 times. When you tap it 7 times, you'll see a notification that says, \"Developer mode has been enabled.\" If you can't find the build number from that path, try Settings > System Management > About phone > Software Version , ' Settings > About phone > Baseband & Kernel > Build Number , or Settings > System > About phone > Build Number . To turn on USB debugging, go to Settings > System > Developer Options > USB Debugging . You may see Settings > Settings > Additional settings > Developer Options > USB Debugging instead. Tap OK once you tap USB Debugging to confirm your action. Although this is the most trustworthy and sure-to-work method, it's a bit complicated. You'll need your Android as well as a computer and a cable to connect the two for this method."
+    },
+    {
+      "title": "Download and install the Android SDK Platform Tools.",
+      "content": "Download and install the Android SDK Platform Tools . Go to that site then click the appropriate download link for your operating system (Windows, Mac, or Linux) under the header, \"Downloads.\" Follow the on-screen instructions to download and install the command-line tool for Windows, Mac, or Linux. Make sure to extract any files downloaded in a .zip folder. You'll need to be able to navigate here later."
+    },
+    {
+      "title": "Connect your phone to your computer.",
+      "content": "Connect your phone to your computer. Using a USB cable, plug in your Android to your computer."
+    },
+    {
+      "title": "Open Command Prompt (Windows) or Terminal (Mac, Linux) in the location of the extracted file.",
+      "content": "Open Command Prompt (Windows) or Terminal (Mac, Linux) in the location of the extracted file. For Windows, press the Win key and type \"Command\" to search for the Command Prompt app. For Mac, search Spotlight to open Terminal. For Windows, you can press and hold Shift + Right click to get an Open a PowerShell window here . Since Command Prompt and PowerShell are different, you'll need to use slightly different commands. You can type \"adb devices\" (on Command Prompt) or \".\\adb devices\" (on Terminal or PowerShell). If you have your Terminal, PowerShell, or Command Prompt navigated to the correct folder with the SDK download, you should see a list that shows that your phone (it's usually a bunch of numbers and letters) is connected to your computer."
+    },
+    {
+      "title": "Enter adb shell reboot -p (Command Prompt) or .",
+      "content": "Enter adb shell reboot -p (Command Prompt) or . \\adb shell reboot -p (Terminal, PowerShell). The -p stands for \"power off,\" so this command will tell your phone to power off. You'll see \"Done\" or a similar message in your command line when you successfully send the command. If you want to restart your phone, enter adb reboot or .\\adb reboot instead. [5] X Research source"
+    }
+  ]
+}

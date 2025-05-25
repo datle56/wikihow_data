@@ -1,0 +1,154 @@
+{
+  "url": "https://www.wikihow.com/Mod-Stardew-Valley",
+  "title": "How to Install Stardew Valley Mods: A Complete Guide",
+  "steps": [
+    {
+      "title": "Download and install SMAPI.",
+      "content": "Download and install SMAPI . Extract the zipped file to your Downloads folder so it’s easy to access. SMAPI is a specialized modding framework that allows mods to run on Stardew Valley . The base download works for Windows, Mac, and Linux devices (including Steam Deck devices)."
+    },
+    {
+      "title": "Download the mods you’d like to use.",
+      "content": "Download the mods you’d like to use. Check out sites like Nexus Mods and ModDrop , which offer comprehensive catalogs of different mods, along with ratings. Use the “search” function on these websites to find the exact mod that you’re looking for."
+    },
+    {
+      "title": "Unzip the compressed mod file into the Stardew Valley game folder.",
+      "content": "Unzip the compressed mod file into the Stardew Valley game folder. Extract the mod file into the Mods folder attached to your Stardew Valley game file. Here’s where you can find your game folder, depending on your client: Steam: C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley GOG: C:\\GOG Games\\Stardew Valley or C:\\Program Files (x86)\\GOG Galaxy\\Games\\Stardew Valley Xbox app: C:\\XboxGames\\Stardew Valley"
+    },
+    {
+      "title": "Install SMAPI and configure your game client.",
+      "content": "Install SMAPI and configure your game client. Using the files you extracted earlier, install SMAPI onto your computer by clicking on the install on Windows.bat file. Instructions will pop up on your screen—follow them to finish up the installation process. While keeping this installation window open, configure your game client so it runs SMAPI rather than the default game: Steam: Select the provided text in the installer window, which reads like ”[File path]” %command% . Then, open Steam, right-click on the Properties option, and click on the “Launch Options” part of the “General” menu. In the box, paste what you copied from the installer window. GOG: Create a new Notepad file with the following text: start \"\" \"C:\\Program Files (x86)\\GOG Galaxy\\Games\\Stardew Valley\\StardewModdingAPI.exe\" . Save this file as start.bat . Then, open up the GOG client, open up the settings for Stardew Valley , and click on “Manage installation” followed by “Configure.” Toggle the “Custom executables/arguments” box, click the “Add another executable/arguments” option, and choose the start.bat file that you made earlier. After selecting this file, click on the “Default executable” option. Xbox app: Click the ... button on the Stardew Valley profile, along with the “Browse…” button within the “Files” tab. Once you’ve opened the Stardew Valley > Content folder, copy the complete file path. Install SMAPI as you normally would, but paste the file path when the installation window prompts you to. Once SMAPI is completely installed, go to your game folder ( C:\\XboxGames\\Stardew Valley ) and rename the .exe file to Stardew Valley original.exe . Then, duplicate the StardewModdingAPI.exe file and change the name to Stardew Valley.exe . [1] X Research source"
+    },
+    {
+      "title": "Play Stardew Valley as you normally would.",
+      "content": "Play Stardew Valley as you normally would. After you’ve configured your client, the modded version of Stardew Valley should boot up when you start playing the game."
+    },
+    {
+      "title": "Download SMAPI and unzip it into your Downloads folder.",
+      "content": "Download SMAPI and unzip it into your Downloads folder. There’s only one version of the SMAPI file, but it works on all operating systems."
+    },
+    {
+      "title": "Open the install on macOS.command file.",
+      "content": "Open the install on macOS.command file. Follow the instructions on the installation terminal that pops up. [2] X Research source"
+    },
+    {
+      "title": "Search for your Mods folder using the Finder function.",
+      "content": "Search for your Mods folder using the Finder function. Go to your Stardew Valley game folder to locate the Mods subfolder. Here’s where you can find it: Steam: ~/Library/Application Support/Steam/SteamApps/common/Stardew Valley/Contents/MacOS GOG: /Applications/Stardew Valley.app/Contents/MacOS"
+    },
+    {
+      "title": "Download your desired mods and drop them into the Mods folder.",
+      "content": "Download your desired mods and drop them into the Mods folder. Search for the mods you’d like on sites like Nexus Mods or ModDrop . After downloading the files, extract them into the Mods folder you’ve just located. Type the mods you’re looking for into the search bar on the website to narrow down your results."
+    },
+    {
+      "title": "Launch Stardew Valley as you normally would.",
+      "content": "Launch Stardew Valley as you normally would. The modded version of the game should boot up. [3] X Research source"
+    },
+    {
+      "title": "Install any prerequisites required for your machine.",
+      "content": "Install any prerequisites required for your machine. You’ll need to install a certain SSL depending on the type of distribution software your Linux device runs. Based on this, open up a terminal and run the following: [4] X Research source Arch-based (Manjaro, Arch, EndeavorOS): sudo pacman -S openssl-1.1 . Debian-based (Linux MMint, Debian, Ubuntu): sudo apt install libssl1.1 . Fedora: sudo dnf install openssl1.1 RHEL 8-based (Alma 8, CentOS 8, RHEL 8, Rocky 8): sudo dnf install openssl If your machine runs NixOS , execute export NIXPKGS_ALLOW_UNFREE=1 && nix-shell -p steam-run to make a provisional nix-shell using steam-run. After this, open up a terminal and run steam-run ./install\\ on\\ Linux.sh ."
+    },
+    {
+      "title": "Download SMAPI and unzip the file to your Downloads folder.",
+      "content": "Download SMAPI and unzip the file to your Downloads folder. Make sure that the file isn’t extracted to your Stardew Valley game folder."
+    },
+    {
+      "title": "Open the install on Linux.sh file.",
+      "content": "Open the install on Linux.sh file. Some people find it helpful to run this command with “XTerm”—to do this, simply, right-click on the file and hit the “Open with ‘XTerm.’” [5] X Research source"
+    },
+    {
+      "title": "Follow the instructions provided in the terminal.",
+      "content": "Follow the instructions provided in the terminal. If it requests your game’s file location, enter: For Steam: ~/.local/share/Steam/steamapps/common/Stardew Valley For GOG: ~/GOGGames/StardewValley/game"
+    },
+    {
+      "title": "Download your desired mods to the Mods folder of your game.",
+      "content": "Download your desired mods to the Mods folder of your game. Visit NexusMods or ModDrop to find a variety of mods to enhance your game—the search bar on the website can help you find the exact mods you’re looking for. Then, download each file and unzip it in the Mods subfolder of your game folder. [6] X Research source Access your game folder using the file paths provided in the previous step."
+    },
+    {
+      "title": "Launch Stardew Valley as you normally would.",
+      "content": "Launch Stardew Valley as you normally would. Your Linux device should now run the modded version of Stardew Valley ."
+    },
+    {
+      "title": "Download SMAPI and extract the file in a separate folder.",
+      "content": "Download SMAPI and extract the file in a separate folder. Double-check that you haven’t unzipped SMAPI into your Stardew Valley game file. [7] X Research source"
+    },
+    {
+      "title": "Follow the instructions from the readme file.",
+      "content": "Follow the instructions from the readme file. This will walk you through how to install SMAPI on your Steam Deck."
+    },
+    {
+      "title": "Configure Steam so the modded version of Stardew Valley plays.",
+      "content": "Configure Steam so the modded version of Stardew Valley plays. Select the “Games” option in the upper menu, along with “Add a Non-Steam Game to My Library.” A new “Add a Game” window will pop up at this point; within it, select the “Browse” option and choose the StardewModdingAPI.exe file."
+    },
+    {
+      "title": "Configure your modded game with Proton.",
+      "content": "Configure your modded game with Proton. Find the “StardewModdingAPI” game that’s now in your Steam library, tap the gear icon, and go to the “Compatibility” portion of the menu. Click on the checkbox that says “Force the use of a specific Steam Play compatibility tool,” and then choose a Proton version from the dropdown list below. [8] X Research source Proton enables your Steam Deck to play the Windows version of Stardew Valley ."
+    },
+    {
+      "title": "Download your desired mods from a site like ModDrop.",
+      "content": "Download your desired mods from a site like ModDrop . Using the site’s search bar, type in the mod you’d like to download for your game. The mod will be downloaded in a zipped file. Nexus Mods is another great site to search for mods."
+    },
+    {
+      "title": "Extract your downloaded mods into your game folder.",
+      "content": "Extract your downloaded mods into your game folder. Once you’ve downloaded your desired mods, unzip them into the Mods subfolder of your game. You can find your game folder here: Steam: ~/.local/share/Steam/steamapps/common/Stardew Valley GOG: ~/GOGGames/StardewValley/game"
+    },
+    {
+      "title": "Run Stardew Valley with the StardewModdingAPI program.",
+      "content": "Run Stardew Valley with the StardewModdingAPI program. Make sure that you’re choosing the modded program rather than the original one."
+    },
+    {
+      "title": "Download SMAPI for Linux devices.",
+      "content": "Download SMAPI for Linux devices. Unzip the file into a separate folder, so it isn’t in the same location as your game folder. [9] X Research source"
+    },
+    {
+      "title": "Run the Install on Linux.sh file and do what the instructions say.",
+      "content": "Run the Install on Linux.sh file and do what the instructions say. If you’d rather take a manual installation approach, find the readme that goes with your SMAPI and follow the provided instructions."
+    },
+    {
+      "title": "Download the exact mods you’d like for your game.",
+      "content": "Download the exact mods you’d like for your game. Visit a site like ModDrop or Nexus Mods and use the site’s search bar to find and download your desired mods. The file will be zipped."
+    },
+    {
+      "title": "Add mods to your game’s Mods folder.",
+      "content": "Add mods to your game’s Mods folder. Extract your mods into your game’s Mods subfolder, which is accessible here: Steam: ~/.local/share/Steam/steamapps/common/Stardew Valley GOG: ~/GOGGames/StardewValley/game"
+    },
+    {
+      "title": "Play Stardew Valley via the StardewModdingAPI file.",
+      "content": "Play Stardew Valley via the StardewModdingAPI file. It should be visible in your Steam library."
+    },
+    {
+      "title": "Stardew Valley Expanded",
+      "content": "Stardew Valley Expanded This mod introduces new NPCs into the game, along with different character events and new locations. It even gives you new farm maps to peruse when you first start the game. Mod Download"
+    },
+    {
+      "title": "Farmtronics",
+      "content": "Farmtronics This mod serves as an add-on to the TV that comes automatically in your Farmhouse. It also lets you create bots that handle some of your daily chores. Mod Download"
+    },
+    {
+      "title": "Farm Extended",
+      "content": "Farm Extended This mod provides your Farm with a large, varied plot of land that gives you more opportunities to mine, forage, fish, and care for your animals. Mod Download"
+    },
+    {
+      "title": "Stardew Aquarium",
+      "content": "Stardew Aquarium This mod includes an aquarium in the Town, which can be filled with the different types of Fish you catch in the game. Mod Download"
+    },
+    {
+      "title": "Animal Husbandry",
+      "content": "Animal Husbandry Much like an actual farm, this mod gives you the option to turn your animals into meat, along with a new way to have your animals reproduce. Mod Download"
+    },
+    {
+      "title": "Skateboard",
+      "content": "Skateboard This mod lets you ride around on a skateboard throughout the map. Download Mod Download"
+    },
+    {
+      "title": "Tractor",
+      "content": "Tractor This mod gives you the opportunity to purchase a tractor, which streamlines chores like tilling soil and planting seeds. Mod Download"
+    },
+    {
+      "title": "Free Love",
+      "content": "Free Love This mod lets you live with both a roommate and a spouse, and also allows you to have multiple spouses. Mod Download"
+    },
+    {
+      "title": "Stardew Anime Mods",
+      "content": "Stardew Anime Mods This mod provides anime-style portraits for all of the NPCs in the game. Mod Download"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Windows-Defender-in-Windows-10",
+  "title": "Turn Off Microsoft Defender in Windows 10: Temporarily or Permanently",
+  "steps": [
+    {
+      "title": "Press the Windows key and type \"Windows Security.\"",
+      "content": "Press the Windows key and type \"Windows Security.\" A list of matching search results will appear. This method temporarily turns off Defender’s real-time antimalware protection, which can be helpful if you need to install trusted software that Defender improperly flags as harmful. Defender will turn back on automatically after you restart your PC."
+    },
+    {
+      "title": "Click Windows Security in the search results.",
+      "content": "Click Windows Security in the search results. This opens your security settings . If you don't see this option, you're likely not signed in as an administrator . If you're not the administrator of the PC, you won't be able to disable Windows Defender."
+    },
+    {
+      "title": "Click Virus & threat protection.",
+      "content": "Click Virus & threat protection . It's the first option below the \"Protection areas\" heading near the top of the page."
+    },
+    {
+      "title": "Click Virus & threat protection settings.",
+      "content": "Click Virus & threat protection settings . You'll find this option in the middle of the page."
+    },
+    {
+      "title": "Disable Microsoft Defender's real-time scanning.",
+      "content": "Disable Microsoft Defender's real-time scanning. Turning off real-time protection will mean your device is vulnerable until it turns back on. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the blue \"On\" switch below the \"Real-time protection\" heading. Click Yes when prompted. This will turn off the real-time scanning feature of Microsoft Defender. You can also disable Microsoft Defender's cloud-based protection by clicking the blue \"On\" switch below \"Cloud-delivered protection\" and clicking Yes when prompted. Windows Defender will turn itself back on the next time you restart your computer."
+    },
+    {
+      "title": "Install an alternative antivirus product.",
+      "content": "Install an alternative antivirus product. To turn off Microsoft Defender permanently, you can install a 3rd party antivirus software like Bitdefender, McAfee, or Malwarebytes Premium . When setting up your new antivirus software, the new software will automatically disable Windows' built-in antivirus protection."
+    },
+    {
+      "title": "Turn off Tamper Protection.",
+      "content": "Turn off Tamper Protection. If you're using Windows 10 Pro or Enterprise, you can use the built-in Group Policy Editor to turn off Microsoft Defender permanently. Note that your computer will be vulnerable to malware after turning off Defender. You’ll need to turn off Tamper Protection to turn off Microsoft Defender: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Open the Windows Security app. Click Virus & threat protection . Click Manage settings . Switch Tamper Protection to “Off.”"
+    },
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R . The Run menu will open."
+    },
+    {
+      "title": "Type gpedit.msc in the Run window and press ↵ Enter.",
+      "content": "Type gpedit.msc in the Run window and press ↵ Enter . This will open the Group Policy Editor menu. [3] X Research source"
+    },
+    {
+      "title": "Navigate to the policy to turn off Microsoft Defender.",
+      "content": "Navigate to the policy to turn off Microsoft Defender. Take these steps in the Group Policy Editor to find this option: Computer Configuration Administrative Templates Windows Components Microsoft Defender Antivirus"
+    },
+    {
+      "title": "Double-click “Turn off Microsoft Defender Antivirus.”",
+      "content": "Double-click “Turn off Microsoft Defender Antivirus.” You'll see it in the policy list. This opens an options menu for the policy."
+    },
+    {
+      "title": "Click Enabled.",
+      "content": "Click Enabled ."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This will confirm the choice to turn off Microsoft Defender and close the window. You must restart your computer to turn off Microsoft Defender fully. To reenable Defender in the future, return to the GPE and change “Turn off Microsoft Defender Antivirus” to Not Configured ,"
+    }
+  ]
+}

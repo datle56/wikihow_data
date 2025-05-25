@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Disable-Windows-Key",
+  "title": "5 Ways to Disable the Windows Key for Good",
+  "steps": [
+    {
+      "title": "Download the WinKill file.",
+      "content": "Download the WinKill file . It’s hosted on the MajorGeeks website."
+    },
+    {
+      "title": "Unzip",
+      "content": "Unzip the file. If you don’t have any extraction software, download a free program like 7-Zip so you can access the .exe file."
+    },
+    {
+      "title": "Double-click on WinKill to disable your Windows key.",
+      "content": "Double-click on WinKill to disable your Windows key. Make sure you’re clicking on the application itself rather than the .dll extension."
+    },
+    {
+      "title": "Click the WinKill icon in your taskbar to turn it off.",
+      "content": "Click the WinKill icon in your taskbar to turn it off. In the small icon panel next to the taskbar clock, look for a black-and-white version of the Windows logo. Simply click on it to toggle the feature on or off. [1] X Research source If there’s no red “X” blocking the logo, your Windows button should be activated."
+    },
+    {
+      "title": "Download the Microsoft PowerToys program.",
+      "content": "Download the Microsoft PowerToys program . The file can be found on Microsoft’s GitHub page."
+    },
+    {
+      "title": "Open PowerToys.",
+      "content": "Open PowerToys. It may open automatically after you download it. If not, search “PowerToys” in your search bar to find it."
+    },
+    {
+      "title": "Click on Keyboard Manager from the side menu.",
+      "content": "Click on Keyboard Manager from the side menu. It’s between Image Resizer and Mouse Utilities ."
+    },
+    {
+      "title": "Turn on the Keyboard Manager.",
+      "content": "Turn on the Keyboard Manager. [2] X Research source"
+    },
+    {
+      "title": "Click Remap a key.",
+      "content": "Click Remap a key . This pulls up a new pop-up window."
+    },
+    {
+      "title": "Click + Add key remapping.",
+      "content": "Click + Add key remapping ."
+    },
+    {
+      "title": "Click the left Select button and hit the Windows key.",
+      "content": "Click the left Select button and hit the Windows key. You can also adjust the key selection via the drop-down menu."
+    },
+    {
+      "title": "Choose Disable from the right-most drop-drown menu.",
+      "content": "Choose Disable from the right-most drop-drown menu. It should be at the very top of the menu."
+    },
+    {
+      "title": "Hit OK to confirm your changes.",
+      "content": "Hit OK to confirm your changes. You might get a pop-up warning that you haven’t assigned anything to the Windows key, but that’s okay. It will still be disabled once you close out from the pop-up."
+    },
+    {
+      "title": "Delete the key mapping if you want to use the Windows key again.",
+      "content": "Delete the key mapping if you want to use the Windows key again. Open up the Remap keys pop-up again and click on the trash can at the far right of the key-mapping assignment. Then, hit OK to confirm these new changes."
+    },
+    {
+      "title": "Type gpedit.msc into the Search bar and press ↵ Enter.",
+      "content": "Type gpedit.msc into the Search bar and press ↵ Enter . Alternatively, search for gpedit in the main search bar to open the Group Policies shortcut. [3] X Research source If your PC doesn’t seem to have the file, try this: Pull up a blank Notepad file. Paste the following: @echo off pushd \"%~dp0\" dir /b %SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt dir /b %SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:\"%SystemRoot%\\servicing\\Packages\\%%i\" pause Save the Notepad file as gpedit_enabler.bat . Make sure to delete the .txt suffix! Right-click on the .bat file you created and hit Run as administrator . This will automatically run the file through your PC’s command prompt, which will create the gpedit.msc file on your PC. [4] X Research source"
+    },
+    {
+      "title": "Navigate to the File Explorer folder.",
+      "content": "Navigate to the File Explorer folder. Go to User Configuration > Administrative Templates > Windows Components > File Explorer ."
+    },
+    {
+      "title": "Click twice on the Turn off Windows Key hotkeys option.",
+      "content": "Click twice on the Turn off Windows Key hotkeys option. You may find it between the Prevent access to drives from My Computer and No Computers Near Me in Network Locations options."
+    },
+    {
+      "title": "Click Enabled.",
+      "content": "Click Enabled . You can find this option in the top-left portion of the Turn off Windows Key hotkeys"
+    },
+    {
+      "title": "Hit Apply to confirm your decision.",
+      "content": "Hit Apply to confirm your decision. Your Windows key should now be disabled."
+    },
+    {
+      "title": "Follow the same steps to reactivate your Windows key.",
+      "content": "Follow the same steps to reactivate your Windows key. Go to the Group Policies editor, find the Turn off Windows Key hotkeys in the File Explorer folder, and toggle the setting back to Not Configured ."
+    },
+    {
+      "title": "Enter regedit into the search bar and click on it.",
+      "content": "Enter regedit into the search bar and click on it. Registry Editor should pop up in the search results."
+    },
+    {
+      "title": "Find and click on the Explorer folder.",
+      "content": "Find and click on the Explorer folder. To find it, navigate through the following folders: HKEY_CURRENT_USER Software Microsoft Windows CurrentVersion Policies Explorer"
+    },
+    {
+      "title": "Right-click on NoWinkeys and select DWORD Value.",
+      "content": "Right-click on NoWinkeys and select DWORD Value . Keep the name as NoWinkeys and the Base as Hexadecimal ."
+    },
+    {
+      "title": "Type “1” in the Value data section, along with OK.",
+      "content": "Type “1” in the Value data section, along with OK . This should disable your Windows key when you press it."
+    },
+    {
+      "title": "Restart your computer and see if the Windows key still works.",
+      "content": "Restart your computer and see if the Windows key still works. To make sure this worked, reboot your PC and try pressing the Windows button to confirm that it’s disabled."
+    },
+    {
+      "title": "Repeat these steps, but set the value to “0” to reactivate the Windows key.",
+      "content": "Repeat these steps, but set the value to “0” to reactivate the Windows key. Open the Registry Editor , navigate to the Explorer folder, right-click the NoWinkeys option, and click DWORD Value to make the change. Restart your computer again to make sure the change goes through."
+    },
+    {
+      "title": "Pull up the Logi Options+ program.",
+      "content": "Pull up the Logi Options+ program. Keep in mind that this program only works if you have a Logitech-brand keyboard, and some models might not have many customization options available within the Logi Options+ app. If you don’t have Logi Options+ installed, download it here ."
+    },
+    {
+      "title": "Check that your device is connected in program.",
+      "content": "Check that your device is connected in program. The app will likely ask you to turn the keyboard off and then back on to help sync it—just follow the onscreen instructions."
+    },
+    {
+      "title": "Click on the Settings option.",
+      "content": "Click on the Settings option. You can find this on the left side of the app window."
+    },
+    {
+      "title": "Head to the Disabled keys category to turn off the Windows key.",
+      "content": "Head to the Disabled keys category to turn off the Windows key. Click the checkbox next to Windows/Start to disable the button. When you’re ready to re-enable the Windows key, uncheck the box next to Windows/Start in this part of the app."
+    }
+  ]
+}

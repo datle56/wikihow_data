@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Copy-Files-to-USB-Using-CMD",
+  "title": "How to Copy Files to a USB Using Command Prompt (CMD)",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. If you haven't already done so, here's how you can access your Windows command prompt: [1] X Research source Press Windows key + S to activate the search bar. Type cmd into the search bar. If you need to copy system files, right-click Command prompt and select Run as administrator . You don't have to do this if you're booted into recovery mode, as the Command Prompt will always run as an administrator this way. If you're copying personal files, like your own pictures or documents, just click Command prompt ."
+    },
+    {
+      "title": "Find out the drive letter of your USB flash drive.",
+      "content": "Find out the drive letter of your USB flash drive. If you already know the letter assigned to the drive (e.g., E or F ), you can skip this step. If not, here's how to find it: Type or paste this command after the prompt: wmic logicaldisk where drivetype=2 get deviceid, volumename, description Press Enter ."
+    },
+    {
+      "title": "Create a new folder on your USB drive (optional).",
+      "content": "Create a new folder on your USB drive (optional). If you want to copy files to a specific folder rather than the root of your flash drive, you can create one at the command prompt. Here's how: Type cd F: (if your flash drive isn't F: , replace it with your drive letter}} and press Enter . Type mkdir foldername and press Enter (replace foldername with the name you want to give the new folder)."
+    },
+    {
+      "title": "Go to the folder that contains the file(s) you want to copy.",
+      "content": "Go to the folder that contains the file(s) you want to copy. For example, if you want to copy the contents of your personal Documents folder, you can enter that folder by typing cd C:\\Users\\yourname\\Documents . [2] X Research source If there's a space in the name of the folder, such as C:\\Users\\yourname\\rough drafts , you'll need to place the entire path in quotes like this: cd \"C:\\Users\\yourname\\rough drafts . To see all the files inside of a folder, type dir and press Enter . Type dir and press Enter to see existing files and folders. All folders are labeled with ''<DIR>'', which tells you that these are folders instead of files."
+    },
+    {
+      "title": "Use the copy command to copy individual files.",
+      "content": "Use the copy command to copy individual files. If you want to copy just one file (no folders) onto your USB drive, it'll be easiest to use the copy command to do so. Here's how: When you use the copy command, you'll use it like this: copy source destination . For example, to copy a file called cats.docx from your current directory to a folder called Pets on your USB flash drive that's assigned the F: drive letter, you'd do this: copy cats.docx F:\\Pets\\ If you want to copy multiple individual files at once that end with the same file extension (e.g., .docx to the Pets folder on your flash drive, you'd type copy *.docx F:\\Pets\\ ). [3] X Research source"
+    },
+    {
+      "title": "Use xcopy to copy an entire folder and all of its files and subfolders.",
+      "content": "Use xcopy to copy an entire folder and all of its files and subfolders. If you're backing up an entire folder to your flash drive or otherwise need to copy multiple files, xcopy does a great job at that. For example, let's say you want to copy the entire folder C:\\Users\\yourname\\rough drafts , including all of the files and folders inside of it, to the F drive. You'd use: [4] X Research source xcopy \"C:\\Users\\yourname\\rough drafts\\\" F:\\ /e /h /r Notice the trailing backslash \\ at the end of the first path—this tells xcopy that you're copying a folder, not an individual file. [5] X Research source Adding /e tells xcopy to copy all sub-folders. Including /h ensures that xcopy also copies hidden files. Adding /r also includes any read-only files. [6] X Research source"
+    }
+  ]
+}

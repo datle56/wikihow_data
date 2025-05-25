@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Create-a-User-Defined-Function-in-Microsoft-Excel",
+  "title": "How to Create a User Defined Function in Excel",
+  "steps": [
+    {
+      "title": "Open an Excel workbook.",
+      "content": "Open an Excel workbook. Double-click the workbook in which you want to use the custom-defined function to open it in Excel."
+    },
+    {
+      "title": "Press Alt+F11 (Windows) or Fn+⌥ Opt+F11 (Mac).",
+      "content": "Press Alt + F11 (Windows) or Fn + ⌥ Opt + F11 (Mac). This opens the Visual Basic Editor."
+    },
+    {
+      "title": "Click the Insert menu and select New Module.",
+      "content": "Click the Insert menu and select New Module . This opens a module window in the right panel of the editor. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can create the user defined function in the worksheet itself without adding a new module, but that will make you unable to use the function in other worksheets of the same workbook."
+    },
+    {
+      "title": "Create your function's header.",
+      "content": "Create your function's header. The first line is where you will name the function and define our range. [2] X Research source Replace \"FunctionName\" with the name you want to assign your custom function. The function can have as many parameters as you want, and their types can be any of Excel's basic data or object types as Range: Function FunctionName ( param1 As type1 , param2 As type2 ) As return Type You may think of parameters as the \"operands\" your function will act upon. For example, when you use SIN(45) to calculate the Sine of 45 degree, 45 will be taken as a parameter. Then the code of your function will use that value to calculate something else and present the result."
+    },
+    {
+      "title": "Add the code of the function.",
+      "content": "Add the code of the function. Make sure you use the values provided by the parameters, assign the result to the name of the function, and close the function with \"End Function.\" Learning to program in VBA or in any other language can take some time and a detailed tutorial. However, functions usually have small code blocks and use very few features of the language. Some useful elements are: The If block, which allows you to execute a part of the code only if a condition is met. Notice the elements in an If code block: IF condition THEN code ELSE code END IF . The Else keyword along with the second part of the code are optional: Function Course Result ( grade As Integer ) As String If grade >= 5 Then CourseResult = \"Approved\" Else CourseResult = \"Rejected\" End If End Function The Do block, which executes a part of the code While or Until a condition is met. In the example code below, notice the elements DO code LOOP WHILE/UNTIL condition . Also notice the second line in which a variable is declared. You can add variables to your code so you can use them later. Variables act as temporary values inside the code. Finally, notice the declaration of the function as BOOLEAN, which is a datatype that allows only the TRUE and FALSE values. This method of determining if a number is prime is by far not the optimal, but I've left it that way to make the code easier to read. Function IsPrime ( value As Integer ) As Boolean Dim i As Integer i = 2 IsPrime = True Do If value / i = Int ( value / i ) Then IsPrime = False End If i = i + 1 Loop While i < value And IsPrime = True End Function The For block executes a part of the code a specified number of times. In this next example, you'll see the elements FOR variable = lower limit TO upper limit code NEXT . You'll also see the added ElseIf element in the If statement, which allows you to add more options to the code that is to be executed. Additionally, the declaration of the function and the variable result as Long . The Long datatype allows values much larger than Integer : Public Function Factorial ( value As Integer ) As Long Dim result As Long Dim i As Integer If value = 0 Then result = 1 ElseIf value = 1 Then result = 1 Else result = 1 For i = 1 To value result = result * i Next End If Factorial = result End Function"
+    },
+    {
+      "title": "Close the Visual Basic Editor.",
+      "content": "Close the Visual Basic Editor. Once you've created your function, close the window to return to your workbook. Now you can start using your user-defined function."
+    },
+    {
+      "title": "Enter your function.",
+      "content": "Enter your function. First, click the cell in which you want to enter the function. Then, click the function bar at the top of Excel (the one with the fx to its left) and type =FUNCTIONNAME() , replacing FUNCTIONNAME with the name you assigned your custom function. You can also find your user-defined formula in the \"User Defined\" category in the Insert Formula wizard—just click the fx to pull up the wizard."
+    },
+    {
+      "title": "Enter the parameters into the parentheses.",
+      "content": "Enter the parameters into the parentheses. For example, =NumberToLetters(A4) . The parameters can be of three types: Constant values typed directly in the cell formula. Strings have to be quoted in this case. Cell references like B6 or range references like A1:C3 . The parameter has to be of the Range datatype. Other functions nested inside your function. Your function can also be nested inside other functions. Example: =Factorial(MAX(D6:D8)) ."
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return to run the function.",
+      "content": "Press ↵ Enter or ⏎ Return to run the function. The results will display in the selected cell."
+    }
+  ]
+}

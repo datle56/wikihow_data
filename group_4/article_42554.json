@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Take-a-Screenshot-in-Linux",
+  "title": "How to Take a Screenshot in Linux",
+  "steps": [
+    {
+      "title": "Press .",
+      "content": "Press . PrtScn to take a full-screen screenshot. The screenshot will show everything in your display. You will be prompted to select where you would like to save the screenshot file. The Print Screen key is located at the top of the keyboard, usually between F12 and ScrLk . It may be labeled \"Print Screen\", \"PrtScn\", \"PrntScrn\", or something else similar."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . Alt + PrtScn to take a screenshot of a window. This shortcut will create a screenshot of your active window. The file will be created in your Pictures folder. [1] X Research source"
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ⇧ Shift + PrtScn to select what you capture. You'll be able to click and drag a selection box to determine what is captured in the screenshot. A file with the image you captured will be created in your Pictures folder. [2] X Research source"
+    },
+    {
+      "title": "Open the Screenshot utility.",
+      "content": "Open the Screenshot utility. The Gnome Screenshot utility allows you to perform some additional screenshot functions, such as adding a delay. You can find the Screenshot utility in the Accessories folder of your Applications menu."
+    },
+    {
+      "title": "Select your screenshot type.",
+      "content": "Select your screenshot type. You can choose from any of the options outlined above."
+    },
+    {
+      "title": "Add a delay.",
+      "content": "Add a delay. If your screenshot is time-dependent, you can use the Screenshot utility to add a delay before the screenshot is captured. This will allow you to make sure the right content is on the screen. [3] X Research source"
+    },
+    {
+      "title": "Select your effects.",
+      "content": "Select your effects. You can choose to include your mouse pointer in the screenshot, as well as whether or not you want to add a border to the screenshot. [4] X Research source"
+    },
+    {
+      "title": "Install GIMP",
+      "content": "Install GIMP . GIMP is a free image editor that comes installed on some Linux distributions. If you don't have it installed, you can get it for free using your distribution's package manager or Software Center . Open the Software Center, search for \"gimp\", and then install the \"GIMP Image Editor\". [5] X Research source"
+    },
+    {
+      "title": "Click the \"File\" menu and select \"Create\" → \"Screenshot\".",
+      "content": "Click the \"File\" menu and select \"Create\" → \"Screenshot\". The screenshot creation tool will open. This tool is very similar to the Gnome Screenshot utility. [6] X Research source"
+    },
+    {
+      "title": "Select the type of screenshot you want to take.",
+      "content": "Select the type of screenshot you want to take. You can choose to take three different types of screenshots: single window, full-screen, or custom selection. If you choose the single window option, you'll be able to click the window that you want to take a screenshot of. [7] X Research source"
+    },
+    {
+      "title": "Add a delay.",
+      "content": "Add a delay. You can add a delay before the screenshot is taken so that you can arrange everything exactly how you want it. If you have single window or custom screenshots selected, you'll choose your screenshot target after the delay timer runs out. [8] X Research source"
+    },
+    {
+      "title": "Click \"Snap\" to take the screenshot.",
+      "content": "Click \"Snap\" to take the screenshot. Depending on your settings, the screenshot may be taken immediately. When you're finished, the screenshot will open in the GIMP editing window."
+    },
+    {
+      "title": "Save the screenshot.",
+      "content": "Save the screenshot. If you don't want to make any edits to the screenshot, you can save it to your hard drive. Click the \"File\" menu and select \"Export\". Give the screenshot a name and choose where you would like to save it. Click the \"Export\" button once you are satisfied."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. ImageMagick is a command-line utility that can capture screenshots for you. Many distributions come with ImageMagick already installed, but you can install it for free from your distribution's package manager if you don't have it. To open the Terminal quickly in Ubuntu and many other distributions, press Ctrl + Alt + T ."
+    },
+    {
+      "title": "Install ImageMagick.",
+      "content": "Install ImageMagick. On Debian-based distributions such as Ubuntu, type sudo apt-get install imagemagick and press ↵ Enter . You will be prompted for your administrator password. If ImageMagick hasn't been installed, it will begin downloading and installing. If it is already installed, you will be informed."
+    },
+    {
+      "title": "Take a screenshot of the entire screen.",
+      "content": "Take a screenshot of the entire screen. Type import -window root Pictures/ fileName .png and press ↵ Enter . Replace fileName with the name you want to give the screenshot. [9] X Research source"
+    },
+    {
+      "title": "Take a screenshot of a specific window.",
+      "content": "Take a screenshot of a specific window. Type import Pictures/ fileName .png and press ↵ Enter . Replace fileName with the name you want to give the screenshot. The cursor will turn into a crosshair, and you can click the window that you want to capture."
+    },
+    {
+      "title": "Add a delay to the screenshot.",
+      "content": "Add a delay to the screenshot. Type import -window root -pause # Pictures/ fileName .png and press ↵ Enter . Replace # with the amount of seconds that you want to wait before the screenshot is taken. After waiting the set amount of time, the screenshot will be taken and you will be returned to the terminal prompt."
+    },
+    {
+      "title": "Install Shutter.",
+      "content": "Install Shutter. This is a popular screenshot program that contains some advanced upload and editing capabilities. If you take and share screenshots often, you may want to give this program a try. You can find Shutter through most distribution's package managers. Simply search for \"Shutter\" and install the program. [10] X Research source To install Shutter from the Terminal on Debian-based distributions, type sudo add-apt-repository ppa:shutter/ppa and press ↵ Enter . Update your repositories by typing sudo apt-get update , and then install Shutter by typing sudo apt-get install shutter ."
+    },
+    {
+      "title": "Select the type of screenshot you want to take.",
+      "content": "Select the type of screenshot you want to take. Along the top of the Shutter window, you'll see the three options that you can pick from: \"Selection\", \"Desktop\" and \"Window\". Click the button to select the type of screenshot you want to take."
+    },
+    {
+      "title": "Take your screenshot.",
+      "content": "Take your screenshot. If you selected \"Desktop\", your screenshot will be taken automatically. If you selected \"Selection\", the screen will dim and you can click and drag to create a selection box. Everything inside of the box will be captured. If you selected \"Window\", you can click the window that you want to take a screenshot of. The screenshot will be saved automatically to your Pictures folder."
+    },
+    {
+      "title": "Edit the screenshot.",
+      "content": "Edit the screenshot. After taking the screenshot, a preview will appear in the Shutter window. Click the \"Edit\" button to open the Shutter editor. You can use the editor to highlight things on the screenshot or make notations. Click \"Save\" when you are finished."
+    },
+    {
+      "title": "Export the screenshot.",
+      "content": "Export the screenshot. You can send the screenshot to an image upload service, or add an FTP server to upload it to. Click the \"Export\" button to open the Export menu. In the \"Public hosting\" tab, you can choose to upload the screenshot to your Dropbox account or a variety of online image hosting websites. You'll be asked for your account credentials when you select one. In the \"FTP\" tab, you can enter in the connection information for your FTP server, which is useful if you post screenshots on a blog or website. In the \"Places\" tab, you can move the screenshot to another location on your computer or network."
+    }
+  ]
+}

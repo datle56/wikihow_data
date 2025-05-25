@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Install-SKSE",
+  "title": "How to Install Skyrim Script Extender (SKSE)",
+  "steps": [
+    {
+      "title": "Launch Skyrim at least once.",
+      "content": "Launch Skyrim at least once. Before installing SKSE, you need your copy of Skyrim to be registered with your computer (and have all the necessary game folders and files in place so you can mod them later). So, open up Steam (or GOG) and launch the game if you haven’t already. You don’t have to do anything else here; launching the game and then closing it is enough! You can skip this step if you’ve already launched Skyrim at least once."
+    },
+    {
+      "title": "Download the version of SKSE that’ll work with your game.",
+      "content": "Download the version of SKSE that’ll work with your game. You can download the Skyrim Script Extender (SKSE) directly from the developer’s website at skse.silverlock.org . Just remember: SKSE doesn’t support Windows Store or Epic Games Store copies of Skyrim . Make sure you’re downloading the correct version for your game; the options include: [1] X Research source Anniversary Edition (AE) build. Download this if you’re using the latest version of Skyrim on Steam. Currently, that means game version 1.6.1170. GOG Anniversary Edition (AE) build. Download this if you’re playing Skyrim AE on GOG (rather than Steam). Currently, that’s game version 1.6.1179. Special Edition (SE) build. Download this if you aren’t using the Anniversary Edition upgrade; if you’re playing SE, your game version is 1.5.97. Classic build. Download this if you’re using the original, classic version of Skyrim (with no Legendary Edition, Special Edition, or Anniversary Edition upgrades). VR build. Download this if you’re playing Skyrim VR (Virtual Reality). If you don’t know what edition you’re using, navigate to your Skyrim game folder and right-click on the game executable. Select Properties → Details and check the edition under “Product version.”"
+    },
+    {
+      "title": "Open the SKSE archive and extract the files.",
+      "content": "Open the SKSE archive and extract the files. For this, you’ll need 7-Zip, a free archiving program that can open .7z files (since SKSE downloads as a .7z archive). Otherwise, right-click on the SKSE archive and select 7-Zip → Extract Here . A folder will be created in the same location with the extracted files. [2] X Research source If you don’t already have 7-Zip, download it from 7-zip.org ."
+    },
+    {
+      "title": "Open your Skyrim game directory folder.",
+      "content": "Open your Skyrim game directory folder. You’ll need to look in your Steam (or GOG) directory to find the Skyrim game folder. To do this, open Steam and go to your Library. Right-click on Skyrim , then select Manage → Browse local files. On GOG, right-click on Skyrim and select Manage Installation → Show Folder. [3] X Research source The most common default installation directory for the Steam version of the game is: C:\\Program Files\\Steam\\steammapps\\common\\skyrim\\"
+    },
+    {
+      "title": "Open the folder containing the extracted files in another window.",
+      "content": "Open the folder containing the extracted files in another window. Inside, you should see folders labeled “src” and “Data,” as well as an executable named “skse64_loader.exe,” a .dll file, and a couple of .txt files. [4] X Research source At this point, you should have two folders open: your Skyrim game directory and the folder with your SKSE files."
+    },
+    {
+      "title": "Drag and drop all the SKSE files into your Skyrim directory.",
+      "content": "Drag and drop all the SKSE files into your Skyrim directory. Select all the files and folders in your extracted SKSE folder, then drag them into the Skyrim directory folder and drop them there. When prompted, allow the SKSE files to overwrite those in the main Skyrim directory. With that, SKSE should be installed! [5] X Research source You don’t need to open any additional folders in the Skyrim directory or modify anything else. Just a simple copy and paste into the main directory is all that’s needed. Now, it’s time to set up SKSE to ensure it works in Skyrim using one of the two mod manager programs it supports: Mod Organizer 2 or Vortex. See the steps below!"
+    },
+    {
+      "title": "Open Mod Organizer 2 (MO2) and make sure SKSE is auto-detected.",
+      "content": "Open Mod Organizer 2 (MO2) and make sure SKSE is auto-detected. If you’re using MO2, it should be able to detect SKSE in your Skyrim game directory automatically. Open MO2 and select the dropdown menu to the left of the “Run” button. “SKSE” should already be an option there. [6] X Research source"
+    },
+    {
+      "title": "Use the \"Modify Executables\" button if SKSE isn’t auto-detected.",
+      "content": "Use the \"Modify Executables\" button if SKSE isn’t auto-detected. There's a quick manual setup method if you don’t see SKSE in the dropdown menu. Here’s how to do it: [7] X Research source 1. Click Modify Executables (the button with green and blue gears). 2. In the window that opens, select the plus (+) sign next to \"Executables,\" then “Add from file.” 3. Open the Skyrim game folder and double-click on “skse64_loader.exe”. 4 . Select “Apply” → “OK” to add SKSE to MO2. 5. After that, you should see “skse64_loader” as an option under the MO2 dropdown menu."
+    },
+    {
+      "title": "Open your Vortex dashboard.",
+      "content": "Open your Vortex dashboard. Like MO2, Vortex should be able to auto-detect SKSE once it’s properly installed. So, open Vortex and go to the dashboard. You should see an option under “Tools” labeled “Skyrim Script Extender 64.” [8] X Research source"
+    },
+    {
+      "title": "Add SKSE to your dashboard if it isn’t auto-detected.",
+      "content": "Add SKSE to your dashboard if it isn’t auto-detected. There’s also an easy way to manually set up SKSE in Vortex with just a few clicks. Here’s how: [9] X Research source 1. On your Vortex dashboard, click the plus (+) button, then select “New…” 2. In the new window that opens, label the tool “SKSE” (next to “Name”). 3. Click the folder icon in the “Target” bar. 4. Open your Skyrim game folder and double-click “skse64_loader.exe”. 5. Select “Save” to add an SKSE tool to Vortex."
+    },
+    {
+      "title": "Launch Skyrim from your mod organizer of choice.",
+      "content": "Launch Skyrim from your mod organizer of choice. In MO2, select the “SKSE” option in the dropdown menu, then click on the “Run” button with the bright orange “play” icon next to it. In Vortex, select the SKSE button on your dashboard to run Skyrim . [10] X Research source Doing this should launch Skyrim through the script extender (which is how you need to launch it to play with mods)."
+    },
+    {
+      "title": "Open the game console and type “GetSKSEVersion”.",
+      "content": "Open the game console and type “GetSKSEVersion”. Once Skyrim has launched and you’re on the game’s main menu screen, press the “tilde” key (`~) on your keyboard to launch the in-game console. Type in “GetSKSEVersion,” then press “Enter” on the keyboard. If a SKSE64 version is returned, congratulations: you’ve successfully set up SKSE! [11] X Research source For example, if you’re using the latest AE build, you should see “SKSE64 version: 2.2.6.”"
+    }
+  ]
+}

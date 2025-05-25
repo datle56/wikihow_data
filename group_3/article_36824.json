@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Remove-the-System-Volume-Information-Folder-from-a-Flash-Drive",
+  "title": "How to Remove the System Volume Information Folder from a Flash Drive",
+  "steps": [
+    {
+      "title": "Insert your USB drive into your Windows PC.",
+      "content": "Insert your USB drive into your Windows PC. If the System Volume Information folder is taking up too much space, you can delete the System Restore files inside and make sure they aren't recreated. These are the files that can sometimes make the System Volume Information folder extremely large. System Restore files are used to help restore files and settings in case of data loss. This method will stop this protection for your flash drive, although it'll still be enabled on the rest of your PC."
+    },
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . You'll find this gear-shaped icon in the Start menu."
+    },
+    {
+      "title": "Click the System icon.",
+      "content": "Click the System icon. It's the first icon in the list."
+    },
+    {
+      "title": "Scroll down in the left panel and click About.",
+      "content": "Scroll down in the left panel and click About . It's the last option."
+    },
+    {
+      "title": "Click System info in the right panel.",
+      "content": "Click System info in the right panel. It's at the top-right corner of the right panel under \"Related Settings.\""
+    },
+    {
+      "title": "Click System protection.",
+      "content": "Click System protection . It's in the left column. This opens the System Properties dialog."
+    },
+    {
+      "title": "Select your USB flash drive and click Configure.",
+      "content": "Select your USB flash drive and click Configure . This opens the System Restore settings for your USB drive."
+    },
+    {
+      "title": "Select Disable system protection.",
+      "content": "Select Disable system protection . It's the second option at the top. This tells Windows not to create restore point information on this drive. Although this will prevent more System Restore points from being created on the drive, the System Volume Information folder will still be recreated automatically for search purposes, or if you plug the drive into another Windows PC that permits System Restore on flash drives. If you need to keep System Restore on for this flash drive, you can just reduce the amount of space required by the restore points using the slider at the bottom. Keep in mind that lowering the size of your restore information means there might not be enough space to save more than one restore point."
+    },
+    {
+      "title": "Click the Delete button.",
+      "content": "Click the Delete button. It's near the bottom-right area of the window. A confirmation window will appear."
+    },
+    {
+      "title": "Click Continue to confirm.",
+      "content": "Click Continue to confirm. This deletes any saved System Restore information on your flash drive, effectively decreasing the size of the System Volume Information folder so its presence won't cause you any pain. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you'd like to hide the folder from your view, see the Hiding the System Volume Information Folder method now. If you are worried that a virus is lurking in your System Volume Information folder, see this method to learn how to delete the entire folder and dispose of the deleted files. When the folder is automatically re-added by Windows, it will not contain any bad files."
+    },
+    {
+      "title": "Press ⊞ Win+E to open File Explorer.",
+      "content": "Press ⊞ Win + E to open File Explorer. You can also open File Explorer by right-clicking the Start button and selecting File Explorer . If you haven't already inserted your USB drive into the PC, you can insert it now. You'll not only be hiding the System Volume Information folder from your view, but other important Windows operating system files that shouldn't be modified. This shouldn't affect you in any way unless you're a system administrator who frequently needs access to high-level system files."
+    },
+    {
+      "title": "Click the View menu.",
+      "content": "Click the View menu. It's at the top of the File Explorer window."
+    },
+    {
+      "title": "Click Options.",
+      "content": "Click Options . It's the white window icon with a list inside, and you'll find it in the toolbar at the top of the window."
+    },
+    {
+      "title": "Click the View tab.",
+      "content": "Click the View tab. It's the second tab at the top of the Folder Options window."
+    },
+    {
+      "title": "Select Don't show hidden files, folders, or drives.",
+      "content": "Select Don't show hidden files, folders, or drives . It's under the \"Hidden files and folders\" header."
+    },
+    {
+      "title": "Check the box next to \"Hide protected operating system files (Recommended).\"",
+      "content": "Check the box next to \"Hide protected operating system files (Recommended).\" You may have to scroll down a tiny bit from the previous section to find it. [3] X Research source"
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Now that you've hidden the appropriate files and folders, you should no longer see the System Volume Information folder when you insert the USB drive into your PC. If you use the USB drive anywhere else, such as in your car or on another PC, the changes will not carry over to that system. This means the System Volume Information folder will still be visible on those systems."
+    },
+    {
+      "title": "Press ⊞ Win+E to open Windows File Explorer.",
+      "content": "Press ⊞ Win + E to open Windows File Explorer. You can also open it by right-clicking the Start menu and selecting File Explorer . If you are worried there are rogue files inside your System Volume Information folder, you can use this method to delete the folder from your flash drive. If you haven't already done so, run a virus scan on the computer and remove any viruses that are found."
+    },
+    {
+      "title": "Double-click your flash drive.",
+      "content": "Double-click your flash drive. You should see it in the center panel, but if you don't, it'll be in the left panel under \"This PC\" or \"Computer.\" This opens the contents of your flash drive in the right panel."
+    },
+    {
+      "title": "Press ⇧ Shift and right-click somewhere in the right panel.",
+      "content": "Press ⇧ Shift and right-click somewhere in the right panel. A context menu will expand. Make sure you're not clicking on a file or folder—just a blank part of the right panel."
+    },
+    {
+      "title": "Click Open command prompt window here.",
+      "content": "Click Open command prompt window here . This opens the command prompt window to the correct folder. [4] X Research source"
+    },
+    {
+      "title": "Enter the commands to delete the folder.",
+      "content": "Enter the commands to delete the folder. To do this, type rmdir \"System Volume Information\" /s /q at the prompt and press the Enter key. This will delete the folder from the flash drive (for now). Remember, the folder will be recreated in the future, although it will no longer contain large system restore points. [5] X Research source If you'd like to hide the folder from your view, see the Hiding the System Volume Information Folder method now. If your flash drive is formatted with the NTFS file system, you will see an error that says the folder can't be deleted. There is no way to take ownership of the folder in this situation, but you can reformat the drive to the exFAT or FAT32 file system so you can delete the folder in the future."
+    }
+  ]
+}

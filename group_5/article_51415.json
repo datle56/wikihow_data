@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Wind-Load",
+  "title": "How to Calculate Wind Load",
+  "steps": [
+    {
+      "title": "Define the generic formula.",
+      "content": "Define the generic formula. The generic formula for wind load is F = A x P x Cd where F is the force or wind load, A is the projected area of the object, P is the wind pressure, and Cd is the drag coefficient. This equation is useful for estimating the wind load on a specific object, but does not meet building code requirements for planning new construction. [1] X Research source"
+    },
+    {
+      "title": "Find the projected area A.",
+      "content": "Find the projected area A . This is the area of the two-dimensional face that the wind is hitting. For a full analysis, you will repeat the calculation for each face of the building. For example, if a building has a west face with an area of 20m 2 , use that value for A to calculate the wind load on the west face. [2] X Research source The formula to calculate area depends on the shape of the face. For a flat wall, use the formula Area = length x height. Approximate the area of a column face with Area = diameter x height. For SI calculations, measure A in square meters (m 2 ). For imperial calculations, measure A in square feet (ft 2 )."
+    },
+    {
+      "title": "Calculate wind pressure.",
+      "content": "Calculate wind pressure. The simple formula for wind pressure P in imperial units (pounds per square foot) is P = 0.00256 V 2 {\\displaystyle P=0.00256V^{2}} , where V is the speed of the wind in miles per hour (mph). To find the pressure in SI units (Newtons per square meter), instead use P = 0.613 V 2 {\\displaystyle P=0.613V^{2}} , and measure V in meters per second. [3] X Research source This formula is based on the American Society of Civil Engineers code. The 0.00256 coefficient is the result of a calculation based on typical values for air density and gravitational acceleration. Engineers use a more accurate formula to take into account factor such as the surrounding terrain and type of construction. You can look up one formula in ASCE code 7-05, or use the UBC formula below . If you're not sure what the wind speed is, look up the peak wind speed in your area using the Electronic Industries Alliance (EIA) standard. For example, most of the U.S. is in Zone A with 86.6 mph wind, but coastal areas might lie in Zone B (100 mph) or Zone C (111.8 mph)."
+    },
+    {
+      "title": "Determine the drag coefficient for the object in question.",
+      "content": "Determine the drag coefficient for the object in question. Drag is the force that air exerts on the building, affected by the building's shape, the roughness of its surface, and several other factors. Engineers typically measure drag directly using experiments, but for a rough estimate you can look up a typical drag coefficient for the shape you are measuring. For example: [4] X Research source The standard drag coefficient for a long cylinder tube is 1.2 and for a short cylinder is 0.8. These apply to antenna tubes found on many buildings. The standard coefficient for a flat plate such as the face of a building is 2.0 for a long flat plate or 1.4 for a shorter flat plate. The drag coefficient has no units."
+    },
+    {
+      "title": "Calculate the wind load.",
+      "content": "Calculate the wind load. Using the values determined above, you can now calculate wind load with the equation F = A x P x Cd . [5] X Research source"
+    },
+    {
+      "title": "For example, let’s say you want to determine the wind load on an antenna that is 3 feet long with a diameter of 0.5 inches in a gust of 70mph winds.",
+      "content": "For example, let’s say you want to determine the wind load on an antenna that is 3 feet long with a diameter of 0.5 inches in a gust of 70mph winds. Start by estimating the projected area. In this case, A = d w = ( 3 f t ) ( 0.5 i n ) ( 1 f t / 12 i n ) = 0.125 f t 2 {\\displaystyle A=dw=(3ft)(0.5in)(1ft/12in)=0.125ft^{2}} Calculate the wind pressure: P = 0.00256 V 2 = 0.00256 ( 70 2 ) = 12.5 p s f {\\displaystyle P=0.00256V^{2}=0.00256(70^{2})=12.5psf} . For a short cylinder the coefficient of drag is 0.8. Plugging into the equation: F = A P C d = ( 0.125 f t 2 ) ( 12.5 p s f ) ( 0.8 ) = 1.25 l b s . {\\displaystyle F=APCd=(0.125ft^{2})(12.5psf)(0.8)=1.25lbs.} 1.25 lbs is the amount of wind load on the antenna."
+    },
+    {
+      "title": "Define the formula developed by the Electronic Industries Alliance.",
+      "content": "Define the formula developed by the Electronic Industries Alliance. The formula for wind load is F = A x P x Cd x Kz x Gh , where A is the projected area, P is wind pressure, Cd is the drag coefficient, Kz is the exposure coefficient, and Gh is the gust response factor. [6] X Research source This formula takes a few more parameters into account for wind load. This formula is generally used to calculate wind load on antennas."
+    },
+    {
+      "title": "Understand the variables of the equation.",
+      "content": "Understand the variables of the equation. In order to use an equation properly, you must first understand what each variable stands for and what its associated units are. A , P , and Cd are the same variables used in the generic equation. Kz is the exposure coefficient and it is calculated by taking into account the height from the ground to the midpoint of the object. The units of Kz are feet. Gh is the gust response factor and it is calculated by taking into account the entire height of the object. The units of Gh are 1/feet or ft -1 ."
+    },
+    {
+      "title": "Determine projected area.",
+      "content": "Determine projected area. The projected area of your object is dependent upon its shape and size. If the wind is hitting a flat wall, the projected area is easier to calculate than if the object is rounded. Projected area will be an approximation of the area that the wind comes in contact with. There is no one formula for calculating projected area, but you can estimate it with some basic calculations. Units for area are ft 2 . For a flat wall, use the formula Area = length x width, measuring the length and width of the wall where the wind is hitting it. For a tube or column, you can also approximate the area using length and width. In this case, the width will be the diameter of the tube or column."
+    },
+    {
+      "title": "Calculate wind pressure.",
+      "content": "Calculate wind pressure. Wind pressure is given by the equation P = 0.00256 x V 2 , where V is the speed of the wind in miles per hour (mph). The unit for wind pressure is pounds per square foot (psf). For example, if the wind speed is 70 mph, the wind pressure is 0.00256 x 70 2 = 12.5 psf. An alternative to calculating wind pressure at a particular wind speed is to use the standard for various wind zones. For example, according to the Electronic Industries Alliance (EIA) most of the U.S. is in Zone A with 86.6 mph wind, but coastal areas might lie in Zone B (100 mph) or Zone C (111.8 mph)."
+    },
+    {
+      "title": "Determine the drag coefficient for the object in question.",
+      "content": "Determine the drag coefficient for the object in question. Drag is the net force in the direction of flow due to pressure on the surface of an object. [7] X Research source The drag coefficient represents the drag of an object through a fluid and is dependent upon the shape, size, and roughness of an object. The standard drag coefficient for a long cylinder tube is 1.2 and for a short cylinder is .8 These apply to antenna tubes found on many buildings. The standard coefficient for a flat plate such as the face of a building is 2.0 for a long flat plate or 1.4 for a shorter flat plate. The difference between drag coefficients for flat and cylinder items is approximately 0.6. The drag coefficient has no units."
+    },
+    {
+      "title": "Calculate the exposure coefficient, Kz.",
+      "content": "Calculate the exposure coefficient, Kz . Kz is calculated using the formula [z/33] (2/7) , where z is the height from the ground to the midpoint of the object. For example, if you have an antenna that is 3 ft long and 48 ft off the ground, z would be equal to 46.5 ft. Kz = [z/33] (2/7) = [46.5/33] (2/7) = 1.1 ft."
+    },
+    {
+      "title": "Calculate the gust response factor, Gh.",
+      "content": "Calculate the gust response factor, Gh . Gust response factor is calculated with the equation Gh = .65+.60/[(h/33) (1/7) ] where h is the height of the object. For example, if you have an antenna that is 3 ft long and 48 ft off the ground, Gh = .65+.60/[(h/33) (1/7) ] = .65+.60/(51/33) (1/7) = 1.22 ft -1"
+    },
+    {
+      "title": "Calculate the wind load.",
+      "content": "Calculate the wind load. Using the values determined above, you can now calculate wind load with the equation F = A x P x Cd x Kz x Gh . Plug in all of your variables and do the math. For example, let’s say you want to determine the wind load on an antenna that is 3 feet long with a diameter of 0.5 inches in a gust of 70mph winds. It is placed on top of a 48 ft high building. Start by calculating the projected area. In this case, A = l x w = 3 ft x (0.5in x (1 ft/12 in)) = 0.125 ft 2 . Calculate the wind pressure: P = 0.00256 x V 2 = 0.00256 x 70 2 = 12.5 psf. For a short cylinder the coefficient of drag is 0.8. Calculate the exposure coefficient: Kz = [z/33] (2/7) = [46.5/33] (2/7) = 1.1 ft. Calculate the gust response factor: Gh = .65+.60/[(h/33) (1/7) ] = .65+.60/(51/33) (1/7) = 1.22 ft -1 Plugging into the equation: F = A x P x Cd x Kz x Gh = 0.125 x 12.5 x 0.8 x 1.1 x 1.22 = 1.68 lbs. 1.68 lbs is the amount of wind load on the antenna."
+    },
+    {
+      "title": "Define the UBC ’97 formula.",
+      "content": "Define the UBC ’97 formula. This formula was developed in 1997 as part of the Uniform Building Code (UBC) for calculation of wind load. The formula is F = A x P , were A is the projected area and P is the wind pressure; however, this formula has an alternate calculation for wind pressure. Wind pressure (PSF) is calculated as P= Ce x Cq x Qs x Iw , where Ce is the combined height, exposure and gust response factor, Cq is a pressure coefficient (it is equivalent to the drag coefficient in the previous two equations), Qs is wind stagnation pressure, and Iw is importance factor. All of these values can be calculated or obtained from the appropriate tables."
+    },
+    {
+      "title": "Determine projected area.",
+      "content": "Determine projected area. The projected area of your object is dependent upon its shape and size. If the wind is hitting a flat wall, the projected area is easier to calculate than if the object is rounded. Projected area will be an approximation of the area that the wind comes in contact with. There is no one formula for calculating projected area, but you can estimate it with some basic calculations. Units for area are ft 2 . For a flat wall, use the formula Area = length x width, measuring the length and width of the wall where the wind is hitting it. For a tube or column, you can also approximate the area using length and width. In this case, the width will be the diameter of the tube or column."
+    },
+    {
+      "title": "Determine Ce, the combined height, exposure, and gust response factor.",
+      "content": "Determine Ce , the combined height, exposure, and gust response factor. This value is chosen based on table 16-G of UBC and takes into account three terrain exposures with various heights and Ce values for each. “Exposure B is terrain with buildings, trees or other surface irregularities covering at least 20 percent of the surrounding area and extending 1.6 kilometers or more from the site.” “Exposure C has terrain that is flat and generally open, extending 0.8 km or more from the site.” “Exposure D is the most severe, with basic wind speeds of 129 km/hr or greater and terrain that is flat and unobstructed facing large bodies of water.”"
+    },
+    {
+      "title": "Determine the pressure coefficient for the object in question.",
+      "content": "Determine the pressure coefficient for the object in question. The pressure coefficient, Cq , is the same as the drag coefficient ( Cd ). Drag is the net force in the direction of flow due to pressure on the surface of an object. [8] X Research source The drag coefficient represents the drag of an object through a fluid and is dependent upon the shape, size, and roughness of an object. The standard drag coefficient for a long cylinder tube is 1.2 and for a short cylinder is .8 These apply to antenna tubes found on many buildings. The standard coefficient for a flat plate such as the face of a building is 2.0 for a long flat plate or 1.4 for a shorter flat plate. The difference between drag coefficients for flat and cylinder items is approximately 0.6. The drag coefficient has no units."
+    },
+    {
+      "title": "Determine the wind stagnation pressure.",
+      "content": "Determine the wind stagnation pressure. Qs is the wind stagnation pressure and is equivalent to the wind pressure calculation from the previous equations: Qs = 0.00256 x V 2 , where V is the speed of the wind in miles per hour (mph). For example, if the wind speed is 70 mph, the wind stagnation pressure is 0.00256 x 70 2 = 12.5 psf. An alternative to this calculation is to use the standards set for various wind zones. For example, according to the Electronic Industries Alliance (EIA) most of the U.S. is in Zone A with 86.6 mph wind, but coastal areas might lie in Zone B (100 mph) or Zone C (111.8 mph)."
+    },
+    {
+      "title": "Determine importance factor.",
+      "content": "Determine importance factor. Iw is the importance factor and can be determined using table 16-K of the UBC. It is a multiplier used in calculating loads that takes into account the use of the building. If a building contains hazardous materials, its importance factor will be higher than that of a traditional building. [9] X Research source Calculations for buildings with standard use have an importance factor of one."
+    },
+    {
+      "title": "Calculate the wind load.",
+      "content": "Calculate the wind load. Using the values determined above, you can now calculate wind load with the equation F = A x P = A x Ce x Cq x Qs x Iw . Plug in all of your variables and do the math. For example, let’s say you want to determine the wind load on an antenna that is 3 feet long with a diameter of 0.5 inches in a gust of 70mph winds. It is placed on top of a 48 ft high standard building in an area with an exposure B terrain. Start by calculating the projected area. In this case, A = l x w = 3 ft x (0.5in x (1 ft/12 in)) = 0.125 ft 2 . Determine Ce . Based on table 16-G, using the height of 48 ft and exposure B terrain, Ce is 0.84. For a short cylinder the coefficient of drag or Cq is 0.8. Calculate Qs : Qs = 0.00256 x V 2 = 0.00256 x 70 2 = 12.5 psf. Determine importance factor. This is a standard building therefore, Iw is 1. Plugging into the equation: F = A x P = A x Ce x Cq x Qs x Iw = 0.125 x 0.84 x 0.8 x 12.5 x 1= 1.05 lbs. 1.05 lbs is the amount of wind load on the antenna."
+    }
+  ]
+}

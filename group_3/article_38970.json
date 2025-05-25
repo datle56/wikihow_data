@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Set-Vlan-on-Switch-Guest-WiFi",
+  "title": "How Set Up a VLAN for Guest Wi-Fi on a Managed Switch",
+  "steps": [
+    {
+      "title": "Get a VLAN-capable managed switch.",
+      "content": "Get a VLAN-capable managed switch. Most routers issued by your ISP don't support creating VLANs out of the box—you'll usually need to add a switch to your network if you want to create VLANs. If a switch is labeled as a managed or smart switch, it likely supports VLANs. However, double-check the product listing to look for VLAN or QoS support before purchase. Managed and smart switches usually have web-based admin interfaces (or mobile apps) that you can use to configure your VLANs. Other switches with VLAN support will require you to log in with a terminal app and run commands at a command prompt."
+    },
+    {
+      "title": "Get a VLAN-capable router.",
+      "content": "Get a VLAN-capable router. If your switch has a built-in DHCP server, you can use that to assign IP addresses on each VLAN. However, a lot of switches don't have DHCP support—in this case, you'll need to make sure your router supports VLANs so it can properly assign IP addresses from different subnets on each VLAN."
+    },
+    {
+      "title": "Get VLAN-capable wireless access points.",
+      "content": "Get VLAN-capable wireless access points. You'll need to connect your Wi-Fi access points to the switch so your guests can connect to a different SSID than your main network. You can purchase 2 Wi-Fi access points to accomplish this. Alternatively, you could get a single Wi-Fi access point that can broadcast at least two separate SSIDs—you can then tag and manage all traffic from each SSID separately. Either way, all guest Wi-Fi access would be routed through your primary gateway while remaining separate from your main traffic thanks to the VLAN-capabilities of your switch."
+    },
+    {
+      "title": "Decide how to segment your network.",
+      "content": "Decide how to segment your network. If you just want a separate VLAN for your guests, you'll actually need to create two VLANs—one for your main network and one for your guest network. This is the case whether you have two separate Wi-Fi access points or a single Wi-Fi access point with two SSIDs. Each VLAN will have its own subnet , and the router's DHCP server will assign IP addresses from that subnet to connected devices. [1] X Research source Consider whether your guests will need to access things like AirPlay or Chromecast devices while connected to the network—if your guests are connected to a VLAN that's isolated from these smart devices, they won't be able to use them. If these devices are specifically for guest use, you'll need to connect them to the guest VLAN rather than your main VLAN."
+    },
+    {
+      "title": "Set up your hardware.",
+      "content": "Set up your hardware. The setup for your network will vary based on the hardware you're using and your needs. Here's an example of a basic 2-VLAN setup (one for guests and one for home users): Connect the WAN port of your VLAN-capable router to your modem's LAN port. Connect the main router LAN port to Port 1 of your switch. Connect your Wi-Fi access point(s) to the switch—Port 2 might be your main network, Port 3 (if you have two access points) for your guest network."
+    },
+    {
+      "title": "Create SSIDs on the Wi-Fi access point(s) and assign them VLAN IDs.",
+      "content": "Create SSIDs on the Wi-Fi access point(s) and assign them VLAN IDs. You'll want to have an SSID for each VLAN. You might number the first VLAN as 10 , the second as 20 , etc. Do not use VLAN ID 1 as it's reserved for management."
+    },
+    {
+      "title": "Configure the DHCP on your router or switch for each SSID.",
+      "content": "Configure the DHCP on your router or switch for each SSID. The setup depends on whether your router is acting as a DHCP or your switch. The goal is to assign different subnets to each VLAN so that each connected device is assigned an IP address from its VLAN's subnet automatically."
+    },
+    {
+      "title": "Create a VLAN for each SSID on your switch.",
+      "content": "Create a VLAN for each SSID on your switch. Use the same VLAN ID numbering as you did on the access point(s). Make sure all VLANs include Port 1, which is your internet connection, as well as the port to which you've connected the Wi-Fi access point. Other than that, include only the ports you want to associate to each VLAN. [2] X Research source If you have one Wi-Fi access point with multiple SSIDs, add its port to all VLANs. Depending on your network setup, you might need to \"tag\" the VLAN traffic on the switch so it can be properly routed while staying separate. This is most common when using two separate switches. Label Port 1 (the internet connection) as \"untagged\" and the Wi-Fi port(s) as \"tagged.\" When devices connect to an access point, they'll be tagged with their VLAN IDs so the switch knows what to do with the connection. Check your switch's manual to find out the specific process for tagging and trunking. When tagging, set the PVID for Port 1 and your Wi-Fi access point port(s) to 1 . The PVID for all other ports should be set to correspond with its corresponding VLAN ID."
+    },
+    {
+      "title": "Choose your Wi-Fi settings and security preferences accordingly.",
+      "content": "Choose your Wi-Fi settings and security preferences accordingly. Once you've created VLANs for each SSID, you can update your Wi-Fi access settings and configure your firewall for each VLAN specifically."
+    },
+    {
+      "title": "Open the Insight app.",
+      "content": "Open the Insight app. You can use the Insight app on your Android, iPhone, or iPad to set up and configure VLANs on your NETGEAR Insight Managed Cloud Smart Switch."
+    },
+    {
+      "title": "Select your switch.",
+      "content": "Select your switch. If you have an Insight Pro account, you'll need to select your organization first. [3] X Research source"
+    },
+    {
+      "title": "Tap VLANs in Use.",
+      "content": "Tap VLANs in Use . You'll see the default VLANs for video and management (VLAN 1)."
+    },
+    {
+      "title": "Tap + and select Create Guest Network.",
+      "content": "Tap + and select Create Guest Network . You'll see the + at the top of the page."
+    },
+    {
+      "title": "Enter a name for your VLAN.",
+      "content": "Enter a name for your VLAN. You'll want this to be easily identifiable, such as \"Guest.\""
+    },
+    {
+      "title": "Enter a VLAN ID.",
+      "content": "Enter a VLAN ID. If this is your first VLAN, enter 2 here. Otherwise, enter the next available ID number. You can use any VLAN ID from 1 to 4093 except for 1 (the management VLAN), 4088 (VoIP), and 4089 (video)."
+    },
+    {
+      "title": "Select port members.",
+      "content": "Select port members. Scroll down and select the drop-down menu next to \"Port Members\" to view all ports. If you have an 8-port switch, you'll see all 8 ports on the screen. If you have more ports, you'll need to swipe through the screens to see them all. To add a port to your guest VLAN, select a port and tap Untag . All untagged ports will be added to the VLAN. People will be able to connect to these ports and access the internet without seeing traffic on the other (tagged) ports. You must add port 1 to the VLAN in addition to any other ports you wish to add. This is the uplink port—without adding port 1, nobody on the guest VLAN will be able to access the internet."
+    },
+    {
+      "title": "Tap Save.",
+      "content": "Tap Save . Now that you've created the VLAN, you'll need to configure the ports you've selected on your switch."
+    },
+    {
+      "title": "Select your switch again and tap CONFIG PORTS.",
+      "content": "Select your switch again and tap CONFIG PORTS . A list of ports will appear."
+    },
+    {
+      "title": "Select the ports you've untagged.",
+      "content": "Select the ports you've untagged. This will be port 1 and any other ports you selected when adding ports to your guest VLAN."
+    },
+    {
+      "title": "Choose the new VLAN from the \"Default VLAN (PVID)\" menu and tap Save.",
+      "content": "Choose the new VLAN from the \"Default VLAN (PVID)\" menu and tap Save . Once you've saved your changes, guests will be able to connect to the VLAN."
+    },
+    {
+      "title": "Adjust your Wi-Fi and router settings accordingly.",
+      "content": "Adjust your Wi-Fi and router settings accordingly. Now that you've set up VLANs on your switch, you can easily create separate SSIDs on your router/Wi-Fi access points to correspond with each VLAN."
+    },
+    {
+      "title": "[4]",
+      "content": "Log in to your switch's web-based management tool. You can do this by going to https://192.168.1.251 in your web browser and logging in with your administrative username and password. [4] X Research source"
+    },
+    {
+      "title": "Click the Configuration tab.",
+      "content": "Click the Configuration tab. It's at the top of the page."
+    },
+    {
+      "title": "Click the VLAN Management tab and select VLANs.",
+      "content": "Click the VLAN Management tab and select VLANs . You'll see these options in the left panel."
+    },
+    {
+      "title": "Click Add.",
+      "content": "Click Add . You'll see this at the bottom of the right panel."
+    },
+    {
+      "title": "Select Single VLAN.",
+      "content": "Select Single VLAN . It's the first option."
+    },
+    {
+      "title": "Enter the details for your guest VLAN.",
+      "content": "Enter the details for your guest VLAN. First we'll create a VLAN for guests: Type the VLAN ID. VLAN 1 is for management, so don't enter 1. Choose a number from 2 to 4094 to assign to this VLAN. If entering a range of VLANs, enter the starting and ending ID numbers for the range. Name the VLAN(s). This should be something easy for your guests to identify, such as \"Guest.\" Click Apply . This saves the VLAN."
+    },
+    {
+      "title": "Create a second VLAN for your main network.",
+      "content": "Create a second VLAN for your main network. Now that you have a VLAN for guests, you can return to the VLANs area, select Add , and create a new VLAN for your primary network. Give the second VLAN a different VLAN ID and name, and then click Apply ."
+    },
+    {
+      "title": "Click Interfaces in the left sidebar.",
+      "content": "Click Interfaces in the left sidebar. You'll see this under \"VLAN Management\" in the left panel."
+    },
+    {
+      "title": "Select your interface settings for each VLAN and click Apply.",
+      "content": "Select your interface settings for each VLAN and click Apply . Here's where you'll need to specify: Select an interface—GE1 is port 1, GE2 is port 2, etc. You'll need to configure each separately. Click Edit . For \"Interface,\" select Port . For \"Interface VLAN Mode,\" select Trunk for GE1 (your internet connection), and Access for all other ports. Enter the PVID for the selected port (use the VLAN ID) and click Apply . Repeat until you've configured all 3 interfaces."
+    },
+    {
+      "title": "Adjust the ports for each VLAN.",
+      "content": "Adjust the ports for each VLAN. You now have two VLANs, but they aren't doing anything yet. Here's what you'll need to do: In the left panel, click VLAN Management > VLAN Memberships . In the right panel, select the first VLAN ID and choose Port . Click Search . Select or remove the ports you want to add to this VLAN. Click Apply . Repeat for each VLAN, including VLAN 1."
+    },
+    {
+      "title": "Adjust your Wi-Fi and router settings accordingly.",
+      "content": "Adjust your Wi-Fi and router settings accordingly. Now that you've set up VLANs on your switch, you can easily create separate SSIDs on your router/Wi-Fi access points to correspond with each VLAN."
+    }
+  ]
+}

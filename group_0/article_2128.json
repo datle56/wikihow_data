@@ -1,0 +1,118 @@
+{
+  "url": "https://www.wikihow.com/Automatically-Shut-Down-Your-Computer-at-a-Specified-Time",
+  "title": "How to Automatically Shut Down Your Computer at a Specified Time",
+  "steps": [
+    {
+      "title": "Open the Task Scheduler app.",
+      "content": "Open the Task Scheduler app. If you want your scheduled shutdown to occur more than once, you'll want to use Task Scheduler. Task Scheduler is available on all versions of Windows. Here's how to find it: [1] X Research source Windows 11 & Windows 10: Press ⊞ Win + S to open the search bar, type task scheduler , and then click Task Scheduler in the search results. Windows 8: Press the ⊞ Win key, type schedule tasks , and then click Schedule tasks in the results. Windows 7: Click the Start menu, select Control Panel , and then choose System and Security . Click Administrative Tools and then click Task Scheduler ."
+    },
+    {
+      "title": "Click Create Basic Task in the \"Actions\" panel.",
+      "content": "Click Create Basic Task in the \"Actions\" panel. It's at the top of the panel on the right side of the window. This opens the \"Create a Basic Task\" wizard. [2] X Research source"
+    },
+    {
+      "title": "Type Shutdown timer for the name and click Next.",
+      "content": "Type Shutdown timer for the name and click Next . You can also type in a different name if you want."
+    },
+    {
+      "title": "Select when you want the task to activate and click Next.",
+      "content": "Select when you want the task to activate and click Next . For example, if you want the computer to turn off every night at 11:30 PM, select Daily . If this is just a one-time scheduled thing, select One time . [3] X Research source"
+    },
+    {
+      "title": "Enter the time and date and click Next.",
+      "content": "Enter the time and date and click Next . For example, let's say that beginning on July 19, 2019, you want your PC to shut down nightly at 11:30 PM. You'd enter 7/19/2019 into the date field, and 11:30:00 PM into the time field. Leave the \"Recur ever: X days\" setting to \"1\" if you want the action to occur every day."
+    },
+    {
+      "title": "Select \"Start a program\" and click Next.",
+      "content": "Select \"Start a program\" and click Next . [4] X Research source"
+    },
+    {
+      "title": "Type the path to the shutdown.exe app into the \"Program/script\" box.",
+      "content": "Type the path to the shutdown.exe app into the \"Program/script\" box. The location should be C:\\Windows\\System32\\shutdown.exe unless you've changed the letter for your Windows drive. [5] X Research source"
+    },
+    {
+      "title": "Type /s into the \"Add arguments\" field and click Next.",
+      "content": "Type /s into the \"Add arguments\" field and click Next . [6] X Research source"
+    },
+    {
+      "title": "Review your shutdown task and click Finish.",
+      "content": "Review your shutdown task and click Finish . The summary screen gives you a chance to review the scheduled date(s) and time(s) for the shutdown. Once you save your task, the computer will shut down at the scheduled time. [7] X Research source If you need to edit or delete your task, open Task Scheduler and click the Task Scheduler Library folder in the left panel. When you find your task in the center panel, right-click it to find the option to edit Properties or Delete the task."
+    },
+    {
+      "title": "Click the Apple menu.",
+      "content": "Click the Apple menu. It's at the top-left corner of the screen. A menu will expand."
+    },
+    {
+      "title": "Click System Preferences on the menu.",
+      "content": "Click System Preferences on the menu."
+    },
+    {
+      "title": "Click the Energy Saver icon.",
+      "content": "Click the Energy Saver icon. It looks like a lightbulb."
+    },
+    {
+      "title": "Click Schedule at the bottom-right corner of the window.",
+      "content": "Click Schedule at the bottom-right corner of the window."
+    },
+    {
+      "title": "Check the box next to the second drop-down menu.",
+      "content": "Check the box next to the second drop-down menu. It's the one that says either Sleep , Shut Down , or Restart ."
+    },
+    {
+      "title": "Select Shut Down from the second menu.",
+      "content": "Select Shut Down from the second menu."
+    },
+    {
+      "title": "Enter the time and frequency.",
+      "content": "Enter the time and frequency. For example, if you want the computer to shut down nightly at 11:30 PM, you'd choose Every Day from the bottom-center drop-down menu, and then enter 11:30 into the \"at\" box."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . As long as your Mac is awake at the scheduled time, it will shut down automatically."
+    },
+    {
+      "title": "Right-click the Start menu .",
+      "content": "Right-click the Start menu . It's usually at the bottom-left corner of the screen for most versions of Windows. For Windows 11, it's in the middle."
+    },
+    {
+      "title": "Click Command prompt (Admin) or Windows PowerShell (Admin).",
+      "content": "Click Command prompt (Admin) or Windows PowerShell (Admin) . One or both options will appear in the menu. If prompted to give permission for the app to run, follow the on-screen instructions to do so."
+    },
+    {
+      "title": "Type SHUTDOWN /S /F /T number-in-seconds.",
+      "content": "Type SHUTDOWN /S /F /T number-in-seconds . Replace number-in-seconds with how long from now (in seconds) you want the computer to shut down. [8] X Research source For example, if you want the computer to turn off in 30 minutes, you'd type SHUTDOWN /S /T 1800 . [9] X Research source Check out this Google tool that can help you convert minutes and/or hours to seconds."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This runs the command and begins the timer. The PC will automatically shut down once the timer reaches the end. If you want to cancel the automatic shutdown, return to the prompt and use the command shutdown /a ."
+    },
+    {
+      "title": "Open Notepad",
+      "content": "Open Notepad on your Windows PC. You write a script that adds a shortcut to your desktop that, when double-clicked, schedules a shutdown. You'll find Notepad in your Windows Start menu in a folder called Windows Accessories or Accessories . Use this method if you don't want to schedule a recurring shutdown (e.g., nightly at 11:30pm) but would like to quickly schedule such a shut down if necessary."
+    },
+    {
+      "title": "Enter the following code into the Notepad file.",
+      "content": "Enter the following code into the Notepad file. Let's say you want the script to shut your computer down at 11:30 PM on the day you run it: Type each of the following lines on its own individual line in the file: @echo off :W if %time%==23:30:00.00 goto :X goto :W :X shutdown.exe /s /f /t 60 /c This script will constantly check the time and, when 11:30 PM rolls around, will shut down the computer (after a 60-second grace period). You can replace that time with the time of your choice (in 24-hour/military time format). [10] X Research source"
+    },
+    {
+      "title": "Click the File menu and select Save As.",
+      "content": "Click the File menu and select Save As . The Save As window will appear."
+    },
+    {
+      "title": "Open the Desktop folder.",
+      "content": "Open the Desktop folder. You can do this by expanding the This PC menu in the left panel and selecting Desktop ."
+    },
+    {
+      "title": "Select All Files from the \"Save as type\" drop-down.",
+      "content": "Select All Files from the \"Save as type\" drop-down. It's near the bottom of the Save As window. [11] X Research source"
+    },
+    {
+      "title": "Type shutdown-timer.bat into the \"File name\" field and click Save.",
+      "content": "Type shutdown-timer.bat into the \"File name\" field and click Save . Your new script is now saved to your desktop. You should see its icon (some gears) on your desktop."
+    },
+    {
+      "title": "Double-click the shutdown-timer.bat file to schedule a shutdown.",
+      "content": "Double-click the shutdown-timer.bat file to schedule a shutdown. A blank command prompt screen should appear. You will need to leave this window open so that the computer will know to shut down at the right time. Once the time comes, you'll have 60 seconds to save your work before the computer shuts down. If you want to disable the script before it's time to shut down, press ⊞ Win + R to open the Run menu, type shutdown –a , and then click Run ."
+    }
+  ]
+}

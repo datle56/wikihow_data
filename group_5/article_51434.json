@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Calculate-the-Fibonacci-Sequence",
+  "title": "How to Calculate the Fibonacci Sequence: Regular Method and Golden Ratio Trick",
+  "steps": [
+    {
+      "title": "Set up a table with two columns.",
+      "content": "Set up a table with two columns. The number of rows will depend on how many numbers in the Fibonacci sequence you want to calculate. [2] X Research source For example, if you want to find the fifth number in the sequence, your table will have five rows. When using the table method, you cannot find a random number farther down in the sequence without calculating all the number before it. For example, if you want to find the 100th number in the sequence, you have to calculate the 1st through 99th numbers first. This is why the table method only works well for numbers early in the sequence."
+    },
+    {
+      "title": "Enter the sequence of terms in the left column.",
+      "content": "Enter the sequence of terms in the left column. This means just entering a sequence of sequential ordinal numbers, beginning with \"1st.\" The term refers to the position number in the Fibonacci sequence. For example, if you want to figure out the fifth number in the sequence, you will write 1st, 2nd, 3rd, 4th, 5th down the left column. This will show you what the first through fifth terms in the sequence are."
+    },
+    {
+      "title": "Enter 1 in the first row of the right-hand column.",
+      "content": "Enter 1 in the first row of the right-hand column. This is the starting point for the Fibonacci Sequence. In other words, the first term in the sequence is 1. The correct Fibonacci sequence always starts on 1. If you begin with a different number, you are not finding the proper pattern of the Fibonacci sequence."
+    },
+    {
+      "title": "Add the first term (1) and 0.",
+      "content": "Add the first term (1) and 0. This will give you the second number in the sequence. Remember, to find any given number in the Fibonacci sequence, you simply add the two previous numbers in the sequence. To create the sequence, you should think of 0 coming before 1 (the first term), so 1 + 0 = 1."
+    },
+    {
+      "title": "Add the first term (1) and the second term (1).",
+      "content": "Add the first term (1) and the second term (1). This will give you the third number in the sequence. [3] X Research source 1 + 1 = 2. The third term is 2."
+    },
+    {
+      "title": "Add the second term (1) and the third term (2) to get the fourth number in the sequence.",
+      "content": "Add the second term (1) and the third term (2) to get the fourth number in the sequence. 1 + 2 = 3. The fourth term is 3."
+    },
+    {
+      "title": "Add the third term (2) and the fourth term (3).",
+      "content": "Add the third term (2) and the fourth term (3). This will give you the fifth number in the sequence. [4] X Research source 2 + 3 = 5. The fifth term is 5."
+    },
+    {
+      "title": "Sum the previous two numbers to find any given number in the Fibonacci Sequence.",
+      "content": "Sum the previous two numbers to find any given number in the Fibonacci Sequence. When you use this method, you are using the formula F n = F n − 1 + F n − 2 {\\displaystyle F_{n}=F_{n-1}+F_{n-2}} . [5] X Research source Since this is not a closed formula, however, you cannot use it to calculate any given term in the sequence without calculating all the previous numbers. [6] X Research source"
+    },
+    {
+      "title": "Set up the formula x n {\\displaystyle x_{n}} = ϕ n − ( 1 − ϕ ) n 5 {\\displaystyle {\\frac {\\phi ^{n}-(1-\\phi )^{n}}{\\sqrt {5}}}} .",
+      "content": "Set up the formula x n {\\displaystyle x_{n}} = ϕ n − ( 1 − ϕ ) n 5 {\\displaystyle {\\frac {\\phi ^{n}-(1-\\phi )^{n}}{\\sqrt {5}}}} . In the formula, x n {\\displaystyle x_{n}} = the term in the sequence you are trying to find, n {\\displaystyle n} = the position number of the term in the sequence, and ϕ {\\displaystyle \\phi } = the golden ratio. [7] X Research source This is a closed formula, so you will be able to calculate a specific term in the sequence without calculating all the previous ones. This formula is a simplified formula derived from Binet’s Fibonacci number formula. [8] X Research source The formula utilizes the golden ratio ( ϕ {\\displaystyle \\phi } ), because the ratio of any two successive numbers in the Fibonacci sequence are very similar to the golden ratio. [9] X Research source"
+    },
+    {
+      "title": "Plug the number for n {\\displaystyle n} into the formula.",
+      "content": "Plug the number for n {\\displaystyle n} into the formula. The n {\\displaystyle n} represents whatever term you are looking for in the sequence. For example, if you are looking for the fifth number in the sequence, plug in 5. Your formula will now look like this: x 5 {\\displaystyle x_{5}} = ϕ 5 − ( 1 − ϕ ) 5 5 {\\displaystyle {\\frac {\\phi ^{5}-(1-\\phi )^{5}}{\\sqrt {5}}}} ."
+    },
+    {
+      "title": "Substitute the golden ratio into the formula.",
+      "content": "Substitute the golden ratio into the formula. You can use 1.618034 as an approximation of the golden ratio. [10] X Research source For example, if you are looking for the fifth number in the sequence, the formula will now look like this: x 5 {\\displaystyle x_{5}} = ( 1.618034 ) 5 − ( 1 − 1.618034 ) 5 5 {\\displaystyle {\\frac {(1.618034)^{5}-(1-1.618034)^{5}}{\\sqrt {5}}}} ."
+    },
+    {
+      "title": "Complete the calculations in parentheses.",
+      "content": "Complete the calculations in parentheses. Remember to use the order of operations by completing the calculation in parentheses first: 1 − 1.618034 = − 0.618034 {\\displaystyle 1-1.618034=-0.618034} . In the example, the equation becomes x 5 {\\displaystyle x_{5}} = ( 1.618034 ) 5 − ( − 0.618034 ) 5 5 {\\displaystyle {\\frac {(1.618034)^{5}-(-0.618034)^{5}}{\\sqrt {5}}}} ."
+    },
+    {
+      "title": "Calculate the exponents.",
+      "content": "Calculate the exponents. Multiply the two parenthetical numbers in the numerator by the appropriate exponent. In the example, 1.618034 5 = 11.090170 {\\displaystyle 1.618034^{5}=11.090170} ; − 0.618034 5 = − 0.090169 {\\displaystyle -0.618034^{5}=-0.090169} . So the equation becomes x 5 = 11.090170 − ( − 0.090169 ) 5 {\\displaystyle x_{5}={\\frac {11.090170-(-0.090169)}{\\sqrt {5}}}} ."
+    },
+    {
+      "title": "Complete the subtraction.",
+      "content": "Complete the subtraction. Before you divide, you need to subtract the two numbers in the numerator. In the example, 11.090170 − ( − 0.090169 ) = 11.180339 {\\displaystyle 11.090170-(-0.090169)=11.180339} , so the equation becomes x 5 {\\displaystyle x_{5}} = 11.180339 5 {\\displaystyle {\\frac {11.180339}{\\sqrt {5}}}} ."
+    },
+    {
+      "title": "Divide by the square root of 5.",
+      "content": "Divide by the square root of 5. The square root of 5, rounded, is 2.236067. [11] X Research source In the example problem, 11.180339 2.236067 = 5.000002 {\\displaystyle {\\frac {11.180339}{2.236067}}=5.000002} ."
+    },
+    {
+      "title": "Round to the nearest whole number.",
+      "content": "Round to the nearest whole number. Your answer will be a decimal, but it will be very close to a whole number. This whole number represents the number in the Fibonacci sequence. If you used the complete golden ratio and did no rounding, you would get a whole number. It’s more practical to round, however, which will result in a decimal. [12] X Research source In the example, after using a calculator to complete all the calculations, your answer will be approximately 5.000002. Rounding to the nearest whole number, your answer, representing the fifth number in the Fibonacci sequence, is 5."
+    }
+  ]
+}

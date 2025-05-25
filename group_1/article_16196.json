@@ -1,0 +1,118 @@
+{
+  "url": "https://www.wikihow.com/Extract-a-Gz-File",
+  "title": "How to Extract a GZ File on Windows, Linux, Mac, & Mobile",
+  "steps": [
+    {
+      "title": "Download and install 7-Zip.",
+      "content": "Download and install 7-Zip. 7-Zip is a free, easy-to-use Windows utility that can easily extract files from any GZ archive. This is the easiest way to extract GZ files, and you can use the program in any version of Windows. To install 7-Zip: Go to http://www.7-zip.org/download.html Click the Download link for your version of Windows. If you're not sure whether you're using 64-bit or 32-bit, here's how to check . Once downloaded, double-click the 7-Zip setup file. Click Yes when prompted and follow the on-screen instructions to install."
+    },
+    {
+      "title": "Open File Explorer .",
+      "content": "Open File Explorer . You can do this with the keyboard shortcut Windows key + E or by clicking the File Explorer icon in your Start menu."
+    },
+    {
+      "title": "Go to your GZ file's location.",
+      "content": "Go to your GZ file's location. Click the folder that contains the GZ folder on the left side of the File Explorer window. You may have to click through multiple folders to get to the GZ folder."
+    },
+    {
+      "title": "Double-click the GZ file.",
+      "content": "Double-click the GZ file. This will instantly launch 7-Zip with your GZ folder selected."
+    },
+    {
+      "title": "Select your GZ file and click Extract.",
+      "content": "Select your GZ file and click Extract . This is the blue minus sign in the toolbar. You can also extract other types of archives, including TGZ files."
+    },
+    {
+      "title": "Select a destination.",
+      "content": "Select a destination. By default, the current folder will be selected. If you want to extract the files to a different folder, click ⋯ , select a destination (e.g., Desktop ), and click OK ."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. This extracts the files and folders from the GZ to the selected folder. Once the process completes, you can double-click the extracted folder to view the GZ folder's contents."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. If you don't want to download software like 7-Zip to extract the GZ file, you can use the built-in tar command in the Command Prompt tool. Because you'll need to have administrator access to extract the files, start with these steps: Press the Windows key and type cmd . Right-click cmd and select Run as administrator . Click Yes to confirm."
+    },
+    {
+      "title": "Use the cd command to enter the folder that contains your GZ file.",
+      "content": "Use the cd command to enter the folder that contains your GZ file. For example, if your file is on your desktop, you'd type cd C:\\Windows\\Users\\yourusername\\Desktop and press Enter . Here's an easy trick to find your full path in File Explorer: Press Windows key + E to open File Explorer. Open the folder that contains your GZ file. Click the address bar at the top of the window once to display and highlight the path. Once you have the path, you can right-click it and select Copy, making it easy to paste right into your command."
+    },
+    {
+      "title": "Use tar -xvzf filename.gz to extract the file to the current folder.",
+      "content": "Use tar -xvzf filename.gz to extract the file to the current folder. This simple command instantly unpacks all of the files and folders in the GZ file into the same folder. If you want to extract the files to a different folder, you can specify a destination folder with the -C flag like this: tar -xvzf filename.gz -C destinationfolder Replace destinationfolder with the full path to the folder to which you want your extract files to appear. For example, to extract a file called documents.tar.gz to your desktop, you'd use tar -xvzf documents.tar.gz -C C:\\Windows\\Users\\yourusername\\Desktop"
+    },
+    {
+      "title": "Open Finder on your Mac .",
+      "content": "Open Finder on your Mac . It's the two-toned smiley face icon on the Dock. Your Mac has a built-in utility called Archive Utility that makes it easy to unpack GZ files without installing extra software."
+    },
+    {
+      "title": "Open the folder that contains your GZ file.",
+      "content": "Open the folder that contains your GZ file. For example, if the file is in your Downloads folder, click Downloads now."
+    },
+    {
+      "title": "Double-click the GZ file to extract the files.",
+      "content": "Double-click the GZ file to extract the files. This unpacks the files and folders to the current folder. If this doesn't work, press Ctrl as you click the file, select Open with , and then choose Archive Utility ."
+    },
+    {
+      "title": "Open the Terminal app on your Mac.",
+      "content": "Open the Terminal app on your Mac. If you want to use a command-line tool to extract the files, it's easy to do in Terminal . To open Terminal, click the magnifying glass at the top-right corner of your menu bar (or press Command + Spacebar ), type terminal , and double-click Terminal in the search results. You can also open Terminal in Finder by selecting Go > Utilities > Terminal ."
+    },
+    {
+      "title": "Use the cd command to enter the folder that contains your GZ file.",
+      "content": "Use the cd command to enter the folder that contains your GZ file. For example, if your file is in your downloads, type cd ~/Downloads and press Return ."
+    },
+    {
+      "title": "Use the command gunzip filename.gz to extract the files.",
+      "content": "Use the command gunzip filename.gz to extract the files. For example, if your GZ file is called documents.gz, type gunzip documents.gz and press Return . The files will be extracted to the current folder."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you're using any version of Linux , including Ubuntu, you can use the gzip utility to unzip a GZ file. To open a Terminal , press Ctrl + Alt + T on your keyboard. This method will also work for TGZ files."
+    },
+    {
+      "title": "Use the cd command to enter the directory that contains your GZ file.",
+      "content": "Use the cd command to enter the directory that contains your GZ file. For example, if you downloaded the file, type cd Downloads and press Enter to go to the Downloads folder. To make sure you're in the right directory, use the command ls -a to list the files."
+    },
+    {
+      "title": "Use gzip -d filename.gz to extract the files.",
+      "content": "Use gzip -d filename.gz to extract the files. This command instantly unpacks the files from the GZ archive into the current directory. This command will also remove the original GZ file. If you want to keep the GZ file while still extracting the files inside, use gzip -dk filename.gz instead. If the file ends with tar.gz instead of just gz , use tar -xvf filename.tar.gz instead."
+    },
+    {
+      "title": "Download iZip onto your iPhone or iPad.",
+      "content": "Download iZip onto your iPhone or iPad. If the GZ file is on your iOS device, you can install the free app iZip from the App Store. Just open the App Store , search for iZip , and tap Get ."
+    },
+    {
+      "title": "Select the location of your GZ file.",
+      "content": "Select the location of your GZ file. For example, if the GZ file is saved to your iPhone, select Files at the top, then navigate to the folder that contains your file. If the file is in your Google Drive , Dropbox , Box, or OneDrive , select the service and follow the on-screen instructions to log in. Then, you'll be able to navigate to the file."
+    },
+    {
+      "title": "Tap the GZ file and select Yes.",
+      "content": "Tap the GZ file and select Yes . This displays the contents of the file and asks if you'd like to unzip them."
+    },
+    {
+      "title": "Tap OK to confirm.",
+      "content": "Tap OK to confirm. This final step extracts the files from the GZ archive to the current folder."
+    },
+    {
+      "title": "Download Zarchiver on your Android.",
+      "content": "Download Zarchiver on your Android. You'll find this free app in the Play Store . Just search the Play Store for zarchiver and tap Install . You can also go straight to the app's details page in your browser."
+    },
+    {
+      "title": "Open Zarchiver.",
+      "content": "Open Zarchiver. Once installed, you can tap Open in the Play Store or tap the new folder icon in your app list."
+    },
+    {
+      "title": "Navigate to your GZ file.",
+      "content": "Navigate to your GZ file. Browse to the folder that contains your GZ file. You can also search for the file by tapping the magnifying glass at the top of Zarchiver."
+    },
+    {
+      "title": "Tap the GZ file.",
+      "content": "Tap the GZ file. Several options will appear at the bottom of the screen."
+    },
+    {
+      "title": "Tap one of the two Extract options.",
+      "content": "Tap one of the two Extract options. The first option, Extract here , extracts the files to the current folder. If you'd rather Zarchiver create a new folder for the extracted files, select Extract to ./<Archive name>/ instead. This will extract the files to the selected folder."
+    }
+  ]
+}

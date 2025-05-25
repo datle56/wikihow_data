@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Force-a-Kernel-Panic-on-a-Mac",
+  "title": "How to Force a Kernel Panic on a Mac",
+  "steps": [
+    {
+      "title": "Disable System Integrity Protection.",
+      "content": "Disable System Integrity Protection. For newer Macs, system integrity protection is used to stop the user from harming their system. You can disable this by turning your computer off, then, while holding the power button holding down ⌘ Command + R at the same time. Click \"Utilities and Terminal\". Then type csrutil disable and press ↵ Enter . Restart your computer by clicking the Apple Symbol and pressing restart."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can open it from the Utilities folder in Finder under the Applications tab, or search for it using Spotlight."
+    },
+    {
+      "title": "Enter the crash code.",
+      "content": "Enter the crash code. Type client$ sudo dtrace -w -n \"BEGIN{ panic();}\" into Terminal and hit ↵ Enter . client$ will be replaced by your account name (e.g., wikihow$ sudo dtrace -w -n \"BEGIN{ panic();}\" )."
+    },
+    {
+      "title": "Enter your password.",
+      "content": "Enter your password. This will allow the kernel panic to commence."
+    },
+    {
+      "title": "Retrieve the crash logs.",
+      "content": "Retrieve the crash logs. Once the system has rebooted, you should be able to access the crash logs, either directly from the window that opens up or from the computer's diagnostic reports."
+    }
+  ]
+}

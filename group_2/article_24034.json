@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Install-Msi-Files-on-Windows-10",
+  "title": "How to Install MSI Files on Windows 10 or Windows 11",
+  "steps": [
+    {
+      "title": "Sign in as an administrator.",
+      "content": "Sign in as an administrator. You need to be logged in as an administrator in order to install a program using an MSI file. Either log into Windows using an administrative account or talk to a system administrator and see if they can make your account an administrative account."
+    },
+    {
+      "title": "Press ⊞ Win+E to open File Explorer .",
+      "content": "Press ⊞ Win + E to open File Explorer . File Explorer has an icon that resembles a folder with a blue clip. You can either click the File Explorer icon or use the keyboard shortcut to open File Explorer."
+    },
+    {
+      "title": "Navigate to the MSI file.",
+      "content": "Navigate to the MSI file. Use File Explorer to navigate to the location of the MSI file you want to install. If it's a file you downloaded from the Internet, it will most likely be in your Downloads folder."
+    },
+    {
+      "title": "Double-click the file to run it.",
+      "content": "Double-click the file to run it. This will start the installation wizard, and start installing the program. If you're prompted, click Run in the confirmation pop-up."
+    },
+    {
+      "title": "Follow the installation wizard's prompts.",
+      "content": "Follow the installation wizard's prompts. The installation wizard will guide you through the setup and install the program contained in this MSI file. The installation steps may vary for different programs. You may be prompted to select an installation location on your computer, or select and unselect program components to install."
+    },
+    {
+      "title": "Click Close or Finish.",
+      "content": "Click Close or Finish . You'll see a final message in the installation wizard when your installation is complete."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator .",
+      "content": "Open the Command Prompt as an administrator . To do this, you must be logged into Windows as an administrator . Use the following steps to open the Command Prompt as an administrator: Click the Windows Start menu. Type cmd . Right-click the Command Prompt icon. Click Run as administrator"
+    },
+    {
+      "title": "Type msiexec /i [path to MSI file].",
+      "content": "Type msiexec /i [path to MSI file] . Replace \"[path to MSI file] with the path to the location of the MSI file. The \"msiexec /i\" command is used to install an MSI file using the For example, if the MSI file is located in your Downloads folder, you would type something like msiexec /i C:\\Users\\username\\Downloads\\program.msi ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will start installing the program using the MSI file you entered in the command prompt. This will either launch an installation wizard or it will install the program in the same location as the MSI file. Alternatively, you can open MSI files in PowerShell , but you need to install the MSI PowerShell installer first. To do so, type [[kbd|msi-installer}} and press Enter . Then you can install MSI file using the same command you would use in the Command Prompt. To uninstall an MSI file using this command, type msiexec /x [path to MSI file] and press Enter . [1] X Research source"
+    }
+  ]
+}

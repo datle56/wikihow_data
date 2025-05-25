@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/An-Unexpected-Error-Is-Keeping-You-from-Copying-the-File",
+  "title": "How to Resolve “An Unexpected Error Is Keeping You from Copying the File”",
+  "steps": [
+    {
+      "title": "Your computer may have a minor glitch.",
+      "content": "Your computer may have a minor glitch. Generally, you can fix minor glitches in Windows by rebooting your computer. Try that before anything else. Click the Windows Start button and then click the Power icon. Click Restart ."
+    },
+    {
+      "title": "The file drive may not be compatible with Windows.",
+      "content": "The file drive may not be compatible with Windows. If you are attempting to copy files from an external drive that was formatted on another computer operating system (i.e., macOS or Linux), it may have been formatted in a file system that Windows doesn't recognize. Make sure you format the drive in a compatible file system, such as NTFS, FAT32, and exFAT. Additionally, make sure you save the file you are trying to copy in a format that is compatible with Windows."
+    },
+    {
+      "title": "Sometimes Windows has a hard time recognizing compressed files.",
+      "content": "Sometimes Windows has a hard time recognizing compressed files. Try using a third-party archive tool, such as WinRAR , to uncompress the file. Once you download and install WinRAR , right-click the file you want to copy and click WinRAR . Then click Uncompress . You can download WinRAR from https://www.win-rar.com/download.html ."
+    },
+    {
+      "title": "Your user permissions may not allow you to copy the file.",
+      "content": "Your user permissions may not allow you to copy the file. In order to do this, you need to be signed in to an account that has administrative permissions. If your account does not have administrative permissions, talk to an administrator. If you have administrative privileges, use the following steps to check and set your user permissions: Right-click the file you want to copy. Click Properties . Click the Security tab. Click Edit below the \"Group or Username\" window. Click your username. Check all boxes below \"Allow\" in the \"Permissions for [username]\" window. Click Apply ."
+    },
+    {
+      "title": "Windows may not recognize you as the owner of the file.",
+      "content": "Windows may not recognize you as the owner of the file. In addition to changing the user permissions, you may also need to change the owner of the file. Once again, you'll need administrative permissions to do this. Use the following steps to do so: Right-click the file you want to copy. Click Properties . Click the Security tab. Click Advanced at the bottom of the Window. Click Change next to the listed owner at the top. Click Advanced at the bottom of the \"Select User or Group\" window. Click Find Now on the right side. Select your username. Click Ok . Click your username in the \"Permission entries\" list. Click Disable inheritance at the bottom of the window. Click Convert inherited permissions into explicit permissions on this object . Click Apply ."
+    },
+    {
+      "title": "Sync Center may be limiting the size of offline files.",
+      "content": "Sync Center may be limiting the size of offline files. You can increase the limit for offline file sizes in Sync Center. Use the following steps to do so: Click the Windows Start menu. Type Control Panel . Click Control Panel to open it. Select Large Icons next to \"View by\" in the upper-right corner. Click Sync Center . Click Manage offline files at the bottom of the menu bar on the left. Click the Disk usage tab. If you don't see this tab, click Enable offline files and then click Apply . Click Change limit . Use the slider bars to increase the disk usage limit. Click Ok . Then click Apply ."
+    },
+    {
+      "title": "Your computer may have a virus or malware.",
+      "content": "Your computer may have a virus or malware. You can scan for malware using Windows Defender. Use the following steps to do so: Click the Windows Start menu. Type Windows Security . Click Windows Security . Click Virus & threat protection . Click Quick Scan or Scan Now ."
+    },
+    {
+      "title": "The Windows Registry may be blocking you from copying files.",
+      "content": "The Windows Registry may be blocking you from copying files. You can change the Windows Registry using the Registry editor. Warning: Making changes to the Windows Registry can cause permanent damage to your Windows system. Use the Windows Registry Editor at your own risk. Use the following steps to add a new parameter that allows you to copy files: [1] X Research source Press Win + R to open Run. Type Regedit and press Enter . Click Yes when prompted. Navigate to the Parameters folder. Use the following steps to do so: Open the HKEY_LOCAL_MACHINE folder. Open the SYSTEM folder. Open the CurrentControlSet folder. Open the Services folder. Open the Csc folder. Open the Parameters folder. Right-click and backspace. Click New followed by DWORD (32-bit) Value . Type FormatDatabase as the value name and press Enter . Double-click the FormatDatabase value. Change the value data to \"1\". Click Ok . Restart your computer."
+    },
+    {
+      "title": "One of your disk drives may have bad sectors.",
+      "content": "One of your disk drives may have bad sectors. Luckily, Windows has built-in tools that allow you to check a disk for errors. Use the following steps to check the disk you are copying to or from for errors: Press Win + E to open File Explorer. Click This PC in the menu bar to the left. Right-click the disk drive you are copying to. Click Properties . Click the Tools tab. Click Check below \"Error Checking.\" Repeat for the drive you are copying from."
+    },
+    {
+      "title": "Windows may have some corrupt core files.",
+      "content": "Windows may have some corrupt core files. Luckily, Windows has a couple of built-in tools that you can run from within the Command Prompt to scan for errors and fix them. Use the following steps to scan your Windows system for errors: [2] X Research source Click the Windows Start menu. Type CMD . Right-click the Command Prompt and click Run as Administrator . Type sfc /scannow and press Enter . Type DISM.exe /Online /Cleanup-image /Restorehealth and press Enter ."
+    }
+  ]
+}

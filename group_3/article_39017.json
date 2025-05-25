@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Set-the-Time-on-a-Cisco-Router",
+  "title": "How to Set the Time on a Cisco Router: Quick Guide",
+  "steps": [
+    {
+      "title": "Set the time zone.",
+      "content": "Set the time zone. When you reset the time zone, the clock will reset. This means that if you set the time before you set the time zone, it will reset and you'll have to repeat the process. By setting the time zone first, you'll save yourself some extra work. You need to know your time zone in relation to Greenwich Mean Time (GMT). If you're in the central time zone, you're 6 hours behind GMT, so you'd indicate this via -6. For instance, you'd enter \"Router(config)# clock timezone CST -6\" ."
+    },
+    {
+      "title": "Configure Daylight Saving Time.",
+      "content": "Configure Daylight Saving Time. The time displayed will vary depending on the Daylight Saving Time code. If you're using the CST timezone from before, you'll enter \"Router(config)# clock summer-time CDT recurring\" . Use 'recurring' to indicate to the router to change between Daylight Savings Time and Standard Time automatically according to the accepted U.S. Daylight Savings Time rules."
+    },
+    {
+      "title": "Set the clock.",
+      "content": "Set the clock. After setting the time zone and Daylight Savings Time, you can set the clock. Use \"Router# clock set 10:50:00 Feb 17 2021\" . Use military time, which is a 24-hour clock instead of the AM/PM system. Include the seconds for the time. If you're not sure, or not that particular, you can set this to 00 . Use the month's three-letter abbreviation along with the date and year. To view the clock, use the show clock command. For example, enter \"Router# show clock\" . Most Cisco routers and switches don't have internal clocks that keep track of the time when powered off. This means that your router will most likely lose track of the local time when it's restarted. [1] X Research source"
+    }
+  ]
+}

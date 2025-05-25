@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Delay-in-C",
+  "title": "How to Delay in C",
+  "steps": [
+    {
+      "title": "Make your CPU work for some time without producing any noticeable event.",
+      "content": "Make your CPU work for some time without producing any noticeable event."
+    },
+    {
+      "title": "Do no other operation during that delay, in order to create a simple time-delay.",
+      "content": "Do no other operation during that delay, in order to create a simple time-delay."
+    },
+    {
+      "title": "Use a typical \"for\" loop followed by a null statement to implement time delay.",
+      "content": "Use a typical \"for\" loop followed by a null statement to implement time delay."
+    },
+    {
+      "title": "Write as follows, for an example:",
+      "content": "Write as follows, for an example: for (i=1 ; i<100 ; i++) ; The statement followed by the \";\" makes the computer execute the loop 100 times without any noticeable event. It just creates a time delay."
+    },
+    {
+      "title": "Use sleep() The function called sleep(int ms) declared in <TIME.H>which makes the program wait for the time in milliseconds specified.",
+      "content": "Use sleep() The function called sleep(int ms) declared in <TIME.H>which makes the program wait for the time in milliseconds specified."
+    },
+    {
+      "title": "Include the following line in your program before \"int main()\":",
+      "content": "Include the following line in your program before \"int main()\": #include <TIME.H>"
+    },
+    {
+      "title": "Insert, wherever you need your program to make a delay:",
+      "content": "Insert, wherever you need your program to make a delay: sleep(1000); Change the \"1000\" to the number of milliseconds you want to wait (for example, if you want to make a 2 second delay, replace it with \"2000\". Tip: On some systems the value might refer to seconds, instead of milliseconds. So sometimes 1000 isn't one second, but, in fact, 1000 seconds."
+    }
+  ]
+}

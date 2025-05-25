@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Solve-Related-Rates-in-Calculus",
+  "title": "How to Solve Related Rates in Calculus",
+  "steps": [
+    {
+      "title": "Read the entire problem carefully.",
+      "content": "Read the entire problem carefully. Related rate problems generally arise as so-called “word problems.” Whether you are doing assigned homework or you are solving a real problem for your job, you need to understand what is being asked. Before you begin doing anything, read the full problem. If you don't understand it, back up and read it again. [1] X Research source This graphic presents the following problem: “Air is being pumped into a spherical balloon at a rate of 5 cubic centimeters per minute. Determine the rate at which the radius of the balloon is increasing when the diameter of the balloon is 20 cm.” From reading this problem, you should recognize that the balloon is a sphere, so you will be dealing with the volume of a sphere. You should also recognize that you are given the diameter, so you should begin thinking how that will factor into the solution as well. Drawing a diagram of the problem can often be useful. In the case, you are to assume that the balloon is a perfect sphere, which you can represent in a diagram with a circle. Mark the radius as the distance from the center to the circle."
+    },
+    {
+      "title": "Determine what you are asked to solve.",
+      "content": "Determine what you are asked to solve. Any related rates problem consists of two or more changing elements, as well as any number of constant terms that will have some bearing on the answer. You need to read the problem and identify what you are being asked to solve. It is also helpful to recognize what information is in the problem that is not going to be part of the answer. [2] X Research source In the problem shown above, you should recognize that the specific question is about the rate of change of the radius of the balloon. Notice, however, that you are given information about the diameter of the balloon, not the radius. This will have to be adapted as you work on the problem. You should see that you are also given information about air going into the balloon, which is changing the volume of the balloon."
+    },
+    {
+      "title": "List the functions and variables.",
+      "content": "List the functions and variables. After you understand the problem, you should write down the information that you know, as well as the information that you don't know. Determine variables for each and write these down. Be as explicit as you can at this stage, so you do not risk confusing yourself later on. Any rates that are given in the problem should be expressed as derivatives with respect to time. Note that a derivative can be expressed symbolically using the “prime” notation, as r ′ {\\displaystyle r^{\\prime }} , or the more explicit d r d t {\\displaystyle {\\frac {dr}{dt}}} . These both indicate the derivative of radius with respect to time. [3] X Research source In this problem you should identify the following items: d V d t = 5 c m 3 / m i n {\\displaystyle {\\frac {dV}{dt}}=5cm^{3}/min} d = 20 c m . {\\displaystyle d=20cm.} d r d t = {\\displaystyle {\\frac {dr}{dt}}=} unknown rate of radius change, to be solved Note that the data given to you regarding the size of the balloon is its diameter. However, planning ahead, you should recall that the formula for the volume of a sphere uses the radius. Therefore, you should identify that variable as well: r = 10 c m . {\\displaystyle r=10cm.} (The radius is half the diameter.)"
+    },
+    {
+      "title": "Determine the function that relates the variables.",
+      "content": "Determine the function that relates the variables. The trickiest and most important step of solving a related rates problem is determining what formula you need to use that relates the data that you have. In this problem, you know the diameter and radius of a sphere, and you have information about the volume of a sphere. Therefore, the formula that you need should be the formula for the volume of a sphere. [4] X Research source V = 4 3 π r 3 {\\displaystyle V={\\frac {4}{3}}\\pi r^{3}}"
+    },
+    {
+      "title": "Differentiate with respect to time.",
+      "content": "Differentiate with respect to time. You should recognize that the formula itself is a representation of the volume in relation to the radius. However, for this problem, you are given the rate of the change of the volume (the air being pumped in) and you are asked for the rate of change of the radius. The rate of change is given by the first derivative of the equation. [5] X Research source d V d t = 4 π r 2 d r d t {\\displaystyle {\\frac {dV}{dt}}=4\\pi r^{2}{\\frac {dr}{dt}}}"
+    },
+    {
+      "title": "Substitute the known data.",
+      "content": "Substitute the known data. Refer back to your earlier notes in which you wrote down the values of the various functions and variables. Insert that data into the derivative function that you are working with. When you do this, you should find that one variable remains in the problem. This is the one that you are trying to solve. [6] X Research source In this problem, you know the rate of change of the volume and you know the radius. The only unknown is the rate of change of the radius, which should be your solution. d V d t = 4 π r 2 d r d t {\\displaystyle {\\frac {dV}{dt}}=4\\pi r^{2}{\\frac {dr}{dt}}} 5 = 4 π ∗ 10 2 d r d t {\\displaystyle 5=4\\pi *10^{2}{\\frac {dr}{dt}}} 5 = 400 π d r d t {\\displaystyle 5=400\\pi {\\frac {dr}{dt}}} 5 400 π = d r d t {\\displaystyle {\\frac {5}{400\\pi }}={\\frac {dr}{dt}}} 1 80 π = d r d t {\\displaystyle {\\frac {1}{80\\pi }}={\\frac {dr}{dt}}}"
+    },
+    {
+      "title": "Interpret your result.",
+      "content": "Interpret your result. Review your work and verify that you have answered the question as asked, and that your result is reasonable in terms of the data that was given. [7] X Research source In this case, your solution is for d r d t {\\displaystyle {\\frac {dr}{dt}}} , which is the rate of change of the radius. This is what the question asked for. You should then express your numerical answer with its units to present the final answer for the problem: d r d t = 1 80 π {\\displaystyle {\\frac {dr}{dt}}={\\frac {1}{80\\pi }}} centimeters per minute."
+    },
+    {
+      "title": "Read and understand the problem.",
+      "content": "Read and understand the problem. The first step is to read the problem carefully and interpret what is being asked. Think about the following problem: A baseball diamond is 90 feet square. A runner runs from first base to second base at 25 feet per second. How fast is he moving away from home plate when he is 30 feet from first base? You can diagram this problem by drawing a square to represent the baseball diamond. Label one corner of the square as \"Home Plate.\""
+    },
+    {
+      "title": "Determine what you are being asked to solve.",
+      "content": "Determine what you are being asked to solve. In this case, the question asks for the runner's speed. A speed is a rate of change of distance, so you should recognize that you are being asked for the derivative of the distance from home plate to the runner. Thinking about the situation, you should envision a right triangle that represents the baseball diamond. One leg of the triangle is the base path from home plate to first base, which is 90 feet. The second leg is the base path from first base to the runner, which you can designate by length r {\\displaystyle r} . You are asked to solve the problem when this distance is 30 feet. The rate of change of this distance, d r d t {\\displaystyle {\\frac {dr}{dt}}} , is the runner's speed. The hypotenuse of the right triangle is the straight line length from home plate to the runner (across the middle of the baseball diamond). Call this distance d {\\displaystyle d} . You aren't told this distance, but you can calculate it from the Pythagorean Theorem. If the two legs are 90 and 30, then the hypotenuse d {\\displaystyle d} is 90 2 + 30 2 {\\displaystyle {\\sqrt {90^{2}+30^{2}}}} . Thus, d = 30 10 {\\displaystyle d=30{\\sqrt {10}}} . The actual question is for the rate of change of this distance, or how fast the runner is moving away from home plate. This will be the derivative, d d d t {\\displaystyle {\\frac {dd}{dt}}} ."
+    },
+    {
+      "title": "Find the formula that relates all the terms.",
+      "content": "Find the formula that relates all the terms. In this case, the baseball diamond can be represented by a right triangle, so you should immediately think of the Pythagorean Theorem, a 2 + b 2 = c 2 {\\displaystyle a^{2}+b^{2}=c^{2}} . Your task is to translate the a , b , c {\\displaystyle a,b,c} into the terms of your problem. The first leg, a {\\displaystyle a} , is the distance from home to first, 90 feet. The second leg, b {\\displaystyle b} , is the distance from first to the runner. Use the variable r {\\displaystyle r} . You are asked to solve the problem for the instant when r = 30 {\\displaystyle r=30} . The hypotenuse, c {\\displaystyle c} , is the distance from home to the runner, d {\\displaystyle d} . Write out the new equation: d 2 = 90 2 + r 2 {\\displaystyle d^{2}=90^{2}+r^{2}}"
+    },
+    {
+      "title": "Find the derivative of the formula.",
+      "content": "Find the derivative of the formula. To go from distances to rates of change (speed), you need the derivative of the formula. Take the derivative of both sides of the equation with respect to time (t). 2 d d d d t = 2 r d r d t {\\displaystyle 2d{\\frac {dd}{dt}}=2r{\\frac {dr}{dt}}} Note that the constant term, 90 2 {\\displaystyle 90^{2}} , drops out of the equation when you take the derivative."
+    },
+    {
+      "title": "Solve for the rate that you want to find.",
+      "content": "Solve for the rate that you want to find. Using the derivative formula, insert the values that you know, and simplify to find the solution. 2 d d d d t = 2 r d r d t {\\displaystyle 2d{\\frac {dd}{dt}}=2r{\\frac {dr}{dt}}} 2 ∗ 30 10 d d d t = 2 ∗ 30 ∗ 25 {\\displaystyle 2*30{\\sqrt {10}}{\\frac {dd}{dt}}=2*30*25} d d d t = 2 ∗ 30 ∗ 25 2 ∗ 30 10 {\\displaystyle {\\frac {dd}{dt}}={\\frac {2*30*25}{2*30{\\sqrt {10}}}}} d d d t = 25 10 {\\displaystyle {\\frac {dd}{dt}}={\\frac {25}{\\sqrt {10}}}}"
+    },
+    {
+      "title": "Interpret your result.",
+      "content": "Interpret your result. The rate of change of the hypotenuse, or the speed of the runner moving away from home plate, is 25 10 {\\displaystyle {\\frac {25}{\\sqrt {10}}}} feet per second. Converting this to a more understandable rate, the runner is moving about 7.9 feet per second away from home plate at that instant."
+    },
+    {
+      "title": "Read and understand the problem.",
+      "content": "Read and understand the problem. [8] X Research source Consider the following problem: Water flows at 8 cubic feet per minute into a cylinder with radius 4 feet. How fast is the water level rising? Diagram this situation by sketching a cylinder. Make a horizontal line across the middle of it to represent the water height."
+    },
+    {
+      "title": "Determine what you are being asked to solve.",
+      "content": "Determine what you are being asked to solve. You are told that water is filling a cylinder, which implies that you will be measuring the volume of the cylinder in some way. You are asked for the rate of change of the height of the water. As the water fills the cylinder, the volume of water, which you can call V {\\displaystyle V} , is increasing. The rate of the increase, d V d t {\\displaystyle {\\frac {dV}{dt}}} , is the amount of the water flow, or 8 cubic feet per minute. The height of the water, h {\\displaystyle h} , is not given. The rate of change of the height, d h d t {\\displaystyle {\\frac {dh}{dt}}} , is the solution to the problem. You are also told that the radius of the cylinder r {\\displaystyle r} is 4 feet."
+    },
+    {
+      "title": "Find a formula to connect the information that you know and need to solve.",
+      "content": "Find a formula to connect the information that you know and need to solve. In this case, you are working with a cylinder, its volume, its height and its radius. The formula that relates these terms is: V = π r 2 h {\\displaystyle V=\\pi r^{2}h}"
+    },
+    {
+      "title": "Find the derivative of the formula to find the rates of change.",
+      "content": "Find the derivative of the formula to find the rates of change. Using this equation, take the derivative of each side with respect to time t {\\displaystyle t} to get an equation involving rates of change: V = π r 2 h {\\displaystyle V=\\pi r^{2}h} d V d t = π r 2 d h d t {\\displaystyle {\\frac {dV}{dt}}=\\pi r^{2}{\\frac {dh}{dt}}}"
+    },
+    {
+      "title": "Insert the known values to solve the problem.",
+      "content": "Insert the known values to solve the problem. You know the rate of change of the volume and you know the radius of the cylinder. Insert these and simplify to find the rate that the water level rises: d V d t = π r 2 d h d t {\\displaystyle {\\frac {dV}{dt}}=\\pi r^{2}{\\frac {dh}{dt}}} 8 = π ( 4 2 ) d h d t {\\displaystyle 8=\\pi (4^{2}){\\frac {dh}{dt}}} 8 = 16 π d h d t {\\displaystyle 8=16\\pi {\\frac {dh}{dt}}} 8 16 π = d h d t {\\displaystyle {\\frac {8}{16\\pi }}={\\frac {dh}{dt}}} 1 2 π = d h d t {\\displaystyle {\\frac {1}{2\\pi }}={\\frac {dh}{dt}}}"
+    },
+    {
+      "title": "Interpret your result.",
+      "content": "Interpret your result. As the water pours into the cylinder at a rate of 8 cubic feet per minute, the rate of change of the height is 1 2 π {\\displaystyle {\\frac {1}{2\\pi }}} feet per minute. Converting this to a more understandable rate, this is about 0.16 feet per minute, or almost 2 inches per minute."
+    }
+  ]
+}

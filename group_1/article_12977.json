@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Disable-Autorun-in-Windows",
+  "title": "How to Disable Autorun in Windows",
+  "steps": [
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the button with the Windows logo in the taskbar. By default, it's in the lower-left corner."
+    },
+    {
+      "title": "Type AutoPlay Settings and press ↵ Enter.",
+      "content": "Type AutoPlay Settings and press ↵ Enter . This opens the AutoPlay Settings menu for Windows."
+    },
+    {
+      "title": "Click the toggle switch below Autoplay.",
+      "content": "Click the toggle switch below Autoplay. It's at the top of the menu. This disables Autoplay and Autorun for your Windows computer. When you insert a drive, you will need to open it manually in File Explorer and run any programs automatically."
+    },
+    {
+      "title": "Select \"Take No Action\" in the menu below \"Removable Drive.\"",
+      "content": "Select \"Take No Action\" in the menu below \"Removable Drive.\" This ensures that Windows does not open a folder or automatically run any files when a removable drive, such as a CD-ROM or USB flash drive is inserted."
+    },
+    {
+      "title": "Select \"Take No Action\" in the menu below \"Memory Card.\"",
+      "content": "Select \"Take No Action\" in the menu below \"Memory Card.\" This ensures that Windows will not automatically open a memory card or automatically run any files when a memory card is inserted."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the button with the Windows logo in the taskbar. By default, it's in the lower-left corner. Group Policy Editor is not available for Windows 10: Home Edition."
+    },
+    {
+      "title": "Type Run and press ↵ Enter.",
+      "content": "Type Run and press ↵ Enter . This launches a program called \"Run.\" You can also click the Run icon in the Windows Start menu."
+    },
+    {
+      "title": "Type Gpedit.msc into Run and click Ok.",
+      "content": "Type Gpedit.msc into Run and click Ok . Use the field in the center of Run to enter \"Gpedit.msc.\" Then click Ok or press Enter . This launches the Group Policy Editor. If asked to enter an administrative password, enter the admin password and click Allow ."
+    },
+    {
+      "title": "Double-click Administrative Templates under \"User Configuration.\"",
+      "content": "Double-click Administrative Templates under \"User Configuration.\" \"Administrative Templates\" can be found under both \"User Configuration\" and \"Computer Configuration\" Click the one under \"User Configuration\" to expand the Administrative Templates menu."
+    },
+    {
+      "title": "Double-click Windows Components.",
+      "content": "Double-click Windows Components . This displays the administrative template folders listed under \"Windows Components.\""
+    },
+    {
+      "title": "Double-click AutoPlay Policies.",
+      "content": "Double-click AutoPlay Policies . This opens the folder containing AutoPlay administrative templates."
+    },
+    {
+      "title": "Double-click Turn off AutoPlay.",
+      "content": "Double-click Turn off AutoPlay . This opens the administrative template that allows you to disable AutoPlay and Autorun."
+    },
+    {
+      "title": "Click the radio option next to \"Enabled.\"",
+      "content": "Click the radio option next to \" Enabled.\" It's at the top of the template on the left-hand side of the Window. When this template is enabled, AutoPlay and Autorun will be disabled on all drives, including removable USB drives, disk drives."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . It's in the lower-right corner of the window. This applies to the new settings."
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . This closes the Group Policy Editor. [2] X Research source"
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Once you apply the new setting, restart your computer to ensure the new settings take effect."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the button with the Windows logo in the taskbar. By default, it's in the lower-left corner. Warning: Making changes to the Windows registry can cause permanent damage to your computer. Continue at your own risk to do not alter anything if you don't know what it does."
+    },
+    {
+      "title": "Type Run and press ↵ Enter.",
+      "content": "Type Run and press ↵ Enter . This launches a program called \"Run.\" You can also click the Run icon in the Windows Start menu."
+    },
+    {
+      "title": "Type Regedit.exe into Run and click Ok.",
+      "content": "Type Regedit.exe into Run and click Ok . Use the field in the center of Run to enter \"Regedit.exe.\" Then click Ok or press Enter . This launches the Registry Editor. If asked if you want to allow the Registry Editor to make changes to your system, click Yes ."
+    },
+    {
+      "title": "Double-click HKEY_CURRENT_USER.",
+      "content": "Double-click HKEY_CURRENT_USER . It's in the menu to the left of Registry Editor. Double-click this option to expand it."
+    },
+    {
+      "title": "Double-click Software.",
+      "content": "Double-click Software . It's below \"HKEY_CURRENT_USER.\" This expands the Software folder."
+    },
+    {
+      "title": "Double-click Microsoft.",
+      "content": "Double-click Microsoft . It's in the Software folder. This expands the Microsoft folder."
+    },
+    {
+      "title": "Double-click Windows.",
+      "content": "Double-click Windows . It's in the Microsoft folder. This expands the Windows folder."
+    },
+    {
+      "title": "Double-click CurrentVersion.",
+      "content": "Double-click CurrentVersion . It's in the Microsoft folder. This expands the CurrentVersion folder."
+    },
+    {
+      "title": "Double-click Poicies.",
+      "content": "Double-click Poicies . It's in the CurrentVersion folder. This expands the Policies folder."
+    },
+    {
+      "title": "Double-click Explorer.",
+      "content": "Double-click Explorer . It's in the Policies folder. This expands the Explorer folder. The full path in the Registry Editor is \"Computer\\HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\""
+    },
+    {
+      "title": "Double-click NoDriveTypeAutoRun.",
+      "content": "Double-click NoDriveTypeAutoRun . It's the only option under \"Explorer.\" This allows you to change the policy with regards to Autorun in Registry Editor."
+    },
+    {
+      "title": "Enter one of the follow values.",
+      "content": "Enter one of the follow values. Each of the following values affects Autorun in a different way. Enter one of the following values of your choice in the \"Value data\" field. The values are as follows: \" FF :\" This disables Autorun on all drives. \" 20 :\" This disables Autorun on the CD-ROM only. \" 4 :\" This disables Autorun on all removable drives. \" 8 :\" This disables Autorun on all fixed drives. \" 10 :\" This disables Autorun on all network drives. \" 40 :\" This disables Autorun on the RAM disk only. \" 1 :\" This disables Autorun on all unknown drives. \" 91 :\" This sets Autorun to function as normal."
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . This saves the new value and setting for Autorun. [3] X Research source [4] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Extract-a-Tgz-File-in-Windows-from-the-Command-Line",
+  "title": "How to Extract a Tgz File in Windows from the Command Line",
+  "steps": [
+    {
+      "title": "Click the Windows Start Menu .",
+      "content": "Click the Windows Start Menu . It's the icon with the Windows logo. By default, it is in the lower-left corner in Windows 10. [2] X Research source"
+    },
+    {
+      "title": "Type CMD.",
+      "content": "Type CMD . This displays the Command Prompt in the Windows Start menu. [3] X Research source"
+    },
+    {
+      "title": "Right-click the Command Prompt and click Run as Administrator.",
+      "content": "Right-click the Command Prompt and click Run as Administrator . The Windows Command Prompt has an icon that resembles a black screen with a white text cursor. Right-click the Command Prompt to display a context menu. Click Run as Administrator at the top to launch the Command Prompt with administrative privileges. [4] X Research source You must be logged in to an administrative account in order to launch an app as an administrator."
+    },
+    {
+      "title": "Type tar -xvzf.",
+      "content": "Type tar -xvzf . This is the beginning of the command to extract a \".tar\" file. Do not press \"Enter\" just yet."
+    },
+    {
+      "title": "Press Space and enter the path to the tar file.",
+      "content": "Press Space and enter the path to the tar file. Add a space after the \"tar -xvzf\" command and then enter the path to the location of the \".tgz\" file. For example, if it is in your \"Downloads\" folder, you would enter \"C:\\Users\\username\\Downloads\\\". You can find the path to a file by navigating to the file in File Explorer. Right-click the address bar at the top and click Copy Address . You can then paste it into the Command Prompt."
+    },
+    {
+      "title": "Enter the filename.",
+      "content": "Enter the filename. Immediately after the path, enter the file name. For example, \"archive.tgz.\" [5] X Research source"
+    },
+    {
+      "title": "Press Space and then type -C.",
+      "content": "Press Space and then type -C . After entering the filename, add a space followed by \"-C\"."
+    },
+    {
+      "title": "Add a space and enter the path to where you want to extract the file to.",
+      "content": "Add a space and enter the path to where you want to extract the file to. Immediately after \"-C\", add another space and then enter the path you want to extract the file to. For example, if you want to extract the contents of the folder to your \"Documents\" folder, you would enter \"C:\\Users\\username\\Documents.\". The entire command should look something like tar -xvzf C:\\user\\username\\Downloads\\archive.tgz -C C:\\user\\username\\Documents"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This extracts the contents of the tar file to the folder you specified."
+    }
+  ]
+}

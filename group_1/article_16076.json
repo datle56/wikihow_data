@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Execute-INSTALL.sh-Files-in-Linux-Using-Terminal",
+  "title": "How to Run an INSTALL.sh Script on Linux in 4 Easy Steps",
+  "steps": [
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. On most Linux desktop environments, you can open a Terminal by pressing Ctrl + Alt + T . [1] X Research source Before installing software, make sure to check the README or INSTALL file that came in your download for specific instructions and installation options."
+    },
+    {
+      "title": "Use cd to enter the folder that contains the install.sh script.",
+      "content": "Use cd to enter the folder that contains the install.sh script. For example, if install.sh is in your Downloads folder, type cd ~/Downloads and press Enter to enter that directory. If the file you downloaded is compressed into a TGZ or TAR.GZ archive, be sure to unpack the files first. You can extract a TGZ or TAR.GZ file using the command tar -xzvf filename.tgz . To make sure you’re in the right directory , type ls -a and press Enter . You should see your install.sh file, as well as all other files in the directory."
+    },
+    {
+      "title": "Make the install.sh file executable.",
+      "content": "Make the install.sh file executable. The trick to getting the install.sh script to run is to change its permissions . To do this, type chmod +x install.sh and press Enter . [2] X Research source If you're unable to change the permissions, you'll need root access . Instead, run sudo chmod +x install.sh and press Enter . If you don’t see an error, you’ll know the install script is now executable."
+    },
+    {
+      "title": "Execute the install.sh script.",
+      "content": "Execute the install.sh script. To do this with root access, type sudo ./install.sh and press Enter . [3] X Research source You can also use the command sudo bash install.sh or sudo sh install.sh to run the script. If you're just installing the software in your own home directory and don't need root permissions, you can use omit sudo and use ./install.sh instead. Depending on the script and app you're installing, you may be prompted to complete additional steps to install the software ."
+    }
+  ]
+}

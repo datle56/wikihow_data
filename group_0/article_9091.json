@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Configure-a-Linksys-Router",
+  "title": "How to Configure a Linksys Router",
+  "steps": [
+    {
+      "title": "Connect your computer to your Linksys router.",
+      "content": "Connect your computer to your Linksys router. If your Linksys router is Wi-Fi capable, you can connect to it via Wi-Fi. If not, or if Wi-Fi is not configured, you can use an ethernet (network) cable. To connect with an ethernet cable, plug one end of the cable into your computer's ethernet port (there should only be one port on your computer that accommodates the cable). When connecting via Wi-Fi , get pretty close to the router and connect to the wireless network—when scanning for networks, it should be the first in the list. Check the sticker on the router to find the exact Wi-Fi network name (SSID) and passphrase."
+    },
+    {
+      "title": "",
+      "content": "Go to http://192.168.1.1 in a web browser. This is the default web address for all Linksys routers. Unless something has changed in your network, visiting this address in your web browser should take you to a sign-in page. Open any web browser and enter in the router’s address into the address bar. If you're using a Linksys Smart Wi-Fi router, you can visit http://myrouter.local instead. If that web address doesn't bring up a website, it may be configured to have a different IP address . If you've confirmed that the IP address is correct, web management may be disabled. If this is the case, press and hold the Reset button on the back of your router to reset it to factory defaults."
+    },
+    {
+      "title": "Log in to your router.",
+      "content": "Log in to your router. The default password is admin . Try entering that password while leaving the username field blank (if there is one) and clicking OK or Log in . If that doesn't work, try admin as both the username and password. Once you're signed in, you'll see the web panel. There may be an admin login and password printed on the router or your documentation. If the password was changed at some point, you can reset the router by pressing and holding the Reset button"
+    },
+    {
+      "title": "Click the Wireless tab.",
+      "content": "Click the Wireless tab. It'll be at the top of the page in the classic Linksys interface. This is where you can configure things like your wireless network name, password, and preferences. If you don't see this tab, click the Setup tab at the top-left corner first."
+    },
+    {
+      "title": "Enter a name for your wireless network.",
+      "content": "Enter a name for your wireless network. The default name, which often begins with linksys , appears in the \"Network Name (SSID)\" field. This is the name that appears in the list of available networks when you connect to Wi-Fi. If you want to change it to something else, you can type that name here. Make sure you don’t give out any personal information, as anyone can see this name. You can keep the Network Mode and Channel set to the default, unless specified otherwise by your ISP. If you don't want anyone to see what your wireless network is called, you can choose the option to disable broadcasting, which should be on the same page. If you choose this option, anyone who connects to your network will need to know the exact name of the network and enter it when connecting. Click Save Settings if you make any changes."
+    },
+    {
+      "title": "Click the Wireless Security tab.",
+      "content": "Click the Wireless Security tab. It's in the menu bar near the top of the page. This is where you can change your Wi-Fi password."
+    },
+    {
+      "title": "Enter a password into the Passphrase field.",
+      "content": "Enter a password into the Passphrase field. This is the password you'll need to enter when connecting to Wi-Fi. Keep in mind that passwords are case-sensitive. If the \"Security Mode\" menu is set to WEP , change it to WPA2/WPA Mixed Mode for the best security. This requires a passcode of 8 characters or more. Click Save Settings if you change your password any other details on this page."
+    },
+    {
+      "title": "Click the Applications & Gaming menu.",
+      "content": "Click the Applications & Gaming menu. If you have programs that need unrestricted access to specific ports, you’ll need to open them up through your router’s configuration page. In order to open ports, you’ll need to know the IP address for the device running the program. To check the IP address of your computer, see this guide . To see a list of devices connected to your router and their respective IP addresses, click the Status tab and then select Local Network. Click the DHCP Client Table button to see the list."
+    },
+    {
+      "title": "Click Port Range Forwarding.",
+      "content": "Click Port Range Forwarding . It's another tab at the top of the page."
+    },
+    {
+      "title": "Enter the product or application name(s) for the port you want to forward.",
+      "content": "Enter the product or application name(s) for the port you want to forward. These go into the left panel under \"Application name.\" This is just for your reference. For example, if you're going to open ports for your Xbox, enter Xbox on a line. For example, the Xbox requires ports 80-88 and 3074 to be opened. You can forward ports in ranges, so you'll be able to forward 80-88 in one field and 3074 in another. So, in this case, you'd enter xbox into two blanks."
+    },
+    {
+      "title": "Choose your starting and ending port for each application or product.",
+      "content": "Choose your starting and ending port for each application or product. Type in the port(s) required by the product. If you are only opening one port, enter the same value in both the “Start” and “End” fields."
+    },
+    {
+      "title": "Select your protocol.",
+      "content": "Select your protocol. Your product should tell you which specific protocol ( TCP or UDP ) the open port needs to be set for. If you are unsure, select Both ."
+    },
+    {
+      "title": "Enter the IP address that you are forwarding the port to.",
+      "content": "Enter the IP address that you are forwarding the port to. For example, if you're using an Xbox, you'd enter the Xbox Live IP address (192.168.1.32). This is the address for the device that is running the application."
+    },
+    {
+      "title": "Check the box next to \"Enabled.\"",
+      "content": "Check the box next to \"Enabled.\" Every line with port forwarding rules has its own \"Enabled\" box. Check each box to enable port forwarding for those ports."
+    },
+    {
+      "title": "Click Save Settings.",
+      "content": "Click Save Settings . This saves your changes."
+    },
+    {
+      "title": "Click the Access Restrictions tab.",
+      "content": "Click the Access Restrictions tab. It's at the top of the admin webpage. This section of the router configuration will allow you to set restrictions for any device on the network. You can block all internet access at designated times, as well as block specific websites or keywords. This is useful if you want the kids’ computer to not have access in the evening, or to limit employee access during the day."
+    },
+    {
+      "title": "Create an access policy.",
+      "content": "Create an access policy. To do this: Click the \"Access Blocking Policy\" menu and select a number (1-10). You can create a name up to 10 different policies, which are sets of blocking settings. Enter a name for the policy into the \"Set Policy Name\" field. Select Enabled ."
+    },
+    {
+      "title": "Click Edit List or Edit List of PCs.",
+      "content": "Click Edit List or Edit List of PCs . One of these options will be under your policy's name."
+    },
+    {
+      "title": "Add devices to the policy.",
+      "content": "Add devices to the policy. You can add devices by IP address or MAC address ."
+    },
+    {
+      "title": "Click Save Settings.",
+      "content": "Click Save Settings . This saves the devices to the list."
+    },
+    {
+      "title": "Click Close.",
+      "content": "Click Close . This closes the devices list and returns you to your policy."
+    },
+    {
+      "title": "Choose whether to Deny or Allow internet access.",
+      "content": "Choose whether to Deny or Allow internet access. For example, if you want to block internet access from 3 PM to 5 PM every weekday, you'd select Deny here."
+    },
+    {
+      "title": "Set the schedule.",
+      "content": "Set the schedule. Use the Days and Times sections to set when you want internet or websites blocked or allowed. If you select 24 Hours , this blocks or allows the entire selected day. For example, if you want to block the internet on Saturdays, you'd select Sat and then 24 Hours ."
+    },
+    {
+      "title": "Block specific websites or services.",
+      "content": "Block specific websites or services. In the section below the schedule, you can enter specific websites or apps you want the router to block. Websites entered here will be inaccessible to anyone on the policy list. You can also block websites based on keywords contained within the websites, allowing you to block much more than single sites. To block a website, enters its URL into one of the URL fields under \"Website Blocking by URL address.\" To block an application or service, select it from the \"Applications\" menu and then click the right-arrow button to move it to the blocked List. You can remove an item from the blocked list by clicking it and then clicking the right arrow button. You can enter an application or port manually below the list if you don't see the one you want to block. Some models have drop-down menus for selecting applications."
+    },
+    {
+      "title": "Click Save Settings.",
+      "content": "Click Save Settings . Your changes will take effect immediately."
+    }
+  ]
+}

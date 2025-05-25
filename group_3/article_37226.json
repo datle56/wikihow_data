@@ -1,0 +1,194 @@
+{
+  "url": "https://www.wikihow.com/Reset-Graphics-Driver",
+  "title": "How to Reset Your Graphics Drivers",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+Ctrl+⇧ Shift+B.",
+      "content": "Press ⊞ Win + Ctrl + ⇧ Shift + B . This is by far the easiest way to reset your graphics drivers. Simply press the Windows Key , plus Shift , Ctrl , an B at the same time. You will hear a beep and your screen will flash quickly. This indicates your graphics drivers have been reset."
+    },
+    {
+      "title": "Download Custom Resolution Utility.",
+      "content": "Download Custom Resolution Utility. Custom Resolution Utility (or CRU) is a free application that allows you to set a custom resolution for your monitor. It also comes with an application that allows you to reset your graphics driver. Use the following steps to download the CRU zip file: Go to https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU in a web browser. Click cru-1.5.1.zip near the top of the page next to \"Download.\""
+    },
+    {
+      "title": "Extract the CRU zip file.",
+      "content": "Extract the CRU zip file. Double-click the CRU zip file you just downloaded within your web browser or from within your Downloads folder. Extract the contents of the zip file to a location that you can remember."
+    },
+    {
+      "title": "Run the \"Restart64.exe\" file.",
+      "content": "Run the \"Restart64.exe\" file. It's one of the files that was extracted from the CRU zip file. Your screen will flash a couple times before the image returns. Then you will see a pop-up informing you that your graphics drivers have been reset. If you receive a message informing you that Windows Defender prevented you from running an unrecognized app because it might put your PC at risk, simply click More Info . Then click Run Anyway ."
+    },
+    {
+      "title": "Click Exit.",
+      "content": "Click Exit . After your run the application, you should see a pop-up informing you that your graphics drivers have been restarted. Click Exit to close the application. Alternatively, you can click Restart again to reset your graphics drivers a second time."
+    },
+    {
+      "title": "Open Powershell as an admin.",
+      "content": "Open Powershell as an admin. Powershell is a command-line interface you can use to enter text commands. Use the following steps to open Powershell . Press Windows Key + X . Click Windows Powershell (Admin) ."
+    },
+    {
+      "title": "Type the command to show your graphics driver information.",
+      "content": "Type the command to show your graphics driver information. Enter the following command and press Enter to show your graphics driver information: pnputil /enum-devices /class Display"
+    },
+    {
+      "title": "Copy the Instance ID.",
+      "content": "Copy the Instance ID. There should be a long string of numbers and letters after \"Instance ID\". Highlight the entire string and press Ctrl + C to copy it."
+    },
+    {
+      "title": "Enter the command to restart your graphics driver.",
+      "content": "Enter the command to restart your graphics driver. You will see your screen go black for a second or two and then your display will return. This indicates your graphics drivers have been reset. Use the following steps to reset your graphics driver. [1] X Research source Type pnputil /restart-device Paste the Instance ID in quotes. For example, pnputil /restart-device \"PCI\\VEN_8086&DEV_3EA0&SUBSYS_14311043&REV_00\\3&11583659&1&10\" Press Enter ."
+    },
+    {
+      "title": "Press ⇧ Shift+Ctrl+Esc.",
+      "content": "Press ⇧ Shift + Ctrl + Esc . This is the keyboard shortcut to open Task Manager . [2] X Research source"
+    },
+    {
+      "title": "Click the Processes tab.",
+      "content": "Click the Processes tab. It's the first tab at the top of Task Manager."
+    },
+    {
+      "title": "Scroll down to \"Background Processes.\"",
+      "content": "Scroll down to \"Background Processes.\" It's the second header below \"Apps.\""
+    },
+    {
+      "title": "Look for any AMD or Nvidia processes.",
+      "content": "Look for any AMD or Nvidia processes. If you have an AMD graphics card, you will see processes involving AMD. If you have an Nvidia graphics card, you will see processes involving Nvidia. Processes are listed in alphabetical order."
+    },
+    {
+      "title": "Select a process and click End Task.",
+      "content": "Select a process and click End Task . When you see an AMD or Nvidia process, click it to highlight it. Then click End Task in the lower-right corner. Repeat for all AMD or Nvidia tasks. This will reset your graphics driver. Your screen may flash or flicker when your drivers reset."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. Use the following steps to open the Device Manager: [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Press Windows Key + X . Click Device Manager ."
+    },
+    {
+      "title": "Expand \"Display Adapters.\"",
+      "content": "Expand \"Display Adapters.\" Click the bracket next to \"Display Adapters\" to display all your Graphics Drivers."
+    },
+    {
+      "title": "Right-click a graphics driver and click Disable Driver This disables your graphics driver.",
+      "content": "Right-click a graphics driver and click Disable Driver This disables your graphics driver. Your screen may flicker, or your system may restart. [4] X Research source If you have two or more graphics drivers, the other one will take over for the one that was just disabled"
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. After applying the default settings, restart your PC for them to take effect. To do so, click the Windows Start menu. Then click the Power icon. Click Restart ."
+    },
+    {
+      "title": "Open the Device Manager again.",
+      "content": "Open the Device Manager again. Once your PC restarts, open the Device Manager again."
+    },
+    {
+      "title": "Expand \"Display Adapters.\"",
+      "content": "Expand \"Display Adapters.\" Click the bracket next to \"Display Adapters\" to display all your Graphics Drivers."
+    },
+    {
+      "title": "Right-click your graphics driver and click Enable Device.",
+      "content": "Right-click your graphics driver and click Enable Device . This will restart your graphics driver and force it to reset. [5] X Research source If you have more than one graphics driver, you may need to repeat these steps with all of them."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. If you are still experiencing problems with your graphics drivers, you may want to try uninstalling them and reinstalling them. Alternatively, you may try updating Windows which will update all your drivers, including your graphics drivers . You can uninstall your drivers using the Device Manager. Use the following steps to open the Device Manager: [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Press Windows Key + X . Click Device Manager ."
+    },
+    {
+      "title": "Expand \"Display Adapters.\"",
+      "content": "Expand \"Display Adapters.\" Click the bracket next to \"Display Adapters\" to display all your Graphics Drivers."
+    },
+    {
+      "title": "Right-click your graphics driver(s).",
+      "content": "Right-click your graphics driver(s). Your graphics drivers will be listed below \"Display Adapters.\" Right-click your graphics driver to display a pop-out menu."
+    },
+    {
+      "title": "Click Uninstall device.",
+      "content": "Click Uninstall device . This displays a pop-up dialogue box. [7] X Research source"
+    },
+    {
+      "title": "Check \"Delete the driver software for this device\" and click Uninstall.",
+      "content": "Check \"Delete the driver software for this device\" and click Uninstall . Click the checkbox in the pop-up dialogue box. This will remove the driver software from the driver store. Then click Uninstall in the lower-right corner. Your computer screen may flicker, or restart on its own. [8] X Research source If you have more than one graphics driver, your other graphics driver will take over for the one you uninstalled."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. After you restart your computer, Windows will automatically reinstall your graphics drivers on its own. However, it may not install the latest graphics drivers. Alternatively, you can download the latest graphics drivers from your PC manufacturer or graphics card manufacturer's website. In order to do this, you will need to know which version of Windows you are using, as well as the make and model (and possibly serial number) of your PC, or the make and model of your graphics card. You can also use third-party applications, like Driver Easy, or Advanced Driver Updater to scan and install your drivers for you."
+    },
+    {
+      "title": "Open the Intel HD Graphics Control Panel.",
+      "content": "Open the Intel HD Graphics Control Panel. To do so, right-click your desktop and click \"Graphics Properties' . Alternatively, you can click the Windows Start menu and type \"Intel.\" Then click the Intel HD Graphics Control Panel."
+    },
+    {
+      "title": "Click 3D.",
+      "content": "Click 3D . It's the second option. It has an icon that resembles a 3D cube."
+    },
+    {
+      "title": "Click Restore Defaults.",
+      "content": "Click Restore Defaults . It's at the bottom of the app on the left. It has an icon that resembles a curved arrow pointing left."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . It's in the pop-up. This will restore your Intel graphics drivers to their default settings."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. After applying the default settings, restart your PC for them to take effect. To do so, click the Windows Start menu. Then click the Power icon. Click Restart . [9] X Research source"
+    },
+    {
+      "title": "Open the Nvidia Control Panel.",
+      "content": "Open the Nvidia Control Panel. To do so, right-click on your desktop and click Nvidia Control Panel . Alternatively, you can click the Windows Start menu and type \"Nvidia.\" Then click the Nvidia Control Panel app."
+    },
+    {
+      "title": "Click Manage 3D Settings.",
+      "content": "Click Manage 3D Settings . It's the second option below \"3D Settings\" in the panel to the left."
+    },
+    {
+      "title": "Click Restore.",
+      "content": "Click Restore . It's in the lower-right corner below the Settings window. This restores your Nvidia graphics drivers to their default settings. [10] X Research source"
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. After applying the default settings, restart your PC for them to take effect. To do so, click the Windows Start menu. Then click the Power icon. Click Restart ."
+    },
+    {
+      "title": "Open the AMD Radeon Settings app.",
+      "content": "Open the AMD Radeon Settings app. To do so, right-click on your desktop and click AMD Radeon Settings . Alternatively, you can click the Windows Start menu and type \"AMD.\" Then click the AMD Radeon Settings app."
+    },
+    {
+      "title": "Click the Preferences tab.",
+      "content": "Click the Preferences tab. It's the second tab at the bottom of the screen."
+    },
+    {
+      "title": "Click Restore Factory Defaults.",
+      "content": "Click Restore Factory Defaults . This restores your graphics drivers to their default settings."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. After applying the default settings, restart your PC for them to take effect. To do so, click the Windows Start menu. Then click the Power icon. Click Restart ."
+    },
+    {
+      "title": "Restart your Mac.",
+      "content": "Restart your Mac. Graphics drivers are not part of the macOS system. If you are experiencing problems with your graphics drivers, you will need to restart your system. Use the following steps to do so: Click the Apple icon in the upper-left corner. Click Restart Click Restart in the pop-up."
+    },
+    {
+      "title": "Reset the PRAM or NVRAM.",
+      "content": "Reset the PRAM or NVRAM. The PRAM or NVRAM is a small amount of memory your Mac uses to store system settings for quick access. This includes graphics driver information. Resetting your PRAM or NVRAM may resolve any issues are you having. However, you may need to adjust the system settings once you reset the PRAM or NVRAM. Use the following steps to reset your PRAM or NVRAM: [11] X Research source Shut down your Mac. Power on your Mac and immediately press and hold Command + Control + P + R . [12] X Research source Release the buttons after you hear the startup sound play twice, or until after you see the Apple logo appear and disappear twice."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal .",
+      "content": "Press Ctrl + Alt + T to open the Terminal . On Debian-based versions of Linux, the Terminal has an icon that resembles a black screen with a white cursor. You can open the Terminal in your Apps menu, or by using the keyboard shortcut. [13] X Research source"
+    },
+    {
+      "title": "Make a backup copy of your configuration.",
+      "content": "Make a backup copy of your configuration. You can use this to restore your configuration if anything goes wrong. Enter the following command and press Enter to make a backup copy of your configuration: sudo cp /etc/X11/xorg.conf /etc/X11/xorg.conf.bk"
+    },
+    {
+      "title": "Update your software repository.",
+      "content": "Update your software repository. You can use the following command to update your software repository on Debian-based versions of Linux: [14] X Research source sudo apt-get update"
+    },
+    {
+      "title": "List your graphics packages.",
+      "content": "List your graphics packages. Use the following command to list all the packages associated with your graphics driver. Replace \"[graphics card]\" with \"intel,\" \"amd,\" or \"nvidia,\" depending on which graphics card you have. apt-cache pkgnames [graphics card]"
+    },
+    {
+      "title": "Reinstall your graphics packages.",
+      "content": "Reinstall your graphics packages. Once you identify what graphics packages you have, use the following command to reinstall them. Replace \"[graphics package]\" with the name of the package you want to resinstall: [15] X Research source sudo apt install [graphics package]"
+    }
+  ]
+}

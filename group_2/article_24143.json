@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Install-XAMPP-for-Windows",
+  "title": "How to Download, Install, and Use XAMPP on Windows",
+  "steps": [
+    {
+      "title": "Open the XAMPP website.",
+      "content": "Open the XAMPP website. Go to https://www.apachefriends.org/index.html in your computer's web browser."
+    },
+    {
+      "title": "Click XAMPP for Windows.",
+      "content": "Click XAMPP for Windows . It's a grey button near the bottom of the page. Depending on your browser, you may first have to select a save location or verify the download. [1] X Research source The file should start downloading automatically. If it does not, click where it says Click here at the top. Then click one of the download links."
+    },
+    {
+      "title": "Double-click the downloaded file.",
+      "content": "Double-click the downloaded file. This file should be named something like xampp-windows-x64-8.2.12-0-VS16-installer.exe , or something similar. You can find it in your Downloads folder by default. If prompted to allow the XAMPP installer to make changes to your system, click Yes . You may have to click OK on a warning if you have User Account Control (UAC) activated on your computer. [2] X Research source"
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's at the bottom of the setup window."
+    },
+    {
+      "title": "Select components of XAMPP to install and click Next.",
+      "content": "Select components of XAMPP to install and click Next . By default, all XAMPP programs are included in the installation. Review the list of XAMPP attributes on the left side of the window; if you see an attribute you don't want to install as part of XAMPP, uncheck its box. Click Next when you are finished. The components include an Apache server, a MySQL database, FileZilla FTP server, a Mercury Mail Server, Apache Tomcat, PHP, Perl, PHPMyAdmin, Webalizer, and Fake Sendmail. Apache and PHP cannot be unchecked."
+    },
+    {
+      "title": "Select an installation location and click Next.",
+      "content": "Select an installation location and click Next . Click the folder-shaped icon to the right of the current installation destination, select a folder to install XAMPP in, and click Ok . If your computer has the UAC activated, avoid installing XAMPP in your hard drive's folder (e.g., OS (C:)' ). You can select a folder (e.g., Desktop ) and then click Make New Folder to create a new folder and select it as the installation destination. The default installation location is \"C:\\XAMPP.\""
+    },
+    {
+      "title": "Select your language and click Next.",
+      "content": "Select your language and click Next . Use the drop-down menu to select your language. Then click Next in the lower-right corner."
+    },
+    {
+      "title": "Begin installing XAMPP.",
+      "content": "Begin installing XAMPP. Click Next at the bottom of the window to do so. XAMPP will begin installing its files into the folder that you selected. If you run into any problems while trying to install XAMPP, you may need to disable your antivirus protection temporarily."
+    },
+    {
+      "title": "Click Finish when prompted.",
+      "content": "Click Finish when prompted. It's at the bottom of the XAMPP window. Doing so will close the window and open the XAMPP Control Panel, which is where you'll access your servers. XAMPP will launch on its own after you finish the installation."
+    },
+    {
+      "title": "Start the XAMPP Control Panel as an administrator.",
+      "content": "Start the XAMPP Control Panel as an administrator. You may run into some errors when trying to start certain programs that come with XAMPP. To avoid problems, you should run XAMPP as an administrator. Make sure you are signed into a Windows account with administrative privileges. Then, use the following steps to open the XAMPP Control Panel as an administrator: Click the Windows Start button. Type \"XAMPP\". Right-click the XAMPP Control Panel . Click Run as Administrator . Click Yes when prompted."
+    },
+    {
+      "title": "Click the checkbox next to any modules you want to install.",
+      "content": "Click the checkbox next to any modules you want to install. You may see a red \"X\" in the checkboxes next to Apache, MySQL, FileZilla, Mercury, and Tomcat. Click the checkbox next to any of these programs you want to install, then click ' Yes when prompted. A green checkbox will appear next to the program once it is installed."
+    },
+    {
+      "title": "Click Start to start a module.",
+      "content": "Click Start to start a module. Once you have installed the module you want to use, click Start next to any of the programs you want to start running."
+    },
+    {
+      "title": "Click one of the Admin buttons to open the programs.",
+      "content": "Click one of the Admin buttons to open the programs. You'll see the Admin button next to all installed programs in the XAMPP dashboard. Apache: Click Admin next to \"Apache\" to open the Apache dashboard. This will open a web page in your web browser that contains information about Apache, including How-to guides. Alternatively, you can type \"localhost/dashboard/\" into your web browser to open this page. MySQL: Click Admin next to \"MySQL\" to open the phpMyAdmin page for your local server. This is where you create and manage databases for your local server. Alternatively, you can type \"localhost/phpmyadmin/\" into your web browser to open this page."
+    },
+    {
+      "title": "Locate your website build.",
+      "content": "Locate your website build. After installing XAMPP, you'll need a place to save all your website build files. You'll save your website build in the \"htdocs\" folder in the XAMPP installation folder. Use the following steps to open it: Click Explorer in the XAMPP dashboard. Open the \"htdocs\" folder. Create a new folder for your website build."
+    },
+    {
+      "title": "Open your website build in a web browser.",
+      "content": "Open your website build in a web browser. Once you have a website build started, you can test your website build by entering \"localhost/[path to website]\" in your web browser. For example, if you create a test website in the \"htdocs\" folder and save it to a called \"test,\" you can open it by typing \"localhost/test\" into your web browser. [3] X Research source"
+    },
+    {
+      "title": "Click Stop to stop a module.",
+      "content": "Click Stop to stop a module. If you want to shut down your local server, click Stop next to the modules you are using. Once they are shut down, you will not be able to load your website in a web browser."
+    },
+    {
+      "title": "Resolve issues with Apache refusing to run.",
+      "content": "Resolve issues with Apache refusing to run. On some Windows 10 computers, Apache won't run due to a \"blocked port\". This can happen for a couple of reasons, but there's a relatively easy fix: [4] X Research source Click Config to the right of the \"Apache\" heading. Click Apache (httpd.conf) in the menu. [5] X Research source Scroll down to the \"Listen 80\" section (you can press Ctrl + F and type in listen 80 to find it faster). Replace \"80\" with any open port (e.g., \"81\" or \"9080\"). Press Ctrl + S to save the changes, then exit the text editor. Restart XAMPP by clicking Quit and then re-opening it in administrator mode from its folder."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Lock-Google-Safe-Search",
+  "title": "How to Lock SafeSearch on Google: Guide for Administrators & Parents",
+  "steps": [
+    {
+      "title": "Go to https://g.co/YourFamily.",
+      "content": "Go to https://g.co/YourFamily . Use this method to lock SafeSearch if you manage a Family Group on Google. You can also open the Family Link mobile app to follow these steps on your iPhone, iPad, or Android."
+    },
+    {
+      "title": "Select the family member.",
+      "content": "Select the family member. You'll see more options. Click or tap Go to Family Link if prompted."
+    },
+    {
+      "title": "Click or tap Content restrictions.",
+      "content": "Click or tap Content restrictions . It's centered on the page next to a filter icon."
+    },
+    {
+      "title": "Select Google Search.",
+      "content": "Select Google Search . It's near the middle of the menu next to a colored \"G\" icon."
+    },
+    {
+      "title": "Make sure Filter is selected.",
+      "content": "Make sure Filter is selected. Only the parent or guardian managing the family can change this; the child account or managed account is unable to change this and it's greyed out. [1] X Research source"
+    },
+    {
+      "title": "Sign into your Google Admin account at https://admin.google.com/.",
+      "content": "Sign into your Google Admin account at https://admin.google.com/ . Use this method if you are an admin for a Google Workspace for Education. Note that users in your organization who are under 18 already have SafeSearch locked as well as other restrictions, and you don't have to do anything."
+    },
+    {
+      "title": "Click ☰.",
+      "content": "Click ☰ . This will open a menu."
+    },
+    {
+      "title": "Click Apps.",
+      "content": "Click Apps . It's a 3x3 grid icon."
+    },
+    {
+      "title": "Click Additional Google Services.",
+      "content": "Click Additional Google Services . You'll see a message at the top of the page."
+    },
+    {
+      "title": "Click Change.",
+      "content": "Click Change . You can change the restrictions in the organization."
+    },
+    {
+      "title": "Select Settings for all organizational units and turn on everything.",
+      "content": "Select Settings for all organizational units and turn on everything. This changes the setting universally, so everyone in your organization has the same restrictions applied."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It can take up to 48 hours for this change to take effect. [2] X Research source"
+    },
+    {
+      "title": "Sign into your Google Admin account at https://admin.google.com/.",
+      "content": "Sign into your Google Admin account at https://admin.google.com/ . Use this method if you manage Chromebooks, such as a teacher or organization with access to any of the following: Google Workspace, Chrome Browser Enterprise Support, Chrome Enterprise Upgrade, ChromeOS devices bundled with Chrome Enterprise Upgrade, and Cloud Identity. Any restrictions you place on this Chromebook will not work if the user signs into the device with a different Gmail account."
+    },
+    {
+      "title": "Click ☰.",
+      "content": "Click ☰ . This will open a menu."
+    },
+    {
+      "title": "Click Devices.",
+      "content": "Click Devices . It's next to an icon of a phone and laptop."
+    },
+    {
+      "title": "Click Chrome > Settings.",
+      "content": "Click Chrome > Settings . The User & browser settings page will open. If you have Chrome Enterprise, go to ☰ > Chrome browser > Settings instead."
+    },
+    {
+      "title": "Find the SafeSearch entry.",
+      "content": "Find the SafeSearch entry. It's sometimes hidden in the Content menu header."
+    },
+    {
+      "title": "Make sure SafeSearch is locked.",
+      "content": "Make sure SafeSearch is locked. For K-12 domains, the default is always \"Always use SafeSearch for Google Web Search queries.\" For all other domains, this is set to \"Do not enforce SafeSearch for Google Web Search queries.\" If you need to, turn the lock on."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . Click Override if you're editing a group within the organization, or click Inherit to reset the default settings. [3] X Research source"
+    },
+    {
+      "title": "Open Notepad as an administrator.",
+      "content": "Open Notepad as an administrator. Press the Win key and type in Notepad , then right-click the first search result and select Run as administrator to open the app."
+    },
+    {
+      "title": "Open your hosts file.",
+      "content": "Open your hosts file. Press Ctrl + O to open a file, then find your hosts file. It's usually located here: C:\\Windows\\System32\\drivers\\etc\\hosts"
+    },
+    {
+      "title": "Open Command Prompt.",
+      "content": "Open Command Prompt. Press the Win key and type in command prompt , and click the first search result to open the app."
+    },
+    {
+      "title": "Type cmd and press ↵ Enter.",
+      "content": "Type cmd and press ↵ Enter . This ensures that no previous coding in Command Prompt affects the current reading."
+    },
+    {
+      "title": "Type ping forcesafesearch.google.com and press ↵ Enter.",
+      "content": "Type ping forcesafesearch.google.com and press ↵ Enter . Take note of the IP address. The IP address is written after \"forcesafesearch.google.com.\""
+    },
+    {
+      "title": "Enter this IP address in the hosts file in Notepad.",
+      "content": "Enter this IP address in the hosts file in Notepad. You'll need to enter it in a specific order. For example, write 216.239.38.120 www.google.com #forcesafesearch."
+    },
+    {
+      "title": "Save the hosts file.",
+      "content": "Save the hosts file. Go to File > Save or press Ctrl + S . This will prevent any Windows computer on your network, using any browser, from turning off SafeSearch."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can search for Terminal using LaunchPad or find it in the Utilities section of Finder."
+    },
+    {
+      "title": "Type ping forcesafesearch.google.com and press ↵ Enter.",
+      "content": "Type ping forcesafesearch.google.com and press ↵ Enter . Take note of the IP address. The IP address is written after \"forcesafesearch.google.com.\""
+    },
+    {
+      "title": "Enter sudo nano /private/etc/hosts and press ⏎ Return.",
+      "content": "Enter sudo nano /private/etc/hosts and press ⏎ Return . This opens the host file."
+    },
+    {
+      "title": "Enter the IP address in the hosts file.",
+      "content": "Enter the IP address in the hosts file. You'll need to enter it in a specific order. For example, write 216.239.38.120 www.google.com #forcesafesearch."
+    },
+    {
+      "title": "Press Control+O and ⏎ Return.",
+      "content": "Press Control + O and ⏎ Return . This saves your changes and closes the window."
+    },
+    {
+      "title": "Update your DNS configuration.",
+      "content": "Update your DNS configuration. A personal gateway, for example, would not be able to work this way. You must be the manager of a network at a school or workplace."
+    },
+    {
+      "title": "Set the DNS entry for google.com to a CNAME for forcesafesearch.google.com.",
+      "content": "Set the DNS entry for google.com to a CNAME for forcesafesearch.google.com. This requires a bit more technical ability. [4] X Research source"
+    }
+  ]
+}

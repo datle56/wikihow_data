@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Days-of-the-Week-Like-Rainman",
+  "title": "How to Calculate Days of the Week Like Rainman",
+  "steps": [
+    {
+      "title": "First we need a number for every day of the week:",
+      "content": "First we need a number for every day of the week: [1] X Research source Monday is, 1 Tuesday is, 2 Wednesday is, 3 Thursday is, 4 Friday is, 5 Saturday is, 6 Sunday is, 0 or 7"
+    },
+    {
+      "title": "Have a number for every month:",
+      "content": "Have a number for every month: [2] X Research source January is, 6* February is, 2* March is, 2 April is, 5 May is, 0 June is, 3 July is, 5 August is, 1 September is, 4 October is, 6 November is, 2 December is, 4 For a Leap Year * January is 5 and February is 1 but that will be explained shortly."
+    },
+    {
+      "title": "Have a code for every year, which is simple as well but for now let’s put it together and see the formula at work:",
+      "content": "Have a code for every year, which is simple as well but for now let’s put it together and see the formula at work: Let’s use Christmas 2009; December Month Code (4) + Day (25) + Year Code (4), which is: (4 + 25 + 4) = 33."
+    },
+    {
+      "title": "Now get as close to the 33 as you can with multiples of seven, subtract the difference and then use the remainder for the week code, (7 * 4) = 28, then (33 – 28) = 5, and that’s it, five is the day code for Friday, so Christmas day this year will occur on a Friday.",
+      "content": "Now get as close to the 33 as you can with multiples of seven, subtract the difference and then use the remainder for the week code, (7 * 4) = 28, then (33 – 28) = 5, and that’s it, five is the day code for Friday, so Christmas day this year will occur on a Friday. [3] X Research source"
+    },
+    {
+      "title": "Before we go any further let’s look at how the Year Code is calculated.",
+      "content": "Before we go any further let’s look at how the Year Code is calculated. There are two ways to do it so I’ll show the first and then I’ll show the one that I think is easier. Once you deal with these you will be able to easily take a date and mentally crunch the day of the week rapidly in your head just like Rainman."
+    },
+    {
+      "title": "Starting with the year 2000 we assign the code 0 and then add one to each successive year.",
+      "content": "Starting with the year 2000 we assign the code 0 and then add one to each successive year. For example: [4] X Research source 2000 = 0 2001 = 1 2002 = 2 2003 = 3 2004 = 4 2005 = 5 2006 = 0 Etc. Of course this is problematic because a “Leap Year” occurs every four years so that has to be factored in or not. Leap Years occur every four years, 2008 was a leap year so: 2007 = 1 2008 = 3 2009 = 4 2010 = 5 2011 = 6 2012 = 1 2013 = 2 Notice the zero got moved around. The good news is there’s a shortcut, we’ll take the shortcut. Just take the last two digits of any year and divide it by four and ignore the remainder. (Anytime you don't have a remainder it's a Leap Year and then January Code is 5 and February Code is 1 as shown above) For Example: The year 2061 is handled as, (61 / 4) = 15 with a remainder of one (Discard the one), Then add that answer to the last two digits of the year (61 + 15) = 76"
+    },
+    {
+      "title": "Now we need to use multiples of seven to get as close to that answer as we can so we’ll use (7 * 10) = 70, now subtract the two numbers:",
+      "content": "Now we need to use multiples of seven to get as close to that answer as we can so we’ll use (7 * 10) = 70, now subtract the two numbers: (76 – 70) = 6. [5] X Research source That’s it; the year code for 2061 is 6."
+    },
+    {
+      "title": "Again take 2010.",
+      "content": "Again take 2010. Divide 10 by 4 and we get 2 with a discarded remainder of 2. So we add 10 + 2 for an answer of 12 and see that a multiple of 7 will give us a 5 left over so the year code for 2010 is “5”."
+    },
+    {
+      "title": "Let’s see what day of the week Christmas will fall on next year?",
+      "content": "Let’s see what day of the week Christmas will fall on next year?"
+    },
+    {
+      "title": "Year Code (5) + Day (25) + Month Code (4).",
+      "content": "Year Code (5) + Day (25) + Month Code (4). That’s; (5 + 25 + 4) = 34. Then multiples of seven will get us to (7 * 4) = 28. The (34 – 28) = 6. The number six is the code for Saturday. So Christmas day 2010 will fall on a Saturday."
+    },
+    {
+      "title": "Recap",
+      "content": "Recap The formula is Month Code + Day + Year Code and then use multiples of seven to get as close as you can to the answer and then the remainder is the Day Code that gives the Day. Month Code; Divide the last two digits of a year by four, discard the remainder and add the whole number to the last two digits of the year. Then use the multiples of 7 to get as close as you can to that answer and subtract the two for the year code."
+    },
+    {
+      "title": "We could add one more step to that and calculate backwards to see what day the Declaration of Independence was signed but we need to leave Rain man something to do.",
+      "content": "We could add one more step to that and calculate backwards to see what day the Declaration of Independence was signed but we need to leave Rain man something to do."
+    }
+  ]
+}

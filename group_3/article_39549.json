@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Shut-Down-a-Computer-Using-Notepad",
+  "title": "How to Shut Down Your Computer Using a Notepad Bat File",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. This is the free text editing program that comes with every version of Windows. You can use it to create a command that, when run, will shut down Windows for you. You can find Notepad by clicking the Start menu and selecting \"Programs\" → \"Accessories\" → \"Notepad\". You can also click the Start menu, type notepad , and press ↵ Enter ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . shutdown.exe -s on the first line. This is the command to shut down the computer."
+    },
+    {
+      "title": "Add a timer by using the .",
+      "content": "Add a timer by using the . -t flag . By default, the shutdown process will be delayed by 30 seconds. You can change this by using the -t gflag with the number of seconds you want to delay. For example, to create a shutdown command that waits 45 seconds, type shutdown.exe -s -t 45 . To create a shutdown command that shuts the computer down immediately, type shutdown.exe -s -t 00 ."
+    },
+    {
+      "title": "Add a message to be displayed.",
+      "content": "Add a message to be displayed. If you want, you can add a personalized message to the shut down notice by using the -c flag. Using the above example, type shutdown.exe -s -t 45 -c \" comment \" . The comment must be in quotes. [1] X Research source For example, you can let the user know how long until the shutdown begins by typing shutdown.exe -s -t 45 -c \"Computer will shut down in 45 seconds\" ."
+    },
+    {
+      "title": "Click \"File\" and select \"Save As\".",
+      "content": "Click \"File\" and select \"Save As\". You will need to save the file as a batch file, which Windows can execute to run the shutdown command."
+    },
+    {
+      "title": "Click the \"Save as type\" drop-down menu and select \"All Files (*.*)\".",
+      "content": "Click the \"Save as type\" drop-down menu and select \"All Files (*. *)\". This will allow you to change the file type."
+    },
+    {
+      "title": "Delete the .",
+      "content": "Delete the . .txt from the end of the file name. Replace it with .bat . If you don't see the three letter file extensions, click here."
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. A new copy will be created with the .bat extension, and it will have a different icon than a standard text file."
+    },
+    {
+      "title": "Run the newly-created file to run your shutdown process.",
+      "content": "Run the newly-created file to run your shutdown process. The shutdown will occur according to the rules you created. Make sure you've saved anything you need to before running the shut down program."
+    }
+  ]
+}

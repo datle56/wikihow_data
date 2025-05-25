@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Run-an-XML-File-on-Linux",
+  "title": "How to Run an XML File on Linux",
+  "steps": [
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. On most versions of Linux, including Ubuntu, you can press Control + Alt + T to open a Terminal."
+    },
+    {
+      "title": "Navigate to the directory containing your XML file.",
+      "content": "Navigate to the directory containing your XML file. You'll use the cd command to do this. For example, cd /home/wikihow/Desktop/xmlDocs takes you to a directory called \"xmlDocs\" in the wikihow user's home directory."
+    },
+    {
+      "title": "Open the file in a text editor.",
+      "content": "Open the file in a text editor. For example, to use the Nano text editor to view and edit the XML file, you'd type nano <filename> , replacing <filename> with the name of the XML file. Once open, you can view and edit the XML file's contents. If you just want to display the contents without opening the file in a text editor, you can also use the command more <filename> to view the contents screen by screen, or cat <filename> to display the entire file at once."
+    },
+    {
+      "title": "Navigate to the .xml file you want to view.",
+      "content": "Navigate to the .xml file you want to view. If you're using Ubuntu, you might use the Nautilus file manager, also known as Files. If you're using KDE, the built-in file manager is Dolphin. [1] X Research source"
+    },
+    {
+      "title": "Right-click the file and select Open With Other Application.",
+      "content": "Right-click the file and select Open With Other Application . A list of applications will appear. [2] X Research source The wording here may vary by file manager."
+    },
+    {
+      "title": "Select your web browser.",
+      "content": "Select your web browser. Firefox comes preinstalled on many Linux flavors, but you can use any modern web browser—they can all display XML files. This will automatically display the contents of the file."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. On most Linux distributions, you can do this by pressing Control + Alt + T ."
+    },
+    {
+      "title": "Update your distribution's repositories.",
+      "content": "Update your distribution's repositories. To make sure you're downloading the latest version of xmlto, the tool you'll be using to convert the XML file to plain text, run the command to update your package manager's source list. For example, on a Debian-based system like Ubuntu , run the command sudo apt update ."
+    },
+    {
+      "title": "Install the xml2 package.",
+      "content": "Install the xml2 package. To install xmlto, run the command sudo apt install xmlto . If you're using a different package manager, such as Dnf or Yum, replace \"apt\" with \"dnf,\" \"yum,\" or your package manager's name."
+    },
+    {
+      "title": "Navigate to the directory containing your XML file.",
+      "content": "Navigate to the directory containing your XML file. You'll use the cd command to do this. For example, cd /usr/local/files takes you to a directory called /usr/local/files."
+    },
+    {
+      "title": "Run the command to convert the file to another format.",
+      "content": "Run the command to convert the file to another format. The command you'll use depends on the type of file you want to create: xmlto pdf myfile.xml converts to a PDF. [3] X Research source To convert to another file type, replace pdf with the desired file type, such as: html , htmlhelp (HTML help file), javahelp (Java help file), dvi (text DVI file), man (Unix manual pages), txt (plain text), ps (postscript), xhtml , fo (XSL-FO formatting objects)."
+    },
+    {
+      "title": "Install XMLStarlet.",
+      "content": "Install XMLStarlet. If your goal is to parse the data in an XML file in your bash scripts or from the command line, this tool makes it easy. You can use XMLStarlet in your scripts to query, transform, or check the data in any XML file. This tool is installed by default if you're using RedHat or CentOS. On most other distributions, you'll need to install it from your package manager. On Ubuntu, Debian, and Linux Mint, use the command sudo apt install xmlstarlet to install the package."
+    },
+    {
+      "title": "Run xmlstarlet --help to view options and commands.",
+      "content": "Run xmlstarlet --help to view options and commands. This displays a list of all commands you can use to edit, select, transform, validate, and format your XML file. The commands and options you'll need will vary depending on what you need to do with the file, but the syntax will always be the same: xmlstarlet <command> [<cmd-options>] <filename> . Command values ed: Edit the XML file. sel: Select data or query the file. tr: Transform the file with XSLT. val: Validate the file. fo: Format the file. el: Display the file's element structure. c14n: XML canonicalization. ls: List a directory as XML. esc: Escape special XML characters. unesc: Unescape special characters. pyx: Convert to XML to PYX. p2x: Convert PYX to XML. Command options: Each command also has its own options. To view a command's options, use xmlstarlet <command> --help . For example, to see all options you can use with the fo command, use xmlstarlet fo --help . General option values: You can add any of these after the xmlstarlet command to issue some global options: -q: Don't output errors. --doc-namespace: Extract namespace bindings from input file. --no-doc-namespace: Don't extract namespace bindings."
+    },
+    {
+      "title": "Run your XMLstarlet commands in the bash shell.",
+      "content": "Run your XMLstarlet commands in the bash shell. For example, if you want to view the values of the XML nodes name and birthdate , you'd use the sel command with the -t (template) and -v (value of) options. Let's say you wanted to print the values of the <name> and <birthdate> nodes in an xml file called text.xml . In this case, you'd use: xmlstarlet sel -t -v xml/name/birthdate test.xml"
+    }
+  ]
+}

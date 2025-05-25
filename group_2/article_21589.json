@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Hack-a-Password-Protected-Computer-Account",
+  "title": "How to Hack a Password Protected Computer Account",
+  "steps": [
+    {
+      "title": "Understand the limitations.",
+      "content": "Understand the limitations. Since most Windows 10 accounts use a Microsoft account email address and password to log in, you can't reset a hacked computer's main account password like you could in Windows 7 and down. You will, however, be able to access the files of the main account. If the user you're trying to hack is a local user (e.g., a user added to the computer by a Microsoft account), you can change their password like you could in previous Windows renditions."
+    },
+    {
+      "title": "Make sure you have an installation CD or USB drive.",
+      "content": "Make sure you have an installation CD or USB drive. You will need a Windows 10 installation medium such as an installation CD in order to perform this method. If you don't have an installation CD, you can create an installation USB drive by doing the following: Plug an 8 gigabyte (or larger) USB drive into your computer. Open the Windows 10 download page . Click Download tool now Double-click the downloaded tool. Follow the on-screen prompts to install the tool to your flash drive."
+    },
+    {
+      "title": "Insert your installation media into your computer.",
+      "content": "Insert your installation media into your computer. Place the installation CD in the disk drive, or insert the USB flash drive into one of the computer's USB ports."
+    },
+    {
+      "title": "Restart your computer into the BIOS",
+      "content": "Restart your computer into the BIOS . Click Start , click Power , and click Restart , then immediately begin pressing repeatedly (or holding) your computer's BIOS key until the BIOS launches. Your BIOS key will depend on the manufacturer of your computer's motherboard, but common keys include the function keys (e.g., F2 ), the Esc key, and the Del key. If you don't know which key to press or hold, consult your computer's BIOS documentation by searching for your computer's model, the word \"bios\", and the word \"key\"."
+    },
+    {
+      "title": "Change your computer's boot order to prioritize the installation media.",
+      "content": "Change your computer's boot order to prioritize the installation media. Again, this will vary depending on your computer's BIOS; you'll usually open the Boot or Advanced tab, use the arrow keys to select your CD drive or USB drive, and press the + key to move the drive up to the top of the list. As with any BIOS problems, you should consult your BIOS documentation online if you have any trouble."
+    },
+    {
+      "title": "Save and exit.",
+      "content": "Save and exit. Press the \"Save and Exit\" key as specified by your BIOS legend, then confirm by pressing another key if prompted. Your computer will resume rebooting, at which point you should see the installation menu appear."
+    },
+    {
+      "title": "Open Command Prompt.",
+      "content": "Open Command Prompt. Press ⇧ Shift + F10 to do so."
+    },
+    {
+      "title": "Replace Utility Manager with Command Prompt.",
+      "content": "Replace Utility Manager with Command Prompt. You'll need to do this in order to be able to access Command Prompt later: Type in move c:\\windows\\system32\\utilman.exe c:\\windows\\system32\\utilman.exe.bak Press ↵ Enter Type in copy c:\\windows\\system32\\cmd.exe c:\\windows\\system32\\utilman.exe Press ↵ Enter"
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. Type in wpeutil reboot and press ↵ Enter , then remove your installation media from the computer. This will ensure that Windows reboots to the login screen rather than back into the installation setup. [1] X Research source If you're using an installation CD, you'll need to eject the CD before entering the reboot command."
+    },
+    {
+      "title": "Open Command Prompt via the Utility Manager.",
+      "content": "Open Command Prompt via the Utility Manager. Click the \"Utility Manager\" icon, which resembles a dial with a right-facing arrow in the middle. Since you replaced Utility Manager with Command Prompt, doing this will open Command Prompt in administrator mode."
+    },
+    {
+      "title": "Create a new user.",
+      "content": "Create a new user. You can add a new administrator account by doing the following: Type in net user name /add making sure to replace \"name\" with a username of your choice. Press ↵ Enter . Type in net localgroup administrators name /add again replacing \"name\" with the name of the user you just created. Press ↵ Enter"
+    },
+    {
+      "title": "Restart your computer one more time.",
+      "content": "Restart your computer one more time. Click the Power icon, then click Restart when prompted."
+    },
+    {
+      "title": "Log in with your new user.",
+      "content": "Log in with your new user. Once Windows finishes restarting, you'll be able to use the account you created to log in: Select your new user's name in the lower-left side of the screen. Click Sign In Wait for Windows to finish setting up your new user account."
+    },
+    {
+      "title": "View your user's files.",
+      "content": "View your user's files. While you can't change the password of the main user if they're logged in via a Microsoft account, you can view all of the files on their account by doing the following: Open File Explorer (or press ⊞ Win + E ). Click This PC on the left side of the window (you may have to scroll up to find it). Double-click your computer's hard drive in the \"Devices and drives\" section. Double-click the Users folder. Double-click the folder for the user whose files you want to view. Click Continue when prompted, then wait for the user's folders to load (this can take several minutes)."
+    },
+    {
+      "title": "Change the password on a local account.",
+      "content": "Change the password on a local account. If you want to hack a local account by changing its password, open Start and then do the following: Type in control panel , then click Control Panel at the top of the window. Click the User Accounts heading. Click User Accounts again if the \"Make changes to your user account\" page doesn't open. Click Manage another account Select an account. Click the Change the password link. Enter a new password in the \"New password\" and \"Confirm new password\" text boxes. Click Change password"
+    },
+    {
+      "title": "Use the macOS High Sierra hack.",
+      "content": "Use the macOS High Sierra hack. Some versions of macOS High Sierra have an exploit which allows you to log into the root account without entering a password or downloading any programs. If the following hack works for you, skip the next step: Open the login screen. Replace the current username with root Click the password field (but don't type in anything) Press ⏎ Return repeatedly until you're logged in."
+    },
+    {
+      "title": "Wait for the user to log in.",
+      "content": "Wait for the user to log in. If the macOS High Sierra hack doesn't work, you'll need to wait until the user you want to hack logs into their account. Unfortunately, hacking a Mac requires administrator access, which can't be established unless the user in question first logs into their machine."
+    },
+    {
+      "title": "Download DaveGrohl.",
+      "content": "Download DaveGrohl. DaveGrohl is a program which can determine your target Mac's login password: Go to https://github.com/octomagon/davegrohl Click the green Clone or download button. Click Download ZIP"
+    },
+    {
+      "title": "Extract DaveGrohl.",
+      "content": "Extract DaveGrohl. Double-click the downloaded ZIP folder, then wait for the DaveGrohl folder to open."
+    },
+    {
+      "title": "Copy the DaveGrohl path.",
+      "content": "Copy the DaveGrohl path. Close the extracted DaveGrohl folder, then click the extracted DaveGrohl folder and press ⌘ Command + ⌥ Option + C . This will copy the path to the folder to your Mac's clipboard."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click Spotlight , type in terminal , and double-click Terminal at the top of the results window."
+    },
+    {
+      "title": "Switch to the DaveGrohl folder.",
+      "content": "Switch to the DaveGrohl folder. Type in cd , press the spacebar once, and then press ⌘ Command + V to paste in the path to the DaveGrohl folder. Doing so will ensure that Terminal knows to look inside of the DaveGrohl folder when you run a command."
+    },
+    {
+      "title": "Begin cracking the password.",
+      "content": "Begin cracking the password. Do the following: Type in sudo ./dave -u username where \"username\" is the administrator username for the account you want to hack. Press ⏎ Return"
+    },
+    {
+      "title": "Determine the password.",
+      "content": "Determine the password. Once DaveGrohl cracks the password, you'll see it listed next to the \"Found password :\" heading near the top of the Terminal results. This is the password you'll use in conjunction with the Mac's administrator account. If you just want to know the password in order to use it later, you're technically done at this point."
+    },
+    {
+      "title": "Open the Apple menu .",
+      "content": "Open the Apple menu . Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click System Preferences….",
+      "content": "Click System Preferences… . You'll find it at the top of the drop-down menu. Doing so opens the System Preferences window."
+    },
+    {
+      "title": "Click Users & Groups.",
+      "content": "Click Users & Groups . It's in the System Preferences window. This will prompt the Users & Groups menu to appear."
+    },
+    {
+      "title": "Unlock the menu.",
+      "content": "Unlock the menu. Click the padlock icon in the bottom-left corner of the screen, then enter the administrator username (if you used the High Sierra exploit, you'll type in root ) and the password (click the \"Password\" field once and then leave blank for the root account) and press ⏎ Return ."
+    },
+    {
+      "title": "Select an account.",
+      "content": "Select an account. Click the name of the person for whom you want to change the password on the left side of the window."
+    },
+    {
+      "title": "Click Reset Password….",
+      "content": "Click Reset Password… . It's a button near the top of the menu."
+    },
+    {
+      "title": "Enter a new password.",
+      "content": "Enter a new password. Type the password you want to use into the \"New password\" text box, then re-enter the password in the \"Verify\" text box. [2] X Research source"
+    },
+    {
+      "title": "Click Change Password.",
+      "content": "Click Change Password . It's at the bottom of the pop-up window. This will change the user's password."
+    }
+  ]
+}

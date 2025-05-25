@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Learn-Web-Design",
+  "title": "How to Learn Web Design",
+  "steps": [
+    {
+      "title": "Check online for web design courses and tutorials.",
+      "content": "Check online for web design courses and tutorials. The Internet is full of detailed information about web design, and a lot of it is freely available. You might start by taking some free online courses on Udemy or CodeCademy, or joining a coding community like freeCodeCamp. You can also find web design video tutorials on YouTube. [1] X Research source If you know exactly what you’re looking for, try doing a search using specific terms (e.g., “class selectors in CSS tutorial”). If you’re a beginner with no web design experience, start by learning about the basics of coding in HTML and CSS. Online tutorials are a great tool for learning web design skills."
+    },
+    {
+      "title": "Look into taking a class at a local college or university.",
+      "content": "Look into taking a class at a local college or university. If you are attending a college or university, check with your school’s computer science department or consult your course catalog to find out if any web design courses are available. If you’re not in school, check to see if any colleges or universities near you offer continuing education classes in web design. Some universities offer online web design classes that are open to anyone who wishes to enroll. Check websites like Coursera.org to find free or affordable web design classes taught by university instructors."
+    },
+    {
+      "title": "Get some web design books from the bookstore or library.",
+      "content": "Get some web design books from the bookstore or library. A good book on web design can be an invaluable reference as you are learning and applying your craft. Look for up-to-date books on general web design or specific coding formats and languages you would like to learn. [2] X Research source Reading magazines and blog articles about web design is also a good way to learn new techniques, get inspiration, and keep up with the latest trends."
+    },
+    {
+      "title": "Download or purchase some web design software.",
+      "content": "Download or purchase some web design software. Good web design software can help you build websites more efficiently and effectively, and is also great for helping you learn the ins and outs of applying coding, scripting, and other key design elements. [3] X Research source You might benefit from using tools such as: Graphic design programs, like Adobe Photoshop, GIMP, or Sketch. Website building tools, such as WordPress, Chrome DevTools, or Adobe Dreamweaver. FTP software for transferring your finished files onto your server. [4] X Research source"
+    },
+    {
+      "title": "Find some website templates to play with as you get started.",
+      "content": "Find some website templates to play with as you get started. There’s nothing wrong with using templates as you learn the basics of web design. Do a search for webpage templates you like, and take a close look at the code to get an idea of how the designer put the page together. You can also experiment with changing the code and adding your own elements to the template. [5] X Research source Do a search for free website templates to get started, or experiment with templates that come with your web design software."
+    },
+    {
+      "title": "Familiarize yourself with basic HTML tags.",
+      "content": "Familiarize yourself with basic HTML tags. HTML is a simple markup language that’s used to format the basic elements of a website. You can format different elements of your website by using tags. Tags appear in angled brackets <> before and after each element, and provide instructions about how that element will function on the page. To close the tag, put a / in front of the final tag inside the angled brackets. [6] X Research source For example, if you want some of your text to be bold , you would surround the element with the <b></b> tag, like this: <b>This text is bold.</b> A few common tags include <p></p> (paragraph), <a></a> (anchor, which defines linked text), and <font></font> (font, which can help define various attributes of the text, like size and color). Other tags define the different parts of the HTML document itself. For example, <head></head> is used to contain information about the page that will not be visible to the viewer, like keywords or a page description that would appear in search engine results."
+    },
+    {
+      "title": "Learn to use tag attributes.",
+      "content": "Learn to use tag attributes. Some tags need additional information to specify how they should function. This additional information appears within the opening tag, and it is called an “attribute.” The attribute name appears immediately after the tag name, separated by a space. The attribute value is attached to the attribute name by an = sign and surrounded by quotation marks. [7] X Research source For example, if you wanted to make some of your text red, you could do it by using the <font></font> tag and an appropriate font color attribute, like this: <font color=“#FF0000”>This text is red.</font> Many of the effects that were once routinely achieved with HTML tag attributes, such as setting different font colors, are now typically done with CSS coding instead."
+    },
+    {
+      "title": "Experiment with nested elements.",
+      "content": "Experiment with nested elements. HTML also allows you to place elements within other elements in order to create more complex formatting. For example, if you wanted to define a paragraph and then italicize some of the text within the paragraph, you could do it like this: [8] X Research source <p>I <i>love</i> coding!</p>"
+    },
+    {
+      "title": "Get acquainted with empty elements.",
+      "content": "Get acquainted with empty elements. Some elements in HTML don’t need both opening and closing tags. For example, if you’re inserting an image, you only need a single “img” tag containing the tag name and any other necessary attributes (such as the image file name and any alternative text you wish to add for accessibility purposes). For example: [9] X Research source <img src=“PGWodehouse.jpg” alt=“A photograph of author P. G. Wodehouse”>"
+    },
+    {
+      "title": "Explore the basic layout of an HTML document.",
+      "content": "Explore the basic layout of an HTML document. In order for your HTML-based website to function properly, you’ll need to know how to format the entire page. This involves defining where your HTML code begins and ends, as well as using tags to determine which parts of the code will be displayed versus which are there to provide hidden background information. For example: [10] X Research source Use the tag <!DOCTYPE html> to define your page as an HTML document. Next, contain your entire page within the tags <html></html> to define where your code begins and ends. Place any information that won’t be displayed to the viewer, such as the page title, keywords, and your page description, within the <head></head> tags. Define the body of your page (i.e., any text and images that you want the viewer to see) with the <body></body> tags."
+    },
+    {
+      "title": "Use CSS to apply styles to your HTML documents.",
+      "content": "Use CSS to apply styles to your HTML documents. CSS is a stylesheet language that allows you to apply different style and design elements to your webpage. For example, if you want to selectively apply a specific font or text color to some of the text elements on your page, you can create a CSS file to do that. Then, you can insert the CSS file into your HTML document wherever you like. [11] X Research source For example, if you wanted a CSS file to turn all the paragraph elements in your HTML document green, you could create a .css file containing the lines: p { color: green; } You would then save the file with a name like style.css. To apply the stylesheet to your HTML document, you would insert it as an empty link element within the <head></head> tags. For example: <head><link href=“styles/style.css” rel=“stylesheet” type=“text/css”></head>"
+    },
+    {
+      "title": "Get familiar with the elements of a CSS rule set.",
+      "content": "Get familiar with the elements of a CSS rule set. An individual piece of CSS code is called a “rule set.” The rule set contains the different elements that define what you want your code to do. These include: [12] X Research source The selector, which defines the HTML element you want to style. For example, if you want your rule set to affect paragraph elements, you would start your ruleset with the letter “p”. The declaration, which defines the properties you would like to style (such as font color). The declaration is contained within curly brackets {}. The property, which specifies which property of the HTML element you want to style. For example, within the <p></p> tag, you can specify that you want to style the color of the text. The property value defines specifically how you want to change the property (e.g., if the property is font color, then the property value would be “green”). You can modify several different properties within a single declaration."
+    },
+    {
+      "title": "Apply CSS to your text to make your typesetting look nice.",
+      "content": "Apply CSS to your text to make your typesetting look nice. CSS is useful for applying a variety of effects to your text without having to individually code each property in HTML. Experiment with changing different typesetting properties in CSS, including: [13] X Research source Font color Font size Font family (e.g., the range of fonts you want to use in your text) Text alignment Line height Letter spacing"
+    },
+    {
+      "title": "Experiment with boxes and other CSS layout tools.",
+      "content": "Experiment with boxes and other CSS layout tools. CSS is also useful for adding attractive visual elements to your page, such as text boxes and tables. Additionally, you can use it to change the overall layout of your page and define where the different elements are positioned relative to each other. [14] X Research source For example, you can define attributes like the width and background color of an element, add a border, or set margins that will create space between the various elements on your page."
+    },
+    {
+      "title": "Learn JavaScript if you want to add interactive elements to your pages.",
+      "content": "Learn JavaScript if you want to add interactive elements to your pages. JavaScript is a great language to learn if you’re interested in adding more advanced features to your websites, such as animations and popups. [15] X Research source Take a course or look for online tutorials about how to code in JavaScript and incorporate those coded elements into your web pages |using HTML. Before you can get comfortable with JavaScript, you’ll need to be familiar with the basics of building pages in HTML and CSS. [16] X Research source"
+    },
+    {
+      "title": "Familiarize yourself with jQuery to make JavaScript coding easier.",
+      "content": "Familiarize yourself with jQuery to make JavaScript coding easier. jQuery is a JavaScript library that can simplify Java programming by allowing you to access a variety of pre-coded JavaScript elements. jQuery is a great tool if you are already familiar with the basics of JavaScript coding. [17] X Research source You can access the jQuery library and lots of other valuable resources through jQuery.org, the website of the jQuery Foundation."
+    },
+    {
+      "title": "Study server-side languages if you’re interested in back-end development.",
+      "content": "Study server-side languages if you’re interested in back-end development. While HTML, CSS, and JavaScript are ideal for web designers who are focused on what the user sees and does on the website, server-side languages are useful if you’re more interested in behind-the-scenes work. If you want to learn about back-end development, focus on learning languages like Python , PHP, and Ruby on Rails. [18] X Research source These languages are useful for managing and processing data that the user does not see. For example, PHP can be used to build secure password creation tools on websites that require a login."
+    }
+  ]
+}

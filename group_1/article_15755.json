@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Enable-Webgl",
+  "title": "A Guide to Activating WebGL on Chrome, Firefox, and Safari",
+  "steps": [
+    {
+      "title": "Open Google Chrome .",
+      "content": "Open Google Chrome . It has an icon that resembles a red, yellow, and green wheel with a blue dot in the middle. Click the Google Chrome icon in the Windows Start menu or Applications folder on Mac to open Google Chrome."
+    },
+    {
+      "title": "Type chrome://settings in the address bar.",
+      "content": "Type chrome://settings in the address bar. The address bar is at the top of Google Chrome. This opens Google Chrome's settings menu."
+    },
+    {
+      "title": "Scroll down and click Advanced.",
+      "content": "Scroll down and click Advanced . It's at the bottom of the Settings menu."
+    },
+    {
+      "title": "Ensure that \"Use hardware acceleration when available\" is enabled.",
+      "content": "Ensure that \"Use hardware acceleration when available\" is enabled. This option is under \"System\" near the bottom of the Advanced Settings menu. The toggle switch to the right of it should be blue."
+    },
+    {
+      "title": "Type chrome://flags in the address bar.",
+      "content": "Type chrome://flags in the address bar. The address bar is at the top of Google Chrome. This displays experimental features that you can activate in Google Chrome."
+    },
+    {
+      "title": "Select \"Enable\" next to \"Webgl 2.0 Compute\".",
+      "content": "Select \"Enable\" next to \"Webgl 2.0 Compute\". Scroll down until you find \"Webgl 2.0 Compute\". Use the drop-down menu to the right to select \" Enabled \". If \"Webgl 2.0 Compute\" is not available, you system drivers or graphics card may be blacklisted. You can override the blacklist by selecting \" Enabled \" next to \"Override software rendering list\", though this is not recommended. [1] X Research source"
+    },
+    {
+      "title": "Click Relaunch Now.",
+      "content": "Click Relaunch Now . It's the blue button in the lower-right corner. This relaunches Google Chrome with Webgl enabled."
+    },
+    {
+      "title": "Open Firefox.",
+      "content": "Open Firefox. It has an icon that resembles a blue ball with an orange fox around it. Click the icon in the Windows Start Menu or Applications folder on Mac to open Firefox."
+    },
+    {
+      "title": "Type about:config in the address bar.",
+      "content": "Type about:config in the address bar. The address bar is at the top of the page."
+    },
+    {
+      "title": "Click I accept the risk!.",
+      "content": "Click I accept the risk! . This is the blue button on the page. The first time you visit this page, it informs you that some of these settings may be harmful to your browser stability, security, and performance. Click the blue button to accept the risk."
+    },
+    {
+      "title": "Type webgl.disabled in the search bar.",
+      "content": "Type webgl.disabled in the search bar. The search bar is at the top of the page. This displays the webgl setting."
+    },
+    {
+      "title": "Double-click webgl.disabled if it says \"true\".",
+      "content": "Double-click webgl.disabled if it says \"true\". If it says \"True\" under the value for \"webgl.disabled\", double click it to set the value to false."
+    },
+    {
+      "title": "Type about:support in the address bar.",
+      "content": "Type about:support in the address bar. This displays information about Firefox."
+    },
+    {
+      "title": "Check the graphics card next to \"Webgl Driver Renderer\".",
+      "content": "Check the graphics card next to \"Webgl Driver Renderer\". Both \"Webgl 1 Driver Renderer\" and \"Webgl 2 Driver Renderer\" are listed below \"Graphics\". If it displays a graphics card next to both of these, Webgl is enabled. If it does not display a graphics card, your graphics card may be blacklisted. If your graphics card is blacklisted, you can override the blacklist by typing about:config in the address bar and searching for \"webgl.force-enabled\" and setting it to \"True\". However, this is not recommended."
+    },
+    {
+      "title": "Open Safari.",
+      "content": "Open Safari. Safari has a blue icon that resembles a compass. Click the icon in the Dock at the bottom of the screen to open Safari."
+    },
+    {
+      "title": "Click Safari.",
+      "content": "Click Safari . It's in the menu bar at the top of the screen. This displays a drop-down menu."
+    },
+    {
+      "title": "Click Preferences.",
+      "content": "Click Preferences . It's the third option in the drop-down menu below \"Safari\". This displays the Preferences window."
+    },
+    {
+      "title": "Click the Advanced tab.",
+      "content": "Click the Advanced tab. It's the tab that has an icon that resembles a gear. It's the last tab at the top of the Preferences window."
+    },
+    {
+      "title": "Click the checkbox next to \"Show Develop menu in menu bar\".",
+      "content": "Click the checkbox next to \"Show Develop menu in menu bar\". It's at the bottom of the Advanced menu in the Preferences window. This adds the Develop menu to the menu bar at the top of the screen."
+    },
+    {
+      "title": "Click Develop.",
+      "content": "Click Develop . It's in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Hover over Experimental Features.",
+      "content": "Hover over Experimental Features . This displays a sub-menu to the side."
+    },
+    {
+      "title": "Click WebGL 2.0.",
+      "content": "Click WebGL 2.0 . If \"WebGL 2.0\" has a checkmark next to it, WebGL is enabled."
+    }
+  ]
+}

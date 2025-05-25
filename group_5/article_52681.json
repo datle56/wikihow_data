@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Create-Barcodes-in-Word",
+  "title": "3 Easy Ways to Create Barcodes in Word Using Fonts and Field Codes",
+  "steps": [
+    {
+      "title": "Choose your barcode symbology.",
+      "content": "Choose your barcode symbology. You may have noticed that there are a wide variety of barcodes, some appearing like thin lines and others, like QR codes, which are more blocky in appearance. These barcode types are called symbologies, some of which include: Plessey: Used for catalogs, store shelves, and inventory UPC: Used for North American retail EAN-UCC: Used for international retail Codabar: Used for libraries, blood banks, airbills Code 39: Used for various purposes Code 128: Used for various purposes Code 11: Used for telephones Code 16K: 1D version of Code 128. QR Code: Public domain code from Nippon Denso ID Systems. Has the ability to encode Japanese Kanji and Kana characters."
+    },
+    {
+      "title": "Choose your data to convert, like the product number or address.",
+      "content": "Choose your data to convert, like the product number or address. The information you want contained in your barcode will need to be translated to a suitable barcode format, like an alphanumeric string, for it to be properly read by scanners. You should have a general format in mind for how you will structure all barcodes for your particular purpose. Many different kinds of information can be included in your barcode, but generally, this information pertains to identification, tracking, and inventory. Consistent formatting will help make the translated information easier to read and will make human processing of barcode information more efficient. \"Alphanumeric\" refers to a system that uses both letters and numbers. [1] X Research source"
+    },
+    {
+      "title": "Convert your data into a proper barcode format with an online service.",
+      "content": "Convert your data into a proper barcode format with an online service. Now that you have your data properly organized, do an online search for a \"String builder\" for the barcode symbology you will be using. This will give you the converted text that you will need to use with a barcode font. For example, you might search, \"barcode string builder code 128.\" Some symbologies may use inputs other than simple alphanumeric. Do an online search of your chosen symbology to find how to convert your data to a suitable barcode format. [2] X Research source"
+    },
+    {
+      "title": "Download the right font for your barcode.",
+      "content": "Download the right font for your barcode. To have the text you've converted to show up properly as a barcode, you'll need to input your barcode string into your Word document in the font for your symbology. There are many online sources for fonts, some free and some for pay, which you can find by searching your symbology (e.g., Code 39 font). Always exercise caution when downloading anything from the Internet. There is always the risk that you may get a virus or some other kind of malware. The best way to get free fonts is by going to Google Fonts and browsing their barcode font selection. You'll see different fonts available for the different codes, so you can choose a font that matches! Click it, then click Download family or Get . Unzip the file that you downloaded and right-click the font file, and select Install . If you’re using a Mac, double-click the font file and select Install. Your installed barcode font will be in Word!"
+    },
+    {
+      "title": "Convert your barcode string into your Word document.",
+      "content": "Convert your barcode string into your Word document. Cut and paste your converted barcode string into your Word document. Highlight this text, and then change the font to the appropriate barcode font, and your barcode should appear."
+    },
+    {
+      "title": "Click in your document where you want to add the barcode.",
+      "content": "Click in your document where you want to add the barcode. You can add a barcode to an existing or new document. This method only works for Word on Windows."
+    },
+    {
+      "title": "Press Ctrl + F9.",
+      "content": "Press Ctrl + F9 . This will open a field where your cursor is with a curly bracket. The code won't work if you don't press Ctrl + F9 and just enter \"{}.\""
+    },
+    {
+      "title": "Enter DisplayBarcode plus arguments and switches.",
+      "content": "Enter DisplayBarcode plus arguments and switches. If you have any additional information with your barcode, you can enter it here. For example, entering \"www.microsoft.com\" QR \\q 3 links a QR code that will take you to the Microsoft website when it's scanned. You can see the barcode by right-clicking the field and selecting Toggle Field Codes . [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Start the mail merge.",
+      "content": "Start the mail merge. To do this, open Word and click Mailings from the editing ribbon above the document, then click Start Mail Merge in the \"Start Mail Merge\" group and select Labels . Use this method if you have a list of addresses or other data that you want to use in an Excel sheet. This won't work if you don't have an existing list. There are a few requirements that you need to check to make sure your Excel sheet will properly import into Word: Column names in your spreadsheet match the field names you want to insert in your labels. Everything is in the first sheet of your spreadsheet. Postal code data is correctly formatted in the spreadsheet so that Word can properly read the values. (You may need to make sure the field is text by going to Home > Number format > Text .) You can also use Labels to print out barcodes for retail spaces. This method only works for Word on Windows."
+    },
+    {
+      "title": "Select your label and click OK.",
+      "content": "Select your label and click OK . So the label looks right when it's printed, you want to make sure that you have the right settings selected for the text. Use the drop-down menu next to \"Label vendors\" to pick the kind of labels you're using, like Avery. Select the specific type of label from the \"Product number\" box to make sure the text formatting and paper settings are optimized so the labels print the same way they appear on the screen. Clicking OK will save those changes."
+    },
+    {
+      "title": "Select your Excel address list.",
+      "content": "Select your Excel address list. Click Select Recipients from the Mailings tab and \"Start Mail Merge\" group, then select Use an Existing List . Select the Excel document to use and click Open . If prompted, select the table to use. You should only see this option if there are multiple sets of data in the .xls document."
+    },
+    {
+      "title": "Add an address block and click OK.",
+      "content": "Add an address block and click OK . Click Address Block in the editing ribbon, then select a format that you'd like. You can also specify elements by checking and unchecking boxes. For example, if you don't want the company name to appear, uncheck it. Doing this adds a <<AddressBlock>> line of code to your document."
+    },
+    {
+      "title": "Press ↵ Enter and press Ctrl + F9.",
+      "content": "Press ↵ Enter and press Ctrl + F9 . Doing so will open curly brackets."
+    },
+    {
+      "title": "Type in DisplayBarcode \".",
+      "content": "Type in DisplayBarcode \" . Make sure to include the quotation mark at the end."
+    },
+    {
+      "title": "Press Ctrl+F9 and enter MergeField FirstName.",
+      "content": "Press Ctrl + F9 and enter MergeField FirstName . So far, your code should look like this {DisplayBarcode \"{MergeField FirstName}} Move the cursor to the right, outside of the curly brace."
+    },
+    {
+      "title": "Press Ctrl+F9 and type in MergeField LastName.",
+      "content": "Press Ctrl + F9 and type in MergeField LastName . So far, your code should look like this: {DisplayBarcode \"{MergeField FirstName}{MergeField LastName }} Move the cursor to the right, outside of the curly brace."
+    },
+    {
+      "title": "Press Ctrl+F9 and type in MergeField City.",
+      "content": "Press Ctrl + F9 and type in MergeField City . So far, your code should look like this: {DisplayBarcode \"{MergeField FirstName}{MergeField LastName }{MergeField City}} Move the cursor to the right, outside of the curly brace."
+    },
+    {
+      "title": "Enter a space, a quote, the barcode type, any switches, and end with a vertical bar.",
+      "content": "Enter a space, a quote, the barcode type, any switches, and end with a vertical bar. Your code should look like this: {DisplayBarcode \"{MergeField FirstName}{MergeField LastName }{MergeField City} \" BARCODETYPE \\t \\h 1440 | } Enter the barcode type in place of the BARCODETYPE text. \\t and \\h are switches, which might not apply to your shipping information. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select Update Labels.",
+      "content": "Select Update Labels . It's in the Mailings tab in the editing ribbon. Clicking it will apply the formatting from the first label to everything on the page. You can see your mailing list as a preview by clicking Preview Results ."
+    }
+  ]
+}

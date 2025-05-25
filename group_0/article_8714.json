@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Clear-Windows-Update-Cache",
+  "title": "Clear the Windows Update Cache to Fix Problems & Reclaim Space",
+  "steps": [
+    {
+      "title": "Clear the update cache if updates are not installing.",
+      "content": "Clear the update cache if updates are not installing. When Windows installs updates, it first downloads the installation files and saves them to a folder. Once the files are downloaded, Windows uses them to install the updates. If Windows Update fails , gives you an error, or gets stuck , there could be a problem with files in that cache. To fix the failed update, you can easily clear the update cache—it's safe and will not harm your computer. You can also clear the update cache to free up space on your computer. However, Windows does clear the update cache automatically—the files are only saved for a certain period after an update is installed successfully, just in case you need to revert to a previous update."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. An easy way to clear the Windows Update cache is from the command prompt. Don't worry—this is simple, even if you're uncomfortable typing commands. To open Command Prompt as an admin : Press the Windows key and type cmd . Right-click Command prompt and select Run as administrator . Click Yes to confirm."
+    },
+    {
+      "title": "Stop all Windows Update services.",
+      "content": "Stop all Windows Update services. If the services are running, you won't be able to delete the entire update cache. At the prompt, type the following commands: Type net stop wuauserv and press Enter . Type net stop bits and press Enter ."
+    },
+    {
+      "title": "Clear the Windows Update cache.",
+      "content": "Clear the Windows Update cache. This command deletes everything in the C:\\Windows\\SoftwareDistribution folder, which is where cached update files are stored: Type rmdir /S /Q C:\\Windows\\SoftwareDistribution and press Enter ."
+    },
+    {
+      "title": "Restart the update services.",
+      "content": "Restart the update services. Now that the update cache is clear, you can restart the services you stopped earlier. Type net start wuauserv and press Enter . Type net start bits and press Enter ."
+    },
+    {
+      "title": "Open the Windows Services list.",
+      "content": "Open the Windows Services list. Another way to clear the Windows Update cache is using File Explorer. Before you do this, though, you'll want to stop the Windows Update services so the files can actually be removed. To open Windows Services: Press the Windows key or click the Windows menu. Type services.msc and press Enter ."
+    },
+    {
+      "title": "Stop the Windows Update service.",
+      "content": "Stop the Windows Update service. To do this, scroll down to \"Windows Update,\" right-click it, and select Stop . Leave the window open for now. After clearing the update cache, you'll need to reenable these services."
+    },
+    {
+      "title": "Stop the Background Tasks Infrastructure Service.",
+      "content": "Stop the Background Tasks Infrastructure Service. Scroll back up, right-click \"Background Tasks Infrastructure Service,\" and select Stop . This will ensure that nothing prompts Windows Update to restart until you do it manually."
+    },
+    {
+      "title": "Open File Explorer and open the Windows folder.",
+      "content": "Open File Explorer and open the Windows folder. The Windows folder is located at C:\\Windows on most PCs. For example, if Windows is installed on your C drive, click This PC in the left panel, click the C drive, then double-click the Windows folder."
+    },
+    {
+      "title": "Delete the SoftwareDistribution folder.",
+      "content": "Delete the SoftwareDistribution folder. To fully clear the update cache, you'll want to delete everything in this folder. Scroll down, select SoftwareDistribution , press the delete key on your keyboard, and click Continue to confirm."
+    },
+    {
+      "title": "Restart the Windows Update services.",
+      "content": "Restart the Windows Update services. Now that the cache is empty, return to the Windows Services window and restart the services you stopped. Right-click Background Tasks Infrastructure Service and select Start . Right-click Windows Update and select Start ."
+    },
+    {
+      "title": "Open a text editor like Notepad.",
+      "content": "Open a text editor like Notepad. If you want to clear the update cache quickly in the future, you can use this method to write a quick batch script that clears the update cache for you. You will need to run this script as an administrator for it to work."
+    },
+    {
+      "title": "Paste the following into the file.",
+      "content": "Paste the following into the file. This script stops the Windows Update service, stops the Background Intelligent Transfer Service, clears the cache, and then restarts the services. @ Echo On net stop wuauserv net stop bits C : rmdir /S /Q %Windir% \\SoftwareDistribution net start wuauserv net start bits pause"
+    },
+    {
+      "title": "Save the file as a BAT file.",
+      "content": "Save the file as a BAT file. If you're using Notepad, click the File menu, select Save as , and choose a folder to save the file in. Then, select \"All files\" from the \"Save as type\" menu, name the file something like \"clear_update_cache.bat\", and click Save ."
+    },
+    {
+      "title": "Run the script to clear the cache.",
+      "content": "Run the script to clear the cache. To use your script to clear the cache, right-click the file, select Run as administrator , and then click Yes to confirm. A Command Prompt window will open and run the commands from the script. When the script is finished running, the Windows Update cache will be cleared, and you'll see \"Press any key to continue . . .\" at the bottom. When you press a key, the window will close."
+    },
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . Press the Windows key on your keyboard (or click the Windows menu) and select Settings . This method can be helpful to free up some disk space , but it usually won't fix any Windows Update errors. The files you'll be deleting are update files from previous updates, and they're meant to help you in case you need to revert to the last version."
+    },
+    {
+      "title": "Select System.",
+      "content": "Select System . If you're using Windows 11, it'll be in the left panel. On Windows 10, click the System icon."
+    },
+    {
+      "title": "Click Storage.",
+      "content": "Click Storage . It's in the center panel on Windows 11, and at the bottom of the left panel on Windows 10. Windows will quickly scan to determine the amount of space used on your PC."
+    },
+    {
+      "title": "Click Temporary files.",
+      "content": "Click Temporary files . This displays a list of different types of temporary files stored by Windows, including how much space each file type is consuming. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select \"Windows Update Cleanup\".",
+      "content": "Select \"Windows Update Cleanup\". If you don't see this option, there aren't any Windows Update files to delete. They're deleted automatically after a while. You can, however, check \"Delivery Optimization Files,\" which does contain some cached files relating to Windows Update. However, these cached files are intended to improve update speeds for other computers on your network. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you're low on space, we recommend selecting other types of temporary files to delete as well. Just be careful not to select \"Downloads\" if you don't want to delete everything in your Downloads folder."
+    },
+    {
+      "title": "Click the Remove files button and confirm.",
+      "content": "Click the Remove files button and confirm. This clears the Windows Update cache and frees space from other selected temporary files."
+    },
+    {
+      "title": "Open Windows Disk Cleanup.",
+      "content": "Open Windows Disk Cleanup. To do this, press the Windows key on your keyboard, type disk cleanup , and click Disk Cleanup from the search results. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Like the Settings method, using Disk Cleanup to clear the Windows Update cache won't fix problems with Windows Update. The files you'll be deleting will free up space from existing update files that are no longer needed, but because these files are just backed-up files from your previous update, this is not the equivalent of clearing the cache, despite what some believe."
+    },
+    {
+      "title": "Click Clean up system files.",
+      "content": "Click Clean up system files . This quickly scans files that can be deleted and displays them in a list."
+    },
+    {
+      "title": "Check the box next to \"Windows Update Cleanup\".",
+      "content": "Check the box next to \"Windows Update Cleanup\". If you don't see this option, there aren't any Windows Update files to delete. They're usually deleted automatically after a while. You can, however, check \"Delivery Optimization Files,\" which does contain some cached files relating to Windows Update. However, these cached files are intended to improve update speeds for other computers on your network. If you're running low on space, select any other types of files you want to delete. You can even select \"Recycle Bin\" to permanently delete your deleted files."
+    },
+    {
+      "title": "Click OK and then Delete Files to confirm.",
+      "content": "Click OK and then Delete Files to confirm. This deletes the selected Windows Update files (and any other files you selected)."
+    }
+  ]
+}

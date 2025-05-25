@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Run-a-Program-from-the-Command-Line-on-Linux",
+  "title": "How to Run a Program from the Command Line on Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal . You can open the Terminal using the keyboard shortcut on most Linux distributions. The keyboard shortcut is Ctrl + Alt + T . You can also click the Terminal icon in your Apps menu. It generally has an icon that resembles a black screen with a white text cursor. [1] X Research source"
+    },
+    {
+      "title": "Type the name of the program and press ↵ Enter.",
+      "content": "Type the name of the program and press ↵ Enter . Unlike the Windows command-line (CMD), you do not need to type out the full directory path or change directories for most programs in Linux. [2] X Research source As long as a program is in your user \"$PATH\" variable, Linux will search $PATH for the program and launch it automatically. For example, if you want to run Firefox from the Terminal, you would simply type firefox and press Enter . Type -h or --help after the program name to display the help menu for that program. Many programs have additional command modifiers you can use to launch the program in a specific way. For example, you can launch a website in a web browser by typing the web browser name followed by the web address and press Enter to launch that website in the web browser (i.e. firefox www.wikihow.com . If you receive a message that says you don't have permission to run a program or access is denied, type sudo before the program name and press Enter . The \"sudo\" command allows regular users to run Terminal commands with administrative privileges or root access. If you want to run a C or C++ program from the Terminal, you will first need to complie the program before you can launch it from the Terminal."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. You can open the Terminal using the keyboard shortcut on most Linux distributions. The keyboard shortcut is Ctrl + Alt + T . You can also click the Terminal icon in your Apps menu. It generally has an icon that resembles a black screen with a white text cursor. [3] X Research source"
+    },
+    {
+      "title": "Type cd followed by a space and the location the program file is saved to.",
+      "content": "Type cd followed by a space and the location the program file is saved to. If the program launch file is saved to a location that is not in your $PATH variable, then you will need to navigate to that location inside the Terminal. You can do so using the \"cd\" command. For example, if you have folder for Python programs saved in your \"Documents\" folder, you can navigate to it in the Terminal by typing cd ~/Documents/Python or something similar, and then press Enter ."
+    },
+    {
+      "title": "Type chmod a+x [filename] and press ↵ Enter.",
+      "content": "Type chmod a+x [filename] and press ↵ Enter . Replace \"filename\" with the actual launch file of the program. The \"chmod a+x\" command tells Linux the file is an executable file. [4] X Research source"
+    },
+    {
+      "title": "Type \"./\" followed by the launch filename and press ↵ Enter.",
+      "content": "Type \". /\" followed by the launch filename and press ↵ Enter . This launches the program. For example, if you have a Python file called \"Helloworld.py\", you would type ./helloworld.py to launch the file."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. If you cannot run a program by simply typing the program's name, you may need to add the directory that the program is installed in to your $PATH variable. You can do this from the Terminal as well. Use the keyboard shortcut to open the Terminal if you haven't already done so. [5] X Research source"
+    },
+    {
+      "title": "Type the command to export the programs directory to the $PATH variable.",
+      "content": "Type the command to export the programs directory to the $PATH variable. To do so, type export PATH=$PATH:[path/to/program] and press Enter . Replace \"[path/to/program]\" with actual directory tree the program is installed in. This will only last until the end of your current session. For example, if you have a program installed in the \"bin\" directory of your \"Home\" folder, you would type export PATH=$PATH:$Home/bin and press Enter . This will temporarily add the \"$Home/bin\" directory to your $PATH variable. You can see which directories are currently added to your $PATH variable by typing the command echo $PATH and pressing Enter ."
+    },
+    {
+      "title": "Type nano ~/.bashrc and press ↵ Enter.",
+      "content": "Type nano ~/.bashrc and press ↵ Enter . This opens the \".bashrc\" file in a text editor that is based in the Terminal. You can use this file to permanently add the directory to your $PATH variable."
+    },
+    {
+      "title": "Add the \"export PATH\" command to the file.",
+      "content": "Add the \"export PATH\" command to the file. To do so, scroll down to the bottom of the file using the mouse wheel and type export PATH=$PATH:[path/to/program] at the bottom. Replace \"[path/to/program]\" with the actual directory tree the program is installed in. [6] X Research source"
+    },
+    {
+      "title": "Press Ctrl+X.",
+      "content": "Press Ctrl + X . This exits the text editor. It will ask if you want to save the file."
+    },
+    {
+      "title": "Press Y and press ↵ Enter.",
+      "content": "Press Y and press ↵ Enter . This confirms that you want to save and exit the text editor. You will be returned to the standard command prompt in the Terminal."
+    },
+    {
+      "title": "Type source ~/.bashrc and press ↵ Enter.",
+      "content": "Type source ~/.bashrc and press ↵ Enter . This loads the updated $PATH variable into your current session. [7] X Research source"
+    },
+    {
+      "title": "Type the name of the program and press ↵ Enter.",
+      "content": "Type the name of the program and press ↵ Enter . With the program's directory now added to your $PATH variable, you should be able to launch the program by simply typing the program name and pressing Enter ."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. In addition to launching programs from within the Terminal, you can also install and uninstall programs from within the Terminal. Use the keyboard shortcut to open the Terminal if you haven't already done so. [8] X Research source"
+    },
+    {
+      "title": "Type sudo apt install [app_name] and press ↵ Enter (Debian).",
+      "content": "Type sudo apt install [app_name] and press ↵ Enter (Debian). Replace \"[app_name]\" with the actual name of the program you want to install. This command works in Debian-based Linux distributions, such as Ubuntu , and Mint. [9] X Research source"
+    },
+    {
+      "title": "Type sudo apt remove [app_name] and press ↵ Enter (Debian).",
+      "content": "Type sudo apt remove [app_name] and press ↵ Enter (Debian). Replace \"[app_name]\" with the name of the app you want to uninstall. This command works in Debian-based Linux distributions, such as Ubuntu, and Mint ."
+    },
+    {
+      "title": "Type sudo dnf install [app_name] and press ↵ Enter (Red Hat).",
+      "content": "Type sudo dnf install [app_name] and press ↵ Enter (Red Hat). Replace \"[app_name]\" with the actual name of the program you want to install. This command works for Red Hat Linux distributions such as RHEL, Fedora, and CentOS. [10] X Research source"
+    },
+    {
+      "title": "Type sudo dnf remove [app_name] and press ↵ Enter (Red Hat).",
+      "content": "Type sudo dnf remove [app_name] and press ↵ Enter (Red Hat). Replace \"[app_name]\" with the name of the app you want to uninstall. This command works for Red Hat Linux distributions such as RHEL, Fedora, and CentOS. [11] X Research source"
+    },
+    {
+      "title": "Type the name of the program and press ↵ Enter.",
+      "content": "Type the name of the program and press ↵ Enter . Once the program is installed, you can launch the program by simply typing the program's name and pressing Enter in the Terminal."
+    }
+  ]
+}

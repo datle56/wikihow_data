@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Convert-from-Decimal-to-Octal",
+  "title": "How to Convert a Decimal to an Octal: Step-by-Step Instructions",
+  "steps": [
+    {
+      "title": "Use this method to learn the concepts.",
+      "content": "Use this method to learn the concepts. Of the two methods on this page, this method is easier to understand. If you're already confident working in different number systems, try the faster remainder method, below."
+    },
+    {
+      "title": "Write down the decimal number.",
+      "content": "Write down the decimal number. For this example, we'll convert the decimal number 98 into octal."
+    },
+    {
+      "title": "List the powers of 8.",
+      "content": "List the powers of 8. Remember that \"decimal\" is called base 10 because each digit represents a power of 10. [2] X Research source We call the first three digits 1s place, the 10s place, the 100s place — but we could also write this as the 10 0 place, the 10 1 place, and the 10 2 place. Octal, or the base 8 number system, uses powers of 8 instead of powers of 10. Write a few of these powers of 8 in a horizontal line, from largest to smallest. Note that these numbers are all written in decimal (base 10): 8 2 8 1 8 0 Rewrite these as single numbers: 64 8 1 You don't need any powers of 8 larger than your original number (in this case, 98). Since 8 3 = 512, and 512 is larger than 98, we can leave it off the chart."
+    },
+    {
+      "title": "Divide the decimal number by the largest power of eight.",
+      "content": "Divide the decimal number by the largest power of eight. Take a look at your decimal number: 98. The nine in the 10s place tells you that there are nine 10s in this number. 10 goes into this number 9 times. Similarly, with octal, we want to know how many \"64s\" go into the final number. Divide 98 by 64 to find out. The easiest way to do this is to make a chart, reading top to bottom: [3] X Research source 98 ÷ 64 8 1 = 1 ← This is the first digit of your octal number."
+    },
+    {
+      "title": "Find the remainder.",
+      "content": "Find the remainder. Calculate the remainder of the division problem, or the amount left over that doesn't go in evenly. Write your answer at the top of the second column. This is what's left of your number after the first digit is calculated. In our example, 98 ÷ 64 = 1. Since 1 x 64 = 64, the remainder is 98 - 64 = 34. Add this to your chart: [4] X Research source 98 34 ÷ 64 8 1 = 1"
+    },
+    {
+      "title": "Divide the remainder by the next power of 8.",
+      "content": "Divide the remainder by the next power of 8. To find the next digit, we move one step down to the next power of 8. Divide the remainder by this number and fill out your chart's second column: 98 34 ÷ ÷ 64 8 1 = = 1 4"
+    },
+    {
+      "title": "Repeat until you've found the full answer.",
+      "content": "Repeat until you've found the full answer. Just as before, find the remainder of your answer and write it at the top of the next column. Keep dividing and finding the remainder until you've done this for every column, including 8 0 (the ones place). Your final row is the final decimal number converted to octal. [5] X Research source Here's our example with the full chart filled out (note that 2 is the remainder of 34÷8): 98 34 2 ÷ ÷ ÷ 64 8 1 = = = 1 4 2 The final answer: 98 base 10 = 142 base 8. You can write this as 98 10 = 142 8"
+    },
+    {
+      "title": "Check your work.",
+      "content": "Check your work. To check your work, multiply each digit in octal by the power of 8 it represents. You should end up with your original number. Let's check our answer, 142: 2 x 8 0 = 2 x 1 =2 4 x 8 1 = 4 x 8 = 32 1 x 8 2 = 1 x 64 = 64 2 + 32 + 64 = 98, the number we started with."
+    },
+    {
+      "title": "Try this practice problem.",
+      "content": "Try this practice problem. Practice this method by converting the decimal number 327 into octal. When you think you have the answer, highlight the invisible text below to see the whole problem laid out. Highlight this area: 327 7 7 ÷ ÷ ÷ 64 8 1 = = = 5 0 7 The answer is 507. (Hint: it's fine to have 0 as the answer to a division problem.)"
+    },
+    {
+      "title": "Start with any decimal number.",
+      "content": "Start with any decimal number. We'll start with the decimal number 670 . This method is faster than the successive division method. Most people find it more difficult to understand why it works, and may want to start with the easier method above."
+    },
+    {
+      "title": "Divide this number by 8.",
+      "content": "Divide this number by 8. Ignore decimal values for now. You'll see why this calculation is useful soon. In our example: 670 ÷ 8 = 83 ."
+    },
+    {
+      "title": "Find the remainder.",
+      "content": "Find the remainder. Now that we've \"counted by 8\" as many times as we can, the remainder is the small number left over. This is the last digit of our octal number, in the ones place (8 0 ). The remainder is always smaller than 8, so it can't be represented by any of the other digits. [6] X Research source In our example: 670 ÷ 8 = 83 remainder 6 . Our octal number so far is ???6. If your calculator has a \"modulus\" or \"mod\" button, you can find this value by entering \"670 mod 8.\""
+    },
+    {
+      "title": "Divide the answer to your division problem by 8.",
+      "content": "Divide the answer to your division problem by 8. Set aside the remainder and return to your division problem. Take your answer and divide by 8 again. Note the answer, then find the remainder. This is the second-to-last digit of your octal number, the 8 1 = 8s place. In our example: The answer to our last division problem was 83. 83 ÷ 8 = 10 remainder 3. Our octal number so far is ??36."
+    },
+    {
+      "title": "Divide by 8 again.",
+      "content": "Divide by 8 again. As before, take the answer to your last division problem. Divide it by 8 again, and find the remainder. This is the third-to-last digit of your octal number, the 8 2 = 64s place. In our example: The answer to our last division problem was 10. 10 ÷ 8 = 1 remainder 2. Our octal number so far is ?236."
+    },
+    {
+      "title": "Repeat until you find the final digit.",
+      "content": "Repeat until you find the final digit. When you calculate your last division problem, the answer will be 0. The remainder to this problem is the first digit in your octal number. You have now fully converted the decimal number. In our example: The answer to our last division problem was 1. 1 ÷ 8 = 0 remainder 1. Our final answer is the octal number 1236. We can write this as 1236 8 to show that it is an octal number."
+    },
+    {
+      "title": "Understand how this works.",
+      "content": "Understand how this works. If you're having trouble understanding this method, here's an explanation: [7] X Research source You start with a pile of 670 units. The first division problem divides these into groups, with 8 units in each group. Anything left over, the remainder, doesn't fit into the octal 8s place. It must be in the 1s place instead. Now you take your pile of groups, and divide them into sections with 8 groups each. Each section now has 8 groups with 8 units each, or 64 units total. The remainder doesn't fit into these, so it can't fit into the octal 64s place. It must be in the 8s place. This continues until you discover the entire number."
+    }
+  ]
+}

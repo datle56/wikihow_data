@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Increase-Dedicated-Video-RAM-on-Windows-Laptops-with-Intel-Graphics",
+  "title": "How to Increase Dedicated Video RAM on Windows Laptops with Intel Graphics",
+  "steps": [
+    {
+      "title": "Right-click your desktop and click Display settings.",
+      "content": "Right-click your desktop and click Display settings . This opens the Display Settings menu."
+    },
+    {
+      "title": "Scroll down and click Advanced display settings (Windows 11) or Advanced display (Windows 10).",
+      "content": "Scroll down and click Advanced display settings (Windows 11) or Advanced display (Windows 10). It's towards the bottom of the Display Settings menu."
+    },
+    {
+      "title": "Click Display adapter properties for Display 1.",
+      "content": "Click Display adapter properties for Display 1 . It's below the Display Information. This displays a pop-up window with information on your graphics adapter and video RAM."
+    },
+    {
+      "title": "See how much dedicated video RAM you have.",
+      "content": "See how much dedicated video RAM you have. The total amount of dedicated video RAM is displayed next to \"Dedicated Video Memory\"."
+    },
+    {
+      "title": "Check if your computer's Video RAM can be increased.",
+      "content": "Check if your computer's Video RAM can be increased. Some Intel processors and integrated Intel graphics chipsets can't change the amount of video RAM that is used. Use the following steps to see if your computer allows you to increase the amount of dedicated video RAM you have: Go to the Intel Graphics Memory FAQ page . Click What is the maximum amount of graphics memory my computer can use? See if your GPU is on the list."
+    },
+    {
+      "title": "Boot into the BIOS/UEFI.",
+      "content": "Boot into the BIOS/UEFI. You can't increase the amount of video RAM your computer has without purchasing a new graphics card, but some computers allow you to adjust the maximum amount of video RAM that is allocated to your system. This option is not available on all PCs. To do so, you will need to boot into the BIOS/UEFI menu. You can use the following steps to boot into the BIOS/UEFI menu from within Windows: [1] X Research source Click the Windows Start menu. Click the Gear/Settings icon. Click System (Windows 11) or Update & Security (Windows 10) Click Recovery . Click Restart now under \"Advanced Startup.\" Click Troubleshoot . Click UEFI Firmware Settings Click Restart ."
+    },
+    {
+      "title": "Locate your video memory settings.",
+      "content": "Locate your video memory settings. The BIOS/UEFI menu differs from one computer manufacturer to the next. You can usually find the video RAM settings under Advanced Features , Advanced Chipset Features , Graphics Settings , Video Settings or VGA Memory Share Size or something similar if it is available on your system."
+    },
+    {
+      "title": "Change the amount of allocated video RAM.",
+      "content": "Change the amount of allocated video RAM. Usually, you can change the amount of dedicated VRAM from 128 MB, 256 MB, or 512 MB if you have enough memory available."
+    },
+    {
+      "title": "Open the Windows Registry Editor.",
+      "content": "Open the Windows Registry Editor. The Windows Registry Editor allows you to make advanced changes to your Windows system that are not in the Settings menu or Control Panel. Warning: Making changes inside the Registry Editor can damage your system. Be careful what you edit inside the Registry Editor. To open the Registry Editor: Press Windows Key + R to open Run. Type regedit into Run and press Enter . Click Yes if prompted."
+    },
+    {
+      "title": "Navigate to the Intel folder.",
+      "content": "Navigate to the Intel folder. Use the following steps to do so: Expand the HKEY_LOCAL_MACHINE folder. Expand the SOFTWARE folder. Expand the Intel folder."
+    },
+    {
+      "title": "Create a new key called \"GMM\" in the Intel folder.",
+      "content": "Create a new key called \"GMM\" in the Intel folder. Use the following steps to do so: Right-click the Intel folder. Click New . Click Key . Press the backspace button and rename the key \"GMM.\""
+    },
+    {
+      "title": "Create a new DWORD called \"DedicatedSegmentSize.\"",
+      "content": "Create a new DWORD called \"DedicatedSegmentSize.\" Use the following steps to do so: Right-click the GMM folder . Click New . Click DWORD (32 Bit) Value . Rename the new value \"DedicatedStementSize.\""
+    },
+    {
+      "title": "Double click on DedicatedSegmentSize.",
+      "content": "Double click on DedicatedSegmentSize . This is the new value you just created. Double-clicking on it will display a pop-up."
+    },
+    {
+      "title": "Click Decimal.",
+      "content": "Click Decimal . It's the second option in the box labeled \"Base\" on the right side of the pop-up. Click the radial button next to \"Decimal\" to select it."
+    },
+    {
+      "title": "Type a number under \"Value Data\" and click Ok.",
+      "content": "Type a number under \"Value Data\" and click Ok . This is the number of megabytes you want to allocate as Video RAM. If you have 8 gigabytes of RAM, you can allocate as much as 512 megabytes. If you have more RAM, you can allocate more."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Use the following steps to restart your computer. After your computer restarts, check your video RAM as outlined in Method 1. The amount of allocated RAM will be reflected next to \"Dedicated Memory\". This may not improve your system's performance, but if you have software that requires a certain amount of video memory to start, this will trick it into starting. Click the Windows Start menu. Click the icon that resembles a circle with a line through the top. Click Restart ."
+    }
+  ]
+}

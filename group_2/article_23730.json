@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Increase-Outlook-Mailbox-Size-on-PC-or-Mac",
+  "title": "How to Increase Mailbox Size in Microsoft Outlook & Outlook.com",
+  "steps": [
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. If you're using the desktop version of Microsoft Outlook for Windows and have Office 2016 or earlier, you can increase your mailbox size for PST and OST data files beyond the 50 GB limit by editing the registry. To open the registry editor, press the Windows key, type regedit , press Enter , and click Yes to confirm. It is not possible to increase the mailbox size in Outlook 2019, Outlook 365, or any version of Outlook for Mac. We don't recommend increasing the size much higher than 50 GB, as too large of a file puts you at risk of corrupting the entire mailbox. Before you edit the registry , we recommend making a backup so you can undo your changes if needed. To make a backup, go to File > Export , choose a location, name the backup, and click Save . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Double-click HKEY_CURRENT_USER.",
+      "content": "Double-click HKEY_CURRENT_USER . It’s in the left column. Several options will expand below."
+    },
+    {
+      "title": "Double-click Software.",
+      "content": "Double-click Software . You may have to scroll down a little to see it. A list of software manufacturers will appear."
+    },
+    {
+      "title": "Double-click Policies.",
+      "content": "Double-click Policies . More folders will appear."
+    },
+    {
+      "title": "Double-click Microsoft.",
+      "content": "Double-click Microsoft . A list of Microsoft products will appear in the right column."
+    },
+    {
+      "title": "Double-click Office.",
+      "content": "Double-click Office . The expanded folders will now show a few different version numbers."
+    },
+    {
+      "title": "Double-click your Office version number.",
+      "content": "Double-click your Office version number. Each version number corresponds to a release: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source 11.0 for Outlook 2003 12.0 for Outlook 2007 14.0 for Outlook 2010 15.0 for Outlook 2013 16.0 for Outlook 2016"
+    },
+    {
+      "title": "Double-click Outlook.",
+      "content": "Double-click Outlook . You may or may not see this under the version number. If you don't see an Outlook folder under your version, you will need to create it. To do so: Click the version number once in the left panel. In the right-panel, right-click a blank area and select New > Key . Type Outlook and press Enter ."
+    },
+    {
+      "title": "Double-click PST.",
+      "content": "Double-click PST . Again, this folder may not appear for everyone. If it doesn't, you will have to create a new key: Click Outlook once in the left panel. In the right-panel, right-click a blank area and select New > Key . Type PST and press Enter ."
+    },
+    {
+      "title": "Create a new DWORD value for \"MaxLargeFileSize.\"",
+      "content": "Create a new DWORD value for \"MaxLargeFileSize.\" Here's how: Select PST in the left panel. Right-click a blank area in the right panel and go to New > DWORD 64-bit Value (or the 32-bit option, depending on your version of Windows ). Type MaxLargeFileSize and press Enter ."
+    },
+    {
+      "title": "Create another DWORD for WarnLargeFileSize.",
+      "content": "Create another DWORD for WarnLargeFileSize. The process is the same as MaxLargeFileSize, just a different name: Select PST in the left panel. Right-click a blank area in the right panel and go to New > DWORD 64-bit Value (or the 32-bit option, depending on your version of Windows ). Type WarnLargeFileSize and press Enter ."
+    },
+    {
+      "title": "Double-click MaxLargeFileSize.",
+      "content": "Double-click MaxLargeFileSize . A dialog will appear."
+    },
+    {
+      "title": "Select Decimal if not already selected.",
+      "content": "Select Decimal if not already selected."
+    },
+    {
+      "title": "Enter the desired mailbox size in MB and click OK.",
+      "content": "Enter the desired mailbox size in MB and click OK . For example, to increase the mailbox size to 75GB, type 75000 into the “Value data” field. The default mailbox size for Outlook 2013 or 2016 is 50 GB. The default for Outlook 2003, 2007, and 2010 is 20 GB."
+    },
+    {
+      "title": "Double-click WarnLargeFileSize.",
+      "content": "Double-click WarnLargeFileSize . Now you'll do something similar for this other DWORD."
+    },
+    {
+      "title": "Enter a size and click OK.",
+      "content": "Enter a size and click OK . Despite its name, setting a maximum amount here will not warn you when you get close to your limit. Instead, Outlook will attempt to make the file more compact by prompting you to delete or archive messages. You will not be able to copy or move messages within the file until you can reduce the file size. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, you may want Outlook to prompt you to delete some messages when you're nearing 72000 MB. Select decimal if not selected by default. Once you're finished, restart your computer to ensure the changes take effect."
+    },
+    {
+      "title": "Empty unneeded email folders.",
+      "content": "Empty unneeded email folders. If you're getting an error like \"Quota Exceeded\" or \"Mailbox Full\" when you're using your Outlook.com, Live.com, Hotmail.com, or other Microsoft email address, you're running into your account's storage limit. Free Outlook accounts get 15 GB of storage, which is totally separate from your OneDrive files . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can clean up your mailbox by deleting emails you don't need to reclaim some of that space. Here's how: Log in to Outlook.com and click the gear icon at the top-right. Click the Account tab. Click Storage . Expand the Email storage section if not expanded. You'll see a list of email folders and the space their messages take up. Click Empty next to a folder, such as \"Deleted\" or \"Junk Email,\" and select a timeframe. For example, to delete all messages in the trash that have been there for 3 months or longer, select 3 months and older . Or, you can click All to delete all messages in a selected folder. Click OK to confirm. Once the messages are removed, the space they were taking up will be available again in your inbox."
+    },
+    {
+      "title": "Move your attachments to OneDrive.",
+      "content": "Move your attachments to OneDrive. If you have a lot of email attachments , you can instantly reclaim space by moving them to OneDrive. Here's how: Click Inbox , or select a different mailbox. Click the Sort menu (the two arrows) above the message list and select Size . This displays the messages in the selected folder in size order, with the largest messages at the top. Select a message with an attachment. Hover your cursor over the attachment, then click the down arrow that appears. Select Save to OneDrive . Delete the original email and attachment, then clear your Deleted Items folder by clicking the three dots next to \"Deleted Items\" and selecting Empty . Repeat for other large attachments."
+    },
+    {
+      "title": "Use the Sweep tool to sweep your inbox.",
+      "content": "Use the Sweep tool to sweep your inbox. Another way to get more space in your inbox is to delete incoming messages from particular senders automatically. Just select an email in your inbox from a sender you don't want to receive messages from, click Sweep on the menu bar, and you can choose to move all messages from that sender to the \"Deleted items\" folder. Then, clear your deleted items by clicking Deleted Items in the left panel, clicking the three dots next to its name, and selecting Empty . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source This will also delete any messages in the current folder from the selected sender."
+    },
+    {
+      "title": "Increase your storage quota to 100 GB.",
+      "content": "Increase your storage quota to 100 GB. If you don't want to delete any emails, your other option is to increase your storage limit by upgrading to Microsoft 365. You can get Microsoft 365 for $69.99/yr (or $6.99/month) for one person, or opt for a family subscription (up to 6 users) for $99.99/yr (or $9.99/month). To upgrade, go to https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products?ocid=cmmngsvfl1e&rtc=1"
+    }
+  ]
+}

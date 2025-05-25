@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Audio-Renderer-Error",
+  "title": "How to Fix YouTube's Audio Renderer Error on Windows 10 & 11",
+  "steps": [
+    {
+      "title": "Restart your computer to clear out the error.",
+      "content": "Restart your computer to clear out the error. Many users have stated that this is a temporary solution or it doesn't actually fix the error. If restarting your PC doesn't fix the issue, try the other troubleshooting tips in this article."
+    },
+    {
+      "title": "Try restarting the Windows Audio service to clear out any glitches.",
+      "content": "Try restarting the Windows Audio service to clear out any glitches. Sometimes, the Windows Audio service stops working properly, which can contribute to the Audio Renderer Error. Many users have found that restarting the Windows Audio service fixed the issue. Press ⊞ Win + R to open the Run dialog. Type services.msc into the Run dialog and press ↵ Enter . Scroll down in the services window until you find Windows Audio. Right-click and choose Restart ."
+    },
+    {
+      "title": "Make sure Windows is using the right audio output device.",
+      "content": "Make sure Windows is using the right audio output device. Depending on your computer, you may have multiple Realtek Audio output devices. If the wrong device is selected, you won't hear any audio, and you might get the Audio Renderer Error. Type sound settings in the taskbar search bar, then click the menu item that pops up. Under \"Choose where to play sound,\" ensure the correct Realtek device is chosen. If you're not sure which device to choose, try the other device to see if it fixes the problem. Kats also recommends testing your audio using a different audio device, such as a USB or Bluetooth speaker or headphones, instead of your computer's built-in speakers. \"Speakers can go bad,\" he explains, \"and the audio card itself can go bad.\""
+    },
+    {
+      "title": "Add YouTube as a site that's allowed to display ads.",
+      "content": "Add YouTube as a site that's allowed to display ads. If you use an ad blocker , that can sometimes be the cause of the Audio Renderer Error on YouTube. [1] X Research source Either add YouTube as a whitelisted site in your ad blocker, or disable your adblocker entirely when using YouTube to see if that fixes the problem."
+    },
+    {
+      "title": "Remove any third-party equalizers or mixers.",
+      "content": "Remove any third-party equalizers or mixers. If you have any third-party audio software like an equalizer or mixer, removing it can fix the Audio Renderer Error. These applications are great for enhancing sound, but may not be compatible with your audio drivers or other software on your PC. Some users have found that uninstalling VoiceMeeter specifically fixed this issue."
+    },
+    {
+      "title": "Exit out of any other media player software.",
+      "content": "Exit out of any other media player software. If you're running other media player software, try closing it to see if that fixes the issue. Some users have found that having PowerDVD open specifically was the cause of the Audio Renderer Error."
+    },
+    {
+      "title": "Updating your audio device drivers may fix the issue.",
+      "content": "Updating your audio device drivers may fix the issue. Kats explains that many audio errors, including Audio Renderer Error, are caused by outdated drivers. He recommends checking your desktop or laptop computer for driver updates to ensure you have the latest drivers. You can use the device manager to check for audio driver updates and install any new ones available. First, before you dig into the device manager, try checking for Windows Updates . Most manufacturers release updated drivers through Windows Update, so you may be able to get the latest drivers that way. Boot in Safe Mode . To do this, press and hold the ⇧ Shift key while on the Windows sign-in screen, then select Power > Restart . Right click the Start button and select Device Manager . Expand Sound, video, and game controllers . Right click your audio driver and select Update driver . After the drivers have been updated, restart your PC to see if the Audio Renderer Error still occurs when you try to watch a video."
+    },
+    {
+      "title": "Windows audio enhancements may be interfering with audio playback.",
+      "content": "Windows audio enhancements may be interfering with audio playback. Windows has a few audio enhancements that can make your computer's audio sound better, but it can also cause your computer's audio to not work properly. Disable these enhancements to see if it fixes the Audio Renderer Error. Right-click on the volume icon in your taskbar. Click Sound settings . Scroll down and click More sound settings . Right-click your speakers and choose Properties . Click the Enhancements tab. Click the radio button next to Disable all enhancements . Click OK . Check to see if the error is still occurring."
+    },
+    {
+      "title": "Re-enabling your audio driver can fix random errors and glitches.",
+      "content": "Re-enabling your audio driver can fix random errors and glitches. Sometimes, your audio driver can be refreshed by disabling it and then re-enabling it. This can fix the Audio Renderer Error. Right click the Start button and select Device Manager . Expand Sound, video, and game controllers . Right click your audio driver and select Disable driver . After a few seconds, right-click the audio driver again and select Enable driver . Check to see if the error is still occurring."
+    },
+    {
+      "title": "Adjust your sample rate if you're getting this error while using a DAW.",
+      "content": "Adjust your sample rate if you're getting this error while using a DAW. If YouTube is giving you the Audio Renderer Error while you have a DAW like Cubase or FL Studio open, you can usually fix the problem by matching your audio output's sample rate to the sample rate in your DAW or ASIO driver control panel. [2] X Research source Right-click on the volume icon in your taskbar. Click Sound settings . Scroll down and click More sound settings . Right-click your speakers and choose Properties . Click the Advanced tab. Change the sample rate in the dropdown to match your DAW or ASIO driver control panel. Click OK . Check to see if the error is still occurring."
+    }
+  ]
+}

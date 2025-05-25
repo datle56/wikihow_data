@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Be-Your-Own-Certificate-Authority",
+  "title": "How to Be Your Own Certificate Authority",
+  "steps": [
+    {
+      "title": "Generate your CA's private key by issuing the following command.",
+      "content": "Generate your CA's private key by issuing the following command. openssl genrsa -des3 -out server.CA.key 2048 The options explained openssl - the name of the software genrsa - creates a new private key -des3 - encrypt the key using the DES cipher -out server.CA.key - the name of your new key 2048 - the length, in bits, of the private key (Please see the warnings) Store this certificate and the password in a safe place."
+    },
+    {
+      "title": "Create a certificate signing request.",
+      "content": "Create a certificate signing request. openssl req -verbose -new -key server.CA.key -out server.CA.csr -sha256 The options explained: req - Creates a Signing Request -verbose - shows you details about the request as it is being created (optional) -new - creates a new request -key server.CA.key - The private key you just created above. -out server.CA.csr - The file name of the signing request you are creating sha256 - The encryption algorithm to use for signing requests (If you don't know what this is, do not change this. You should only change this if you know what you are doing)"
+    },
+    {
+      "title": "Fill out the information as much as possible.",
+      "content": "Fill out the information as much as possible. Country Name (2 letter code) [AU]: US State or Province Name (full name) [Some-State]: CA Locality Name (e.g., city) []: Silicon Valley Organization Name (e.g., company) [Internet Widgits Pty Ltd]: wikiHow, Inc. Organizational Unit Name (eg, section) []: Common Name (e.g., server FQDN or YOUR name) []: CA Certificate for wikiHow.com Email Address []: certs@wikihow.com"
+    },
+    {
+      "title": "Self-sign your certificate:",
+      "content": "Self-sign your certificate: openssl ca -extensions v3_ca -out server.CA-signed.crt -keyfile server.CA.key -verbose -selfsign -md sha256 -enddate 330630235959Z -infiles server.CA.csr The options explained: ca - Loads the Certificate Authority module -extension v3_ca - Loads the v3_ca extension, a must-have for use on modern browsers -out server.CA-signed.crt - The name of your new signed key -keyfile server.CA.key - The private key you created in step 1 -verbose - shows you details about the request as it is being created (optional) -selfsign - Tells openssl that you are using the same key to sign the request -md sha256 - The encryption algorithm to use for the message. (If you don't know what this is, do not change this. You should only change this if you know what you are doing) -enddate 330630235959Z - The end date of the certificate. The notation is YYMMDDHHMMSSZ where Z is in GMT, sometimes known as \"Zulu\" time. -infiles server.CA.csr - the signing request file that you created the step above."
+    },
+    {
+      "title": "Inspect your CA certificate.",
+      "content": "Inspect your CA certificate. openssl x509 -noout -text -in server.CA.crt The options explained: x509 - Loads the x509 module to inspect signed certificates. -noout - Do not output the encoded text -text - output the information on the screen -in server.CA.crt - Load the signed certificate The server.CA.crt file can be distributed to anyone who will use your website or use certificates that you plan on signing."
+    },
+    {
+      "title": "Create a private key.",
+      "content": "Create a private key. openssl genrsa -des3 -out server.apache.key 2048 The options explained: openssl - the name of the software genrsa - creates a new private key -des3 - encrypt the key using the DES cipher -out server.apache.key - the name of your new key 2048 - the length, in bits, of the private key (Please see the warnings) Store this certificate and the password in a safe place."
+    },
+    {
+      "title": "Create a certificate signing request.",
+      "content": "Create a certificate signing request. openssl req -verbose -new -key server.apache.key -out server.apache.csr -sha256 The options explained: req - Creates a Signing Request -verbose - shows you details about the request as it is being created (optional) -new - creates a new request -key server.apache.key - The private key you just created above. -out server.apache.csr - The file name of the signing request you are creating sha256 - The encryption algorithm to use for signing requests (If you don't know what this is, do not change this. You should only change this if you know what you are doing)"
+    },
+    {
+      "title": "Use your CA certificate to sign the new key.",
+      "content": "Use your CA certificate to sign the new key. openssl ca -out server.apache.pem -keyfile server.CA.key -infiles server.apache.csr The options explained: ca - Loads the Certificate Authority module -out server.apache.pem - The file name the signed certificate -keyfile server.CA.key - The file name of the CA certificate that will be signing the request -infiles server.apache.csr - The file name of the Certificate Signing Request"
+    },
+    {
+      "title": "Fill out the information as much as possible:",
+      "content": "Fill out the information as much as possible: Country Name (2 letter code) [AU]: US State or Province Name (full name) [Some-State]: CA Locality Name (e.g., city) []: Silicon Valley Organization Name (e.g., company) [Internet Widgits Pty Ltd]: wikiHow, Inc. Organizational Unit Name (eg, section) []: Common Name (e.g., server FQDN or YOUR name) []: Apache SSL Certificate for wikiHow.com Email Address []: certs@wikihow.com"
+    },
+    {
+      "title": "Save a copy of your private key in another location.",
+      "content": "Save a copy of your private key in another location. Create a private key without a password to prevent Apache from prompting you for a password: openssl rsa -in server.apache.key -out server.apache.unsecured.key The options explained: rsa - Runs the RSA encryption program -in server.apache.key - The key name that you want to convert. -out server.apache.unsecured.key - The file name of the new unsecured key"
+    },
+    {
+      "title": "Use the resulting server.apache.pem file along with the private key you generated in step 1 to configure your apache2.conf file.",
+      "content": "Use the resulting server.apache.pem file along with the private key you generated in step 1 to configure your apache2.conf file."
+    },
+    {
+      "title": "Follow all the steps in _Creating SSL Certificates for Apache_.",
+      "content": "Follow all the steps in _Creating SSL Certificates for Apache_."
+    },
+    {
+      "title": "Convert your signed certificate to a PKCS12.",
+      "content": "Convert your signed certificate to a PKCS12. openssl pkcs12 -export -in user_cert.pem -inkey user_private_key.pem -out user_cert.p12"
+    },
+    {
+      "title": "Create a private key.",
+      "content": "Create a private key. openssl genrsa -des3 -out private_email.key 2048"
+    },
+    {
+      "title": "Create a Certificate Signing Request.",
+      "content": "Create a Certificate Signing Request. openssl req -new -key private_email.key -out private_email.csr"
+    },
+    {
+      "title": "Use your CA certificate to sign the new key.",
+      "content": "Use your CA certificate to sign the new key. openssl ca -out private_email.pem -keyfile server.CA.key -infiles private_email.csr"
+    },
+    {
+      "title": "Convert the certificate to PKCS12.",
+      "content": "Convert the certificate to PKCS12. openssl pkcs12 -export -in private_email.crt -inkey private_email.key -out private_email.p12"
+    },
+    {
+      "title": "Create a Public Key certificate for distribution.",
+      "content": "Create a Public Key certificate for distribution. openssl pkcs12 -export -out public_cert.p12 -in private_email.pem -clcerts -nokeys -name \"WikiHow's Public Key\""
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Connect-to-an-OpenVPN-Server",
+  "title": "How to Connect to an OpenVPN Server on Windows, Mac, Linux, Android, and iOS",
+  "steps": [
+    {
+      "title": "Download the OpenVPN client installer.",
+      "content": "Download the OpenVPN client installer. You'll need to use a connection program called a \"client\". The client handles the connection between your computer and the OpenVPN server. You can download the client from here . Use the \"Installer\" download link that matches your version of Windows. You'll need to know if you are running a 32-bit or 64-bit version of Windows. Press ⊞ Win + Pause and look for the \"System type\" entry."
+    },
+    {
+      "title": "Run the installer.",
+      "content": "Run the installer. Run the OpenVPN installer after downloading it. Confirm that you want to run it. Follow the instructions to proceed, and leave all of the settings at their default. All of the necessary services will be installed so that OpenVPN can function properly."
+    },
+    {
+      "title": "Download the configuration files for the server.",
+      "content": "Download the configuration files for the server. Any server that is running OpenVPN should provide you with a set of configuration files. One of the files may be a security certificate. The other file will contain the server information. There may be multiple server configuration files if your VPN service offers multiple servers. [1] X Research source You can find these configuration files on your VPN service's Support page. The config files may come packaged in a ZIP file. If you can't find the configuration files, you may still be able to connect. See Step 9 of this section."
+    },
+    {
+      "title": "Copy the configuration files to the proper folder.",
+      "content": "Copy the configuration files to the proper folder. Copy the key and the configuration file(s) to the C:\\Program Files\\OpenVPN\\config folder for OpenVPN. It may be located at C:\\Program Files (x86)\\OpenVPN\\config instead."
+    },
+    {
+      "title": "Right-click on the OpenVPN shortcut and select \"Run as administrator\".",
+      "content": "Right-click on the OpenVPN shortcut and select \"Run as administrator\". You must run OpenVPN as an administrator. Make sure OpenVPN isn't already running before starting it this way."
+    },
+    {
+      "title": "Right-click on the OpenVPN icon in your System Tray.",
+      "content": "Right-click on the OpenVPN icon in your System Tray. You'll see a list of servers based on the files that you copied into the OpenVPN config folder."
+    },
+    {
+      "title": "Select the server you want and click \"Connect\".",
+      "content": "Select the server you want and click \"Connect\". You'll be prompted to enter your username and password for the server. You received these credentials when you signed up for the VPN service."
+    },
+    {
+      "title": "Confirm you are connected.",
+      "content": "Confirm you are connected. You'll see a notification appear indicating that you are connected to the VPN server. Your internet traffic will now be sent through the VPN."
+    },
+    {
+      "title": "Connect to the VPN without configuration files.",
+      "content": "Connect to the VPN without configuration files. You may still be able to connect and download the correct files. Start OpenVPN and enter the IP address or hostname of the server. [2] X Research source Enter your username and password when prompted. Select your profile if prompted. Select \"Always\" when prompted to accept the certificate."
+    },
+    {
+      "title": "Download \"Tunnelblick\".",
+      "content": "Download \"Tunnelblick\". You'll need a program called a \"client\" to connect. The OpenVPN organization does not provide a client for Mac. Tunnelblick is a free OpenVPN client designed for Mac. You can download Tunnelblick here . Select the \"Latest\" link to download the installer."
+    },
+    {
+      "title": "Double-click the downloaded installer.",
+      "content": "Double-click the downloaded installer. This will open a new window. Right-click the Tunnelblick.app file and select \"Open\". Confirm that you want to open the program. Enter your administrator information to install Tunnelblick. [3] X Research source"
+    },
+    {
+      "title": "Download your VPN configuration files.",
+      "content": "Download your VPN configuration files. Every OpenVPN service should have configuration files available to download. These make setting up Tunnelblick much simpler. You can download the files from your VPN's support page."
+    },
+    {
+      "title": "Launch Tunnelblick.",
+      "content": "Launch Tunnelblick. Start Tunnelblick once you've downloaded the files. You'll be prompted to select your new configuration files before the client can start. Click \"I have configuration files\" and then select \"OpenVPN Configuration(s)\". If the files are specifically for Tunnelblick, select \"Tunnelblick VPN Configuration(s)\" instead. Select \"Open Private Configurations Folder\". This will open a new finder window. Drag and drop all of your configuration files into the folder that opens."
+    },
+    {
+      "title": "Click the Tunnelblick icon in your menu bar.",
+      "content": "Click the Tunnelblick icon in your menu bar. Select a server to connect to it. You'll be prompted for your administrator password the first time that you connect to the server."
+    },
+    {
+      "title": "Enter your credentials.",
+      "content": "Enter your credentials. Enter the username ad password you were assigned by the VPN service when prompted. You can choose to save these to your Keychain for easier logins."
+    },
+    {
+      "title": "Download the certificate (if prompted).",
+      "content": "Download the certificate (if prompted). You may be prompted to download a security certificate upon connecting to the server. You'll need this certificate to connect. [4] X Research source"
+    },
+    {
+      "title": "Install the OpenVPN client.",
+      "content": "Install the OpenVPN client. You'll need a client in order to connect to OpenVPN servers. Most distributions have an OpenVPN client available from the repository. The following instructions are for Ubuntu and other Debian distributions. The process is similar for others. Open the Terminal and type sudo apt-get install openvpn . Enter your administrator password to start installing."
+    },
+    {
+      "title": "Download your VPN service's configuration files.",
+      "content": "Download your VPN service's configuration files. Most VPN services will provide configuration files for OpenVPN. These files are necessary for OpenVPN to connect to the VPN service. You can find these files on the service's Support page. The files will typically come in a ZIP archive. Extract the files to an easy-to-access folder."
+    },
+    {
+      "title": "Start OpenVPN from the terminal.",
+      "content": "Start OpenVPN from the terminal. Return to the Terminal. If you extracted the files to your Home directory, you shouldn't need to change locations. If you extracted the files to a different directory, navigate to it in the Terminal. Enter the following command to start OpenVPN: openvpn --config configFile .ovpn"
+    },
+    {
+      "title": "Enter your credentials.",
+      "content": "Enter your credentials. You'll be prompted for your VPN username and password. You got these credentials when you signed up for the VPN service. Your password will not appear as you type it."
+    },
+    {
+      "title": "Wait until you are connected.",
+      "content": "Wait until you are connected. You'll see the Terminal update the status of the connection. When you see the message \"Initialization Sequence Completed\", you are connected. [5] X Research source"
+    },
+    {
+      "title": "Download the OpenVPN Connect app.",
+      "content": "Download the OpenVPN Connect app. This is the official OpenVPN client for Android. It can be downloaded for free from the Google Play Store. It does not require root access for your device."
+    },
+    {
+      "title": "Download the configuration files and certificates for your VPN.",
+      "content": "Download the configuration files and certificates for your VPN. You should be able to find these files on the VPN service's support page. You may need a File Manager app to open the ZIP file and extract the files."
+    },
+    {
+      "title": "Tap the downloaded configuration file.",
+      "content": "Tap the downloaded configuration file. Select OpenVPN Connect when prompted which app you want to open the file with."
+    },
+    {
+      "title": "Enter your credentials.",
+      "content": "Enter your credentials. You'll need to enter your username and password into the login screen. Tap the \"Save\" box to log in easier next time."
+    },
+    {
+      "title": "Tap \"Connect\" to connect to the VPN.",
+      "content": "Tap \"Connect\" to connect to the VPN. Your Android device will use the configuration file to connect to the VPN server. You can verify that the process worked by checking your public IP address. It should be that of the VPN server instead of your real IP. [6] X Research source"
+    },
+    {
+      "title": "Download the OpenVPN Connect app.",
+      "content": "Download the OpenVPN Connect app. You can download this for free from the iOS App Store. You don't need to be jailbroken to use the app."
+    },
+    {
+      "title": "Download the VPN configuration files on your computer.",
+      "content": "Download the VPN configuration files on your computer. You'll need to email the configuration files to yourself from your computer. This will allow you to access them from your iOS device. Download the files from your VPN service's support page. Extract them if they are in ZIP or RAR format."
+    },
+    {
+      "title": "Send the configuration files to yourself via email.",
+      "content": "Send the configuration files to yourself via email. Start a new email message on your computer. Attach the OpenVPN configuration files to the message. Send them to yourself so that you can open the email on your iOS device."
+    },
+    {
+      "title": "Open your Mail app and tap the configuration file attachment.",
+      "content": "Open your Mail app and tap the configuration file attachment. Open the message that you sent to yourself and tap the configuration file that you want to use. Select \"Open in OpenVPN\"."
+    },
+    {
+      "title": "Click the \"+\" button in the OpenVPN app and enter your credentials.",
+      "content": "Click the \"+\" button in the OpenVPN app and enter your credentials. You received these login credentials when you signed up for the VPN service."
+    },
+    {
+      "title": "Connect to the VPN.",
+      "content": "Connect to the VPN. You will be prompted to allow OpenVPN to enable the VPN connection. Allow it to proceed."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Use-an-Old-ATX-Power-Supply-As-a-Lab-Power-Supply-Without-Modification",
+  "title": "How to Repurpose an ATX Power Supply for a Lab",
+  "steps": [
+    {
+      "title": "Ready your materials (See \"Things you'll need\" below)",
+      "content": "Ready your materials (See \"Things you'll need\" below)"
+    },
+    {
+      "title": "Plan the design of your new PSU.",
+      "content": "Plan the design of your new PSU. Create a circuit map to follow so to avoid confusion. Remember that there will be a difference between older and newer ATX PSUs. Older PSUs will mainly utilize the 3.3V and 5V rails, with excess current being handled by the 12V rail. Newer versions will use the 12V rail as their main output."
+    },
+    {
+      "title": "Drill the holes you need to mount your binding posts, LEDs, and main switch.",
+      "content": "Drill the holes you need to mount your binding posts, LEDs, and main switch."
+    },
+    {
+      "title": "Cut your wires and group them by color.",
+      "content": "Cut your wires and group them by color. The color guide is as follows: Black: Ground Orange: +3.3V Red: +5V Yellow: +12V Blue: -12V Green: Power On Purple: +5V Standby Gray: Power Good Brown: +3.3V Sense White: -5V (Old PSUs only)"
+    },
+    {
+      "title": "Solder the wire bundles (Excluding the mains) to their respective binding posts.",
+      "content": "Solder the wire bundles (Excluding the mains) to their respective binding posts. (Remember to label these so you which is which."
+    },
+    {
+      "title": "Solder the main wires to the switch.",
+      "content": "Solder the main wires to the switch."
+    },
+    {
+      "title": "Begin connecting LEDs to your load switch",
+      "content": "Begin connecting LEDs to your load switch Connect the load switch between 'Ground' and 'Power On'. Use a current limiting resistor as you connect the green LED between 'Ground' and one of the positive outputs of the power supply (i.e. +12V for the newer models, +5V for older) Use a current limiting resistor as you connect the red LED between 'Ground' and '+5V Standby'"
+    },
+    {
+      "title": "Attach your 10-Ohm/10-Watt resistors to a piece of prototyping board and bend the leads to avoid movement.",
+      "content": "Attach your 10-Ohm/10-Watt resistors to a piece of prototyping board and bend the leads to avoid movement. Isolate these resistors then connect them to your ground and positive output wires."
+    },
+    {
+      "title": "Test the box with an ohm-meter before applying power.",
+      "content": "Test the box with an ohm-meter before applying power. Make sure there are no unexpected connections, and that the proper connections are made."
+    },
+    {
+      "title": "Here's a picture of the finished box:",
+      "content": "Here's a picture of the finished box:"
+    }
+  ]
+}

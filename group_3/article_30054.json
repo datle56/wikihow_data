@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Make-a-USB-Bootable",
+  "title": "How to Make a Bootable USB Drive on Windows & macOS",
+  "steps": [
+    {
+      "title": "Download or create an image file.",
+      "content": "Download or create an image file. If you have an image file (such as a \".iso,\" \".img,\" \".usb,\" or \".vhd\" file) that you want to turn into a bootable USB drive, great! If not, you can create a disk image file from an existing CD/DVD/Blu-ray or from existing files and folders. For example, if you want to make a bootable Ubuntu drive, you can download the ISO of Ubuntu at https://ubuntu.com/download/desktop ."
+    },
+    {
+      "title": "Download Rufus.",
+      "content": "Download Rufus. Rufus is a free, lightweight tool that comes widely recommended by developers and product specialists across the internet. [1] X Research source To download Rufus, go to https://rufus.ie in a web browser. Scroll down the page and click the first link under the \"Download\" header. It'll be the latest version of the tool (version 3.21 as of November 2022). [2] X Research source If the download doesn't start automatically, right-click the link and click Save link as… . Select a location you want to save the file to and click Save . If you see an ad when you click the link, simply click Close to close the ad and start the file download."
+    },
+    {
+      "title": "Double-click the downloaded file.",
+      "content": "Double-click the downloaded file. It's the file called rufus-3.21.exe (the version number may vary). By default, downloaded files can be found in your Downloads folder. Double-click the file in your Downloads folder or within your web browser to run Rufus . If prompted, click Yes to allow Rufus to make changes to your system."
+    },
+    {
+      "title": "Insert your USB flash drive.",
+      "content": "Insert your USB flash drive. Make sure to use a drive that's large enough to accommodate the size of your image file. Warning: Creating a bootable disk will overwrite and erase any data that is already on the USB drive. If there are any files on the USB drive that you don't want to lose, be sure to back them up before you start. You will also not be able to use the USB drive to store files or data after it is made into a bootable disk."
+    },
+    {
+      "title": "Select your USB drive from the \"Device\" menu.",
+      "content": "Select your USB drive from the \"Device\" menu. It's at the top of the Rufus window. [3] X Research source"
+    },
+    {
+      "title": "Select ISO Image.",
+      "content": "Select ISO Image . Use the drop-down menu next to the \"File name\" bar to select \"ISO image.\" ISO image files include, \".iso,\" \".img\", \".vhd,\" \".usb,\" and more."
+    },
+    {
+      "title": "Select your image file.",
+      "content": "Select your image file. To do so, click the image file you want to select, and then click Open in the lower-right corner. [4] X Research source This updates the \"Volume label\" field to match what's in the ISO. If you want to give the drive another name, you can replace that text with anything you wish. The remaining settings should be fine in their default state, but feel free to change any parameters if you need to."
+    },
+    {
+      "title": "Click Start to create the drive.",
+      "content": "Click Start to create the drive. Rufus will now copy the image file to the drive, which will make the drive bootable upon completion. This may take several minutes. When the drive is ready, click Close at the bottom-right to exit Rufus. [5] X Research source"
+    },
+    {
+      "title": "Download or create an image file.",
+      "content": "Download or create an image file. To create a bootable USB flash drive, you'll need a bootable image. Image files usually end with \".iso,\" \".img,\" or \".dmg.\" If you already have an image file you want to turn into a bootable USB drive, you're good to go! For example, if you want to create a bootable Ubuntu installation drive, download the Ubuntu ISO from https://ubuntu.com/download/desktop ."
+    },
+    {
+      "title": "Download Etcher.",
+      "content": "Download Etcher. Etcher is a free, widely-recommended tool that allows you to create bootable USB flash drives from image files on your Mac. [6] X Research source To download the installer, go to https://etcher.balena.io/ and click the Download for macOS option below the animation."
+    },
+    {
+      "title": "Insert a USB flash drive.",
+      "content": "Insert a USB flash drive. Your USB flash drive should plug into one of the rectangular or oval USB or USB-C ports on your computer's housing. Traditional flash drives only fit one way, so don't force the drive if it doesn't fit! Warning: Creating a bootable disk will overwrite and erase any data that is already on the USB drive. If there are any files on the USB drive that you don't want to lose, be sure to back them up before you start. You will also not be able to use the USB drive to store files or data after it is made into a bootable disk. The flash drive should be at least 16 GB to accommodate most operating system files."
+    },
+    {
+      "title": "Install Etcher.",
+      "content": "Install Etcher. By default, your downloaded files can be found in your Downloads folder. Double-click the balenaEtcher-1.10.2.dmg file (version number may vary) in your Downloads folder or web browser. Then drag the Etcher icon into your Applications folder."
+    },
+    {
+      "title": "Open Etcher To do so, open your Applications folder in Finder and double-click the Etcher.app file.",
+      "content": "Open Etcher To do so, open your Applications folder in Finder and double-click the Etcher.app file."
+    },
+    {
+      "title": "Select Flash from file.",
+      "content": "Select Flash from file . It's the blue button on the left that is highlighted when you open Etcher."
+    },
+    {
+      "title": "Select the image file.",
+      "content": "Select the image file. This is the \".iso,\" or \".img,\" file you're using to create the bootable USB drive. If you just downloaded the image file, it'll probably be in your Downloads folder. Select the image file and click Open ."
+    },
+    {
+      "title": "Click Select taret.",
+      "content": "Click Select taret . It's the blue button below the icon that resembles a hard drive. Click this button."
+    },
+    {
+      "title": "Select your flash drive.",
+      "content": "Select your flash drive. To do so, click the checkbox next to your flash drive and then click Select in the lower-right corner. If the flash drive is already displayed below the icon that resembles a hard drive, go ahead and skip this stop. If a flash drive is already displayed but it is not the correct drive, click Change below the drive. Then click the checkbox next to the correct drive and click Select ."
+    },
+    {
+      "title": "Click Flash to create the bootable USB drive.",
+      "content": "Click Flash to create the bootable USB drive. Etcher will now copy the image file to your flash drive, which makes it bootable. When the process is complete, you'll see a success message."
+    },
+    {
+      "title": "Click Eject if you see a disk error.",
+      "content": "Click Eject if you see a disk error. If you see an error that says \"The disk you inserted was not readable by this computer,\" don't worry—just click Eject instead of \"Initialize,\" and then unplug the drive. You can then use the drive to boot when you wish."
+    },
+    {
+      "title": "Insert a USB drive that's 16 GB or larger.",
+      "content": "Insert a USB drive that's 16 GB or larger. If you ever experience problems booting into Windows 10, having a bootable Windows recovery drive gives you access to troubleshooting tools and, if worse comes to worse, allows you to reinstall Windows . You can create a recovery drive in both Windows 10 and Windows 11. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Warning: Creating a recovery drive will delete any files that were on the drive already. If there are files on the USB drive that you don't want to lose, be sure to back them up before you start. Warning: You won't be able to use your recovery drive for other things, such as file storage, once you make it a bootable recovery drive."
+    },
+    {
+      "title": "Open the Windows Start menu and type create a recovery drive.",
+      "content": "Open the Windows Start menu and type create a recovery drive . This will display a list of search results. The Windows Start menu is the button with the Windows logo in the taskbar at the bottom of the screen. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don't see the search bar after clicking the Start menu, click the circle or magnifying glass to its right."
+    },
+    {
+      "title": "Click Create a recovery drive in the search results.",
+      "content": "Click Create a recovery drive in the search results. It has an icon that resembles a computer screen with a checkmark over it. This opens the Recovery Drive creation tool. You may have to click Yes to start the application."
+    },
+    {
+      "title": "Check the box beside \"Back up system files to the recovery drive\" and click Next.",
+      "content": "Check the box beside \"Back up system files to the recovery drive\" and click Next . This option should be selected by default, but it's a good idea to make sure. Windows will then scan for your USB drive. This may take a few minutes. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select your USB drive and click Next.",
+      "content": "Select your USB drive and click Next . A warning message will appear, letting you know that everything will be erased if you continue."
+    },
+    {
+      "title": "Review the warning message and click Create.",
+      "content": "Review the warning message and click Create . This reformats the USB drive and installs the Windows recovery media. This process may take several minutes."
+    },
+    {
+      "title": "Click Finish to close the window.",
+      "content": "Click Finish to close the window. Your bootable Windows 10 recovery drive is now ready for use."
+    },
+    {
+      "title": "Download macOS.",
+      "content": "Download macOS. If you need to be able to install macOS from a USB drive, you can use this method to create the drive. In general, there's no need for the average user to do this—everything you need to upgrade or reinstall macOS is built into the computer already. But if you need to install macOS on multiple computers, or make a Hackintosh , a USB drive will be helpful. MacOS Catalina, Mojave, High Sierra, Big Sur, and Monterey can all be downloaded from the Mac App Store. [10] X Research source For example, if you want to create a bootable Catalina disk, click this link to go to the Catalina page on the Mac App Store, click GET , and download the installers. Just don't click Install—you just need the files. If you already have the version you're trying to download, you'll see a warning message—just click Continue to save the installer to your Applications folder. [11] X Research source If the installer runs automatically, close the window."
+    },
+    {
+      "title": "Insert a USB flash drive.",
+      "content": "Insert a USB flash drive. Your flash drive should plug into one of the rectangular or oval USB or USB-C ports on your Mac's housing. Traditional flash drives only fit one way, so don't force the drive if it doesn't fit. The drive should be at least 12 GB and formatted as Mac OS Extended . [12] X Research source All of the data on your drive will be deleted during this process. If there's anything you want to keep, back up your files now."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. To open the Terminal , click the magnifying glass icon in the upper-right corner and type \"Terminal.\" Then click the Terminal app, which has an icon that resembles a black screen with a white cursor. Alternatively, you can find the Terminal app in the Applications folder under \"Utilities.\" [13] X Research source"
+    },
+    {
+      "title": "Enter the command for your version of macOS.",
+      "content": "Enter the command for your version of macOS. Type or paste the appropriate command for your operating system, and then press the Return key to run it The commands are as follows: [14] X Research source El Capitan: sudo /Applications/Install\\ OS\\ X\\ El\\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\\ OS\\ X\\ El\\ Capitan.app Catalina: sudo /Applications/Install\\ macOS\\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume Mojave: sudo /Applications/Install\\ macOS\\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume High Sierra: sudo /Applications/Install\\ macOS\\ High\\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume Big Sur: sudo /Applications/Install\\ macOS\\ Big\\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume Monterey: sudo /Applications/Install\\ macOS\\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume Ventura: sudo /Applications/Install\\ macOS\\ Ventura.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume"
+    },
+    {
+      "title": "Enter your administrator password and press ⏎ Return.",
+      "content": "Enter your administrator password and press ⏎ Return . This runs the command and prompts you to confirm."
+    },
+    {
+      "title": "Press the y key to confirm and then press ⏎ Return.",
+      "content": "Press the y key to confirm and then press ⏎ Return . This creates an image of the installation files on the USB drive. When the process is complete, you'll see the word \"Done\" and return to the prompt. This means you can eject the drive and use it to boot this or another Mac. [15] X Research source"
+    }
+  ]
+}

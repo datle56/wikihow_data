@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Run-a-Chkdsk-Function",
+  "title": "How to Run Chkdsk: 4 Simple Methods for Scanning a Drive",
+  "steps": [
+    {
+      "title": "Open File Explorer",
+      "content": "Open File Explorer . The Error Checking tool lets you run the chkdsk function from your computer’s visual interface. No matter what version of Windows you’re using, it works basically the same way. Start by opening File Explorer or, if you’re using Windows 7 or earlier, Windows Explorer . Do this by clicking the Explorer icon in the Quick Access taskbar at the bottom of your screen. If you don’t see that option: In Windows 10 or 11, use the keyboard command ⊞ Win + E to launch File Explorer, or open File Explorer from the Start menu . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In Windows 8, you can open File Explorer by clicking the File Explorer app in the Apps Screen . In Windows 7, right-click the Start Button and select Open Windows Explorer in the shortcut menu that pops up. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select This PC from the left-hand menu.",
+      "content": "Select This PC from the left-hand menu. In the File Explorer or Windows Explorer window, click on This PC in the menu bar on the left side of the window. In Windows 8 and earlier, click on My Computer or Computer instead. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In older versions of Windows, you can also click the Start Button in the lower left corner of your screen, then select Computer or My Computer to see a list of your drives."
+    },
+    {
+      "title": "Right-click the disk you’d like to check.",
+      "content": "Right-click the disk you’d like to check. When you select This PC , Computer , or My Computer , a tab will open up in the File Explorer window showing all the disk drives associated with your computer. Select the one you want to check, usually called something like Local Disk (C:) . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can also Ctrl +click the disk icon to open a pop-up menu."
+    },
+    {
+      "title": "Choose Properties from the popup menu.",
+      "content": "Choose Properties from the popup menu. In the menu that opens, scroll down and select Properties . This will open a new pop-up window displaying the properties of the disk. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the Tools tab.",
+      "content": "Open the Tools tab. Find the Tools tab in the Properties window and click on it. You’ll see a heading called Error checking at the top of the Tools window with the option to check your disk. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Check button.",
+      "content": "Click the Check button. Under Error checking , click the Check button to begin running a disk check. Depending on which version of Windows you’re running, you may see a dialog box with the text You don’t need to scan this drive . If you want to run the scan anyway, click Scan drive . In some older versions of Windows, such as Windows 7, you will be able to select additional options, such as Automatically fix file system errors and Scan for and attempt recovery of bad sectors . [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Before you can successfully scan the disk, you’ll need to close any open programs and files. If any applications are still running, you may see an error message such as Windows can’t check the disk while it’s in use . If this happens, click Schedule disk check , close anything that’s open, and restart your computer to automatically run a check."
+    },
+    {
+      "title": "Select Show Details to see a detailed report.",
+      "content": "Select Show Details to see a detailed report. Once the scan is done, a window will pop up informing you that the scan is finished. If you want to see a list of any errors that showed up in the check, click Show Details . Otherwise, click Close to close the window."
+    },
+    {
+      "title": "Open the Command Prompt",
+      "content": "Open the Command Prompt app. The Command Prompt lets you run a disk check by entering a simple text command. To get started, type Command Prompt into the search bar in the bottom left corner of your screen, then select the Command Prompt app from the list of search results. Click Run as Administrator in the list of options under the app. [8] X Research source You may see a prompt asking you to allow the app to make changes to your PC. If so, click Yes to continue."
+    },
+    {
+      "title": "Type in chkdsk and hit ↵ Enter.",
+      "content": "Type in chkdsk and hit ↵ Enter . This is the most basic disk check command that you can enter in the Command Prompt. If you just type in chkdsk , the Command Prompt will scan your disk and give you a list of any errors it finds. However, it won’t fix any of them. [9] X Research source If the drive is currently in use, Command Prompt may prompt you to restart your computer. Type Y and press ↵ Enter to restart."
+    },
+    {
+      "title": "Enter additional commands to fix errors or do a detailed scan.",
+      "content": "Enter additional commands to fix errors or do a detailed scan. There are several other commands you can add to the chkdsk function, depending on what you’re trying to accomplish. You can see a full list of chkdsk commands on the Microsoft website: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk . Some of the most important commands include: [10] X Research source chkdsk <volume>: , which specifies which drive you want to scan. Replace <volume> with the letter that identifies the drive. For example, your local hard disk is usually c , while your CD-ROM or other external disk drive is typically d . /f . Adding this command after chkdsk will cause the Command Prompt to fix any errors it finds. /r , which both fixes errors and attempts to recover readable information from any bad sectors on the disk. As an example, if you wanted to scan your C drive and fix any errors, you’d enter the command chkdsk c: /f ."
+    },
+    {
+      "title": "Use this option if you can’t boot up your computer.",
+      "content": "Use this option if you can’t boot up your computer. If your disk is having serious problems and can’t boot up properly, you can run chkdsk from a bootable external disk with Windows on it. The best way to do this depends on what version of Windows you’re running."
+    },
+    {
+      "title": "Insert the media you used to install your operating system.",
+      "content": "Insert the media you used to install your operating system. This could be a CD or DVD, a USB drive , or an external hard drive. If you don’t have the original disk or media you used to install Windows, you can make one using a digital download of the operating system. You’ll need a blank USB flash drive with at least 5GB of space. [11] X Research source"
+    },
+    {
+      "title": "Start your PC from the installation disk.",
+      "content": "Start your PC from the installation disk. The way to do this may vary depending on what kind of computer you have. If you’re not sure how to reboot from a disk, check the manual that came with your computer and follow the instructions there. [12] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, some PCs require you to press F8 repeatedly while booting up. Others need a different key combination, such as Del + F12 . If your PC is already set to boot up from an install disk, you may automatically be prompted to restart from the disk once you insert it into the drive and reboot your computer."
+    },
+    {
+      "title": "Select Repair your computer.",
+      "content": "Select Repair your computer . Once your computer reboots from the disk, you’ll see a screen with several options. To run a disk check, first click on Repair your computer . [13] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . In the Repair your computer menu, select Troubleshoot . This will open a new window with a variety of system recovery options. [14] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open Advanced options.",
+      "content": "Open Advanced options . When the Troubleshoot menu opens, click on Advanced options. [15] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select Command Prompt.",
+      "content": "Select Command Prompt . In the Advanced options menu, you will see an option to launch Command Prompt. Click the Command Prompt button to open the Command Prompt app."
+    },
+    {
+      "title": "Enter the chkdsk command in Command Prompt.",
+      "content": "Enter the chkdsk command in Command Prompt. When Command Prompt opens, type in chkdsk to run a simple check and find any problems with your disk drive. You can also use more specific commands, such as: [16] X Research source chkdsk c: /f , which will check your C drive (local hard disk) for any errors and fix them, if possible. chkdsk c: /r , which will both fix errors and attempt to recover any readable data from bad sectors on your hard drive."
+    },
+    {
+      "title": "Launch Disk Utility from your Applications folder.",
+      "content": "Launch Disk Utility from your Applications folder. If you’re able to boot up your Mac without any trouble, you can run the Disk Utility app from your Apps folder. Disk Utility performs many of the same functions as the chkdsk command on a PC. To open Disk Utility: [17] X Research source Open a Finder window and click Applications in the sidebar menu on the left. Scroll down in the Applications list and click the Utilities folder. Double-click Disk Utility ."
+    },
+    {
+      "title": "Reboot your Mac in recovery mode if you can’t start up normally.",
+      "content": "Reboot your Mac in recovery mode if you can’t start up normally. Depending on whether your Mac has Apple Silicon or an Intel processor, there are two different ways to do this: [18] X Research source For Apple Silicon, turn on your computer, but keep holding the power button until you see a menu screen with startup options. Click Options , then click Continue . If you have an Intel processor, turn on your computer, then press and hold ⌘ Command + R until the Apple logo appears. Once you enter recovery mode, your computer may ask you to select a user and enter the password. If this happens, select the user, then hit Next . Enter the correct password for the selected user on the next screen. Select Disk Utility from the Utilities window."
+    },
+    {
+      "title": "Select Show All Devices to view your disks.",
+      "content": "Select Show All Devices to view your disks. In the Disk Utility app, click the View button in the top left corner of the app window. From there, select Show All Devices . Select the disk you want to check from the left-hand sidebar. [19] X Research source"
+    },
+    {
+      "title": "Choose the last volume on any disk you want to repair.",
+      "content": "Choose the last volume on any disk you want to repair. If your disks are divided up into separate volumes, start by running a disk check on the lowest volume in the nested list. [20] X Research source For instance, if you’re checking Macintosh HD , you might start by selecting Macintosh HD – Data . As you check each volume, move up the list from volumes to containers to disks."
+    },
+    {
+      "title": "Click First Aid.",
+      "content": "Click First Aid . Once you’ve selected the volume, container, or disk you want to check, click on the First Aid button or tab at the top of the Disk Utility window. This button looks like a stethoscope. [21] X Research source"
+    },
+    {
+      "title": "Select Run.",
+      "content": "Select Run . In some versions of the app, you may see a Repair Disk button instead. Click the button to begin running a disk check. [22] X Research source You may be prompted to enter your administrator password to unlock the disk. Once the disk check is done, click the Done button, then move on to checking the next volume, container, or disk. Quit the app and restart your computer when you’re finished. The disk utility should repair any errors it finds. If finds an error that it can’t repair, you may need to reformat your disk ."
+    }
+  ]
+}

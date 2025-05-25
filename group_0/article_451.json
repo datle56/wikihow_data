@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Activate-Telnet-in-Windows-7",
+  "title": "How to Activate Telnet in Windows 7",
+  "steps": [
+    {
+      "title": "Open Control Panel.",
+      "content": "Open Control Panel. By default, Telnet is not installed with Windows 7. It will need to be manually activated in order for you to use it. You can do so through the Control Panel, you'll find in the Start menu."
+    },
+    {
+      "title": "Open Programs and Features or Programs.",
+      "content": "Open Programs and Features or Programs . The option available to you will depend on whether your Control Panel is in Icon or Category view, but they both take you to the same place."
+    },
+    {
+      "title": "Click Turn Windows features on or off.",
+      "content": "Click Turn Windows features on or off . You may be asked for the Administrator password ."
+    },
+    {
+      "title": "Check the box next to \"Telnet Client\" and click OK.",
+      "content": "Check the box next to \"Telnet Client\" and click OK . You may have to scroll down to find it. This installs and activates telnet. You may have to wait a minute or two for the client to be installed after selecting it."
+    },
+    {
+      "title": "Install Telnet through the command prompt (optional).",
+      "content": "Install Telnet through the command prompt (optional). If you'd rather do everything through the Command Prompt , you can install Telnet with a quick command. First, open the Command Prompt by typing cmd into the Run box and pressing Enter . At the prompt, type pkgmgr /iu:\"TelnetClient\" and press Enter . After a moment, you will be returned to the command prompt. [1] X Research source"
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. Telnet runs through the Command Prompt . You can access the command prompt by pressing Win , typing cmd , and clicking OK ."
+    },
+    {
+      "title": "Start the telnet client.",
+      "content": "Start the telnet client. Type telnet and press Enter . The Command Prompt will disappear, and you will be taken to the Telnet command line, displayed as Microsoft Telnet> ."
+    },
+    {
+      "title": "Connect to a server.",
+      "content": "Connect to a server. At the Telnet command line, type open serveraddress [port] . For some servers, you will not need to enter a port—telnet will default to port 23, the default TCP port for telnet servers. You have successfully connected to the server when you receive either a welcome message or are prompted for your username and password. For example, to watch ASCII Star Wars , type open towel.blinkenlights.nl and press Enter . You can also start a connection directly from the Command Prompt by typing telnet serveraddress [port] ."
+    },
+    {
+      "title": "Close your Telnet session.",
+      "content": "Close your Telnet session. Once you are finished, you should close your connection before closing the window. To do so, press Ctrl + ] , type quit , and then press Enter ."
+    }
+  ]
+}

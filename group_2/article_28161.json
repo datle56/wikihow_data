@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Make-Taskbar-Transparent",
+  "title": "3 Simple Ways to Make the Taskbar Transparent in Windows 10/11",
+  "steps": [
+    {
+      "title": "Get TranslucentTB from the Microsoft Store.",
+      "content": "Get TranslucentTB from the Microsoft Store. Go to the store's page and click “Download” or open the Microsoft Store app and search for “TranslucentTB.” TranslucentTB is widely considered to be the most efficient way to make your taskbar transparent."
+    },
+    {
+      "title": "Open TranslucentTB to make your taskbar transparent.",
+      "content": "Open TranslucentTB to make your taskbar transparent. Once it's installed, click the app in your Start menu to run it. Your taskbar should immediately become transparent. If your taskbar doesn’t do anything, click the little TB icon in the system tray and turn it on manually."
+    },
+    {
+      "title": "Change how TranslucentTB appears by clicking the app icon in your tray.",
+      "content": "Change how TranslucentTB appears by clicking the app icon in your tray. This might be invisible if you have Dark Mode enabled and you're looking at a white background, but open a page or something with a dark background to see the TB icon. The reverse is true if Light Mode is enabled."
+    },
+    {
+      "title": "Open Registry Editor.",
+      "content": "Open Registry Editor. To do this, press Win + R then type regedit and press “Enter.”' Be careful editing the Registry because incorrectly editing it can cause your computer or laptop not to run. It's a good idea to make a backup before you edit, so you can restore the original in case your changes damage your computer's files. Warning: Messing with your registry always carries danger. The registry is the database for your Windows operating system, so if you mess something up, it’s possible Windows will not run correctly. Do this at your own risk."
+    },
+    {
+      "title": "Go to the registry key you will need to edit.",
+      "content": "Go to the registry key you will need to edit. While you can use the folders and directories to navigate to this destination manually, save time by copying and pasting the file path below: Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+    },
+    {
+      "title": "Right-click an empty space.",
+      "content": "Right-click an empty space. Make sure you're right-clicking in the right panel since you want to add to the \"Advanced\" folder."
+    },
+    {
+      "title": "Hover your mouse over \"New\" and select DWORD(32-bit) Value.",
+      "content": "Hover your mouse over \"New\" and select DWORD(32-bit) Value . A new window will appear."
+    },
+    {
+      "title": "Name it UseOLEDTaskbarTransparency and set the value to “1.”",
+      "content": "Name it UseOLEDTaskbarTransparency and set the value to “1.” If you can't immediately set the value, go ahead and create the new DWORD with the new name. Then, right-click the newly created entry and select Modify in the pop-up. Next, change the value from 0 to 1 and click OK ."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Close Registry Editor and restart your computer. If you don't see a difference in the opacity of your taskbar, right-click any empty space on your desktop and select Personalization > Color > Transparency effects ."
+    },
+    {
+      "title": "Press ⊞ Win+i.",
+      "content": "Press ⊞ Win + i . This keyboard shortcut opens Settings, but you can also click the gear icon in the Start menu. This method makes the taskbar more transparent than opaque, but it will still have color."
+    },
+    {
+      "title": "Go to the Colors menu in the Personalization tab.",
+      "content": "Go to the Colors menu in the Personalization tab. Click Personalization and Colors . For Windows 11, you'll find \"Personalization\" in the menu on the left and \"Colors\" on the right. For Windows 10, \"Personalization\" is on a tile next to a monitor and paintbrush icon, and \"Colors\" is in the panel on the left side of the screen."
+    },
+    {
+      "title": "Click the toggle next to Transparency effects to turn it on .",
+      "content": "Click the toggle next to Transparency effects to turn it on . Doing this will allow the background colors to show through your system windows. This includes setting windows, pop-up windows, and your taskbar. If you're using Windows 11 and you notice that the taskbar is still opaque, you need to enable \"Transparency effects\" in Settings > Accessibility > Visual effects . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Rotate the position of your taskbar every week.",
+      "content": "Rotate the position of your taskbar every week. Give your screen a break from potential burn-in by simply moving where the taskbar sits periodically by pinning it to a different side of the screen. To do this, right-click the taskbar and click Lock All Taskbars if there’s a checkmark next to it (if there isn’t, don’t click anything). Then, drag and drop your taskbar to another side of the screen. [2] X Research source Select Lock All Taskbars after moving the taskbar to set it in place. This way, you won’t accidentally drag it to another edge. If you’re really worried about burn-in, you could change the taskbar location every day. Are you on Windows 11? Unfortunately, you cannot move the taskbar in Windows 11. You’ll have to use other solutions to prevent burn-in."
+    },
+    {
+      "title": "Turn on the hidden taskbar setting.",
+      "content": "Turn on the hidden taskbar setting. Why not get rid of the taskbar entirely if you’re worried about burn-in? You can set the taskbar to only appear whenever you hover your mouse over the bottom of the screen by right-clicking on your taskbar and selecting Taskbar Settings at the bottom. Then, tap on Automatically hide the taskbar in desktop mode (or tablet mode if you have a tablet) and close the menu. Your taskbar will now disappear unless you leave the mouse at the bottom of the screen. [3] X Research source Windows 11: Select Start , then Settings. Click on Personalization and then Taskbar. The option to auto-hide your taskbar is in this menu."
+    },
+    {
+      "title": "Shut your monitor off when you aren’t using your PC.",
+      "content": "Shut your monitor off when you aren’t using your PC. Another simple way to prevent burn-in in OLED screens is to give them a break. Instead of letting your computer sit on a screensaver or lock screen, just turn the monitor off. This is the best way to prevent burn-in over the course of a long period of time. [4] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Turn-On-Windows-Defender",
+  "title": "How to Turn on Microsoft Defender in Windows 10 and 11",
+  "steps": [
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. A fast way to get there is to right-click the Windows menu in the taskbar and select Settings . You can also click the gear icon in the Windows menu. If Microsoft Defender has turned itself off, it's usually because there's another antivirus or antimalware program on your PC. Try this method first to enable Defender—if it doesn't turn back on, or if you've seen an error that says \"The Service Couldn’t Be Started\" or \" Windows Defender is turned off by group policy,\" see the Troubleshooting section ."
+    },
+    {
+      "title": "Open your Firewall & Network Protection settings.",
+      "content": "Open your Firewall & Network Protection settings. The steps are a little different depending on your version of Windows: Windows 10: Click Update & Security . Click Windows Security in the left panel. Click Firewall & network protection. Windows 11: Click Privacy & Security in the left panel. Click Windows Security at the top of the right panel. Click Firewall & network protection . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select the active network.",
+      "content": "Select the active network. You can enable or disable Microsoft Defender for different networks, which can be useful if you use your computer at work and home. To turn on Defender for the current network, click the network that's labeled \"Active.\""
+    },
+    {
+      "title": "Toggle \"Microsoft Defender Firewall\" on.",
+      "content": "Toggle \"Microsoft Defender Firewall\" on. If the switch is turned off, clicking it should turn on Microsoft Defender. If you're connected to a network at work or school, the admin may be using a different security method on the network and may not allow you to turn on Microsoft Defender."
+    },
+    {
+      "title": "Uninstall third-party antivirus programs.",
+      "content": "Uninstall third-party antivirus programs. Other antivirus software (e.g., Kaspersky, Norton, McAfee) turns off Defender so it can take control of your PC's security. If you prefer using Microsoft Defender, you can reenable it by uninstalling your other security software. To find out which antivirus program you have: Open Windows Settings and go to Update & Security (Windows 10) or Privacy & Security (Windows 11). Click Windows Security . Click Virus & threat protection . If you see a program that isn't Microsoft Defender, that's the program you'd need to uninstall if you want to use Defender. To uninstall a program: Press the Windows key on the keyboard, type uninstall , and click Add or remove programs . Find the software you want to uninstall in the list, then click Uninstall . If you're using Windows 11, click the three-dot icon on the software first. After uninstalling your other security software, restart your PC. Microsoft Defender will automatically turn back on. If Microsoft Defender doesn't turn back on after your computer finishes restarting, you can try turning it on manually ."
+    },
+    {
+      "title": "Use Group Policy Editor if you're on a work computer.",
+      "content": "Use Group Policy Editor if you're on a work computer. If you can't turn on Microsoft Defender when connecting to your work network, follow these steps: Press the Windows key, type group policy , and click Edit group policy . [2] X Research source Navigate to Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus . Scroll down and select Microsoft Defender Antivirus . Select either Disabled or Not configured to turn on Defender. Click Apply and then OK . Then, return to Windows Security in your Settings and select Virus & threat protection . Click Manage settings and enable both \"Real-time protection\" and \"Cloud-delivered protection.\""
+    },
+    {
+      "title": "Enable the Microsoft Defender Antivirus service.",
+      "content": "Enable the Microsoft Defender Antivirus service. If you see an error that says \"The Service Couldn’t Be Started\" when trying to turn on Microsoft Defender, the service may have stopped. To check and restart the service: Press the Windows key on the keyboard, type services.msc , and press Enter . Scroll down to the \"Microsoft Defender Antivirus Service.\" Check the \"Status\" column. If you see \"Running,\" you don't need to do anything to the service. If there is nothing in the \"Status\" column, right-click the service and select Properties . Then, change the \"Startup type\" to \"Automatic,\" click Start , and then click OK . Try turning on Windows Defender again."
+    },
+    {
+      "title": "Run the troubleshooter (Windows 10 only).",
+      "content": "Run the troubleshooter (Windows 10 only). If Microsoft Defender still won't turn on, go to this Microsoft support page and click Download to download the troubleshooter. Once downloaded, double-click the file, and follow the on-screen instructions to identify and fix problems with Defender not starting. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Scan your computer for malware.",
+      "content": "Scan your computer for malware. If your Windows PC is infected with malware, you may be unable to turn on Defender or uninstall unfamiliar antivirus apps. To scan for malware, go to this page at Microsoft.com and click Download Microsoft Safety Scanner (64-bit) (or 32-bit , depending on your architecture ) to download the file. Double-click the file once downloaded, and follow the on-screen instructions to scan. If you cannot download or run the file, try booting into Safe Mode first."
+    }
+  ]
+}

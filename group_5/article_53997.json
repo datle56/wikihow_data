@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Error-503-Backend-Fetch-Failed",
+  "title": "Error 503 Backend Fetch Failed: What It Means & How to Fix It",
+  "steps": [
+    {
+      "title": "Error 503 Backend Fetch Failed is a server error.",
+      "content": "Error 503 Backend Fetch Failed is a server error. If you're browsing the web and come across this error, something is wrong with the website you're trying to view. This doesn't mean there's a problem with your computer, phone, browser, or internet connection, but you won't be able to access the website until its owner fixes it."
+    },
+    {
+      "title": "If Error 503 occurs on your website, there's a problem with the Varnish caching server.",
+      "content": "If Error 503 occurs on your website, there's a problem with the Varnish caching server. You may see this error when installing or using a plugin or module (such as for WordPress or Drupal) on your website and are using the Varnish cache server to improve your website speed. [1] X Research source The error means some aspect of your website is unable to retrieve needed data from another application, which can be due to: The server the application is trying to connect to is unavailable. [2] X Research source The IP address , hostname, or port for the web or application server is incorrect in your Varnish configuration file. [3] X Research source The backend server is improperly defined in the relevant VCL file. [4] X Research source Memory issues on the server. Network problems between applications."
+    },
+    {
+      "title": "As a user:",
+      "content": "As a user: If you can't load a website because of error 503, the error is not on your end. To be extra sure, try going to a different website, such as wikihow.com or Google.com, and make sure you're not getting an error there. You can also try clearing your cache and cookies , though this will not usually fix error 503 backend fetch errors. If you're supposed to be able to access the site, contact the admin to inform them of the error."
+    },
+    {
+      "title": "As a server owner:",
+      "content": "As a server owner: The fix for error 503 depends on the cause, so you'll need to dig around in the logs to determine what prompted the error. Check your Varnish logs to assess the health of the backend server using the command sudo varnishlog -g raw -i backend_health . If you cannot determine the cause of the error, run the command sudo varnishlog -g request -q \"RespStatus == 503\" to see which transactions resulted in the 503 backend fetch failed error. [5] X Research source Depending on the application, plugin, or module you're using, you may need to make changes to the Varnish configuration file ."
+    }
+  ]
+}

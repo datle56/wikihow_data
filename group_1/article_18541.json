@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Generate-a-Number-Series-in-MS-Excel",
+  "title": "4 Step-by-Step Methods to Generate a Number Series in Excel",
+  "steps": [
+    {
+      "title": "Use the SEQUENCE function to generate a number series.",
+      "content": "Use the SEQUENCE function to generate a number series. Put your cursor in the cell at A1. This means the block that is located where Column A meets Row 1. The SEQUENCE function only works with Excel from Microsoft 365, Excel 2021, and Excel on the web. [1] X Research source"
+    },
+    {
+      "title": "Type =SEQUENCE().",
+      "content": "Type =SEQUENCE() . The sequence function allows you to generate a quick and easy dataset that spans multiple rows and columns. There are four components to a SEQUENCE function: rows, columns, starting number, and step. All of these components are optional; if they are omitted, each component will default to 1. Rows: This is the number of rows you want the number series to span. Columns: This is the number of columns you want the number series to span. Starting number: This is the number you want your sequence to start with. Step: This is the number of steps between each number in your number series. The step can be positive or negative."
+    },
+    {
+      "title": "Write your formula in between the parentheses.",
+      "content": "Write your formula in between the parentheses. For example, if you wanted to generate a number series that started with 2, increased by 3, and was 5 rows by 5 columns large, you'd write the following: =SEQUENCE(5, 5, 2, 3) . Press ↵ Enter . Excel will generate the number series."
+    },
+    {
+      "title": "Click and hold to highlight all the cells with your numbers.",
+      "content": "Click and hold to highlight all the cells with your numbers. To do so, hold your cursor in the top left of the first cell, and drag it down to the last cell with a number in it (in the first example, the cell with the \"2\" in it.) [2] X Research source Do this without letting your finger off the cursor. This will highlight the 2 (or 3) numbers that you have already typed into the cells. Remember that, in Excel, cells form vertical columns but horizontal rows. You can create the number series vertically down a column, or horizontally across a row."
+    },
+    {
+      "title": "Hover your cursor over the little black (or green) square in the bottom right cell.",
+      "content": "Hover your cursor over the little black (or green) square in the bottom right cell. The square will appear in the bottom right of the last cell you typed a number in (in the first example, the cell with the \"2.\") The little black square will turn into a small black plus sign in the bottom right corner of that cell. This is called the fill handle. The key to creating a number series in MS Excel is the fill handle. When you look at the individual cell, notice the green or black border around the cell. That means you are working in the active cell. [3] X Research source"
+    },
+    {
+      "title": "Left-click on your mouse while hovering your cursor over the plus sign.",
+      "content": "Left-click on your mouse while hovering your cursor over the plus sign. Drag the cursor down the vertical column. Excel will automatically create a number series for as long as you drag your cursor. Use the same process with a number series in a horizontal row. But drag your cursor horizontally. Remember, by default, Excel uses a linear growth pattern to determine these values. If you already have a sequence of numbers and you just want to add to it, select the last two in the sequence and drag the fill handle to the new selection, and it will continue the list."
+    },
+    {
+      "title": "Use the ROW function to generate a number series.",
+      "content": "Use the ROW function to generate a number series. Put your cursor in the cell at A1. This means the block that is located where Column A meets Row 1. In A1, type =ROW() . This formula should generate the first number in your series. Select the fill handle on the bottom right of the A1 cell, and drag down or across to create the number series. If you want to find the number of any cell, you can put your cursor in it, and type =ROW(C10) , replacing C10 with the coordinates of that cell. Hit enter."
+    },
+    {
+      "title": "Right-click or Ctrl-click the plus (+) and drag the fill handle.",
+      "content": "Right-click or Ctrl-click the plus (+) and drag the fill handle. This will open a shortcut menu that allows you to perform other functions with the number series. To fill the series in increasing order, drag down or to the right. To fill in decreasing order, drag up or to the left. In the shortcut menu, you can choose such options as fill series to populate the numbers or copy series."
+    },
+    {
+      "title": "Count days in Excel.",
+      "content": "Count days in Excel. This same trick also allows you to count up by days. To make this work, type a date in any recognizable format in any one cell. Drag the fill handle to the adjacent cells, and it will add the days as you go. You can skip days, for example, showing every other day or every third day, as long as the sequence is repetitive."
+    },
+    {
+      "title": "Click on the cell that you want to start the number series in.",
+      "content": "Click on the cell that you want to start the number series in. A cell is one of the individual blocks that make up an Excel spreadsheet. Type the number that you want to start the series with in that cell and hit Enter or Return . For example, type \"1.\" This is called a \"value\" in Excel terminology. [4] X Research source Now, write the first few numbers of your series in adjacent cells. You could write them in the vertical columns or horizontally in a row. [5] X Research source"
+    },
+    {
+      "title": "Figure out the increment for your number series.",
+      "content": "Figure out the increment for your number series. For example, if you want cells to increase by the same increment (say by \"1\"), then type two numbers with that increment. Thus, you would type \"1\" in the first cell and \"2\" in the cell beneath it. If you want the number series to increase by increments of 2, you would type 2 and then 4. If you want the series to use more complicated increments (say, \"2, 4, 8, 16\") type the first three numbers so it doesn’t assume you are asking it for increments of 2."
+    }
+  ]
+}

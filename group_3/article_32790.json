@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Ping-on-Mac-OS",
+  "title": "How to Run the Ping Command on a Mac: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Open Spotlight.",
+      "content": "Open Spotlight. Click the Spotlight icon, which resembles a magnifying glass, in your menu bar. This opens the Spotlight search feature. Alternatively, you can press ⌘ Cmd + Space to open Spotlight. If there is a magnifying glass icon on one of your function keys on your keyboard, pressing that key will open Spotlight as well."
+    },
+    {
+      "title": "Type terminal and double-click it to open it.",
+      "content": "Type terminal and double-click it to open it. When you type \"terminal\" into Spotlight, it will pull up the Terminal app."
+    },
+    {
+      "title": "Type in ping [address] and press ⏎ Return.",
+      "content": "Type in ping [address] and press ⏎ Return . This is the Terminal command to ping a computer or website. Replace \"[address]\" with the address of the computer or website you want to ping. For example, to ping Facebook, you would type in ping facebook.com here. When typing the address to ping, you can type it with or without the \"www,\" but you should not include the \"http://\" or \"https://\"."
+    },
+    {
+      "title": "Press Ctrl+C to stop the ping command and review the results.",
+      "content": "Press Ctrl + C to stop the ping command and review the results. Below your \"ping\" command, you'll see several lines of ping results begin to appear. You can read these results to get an idea of the connection strength between your computer and the address you pinged. The \"time=#ms\" (where \"#\" is a number) tag refers to the number of milliseconds it took for the address to respond to your ping. The lower the number of milliseconds per ping, the stronger your connection to the computer or address you're pinging. After stopping the ping command, the Terminal will print a recap of what happened. It will tell you how many packets were sent, how many packets were received, and what the average round trip of a package is. If you receive fewer packets than you sent, you're experiencing what is known as packet loss. The terminal will display packet loss as a percentage. Packet loss can be caused by a poor Wi-Fi connection, ISP-side internet issues, or an overloaded connection. It manifests as lag in video games, slow downloads, and choppy video playback, to name a few. [1] X Research source Check out our article on fixing packet loss if you're experiencing it."
+    },
+    {
+      "title": "Open Spotlight.",
+      "content": "Open Spotlight. Click the Spotlight icon, which resembles a magnifying glass, in your menu bar. This opens the Spotlight search feature."
+    },
+    {
+      "title": "Type network utility and double-click it to open it.",
+      "content": "Type network utility and double-click it to open it. When you type \"network utility\" into Spotlight, it will pull up the Network Utility app. The Network Utility app is not available on macOS 11 (Big Sur) or later. You can use the Terminal instead."
+    },
+    {
+      "title": "Click Ping.",
+      "content": "Click Ping . This tab is at the top of the window."
+    },
+    {
+      "title": "Enter an address or website.",
+      "content": "Enter an address or website. Use the white box at the top of the page to enter a computer address or website you want to ping. For example, if you want to ping a specific computer, you would type in its IP address. To ping a website (e.g., Facebook), type in its address as follows: website.com (e.g., facebook.com ). When typing the address to ping, you can type it with or without the \"www,\" but you should not include the \"http://\" or \"https://\"."
+    },
+    {
+      "title": "Select a specific number of pings if necessary.",
+      "content": "Select a specific number of pings if necessary. By default, your Mac will send pings until you close the Network Utility window. You can set it to ping your selected address a specific number of times by using the following steps: Check the \"Send only ___ pings\" box. Type the number of pings you want to use into the blank box."
+    },
+    {
+      "title": "Click Ping.",
+      "content": "Click Ping . It's a blue button on the right side of the page. Your Mac will begin pinging the address."
+    },
+    {
+      "title": "Review the results.",
+      "content": "Review the results. In the white pane at the bottom of the Network Utility window, you should see a list of ping results appearing. You can read these results to get an idea of the connection strength between your computer and the address you pinged. The \"time=#ms\" (where \"#\" is a number) tag refers to the number of milliseconds it took for the address to respond to your ping. The lower the number of milliseconds per ping, the stronger your connection to the computer or address you're pinging. Network Utility will print a recap of what happened. It will tell you how many packets were sent, how many packets were received, and what the average round trip of a package is."
+    },
+    {
+      "title": "Why is ping not working via Terminal?",
+      "content": "Why is ping not working via Terminal? Many Mac users have found that when updating to Sequoia, the ping command wasn't working in the Terminal properly. To fix this, click on the Apple menu and go to System Settings > Privacy & Security > Full Disk Access . Then, toggle on Terminal ."
+    },
+    {
+      "title": "Can I run ping without it being continuous?",
+      "content": "Can I run ping without it being continuous? To ping a certain number of packets instead of running a continuous ping, use the command ping -c [number of pings] [address] . Replace [number of pings] with how many times you want the ping command to run. For example, if you wanted to ping Google 8 times, you would write ping -c 8 google.com . [2] X Research source"
+    },
+    {
+      "title": "Why am I getting an error when I try to use ping?",
+      "content": "Why am I getting an error when I try to use ping? There are a few errors you might encounter when running the ping command: Unknown host: This error could mean that the host or domain does not exist, but it also may mean the name cannot be translated into an IP address by your DNS servers. Destination host unreachable: This error means your computer was unable to send any packets to the address. It could be an issue on your end or somewhere between your computer and the host destination. Request timed out: This error means your computer sent the ping request but did not receive a reply. The host may not be online, there could be a network problem on the host's end, or the ping could've been blocked by the host's firewall. Name or service not known: This error means the hostname or address you're trying to ping does not exist. If the host does exist, there's a problem with your network configuration."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Loan-Payments",
+  "title": "How to Calculate Loan Payments",
+  "steps": [
+    {
+      "title": "Open an online loan calculator.",
+      "content": "Open an online loan calculator. You can click the calculator in the \"samples\" section at the top of this page, then open it with Google Drive, or download it to open with Excel or another spreadsheet program. Alternatively, visit one of the following links: Bankrate.com and MLCalc are both simple calculators that also show a full table of your payment schedule, including remaining debt. CalculatorSoup is useful for loans with unusual payment or compounding intervals. For example, Canadian mortgages are typically compounded semi-annually, or twice a year. (The calculators above assume the interest is compounded monthly, and payments are made monthly.) You can make your own loan calculator in Excel, similar to the wikiHow sample above."
+    },
+    {
+      "title": "Enter the loan amount.",
+      "content": "Enter the loan amount. This is the total amount of money borrowed. If you are calculating a partially paid loan, enter the amount of money you have left to pay. This field may be labeled \"base amount.\""
+    },
+    {
+      "title": "Enter the interest rate.",
+      "content": "Enter the interest rate. This is the current annual interest rate on your loan, in percentage form. For instance, if you pay a 6% interest rate, type in 6 . The compounding interval does not matter here. The interest rate specified should be the nominal annual interest, even if interest is calculated more frequently."
+    },
+    {
+      "title": "Enter the loan term.",
+      "content": "Enter the loan term. This is the amount of time you plan to spend paying off the loan. Use the amount of time specified on the loan conditions to calculate the minimum monthly payment required. Use a shorter amount of time to calculate a higher monthly payment that would pay off the loan sooner. Paying the loan off sooner will also mean less total money spent. Read the label next to this field to determine whether the calculator uses months or years."
+    },
+    {
+      "title": "Enter the start date.",
+      "content": "Enter the start date. This is used to calculate the date when you'll finish paying off the loan."
+    },
+    {
+      "title": "Hit calculate.",
+      "content": "Hit calculate. Some calculators will automatically update the \"Monthly Payment\" field after you enter the information. Others wait until you hit \"calculate,\" then give you a chart or graph showing your payment schedule. The \"Principal\" is the amount of the original loan left, while \"Interest\" is the remaining additional charge. These calculators will display information for a \"fully amortized\" loan payment schedule, which means you will pay exactly the same amount each month. If you pay less than the amount displayed, you will end up paying a single extra-large payment at the end of the loan term, and you will end up paying more money total."
+    },
+    {
+      "title": "Write down the formula.",
+      "content": "Write down the formula. The formula to use when calculating loan payments is M = P * ( J / (1 - (1 + J) -N )) . Follow the steps below for a detailed guide to using this formula, or refer to this quick explanation of each variable: M = payment amount P = principal, meaning the amount of money borrowed J = effective interest rate. Note that this is usually not the annual interest rate; see below for an explanation. N = total number of payments"
+    },
+    {
+      "title": "Be careful about rounding results partway through.",
+      "content": "Be careful about rounding results partway through. Ideally, use a graphing calculator or calculator software to calculate the entire formula in one line. If you are using a calculator that can only handle one step at a time, or if you want to follow the steps in detail below, round to no fewer than four significant digits before moving on to the next step. Rounding to a shorter decimal could result in significant rounding errors in your final answer. Even simple calculators usually have an \"Ans\" button. This enters the previous answer into the next calculation, which is more accurate than calculating it below. The examples below are rounded after each step, but the final step includes the answer you would get if you finished the calculation on one line, so you can check your work."
+    },
+    {
+      "title": "Calculate your effective interest J.",
+      "content": "Calculate your effective interest J. Most loan terms mention the \"nominal annual interest rate,\" but you probable aren't paying your loan off in annual installments. Divide the annual interest rate by 100 to put it in decimal form, then divide it by the number of payments you make each year to get the effective interest rate. For example, if the annual interest rate is 5%, and you pay in monthly installments (12 times per year), calculate 5/100 to get 0.05, then calculate J= 0.05 / 12 = 0.004167 . In unusual cases, interest rates are calculated at a different interval than payment schedule. Most notably, Canadian mortgages are calculated twice a year, despite the borrower making payments twelve times a year. In this case, you would divide the annual interest by two."
+    },
+    {
+      "title": "Note the total number of payments N.",
+      "content": "Note the total number of payments N. The loan term may already specify this number, or you may need to calculate it yourself. For example, if the loan term is 5 years and you'll be paying in twelve monthly installments each year, your total number of payments will be N = 5 * 12 = 60 ."
+    },
+    {
+      "title": "Calculate (1+J)-N.",
+      "content": "Calculate (1+J) -N . First add 1+J, then raise the answer to the power of \"-N.\" Make sure to include the negative sign in front of the N. If your calculator can't handle negative exponents, instead write this as 1/((1+J) N ). [1] X Research source In our example, (1+J) -N = (1.004167) -60 = 0.7792"
+    },
+    {
+      "title": "Calculate J/(1-(your answer)).",
+      "content": "Calculate J/(1-(your answer)). On a simple calculator, first calculate 1 - the number your calculated in the previous step. Next, calculate J divided by the result, using the effective interest rate you calculated above for \"J.\" In our example, J/(1-(answer)) = 0.004167/(1-0.7792) = 0.01887"
+    },
+    {
+      "title": "Find your monthly payment.",
+      "content": "Find your monthly payment. To do this, multiply your last result by the loan amount P. The result will be the exact amount of money you need to pay each month in order to pay off your loan on time. For example, if you borrowed $30,000, you would multiply your answer from the last step by 30,000. Continuing our example above, 0.01887 * 30000 = 566.1 dollars per month, or $566 and 10 cents. This works for any currency, not just dollars. If you calculated our example all on one line of a fancy calculator, you would get a more accurate monthly payment, very close to $566.137, or about $566 and 14 cents each month. If we instead paid $566 and 10 cents each month like we calculated with the less accurate calculator above, we would be slightly off by the end of the loan term, and would need to pay a few dollars extra to make up for it (less than 5 in this case)."
+    },
+    {
+      "title": "Understand fixed-rate versus adjustable-rate loans.",
+      "content": "Understand fixed-rate versus adjustable-rate loans. Every loan falls into one of these two categories. Make sure you know which applies to yours: A fixed-rate loan has an unchanging interest rate. The monthly payment amount for these will never change, as long as you pay them on time. An adjustable-rate loan periodically adjusts its interest rate to match the current standard, so you could end up owing more or less money if the interest rate changes. Interest rates are only recalculated during the \"adjustment periods\" specified on your loan term. If you find out what the current interest rate is a few months before the next adjustment period happens, you can plan ahead."
+    },
+    {
+      "title": "Understand amortization.",
+      "content": "Understand amortization. Amortization refers to the rate at which the initial amount borrowed (the \"principal\") is reduced. There are two common types of loan payment schedules: [2] X Research source Fully amortized loan payments are calculated so you can pay the exact same amount each month for the entire duration of the loan, paying off the principal and the interest with each payment. The calculators and formulas above all assume you want this kind of schedule. Interest only loan payment plans give you cheaper initial payments during the specified \"interest only\" period, because you are only paying off the interest, not the initial \"principal\" you borrowed. After the interest only period runs out, your monthly payments will jump to a significantly higher amount, because you'll start paying off the principal as well as the interest. This will cost you more money in the long run."
+    },
+    {
+      "title": "Pay more money early to save money in the long run.",
+      "content": "Pay more money early to save money in the long run. Adding an extra payment will reduce the total amount of money the loan will cost you in the long term, since there is less money for interest to accumulate on. The earlier you do this, the more money you will save. On the other side of the coin, paying less than the monthly payment you calculated above will result in more total money spent over the long term. Also note that some loans have a minimum required monthly payment, and you could be charged additional fees if you fail to meet this."
+    }
+  ]
+}

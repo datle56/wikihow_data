@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Use-Blender-Physics",
+  "title": "How to Use Blender Physics",
+  "steps": [
+    {
+      "title": "Open up Blender 2.5 if you have it.",
+      "content": "Open up Blender 2.5 if you have it. If not, then go to https://www.blender.org to download it."
+    },
+    {
+      "title": "In the top header, find a drop-down menu with \"Blender Render\" selected.",
+      "content": "In the top header, find a drop-down menu with \"Blender Render\" selected. Click on it, then choose \"Blender Game\". This is the Blender Game Engine. You can only use physics when you are in the BGE."
+    },
+    {
+      "title": "On the right sidebar, find the bar with icons such as a Camera, 3d objects, and the Earth.",
+      "content": "On the right sidebar, find the bar with icons such as a Camera, 3d objects, and the Earth. Mouse over it and scroll with the scroll wheel all the way to the right of the bar. Click on the Bouncing Ball icon. This will open up the Physics options."
+    },
+    {
+      "title": "Select the default cube in the 3d View by right-clicking on it.",
+      "content": "Select the default cube in the 3d View by right-clicking on it. An orange outline will appear around it."
+    },
+    {
+      "title": "In the Physics options in the right sidebar, click on the drop-down menu with \"Static\" currently selected.",
+      "content": "In the Physics options in the right sidebar, click on the drop-down menu with \"Static\" currently selected. Choose Rigid Body. This will change the cube into a rigid object that is affected by physics."
+    },
+    {
+      "title": "In the Physics Options, check \"No Sleeping\".",
+      "content": "In the Physics Options, check \"No Sleeping\". This will disallow it from deactivating when it has stopped moving."
+    },
+    {
+      "title": "Scroll down in the Physics Options and check \"Collision Bounds\".",
+      "content": "Scroll down in the Physics Options and check \"Collision Bounds\". Then set the Margin to 0.000. You do not have to change the drop-down menu (which has \"Box\" currently selected) for the cube you are adding physics to is a box. If you are adding physics to a sphere, change it to \"Sphere\", and if a cylinder, then change it to \"Cylinder\" and so on."
+    },
+    {
+      "title": "Making sure your cursor is over the 3d View, press P on your keyboard.",
+      "content": "Making sure your cursor is over the 3d View, press P on your keyboard. The cube should begin falling, but will never stop. We want it to stop at some point. Press ESC to end the simulation. We are going to create a ramp below the cube so that it will hit it and slide down."
+    },
+    {
+      "title": "Make sure that your cursor is over the 3d view (the space where you can see the 3d objects).",
+      "content": "Make sure that your cursor is over the 3d view (the space where you can see the 3d objects). Then with the cube selected, press G on your keyboard to be able to move it. Then press Z to lock the movement to the Z axis (going up or down)."
+    },
+    {
+      "title": "Slowly move your mouse up until the cube is much higher than the 3d grid.",
+      "content": "Slowly move your mouse up until the cube is much higher than the 3d grid. Press the left-mouse button when you are done."
+    },
+    {
+      "title": "In the top header, click on the Add menu.",
+      "content": "In the top header, click on the Add menu. Many options and submenus will appear below it."
+    },
+    {
+      "title": "Click on Mesh to open up meshes that you can add.",
+      "content": "Click on Mesh to open up meshes that you can add. Click on Plane. A plane is a flat surface with four vertices. For this mesh, you do not have to set the Physics options to Rigid Body, because if you do, it will move downwards like the cube, and the cube will never come in contact with it. Instead, leave it as Static, meaning it will stay in place."
+    },
+    {
+      "title": "With the Plane selected, press S on your keyboard to scale it up.",
+      "content": "With the Plane selected, press S on your keyboard to scale it up. When you are happy, press the left-mouse button."
+    },
+    {
+      "title": "Press R on your keyboard to rotate it, then press X to constrain the rotation to the X axis.",
+      "content": "Press R on your keyboard to rotate it, then press X to constrain the rotation to the X axis. We want the ramp to be at only a slight angle, so now type 15 on your keyboard to rotate it by 15°."
+    },
+    {
+      "title": "Press P on your keyboard to begin the simulation.",
+      "content": "Press P on your keyboard to begin the simulation. The cube should fall and collide with the plane, then slowly slide down and begin falling again. Press ESC to end the simulation."
+    },
+    {
+      "title": "Experiment with the different settings of the physics options, and try to make your own physics creation.",
+      "content": "Experiment with the different settings of the physics options, and try to make your own physics creation."
+    }
+  ]
+}

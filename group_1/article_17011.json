@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Find-Your-Windows-8-Product-Key",
+  "title": "How to Find Your Windows 8 Product Key",
+  "steps": [
+    {
+      "title": "Look for a sticker on your PC.",
+      "content": "Look for a sticker on your PC. Starting with Windows 8, Microsoft no longer requires that Certificate of Authenticity stickers be placed on PCs that come pre-installed with Windows 8. [1] X Research source However, some PC manufacturers place their own stickers on certain models, and these stickers may contain the 25-character product key. If you have a desktop PC, look for a sticker somewhere on the tower (not the monitor/screen). If you're using a laptop, check the bottom of the unit or underneath the battery cover. If you are able to log in to Windows 8, you can use any of the other methods to quickly pull up your product key. The product key is 5 sets of 5 characters separated by hyphens (e.g, XXXXX-XXXXX-XXXXX-XXXXX-XXXXX)."
+    },
+    {
+      "title": "Check your Windows 8 DVD packaging.",
+      "content": "Check your Windows 8 DVD packaging. If you bought a physical copy of Windows 8 on DVD, the product key should be included in the DVD packaging or on the case. It could also be printed on a sheet of paper or card that came inside the package."
+    },
+    {
+      "title": "Check your email if you purchased Windows 8 online.",
+      "content": "Check your email if you purchased Windows 8 online. Did you buy Windows 8 from Microsoft's website? If so, you'll find your 25-digit product code in the email confirmation message from Microsoft."
+    },
+    {
+      "title": "Connect the Windows hard drive to another PC.",
+      "content": "Connect the Windows hard drive to another PC. If you're unable to boot the computer up but the hard drive with Windows 8 installed still works, you can use a free tool called ProduKey to retrieve the key from the hard drive. To do this: Remove the Windows hard drive from the non-working PC. See How to Remove a Hard Drive to learn how. Connect the drive to another PC as a secondary (slave). One easy way to do this is to put the drive into an external hard drive enclosure and connect it to the other PC. Follow the steps to download and run ProduKey in this method: Using ProduKey . Once you run ProduKey, press the F9 key to open the Select Source menu. Select the radio button next to \"Load the product keys of external Windows installations from all disks currently plugged to your computer.\" Click OK to display the product key. The key from the Windows 8 hard drive will appear next to \"Windows 8.\""
+    },
+    {
+      "title": "Contact Microsoft to request a new product key.",
+      "content": "Contact Microsoft to request a new product key. If you are still having trouble finding your product key, you can purchase a replacement key for $10 from a Microsoft support agent. Here's how: Call 1 (800) 936-5700. This is a paid Microsoft support line ($40-60 per issue), but you will not be charged for support if you are just calling to purchase a replacement product key. Follow the phone prompts to reach an agent who handles product key issues. Tell the representative that you can't access your Windows 8 product key. Provide the representative with any requested information, which may include your computer's serial number (if Windows 8 came with your PC), information from Windows 8 DVD (if you have the media), and your credit card details once your request is processed. Write down the product key exactly as it is read to you by the agent. Read it back to confirm you have written it down correctly. Follow additional any additional activation instructions provided to you by the agent. You may be transferred to another department to activate the key before it can be used."
+    },
+    {
+      "title": "Press ⊞ Win+S to open the Windows search bar.",
+      "content": "Press ⊞ Win + S to open the Windows search bar. You can also open the search bar by clicking the magnifying glass icon on the Charms menu."
+    },
+    {
+      "title": "Type cmd into the search bar.",
+      "content": "Type cmd into the search bar. A list of results will appear."
+    },
+    {
+      "title": "Right-click Command prompt in the search results.",
+      "content": "Right-click Command prompt in the search results. A menu will expand."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This opens a command prompt window. If you are prompted to enter your administrator password or give permissions to open the application, follow the on-screen instructions to do so. [2] X Research source"
+    },
+    {
+      "title": "Type the command to find the product key.",
+      "content": "Type the command to find the product key. The command is: wmic path softwarelicensingservice get OA3xOriginalProductKey ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . In a few seconds, the 25-character product key will appear under the text \"OA3xOriginalProductKey.\""
+    },
+    {
+      "title": "Go to http://www.nirsoft.net/utils/product_cd_key_viewer.html.",
+      "content": "Go to http://www.nirsoft.net/utils/product_cd_key_viewer.html . If you are able to log in to your Windows 8 PC, you can use ProduKey to display your 25-character product key without requiring any special permissions."
+    },
+    {
+      "title": "Scroll down and click a download link.",
+      "content": "Scroll down and click a download link. For English, click either Download ProduKey (In Zip File) (for 32-bit systems) or Download ProduKey for x64 (64-bit systems) above the table at the bottom. You can download the app in other languages by selecting one from the table. The downloaded file will be saved to your default download location, which is usually the Downloads folder."
+    },
+    {
+      "title": "Right-click the downloaded file and select Extract Here.",
+      "content": "Right-click the downloaded file and select Extract Here . The file should be called something like produkey-x64.zip . This unpacks the contents of the zip file into a folder with the same name (minus the \".zip\" at the end)."
+    },
+    {
+      "title": "Open the new folder and double-click ProduKey.exe.",
+      "content": "Open the new folder and double-click ProduKey.exe . This launches the app, which displays your Windows 8 product key next to the \"Windows 8\" entry."
+    },
+    {
+      "title": "Press ⊞ Win+S to open the Windows search bar.",
+      "content": "Press ⊞ Win + S to open the Windows search bar. You can also open the search bar by clicking the magnifying glass icon on the Charms menu."
+    },
+    {
+      "title": "Type powershell and press ↵ Enter.",
+      "content": "Type powershell and press ↵ Enter . If you are not logged in with an administrator account, you may be prompted to enter the admin password now."
+    },
+    {
+      "title": "Type or paste the product key retrieval command.",
+      "content": "Type or paste the product key retrieval command. The command is (Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey . [3] X Research source To paste the copied command into PowerShell, just right-click the window."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . After a few seconds, your Windows 8 product key will appear on the next line."
+    }
+  ]
+}

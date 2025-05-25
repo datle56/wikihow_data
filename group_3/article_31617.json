@@ -1,0 +1,158 @@
+{
+  "url": "https://www.wikihow.com/Open-Ports",
+  "title": "How to Open a Port on Windows, Mac, Linux, or Your Router",
+  "steps": [
+    {
+      "title": "Open Windows Firewall with Advanced Security.",
+      "content": "Open Windows Firewall with Advanced Security . To access your firewall settings on Windows 10 or 11, follow these quick steps: Press the Windows key on your keyboard or click the magnifying glass in your taskbar. Type windows firewall . Click Windows Defender Firewall with Advanced Security . If prompted, enter your password to confirm."
+    },
+    {
+      "title": "Click Inbound Rules.",
+      "content": "Click Inbound Rules . It's in the upper-left side of the window. [1] X Research source"
+    },
+    {
+      "title": "Click New Rule….",
+      "content": "Click New Rule… . You'll see this option on the right side of the window. [2] X Research source"
+    },
+    {
+      "title": "Check the \"Port\" option and click Next.",
+      "content": "Check the \"Port\" option and click Next . This will allow you to manually choose the ports you want to open. If you are being told to open a port to use a specific application or play a certain game, Oppido recommends looking it up first. \"If I'm being asked to open up a port, I do a quick Google search to see if that port is being used by any other services or protocols,\" he says. If the port number is commonly used for a certain program, make sure that program isn't something hackers are scanning for, as this could leave your system vulnerable."
+    },
+    {
+      "title": "Select TCP or UDP.",
+      "content": "Select TCP or UDP. Check the TCP box or the UDP box. Check your program's support documentation to ensure that you are using the correct protocol. In most cases, if you're opening a port to run specific software, you're opening a TCP port."
+    },
+    {
+      "title": "Enter the port range.",
+      "content": "Enter the port range. Make sure the \"Specific local ports\" option is selected, and then type the ports you need to open into the field. You can open multiple individual ports by separating them with a comma, and you can denote a range of ports by using a dash between the two ends of the range. For example, you would type 8830 to open port 8830, 8830, 8824 to open both port 8830 and port 8824, or 8830-8835 to open ports 8830 through 8835. If you are supposed to choose a random port, Oppido recommends selecting a port in the thousands because a lot of three-digit port numbers are used by other apps and services."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's at the bottom of the window."
+    },
+    {
+      "title": "Make sure \"Allow the connection\" is checked, then click Next.",
+      "content": "Make sure \"Allow the connection\" is checked, then click Next . If this option isn't checked, click the checkbox before continuing. [3] X Research source You can also use this tool to block connections ."
+    },
+    {
+      "title": "Make sure all three boxes on the \"Profile\" page are checked.",
+      "content": "Make sure all three boxes on the \"Profile\" page are checked. These include the \"Domain\", \"Private\", and \"Public\" boxes."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's at the bottom of the window."
+    },
+    {
+      "title": "Enter a name for your rule, then click Finish.",
+      "content": "Enter a name for your rule, then click Finish . This will save your settings and open your port(s). If opening the ports required by your software or server doesn't resolve your problem, you may also need to set up port forwarding on your router."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. If you want to use the command prompt to open ports on Windows, you'll want an administrator CMD window. [4] X Research source To open one: Press the Windows key and type cmd . Right-click Command Prompt and select Run as Administrator . Click Yes to continue."
+    },
+    {
+      "title": "Open a port.",
+      "content": "Open a port. To open ports in command prompt, you'll use the netsh advfirewall command. You will need to know the port number you are supposed to open and the protocol (TCP or UDP). In this example, we will open port 25565, a port commonly associated with Minecraft: [5] X Research source netsh advfirewall firewall add rule name= \"Open port 25565\" dir=in action=allow protocol=TCP localport=8025565 \"Open port 25565\" is the name we gave to the firewall rule–you can call this anything you want. You can learn about more port-opening options by running the command netsh advfirewall firewall add rule ? Want to see which ports are open? Jump down to How to Check if Ports are Open ."
+    },
+    {
+      "title": "Open your Mac's firewall settings.",
+      "content": "Open your Mac's firewall settings. If you want to allow a specific app through your firewall, you can do so in your firewall settings . Unlike in Windows, you won't need to open specific port numbers on your Mac—the firewall manages ports on a per-application basis. Follow these steps to open your firewall settings: [6] X Research source macOS Ventura or later: Click the Apple menu, select System Settings , click Network , and then click Firewall . [7] X Research source macOS Monterey and earlier: Click the Apple menu, select System Preferences… , Click Security & Privacy , and then click the Firewall tab."
+    },
+    {
+      "title": "Click Options….",
+      "content": "Click Options… . This will be called \"Firewall Options\" on older versions of macOS. A list of firewall rules will appear. If the options button is turned off, the firewall is disabled. Enable it now to continue. [8] X Research source"
+    },
+    {
+      "title": "Click +.",
+      "content": "Click + . You'll see this option below the list of firewall rules. [9] X Research source"
+    },
+    {
+      "title": "Select an application to allow through the firewall.",
+      "content": "Select an application to allow through the firewall. Simply click an application to select it. If the app you are looking for doesn't appear on the list, it may already have access through the firewall. This is true for many system services, as well as some digitally signed apps. [10] X Research source"
+    },
+    {
+      "title": "Click Open.",
+      "content": "Click Open . It's near the bottom of the window. Doing so will add the program to the list."
+    },
+    {
+      "title": "Make sure \"Allow incoming connections\" is displayed next to the app's name.",
+      "content": "Make sure \"Allow incoming connections\" is displayed next to the app's name. If you don't see this to the right of the application's name, click the dropdown menu to the right of the application’s name and select Allow incoming connections ."
+    },
+    {
+      "title": "Click OK to save your changes.",
+      "content": "Click OK to save your changes. The application is now allowed through the firewall. If opening the ports required by your software or server doesn't resolve your problem, you may need to also set up port forwarding on your router."
+    },
+    {
+      "title": "Find your router's IP address.",
+      "content": "Find your router's IP address. You'll need your router's IP address to access your router's configuration page. Windows: Press the Windows key on your keyboard, type cmd , and click Command Prompt . At the prompt, type ipconfig and press Enter . The IP address of your router appears next to \"Default gateway.\" [11] X Research source Mac: Open the Launchpad, type terminal , and click Terminal . [12] X Research source Then, type or paste netstat -nr and press Return to find the IP next to \"Default.\""
+    },
+    {
+      "title": "Go to your router's settings page.",
+      "content": "Go to your router's settings page. Open your preferred web browser, then type or paste your router's IP address into the address bar. Press Enter or Return to bring up the login page."
+    },
+    {
+      "title": "Sign in with your router's admin username and password.",
+      "content": "Sign in with your router's admin username and password. If you've already configured the router , enter the username and password you chose then. If not, consult your router's manual or online page for the stock username and/or password. If you've forgotten your login information, you may have to reset the router ."
+    },
+    {
+      "title": "Find the Port Forwarding section.",
+      "content": "Find the Port Forwarding section. Since each router's page will differ slightly from others, look for the following options (or variations of them): Port Forwarding Applications Gaming Virtual Servers Firewall Protected Setup You may also want to look for an Advanced Settings section."
+    },
+    {
+      "title": "Open your preferred port.",
+      "content": "Open your preferred port. Each router will have a slightly different way of doing this, although the required information is the same for any router: Name or Description - Enter the application's name. Type or Service Type - This can be TCP, UDP, or both. If you aren't sure of which one to select, click Both or TCP/UDP . Inbound or Start - Type in the port number here. If you are opening a range of ports, type in the lowest number in the range instead. Private or End - Re-type in the port number here. If you are opening a range of ports, type in the highest number in the range instead."
+    },
+    {
+      "title": "Enter your computer's private IP address.",
+      "content": "Enter your computer's private IP address. This goes in the \"Private IP\" or \"Device IP\" field. You can find your private IP address on a PC or on a Mac ."
+    },
+    {
+      "title": "Save your settings.",
+      "content": "Save your settings. Click the Save or Apply button. If prompted, you'll also need to restart your router for the changes to take effect. You may also have to check an \"Enabled\" or \"On\" box next to the forwarded port row."
+    },
+    {
+      "title": "Make sure the port you want to open is not in use.",
+      "content": "Make sure the port you want to open is not in use. You can do this using the netstat command at the command line. In this example, we'll check to see if port 3331 is open: netstat -na | grep :3331 If you get a \"Command not found\" when using netstat, replace \"netstat\" with \"ss\" like this: ss -na | grep :3331 If the port is not currently in use, you will not get any sort of message because the port number was not found in the firewall rules. If the port is in use, you will see its associated rule."
+    },
+    {
+      "title": "Open the port in UFW (Uncomplicated Firewall).",
+      "content": "Open the port in UFW (Uncomplicated Firewall). If you are using Debian, Ubuntu, or another Debian-based distribution running UFW, you would use this command to open port 3331: [13] X Research source sudo ufw allow 3331"
+    },
+    {
+      "title": "Open the port in firewalld.",
+      "content": "Open the port in firewalld. If you are using firewalld, the default firewall for Fedora, CentOS, Red Hat, and other RH-based distros, you would use this command to open port 3331: [14] X Research source firewall-cmd --add-port=4000/tcp"
+    },
+    {
+      "title": "",
+      "content": "To see if your ports are open to people outside of your network, try a web-based port checker. These port-checking websites are great for making sure certain ports, such as your Minecraft server or Soulseek port, are open. Just visit any of these sites and enter your IP address and the port you want to check. https://portchecker.co/canyouseeme https://canyouseeme.org https://www.portcheckers.com/"
+    },
+    {
+      "title": "See all open ports on Windows.",
+      "content": "See all open ports on Windows. If you want to see a quick list of all open ports on your Windows PC, you can run a simple command at the command prompt. Here's how: Press the Windows key on your keyboard and type cmd . Right-click Command Prompt and choose Run as administrator . Click Yes to proceed. Type netstat -ab and press Enter . All open TCP and UDP ports will appear, along with the name of the app using that port. [15] X Research source"
+    },
+    {
+      "title": "See all open ports on a Mac.",
+      "content": "See all open ports on a Mac. You can see a list of all open ports in your Mac's Terminal app. Here's how: Open Terminal by clicking the Terminal icon on the Launchpad. [16] X Research source Type lsof -i -P and press Return to see all open (listening) ports. It may take a moment for the list to populate."
+    },
+    {
+      "title": "See all open ports on Linux.",
+      "content": "See all open ports on Linux. To see which ports are in use on your Linux system, open a Terminal and run the command sudo ss -tunl . You can also use the command sudo lsof -nP -iTCP -sTCP:LISTEN to see a list of TCP listening ports."
+    },
+    {
+      "title": "",
+      "content": "What does open ports mean? An open port is a network entry point that can accept connections. For example, when you load a website that begins with \"https://\", the SSL port (port 443) is open, which allows you to access the website."
+    },
+    {
+      "title": "Why do hackers scan for open ports?",
+      "content": "Why do hackers scan for open ports? Hackers use port-scanning tools to scan for exploitable software/vulnerabilities in remote computers. For example, a hacker can enter an IP address, scan it for all open ports, and then use various tools to try exploiting the software running on those ports. [17] X Research source"
+    },
+    {
+      "title": "Why are ports 80 and 443 open?",
+      "content": "Why are ports 80 and 443 open? If these ports are open on your server, it's usually because there's a web server running (or installed and not yet running). Port 80 (and sometimes port 8080) is the standard unencrypted HTTP port, while 443 is the encrypted HTTPS port. [18] X Research source In most cases, port 80 forwards to port 443 so that people attempting to load the unsecured version of the website will be served the SSL version. [19] X Research source"
+    },
+    {
+      "title": "What happens when you open a port?",
+      "content": "What happens when you open a port? You're allowing inbound connections through your firewall. Essentially, you're opening a door to computers outside of your network to connect to the software that runs on that port."
+    }
+  ]
+}

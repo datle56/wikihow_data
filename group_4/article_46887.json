@@ -1,0 +1,130 @@
+{
+  "url": "https://www.wikihow.com/Use-an-Operating-System-from-a-USB-Stick",
+  "title": "How to Use an Operating System from a USB Stick",
+  "steps": [
+    {
+      "title": "Enable USB booting in the BIOS.",
+      "content": "Enable USB booting in the BIOS. BIOS (Basic Input/Output System) helps you manage the hardware in your computer. During startup press the designated key to access the BIOS (typically F2 or Del ). Use the arrow keys to navigate to the “Boot” tab. Move USB to the top of the list with ↵ Enter . Select “Save and Exit” and your computer will reboot with the new settings. [2] X Research source Different manufacturers use different types of BIOS in their computers. Check your manufacturer’s specifications for exact buttons for accessing and altering the BIOS configuration."
+    },
+    {
+      "title": "Purchase an appropriate USB flash drive.",
+      "content": "Purchase an appropriate USB flash drive. You will want a flash drive with at least 16GB capacity. USB 2.0 will work, but the greater speed of USB 3.0 is highly preferable. 32GB or greater is recommended if you want to fit anything beyond the operating system on the drive. The increase in storage capacity is relatively inexpensive (~$5 difference between 16 and 32 GB)!"
+    },
+    {
+      "title": "Download the \"disk image\" of the operating system you want to install.",
+      "content": "Download the \"disk image\" of the operating system you want to install. The Rufus website has a collection of links to downloadable OS disk images at the bottom of the page under the header “Non-exhaustive list of ISOs Rufus is known to work with”. The file you'll need to download is called an ISO."
+    },
+    {
+      "title": "Download and open Rufus.",
+      "content": "Download and open Rufus . Rufus is a self-contained program and does not need to be installed -- only downloaded and opened."
+    },
+    {
+      "title": "Connect your USB flash drive to the computer.",
+      "content": "Connect your USB flash drive to the computer. It will appear listed with your other drives in “This PC”."
+    },
+    {
+      "title": "Click the “Device” dropdown and select your USB flash drive from the list.",
+      "content": "Click the “Device” dropdown and select your USB flash drive from the list."
+    },
+    {
+      "title": "Click the “Partition Scheme” dropdown and select “MBR for BIOS or UEFI”.",
+      "content": "Click the “Partition Scheme” dropdown and select “MBR for BIOS or UEFI”. MBR (Master Boot Record) is an older, but more common disk structure used widely in Windows computers. You can select GPT (GUID Partition Table), a newer technology, but you may have compatibility issues installing some operating systems. [3] X Research source"
+    },
+    {
+      "title": "Click the “Filesystem” dropdown menu and select the appropriate filesystem.",
+      "content": "Click the “Filesystem” dropdown menu and select the appropriate filesystem. Use “NTFS” if you are installing Windows to your bootable USB stick drive and “exFat” if you are installing Linux to your bootable USB stick drive."
+    },
+    {
+      "title": "Click to activate the “Create Bootable Disk” checkbox.",
+      "content": "Click to activate the “Create Bootable Disk” checkbox. This checkbox is listed under the “Format Options” header and will allow you to use an ISO to create your bootable USB drive. An ISO (disk image) is digital file containing the contents of a disk - in this case the operating system you will install. [4] X Research source"
+    },
+    {
+      "title": "Select “ISO image” from the menu to the right of the checkbox.",
+      "content": "Select “ISO image” from the menu to the right of the checkbox."
+    },
+    {
+      "title": "Click the disk icon and select your downloaded disk image.",
+      "content": "Click the disk icon and select your downloaded disk image. The disk icon is located to the right of the dropdown where you selected ISO image."
+    },
+    {
+      "title": "Press “Start”.",
+      "content": "Press “Start”. A progress bar will display the progress. You will be notified when the process is complete. Note: This process will format the flash drive. Formatting the USB drive will erase ALL content. If you have any data on your USB flash drive you want to save, copy it to your computer first to save it."
+    },
+    {
+      "title": "Restart your computer to test your bootable drive.",
+      "content": "Restart your computer to test your bootable drive. With USB booting enabled, your computer should restart and use the USB to boot using the disc image. [5] X Research source Some BIOS have a separate menu specifically for selecting your startup disk. This menu will have a different access button on startup from the regular BIOS menu. [6] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 24 February 2021. Check with your manufacturer’s specifications to determine if this is the case if you are having trouble booting into your flash drive."
+    },
+    {
+      "title": "Acquire an appropriate USB flash drive.",
+      "content": "Acquire an appropriate USB flash drive. To install a modern macOS/OSX operating system, you will want a flash drive with at least 16GB capacity. USB 2.0 will work, but the greater speed of USB 3.0 is highly preferable. 32GB or greater is recommended if you want to fit anything beyond the operating system on the drive. The increase in capacity is relatively inexpensive (~$5 difference between 16 and 32 GB)!"
+    },
+    {
+      "title": "Download the OS installer from the App Store.",
+      "content": "Download the OS installer from the App Store. Search for the version of macOS/OSX you want to install and press “Download”. The installer will appear in your Applications folder when the download is complete."
+    },
+    {
+      "title": "Connect the USB flash drive to your computer.",
+      "content": "Connect the USB flash drive to your computer. The drive will mount automatically and appear on the desktop."
+    },
+    {
+      "title": "Go to “Applications > Utilities” and open the Disk Utility.",
+      "content": "Go to “Applications > Utilities” and open the Disk Utility. The Disk Utility is used to manage and modify your drives. Your flash drive will appear in the list of drives on the left."
+    },
+    {
+      "title": "Select your flash drive from the list and press “Partition”.",
+      "content": "Select your flash drive from the list and press “Partition”. Partitioning is a way to split your drive’s storage into separate spaces. This button is one of the tabs listed below the menu bar. The tab contains options for formatting the USB drive and setting it up to be bootable."
+    },
+    {
+      "title": "Open the Partition Layout menu and select “1 Partition”.",
+      "content": "Open the Partition Layout menu and select “1 Partition”. A single partition will maximize the space for your portable operating system."
+    },
+    {
+      "title": "Open the Format menu and select “Mac OS Extended (Journaled)\".",
+      "content": "Open the Format menu and select “Mac OS Extended (Journaled)\". This format is necessary to run the operating system. Note: Formatting the USB drive will erase ALL content. If you have any data on your USB flash drive you want to save, copy it to your computer first to save it."
+    },
+    {
+      "title": "Press “Options…”.",
+      "content": "Press “Options…”. This button is below the partition table and opens up a menu of options for the selected partition."
+    },
+    {
+      "title": "Select “GUID partition table” and press “OK”.",
+      "content": "Select “GUID partition table” and press “OK”. This partition scheme is necessary to make the partition bootable. Other options are used for making a drive bootable to PowerPC or Windows computers, but a modern macOS/OSX will not function properly on most non-Mac hardware."
+    },
+    {
+      "title": "Press “Apply” then “Partition” from the popup alert.",
+      "content": "Press “Apply” then “Partition” from the popup alert. A progress bar will appear indicating the formatting and partitioning progress. This process may take a few minutes. When complete, the progress bar will disappear."
+    },
+    {
+      "title": "Open the macOS/OSX installer.",
+      "content": "Open the macOS/OSX installer. The installer is located in your Applications folder."
+    },
+    {
+      "title": "Press “Continue” to begin the installation process.",
+      "content": "Press “Continue” to begin the installation process."
+    },
+    {
+      "title": "Press “Agree” and then “Agree” a second time in the popup.",
+      "content": "Press “Agree” and then “Agree” a second time in the popup. Clicking this button agrees to the licensing information displayed in the installer window."
+    },
+    {
+      "title": "Press “Show All Disks”.",
+      "content": "Press “Show All Disks”. This will let you select which disk to install the operating system to."
+    },
+    {
+      "title": "Select your flash drive from the list of disks and press “Install”.",
+      "content": "Select your flash drive from the list of disks and press “Install”. The installation will begin and will probably take around 30 or more minutes. When installation is complete you will be prompted to setup the new OS. You may be prompted to enter your computer’s login information after pressing install to verify the action."
+    },
+    {
+      "title": "Enter the OS initialization information.",
+      "content": "Enter the OS initialization information. You will be prompted for information like username/password, location, and wifi info to configure your new OS installation. After you finish you will be booted into your portable drive."
+    },
+    {
+      "title": "Go to “Applications > System Settings” and open “Startup Disk”.",
+      "content": "Go to “Applications > System Settings” and open “Startup Disk”. You want to make sure to switch your default startup disk back to your computer’s hard drive to avoid problems after you remove the flash drive."
+    },
+    {
+      "title": "Select your computer’s hard drive and press “Restart”.",
+      "content": "Select your computer’s hard drive and press “Restart”. You will boot back into your computer’s hard drive and you can now safely eject your flash drive."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Set-up-a-Personal-Web-Server-with-XAMPP",
+  "title": "How to Set up a Personal Web Server with XAMPP",
+  "steps": [
+    {
+      "title": "Go to https://www.apachefriends.org/index.html in a web browser.",
+      "content": "Go to https://www.apachefriends.org/index.html in a web browser. This is the web page do download the XAMPP client."
+    },
+    {
+      "title": "Click the link for your operating system.",
+      "content": "Click the link for your operating system. XAMPP is available for Windows, Linux, and macOS. Click the download button for whichever system your computer runs on. You will be redirected to a download page and your download will start automatically. If your download does not start automatically, click the green text that says click here at the top of the page."
+    },
+    {
+      "title": "Double-click the install file.",
+      "content": "Double-click the install file. Once the install file is finished downloading, you can open the downloaded file in your web browser or Downloads folder. The install file is \"xampp-windows-x64-X.X.X-0-VC15-installer.exe\" on Windows, \"xampp-osx-X.X.X-0-vm.dmg\" on Mac, and \"xampp-linux-x64-X.X.X-0-installer.run\" on Linux. If you receive an alert that informs you that your Antivirus software may interfere with the installation, temporarily disable your antivirus software and click Yes to continue the installation."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . When you see the XAMPP installer welcome screen, click Next to continue."
+    },
+    {
+      "title": "Select which services you want to install and click Next.",
+      "content": "Select which services you want to install and click Next . XAMPP has a variety of services, including PHP, MySQL, Apache, phpMyAdmin, and more. Click Next to install everything, or uncheck the boxes next to the services you don't want to install and click Next . [1] X Research source"
+    },
+    {
+      "title": "Select a folder to install XAMPP to and click Next.",
+      "content": "Select a folder to install XAMPP to and click Next . Here you are asked where you would like to install the personal web server application. The default is to the C:\\ drive when installing on a PC. This is probably the best location. To change folder locations, click the icon that resembles a folder and select a folder to install XAMPP to. On Mac, when you see the XAMPP icon with an arrow pointing to the Applications folder, click and drag XAMPP.app to the Applications folder as indicated to copy it to your Applications folder."
+    },
+    {
+      "title": "Continue clicking Next until XAMPP starts to install.",
+      "content": "Continue clicking Next until XAMPP starts to install. When you see the information screen about Bitnami, click Next to continue."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . Once the installation process is complete, click Finish ."
+    },
+    {
+      "title": "Select your language and click Save.",
+      "content": "Select your language and click Save . Click the flag that represents your language (English or German). Then click Save . XAMPP will open automatically once the installation is complete."
+    },
+    {
+      "title": "Double-click on the newly created XAMPP icon.",
+      "content": "Double-click on the newly created XAMPP icon. It has an orange icon that resembles an \"X\". This will display the XAMPP Control Panel."
+    },
+    {
+      "title": "Click Start buttons next to Apache and MySQL.",
+      "content": "Click Start buttons next to Apache and MySQL. This starts the personal web service or Apache and MySQL. On Mac, click Start under the General tab. Then click the Services tab and select Apache and click Start . Then select MySQL and click Start . you may see a couple of Windows Messages after clicking Start. There are times when you may click on “Start” to start the Web Server and it does not want to start. This is usually due to another program using the same port as the webserver. The most common conflict is with Skype. If your web server will not start and you are running Skype, close Skype and try to start the webserver again. To change the port number, click Config next to \"Apache\" and open the \"httpd.conf\" file. Then change the port number next to \"Listen\" to any free port number. Then open the \"httpd-ssl.conf\" file under \"Config\" and change the port number next to \"Listen\" to any free port number. Click Netstat to see a list of what port numbers are being used by each program. [2] X Research source"
+    },
+    {
+      "title": "Click Admin next to Apache.",
+      "content": "Click Admin next to Apache. If everything is working properly, you should see the XAMPP Dashboard. You can click one of the icons at the bottom of the screen to see a list of additional modules you can install and use with XAMPP. These include WordPress, Drupal, Joomla!, Mautic, OpenCart, OwnCloud, phpList, phpBB, and more."
+    },
+    {
+      "title": "Click Admin next to \"MySQL\".",
+      "content": "Click Admin next to \"MySQL\". This opens the phpMyAdmin dashboard. Here you can configure your PHP databases."
+    },
+    {
+      "title": "Create a new database (optional).",
+      "content": "Create a new database (optional). If you want to create a new database to test features for a website with, use the following steps: Click Databases to see a list of databases. Enter the name of a database where it says \"Database name\". Click Create ."
+    },
+    {
+      "title": "Add a password for your database (optional).",
+      "content": "Add a password for your database (optional). If you want to provide a password for your MySQL root user, Use the following steps: Click User accounts . Click Edit Privileges next to \"Local Host\" with the username \"root\". Click Change password . Enter a password in the spaces provided. Click Go in the lower-right corner."
+    },
+    {
+      "title": "Fix the \"Access Denied\" error.",
+      "content": "Fix the \"Access Denied\" error. After setting a password for your PHP database, you may receive an error message when trying to connect to phpMyAdmin. Use the following steps to fix the \"Access Denied\" error. Then you will be asked to enter a password when you connect to phpMyAdmin: [3] X Research source Click Explorer to the right in the XAMPP Control Panel. Open the \"phpMyAdmin\" folder. Open the \"config.inc.php\" file in NotePad or another text editor. Change \"config\" to \"cookie\" next to \"$cfg['Servers'][$i]['auth_type'] = 'config';\" Change \"true\" to \"false\" next to \"On $cfg['Servers'][$i]['AllowNoPassword'] = true;\" Click File . Click Save ."
+    }
+  ]
+}

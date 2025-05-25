@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Change-the-Timezone-in-Linux",
+  "title": "Linux: Set the Time Zone on Ubuntu, Debian, Red Hat, & More",
+  "steps": [
+    {
+      "title": "Open a terminal",
+      "content": "Open a terminal . You can use the timedatectl command in almost any version of Linux to change the timezone. This method will work for all Debian and Red Hat -based Linux distributions, including Ubuntu, Debian, Linux Mint, and Fedora."
+    },
+    {
+      "title": "Check your current time zone.",
+      "content": "Check your current time zone. Type timedatectl into Terminal and press ↵ Enter . The terminal will display the current time, time zone, and other details. [1] X Research source If you see \"System clock synchronized: yes\", your system is set to obtain the time from an internet time server automatically. If you're trying to change the time to something other than your actual time zone, you must disable this feature using the command sudo timedatectl set-ntp false ."
+    },
+    {
+      "title": "View the list of time zones.",
+      "content": "View the list of time zones. You can type timedatectl list-timezones and press Enter to view a list of all time zones, page by page, but it'll be pretty long. The best way to view the list is to filter it (using the grep command) by your city or country. For example, all North American, Central American, and South American cities are listed under \"America.\" To see time zones in this region, use timedatectl list-timezones"
+    },
+    {
+      "title": "Set the time zone.",
+      "content": "Set the time zone. Once you have the name of the time zone you want to use, you can use the timedatectl command again to set it permanently. Type sudo timedatectl set-timezone [timezone] , but replace [timezone] with the time zone of your choice. For example, sudo timedatectl set-timezone America/Vancouver ."
+    },
+    {
+      "title": "Set your clock to stay synced with internet time servers if you like.",
+      "content": "Set your clock to stay synced with internet time servers if you like. You can also use timedatectl to keep your Linux system time synced with an internet time server. Type timedatectrl and press Enter . If you see \"System clock synchronized: yes,\" your computer is already synced and will automatically receive the current date and time. If It says \"no,\" use sudo timedatectl set-ntp true to obtain the date and time automatically."
+    },
+    {
+      "title": "Open Terminal",
+      "content": "Open Terminal . If you want to change the time zone temporarily, you can use the tzselect command. Select the Terminal program from your Linux programs, or press Ctrl + Alt + T on your keyboard. This method will work in Debian and Red Hat-based Linux versions."
+    },
+    {
+      "title": "Check your current time zone.",
+      "content": "Check your current time zone. Type date into Terminal and press ↵ Enter . The terminal will display the date in Weekday Month Day Time TimeZone Year format. For example, you might see something like Wed Mar 7 07:38:23 EDT 2017 wherein \"EDT\" refers to the current time zone (Eastern Daylight Time)."
+    },
+    {
+      "title": "Type tzselect and press ↵ Enter.",
+      "content": "Type tzselect and press ↵ Enter . This displays a list of continents and ocean regions (for islands)."
+    },
+    {
+      "title": "Select a continent or ocean region.",
+      "content": "Select a continent or ocean region. Type a selection number for your general location, then press ↵ Enter ."
+    },
+    {
+      "title": "Select a country.",
+      "content": "Select a country. Type a selection number from the on-screen list and press ↵ Enter ."
+    },
+    {
+      "title": "Select a time zone.",
+      "content": "Select a time zone. Depending on your selected region, you may have additional areas to select from, such as states or provinces. If your city is not listed in the time zone list, pick a different city from your same time zone."
+    },
+    {
+      "title": "Confirm the local time.",
+      "content": "Confirm the local time. If the information you see is correct, press 1 to accept it, then press Enter . If the time isn't correct, type in 2 and press Enter , select a new continent, and repeat the process."
+    },
+    {
+      "title": "Verify that your time zone has been set.",
+      "content": "Verify that your time zone has been set. Run the date command again and check that the time zone corresponds to the one you just changed to. If you see your new time zone listed, you have successfully changed your computer's time zone. This change is temporary. When you reboot your Linux system, the time zone will reset to the default."
+    },
+    {
+      "title": "Open your Ubuntu settings.",
+      "content": "Open your Ubuntu settings. In the Activities overview, type settings , then click Settings in the search results."
+    },
+    {
+      "title": "Click Date & Time.",
+      "content": "Click Date & Time . You'll see this on the Settings menu. f"
+    },
+    {
+      "title": "Turn off Automatic Time Zone.",
+      "content": "Turn off Automatic Time Zone. Click the \"Automatic Time Zone\" switch in the middle of the page to do so. If the \"Automatic Time Zone\" switch is gray, skip this step."
+    },
+    {
+      "title": "Click Time Zone.",
+      "content": "Click Time Zone . It's near the bottom of the window. Doing so opens the Time Zone menu."
+    },
+    {
+      "title": "Select a time zone.",
+      "content": "Select a time zone. Click your approximate location on the world map to do so, or type your city to search, then make your selection. You should see the time change to match the selected area's time zone."
+    },
+    {
+      "title": "Close the window.",
+      "content": "Close the window. This will save your settings and update your time zone accordingly."
+    },
+    {
+      "title": "",
+      "content": "Open your Linux Mint settings. To do this, click the menu and select the System Settings icon. It's made of two grey cogs."
+    },
+    {
+      "title": "Click Date & Time.",
+      "content": "Click Date & Time . It's in the \"Preferences\" group of options."
+    },
+    {
+      "title": "Select a time zone.",
+      "content": "Select a time zone. Click a vertical slice of the map to pick that time zone. You should see the clock on the right side of the page immediately change to reflect the selected time zone's time."
+    },
+    {
+      "title": "Enter your user password when prompted.",
+      "content": "Enter your user password when prompted. You need root privileges to change the time zone, so you'll likely be asked to enter your password now."
+    },
+    {
+      "title": "Click Authenticate.",
+      "content": "Click Authenticate . It's at the bottom of the prompt. Doing so unlocks the Date & Time menu."
+    }
+  ]
+}

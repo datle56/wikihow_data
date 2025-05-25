@@ -1,0 +1,174 @@
+{
+  "url": "https://www.wikihow.com/Reset-SA-Password-in-SQL-Server",
+  "title": "How to Reset SA Password in SQL Server",
+  "steps": [
+    {
+      "title": "Understand how this method works.",
+      "content": "Understand how this method works. If Windows Authentication is enabled for your server, you can use it to log into your server without having to enter a password. After you're logged in, you can easily change the SQL server's password. [1] X Research source If Windows Authentication isn't enabled, you'll need to either use Single-User Mode or use Command Prompt to reset your password."
+    },
+    {
+      "title": "Make sure that SSMS is installed.",
+      "content": "Make sure that SSMS is installed. SSMS is a user interface which allows you to change different aspects of your SQL Server settings in a window rather than in Command Prompt. If you don't have SSMS installed, do the following: Go to the SSMS installation page in a browser. Click the Download SQL Server Management Studio 17.6 link. Double-click the downloaded SSMS setup file. Follow the on-screen prompts to install SSMS."
+    },
+    {
+      "title": "Open SSMS.",
+      "content": "Open SSMS. Type sql server management studio into Start, then click Microsoft SQL Server Management Studio 17 at the top of the Start window."
+    },
+    {
+      "title": "Select the correct authentication.",
+      "content": "Select the correct authentication. Click the \"Authentication\" drop-down box, then click Windows Authentication in the menu."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . It's at the bottom of the window. If Windows Authentication is allowed for your account, doing so will log you into your server's dashboard."
+    },
+    {
+      "title": "Expand your server's folder.",
+      "content": "Expand your server's folder. If your server's folder in the upper-left side of the window doesn't have several options below it, click the ＋ icon to the left of it to expand it."
+    },
+    {
+      "title": "Expand the \"Security\" folder.",
+      "content": "Expand the \"Security\" folder. It's below the server's name."
+    },
+    {
+      "title": "Expand the \"Logins\" folder.",
+      "content": "Expand the \"Logins\" folder. You'll find this in the group of options below the \"Security\" folder."
+    },
+    {
+      "title": "Double-click sa.",
+      "content": "Double-click sa . It's in the \"Logins\" group of options. Doing so opens your System Administrator properties window."
+    },
+    {
+      "title": "Enter a new password.",
+      "content": "Enter a new password. Type your new password into both the \"Password\" and the \"Confirm password\" text fields near the top of the window."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. Doing so will change your password and close the properties window."
+    },
+    {
+      "title": "Understand how this method works.",
+      "content": "Understand how this method works. Even if you've locked out your only account, you can add a user and give them administrator permissions by using the Command Prompt. After doing this, you can use the new user's credentials to log into your SQL Server page, from which point you can change the SA password. [2] X Research source"
+    },
+    {
+      "title": "Make sure that SSMS is installed.",
+      "content": "Make sure that SSMS is installed. SSMS is a user interface which allows you to change different aspects of your SQL Server settings in a window rather than in Command Prompt. If you don't have SSMS installed, do the following: Go to the SSMS installation page in a browser. Click the Download SQL Server Management Studio 17.6 link. Double-click the downloaded SSMS setup file. Follow the on-screen prompts to install SSMS."
+    },
+    {
+      "title": "Open Command Prompt in administrator mode.",
+      "content": "Open Command Prompt in administrator mode. Open Start , then do the following: Type in command prompt Right-click Command Prompt Click Run as administrator Click Yes when prompted."
+    },
+    {
+      "title": "Stop SQL Instance from running.",
+      "content": "Stop SQL Instance from running. Type in net stop MSSQLSERVER and press ↵ Enter . This will stop the currently running SQL services."
+    },
+    {
+      "title": "Restart SQL in Single-User Mode.",
+      "content": "Restart SQL in Single-User Mode. Type in net start MSSQLSERVER -m\"SQLCMD\" and press ↵ Enter . You won't see any indication that you're running in Single-User Mode at this point, but you should see the phrase \"The SQL Server <MSSQLSERVER> service was started successfully\" appear."
+    },
+    {
+      "title": "Connect to SQL.",
+      "content": "Connect to SQL. Type in sqlcmd and press ↵ Enter . Doing so opens the SQL command line."
+    },
+    {
+      "title": "Create a new user and password.",
+      "content": "Create a new user and password. You'll do this with typed commands in the SQL command line: Type in CREATE LOGIN name WITH PASSWORD=’password’ where \"name\" is the account name and \"password\" is the new password. Press ↵ Enter . Type in GO and press ↵ Enter ."
+    },
+    {
+      "title": "Add the user to the System Administrator role.",
+      "content": "Add the user to the System Administrator role. Type in SP_ADDSRVROLEMEMBER name,’SYSADMIN’ where \"name\" is the account name, press ↵ Enter , and then type in GO and press ↵ Enter ."
+    },
+    {
+      "title": "Exit the SQLCMD command line.",
+      "content": "Exit the SQLCMD command line. Type in exit and press ↵ Enter ."
+    },
+    {
+      "title": "Restart SQL in regular mode.",
+      "content": "Restart SQL in regular mode. You can cancel Single-User Mode by typing in net stop MSSQLSERVER && net start MSSQLSERVER and pressing ↵ Enter . You should see the \"The SQL Server <MSSQLSERVER> service was started successfully\" phrase appear again; at this point, you can close Command Prompt."
+    },
+    {
+      "title": "Open SSMS.",
+      "content": "Open SSMS. Type sql server management studio into Start, then click Microsoft SQL Server Management Studio 17 at the top of the Start window."
+    },
+    {
+      "title": "Select the correct authentication.",
+      "content": "Select the correct authentication. Click the \"Authentication\" drop-down box, then click SQL Server Authentication in the menu."
+    },
+    {
+      "title": "Log in with the new user's credentials.",
+      "content": "Log in with the new user's credentials. Click the \"Login\" drop-down box, then click the name of the user you just created."
+    },
+    {
+      "title": "Enter the password.",
+      "content": "Enter the password. Type the user's password into the \"Password\" text box near the bottom of the window."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . It's at the bottom of the window. As long as you adequately entered your username and password, this will open your server's dashboard."
+    },
+    {
+      "title": "Expand your server's folder.",
+      "content": "Expand your server's folder. If your server's folder in the upper-left side of the window doesn't have several options below it, click the ＋ icon to the left of it to expand it."
+    },
+    {
+      "title": "Expand the \"Security\" folder.",
+      "content": "Expand the \"Security\" folder. It's below the server's name."
+    },
+    {
+      "title": "Expand the \"Logins\" folder.",
+      "content": "Expand the \"Logins\" folder. You'll find this in the group of options below the \"Security\" folder."
+    },
+    {
+      "title": "Double-click sa.",
+      "content": "Double-click sa . It's in the \"Logins\" group of options. Doing so opens your System Administrator properties window."
+    },
+    {
+      "title": "Enter a new password.",
+      "content": "Enter a new password. Type your new password into both the \"Password\" and the \"Confirm password\" text fields near the top of the window."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. Doing so will change your password and close the properties window."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen. This will open the Start menu."
+    },
+    {
+      "title": "Search for Command Prompt.",
+      "content": "Search for Command Prompt. Type in command prompt , then wait for Command Prompt to appear at the top of the Start menu."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt. Doing so will prompt a drop-down menu."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . It's in the drop-down menu."
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. This will confirm your decision to open Command Prompt in administrator mode. The Command Prompt window should open."
+    },
+    {
+      "title": "Enter the first command.",
+      "content": "Enter the first command. Type in osql -L and press ↵ Enter . [3] X Research source"
+    },
+    {
+      "title": "Enter the second command with your server's name.",
+      "content": "Enter the second command with your server's name. Type in OSQL -S server -E where \"server\" is replaced by your server's name, then press ↵ Enter ."
+    },
+    {
+      "title": "Create a new password.",
+      "content": "Create a new password. Type in EXEC sp_password NULL, ‘password’, ’sa' where \"password\" is replaced by the password that you want to use, then press ↵ Enter . For example, to set your password as \"rutabaga123\", you would type EXEC sp_password NULL, 'rutabaga123', 'sa' into Command Prompt."
+    },
+    {
+      "title": "Execute the command.",
+      "content": "Execute the command. Type in GO , then press ↵ Enter . Type exit , then press ↵ Enter to exit OSQL."
+    },
+    {
+      "title": "Attempt to log into SQL Server.",
+      "content": "Attempt to log into SQL Server. Do so by using your administrator credentials and your new password. If you're able to log into SQL Server, your password was successfully changed."
+    }
+  ]
+}

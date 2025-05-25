@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Connect-Excel-to-an-Oracle-Database",
+  "title": "How to Connect Excel to an Oracle Database",
+  "steps": [
+    {
+      "title": "Download the Oracle Instant Client.",
+      "content": "Download the Oracle Instant Client. Go to https://www.oracle.com/database/technologies/instant-client/downloads.html and click the download link for your operating system and processor type/architecture. You can opt for the Basic or Basic Light version—the only difference is that Basic Light only includes English error messages and Unicode, ASCII, and Western European character set support. [2] X Research source To find your architecture on Windows, type \"System Information\" into the Windows search bar, and check the value of \"System type.\" If you're using a Mac, you'll see separate download links for Intel and ARM processors. If you have an Apple silicon processor, choose the ARM download. You can find your processor type in the Apple menu > About this Mac . [3] X Research source"
+    },
+    {
+      "title": "Install the client.",
+      "content": "Install the client. Windows Unzip the files. Move the files to an easy-to-remember location, such as C:\\Oracle\\instantclient_23_4. Add the directory to the PATH environment variable . [4] X Research source Mac Double-click the DMG file to mount it. Open a Terminal and enter the directory of the mounted package using the cd command. For example, cd /Volumes/instantclient-basic-macos.x64-19.16.0.0.0dbru . [5] X Research source Type ./install_ic.sh and press Return . Add the install directory to your path using the command export PATH=$PATH:/Users/user-name/Downloads/instantclient_23_3 . Replace \"user-name\" with your username, and the version of Instant Client with the version you downloaded."
+    },
+    {
+      "title": "Download the ODBC package.",
+      "content": "Download the ODBC package. Return to the Oracle Instant Client download page and click the version you installed. Click the latest version number, then scroll down to the \"ODBC Package\" section. Click the download link to save the file."
+    },
+    {
+      "title": "Install the ODBC driver.",
+      "content": "Install the ODBC driver. Windows Extract the ZIP file and copy its contents to the directory where you installed the Instant Client. Run the odbc_install.exe file in the instant client directory. If you get a security warning, click More and allow it to run anyway. Mac Mount the DMG file. Open a Terminal and enter the directory of the mounted package using the cd command. For example, cd /Volumes/instantclient-obdb-macos.x64-19.16.0.0.0dbru . Type ./install_ic.sh and press Return ."
+    },
+    {
+      "title": "Open your workbook in Microsoft Excel.",
+      "content": "Open your workbook in Microsoft Excel. Excel comes with a feature called Power Query (also called Get & Transform) that makes it easy to connect to an Oracle database. [6] X Research source If you haven’t installed the Oracle client software on your computer, you’ll need to do so first. You can get the latest version from https://www.oracle.com/database/technologies/instant-client/downloads.html . On a Mac, Power Query is not supported on Excel 2019 and earlier. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Data tab.",
+      "content": "Click the Data tab. It’s at the top of the screen."
+    },
+    {
+      "title": "Click Get Data.",
+      "content": "Click Get Data . If you don’t see this option, click New Query or Get External Data instead."
+    },
+    {
+      "title": "Click From Database.",
+      "content": "Click From Database ."
+    },
+    {
+      "title": "Click From Oracle Database.",
+      "content": "Click From Oracle Database . This option is only available if you're using Microsoft 365 Apps for Enterprise Edition, Office 2019 Professional Plus (PC), or Office 2016 Professional Plus (PC)."
+    },
+    {
+      "title": "Enter the Oracle server name into the ″Oracle Database″ box.",
+      "content": "Enter the Oracle server name into the ″Oracle Database″ box. This should be the hostname or address of the server that hosts your database. If the database requires an SID, use this format to type the server name/address: servername/SID . [8] X Research source"
+    },
+    {
+      "title": "Enter a native database query (optional).",
+      "content": "Enter a native database query (optional). If importing data from the database requires a specific query, expand the ″SQL Statement″ box by clicking the small triangle, and then type the statement. [9] X Research source"
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This saves your options and initiates a connection to the database."
+    },
+    {
+      "title": "Log into the database.",
+      "content": "Log into the database. If the database requires you to log in, enter your username and password, and then click Connect . This connects the workbook to the database. Depending on your settings, you may also have to choose an authentication method. If you entered a native database query, the results will appear in a Query Editor window."
+    }
+  ]
+}

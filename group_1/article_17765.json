@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Fix-the-%22Device-Not-Managed%22-Error-in-Network-Manager",
+  "title": "How to Fix the \"Device Not Managed\" Error in Network Manager",
+  "steps": [
+    {
+      "title": "Open up the terminal.",
+      "content": "Open up the terminal. This can be done by pressing Ctrl + Alt + T . Then type in the following command: gksu gedit /etc/NetworkManager/NetworkManager.conf You will be required to give an administrative password."
+    },
+    {
+      "title": "Edit the NetworkManager.conf file.",
+      "content": "Edit the NetworkManager.conf file. In the last line, replace the managed=false to managed=true . Then save the file and exit the editor."
+    },
+    {
+      "title": "Restart your PC or the Network Manager.",
+      "content": "Restart your PC or the Network Manager. If you don't want to restart your PC, then give the terminal this command: sudo restart network-manager ."
+    }
+  ]
+}

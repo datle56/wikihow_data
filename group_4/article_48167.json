@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/What-Is-Clrscr()-in-C",
+  "title": "What Is clrscr() in C? Clearing the Console and Screen in C",
+  "steps": [
+    {
+      "title": "Add the stdlib.h header file to your code.",
+      "content": "Add the stdlib.h header file to your code. The system() function is used to pass commands to the terminal or console, and it’s declared in the stdlib.h header file. [1] X Research source clrscr() is defined in the conio.h header file. Since we'll be removing clrscr() and replacing it with system() , you can remove the conio.h header file."
+    },
+    {
+      "title": "Replace clrscr() with system(\"cls\") on Windows.",
+      "content": "Replace clrscr() with system(\"cls\") on Windows. The cls command, when run at the Windows command prompt, clears the console screen."
+    },
+    {
+      "title": "Replace clrscr() with system(\"clear\") on Linux or macOS.",
+      "content": "Replace clrscr() with system(\"clear\") on Linux or macOS. The system() function will pass the clear command to the console. The Linux command (and thus the macOS command) to clear the console is clear , so system(\"clear\") will clear the console window. [2] X Research source"
+    }
+  ]
+}

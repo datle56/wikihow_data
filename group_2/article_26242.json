@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Log-on-to-Windows-XP-Using-the-Default-Blank-Administrator-Password",
+  "title": "3 Ways to Access Windows XP with a Blank Administrator Password",
+  "steps": [
+    {
+      "title": "Reboot your PC.",
+      "content": "Reboot your PC. If you're using Windows XP Professional and haven't changed the default Administrator password, you can log in with a blank Administrator password at the welcome screen using a quick keyboard shortcut. If you're using Windows XP Home or another edition, try resetting in Safe Mode instead. This will not work if the Administrator password was changed."
+    },
+    {
+      "title": "Press Ctrl+Alt+Del twice at the Welcome screen.",
+      "content": "Press Ctrl + Alt + Del twice at the Welcome screen. This takes you to the classic Windows XP login window."
+    },
+    {
+      "title": "Type Administrator into the first field.",
+      "content": "Type Administrator into the first field."
+    },
+    {
+      "title": "Click the mouse cursor in the Password field.",
+      "content": "Click the mouse cursor in the Password field. While you shouldn't type anything into the Password field, you should click the mouse in this field to ensure that Windows recognizes the blank password."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Once you're signed in, you'll have full administrative privileges, including the ability to change any user's password."
+    },
+    {
+      "title": "Reboot your PC.",
+      "content": "Reboot your PC. Many Windows XP PCs will allow you to reset the Administrator password by booting into Safe Mode with Command Prompt. To get started, press Ctrl + Alt + Del , click Shut Down… , then click Restart ."
+    },
+    {
+      "title": "Press F8 before the Windows boot screen appears.",
+      "content": "Press F8 before the Windows boot screen appears. As soon as your PC turns off and turns back on, start pressing the F8 key repeatedly (don't hold it down—just keep pressing it quickly). This will bring you to a black screen with several menu options."
+    },
+    {
+      "title": "Select Safe Mode with Command Prompt.",
+      "content": "Select Safe Mode with Command Prompt . Use the arrow keys to scroll down to this option, then press Enter to boot into Safe Mode with Command Prompt."
+    },
+    {
+      "title": "If prompted, log in to the Administrator account with a blank password.",
+      "content": "If prompted, log in to the Administrator account with a blank password. Depending on how Windows XP was set up, you'll either be prompted to click Yes to continue to Safe Mode, or you'll be asked to log in first. If asked to sign in, type Administrator as the username, and then just click the mouse cursor into the Password field. Don't type anything into the password field—but you will need to click the cursor in the field for the blank password to be accepted. If your password is not accepted, you'll need to try another method."
+    },
+    {
+      "title": "Click Yes to continue to safe mode.",
+      "content": "Click Yes to continue to safe mode."
+    },
+    {
+      "title": "Enter the command to change the Administrator password.",
+      "content": "Enter the command to change the Administrator password. Here's what you'll need to do: Type net user Administrator * and press Enter . Type a new password for the Administrator account. Press Enter to confirm. If you'd like, you can also change the password for other accounts the same way."
+    },
+    {
+      "title": "Reboot your PC and log in as Administrator.",
+      "content": "Reboot your PC and log in as Administrator. Once you reboot your computer, you will be able to log in as the Administrator user with the password you've created."
+    },
+    {
+      "title": "Get a blank CD, DVD, or USB flash drive.",
+      "content": "Get a blank CD, DVD, or USB flash drive. If you don't know the Administrator password, you can use a tool called Offline NT Password to make the Administrator password blank. To use the tool, you'll need to create a bootable CD, DVD, or USB flash drive, which you can then boot from to recover the password. If you have access to a more modern operating system like Windows 10 or 11, it'll be easier to create the bootable media on that computer instead. Some Windows XP PCs might be so old they can't boot from USB drive. Others don't have DVD drives, only CD drives. When in doubt, create a CD."
+    },
+    {
+      "title": "Download the Offline NT Password tool from http://pogostick.net/~pnh/ntpasswd.",
+      "content": "Download the Offline NT Password tool from http://pogostick.net/~pnh/ntpasswd . You'll see the download links under \"Download\" toward the bottom of the page. Download the CD version for a CD, or the USB version for a flash drive. [1] X Research source"
+    },
+    {
+      "title": "Unzip the downloaded files.",
+      "content": "Unzip the downloaded files. To do so, right-click the downloaded file, and then click Extract All . If you're using Windows XP, choose a location to which you want to extract the files, click Next , then click Finish . If you're using a more modern version of Windows, select a location to extract the files, then click Extract ."
+    },
+    {
+      "title": "Create a bootable USB flash drive.",
+      "content": "Create a bootable USB flash drive. If you're creating a bootable CD, you can skip this step. To create a bootable USB flash drive, follow these steps: Copy all of the files from the extracted ZIP file directly to the root of the USB flash drive. Make note of the drive letter. Open the Command Prompt . Type X:syslinux.exe -ma X: , replacing X with the letter of your USB flash drive. Press Enter . The drive is now bootable."
+    },
+    {
+      "title": "Create a bootable CD or DVD.",
+      "content": "Create a bootable CD or DVD. Use this step only if you're burning a CD on Windows XP, as Windows 7 and later all come with built-in ISO burning tools. Insert a blank bootable CD or DVD into the optical drive. Windows 7 and later: Right-click the file in the extracted folder that ends with .iso and select Burn disc image . [2] X Research source Select your CD/DVD burner and click Burn . Windows XP: Go to http://infrarecorder.org and click the Download link on the right. Click the Installer link for Windows 2000/XP/Vista/7 to download. Once downloaded, double-click the downloaded file and follow the on-screen instructions to install. Open Infrarecorder and click Write Image . Select your CD or DVD drive. Click OK to burn."
+    },
+    {
+      "title": "Change the boot order in the BIOS.",
+      "content": "Change the boot order in the BIOS. Windows XP may not be set up to boot from the CD/DVD drive or USB flash drive, so you'll need to make a quick change in the BIOS. To get to the BIOS , reboot your PC, then start pressing the Setup key for your PC as soon your computer turns off and back on—this is usually F2, F10, F12, or Del. You'll usually see something on the screen at boot time that tells you which key to press to \"Enter Setup.\" Go to the section called Boot , Boot Order , or Boot Sequence —it may be in a section called Advanced . Change the order so the type of device you're booting from appears at the top of the list before the hard drive. For example, the CD-ROM or DVD drive (it may be called Optical Drive ) should appear first if you're booting from CD or DVD. Use Removable Devices or USB first if using a flash drive. Save your changes and exit the BIOS. The PC will then restart and boot from the drive."
+    },
+    {
+      "title": "Boot the Windows XP PC from the CD/DVD or flash drive.",
+      "content": "Boot the Windows XP PC from the CD/DVD or flash drive. Now that the boot order is correct, you'll usually see a message asking you to press any key to boot from CD/DVD or USB. Press a key when prompted. If not, the PC will boot into Offline NT Password instantly."
+    },
+    {
+      "title": "Select your boot drive and press ↵ Enter.",
+      "content": "Select your boot drive and press ↵ Enter . This is usually the default drive that's already selected (C:), but if there's more than one drive or partition, you may have to use the arrow keys to select it manually."
+    },
+    {
+      "title": "Press 1 and then press ↵ Enter.",
+      "content": "Press 1 and then press ↵ Enter . This displays a list of all passwords you can reset. Any users labeled \"ADMIN\" have administrator rights. [3] X Research source"
+    },
+    {
+      "title": "Type the RID of the Administrator user and press ↵ Enter.",
+      "content": "Type the RID of the Administrator user and press ↵ Enter . The RID appears in the left column next to the user. It should begin with a 0."
+    },
+    {
+      "title": "Press 1 and then press ↵ Enter.",
+      "content": "Press 1 and then press ↵ Enter . This completely erases the current Administrator password and makes it blank. The option to edit the password won't work on XP—you can only make it blank with this tool."
+    },
+    {
+      "title": "Exit and save your changes.",
+      "content": "Exit and save your changes. Here's how: Press ⇧ Shift + ! to go back to the main menu. Press q . You'll be asked if you want to save your changes. Press y . This saves your changes."
+    },
+    {
+      "title": "Remove the CD/DVD or USB flash drive and boot normally.",
+      "content": "Remove the CD/DVD or USB flash drive and boot normally. You should now be able to log in to Windows XP with a blank password. If you're unable to log in with Administrator and a blank password, try again after pressing Ctrl + Alt + Del twice on the Welcome screen. Then, enter Administrator as the username, and click inside the Password field once before logging in."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Bypass-Windows-Vista-Activation",
+  "title": "Extending your Windows Vista Activation",
+  "steps": [
+    {
+      "title": "Open Windows if you're locked out.",
+      "content": "Open Windows if you're locked out. Perform the following actions if you're locked out by the activation timer. If you aren't locked out, skip to the next step. Select \"Access your computer with reduced functionality\". Open Internet Explorer, and then click \"File\" → \"Open\". Type C:\\Windows\\Explorer.exe and then click \"OK\". Confirm that you want to run it when prompted. [1] X Research source"
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. There are a couple different ways to do this: Click the Start menu, right-click on Command Prompt, and select \"Run as administrator\". Click the Start menu, type cmd , and then press Ctrl + ⇧ Shift + ↵ Enter ."
+    },
+    {
+      "title": "Type .",
+      "content": "Type . slmgr -rearm and press ↵ Enter . This will add 30 days to your activation timer. Put a space between slmgr and -rearm . It may take a few seconds for the confirmation to appear."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. Your new 30-day extension will take effect right away."
+    },
+    {
+      "title": "Run the command again after 30 days.",
+      "content": "Run the command again after 30 days. You can repeat the command three times. This will give you 120 days total extension. This is within the terms of the Microsoft EULA. Open the Command Prompt as an administrator and type slmgr -xpr . A notification with the remaining time will appear shortly."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. Editing the Windows Registry can increase the extension to an entire year. Performing this extension is not accepted by Microsoft. Open the Registry Editor by pressing ⊞ Win + R and typing regedit . You can also start it from the Command Prompt by typing regedit and pressing ↵ Enter ."
+    },
+    {
+      "title": "Use the tree on the left to navigate to the correct folder.",
+      "content": "Use the tree on the left to navigate to the correct folder. You can expand each section of the registry in the left frame. Use this to navigate to the following location: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SL"
+    },
+    {
+      "title": "Right-click the \"SkipRearm\" key and select \"Modify\".",
+      "content": "Right-click the \"SkipRearm\" key and select \"Modify\". You'll find this key in the right frame when you've selected the SL folder."
+    },
+    {
+      "title": "Change the \"Value data\" field to .",
+      "content": "Change the \"Value data\" field to . 1 . Click \"OK\" to save the changes to the key. This will extend the renewal time by 240 days, for a total of one year of renewals."
+    },
+    {
+      "title": "Run the slmgr -rearm command each month.",
+      "content": "Run the slmgr -rearm command each month. You can do this each month for the next eight months."
+    },
+    {
+      "title": "Reinstall Vista after a year.",
+      "content": "Reinstall Vista after a year. Once your year of renewals is up, reinstall Vista from scratch and start all over again. Vista can be reinstalled and running again in about an hour. Once it's reinstalled, follow the process above to keep using Vista forever without activating. You'll never need to install cracked software or a hacked version. See How to Install Windows Vista for a guide on reinstalling Vista. Reinstalling your operating system is recommended at least once a year anyway for best performance."
+    }
+  ]
+}

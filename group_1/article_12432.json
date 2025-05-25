@@ -1,0 +1,166 @@
+{
+  "url": "https://www.wikihow.com/Delete-a-File-in-Microsoft-Windows-Using-Batch-Files",
+  "title": "How to Delete a File in Microsoft Windows Using Batch Files",
+  "steps": [
+    {
+      "title": "Find the file you want to delete.",
+      "content": "Find the file you want to delete. Go to the location of the file that you want to remove via Batch file."
+    },
+    {
+      "title": "Right-click the file.",
+      "content": "Right-click the file. Doing so prompts a drop-down menu."
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties . It's at the bottom of the drop-down menu. This will open a pop-up window."
+    },
+    {
+      "title": "Determine the file's extension.",
+      "content": "Determine the file's extension. In the \"Type of file\" section, look for the three- or four-letter extension in parentheses. This is the extension you'll need to add onto your file's name later. For example, if you have a text file, you'll see \"Text Document (.txt)\" to the right of the \"Type of file\" heading. If you see \"File folder\" listed as the file type, you'll have to close the Properties window, click once the file you want to check, and then right-click it again and click Properties."
+    },
+    {
+      "title": "Copy the file's location.",
+      "content": "Copy the file's location. Click and drag your mouse across the address listed in the \"Location\" section of the Properties window, then press Ctrl + C . This will add the address to your computer's clipboard. At this point, you're ready to begin writing the Batch file."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Type in notepad , then click Notepad at the top of the Start window. The Notepad window will open."
+    },
+    {
+      "title": "Add the \"Change Directory\" command.",
+      "content": "Add the \"Change Directory\" command. Type in cd and press the spacebar, then paste in your copied address by pressing Ctrl + V and press ↵ Enter . This tells the command to look in the folder in which your file is stored. For example, if your file is on the desktop, your command might read cd C:\\Users\\YourName\\Desktop . If you don't do this step, the \"Delete\" command will look for your file in a system folder instead."
+    },
+    {
+      "title": "Enter the \"Delete\" command.",
+      "content": "Enter the \"Delete\" command. On the line directly below the \"Change Directory\" command, type in del and press the spacebar."
+    },
+    {
+      "title": "Enter the file's name and extension in quotation marks.",
+      "content": "Enter the file's name and extension in quotation marks. Type a quotation mark, type in the file's name exactly as it appears (including spaces, special characters, and capitalization), type in a period and the file's extension, and type the closing quotation mark. For a text file named \"Bananas\", for example, you would type in \"Bananas.txt\" as the file name and extension. At this point, the entire second line should read del \"file name.extension\" where \"file name\" is replaced by the file's name and \".extension\" is replaced by the file's extension."
+    },
+    {
+      "title": "Add more file names.",
+      "content": "Add more file names. If you want to delete multiple files from a folder, press ↵ Enter to start a new line, then type in del and a space followed by the other file's name and extension; repeat this process as needed until all of the files you want to remove are named in the file on their own lines."
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . It's in the top-left corner of the Notepad window. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Save As….",
+      "content": "Click Save As… . This option is in the drop-down menu. Doing so opens the Save As window."
+    },
+    {
+      "title": "Enter a file name with the Batch extension.",
+      "content": "Enter a file name with the Batch extension. Type whatever you want to name your Batch file into the \"File name\" text box, then type in .bat at the end of the file's name. For example, to name your Batch file \"fruit\", you would type in fruit.bat here."
+    },
+    {
+      "title": "Click the \"Save as type\" drop-down box.",
+      "content": "Click the \"Save as type\" drop-down box. You'll find this option near the bottom of the window. Clicking it prompts a drop-down menu."
+    },
+    {
+      "title": "Click All Files.",
+      "content": "Click All Files . It's in the drop-down menu."
+    },
+    {
+      "title": "Select a save location.",
+      "content": "Select a save location. Click a folder on the left side of the window (e.g., Desktop ) to select that folder as the place in which to save your Batch file."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's in the bottom-right corner of the window. This will save your Batch file in the selected location."
+    },
+    {
+      "title": "Know that your Batch file will permanently delete your files.",
+      "content": "Know that your Batch file will permanently delete your files. When you run your Batch file, the \"del\" command will tell your computer to remove permanently the named files (as opposed to moving them to the Recycle Bin). Because of this, you should be careful when executing your Batch file."
+    },
+    {
+      "title": "Run your Batch file.",
+      "content": "Run your Batch file. When you're ready to delete your named file(s), simply double-click the Batch file to run it. You should see the file(s) disappear after a moment."
+    },
+    {
+      "title": "Understand the purpose of this method.",
+      "content": "Understand the purpose of this method. If you want to clear all files of a specific file type (e.g., text files) from a folder, you can use a Batch file. This is useful if you have a folder which automatically fills up with various files."
+    },
+    {
+      "title": "Open the folder you want to clear.",
+      "content": "Open the folder you want to clear. Double-click the folder that you want to clear to open it."
+    },
+    {
+      "title": "Determine the extension for the files you want to delete.",
+      "content": "Determine the extension for the files you want to delete. Do the following: Right-click the type of file you want to delete. Click Properties . Look at the extension in the \"Type of file\" section."
+    },
+    {
+      "title": "Copy the folder's address.",
+      "content": "Copy the folder's address. Click the address bar at the top of the folder to highlight the address, then press Ctrl + C to copy it. If clicking the address bar doesn't highlight the address, click and drag across the address to highlight it."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Click Start , type in notepad , and click Notepad when it appears at the top of the Start menu."
+    },
+    {
+      "title": "Tell the file to select your folder's address.",
+      "content": "Tell the file to select your folder's address. Type in cd and press the spacebar, then press Ctrl + V to paste in the folder's address."
+    },
+    {
+      "title": "Enter the \"Delete\" command.",
+      "content": "Enter the \"Delete\" command. Press ↵ Enter to start a new line below the first one, then type in del and press the spacebar."
+    },
+    {
+      "title": "Tell the file to look for your preferred file type.",
+      "content": "Tell the file to look for your preferred file type. Instead of typing in a specific file's name, you'll type in a quotation mark, an asterisk, the extension, and another quotation mark. This tells your computer to delete any files ending in your specified extension. For example, if you want to empty the folder of text files, your \"Delete\" line would say del \"*.txt\" ."
+    },
+    {
+      "title": "Add more file types if necessary.",
+      "content": "Add more file types if necessary. If you want to empty the folder of more than one file type, start a new line by pressing ↵ Enter , then type in the \"Delete\" command followed by the extension for the file type."
+    },
+    {
+      "title": "Save your file as a Batch file.",
+      "content": "Save your file as a Batch file. Do the following: Click File . Click Save As... . Type whatever you want to name your Batch file followed by .bat into the \"File name\" text box. Click the \"Save as type\" box, then click All Files . Select a save location on the left side of the window, then click Save ."
+    },
+    {
+      "title": "Run your file whenever you need to clear the folder.",
+      "content": "Run your file whenever you need to clear the folder. Simply double-click the Batch file to do so. This will remove any file(s) matching your specified extension(s) from the folder. If you ever move the folder, you'll need to edit the Batch file to include the updated folder's address."
+    },
+    {
+      "title": "Understand how this works.",
+      "content": "Understand how this works. If you want to remove an entire folder's file contents without deleting the subfolders inside of the main folder, you can use a Batch file to do so. This method won't delete folders inside of the directory, but it will remove all files from those folders."
+    },
+    {
+      "title": "Right-click the folder you want to clear.",
+      "content": "Right-click the folder you want to clear. This will open a drop-down menu."
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties . It's at the bottom of the drop-down menu. Doing so opens the Properties window."
+    },
+    {
+      "title": "Copy the folder's location.",
+      "content": "Copy the folder's location. Click and drag your mouse across the address in the \"Location\" section, then press Ctrl + C ."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Click Start , type in notepad , and click Notepad when it appears at the top of the Start menu."
+    },
+    {
+      "title": "Enter the \"Change Directory\" command along with the folder's address.",
+      "content": "Enter the \"Change Directory\" command along with the folder's address. Type in cd and press the spacebar, then press Ctrl + V to paste in the folder's address."
+    },
+    {
+      "title": "Enter the command to delete all files without confirmation.",
+      "content": "Enter the command to delete all files without confirmation. Press ↵ Enter to start a line below the \"Change Directory\" command, then do the following: Type in del and then press the spacebar. Type in /S /Q and then press the spacebar. The \"/S\" ensures that any folders inside of the main folder also have their files deleted, and the \"/Q\" removes the confirmation prompt. Paste in the folder's address from earlier. Type in a backslash (\\). Type in the folder's name exactly as it appears in the address bar when you open the folder."
+    },
+    {
+      "title": "Save your file as a Batch file.",
+      "content": "Save your file as a Batch file. Do the following: Click File . Click Save As... . Type whatever you want to name your Batch file followed by .bat into the \"File name\" text box. Click the \"Save as type\" box, then click All Files . Select a save location on the left side of the window, then click Save ."
+    },
+    {
+      "title": "Run your Batch file when needed.",
+      "content": "Run your Batch file when needed. Whenever you want to clear out the folder and its subfolders, double-click the Batch file."
+    }
+  ]
+}

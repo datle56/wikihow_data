@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows",
+  "title": "How to Change the PATH Environment Variable on Windows",
+  "steps": [
+    {
+      "title": "Right-click the Start menu and select System.",
+      "content": "Right-click the Start menu and select System . Right-clicking the Start menu brings up the Power User menu, which has different options. You can also get to this menu using the keyboard shortcut Control + X ."
+    },
+    {
+      "title": "Click Advanced system settings.",
+      "content": "Click Advanced system settings . You will see this option in the \"Related links\" section on the right panel. This opens the System Properties panel to the \"Advanced\" tab."
+    },
+    {
+      "title": "Click Environment Variables….",
+      "content": "Click Environment Variables… . This button is near the bottom of the window, below the \"Startup and Recovery\" section."
+    },
+    {
+      "title": "Select Path under \"System variables.\"",
+      "content": "Select Path under \"System variables.\" Alternatively, if you only want to edit the path for your user account, not the entire system, select Path under \"User variables\" instead. You may have to scroll down to find the Path variable."
+    },
+    {
+      "title": "Click the Edit button.",
+      "content": "Click the Edit button. This takes you to a screen where you can edit the PATH environment variable."
+    },
+    {
+      "title": "Click New to add a new folder to the path.",
+      "content": "Click New to add a new folder to the path. You'll see this button at the top-right corner of the window. If you want to edit an existing folder path, select it and click Edit instead. Then, modify the path as needed and click OK to save your changes. To remove a directory from the PATH, select it, then click the Delete button."
+    },
+    {
+      "title": "Enter the folder you want to add to your path.",
+      "content": "Enter the folder you want to add to your path. Type the full path to the directory you're adding. For example, if you're adding FFmpeg to your path, you'll usually want to add C:\\ffmpeg\\bin. For Java , it'll usually be something like C:\\Program Files\\Java\\jdk-23\\bin."
+    },
+    {
+      "title": "Click OK, then OK again.",
+      "content": "Click OK , then OK again. Keep clicking OK until you've closed out of System Properties completely."
+    },
+    {
+      "title": "Open a new Command Prompt window and check the path.",
+      "content": "Open a new Command Prompt window and check the path. If you were working in an existing Command Prompt window, you'll need to close it and open a new one to verify that you've added the path correctly. Once you're there, type echo %PATH% and press Enter –you should now see the folder you added to your path in the list. Alternatively, if you're using PowerShell , you can echo the path using the command $env:Path -split ';' ."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. If you want to add a directory to the system PATH in CMD, it's super easy. To open Command Prompt as an admin , click the Start menu, type cmd , right-click Command Prompt , and select Run as administrator . If you're just editing the user PATH and not the system PATH, you don't need to open Command Prompt as an administrator. Important: Editing the PATH environment variable from the Command Prompt using the setx command is not typically recommended–setx merges the system and user PATHs and truncates the PATH to 1024 characters. If the directories in your PATH amount to more characters than that, you'll likely break things. When possible, use Advanced System Settings instead. If you're on a school or work computer and don't have permission to edit the PATH environment variable, ask your system administrator if there's a utility installed to do this, such as pathman or pathed ."
+    },
+    {
+      "title": "Add a folder to the user PATH.",
+      "content": "Add a folder to the user PATH. If you don't need to make the change for all users of the system, the syntax is setx \"%path%;C:\\directory\" . Replace C:\\directory with the full path of the folder you want to add to the path. For example, if you're adding JDK23 to your path, use setx \"%path%;C:\\Program Files\\Java\\jdk-23\\bin\" . This change will not take effect in the current Command Prompt window–you will need to open a new Command Prompt window to test your change."
+    },
+    {
+      "title": "Add a folder to the system PATH.",
+      "content": "Add a folder to the system PATH. To make it so the directory you are adding is added to the path for all users of the system, you'll run the same command, but with the /M parameter. For example, setx /M \"%path%;C:\\Program Files\\Java\\jdk-23\\bin\" adds C:\\Program Files\\Java\\jdk-23\\bin to the PATH for all users of this system."
+    },
+    {
+      "title": "Open a new Command Prompt window and check the path.",
+      "content": "Open a new Command Prompt window and check the path. If you were working in an existing Command Prompt window, you'll need to close it and open a new one to verify that you've added the path correctly. Once you're there, type echo %PATH% and press Enter –you should now see the folder you added to your path in the list."
+    }
+  ]
+}

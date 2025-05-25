@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Activate-Windows-XP",
+  "title": "How to Activate Windows XP in 2024",
+  "steps": [
+    {
+      "title": "Start the Activation wizard.",
+      "content": "Start the Activation wizard. Because Windows XP is unsupported due to its age, it’s no longer possible to activate it over the internet using the activation wizard. You can start the wizard for phone activation by clicking the Activation icon in the System Tray, or by clicking Start → All Programs → Accessories → System Tools → Activate Windows . If you have already tried following the phone activation steps but were unsuccessful using the default activation phone number, visit this Microsoft support document and select your region for an alternative phone number to call."
+    },
+    {
+      "title": "Enter your product key if you haven't already.",
+      "content": "Enter your product key if you haven't already. You may be prompted to enter your 25-character product key before proceeding with the activation process."
+    },
+    {
+      "title": "Choose the phone option.",
+      "content": "Choose the phone option. Select \"Yes, I want to telephone a customer service representative to activate Windows now.\" You will be provided a toll-free and local phone number to call."
+    },
+    {
+      "title": "Call Microsoft and provide the 54-digit \"installation ID\".",
+      "content": "Call Microsoft and provide the 54-digit \"installation ID\". Use the provided number to contact Microsoft. The rep will ask you to provide the 54 digit \"installation ID\". This is displayed on the same screen as the phone numbers. In some cases, you may be able to request an activation code sent to you via text or email without speaking to a person. If you're unable to use the default phone number and you're in the United States, try calling 866-421-7141. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Enter the 35-digit code the rep gives you.",
+      "content": "Enter the 35-digit code the rep gives you. After verifying your installation ID, the support rep will give you an activation code. Enter this code into the boxes at the bottom of the window to finish activating."
+    },
+    {
+      "title": "Download and run Legacy Update for Windows XP.",
+      "content": "Download and run Legacy Update for Windows XP. This free tool exists to help users of unsupported Windows versions like Windows XP and Windows 7 activate their product keys and install updates no longer provided by Microsoft. [2] X Research source Once you download the tool and run all available Windows XP updates, you'll be able to activate Windows XP over the internet as long as your product key is legitimate. Download the file from https://legacyupdate.net . Double-click the installer. If nothing happens when you double-click the file: Right-click the installer and select Properties . Click Unblock and then OK . Double-click the installer again to run it."
+    },
+    {
+      "title": "Select all options except Service Pack 3 and click Install.",
+      "content": "Select all options except Service Pack 3 and click Install . The installation options will vary depending on which service pack you're on and which updates you've already been able to install. If you're not already running SP2, or you're using a custom ISO installation instead of the original CD or ISO, uncheck Service Pack 3 to prevent errors. You can still update to SP3 once after you're finished installing Legacy Update. [3] X Research source Once the installation is complete, you'll be taken to the Legacy Update website, which will check for available updates for Windows XP."
+    },
+    {
+      "title": "Install Windows Update.",
+      "content": "Install Windows Update. The first available update is Windows Update. Click Download and Install Now , and follow the on-screen instructions to complete the update and restart your computer."
+    },
+    {
+      "title": "Run Legacy Update from the Start menu.",
+      "content": "Run Legacy Update from the Start menu. You'll now have a Legacy Update option in the Start menu where \"Windows Update\" once appeared. Click that option to check for available updates."
+    },
+    {
+      "title": "Install all available updates.",
+      "content": "Install all available updates. You're going to see a lot of updates to install, and you'll want to install all of them (though the ones in the \"Software Optional\" section are optional). Select everything, then click Review and install updates to start updating. The update process can take a while, as there are likely hundreds of updates. You'll need to restart your PC many times throughout the process. After the first batch of updates is finished installing, run Legacy Update again to check for more updates. Continue updating until no more updates are available."
+    },
+    {
+      "title": "Activate Windows XP over the internet.",
+      "content": "Activate Windows XP over the internet. Once Windows XP is completely up to date, you can use the standard online activation tools to validate your product key. Go to Start → All Programs → Accessories → System Tools → Activate Windows , enter your product key when prompted, and select the internet activation option to activate Windows."
+    },
+    {
+      "title": "Consider purchasing a valid key.",
+      "content": "Consider purchasing a valid key. If you don't want to upgrade to a newer version of Windows, you may still want to consider purchasing a valid key. There are many key resellers available online. If you have purchased Windows XP in the past but can't find your key, Microsoft may be able to retrieve it for you if you contact customer support. If you have a Windows XP key that won't work, contact Microsoft before bypassing the activation. A rep may be able to get your key working and your computer activated."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ⊞ Win + R and type regedit . This will open the Registry Editor, allowing you to bypass Windows XP activation. This is only recommended as a last-resort option."
+    },
+    {
+      "title": "Navigate to the correct folder.",
+      "content": "Navigate to the correct folder. Use the tree on the left side of the Registry Editor to open HKEY_LOCAL_MACHINE → SOFTWARE → Microsoft → Windows NT → CurrentVersion (or \"Current Version\") → WPAEvents ."
+    },
+    {
+      "title": "Double-click the \"OOBETimer\" entry.",
+      "content": "Double-click the \"OOBETimer\" entry. This will open a new window."
+    },
+    {
+      "title": "Change the \"Value data\".",
+      "content": "Change the \"Value data\". Delete whatever is currently in the box and enter FF D5 71 D6 8B 6A 8D 6F D5 33 93 FD . Click OK to save your changes."
+    },
+    {
+      "title": "Right-click the WPAEvents folder and select Permissions.",
+      "content": "Right-click the WPAEvents folder and select Permissions ."
+    },
+    {
+      "title": "Deny \"Full Control\" for the System group and click OK.",
+      "content": "Deny \"Full Control\" for the System group and click OK . Click the System group in the top frame, then check the box next to \"Deny\" for Full Control. Click OK , then exit Regedit."
+    },
+    {
+      "title": "See if it worked.",
+      "content": "See if it worked. You may be finished! To check, go to Start → Activate Windows . If it says Windows is already activated, you're finished! If not, or if the activation tool won't open, continue to the next step."
+    },
+    {
+      "title": "Change the product key if necessary.",
+      "content": "Change the product key if necessary. If Windows still wants you to activate or the activation tool won't open, follow these steps: Go to Start > Run . Type %systemroot%\\system32\\oobe\\msoobe.exe \\a and click OK . Select the option to activate over the phone. Click the Change Product Key button at the bottom. Enter this product key: THMPV - 77D6F - 94376 - 8HGKG - VRDRQ and click Update . [4] X Research source Click Remind me later and restart your computer. When you're back to the desktop, go to Start > Run Type %system and click OK . Activation is now disabled."
+    },
+    {
+      "title": "Know when to do this.",
+      "content": "Know when to do this. Sometimes when you're re-installing Windows with non-standard hardware, you may not be able to access Windows to activate. You'll get a message that you must activate it to proceed, but you can't connect to the internet, and the \"installation ID\" is not generated. If this happens to you, you'll need to use Safe Mode to fix your drivers and activate Windows."
+    },
+    {
+      "title": "Boot into Safe Mode.",
+      "content": "Boot into Safe Mode. You'll need to fix the problems with your device drivers. This will allow you to generate an installation ID to activate it over the phone. Reboot your computer and rapidly strike F8 as it boots up. This will open the Advanced Boot Options menu. Select \"Safe Mode\" from the list of options."
+    },
+    {
+      "title": "Download the necessary drivers on another computer.",
+      "content": "Download the necessary drivers on another computer. You'll likely need to download the drivers on another computer. Windows XP Safe Mode disables program installation, so you'll need the actual driver files, not an installer. Determine the piece of hardware that isn't working. Press ⊞ Win + R and type devmgmt.msc . This will load the Device Manager. Look for items that have a \"!\" or \"?\" icon. These are the pieces of hardware that require drivers. Visit the manufacturer's support site on another computer. If you are using a laptop or pre-built desktop, you should be able to find all of the drivers you need in one spot. If you're using a custom-built computer, you'll need to find the manufacturer of the hardware that's not working. Download the INF files for the hardware piece. Since you can't use an installer, you'll need the actual driver files. These come in INF format. Transfer these files from the working computer to the non-working one via USB or disk."
+    },
+    {
+      "title": "Install the driver.",
+      "content": "Install the driver. Right-click on the non-working piece of hardware in the Device Manager and select \"Update Driver\". Browse your computer for the INF file that you downloaded and load it up. You'll be prompted to reboot your computer. For more detailed instructions on tracking down and installing drivers, click here ."
+    },
+    {
+      "title": "Try activating as you normally would.",
+      "content": "Try activating as you normally would. You should now be able to either boot into Windows and activate over the phone. See the above method for instructions."
+    }
+  ]
+}

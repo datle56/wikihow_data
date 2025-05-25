@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Use-FTP",
+  "title": "How to Use FTP",
+  "steps": [
+    {
+      "title": "Learn how FTP differs from HTTP.",
+      "content": "Learn how FTP differs from HTTP. FTP stands for File Transfer Protocol, and is a connection method designed for transferring files from a remote server to local computer, and vice versa. FTP is often used in corporate and academic settings, and is the primary way of managing webpage servers. [1] X Research source While HTTP (Hypertext Transfer Protocol) allows for file transfers, it is not as robust as FTP transfers."
+    },
+    {
+      "title": "Understand the parts of an FTP address.",
+      "content": "Understand the parts of an FTP address. When you come across FTP addresses on a webpage, they are usually denoted in the same way as a usual webpage address—with a couple of exceptions: For example, you might see ftp.example.com:21 . This means that the address is ftp.example.com and the port used is 21 . You will need both of these when connecting to the FTP server. If the FTP requires a username, it may be written as username@ftp.example.com:21 where \"username\" is the required name. If no username is specified, then you will usually need to enter \"anonymous\" as the username when you connect. Note that you are not actually anonymous when you connect to a public FTP; the host can see your IP address."
+    },
+    {
+      "title": "Determine how you prefer to connect.",
+      "content": "Determine how you prefer to connect. There are three main ways to connect to FTP servers: via visual clients, via browser-based clients, or through the command line. Downloading and installing a visual client is the most widely used and easiest way to connect to an FTP, and also affords you the most power and control over the process. The majority of this guide will focus on using an FTP client. [2] X Research source A visual client is essentially just a program which allows you to enter the necessary FTP address and port; the program does all of the hard work from there. To connect to an FTP through a web browser, simply enter the FTP address into the address bar just like any other website. You may be asked for login credentials, and then you can browse the directories. Using a browser is usually much slower and less reliable than using a designated client. If you're interested in how to connect to an FTP using the command line, see the final section of this guide ."
+    },
+    {
+      "title": "Download FileZilla.",
+      "content": "Download FileZilla. Using a client to connect will often lead to faster uploads and downloads to the FTP server, and FileZilla is one of the most popular FTP servers available. To download it, go to https://filezilla-project.org in your computer's web browser, then do the following: Click Download FileZilla Client Click Download FileZilla Client on the subsequent page. Click the green Download button below the \"FileZilla\" heading. FileZilla is the example for this article, but you can use virtually any FTP client in the same way."
+    },
+    {
+      "title": "Install FileZilla.",
+      "content": "Install FileZilla. This process will vary depending on your computer's operating system: Windows — Double-click the downloaded FileZilla setup file, click Yes when prompted, click I agree , click Next four times, uncheck the box on the Driver Update page, click Next , uncheck the box on the WinZIP page, and click Next . Mac — Double-click the downloaded FileZilla DMG file, click and drag the FileZilla app icon onto the \"Applications\" folder icon, and follow any on-screen instructions until FileZilla begins installing."
+    },
+    {
+      "title": "Open FileZilla.",
+      "content": "Open FileZilla. Once FileZilla is installed, click Finish with the \"Start FileZilla now\" box checked, or double-click the FileZilla app icon on the desktop (Windows) or in the Applications folder (Mac) to open it."
+    },
+    {
+      "title": "Enter your FTP server's information.",
+      "content": "Enter your FTP server's information. At the top of the FileZilla window, fill out the following fields: Host — This is where the FTP address goes. Username — You'll enter the login username here (if there is no username, enter anonymous ). Password — The password to log into the FTP server goes here (leave blank if there isn't a password). Port — The FTP server's port number goes here."
+    },
+    {
+      "title": "Click Quickconnect.",
+      "content": "Click Quickconnect . It's near the upper-right corner of the FileZilla window. FileZilla will begin connecting to your server."
+    },
+    {
+      "title": "Review the FTP server's contents.",
+      "content": "Review the FTP server's contents. Once you are connected, you will see the FTP directory tree on the right side of the window. The top frame shows the tree structure, while the bottom frame shows the contents of each folder. At this point, you're ready to begin uploading and downloading files. Each time you change folders, a small command is sent to the server. This means there will be a slight delay when moving between folders. You can enter in an exact location in the bar at the top of the right side. If you don't have permission for certain directories, you will receive an error when you try to access them."
+    },
+    {
+      "title": "Consider using your computer's built-in FTP software.",
+      "content": "Consider using your computer's built-in FTP software . Both Windows and Mac computers have built-in options which allow you to upload and download FTP files. This isn't necessary if you already downloaded and installed FileZilla, but it provides a quick way to upload and download files if you don't need to connect to or run your own FTP server."
+    },
+    {
+      "title": "Navigate your local directories.",
+      "content": "Navigate your local directories. On the left side of the window, you will see two frames for navigating through your local folders. This will allow you to choose files to upload or locations for downloads. You can type in an exact location in the bar at the top of the right side."
+    },
+    {
+      "title": "Download a file from the FTP server to your computer.",
+      "content": "Download a file from the FTP server to your computer. Find the file or folder that you want to download on the right side of the window, find the folder to which you want to save it in the left window, and then click and drag the file from the bottom frame on the right to the bottom frame on the left. Your file or folder will start transferring automatically. You can see the size of the file in bytes in the \"Filesize\" column. You can select multiple files to download in the same session by holding Ctrl and clicking on each one you want. Files will be transferred one at a time. You can add files to your download queue by right-clicking on them and selecting \"Add files to queue\""
+    },
+    {
+      "title": "Upload a file to the server.",
+      "content": "Upload a file to the server. Navigate to the file or folder that you want to upload on the left side of the window, then find a folder to which you'll upload it on the right side of the window. If you have permissions to upload a file to the FTP server, you can click and drag the file from the left side to the right side to begin uploading. Most public FTPs will not allow anonymous users to upload files. Uploads will typically take longer than downloads of the same size."
+    },
+    {
+      "title": "Track your transfers.",
+      "content": "Track your transfers. You can watch your transfers in the bottom frame of the window. You will see a list of files you are transferring and have queued, along with their size, priority, and percent completion. You can also see your failed and completed transfers by using the Failed transfers and Successful transfers tabs at the bottom of the window."
+    },
+    {
+      "title": "Create your own server",
+      "content": "Create your own server . You can use Windows to create your own FTP server to which other users can connect and upload files (or download files from)."
+    },
+    {
+      "title": "Open your command line or terminal.",
+      "content": "Open your command line or terminal. Windows, Mac OS X, and most Linux distributions have a command-based FTP client available from the Command Prompt or Terminal: [3] X Research source To open the Windows Command Prompt, press ⊞ Win + R , type in cmd , and press ↵ Enter . To open Terminal in macOS, click Spotlight , type in terminal , and double-click Terminal . [4] X Research source To open the Terminal in most Linux distributions, press Ctrl + Alt + T . [5] X Research source"
+    },
+    {
+      "title": "Connect to an FTP server.",
+      "content": "Connect to an FTP server. The commands are the same for all command line FTP clients regardless of operating system. To connect to the server, type ftp ftp.example.com . [6] X Research source After the connection is made, you will be prompted for the username. If you are connecting to a public FTP, type anonymous and press Enter when prompted for the password. Otherwise, enter in your assigned username and password. [7] X Research source"
+    },
+    {
+      "title": "View the FTP server's files.",
+      "content": "View the FTP server's files. Type in dir /p and press ↵ Enter to see a list of the server's directories and files. [8] X Research source"
+    },
+    {
+      "title": "Switch to your preferred directory.",
+      "content": "Switch to your preferred directory. Type in cd directory (where \"directory\" is the folder or path to the folder that you want to open) and press ↵ Enter ."
+    },
+    {
+      "title": "Switch to binary mode.",
+      "content": "Switch to binary mode. By default, the FTP will connect in ASCII mode, which is designed for transferring text files. To switch to binary mode, type in binary and press ↵ Enter . [9] X Research source Binary mode is best suited for downloading media files or whole folders."
+    },
+    {
+      "title": "Download a file.",
+      "content": "Download a file. Use the get command to download a file from the remote server to your local computer. Follow the \"get\" command with the file you want to download. For example, type get example.jpg to download the \"example.jpg\" from the current location on the FTP."
+    },
+    {
+      "title": "Upload a file.",
+      "content": "Upload a file. Use the put command to upload a file from your local machine onto the remote FTP server. Follow the \"put\" command with the location of the file that you want to upload. For example, type put c:\\documents\\homemovies\\example2.avi to copy the \"example2.avi\" movie file from its home location to the FTP server."
+    },
+    {
+      "title": "Close the connection.",
+      "content": "Close the connection. Type close to end the connection with the FTP client. Any transfers currently in progress will be canceled. [10] X Research source"
+    }
+  ]
+}

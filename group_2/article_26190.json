@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Lock-a-Folder-Using-a-Batch-File",
+  "title": "How to Lock a Folder Using a Batch File",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Notepad has an icon that resembles a blue notebook folder. Use the following steps to open Notepad: Click the Windows Start Menu. Type \"Notepad.\" Click Notepad ."
+    },
+    {
+      "title": "Copy the following batch script.",
+      "content": "Copy the following batch script. The batch script is in the box below. Highlight the entire script. Right-click it and click Copy , or press \" Ctrl + C .\" The script is as follows: [1] X Research source cls @ ECHO OFF title Folder Locker if EXIST \"Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}\" goto UNLOCK if NOT EXIST Locker goto MDLOCKER : CONFIRM echo Are you sure you want to Lock the folder (Y/N) set/p \"cho=>\" if %cho% == Y goto LOCK if %cho% == y goto LOCK if %cho% == n goto END if %cho% == N goto END echo Invalid choice. timeout 1 goto CONFIRM : LOCK ren Locker \"Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}\" attrib +h +s \"Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}\" echo Folder locked timeout 3 goto End : UNLOCK @ echo off set \"psCommand=powershell -Command \" $pword = read-host 'Enter Password to Unlock folder' -AsSecureString ; ^ $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^ [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR) \"\" for /f \"usebackq delims=\" %% p in ( ` %psCommand% ` ) do set password = %% p if NOT %password% == TYPE_YOUR_PASSWORD_HERE goto FAIL attrib -h -s \"Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}\" ren \"Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}\" Locker echo Folder Unlocked Successfully timeout 1 goto End : FAIL echo Invalid Password timeout 1 goto end : MDLOCKER md Locker echo Locker created successfully timeout 5 goto End : End"
+    },
+    {
+      "title": "Paste the code into Notepad.",
+      "content": "Paste the code into Notepad. Go back to your blank Notepad document. Right-click at the top of the page and click Paste , or press \" Ctrl + V \" to paste the code into Notepad."
+    },
+    {
+      "title": "Change the password.",
+      "content": "Change the password. Locate where it says \"TYPE_YOUR_PASSWORD_HERE\" in the script. It's about three-quarters of the way down. It's in the line that starts with \"if NOT %password%==\"."
+    },
+    {
+      "title": "Save the document as a batch file.",
+      "content": "Save the document as a batch file. Use the following steps to save the Notepad document as a batch file: Click File . Click Save as . Click the drop-down menu next to \"Save as type.\" Select All files (*.*) . Type a file name in the File Name field (i.e. LockedFolder). Type \".bat\" at the end of the file name (I.e. LockedFolder.bat). Click Save ."
+    },
+    {
+      "title": "Close the window.",
+      "content": "Close the window. Once you are finished saving the Batch file, you can close Notepad."
+    },
+    {
+      "title": "Run the batch file by double-clicking it.",
+      "content": "Run the batch file by double-clicking it. Navigate to where you saved the batch file in File Explorer. Double-click the batch file to run it. This will create a new folder called \"Locker\" in the same folder as the batch file."
+    },
+    {
+      "title": "Move all the things you want to hide into the Locker folder.",
+      "content": "Move all the things you want to hide into the Locker folder. You can move objects into the folder by dragging and dropping them, or you can copy and paste them into the folder."
+    },
+    {
+      "title": "Double-click on the locker.bat file again.",
+      "content": "Double-click on the locker.bat file again. A Command Prompt will open. It will ask you if you want to lock the folder."
+    },
+    {
+      "title": "Press Y and then press ↵ Enter.",
+      "content": "Press Y and then press ↵ Enter . The Locker folder will disappear from the folder. This indicates it is locked."
+    },
+    {
+      "title": "Unlock the folder.",
+      "content": "Unlock the folder. When you want to gain access to the folder again, use the following steps to make the Locker folder reappear: Double-click the batch file to run it. Enter the password you input into the batch file before you saved it. Press the Enter key."
+    }
+  ]
+}

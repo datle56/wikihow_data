@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Check-BIOS-Version",
+  "title": "How to Check the BIOS Version on Windows 11, 10, and 8.1",
+  "steps": [
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. You can use the Command Prompt in any version of Windows to quickly check the BIOS version. To open Command Prompt: Press the Windows key + S on your keyboard. Type cmd . Click Command Prompt in the search results."
+    },
+    {
+      "title": "Type wmic bios get smbiosbiosversion and press ↵ Enter.",
+      "content": "Type wmic bios get smbiosbiosversion and press ↵ Enter . The string of numbers (or a mix of letters and numbers) following SMBBIOSBIOSVersion is your current BIOS version."
+    },
+    {
+      "title": "Open PowerShell.",
+      "content": "Open PowerShell. You can open PowerShell in any version of Windows by pressing Windows key + S , typing powershell , and clicking Windows PowerShell in the search results. [1] X Research source"
+    },
+    {
+      "title": "Type Get-WmiObject win32_bios and press ↵ Enter.",
+      "content": "Type Get-WmiObject win32_bios and press ↵ Enter . This displays your BIOS version and manufacturer in an easy-to-understand menu format."
+    },
+    {
+      "title": "Open the System Information panel.",
+      "content": "Open the System Information panel. You can use this tool on Windows 11, Windows 10, and Windows 8 to find your BIOS version without rebooting your PC. To open it: Press the Windows key + S on your keyboard. Type msinfo32 . Click System Information in the search results."
+    },
+    {
+      "title": "Find the BIOS version next to \"BIOS Version/Date.\"",
+      "content": "Find the BIOS version next to \"BIOS Version/Date.\" You'll see the name of the manufacturer, followed by the BIOS version number, and then the date the version was released."
+    },
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. If you're using Windows 11, Windows 10, or Windows 8, you should be able to boot into the BIOS from your Windows Settings. To open your settings, press Windows key + i , or click Settings in your Start menu. If you can't boot into Windows past the sign-in screen, you can still enter the UEFI firmware settings menu. On the sign-in screen, click the power icon, then hold down Shift as you click Restart . Once your computer reboots, skip to Step 4 ."
+    },
+    {
+      "title": "Open your Recovery settings.",
+      "content": "Open your Recovery settings. The steps are a little different depending on your version of Windows: Windows 11: Click System in the left panel, then click Recovery in the right panel. Windows 10: Click Update & Security , then click Recovery in the left panel. Windows 8: Click General in the left panel. [2] X Research source"
+    },
+    {
+      "title": "Click Restart now under \"Advanced Startup.\"",
+      "content": "Click Restart now under \"Advanced Startup.\" You'll see this in the right panel in all Windows versions. Your computer will reboot into the Advanced Options screen."
+    },
+    {
+      "title": "Click Troubleshoot on the blue screen.",
+      "content": "Click Troubleshoot on the blue screen. More options will appear."
+    },
+    {
+      "title": "Click Advanced Options.",
+      "content": "Click Advanced Options . Even more options will appear."
+    },
+    {
+      "title": "Click UEFI Firmware Settings.",
+      "content": "Click UEFI Firmware Settings . You'll be prompted to restart your computer."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . This boots your PC into the BIOS."
+    },
+    {
+      "title": "Find your BIOS version in the UEFI/BIOS.",
+      "content": "Find your BIOS version in the UEFI/BIOS. You'll usually see this on the Main or startup tab, but the layout will be different on each motherboard. Look for \"BIOS version,\" \"Firmware version,\" or similar on the screen."
+    },
+    {
+      "title": "Find your PC's setup key.",
+      "content": "Find your PC's setup key. If you're using an older PC running Windows 7 or Windows Vista, you can access the BIOS menu by pressing a specific key while your PC is starting up. Before you restart your PC, you'll want to find the correct key to press. If you built your computer yourself, look up your motherboard model and \"BIOS key.\" If you bought your computer from a brand like HP, Dell, Asus, etc., look up your PC model and \"BIOS key.\" If you can't find your BIOS key, try these popular options: Aorus: F2 or Del Asrock: F2 or Del Acer: F2 or Del ASUS: F2 (PCs) or Del (individual motherboards) Dell: F2 or F12 [3] X Research source ECS: Del Gigabyte: F2 or Del HP: Esc or F10 [4] X Research source Lenovo laptops : F2 or Fn + F2 Lenovo desktops: F1 Lenovo ThinkPads: Enter + F1. MSI: Del Microsoft Surface Tablets: Press and hold the volume-up button Origin PC: F2 Samsung: F2 Sony: F1, F2, or F3 Toshiba: F1, Esc, or F12"
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. Restart your PC now. As soon as it turns off, be ready to start pressing the BIOS setup key the second it turns back on. [5] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020."
+    },
+    {
+      "title": "Press the BIOS setup key repeatedly.",
+      "content": "Press the BIOS setup key repeatedly. Keep pressing the key until you enter the BIOS menu."
+    },
+    {
+      "title": "Look for the BIOS version number.",
+      "content": "Look for the BIOS version number. In the BIOS menu, you should now see the version number near the top or bottom of the screen next to \"BIOS version,\" \"Firmware version,\" or \"BIOS revision. [6] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. \""
+    },
+    {
+      "title": "Open DXDiag on your Windows PC.",
+      "content": "Open DXDiag on your Windows PC. This Direct X Diagnostic Tool will report your BIOS version on any version of Windows. To open the tool: Press Windows key + S . Type dxdiag . Click DxDiag ."
+    },
+    {
+      "title": "Find the BIOS version on the System tab.",
+      "content": "Find the BIOS version on the System tab. This tab should open up by default. You'll see the BIOS version next to \"BIOS\" in the System Information panel here."
+    },
+    {
+      "title": "Open the Registry Editor on your PC.",
+      "content": "Open the Registry Editor on your PC. No matter which version of Windows you're using, you'll find the BIOS version in your registry. To open the Registry Editor : Press the Windows key + S . Type regedit . Click Registry Editor . Click Yes ."
+    },
+    {
+      "title": "Navigate to HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System.",
+      "content": "Navigate to HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System. To get there, just type or paste the path into the address bar at the top of the editor. If you don't see an address bar, click the View menu, and select Address Bar ."
+    },
+    {
+      "title": "Double-click SystemBiosVersion.",
+      "content": "Double-click SystemBiosVersion . It'll be at the bottom of the right panel. A window will expand."
+    },
+    {
+      "title": "Find your BIOS version below the manufacturer name.",
+      "content": "Find your BIOS version below the manufacturer name. When you're finished, click OK to close the window."
+    }
+  ]
+}

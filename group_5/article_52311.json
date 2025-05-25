@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Compare-Data-in-Excel",
+  "title": "How to Compare Data in Excel",
+  "steps": [
+    {
+      "title": "Highlight the first cell of a blank column.",
+      "content": "Highlight the first cell of a blank column. When comparing two columns in a worksheet, you'll be outputting your results onto a blank column. Make sure you are starting on the same row as the two columns you're comparing. For example, if the two columns you want to compare start on A2 and B2, highlight C2."
+    },
+    {
+      "title": "Type the comparison formula for the first row.",
+      "content": "Type the comparison formula for the first row. Type the following formula, which will compare A2 and B2. Change the cell values if your columns start on different cells: =IF(A2=B2,\"Match\",\"No match\")"
+    },
+    {
+      "title": "Double-click the Fill box in the bottom corner of the cell.",
+      "content": "Double-click the Fill box in the bottom corner of the cell. This will apply the formula to the rest of the cells in the column, automatically adjusting the values to match."
+    },
+    {
+      "title": "Look for Match and No match.",
+      "content": "Look for Match and No match . These will indicate whether the contents of the two cells had matching data. This will work for strings, dates, numbers, and times. Note that case is not taken into consideration (\"RED\" and \"red\" will match). [1] X Research source"
+    },
+    {
+      "title": "Open the first workbook you want to compare.",
+      "content": "Open the first workbook you want to compare. You can use the View Side by Side feature in Excel to view two different Excel files on the screen at the same time. This has the added benefit of scrolling both sheets at once."
+    },
+    {
+      "title": "Open the second workbook.",
+      "content": "Open the second workbook. You should now have two instances of Excel open on your computer."
+    },
+    {
+      "title": "Click the View tab on either window.",
+      "content": "Click the View tab on either window."
+    },
+    {
+      "title": "Click View Side by Side.",
+      "content": "Click View Side by Side . You'll find this in the Window section of the ribbon. Both workbooks will appear in on the screen, oriented horizontally."
+    },
+    {
+      "title": "Click Arrange All to change the orientation.",
+      "content": "Click Arrange All to change the orientation."
+    },
+    {
+      "title": "Click Vertical and then OK.",
+      "content": "Click Vertical and then OK . The workbooks will change so that one is on the left and the other is on the right."
+    },
+    {
+      "title": "Scroll in one window to scroll in both.",
+      "content": "Scroll in one window to scroll in both. When Side by Side is enabled, scrolling will be synchronized between both windows. This will allow you to easily look for differences as you scroll through the spreadsheets. You can disable this feature by clicking the Synchronous Scrolling button in the View tab."
+    },
+    {
+      "title": "Open the workbook containing the two sheets you want to compare.",
+      "content": "Open the workbook containing the two sheets you want to compare. To use this comparison formula, both sheets must be in the same workbook file."
+    },
+    {
+      "title": "Click the + button to create a new blank sheet.",
+      "content": "Click the + button to create a new blank sheet. You'll see this at the bottom of the screen to the right of your open sheets."
+    },
+    {
+      "title": "Place your cursor in cell A1 on the new sheet.",
+      "content": "Place your cursor in cell A1 on the new sheet."
+    },
+    {
+      "title": "Enter the comparison formula.",
+      "content": "Enter the comparison formula. Type or copy the following formula into A1 on your new sheet: =IF(Sheet1!A1<> Sheet2!A1, \"Sheet1:\"&Sheet1!A1&\" vs Sheet2:\"&Sheet2!A1, \"\")"
+    },
+    {
+      "title": "Click and drag the Fill box in the corner of the cell.",
+      "content": "Click and drag the Fill box in the corner of the cell."
+    },
+    {
+      "title": "Drag the Fill box down.",
+      "content": "Drag the Fill box down. Drag it down as far down as the first two sheets go. For example, if your spreadsheets go down to Row 27, drag the Fill box down to that row."
+    },
+    {
+      "title": "Drag the Fill box right.",
+      "content": "Drag the Fill box right. After dragging it down, drag it to the right to cover the original sheets. For example, if your spreadsheets go to Column Q, drag the Fill box to that column."
+    },
+    {
+      "title": "Look for differences in the cells that don't match.",
+      "content": "Look for differences in the cells that don't match. After dragging the Fill box across the new sheet, you'll see cells fill wherever differences between the sheets were found. The cell will display the value of the cell in the first sheet and the value of the same cell in the second sheet. For example, A1 in Sheet1 is \"Apples,\" and A1 in Sheet2 is \"Oranges.\" A1 in Sheet3 will display \"Sheet1:Apples vs Sheet2:Oranges\" when using this comparison formula. [2] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Change-Button-Color-in-Javascript",
+  "title": "How to Change Button Color in Javascript",
+  "steps": [
+    {
+      "title": "Open your project in a Java-editing environment.",
+      "content": "Open your project in a Java-editing environment. This can be anything like Visual Studio or Oracle JDeveloper."
+    },
+    {
+      "title": "Enter the following code into your program to change the button's color with onclick:",
+      "content": "Enter the following code into your program to change the button's color with onclick : < script > document . getElementById ( \"changeGreen\" ). onclick = function (){ document . getElementById ( \"output\" ). style . color = ' green ' ; } document . getElementById ( \"changeRed\" ). onclick = function (){ document . getElementById ( \"output\" ). style . color = ' red ' ; } </ script > This code prompts the buttons to change the color of your text from green to red. You can replace these colors with others you prefer."
+    },
+    {
+      "title": "Enter the following code into your program if you want to change the button's color when a text field is filled in:",
+      "content": "Enter the following code into your program if you want to change the button's color when a text field is filled in: <! DOCTYPE html > < html lang = \"en\" > < head > < meta charset = \"UTF-8\" > < meta name = \"viewport\" content = \"width=device-width, initial-scale=1.0\" > < title > Document </ title > </ head > < link rel = \"stylesheet\" href = \"//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css\" > < script src = \"https://code.jquery.com/jquery-1.12.4.js\" ></ script > < script src = \"https://code.jquery.com/ui/1.12.1/jquery-ui.js\" ></ script > < link href = \"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\" rel = \"stylesheet\" /> < body > < label > UserName : </ label > < input type = \"text\" id = \"changeColorDemo\" style = \"margin-left:10px;margin-top:10px\" onkeyup = \"changeTheColorOfButtonDemo()\" > < br >< br > < button id = \"buttonDemo\" style = \"background:skyblue;margin-left:10px;\" > Press Me </ button > </ body > < script > function changeTheColorOfButtonDemo () { if ( document . getElementById ( \"changeColorDemo\" ). value !== \"\" ) { document . getElementById ( \"buttonDemo\" ). style . background = \"green\" ; } else { document . getElementById ( \"buttonDemo\" ). style . background = \"skyblue\" ; } } </ script > </ html > Using an <IF/ELSE> statement, the button is skyblue until the input field is filled, then it changes to a green button. If you want to change the colors, you can either use color names like \"Green\" or \"Skyblue,\" Hexadecimal numbers (which you can find by searching Hexadecimal colors), or RGB colors (which you can also find by a simple internet search). To change the colors in the code, replace the \"green\" and \"skyblue\" colors in the code style.background ."
+    }
+  ]
+}

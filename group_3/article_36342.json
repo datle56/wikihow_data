@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Remove-Microsoft-Edge",
+  "title": "How to Uninstall Microsoft Edge Permanently from Windows 10 or 11",
+  "steps": [
+    {
+      "title": "",
+      "content": "Edge is an important part of the Windows operating system that cannot be uninstalled like other programs. Much like Safari for macOS, Edge is used by the operating system to display web-based content in apps. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source While there technically a couple of ways to get Edge off your computer in Windows 10 and 11, the browser will usually come back with a Windows Update . Uninstalling Edge can also cause certain Windows features to break, including the Search feature built into the Start menu, the Microsoft Store app, PDF reading functions (as Edge is the default PDF reader), and possibly even Windows Update . Remove Microsoft Edge at your own risk. If you live in the EU and have Windows 11, you can now uninstall Edge easily now that the operating system is DMA compliant. [2] X Research source in Settings > Apps > Installed Apps . Just click the three dots on Microsoft Edge and click Uninstall to do so."
+    },
+    {
+      "title": "Open Registry Editor.",
+      "content": "Open Registry Editor. To do this, type regedit into the Windows search bar and click Registry Editor in the search results. This method may allow you to uninstall Edge by reenabling the \"Uninstall\" button, which is usually grayed out (unless you're in the EU ). However, some users have found that the process hasn't worked for them. [3] X Research source Using this method to remove Microsoft Edge isn't permanent, as it will likely be reinstalled by a Windows Update. We'll cover some ways to prevent Edge from reinstalling a bit later."
+    },
+    {
+      "title": "Expand the Computer folder and click HKEY_LOCAL_MACHINE.",
+      "content": "Expand the Computer folder and click HKEY_LOCAL_MACHINE . You will see these folders in the left panel."
+    },
+    {
+      "title": "Expand the SOFTWARE folder and select Microsoft.",
+      "content": "Expand the SOFTWARE folder and select Microsoft ."
+    },
+    {
+      "title": "Expand WOW6432Node and select Microsoft.",
+      "content": "Expand WOW6432Node and select Microsoft ."
+    },
+    {
+      "title": "Expand Windows and select CurrentVersion.",
+      "content": "Expand Windows and select CurrentVersion ."
+    },
+    {
+      "title": "Expand Uninstall and click Microsoft Edge.",
+      "content": "Expand Uninstall and click Microsoft Edge . This displays several options you can modify in the right panel."
+    },
+    {
+      "title": "Double-click NoRemove in the right panel.",
+      "content": "Double-click NoRemove in the right panel. This opens the DWORD for editing."
+    },
+    {
+      "title": "Change the \"1\" to a \"0\" and click OK.",
+      "content": "Change the \"1\" to a \"0\" and click OK . This allows you to uninstall Edge like other apps, though you will need to restart your computer first."
+    },
+    {
+      "title": "Restart your PC to apply the changes.",
+      "content": "Restart your PC to apply the changes. Once Windows restarts, the option to uninstall Edge will be available in the Settings app."
+    },
+    {
+      "title": "Navigate to your installed apps in Settings.",
+      "content": "Navigate to your installed apps in Settings. Open the Settings app, select Apps , and then click Installed Apps at the top of the right panel."
+    },
+    {
+      "title": "Remove Microsoft Edge.",
+      "content": "Remove Microsoft Edge. Scroll down and select Microsoft Edge (Windows 10) or click the three dots on Microsoft Edge (Windows 11), click Uninstall , and follow the on-screen instructions to remove Edge from your PC. Some users have found that while the Uninstall button can now be clicked, nothing happens. Other users have found success, so it may work for you."
+    },
+    {
+      "title": "Install Wise Program Uninstaller.",
+      "content": "Install Wise Program Uninstaller. This free app makes removing Microsoft Edge a breeze on Windows, seems to work for most people, and hasn't set off any alarms when we tested it. The only drawback is that Edge might be reinstalled automatically later through a Windows Update, even if you make the registry changes. To install Wise: First, if you haven't installed an alternative web browser and made it your default , do so now. Go to the Wise Program Uninstaller homepage. Click Free Download . Click Save to download the installer. Double-click the installer and follow the on-screen instructions to install."
+    },
+    {
+      "title": "Open Wise and select Desktop Apps.",
+      "content": "Open Wise and select Desktop Apps . After installing, Wise should open automatically, but you can also launch it from your Start menu. You'll see Desktop Apps at the upper-left corner of the program."
+    },
+    {
+      "title": "Click Microsoft Edge.",
+      "content": "Click Microsoft Edge . If you have a lot of installed apps, you can find it quickly by typing edge into the search bar at the top. Clicking the app's name (not the checkbox) will bring up some buttons."
+    },
+    {
+      "title": "Click Safe Uninstall.",
+      "content": "Click Safe Uninstall . This option will remove Edge in the safest possible way. Once uninstalled, you won't see Edge in your program list anymore. If this option doesn't remove Edge for some reason, you can return here and use the Force Uninstall option. [4] X Research source Edge may reinstall automatically through Windows Update at some point. You can try some of these reinstall prevention tricks , but there's no guarantee they'll work permanently."
+    },
+    {
+      "title": "Run PowerShell as an administrator.",
+      "content": "Run PowerShell as an administrator. Some Windows 11 users report that this fix has been patched, but others can still use it to uninstall Microsoft Edge. Often referred to as \"the Chris Titus script,\" a free, popular Windows PowerShell script called WinUtil makes it easy to uninstall Edge permanently. To open PowerShell as an admin, type powershell into the Search bar, right-click Windows PowerShell , and select Run as administrator . [5] X Research source This script connects to a remote location to launch, so you don't technically have to download or install anything. If you feel more comfortable installing an EXE version of the tool, you can download it (for a fee) from [6] X Research source . Before you continue, make sure you have an alternate web browser , such as Chrome or Firefox. Using this tool to remove Edge should prevent Windows Update from reinstalling it, but there is always a chance it could happen anyway. You can reinstall Edge if you change your mind by running WinUtil again."
+    },
+    {
+      "title": "Run the WinUtil startup command.",
+      "content": "Run the WinUtil startup command. To access the script, type irm \" https://christitus.com/win \" and press ↵ Enter . After a few moments, you will see a graphical interface for the tool in a new window."
+    },
+    {
+      "title": "Check the box next to \"Edge.\"",
+      "content": "Check the box next to \"Edge.\" You will see it under \"Browsers\" in the upper-left corner."
+    },
+    {
+      "title": "Click Uninstall Selected.",
+      "content": "Click Uninstall Selected . A confirmation message will appear."
+    },
+    {
+      "title": "Click Yes to confirm.",
+      "content": "Click Yes to confirm. WinUtil will now remove Microsoft Edge from your computer. You can watch the progress in your original PowerShell window. You can use WinUtil to reinstall Edge at any time by checking the box next to \"Edge\" and clicking Install/Upgrade Selected . If you used Chris Titus' WebUtil script to uninstall Edge and needed to reinstall the app later, you might find that Edge will not open. If this happens, you can fix the problem by deleting the following Registry key: HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\msedge.exe\\0"
+    },
+    {
+      "title": "If you live in the European Union, you can uninstall Edge normally.",
+      "content": "If you live in the European Union, you can uninstall Edge normally. Beginning in mid-2024, Microsoft has updated its policies to ensure compliance with the Digital Markets Act (DMA), making it possible for Windows 11 users in the EU to uninstall Edge and OneDrive without a hassle. [7] X Research source If you live in the EU, you can follow these simple steps to remove Microsoft Edge: First, if you haven't already, install a different web browser and set it as your default browser . Right-click the Start menu and select Settings . Click Apps in the left panel. Click Installed Apps . Type Edge into the search bar at the top to locate Edge. Click the three horizontal dots ••• next to Microsoft Edge and select Uninstall . [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Try a PowerShell script if you encounter UAC problems.",
+      "content": "Try a PowerShell script if you encounter UAC problems. If uninstalling Edge prompts you to click Yes on the User Account Control screen but the program is not uninstalled, you're not alone. Some users have reported being able to fix the problem using this PowerShell script , which deletes the registry entries. The script appears innocent, but we cannot guarantee it won't harm your computer. Head over to the developer's GitHub to do some research before following these steps. To use the script: Right-click the Start menu and select Terminal . If you don't see \"Windows PowerShell\" at the top, click the down arrow next to the last tab and select Windows PowerShell now. Type or paste irm https://usefulstuffs.github.io/ByeByeEdge-OneCMD/powershell and press Enter . If prompted, click Yes . Once you're finished, Edge will be uninstalled."
+    },
+    {
+      "title": "Try the Registry method.",
+      "content": "Try the Registry method. This method involves making a quick registry change to block Edge from updating to the latest version. It may not work for everyone, but it's an easy change that won't break Windows Update and is thus worth a try. Open the Registry Editor . Back up the registry by going to File > Export and saving a copy in a safe location. Navigate to Computer > HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft. Right-click the Microsoft folder in the left panel and go to New > Key . Name the key EdgeUpdate and press Enter . Right-click the new EdgeUpdate folder in the left panel and go to New > DWORD (32-bit) . Name the DWORD DoNotUpdateToEdgeWithChromium and press Enter. Double-click the new DWORD you created. Change the 0 to a 1 and click OK ."
+    },
+    {
+      "title": "Renaming the Edge automatic update app.",
+      "content": "Renaming the Edge automatic update app. This trick has worked for some people on Windows 11, but it may not work on Windows 10. All you'll need to do is rename an executable file: Right-click the Start menu and select File Explorer . Type or paste this path into the address bar at the top of File Explorer and press Enter : C:\\Program Files (x86)\\Microsoft If Windows is installed on a different drive (e.g., D: instead of C:), replace the drive letter. Double-click the EdgeUpdate directory. Right-click MicrosoftEdgeUpdate.exe (you won't see .exe if you have extensions hidden) and go to Show more options > Rename . Type a different name for the file, like donotupdateedge.exe and press Enter . Click Yes when prompted to confirm."
+    },
+    {
+      "title": "Why can't I delete Edge?",
+      "content": "Why can't I delete Edge? Windows uses Edge as its default web browser for applications, which means any applications serving content from the web are actually using Edge to display it to you–even if it doesn't look like Edge. Because Edge is so important to the operating system, it cannot be uninstalled like other apps. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Can I disable Microsoft Edge?",
+      "content": "Can I disable Microsoft Edge? While you can't disable Edge completely, you can do a few quick things to make it less bothersome: Make your preferred web browser your default in Settings > Apps > Default Apps . Unpin the Edge icon from the Start menu by right-clicking it and selecting Unpin from Start . Unpin Edge from the taskbar at the bottom by right-clicking it and selecting Unpin from Taskbar ."
+    },
+    {
+      "title": "Is it a good idea to delete Microsoft Edge?",
+      "content": "Is it a good idea to delete Microsoft Edge? Microsoft doesn't recommend it, and we don't necessarily recommend it either. It's quite easy to ignore Edge if you use a different web browser–the only time it will really bother you is if you search for something in Windows search that's found on the web instead of on your PC."
+    },
+    {
+      "title": "What happens if I uninstall Edge?",
+      "content": "What happens if I uninstall Edge? You'll lose access to the Microsoft Store, Windows 11 widgets, Bing Search in Windows, and Copilot. Other apps that rely on Edge to display data from the web may also stop working correctly. [10] X Research source"
+    },
+    {
+      "title": "Is Edge better than Chrome?",
+      "content": "Is Edge better than Chrome? Both browsers are based on the Chromium engine, so they're quite similar, and both are super fast. However, if you prefer a more minimalist interface and use Google products like Docs and Sheets, Chrome is probably a better pick. On the other hand, if you use Microsoft 365 products like Word and Outlook, want a built-in free AI chatbot to help you find what you're looking for, and prefer a modern customizable layout, you might like Edge more than you think."
+    }
+  ]
+}

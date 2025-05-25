@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Use-Telnet-on-Mac-OS-X",
+  "title": "How to Install and Use Telnet on macOS",
+  "steps": [
+    {
+      "title": "Open the Terminal application.",
+      "content": "Open the Terminal application. If you’re using a Mac running any version of macOS later than Sierra (macOS 10.12), you’ll need to install Telnet on your computer. You can do this using Terminal, which you can find in your Utilities folder. Terminal is similar to the command prompt found on Windows. Because macOS is based on UNIX, not MS-DOS, the commands are a bit different."
+    },
+    {
+      "title": "Install the Command Line toolkit.",
+      "content": "Install the Command Line toolkit. Before you can install Telnet, you’ll need to install Homebrew. This is a package manager that allows you to install special software and make other modifications to your Mac using the Terminal. The first step is downloading Apple’s Command Line tools. In Terminal, type or paste the command xcode-select --install , then press Return . You may see a popup window asking you if you want to install the Command Line toolkit. Click Install . If you already have the Command Line toolkit installed, you’ll see an error message instead."
+    },
+    {
+      "title": "Install Homebrew.",
+      "content": "Install Homebrew. Once the Command Line toolkit is installed, you can use the Terminal to download Homebrew: [1] X Research source If you’re using macOS Catalina or later, start by switching to the bash shell. Enter the command chsh -s /bin/bash and type in your Mac’s administrator password when prompted. Then, restart Terminal. Enter the following command: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh )\" . Press Return . When prompted, enter your Mac’s administrator password, press Return , then press Return again. Wait for the installation to finish. If you prefer, you can also install Homebrew using the .pkg installer from GitHub (scroll down to the Assets section to find the download file)."
+    },
+    {
+      "title": "Enter the Telnet install command.",
+      "content": "Enter the Telnet install command. Type or paste the command brew install telnet , then press Return . It may take a few minutes for Homebrew to install Telnet and clean up the installation files."
+    },
+    {
+      "title": "Download a Telnet client as an alternative.",
+      "content": "Download a Telnet client as an alternative. If you’d rather not use Telnet in your Terminal or can’t get these instructions to work, you can install a Telnet client from the App Store. There are several free options, including WebSSH, SSH Client, and Termius."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. If you’ve enabled Telnet on your Mac, you can make a telnet connection in the Terminal app. However, be aware that it is an unencrypted and outdated protocol. Use it at your own risk. If you’d rather use the more modern SSH protocol (which doesn’t require installing any special software on your Mac), use the secure connection method below."
+    },
+    {
+      "title": "Enter the telnet command.",
+      "content": "Enter the telnet command. Type in the command telnet host port , but replace “host” with the hostname, service address, or IP address. Replace “port” with the port number. Press Return to execute the command. For example, your command might look like telnet telnet.microsoft.com 44 if you are connecting to a Microsoft telnet server with the port number 44. To close the connection , press control + ] and enter the command close , quit , or q ."
+    },
+    {
+      "title": "From the Shell menu, select New Remote Connection.",
+      "content": "From the Shell menu, select New Remote Connection . SSH allows you to create a secure connection to a server. Note that SSH is not the same as Telnet, which is an older and less secure protocol. You don’t need to have Telnet enabled on your Mac to use SSH. To start, open Terminal and click Shell in the menu bar at the top of the screen. Then, select New Remote Connection… . [2] X Research source Alternatively, press Shift + Command + K . Make sure Secure Shell (ssh) is selected in the Service column of the New Remote Connection window."
+    },
+    {
+      "title": "Enter a hostname or IP address.",
+      "content": "Enter a hostname or IP address. In the field at the bottom of the New Remote Connection window, type in the address of the server you wish to connect to. Note that you must have an account with the server to log in."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . This is the blue button at the bottom right corner of the window."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted. Your keystrokes will not be displayed for security reasons."
+    },
+    {
+      "title": "Save your settings.",
+      "content": "Save your settings. Click the + sign under the Server column."
+    },
+    {
+      "title": "Enter the hostname or IP address.",
+      "content": "Enter the hostname or IP address. The name or IP address you enter here will be displayed in the server connection browser. Click OK to save the information you entered."
+    },
+    {
+      "title": "Enter your user ID in the User field.",
+      "content": "Enter your user ID in the User field. Click Connect to connect to the server."
+    }
+  ]
+}

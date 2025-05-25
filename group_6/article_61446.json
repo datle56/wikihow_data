@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Unlock-Android-Phone-Password-Without-Factory-Reset",
+  "title": "5 Ways to Unlock an Android Phone Without Factory Reset",
+  "steps": [
+    {
+      "title": "These are the default security measures on your phone.",
+      "content": "These are the default security measures on your phone. If you have multiple security measures set up in advance, you can use any of them to unlock your Android. For example, if you have face ID set up but there isn't enough light for your camera to read your face, you can also enter your PIN or swipe a pattern instead. Having multiple security measures in place will help you get back into your locked Android should you not be able to unlock it. [2] X Research source"
+    },
+    {
+      "title": "Newer phones (those running at least Android 5.0) have a feature called Smart Lock.",
+      "content": "Newer phones (those running at least Android 5.0) have a feature called Smart Lock. Being near a trusted device (like a computer) or within a GPS area will cause the phone to unlock without you needing to input a password. [3] X Research source To set up Smart Lock and use it, go to Settings > Lock screen > Smart Lock and choose the right settings for you."
+    },
+    {
+      "title": "If you have Android 4.4 or lower, you can use your Gmail account to log in.",
+      "content": "If you have Android 4.4 or lower, you can use your Gmail account to log in. After you've entered the password incorrectly enough times, you'll see a Forgot PIN/Pattern/Passcode button that you can tap to unlock your Android phone with Gmail . [4] X Research source"
+    },
+    {
+      "title": "Many third-party apps claim to be able to remove a lock screen password.",
+      "content": "Many third-party apps claim to be able to remove a lock screen password. Apps like DroidKit, 4uKey, and AndroidUnlock might be helpful, but there's no guarantee they'll get you back into your phone. None of these apps are free, and it's highly unlikely that they'll work for newer Androids with more powerful encryption."
+    },
+    {
+      "title": "Gain access to a PC or Mac.",
+      "content": "Gain access to a PC or Mac. If you're using an Android running Android 6.0 or earlier and you've already enabled USB debugging in developer mode, you can use Android Debug Bridge (ADB) to unlock your phone. You'll need access to a PC or Mac to do this, and you'll also need a USB cable. [5] X Research source"
+    },
+    {
+      "title": "Download the Android SDK Platform Tools.",
+      "content": "Download the Android SDK Platform Tools. You can download this package from https://developer.android.com/studio/releases/platform-tools . Just click the download link for your operating system (Windows, Mac, or Linux) under the \"Downloads\" header to get started. [6] X Research source Once downloaded, extract the ZIP file to a folder with a name and location that's easy to get to. Make sure you remember the path to the folder, as you'll need to navigate to this folder using the Windows command prompt or your Mac's Terminal. The new folder will contain the command line tools you'll use to communicate with your Android."
+    },
+    {
+      "title": "Open the command prompt (PC) or Terminal (Mac/Linux) and go to the new folder.",
+      "content": "Open the command prompt (PC) or Terminal (Mac/Linux) and go to the new folder. Here's how you can do so easily on Windows and macOS: Windows: Open File Explorer and navigate to the folder that contains the extracted files. It should be called \"platform-tools.\" Then, hold down the Shift key as you right-click a blank area inside the folder and select Open command window here . [7] X Research source If you see \"Open PowerShell window here\" instead, click that. Mac: Open a Terminal and use the cd command to navigate to the new folder (e.g., cd /Users/Yourname/Desktop/platform-tools ."
+    },
+    {
+      "title": "Connect your Android to your computer using a USB cable.",
+      "content": "Connect your Android to your computer using a USB cable. Once connected, your Android should display a message on its screen asking if you'd like to allow USB debugging."
+    },
+    {
+      "title": "Tap Allow USB debugging or OK on your Android.",
+      "content": "Tap Allow USB debugging or OK on your Android. This allows you to use ADB to communicate with your Android. [8] X Research source If you don't see this message, you won't be able to use this method."
+    },
+    {
+      "title": "Run the commands to unlock your screen.",
+      "content": "Run the commands to unlock your screen. Run the command adb devices if you're using the Windows command prompt, or ./adb devices if you're using PowerShell or a Mac or Linux terminal. You should see at least one attached device that's just a bunch of letters and numbers—that's your Android. Run the command adb shell rm /data /system /gesture.key if you're using the Windows command prompt, or ./adb shell rm /data /system /gesture.key if you're using PowerShell or a Mac or Linux terminal. Reboot or restart your Android and the lock screen will be gone."
+    }
+  ]
+}

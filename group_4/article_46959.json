@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Use-the-Rule-of-72",
+  "title": "How to Use the Rule of 72",
+  "steps": [
+    {
+      "title": "Let R x T = 72.",
+      "content": "Let R x T = 72. Here, R is the rate of growth (the annual interest rate), and T is the time (in years) it takes for the amount of money to double. [1] X Research source"
+    },
+    {
+      "title": "Insert a value for R.",
+      "content": "Insert a value for R. For example, how long does it take to turn $100 into $200 at a yearly interest rate of 5%? Letting R = 5, we get 5 x T = 72. [2] X Research source"
+    },
+    {
+      "title": "Solve for the unknown variable.",
+      "content": "Solve for the unknown variable . In this example, divide both sides of the above equation by R (that is, 5) to get T = 72 ÷ 5 = 14.4. So it takes 14.4 years for $100 to double at an interest rate of 5% per annum. (The initial amount of money doesn't matter. It will take the same amount of time to double no matter what the beginning amount is.)"
+    },
+    {
+      "title": "Study these additional examples:",
+      "content": "Study these additional examples: How long does it take to double an amount of money at a rate of 10% per annum? 10 x T = 72. Divide both sides of the equation by 10, so that T = 7.2 years. How long does it take to turn $100 into $1600 at a rate of 7.2% per annum? Recognize that 100 must double four times to reach 1600 ($100 → $200, $200 → $400, $400 → $800, $800 → $1600). For each doubling, 7.2 x T = 72, so T = 10. So, as each doubling takes ten years, the total time required (to change $100 into $1,600) is 40 years."
+    },
+    {
+      "title": "Let R x T = 72.",
+      "content": "Let R x T = 72. R is the rate of growth (the interest rate), and T is the time (in years) it takes to double any amount of money. [3] X Research source"
+    },
+    {
+      "title": "Enter the value of T.",
+      "content": "Enter the value of T. For example, let's say you want to double your money in ten years. What interest rate would you need in order to do that? Enter 10 for T in the equation: R x 10 = 72. [4] X Research source"
+    },
+    {
+      "title": "Solve for R.",
+      "content": "Solve for R. Divide both sides by 10 to get R = 72 ÷ 10 = 7.2. So you will need an annual interest rate of 7.2% in order to double your money in ten years."
+    },
+    {
+      "title": "Estimate the time it would take to lose half of your money (or its purchasing power in the wake of inflation).",
+      "content": "Estimate the time it would take to lose half of your money (or its purchasing power in the wake of inflation). Let T = 72 ÷ R. This is the same equation as above, just slightly rearranged. Now enter a value for R. An example: [5] X Research source How long will it take for $100 to assume the purchasing power of $50, given an inflation rate of 5% per year? Let 5 x T = 72, so that T = 72 ÷ 5 = 14.4. That's how many years it would take for money to lose half its buying power in a period of 5% inflation. (If the inflation rate were to change from year to year, you would have to use the average inflation rate that existed over the full time period.)"
+    },
+    {
+      "title": "Estimate the rate of decay (R) over a given time span:",
+      "content": "Estimate the rate of decay (R) over a given time span: R = 72 ÷ T. Enter a value for T, and solve for R. For example: [6] X Research source If the buying power of $100 becomes $50 in ten years, what is the inflation rate during that time? R x 10 = 72, where T = 10. Then R = 72 ÷ 10 = 7.2%."
+    },
+    {
+      "title": "Ignore any unusual data.",
+      "content": "Ignore any unusual data. If you can detect a general trend, don't worry about temporary numbers that are wildly out of range. Drop them from consideration."
+    },
+    {
+      "title": "Understand how the derivation works for periodic compounding.",
+      "content": "Understand how the derivation works for periodic compounding. [7] X Research source For periodic compounding, FV = PV (1 + r)^T, where FV = future value, PV = present value, r = growth rate, T = time. If money has doubled, FV = 2*PV, so 2PV = PV (1 + r)^T, or 2 = (1 + r)^T, assuming the present value is not zero. Solve for T by taking the natural logs on both sides, and rearranging, to get T = ln(2) / ln(1 + r). The Taylor series for ln(1 + r) around 0 is r - r 2 /2 + r 3 /3 - ... For low values of r, the contributions from the higher power terms are small, and the expression approximates r, so that t = ln(2) / r. Note that ln(2) ~ 0.693, so that T ~ 0.693 / r (or T = 69.3 / R, expressing the interest rate as a percentage R from 0-100%), which is the rule of 69.3. Other numbers such as 69, 70, and 72 are used for easier calculations."
+    },
+    {
+      "title": "Understand how the derivation works for continuous compounding.",
+      "content": "Understand how the derivation works for continuous compounding. For periodic compounding with multiple compounding per year, the future value is given by FV = PV (1 + r/n)^nT, where FV = future value, PV = present value, r = growth rate, T = time, and n = number of compounding periods per year. For continuous compounding, n approaches infinity. Using the definition of e = lim (1 + 1/n)^n as n approaches infinity, the expression becomes FV = PV e^(rT). [8] X Research source If money has doubled, FV = 2*PV, so 2PV = PV e^(rT), or 2 = e^(rT), assuming the present value is not zero. Solve for T by taking natural logs on both sides, and rearranging, to get T = ln(2)/r = 69.3/R (where R = 100r to express the growth rate as a percentage). This is the rule of 69.3. For continuous compounding, 69.3 (or approximately 69) gives more accurate results, since ln(2) is approximately 69.3%, and R * T = ln(2), where R = growth (or decay) rate, T = the doubling (or halving) time, and ln(2) is the natural log of 2. 70 may also be used as an approximation for continuous or daily (which is close to continuous) compounding, for ease of calculation. These variations are known as rule of 69.3 , rule of 69 , or rule of 70 . A similar accuracy adjustment for the rule of 69.3 is used for high rates with daily compounding: T = (69.3 + R/3) / R. The Eckart-McHale second order rule , or E-M rule, gives a multiplicative correction to the Rule of 69.3 or 70 (but not 72), for better accuracy for higher interest rate ranges. To compute the E-M approximation, multiply the Rule of 69.3 (or 70) result by 200/(200-R), i.e., T = (69.3/R) * (200/(200-R)). For example, if the interest rate is 18%, the Rule of 69.3 says t = 3.85 years. The E-M Rule multiplies this by 200/(200-18), giving a doubling time of 4.23 years, which better approximates the actual doubling time 4.19 years at this rate. The third-order Padé approximant gives even better approximation, using the correction factor (600 + 4R) / (600 + R), i.e., T = (69.3/R) * ((600 + 4R) / (600 + R)). If the interest rate is 18%, the third-order Padé approximant gives T = 4.19 years. To estimate doubling time for higher rates, adjust 72 by adding 1 for every 3 percentages greater than 8%. That is, T = [72 + (R - 8%)/3] / R. For example, if the interest rate is 32%, the time it takes to double a given amount of money is T = [72 + (32 - 8)/3] / 32 = 2.5 years. Note that 80 is used here instead of 72, which would have given 2.25 years for the doubling time. Here is a table giving the number of years it takes to double any given amount of money at various interest rates, and comparing the approximation with various rules:"
+    }
+  ]
+}

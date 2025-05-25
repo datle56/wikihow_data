@@ -1,0 +1,146 @@
+{
+  "url": "https://www.wikihow.com/Install-Windows-on-Steam-Deck",
+  "title": "How to Install Windows on Your Steam Deck",
+  "steps": [
+    {
+      "title": "Create a Windows installation drive.",
+      "content": "Create a Windows installation drive. Using a traditional PC, create a Windows installation drive. Grab a USB drive and follow this wikiHow guide in order to do so. You can install either Windows 10 or Windows 11 on your Steam Deck's SSD, and the steps for both versions are identical."
+    },
+    {
+      "title": "Power off your Steam Deck.",
+      "content": "Power off your Steam Deck. Before connecting the Windows installation drive (USB) to your Steam Deck, make sure the system is powered down."
+    },
+    {
+      "title": "Plug the USB drive into your Steam Deck.",
+      "content": "Plug the USB drive into your Steam Deck. You can connect the USB drive directly via the Steam Deck's USB Type-C port. If you do not have a USB-C drive, you will need to use a USB-C hub."
+    },
+    {
+      "title": "Power on your Steam Deck while holding down the \"Volume down\" button.",
+      "content": "Power on your Steam Deck while holding down the \"Volume down\" button. Turn on your Steam Deck as you traditionally would. However, you must also press and hold the Volume down button while doing so. This opens your Steam Deck's boot menu."
+    },
+    {
+      "title": "Select your USB drive from the boot menu.",
+      "content": "Select your USB drive from the boot menu. If the installation drive is connected properly, you should see it listed on the Steam Deck's boot menu. Use the D-pad to select it and continue. Your Steam Deck will then boot up from the Windows drive. Note that restoring SteamOS is not a simple process. If you just want to experiment with Windows on your Steam Deck before fully committing, consider the next method instead."
+    },
+    {
+      "title": "Wait for Windows to install.",
+      "content": "Wait for Windows to install. It will be formatted vertically along the Steam Deck screen, as opposed to the horizontal alignment you may expect. You may consider connecting a keyboard and mouse while you wait. The Steam Deck's controls will not work for the following steps, but the touchscreen will."
+    },
+    {
+      "title": "Click Install Now.",
+      "content": "Click Install Now . Tap or click the button, then follow the installation wizard. If you have a Windows product activation key, enter it now. If you do not, select I don't have a product key . You can use Windows without activating it , although certain features will be unavailable. Use the touchscreen keyboard to enter the digits if you do not have a keyboard to plug into your device."
+    },
+    {
+      "title": "Choose to perform a Custom Windows Install.",
+      "content": "Choose to perform a Custom Windows Install. When prompted to select either an \"Upgrade\" or a \"Custom\" install, choose the latter. You can only perform an \"Upgrade\" install on a computer that already has a version of Windows. Note that this will delete all of your Steam Deck data, including your games, settings, and any media that has not been uploaded to the Steam Cloud. Although you can restore SteamOS later, you will still need to reinstall all games/apps and reconfigure your settings."
+    },
+    {
+      "title": "Create space for Windows on your partition drive.",
+      "content": "Create space for Windows on your partition drive. You should see eight partitions listed. As your SSD currently stands, you cannot install Windows on any of them. Delete enough partitions to make room for Windows. Select a partition and tap Delete to do so. We recommend deleting the largest of the partitions (Partition 8). Remember that deleting the storage partition is irreversible. If you are hesitant to delete anything on your SSD, consider booting Windows from a USB/microSD drive instead. This is the final point at which you can back out of the process without losing any data."
+    },
+    {
+      "title": "Select \"Drive 0 Unallocated Space\" and tap Next.",
+      "content": "Select \"Drive 0 Unallocated Space\" and tap Next . Whichever partition you delete will disappear from the list and be replaced by Drive 0 Unallocated Space . Select it as the intended location for your Windows installation."
+    },
+    {
+      "title": "Allow Windows to install.",
+      "content": "Allow Windows to install. Windows will begin installing to your SSD. Wait for it to do so, at which point your Steam Deck will restart."
+    },
+    {
+      "title": "Follow the Windows setup process.",
+      "content": "Follow the Windows setup process. Follow each step in the Windows setup walkthrough. Your Steam Deck's buttons should be working again, although the screen will still be oriented sideways. Skip the Wi-Fi setup for now. We will need to install a few extra Windows drivers for the Steam Deck in order to connect to Wi-Fi (among other features). Once the setup is complete, fix your screen's orientation by navigating to Start > Settings > System > Display. Then, select Landscape under the \"Display Orientation\" section."
+    },
+    {
+      "title": "Use a PC to download the Steam Deck Windows drivers to a USB drive.",
+      "content": "Use a PC to download the Steam Deck Windows drivers to a USB drive. Visit https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA to find the necessary drivers. These drivers allow you to take advantage of Wi-Fi and Bluetooth settings, as well as generally improve your Windows experience on Steam Deck."
+    },
+    {
+      "title": "Install the Windows drivers to your Steam Deck.",
+      "content": "Install the Windows drivers to your Steam Deck. Follow the previous steps in powering down your Steam Deck, connecting the USB drive, and installing the Windows drivers to complete your Windows experience on Steam Deck."
+    },
+    {
+      "title": "Download the Windows installation media.",
+      "content": "Download the Windows installation media. You can download either the Windows 10 or Windows 11 installation media at this link. This wikiHow guide has more details on creating a bootable drive."
+    },
+    {
+      "title": "Download and open Rufus.",
+      "content": "Download and open Rufus. Rufus is program that allows you to create a bootable USB drive from an .iso file, such as the Windows installation media. Download the software, then open the application. [1] X Research source"
+    },
+    {
+      "title": "Download the Steam Deck Windows drivers to a USB drive.",
+      "content": "Download the Steam Deck Windows drivers to a USB drive. Visit https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA to find the necessary drivers. These drivers allow you to take advantage of Wi-Fi and Bluetooth settings, as well as generally improve your Windows experience on Steam Deck. Put the drivers in a single folder on the USB drive and set the drive aside for later."
+    },
+    {
+      "title": "Open the Windows Media Creation Tool and select Create installation media.",
+      "content": "Open the Windows Media Creation Tool and select Create installation media . Then, choose the .iso file, and choose a place to store it on your PC. Wait until the process is done, and don't forget where you saved the file!"
+    },
+    {
+      "title": "Plug your microSD or USB drive into your PC.",
+      "content": "Plug your microSD or USB drive into your PC."
+    },
+    {
+      "title": "Select your device in Rufus.",
+      "content": "Select your device in Rufus. Find your device listed under the Device heading in Rufus and select it. Continuing beyond this point will erase all existing data on your microSD/USB drive."
+    },
+    {
+      "title": "Navigate to your Windows .iso file.",
+      "content": "Navigate to your Windows .iso file. Choose Select next to the \"Boot selection\" section, then find and select the .iso file."
+    },
+    {
+      "title": "Follow the wizard to complete the setup process.",
+      "content": "Follow the wizard to complete the setup process. Select Windows To Go under the \"Image option\" heading. Then, choose MBR under \"Partition scheme\". Click Ready to start the process. You may also rename the drive at this time if you would like. You may also consider checking \"Use Rufus MBR with BIOS ID\" under \"Advanced options\". This should help shore up any compatibility issues with your Steam Deck later on."
+    },
+    {
+      "title": "Eject your microSD/USB drive.",
+      "content": "Eject your microSD/USB drive. Once Rufus is done with your drive, you can eject it from your PC."
+    },
+    {
+      "title": "Power off your Steam Deck.",
+      "content": "Power off your Steam Deck. Before connecting the drive to your Steam Deck, make sure the system is powered down."
+    },
+    {
+      "title": "Plug the drive into your Steam Deck.",
+      "content": "Plug the drive into your Steam Deck. You can connect the USB drive directly via the Steam Deck's USB Type-C port. If you do not have a USB-C drive, you will need to use a USB-C hub. There is a direct port for a microSD drive."
+    },
+    {
+      "title": "Power on your Steam Deck while holding down the \"Volume down\" button.",
+      "content": "Power on your Steam Deck while holding down the \"Volume down\" button. Turn on your Steam Deck as you traditionally would. However, you must also press and hold the Volume down button while doing so. This opens your Steam Deck's boot menu."
+    },
+    {
+      "title": "Select your bootable drive from the boot menu.",
+      "content": "Select your bootable drive from the boot menu. If the microSD/USB drive is connected properly, you should see it listed on the Steam Deck's boot menu. Use the D-pad to select it and continue. Your Steam Deck will then boot up from the Windows drive."
+    },
+    {
+      "title": "Proceed through the setup process.",
+      "content": "Proceed through the setup process. You are only booting Windows from your connected drive. It does not actually install here. Select your language, keyboard layout, etc. You can plug in a keyboard and mouse to more easily control your Steam Deck through these steps, although the touchscreen should work as well. Windows will display vertically for now, but you can fix that momentarily. Fix your screen's orientation. Navigate to Start > Settings > System > Display. Then, select Landscape under the \"Display Orientation\" section."
+    },
+    {
+      "title": "Install the Windows drivers to your Steam Deck.",
+      "content": "Install the Windows drivers to your Steam Deck. Follow the previous steps in powering down your Steam Deck, connecting the USB drive you set aside earlier, and installing the Windows drivers to complete your Windows experience on Steam Deck. You will need to boot from your drive each time you turn on your Steam Deck. The device will still default to SteamOS unless you indicate otherwise."
+    },
+    {
+      "title": "Download the SteamOS recovery image from Valve.",
+      "content": "Download the SteamOS recovery image from Valve. Visit https://store.steampowered.com/steamos/download/?ver=steamdeck&snr= to download it directly."
+    },
+    {
+      "title": "Download Rufus on a PC and insert a USB drive.",
+      "content": "Download Rufus on a PC and insert a USB drive. Write the SteamOS recovery image to the USB drive and eject it from your PC. This wikiHow guide can help you understand how to use Rufus for this process."
+    },
+    {
+      "title": "Power down the Steam Deck completely and connect the USB drive.",
+      "content": "Power down the Steam Deck completely and connect the USB drive. You can connect the USB drive directly via the Steam Deck's USB Type-C port. If you do not have a USB-C drive, you will need to use a USB-C hub."
+    },
+    {
+      "title": "Power on your Steam Deck while holding down the \"Volume down\" button.",
+      "content": "Power on your Steam Deck while holding down the \"Volume down\" button. Turn on your Steam Deck as you traditionally would. However, you must also press and hold the Volume down button while doing so. This opens your Steam Deck's boot menu."
+    },
+    {
+      "title": "Select your USB drive from the boot menu.",
+      "content": "Select your USB drive from the boot menu. It should be labeled as \"EFI USB Device\"."
+    },
+    {
+      "title": "Wait as your Steam Deck boots into the recovery environment.",
+      "content": "Wait as your Steam Deck boots into the recovery environment. There are a few options here that will attempt to preserve your data. We recommend selecting Re-image Steam Deck . The other options won't keep your games if you have already installed Windows, and could lead to permanent system errors. If you're reverting to SteamOS from Windows, you will need to factory reset the Steam Deck before it works properly again."
+    }
+  ]
+}

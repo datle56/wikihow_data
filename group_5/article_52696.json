@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Create-Your-First-Java-Program-on-Ubuntu-Linux",
+  "title": "How to Create Your First Java Program on Ubuntu Linux",
+  "steps": [
+    {
+      "title": "Open terminal on your system after installing Java on your system.",
+      "content": "Open terminal on your system after installing Java on your system."
+    },
+    {
+      "title": "Create a directory to hold your Java programs.",
+      "content": "Create a directory to hold your Java programs. Open up a terminal on Ubuntu Linux and create your Java applications directory."
+    },
+    {
+      "title": "Type:",
+      "content": "Type: mkdir Java_Applications This will create your Java_Applications directory."
+    },
+    {
+      "title": "Navigate to your Java_Applications directory.",
+      "content": "Navigate to your Java_Applications directory. Type or copy/paste: cd Java_Applications This will change you into your newly created Java_Applications directory."
+    },
+    {
+      "title": "Use a text editor such as nano or gedit to create a java file.",
+      "content": "Use a text editor such as nano or gedit to create a java file. In this example we will use the traditional first program known as “Hello world”. This will open up a blank Java text file to work with and now we will insert some text into our Java file. So using nano or gedit we will issue the following command: Type: nano HelloWorld.java or type gedit HelloWorld.java"
+    },
+    {
+      "title": "Enter the following code below.",
+      "content": "Enter the following code below. import javax.swing.* ; public class HelloWorld extends JFrame { public static void main ( String [] args ) { new HelloWorld (); } public HelloWorld () { JPanel panel1 = new JPanel (); JLabel label1 = new JLabel ( \"Hello, World, this is my first Java program on Ubuntu Linux\" ); panel1 . add ( label1 ); this . add ( panel1 ); this . setTitle ( \"Hello World\" ); this . setSize ( 500 , 500 ); this . setDefaultCloseOperation ( JFrame . EXIT_ON_CLOSE ); this . setVisible ( true ); } }"
+    },
+    {
+      "title": "Save the file as HelloWorld.java",
+      "content": "Save the file as HelloWorld.java"
+    },
+    {
+      "title": "Compile the HelloWorld.java file into a Java class file by issuing the following command below.",
+      "content": "Compile the HelloWorld.java file into a Java class file by issuing the following command below. Type javac HelloWorld.java (This will fail if you don't have javac installed, if it fails, either follow the instructions in the introduction or type on your command line: sudo apt-get install openjdk-7-jdk)"
+    },
+    {
+      "title": "Run or execute your Java class file by issuing the following command.",
+      "content": "Run or execute your Java class file by issuing the following command. Type: java HelloWorld"
+    }
+  ]
+}

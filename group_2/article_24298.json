@@ -1,0 +1,130 @@
+{
+  "url": "https://www.wikihow.com/Install-phpMyAdmin-on-Your-Windows-PC",
+  "title": "How to Install phpMyAdmin on Your Windows PC",
+  "steps": [
+    {
+      "title": "Make sure that you've installed Apache, PHP, and MySQL.",
+      "content": "Make sure that you've installed Apache, PHP, and MySQL. Apache , PHP, and MySQL must all be installed and configured on your computer before you can install phpMyAdmin in this way."
+    },
+    {
+      "title": "Open the phpMyAdmin download page.",
+      "content": "Open the phpMyAdmin download page. Go to https://www.phpmyadmin.net/ in your browser. [1] X Research source"
+    },
+    {
+      "title": "Click Download.",
+      "content": "Click Download . It's a green button in the upper-right side of the page. The phpMyAdmin ZIP folder will begin downloading onto your computer. You'll also see the version number next to Download (e.g., for the June 2023 version of phpMyAdmin, you'd click Download 5.2.1 )."
+    },
+    {
+      "title": "Click Close when prompted.",
+      "content": "Click Close when prompted. This will return you to the phpMyAdmin webpage."
+    },
+    {
+      "title": "Open the phpMyAdmin folder.",
+      "content": "Open the phpMyAdmin folder. Double-click the downloaded phpMyAdmin ZIP folder to do so."
+    },
+    {
+      "title": "Copy the phpMyAdmin folder's contents.",
+      "content": "Copy the phpMyAdmin folder's contents. Click the regular phpMyAdmin folder in the ZIP folder's window, then press Ctrl + C ."
+    },
+    {
+      "title": "Go to your Apache host folder.",
+      "content": "Go to your Apache host folder. This is typically a folder named \"htdocs\" inside of the \"Apache\" folder, which should be located in the \"C:\" folder on your hard drive. The Apache host folder usually has a text document named \"index.php\" or something similar. The fastest way to get to this folder is by clicking This PC on the left side of the window, double-clicking the Apache folder, and double-clicking the htdocs (or similar) folder."
+    },
+    {
+      "title": "Paste the copied folder into the host folder.",
+      "content": "Paste the copied folder into the host folder. Press Ctrl + V to paste the copied phpMyAdmin folder into the Apache host folder."
+    },
+    {
+      "title": "Change the copied folder's name to phpmyadmin.",
+      "content": "Change the copied folder's name to phpmyadmin . Click the phpMyAdmin folder, click Home , click Rename in the toolbar, type phpmyadmin into the folder's name field, and press ↵ Enter ."
+    },
+    {
+      "title": "Open the PHP folder.",
+      "content": "Open the PHP folder. This folder is located in the \"C:\" folder along with the \"Apache\" folder. Once you find the PHP folder, double-click it to open it."
+    },
+    {
+      "title": "Find the \"php.ini-production\" file and rename it.",
+      "content": "Find the \"php.ini-production\" file and rename it. You'll change this file's name to php.ini . [2] X Research source"
+    },
+    {
+      "title": "Double-click the \"php.ini\" file.",
+      "content": "Double-click the \"php.ini\" file. It will open in your default text editor (e.g., Notepad), though you may first have to select Notepad from a list and click OK ."
+    },
+    {
+      "title": "Find the \"extension=php_mbstring.dll\" line of text and remove the semicolon.",
+      "content": "Find the \"extension=php_mbstring.dll\" line of text and remove the semicolon. You'll see the semicolon to the left of this line of text. You can press Ctrl + F to bring up a \"Find\" window where you can enter this line of text to go to it."
+    },
+    {
+      "title": "Find the \"extension=php_mysqli.dll\" line of text and remove the semicolon.",
+      "content": "Find the \"extension=php_mysqli.dll\" line of text and remove the semicolon. Once you've done this, your phpMyAdmin server is good to go."
+    },
+    {
+      "title": "Save your changes and exit Notepad.",
+      "content": "Save your changes and exit Notepad. Press Ctrl + S to save, then click the X in the top-right corner of the Notepad window to exit Notepad."
+    },
+    {
+      "title": "Run your Apache server.",
+      "content": "Run your Apache server. Open Command Prompt in Administrator mode by right-clicking Start , clicking Command Prompt (Admin) , and clicking Yes when prompted, then do the following: [3] X Research source Type in cd /Apache24/bin and press ↵ Enter (replace \"Apache24\" with your Apache folder's name). Type in httpd -k restart and press ↵ Enter ."
+    },
+    {
+      "title": "Test your phpMyAdmin program.",
+      "content": "Test your phpMyAdmin program. Open a web browser, then type http://localhost into the address bar and press ↵ Enter . This should take you to the phpMyAdmin login page."
+    },
+    {
+      "title": "Make sure that you have MySQL installed.",
+      "content": "Make sure that you have MySQL installed. WAMP allows you to interact with an existing server on your computer, but won't create a server in and of itself."
+    },
+    {
+      "title": "Check your computer's bit number",
+      "content": "Check your computer's bit number . You'll need to know this in order to determine the version of WAMP that you can download."
+    },
+    {
+      "title": "Open the WAMP website.",
+      "content": "Open the WAMP website. Go to https://www.wampserver.com/en/ in your web browser."
+    },
+    {
+      "title": "Scroll down and click either WAMPSERVER 64 BITS or WAMPSERVER 32 BITS.",
+      "content": "Scroll down and click either WAMPSERVER 64 BITS or WAMPSERVER 32 BITS . The number that you choose here will depend on your computer's bit number. Clicking either option will prompt a pop-up window."
+    },
+    {
+      "title": "Click the download directly link.",
+      "content": "Click the download directly link. It's in the upper-right side of the pop-up window. Doing so takes you to a Source Forge page from which you can download your version of WAMP."
+    },
+    {
+      "title": "Click Download.",
+      "content": "Click Download . This green button is near the top of the page. WAMP will begin downloading onto your computer. The download will take several minutes to complete."
+    },
+    {
+      "title": "Install WAMP.",
+      "content": "Install WAMP. Double-click the downloaded WAMP setup file, then do the following: Click Yes when prompted. Select a language and click OK Check \"I accept the agreement\" and click Next Click Next three times. Click Install"
+    },
+    {
+      "title": "Wait for WAMP to finish installing.",
+      "content": "Wait for WAMP to finish installing. This will take a few minutes."
+    },
+    {
+      "title": "Choose a browser when prompted.",
+      "content": "Choose a browser when prompted. Click Yes , then go to your preferred browser's EXE file, click it, and click Open . [4] X Research source For example: to select Chrome, you would find and click on the Google folder on the left side of File Explorer, then double-click the Chrome folder and select the Chrome icon. If you would prefer just to use Internet Explorer, click No instead."
+    },
+    {
+      "title": "Select a different text editor if needed.",
+      "content": "Select a different text editor if needed. If you don't want to use Notepad as your server's text editor, click Yes when prompted, then find the EXE file for the text editor that you want to use, select it, and click Open . Click No if you want to keep Notepad as the default text editor."
+    },
+    {
+      "title": "Finish the setup.",
+      "content": "Finish the setup. Click Next , then click Finish on the final WAMP window. WAMP is now installed on your computer."
+    },
+    {
+      "title": "Open WAMP.",
+      "content": "Open WAMP. Double-click the pink \"Wampserver\" icon on your desktop, then click Yes when prompted. This will prompt your server to start running."
+    },
+    {
+      "title": "Click the WAMP icon in the system tray.",
+      "content": "Click the WAMP icon in the system tray. On the far-right side of the Windows toolbar, you should see an orange or green WAMP icon. Clicking this will prompt a pop-up menu. You may first have to click the upward-facing arrow in the toolbar to see the WAMP icon."
+    },
+    {
+      "title": "Click phpMyAdmin.",
+      "content": "Click phpMyAdmin . It should be near the top of the pop-up menu. As long as your server is properly installed, doing so will open the phpMyAdmin login page in your preferred browser."
+    }
+  ]
+}

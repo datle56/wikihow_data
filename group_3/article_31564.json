@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Open-DLL-Files",
+  "title": "How to Open DLL Files",
+  "steps": [
+    {
+      "title": "Understand what a DLL file is.",
+      "content": "Understand what a DLL file is. A DLL (dynamic link library) is a Windows file that is used by program to call upon existing functions. Essentially, they allow Windows and other programs to gain functionality without having to have that functionality built-in. [1] X Research source DLL files are an essential part of Windows programming, and lead to sleeker, more efficient programs."
+    },
+    {
+      "title": "Know that the average user doesn't need to open or interact with DLL files.",
+      "content": "Know that the average user doesn't need to open or interact with DLL files . For most users, DLL files will exist in the background. [2] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 10 February 2021 Programs will install and call upon them automatically, and moving them can cause serious problems with the system. Sometimes you may be asked during the installation of community-made programs to place DLL files in specific locations. Make sure that you trust the program before following these instructions, as DLL files can be malicious. If you're interested in learning how DLL files are constructed, see the next section."
+    },
+    {
+      "title": "Register a new DLL",
+      "content": "Register a new DLL . If you have had to manually copy a DLL file into a folder for a program to use, you may need to register it in the Windows Registry before it can be used. Refer to the program's documentation to determine if you'll need to perform this step (it is extremely uncommon for most Windows programs). [3] X Research source Open the Command Prompt . You can find this in the Start menu or by pressing the Windows key + R and typing cmd . Navigate to the location of the new DLL file. If you are using Windows 7 or newer, open the folder containing the new DLL file, hold the Shift key and right-click in the folder, and select \"Open command window here\". The Command Prompt will open directly to that folder. Type regsvr32 dllname .dll and press Enter. This will add the DLL file to Windows Registry. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Type regsvr32 -u dllname .dll to remove the DLL file from the Windows Registry ."
+    },
+    {
+      "title": "Download and install a decompiler.",
+      "content": "Download and install a decompiler. A \"decompiler\" is a program that allows you to see the source code that was used to construct a file or program, in this case a DLL file. In order to see the code that makes a DLL file work, you will need to use a decompiler to revert it back into readable code. Opening a DLL file without a decompiler (such as opening it with Notepad ) will result in a jumbled mess of unreadable characters. dotPeek is one of the more popular free decompilers. It is available from jetbrains.com/decompiler/ ."
+    },
+    {
+      "title": "Open the DLL file in your decompiler.",
+      "content": "Open the DLL file in your decompiler. If you're using dotPeek, simply click \"File\" → \"Open\" and then browse for the DLL file you want to decompile. You can explore the contents of the DLL file without affecting your system. [5] X Research source"
+    },
+    {
+      "title": "Use the \"Assembly Explorer\" to browse the nodes of the DLL file.",
+      "content": "Use the \"Assembly Explorer\" to browse the nodes of the DLL file. DLL files are made of \"nodes\", or modules of code that work together to form the entire DLL file. You can expand each node to see any subnodes that it may contain."
+    },
+    {
+      "title": "Double-click a node to see the code for it.",
+      "content": "Double-click a node to see the code for it. The code for the node you select will appear in the right frame of dotPeek. You can scroll through the code to review it. dotPeek will display the code in C# , or it can download additional libraries in order for you to view the original source code. If the node requires additional libraries to view, dotPeek will attempt to download them automatically."
+    },
+    {
+      "title": "Get clarification for different pieces of the code.",
+      "content": "Get clarification for different pieces of the code. If you've found a piece of code you don't understand, you can use the Quick Documentation feature to see what the command is doing. Place your cursor in the piece of code that you need documentation for in the Code Viewer frame. Press Ctrl + Q to load the Quick Documentation window. Follow the hyperlinks to learn more about each aspect of the code you are examining."
+    },
+    {
+      "title": "Export the code to Visual Basic.",
+      "content": "Export the code to Visual Basic . If you want to manipulate, edit, and build the file on your own, you can export it into Visual Studio. The exported code will be in C#, even if it was originally written in a different language originally. [6] X Research source Right-click on the DLL file in the Assembly Explorer. Select \"Export to Project\" Choose your export options. You can have the project opened immediately in Visual Studio if you'd like to get started on it immediately."
+    },
+    {
+      "title": "Edit the code in Visual Studio",
+      "content": "Edit the code in Visual Studio . Once you have the project loaded in Visual Studio, you will have complete control over editing and building the DLL into your own creation. Click here for detailed instructions on using Visual Studio. [7] X Research source"
+    }
+  ]
+}

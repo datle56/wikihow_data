@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Hide-Icon-Names-on-a-Desktop",
+  "title": "How to Hide Icon Names on a Desktop (Windows and MacOS)",
+  "steps": [
+    {
+      "title": "Right-click a desktop icon.",
+      "content": "Right-click a desktop icon. This action will prompt a menu to drop down."
+    },
+    {
+      "title": "Click Rename.",
+      "content": "Click Rename . It's near the bottom of the menu and will bring your cursor inside the icon's name with the original text highlighted."
+    },
+    {
+      "title": "Hold the Alt key and press 2+5+5 on the numeric keypad.",
+      "content": "Hold the Alt key and press 2 + 5 + 5 on the numeric keypad. It's the 10-digit keypad to the right of your normal keyboard. Using the 0-9 keys at the top most likely will not work. If you need to rename a second icon, Alt + 255 will not work because it's already in use. In this case, add another Alt + 255 to add two invisible characters. For a third icon, enter the Alt + 255 alt code three times. For each additional icon, add an Alt + 255 alt code character."
+    },
+    {
+      "title": "Click outside of the text box.",
+      "content": "Click outside of the text box. When you're done, apply the name change by clicking on the desktop."
+    },
+    {
+      "title": "Click Continue (if prompted).",
+      "content": "Click Continue (if prompted). A window will pop-up saying you'll need administrator permission to rename the file, so click Continue to change the file name to the hidden characters. The Alt + 255 alt code is a hidden character that makes your desktop icons appear to not have a name. [1] X Research source"
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can press Shift + Cmd + U to open the Utilities folder in Finder, or you can click Go > Utilities > Terminal from the menu bar at the top of your screen. There are third-party apps like HiddenMe and Desktop Icons Hider that you can pay for in the App Store that will perform this action for you if you're not comfortable using Terminal."
+    },
+    {
+      "title": "Enter \"defaults write com.apple.finder CreateDesktop false\" and press ⏎ Return.",
+      "content": "Enter \"defaults write com.apple.finder CreateDesktop false\" and press ⏎ Return . The code will enter and move to another line."
+    },
+    {
+      "title": "Enter \"killall Finder\" and press ⏎ Return.",
+      "content": "Enter \"killall Finder\" and press ⏎ Return . This will restart Finder so the previous code will take effect. When you close out of Terminal, you should see that your icons are hidden. To unhide your icons from Terminal, enter \"defaults write com.apple.finder CreateDesktop true\" , press Return , and enter \"killall Finder\" . [2] X Research source"
+    }
+  ]
+}

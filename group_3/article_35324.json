@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Rebuild-the-Icon-Cache-in-Windows",
+  "title": "A Guide to Rebuilding the Icon Cache on a Windows PC",
+  "steps": [
+    {
+      "title": "Press the Start button at the bottom-right corner of your screen.",
+      "content": "Press the Start button at the bottom-right corner of your screen."
+    },
+    {
+      "title": "Type folder options and select the result that matches your search.",
+      "content": "Type folder options and select the result that matches your search. This will allow you to change file viewing settings so that you can see hidden files like IconCache."
+    },
+    {
+      "title": "Go to the View tab.",
+      "content": "Go to the View tab."
+    },
+    {
+      "title": "Scroll down under Advanced settings:",
+      "content": "Scroll down under Advanced settings: and click the circle next to Show hidden files, folders, and drives ."
+    },
+    {
+      "title": "Click or tap the OK box to save your changes and close folder options.",
+      "content": "Click or tap the OK box to save your changes and close folder options."
+    },
+    {
+      "title": "Open File Explorer",
+      "content": "Open File Explorer . File Explorer lets you see all the files on your computer, including system files like IconCache. Note: In Windows 7 and earlier, it is called Windows Explorer ."
+    },
+    {
+      "title": "In the address bar of File Explorer, type %userprofile%/AppData\\Local.",
+      "content": "In the address bar of File Explorer, type %userprofile% /AppData\\Local ."
+    },
+    {
+      "title": "Scroll through all of the files until you find a file named IconCache or IconCache.db.",
+      "content": "Scroll through all of the files until you find a file named IconCache or IconCache.db ."
+    },
+    {
+      "title": "Right-click or hold (for touchscreen devices) and select Delete from the menu that appears.",
+      "content": "Right-click or hold (for touchscreen devices) and select Delete from the menu that appears."
+    },
+    {
+      "title": "Confirm deletion if prompted by pressing Yes.",
+      "content": "Confirm deletion if prompted by pressing Yes ."
+    },
+    {
+      "title": "Open the Recycle Bin and empty it",
+      "content": "Open the Recycle Bin and empty it . We have a guide on how to do that (just click on the green sentence before this). You can quickly open it by launching the Start menu/screen and searching for Recycle Bin ."
+    },
+    {
+      "title": "If the Recycle Bin is already empty, there's nothing you need to do.",
+      "content": "If the Recycle Bin is already empty, there's nothing you need to do. Proceed to the next step."
+    },
+    {
+      "title": "Clear the thumbnail cache",
+      "content": "Clear the thumbnail cache if you're seeing problems with thumbnails (previews of files)."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. The icons should now be fixed."
+    },
+    {
+      "title": "Open the Command Prompt",
+      "content": "Open the Command Prompt . The quickest way to open the Command Prompt in any version of Windows is to: Press the ⊞ Win + R at the same time. Type cmd . Click/tap OK or hit ↵ Enter ."
+    },
+    {
+      "title": "Type the commands in.",
+      "content": "Type the commands in. Type the commands below into the Command Prompt, hitting enter after each line of code is entered. You can also highlight and copy them (either by right-clicking and pressing Copy or by pressing Ctrl + C . Right-click in the Command Prompt and select Paste . Ctrl + V won't work. cd /d %userprofile%\\AppData\\Local attrib –h IconCache.db del IconCache.db start explorer"
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. The icons should now be fixed."
+    }
+  ]
+}

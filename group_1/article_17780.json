@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Fix-the-Windows-10-Taskbar",
+  "title": "How to Fix the Windows 10 Taskbar",
+  "steps": [
+    {
+      "title": "Press Ctrl+⇧ Shift+Esc to open Task Manager.",
+      "content": "Press Ctrl + ⇧ Shift + Esc to open Task Manager. This method is the first thing you want to try when your taskbar doesn't work since it's the easiest fix."
+    },
+    {
+      "title": "Click More details if you see the simple view.",
+      "content": "Click More details if you see the simple view. The simple view shows you what's running, but the \"More details\" view will show you applications running in the background and what computer processes are running. If you see columns for CPU , Memory , Disk , and Network , then you're already seeing the detailed view and can skip this step."
+    },
+    {
+      "title": "Right-click \"Windows Explorer\" in the Processes tab.",
+      "content": "Right-click \"Windows Explorer\" in the Processes tab. You can press W to view each process that starts with a W to find \"Windows Explorer\" faster. When you right-click, you'll see a menu drop-down."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . Your taskbar will disappear completely for a minute, then reappear and go back to its normal state (auto-hiding or not)."
+    },
+    {
+      "title": "Press ⊞ Win+X to open the Power User menu.",
+      "content": "Press ⊞ Win + X to open the Power User menu. Use this method if you're missing icons in your taskbar, like your search bar or the clock."
+    },
+    {
+      "title": "Click either Command Prompt (Admin) or PowerShell (Admin).",
+      "content": "Click either Command Prompt (Admin) or PowerShell (Admin) . They are both command line prompts that will use the same code in the following steps."
+    },
+    {
+      "title": "Type sfc /scannow.",
+      "content": "Type sfc /scannow . SFC is short for System File Checker, which will run a simple check and patch small flaws in the Windows system."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. You'll need to reboot your computer after running SFC to complete the process of applying those patches. If running the SFC didn't work, you can type DISM /Online /Cleanup-Image /RestoreHealth and restart your computer again."
+    },
+    {
+      "title": "Press ⊞ Win+i to open Settings.",
+      "content": "Press ⊞ Win + i to open Settings. This is the last resort to fixing your problem since a new user account will be inconvenient. You'll also find the gear icon for settings in the Start Menu."
+    },
+    {
+      "title": "Navigate to \"Family & other users.",
+      "content": "Navigate to \"Family & other users. \" You can find this in \"Accounts.\""
+    },
+    {
+      "title": "Click Add someone else to this PC.",
+      "content": "Click Add someone else to this PC . You'll need to create a new username, etc, in the account creation process. You can opt to \"Add a user without a Microsoft Account\" to avoid any confusion with your original account. You'll need to use this new account every time you use your computer. Your original account may have a corrupted or missing file that triggers problems for your taskbar, so using the new account will avoid those issues."
+    }
+  ]
+}

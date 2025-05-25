@@ -1,0 +1,150 @@
+{
+  "url": "https://www.wikihow.com/Recover-Permanently-Deleted-Files-in-Windows-10",
+  "title": "How to Recover Permanently Deleted Files in Windows 10",
+  "steps": [
+    {
+      "title": "Open the Recycle Bin on your PC.",
+      "content": "Open the Recycle Bin on your PC. Before you panic or try another method, double-check your Recycle Bin to make sure the file isn't still in there. You'll usually see the Recycle Bin icon on your desktop, but if you don't, you can also fine it by pressing the Windows key, typing recycle , and clicking Recycle Bin . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Browse or search for a file.",
+      "content": "Browse or search for a file. If your Recycle Bin has a lot of files, it may be helpful to use the search bar at the top-right corner. You can also simply scroll through the files to look for the one you need."
+    },
+    {
+      "title": "Right-click a file and choose Restore.",
+      "content": "Right-click a file and choose Restore . This will return the deleted file to the folder from which you deleted it. To restore multiple files at once, hold down the Control key as you click each file, then right-click anywhere in the highlighted area and choose Restore . You can also restore all deleted files from the Recycle Bin at once by clicking Restore all items at the top of the window."
+    },
+    {
+      "title": "Know when to use this method.",
+      "content": "Know when to use this method. If you aren't able to restore a file from the Recycle Bin or find it in your backup, this method can help you regain access to lost files. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You have to restore the missing files to a drive that is not the same drive the file was deleted from—this means that if you only have one hard drive, you'll need to connect a USB flash or other external drive to your PC to restore the lost files. If you don't have another drive to use, you won't be able to use this method. It's not possible to restore files to or from a cloud storage or networked drive with this method."
+    },
+    {
+      "title": "Install Windows File Recovery by Microsoft.",
+      "content": "Install Windows File Recovery by Microsoft. This utility might already be installed on some systems, but not all. [3] X Research source Open the Microsoft Store app from the Windows Start menu. Search for Windows File Recovery . If you see the option to do so, click Get and follow the on-screen instructions to install. If the app is already installed, you'll see Open instead."
+    },
+    {
+      "title": "Open Windows File Recovery.",
+      "content": "Open Windows File Recovery. It's easy—just type windows file recovery into the Windows Search field (press Windows key + S if you don't see it), and then click Windows File Recovery in the search results. This will open a command prompt window. If prompted, give the app permission to make changes to your computer."
+    },
+    {
+      "title": "Determine the mode you want to use.",
+      "content": "Determine the mode you want to use. There are two different modes for restoring files: Regular mode: Use this mode if the file you deleted was from a drive formatted with NTFS and the drive is not corrupted. Extensive mode: Use this mode if the file you deleted was on a drive formatted as FAT or exFAT, which is common for flash cards and other removable media, or the drive is corrupted. This mode will take a little longer. If you're not sure which mode to use, start with Regular mode, and then try Extensive if that doesn't work."
+    },
+    {
+      "title": "Use the winfr command to restore your files.",
+      "content": "Use the winfr command to restore your files. The command will look like this winfr source-drive: destination-drive: /mode /switches file-or-folder . The /n switch lets you specify files and folders to recover. Here are some examples you can use in both regular and extensive modes: [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you want to recover all files ending with .JPEG from your pictures directory on the C drive to a recovery folder on your F drive, you'd use winfr C: F: /regular /n *\\Users\\yourusername\\Pictures\\*.JPEG . You can also use /n multiple times to recover files that meet multiple criteria. For example, to recover both JPEG and PNG files from your Pictures folder, you could use winfr C: F: /regular /n \\Users\\yourusername\\Pictures\\*.JPEG /n \\Users\\yourusername\\Pictures\\*.PNG . To recover all files ending with .docx from any location on the original drive, you could use winfr C: F: /regular /n *.docx . To recover your entire Documents folder from the C: drive to the F: drive, you'd use winfr C: F: /regular \\Users\\yourusername\\Documents\\ . Note the trailing backslash \\ at the end of the folder name—this is necessary when recovering an entire folder."
+    },
+    {
+      "title": "Press Y to confirm.",
+      "content": "Press Y to confirm. Windows File Recovery will now attempt to recover the file(s). If the recovery is successful, the files will be saved to the destination drive in a new folder called \"Recovery_(date and time).\" [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you're unable to recover the files in regular mode, run the same command again replacing /regular with /extensive . Some file types are hidden from results by default, including .log, .vbs, .c, .cab, .py, and .lnk. If you are unable to find the type of file you're looking for, run the recovery again, this time adding the /e switch to disable extended filtering."
+    },
+    {
+      "title": "Open the File History tool.",
+      "content": "Open the File History tool. If you want to recover a file or folder you've accidentally overwritten or replaced with a newer version in your Documents, Music, Pictures, Videos, or Desktop folder, this method will help you get your original file(s) back. To open the tool, press the Windows key on your keyboard, type restore your files , and then click Restore your files with File History . [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source This method requires that you've enabled File History in your settings. File History works with a network or external drive, so if you don't have one of those, you don't have File History enabled. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the file you want to recover no longer exists at all, you can restore its containing folder to a previous version that existed before you deleted the file."
+    },
+    {
+      "title": "Locate the file or folder you need in the File History tool.",
+      "content": "Locate the file or folder you need in the File History tool. All of the files that have earlier versions saved will be visible here. Once you find the file, you'll be able to browse the dates of previously saved versions."
+    },
+    {
+      "title": "Use the arrows to select the version to restore.",
+      "content": "Use the arrows to select the version to restore. Be sure to choose a version of the file or folder that existed before you made the change."
+    },
+    {
+      "title": "Select a version and click Restore.",
+      "content": "Select a version and click Restore . A confirmation message will appear. If you'd rather restore the file or folder to a different location, right-click Restore , choose Restore to , and then click another location."
+    },
+    {
+      "title": "Click Restore to confirm.",
+      "content": "Click Restore to confirm. This saves the original version of the file or folder to its original location."
+    },
+    {
+      "title": "Install Recuva.",
+      "content": "Install Recuva. Recuva is a free app that will undelete files you accidentally removed from your computer. [8] X Research source You can get the tool from https://www.ccleaner.com/recuva . The free version of the tool should be enough for recovering most deleted files."
+    },
+    {
+      "title": "Open Recuva once installed.",
+      "content": "Open Recuva once installed. You'll find it in your Windows menu. If prompted, allow the app to make changes to your PC. The first time you open Recuva, you may see a warning message about the app being blocked. Click the warning message, select the first option in the list, select the Actions menu, and then click Allow on device to continue."
+    },
+    {
+      "title": "Click Next on the wizard.",
+      "content": "Click Next on the wizard. Now you'll be able to use this quick-scan feature to recover deleted files."
+    },
+    {
+      "title": "Select a file type and click Next.",
+      "content": "Select a file type and click Next . If you're not sure the type of file you're looking for, choose All Files ."
+    },
+    {
+      "title": "Select the location the file was deleted from.",
+      "content": "Select the location the file was deleted from. For example, if you deleted the file from Recycle Bin, choose In the Recycle Bin . To enter a specific folder, choose In a specific location , click Browse… , and then select the folder."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . Recuva will now attempt to find deleted files. You'll see that there's a Deep Scan option here. Try the regular scan first. If you are unable to recover your file normally, you can close and re-open Recuva and check the box next to \"Enable Deep Scan.\" This option will take a long time, and it might not be necessary."
+    },
+    {
+      "title": "Click Start.",
+      "content": "Click Start . Recuva will now search for shadow copies of deleted files from the selected location. Once the scan is complete, a list of files will appear."
+    },
+    {
+      "title": "Select the file(s) you want to recover and click Recover….",
+      "content": "Select the file(s) you want to recover and click Recover… . This restores the selected file(s) and/or folder(s) to the original location."
+    },
+    {
+      "title": "Open the Control Panel.",
+      "content": "Open the Control Panel. If you back up your PC to another drive, including a networked drive, or another version of Windows that was installed on your PC, you can restore files at any time from earlier backups. To get started, press the Windows key and type control panel , then click Control Panel in the search results. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the Backup and Restore tool.",
+      "content": "Open the Backup and Restore tool. If you don't see it, click System and Security first."
+    },
+    {
+      "title": "Choose which files to restore.",
+      "content": "Choose which files to restore. If you want to restore one of your own files, select Restore my files . To restore files for another user (or all users), choose Restore all users' files . If you want to restore files from a different backup than the one selected by default, click Select another backup to restore files from , and then locate the backup."
+    },
+    {
+      "title": "Select Browse for files or Browse for folders.",
+      "content": "Select Browse for files or Browse for folders . Choose the option that applies to you based on whether you want to restore individual files or entire folders."
+    },
+    {
+      "title": "Search for the file or folder you want to restore.",
+      "content": "Search for the file or folder you want to restore. You can type any part of the file or folder name to locate the file or folder, and then click Search . You can use wildcards, such as *.jpg, to find all files that match a certain string of text."
+    },
+    {
+      "title": "Select the file(s) or folder(s) and click Next.",
+      "content": "Select the file(s) or folder(s) and click Next . [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Choose where you want to restore the files.",
+      "content": "Choose where you want to restore the files. To bring them back to their original location, leave the default option selected. Otherwise, you can select In the following location and click Browse to select another folder."
+    },
+    {
+      "title": "Click Restore.",
+      "content": "Click Restore . The selected file(s) and/or folder(s) will be recovered to the chosen directory. [11] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Install Stellar Data Recovery on your Windows PC.",
+      "content": "Install Stellar Data Recovery on your Windows PC. This file recovery app does have a fee, but you can do a free scan before paying to see if the app is capable of restoring the files you need. Search the web for \"Stellar Data Recovery\" and install the free downloadable version."
+    },
+    {
+      "title": "Open Stellar Data Recovery.",
+      "content": "Open Stellar Data Recovery. You'll find it in your Windows menu after installing."
+    },
+    {
+      "title": "Choose what you want to recover and click Next.",
+      "content": "Choose what you want to recover and click Next . You can select as many of the different file types as you'd like."
+    },
+    {
+      "title": "Select the location from which you deleted the file.",
+      "content": "Select the location from which you deleted the file. You can choose one of the common locations at the top, such as Desktop or Documents, or select Choose Location to select a folder manually. If the file was saved to an external drive that's connected to your computer right now, select that drive. If the file was saved to a partition that is no longer accessible, select Can't Find Drive ."
+    },
+    {
+      "title": "Click Scan to search for deleted files.",
+      "content": "Click Scan to search for deleted files. Once the scan is complete, you'll see a list of files and/or folders you can restore. If nothing is found, click the link next to \"Deep Scan\" to try a more in-depth scan."
+    },
+    {
+      "title": "Select the file(s) and/or folder(s) and click Recover.",
+      "content": "Select the file(s) and/or folder(s) and click Recover . If you're willing to pay for Stellar, you will be asked to do so now. Once you make your payment, you'll receive a product key via email that you can enter into the provided field. Once validated, you'll be able to recover the selected file(s), as well as any you need to recover in the future."
+    }
+  ]
+}

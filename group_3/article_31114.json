@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Mount-an-ISO-Image",
+  "title": "How to Mount an ISO Image",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Open File Explorer .",
+      "content": "Open File Explorer . Click the folder icon in the lower-left side of the Start window. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Find the ISO.",
+      "content": "Find the ISO. Click the folder in which your ISO is stored (e.g., Downloads ) on the left side of the File Explorer, then open any additional folders in the main window until you arrive at your ISO file. [2] X Research source"
+    },
+    {
+      "title": "Select the ISO.",
+      "content": "Select the ISO. Click the ISO file to select it."
+    },
+    {
+      "title": "Click the Manage tab.",
+      "content": "Click the Manage tab. You'll find this option in the upper-left side of the window. A toolbar will appear below it."
+    },
+    {
+      "title": "Click Mount.",
+      "content": "Click Mount . It's in the \"Manage\" section of the toolbar. Doing so will mount your ISO file onto your computer's CD drive. [3] X Research source"
+    },
+    {
+      "title": "Click This PC.",
+      "content": "Click This PC . This folder is on the left side of the File Explorer, though you may need to scroll up or down on the left-hand column to see it."
+    },
+    {
+      "title": "Open your mounted ISO.",
+      "content": "Open your mounted ISO. Double-click your ISO's name below the \"Devices and drives\" heading in This PC. It will resemble a CD on a drive. Your ISO's contents will open."
+    },
+    {
+      "title": "Open Finder.",
+      "content": "Open Finder. Click the blue, face-like app in your Mac's dock."
+    },
+    {
+      "title": "Find the ISO.",
+      "content": "Find the ISO. Click the folder in which your ISO is stored (e.g., Downloads ) on the left side of the Finder, then open any additional folders in the main window until you arrive at your ISO file."
+    },
+    {
+      "title": "Double-click the ISO.",
+      "content": "Double-click the ISO. This will immediately mount the ISO to your Mac. [4] X Research source"
+    },
+    {
+      "title": "Click the ISO's name.",
+      "content": "Click the ISO's name. In the left-hand column of the Finder, you should see your ISO's name appear below the \"Devices\" heading; click it here to open the ISO. You can also double-click the ISO icon that appears on your Mac's desktop after mounting."
+    },
+    {
+      "title": "Open a terminal window or TTY console if you do not have one open already.",
+      "content": "Open a terminal window or TTY console if you do not have one open already. See How to Open a Terminal Window in Ubuntu for instructions if you are using Ubuntu. [5] X Research source"
+    },
+    {
+      "title": "Create a directory to use as a mountpoint.",
+      "content": "Create a directory to use as a mountpoint. This is the directory you go to for viewing the contents of the ISO image. Directories in Linux are created with the mkdir command. For example: [6] X Research source mkdir /home/wikihow/iso will create a directory named iso in the home directory of the user wikihow ."
+    },
+    {
+      "title": "Enter the mount command with the proper paths and options",
+      "content": "Enter the mount command with the proper paths and options If your Linux distribution uses the sudo command, enter sudo mount -o ro /path/to/iso/image /home/wikihow/iso If your Linux distribution does not use the sudo command, enter the command su . You will be prompted for a password. After entering it, you will have a root shell. Then enter mount -o ro ' /path/to/iso/image' ' /home/wikihow/iso' Note: ISO images are always mounted read-only (ro). Using the -o ro option simply removes the warning about being write-protected."
+    }
+  ]
+}

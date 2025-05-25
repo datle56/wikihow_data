@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Check-if-Your-Firewall-Is-Blocking-Something",
+  "title": "A Guide to Checking if Your Firewall Is Blocking Something",
+  "steps": [
+    {
+      "title": "Open Windows Firewall.",
+      "content": "Open Windows Firewall. You can find it by clicking the Windows Start menu and typing Windows Firewall or you can use the following steps to open Windows Firewall: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start menu. Type control panel . Click Control Panel . Click System and Security (or Windows Defender Firewall ) Click Windows Defender Firewall ."
+    },
+    {
+      "title": "Open the Advanced Settings.",
+      "content": "Open the Advanced Settings. Click this option in the left-hand pane. You may need to enter an administrator password."
+    },
+    {
+      "title": "Check Outbound Rules for blocked IPs.",
+      "content": "Check Outbound Rules for blocked IPs. Click Outbound Rules in the left-hand pane. If a website is blocked, it will show up in the list as a red symbol next to the words \"Blocked IPs\" or \"IP block.\" [2] X Research source If there are no blocked IP rules, but you still get a message about a firewall when you try to access a site, the organization that runs your network (your employer, for instance) probably has an external firewall set up. These settings cannot be changed from your machine."
+    },
+    {
+      "title": "Find the website's IP address",
+      "content": "Find the website's IP address using Command Prompt. To do so, click the Windows Start menu and type \"CMD.\" Open the Command Prompt . Type the following command exactly as it appears below, but use the URL of the website you suspect is blocked in place of \"wikihow.com\" (without including \"www.\"): [3] X Research source ping [website URL] -t Press Enter to run the command. You should see \"Reply from\" followed by a string of numbers. This is the IP address. Write it down. If this command doesn't work, try nslookup wikihow.com instead. [4] X Research source"
+    },
+    {
+      "title": "Disable any rules blocking that IP address.",
+      "content": "Disable any rules blocking that IP address. Go back to the list of Outbound Rules you have open. Click an IP-blocking rule, then select Properties on the right pane to see which IP addresses are blocked. If the IP address you wrote down is listed, select it, then click the \"Remove\" button to its right. If you'd like to remove the entire rule instead of editing a single IP address, close the Properties menu, make sure that the rule is still selected, and click \"Delete\" on the right pane."
+    },
+    {
+      "title": "Add a new rule if you want to block an IP address.",
+      "content": "Add a new rule if you want to block an IP address. If you are trying to block a website , make a new Outbound Rule by selecting New Rule underneath Actions in the right pane. Follow these steps in the rule creation window: [5] X Research source Click Custom, then Next. Click All Programs, then Next. Leave the Protocol settings alone and click Next. Under \"Which remote IP addresses does this apply to?\", select \"These IP addresses:\" Click \"Add\" to the right of the lower text field. In the pop-up window, enter the IP address you wrote down into the \"This IP address\" field. Press OK, then Next. Select \"Block the connection\", then Next. Check all three boxes if you'd like to block the website on all networks. (If you'd only like to block it while connected to unsecured public WiFi, check only Public instead.) Click Next. Type in a name for your rule so you remember what it does. Click Finish."
+    },
+    {
+      "title": "Search for \"allow an app\" or \"allow a program\".",
+      "content": "Search for \"allow an app\" or \"allow a program\". To do so, click the Windows Start menu and type \"Allow an app through Windows Firewall\" (Windows 10 & 11). Select the matching result that shows up. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the search, use the following steps to navigate to this option manually in Windows 10 and 11: Click the Windows Start menu. Type control panel . Click Control Panel . Click System and Security (or Windows Defender Firewall ) Click Windows Defender Firewall . Click Allow an app or feature through Windows Defender Firewall . in the panel to the left."
+    },
+    {
+      "title": "Look for the app that might be blocked.",
+      "content": "Look for the app that might be blocked. The apps are listed in alphabetical order. Scroll through them and look for the name of the application you're concerned about. If you can't find the app, click Change settings near the top, and then click Allow another app near the bottom corner of the window. Select the app in the window that pops up, or enter its file path . [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Change Settings.",
+      "content": "Click Change Settings . This button is near the top right corner of the window. You might need to enter an administrator password. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Check or uncheck the boxes to change this setting.",
+      "content": "Check or uncheck the boxes to change this setting. If you want an app to be allowed through the firewall, check the box to the left of its name. If you want the firewall to block the app , uncheck the box."
+    },
+    {
+      "title": "Apply this setting to Private and/or Public networks.",
+      "content": "Apply this setting to Private and/or Public networks. The two checkboxes on the right let you choose different settings for Private networks (like your home network) and Public ones (for coffee shops, airports, and so on). You're more vulnerable to security threats on a public network, so you might want to uncheck the \"Public\" box for apps that deal with sensitive info. [9] X Research source You might run into firewall issues if Windows mistakenly thinks your home network is public. Use one of the following steps to change your network profile settings: Windows 10: Click the Wi-Fi symbol on the taskbar, select Properties next to your WiFi network name, and look under \"Network profile\". If \"Public\" is selected, change this setting to \"Private.\" [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Windows 11: Click the Windows Start menu > Settings > Network & Internet > Wi-Fi > Manage known networks > click your Wi-Fi network. Under \"Network profile type,\" select \"Private.\" [11] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Try removing and re-adding an app.",
+      "content": "Try removing and re-adding an app. Some users have had issues with these settings not working correctly. If an app is marked \"allowed\" but you're still having connection issues, try manually removing it from the list by unchecking the box next to its name. Add it back again with the Allow another app button on the bottom right and see if it works now. [12] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you try this and restart your computer , and it still isn't working, Windows Firewall might be blocking a port the app is trying to use. Read the method below for instructions on how to change the port settings."
+    },
+    {
+      "title": "Check for blocked programs before trying this method.",
+      "content": "Check for blocked programs before trying this method. Changing your firewall's port behavior is a bit technical, and a mistake here can cause issues with security or function. If you haven't tried it, start with the much easier test for blocked applications . You won't need an IT degree or anything, but this method could be tricky if you're not used to troubleshooting network issues. It gets a lot easier if you already have some idea of the problem. (For instance, you could check the customer support forums for the app you are having trouble with and look for known firewall issues with specific ports.)"
+    },
+    {
+      "title": "Open the Windows Firewall.",
+      "content": "Open the Windows Firewall. This is called \"Windows Defender Firewall with Advanced Security\" on Windows 10 or just \"Windows Firewall\" in earlier versions. [13] X Research source You can search for this in the Start Menu or locate it inside Control Panel under System and Security → Windows Defender Firewall .. [14] X Research source"
+    },
+    {
+      "title": "Select \"Advanced Settings\" on the left menu.",
+      "content": "Select \"Advanced Settings\" on the left menu. You might need to enter an administrator password. [15] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties. This is located underneath the \"Actions\" header in the right-hand panel, or in the top Actions menu."
+    },
+    {
+      "title": "Select the tab that matches your network.",
+      "content": "Select the tab that matches your network. Windows Firewall uses different settings for different networks. In the top row of tabs, select \"Private Profile\" if you're on a home network or \"Public Profile\" if you're on public WiFi. (The \"Domain Profile\" is for secure networks with a domain controller, mostly in corporate settings.) [16] X Research source You can check how your network is classified in the network's Properties window, under \"Network profile\". [17] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Customize your logging settings.",
+      "content": "Customize your logging settings. Under the \"Logging\" heading, click Customize . In the window that opens, select the drop-down menu next to \"Log dropped packets\" and set it to \"Yes\". Make a note of the file path at the top, next to \"Name\". Hit OK twice to close the windows and save your settings. [18] X Research source With this enabled, your computer keeps a text record of network activity, which you can use to pinpoint the issue you're having."
+    },
+    {
+      "title": "Test the application that's having issues.",
+      "content": "Test the application that's having issues. Run the application or feature that you think might be running into your firewall. This should record the attempt in your firewall log so you can see what's going on. You might need to close and reopen the log between tests to see the latest info."
+    },
+    {
+      "title": "Open the firewall log.",
+      "content": "Open the firewall log. To see your firewall activity, go to the file path location shown in your logging settings. By default, this is your home directory (for instance, C:\\Windows) followed by \\system32\\logfiles\\firewall\\firewall.log. [19] X Research source"
+    },
+    {
+      "title": "Look for port info in the log.",
+      "content": "Look for port info in the log. Use the Fields line at the top as a guide for how to read the log entries (for example, the Fields line starts with \"date time\", so the first two items in each entry are the date and time of the event). Fortunately, you can ignore most of this info and look for the following: \"Action\" lists the firewall's behavior. \"ALLOW\" means the traffic went through. \"DROP\" means it was blocked. \"Protocol\" typically lists either TCP or UDP. (Your firewall needs to know which of these protocols is being used to govern data transmission. Make a note of this.) \"dst-port\" stands for \"destination port\" — most likely what your firewall is looking for \"src-port\" stands for \"source port\"; this is not relevant in most cases [20] X Research source Since a mistake in the next step can mess up your network connectivity or security, only continue once you're confident you've found the right log entry. You can also search for info on that port online, since some ports are associated with certain common uses."
+    },
+    {
+      "title": "Use this info to edit your firewall rules.",
+      "content": "Use this info to edit your firewall rules. Return to the advanced settings window for your firewall. Use the actions in the left pane to create a new rule: [21] X Research source Click Outbound Rules to alter how your programs are allowed to connect to the network. (\"Inbound Rules\" affect how other systems connect to you; change these only if you know what you're doing) Click New Rule . Select Port , then Next . Select TCP or UDP and enter the port number you'd like to allow or block. (This is the info you got from your log.) Choose Allow , Allow if it is secure , or Block , depending on what you'd like your firewall to do. Choose the Profile type(s) of the networks you want the rule to apply to. Name your rule and save it."
+    },
+    {
+      "title": "Check whether the new rule worked.",
+      "content": "Check whether the new rule worked. Repeat the action that you've been having problems with (for instance, opening an application, running a program, or visiting a website). If it now works as intended, you're done. If not, open the log again and double-check that you've used all the right info and that no other issues are being recorded (such as additional undesired blocks on other ports)."
+    },
+    {
+      "title": "Turn off logging once you're done troubleshooting.",
+      "content": "Turn off logging once you're done troubleshooting. Return to the Windows Firewall advanced settings. Select the profile tab you changed before, click Customize under Logging, and turn off dropped packet logging. This will help prevent slowdowns that can happen from constant logging."
+    },
+    {
+      "title": "Open your Mac firewall.",
+      "content": "Open your Mac firewall. Use the following steps to do so: Click the Apple icon in the upper-left corner. Click System Settings . Click Network in the sidebar to the left Click Firewall on the right."
+    },
+    {
+      "title": "Toggle the firewall on or off.",
+      "content": "Toggle the firewall on or off. By default, the Mac firewall is turned off. You can click the toggle switch next to \"Firewall\" at the top to toggle the firewall on or off. If the firewall is off, then this firewall isn't blocking anything (though there are still other protections built into the operating system)."
+    },
+    {
+      "title": "Click Options.",
+      "content": "Click Options . It's below the Firewall box. This button won't be available unless the firewall is turned on. [22] X Research source"
+    },
+    {
+      "title": "Use the + and - buttons to change the rules.",
+      "content": "Use the + and - buttons to change the rules. If the firewall has any application-specific rules, these are displayed in the large white field in the center of the window. You can easily change them: [23] X Research source To allow or block a new application, click the small + under this field. In the pop-up window, locate the application, select it, and hit Add . Once the application is listed, click \"Allow...\" or \"Block...\" to the right of its name to open a drop-down menu and switch between the two settings. To remove a rule you don't need, select the application, then click - ."
+    },
+    {
+      "title": "Turn \"Block all incoming connections\" on or off.",
+      "content": "Turn \"Block all incoming connections\" on or off. At the top of the Options page, there is the option to block all incoming connections. Click the toggle switch next to this option to turn it on or off."
+    },
+    {
+      "title": "Automatically allow built-in software to receive incoming connections.",
+      "content": "Automatically allow built-in software to receive incoming connections. If you click the toggle switch to enable \"Automatically allow built-in software to receive incoming connections,\" all apps that come pre-installed on your Mac will be added to the list of allowed apps."
+    },
+    {
+      "title": "Automatically allow downloaded signed software to receive incoming connections.",
+      "content": "Automatically allow downloaded signed software to receive incoming connections. If you click the toggle switch to enable \"Automatically allow downloaded signed software to receive incoming connections,\" all downloaded apps that are signed by a valid certificate authority will be added to the list of allowed apps."
+    },
+    {
+      "title": "Enable or disable Stealth Mode.",
+      "content": "Enable or disable Stealth Mode. If you click the toggle switch next to \"Enable Stealth Mode,\" your Mac will not respond to probing requests (such as a ping) that can reveal its existence. However, it will still respond to requests from authorized apps. [24] X Research source"
+    }
+  ]
+}

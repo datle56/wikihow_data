@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Msmpeng-Exe",
+  "title": "Everything You Need to Know about Msmpeng.exe on Your Windows PC",
+  "steps": [
+    {
+      "title": "Msmpeng.exe is part of Microsoft Defender.",
+      "content": "Msmpeng.exe is part of Microsoft Defender. It stands for \"Microsoft Malware Protection Engine\". Msmpeng.exe runs in the background while your computer is on, protecting you from malware and viruses as you use your PC. Msmpeng.exe is also sometimes called the \"Antimalware Service Executable\" or \"Microsoft Defender Antivirus Service\" in your Task Manager."
+    },
+    {
+      "title": "Because msmpeng.exe runs in the background, it uses up some CPU resources.",
+      "content": "Because msmpeng.exe runs in the background, it uses up some CPU resources. However, msmpeng.exe running in the background shouldn't impede your daily computer usage. If you notice that msmpeng.exe is eating up a lot of your CPU, keep reading for some tips to help reduce its usage."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. The best first step is a simple restart. Restarting your computer clears out old caches and data that could be causing msmpeng.exe to use a lot of your CPU resources. After restarting, check to see if msmpeng.exe is still using up a lot of CPU. If so, continue with the next tips."
+    },
+    {
+      "title": "Update Windows, if needed.",
+      "content": "Update Windows, if needed. There's a possibility you're encountering a bug with msmpeng.exe that's causing it to use too much CPU. If you've got pending Windows updates , these updates may have fixed the bug that's causing your issue. To check for a Windows update, type \"check for updates\" in the search bar of your taskbar, then click Check for updates . If there's an update available, you can install it from this window. After updating, check to see if msmpeng.exe is still using a lot of CPU. If so, continue with the next tips."
+    },
+    {
+      "title": "Remove all antivirus programs besides Microsoft Defender.",
+      "content": "Remove all antivirus programs besides Microsoft Defender. If you have multiple antivirus, antimalware, or other protection programs installed on your PC, they could interfere with Defender. This could cause msmpeng.exe to use more resources than usual. If you want to use Defender, you should remove your other antivirus programs. To uninstall a program, right-click the Windows icon in the lower left, then select Apps and Features . Find the program you want to uninstall and click Uninstall ."
+    },
+    {
+      "title": "Tell Microsoft Defender not to scan its own folder.",
+      "content": "Tell Microsoft Defender not to scan its own folder. Microsoft Defender will scan your entire computer, including its own folders. You can exclude Defender's folders (that include msmpeng.exe) from the scan to help save on CPU resources. In the taskbar search bar, type \"Virus and threat protection.\" Click the result that pops up. Click Manage settings under \"Virus & threat protection settings.\" Scroll down and click Add or remove exclusions under \"Exclusions.\" Click the plus sign next to \"Add an exclusion\" and select Folder . Paste C:\\Program Files\\Windows Defender in the field next to \"Folder:\" and click Select Folder , then Yes ."
+    },
+    {
+      "title": "Reschedule Microsoft Defender scans.",
+      "content": "Reschedule Microsoft Defender scans. If you're experiencing high CPU usage from msmpeng.exe only during certain times of the day, it may be due to Microsoft Defender's scan schedule. You can adjust Microsoft Defender to scan your computer when you're not using it to free up those CPU resources. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Type \" Task Scheduler \" in the taskbar search bar, then click the result that pops up. Expand these tabs in the left-hand sidebar in this order: Task Scheduler Library > Microsoft > Windows > Windows Defender. Right-click on \"Windows Defender Scheduled Scan\" and click on Properties . Uncheck \"Run with highest privilege\" in the General tab. Uncheck everything in the Conditions tab. Go to the Triggers tab and click New , then schedule your scan. You can select a start date and time as well as frequency."
+    },
+    {
+      "title": "Disable real-time protection.",
+      "content": "Disable real-time protection. Real-time protection keeps you protected from malware while you're surfing the web and downloading things, but it can also cause high CPU usage with msmpeng.exe. You can disable real-time protection to see if it helps, but note that it will enable itself automatically after a few days. In the taskbar search bar, type \"Virus and threat protection.\" Click the result that pops up. Click Manage settings under \"Virus & threat protection settings.\" Toggle off \"Real-time protection.\""
+    },
+    {
+      "title": "Disable Automatic Sample Submission.",
+      "content": "Disable Automatic Sample Submission. Automatic Sample Submission will send suspicious files to Microsoft's security server for analysis, but it can take up a ton of resources. Try disabling Automatic Sample Submission to reduce how much of your CPU is used by msmpeng.exe. In the taskbar search bar, type \"Virus and threat protection.\" Click the result that pops up. Click Manage settings under \"Virus & threat protection settings.\" Toggle off Automatic Sample Submission."
+    },
+    {
+      "title": "Disable Microsoft Defender.",
+      "content": "Disable Microsoft Defender. If nothing else works, you can disable Microsoft Defender entirely. This is not recommended unless you have another antivirus , antimalware, or another kind of protection program on your PC to keep you safe from online threats. Press Win+R to open the Run window, then type \"gpedit.msc\" and press Enter . Expand these folders in the left-hand sidebar in the following order: Computer Configuration > Administrative Templates > Windows Components > Windows Defender Antivirus. Double click Turn off Windows Defender Antivirus . Click the radio button next to Enabled in the pop-up window. Click Apply then OK to save your changes."
+    }
+  ]
+}

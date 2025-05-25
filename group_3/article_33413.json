@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Play-Super-Smash-Flash-2-Without-Flash",
+  "title": "How to Play Super Smash Flash 2 Without Flash",
+  "steps": [
+    {
+      "title": "Go to the downloads page of the Super Smash Flash site.",
+      "content": "Go to the downloads page of the Super Smash Flash site. While the site is Super Smash Flash, not specifically Super Smash Flash 2, the downloads page has been updated with links for Super Smash Flash 2."
+    },
+    {
+      "title": "Choose the appropriate installer next to either “MEGA” or “Mirror”.",
+      "content": "Choose the appropriate installer next to either “MEGA” or “Mirror”. Depending on your system, choose between the Windows, Mac, and Linux installer options. Check if you are running a 32- or 64-bit version of Windows to determine which installer you should use. If you choose to use Mega, click the green Download button towards the bottom right of the page, wait for the download to complete, then allow downloads from that site if prompted. If you choose to use a mirror, the file will start downloading directly from the Super Smash Flash site. If necessary, allow downloads from the site."
+    },
+    {
+      "title": "Unzip the downloaded file.",
+      "content": "Unzip the downloaded file. To unzip the file, open your downloads folder, then double click it. You should now see a folder appear with the same title, but without the “.zip” extension."
+    },
+    {
+      "title": "Open the folder, then open SSF2.",
+      "content": "Open the folder, then open SSF2. You can now play Super Smash Flash 2 without using Adobe Flash Player! If you are using a Mac and your computer says the app cannot be opened because it is from an unidentified developer, open System Preferences , click Security and Privacy , then click Open Anyway . For various other Mac errors, check the downloads page on the Super Smash Flash site for solutions."
+    },
+    {
+      "title": "Check your Chromebook’s hardware.",
+      "content": "Check your Chromebook’s hardware. For this method, you will need a Chromebook with an Intel or AMD processor. [1] X Research source"
+    },
+    {
+      "title": "Open Chrome and select Experiments.",
+      "content": "Open Chrome and select Experiments . This button uses a potion icon and is located next to the address bar. [2] X Research source"
+    },
+    {
+      "title": "Enable “Crostini GPU Support” and “Scheduler Configuration”.",
+      "content": "Enable “Crostini GPU Support” and “Scheduler Configuration”. These settings will improve the performance of SSF2. To enable them, click the dropdown menu set to Default to the right of each setting, then change it to something like Enabled for both."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . This blue button in the bottom-right corner of the screen will restart your Chromebook and apply the changes you just made."
+    },
+    {
+      "title": "Open your system settings.",
+      "content": "Open your system settings. To access your system settings, click the bar at the bottom-right of the screen, then select the gear icon in the top right of the pop-up box that appears."
+    },
+    {
+      "title": "Expand the Advanced menu and select Developers.",
+      "content": "Expand the Advanced menu and select Developers . This is the fifth tab in the section and is represented by a “< >” icon."
+    },
+    {
+      "title": "Turn on the Linux development environment.",
+      "content": "Turn on the Linux development environment. The blue and white Turn on button is located at the top right of the settings window."
+    },
+    {
+      "title": "Click through the installer.",
+      "content": "Click through the installer. You do not need to change any of the default installer settings. Once it has finished running, you should see a new Terminal window with your username pop up."
+    },
+    {
+      "title": "Run sudo dpkg --add-architecture i386 in the Terminal window.",
+      "content": "Run sudo dpkg --add-architecture i386 in the Terminal window. This command enables 32-bit architecture on your system, essentially allowing a different type of app to run."
+    },
+    {
+      "title": "Run sudo apt update and press y when prompted.",
+      "content": "Run sudo apt update and press y when prompted. Your computer will now perform a series of updates on your Linux apps. Each time you press y , you are granting permission for the update process to continue."
+    },
+    {
+      "title": "Run sudo apt install wine winbind and press ↵ Enter when asked questions.",
+      "content": "Run sudo apt install wine winbind and press ↵ Enter when asked questions. Wine is a program that allows you to run Windows applications in Linux. Do not worry if you see lots of scrolling text in your Terminal window! This is a normal part of the install process."
+    },
+    {
+      "title": "Run winecfg.",
+      "content": "Run winecfg . The Wine app will now create the files and folders it needs to run successfully. You should eventually see a small Wine window appear."
+    },
+    {
+      "title": "Run wget https://cdn.supersmashflash.com/ssf2/downloads/3f497 92f/SSF2BetaWindows.v.1.3.1.1.portable.zip.",
+      "content": "Run wget https://cdn.supersmashflash.com/ssf2/downloads/3f497 92f/SSF2BetaWindows.v.1.3.1.1.portable.zip . This command will download the game from the Super Smash Flash site."
+    },
+    {
+      "title": "Run unzip SSF2BetaWindows.v.1.3.1.1.portable.zip.",
+      "content": "Run unzip SSF2BetaWindows.v.1.3.1.1.portable.zip . The game will now be unzipped, allowing your computer to run the actual application."
+    },
+    {
+      "title": "Run cd SSF2BetaWindows.v.1.3.1.1.portable.",
+      "content": "Run cd SSF2BetaWindows.v.1.3.1.1.portable . This command will tell your computer where to find the Super Smash Flash 2 application."
+    },
+    {
+      "title": "Run wine SSF2.exe --disable-framerate-limit.",
+      "content": "Run wine SSF2.exe --disable-framerate-limit . Super Smash Flash 2 will now begin launching through Wine. Allow your computer a minute or two to launch the program, as running the app through another app in Linux can take some time."
+    },
+    {
+      "title": "Play the game.",
+      "content": "Play the game. Once Super Smash Flash 2 has launched, enjoy playing it on your Chromebook without Flash! After you have launched it for the first time, you will only need to run the commands in steps 15 and 16 in the Terminal to play in the future."
+    }
+  ]
+}

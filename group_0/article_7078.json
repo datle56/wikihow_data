@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Check-Direct-X-Version",
+  "title": "How to See Which DirectX Version Your System is Running",
+  "steps": [
+    {
+      "title": "Use dxdiag to find which version of DirectX is installed.",
+      "content": "Use dxdiag to find which version of DirectX is installed. To find your version of DirectX using dxdiag on Windows 11, 10, and 8: Press the Windows key or click the Windows menu. Type dxdiag . Click dxdiag in the search results. The version of DirectX currently installed appears next to \"DirectX Version.\" [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Windows 10 and 11 computers support DirectX 12 by default.",
+      "content": "Windows 10 and 11 computers support DirectX 12 by default. And, since DirectX is backward-compatible, these OSes will also run apps and games that require earlier versions of DirectX. The current version of DirectX (DirectX 12) is already installed on your computer and stays up to date automatically thanks to Windows Update . If you're running Windows 10 and have DirectX 10 or 11 instead of DirectX 12, jump down to Why don't I have DirectX 12? If you're using Windows 8.1, the latest version of DirectX you can run is DirectX 11.2. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "",
+      "content": "In some cases, if you're using Windows 10, dxdiag may report that you have DirectX 11 or DirectX 10 instead of the current version. This usually means you have older hardware (typically a GPU) that doesn't support DirectX 12, which caused Windows to downgrade DirectX. The first thing to do is check your GPU manufacturer's website to see if they've released updated drivers that add DirectX 12 support. If that doesn't work, don't worry—you should not run into many problems, even with an earlier version of DirectX. Windows downgraded DirectX to ensure your older hardware will run applications smoothly, and it shouldn't impact your use of applications or gameplay. If it does, the best thing to do is buy a new video card."
+    },
+    {
+      "title": "",
+      "content": "If a game or application requires a legacy version of DirectX, such as DirectX 11 or DirectX 9, it should still work if you have DirectX 12. For the most part, DirectX is backward-compatible, so you should be able to use programs that require earlier versions. It's not possible to install an old version of DirectX, but if you're getting a DirectX error when you try to run an app that requires an earlier version, you can use Microsoft's DirectX Runtime Installer to add additional libraries for legacy versions of DirectX. [3] X Research source Here's how: Follow this Microsoft link to download the installer. Note: This will not downgrade DirectX to an earlier version—it just adds additional legacy support in case an older application or game requires an older version of a library. Double-click the downloaded EXE file, then follow the on-screen instructions to install the legacy DirectX libraries. After installing, reboot your PC (this is important). When it comes back up, you should be able to play games and use programs that require older DirectX versions. If you run dxdiag, you'll still see DirectX 12. This is normal."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Get-Windows-on-Chromebook",
+  "title": "Best (and Easiest) Way to Run Windows on Chrome OS",
+  "steps": [
+    {
+      "title": "Back up your data.",
+      "content": "Back up your data. As you continue to the next step, all your data will be wiped from the Chromebook, so make sure you have a backup of everything . Note that if you have a Chromebook that was given to you by a school or organization, you don't want to change it to a Windows OS without express, written confirmation. There are also a few things you'll need to do this: A compatible Chromebook - Not every Chromebook works with the developer mode needed to continue (check CoolStar to see if your Chromebook and built-in hardware is ok). Further, your Chromebook also needs to have these hardware components: Intel-based CPU 64GB of storage 8GB of RAM Windows ISO File - you can download it from the Windows official site (this might be free if you're upgrading an older version of Windows that you haven't claimed yet) USB drive in FAT32 format with 16GB of storage An external mouse and keyboard Drivers (for devices that you have) and Rufus software (optional)."
+    },
+    {
+      "title": "Enable Developer Mode.",
+      "content": "Enable Developer Mode. Follow these steps if you don't know how to enable Developer Mode: Enter Recovery Mode (press Esc + Refresh + Power simultaneously). Press Ctrl + D and Enter . Disable OS Verification. Press Ctrl + D again when prompted to disable the OS verification process."
+    },
+    {
+      "title": "Install a UEFI firmware.",
+      "content": "Install a UEFI firmware. You need to replace the system's firmware (Chrome OS) with one that supports Windows. To do this, follow these steps: Open Terminal (press Ctrl + Alt + T and enter \"shell\") Type cd; curl -LO mrchromebox.tech/firmware-util.sh into the Terminal window and press Enter Type sudo install -Dt /usr/local/bin -m 755 firmware-util.sh and press Enter . Type sudo firmware-util.sh and press Enter . Select \"Full ROM\" option and press Y to confirm (It's most likely option 2). If you're prompted to create a backup, you can use your USB flash drive to create one so you can safely reflash your Chromebook firmware if Windows OS doesn't work for you. When you finish this process, you'll no longer be able to use Chrome OS. Press U to continue."
+    },
+    {
+      "title": "Create a bootable Windows USB or switch the internal harddrive.",
+      "content": "Create a bootable Windows USB or switch the internal harddrive. Create a bootable USB drive on another laptop or desktop computer: Download an ISO for Windows on Microsoft's official site. Open the file you downloaded and click Accept . Insert your USB flash drive into the laptop/desktop computer. Select Create Installation Media and click Next . Click Use the recommended options for this PC and click Next . Choose USB flash drive and click Next . Wait for the process to finish, then click Finish . If you use Rufus, open it, and choose Windows ISO . Plug in your USB flash drive and create a bootable USB. Rufus is free software that will flash the ISO to your USB drive easily."
+    },
+    {
+      "title": "Connect the USB flash drive to your Chromebook.",
+      "content": "Connect the USB flash drive to your Chromebook. After the flash drive is a bootable ISO drive, you can use it to put Windows on your Chromebook. Your Chromebook should be off; if not, turn it off before you connect the USB drive."
+    },
+    {
+      "title": "Boot from the USB drive.",
+      "content": "Boot from the USB drive. When your Chromebook turns back on, it should automatically detect the boot drive and load from there. If not, press the Esc key multiple times during the boot logo and then you can find the USB drive and boot from it. Connect your USB keyboard and mouse to the Chromebook to continue."
+    },
+    {
+      "title": "Follow the Windows Installation Wizard.",
+      "content": "Follow the Windows Installation Wizard. You can set the language, then click Next to continue. Click Install Now . Select \"I don't have a product key.\" Press Shift + F10 and enter regedit to open the Registry Editor. Double-click \"HKEY_LOCAL_MACHINE > SYSTEM > Setup\" and right-click a blank space to create a new key, which you will name LabConfig . Right-click in the new empty directory and select DWORD (32-bit) Value 5 times with the following names: BypassCPUCheck BypassRAMCheck BypassSecureBootCheck BypassStorageCheck BypassTPMCheck Each entry needs a Value of \"1\". You can create the DWORD, then right-click it to change the value. Choose a Windows version to install. It should match the ISO version you downloaded. Select \"Custom: Install Windows only (advanced).\" Delete all partitions so \"Unallocated Space\" is the only one listed. The laptop will restart when Windows is finished uninstalling. Remove the USB flash drive when prompted."
+    },
+    {
+      "title": "Set up Windows.",
+      "content": "Set up Windows. Skip the part where you're asked to set up an internet connection during setup since you most likely don't have the appropriate drivers. Press Shift + F10 to open the Terminal and enter OOBE /BypassNRO to finish installing Windows without Internet connection."
+    },
+    {
+      "title": "Get appropriate drivers for your Windows Chromebook.",
+      "content": "Get appropriate drivers for your Windows Chromebook. You need drivers for your touchpad, keyboard, and other hardware in your Chromebook so it'll work with Windows software. Go to CoolStar's website , select your Chromebook's manufacturer and other options for your Chromebook, then install the recommended drivers. Start with the Microsoft Visual C++ drivers since many other drivers rely on them. Make sure you have all the appropriate drivers installed! Not installing drivers or installing the incorrect ones is the main source of a lot of headaches. Some audio drivers will be available for download, but if you see a message that you need an account, you'll need to pay to use those drivers. The Chromebook will now only launch Windows OS when you start it. You removed Chrome OS so it no longer loads."
+    },
+    {
+      "title": "Use Microsoft's free apps.",
+      "content": "Use Microsoft's free apps. If you want to use Microsoft's apps but don't really want the Windows environment, this is the perfect option for you. You don't have to take the risks required to install new firmware on your Chromebook, but can still use Microsoft products! Here's what you need to do: Launch Chrome and navigate to the Office website . Log in and you can use the free web-based apps! Bonus: You don't need to download any software."
+    },
+    {
+      "title": "Use Chrome Remote Desktop.",
+      "content": "Use Chrome Remote Desktop. Use another desktop while using your Chromebook. Avoid installing new firmware and risking your Chromebook this way. The only downfall is you need to have a Windows 10/11 computer running that's connected to the internet. To do this, follow these steps: Open Chrome on the Windows PC and go to the following address \" remotedesktop.google.com/access \". Download and install the host software under Set up Remote Access . Run the host software, then choose a PIN with 6+ digits, and press Start . On the Chromebook, go to \" remotedesktop.google.com/access \" and click your Windows computer. Enter the PIN you created on your other computer and press Enter . Click the square icon with the arrow pointing out of it to move the screen to the Chrome Remote Desktop app. Click the blue and white button on the app (it might be hidden behind a menu in the top right or left edge). Make any changes you'd like, including selecting Full Screen or enabling clipboard optimization."
+    },
+    {
+      "title": "Use CrossOver on Intel-based Chromebooks.",
+      "content": "Use CrossOver on Intel-based Chromebooks. This software solution lets you experience Windows on your Chromebook. However, Chromebooks that aren't Intel-based can't run CrossOver. Here's how you use CrossOver: Enable Linux (open Chromebook settings and select Linux (beta) ). Go to the CodeWeaver's website and enter your name and email to access the free trial. Click Download Trial Now . Double-click the downloaded DEB file and select Install . The app will install via Linux. Open CrossOver. You'll most likely find it in the Linux apps folder. Click Install Windows Software > Browse Available Applications/Select Installer . If you already have the installer, click Select Installer . If you don't have the installer, browse the list of available applications and select one to install. Note that these installations take up a lot of space, and not every Chromebook has enough free space for this. Sometimes the list of available applications is specific for your Chromebook and you can continue easily. Other times, however, the list isn't specific and you need to pay attention to make sure that you download the right thing. Once the download is complete, you will be able to launch it directly."
+    },
+    {
+      "title": "Use Virtual Machines like Parallels Desktop or QEMU.",
+      "content": "Use Virtual Machines like Parallels Desktop or QEMU. By using Virtual Machines, you can enjoy both Chrome OS and Windows on the same machine, as long as your Chromebook has the specs to run both environments (high-end Chromebooks can only handle these high-resource solutions). Once you have a VM installed on your Chromebook, follow these steps: Create a new virtual machine for Windows. Use your Windows installation ISO as the source for the new virtual machine."
+    },
+    {
+      "title": "Use Google's CloudReady.",
+      "content": "Use Google's CloudReady. This service allows you to create a lightweight version of Windows to install on Chromebook as long as you're the owner and sole administrator. To do this, follow these steps: Download the CloudReady USB Maker (select CloudReady Editions > Home > Install Home Edition ). Run the downloaded file and select Yes on any prompts that load. Follow the on-screen instructions to make your CloudReady USB drive, then remove it when the installation is finished. With your Chromebook off, plug in the USB drive. Turn on your Chromebook and repeatedly press ESC while it boots. From the boot menu, select your USB drive. From the CloudReady \"Welcome!\" screen, click Let's go . If you don't want to install CloudReady on your Chromebook's internal storage, skip to the setup portion. Click Install OS in the bottom right. Click Install CloudReady . Follow the on-screen instructions to Erase hard drive & install CloudReady . Your device will automatically shut off. This process can take up to 20 minutes and your laptop will shut down when it's done. Make sure that your Chromebook shuts down completely by tapping the keyboard or touchpad. If your Chromebook is off, CloudReady is installed internally; you can remove the USB. The setup portion begins now. Click Let's go from the \"Welcome\" screen. Set up Wi-Fi and consent to data usage, then sign in with your Google account. [1] X Research source"
+    },
+    {
+      "title": "Installing Windows on Chrome voids the warranty.",
+      "content": "Installing Windows on Chrome voids the warranty. Make sure you're ok with that before you continue."
+    },
+    {
+      "title": "Installing Windows might negatively affect your Chromebook.",
+      "content": "Installing Windows might negatively affect your Chromebook. While Chrome OS is lightweight, Windows isn't, and installing Windows on a Chromebook may result in: battery drains poor optimization sluggish and laggy apps"
+    },
+    {
+      "title": "Chrome hardware isn't always compatible with Windows.",
+      "content": "Chrome hardware isn't always compatible with Windows. Some Chromebooks are ARM-based, and they will not be able to install Windows. If your Chromebook cannot install Windows, use alternatives like Google's CloudReady or Parallels."
+    },
+    {
+      "title": "Can I switch back to Chrome OS after installing Windows?",
+      "content": "Can I switch back to Chrome OS after installing Windows? You will need to reinstall Chrome OS firmware since your Chromebook will only run Windows after following the steps in the first section."
+    },
+    {
+      "title": "Can I run a Windows program on a Chromebook?",
+      "content": "Can I run a Windows program on a Chromebook? Not natively unless you install Windows 11 or 10 as stated in the first section. Otherwise, you'll need a program like CrossOver or Parallels to bridge the gap between Chrome OS and Windows apps."
+    },
+    {
+      "title": "Is there a free Windows emulator for Chromebook?",
+      "content": "Is there a free Windows emulator for Chromebook? You can install QEMU, which is a free virtual machine manager that you can use to run Windows on Chrome OS."
+    },
+    {
+      "title": "How do I turn on ChromeOS Developer Mode?",
+      "content": "How do I turn on ChromeOS Developer Mode? Turn off the Chromebook, then press Esc + Refresh + Power . Then press Ctrl + D and Enter when prompted to enter Developer Mode. [2] X Research source Note that entering Developer Mode on Chromebooks erases all the data on it."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Ea-App-Not-Working",
+  "title": "How to Fix the EA App Not Working: Troubleshooting Guide",
+  "steps": [
+    {
+      "title": "Update the Client (Windows & Mac).",
+      "content": "Update the Client (Windows & Mac). Outdated software will cause the EA app not to work. Newer Macs especially suffer from outdated software. Your EA client will automatically download updates it detects, but you can also go to https://www.ea.com/ea-app and download the most recent version of the app. In some cases [1] X Research source , users need to update their macOS in order for the EA app to work. For some users [2] X Research source , you can run the updater inside the EA folder on your computer. It might be located in \"C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop as \"EAUpdater.exe.\""
+    },
+    {
+      "title": "Repair the Client (Windows & Mac).",
+      "content": "Repair the Client (Windows & Mac). Your current installation can contain corrupted or damaged data. This corrupted or damaged data will prevent the app from working on your computer. To repair your installed files: Go to https://www.ea.com/ea-app to download the appropriate launcher for your computer (Windows or Mac) and run the installed file. Click Repair . The program will take a minute to repair any corrupted, damaged, or missing files, then launch the EA app. Alternatively, follow these steps that have worked for some people [3] X Research source : Drag the EA icon to the Trash (you're not uninstalling it), and re-download the launcher from EA. In the pop-up that says you already have the launcher installed, click Repair ."
+    },
+    {
+      "title": "Close EA Background.",
+      "content": "Close EA Background. Closing this background process may work. Open Task Manager (Windows) or Activity Monitor (Mac) and find \"EA Background.\" Select it, then click End Task ."
+    },
+    {
+      "title": "Run EADesktop.exe as Administrator (Windows).",
+      "content": "Run EADesktop.exe as Administrator (Windows). Double-clicking the icon in the Start menu or taskbar icon opens the Launcher instead. Since the launcher is experiencing issues, skip it by finding the \"EADesktop.exe\" file. To do that: Right-click the Launcher icon or EA shortcut on your desktop. Select Properties > Open File Location . With the file location open, you will find \"EADesktop.exe\" and can right-click it and select Run as administrator . If you do that, your game in EA will run. However, you'll need to repeat this process every time you want to play an EA game. To change this permanently, right-click the \"EADesktop.exe\" icon and select Properties > Compatibility > Run this program as an administrator . Click Apply and OK to close the \"Properties\" window. Right-click the icon again and click \"Create Shortcut\" to add an icon for this file on your desktop. That way, you can quickly access the EA app."
+    },
+    {
+      "title": "Run EADesktop.exe in Compatibility Mode (Windows).",
+      "content": "Run EADesktop.exe in Compatibility Mode (Windows). Compatibility Mode might help EA run. Once you've completed the previous troubleshooting step, the \"EADesktop.exe\" app icon is on your desktop so you can easily right-click it and select Properties > Compatibility > Run this program in compatibility mode for > Windows 7 ."
+    },
+    {
+      "title": "Delete the EA App Cache.",
+      "content": "Delete the EA App Cache. The cache can get corrupted and prevent the app from running. There are three different ways you can clear the cache: The EA App: Click the three lines in the top left corner of the app, then select Help > App recovery > Clear cache. Do this if you can open the EA app on Windows or Mac. Windows 10/11: Open the EA folder and navigate to the App Recovery directory, then click Clear Cache . [4] X Research source Alternative Windows option: Press Win + R , enter %localappdata% , then click OK . Delete the folders called \"EADesktop\" and \"Electronic Arts\". If you encounter an error, open Task Manager (Press Ctrl + Shift + Esc) and make sure all \"EA\" services are stopped, including \"EA Background Service.\""
+    },
+    {
+      "title": "Check Your Antivirus Software.",
+      "content": "Check Your Antivirus Software. This might be the reason the EA app will not launch. Your antivirus software might delete benign files, thinking they are malicious, or prevent apps on your computer from communicating with the internet. For Windows Defender, which is usually the culprit, open \"Windows Security,\" and click Virus & Threat Protection > Protection History . To open Windows Security, press Win + I to open Settings, then click Privacy & security > Windows Security . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Look for any EA-related files in this history, click it, then click Restore . For other antivirus software, go to the \"Quarantined Files\" section and restore any EA app or Launcher files."
+    },
+    {
+      "title": "Delete GAME_DATA_DIR (Frosty users).",
+      "content": "Delete GAME_DATA_DIR (Frosty users). Frosty Mod Manager modifies this file. You need to delete this file if you're having trouble launching the EA app. To do this: Press Win and search environment variables . Press Enter to search for that term. Open \"Edit the system environment variables\" and click Environment Variables…\" in the Advanced tab. Click the \"GAME_DATA_DIR\" variable and delete it. Click OK to close the window and reboot your computer."
+    },
+    {
+      "title": "Completely Uninstall and Reinstall the App (Windows).",
+      "content": "Completely Uninstall and Reinstall the App (Windows). Uninstalling the app with the uninstaller won't remove all EA's files. So, you want to do this manually to ensure you get rid of everything before reinstalling the app. Open File Explorer, go to your installation of the EA App, then click View and enable \"Hidden Items.\" Open \"ProgramData\" in that folder and search EA in the search bar. Right-click the \"EAapp\" file that has a bunch of numbers after it and click Uninstall . Confirm the uninstall, and the app will be completely uninstalled from your computer. Go to https://www.ea.com/ea-app to install the launcher again."
+    },
+    {
+      "title": "Enable Unicode UTF-8 Language Support (Windows).",
+      "content": "Enable Unicode UTF-8 Language Support (Windows). Your computer may not have this enabled, but it is in the EA app. Since these two are conflicting, the app will not run properly. This fix works for Windows 10 & 11: Press Win + R , enter intl.cpl , and click OK . Click the Administrative tab and click Change system locale . Check the box next to \"Beta: Use Unicode UTF-8 for worldwide language support.\" Click OK on the two boxes to close them, then reboot your computer ."
+    },
+    {
+      "title": "Contact EA Support.",
+      "content": "Contact EA Support. As a last resort, you can seek further help from EA. The launcher not working occasionally is a pretty common issue, but you should still report it and get help . You can also create posts with bug reports to help developers figure out why the app isn't working for you."
+    }
+  ]
+}

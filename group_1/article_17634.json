@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Fix-a-Hyperlink-in-Excel",
+  "title": "How to Fix a Hyperlink in Excel",
+  "steps": [
+    {
+      "title": "Open the workbook with the broken hyperlink(s).",
+      "content": "Open the workbook with the broken hyperlink(s). You can usually open the file in Excel by double-clicking its filename."
+    },
+    {
+      "title": "Right-click the hyperlink and select Edit Hyperlink.",
+      "content": "Right-click the hyperlink and select Edit Hyperlink . This displays all of the details about the hyperlink in a handy dialog box. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Verify the link location.",
+      "content": "Verify the link location. If, when you click a hyperlink, you see an error that says \"Reference isn't valid\" (or any other error indicating that a file can't be opened), it's usually because the file, website, or cell you're linking to was renamed or moved. [2] X Research source Check the following: First, check what type of document you're linking to—if you're linking to a website or another file, Existing File or Web Page should be selected. If you're linking to a website, copy the URL from the \"Address\" bar at the bottom and paste it into a web browser. Can you access the site that way? If not, the broken link is due to an incorrect URL. If so, go to the end of the URL in the address bar in Excel and press the spacebar—this could correct the issue. If you're linking to a particular file, make sure the file is in the correct location. If the file has been moved or renamed, the hyperlink will not work unless you either update the path in the hyperlink or place the file back in its original location. If you're linking to another cell in the same file, Place in This Document should be highlighted in the left panel. Make sure the cell reference is on a sheet that exists. Click OK when you're finished to save your changes."
+    },
+    {
+      "title": "Double-check the syntax if you're using the HYPERLINK function.",
+      "content": "Double-check the syntax if you're using the HYPERLINK function. If you inserted a hyperlink into your workbook using a formula that includes the HYPERLINK function, the syntax may be incorrect. Make sure the syntax of your formula matches the following format: Linking to a sheet in the same workbook: =HYPERLINK(\"#Sheet2!A1\", \"Sheet2\") Clicking the cell containing this formula would take you cell A1 on the sheet called Sheet2. If the worksheet's name includes a non-alphanumerical character or a space, you must surround the worksheet name with single quote marks. [3] X Research source =HYPERLINK(\"#'Worksheet Name'!A1\", \"Worksheet Name\") . If you're linking to a particular cell on the same sheet, the formula should look something like this: =HYPERLINK(\"#A1\", \"Go to cell A1\") . Linking to a different workbook: =HYPERLINK(\"D:\\wikikHow\\Book2.xlsx\", \"Book2\") Clicking this cell would open the file Book2.xlsx located at D:\\wikiHow. To go to a particular sheet in the remote workbook, you'd use =HYPERLINK(\"[D:\\wikiHow\\Book2.xlsx]Sheet2!A1\", \"Book2\") (note the square brackets). If the remote workbook is on a network drive, use =HYPERLINK(\"[\\\\SERVERNAME\\USERNAME\\Book2.xlsx]Sheet2!A1\", \"Book2\") Linking to a website: =HYPERLINK(\" https://www.wikiHow.com \",\"Go to wikiHow.com\")"
+    },
+    {
+      "title": "Open the workbook with the broken hyperlink(s).",
+      "content": "Open the workbook with the broken hyperlink(s). You can usually open the file in Excel by double-clicking its filename. Use this method if you've already checked your hyperlinks for accuracy and the links are still not working. Excel checks your hyperlinks when you save the file—if the hyperlinks are not working at the moment you save (for example, if you save when you're not connected to the internet), it may disable those links."
+    },
+    {
+      "title": "Click the File menu.",
+      "content": "Click the File menu. It's at the top-left corner."
+    },
+    {
+      "title": "Click Options on the menu.",
+      "content": "Click Options on the menu. Your Excel options will appear."
+    },
+    {
+      "title": "Click the Advanced tab.",
+      "content": "Click the Advanced tab. It's in the left panel. [4] X Research source"
+    },
+    {
+      "title": "Scroll down and click the Web Options button.",
+      "content": "Scroll down and click the Web Options button. It's in the \"General\" section."
+    },
+    {
+      "title": "Click the Files tab.",
+      "content": "Click the Files tab. It's the third tab at the top of the window."
+    },
+    {
+      "title": "Remove the checkmark from \"Update links on save.\"",
+      "content": "Remove the checkmark from \"Update links on save.\" It's in the top section."
+    },
+    {
+      "title": "Click OK until you've exited all Options windows.",
+      "content": "Click OK until you've exited all Options windows. Now that you've disabled this option, Excel will no longer check hyperlinks when you save the file."
+    }
+  ]
+}

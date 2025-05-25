@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Reverse-a-String-in-Python",
+  "title": "How to Reverse a String in Python: Slice, For Loops, & Functions",
+  "steps": [
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. Python, the easy-to-learn programming language, has several methods for working with strings. This method uses the slice function to reverse the string. Open your Python file or start a new one. Then use the assignment operator = to assign the string you want to reverse to a variable. For example: a = \"example string\""
+    },
+    {
+      "title": "Type [::-1] after the string.",
+      "content": "Type [:: -1] after the string. This is a slice statement that begins at the end of the string, ends at the beginning of the string (position 0), and steps by 1 backwards through the string (indicated by the negative 1). Following our example: [1] X Research source a = \"example string\"[::-1]"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to a has been reversed by the slice. To see the reversed string, use the print() function: print(a) For our example, “gnirts elpmaxe” would print in the terminal."
+    },
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. This method creates a function that uses a slice to reverse the string. Use the assignment operator = to assign the string you want to reverse to a variable. For example: f = \"example string\""
+    },
+    {
+      "title": "Create the custom string reversing function.",
+      "content": "Create the custom string reversing function. This function will return a reversed string. def backwards(text): return text[::-1]"
+    },
+    {
+      "title": "Use the function.",
+      "content": "Use the function. You can now apply this function to any string that you want to reverse. Following our example: f_reverse = backwards(f)"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to f has been reversed by the new function. To see the reversed string f_reverse , use the print() function: print(f_reverse) For our example, “gnirts elpmaxe” would print in the terminal."
+    },
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. This method creates a loop to reverse the string. Use the assignment operator = to assign the string you want to reverse to a variable. For example: b = \"example string\" You can convert an integer to a string if needed."
+    },
+    {
+      "title": "Create a blank string variable.",
+      "content": "Create a blank string variable. This method will append the characters in the original string backwards to a new blank variable. To create a blank variable, assign a new variable to \"\" . For example: b_reverse = \"\""
+    },
+    {
+      "title": "Make a For loop to reverse the string.",
+      "content": "Make a For loop to reverse the string. This For loop will iterate through the original string, appending each letter to the beginning of the new variable. This will reverse the string. Continuing our example: for i in b: b_reverse = i + b_reverse"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to b has been reversed by the For loop. To see the reversed string b_reverse , use the print() function: print(b_reverse) For our example, “gnirts elpmaxe” would print in the terminal."
+    },
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. There are many functions to learn, especially if you’ve just started programming in Python . This method uses the reversed() function to reverse the string. Use the assignment operator = to assign the string you want to reverse to a variable. For example: c = \"example string\""
+    },
+    {
+      "title": "Use the reversed() function to reverse the string.",
+      "content": "Use the reversed() function to reverse the string. This function reverses the order of an iterable object, like a string. To use the reverse function, create a new variable assigned to the reversed original string: [2] X Research source c_backward = reversed(c)"
+    },
+    {
+      "title": "Create a new blank string variable.",
+      "content": "Create a new blank string variable. This new variable will be used to create the reversed string. The reversed function doesn’t return a string, so a new string variable is needed. c_new = \"\""
+    },
+    {
+      "title": "Make a For loop to create the reversed string.",
+      "content": "Make a For loop to create the reversed string. This loop will append the reversed list of characters to the new string variable c_new . for i in c_backward: c_new = c_new + i"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to c has been reversed by the reversed() function and For loop. To see the reversed string c_new , use the print() function: print(c_new) For our example, “gnirts elpmaxe” would print in the terminal."
+    },
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. This method uses the join() and reverse() to reverse the string. Use the assignment operator = to assign the string you want to reverse to a variable. For example: e = \"example string\""
+    },
+    {
+      "title": "Use join() and reverse() to reverse the string.",
+      "content": "Use join() and reverse() to reverse the string. The reverse() function reverses all of the items in the string and turns it into an iterator type. Then, the join() function combines the items into one string. Following our example, the code is written: e_reverse = \"\".join(reversed(e))"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to {{kbd|e} has been reversed by the reversed() and join() function. To see the reversed string e_reverse , use the print() function: print(e_reverse) For our example, “gnirts elpmaxe” would print in the terminal."
+    },
+    {
+      "title": "Assign the string to a variable.",
+      "content": "Assign the string to a variable. This method uses a list to reverse the string. Use the assignment operator = to assign the string you want to reverse to a variable. For example: d = \"example string\""
+    },
+    {
+      "title": "Create an empty list variable by using square brackets.",
+      "content": "Create an empty list variable by using square brackets. This list will contain the individual characters in the string. letter_list = []"
+    },
+    {
+      "title": "Create an empty string variable by using quotation marks.",
+      "content": "Create an empty string variable by using quotation marks. This string will be where the characters are placed in reverse order. d_reverse = \"\""
+    },
+    {
+      "title": "Write a for loop that adds each character in the string to the list.",
+      "content": "Write a for loop that adds each character in the string to the list. You can use the append() function to do so: for j in d: letter_list.append(j)"
+    },
+    {
+      "title": "Write a for loop that adds each character in the list to the new string variable.",
+      "content": "Write a for loop that adds each character in the list to the new string variable. Use the plus (+) operator to do so. Place the iterator first and the reverse string variable second to add each character to the front of the string. for k in letter_list: d_reverse = k + d_reverse"
+    },
+    {
+      "title": "Print the string.",
+      "content": "Print the string. The string assigned to d has been reversed by the list and For loops. To see the reversed string d_reverse , use the print() function: print(d_reverse) For our example, “gnirts elpmaxe” would print in the terminal."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Create-and-Edit-Text-File-in-Linux-by-Using-Terminal",
+  "title": "How to Create and Edit Text File in Linux by Using Terminal",
+  "steps": [
+    {
+      "title": "Press Control+Alt+T to open a new terminal window.",
+      "content": "Press Control + Alt + T to open a new terminal window. This keyboard shortcut opens a terminal window in nearly all versions of Linux. You can also double-click the Terminal icon in your list of Applications, or by clicking your Dash menu (if you're using GNOME) and searching for terminal . Nano is a very easy-to-use text editor that comes preinstalled on all Ubuntu-based Linux distributions. [1] X Research source If you don't have Nano, you can get it by running sudo apt install nano (Ubuntu and Debian) or sudo yum install nano (CentOS and Fedora). If you've ever used the Pico text editor, you'll find that Nano is essentially identical. And unlike Vi and Vim, you don't have to switch between command and input modes while using it."
+    },
+    {
+      "title": "Navigate to the directory in which you want to create your file.",
+      "content": "Navigate to the directory in which you want to create your file. You'll probably want to place the file somewhere in your home directory, which is where you'll already be upon opening a terminal window. If you want to place the file in an existing subdirectory, you can use the cd command to get there. To view all folders in the current directory (your home directory), type ls and press Enter . To go to a directory inside of your home directory, type cd directoryname and press Enter (replace directoryname' with the directory's name). If you want to create a new directory, run makedir directoryname (replace directoryname with the name you want to give your new directory.) Then, use cd directoryname to enter that directory. You CAN create and edit files outside of your home directory, but you'll need root access to do so."
+    },
+    {
+      "title": "Type nano filename and press ↵ Enter.",
+      "content": "Type nano filename and press ↵ Enter . Replace filename with the name you want to give your new text file. This creates and opens a new text file with that name. For example, if you want to create a file called \"testfile,\" type nano testfile and press Enter . It may be helpful to add \".txt\" to the end of your filename so you know it's a text file. If your current directory has a file by the same name, this command will instead open that file."
+    },
+    {
+      "title": "Find the command list at the bottom of the window.",
+      "content": "Find the command list at the bottom of the window. The commands you can use while typing into your file appear at the bottom of Nano. To see more commands, simply enlarge the window by dragging it from one of its corners. The commands either start with a carat (^) or an M. The carat represents the Control key, while the M represents the Alt key. [2] X Research source For example, ^U is the command to paste. To paste something you've copied, you'd press Control + U . M-U is the command to undo the last action. To undo, you'd press Alt + U . To see all Nano commands, press Control + G ."
+    },
+    {
+      "title": "Type into your file.",
+      "content": "Type into your file. If you need to move the cursor, use the arrow keys. You can use the mouse to highlight text that you want to copy and/or paste. To copy highlighted text, press Alt + 6 . Then, use the arrow keys to move to another location in the file and press Control + U to paste. [3] X Research source"
+    },
+    {
+      "title": "Press Control+O to save the file.",
+      "content": "Press Control + O to save the file. Since you've already given your file a name, you won't be asked to give this file a name. However, if you started a file without giving it a name (by just running nano from the prompt with no file name), you'll be asked to type the name for your new file and press Enter to save. Avoid the temptation to press Control + S to save, as that will just freeze your terminal window!"
+    },
+    {
+      "title": "Press Control+X to exit Nano.",
+      "content": "Press Control + X to exit Nano. This returns you to the command prompt. You can reopen the file you created in Nano by typing nano filename just as you did before."
+    },
+    {
+      "title": "Press Control+Alt+T to open a new terminal window.",
+      "content": "Press Control + Alt + T to open a new terminal window. This will open a new terminal in any version of Linux. You can also double-click the Terminal icon in your list of Applications, or by clicking your Dash menu (if you're using GNOME) and searching for terminal . Vi is one of the oldest and most standardized Unix-based text editors. Vim stands for \"Vi iMproved,\" which means it's like Vi but with more features. On most modern versions of Linux, running vi at the prompt will actually launch Vim instead. The basic commands are the same for both editors. Vi has more of a learning curve than Nano, but once you get the hang of it, it's pretty easy to use."
+    },
+    {
+      "title": "Go to the directory in which you want to create your file.",
+      "content": "Go to the directory in which you want to create your file. You'll probably want to place the file somewhere in your home directory, which is where you'll already be upon opening a terminal window. If you want to place the file in an existing subdirectory, you can use the cd command to get there. To view all folders in the current directory (your home directory), type ls and press Enter . To go to a directory inside of your home directory, type cd directoryname and press Enter (replace directoryname' with the directory's name). If you want to create a new directory, run makedir directoryname (replace directoryname with the name you want to give your new directory. Then, use cd directoryname to enter that directory. You CAN create and edit files outside of your home directory, but you'll need root access to do so."
+    },
+    {
+      "title": "Type vi filename and press ↵ Enter.",
+      "content": "Type vi filename and press ↵ Enter . Alternatively, you can type vim filename to make sure the file opens in Vim instead of Vi. The \"vi\" part of this command selects the Vim text editor as the program to use. Replace filename with the name you wish to assign to your new file. For a file named \"sample.text\", for example, you'd type vi sample.txt . If your current directory has a file by the same name, this command will instead open that file."
+    },
+    {
+      "title": "Press the i key.",
+      "content": "Press the i key. When you open Vi or Vim, it opens in a special mode called Command mode. Pressing the I key will place you into Insert mode, which is where you'll do your typing. You should see -- INSERT -- pop up at the bottom of the window when you press the I key."
+    },
+    {
+      "title": "Type your text.",
+      "content": "Type your text. While you're in Insert mode, you can simply type as you typically would for any other text document. To go to the next line, just press Enter ."
+    },
+    {
+      "title": "Press the Esc key.",
+      "content": "Press the Esc key. This takes you back to Command mode. Command mode is where you'll do things like save, copy, paste, and quit. You'll know you're in command mode when you no longer see \"INSERT\" at the bottom of the window. You can use the arrow keys to move around the document while you're in Command mode in both Vi and Vim. Vim also lets you use the arrow keys to move in Insert mode. Return to Insert mode at any time by pressing the i key."
+    },
+    {
+      "title": "Type :w and press ↵ Enter.",
+      "content": "Type :w and press ↵ Enter . All Vi/Vim commands begin with a colon, and the :w command saves the file (think of \"w\" as \"write\"). If you created a file without a name (or want to save the current edits to a new file), type :w filename instead, replacing filename with the name you want to give this file. To get help and learn more about Vi/Vim commands, type :help in Command mode and press Enter ."
+    },
+    {
+      "title": "Type :q and press ↵ Enter to exit.",
+      "content": "Type :q and press ↵ Enter to exit. This closes your file and brings you back to the command prompt. To reopen the file, just type vi filename or vim filename . You can also save and quit at the same time by typing :wq in Command mode."
+    }
+  ]
+}

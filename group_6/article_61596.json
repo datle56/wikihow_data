@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Use-Grep",
+  "title": "How to Use Grep to Search Text in Linux (Simple Examples)",
+  "steps": [
+    {
+      "title": "Search for a string of text.",
+      "content": "Search for a string of text. To find a word or pattern in a file , use the basic grep syntax: grep \"string of text\" filename This command returns the full text of each line containing the text string you entered. If you only want to see the matching words or strings, add the -o option. The quotation marks are optional if you're only searching for a series of connected characters, but mandatory if you're searching for a string that contains spaces."
+    },
+    {
+      "title": "Search for text regardless of case.",
+      "content": "Search for text regardless of case. By default, grep is case sensitive, meaning that grep \"wikiHow\" file.txt and grep \"wikihow\" file.txt will yield different results. To ignore case and return results having any variation of capital and lowercase letters, add the -i option: grep -i \"string of text\" filename You can combine -i with all other grep commands. [1] X Research source"
+    },
+    {
+      "title": "Search for a text string and display line numbers.",
+      "content": "Search for a text string and display line numbers. For longer files, it can be helpful to see the line number of each instance of a string. Using the -n option displays both the line number and the full contents of each line that contains the string: grep -n \"string of text\" filename"
+    },
+    {
+      "title": "Search for a specific word.",
+      "content": "Search for a specific word. When you search for a string of text, such as a partial word (e.g., grep -i \"ikih\" filename.txt ), you'll see matches from all instances of \"ikih\" together—even if they occur in a longer word (e.g., \"w ikiH ow\"). If you only want to see a result if it's a word on its own—not within a longer word—use the -w option. grep -w \"ikih\" filename.txt This search will not return the word \"wikiHow\" if it exists in your file. It will only return the word \"ikih.\""
+    },
+    {
+      "title": "Display how many times a string appears in a file.",
+      "content": "Display how many times a string appears in a file. If you want to know how many times certain text appears in a file, use the -c option. grep -c \"string of text\" filename Instead of displaying the text you're searching, you'll see a number, e.g., 5 . This can be helpful when looking for specific IP addresses in firewall logs . For example, to see how many times the IP address 8.8.8.8 appears in your UFW log, you could use grep -cE \"8.8.8.8\" /var/log/ufw.log . We must include the -E option when grepping for an IP address due to the periods in the address. Typically, grep interprets a period as a wildcard for a single character. Adding the -E option tells grep that the string is a regular expression. [2] X Research source"
+    },
+    {
+      "title": "Display all lines that do not contain the pattern.",
+      "content": "Display all lines that do not contain the pattern. Using the -v option with grep is like a reverse search. Instead of displaying all instances of a string of text in a file, you'll see a list of all lines that don't contain that string. grep -v \"string of text\" filename"
+    },
+    {
+      "title": "Search for more than one word or pattern.",
+      "content": "Search for more than one word or pattern. To find lines that contain two specific words or patterns, you can use the pipe symbol to perform a second grep command. For example, let's say you want to find all lines that contain the words \"wikiHow\" and \"Google:\" grep -i \"wikiHow\" filename.txt | grep -i \"Google\" Note that we use single quote marks around our search terms. For example, let's say we want to see all connections from IP address 8.8.8.8 in our firewall log from Nov 11 but no other dates: grep -E \"8.8.8.8\" /var/log/ufw.log | grep \"Nov 11\" Another way to do this is by using regular expressions and the -E option. This command will accomplish the same result as the previous command: grep -E \"wikiHow.*Google|Google.*wikiHow\" filename.txt Alternatively, you can search for lines that contain either one word or the other: grep -E 'wikiHow|Google' filename.txt ."
+    },
+    {
+      "title": "Search for lines that start or end with a string.",
+      "content": "Search for lines that start or end with a string. If the string you're searching for needs to be at the beginning or end of a line, use grep this way: Search for text at the beginning of a line: grep \"^string of text\" filename.txt With this command, you will only see lines that begin with the text you entered. Search for text at the end of a line: grep \"string of text$\" filename.txt Only lines ending with \"string of text\" will appear."
+    },
+    {
+      "title": "Search for a string in all files in a directory.",
+      "content": "Search for a string in all files in a directory. To find matching text in any file within a directory (and its subdirectories), use the -R option to search recursively: grep -R \"string of text\" /home/myusername Note that -R is different from -r . If you use a lowercase -r instead, your recursive search will not follow symbolic links. Remember, you'll need to use -i to do a case-sensitive search with grep, e.g., grep -iR \"string of text\" * will search the current directory (and all subdirectories) for all instances of \"string of text\" regardless of case."
+    },
+    {
+      "title": "Search for a string in all files containing specific characters.",
+      "content": "Search for a string in all files containing specific characters. Let's say you want to find all instances of the word \"wikiHow\" in your Python files , but not in other files in a directory. In this case, instead of entering a filename, you can use a wildcard: grep wikiHow *.py This search will display all instances of the word \"wikiHow\" in any file in the current directory that ends with *.py ."
+    },
+    {
+      "title": "Display filenames that contain a string.",
+      "content": "Display filenames that contain a string. If you want to know the name of each file containing a certain word or series of characters, use the -l option. grep -l \"string of text\" /home/myusername This command does not display the text—only the names of files that contain the text."
+    }
+  ]
+}

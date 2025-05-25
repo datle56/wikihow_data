@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Turn-on-Secure-Boot",
+  "title": "How to Enable (or Disable) Secure Boot in Windows 10 and 11",
+  "steps": [
+    {
+      "title": "Check if Secure Boot is enabled before beginning.",
+      "content": "Check if Secure Boot is enabled before beginning. If Secure Boot is already enabled but you didn't know it, this can save you a little time. The steps are quick and easy: Type sysinfo in the taskbar search bar. Locate the line that says \"Secure Boot State.\" It will say On (which means Secure Boot is enabled) or Off (which means Secure Boot is disabled)."
+    },
+    {
+      "title": "Open Windows settings.",
+      "content": "Open Windows settings. To do this, click the Windows (Start) button in the lower-left corner of the screen, then click the cogwheel icon. Alternatively, you can restart your PC and press the BIOS/UEFI access key (which is usually Del or F2 ) when the motherboard logo flashes on your screen to access BIOS/UEFI. However the timing is hard to get right, so the steps below will guarantee that you can get into the BIOS/UEFI."
+    },
+    {
+      "title": "Click Update & Security.",
+      "content": "Click Update & Security . This option will be towards the end of the list of options. It has an icon of two arrows going in a circle. On Windows 11, this option is called System instead."
+    },
+    {
+      "title": "Select Recovery in the left-hand sidebar.",
+      "content": "Select Recovery in the left-hand sidebar. It's near the middle of the menu options, and has an icon of a thin rectangle with a circular arrow above it."
+    },
+    {
+      "title": "Click Restart now under \"Advanced startup.\"",
+      "content": "Click Restart now under \"Advanced startup.\" This will immediately restart your PC, so make sure to save any open files before restarting to avoid losing any data or changes to them."
+    },
+    {
+      "title": "Select Troubleshoot > Advanced options.",
+      "content": "Select Troubleshoot > Advanced options . Once your PC restarts, you will be presented with a blue screen and several options to choose from."
+    },
+    {
+      "title": "Click UEFI Firmware settings.",
+      "content": "Click UEFI Firmware settings . If your computer immediately restarts and enters BIOS, you can move to the next step. If not, click Restart and select BIOS setup , which will restart your computer into BIOS. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you have a Restart button but not a BIOS setup button, follow these instructions: Navigate to Settings > Advanced > Windows OS Configuration . Depending on your computer, these menu items may have different names, but they should be similar. Select Secure Boot and enable the Secure Boot setting, then restart your computer."
+    },
+    {
+      "title": "Find the Secure Boot setting and enable it.",
+      "content": "Find the Secure Boot setting and enable it. The Secure Boot setting is usually found in the Security or Boot / Boot options tab, but each motherboard's BIOS is laid out slightly differently. If you aren't sure where to find the Secure Boot setting, check your computer's manual or the manufacturer's website. To navigate the BIOS, use the arrow keys."
+    },
+    {
+      "title": "Press F10 to save your settings.",
+      "content": "Press F10 to save your settings. If you are enabling Secure Boot to update to Windows 11, do not exit BIOS just yet, as you will also need to enable TPM 2.0. If you do not need to enable TPM 2.0, you can exit the BIOS and restart your computer. Open the Security tab. You'll need to use the arrow keys to navigate the BIOS. Look for the TPM setting. This option may say \"TPM,\" \"Intel Platform Trust Technology (IPTT),\" \"AMD CPU fTPM\", or \"Trusted Platform Module (TPM).\" Enable TPM 2.0. Press the Enter button to toggle on TPM 2.0. Press F10 to save your settings. You can now exit BIOS and restart your computer. [2] X Research source"
+    },
+    {
+      "title": "Enter BIOS/UEFI.",
+      "content": "Enter BIOS/UEFI. Follow the instructions above to access the BIOS/UEFI of your computer."
+    },
+    {
+      "title": "Find the Secure Boot setting and disable it.",
+      "content": "Find the Secure Boot setting and disable it. The Secure Boot setting is usually found in the Security or Boot / Boot options tab, but each motherboard's BIOS is laid out slightly differently. If you aren't sure where to find the Secure Boot setting, check your computer's manual or the manufacturer's website. To navigate the BIOS, use the arrow keys."
+    },
+    {
+      "title": "Press F10 to save your settings.",
+      "content": "Press F10 to save your settings. Once you've saved your BIOS settings, you can exit the BIOS and allow your computer to restart."
+    }
+  ]
+}

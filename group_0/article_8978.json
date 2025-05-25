@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Compile-a-C-Program-Using-the-GNU-Compiler-(GCC)",
+  "title": "How to Use GCC to Compile a C Program on Linux and Windows",
+  "steps": [
+    {
+      "title": "Install your distribution's build tools.",
+      "content": "Install your distribution's build tools. Most versions of Linux don't come with GCC already installed. Fortunately, it's easy to install GCC and other required tools (including make , G++, and general development libraries) for compiling software on any version of Linux: Ubuntu, Debian, & Linux Mint: In a terminal window , type sudo apt update and press Enter . Type sudo apt install build-essential and press Enter . [1] X Research source Type gcc --version and press Enter to verify your installation. CentOS, Fedora, and Red Hat: In a terminal window, type sudo dnf group install \"Development Tools\" and press Enter . [2] X Research source Type gcc --version and press Enter to verify your installation."
+    },
+    {
+      "title": "Go to the directory that contains your source code.",
+      "content": "Go to the directory that contains your source code. Use the cd command to change to the directory in which you've saved the source code you want to compile. For example, if your source code is in a folder called Documents that's inside your home directory, use cd ~/Documents ."
+    },
+    {
+      "title": "Type gcc -o [executable_name] [source_file].c and press ↵ Enter.",
+      "content": "Type gcc -o [executable_name] [source_file].c and press ↵ Enter . Replace “[source_file].c” with the name of your source code file, and “[executable_name]” with the name you'd like to give your compiled program. If you need to compile a program from multiple source files, use the syntax gcc -o [executable_name] sourcefile1.c sourcefile2.c sourcefile3.c . If you see errors and want to see more information about them, use gcc -Wall -o errorlog file1.c . [3] X Research source Then, view the “errorlog” file in the current directory with cat errorlog . To compile multiple programs at once with multiple source code files, use gcc -c file1.c file2.c file3.c ."
+    },
+    {
+      "title": "Run your newly-compiled program.",
+      "content": "Run your newly-compiled program. Type ./[executable_name] but replace “[executable_name]” with the name of your program."
+    },
+    {
+      "title": "Open a bash shell in Windows Subsystem for Linux.",
+      "content": "Open a bash shell in Windows Subsystem for Linux. If you're using Windows 10 or Windows 11 with Windows Subsystem for Linux installed, you can easily compile software with the GCC compiler. However, you'll need to install GCC first, as it isn't installed automatically. If you haven't already enabled Windows Subsystem for Linux (WSL), you can install it with a single command from the command prompt or PowerShell. Start Command Prompt or PowerShell as an administrator , and then run this command to install Ubuntu: wsl --install . [4] X Research source If you see the WSL help text when running the command, you may have already enabled WSL. Instead, run the command wsl --list –online to see a list of Linux distributions, then use wsl --install -d <DistroName> (e.g., Ubuntu) to install Ubuntu . Once installed, you can open an Ubuntu bash shell by typing ubuntu into the Windows Search bar and clicking Ubuntu in the search results. [5] X Research source"
+    },
+    {
+      "title": "Install the build tools for Ubuntu.",
+      "content": "Install the build tools for Ubuntu. These tools include the GCC compiler, as well as all of the libraries you'll need to compile and debug C and C++ code. Type sudo apt update and press Enter . Type sudo apt-get install build-essential gdb and press Enter . [6] X Research source"
+    },
+    {
+      "title": "Go to the directory that contains your source code.",
+      "content": "Go to the directory that contains your source code. Use the cd commanad to change to the directory in which you've saved the source code you want to compile."
+    },
+    {
+      "title": "Type gcc -o [executable_name] [source_file].c and press ↵ Enter.",
+      "content": "Type gcc -o [executable_name] [source_file].c and press ↵ Enter . Replace “[source_file].c” with the name of your source code file, and “[executable_name]” with the name you'd like to give your compiled program. If you need to compile a program from multiple source files, use the syntax gcc -o [executable_name] sourcefile1.c sourcefile2.c sourcefile3.c . If you see errors and want to see more information about them, use gcc -Wall -o errorlog file1.c . [7] X Research source Then, view the “errorlog” file in the current directory with cat errorlog . To compile multiple programs at once with multiple source code files, use gcc -c file1.c file2.c file3.c ."
+    },
+    {
+      "title": "Run your newly-compiled program.",
+      "content": "Run your newly-compiled program. Type ./[executable_name] but replace “[executable_name]” with the name of your program."
+    },
+    {
+      "title": "Download Minimalist GNU for Windows (MinGW).",
+      "content": "Download Minimalist GNU for Windows (MinGW). This is an easy-to-install version of GCC for Windows. You can download the installer from https://osdn.net/projects/mingw . [8] X Research source To get the latest version of the installer, click the mingw-get-setup.exe link. If the download doesn't begin automatically, click Save or Download when prompted. MinGW can only compile 32-bit versions of software. However, all 32-bit software compiled with MinGW will execute properly on a 64-bit system . [9] X Research source If you need to compile 64-bit software, try MinGW-w64, a port of MinGW. You can download it from https://www.mingw-w64.org/ . [10] X Research source Alternatively, you can use Windows Subsystem for Linux ."
+    },
+    {
+      "title": "Install MinGW.",
+      "content": "Install MinGW. Once you've downloaded the installer, double-click it to install MinGW. MinGW recommends using the default installation folder ( C:\\MinGW ). If you must change the folder, don’t use a folder with spaces in the name (e.g. “Program Files”)."
+    },
+    {
+      "title": "Select Basic Setup to view the basic C compiling tools.",
+      "content": "Select Basic Setup to view the basic C compiling tools. If you want more options, you can select All Packages to see all available libraries and build tools."
+    },
+    {
+      "title": "Right-click each package and click Mark for Installation.",
+      "content": "Right-click each package and click Mark for Installation . The Basic Setup has about 7 packages listed in the box at the top. Right-click each one of them (or just the ones you want) and click Mark for Installation . [11] X Research source This adds an icon with an arrow next to each one and marks it for installation. At the very least, you will want to install MinGW32-base and MinGW32-gcc-g++ . If you need to compile code written in objective C, you should also mark MinGW32-gcc-objc for installation."
+    },
+    {
+      "title": "Install the selected packages.",
+      "content": "Install the selected packages. It may take your computer several minutes to install all packages. Use the following steps to install the packages that are marked for installation. Click the Installation menu in the upper-left corner. Click Apply Changes . Click Apply . Click Close once the installation is done."
+    },
+    {
+      "title": "Add the path to MinGW to system environment variables.",
+      "content": "Add the path to MinGW to system environment variables. Use the following steps to add the path to MinGW to system environment variables: [12] X Research source Type environment in the search bar next to the Start menu. Click Edit the system environment variables in the search results. Click Environment Variables… Select the Path variable in the \"System variables\" section. Click Edit beneath the top box (under “User Variables”) Click New . Type C:\\MinGW\\bin in the new space. Note that if you installed MinGW to a different directory, enter C:\\path-to-that-directory\\bin . Click OK , and then OK again. Click the one remaining OK button to close the window."
+    },
+    {
+      "title": "Open the command prompt as an administrator.",
+      "content": "Open the command prompt as an administrator. You must be signed in to a Windows account with administrative privileges to open the Command Prompt as an administrator. Use the following steps to open the Command Prompt as an administrator: Type cmd in the search bar next to the Start menu. Right-click Command Prompt in the search results, then select Run as Administrator . Click Yes to allow changes."
+    },
+    {
+      "title": "Go to the folder where your source code is saved.",
+      "content": "Go to the folder where your source code is saved. For example, if your source code file called helloworld.c is located in C:\\Source\\Programs, type cd C:\\Source\\Programs and press Enter ."
+    },
+    {
+      "title": "Type gcc c –o [program_name].exe [program_name].c and press ↵ Enter.",
+      "content": "Type gcc c –o [program_name].exe [program_name].c and press ↵ Enter . Replace “[program_name]” with the name of your source code and application. Once the program is compiled, you’ll return to the command prompt without errors. Any coding errors that appear must be corrected before the program will compile."
+    },
+    {
+      "title": "Type the name of your program to run it.",
+      "content": "Type the name of your program to run it. If it’s called hello_world.exe, type that in the command prompt and press Enter to start your program. If you receive an \"Access is denied\" or \"Permission denied\" error message when compiling a program or running the output executable file, check the folder permissions and make sure you have full read/write access to the folder that contains the source code. If that doesn't work, try temporarily disabling your virus software . [13] X Research source"
+    }
+  ]
+}

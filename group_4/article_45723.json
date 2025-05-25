@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Update-Microsoft-Edge",
+  "title": "How to Update Microsoft Edge & Manage Update Settings",
+  "steps": [
+    {
+      "title": "Click the three-dot menu in Microsoft Edge ••• .",
+      "content": "Click the three-dot menu in Microsoft Edge ••• . You'll see it at the top-right corner of Edge on your Windows PC or Mac. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In most cases, you won't need to update Edge manually—Edge updates automatically each time you restart the browser. However, there are three situations in which you might need to update manually: You're using a metered connection , such as a cellular hotspot. You're using a cellular-capable computer purchased in China. It's been a long time since you've restarted your web browser."
+    },
+    {
+      "title": "Select Help & feedback.",
+      "content": "Select Help & feedback . It's all the way at the bottom of the menu. Another menu will expand."
+    },
+    {
+      "title": "Click About Microsoft Edge.",
+      "content": "Click About Microsoft Edge . This opens the About screen, which prompts Edge to check for updates automatically. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If no updates are available, you'll see a blue checkmark and \"Microsoft edge is up to date.\""
+    },
+    {
+      "title": "Click Download and install if an update is available.",
+      "content": "Click Download and install if an update is available. This downloads the latest Microsoft Edge update to your computer and starts the update process. Updating Edge on a metered connection may incur charges."
+    },
+    {
+      "title": "Click Restart when prompted to complete the update.",
+      "content": "Click Restart when prompted to complete the update. Once the update is installed, clicking Restart will launch the latest version of the Edge browser."
+    },
+    {
+      "title": "Because Edge updates automatically, most users won't have any update settings to change.",
+      "content": "Because Edge updates automatically, most users won't have any update settings to change. To see which update settings you can change on Edge: Click the three-dot menu at the top-right corner of Edge. Select Help & feedback . Click About Microsoft Edge . Depending on your device and where you purchased it, you may see one or both of the following options: Download and install updates automatically Download updates over metered connections If either option is available, you can use the toggle switches next to each of these options to enable or disable each feature."
+    },
+    {
+      "title": "There is no way to disable automatic updates in your Edge settings.",
+      "content": "There is no way to disable automatic updates in your Edge settings. However, there are some workarounds you can use if you don't want Edge to update automatically. However, this is not recommended, as updates often have important security fixes. Disabling Edge updates can leave your computer exposed and susceptible to viruses and other malware ."
+    },
+    {
+      "title": "Block Edge updates on Windows.",
+      "content": "Block Edge updates on Windows. On Windows, you can block Edge updates by adding the Edge update addresses to your Windows host file, just like blocking a website . This is a good temporary fix—just remember to remove these addresses when you're ready to update Edge again. Press the Windows key on your keyboard and type notepad . Right-click Notepad and select Run as administrator . Press Ctrl + O and go to C:\\Windows\\System32\\drivers\\etc. Select All Files from the drop-down menu at the bottom-right so all files are visible. Select the file called hosts and click OK . On the last line of the file, add these two lines: 127.0.0.1 127.0.0.1 *.dl.delivery.mp.microsoft.com Save the file and exit Notepad. Updates are now blocked until you remove those lines."
+    },
+    {
+      "title": "Block Edge updates on a Mac.",
+      "content": "Block Edge updates on a Mac. Preventing automatic Edge updates on a Mac is a little easier than on Windows, but be warned—disabling automatic updates will cause Microsoft AutoUpdate to send you frequent pop-up warnings that automatic updates are disabled. Disabling this feature will also disable automatic updates for Microsoft Office . To turn off automatic Edge updates on your Mac: [3] X Research source Open Finder and navigate to /Library/Application Support/Microsoft. Double-click the folder MAU2.0 . Double-click Microsoft AutoUpdate . Remove the checkmark from \"Automatically keep Microsoft Apps up to date.\" Click Turn Off when prompted."
+    },
+    {
+      "title": "If you see error codes 0x800421f7 and 0x80080005 on Windows, wait a few moments and try again.",
+      "content": "If you see error codes 0x800421f7 and 0x80080005 on Windows, wait a few moments and try again. These error codes indicate that the update server is busy or inaccessible. After a few moments, you should be able to update Edge."
+    },
+    {
+      "title": "Disconnect from your VPN to fix a 403 error.",
+      "content": "Disconnect from your VPN to fix a 403 error. If you see a 403 error on the About Microsoft Edge page, your VPN may be preventing Edge from updating or installing. If you see this message, disconnect from your VPN temporarily to update your browser, then reconnect when you're finished."
+    },
+    {
+      "title": "Check for Office Updates to solve \"Microsoft AutoUpdate is busy\" or \"Sorry, Microsoft Edge update check failed\" errors on a Mac.",
+      "content": "Check for Office Updates to solve \"Microsoft AutoUpdate is busy\" or \"Sorry, Microsoft Edge update check failed\" errors on a Mac. These errors typically indicate that your Mac is waiting to install a Microsoft Office update. Click Open Microsoft AutoUpdate on the About Microsoft Edge window. Check the box next to \"Automatically keep Microsoft Apps up to date.\" If any problems are detected, follow the on-screen instructions to fix them. If any Office updates are pending, choose the option to install them now. If no updates are available for Office or you're still seeing errors, try updating Office manually , and then update Edge again."
+    },
+    {
+      "title": "Update Microsoft AutoUpdate to fix \"Microsoft Edge has not updated to the latest build\" or \"App failed to register for Microsoft AutoUpdate\" on a Mac.",
+      "content": "Update Microsoft AutoUpdate to fix \"Microsoft Edge has not updated to the latest build\" or \"App failed to register for Microsoft AutoUpdate\" on a Mac. These errors mean you have an older version of AutoUpdate on your Mac. Go to https://learn.microsoft.com/en-us/officeupdates/release-history-microsoft-autoupdate and click the latest Download link. Double-click the downloaded .pkg file and follow the on-screen instructions to install. [4] X Research source"
+    },
+    {
+      "title": "Check your Windows Firewall if you see other error codes.",
+      "content": "Check your Windows Firewall if you see other error codes. Some error messages, including \"Unable to connect to the Internet\" and the codes 0x80072ee2, 0x80072ee7, 0x80072efd, 80072efe, and 0x80072f8f, indicate that Edge might not be permitted through your PC's firewall. Press the Windows key on your keyboard, type security , and click Windows Security . Click Firewall & network protection and select Allow an app through firewall . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click Change settings and choose Allow another app . Click Browse and select the location of the latest MicrosoftEdgeUpdate.exe file: If you have a 64-bit version of Windows 10 or 11, add the location C:\\ProgramFiles(x86)\\Microsoft\\EdgeUpdate\\<version>\\MicrosoftEdgeUpdate.exe, replacing <version> with the version number that's the highest number in the Edge Update folder. On a 32-bit version of Windows, use the path C:\\ProgramFiles(x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe instead. To find the version, right-click the Start menu and select File Explorer . Navigate to C:\\ProgramFiles(x86)\\Microsoft\\EdgeUpdate. The version folder number will look something like 1.3.171.39. If Windows on a different drive letter, replace C:\\ with the proper letter. Click Open and then Add . Click OK and update Edge again."
+    },
+    {
+      "title": "Make sure the BITS service is enabled on Windows.",
+      "content": "Make sure the BITS service is enabled on Windows. If the previous step for fixing other Windows error codes didn't solve your problem, the BITS service may be disabled. Follow these steps to enable it: Open Control Panel and select System and Security > Administrative Tools . Click Services and select Background Intelligent Transfer Service . Under \"Startup type,\" select Automatic (Delayed Start) . Click OK and update Edge."
+    },
+    {
+      "title": "Ask your network administrator to allow the update servers through the firewall.",
+      "content": "Ask your network administrator to allow the update servers through the firewall. If you're trying to update Edge at work or school, your organization may be blocking the hostname that Edge uses for updates. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source To make sure you can update Edge without issue, ask your network administrator to allow the following addresses through the organization's firewall: *.dl.delivery.mp.microsoft.com"
+    },
+    {
+      "title": "Reinstall Microsoft Edge if you're unable to update.",
+      "content": "Reinstall Microsoft Edge if you're unable to update. If you still can't update Edge, reinstalling should solve the problem. If you're using Windows 10 or 11, don't uninstall Edge before reinstalling. Just go to https://www.microsoft.com/edge to download the installer, then double-click to run it. On a Mac, uninstall Edge first. Close Edge, and open your Applications folder. Select Microsoft Edge by clicking it once, then click File > Move to Trash . Once uninstalled, use Safari to download Edge from https://www.microsoft.com/edge , then double-click the installer to install the latest version."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Delete-DLL-Files",
+  "title": "How to Delete DLL Files",
+  "steps": [
+    {
+      "title": "Boot your Windows PC into Safe Mode.",
+      "content": "Boot your Windows PC into Safe Mode. This ensures that if you have an unwanted app, such as spyware, that relies on the DLL to work, it won't prevent you from deleting the file. To boot your computer up into Safe Mode: Click the Windows menu and select Settings . Click Update & Security . Click Recovery . Click Restart now' under \"Advanced startup.\" When your PC reboots, click Troubleshoot . Click Advanced options . Click Startup Settings and select Restart . When you see the list of startup options, press 4 or F4 as indicated to boot into Safe Mode. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the Windows File Explorer.",
+      "content": "Open the Windows File Explorer. You can do this by pressing the Windows key + E simultaneously, or by clicking the File Explorer in the Start menu. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the View tab.",
+      "content": "Click the View tab. It's at the top of the File Explorer. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Options icon.",
+      "content": "Click the Options icon. It's near the top-right corner of the window. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the View tab.",
+      "content": "Click the View tab. It's at the top of the Folder Options window."
+    },
+    {
+      "title": "Select \"Show hidden files, folders, and drives.\"",
+      "content": "Select \"Show hidden files, folders, and drives.\" It's the second option under the \"Hidden files and folders\" header. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Remove the checkmarks from \"Hide extensions for known file types\" and \"Hide protected operating system file.\"",
+      "content": "Remove the checkmarks from \"Hide extensions for known file types\" and \"Hide protected operating system file.\" Both options are a bit below the selection you made in the previous step."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . You can now work with hidden DLL files on your PC."
+    },
+    {
+      "title": "Navigate to the DLL you want to delete.",
+      "content": "Navigate to the DLL you want to delete. You can use the Windows Explorer to do so. For example, if you want to delete a DLL that a virus left on your flash drive, select your flash drive in the left panel. If you're not sure where the file is located, click This PC in the left panel, and then type the file name (or part of the file name) into the \"Search This PC\" field at the top-right corner of the window. Click the purple arrow to display the search results—when you find the file, right-click its name, and then select Open file location from the menu."
+    },
+    {
+      "title": "Right-click the address bar and click Copy address as text.",
+      "content": "Right-click the address bar and click Copy address as text . This is the bar at the top of the window that contains the full path to the folder that's currently open. This will save the path to your clipboard."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. Here's how: Type cmd into the search bar next to the Windows start button (you may have to click a magnifying glass first to see it). In the search results, right-click Command prompt and select Run as administrator . Click Yes ."
+    },
+    {
+      "title": "Move to the directory that contains your DLL file.",
+      "content": "Move to the directory that contains your DLL file. Here's how: Type cd and then press the space bar. Don't press Enter just yet. After the space, right-click the command prompt and select Paste . Depending on your settings, simply right-clicking may automatically paste the copied path, but some may still need to click Paste to see it. Press Enter to run the command. You can use the dir command at the prompt to view a list of all files in the folder. To see just the DLL files, use dir *.dll instead."
+    },
+    {
+      "title": "Unregister the DLL file.",
+      "content": "Unregister the DLL file. At the prompt, type regsvr32 /u filename.dll . Replace filename.dll with the name of the file you want to delete, and then press the Enter key to run the command. This makes it possible to delete the DLL. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Delete the file.",
+      "content": "Delete the file. You'll use the Command Prompt to do so: Type del /f filename.dll , replacing \"filename.dll\" with the name of the file. The /f flag tells Windows to delete the file even if it's read-only. [7] X Research source Press Y to confirm if prompted. Once the file is removed, undo the changes you made in the File Explorer options and reboot your computer as normal."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Set-up-a-Network-in-Ubuntu",
+  "title": "How to Set up a Network in Ubuntu",
+  "steps": [
+    {
+      "title": "Open Network Connections to set up network settings in Ubuntu.",
+      "content": "Open Network Connections to set up network settings in Ubuntu. Go to “System”, “Preferences” and chose “Network Connections.\""
+    },
+    {
+      "title": "Under the “Wired” tab, click on “Auto eth0” and select “Edit.\"",
+      "content": "Under the “Wired” tab, click on “Auto eth0” and select “Edit.\""
+    },
+    {
+      "title": "Click on “IPV4 Settings” tab.",
+      "content": "Click on “IPV4 Settings” tab. Chose the “Automatic (DHCP)” option if your network has a DHCP server. The DHCP Server has automatically assigned the IP address to your system. Click \"Apply.\" You also chose the “Manual” option from the Method drop-down list and assign the IP address, netmask and gateway manually. You'll also have to assign the DNS Server address. Click \"Apply.\""
+    },
+    {
+      "title": "Check the IP address settings.",
+      "content": "Check the IP address settings. Go to “Applications” “Accessories” and chose “Terminal.\""
+    },
+    {
+      "title": "Type the following command into terminal:",
+      "content": "Type the following command into terminal: “sudo ifconfig” without quotes."
+    },
+    {
+      "title": "Get your new addresses.",
+      "content": "Get your new addresses. The Ifconfig command will show the inet address, broadcast address and mask address."
+    }
+  ]
+}

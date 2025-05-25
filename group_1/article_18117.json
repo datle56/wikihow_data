@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Format-Sd-Card-to-Fat32",
+  "title": "How to Format a Memory Card of Any Size to FAT32 on Windows & Mac",
+  "steps": [
+    {
+      "title": "Open File Explorer.",
+      "content": "Open File Explorer. If your SD card has 32GB or less of storage, you can format it to FAT32 using File Explorer in Windows. If you have a SD card with more than 32GB of storage, jump down to our section on using third-party tools . Before you begin, ensure your SD card is inserted into your computer's SD card reader. If your computer doesn't have an SD card reader, you can purchase a portable SD card reader that connects via USB."
+    },
+    {
+      "title": "Right-click on your SD card under This PC.",
+      "content": "Right-click on your SD card under This PC . You can either do this directly from the sidebar, or you can click This PC and right-click your SD card from the main pane of the File Explorer window."
+    },
+    {
+      "title": "Click on Format.",
+      "content": "Click on Format . This will open a pop-up window where you can continue with the formatting process."
+    },
+    {
+      "title": "Choose \"FAT32\" from the file system dropdown.",
+      "content": "Choose \"FAT32\" from the file system dropdown. If you don't see this option, skip to the next section to use third-party tools to format your SD card instead."
+    },
+    {
+      "title": "Click Start, then OK.",
+      "content": "Click Start , then OK . As soon as you click OK , your computer will begin formatting the SD card. It may take a few moments for the formatting to complete."
+    },
+    {
+      "title": "Download the HP USB Disk Storage Format Tool.",
+      "content": "Download the HP USB Disk Storage Format Tool . Due to limitations of the operating system, Windows can't format SD cards with more than 32GB of storage to FAT32. In order to do this on a Windows computer, you'll need a third-party tool, such as the HP USB Disk Storage Format Tool. To do this: Click Free download . Select the download source that's closest to your region. Save the file somewhere you can find it easily. Right-click HPUSBDisk.exe and select Run as administrator ."
+    },
+    {
+      "title": "Choose your SD card from the dropdown at the top of the window.",
+      "content": "Choose your SD card from the dropdown at the top of the window. Make sure your SD card is inserted before you begin. If you have multiple storage devices inserted into your computer, ensure you're selecting the correct one before continuing."
+    },
+    {
+      "title": "Choose FAT32 in the file system dropdown.",
+      "content": "Choose FAT32 in the file system dropdown. Ensure that the Quick format option is also checked."
+    },
+    {
+      "title": "Click Start.",
+      "content": "Click Start . As soon as you click Start , your computer will begin formatting the SD card. It may take a few moments for the formatting to complete."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. To do this, type \"cmd\" into the taskbar search bar, right-click \"Command Prompt,\" and click Run as administrator . This method works whether your SD card has more or less than 32GB of storage. However, if your SD card has more than 32GB, this method will create a 32GB partition that will be formatted to FAT32. The rest of the storage space on the SD card won't be changed."
+    },
+    {
+      "title": "Type diskpart.",
+      "content": "Type diskpart . Press Enter to run the command. [1] X Research source"
+    },
+    {
+      "title": "Type list disk.",
+      "content": "Type list disk . Press Enter to run the command."
+    },
+    {
+      "title": "Type select disk #.",
+      "content": "Type select disk # . Replace the # with the disk number from the disk list in step 3."
+    },
+    {
+      "title": "Type clean.",
+      "content": "Type clean . Press Enter to run the command."
+    },
+    {
+      "title": "Type create partition primary size=32768.",
+      "content": "Type create partition primary size=32768 . This will create a 32GB partition on your SD card. Press Enter to run the command."
+    },
+    {
+      "title": "Type assign letter=[letter].",
+      "content": "Type assign letter=[letter] . Replace [letter] with the drive letter you want to give the partition. Press Enter to run the command."
+    },
+    {
+      "title": "Type list partition.",
+      "content": "Type list partition . Press Enter to run the command."
+    },
+    {
+      "title": "Type select partition #.",
+      "content": "Type select partition # . Replace the # with the partition number from the partition list in step 8. Press Enter to run the command."
+    },
+    {
+      "title": "Type format fs=fat32 quick.",
+      "content": "Type format fs=fat32 quick . Press Enter to run the command. The 32GB partition on the SD card will be immediately formatted into FAT32."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. The fastest way to do this is to open Spotlight (either by clicking on the icon in the dock, or by pressing Cmd+Space ) and type \"disk utility.\" Before beginning, ensure your SD card is inserted into your Mac."
+    },
+    {
+      "title": "Click on your SD card.",
+      "content": "Click on your SD card. It will be under the \"External\" heading in the left hand sidebar."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . This button is located in the upper-right part of the window."
+    },
+    {
+      "title": "Choose MS-DOS (FAT) in the dropdown.",
+      "content": "Choose MS-DOS (FAT) in the dropdown. This option is the same as FAT32 on a Windows system."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . The SD card will immediately be formatted."
+    }
+  ]
+}

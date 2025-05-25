@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Check-if-a-Port-Is-Opened",
+  "title": "How to Check if a Port is Open: 5 Quick Ways",
+  "steps": [
+    {
+      "title": "Enable Telnet for Windows.",
+      "content": "Enable Telnet for Windows. You can use Telnet to check if a certain port is open on your local router or access point. Here's how to enable it: [1] X Research source Type windows features in to the search bar. If you don't see the search bar, click the circle or magnifying glass to the right of the Start menu. Click Turn Windows features on or off . Check the box next to Telnet Client and click OK . Click Close when the app is finished installing."
+    },
+    {
+      "title": "Open a command prompt.",
+      "content": "Open a command prompt. Here's how to open the command prompt : Type cmd into the Windows search bar. Click Command prompt in the search results."
+    },
+    {
+      "title": "Type ipconfig at the prompt and press ↵ Enter.",
+      "content": "Type ipconfig at the prompt and press ↵ Enter . This displays a bunch of network information."
+    },
+    {
+      "title": "Write down the router's IP address.",
+      "content": "Write down the router's IP address. The address that appears next to \"Default Gateway\" in the ipconfig results is the local address of your router."
+    },
+    {
+      "title": "Type telnet at the prompt and press ↵ Enter.",
+      "content": "Type telnet at the prompt and press ↵ Enter . This opens the Microsoft Telnet prompt."
+    },
+    {
+      "title": "Type open (router's IP address) (port number).",
+      "content": "Type open (router's IP address) (port number) . For example, if you wanted to see if port 25 is open on your router, and your router's IP address is 10.0.0.1, you would type open 10.0.0.1 25 ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Telnet will try to connect to the port. If you see a message that says \"Please press Enter\" or \"Press any key to continue,\" the port is open. If you see a message that says \"Could not open connection,\" the port is not open."
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. To open a Terminal window, open Spotlight by clicking the magnifying glass at the top-right corner of the screen, type terminal , and then click Terminal in the search results. Use this method to see if a port is open on your local router or access point."
+    },
+    {
+      "title": "Type netstat -nr | grep default at the prompt and press ⏎ Return.",
+      "content": "Type netstat -nr | grep default at the prompt and press ⏎ Return . The router's IP address appears next to \"default\" at the top of the results."
+    },
+    {
+      "title": "Type nc -vz (your router's IP address) (port).",
+      "content": "Type nc -vz (your router's IP address) (port) . For example, if you wanted to see if port 25 is open on your router, and your router's IP address is 10.0.0.1, you would type nc -vz 10.0.0.1 25 ."
+    },
+    {
+      "title": "Press ⏎ Return.",
+      "content": "Press ⏎ Return . Here's how to interpret the results: If the port is open, you'll see a message that says the connection succeeded. If the port is closed, you'll see a message that says the connection was refused or timed out."
+    },
+    {
+      "title": "Open Windows search and type firewall.",
+      "content": "Open Windows search and type firewall . If the search bar is not already open, click the circle or magnifying glass to the right of the Start menu to open it. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Use this method if you want to see if Windows is set up to allow an app you've installed to communicate through your firewall . The Windows firewall is enabled by default. If you've installed your own firewall software, use that software to check if an app is allowed through."
+    },
+    {
+      "title": "Click Windows Defender Firewall.",
+      "content": "Click Windows Defender Firewall . This opens your Firewall and Network Protection settings."
+    },
+    {
+      "title": "Click Allow an app through firewall.",
+      "content": "Click Allow an app through firewall . It's one of the text links near the bottom of the window. A list of apps allowed through the firewall will appear. If the app is allowed through the firewall only when you're connected to a network you've marked as \"private\" (such as when you're on your home network), a check will appear in the \"Private\" column next to the app. If the app is allowed through the firewall when you're connected to a public network, a check will appear in the \"Public\" column."
+    },
+    {
+      "title": "Allow an unlisted app or port through the firewall.",
+      "content": "Allow an unlisted app or port through the firewall. If you don't see the app on the \"Allowed apps and features\" list, click the Change Settings button at the top-right corner, and then follow these steps: [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click Allow another app near the bottom. Click Browse , select the app, and then click Open . Click Network Types near the bottom-left corner, select a privacy preference, and then click OK . Click Add to add the app, and then click OK ."
+    },
+    {
+      "title": "Go to https://www.canyouseeme.org in a web browser.",
+      "content": "Go to https://www.canyouseeme.org in a web browser. You can use it to see if a port on your computer or network is accessible on the internet. The website will automatically detect your IP address and display it in the \"Your IP\" box. [4] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 10 June 2020. There are many different sites you can use to check for an open port. Search for \"open port check tool\" in your favorite search engine to find an alternative, if desired. [5] X Research source"
+    },
+    {
+      "title": "Enter the port.",
+      "content": "Enter the port. Type the port you want to check (e.g., 22 for SSH) into the \"Port to Check\" box. [6] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 10 June 2020."
+    },
+    {
+      "title": "Click Check Port.",
+      "content": "Click Check Port . If the port is open and available, you'll see a confirmation message. If not, you'll see a message that says \"Error: I could not see your service on (your IP address) on port (the port number).\" [7] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 10 June 2020."
+    },
+    {
+      "title": "Click the menu and select System Preferences.",
+      "content": "Click the menu and select System Preferences . The Mac firewall is not enabled by default. [8] X Research source"
+    },
+    {
+      "title": "Click Security & Privacy.",
+      "content": "Click Security & Privacy . It's the house icon on the top row."
+    },
+    {
+      "title": "Click the Firewall tab.",
+      "content": "Click the Firewall tab. It's near the top-center part of the window. If you see the message \"Firewall:On\" near the top of the tab, this means your firewall is active. If the firewall is not active but you want it to be, click the padlock icon at the bottom-left part of the window, enter your administrator password, and then click Turn On Firewall ."
+    },
+    {
+      "title": "Click Firewall Options.",
+      "content": "Click Firewall Options . This opens your settings, including a list of apps and services set to either allow or disallow incoming connections. [9] X Research source If an app or service has a green dot and the text \"Allow incoming connections,\" that means its port is open. If you see a red dot that says \"Block incoming connections,\" the port is closed. You can toggle whether a port is allowed or not allowed by clicking the double-arrow icon next to the app's current status, and choosing an option."
+    }
+  ]
+}

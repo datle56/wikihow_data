@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Reset-Trial-Period-on-Mac",
+  "title": "How to Extend the Free Trial Period on Mac Applications",
+  "steps": [
+    {
+      "title": "Many developers will happily reset your trial once.",
+      "content": "Many developers will happily reset your trial once. This is especially true with smaller software companies and independent developers. If you didn't get a chance to test out all the software's features in the short trial period, contact the developer to (nicely) ask for an extension. Just let the developers know you're interested in purchasing but want to make sure it really works for your needs. This will work for plenty of popular software titles, including Ableton Live . Some developers may secretly allow you to restart a trial one or more times just by uninstalling and reinstalling the software. Before you try another method, see if you can easily reset the trial with a quick uninstall and reinstall."
+    },
+    {
+      "title": "Uninstall the app.",
+      "content": "Uninstall the app. Depending on the program, you may be able to reset the trial period by deleting all of the data stored by the app and then reinstalling the program. To uninstall the program , just drag it from your Applications folder to the Trash. [1] X Research source This won't work to extend trials for software that authenticates over the internet, such as Adobe or Microsoft products, but it will work on some other programs."
+    },
+    {
+      "title": "Delete any data left over by the app.",
+      "content": "Delete any data left over by the app. When you uninstall a Mac application , only the program itself is deleted. Certain data files created by the program (including those related to the trial period) may remain on your Mac until you delete them manually. To check for and delete leftover files: Open Finder and click the Go menu. Press and hold the Option key to unhide hidden menu items. Click Library in the drop-down. Look for files and folders containing the name of the program you want to reset, then delete them by dragging them to the trash. You may find such files and folders in the Library root folder, as well as in these subfolders: /Library/Application Support /Library/Caches /Library/Logs /Library/Cookies /Library/Containers Library/Preferences /Library/Saved Application State"
+    },
+    {
+      "title": "Reinstall the trial software.",
+      "content": "Reinstall the trial software. Now that you've deleted the software's data, you may be able to reinstall it to reset the trial period. If you have to log in to the developer's website to download the app, you'll want to create a new account before downloading the software again. Once you've done that, or if you don't need a login, download the installer and run it to reinstall the program. If you have a VPN , consider connecting to it before redownloading and installing the software."
+    },
+    {
+      "title": "Clear your cache and cookies.",
+      "content": "Clear your cache and cookies. If you want to reset the trial period for a program that requires you to have an account, creating a new account and deleting the app and data may restart the trial period. But before you do this, you'll need to make sure you don't have any cached files or cookies from the developer's website. If you haven't already done so, make sure you delete the trial app and its data before you continue."
+    },
+    {
+      "title": "Create a new email address.",
+      "content": "Create a new email address. If you've already used your regular email address to sign up for an account, you won't be able to use it again. You can create an email address in seconds on Gmail , Outlook.com , Yahoo , or any other free web-based email app."
+    },
+    {
+      "title": "Change your MAC address (optional).",
+      "content": "Change your MAC address (optional). If you're trying to restart the trial period for software that verifies your account or computer online, it may have your MAC address (the hardware address of your network interface) on file. If you really want to be on the safe side, you can use a few quick Terminal commands to temporarily change your MAC address: Click the Wi-Fi icon in the menu bar. Here, you'll see the name of your network interface (e.g., en1 ), and your current MAC address . Remember the interface name, as you'll need it soon. Because your MAC address will return to its default once you restart your Mac, you don't have to worry about writing it down. Open a Terminal window. Paste openssl rand -hex 6 into the prompt and press Return . You'll now see a randomly-generated MAC address with colons separating its values. Type sudo ifconfig <interface name> ether <MAC address> and press Return . Replace <interface name> with the interface name you noted earlier (e.g., en1 ), and <MAC address> with the randomly-generated MAC address. Disconnect from the internet, and then reconnect."
+    },
+    {
+      "title": "Connect to a VPN (if possible).",
+      "content": "Connect to a VPN (if possible). Some developers may link your account to your IP address. To avoid tripping any sensors, you can mask your IP address using a VPN . If you don't have a VPN, you can try Proton VPN, which has a free option."
+    },
+    {
+      "title": "Create your new account.",
+      "content": "Create your new account. Now that you've fully masked your identity, you should be able to sign up for a brand new account with the developer of the software you want to use. Remember to use your new email address. If a phone number is required to sign up and you've already used your own, borrow a friend's phone temporarily, or use a Google Voice phone number. Once you have a new account, you should be able to download and reinstall the software to reset the trial period. But before you do, see this method to learn the most effective way to do this. You can restart your Mac at any time to reset the MAC address."
+    },
+    {
+      "title": "Set your Mac's system back to the first date of the trial period.",
+      "content": "Set your Mac's system back to the first date of the trial period. For some software, you may be able to extend a trial by turning back your Mac's system clock. This won't reset trial software with online activation, and it definitely won't work for all programs. Also, because you'll be setting your Mac's system clock back, this method could cause problems with your other apps. Still, it's worth a try! Close the trial program first. Click the Apple menu and select System Settings . Click General and select Date & Time . [2] X Research source Turn off \"Set date and time automatically\" so you can set your clock back. [3] X Research source Click Set , then manually enter the date on which you began the trial. For some trial software, you may be able to choose a date further back in the past to get an even longer trial, but that likely won't work for all software. Click Set to confirm, then restart your trial software."
+    },
+    {
+      "title": "Install PlistEdit Pro.",
+      "content": "Install PlistEdit Pro. If the trial software stores your trial's start date in a .plist file, you may be able to modify the date to one in the future. This fix won't work for lots software titles, despite what a lot of websites claim. However, it will work for some. To be able to edit the necessary files, install the free trial version of PlistEdit Pro from https://www.fatcatsoftware.com/plisteditpro . Once downloaded, double-click the file called PListEditPro.zip to unzip the file . To install the program, drag its icon to the Applications folder. Make sure you do not have the trial software open while you complete this method."
+    },
+    {
+      "title": "Find the program's .plist file.",
+      "content": "Find the program's .plist file. You can do so in Finder: Open Finder and click the Go menu. Hold down the Option key, then click the Library folder. Open the Preferences sub-folder. Look through the files beginning with \"com\" for one that contains the name of the software whose trial you want to extend. You should find at least one for the trial program."
+    },
+    {
+      "title": "Open the .plist file in PlistEdit Pro.",
+      "content": "Open the .plist file in PlistEdit Pro. Here's how: Right-click or Ctrl + Click the .plist file for your software. Select Open with. Select PlistEdit Pro . If you don't see it, click Other… and then select it. Click Open to confirm."
+    },
+    {
+      "title": "Look for any entries that contain your trial's start date.",
+      "content": "Look for any entries that contain your trial's start date. The name of this entry will vary, but you may see something like \"FirstRunDate. [4] X Research source \" If you don't see anything like this, try another method."
+    },
+    {
+      "title": "Change the date to one in the future.",
+      "content": "Change the date to one in the future. Go at least a year or two in the future to trick the software into thinking that your trial has yet to begin. You'll then be able to keep using the trial until the date you enter."
+    },
+    {
+      "title": "Save your changes.",
+      "content": "Save your changes. Click the File menu and select Save to overwrite the file with your changes."
+    },
+    {
+      "title": "Install trial software in a virtual machine.",
+      "content": "Install trial software in a virtual machine. If you're able to do so, you can install trial versions of software in a new virtual machine each time the previous trial runs out. Because each virtual machine is seen by the software as a separate computer, this method will work for any trial software that doesn't require you to create an account or activate a license. You likely won't want to go through the trouble of creating a virtual machine to restart a software trial, but if you already have one, this is a great way to keep your trial going. One interesting way to do this would be to install Parallels, a virtual machine program that lets you run Windows in a window on your Mac. If the trial software you want to reset has a Windows version, Parallels is a great choice. [5] X Research source However, it's not free. If you want a free virtual machine option, try VirtualBox or QEMU . To use a virtual machine, you will need a disc image of an installer for the operating system you want to run. [6] X Research source For example, if you want the virtual computer to be running macOS Ventura, you'll need to download an image. If the software requires you to have an account or authenticate your trial over the internet, you still may need to create a new account before installing the software."
+    }
+  ]
+}

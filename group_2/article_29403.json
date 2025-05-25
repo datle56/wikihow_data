@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Minecraft-Server-for-Free",
+  "title": "A User-Friendly Guide to Create a Free Minecraft Server",
+  "steps": [
+    {
+      "title": "Download the server setup for Minecraft Java Edition.",
+      "content": "Download the server setup for Minecraft Java Edition. Go to https://www.minecraft.net/en-us/download/server in a web browser and download the latest version update. [1] X Research source The download will have a file named \"server.jar\". This method will only work with the Java Edition of Minecraft. Make sure you have Java installed on your computer."
+    },
+    {
+      "title": "Create a new folder",
+      "content": "Create a new folder . Name it Server or another name that will help you differentiate it. This folder will be for your Minecraft server. For easy access, create the folder on your desktop. You can always change its location later. On Windows, right-click the desktop → New → Folder . On Mac, click a blank spot on your desktop → File → New Folder ."
+    },
+    {
+      "title": "Move the server.jar file into the Server folder.",
+      "content": "Move the server.jar file into the Server folder. Locate your recent downloads on your computer to find the \"server.jar\" file. Click and drag the file into the Server folder."
+    },
+    {
+      "title": "Double-click the \"server.jar\" file.",
+      "content": "Double-click the \"server.jar\" file. This will run the file. As the file runs, you'll see new files appear in the Server folder: logs folder eula.txt server.properties"
+    },
+    {
+      "title": "Right-click \"eula.txt\" and click Edit.",
+      "content": "Right-click \"eula.txt\" and click Edit . A text file will open with an agreement."
+    },
+    {
+      "title": "Delete false and enter true.",
+      "content": "Delete false and enter true . The end of your text agreement should look like: eula=true . [2] X Research source"
+    },
+    {
+      "title": "Click File, then Save.",
+      "content": "Click File , then Save . This will save your agreement."
+    },
+    {
+      "title": "Double-click the \"server.jar\" file again.",
+      "content": "Double-click the \"server.jar\" file again. This will run the file again and open the Minecraft server application window. As the file runs, Windows Defender Firewall may pop-up with a block warning. Check the box to allow Private networks, such as my home or work network . Click Allow access ."
+    },
+    {
+      "title": "Wait for Minecraft server to finish preparing.",
+      "content": "Wait for Minecraft server to finish preparing. You can see the progress in the Log and chat section on the right of the window. It will take some time to prepare the spawn area. Do not close the Minecraft server window. When it's finished, you should see the following files in the Server folder: logs folder world folder banned-ips.json banned-players.json eula.txt ops.json server.jar server.properties usercache.json whitelist.json"
+    },
+    {
+      "title": "Open the server.properties file.",
+      "content": "Open the server.properties file. Right-click server.properties → click Open with → click More apps → select Notepad → click OK . On Mac, the program will be TextEdit . Make sure the box is checked for Always use this app to open .properties files . The server.properties file will open. This is where you can edit your game settings."
+    },
+    {
+      "title": "Edit your server settings.",
+      "content": "Edit your server settings. In the server.properties file, you'll see a list of settings you can edit. [3] X Research source Change your server name by editing motd=A Minecraft Server into motd=Your Server Name . If you want to turn a setting on, delete false and replace with true . To turn a setting off, delete true and replace with false . For other settings, When finished, click File → Save . Close the server.properties file."
+    },
+    {
+      "title": "Restart the Minecraft server application.",
+      "content": "Restart the Minecraft server application. You'll need to restart the server for some of the setting changes to take effect. Click the X in the corner, then double-click server.jar again."
+    },
+    {
+      "title": "Launch Minecraft Java Edition.",
+      "content": "Launch Minecraft Java Edition. Click the Minecraft Launcher, then Play to open Minecraft. Make sure you run the same version of Minecraft as the server setup."
+    },
+    {
+      "title": "Click Multiplayer.",
+      "content": "Click Multiplayer . This will be underneath Singleplayer ."
+    },
+    {
+      "title": "Click Add Server.",
+      "content": "Click Add Server . This will be next to Direct Connection ."
+    },
+    {
+      "title": "Under \"Server Address\", enter localhost.",
+      "content": "Under \"Server Address\", enter localhost . This will work for yourself and other people on your Wi-Fi network. [4] X Research source If desired, you can enter a name under Server Name ."
+    },
+    {
+      "title": "Click Done.",
+      "content": "Click Done . The server will be added underneath the Play Multiplayer header. If you have other servers added, you may need to scroll down to find yours."
+    },
+    {
+      "title": "Double-click your server.",
+      "content": "Double-click your server. You'll begin to connect to your server. You can now start building and exploring."
+    },
+    {
+      "title": "Set your character as the admin (optional).",
+      "content": "Set your character as the admin (optional). Once you're loaded into your server's world, you can set your character as the admin. Switch to the \"Minecraft server\" application window. This should always be running in the background as you host your server. In the \"Log and chat\" field, enter op [username] and press Enter . If your username is \"player_one\", the command should look like op player_one . You'll see the success prompt: \"Made player_one a server operator\"."
+    },
+    {
+      "title": "Invite other players (optional).",
+      "content": "Invite other players (optional). To play with others, you must set up port forwarding on your router. Once this is completed, you'll be able to find and share the server address. [5] X Research source Find your IP address. If you don't know your IP address, open Google and search \"what is my ipv4 address\". You'll see your public IP address in the search results. Find your server port number. Open the \"server.properties\" file. Locate server-port . In most cases, the number will be 25565 . Find your complete server address. This will be your IP address and server port number separated by a colon (:). For example, this will look like 77.232.22.133:25565 . Friends will need to launch Minecraft, click Multiplayer → Direct Connection → input 77.232.22.133:25565 . You'll now be able to play Minecraft with your friends."
+    }
+  ]
+}

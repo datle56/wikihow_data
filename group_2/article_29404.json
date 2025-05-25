@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Minecraft-Server-for-Your-Friends-and-You",
+  "title": "How to Make a Minecraft Server for Your Friends and You",
+  "steps": [
+    {
+      "title": "Find the server files.",
+      "content": "Find the server files. You can download the Minecraft server program for free from the Minecraft website . You can run a Minecraft server without purchasing the game, but you will be unable to play on it. For Windows, click on the \"Minecraft_Server.exe\" link under the \"Multiplayer server\" heading. For Mac OS X or Linux, download minecraft_server.jar."
+    },
+    {
+      "title": "Create a folder.",
+      "content": "Create a folder. The Minecraft server runs directly from the program that you download from the website, and will install itself in whatever folder it is opened in. Create a folder with a name like Minecraft Server, and download the server file into it."
+    },
+    {
+      "title": "Install the latest version of Java.",
+      "content": "Install the latest version of Java . First, verify your Java version. In Windows XP/Vista/7/8, press the Windows key and the R key to open the Run command. Enter “cmd” into the box to open the command prompt. Type “java –version” and press enter. Your Java version needs to be 1.7. To download the latest version of Java, visit the Java download page ."
+    },
+    {
+      "title": "Run the Minecraft server.",
+      "content": "Run the Minecraft server. Open the folder contains the Minecraft_server.exe file. Double-click the .exe file and a window will open that shows the progress of the server's construction. The process is automatic. Server configuration files will be automatically created and added to the folder. At this point, your Minecraft server can be accessed on the local network, and online if you are not using a router. If you are using a router and want to make it accessible online, follow the steps in the Port Forwarding section below. If the server fails to load and you get a screen of garbled text, you will need to run the server as an administrator. Right-click on the program and select “Run as administrator.” You will need the administrator password."
+    },
+    {
+      "title": "Open your server folder.",
+      "content": "Open your server folder. Open the folder containing the minecraft_server.jar file. Create a new text file with TextEdit. Set the format to “Make Plain Text”. Copy the following lines into the file: #!/bin/bash cd \"$(dirname \"$0\")\" exec java -Xmx1G -Xms1G -jar minecraft_server.jar If you wish to assign more RAM to the server, change 1G to 2G or higher, depending on your system."
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. Save the file as “start.command”. Open the Terminal in the Utilities folder. You will need to grant execute permissions to the start.command file that you just created. Type “chmod A+x” into the Terminal, then drag and drop the start.command file into the Terminal window. This will provide the correct path to the file. Press Enter to save the changes to the file."
+    },
+    {
+      "title": "Double-click the command file.",
+      "content": "Double-click the command file. Opening start.command will now start the Minecraft server."
+    },
+    {
+      "title": "Set your operator privileges.",
+      "content": "Set your operator privileges. Once the server has run for the first time, exit out. Open the ops.txt file in the Minecraft Server directory. Add your username to this file to give yourself administrator privileges. This will let you kick and ban players from in the game, as well as adjust other settings."
+    },
+    {
+      "title": "Setup your whitelist.",
+      "content": "Setup your whitelist. Add your friends’ Minecraft usernames to the white-list.txt file in the Minecraft Server directory. Only the usernames listed in this text file will be able to connect to your server. This will keep random people from griefing your game."
+    },
+    {
+      "title": "Obtain your external IP address.",
+      "content": "Obtain your external IP address. Type “my ip address” into Google and your external (public) IP address will be displayed as the first result. Have your users type in your external IP address on the Minecraft multiplayer menu. If your internet service provider assigns you a dynamic IP address, check the Dynamic DNS section below for a guide to setting up a Dynamic DNS that will stay constant even if your IP address changes."
+    },
+    {
+      "title": "Distribute your address.",
+      "content": "Distribute your address. Give your server’s IP or host name to your friends. They will need to enter the IP address or host name of your server in the Multiplayer menu of Minecraft. Players connecting on a local network need to enter the local IP; those connecting from the internet need to enter your external IP or host name."
+    },
+    {
+      "title": "Install new plugins.",
+      "content": "Install new plugins. There are thousands of user-made plugins and modifications available to download for free that will change your Minecraft experience. These range from world-building enhancements, to complete economy overhauls and all new game modes. Use plugins to add variety to your server and to keep your friends on their toes. Bukkit is the most popular way to add plugins to your server. You will need to download the CraftBukkit tool. Running CraftBukkit is a complete replacement for the Minecraft Server program; you will be running the CraftBukkit server instead of Minecraft."
+    },
+    {
+      "title": "Download and install the latest version of CraftBukkit.",
+      "content": "Download and install the latest version of CraftBukkit . This server program will allow you to add custom plugins that are not supported by the standard Minecraft server software."
+    },
+    {
+      "title": "Download new plugins.",
+      "content": "Download new plugins. There are a variety of plugin repositories available online. Find a plugin that sounds interesting to you and download it. Be sure that you are downloading from a trusted source."
+    },
+    {
+      "title": "Install the plugin.",
+      "content": "Install the plugin. Unzip the file that you downloaded. The .zip file should contain .jar files that contain the plugin data. Copy every .jar file in the .;zip file into the PLUGINS directory in your server folder. Restart the server to install the plugins. You may have to adjust your server settings files again after installing a new plugin. Make sure that your whitelist is configured to only allow your friends to connect."
+    },
+    {
+      "title": "Access your router's configuration menu.",
+      "content": "Access your router's configuration menu. Every router has a different method for accessing the settings. Most routers are accessible from a web browser by entering the IP address, typically 192.168.1.1 or 192.168.2.1. If you cannot access your router with either of those IPs, visit PortFoward.org and enter your router’s information. The default guides will list the standard addresses used by your router. Most routers require a username and password to access the configuration menu. This would be the username and password you set up when you installed the router on your computer. Typically, the default username is “admin” and the default password is “password” or “admin”."
+    },
+    {
+      "title": "Navigate to the \"Port Forwarding\" menu.",
+      "content": "Navigate to the \"Port Forwarding\" menu. This is typically listed under Advanced Options. It may go by another name, such as Virtual Servers, depending on the manufacturer."
+    },
+    {
+      "title": "Enter the port information.",
+      "content": "Enter the port information. The Minecraft server port is 25565 by default. If your router wants a range of ports, enter 25565 into both the \"Start Port\" and \"End Port.\" Set \"Protocol\" to \"TCP.\""
+    },
+    {
+      "title": "Enter your server’s local IP address.",
+      "content": "Enter your server’s local IP address. Make sure the IP address matches your server’s IPv4 address. Check this in Windows by opening the command prompt in Windows and running “ipconfig”. Your IP address will be listed next to “IPv4 Address.” You may have to scroll up to see it. If using a Mac, click the Apple menu and select System Preferences, and then Network. Your IP address will be listed in the lower-right part of the window."
+    },
+    {
+      "title": "Check the \"Enable\" box.",
+      "content": "Check the \"Enable\" box. Review your settings to make sure everything is entered correctly."
+    },
+    {
+      "title": "Find out if you have a dynamic IP address.",
+      "content": "Find out if you have a dynamic IP address. Most residential internet providers assign dynamic IPs. This makes connecting to your server somewhat more difficult, as you have to let people know your new address every time it changes. Some ISPs will give you a dynamic IP, but it won’t change for long periods of time. Type “my ip address” into Google and note your IP address over a few weeks. If you’re only giving out the IP to a few friends, then you may not have to worry about setting up a static address if your IP doesn’t change very often."
+    },
+    {
+      "title": "Set up a Dynamic DNS.",
+      "content": "Set up a Dynamic DNS. A Dynamic DNS will assign a domain name to your dynamic IP. This will give you an unchanging address to connect to. Many services offer free accounts for single addresses. Dynamic DNS will require a program to run on your computer, that will update your domain whenever your IP address changes."
+    },
+    {
+      "title": "Configure your router.",
+      "content": "Configure your router. You will need to set your router to connect through a Dynamic DNS. The location of this setting varies from router to router, but it is typically under the Advanced settings. You will need to enter your Host name, username, and password."
+    }
+  ]
+}

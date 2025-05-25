@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Add-Rows-in-Excel-with-a-Formula",
+  "title": "How to Add Rows in Excel with a Formula",
+  "steps": [
+    {
+      "title": "Open your project in Excel.",
+      "content": "Open your project in Excel. To do this, double-click the Excel document that contains your data in Finder (Macs) or File Explorer (Windows). Alternatively, if you already have Excel open, click File > Open and select the file that has your data."
+    },
+    {
+      "title": "Make sure the Developer tab is displayed on your editing ribbon.",
+      "content": "Make sure the Developer tab is displayed on your editing ribbon. If it isn't and you're using Windows, go to the File tab and click Options > Customize ribbon . Under \"Main tabs'\" check the box next to \"Developer.\" If you're using a Mac, enable the Developer tab by clicking the Excel menu at the top of the screen and selecting Preferences . Click Ribbon & Toolbar , check the \"Developer\" box in the \"Customize this Ribbon\" category, and click Save ."
+    },
+    {
+      "title": "Open the VBA editor.",
+      "content": "Open the VBA editor. Click the Developer tab and select Visual Basic to do so. Alternatively, you can press Alt + F11 ."
+    },
+    {
+      "title": "Right-click a sheet.",
+      "content": "Right-click a sheet. In the vertical menu on the left side of the window, you'll see a list of your workbook's sheets. Right-click on any of these to get another drop-down menu."
+    },
+    {
+      "title": "Hover your cursor over Insert and click Module.",
+      "content": "Hover your cursor over Insert and click Module . When you hover over Insert , a menu will pop out to the right of the menu. Clicking on Module will create a space for you to enter a VBA code and run it."
+    },
+    {
+      "title": "Enter this code into your VBA window:",
+      "content": "Enter this code into your VBA window: Sub Insert_Rows_Loop () Dim CurrentSheet As Object ' Loop through all selected sheets. For Each CurrentSheet In ActiveWindow . SelectedSheets ' Insert 5 rows at top of each sheet. CurrentSheet . Range ( \"a1:a5\" ). EntireRow . Insert Next CurrentSheet End Sub With this code, you'll be inserting rows starting at A1 and ending at A5—that's 5 empty new rows at the top of the sheet. [1] X Research source You can replace these cell addresses with the location into which you want to place the code, such as beginning with the last row in the sheet to any ending point."
+    },
+    {
+      "title": "Press F5.",
+      "content": "Press F5 . Alternatively, you can click the green Play icon above the VB editor writing space."
+    },
+    {
+      "title": "Click OK to continue.",
+      "content": "Click OK to continue. This adds the rows to your sheet."
+    },
+    {
+      "title": "Open your project in Excel.",
+      "content": "Open your project in Excel. To do this, double-click the Excel document that contains your data in Finder (Macs) or File Explorer (Windows). Alternatively, if you already have Excel open, click File > Open and select the file. Use this method if you want to learn how to copy existing formulas into new rows you add to your data."
+    },
+    {
+      "title": "Insert a row",
+      "content": "Insert a row inside your data. The keyboard shortcut you'll use can only add a formula from the row above it, so make sure you insert the row in the middle or the bottom of your data collection. To insert a row, right-click the row below where you want the new row to be added, then click Insert ."
+    },
+    {
+      "title": "Click to select the cell in the new row where you want to include the formula.",
+      "content": "Click to select the cell in the new row where you want to include the formula. Remember, this keyboard shortcut will copy the formula from the cell above to the cell you have selected. The cell will highlight to indicate that it is selected."
+    },
+    {
+      "title": "Press Ctrl+D.",
+      "content": "Press Ctrl + D . The shortcut is the same for Mac and Windows and will fill the formula down from the cell above. [2] X Research source"
+    }
+  ]
+}

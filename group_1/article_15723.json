@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Enable-IP-Routing-on-Cisco",
+  "title": "Enable & Configure IP Routing on Cisco Routers & Switches",
+  "steps": [
+    {
+      "title": "Connect your computer to the router or switch.",
+      "content": "Connect your computer to the router or switch. If your router has a USB port, you can connect to your PC using a USB connection. If your router only has a Console port, you will most likely need a DB9-to-RJ45 cable. Connect the DB9 end of the cable to the Console port on your router. Then connect the female RJ45 end to a male RJ45 port on your computer. If your computer does not have a male RJ45 port, you can use a female RJ45-to-USB adapter. [1] X Research source Alternatively, you can use a rollover cable (which is similar to an Ethernet cable, except the pins are reversed on the other end), and connect it to a female DB9-to-RJ45 adapter. Warning: Do NOT connect a rollover cable from the Ethernet port on your computer to the Console port on your router or switch. This will blow out the Console port on the router or switch."
+    },
+    {
+      "title": "Download a Terminal Emulation program (Windows only).",
+      "content": "Download a Terminal Emulation program (Windows only). If you are using a Mac or Linux computer, you already have a Terminal program built-in. If you are using a Windows PC, you need to download a terminal emulation program, such PuTTY . [2] X Research source"
+    },
+    {
+      "title": "Find the port number that your Cisco router or switch is connected to.",
+      "content": "Find the port number that your Cisco router or switch is connected to. If you are using a DB9-to-RJ45 cable, you will first need to install the drivers that came with the cable. Once you have your Cisco router or switch connected to your PC, use one of the following steps to find out the port number it is connected to: Windows: Right-click the Windows Start menu and click Device Manager . Expand \"Ports (COM & LPT)\" in the list of devices. [3] X Research source Note the port number your router is connected to (i.e, \"COM1\") Mac: Open the Terminal and type cd /dev and press Enter . Then type ls -ltr /dev/*usb* and press Enter . The port number will be listed after \"/dev/tty.usbmodem\" or \" /dev/tty.usbserial\". Linux: Open the Terminal and type cd /dev and press Enter . Then type ls -ltr *ACM* and press Enter . The port number will be listed after \"/dev/ttyUSB\" or \"/dev/ttyACM\". [4] X Research source"
+    },
+    {
+      "title": "Open a Terminal connection to the router or switch.",
+      "content": "Open a Terminal connection to the router or switch. Once you have the port number it is connected to, use one of the following steps to open a Terminal connection to your router or switch: Windows: Open PuTTY. Select Sessions in the Category menu to the left. Select Serial under \"Connection type\". Enter the port number the switch is connected to in the box labeled \"Serial line.\" Leave the speed as \"9600\". Then click Open . [5] X Research source Mac: Open the Terminal and type screen /dev/tty.usbmodem[port number] 9600 and press Enter . Replace \"[port number]\" with the port number you retrieved from the previous step. Linux: Open the Terminal and type screen /dev/ttyACM[port number] 9600 and press Enter . Replace \"[port number]\" with the port number you retrieved from the previous step."
+    },
+    {
+      "title": "Connect to your router or switch.",
+      "content": "Connect to your router or switch. If you haven't already done so, connect your router or switch to your computer. Then open a PuTTY or Terminal connection to your router or switch."
+    },
+    {
+      "title": "Type enable and press ↵ Enter.",
+      "content": "Type enable and press ↵ Enter . This enables EXEC mode. You may be asked to enter a password, if one is set. [6] X Research source"
+    },
+    {
+      "title": "Type configure terminal and press ↵ Enter.",
+      "content": "Type configure terminal and press ↵ Enter . This enters Global Configuration mode. [7] X Research source"
+    },
+    {
+      "title": "Type ip routing and press ↵ Enter.",
+      "content": "Type ip routing and press ↵ Enter . This enables IP routing on your router or switch. If you want to exit Global Configuration mode, type end and press Enter ."
+    },
+    {
+      "title": "Understand what Switch Virtual Interfaces are.",
+      "content": "Understand what Switch Virtual Interfaces are. A single router or switch can host multiple networks called \"VLANs\" Devices on a VLAN can communicate with each other without the user or a router or switch. However, each VLAN must have a Switch Virtual Interface in order for devices from different VLANs to communicate with each other. [8] X Research source"
+    },
+    {
+      "title": "Enter Global Configuration mode.",
+      "content": "Enter Global Configuration mode. To enter Global Configuration mode, open a Terminal or PuTTY connection to the switch or router, and type \"enable\" and press \"Enter.\" Then type \"configure terminal\" and press \"enter\"."
+    },
+    {
+      "title": "Type interface vlan followed by the VLAN ID and press ↵ Enter.",
+      "content": "Type interface vlan followed by the VLAN ID and press ↵ Enter . This specifies the VLAN you want to configure. For example, if you wanted to configure VLAN1, you would type interface vlan 1 and press Enter . [9] X Research source"
+    },
+    {
+      "title": "Type ip address followed by the IP address and subnet mask of the network.",
+      "content": "Type ip address followed by the IP address and subnet mask of the network. An example command would be ip address 10.0.0.1 255.255.255.0 This assigns an IP address and subnet mask to the VLAN. [10] X Research source"
+    },
+    {
+      "title": "Type end and press ↵ Enter.",
+      "content": "Type end and press ↵ Enter . This exits the VLAN configuration mode and returns you to Global Configuration mode. If you want to view statistics for all the VLAN interfaces on your router or switch, type show interfaces vlan [vlan id] and press enter Replace [vlan id] with the actual VLAN ID number."
+    },
+    {
+      "title": "Understand what default routes and networks are.",
+      "content": "Understand what default routes and networks are. When a router receives a packet of information, it checks the destination address to route that information to the proper address. If a packet of information does not have a destination address, you can assign a default address and network to send all packets that do not have a destination address. [11] X Research source"
+    },
+    {
+      "title": "Enter Global Configuraion mode.",
+      "content": "Enter Global Configuraion mode. If you have not already done so, connect to your router or switch using PuTTY or the Terminal. Then type enable and press Enter to enter Exec mode. Then type configure terminal and press Enter to enter Global Configuration mode. [12] X Research source"
+    },
+    {
+      "title": "Type ip route followed by the default IP address and press ↵ Enter.",
+      "content": "Type ip route followed by the default IP address and press ↵ Enter . This assigns the default route and network. An example of a default network could be \"0.0.0.0 0.0.0.0\" To set this as the default network, you would type, ip route 0.0.0.0 0.0.0.0 . [13] X Research source"
+    }
+  ]
+}

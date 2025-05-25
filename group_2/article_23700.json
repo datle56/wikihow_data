@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Increase-Disk-Space-in-VMware",
+  "title": "How to Increase Disk Space in VMware",
+  "steps": [
+    {
+      "title": "Make sure some prerequisites are met.",
+      "content": "Make sure some prerequisites are met. In order to increase the disk size in VMware, you must make sure that your virtual machine is powered off and that it has no snapshots. To determine whether it has snapshots, check \"Information\" under the \"Summary\" tab for the virtual machine."
+    },
+    {
+      "title": "Go to \"Settings.\"",
+      "content": "Go to \"Settings.\" Do this within VMware."
+    },
+    {
+      "title": "Select the Hard Disk you wish to expand.",
+      "content": "Select the Hard Disk you wish to expand. You will find this under the column entitled \"Hardware.\""
+    },
+    {
+      "title": "Expand your disk.",
+      "content": "Expand your disk. On the right-hand side of the window under \"Disk Provisioning,\" set the new \"Provisioned Size\" of your disk. Some layouts will instead have a drop down menu entitled \"Utilities.\" From here select \"Expand.\" Generally, the disk will be anywhere from 30 to 40GB at this stage, so try resizing it to 45 to 55GB at first. [1] X Research source"
+    },
+    {
+      "title": "Click \"OK.\"",
+      "content": "Click \"OK.\" This will set the new maximum size for the virtual disk."
+    },
+    {
+      "title": "Rescan your disk.",
+      "content": "Rescan your disk. While you have expanded the size of your disk, there are a few more steps you must take within the operating system. To rescan your disk, go to \"Disk Management\" and select \"Rescan Disks.\""
+    },
+    {
+      "title": "Resize the OS drive.",
+      "content": "Resize the OS drive. Now that you have expanded and rescanned your disk, you will see the \"Unallocated Space\" that we have just created. We must now assign this space to your operating system's drive. To do this, right-click on the unallocated space and select \"Expand Volume.\" This will prompt a simple wizard that will allow you to determine what to do with this newly created space. Assign it to your virtual disk."
+    },
+    {
+      "title": "Open the command Prompt.",
+      "content": "Open the command Prompt. If you are using the VMware Workstation, Player, ACE Manager, Server, or GSX products, then follow this method. You can do this by going to \"Start\" and enter \"cmd\" without the quotation marks into the search bar. Select \"Run.\""
+    },
+    {
+      "title": "Go to the product's installation directory.",
+      "content": "Go to the product's installation directory. For Workstation enter: \\Program Files\\VMware\\VMware Workstation in Windows or :/usr/sbin for Linux. For Player and ACE Manager use: \\Program Files\\VMware\\VMware Player for Windows or /usr/sbin for Linux. For Server use: \\Program Files\\VMware\\VMware Server for Windows or /usr/bin for Linux. For GSX use: \\Program Files\\VMware\\VMware GSX Server for Windows or /usr/bin for Linux."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: vmware-vdiskmanager –x 100Gb vm.vmdk and press “Enter.” This will resize your current disk. Replace \"vm.vmdk\" with the full path to the virtual machine’s virtual disk and 100GB with the disk size you want."
+    },
+    {
+      "title": "Extend the disk partition.",
+      "content": "Extend the disk partition. While you have extended the volume of your disk, you need to notify your operating system of the change. Go to \"Computer Management\" and select \"Disk Management.\" Right-click on \"Volume\" and then select \"Extend Volume.\""
+    }
+  ]
+}

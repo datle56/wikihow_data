@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Create-Options-or-Choices-in-a-Batch-File",
+  "title": "How to Create Options or Choices in a Batch File",
+  "steps": [
+    {
+      "title": "Click Start>Run",
+      "content": "Click Start>Run"
+    },
+    {
+      "title": "Type \"cmd\" (no quotations)",
+      "content": "Type \"cmd\" (no quotations)"
+    },
+    {
+      "title": "Type \"edit\"",
+      "content": "Type \"edit\""
+    },
+    {
+      "title": "Type the following, careless of bolded/unbolded worlds.",
+      "content": "Type the following, careless of bolded/unbolded worlds. After each press enter. Anything in parenthesis do NOT type, these are side-notes that tries to explain the steps."
+    },
+    {
+      "title": "@echo off (This command will 'hide' the command input - optional but recommended)",
+      "content": "@echo off (This command will 'hide' the command input - optional but recommended)"
+    },
+    {
+      "title": "cls (This will clear anything above - optional but recommended if you're wanting to make it look neat) start",
+      "content": "cls (This will clear anything above - optional but recommended if you're wanting to make it look neat) start"
+    },
+    {
+      "title": "echo.",
+      "content": "echo."
+    },
+    {
+      "title": "echo Choice 1 (\"Choice 1\" can be renamed to whatever you want, any of the choices)",
+      "content": "echo Choice 1 (\"Choice 1\" can be renamed to whatever you want, any of the choices)"
+    },
+    {
+      "title": "echo Choice 2",
+      "content": "echo Choice 2"
+    },
+    {
+      "title": "echo Choice 3 (Keep doing that until you have all of the choices that you need.",
+      "content": "echo Choice 3 (Keep doing that until you have all of the choices that you need. )"
+    },
+    {
+      "title": "Type \"set /p choice=(Insert question or command here, like \"Yes or no?\"",
+      "content": "Type \"set /p choice=(Insert question or command here, like \"Yes or no?\" )"
+    },
+    {
+      "title": "if not '%choice%'== set choice=%choice:",
+      "content": "if not '%choice%'== set choice=%choice: ~0,1%"
+    },
+    {
+      "title": "if '%choice%'=='1' goto :choice1",
+      "content": "if '%choice%'=='1' goto :choice1"
+    },
+    {
+      "title": "if '%choice%'=='2' goto :choice2",
+      "content": "if '%choice%'=='2' goto :choice2"
+    },
+    {
+      "title": "(Continue doing this pattern until you have enough.",
+      "content": "(Continue doing this pattern until you have enough. Then type:)"
+    },
+    {
+      "title": "echo \"%choice%\" is not a valid option.",
+      "content": "echo \"%choice%\" is not a valid option. Please try again."
+    },
+    {
+      "title": "echo.",
+      "content": "echo."
+    },
+    {
+      "title": "goto start",
+      "content": "goto start"
+    },
+    {
+      "title": "After that you type:",
+      "content": "After that you type: choice1"
+    },
+    {
+      "title": "(commands you want to run)",
+      "content": "(commands you want to run)"
+    },
+    {
+      "title": "goto end choice2",
+      "content": "goto end choice2"
+    },
+    {
+      "title": "(commands)",
+      "content": "(commands)"
+    },
+    {
+      "title": "goto end choice3",
+      "content": "goto end choice3"
+    },
+    {
+      "title": "(commands)",
+      "content": "(commands)"
+    },
+    {
+      "title": "goto end",
+      "content": "goto end"
+    },
+    {
+      "title": "Continue doing this pattern until you have completed the file.",
+      "content": "Continue doing this pattern until you have completed the file. end"
+    },
+    {
+      "title": "pause",
+      "content": "pause"
+    },
+    {
+      "title": "exit",
+      "content": "exit"
+    },
+    {
+      "title": "Save this as a .bat file.",
+      "content": "Save this as a .bat file. Double click to test your batch file."
+    }
+  ]
+}

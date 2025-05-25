@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Recover-Typed-Text-in-Chrome-on-PC-or-Mac",
+  "title": "How to Recover Form Text That Disappeared in Google Chrome",
+  "steps": [
+    {
+      "title": "Leave the window with the lost text open.",
+      "content": "Leave the window with the lost text open. You’re more likely to retrieve your lost text successfully if you don’t close the tab or window where you were entering your data. Don’t close Chrome or shut down your computer. [1] X Research source"
+    },
+    {
+      "title": "Download and install HxD Hex Editor.",
+      "content": "Download and install HxD Hex Editor. HxD Hex Editor is a freeware app that you can use to edit the raw data in your executable files and apps. You can download it from the mh-nexus website . For this method, you won’t be making any edits to this data, just searching through it so you can find your lost text. Be careful not to make any changes within the editor unless you know exactly what you’re doing."
+    },
+    {
+      "title": "Run HxD Hex Editor as an administrator.",
+      "content": "Run HxD Hex Editor as an administrator. To do this, open the Start menu or a new Windows Explorer window, right-click the app, and select Run as administrator from the menu."
+    },
+    {
+      "title": "Click Tools > Open Main Memory.",
+      "content": "Click Tools > Open Main Memory . In the HxD Hex Editor app, click Tools in the menu bar at the top of the app and select Open Main Memory ."
+    },
+    {
+      "title": "Select your Chrome browser from the list.",
+      "content": "Select your Chrome browser from the list. This may be a little tricky, since Chrome opens a separate process for every session, including all the tabs and windows you might have open right now. To find the right one: Go to Chrome and navigate to the tab or window where you lost your text. Press Shift + Esc . This should open Chrome’s task manager. Locate the task with a green R icon next to it, then scroll right to find the Process ID. You can also find the correct process ID for your tab by going to Chrome and clicking the three-dot menu at the top right side of the browser. From there, go to More Tools > Task Manager and locate the tab with the form you were filling out. Make note of the number in the Process ID column."
+    },
+    {
+      "title": "Go to Search > Find.",
+      "content": "Go to Search > Find . Next, click the Search menu at the top of the app window and select Find . A new window will open."
+    },
+    {
+      "title": "Select the Text-string tab.",
+      "content": "Select the Text-string tab. There should be a few tabs at the top of the Find window. Make sure the Text-string tab is open."
+    },
+    {
+      "title": "Enter the correct search settings.",
+      "content": "Enter the correct search settings. Before you search, configure the search settings. Make the following selections: Under Options , change Editor Encoding to Unicode (UTF-16 little endian) . Under Search Direction , check the bubble next to All . Leave Case Sensitive off."
+    },
+    {
+      "title": "Search for a word you remember from your lost text.",
+      "content": "Search for a word you remember from your lost text. In the Search for field, enter a word or phrase you remember from your lost text. Try not to use anything too common, since you may get too many results. Click Search All ."
+    },
+    {
+      "title": "Double-click a search result to examine it.",
+      "content": "Double-click a search result to examine it. In the window for the result you selected, look at the column that says Excerpt (text) and see if you spot anything you recognize."
+    },
+    {
+      "title": "Select and copy any text you recognize.",
+      "content": "Select and copy any text you recognize. Your text will probably be displayed in multiple separate chunks in the search results, so you’ll have to select and copy it one piece at a time. You can use the last few words of one chunk to search for the beginning of the next one."
+    },
+    {
+      "title": "Paste your text into a Notepad file.",
+      "content": "Paste your text into a Notepad file. As you locate each piece of the missing text, paste it into a new document in Notepad . Note that your text will look pretty messy, as it will be full of extra characters between each letter. You can use Search > Replace to find all examples of one of these extra characters and replace it with a blank. Reformat the text into a more readable form by going to Edit > Select All , then Edit > Line Operations > Split Lines . You’ll probably still need to do a bit of editing to get your work back into the format you want."
+    },
+    {
+      "title": "Install Form History Control (II) from the Chrome Web Store.",
+      "content": "Install Form History Control (II) from the Chrome Web Store. Visit this page in Chrome. Click the blue Add to Chrome button. This extension works by saving text that you enter into forms so that you can retrieve it later. It can prevent you from losing typed text in the future, but it won’t help if you lost the text before installing the extension. While Form History Control (II) works as advertised as of July 2024, there is a warning on the extension’s page stating that it may soon no longer be supported. Be aware that extensions like these save everything you type, which can be a security risk. You might want to avoid this method or temporarily disable the extension if you're entering sensitive data."
+    },
+    {
+      "title": "Click the extension’s icon to view your history.",
+      "content": "Click the extension’s icon to view your history. On the tab where you lost your form data, click the Form History Control (II) icon to the right of the address bar. If you don’t see it, click the puzzle-piece-shaped Extensions icon and locate it in the dropdown list of extensions. A window will pop open displaying your history for the website that you’re on."
+    },
+    {
+      "title": "Double-click a row to show your missing data.",
+      "content": "Double-click a row to show your missing data. The app window will display a row for each field in the form where you’ve entered data. You should see a preview of the text you lost in each row under the Content header. Double-click a row, and a window will pop open, displaying the field name and the content you entered."
+    },
+    {
+      "title": "Copy your recovered text.",
+      "content": "Copy your recovered text. To be extra sure you don’t lose it again, paste the text into a separate document on your computer and save it before adding it back to the form."
+    }
+  ]
+}

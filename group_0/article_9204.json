@@ -1,0 +1,390 @@
+{
+  "url": "https://www.wikihow.com/Connect-Two-Computers",
+  "title": "Connect Two Computers: Microsoft Windows & Mac OS X",
+  "steps": [
+    {
+      "title": "Connect both computers to the same wireless network.",
+      "content": "Connect both computers to the same wireless network. In order to share and access files over Wi-Fi, both computers need to be connected to the same wireless network. You can share files between both Mac and Windows computers."
+    },
+    {
+      "title": "Open the Advanced Sharing Settings menu.",
+      "content": "Open the Advanced Sharing Settings menu. Use the following steps to open Advanced Sharing Settings menu: Click the Windows Start button. Click the Settings/Gear icon. Click the Network & Internet icon. Click Advanced network settings (Windows 11) or Ethernet (Windows 10) Click Advanced Sharing Settings (Windows 11) or Change advanced sharing settings below \"Related Settings\" (Windows 10)."
+    },
+    {
+      "title": "Click Private or Private networks.",
+      "content": "Click Private or Private networks . This displays the network sharing options for Private networks."
+    },
+    {
+      "title": "Turn on both network discovery and file and printer sharing.",
+      "content": "Turn on both network discovery and file and printer sharing. To do so, click the radio option or toggle switch next to \"Network discovery,\" and \"File and printer sharing.\" Network discovery allows your computer to be seen and see other computers using private accounts on your computer. File and printer sharing allows you to share files and printers over a network."
+    },
+    {
+      "title": "Click Guest or Public or Public networks.",
+      "content": "Click Guest or Public or Public networks . This is the second sharing option below \"Private\" in the Advanced Sharing Settings menu. This displays the network sharing options for guest and public accounts on your computer."
+    },
+    {
+      "title": "Turn on network discovery and file and printer sharing.",
+      "content": "Turn on network discovery and file and printer sharing. To do so, click the radio option or toggle switch next to \"Network discovery,\" and \"File and printer sharing.\""
+    },
+    {
+      "title": "Click All Networks.",
+      "content": "Click All Networks . This is the third sharing option below \"Guest and Public.\" This displays the advanced sharing options for all networks your computer is connected to."
+    },
+    {
+      "title": "Turn on network sharing.",
+      "content": "Turn on network sharing. To do so, click the radio option next to \"Turn on sharing so anyone can read and write files in the public folders\" (Windows 10) or the toggle switch next to \"Public folder sharing\" (Windows 11). This allows you to share files over the network."
+    },
+    {
+      "title": "Turn password-protected sharing on or off.",
+      "content": "Turn password-protected sharing on or off. If password-protected sharing is turned on, other users will need to enter your computer username and password to access your shared folders. If it is turned off, anyone on the network can access your shared folder. To turn it on, click the radio option next to \"Turn password protected sharing on.\" If you are okay leaving it turned off, click the radio option next to \"Turn password protected sharing off.\""
+    },
+    {
+      "title": "Share a folder over the network.",
+      "content": "Share a folder over the network. In order for the other computer to be able to access your files, you need to share them. Use the following steps to share a folder: Press Windows Key + E to open File Explorer. Right-click a file or folder you want to share. Click Properties . Click the Sharing tab at the top. Click Share . Select Everyone in the drop-down menu and click Add . Set the permission level to \"Read/Write\" (or just \"Read\" if you don't want the other computer to be able to modify the files). Click Share ."
+    },
+    {
+      "title": "Access shared files from another computer.",
+      "content": "Access shared files from another computer. In order to access shared files on another computer, you will need to know the login username and password for the other computer. You can access files on another Windows computer or a Mac. Use the following steps to access shared files from another computer: [1] X Research source Press Windows key + E to open File Explorer. Click Network in the panel to the left. Click the computer you want to access. If you don't see the computer listed, type \"\\\\\" followed by the computer name in the address bar at the top. Enter the computer's username and password and click Ok . Click the user whose files you want to access. Open the folder with the files you want to access."
+    },
+    {
+      "title": "Connect the two computers with an Ethernet cable.",
+      "content": "Connect the two computers with an Ethernet cable. Use an Ethernet cable to connect your two computers to one another."
+    },
+    {
+      "title": "Open \"Network and Sharing Center\" on both computers.",
+      "content": "Open \"Network and Sharing Center\" on both computers. You'll need to do this on both computers to ensure they are configured properly. Use the following steps to open the \"Network & Sharing Center\" on a Windows 10 computer: Click the Windows Start button. Click the Settings/Gear icon. Click the Network & Internet icon. Click Advanced network settings (Windows 11) or Ethernet (Windows 10) Click Change advanced sharing settings below \"Related Settings\" (Windows 10 only)."
+    },
+    {
+      "title": "Click Ethernet on both computers.",
+      "content": "Click Ethernet on both computers. It's below \"Internet\" on the right side on Windows 10 or below \"Network adapters\" on Windows 11. This displays your Ethernet status. If you don't see \"Ethernet\" on the right side, click Change adapters settings on the left and right-click the connected \"Ethernet\" connection. Then click Properties ."
+    },
+    {
+      "title": "Click Properties (Windows 10) or Edit (Windows 11) on both computers.",
+      "content": "Click Properties (Windows 10) or Edit (Windows 11) on both computers. It's the first button at the bottom of the Status window on Windows 10. On Windows 11, it's next to more adapter settings."
+    },
+    {
+      "title": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties.",
+      "content": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties . This displays the internet protocol properties. Do this for both computers."
+    },
+    {
+      "title": "Select the radio option next to \"Use the following IP addresses.\"",
+      "content": "Select the radio option next to \"Use the following IP addresses.\" This allows you to manually input a unique IP address for both computers."
+    },
+    {
+      "title": "Input a unique IP address for both computers and click Ok.",
+      "content": "Input a unique IP address for both computers and click Ok . You can leave the subnet mask as \"255.255.255.0\" for both computers. Enter the following IP addresses on each computer: [2] X Research source Computer 1: 192.168.1.2 Computer 2: 192.168.1.1"
+    },
+    {
+      "title": "Enable Local Security Policy editor (Windows Home Edition only).",
+      "content": "Enable Local Security Policy editor (Windows Home Edition only). You'll need to edit the privacy settings for your Ethernet connection. If you are using Windows Pro or Enterprise Edition, you can skip this step. However, if you are using Windows Home Edition, you will need to download a batch file is used to enable Local Security Policy editor. This works on Windows 10 & 11. [3] X Research source Go to https://www.itechtics.com/enable-secpol-msc/ in a web browser. Scroll down and click \"GPEdit Enabler for Windows 10 Home Edition.\" You may receive a warning from your antivirus software. It's safe to download. Right-click the downloaded file in your Downloads folder and click Run as Administrator . Wait for the script to finish processing."
+    },
+    {
+      "title": "Open the Local Security Policy editor.",
+      "content": "Open the Local Security Policy editor. In order to be able to share files between the two computers, the ethernet connection must be set to \"Private.\" This needs to be done on both computers. Use the following steps to open the Local Security Policy editor. Press \"Windows key + R' to open Run. Type secpol.msc into Run. Click Ok ."
+    },
+    {
+      "title": "Click Network List Manager Policies.",
+      "content": "Click Network List Manager Policies . It's the fourth option in the Local Group Policy editor. It's the option that doesn't have any sub-folders. Do this on both computers."
+    },
+    {
+      "title": "Double-click Unidentified Networks.",
+      "content": "Double-click Unidentified Networks . This displays the properties window for your unidentified networks."
+    },
+    {
+      "title": "Select \"Private\" and click Apply followed by Ok.",
+      "content": "Select \"Private\" and click Apply followed by Ok . This sets your unidentified networks to Private. The Ethernet connection should now read as \"Private\" in the \"Network and Sharing Center.\" Again, this needs to be done on both computers."
+    },
+    {
+      "title": "Share a folder with the other computer.",
+      "content": "Share a folder with the other computer. In order for the other computer to be able to access your files, you need to share them. Use the following steps to share a folder: Press Windows Key + E to open File Explorer. Right-click a file or folder you want to share. Click Properties . Click the Sharing tab at the top. Click Share . Select Everyone in the drop-down menu and click Add . Set the permission level to \"Read/Write\" (or just \"Read\" if you don't want the other computer to be able to modify the files). Click Share ."
+    },
+    {
+      "title": "Access shared files from another computer.",
+      "content": "Access shared files from another computer. In order to access shared files on another computer, you will need to know the login username and password for the other computer. Use the following steps to access shared files from another computer: Press Windows key + E to open File Explorer. Click Network in the panel to the left. Click the computer you want to access. If you don't see the computer listed, type \\\\[computer-name] in the address bar at the top. Enter an username and password and click Ok . Click the user whose file you want to access. Open the folder with the files you want to access."
+    },
+    {
+      "title": "Connect both computers to the same wireless network.",
+      "content": "Connect both computers to the same wireless network. In order to be able to share files over Wi-Fi, both computers must be connected to the same wireless network. You can share files using both Mac and Windows computers."
+    },
+    {
+      "title": "Open the Apple menu .",
+      "content": "Open the Apple menu . Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click System Settings or System Preferences….",
+      "content": "Click System Settings or System Preferences… . You'll find this option in the drop-down menu. Doing so opens the System Preferences window."
+    },
+    {
+      "title": "Click General.",
+      "content": "Click General . It's in the menu bar to the left. If you are using macOS 12 (Monterey) or earlier, skip this step and click Sharing in the System Preferences menu."
+    },
+    {
+      "title": "Click Sharing.",
+      "content": "Click Sharing . It's in the General menu or the System Preferences menu on older versions of macOS."
+    },
+    {
+      "title": "Click the toggle switch next to \"File Sharing.\"",
+      "content": "Click the toggle switch next to \"File Sharing.\" This enables File Sharing on your Mac. If you are using an older version of macOS, click the checkbox next to \"File Sharing\" instead."
+    },
+    {
+      "title": "Click i next to the \"File Sharing\" toggle switch.",
+      "content": "Click i next to the \"File Sharing\" toggle switch. This opens the File Sharing Window. If you are using an older version of macOS, skip this step. Note the address at the top of the File Sharing menu. It usually says \"smb://192.168.0.1\" or something similar. This is your Mac's IP address and the address you will use to access your Mac from other computers."
+    },
+    {
+      "title": "Click + below \"Shared Folders.\"",
+      "content": "Click + below \"Shared Folders.\" This opens a Finder window that allows you to select a folder you want to share."
+    },
+    {
+      "title": "Select a folder you want to share and click Add.",
+      "content": "Select a folder you want to share and click Add . Use the Finder window to navigate to a folder you want to share. Click it to select it. Then click Add in the lower-right corner."
+    },
+    {
+      "title": "Set the folder permissions as desired.",
+      "content": "Set the folder permissions as desired. To set the folder permissions click the user you want to access the folder (or click everyone). Then use the drop-down menu to select \"read/write\" or \"read only\". Read/write allows other users to access and modify the files in the folder. Read only only allows users to view the files but not modify them."
+    },
+    {
+      "title": "Access shared folders.",
+      "content": "Access shared folders. You'll need to know the name of the computer you want to access and the username and password if they have password protection turned. You can do this with both Windows and Mac computers. You'll also need to know the name of the computer you want to access. Use the following steps to access a shared folder via Wi-Fi on a Mac: Open the Finder. Click Go in the menu bar at the top. Click Connect to Server at the bottom of the drop-down menu. Click Browse and select the computer you want to access. If you don't see the computer you want to access, enter smb://[computer-name]/ below \"Server address\" and click Ok. Enter the username and password and click Ok . Click the folder you want to access and click Ok ."
+    },
+    {
+      "title": "Connect the two computers.",
+      "content": "Connect the two computers. Use an Ethernet cable to connect your two Mac computers to one another. Unless one or both of the Macs are iMacs (desktop computers), you'll need two Ethernet to USB-C adapters to plug into your Macs' Thunderbolt 3 ports before you can connect them via Ethernet. The Thunderbolt port is a small pill-shaped port that has an icon that resembles a lightning bolt. If there is no ethernet port on the computer you want to connect, you may need to use an ethernet-to-USB adapter."
+    },
+    {
+      "title": "Click Go on both computers.",
+      "content": "Click Go on both computers. Clicking it prompts a drop-down menu. If you don't see Go , click the desktop to force it to appear. Make sure that you're doing this on the Mac from which you want to transfer files."
+    },
+    {
+      "title": "Click Connect to Server.",
+      "content": "Click Connect to Server . You'll find this option near the bottom of the drop-down menu."
+    },
+    {
+      "title": "Click Browse.",
+      "content": "Click Browse . It's near the bottom of the Connect to Server window. A pop-up window with nearby computers will appear. If you aren't able to find the other computer through \"Browse,\" enter smb://[computer-name] below \"Server address\" to connect to it manually."
+    },
+    {
+      "title": "Double-click the second Mac's name.",
+      "content": "Double-click the second Mac's name. You'll find this in the pop-up window."
+    },
+    {
+      "title": "Enter the second computer's password when prompted.",
+      "content": "Enter the second computer's password when prompted. This will allow you to connect to the second computer."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . It's in the lower-right side of the pop-up window."
+    },
+    {
+      "title": "Open Finder.",
+      "content": "Open Finder. Click the Finder app icon, which resembles a blue face in your Mac's Dock."
+    },
+    {
+      "title": "Select the computer you want to access.",
+      "content": "Select the computer you want to access. It should be listed in the side panel to the left in the Finder under \"Shared.\""
+    },
+    {
+      "title": "Select the files you want to move and press ⌘ Command+C.",
+      "content": "Select the files you want to move and press ⌘ Command + C . This copies the files you selected from the other Mac."
+    },
+    {
+      "title": "Navigate to where you want to save the files and press ⌘ Command+V.",
+      "content": "Navigate to where you want to save the files and press ⌘ Command + V . This pastes the files on the current Mac."
+    },
+    {
+      "title": "Connect two Macs with a Thunderbolt 3 cable or higher.",
+      "content": "Connect two Macs with a Thunderbolt 3 cable or higher. In addition to using an Ethernet cable, you can connect two Macs using a Thunderbolt 3 or 4 cable to transfer data between the two Macs at a higher speed than an Ethernet cable. Connect both Macs using a Thunderbolt cable. The Thunderbolt ports resemble USB-C ports, but they have a lightning bolt icon next to them. [4] X Research source"
+    },
+    {
+      "title": "Open the Network Settings menu on both Macs:",
+      "content": "Open the Network Settings menu on both Macs: Use the following steps to do so: Click the Apple icon in the menu at the top. Click System Settings or System Preferences... . Click Network ."
+    },
+    {
+      "title": "Click Thunderbolt Bridge on both Macs.",
+      "content": "Click Thunderbolt Bridge on both Macs. Thunderbolt bridge should be listed as one of the network services. Select this option for both Macs. If you don't see this option listed, click the drop-down menu icon next to the icon with three dots (…), then click Add Service… . Then select Thunderbolt Bridge in the \"Interface\" drop-down menu. Then click Create ."
+    },
+    {
+      "title": "Assign an IP address to both Macs.",
+      "content": "Assign an IP address to both Macs. The IP address for both Macs needs to be different, but in the following format: \"192.168.1.XX\" Replace \"XX\" with a unique number for both Macs (i.e \"01\" and \"02\"). Use the following steps to assign an IP address: Click Details next to \"Thunderbolt Bridge\" in the Network menu. Click TCP/IP . Select Manually next to \"Configure IPv4.\" Enter a unique IP address next to \"IP address.\" Click Ok ."
+    },
+    {
+      "title": "Enable File Sharing on both Macs.",
+      "content": "Enable File Sharing on both Macs. Use the following steps on both Macs to do so: Open the Apple menu Click System Settings or System Preferences... Click General (macOS 13 Ventura or higher only). Click Sharing Ensure \"File Sharing\" is turned on. Click \" i \" next to \"File Sharing\" (macOS 13 Ventura or higher only). Change the \"Everyone\" permissions from \"Read Only\" to \"Read & Write\"."
+    },
+    {
+      "title": "Share a folder from your Mac.",
+      "content": "Share a folder from your Mac. Click the ＋ icon below the list of shared folders, then double-click the folder that you want to share."
+    },
+    {
+      "title": "Connect to a Mac from the other Mac.",
+      "content": "Connect to a Mac from the other Mac. Once both Macs are connected and File Sharing is turned on, use the following steps to connect to one Mac from the other: Click Go in the menu bar at the top. Click Network . Double-click the other Mac in the list. Click Connect as in the upper-right corner. Enter the user password if prompted. Click Connect ."
+    },
+    {
+      "title": "Access the shared files from the other Mac.",
+      "content": "Access the shared files from the other Mac. Once you connect to the Mac, all shared files and folders from the other Mac should be listed. You can read them or modify them, depending on what permissions the other Mac has set for each file or folder."
+    },
+    {
+      "title": "Connect the two computers.",
+      "content": "Connect the two computers. Use an Ethernet cable to connect your two computers to one another. You'll need an Ethernet to USB-C adapter to plug into your Mac's Thunderbolt 3 port before you can attach an Ethernet cable to the Mac. The Thunderbolt port is a small pill-shaped port that has an icon that resembles a lightning bolt. If there is no ethernet port on the computer you want to connect, you may need to use an ethernet-to-USB adapter."
+    },
+    {
+      "title": "Enable file sharing on the Windows computer.",
+      "content": "Enable file sharing on the Windows computer. Use the following steps to enable File Sharing on Windows: Click the Windows Start menu. Click the Gear/Settings icon. Click Network & Internet . Click Advanced network settings (Windows 11) or Ethernet (Windows 10) Click Advanced Sharing Settings (Windows 11) or Network and Sharing Center (Windows 10) Click Change advanced sharing settings (Windows 10 only). Turn on Network discovery\" for both private and public networks. Turn on \"File and printer sharing\" for both private and public networks. Click Save changes (Windows 10 only)."
+    },
+    {
+      "title": "Share a folder.",
+      "content": "Share a folder. Use the following steps to share a folder on Windows: Press Windows Key + E to open File Explorer. Right-click a folder you want to share and click Properties . Click the Sharing tab. Click Share . Select Everyone from the drop-down menu and click Add . Select Read/Write as the permission level. Click Share ."
+    },
+    {
+      "title": "Enable file sharing on the Mac computer.",
+      "content": "Enable file sharing on the Mac computer. Use the following steps to enable File Sharing on a Mac: Open the Apple menu Click System Settings or System Preferences... Click General (macOS 13 Ventura or higher only). Click Sharing Ensure \"File Sharing\" is turned on. Click \" i \" next to \"File Sharing\" (macOS 13 Ventura or higher only). Change the \"Everyone\" permissions from \"Read Only\" to \"Read & Write\"."
+    },
+    {
+      "title": "Share a folder from your Mac.",
+      "content": "Share a folder from your Mac. Click the ＋ icon below the list of shared folders, then double-click the folder that you want to share. You may have to click Add to add the folder to the list of shared folders."
+    },
+    {
+      "title": "Access the Mac's files from the Windows computer.",
+      "content": "Access the Mac's files from the Windows computer. You can do this from within the File Explorer: Open Start . Click File Explorer . Click the Mac's name below the Network heading on the left side of the File Explorer. If you don't see this option, enter the Mac's network address in the address bar at the top. Open the shared folder. Select the files that you want to save, then press Ctrl + C Go to a folder on your computer and then press Ctrl + V ."
+    },
+    {
+      "title": "Access the Windows computer's files from the Mac.",
+      "content": "Access the Windows computer's files from the Mac. You can do this from within the Finder using the following steps: Open the Finder. Click your Windows computer's name in the lower-left side of the window. Open the shared folder. Select the files that you want to save, then press ⌘ Command + C Go to a folder on your Mac and then press ⌘ Command + V ."
+    },
+    {
+      "title": "Purchase a USB-to-USB data transfer cable.",
+      "content": "Purchase a USB-to-USB data transfer cable. USB-to-USB data transfer cables have a USB-A connector on both ends. They allow you to transfer data between two computers. To do this, you will need special data transfer software. This may come with the USB-to-USB data transfer cable, or it can be purchased or downloaded online. Check to make sure the software you are using to transfer files is compatible with your operating system. Especially if you are using a Mac computer or an older operating system. [5] X Research source You will need to use the same data transfer software on both computers."
+    },
+    {
+      "title": "Install the data transfer software on both computers.",
+      "content": "Install the data transfer software on both computers. If the data transfer cable you purchased came with a CD or DVD, you can use that to install the data transfer software on both computers. If it did not come with a CD or DVD, or your computer(s) don't have an optical disk drive, consult the user's manual that came with the data transfer cable for instructions on how to download the software online."
+    },
+    {
+      "title": "Connect the USB-to-USB data transfer cable to both computers.",
+      "content": "Connect the USB-to-USB data transfer cable to both computers. Plug one end of the USB cable to a free USB port on one computer. Then connect the other end of the USB cable to a free USB port on the second computer."
+    },
+    {
+      "title": "Start the data transfer software on both computers.",
+      "content": "Start the data transfer software on both computers. Click the icon for your data transfer software on both computers to launch it. It may be on your desktop, Windows Start menu, or Applications folder on Mac."
+    },
+    {
+      "title": "Select the option to transfer files.",
+      "content": "Select the option to transfer files. Each file transfer program may be a little different. Some may have the option to sync all files between both computers so that both computers have the same files. There may also be an option to transfer everything from one computer to another. Select the option that allows you to choose which files you want to transfer. This may be a drag-and-drop option or an option to allows you to click the files you want to transfer in File Explorer or the Finder."
+    },
+    {
+      "title": "Select the files you want to transfer.",
+      "content": "Select the files you want to transfer. Either navigate to and click the files you want to transfer to select them, or use the drag-and-drop interface to click and drag the files you want to transfer into the data transfer software."
+    },
+    {
+      "title": "Transfer the files you select.",
+      "content": "Transfer the files you select. After selecting the files you want to transfer, click Ok , Send , Transfer or similar to send the files to the other computer. [6] X Research source"
+    },
+    {
+      "title": "Connect the two computers with an Ethernet cable.",
+      "content": "Connect the two computers with an Ethernet cable. Use an Ethernet cable to connect your two computers to one another. You'll need an Ethernet to USB-C adapter to plug into your Mac's Thunderbolt 3 port before you can attach an Ethernet cable to a Mac. The Thunderbolt 3 port is a small, pill-shaped port that has a lightning bolt icon above it. On Macbooks, it is generally found on the side. On iMacs, it is generally found on the back. If your computer does not have an ethernet port, you may need to get an ethernet-to-USB adapter for your computer."
+    },
+    {
+      "title": "Click the Windows Start button on the host computer.",
+      "content": "Click the Windows Start button on the host computer. The host computer is the computer that is sharing internet access to another computer. This computer should be connected to the internet via Wi-Fi or another Ethernet connection. Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Open the \"Network Connections\" window.",
+      "content": "Open the \"Network Connections\" window. Use the following steps to open the \"Network Connections\" window on the host computer: Click the Windows Start button. Type \"Network Connections.\" Click View Network Connections ."
+    },
+    {
+      "title": "Right-click the internet connection you are connected to and click Properties.",
+      "content": "Right-click the internet connection you are connected to and click Properties . Doing so prompts a drop-down menu to appear. Click Properties at the bottom of that menu."
+    },
+    {
+      "title": "Click the Sharing tab.",
+      "content": "Click the Sharing tab. This allows you to set your sharing options for your computer."
+    },
+    {
+      "title": "Click the checkbox next to allow internet sharing.",
+      "content": "Click the checkbox next to allow internet sharing. It's the checkbox next to \"Allow other network users to connect through this computer's internet connection.\" It's the first option at the top of the window."
+    },
+    {
+      "title": "Select the method you are using to share your internet connection.",
+      "content": "Select the method you are using to share your internet connection. Use the drop-down menu below \"Home network connection:\" to select how you will be sharing your internet. If you are using an ethernet cable, you will need to select \"Ethernet.\""
+    },
+    {
+      "title": "Click Ok followed by Yes.",
+      "content": "Click Ok followed by Yes . This saves your internet sharing settings."
+    },
+    {
+      "title": "Right-click \"Ethernet\" and click Properties.",
+      "content": "Right-click \"Ethernet\" and click Properties . This displays the Properties menu for the Ethernet connection."
+    },
+    {
+      "title": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties.",
+      "content": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties . This displays the internet protocol properties."
+    },
+    {
+      "title": "Select the radio option next to \"Use the following IP addresses.\"",
+      "content": "Select the radio option next to \"Use the following IP addresses.\" This allows you to manually assign an IP address for the host computer."
+    },
+    {
+      "title": "Change the IP address to 192.168.0.1 and click Ok.",
+      "content": "Change the IP address to 192.168.0.1 and click Ok . Enter the IP address in the spaces next to \"IP Address.\" You can leave the Subnet Mask as \"255.255.255.0.\" Click Ok when you are finished. This is all you need to configure on the computer that is hosting an internet connection. [7] X Research source"
+    },
+    {
+      "title": "Open \"Network Connections\" on the other computer.",
+      "content": "Open \"Network Connections\" on the other computer. Now jump on the computer that is receiving an internet connection (the client computer) and use the following steps to open the \"Network Connections\". Click the Windows Start menu. Type \"Network Connections.\" Click View Network Connections ."
+    },
+    {
+      "title": "Right-click \"Ethernet\" and click Properties.",
+      "content": "Right-click \"Ethernet\" and click Properties . This displays the Properties menu for the Ethernet connection."
+    },
+    {
+      "title": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties.",
+      "content": "Select \"Internet Protocol version 4 (TCP/IPv4)\" and click Properties . This displays the internet protocol properties."
+    },
+    {
+      "title": "Select the radio option next to \"Use the following IP addresses\" and \"Use the following DNS server address.\"",
+      "content": "Select the radio option next to \"Use the following IP addresses\" and \"Use the following DNS server address.\" This allows you to manually assign an IP address for the client computer as well as enter the IP address for the host computer."
+    },
+    {
+      "title": "Assign the following IP information to the client computer and click Ok.",
+      "content": "Assign the following IP information to the client computer and click Ok . You can leave the Subnet mask as it is, but the IP address must be unique from the host computer. You also need to include the host computer's IP address as the default gateway and DNS server. This allows the client computer to access the internet through the host computer's internet access. Assign the following information to the second computer: IP address: 192.168.0.2 Subnet Mask: 255.255.255.0 Default Gateway: 192.168.0.1 Preferred DNS server: 192.168.0.1"
+    },
+    {
+      "title": "Connect the two computers with an Ethernet cable.",
+      "content": "Connect the two computers with an Ethernet cable. Use an Ethernet cable to connect your two Mac computers to one another. If connecting a Mac to another Mac, you'll need two Ethernet to USB-C adapters to plug into your Macs' Thunderbolt 3 ports before you can connect them via Ethernet. The Thunderbolt port is a small pill-shaped port with a lightning bolt icon above it. If you cannot connect an ethernet cable to one of the computers, you may need an ethernet-to-USB adapter."
+    },
+    {
+      "title": "Open the Apple menu on the host computer.",
+      "content": "Open the Apple menu on the host computer. The host computer is the computer that is sharing its internet connection with another computer. The host computer should be connected to the internet either via Wi-Fi or another ethernet connection. Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click System Settings or System Preferences….",
+      "content": "Click System Settings or System Preferences… . You'll find this option in the drop-down menu. Doing so opens the System Settings window."
+    },
+    {
+      "title": "Click General (macOS Ventura and higher only).",
+      "content": "Click General (macOS Ventura and higher only). It's in the menu bar t the left."
+    },
+    {
+      "title": "Click Sharing.",
+      "content": "Click Sharing . It's in the General menu. On older versions of macOS, it's the icon that resembles a blue folder."
+    },
+    {
+      "title": "Click i next to \"Internet Sharing.\"",
+      "content": "Click i next to \"Internet Sharing.\" If you are using macOS 12 or earlier, double-click this option instead."
+    },
+    {
+      "title": "Select the adapter you're receiving internet from.",
+      "content": "Select the adapter you're receiving internet from. You can do so using the drop-down menu next to \"Share your connection from\". For example, if you are receiving internet from an Ethernet cable, you would select your Ethernet adapter. If you are receiving internet via Wi-Fi, you would select your Wi-Fi adapter."
+    },
+    {
+      "title": "Select how you want to share your internet connection.",
+      "content": "Select how you want to share your internet connection. Use the box next to \"To computer using\" to select all the methods you want to share your internet. You can select \"Wi-Fi\" to turn your Mac into a hotspot, your you can select another Ethernet, Thunderbolt, or USB adapter. You can select more than one option. Then click Done ."
+    },
+    {
+      "title": "Configure your Wi-Fi settings.",
+      "content": "Configure your Wi-Fi settings. If you want to share your internet using Wi-Fi, you will need to configure your Wi-Fi settings so that other devices can connect to it. Use the following steps to configure the Wi-Fi network: Click Wi-Fi options . Enter a name for the network. Select a channel. Channels 1, 6, and 11 offer a 2.4 GHz connection, which is slower, but offers a larger range and is more compatible with older devices. Channels 36, 40, 44, and 48 offer a 5 Ghz connection which is faster, but doesn't have as much range and isn't compatible with as many devices. Enter a password for the Wi-Fi connection. Click Ok ."
+    },
+    {
+      "title": "Turn on Internet Sharing.",
+      "content": "Turn on Internet Sharing. To do so, click the toggle switch or checkbox next to \"Internet Sharing.\" Then click Start . You can now connect other devices to your Mac using an Ethernet cable, to Wi-Fi using the Wi-Fi settings you configured."
+    }
+  ]
+}

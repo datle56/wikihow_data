@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Remove-the-Read%E2%80%90Only-State-from-a-USB-Drive",
+  "title": "Easily Remove the “Read Only” State from a USB Drive on PC",
+  "steps": [
+    {
+      "title": "Plug your USB in.",
+      "content": "Plug your USB in."
+    },
+    {
+      "title": "Go to 'Search'.",
+      "content": "Go to 'Search'."
+    },
+    {
+      "title": "Type CMD in the 'Search Bar' section and select the 'Command Prompt'.",
+      "content": "Type CMD in the 'Search Bar' section and select the 'Command Prompt'."
+    },
+    {
+      "title": "Type DISKPART into the Command Prompt.",
+      "content": "Type DISKPART into the Command Prompt. Where the pop-up window appears, click on Yes to accept it. [1] X Research source"
+    },
+    {
+      "title": "Alternatively, go to 'Search'.",
+      "content": "Alternatively, go to 'Search'."
+    },
+    {
+      "title": "And type RUN.",
+      "content": "And type RUN ."
+    },
+    {
+      "title": "Alternatively, press the 'Windows+R' keys to open 'Run' tool.",
+      "content": "Alternatively, press the 'Windows+R' keys to open 'Run' tool. Then type diskpart and press OK ."
+    },
+    {
+      "title": "Type LIST DISK or LIS DIS into the console.",
+      "content": "Type LIST DISK or LIS DIS into the console. It will show all the connected drives including your USB. The newly connected USB drive should be the last on that list. Or you can find your drive by looking on the size of drives."
+    },
+    {
+      "title": "Type SELECT DISK # or SEL DIS # ('#' means the drive number-here my disk number is '2').",
+      "content": "Type SELECT DISK # or SEL DIS # ('#' means the drive number-here my disk number is '2')."
+    },
+    {
+      "title": "Type ATTRIBUTES DISK or ATTR DIS, it will show the current attributes of the drive.",
+      "content": "Type ATTRIBUTES DISK or ATTR DIS , it will show the current attributes of the drive. Here the current read-only state as \"on\" means the drive is read-only."
+    },
+    {
+      "title": "Type ATTR DIS CLEAR READONLY.",
+      "content": "Type ATTR DIS CLEAR READONLY . It will remove the current read-only state."
+    },
+    {
+      "title": "Type ATTR DIS again.",
+      "content": "Type ATTR DIS again. It will show the change."
+    },
+    {
+      "title": "Type EXIT to exit the Command Prompt",
+      "content": "Type EXIT to exit the Command Prompt"
+    },
+    {
+      "title": "Then remove the USB and plug it again",
+      "content": "Then remove the USB and plug it again"
+    },
+    {
+      "title": "Now do any task to see the change.",
+      "content": "Now do any task to see the change."
+    }
+  ]
+}

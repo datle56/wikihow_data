@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Read/Write-in-a-Text-File-Using-Python-on-a-Macbook",
+  "title": "How to Read/Write in a Text File Using Python on a Macbook",
+  "steps": [
+    {
+      "title": "Open a browser and navigate to Python.org.",
+      "content": "Open a browser and navigate to Python.org. This should take you to Python's website where you can download the latest version of Python available."
+    },
+    {
+      "title": "Click the \"Downloads\" tab.",
+      "content": "Click the \"Downloads\" tab. Find where it says \"Download the latest version for macOS\". Click the yellow button to download the latest version of Python onto your MacBook."
+    },
+    {
+      "title": "Go to your MacBook's \"Launchpad\" and open up \"IDLE\".",
+      "content": "Go to your MacBook's \"Launchpad\" and open up \"IDLE\". This will open up an IDLE Shell where it will output the code that you run."
+    },
+    {
+      "title": "Click \"File\" and then \"New File\" in the upper left-hand corner of your screen",
+      "content": "Click \"File\" and then \"New File\" in the upper left-hand corner of your screen This will open a blank terminal where you can start typing your Python code."
+    },
+    {
+      "title": "Decide what you would like to create in a Text File.",
+      "content": "Decide what you would like to create in a Text File. For this example, The example below will demonstrate taking each line from a previously created file and printing every other line (every odd line) onto a new file."
+    },
+    {
+      "title": "Open the text file you would like to use.",
+      "content": "Open the text file you would like to use. Use any variable you like (example: \"oldfile\"). Assign this to \"open(\"YOUR FILE NAME.txt\", 'r')\". The letter \"r\" in this code stands for read."
+    },
+    {
+      "title": "Assign a new variable for the new file that you are creating",
+      "content": "Assign a new variable for the new file that you are creating Use any variable you like different from the first one (example: \"newfile\") and assign it to \"open(\"NEW FILE NAME YOU ARE CREATING.txt\", 'w')\". The letter \"w\" in this code stands for write."
+    },
+    {
+      "title": "Assign a new variable to read the lines of the file",
+      "content": "Assign a new variable to read the lines of the file Use any new variable (example: \"eachline\") and assign it to your original file variable followed by \".readlines()\". This is a variable that can now be used to read each line separately in the text file you are reading."
+    },
+    {
+      "title": "Write the code that you want to implement into the file",
+      "content": "Write the code that you want to implement into the file The example contains a for loop that took the location of each line, decided if it was an odd line, and then used the new text file variable \".write(NAME OF FOR LOOP) to write every other line onto the new text file."
+    },
+    {
+      "title": "Close files you opened",
+      "content": "Close files you opened At the end of your code, write your text file variable \".close()\". Do this for each file that you previously opened in your code. This is an important habit you should have, as it reduces the risk of the file being unwarrantedly modified or read."
+    },
+    {
+      "title": "Make sure that every file you used is in the same folder.",
+      "content": "Make sure that every file you used is in the same folder. This includes the file that your code is written on."
+    },
+    {
+      "title": "Click \"Run\" at the top of your screen, and then \"Run Module\".",
+      "content": "Click \"Run\" at the top of your screen, and then \"Run Module\". This is the final step that runs your program, Whatever files you wanted to write in should now be created after running this program."
+    }
+  ]
+}

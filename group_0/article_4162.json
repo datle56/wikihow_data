@@ -1,0 +1,170 @@
+{
+  "url": "https://www.wikihow.com/Block-Yahoo!",
+  "title": "How to Block Yahoo!",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+S.",
+      "content": "Press ⊞ Win + S . This opens the Windows Search bar."
+    },
+    {
+      "title": "Type notepad into the search.",
+      "content": "Type notepad into the search. Don't press anything afterwards—just type the word into the box."
+    },
+    {
+      "title": "Right-click Notepad in the search results.",
+      "content": "Right-click Notepad in the search results. A menu will expand."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . If prompted by your security settings, click Yes to continue."
+    },
+    {
+      "title": "Click the File menu and select Open.",
+      "content": "Click the File menu and select Open . This opens the file browser."
+    },
+    {
+      "title": "Navigate to the folder that contains your hosts file.",
+      "content": "Navigate to the folder that contains your hosts file. The folder is C:\\Windows\\System32\\drivers\\etc. To get there, do the following steps: Double-click the C: drive (unless Windows is installed on a different drive). If you don't see it, click This PC first. Double-click the System32 folder. Double-click the drivers folder. Double-click the etc folder."
+    },
+    {
+      "title": "Select All Files from the drop-down menu.",
+      "content": "Select All Files from the drop-down menu. The menu is that the bottom-right corner of the window."
+    },
+    {
+      "title": "Allow the host file to be edited.",
+      "content": "Allow the host file to be edited. Here's how: Right-click the hosts file and select Properties . Click the Security tab. Click the Edit button. Check the \"Allow\" box next to Full Control. Click OK and then Yes . Click OK to close the window."
+    },
+    {
+      "title": "Select the hosts file and click Open.",
+      "content": "Select the hosts file and click Open . The file is now open for editing."
+    },
+    {
+      "title": "Use the arrow keys to scroll down to the first empty line.",
+      "content": "Use the arrow keys to scroll down to the first empty line. You'll need to type something on the first empty line, so make sure you're below the existing entries."
+    },
+    {
+      "title": "Type the following into the file.",
+      "content": "Type the following into the file. On the first empty line, type 127.0.0.1 , press the Tab key, and then type www.yahoo.com Press the Enter key to go to the next line. Type 127.0.0.1 , press the Tab key, and then type yahoo.com . If you want to block Yahoo Mail as well, press Enter to go to the next line, type 127.0.0.1 , press Tab , and then type mail.yahoo.com ."
+    },
+    {
+      "title": "Click the File menu and select Save.",
+      "content": "Click the File menu and select Save . This saves your changes to the hosts file."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. After editing the hosts file, click the Start menu, click the Power menu, and select the option to Restart . When your PC comes back up, nobody will be able to access Yahoo on the web using any web browser."
+    },
+    {
+      "title": "Open the Terminal app on your Mac.",
+      "content": "Open the Terminal app on your Mac. You can do this by typing terminal into the Spotlight search bar and selecting Terminal from the search results. You can also open Terminal by double-clicking its icon in Finder under Applications > Utilities . This method will prevent you (and anyone else who uses your Mac) from accessing Yahoo from all browser and other apps. [1] X Research source"
+    },
+    {
+      "title": "Type sudo nano /etc/hosts and press ⏎ Return.",
+      "content": "Type sudo nano /etc/hosts and press ⏎ Return . You will be prompted to enter your password."
+    },
+    {
+      "title": "Enter your password and press ⏎ Return.",
+      "content": "Enter your password and press ⏎ Return . Now that you've confirmed your password, a special file called a Hosts file will open in a text editor called Nano."
+    },
+    {
+      "title": "Use the arrow keys to scroll down to the first empty line.",
+      "content": "Use the arrow keys to scroll down to the first empty line. You'll need to type something on the first empty line, so make sure you're below the existing entries."
+    },
+    {
+      "title": "Type the following into the file.",
+      "content": "Type the following into the file. On the first empty line, type 127.0.0.1 , press the Tab key, and then type www.yahoo.com Press the Return key to go to the next line. Type 127.0.0.1 , press the Tab key, and then type yahoo.com . If you want to block Yahoo Mail as well, press Return to go to the next line, type 127.0.0.1 , press Tab , and then type mail.yahoo.com ."
+    },
+    {
+      "title": "Press Control+O.",
+      "content": "Press Control + O . This saves your changes to the file."
+    },
+    {
+      "title": "Press Control+X.",
+      "content": "Press Control + X . This exits Nano. You can now close the Terminal window by clicking the red circle at the top."
+    },
+    {
+      "title": "Type sudo dscacheutil -flushcache and press ⏎ Return.",
+      "content": "Type sudo dscacheutil -flushcache and press ⏎ Return . This refreshes your network settings so Yahoo will be blocked immediately. If you ever want to unblock Yahoo, you can repeat these steps, except instead of adding more lines, you'll just remove the two lines you added."
+    },
+    {
+      "title": "Open your iPhone's Settings .",
+      "content": "Open your iPhone's Settings . You'll find the gear icon on your home screen or in the app library. You can use Apple's built-in content filtering to prevent a child from going to Yahoo on the phone or tablet. To do this, you'll need to also block access to adult websites."
+    },
+    {
+      "title": "Tap Screen Time.",
+      "content": "Tap Screen Time . It's the hourglass icon."
+    },
+    {
+      "title": "Enable Screen Time if you haven't already.",
+      "content": "Enable Screen Time if you haven't already. If Screen Time is already on, you'll see some stats about usage. If not, tap Turn On Screen Time to enable it now. Then perform the following steps: Tap Continue . Tap This is My Child's iPhone . Tap Not Now twice. Tap Continue . Enter and confirm a new passcode. This will be used to edit your screen time settings, including settings for content filtering. Follow the on-screen instructions to enable screen time."
+    },
+    {
+      "title": "Tap Content & Privacy Restrictions.",
+      "content": "Tap Content & Privacy Restrictions . It's toward the bottom."
+    },
+    {
+      "title": "Tap Content Restrictions.",
+      "content": "Tap Content Restrictions . It's near the top."
+    },
+    {
+      "title": "Tap Web Content.",
+      "content": "Tap Web Content . It's near the middle of the menu."
+    },
+    {
+      "title": "Select Limit Adult Websites.",
+      "content": "Select Limit Adult Websites . This expands more options below."
+    },
+    {
+      "title": "Add Yahoo to the list of \"Never Allow\" websites.",
+      "content": "Add Yahoo to the list of \"Never Allow\" websites. As soon as you add a site to this list, anyone who tries to view it in a web browser on this iPhone or iPad will see a \"Restricted\" error. To bypass the restriction, they'll need to enter the Screen Time PIN. To add Yahoo to the list: Tap Add Website under \"Never Allow.\" Type www.yahoo.com and tap done . Repeat those steps for yahoo.com and mail.yahoo.com (if you want to block Yahoo mail too)."
+    },
+    {
+      "title": "Tap the back button to return to Content & Privacy Restrictions.",
+      "content": "Tap the back button to return to Content & Privacy Restrictions. Now that you've blocked the website, you can either stop here, or continue if you want to prevent your child (or other person) from downloading any Yahoo-related apps from the App Store. Keep in mind that the child will not be able to download any apps, not just Yahoo."
+    },
+    {
+      "title": "Tap iTunes & App Store Purchases.",
+      "content": "Tap iTunes & App Store Purchases . It's near the top."
+    },
+    {
+      "title": "Select Always Require.",
+      "content": "Select Always Require . This ensures that the person using the phone or tablet will not be able to install apps unless they have your Screen Time password."
+    },
+    {
+      "title": "Open the Family Link app on your Android or Chromebook.",
+      "content": "Open the Family Link app on your Android or Chromebook. If you manage a child's account and don't want them visiting Yahoo or any Yahoo-affiliated sites (such as Yahoo Mail), you can block the site in the Family Link app. The Family Link app has a blue, green, and yellow shield icon and you'll find it in your app list. If you don't have the Family Link app on your Android or Chromebook, you can get it from the Play Store, or just go to https://g.co/YourFamily and sign in."
+    },
+    {
+      "title": "Select the account you want to block Yahoo for.",
+      "content": "Select the account you want to block Yahoo for. This opens that account's settings. [2] X Research source"
+    },
+    {
+      "title": "Tap Manage settings on the Settings card.",
+      "content": "Tap Manage settings on the Settings card. More settings will expand."
+    },
+    {
+      "title": "Tap Filters on Google Chrome.",
+      "content": "Tap Filters on Google Chrome ."
+    },
+    {
+      "title": "Tap Manage Sites.",
+      "content": "Tap Manage Sites ."
+    },
+    {
+      "title": "Tap Blocked.",
+      "content": "Tap Blocked . If any sites are already blocked, they will appear here."
+    },
+    {
+      "title": "Tap Add an exception.",
+      "content": "Tap Add an exception . Now you'll be able to enter the address of the site you want to block."
+    },
+    {
+      "title": "Add any Yahoo URLs you want to block.",
+      "content": "Add any Yahoo URLs you want to block. If you just want to block the main Yahoo website, enter www.yahoo.com and yahoo.com . If you also want to block Yahoo Mail, enter mail.yahoo.com as well."
+    },
+    {
+      "title": "Tap the X after you're done making changes.",
+      "content": "Tap the X after you're done making changes. The changes will take effect immediately. Since you're blocking the website in user's Google account, it will affect their browsing anywhere they sign in."
+    }
+  ]
+}

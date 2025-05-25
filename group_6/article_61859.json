@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Verify-a-GPG-Signature",
+  "title": "How to Verify a GPG Signature",
+  "steps": [
+    {
+      "title": "Acquire the Public Key.",
+      "content": "Acquire the Public Key. Import the Public Key into GPG."
+    },
+    {
+      "title": "Acquire a copy of the file in question.",
+      "content": "Acquire a copy of the file in question. Save it in a Folder."
+    },
+    {
+      "title": "Acquire a copy of the signature-file in question.",
+      "content": "Acquire a copy of the signature-file in question. Save it in the same Folder."
+    },
+    {
+      "title": "Open a command-line interface.",
+      "content": "Open a command-line interface. Change the working directory to the Folder where your file and signature-file are saved."
+    },
+    {
+      "title": "Verify the signature.",
+      "content": "Verify the signature. Type the following command into a command-line interface: gpg --verify [signature-file] [file] E.g., if you have acquired (1) the Public Key 0x416F061063FEE659, (2) the Tor Browser Bundle file (tor-browser.tar.gz), and (3) the signature-file posted alongside the Tor Browser Bundle file (tor-browser.tar.gz.asc), You would type the following: gpg --verify tor-browser.tar.gz.asc tor-browser.tar.gz"
+    }
+  ]
+}

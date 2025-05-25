@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Check-Path-in-Unix",
+  "title": "How to Check Path in Unix",
+  "steps": [
+    {
+      "title": "Find the full path to a file.",
+      "content": "Find the full path to a file. If you need to find the absolute path to a file on your system, you can do so using the find command. Let's say you needed to find the full path to a program called fun : Type find / -name \"fun\" –type f print and press ↵ Enter . This shows the full path to the file called fun no matter which directory you're in. If fun in a directory called /games/awesome , you'd see /games/awesome/fun in the results of the command."
+    },
+    {
+      "title": "Display your path environment variable.",
+      "content": "Display your path environment variable. When you type a command, the shell looks for it in the directories specified by your path. You can use echo $PATH to find which directories your shell is set to check for executable files. To do so: Type echo $PATH at the command prompt and press ↵ Enter . The results should look something like this: usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin This output is a list of directories where executable files are stored. If you try to run a file or command that isn't in one of the directories in your path, you'll receive an error that says the command is not found."
+    },
+    {
+      "title": "Add a new directory to the path.",
+      "content": "Add a new directory to the path. Let's say you want to run that file called fun . You learned from running the find command that it's in a directory called /games/awesome . However, /games/awesome is not in your path, and you don't want to type the full path just to run the game. To add it to your path: [1] X Research source Type export PATH=$PATH:/games/awesome and press ↵ Enter . Now you can run fun just by typing its name at the command line (instead of /games/awesome/fun ) and pressing ↵ Enter . This change only affects the current shell. If you open a new terminal window or sign in elsewhere, you'll have to re-add the path. To make the change permanent, add the command to your shell's config file (e.g., .bashrc , .cshrc )."
+    }
+  ]
+}

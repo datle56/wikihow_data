@@ -1,0 +1,202 @@
+{
+  "url": "https://www.wikihow.com/Disable-Write-Protection",
+  "title": "A Guide to Disabling Write Protection",
+  "steps": [
+    {
+      "title": "Check the storage item for a physical lock.",
+      "content": "Check the storage item for a physical lock. Most SD cards and some USB flash drives have small levers or switches on the casing that control whether the item is writable or read-only, so look for such a lever or switch and move it if necessary. Especially in the case of SD cards, physical locks often prove to be impossible forms of write protection until they're disabled. If your lock mechanism has been broken, you might be able to fix it ."
+    },
+    {
+      "title": "Make sure that you're using the right file system.",
+      "content": "Make sure that you're using the right file system. Windows and Mac computers use different file systems by default (Windows uses NTFS and is unsupported by Mac), and many flash drives, external hard drives, and SD cards are pre-formatted for Windows use. If you're having trouble using your drive on a Mac computer after using it on a Windows computer, you can reformat the drive by doing the following: Plug the drive into your Mac. Change the drive's format to the \"Mac OS Extended (Journaled)\" format."
+    },
+    {
+      "title": "Check to see if the drive is full.",
+      "content": "Check to see if the drive is full. You may get a write protection error if there is no more space on the drive on which you're trying to write. You can check this by selecting the drive in question in This PC (Windows) or Finder (Mac) and looking at the amount of space remaining on the drive."
+    },
+    {
+      "title": "Scan your computer for viruses",
+      "content": "Scan your computer for viruses . A computer virus can change how your computer responds to removable storage items, or even render all of your USB items read-only. Running a virus scan should fix any virus-related problems that you're having."
+    },
+    {
+      "title": "Format your flash drive or CD.",
+      "content": "Format your flash drive or CD . Formatting erases the removable item's contents and changes the file system depending on your selected formatting options. Since formatting the item will reset it, formatting should be your last option."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen. Use this if you can access each file individually and remove their \"Read Only\" status. If, however, you have a batch of files in a USB drive, use diskpart ."
+    },
+    {
+      "title": "Open File Explorer",
+      "content": "Open File Explorer . Click the folder-shaped icon near the bottom-left side of the Start menu."
+    },
+    {
+      "title": "Go to the file's location.",
+      "content": "Go to the file's location. Click the folder in which the file is located on the left side of the File Explorer window. You may have to navigate through additional files after doing so to find the file."
+    },
+    {
+      "title": "Select the file.",
+      "content": "Select the file. Click the file for which you want to disable write protection."
+    },
+    {
+      "title": "Click the Home menu item.",
+      "content": "Click the Home menu item. It's in the upper-left corner of the window. A toolbar will appear at the top of the window."
+    },
+    {
+      "title": "Click the \"Properties\" icon.",
+      "content": "Click the \"Properties\" icon. This red checkmark is in the \"Open\" section of the toolbar. Doing so opens the \"Properties\" window."
+    },
+    {
+      "title": "Uncheck the \"Read-only\" box.",
+      "content": "Uncheck the \"Read-only\" box. It's at the bottom of the Properties window."
+    },
+    {
+      "title": "Click Apply, then click OK.",
+      "content": "Click Apply , then click OK . Both options are at the bottom of the window. Doing so saves your changes to the file and closes the Properties window. You should now be able to edit your file."
+    },
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R . This keyboard shortcut launches the \"Run\" program so you can navigate to or start running programs quickly. Since editing Registry files can be daunting, use this method instead to remove the write protection on USB drives. If your USB flash drive isn't plugged into your computer already, connect it now."
+    },
+    {
+      "title": "Enter diskpart and press OK.",
+      "content": "Enter diskpart and press OK . This opens a command prompt window with the diskpart command ready to use. Click Yes if prompted."
+    },
+    {
+      "title": "Enter list disk and press ↵ Enter.",
+      "content": "Enter list disk and press ↵ Enter . Doing this enters the command in command prompt. You'll see a list of connected USB devices. Find your USB flash drive to continue."
+    },
+    {
+      "title": "Enter select disk [number] and press ↵ Enter.",
+      "content": "Enter select disk [number] and press ↵ Enter . Replace [number] with the digital number of your drive. For example, if Disk 1 is your USB flash drive, you'll enter select disk 1 . After you enter the command, you'll see confirmation that the disk you included in the code is selected."
+    },
+    {
+      "title": "Enter attributes disk clear readonly and press ↵ Enter.",
+      "content": "Enter attributes disk clear readonly and press ↵ Enter . You'll see a confirmation that the disk's read-only attribute has been cleared."
+    },
+    {
+      "title": "Enter exit and press ↵ Enter.",
+      "content": "Enter exit and press ↵ Enter . Doing so will ensure that diskpart closes securely and that the changes are applied to your USB flash drive."
+    },
+    {
+      "title": "Make sure that your storage item is plugged in.",
+      "content": "Make sure that your storage item is plugged in. Your USB flash drive, external drive, or SD card should be attached to your Windows computer before you proceed."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Type regedit into Start.",
+      "content": "Type regedit into Start. Doing so will search your computer for the Registry Editor command."
+    },
+    {
+      "title": "Click regedit.",
+      "content": "Click regedit . It's a series of blue blocks at the top of the Start window. The Registry Editor window will open."
+    },
+    {
+      "title": "Expand the \"HKEY_LOCAL_MACHINE\" folder.",
+      "content": "Expand the \"HKEY_LOCAL_MACHINE\" folder. Click the downward-facing arrow to the left of the \"HKEY_LOCAL_MACHINE\" folder that's in the upper-left corner of the window."
+    },
+    {
+      "title": "Expand the \"SYSTEM\" folder.",
+      "content": "Expand the \"SYSTEM\" folder."
+    },
+    {
+      "title": "Expand the \"CurrentControlSet\" folder.",
+      "content": "Expand the \"CurrentControlSet\" folder."
+    },
+    {
+      "title": "Select the \"Control\" folder.",
+      "content": "Select the \"Control\" folder. Click the folder to do so. If you already see a \"StorageDevicePolicies\" folder, skip the next few steps and only change the \"WriteProtection\" entry to \"0\"."
+    },
+    {
+      "title": "Click Edit.",
+      "content": "Click Edit . It's a tab at the top of the window. Clicking it prompts a drop-down menu."
+    },
+    {
+      "title": "Select New.",
+      "content": "Select New . You'll find this option near the top of the Edit drop-down menu."
+    },
+    {
+      "title": "Click Key.",
+      "content": "Click Key . It's at the top of the New pop-out menu. A new folder (also known as a \"Key\") will appear in the \"Control\" folder."
+    },
+    {
+      "title": "Change the key's name.",
+      "content": "Change the key's name. Type in StorageDevicePolicies and press ↵ Enter ."
+    },
+    {
+      "title": "Create a new DWORD item inside of the key.",
+      "content": "Create a new DWORD item inside of the key. To do so: Select the \"StorageDevicePolicies\" key that you just created. Click Edit Select New Click DWORD (32-bit) Value Type in WriteProtect and press ↵ Enter ."
+    },
+    {
+      "title": "Open the DWORD value.",
+      "content": "Open the DWORD value. Double-click it to do so. A new window will open."
+    },
+    {
+      "title": "Change the \"Value\" number to zero.",
+      "content": "Change the \"Value\" number to zero. Select the number in the \"Value\" text field, then type in 0 to replace it."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Doing so should fix the read-only error that you're running into with your removable storage item. If your flash drive or CD still won't register as writable, you'll need to take it into a data recovery service to recover its data."
+    },
+    {
+      "title": "Open Finder.",
+      "content": "Open Finder. Click the blue, face-like icon in your Mac's Dock. A new window will open."
+    },
+    {
+      "title": "Go to the file's location.",
+      "content": "Go to the file's location. Click the folder that houses your file on the left side of the Finder window. You may have to navigate through additional folders after doing so to find the file."
+    },
+    {
+      "title": "Select the file.",
+      "content": "Select the file. Click the file to do so."
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . It's a menu item in the upper-left side of the screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Get Info.",
+      "content": "Click Get Info . This option is in the File drop-down menu. Doing so opens the selected file's \"Get Info\" window."
+    },
+    {
+      "title": "Unlock the Get Info menu.",
+      "content": "Unlock the Get Info menu. If the lock icon in the bottom-right corner of the window is closed, click it, then enter your administrator password."
+    },
+    {
+      "title": "Click the Sharing & Permissions heading.",
+      "content": "Click the Sharing & Permissions heading. It's near the bottom of the window. The Sharing & Permissions menu will expand to display additional options."
+    },
+    {
+      "title": "Find your username.",
+      "content": "Find your username. Below the Sharing & Permissions heading, you should see the name that you use to log into your computer."
+    },
+    {
+      "title": "Change the file's permissions.",
+      "content": "Change the file's permissions. Click the \"Read Only\" box to the right of your name until it says \"Read & Write\", then close the Get Info window. You should now be able to edit your file. [1] X Research source"
+    },
+    {
+      "title": "Make sure that your storage item is plugged in.",
+      "content": "Make sure that your storage item is plugged in. Your USB flash drive, external drive, or SD card should be attached to your Mac before you proceed. If you're on a recent model of Mac, you may need to get an adapter that plugs into one of your Mac's USB-C ports for your removable item."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. Double-click the hard drive-shaped \"Disk Utility\" icon to do so. A new window will open. You can find this program in the Utilities folder of Applications in Finder."
+    },
+    {
+      "title": "Select your storage item.",
+      "content": "Select your storage item. Click your storage item's name in the upper-left side of the Disk Utility window."
+    },
+    {
+      "title": "Click First Aid.",
+      "content": "Click First Aid . This stethoscope-shaped tab is at the top of the Disk Utility window. Confirm this action by clicking Run when prompted."
+    },
+    {
+      "title": "Wait for your Mac to finish scanning.",
+      "content": "Wait for your Mac to finish scanning. If the item's write protection is enabled because of an error on the item itself, the error will be resolved, and you'll be able to use the drive like usual. If the problem with the item is hardware-based, you'll need to take the drive into a data recovery service to attempt to save the item's contents. [2] X Research source"
+    }
+  ]
+}

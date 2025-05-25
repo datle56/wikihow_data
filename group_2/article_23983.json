@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Install-Google-Chrome-Using-Terminal-on-Linux",
+  "title": "How to Install Google Chrome Using Terminal on Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. [1] X Research source"
+    },
+    {
+      "title": "Update the package index.",
+      "content": "Update the package index. To make sure your system is up-to-date, run these two commands: [2] X Research source Type sudo apt update and press the Enter key. [3] X Research source Type sudo apt upgrade and press the Enter key. [4] X Research source"
+    },
+    {
+      "title": "Install wget if you don't already have it.",
+      "content": "Install wget if you don't already have it. This is the tool you will use to download the Chrome package from the prompt. [5] X Research source Type wget --version and press the Enter key. If you see a version number, just skip to the next step now. If you get an error because wget is not installed, type sudo apt install wget and press the Enter key to install it."
+    },
+    {
+      "title": "Use wget to download the Chrome package.",
+      "content": "Use wget to download the Chrome package. Since there is no longer a 32-bit version of Chrome, you'll need the 64-bit version. To get the latest stable version, run this command: [6] X Research source Type wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb and press the Enter key. After the package is finished downloading, you'll return to the command prompt."
+    },
+    {
+      "title": "Install the downloaded Chrome package.",
+      "content": "Install the downloaded Chrome package. To install Chrome from the downloaded package, use the following command: [7] X Research source Type sudo dpkg -i google-chrome-stable_current_amd64.deb and press Enter ."
+    },
+    {
+      "title": "Fix errors that occurred in the Chrome installation.",
+      "content": "Fix errors that occurred in the Chrome installation. If you see any errors during the installation, type sudo apt-get install -f and press the Enter key to repair them. [8] X Research source"
+    },
+    {
+      "title": "Type google-chrome and press ↵ Enter to launch Chrome.",
+      "content": "Type google-chrome and press ↵ Enter to launch Chrome. [9] X Research source"
+    }
+  ]
+}

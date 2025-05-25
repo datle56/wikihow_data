@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/If-Isna",
+  "title": "Microsoft Excel: How to Create IF ISNA Formulas For Your Spreadsheets",
+  "steps": [
+    {
+      "title": "Click into your first cell.",
+      "content": "Click into your first cell. In Excel , you can use the ISNA function to create an IF formula that will return custom Boolean values instead of the typical #N/A value. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Start your IF statement.",
+      "content": "Start your IF statement. In the formula bar , type =IF(ISNA . The syntax of an IF statement is =IF(logical_test, true_value, false_value) . A logical test is something that is either true or false. If the IF function is true, it will execute the true_value. If the function is false, it will execute the_false value. IF functions can have nested functions as their arguments to allow you to create sophisticated spreadsheets."
+    },
+    {
+      "title": "Determine which function you need to use with ISNA.",
+      "content": "Determine which function you need to use with ISNA. One of the most common functions to use with ISNA is VLOOKUP , but you can use other functions such as MATCH. VLOOKUP is an Excel function that searches a vertical selection for a value you specify, and returns the matching value. In this article, we'll teach you how to use VLOOKUP with ISNA to create an IF statement."
+    },
+    {
+      "title": "Write your VLOOKUP formula.",
+      "content": "Write your VLOOKUP formula. The syntax for a proper VLOOKUP function is VLOOKUP(value, table_array, col_index_number, true/false) . For example, if you're writing a VLOOKUP formula that searches a fixed two-column wide table array for a student's name and returns a value from the second column (which test they failed), you could write VLOOKUP(A1, $B$1:$C$5, 2, FALSE) (values will differ for your project). Note that the $ signs create an absolute reference, so you can use the formula in other cells without the table array reference shifting. Value: This is the value that should be looked up. It can be a static value, or it can be a cell reference. Table_array: A reference to a range of cells you want VLOOKUP to search through. Col_index_number: The column number that includes the information you want returned. The leftmost column in the table array is 1. True/false: A value that tells the formula whether you're looking for an approximate (true) or exact (false) match. If you omit this value, the function defaults to \"true.\""
+    },
+    {
+      "title": "Add your VLOOKUP formula to the IF ISNA function.",
+      "content": "Add your VLOOKUP formula to the IF ISNA function. Your formula should now look like =IF(ISNA(VLOOKUP(A1, $B$1:$C$5, 2, FALSE)) . Be mindful of closing parentheses, or your IF statement won't work properly."
+    },
+    {
+      "title": "Add your custom Boolean messages.",
+      "content": "Add your custom Boolean messages. An IF statement will return one of two messages: one message if the function is true, and one message if the function is false, which is known as a Boolean. For an IF ISNA formula, the true_value is your error message and the false_value is your non-error message. If you want the function to print \"No failed tests\" for a true_value and \"Failed\" for a false_value, you would write the following function: =IF(ISNA(VLOOKUP(A1, $B$1:$C$5, 2, FALSE)), \"No failed tests\", \"Failed\") . Ensure there are quotes around the messages so Excel will print the correct message. If you want the function to print \"No failed tests\" for a true_value and the name of the failed test for a false_value, you would write the following function: =IF(ISNA(VLOOKUP(A1, $B$1:$C$5, 2, FALSE)), \"No failed tests\", VLOOKUP(A1, $B$1:$C$5, 2, FALSE)) . You can nest formulas with IF statements, and in this example, you would repeat the VLOOKUP formula you wrote earlier to print the name of the test that the student failed."
+    },
+    {
+      "title": "Check your formula for errors.",
+      "content": "Check your formula for errors. If you get an error once you've completed your IF ISNA formula or it's not returning the correct value, go through your formula to ensure you've referenced the correct cells and that all parentheses are closed."
+    },
+    {
+      "title": "Click and drag the handle in the lower-right corner of the cell to auto-fill the formula.",
+      "content": "Click and drag the handle in the lower-right corner of the cell to auto-fill the formula. Once you've completed your formula, you can easily add it to vertically adjacent cells by dragging the handle in the bottom-right corner of the cell. Cell references will adjust as you drag unless you include a $ sign to denote an absolute reference."
+    }
+  ]
+}

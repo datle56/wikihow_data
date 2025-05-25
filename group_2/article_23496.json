@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Import-Twitter-to-Bluesky",
+  "title": "2 Easy Ways to Import Twitter (X) to Bluesky",
+  "steps": [
+    {
+      "title": "Install Sky Follower Bridge for Chrome or Firefox.",
+      "content": "Install Sky Follower Bridge for Chrome or Firefox. This free browser extension/add-on makes finding the Twitter/X users you follow on Bluesky easy. Get Sky Follower Bridge for Chrome & Microsoft Edge Get Sky Follower Bridge for Firefox If you're using a phone or tablet and your Twitter/X account is not private , you can use a free website called Skeet to import the people you follow into Bluesky. Just go to https://skeet.labnotes.org , enter your Twitter handle, and click Start to get started."
+    },
+    {
+      "title": "Go to https://x.com/following in a web browser.",
+      "content": "Go to https://x.com/following in a web browser. If you're signed in to your Twitter/X account, you'll see a list of the users you follow. If you're not signed in, log in to your account now."
+    },
+    {
+      "title": "Start the Sky Follower Bridge extension/add-on.",
+      "content": "Start the Sky Follower Bridge extension/add-on. To start the tool, click the \"S\" icon in the upper-right corner of your browser. If you don't see it, click the puzzle piece icon first. You'll then be prompted to sign in to your Bluesky account ."
+    },
+    {
+      "title": "Enter your Bluesky login info and click Find Bluesky Users .",
+      "content": "Enter your Bluesky login info and click Find Bluesky Users . Sky Follower Bridge will instantly search for the Twitter users you follow on Bluesky and give you the option to follow them."
+    },
+    {
+      "title": "Click Follow on Bluesky to follow each user.",
+      "content": "Click Follow on Bluesky to follow each user. You can also filter the results to show only users with the same handle name, display name, and/or include their Twitter/X handle name in their Bluesky description. While this tool is helpful, it's not foolproof—if someone from Twitter/X is using a different name on Bluesky and didn’t include their old Twitter/X handle in their description, Sky Follower Bridge may not be able to find them. Similarly, if someone on Bluesky snagged a Twitter/X user's username before that person had the chance to create an account, you'll see the wrong person in the results. Double-check each profile before following."
+    },
+    {
+      "title": "Download Twitter to Bsky Importer.",
+      "content": "Download Twitter to Bsky Importer. There aren't any simple point-and-click options for importing tweets to Bluesky. However, if you're using Linux or a Mac, have Python installed , and feel comfortable entering Terminal commands, you can use a script called \"Twitter-to-bsky Importer\" to import your tweets to Bluesky. Because the import will repost all your tweets at once, only use this method if you don't have followers—otherwise, you'll be spamming them. This tool also doesn't preserve replies, so conversations may be confusing once imported. [1] X Research source To download, go to https://github.com/ianklatzco/twitter-to-bsky , click the Code button near the top-right, and click Download ZIP . Once downloaded, extract the ZIP file to your Mac or Linux desktop. You'll then have a folder on the desktop called twitter-to-bsky-master . This folder contains a file called \"main.py,\" which is the Python script you'll need to run."
+    },
+    {
+      "title": "Download your Twitter/X archive.",
+      "content": "Download your Twitter/X archive. The Twitter to Bsky script needs access to files in your Twitter/X archive, which is a set of files you can request from Twitter/X. It can take anywhere from a few hours to several days to receive the ZIP file containing your data . To get your archive: To download your Twitter archive on a computer, click the More menu and go to Settings & privacy > Your account > Download an archive of your data . In the X mobile app, tap your profile photo at the top-left and go to Settings and privacy > Your account > Download an archive of your data . [2] X Research source"
+    },
+    {
+      "title": "Copy the \"assets\" folder from your Twitter/X archive to the script's folder.",
+      "content": "Copy the \"assets\" folder from your Twitter/X archive to the script's folder. Once you unzip the archive from Twitter/X, you'll see a folder inside called \"assets.\" You'll want to copy or move that folder to the \"twitter-to-bsky-master\" folder you extracted to your desktop. You can drag the \"assets\" folder to \"twitter-to-bsky-master\" or just copy and paste the folder."
+    },
+    {
+      "title": "Install the atprototools python library.",
+      "content": "Install the atprototools python library. Twitter-to-Bsky Import requires this library to run. You can get it with Pip by running the command pip install atprototools==0.0.6 ."
+    },
+    {
+      "title": "Run the script to import your tweets.",
+      "content": "Run the script to import your tweets. Here's how: In a terminal window, use the cd command to enter the twitter-to-bsky-master folder on your desktop. For example, on a Mac, if your username is \"wikiHow,\" you'd use cd /Users/wikiHow/Desktop/twitter-to-bsky-master . Type ls -a and make sure you see a file called \"main.py\" in the directory. If you only see another folder called \"twitter-to-bsky-master,\" type cd twitter-to-bsky-master and press Enter or Return . You should then see the \"main.py\" file when running ls -a . Type export BSKY_USERNAME=\"yourname.bsky.social\" , replacing \"yourname\" with your Bluesky username, and press Enter or Return . Make sure you're not including the \"@\" symbol in the username, as this will cause a password error. [3] X Research source Type export PASSWORD=\"yourpassword\" , replacing \"yourpassword\" with your Bluesky password,\" and press Enter or Return . Type python main.py and press Enter or Return . This logs you into Bluesky and begins importing and reposting your tweets from Twitter/X."
+    }
+  ]
+}

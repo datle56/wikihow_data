@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Toggle-WiFi-On-and-Off-with-a-Keyboard-Shortcut-on-Mac",
+  "title": "How to Toggle WiFi On and Off with a Keyboard Shortcut on Mac",
+  "steps": [
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Copy paste this in: networksetup -listnetworkserviceorder ."
+    },
+    {
+      "title": "Remember the number that shows the WiFi.",
+      "content": "Remember the number that shows the WiFi. Then, you can close Terminal and open Automator."
+    },
+    {
+      "title": "Choose a type for your document.",
+      "content": "Choose a type for your document. Click on Quick Action and Choose ."
+    },
+    {
+      "title": "Search for run shell script in the search bar on the left.",
+      "content": "Search for run shell script in the search bar on the left. Double click on it."
+    },
+    {
+      "title": "Make sure the top section is correct on the right:",
+      "content": "Make sure the top section is correct on the right: Workflow receives no input in any application ."
+    },
+    {
+      "title": "Copy and paste the following script into the section of “Run Shell Script,” substituting “X” with any number that you found the WiFi port to be earlier.",
+      "content": "Copy and paste the following script into the section of “Run Shell Script,” substituting “X” with any number that you found the WiFi port to be earlier. The script is: networksetup -getairportpower enX | grep \"On\" && networksetup -setairportpower enX off || networksetup -setairportpower enX on."
+    },
+    {
+      "title": "Click on Run in the top right corner.",
+      "content": "Click on Run in the top right corner. See if your WiFi turns off. You might need to wait a few seconds. If it works, click on the X and save the action, and name it something obvious like “WiFi Toggle.” Then, proceed to the next section."
+    },
+    {
+      "title": "Open System Preferences > Keyboard.",
+      "content": "Open System Preferences > Keyboard . At the top, click on Shortcuts ."
+    },
+    {
+      "title": "Click on Services.",
+      "content": "Click on Services . Scroll to the very bottom until you find the action that you just created."
+    },
+    {
+      "title": "Click on the None to the right of the name.",
+      "content": "Click on the None to the right of the name. Then, click on Add Shortcut ."
+    },
+    {
+      "title": "Type in your shortcut.",
+      "content": "Type in your shortcut. You might use Ctrl + ⌥ Opt + ⌘ Cmd + W . Control Option Command W). Make sure the shortcut is not a common shortcut."
+    },
+    {
+      "title": "Test your shortcut.",
+      "content": "Test your shortcut. It should work!"
+    }
+  ]
+}

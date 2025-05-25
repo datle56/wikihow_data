@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Install-MediaWiki",
+  "title": "2 Simple Ways to Download and Install MediaWiki",
+  "steps": [
+    {
+      "title": "Install web server software",
+      "content": "Install web server software , if you haven't already. [1] X Research source"
+    },
+    {
+      "title": "Download MediaWiki to your local computer.",
+      "content": "Download MediaWiki to your local computer."
+    },
+    {
+      "title": "Uncompress the files into the root directory of your website (not in a subdirectory).",
+      "content": "Uncompress the files into the root directory of your website ( not in a subdirectory)."
+    },
+    {
+      "title": "",
+      "content": "Rename the unzipped directory to the name you want to appear in the URL (for example, name it \"wiki\" if you want the URL http://example.com/wiki/)."
+    },
+    {
+      "title": "CHMOD the permission settings for the \"config\" subdirectory to 770, so that it is writable by the web server (Linux only).",
+      "content": "CHMOD the permission settings for the \"config\" subdirectory to 770, so that it is writable by the web server (Linux only)."
+    },
+    {
+      "title": "",
+      "content": "Go to the directory in your web browser (e.g. http://localhost/wiki/)."
+    },
+    {
+      "title": "Click the link to begin configuring.",
+      "content": "Click the link to begin configuring."
+    },
+    {
+      "title": "Fill out the form, following the instructions.",
+      "content": "Fill out the form, following the instructions. Enter a name for the database, database user, and password. Select \"use superuser account\" if the database and database user do not already exist (no need to change superuser name or password)."
+    },
+    {
+      "title": "Complete the installation.",
+      "content": "Complete the installation."
+    },
+    {
+      "title": "Move the LocalSettings.php from the config directory to the wiki's root directory (e.g.",
+      "content": "Move the LocalSettings.php from the config directory to the wiki's root directory (e.g. wiki)."
+    },
+    {
+      "title": "If you know the root password for your MySQL server, the MediaWiki setup script can automatically create a database and an account to access it.",
+      "content": "If you know the root password for your MySQL server, the MediaWiki setup script can automatically create a database and an account to access it. Skip to the \"Run the installation script\" section below."
+    },
+    {
+      "title": "If you don't know the root password for your MySQL server, you need to create a MySQL database and a user before installing MediaWiki.",
+      "content": "If you don't know the root password for your MySQL server, you need to create a MySQL database and a user before installing MediaWiki. You can do this using various control panels such as phpMyAdmin . See the corresponding documentation. Most web hosting services provide a MySQL database along with your hosting account. If that is the case, use the MySQL credentials provided by your host along with the database name, and then specify something like \"mw_\" as table prefix. This will allow MediaWiki to tell what tables belong to it. Alternatively, ask your hosting service to create an account for, then proceed as above."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "url": "https://www.wikihow.com/Clear-System-Storage-on-Mac",
+  "title": "How to Free Up Storage Space on Your Mac by Deleting Old System Data",
+  "steps": [
+    {
+      "title": "Open your Mac's System Settings.",
+      "content": "Open your Mac's System Settings. In macOS Ventura, Apple changed where you locate \" Optimize Storage .\" This feature will automatically find ways for you to optimize the storage space on your Mac. [1] X Research source"
+    },
+    {
+      "title": "Click General in the sidebar.",
+      "content": "Click General in the sidebar. You may need to scroll down."
+    },
+    {
+      "title": "Click the Optimize… button under \"Recommendations.\"",
+      "content": "Click the Optimize… button under \"Recommendations.\" Your computer will optimize your storage space and may remove some files contributing to the System Data portion of your storage. If you don't see the Optimize… button, you may not have enough extra files on your computer to make it appear."
+    },
+    {
+      "title": "Click About This Mac in the Apple menu.",
+      "content": "Click About This Mac in the Apple menu. In earlier versions of macOS, you can find the \"Optimize Storage\" option under your storage menu. [2] X Research source"
+    },
+    {
+      "title": "Navigate to Storage > Manage.",
+      "content": "Navigate to Storage > Manage . This will allow you to see how your storage is allocated across your Mac and adjust some storage settings."
+    },
+    {
+      "title": "Click the Optimize… button under \"Recommendations.\"",
+      "content": "Click the Optimize… button under \"Recommendations.\" Your computer will optimize your storage space and may remove some files contributing to the System Data portion of your storage. If you don't see the Optimize… button, you may not have enough extra files on your computer to make it appear."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. If you aren't sure how to do this, you can open it by going to Applications > Utilities . The Terminal allows you to enter commands into your Mac, much like the Command Prompt or Windows PowerShell allows you to enter commands into a Windows computer."
+    },
+    {
+      "title": "Type tmutil listbackups and hit ⏎ Return.",
+      "content": "Type tmutil listbackups and hit ⏎ Return . Your stored Time Machine backups will be listed, sorted by date."
+    },
+    {
+      "title": "Type sudo tmutil delete followed by the path of the backup to be deleted.",
+      "content": "Type sudo tmutil delete followed by the path of the backup to be deleted. The path was listed when you asked the Terminal to list your backups in the previous step. Press ⏎ Return to delete the backups and repeat for each backup you want to remove. The backup path should look like [username]/[diskname]/[YYYY-MM-DD] ."
+    },
+    {
+      "title": "Type tmutil listlocalsnapshops / and press ⏎ Return.",
+      "content": "Type tmutil listlocalsnapshops / and press ⏎ Return . Do this once you've completed removing your desired Time Machine backups."
+    },
+    {
+      "title": "Type tmutil deletelocalsnapshots [name] and press ⏎ Return.",
+      "content": "Type tmutil deletelocalsnapshots [name] and press ⏎ Return . Replace the [name] placeholder with a snapshot name, which will be a date followed by a string of text. Repeat this step for every snapshot you want to remove."
+    },
+    {
+      "title": "Turn off automatic backups, if desired.",
+      "content": "Turn off automatic backups, if desired. If you want to avoid automatically creating backups, go to System Settings > General > Time Machine and turn off automatic backups. Consider setting up an external drive to store backups that you create manually, as it is important to keep a backup in case you need to restore your Mac. [3] X Research source"
+    },
+    {
+      "title": "Open Finder.",
+      "content": "Open Finder. It's the blue and white icon with a smiley face on your dock. [4] X Research source"
+    },
+    {
+      "title": "Connect your iPhone to your computer.",
+      "content": "Connect your iPhone to your computer. Once connected, your iPhone will show up in the left-hand sidebar."
+    },
+    {
+      "title": "Click your iPhone device name.",
+      "content": "Click your iPhone device name. It will be under Locations ."
+    },
+    {
+      "title": "Select Manage Backups.",
+      "content": "Select Manage Backups . All of your iPhone backups will be listed."
+    },
+    {
+      "title": "Highlight the backups you don't want anymore.",
+      "content": "Highlight the backups you don't want anymore. If you don't see any backups listed, you don't have any backups saved to your Mac."
+    },
+    {
+      "title": "Click Delete Backup.",
+      "content": "Click Delete Backup . The backups you selected will be deleted from your Mac storage."
+    },
+    {
+      "title": "Click OK when done.",
+      "content": "Click OK when done. Your System Storage should be smaller now that you've deleted your iPhone backups."
+    },
+    {
+      "title": "Open the Finder.",
+      "content": "Open the Finder. If you've uninstalled apps on your Mac, some of the old files from those applications may be cluttering up your system storage as they don't always get deleted when you uninstall."
+    },
+    {
+      "title": "Navigate to Go > Go to Folder.",
+      "content": "Navigate to Go > Go to Folder . You can also click ⌘ Cmd + ⇧ Shift + G to open the Go to Folder window."
+    },
+    {
+      "title": "Type ~/Library/Application Support and press ⏎ Return.",
+      "content": "Type ~/Library/Application Support and press ⏎ Return . You will be taken to your Application Support subfolder in the Library folder, which is normally hidden. This folder is hidden because if you delete or modify certain files, it can cause your applications or Mac not to work properly."
+    },
+    {
+      "title": "Delete folders you are certain you don't need anymore.",
+      "content": "Delete folders you are certain you don't need anymore. Only delete the folders that you know you don't need, such as folders from old apps that you've uninstalled. If you're not sure if you need a file, it's better to leave it."
+    },
+    {
+      "title": "Repeat these steps in four other Library subfolders.",
+      "content": "Repeat these steps in four other Library subfolders. Navigate to the following Library subfolders by using the Go to Folder method or simply scrolling in your current Finder window. ~/Library/Caches ~/Library/Logs ~/Library/Containers ~/Library/Cookies"
+    },
+    {
+      "title": "Open the Finder.",
+      "content": "Open the Finder. If you still have a lot of system storage, you can try checking the folder sizes of your system folders to identify which folder is causing the problem."
+    },
+    {
+      "title": "Navigate to Go > Go to Folder.",
+      "content": "Navigate to Go > Go to Folder . You can also click ⌘ Cmd + ⇧ Shift + G to open the Go to Folder window."
+    },
+    {
+      "title": "Type ~/Library and press ⏎ Return.",
+      "content": "Type ~/Library and press ⏎ Return . You will be taken to your Application Support subfolder in the Library folder, which is normally hidden . This folder is hidden because if you delete or modify certain files, it can cause your applications or Mac not to work properly."
+    },
+    {
+      "title": "Click a subfolder and press ⌘ Cmd+I.",
+      "content": "Click a subfolder and press ⌘ Cmd + I . This will open the information pane where you can see the folder size listed at the top. Repeat this step for each subfolder."
+    },
+    {
+      "title": "Repeat the step above for the subfolders in a few system locations.",
+      "content": "Repeat the step above for the subfolders in a few system locations. Repeat this step in the following locations: ~/System /Library /System"
+    },
+    {
+      "title": "Don't delete files unless you're certain you can.",
+      "content": "Don't delete files unless you're certain you can. If you identify a folder that is larger than you think it should be, consider using this information to ask an Apple Support professional how to reduce the folder size."
+    },
+    {
+      "title": "Use a third-party app to help clean out system files.",
+      "content": "Use a third-party app to help clean out system files. Several third-party apps out there that claim to be able to clean up your Mac files. Unfortunately, many of these apps are expensive and either don't do a good job of cleaning your files or cause more problems than they solve. However, below are some apps recommended by veteran Apple users [5] X Research source : AppCleaner: AppCleaner is a free app that will help remove all the extra app files when you uninstall an app. It can't help you clean up files after an app is uninstalled, but it helps keep your Mac more organized moving forward. Onyx: OnyX is a free app that has many features, including deleting caches, removing problematic folders and files, and some miscellaneous cleaning tasks."
+    }
+  ]
+}

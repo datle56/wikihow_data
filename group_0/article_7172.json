@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Check-Your-Laptop%E2%80%99s-Battery-Health-in-Windows-10",
+  "title": "How to Test Your Laptop’s Battery Health in Windows 10",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R . This will open the \"Run\" dialog box."
+    },
+    {
+      "title": "Type powershell into the box.",
+      "content": "Type powershell into the box."
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+↵ Enter at the same time.",
+      "content": "Press Ctrl + ⇧ Shift + ↵ Enter at the same time. This will run PowerShell with administrative permissions. [2] X Research source"
+    },
+    {
+      "title": "Click Yes on the UAC dialog box.",
+      "content": "Click Yes on the UAC dialog box."
+    },
+    {
+      "title": "Type powercfg /batteryreport /output \"$home\\Documents\\battery-report.html\" into the PowerShell window.",
+      "content": "Type powercfg /batteryreport /output \"$home\\Documents\\battery-report.html\" into the PowerShell window. This command will generate the report and save it to your documents folder."
+    },
+    {
+      "title": "Type exit into the PowerShell window.",
+      "content": "Type exit into the PowerShell window. This will close PowerShell."
+    },
+    {
+      "title": "Open the report.",
+      "content": "Open the report. Go to your Documents folder, and then open up the file called \"battery-report\"."
+    },
+    {
+      "title": "Review the basic information.",
+      "content": "Review the basic information. At the top of the report, basic information about your computer and battery will be listed."
+    },
+    {
+      "title": "Check out the recent usage.",
+      "content": "Check out the recent usage. The \"Recent Usage\" section is under the \"Installed Batteries\" section, and it shows the charge and usage history of your battery over the past 3 days."
+    },
+    {
+      "title": "Review the \"Battery Capacity\" section.",
+      "content": "Review the \"Battery Capacity\" section. This section, which is near the bottom, shows the capacity of the battery over a long period of time. You can use it to see if the batteries life has been degraded over time. You can tell the batteries health by reviewing the differences between the full charge capacity listings and the design capacity listings."
+    },
+    {
+      "title": "Read through the \"battery life estimates\" section.",
+      "content": "Read through the \"battery life estimates\" section. This section shows the estimated life of the battery at full charge, and at the designed capacity. You can tell the batteries health by comparing the at full charge estimates to the Design capacity estimates."
+    }
+  ]
+}

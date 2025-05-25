@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Enable-IP-Routing-on-Windows-10",
+  "title": "How to Enable IP Routing on Windows 10",
+  "steps": [
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. You can do this by clicking the Start Menu icon or pressing the Win key to open your Start Menu. Then search \"Regedit\" in the search bar and click the executable app result. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click Yes when prompted. Before the app runs, you'll get a pop-up asking if the program \"Registry Editor\" can make changes to your device. You'll need to allow this by pressing Yes to continue."
+    },
+    {
+      "title": "Navigate to \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters.",
+      "content": "Navigate to \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters. \" Do this by clicking the downwards-pointing arrow next to each location to see more options. [2] X Research source Click the \"Parameters\" folder to see the files listed inside it."
+    },
+    {
+      "title": "Right-click \"IP Enable Router\" and click Modify.",
+      "content": "Right-click \"IP Enable Router\" and click Modify . When you right-click the file, a menu will pop up at your cursor. When you select Modify , a window will appear. [3] X Research source"
+    },
+    {
+      "title": "Change the \"Value Data\" field from \"0\" to \"1.",
+      "content": "Change the \"Value Data\" field from \"0\" to \"1. \" The 1 will enable your IP routing capabilities in Windows 10. [4] X Research source"
+    },
+    {
+      "title": "Click Ok, close the Registry Editor, and restart your computer.",
+      "content": "Click Ok , close the Registry Editor, and restart your computer. You'll need to restart your computer to apply the changes you've made. Once your computer restarts, open Command Prompt and enter netsh interface ipv4 show interface <id> to verify if IP forwarding is enabled. Replace the bracketed information with your computer's ID and don't include the brackets. [5] X Research source"
+    }
+  ]
+}

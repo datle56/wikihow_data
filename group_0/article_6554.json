@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Change-Microsoft-Office-Product-Key",
+  "title": "3 Ways to Change Microsoft Office Product Key",
+  "steps": [
+    {
+      "title": "Open any Microsoft Office app and click File.",
+      "content": "Open any Microsoft Office app and click File . You'll see the File tab in the upper right corner in any app."
+    },
+    {
+      "title": "Click Account.",
+      "content": "Click Account . It's at the bottom of the menu."
+    },
+    {
+      "title": "Click Switch License.",
+      "content": "Click Switch License . You'll see this button on the right side of the window. If you don't see the \"Switch License\" button, install Office Updates."
+    },
+    {
+      "title": "Enter the product key.",
+      "content": "Enter the product key. This will overwrite the current key."
+    },
+    {
+      "title": "Select Install this product instead.",
+      "content": "Select Install this product instead . There may be new tutorials and prompts for you to follow to start using the new key."
+    },
+    {
+      "title": "Get your product key for the malfunctioning product.",
+      "content": "Get your product key for the malfunctioning product. Use this method if an installation of Office 2019-2016 on Windows is not opening. You can either get a new key or go to https://account.microsoft.com/services , look for the Office app that isn't working, click View product key , and copy it."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. Search the Start menu for \"Command Prompt,\" then right-click the app result and select Run as admin ."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: cscript \"C:\\Program Files\\Microsoft Office\\Office16\\OSPP.VBS\" /dstatus (32-bit Windows) or cscript \"C:\\Program Files (x86)\\Microsoft Office\\Office16\\OSPP.VBS\" /dstatus (64-bit Windows) and press Enter . You'll see a line starting with \"Last 5 characters…\" that you'll need to reference in the next step."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: cscript \"C:\\Program Files\\Microsoft Office\\Office16\\OSPP.VBS\" /unpkey:XXXXX (32-bit Windows) or cscript \"C:\\Program Files (x86)\\Microsoft Office\\Office16\\OSPP.VBS\" /unpkey:XXXXX (64-bit Windows). Replace the XXXXX with the last 5 digits of the previous key and press Enter . This removes that key from your activated product."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: cscript \"C:\\Program Files\\Microsoft Office\\Office16\\OSPP.VBS\" /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX (32-bit Windows) or cscript \"C:\\Program Files (x86)\\Microsoft Office\\Office16\\OSPP.VBS\" /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX (64-bit Windows). Replace XXXXX-XXXXX-XXXXX-XXXXX-XXXXX with your activation or product key and press Enter ."
+    },
+    {
+      "title": "Open the Microsoft app to activate it.",
+      "content": "Open the Microsoft app to activate it. Since you removed a key and added a new one, you'll need to walk through the registration process again. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    }
+  ]
+}

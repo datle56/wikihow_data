@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Clear-a-Printer-Spooler",
+  "title": "How to Clear the Printer Spooler and Print Queue: Easy Steps",
+  "steps": [
+    {
+      "title": "Open your Windows Services.",
+      "content": "Open your Windows Services. To do this, click the Start menu (or press the Windows key on your keyboard), type services.msc , and then press Enter . According to computer repair specialist Blain Gunter, the print spooler is the intermediary between the printer and the computer. This service handles all print jobs sent to the printer."
+    },
+    {
+      "title": "Select the Print spooler service.",
+      "content": "Select the Print spooler service. Scroll through the list of services until you find the one labeled “Print spooler.” The services should be in alphabetical order."
+    },
+    {
+      "title": "Click Stop the service.",
+      "content": "Click Stop the service . Before you can clear the print spooler, you must stop the service so the files aren't in use. You will see this under \"Print Spooler\" in the upper-left corner of the list of services. Alternatively, you can right-click the Print Spooler and select Stop."
+    },
+    {
+      "title": "Open the File Explorer.",
+      "content": "Open the File Explorer. A fast way to do this is to press the Windows key + E at the same time. You can also right-click the Start menu and select File Explorer ."
+    },
+    {
+      "title": "Navigate to your Windows drive.",
+      "content": "Navigate to your Windows drive. This is usually the C: drive. To get there, click This PC on the left panel, then double-click the C: drive on the right panel."
+    },
+    {
+      "title": "Double-click the Windows folder.",
+      "content": "Double-click the Windows folder. This opens a list of more folders."
+    },
+    {
+      "title": "Double-click the System32 folder.",
+      "content": "Double-click the System32 folder. Even more folders will appear."
+    },
+    {
+      "title": "Double-click Spool.",
+      "content": "Double-click Spool . You'll probably need to scroll down to find it."
+    },
+    {
+      "title": "Double-click the Printers folder.",
+      "content": "Double-click the Printers folder. Now, instead of seeing folders, you will see files with weird names consisting of letters and numbers. This is your print spool."
+    },
+    {
+      "title": "Delete the files in the Printers folder.",
+      "content": "Delete the files in the Printers folder. Use your mouse to select all the files in the folder, then press the Delete key on your keyboard. You may be prompted to confirm."
+    },
+    {
+      "title": "Restart the Print Spooler service.",
+      "content": "Restart the Print Spooler service. Now that the spooler is cleared, you will need to restart the service so you can start printing again. Here's how: Press the Windows key on your keyboard. Type services.msc and press Enter . Right-click Print spooler and select Start ."
+    },
+    {
+      "title": "Open a command prompt window as an administrator.",
+      "content": "Open a command prompt window as an administrator. To do this: Press the Windows key and type cmd . Right-click \"Command Prompt\" and select Run as administrator ."
+    },
+    {
+      "title": "Stop the printer spooler service.",
+      "content": "Stop the printer spooler service. To do this from the command prompt, just type net stop spooler and press Enter ."
+    },
+    {
+      "title": "Enter the command to delete the printer spooler.",
+      "content": "Enter the command to delete the printer spooler. Type or paste this command at the prompt, and then press Enter to clear the print spooler: del %systemroot%\\System32\\spool\\printers\\* /Q After you press Enter , the spooler will be cleared."
+    },
+    {
+      "title": "Restart the print spooler service.",
+      "content": "Restart the print spooler service. Now, just restart the service by typing net start spooler and pressing Enter . The print spooler is clear, and you should now be able to print."
+    },
+    {
+      "title": "Open a Terminal on your Mac.",
+      "content": "Open a Terminal on your Mac. You can easily clear the entire print spool queue on your Mac using a simple terminal command. To open a Terminal , click the Launchpad icon on your Dock (the multicolored squares), type terminal , then click Terminal . [1] X Research source"
+    },
+    {
+      "title": "Type cancel -a -x and press ⏎ Return.",
+      "content": "Type cancel -a -x and press ⏎ Return . This command will remove all jobs in the printer spool. [2] X Research source"
+    },
+    {
+      "title": "Re-add the printer if that doesn't work.",
+      "content": "Re-add the printer if that doesn't work. If you still have printing problems, you can usually fix them by re-adding the printer to your Mac desktop or MacBook. Here's how: Click the Apple menu and select System Settings . Click Printers & Scanners in the left sidebar. Hold down Control as you click the printer in the right panel. Select Remove printer > Remove . [3] X Research source To add the printer back, click Add Printer, Scanner, or Fax , select your printer, and follow the on-screen instructions. [4] X Research source"
+    },
+    {
+      "title": "Make sure your printer is plugged in and has power.",
+      "content": "Make sure your printer is plugged in and has power. Look at your printer. If all the lights are off, it may not have power, which could be why your print jobs aren't going through. Check to see if the printer cord is plugged in. If it's not, plug it in and try printing again to see if the problem is resolved."
+    },
+    {
+      "title": "Check if your printer has any errors.",
+      "content": "Check if your printer has any errors. Look on the printer for any flashing lights or error messages. A paper jam or low ink may be why your printer isn't working. Take care of any error messages before you clear the printer spooler. Once the error messages are gone, try printing something to see if the problem is resolved."
+    },
+    {
+      "title": "Check for updates.",
+      "content": "Check for updates. If it's been a long time since you've updated your computer or printer drivers, installing the latest updates can often fix printing and other problems. Printer drivers are usually installed automatically when you update Windows, but you can also update drivers manually ."
+    },
+    {
+      "title": "Run a Windows troubleshooter.",
+      "content": "Run a Windows troubleshooter. If you're having trouble printing on a Windows PC, you can usually fix the issue using one of Windows' troubleshooters. Here's how: Windows 10 Press the Windows key on your keyboard, type troubleshooting and select Troubleshooting Settings . Click Use a printer . Click Advanced Click Run as administrator . You may be prompted to enter your administrator password. Click Next and follow the troubleshooter screens. [5] X Research source Windows 11 Click the Start menu and select Settings . Click System in the left panel. Click Troubleshoot in the right panel. Click Other troubleshooters . Click Run next to \"Printer\" and follow the troubleshooter screens."
+    }
+  ]
+}

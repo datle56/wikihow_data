@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Linux-How-to-Change-User",
+  "title": "Linux: How to Change User in Terminal & GNOME",
+  "steps": [
+    {
+      "title": "Use su - username to log in as another user.",
+      "content": "Use su - username to log in as another user. Use this command to switch to another user at the command line. The \"-\" indicates that you want to log in as username and assume their environment variables, home directory, and shell preferences. [1] X Research source Once you enter their password, your prompt will change to that user's prompt. If you want to change users without changing your shell, omit the hyphen. E.g., su username . sudo – username is the same as sudo -l username and sudo --login username . In some Linux distributions, ( not Ubuntu ), you can use su - (with no username specified) to become the root user . It's better to use sudo to execute root-level commands as needed instead of becoming the root user—you're far less likely to break things."
+    },
+    {
+      "title": "Use sudo -u username command to run a command as another user.",
+      "content": "Use sudo -u username command to run a command as another user. Just like when you use sudo to run commands with root permissions, you can also use it to execute any command as another user. [2] X Research source You'll need to enter the user's password to execute the command. If you don't know it, you can always change it using the passwd command."
+    },
+    {
+      "title": "Click the system menu.",
+      "content": "Click the system menu. It's at the top-right corner of your desktop—where you'll see the network icon, volume, and battery."
+    },
+    {
+      "title": "Click Power Off / Log Out.",
+      "content": "Click Power Off / Log Out . This expands more options."
+    },
+    {
+      "title": "Click Switch User and enter that user's login information.",
+      "content": "Click Switch User and enter that user's login information. As long as you have at least one more user added to your Linux system, you'll see the Switch User option. [3] X Research source When you switch users, the applications you were running will continue to run in the background. You can easily switch back and forth between users as needed."
+    }
+  ]
+}

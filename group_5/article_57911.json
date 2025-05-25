@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Netflix-on-Switch",
+  "title": "How to Watch Netflix on Switch: App Alternatives & Hacking Method",
+  "steps": [
+    {
+      "title": "No, there is no way to watch Netflix on your Switch without hacking it.",
+      "content": "No, there is no way to watch Netflix on your Switch without hacking it. Netflix doesn't have a native app on the Nintendo Switch, so the only way to get Netflix on your Switch is to hack it to run an Android OS. Hacking your Switch is not recommended as it will void your warranty and can break your Switch. It's also an intensive process that requires quite a bit of tech savviness."
+    },
+    {
+      "title": "There are a number of streaming apps available natively on Nintendo Switch.",
+      "content": "There are a number of streaming apps available natively on Nintendo Switch. Hacking your Switch to add Netflix is not recommended, but if you're wanting to stream video on your Switch, consider one of these alternatives: YouTube Hulu Funimation Crunchyroll"
+    },
+    {
+      "title": "Determine if your Switch can be hacked.",
+      "content": "Determine if your Switch can be hacked. Only certain Nintendo Switches can be hacked. To check if your Switch has been patched to where you can't hack it, go to ismyswitchpatched.com , select your Switch's serial number prefix, then type in the first 6 digits of your serial number. The tool will let you know if your Switch is patched or not. If your Switch is patched, you cannot hack it."
+    },
+    {
+      "title": "Download the Android OS ROM and other files from XDA.",
+      "content": "Download the Android OS ROM and other files from XDA. XDA is a forum focused on Android software development. The files you need to download are located in this forum post as well as this one , and are listed below. As always, download these files at your own risk . [1] X Research source The ROM for your SD card size Shield-ifier (allows you to download games meant for NVIDIA Shield) Reboot2Payload (will reboot your device to Android when rebooting within the Android OS) GApps (installs the Google Play Store and other Google services) TegraRcmGUI (pushes exploit to Switch) balenaEtcher (will write the ROM to your SD card) Hekate version 5.0 (the bootloader)"
+    },
+    {
+      "title": "Insert your SD card into your PC.",
+      "content": "Insert your SD card into your PC. Make sure to back up anything on the SD card that you want to save, as this process will delete everything on the SD card."
+    },
+    {
+      "title": "Open balenaEtcher and select the \"android-XXgb.img.gz\" image and your SD card.",
+      "content": "Open balenaEtcher and select the \"android-XXgb.img.gz\" image and your SD card. Make certain you've selected the correct card before clicking Flash ."
+    },
+    {
+      "title": "Click Flash.",
+      "content": "Click Flash . This process can take anywhere from 30 minutes to a few hours depending on your SD card's size and speed. Once the flashing process is complete, you can close balenaEtcher. You will see two new drives in your Windows Explorer—one larger one, and one that is 2GB. If you don't see these drives, eject the SD card and reinsert it into your PC."
+    },
+    {
+      "title": "Place the GApps, Shield-ifier, and/or Reboot2Payload ZIPs in the 2GB drive.",
+      "content": "Place the GApps, Shield-ifier, and/or Reboot2Payload ZIPs in the 2GB drive. Do not unzip these files before placing them in the partition."
+    },
+    {
+      "title": "Eject the SD card and place it in your Switch.",
+      "content": "Eject the SD card and place it in your Switch. Your Switch should be off at this point."
+    },
+    {
+      "title": "Prepare your Switch to boot into recovery mode (RCM).",
+      "content": "Prepare your Switch to boot into recovery mode (RCM). In order to enter RCM, you will have to modify your Switch in some way. Some common ways are to alter your Joycons with a metal bridge, plastic jig, or tin foil. [2] X Research source XDA links to a number of methods to try in their Switch Android hacking thread. Note that modifying your Switch in this way can cause permanent damage."
+    },
+    {
+      "title": "Launch TegraRcmGUI on your computer.",
+      "content": "Launch TegraRcmGUI on your computer. Complete the following steps to get your Switch into RCM: Select the Settings tab and select \"Install Driver.\" Go back to the Payload tab and select the Hekate .bin file, then connect your Switch to your computer with a USB-A to USB-C (or USB-C to USB-C if your computer has a USB-C port) cable. TegraRcmGUI should say \"RCM OK.\" Select Inject Payload . Once you see the GUI on your Switch, you can disconnect it from your computer."
+    },
+    {
+      "title": "Mount the SD card to your Switch.",
+      "content": "Mount the SD card to your Switch. You can do so by following these steps: Tap More Configs and hold the volume up button. Then, tap Switchroot Android and continue to hold the volume up button until you get to the TWRP menu. On the TWRP menu, select Keep Read Only , then Mount . Check \"System\" and \"Vendor\", then tap the home button at the bottom of the screen. Tap Install > Select Storage > Micro SD card > OK ."
+    },
+    {
+      "title": "Install GApps, Shield-ifier, and Reboot2Payload.",
+      "content": "Install GApps, Shield-ifier, and Reboot2Payload. Tap the GApps, Shield-ifier and Reboot2Payload ZIPs and uncheck \"Reboot after installation is complete\", then slide the slider to the right. Wipe the Dalvik cache when prompted. You must install GApps before you first boot into Android. If you didn't install before booting, you'll need to start over by re-flashing your SD card. If asked to install the TWRP app, select \"Do not install\" and reboot your Switch, enter RCM again, then re-inject Hekate."
+    },
+    {
+      "title": "Reboot your Switch.",
+      "content": "Reboot your Switch. It may take a while, but after doing so your Switch will boot into Android."
+    },
+    {
+      "title": "Go to the Google Play Store.",
+      "content": "Go to the Google Play Store. To get Netflix, you must have installed GApps during the Android OS installation process."
+    },
+    {
+      "title": "Search for Netflix and install the app.",
+      "content": "Search for Netflix and install the app. You can install Netflix on your Switch with the Android OS just like an Android phone or tablet."
+    },
+    {
+      "title": "Open Netflix and log in.",
+      "content": "Open Netflix and log in. From here, you can watch Netflix just like you would on your other Android devices."
+    }
+  ]
+}

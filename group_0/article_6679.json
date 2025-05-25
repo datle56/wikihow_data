@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Change-Your-IP-Address-(Windows)",
+  "title": "How to Change Your IP Address (Windows)",
+  "steps": [
+    {
+      "title": "Unplug your router and modem.",
+      "content": "Unplug your router and modem. Most service providers assign dynamic IPs, which change from time to time. By disconnecting your modem for a long period of time, you are likely to get a new address assigned to you when you turn it back on. You may want to check your current IP address before doing this. Simply unplugging the router and modem from the wall will work."
+    },
+    {
+      "title": "Disable your computer's Wi-Fi.",
+      "content": "Disable your computer's Wi-Fi. This will prevent it from reconnecting to the router when you plug it back in. To disable Wi-Fi: Click in the bottom-right corner of the screen. Click Wi-Fi in the pop-up window."
+    },
+    {
+      "title": "Wait for five minutes.",
+      "content": "Wait for five minutes. Some ISPs will assign a new IP address in as little as five minutes; if doing this doesn't work, however, you may need to leave your router unplugged overnight (or for around eight hours)."
+    },
+    {
+      "title": "Plug your router back in.",
+      "content": "Plug your router back in. As long as you have a different device (e.g., a phone, a gaming console, or another computer) connected to Wi-Fi, the router and the second device will claim the old IP address."
+    },
+    {
+      "title": "Re-enable Wi-Fi on your computer.",
+      "content": "Re-enable Wi-Fi on your computer. Doing so after the other devices have had a chance to establish their connections will most likely change your computer's public IP address. You may want to check your IP address again to make sure it has changed."
+    },
+    {
+      "title": "Contact your ISP.",
+      "content": "Contact your ISP. In some rare cases, you may have a static IP address assigned by your internet service provider. In order to get this changed, you will need to contact their technical support directly. Oftentimes, this can only be changed once. [1] X Research source"
+    },
+    {
+      "title": "Use a proxy network",
+      "content": "Use a proxy network . This will display a different IP address for your connection; often, it will be an address from a different part of the country or world. Reliable proxies and VPNs often require monthly subscriptions."
+    },
+    {
+      "title": "Open Start .",
+      "content": "Open Start . It's in the bottom-left corner of the screen. If you're trying to change your IP address in order to fix a connection issue, renewing it is an easier process than manually changing the address."
+    },
+    {
+      "title": "Type command prompt into Start.",
+      "content": "Type command prompt into Start. This will search your computer for the Command Prompt app."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt. It should be at the top of the Start window."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This option is at the bottom of the drop-down menu. If you aren't an administrator on your current computer, you won't have this option and thus won't be able to renew your computer's IP address."
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. Doing so opens Command Prompt."
+    },
+    {
+      "title": "Type in ipconfig /release and press ↵ Enter.",
+      "content": "Type in ipconfig /release and press ↵ Enter . This command \"forgets\" your current IP address."
+    },
+    {
+      "title": "Type in ipconfig /renew and press ↵ Enter.",
+      "content": "Type in ipconfig /renew and press ↵ Enter . This refreshes your IP address. Doing this in and of itself will likely solve some connection issues, though it won't always change your computer's actual IP address."
+    },
+    {
+      "title": "Open the Settings app",
+      "content": "Open the Settings app . Click the Start button and select the Settings gear."
+    },
+    {
+      "title": "Select the Network & Internet category.",
+      "content": "Select the Network & Internet category."
+    },
+    {
+      "title": "Ensure the Status section is selected.",
+      "content": "Ensure the Status section is selected. This is the first tab on the left pane."
+    },
+    {
+      "title": "Click the \"Change connection properties\" link.",
+      "content": "Click the \"Change connection properties\" link."
+    },
+    {
+      "title": "Click Edit under \"IP assignment\".",
+      "content": "Click Edit under \"IP assignment\". Scroll down to access this section."
+    },
+    {
+      "title": "Switch to a manual IP assignment.",
+      "content": "Switch to a manual IP assignment. Click the dropdown menu from the dialog that appears and choose the \"Manual\" option."
+    },
+    {
+      "title": "Toggle on IPv4.",
+      "content": "Toggle on IPv4. Several text boxes will appear."
+    },
+    {
+      "title": "Fill in the text boxes.",
+      "content": "Fill in the text boxes. Here's what they mean: IP address - Usually, your device's IP address will be \"192.168.1.X\" (or a similar set of numbers), wherein \"X\" is specific to your device. Change the \"X\" value to a number between 1 and 100. Make sure you don't use the same IP address as another device on your network (e.g., your phone). Subnet prefix length - This depends on your IP address, but will usually be \"255.255.255.X\". Gateway - This is your router's IP address. Preferred DNS - Your preferred DNS address (for example: \"208.67.222.222\" for the OpenDNS server, or \"8.8.8.8\" for Google's server). Alternate DNS - A secondary DNS address (for example: \"208.67.220.220\" for the OpenDNS server, or \"8.8.4.4\" for Google's server)."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . Your new network settings will be saved and applied."
+    }
+  ]
+}

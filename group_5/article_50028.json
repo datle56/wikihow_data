@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/1ps-Meaning",
+  "title": "What is 1ps in Verilog Timescale? Time Units, Resolution, & Examples",
+  "steps": [
+    {
+      "title": "1ps stands for 1 picosecond.",
+      "content": "1ps stands for 1 picosecond. The abbreviation “ps” means picosecond, or 1/10 12 (1 trillionth) of a second. In the programming language Verilog, 1ps is a unit for the `timescale compiler directive, which sets the default unit of time for a simulation and the resolution to which outputs are rounded. [1] X Research source The units are seconds (s), milliseconds (ms), microseconds (us), nanoseconds (ns), picoseconds (ps), and femtoseconds (fs)."
+    },
+    {
+      "title": "Choose your units of time and resolution.",
+      "content": "Choose your units of time and resolution. In Verilog, the timescale directive is written as `timescale integer [time unit] / integer [resolution]. When choosing your units, always put the larger one first. The general time scale must be divisible by the resolution. [2] X Research source The first unit is how time is measured, and the second is how precise your recordings are. [3] X Research source The ` symbol, or backtick, lets the program know that you’re using a compiler directive. It introduces the `timescale directive, as well as `include, `resetall, `define, and others. [4] X Research source"
+    },
+    {
+      "title": "Choose your integers (order of magnitude).",
+      "content": "Choose your integers (order of magnitude). Finish setting the timescale by choosing one of three integers to put before your units: 1, 10, or 100. [5] X Research source By adding an integer you can control how much time makes up a single unit or how many units go into the resolution. For example, if you write the directive `timescale 10ns / 1ns, then for every 10 nanoseconds the output value will be rounded to the nearest nanosecond. [6] X Research source A common timescale is 1ns / 1ps, which means at each nanosecond there is an output rounded to the nearest picosecond."
+    },
+    {
+      "title": "Write your test bench module.",
+      "content": "Write your test bench module. Test benches run a simulation of your design, and check the outputs. [7] X Research source Set up your module by writing: `timescale [unit of time]/[unit of precision] module tb; reg val; initial begin val<=[where you want to start];"
+    },
+    {
+      "title": "Set delays by writing #[real number] before your functions.",
+      "content": "Set delays by writing #[real number] before your functions. To program when your data is recorded, write the operator #[real number] and then a function. The operator # (AKA the delay) is multiplied by the time unit, then rounded to the nearest time precision unit (resolution). [8] X Research source For example, you could write #5 $display (“T=%0t At time #5”, $realtime); val<=1; If your `timescale is 1ns/1ns, then your output would be 1(ns) * 5 = 5 since it’s rounded to the nearest nanosecond. If your `timescale was 10ns/1ns, then your output would be 10(ns) * 5 = 50. If your `timescale was 1ns/1ps, then your output would be 1000ps (AKA 1ns) * 5 = 5000 to convert it to picoseconds."
+    },
+    {
+      "title": "Set the end time and add the ending code.",
+      "content": "Set the end time and add the ending code. To end the simulation, write #[real number] before the function $display (“T=%0t End of simulation”, $realtime); then write the codes “end,” then “endmodule”. “End” closes the block “initial begin,” and “endmodule” closes the “module” block. [9] X Research source Your entire simulation may look like this: `timescale 1ns/1ps module tb; reg val; initial begin val<=0; #1 $display (“T=%0 At time #1”, $realtime); val<=1; #5 $display (“T=%0t End of simulation”, $realtime); end endmodule"
+    },
+    {
+      "title": "1ps can mean first-person shooter when referring to gaming.",
+      "content": "1ps can mean first-person shooter when referring to gaming. Video games that are in first-person perspective are often called first-person shooters, more often abbreviated as FPS. Occasionally, they’re also abbreviated to “1ps.”"
+    },
+    {
+      "title": "In math, IPS stands for inches per second.",
+      "content": "In math, IPS stands for inches per second. Sometimes, IPS refers to a unit of measurement for acceleration, which is inches per second. [10] X Research source When it’s being used for a change in velocity (acceleration), it’s written as inches per second 2 ."
+    },
+    {
+      "title": "IPS can also refer to a kind of LCD screen.",
+      "content": "IPS can also refer to a kind of LCD screen. IPS (in-plane switching) monitors are a kind of LCD screen where liquid crystals are sandwiched between two planes of glass. [11] X Research source"
+    },
+    {
+      "title": "IPSs are a kind of computer security system.",
+      "content": "IPSs are a kind of computer security system. IPS can also mean “intrusion prevention systems,” which block attacks on networks and computers. [12] X Research source"
+    }
+  ]
+}

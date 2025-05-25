@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Enable-Legacy-Microsoft-Edge",
+  "title": "How to Enable Legacy Microsoft Edge",
+  "steps": [
+    {
+      "title": "Open Registry Editor.",
+      "content": "Open Registry Editor. To do so, press ⊞ Win + R and type regedit.exe ."
+    },
+    {
+      "title": "Expand \\HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\.",
+      "content": "Expand \\HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\. You will be creating a new registry key here."
+    },
+    {
+      "title": "Create a new key.",
+      "content": "Create a new key. Name it \"EdgeUpdate\". This is the registry key that will be used to decide whether Legacy Microsoft Edge should remain enabled."
+    },
+    {
+      "title": "Click on the newly created \"EdgeUpdate\" key.",
+      "content": "Click on the newly created \"EdgeUpdate\" key. You will also be creating a DWORD value."
+    },
+    {
+      "title": "Create a new DWORD value.",
+      "content": "Create a new DWORD value. Name it \"Allowsxs\". This is the value that you will set to enable Legacy Microsoft Edge."
+    },
+    {
+      "title": "Right-click and choose \"Modify...\".",
+      "content": "Right-click and choose \"Modify...\". You will need to set the DWORD value before restarting your computer."
+    },
+    {
+      "title": "Set the value to \"1\".",
+      "content": "Set the value to \"1\". It does not matter what the base is, because 1 is the same in both hexadecimal and decimal. Then click on OK ."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. After making changes to the registry, it is a good idea to restart your computer. This will confirm that you have applied any needed modifications."
+    },
+    {
+      "title": "Go to https://www.microsoft.com/en-us/edge.",
+      "content": "Go to https://www.microsoft.com/en-us/edge . This is the official website for the new Microsoft Edge."
+    },
+    {
+      "title": "Click on the download link in the center of the page.",
+      "content": "Click on the download link in the center of the page. Accept the terms of use."
+    },
+    {
+      "title": "Locate and open \"MicrosoftEdgeSetup.exe\" in \"Downloads\".",
+      "content": "Locate and open \"MicrosoftEdgeSetup.exe\" in \"Downloads\". Enter your username and password if prompted and click on OK or Yes ."
+    },
+    {
+      "title": "Let the download proceed.",
+      "content": "Let the download proceed. It should take only a few minutes to download the new browser to your PC."
+    },
+    {
+      "title": "Complete the initial setup.",
+      "content": "Complete the initial setup. After the installation is complete, you will be asked to sign in with a Microsoft account (if you have not already), enable sync, and choose a home/new tab page layout. You may also be prompted to reenable extensions."
+    },
+    {
+      "title": "Open Microsoft Edge Legacy.",
+      "content": "Open Microsoft Edge Legacy. This app will be re-enabled after running the Edge installer again."
+    }
+  ]
+}

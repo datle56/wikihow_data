@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Use-Deploy-Keys-on-Github",
+  "title": "How to Use Deploy Keys on Github",
+  "steps": [
+    {
+      "title": "Open the terminal program on your computer.",
+      "content": "Open the terminal program on your computer. The terminal program on your computer allows you to remotely access your server. If you're using a Linux or Mac computer, you'll be using the built-in Terminal program. If you're using Windows, you'll need to install a program like Cygwin or GitBash. Linux - Press Ctrl + Alt + T or search for \"terminal.\" Mac - You can find the Terminal program in the Utilities folder. Windows - You can download Cygwin from cygwin.com , or GitBash from git-scm.com/downloads ."
+    },
+    {
+      "title": "Log into your server using your terminal program.",
+      "content": "Log into your server using your terminal program. You'll be generating the deploy key on your server so that it can access your GitHub repository. To do this, you'll need to log into your server, either remotely through your terminal or locally on the server. In your terminal program, type ssh username @ hostname to log in. Enter your password if prompted. [1] X Research source"
+    },
+    {
+      "title": "Enter the command to generate the SSH key.",
+      "content": "Enter the command to generate the SSH key. The following command will create a new key with your GitHub email address as the label: ssh-keygen -t rsa -b 4096 -C \" email@example.com \" An SSH key is a encrypted key pair that authenticates your identity. In this case, you'll be assigning the key to your GitHub repository, allowing it to identify your server."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ↵ Enter / ⏎ Return when prompted to select a location. This will save the key to the default location, which is the .ssh directory in your User directory."
+    },
+    {
+      "title": "Create a passphrase.",
+      "content": "Create a passphrase. This adds an additional layer of security to your key, as unknown users will need to enter the passphrase before the key will work. You'll be prompted to confirm the passphrase when creating it."
+    },
+    {
+      "title": "Copy the SSH key contents to your clipboard.",
+      "content": "Copy the SSH key contents to your clipboard. Once the key has been created, you'll need to add it to your repository. To do so, you'll need to copy the contents of the key. The following command will copy the contents of the key to your clipboard: [2] X Research source Linux - xclip -sel clip < ~/.ssh/id_rsa.pub . You may need to run sudo apt-get install xclip first. Windows - clip < ~/.ssh/id_rsa.pub Mac - pbcopy < ~/.ssh/id_rsa.pub"
+    },
+    {
+      "title": "Log into the GitHub website.",
+      "content": "Log into the GitHub website. Make sure you log in with an account that can access the repository."
+    },
+    {
+      "title": "Click your profile image in the upper-right corner and select \"Your profile.\"",
+      "content": "Click your profile image in the upper-right corner and select \"Your profile.\" This will open your GitHub profile page."
+    },
+    {
+      "title": "Click the \"Repositories\" tab.",
+      "content": "Click the \"Repositories\" tab. This will display all of your repositories."
+    },
+    {
+      "title": "Select the repository you want to add the key to.",
+      "content": "Select the repository you want to add the key to. This will grant your server access to the repository to automatically deploy builds."
+    },
+    {
+      "title": "Click the \"Settings\" tab at the top of the screen.",
+      "content": "Click the \"Settings\" tab at the top of the screen. This will open your repository settings."
+    },
+    {
+      "title": "Click the \"Deploy keys\" button in the left menu.",
+      "content": "Click the \"Deploy keys\" button in the left menu. This will display the deploy keys that are currently assigned to the repository."
+    },
+    {
+      "title": "Click the \"Add deploy key\" button.",
+      "content": "Click the \"Add deploy key\" button. A text field for the key will appear."
+    },
+    {
+      "title": "Paste the copied deploy key into the field.",
+      "content": "Paste the copied deploy key into the field. Click the field and press ⌘ Command / Ctrl + V to paste the copied deploy key into the field. If you want the server to have write access to the repository, check the \"Allow write access\" box."
+    },
+    {
+      "title": "Click \"Add key\" to add your deploy key.",
+      "content": "Click \"Add key\" to add your deploy key. This will allow your server to access the repository and deploy builds from it. [3] X Research source"
+    },
+    {
+      "title": "Create a dedicated GitHub account for the machine user.",
+      "content": "Create a dedicated GitHub account for the machine user. A \"machine user\" is an automated user that can access multiple repositories. This is useful if your server needs access to multiple repositories, since deploy keys only grant access to a single repository. You can create a new user by clicking the \"Sign up\" button on the GitHub homepage and following the prompts."
+    },
+    {
+      "title": "Generate an SSH key on your server.",
+      "content": "Generate an SSH key on your server. Follow the steps in the first section to generate a key on your server and copy it to your clipboard."
+    },
+    {
+      "title": "Sign into the GitHub website with the new machine user account.",
+      "content": "Sign into the GitHub website with the new machine user account. You'll be assigning the newly-created key to this user."
+    },
+    {
+      "title": "Click the machine user's profile picture and select \"Settings.\"",
+      "content": "Click the machine user's profile picture and select \"Settings.\" This will open the account settings for the machine user."
+    },
+    {
+      "title": "Click the \"SSH and GPG keys\" option in the left menu.",
+      "content": "Click the \"SSH and GPG keys\" option in the left menu. This will display the keys currently assigned to the user."
+    },
+    {
+      "title": "Click the \"New SSH key\" button.",
+      "content": "Click the \"New SSH key\" button. This will allow you to enter the SSH key."
+    },
+    {
+      "title": "Paste the key and click \"Add SSH key.\"",
+      "content": "Paste the key and click \"Add SSH key.\" This will add the SSH key to the machine user's profile, allowing it to access your server. [4] X Research source"
+    },
+    {
+      "title": "Open the first repository you want to give the machine user access to.",
+      "content": "Open the first repository you want to give the machine user access to. You can find your repositories in the \"Repositories\" tab on your Profile page."
+    },
+    {
+      "title": "Click the \"Settings\" tab on the repository page.",
+      "content": "Click the \"Settings\" tab on the repository page. This will display the repository settings."
+    },
+    {
+      "title": "Click the \"Collaborators\" option in the left menu.",
+      "content": "Click the \"Collaborators\" option in the left menu. This will allow you to add collaborators to the repository. By adding your machine user as a collaborator, it will be able to push builds from your repository to your server."
+    },
+    {
+      "title": "Enter the machine user's name and click \"Add collaborator.\"",
+      "content": "Enter the machine user's name and click \"Add collaborator.\" The machine user will be given read/write access to the repository. [5] X Research source"
+    }
+  ]
+}

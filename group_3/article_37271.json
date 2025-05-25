@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Reset-a-BIOS-Password",
+  "title": "How to Reset a BIOS Password",
+  "steps": [
+    {
+      "title": "Turn on the computer",
+      "content": "Turn on the computer and enter the wrong password three times. This will lock the computer and display a \"System Disabled\" message. Don't worry, when you restart the computer it will go back to normal and no data will be lost. You need to do this in order to see the code required to find the backdoor password."
+    },
+    {
+      "title": "Note the \"System Disabled\" number.",
+      "content": "Note the \"System Disabled\" number. When you see the \"System Disabled\" message, you'll see a series of numbers and letters. Write this down, as you'll need it to find the password later."
+    },
+    {
+      "title": "Visit the password generator website.",
+      "content": "Visit the password generator website. Visit bios-pw.org/ on another computer's web browser. This website can generate backdoor passwords based on the code that was displayed. [1] X Research source"
+    },
+    {
+      "title": "Enter the System Disabled code and click \"Get password\".",
+      "content": "Enter the System Disabled code and click \"Get password\". The website will attempt to generate a password that matches your computer. You may be given several passwords to try. Note: If you didn't get a code when the system was disabled, your computer may use its own serial number to generate a backdoor password. Click the \"More details\" link at bios-pw.org/ and follow the instructions to download and run the correct script for your computer's manufacturer."
+    },
+    {
+      "title": "Restart the locked computer, then try the passwords.",
+      "content": "Restart the locked computer, then try the passwords. You'll be able to enter three incorrect passwords before your system is locked and you have to reboot again. Ideally, one of the stock BIOS passwords listed on the BIOS Master Password site will unlock your computer. If none of the passwords listed here unlock your computer, you'll need to try the next method."
+    },
+    {
+      "title": "Change your BIOS settings if you get in.",
+      "content": "Change your BIOS settings if you get in. After entering the correct password, make sure that your BIOS settings are correct so that you won't be locked out again. Unlike the methods below, entering the backdoor password will not reset your BIOS settings."
+    },
+    {
+      "title": "Know when to use this method.",
+      "content": "Know when to use this method. It's recommended that you use the master password method above if possible. If the passwords didn't work or if your search returned no results, then you may be able to reset the password by removing and reinserting the CMOS battery. [2] X Research source The CMOS battery looks like a watch battery, and it powers the motherboard even when the computer is unplugged. This might be how the password is stored on your motherboard along with the system time and your computer's BIOS settings. Removing and reinserting the battery will clear all of these settings."
+    },
+    {
+      "title": "Disconnect everything from your desktop tower.",
+      "content": "Disconnect everything from your desktop tower. Before opening your desktop's case, it's recommended that you detach all of the cables that are currently attached to the back. [3] X Research source Make sure that the power cable has been detached. You may be able to perform this method on a laptop as well, but it will require removing the protective case from the back of laptop. You will usually need to remove all of the other panels as well as the battery to get access to the motherboard."
+    },
+    {
+      "title": "Press the power button after unplugging the computer.",
+      "content": "Press the power button after unplugging the computer. This will dissipate any charge remaining in the motherboard's capacitors, reducing the risk of electrostatic damage."
+    },
+    {
+      "title": "Remove the screws on the back to access the inside of the case.",
+      "content": "Remove the screws on the back to access the inside of the case. Most desktops have thumbscrews, though you may need a Phillips-head screwdriver to loosen or remove the screws. You may find it easier to lay the desktop on its side on a table or workbench so that you can easily access the inside without having to bend over. Click here for more detailed instructions on opening a laptop computer."
+    },
+    {
+      "title": "Ground yourself",
+      "content": "Ground yourself . Before touching anything inside your computer, you should ground yourself to discharge any built-up static electricity. If you discharge when touching a sensitive component, it could damage or destroy it. [4] X Research source You can quickly ground yourself by touching a metal water tap."
+    },
+    {
+      "title": "Locate the CMOS battery.",
+      "content": "Locate the CMOS battery. It will be silver and is typically located along the edge of the motherboard. The battery is about 1/2 inch in diameter. [5] X Research source"
+    },
+    {
+      "title": "Carefully remove the battery.",
+      "content": "Carefully remove the battery. Most batteries are held in by one or two small clips. Gently pull the battery out of the socket and set it to the side. Note: Some batteries may be soldered to the motherboard and are not removable. If this is the case and you'll have to use a reset jumper, see the next section."
+    },
+    {
+      "title": "Wait for about thirty seconds with the battery out of the socket.",
+      "content": "Wait for about thirty seconds with the battery out of the socket. This will ensure that the BIOS settings are completely cleared."
+    },
+    {
+      "title": "Reinsert the battery.",
+      "content": "Reinsert the battery. After waiting about thirty seconds, you can return the battery to its socket. Make sure you are inserting it with the correct side facing up."
+    },
+    {
+      "title": "Close up your computer and reconnect any cables.",
+      "content": "Close up your computer and reconnect any cables. You shouldn't need to get back inside the computer after this, so make sure to close it up completely."
+    },
+    {
+      "title": "Power on the computer and enter the BIOS.",
+      "content": "Power on the computer and enter the BIOS . Press the BIOS setup key as the system is booting up. Since you've reset the BIOS, things like your system clock will need to be reset. Any settings changes that you previously made in the BIOS, such as drive assignment or boot order will need to be set again. [6] X Research source If the password still has not been removed, then that means that the BIOS password can't be reset by removing the CMOS batters. In this situation, follow the steps below."
+    },
+    {
+      "title": "Disconnect the computer, open it, and ground yourself.",
+      "content": "Disconnect the computer, open it, and ground yourself. See the Steps 2-5 of the previous section for more details."
+    },
+    {
+      "title": "Locate the BIOS reset jumper.",
+      "content": "Locate the BIOS reset jumper . This jumper is typically two pins, and is almost always blue. It is usually located near the silver CMOS battery (it looks like a watch battery), but this certainly isn't always the case. Refer to your computer or motherboard's documentation if you are having difficulty finding it. [7] X Research source The jumper may be labeled CLEAR CMOS, CLEAR, CLR, JCMOS1, PASSWORD, PSWD, etc. [8] X Research source If you don't have a reset jumper (and not all computers do), and you've tried the methods above, then you'll have to contact the manufacturer."
+    },
+    {
+      "title": "Move the jumper one pin over.",
+      "content": "Move the jumper one pin over. Most BIOS jumpers are installed on two of three available pins. Moving the jumper over by one pin will reset the password. [9] X Research source For example, the jumper is covering pins 1 and 2. Move the jumper so that it is covering pins 2 and three. If there are only two pins available, removing the jumper completely will reset the password."
+    },
+    {
+      "title": "Wait about thirty seconds.",
+      "content": "Wait about thirty seconds. This will ensure that the BIOS sees the changes made by the jumper and clears the password. [10] X Research source"
+    },
+    {
+      "title": "Return the jumper to its original location.",
+      "content": "Return the jumper to its original location. After waiting for about thirty seconds, you can return the jumper to its original position."
+    },
+    {
+      "title": "Close up your computer and reconnect any cables.",
+      "content": "Close up your computer and reconnect any cables. You shouldn't need to get back inside the computer after this, so make sure to close it up completely."
+    },
+    {
+      "title": "Power on the computer and enter the BIOS.",
+      "content": "Power on the computer and enter the BIOS. Press the BIOS setup key as the system is booting up. Since you've reset the BIOS, things like your system clock will need to be adjusted. Any settings changes that you previously made in the BIOS, such as drive assignment or boot order will need to be set again."
+    }
+  ]
+}

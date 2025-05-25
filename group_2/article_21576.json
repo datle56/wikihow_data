@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Hack-Gmail",
+  "title": "How to Hack Gmail",
+  "steps": [
+    {
+      "title": "Understand the limitations.",
+      "content": "Understand the limitations. Gmail is an incredibly secure service. The only way you'll be able to \"hack\" into someone's account is by stealing their password. If your target has two-factor authentication, you'll need their mobile device as well. There is no other way around two-factor authentication."
+    },
+    {
+      "title": "Understand the legality.",
+      "content": "Understand the legality. It is absolutely illegal in most areas to access someone's email account without authorization. This article is for educational purposes only."
+    },
+    {
+      "title": "Find a keylogger program that suits your needs.",
+      "content": "Find a keylogger program that suits your needs. A keylogger is a program that logs the keystrokes on the computer it is installed on. [1] X Research source There are a variety of keylogger programs available for free or for purchase online, with varying degrees of stealthiness. Be sure to research all of your options carefully. Popular programs include: Actual Keylogger Spyrix Free Keylogger BlackBox Express KidLogger NetBull Lola"
+    },
+    {
+      "title": "Install the keylogger on the target's computer.",
+      "content": "Install the keylogger on the target's computer. This will require administrator access to the target's computer. On many computers, the password will be \"admin\" or will just be blank. The process for installing the keylogger varies depending on the program you are using. Installing a keylogger without the other person knowing is illegal."
+    },
+    {
+      "title": "Start the keylogger service.",
+      "content": "Start the keylogger service. Start the service so that it begins recording keystrokes. The process for this will vary depending on the program you are using. You may have to configure the program to record keys if it has multiple functions."
+    },
+    {
+      "title": "Let the keylogger run while the target uses the computer.",
+      "content": "Let the keylogger run while the target uses the computer. The keylogger will likely capture a lot of information. You can filter based on the window that the user is typing in."
+    },
+    {
+      "title": "View the logs.",
+      "content": "View the logs. Some keyloggers will send the logs to your email. Others will require you to export them from the computer that the program is running on. Browse through the logs until you find what you suspect to be the target's Gmail password. You may be able to filter by the Gmail login page. If the keylogger doesn't send you the logs via email, you'll need to access the program on the computer you installed it on to view them."
+    },
+    {
+      "title": "Open the web browser that your target uses on their computer.",
+      "content": "Open the web browser that your target uses on their computer. You must have access to that person's computer. Try this when they're out of the room or you know that you have a few minutes alone. Open a link from an email or a Help menu to launch the default browser."
+    },
+    {
+      "title": "Open the password manager.",
+      "content": "Open the password manager. The process for accessing the password manager is different depending on the browser you are using. [2] X Research source Internet Explorer - Click the Gear button or the Tools menu and select \"Internet Options.\" Click the \"Content\" tab and then click the \"Settings\" button in the AutoComplete section. Select \"Manage Passwords\" from the new window. Chrome - Click the Chrome Menu button (☰) and select \"Settings.\" Click the \"Show advanced settings\" link and then scroll to the \"Passwords and forms\" section. Click \"Manage passwords.\" Firefox - Click the Firefox Menu button (☰) and select \"Options.\" Click the \"Security\" tab and then click \"Saved Passwords.\" Safari - Click the Safari menu and select \"Preferences.\" Click the \"Passwords\" tab."
+    },
+    {
+      "title": "Find the password for your target's Google account.",
+      "content": "Find the password for your target's Google account. Use the search bar in the password manager to search for \"google\". This is the quickest way to narrow down the list of passwords. Look for the \"accounts.google.com\" entry for the target's Gmail address."
+    },
+    {
+      "title": "Display the password.",
+      "content": "Display the password. Select the password and then click the \"Show\" or \"Show Password\" button. You may have to enter the administrator password for the computer before the passwords are displayed."
+    },
+    {
+      "title": "Write down the password and then close the password manager.",
+      "content": "Write down the password and then close the password manager. Make note of the password as well as the exact Gmail address. Close the password manager when you are done to cover your tracks."
+    },
+    {
+      "title": "Try the password from another computer.",
+      "content": "Try the password from another computer. If the target has not enabled two-factor authentication, then you should be able to access the account. The target will likely be notified that a login has occurred from an unknown browser. If the target has two-factor authentication activated, then you will need the code that is sent to their mobile device. There is no way around this if it is activated."
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. Whenever someone logs into Gmail (or any other login service), a file called a \"cookie\" is sent to their computer. This cookie allows the user to stay logged in, even if they leave Gmail. A packet sniffer can find cookies being transferred over a wireless network. When you find a Gmail cookie, you can open it on your computer and potentially access your target's inbox. You'll need to be connected to the same wireless network as your target. This method will not work if your target has encryption enabled (https://). This is enabled by default in Gmail, so its usefulness is limited. [3] X Research source Using a packet sniffer on a public network to intercept traffic is illegal."
+    },
+    {
+      "title": "Download and install Wireshark.",
+      "content": "Download and install Wireshark. Wireshark is a free network monitoring utility that you can download from wireshark.org . It is available for Windows, Mac, and Linux. Installing Wireshark is a straightforward process. Follow the prompts like you would with most programs. [4] X Research source During installation, make sure to install the TShark component. This is essential for grabbing cookies over the wireless network. You will also need to install \"WinPcap.\""
+    },
+    {
+      "title": "Download Cookie Cadger.",
+      "content": "Download Cookie Cadger. This is a Java program that will find and intercept cookies being sent across the wireless network. Cookie Cadger doesn't need to be installed. It works the same in every operating system. You will need to have Java 7 installed in order to use Cookie Cadger. You can download Java from java.com/download . See How to Install Java for more details."
+    },
+    {
+      "title": "Connect to the same wireless network your target is connected to.",
+      "content": "Connect to the same wireless network your target is connected to. You will need to be connected to the same wireless network as your target. This means you'll need to be close."
+    },
+    {
+      "title": "Launch Wireshark.",
+      "content": "Launch Wireshark. Wireshark will need to be running in order for Cookie Cadger to work."
+    },
+    {
+      "title": "Run Cookie Cadger and select your wireless adapter.",
+      "content": "Run Cookie Cadger and select your wireless adapter. Select the adapter connected to the wireless network from the drop-down menu. You should see the main frame populate with unsecured cookies from other people using the network."
+    },
+    {
+      "title": "Use the domain filter to find Google cookies.",
+      "content": "Use the domain filter to find Google cookies. The second column will display a list of domains that Cookie Cadger is finding cookies for. Look for Google domains, particularly mail.google.com . Remember, this only works if the target is not using https. If their connection is secure, you will not be able to find the cookie."
+    },
+    {
+      "title": "Click \"Replay This Request\" when you've found a Gmail cookie.",
+      "content": "Click \"Replay This Request\" when you've found a Gmail cookie. This will load the cookie into your own web browser. The right cookie will take you directly to the target's inbox. You will no longer be able to access their Gmail when the person logs out. [5] X Research source"
+    }
+  ]
+}

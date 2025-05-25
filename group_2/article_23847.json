@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Insert-Pictures-in-Excel-That-Automatically-Size-to-Fit-Cells",
+  "title": "How to Insert Pictures in Excel That Automatically Size to Fit Cells",
+  "steps": [
+    {
+      "title": "Click Insert.",
+      "content": "Click Insert . This is the tab at the top, between Home and Page Layout . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Pictures.",
+      "content": "Click Pictures . You can find this in the Illustrations section. If you don't see the menu, click the Illustrations icon first, or expand your Excel window."
+    },
+    {
+      "title": "Hover over \"Place in Cell\".",
+      "content": "Hover over \"Place in Cell\". This is the option that allows pictures to follow the size of the cell. You can skip this step if you are using the web browser version of Excel."
+    },
+    {
+      "title": "Click This Device….",
+      "content": "Click This Device… . Alternatively, you can select Stock Images to browse Microsoft's images or Online Pictures to search the web via Bing. If you don't see this option, select Picture from File... instead."
+    },
+    {
+      "title": "Select a picture and click Insert.",
+      "content": "Select a picture and click Insert . The picture will be added to the cell. It will automatically fit the current size of the cell. If you change the cell size , the picture will become bigger or smaller with it."
+    },
+    {
+      "title": "Press Alt+F11.",
+      "content": "Press Alt + F11 . This opens the VBA (Visual Basic for Applications) menu. If you inserted a picture and it isn't resizing automatically, you can use this code instead."
+    },
+    {
+      "title": "Click Insert.",
+      "content": "Click Insert . This is in the top toolbar."
+    },
+    {
+      "title": "Click Module.",
+      "content": "Click Module . You can find this in the drop-down menu. A new window will open."
+    },
+    {
+      "title": "Copy and paste the code.",
+      "content": "Copy and paste the code. Use the following code: Public Sub FitPic() On Error GoTo NOT_SHAPE Dim PicWtoHRatio As Single Dim CellWtoHRatio As Single With Selection PicWtoHRatio = .Width / .Height End With With Selection.TopLeftCell CellWtoHRatio = .Width / .RowHeight End With Select Case PicWtoHRatio / CellWtoHRatio Case Is > 1 With Selection .Width = .TopLeftCell.Width .Height = .Width / PicWtoHRatio End With Case Else With Selection .Height = .TopLeftCell.RowHeight .Width = .Height * PicWtoHRatio End With End Select With Selection .Top = .TopLeftCell.Top .Left = .TopLeftCell.Left End With Exit Sub NOT_SHAPE: MsgBox \"Select a picture before running this macro.\" End Sub Press F5 to run the code and repeat this process until all the images in your sheet fit into cells."
+    }
+  ]
+}

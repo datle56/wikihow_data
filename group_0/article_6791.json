@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Change-a-Mac-Address-on-an-Android",
+  "title": "How to Change a Mac Address on an Android",
+  "steps": [
+    {
+      "title": "Check if your phone has root access.",
+      "content": "Check if your phone has root access. Some Android phone models (like the Samsung Galaxy S10e and other modern phones) can't be rooted. You need to root access to install BusyBox and permanently change your MAC address. [1] X Research source It's a good idea to use the following steps to check and make sure you have root access before continuing: Open the Google Play Store . Type Root Checker in the search bar. Tap Root Checker in the search results. [2] X Research source Tap Install next to Root Checker. Tap Open once Root Checker is installed. Tap Agree to agree to the disclaimer. Tap Get Started at the bottom of the screen. Tap Verify Root on screen."
+    },
+    {
+      "title": "Write down your current MAC address",
+      "content": "Write down your current MAC address . You'll want this address in case the new one doesn't work. You can use the following steps to check your MAC address on most Android phones: [3] X Research source Open the Settings app. Tap Network & Internet/Connections . Tap the Wi-Fi network you are connected to (not the toggle switch). In some menus, you may need to tap the gear icon next to the network's name and tap Advanced to see your MAC address. Note your MAC address below \"Network Details.\""
+    },
+    {
+      "title": "Download and install BusyBox.",
+      "content": "Download and install BusyBox. BusyBox is a software suite that contains a variety of Unix tools in a single file. This allows you to use a variety of Linux and Unix commands in Terminal Emulator. Use the following steps to download and install BusyBox: Open the Google Play Store . Type BusyBox in the search bar. Tap BusyBox in the search results. Tap Install next to BusyBox. Tap Open once BusyBox is installed. Tap Install at the bottom."
+    },
+    {
+      "title": "Download and install Terminal Emulator.",
+      "content": "Download and install Terminal Emulator. Terminal Emulator is a program that gives you access to Linux and Unix Terminal commands on your Android device. Use the following steps to download and install Terminal Emulator: Open the Google Play Store. Type Terminal Emulator in the search bar at the top. Tap Terminal Emulator in the search results. Tap Install below Terminal Emulator."
+    },
+    {
+      "title": "Open Terminal Emulator for Android.",
+      "content": "Open Terminal Emulator for Android. This app icon looks like a green Android robot over a blue terminal screen. You can find it on your home screens or in the Apps menu. Alternatively, you can tap Open in the Google Play Store once it finishes installing."
+    },
+    {
+      "title": "Type su and tap Enter on the keyboard.",
+      "content": "Type su and tap Enter on the keyboard. The command \"su\" stands for \"super user.\" [4] X Research source If the app asks for permission to use root access, tap Allow ."
+    },
+    {
+      "title": "Type IP link show and tap Enter.",
+      "content": "Type IP link show and tap Enter . This will display the interface name of your current network, and you'll want to write this down for later use."
+    },
+    {
+      "title": "Type busybox ip link [interface name].",
+      "content": "Type busybox ip link [interface name] . You'll use the full network interface name that you found in the previous step in place of \"[interface name]\". This command will display the MAC address."
+    },
+    {
+      "title": "Type busybox config [interface name] hw ether XX:XX:XX:YY:YY:YY to change your MAC address.",
+      "content": "Type busybox config [interface name] hw ether XX:XX:XX:YY:YY:YY to change your MAC address. You'll want to change \"XX:XX:XX:YY:YY:YY\" to a 12-character MAC address you want. If you get an error that the MAC address isn't correct or is unavailable, you can either try entering another MAC address or typing in your original address. This change will persist even after you restart your Android."
+    },
+    {
+      "title": "Write down your real MAC address",
+      "content": "Write down your real MAC address . You'll want this address in case the new one doesn't work. You can use the following steps to check your MAC address on most Android phones: [5] X Research source Open the Settings app. Tap Network & Internet . Tap the Wi-Fi network you are connected to (not the toggle switch). In some menus, you may need to tap the gear icon next to the network's name and tap Advanced to see your MAC address. Note your MAC address below \"Network Details.\""
+    },
+    {
+      "title": "Download Terminal Emulator for Android.",
+      "content": "Download Terminal Emulator for Android. If you have an older Android device, you may be able to temporarily change the MAC address using Terminal Emulator. Your MAC address will revert back to the default MAC address when the device is restarted. This will not work on most newer Android devices and most Samsung Galaxy devices. Use the following steps to download Terminal Emulator: Open the Google Play Store. Type Terminal Emulator in the search bar at the top. Tap Terminal Emulator in the search results. Tap Install below Terminal Emulator."
+    },
+    {
+      "title": "Open Terminal Emulator for Android.",
+      "content": "Open Terminal Emulator for Android. This app icon looks like a green Android robot over a blue terminal screen. You can find it on your home screens or in the Apps menu. Alternatively, you can tap Open in the Google Play Store once it finishes installing."
+    },
+    {
+      "title": "Type IP link show and tap Enter.",
+      "content": "Type IP link show and tap Enter . This will display the interface name of your current network, and you'll want to write this down for later use."
+    },
+    {
+      "title": "Type ip link set [interface name] XX:XX:XX:YY:YY:YY and tap Enter.",
+      "content": "Type ip link set [interface name] XX:XX:XX:YY:YY:YY and tap Enter . You'll want to change \"XX:XX:XX:YY:YY:YY\" to a 12-character MAC address you want and change \"[interface name]\" to the interface name that was displayed when you typed \"IP link show.\" After you enter this, your MAC address will change temporarily. [6] X Research source If you get an error, you can always enter the original MAC address to revert any changes."
+    },
+    {
+      "title": "Find out if your phone has a MediaTek chipset.",
+      "content": "Find out if your phone has a MediaTek chipset. The ChameleMAC app only works with phones that use a MediaTek chipset (like the Xiaomi Redmi Note 9T, Realme X7 Pro Ultra, Samsung Galaxy A32 5G, Nokia 2.4, and Oppo Reno 5 Z). You can find out what kind of chipset your phone uses by installing an app called \"Droid Hardware Info\" from the Google Play Store. Use the following steps to download and install Droid Info and check if your phone has a MediaTek chipset: Open the Google Play Store . Type Droid Hardware Info in the search bar. Tap Droid Hardware Info in the search results. Tap Install below Droid Hardware Info. Tap Open once Droid Hardware Info is installed. Tap the System tab at the top. Check that you have a MediaTek chipset next to \"Chipset\" near the top."
+    },
+    {
+      "title": "Check if your phone has root access.",
+      "content": "Check if your phone has root access. Some Android phone models (like the Samsung Galaxy S10e and other modern phones) can't be rooted. You need to root access to install BusyBox and permanently change your MAC address. It's a good idea to use the following steps to check and make sure you have root access before continuing: Open the Google Play Store . Type Root Checker in the search bar. Tap Root Checker in the search results. [7] X Research source Tap Install next to Root Checker. Tap Open once Root Checker is installed. Tap Agree to agree to the disclaimer. Tap Get Started at the bottom of the screen. Tap Verify Root on screen."
+    },
+    {
+      "title": "Write down your current MAC address",
+      "content": "Write down your current MAC address . You'll want this address in case the new one doesn't work. You can use the following steps to check your MAC address on most Android phones: Open the Settings app. Tap Network & Internet/Connections . Tap the Wi-Fi network you are connected to (not the toggle switch). In some menus, you may need to tap the gear icon next to the network's name and tap Advanced to see your MAC address. Note your MAC address below \"Network Details.\""
+    },
+    {
+      "title": "Download and install ChemeleMAC.",
+      "content": "Download and install ChemeleMAC. ChameleMAC is not available from the Google Play Store, so you will need to download and install the APK file. Make sure you allow apps from unknown sources in order to install the APK file first, then use the following steps to download and install ChameleMAC: Go to https://apkpure.com/chamelemac-change-wi-fi-mac/com.cryptotel.chamelemac in a web browser on your phone. Tap Download APK . Tap Ok to confirm that you want to keep the file. Tap Open to open the APK file. Tap Install ."
+    },
+    {
+      "title": "Open ChameleMAC.",
+      "content": "Open ChameleMAC. It has an icon that resembles a green eye with lines and circles attached to it. Tap the icon in your Apps menu to open ChameleMAC. Alternatively, you can tap Open once the app finishes installing."
+    },
+    {
+      "title": "Tap Allow when asked to grant root access.",
+      "content": "Tap Allow when asked to grant root access. When the app starts up, it will ask if you want to grant root access. Tap Allow to grant the app root access."
+    },
+    {
+      "title": "Tap Generate random MAC.",
+      "content": "Tap Generate random MAC . It's the first button below the \"MAC\" text field. Alternatively, you can tap the text field and manually input your own MAC address."
+    },
+    {
+      "title": "Tap Apply new Mac.",
+      "content": "Tap Apply new Mac . This displays a confirmation that asks if you want to change the MAC address."
+    },
+    {
+      "title": "Tap Change.",
+      "content": "Tap Change . It's in the confirmation pop-up that displays when you tap Apply new MAC . This confirms that you want to change the MAC address and applies the change."
+    }
+  ]
+}

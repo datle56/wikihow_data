@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Install-Game-Maker-Studio-on-Linux",
+  "title": "Install GameMaker Studio 2 on Ubuntu Linux: Setup Guide",
+  "steps": [
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. You can do this in most desktop environments by pressing Ctrl + Alt + T . The latest version of GameMaker Studio is made for Ubuntu 20.04. You will also need to have GameMaker Studio installed on your PC or Mac to compile games for Linux. If you just want to play games other people made with GameMaker Studio, you'll still need to follow all of these steps to install GM and the proper libraries."
+    },
+    {
+      "title": "Type sudo apt-get update and press ↵ Enter.",
+      "content": "Type sudo apt-get update and press ↵ Enter . This updates the software repositories so you're able to get the latest version of the software you need."
+    },
+    {
+      "title": "Install the build tools.",
+      "content": "Install the build tools. Before you can install GameMaker Studio on Linux, you'll need to install several libraries. [1] X Research source The packages you'll need: build-essential openssh-server clang libssl-dev libxrandr-dev libxxf86vm-dev libopenal-dev libgl1-mesa-dev libglu1-mesa-dev zlib1g-dev libcurl4-openssl-dev ffmpeg To install all packages at once, use the command sudo apt-get install build-essential openssh-server clang libssl-dev libxrandr-dev libgl1-mesa-dev libglu1-mesa-dev zlib1g-dev libcurl4-openssl-dev ffmpeg . [2] X Research source"
+    },
+    {
+      "title": "Double-check the ffmpeg version if you're running Ubuntu 18.",
+      "content": "Double-check the ffmpeg version if you're running Ubuntu 18. If you haven't updated Ubuntu to the latest version, you'll want to make sure you've installed the correct version of ffmpeg. [3] X Research source Type ffmpeg -version and press Enter . If you see \"ffmpeg version 3.x.x\", you'll need to run more commands to get the latest version, or else you won't be able to hear audio in your games. To get the latest version: Type sudo add-apt-repository ppa:savoury1/ffmpeg4 and press Enter . Type sudo apt-get install ffmpeg and press Enter ."
+    },
+    {
+      "title": "Install libfuse2 and curl if you're using Ubuntu 22.04.",
+      "content": "Install libfuse2 and curl if you're using Ubuntu 22.04. You can skip this step if you're using a different version of Ubuntu Linux. To install, run the command sudo apt-get install libfuse2 curl ."
+    },
+    {
+      "title": "Type sudo mkdir /opt/steam-runtime/ and press ↵ Enter.",
+      "content": "Type sudo mkdir /opt/steam-runtime/ and press ↵ Enter . This creates a directory for the Steam runtime libraries . You can use a different directory for this if you prefer. However, if you do, you'll need to change the next command to install in your preferred directory."
+    },
+    {
+      "title": "Install the Steam runtimes.",
+      "content": "Install the Steam runtimes. Now that you have a directory, use this command to download and install the Steam runtime: Type curl https://repo.steampowered.com/steamrt-images-scout/snapshots/latest-steam-client-general-availability/com.valvesoftware.SteamRuntime.Sdk-amd64,i386-scout-sysroot.tar.gz and press Enter . If you're using a different directory, replace /opt/steam-runtime/ with your preferred directory."
+    },
+    {
+      "title": "Install linuxdeploy.",
+      "content": "Install linuxdeploy. To do this, you'll need to run two separate commands: To download the files, type wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage and press Enter . To install, type the command sudo install -m 0755 linuxdeploy-x86_64.AppImage /usr/local/bin/linuxdeploy and press Enter ."
+    },
+    {
+      "title": "Install AppImage.",
+      "content": "Install AppImage. Now that you have all the prerequisites, you can install AppImage using these commands: To get the files, type wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage and press Enter . To install, type sudo install -m 0755 appimagetool-x86_64.AppImage /usr/local/bin/appimagetool and press Enter ."
+    },
+    {
+      "title": "In the GameMaker IDE on your PC or Mac, open the Target Manager.",
+      "content": "In the GameMaker IDE on your PC or Mac, open the Target Manager. You can do so by clicking the crosshair icon in the IDE. [4] X Research source"
+    },
+    {
+      "title": "Select Ubuntu in the \"Platform\" column.",
+      "content": "Select Ubuntu in the \"Platform\" column. More options will expand."
+    },
+    {
+      "title": "Select your compiler.",
+      "content": "Select your compiler. Choose whether you want to use YYC or VM to compile your games. If you use both compilers, you can repeat this step a second time for the second compiler."
+    },
+    {
+      "title": "Click the pencil icon next to \"Device.\"",
+      "content": "Click the pencil icon next to \"Device.\" This opens the Ubuntu Device Manager, where you can link to GameMaker on Ubuntu."
+    },
+    {
+      "title": "Click Add New Device.",
+      "content": "Click Add New Device . This option is at the top of the window."
+    },
+    {
+      "title": "Enter the hostname, Linux username and password, and other details.",
+      "content": "Enter the hostname, Linux username and password, and other details. The hostname is the IP address or host name of your Linux machine. If you're on a local network, this will be the private IP address of your Linux PC. For the username and password, enter the login information for the user account you used to install GameMaker Studio. Set the installation folder to a location on your Linux PC where you want to install the components necessary for running your game. The default is GameMakerStudio2 , which will be created in your home directory. Click Test Connection to make sure your PC or Mac can properly connect and log into the Linux PC."
+    },
+    {
+      "title": "Click OK to save your changes.",
+      "content": "Click OK to save your changes. Now that you've connected GameMaker on Linux to your PC or Mac, you can test and build your game projects for Linux. Once you select VM or YYC , select your Linux computer and press the Play button."
+    },
+    {
+      "title": "Compile a game for Linux.",
+      "content": "Compile a game for Linux. To compile for Ubuntu, click the package icon at the top of the GameMaker IDE, then select a folder in which you'll create the package. This creates a ZIP file on your PC or Mac and pushes the ZIP file to the folder you specified on your Linux PC. [5] X Research source"
+    },
+    {
+      "title": "Play the game on Linux.",
+      "content": "Play the game on Linux. Now you can unzip the game files on Linux and double-click the executable to run the game. If you get any errors, you may need to install a few extra libraries. Run these commands to get them. sudo apt install libcurl4 sudo apt install libopenal1"
+    },
+    {
+      "title": "Download the DEB package from Yoyo Games.",
+      "content": "Download the DEB package from Yoyo Games. If you want to try using the beta version of the GameMaker IDE for Ubuntu to create games, you can get the latest package from https://gms.yoyogames.com/ReleaseNotes-NuBeta.html . Just click the Ubuntu link at the top and save the .deb file to your home directory. While the developers admit that the beta version of the IDE for Linux is not suitable for production, installing the beta version of the IDE is the only way to create GameMaker games on Ubuntu without involving Windows or macOS. You must have already installed all the required libraries and other files from the previous sections to use the IDE."
+    },
+    {
+      "title": "Install the DEB package.",
+      "content": "Install the DEB package. You can install the package easily in your file manager by double-clicking the .deb file. Alternatively, use the command sudo dpkg -i package_file.deb . Just replace that file name with the actual .deb package file. Once the IDE is installed, you'll find it in your app list."
+    }
+  ]
+}

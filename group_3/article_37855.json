@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Run-NASM-on-Windows",
+  "title": "How to Run NASM on Windows",
+  "steps": [
+    {
+      "title": "Download codeblocks from Code Blocks Downloads.",
+      "content": "Download codeblocks from Code Blocks Downloads ."
+    },
+    {
+      "title": "Download nasm from netwide assembler.",
+      "content": "Download nasm from netwide assembler ."
+    },
+    {
+      "title": "Install the codeblocks by running the setup.",
+      "content": "Install the codeblocks by running the setup. exe file you downloaded."
+    },
+    {
+      "title": "Extract and install nasm into the codeblocks folder, e.g.",
+      "content": "Extract and install nasm into the codeblocks folder, e.g. , C:\\Program Files\\CodeBlocks\\MinGW\\bin."
+    },
+    {
+      "title": "Check whether the installation is working or not by the source code below for a test run.",
+      "content": "Check whether the installation is working or not by the source code below for a test run. This is a Win32 console program that writes \"Hello, World\" on one line and; then exits. It needs to be linked with a C library."
+    },
+    {
+      "title": "Save the source code above as helloworld.",
+      "content": "Save the source code above as helloworld. asm in the location: C:\\Program Files\\CodeBlocks\\MinGW\\bin."
+    },
+    {
+      "title": "Run nasmpath.",
+      "content": "Run nasmpath. bat. Enter this command: nasm -f win32 helloworld.asm. It should produce a helloworld.obj file in the same directory."
+    },
+    {
+      "title": "Execute the object file by typing:",
+      "content": "Execute the object file by typing: gcc helloworld.obj. It should build a file named a.exe."
+    },
+    {
+      "title": "Type a.exe to run the test program and get your result.",
+      "content": "Type a.exe to run the test program and get your result. The words \"Hello, World\" should display on the screen."
+    }
+  ]
+}

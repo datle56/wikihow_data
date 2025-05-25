@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Install-Java-in-Ubuntu-Using-Terminal",
+  "title": "How to Install Java in Ubuntu Using Terminal",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. This is the keyboard shortcut to open the Terminal in Ubuntu. Alternatively, you can click the Terminal icon in the Apps menu. It has an icon that resembles a black screen with a white cursor."
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This updates the \"apt\" software repository so that you are running the latest version. If prompted to do so, enter your Ubuntu user password and press Enter ."
+    },
+    {
+      "title": "Type java -version and press ↵ Enter.",
+      "content": "Type java -version and press ↵ Enter . This checks if Java is already installed on your computer. If Java is already installed, it will display which version of JDK and JRE you have installed. If Java is not already installed, it will say \"'Java', not found.\" [1] X Research source"
+    },
+    {
+      "title": "Type sudo apt install default-jre and press ↵ Enter.",
+      "content": "Type sudo apt install default-jre and press ↵ Enter . This is the command to install the latest version of Java Runtime Environment on your Ubuntu system. Java Runtime Environment allows you to run Java applications on your computer."
+    },
+    {
+      "title": "Type y and press ↵ Enter.",
+      "content": "Type y and press ↵ Enter . This confirms that you want to install Java Runtime Environment and installs the latest version of Java Runtime Environment. You can verify your Java installation using the \"java -version\" command."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. This is the keyboard shortcut to open the Terminal in Ubuntu. Alternatively, you can click the Terminal icon in the Apps menu. It has an icon that resembles a black screen with a white cursor."
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This updates the \"apt\" software repository so that you are running the latest version. If prompted to do so, enter the user password you use to log in to Ubuntu."
+    },
+    {
+      "title": "Type java -version and press ↵ Enter.",
+      "content": "Type java -version and press ↵ Enter . This checks if Java is already installed on your computer. If Java is already installed, it will display which version of JDK and JRE you have installed. If Java is not already installed, it will say \"'Java', not found.\""
+    },
+    {
+      "title": "Type sudo apt install default-jdk and press ↵ Enter.",
+      "content": "Type sudo apt install default-jdk and press ↵ Enter . This is the command to install the latest version of Java Development Kit on your Ubuntu system. Java Development Kit allows you to write applications using the Java programming language. If you want to install a specific version of Java, you can do so using the following command: sudo apt install openjdk-#-jdk . Replace \"#\" with the version of Java you want to download (i.e. \"8\" to install JDK 8)."
+    },
+    {
+      "title": "Type y and press ↵ Enter.",
+      "content": "Type y and press ↵ Enter . This confirms that you want to install Java Runtime Environment and installs Java Development Kit. You can verify your Java installation using the \"java -version\" command."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. This is the keyboard shortcut to open the Terminal in Ubuntu. Alternatively, you can click the Terminal icon in the Apps menu. It has an icon that resembles a black screen with a white cursor."
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This updates the \"apt\" software repository so that you are running the latest version. If prompted to do so, enter the user password you use to log in to Ubuntu."
+    },
+    {
+      "title": "Type java -version and press ↵ Enter.",
+      "content": "Type java -version and press ↵ Enter . This checks if Java is already installed on your computer. If Java is already installed, it will display which version of JDK and JRE you have installed. If Java is not already installed, it will say \"'Java', not found.\""
+    },
+    {
+      "title": "Type sudo apt install software-properties-common and press ↵ Enter.",
+      "content": "Type sudo apt install software-properties-common and press ↵ Enter . This installs the properties needed to add the software repository needed to install Oracle Java."
+    },
+    {
+      "title": "Type sudo add-apt-repository ppa:linuxuprising/java and press ↵ Enter.",
+      "content": "Type sudo add-apt-repository ppa:linuxuprising/java and press ↵ Enter . This installs the software repository that is needed to install Oracle Java. Alternatively, you can install Oracle Java from the \"Webupd8\" software repository. Use the following command to do so: sudo add-apt-repository ppa:webupd8team/java If prompted to do so, enter the password you use to log in to Ubuntu and press Enter."
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This updates the repository so that you are running the latest version."
+    },
+    {
+      "title": "Type sudo apt install oracle-java11-installer-local and press ↵ Enter.",
+      "content": "Type sudo apt install oracle-java11-installer-local and press ↵ Enter . This is the command to install the latest version of Java. [2] X Research source If you want to install a specific version of Java, replace the \"11\" with the version number you want to install (i.e. Java10)."
+    },
+    {
+      "title": "Type y and press ↵ Enter.",
+      "content": "Type y and press ↵ Enter . This confirms that you want to install Oracle Java."
+    },
+    {
+      "title": "Agree to the Terms and Conditions.",
+      "content": "Agree to the Terms and Conditions. To do so, scroll down to the bottom of the text document and select Ok' and press Enter . Then select Yes and press Enter . This completes the Java installation."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. This is the keyboard shortcut to open the Terminal in Ubuntu. If there is more than one version of Java installed on your Ubuntu system, you can specify which version you want to use as the default version. Alternatively, you can click the Terminal icon in the Apps menu. It has an icon that resembles a black screen with a white cursor."
+    },
+    {
+      "title": "Typesudo update-alternatives --config java and press ↵ Enter.",
+      "content": "Type sudo update-alternatives --config java and press ↵ Enter . This displays all versions of Java currently installed on your Ubuntu system. Each version is listed by a numbered mode."
+    },
+    {
+      "title": "Press the number that corresponds to the version you want to use and press ↵ Enter.",
+      "content": "Press the number that corresponds to the version you want to use and press ↵ Enter . This sets the Java version you selected as the default version of Java."
+    }
+  ]
+}

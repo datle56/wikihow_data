@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Convert-a-CD-or-DVD-to-ISO-Image-Files",
+  "title": "Easy Ways to Create an ISO File from a CD or DVD",
+  "steps": [
+    {
+      "title": "Insert the disc that you want to copy.",
+      "content": "Insert the disc that you want to copy. You can create an ISO image from any CD or DVD. The resulting image file will be the same size as the data on the disc (up to 800 MB for a CD, or 4.7 GB for a DVD). Oppido explains that creating an ISO from a disc is like taking an exact photo of the disc with a special camera that can then print an identical new disc from that photo. You can use that image to create boot discs, play games that require keeping a disc inserted when you don't have the physical disc, and much more."
+    },
+    {
+      "title": "Launch AnyBurn.",
+      "content": "Launch AnyBurn. If you don't have this disc imaging utility, you can download it for free , or you can pay for Pro to unlock more features. However, the free version will allow you to convert a CD or DVD to ISO image files. This program is compatible with 32- and 64-bit versions of Windows. You can also use other disc imaging utilities like WinX DVD Ripper Platinum, PowerISO, Ventoy, Win32 Disk Image, and WinCDEmu. Note that any of these can also include extra applications and software included in the download that may be malicious – in that case, make sure that you're only downloading the disc imaging utility. Protect yourself and your computer with a good antivirus or anti-malware like Windows Security or Avast ."
+    },
+    {
+      "title": "Select Copy disc to image file.",
+      "content": "Select Copy disc to image file . This will take you to another window with more options."
+    },
+    {
+      "title": "Select your disc drive from the drop-down menu.",
+      "content": "Select your disc drive from the drop-down menu. Choose the drive that you have inserted the disc into next to \"Select source drive.\""
+    },
+    {
+      "title": "Select the image file destination information.",
+      "content": "Select the image file destination information. Give the image file a name that you'll recognize, choose a location to save it, and then select the file type. By default, this will say \"Standard ISO File\" and you'll want to leave it at that. Click the folder icon to change the location if the default location is not what you want."
+    },
+    {
+      "title": "Click Create Now.",
+      "content": "Click Create Now . The time this takes will depend on the size of the disc and the speed of your drive. Once the process is complete, you'll find the ISO file in the location you set in the previous step. Once done, you'll see \"Creating image file finished successfully\" and can close the window. [1] X Research source Oppido explains that if you want to use your ISO like a software CD or DVD, you can mount it like a virtual CD or DVD drive. To mount the ISO file, just right-click it in File Explorer and select Mount . \"At that point,\" Oppido says, \"the tray is now virtually closed, the CD or DVD has spun up and loaded the virtual disk, and now it shows up like a plugged-in drive.\" If you're using a virtual machine, you'll find a .exe file that you can use to set up the ISO image file."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. You can use the Disk Utility program to create image files from any of your CDs or DVDs. You can find this in the Utilities folder in your Applications folder. You can also press ⌘ Command + Space and type \"disk utility\" to search for it. Disk Utility creates a CDR file, so use Terminal to convert the CDR file into an ISO."
+    },
+    {
+      "title": "Insert the disc you want to copy.",
+      "content": "Insert the disc you want to copy. Insert the CD or DVD that you want to create a disc image from."
+    },
+    {
+      "title": "Click the File menu and select New Image.",
+      "content": "Click the File menu and select New Image . This will open a submenu with more options."
+    },
+    {
+      "title": "Select Image from <Device>.",
+      "content": "Select Image from <Device> . \"<Device>\" will change to reflect the drive that contains the CD or DVD. Alternatively, press Alt + Cmd + N ."
+    },
+    {
+      "title": "Select how you want to save the converted file.",
+      "content": "Select how you want to save the converted file. Give it a name that you'll recognize, and choose the Desktop as the save location. Click the drop-down menu next to \"Image Format\" and select DVD/CD master ."
+    },
+    {
+      "title": "Click Save to begin creating the image file.",
+      "content": "Click Save to begin creating the image file. The time this takes will depend on the size of the disc and the speed of your drive. The file will be in CDR format. Continue to use Terminal to convert CDR to ISO. CDR works fine on Mac, but convert it to ISO if you plan on using the file on Windows."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can convert the CDR file to an ISO file using a simple Terminal command. You can find the Terminal in your Utilities folder. If the CDR file is not located on your Desktop, move it there before continuing."
+    },
+    {
+      "title": "Navigate Terminal to your Desktop.",
+      "content": "Navigate Terminal to your Desktop. Type cd ~/Desktop and press Return ."
+    },
+    {
+      "title": "Enter the following to convert the CDR file to ISO.",
+      "content": "Enter the following to convert the CDR file to ISO. hdiutil makehybrid -iso -joliet -o Name.iso Name.cdr . Replace \"Name\" with the name of your CDR file. Now you have an ISO image file that you can use on any operating system. [2] X Research source According to Oppido, if you want to use the ISO as a virtual CD or DVD, you will need to mount it. To do this, you'll just double-click the ISO file in Finder. Then, it will show up as a drive on your desktop."
+    },
+    {
+      "title": "Insert the disc you want to copy and open Brasero.",
+      "content": "Insert the disc you want to copy and open Brasero. If you don't have Brasero installed, you can install it from the Ubuntu Software Center or in a terminal using the command sudo apt install brasero ."
+    },
+    {
+      "title": "Select Disc Copy.",
+      "content": "Select Disc Copy . The \"Copy CD/DVD\" window will appear."
+    },
+    {
+      "title": "Select your disc drive from the first menu.",
+      "content": "Select your disc drive from the first menu. If you only have one disc drive, it will be selected by default."
+    },
+    {
+      "title": "Select Image File from the \"Select a disc to write to\" option.",
+      "content": "Select Image File from the \"Select a disc to write to\" option. This will create an image file from the original disc instead of copying it to a blank one."
+    },
+    {
+      "title": "Click Create Image.",
+      "content": "Click Create Image . You'll be prompted to give the image file a name and select the location you want to save it to. After that, Ubuntu will begin creating the ISO file from the disc inserted into the computer."
+    },
+    {
+      "title": "Use the Terminal to create an ISO file.",
+      "content": "Use the Terminal to create an ISO file. If you'd rather use the Terminal, you can create an ISO file using a single command. Open the Terminal by pressing Ctrl + Alt + T and enter the following: [3] X Research source sudo dd if=/dev/cdrom of=/home/username/image.iso Replace /dev/cdrom with the path to your disc drive. Replace the path for the ISO file with whatever path you'd like to save it to. To mount the ISO, use the command sudo mkdir /mnt/iso to create a mount point, then use sudo mount -o loop /path/to/my-iso-image.iso /mnt/iso to mount it."
+    }
+  ]
+}

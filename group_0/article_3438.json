@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Become-Root-in-Ubuntu",
+  "title": "How to Get Root Access in Ubuntu Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window . [1] X Research source Because Ubuntu locks the root account by default, you cannot use su to become root as you would in other Linux distributions. [2] X Research source Instead, start your commands with sudo . If you want to enable the root user in Ubuntu so you can log in as root, see Enabling the Root User . We don't recommend doing this for security reasons, but it is possible."
+    },
+    {
+      "title": "Type sudo before the rest of your command.",
+      "content": "Type sudo before the rest of your command. “Sudo” stands for “substitute user do.” When you add sudo to the beginning of a command, the command will run as root. For example: sudo /etc/init.d/networking stop stops the network service, and sudo adduser adds a new user to the system. Both of these tasks require root access. You will be prompted to enter your password before sudo runs the command. Linux stores your password for 15 minutes, so you won’t have to keep typing it."
+    },
+    {
+      "title": "Use sudo -H before running a command that opens a program with a Graphical User Interface (GUI).",
+      "content": "Use sudo -H before running a command that opens a program with a Graphical User Interface (GUI). For security reasons, Ubuntu does not recommend using “sudo” to open programs with GUIs. [3] X Research source However, this should work for most programs if you absolutely must. The gksudo command is now deprecated in Ubuntu."
+    },
+    {
+      "title": "Give sudo access to another user.",
+      "content": "Give sudo access to another user. If you are setting up an account for someone who does not currently have root access, you will need to add their username to the sudo group. To do this, type usermod -aG sudo username (but replace “username” with the correct username)."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. For security purposes (and to avoid damage), the root user account is locked by default in Ubuntu. If you must have a root login (if a program your business uses requires it, or this workstation will only be used by a single user), you can enable the root user with some simple commands. [4] X Research source Enabling the root user can put your system at risk and is not recommended by Ubuntu. [5] X Research source"
+    },
+    {
+      "title": "Type sudo passwd root and press ↵ Enter.",
+      "content": "Type sudo passwd root and press ↵ Enter . You will be prompted to set a new password for the root user. Don’t lose this password."
+    },
+    {
+      "title": "Enter a password, then press ↵ Enter.",
+      "content": "Enter a password, then press ↵ Enter ."
+    },
+    {
+      "title": "Retype the password when prompted, then press ↵ Enter.",
+      "content": "Retype the password when prompted, then press ↵ Enter . The root user should now have a password."
+    },
+    {
+      "title": "Type su - and press ↵ Enter.",
+      "content": "Type su - and press ↵ Enter . Enter the root password when prompted to arrive at the root prompt. To disable the root account, type sudo passwd -l root . [6] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal window.",
+      "content": "Press Ctrl + Alt + T to open a terminal window. If you've enabled the root user, you won't be able to log in to the Ubuntu GUI as root unless you enable root GUI login. We really don't recommend doing this, but it is possible. [7] X Research source If you haven't enabled the root user yet, use this method to do so."
+    },
+    {
+      "title": "Use su - to become root.",
+      "content": "Use su - to become root. As long as you've enabled the root user , this will give you a root shell. When prompted for a password, enter the root password you've set for Ubuntu."
+    },
+    {
+      "title": "Open /etc/gdm3/custom.conf in a text editor.",
+      "content": "Open /etc/gdm3/custom.conf in a text editor. Use sudo to run the command. For example, if you use vim as your text editor, use sudo vim /etc/gdm3/custom.conf ."
+    },
+    {
+      "title": "Add a new entry.",
+      "content": "Add a new entry. Here's what you'll need to add: Under \"TimedLogInDelay = 10\", open a new line. Type AllowRoot=True . Save your changes and close the file."
+    },
+    {
+      "title": "Edit /etc/pam.d/gdm-password for editing.",
+      "content": "Edit /etc/pam.d/gdm-password for editing. Again, use sudo, e.g., sudo vim /etc/pam.d/gdm-password if you prefer vim."
+    },
+    {
+      "title": "Comment out the line \"auth required pam_succeed_If.\"",
+      "content": "Comment out the line \"auth required pam_succeed_If.\" To do this, enter a hash symbol (#) before the line: # auth required pam_succeed_If . [8] X Research source When you're finished, save and close the file. To log in as root on the login screen, select Not Listed from the login menu, then type root as the user. Enter the root password to log in. To disable root login at the GUI login screen, simply delete the line you added to /etc/gdm3/custom.conf and uncomment the line you commented in etc/pam.d/gdm-password."
+    },
+    {
+      "title": "Open /etc/ssh/sshd_config in any text editor.",
+      "content": "Open /etc/ssh/sshd_config in any text editor. You'll need root access to edit this file, so open it using sudo. For example, if you want to open it in vim, use sudo vim /etc/ssh/sshd_config . [9] X Research source If you haven't enabled the root user yet, use this method to do so."
+    },
+    {
+      "title": "Uncomment the PermitRootLogin line.",
+      "content": "Uncomment the PermitRootLogin line. The line you're looking for is #PermitRootLogin prohibit-password . To uncomment, just remove the hashmark at the beginning."
+    },
+    {
+      "title": "Replace prohibit-password with yes.",
+      "content": "Replace prohibit-password with yes . The line should now look like PermitRootLogin yes . [10] X Research source"
+    },
+    {
+      "title": "Restart sshd.",
+      "content": "Restart sshd. To do this, use sudo systemctl restart ssh . This allows the root user to log in via SSH. To reverse this, just comment out the line again."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Number-of-Days-Between-Two-Dates-in-Excel",
+  "title": "Easily Calculate the Number of Days Between Two Dates in Microsoft Excel",
+  "steps": [
+    {
+      "title": "Type the start date in a cell.",
+      "content": "Type the start date in a cell. For example, you could put 1/10/2023 in cell A1. The DATEDIF function calculates the difference between two dates in days, months, or years. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you’re searching for a specific date in a large dataset, try using the VLOOKUP function ."
+    },
+    {
+      "title": "Type the end date in a second cell.",
+      "content": "Type the end date in a second cell. For example, 1/17/2023 in cell A2."
+    },
+    {
+      "title": "Type =DATEDIF(A1, A2, \"d\") in a third cell and press ↵ Enter.",
+      "content": "Type =DATEDIF(A1, A2, \"d\") in a third cell and press ↵ Enter . For example, this formula could be in A3. Replace A1 and A2 with the cells containing the start and end dates. This will find the number of days between cells A1 and A2. You’ll see the result in the cell you selected for the function. [2] X Research source The first parameter (A1) is the start date, and the second parameter (A2) is the end date. The start date must be before the end date, or the function will return a #VALUE error. Replace \"d\" with \"m\" to find the difference in months or \"y\" to find the difference in years. Copy this formula as needed and paste it next to other dates you’re trying to find the difference between."
+    },
+    {
+      "title": "Type the start date in a cell.",
+      "content": "Type the start date in a cell. For example, you could put 1/10/2023 in cell A1. The DAYS function calculates the number of days between dates. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source This function is useful for plenty of applications! For example, if you’re tracking your bills in Excel , you can calculate the days between two dates to average your per-day spending."
+    },
+    {
+      "title": "Type the end date in a second cell.",
+      "content": "Type the end date in a second cell. For example, 1/17/2023 in cell A2."
+    },
+    {
+      "title": "Type =DAYS(A2, A1) in a third cell and press ↵ Enter.",
+      "content": "Type =DAYS(A2, A1) in a third cell and press ↵ Enter . For example, this formula could be in A3. Replace A2 and A1 with the cells containing the start and end dates. This will find the number of days between cells A1 and A2. You’ll see the result in the cell you selected for the function. [4] X Research source The first parameter (A2) is the end date, and the second parameter (A1) is the end date. This is opposite the order of the DATEDIF function. If you put the start date before the end date, the function will calculate a negative number."
+    },
+    {
+      "title": "Type the start date in a cell.",
+      "content": "Type the start date in a cell. For example, you could put 1/10/2023 in cell A1. You can use the subtraction operation (-) to find the days between two dates."
+    },
+    {
+      "title": "Type the end date in a second cell.",
+      "content": "Type the end date in a second cell. For example, 1/17/2023 in cell A2."
+    },
+    {
+      "title": "Type =A2-A1 in a third cell and press ↵ Enter.",
+      "content": "Type =A2-A1 in a third cell and press ↵ Enter . For example, this formula could be in A3. Replace A2 and A1 with the cells containing the start and end dates. This will find the number of days between cells A1 and A2. You’ll see the result in the cell you selected for the function. The first parameter (A2) is the end date, and the second parameter (A1) is the end date. This is opposite the order of the DATEDIF function. If you put the start date before the end date, the function will calculate a negative number. Using the SUM function is less useful for dates. Since dates are stored as serial numbers in Excel, SUM would just add those numbers together."
+    },
+    {
+      "title": "Select your entire sheet.",
+      "content": "Select your entire sheet. To do this, click the triangle in the upper-right corner of the sheet, between column A and row 1. You can do this before or after you've typed in your dates. Depending on where you live, the standard date format might be Month-Day-Year (MDY), Day-Month-Year (DMY), or Year-Month-Day (YMD). You can change it on a sheet-by-sheet basis."
+    },
+    {
+      "title": "Right-click the cells and choose Format Cells….",
+      "content": "Right-click the cells and choose Format Cells… . It's near the bottom of the drop-down list."
+    },
+    {
+      "title": "Click the Number tab, then select the Date category.",
+      "content": "Click the Number tab, then select the Date category. Date will be in the vertical box on the left side of the pop-up window, under a header that says \"Category.\""
+    },
+    {
+      "title": "Click the dropdown box under \"Locale (location).\"",
+      "content": "Click the dropdown box under \"Locale (location).\" From here, you can choose a location that formats dates in the way that you prefer. You can choose any location you want; changing the location in the Date section will only affect the date formats available to you. It won't change what language you use in Excel. If the locale is set to a location other than where you're actually located, change it to the language/country that you're in. For example, if you're in Australia, you'd choose \"English (Australia).\" If you live in a different country but prefer a different date format, choose a country that has the date format you want. If you want the most options, choose \"English (Canada).\" Canada is one of three countries in the world (alongside Kenya and Ghana) that officially use MDY, DMY, and YMD. As such, all three options will be available if you change your locale to \"English (Canada).\""
+    },
+    {
+      "title": "Choose your preferred date format under the \"Type\" heading.",
+      "content": "Choose your preferred date format under the \"Type\" heading. Any of these formats will work when using one of the formulas above to calculate the number of days between two dates. The format you choose will simply tell Excel how to auto-format any date you enter into a cell. If you're ever concerned that writing a date out [[Prevent-Excel-from-Removing-Leading-&-Trailing-Zeros|in numbers will result in the wrong date being input into your spreadsheet, write out the date like \"January 1, 2012,\" where you spell out the month. Excel will then auto-format the date for you."
+    },
+    {
+      "title": "Click OK to save your selection.",
+      "content": "Click OK to save your selection. Now all of the cells in your document will format dates in the way that you prefer. This only applies to your current document, however. If you create a new sheet, you'll need to repeat these steps to change your default date format. To change Excel's default date format, you'll have to change your computer's default region. Windows: Type region in the taskbar search bar, then click Set regional format . Under the \"Region\" heading, click the dropdown next to \"Country or region\" and choose what region you live in or what region you're from. Mac: Click the Apple menu and go to System Settings > General > Language & Region . Next to \"Region,\" choose the region you live in or what region you're from."
+    }
+  ]
+}

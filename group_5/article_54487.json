@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Fix-Saints-Row-4-Crashes",
+  "title": "How to Fix Saints Row 4 Crashes",
+  "steps": [
+    {
+      "title": "Right click your Desktop, select NVIDIA Control Panel.",
+      "content": "Right click your Desktop, select NVIDIA Control Panel."
+    },
+    {
+      "title": "Click \"Manage 3D Settings\" link on the left side panel.",
+      "content": "Click \"Manage 3D Settings\" link on the left side panel."
+    },
+    {
+      "title": "Click the Program Settings tab.",
+      "content": "Click the Program Settings tab."
+    },
+    {
+      "title": "Click the Add button.",
+      "content": "Click the Add button."
+    },
+    {
+      "title": "Browse and add the following folder:",
+      "content": "Browse and add the following folder: C:\\Program Files (x86)\\Steam\\steamapps\\common\\Saints Row IV\\"
+    },
+    {
+      "title": "Disable the Threaded Optimization feature.",
+      "content": "Disable the Threaded Optimization feature."
+    },
+    {
+      "title": "Save the settings and exit.",
+      "content": "Save the settings and exit."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. Press Windows Key + X. Select Search. Type \"RegEdit\" in the Search Box. Click the Apps icon, and open that from the Search Results. For Windows 7/ Vista, press Windows Key + R. Type \"RegEdit\" in the \"Open\" textbox. Click the OK button."
+    },
+    {
+      "title": "The Registry Editor will open.",
+      "content": "The Registry Editor will open. Locate the following sub key: HKEY_CURRENT_USER\\SOFTWARE\\VALVE"
+    },
+    {
+      "title": "Right click the \"VALVE\" sub key, select Permissions from the context menu.",
+      "content": "Right click the \"VALVE\" sub key, select Permissions from the context menu."
+    },
+    {
+      "title": "Check the \"Allow\" box for all the following items:",
+      "content": "Check the \"Allow\" box for all the following items: Full Control Read Special permissions"
+    },
+    {
+      "title": "Click Apply, and then OK.",
+      "content": "Click Apply, and then OK."
+    },
+    {
+      "title": "Exit the Registry Editor.",
+      "content": "Exit the Registry Editor."
+    },
+    {
+      "title": "Double click the Steam icon on your Desktop.",
+      "content": "Double click the Steam icon on your Desktop."
+    },
+    {
+      "title": "Sign-in to your Steam account.",
+      "content": "Sign-in to your Steam account."
+    },
+    {
+      "title": "The Game Library will be displayed.",
+      "content": "The Game Library will be displayed. Right click the Saints Row 4 icon, select Properties option."
+    },
+    {
+      "title": "Click the Local Files tab.",
+      "content": "Click the Local Files tab."
+    },
+    {
+      "title": "Click \"Verify integrity of game cache\" button.",
+      "content": "Click \"Verify integrity of game cache\" button. The process may take a few minutes."
+    },
+    {
+      "title": "Press the Windows Key + R keys simultaneously.",
+      "content": "Press the Windows Key + R keys simultaneously."
+    },
+    {
+      "title": "Type \"sysdm.cpl\" in the Open textbox.",
+      "content": "Type \"sysdm.cpl\" in the Open textbox."
+    },
+    {
+      "title": "Click the OK button.",
+      "content": "Click the OK button."
+    },
+    {
+      "title": "System Properties dialog will open.",
+      "content": "System Properties dialog will open."
+    },
+    {
+      "title": "Click the Advanced tab.",
+      "content": "Click the Advanced tab."
+    },
+    {
+      "title": "Click the Settings button under \"Performance\" frame.",
+      "content": "Click the Settings button under \"Performance\" frame."
+    },
+    {
+      "title": "Click the Data Execution Prevention tab.",
+      "content": "Click the Data Execution Prevention tab."
+    },
+    {
+      "title": "Select \"Turn on DEP for all programs and services except those I select\" option.",
+      "content": "Select \"Turn on DEP for all programs and services except those I select\" option."
+    },
+    {
+      "title": "Click the Add button.",
+      "content": "Click the Add button."
+    },
+    {
+      "title": "Add the following launcher file:",
+      "content": "Add the following launcher file: C:\\Program Files (x86)\\Steam\\steamapps\\common\\Saints Row IV\\SaintsRowIV.exe"
+    },
+    {
+      "title": "Click OK | OK.",
+      "content": "Click OK | OK."
+    },
+    {
+      "title": "Exit all open programs.",
+      "content": "Exit all open programs."
+    },
+    {
+      "title": "Open the Command Prompt as administrator.",
+      "content": "Open the Command Prompt as administrator. If you're using Windows 8.1/ 8, press Windows Key + X simultaneously and select \"Command Prompt (Admin)\". If you're using Windows 7/ Vista, click the Start button. Click All Programs | Accessories. Right click Command Prompt, select \"Run as administrator\"."
+    },
+    {
+      "title": "Execute the following two commands in the given manner.",
+      "content": "Execute the following two commands in the given manner. Press ENTER at the end of every command. CD C:\\Program Files (x86)\\Steam\\steamapps\\common\\Saints RowIV\\_CommonRedist\\DirectX\\Jun2010\\ DXSETUP.EXE"
+    },
+    {
+      "title": "Microsoft DirectX Setup program will initiate.",
+      "content": "Microsoft DirectX Setup program will initiate. Reinstall the DirectX and then restart your computer."
+    }
+  ]
+}

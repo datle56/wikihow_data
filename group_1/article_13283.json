@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Divide-Binary-Numbers",
+  "title": "How to Divide Binary Numbers",
+  "steps": [
+    {
+      "title": "Review decimal long division",
+      "content": "Review decimal long division . If it's been a while since you did long division with ordinary decimal (base ten) numbers, review the basics using the problem 172 ÷ 4. Otherwise, skip ahead to the next step to learn the same process in binary. [3] X Research source The dividend is divided by the divisor , and the answer is the quotient . Compare the divisor to the first digit in the dividend. If the divisor is the larger number, keep adding digits to the dividend until the divisor is the smaller number. (For example, if calculating 172 ÷ 4, we would compare 4 and 1, note that 4 > 1, and compare 4 to 17 instead.) Write the first digit of the quotient above the last dividend digit you were using in the comparison. Comparing 4 and 17, we see that 4 goes into 17 four times, so we write 4 as the first digit of our quotient, above the 7. Multiply and subtract to find the remainder. Multiply the quotient digit with the divisor, in this case 4 x 4 = 16. Write the 16 underneath the 17, then subtract 17 - 16 to find the remainder, 1. Repeat. Once again, we compare the divisor 4 with the next digit, 1, note that 4 > 1, and \"bring down\" the next digit of the dividend, to compare 4 with 12 instead. 4 goes into 12 three times with no remainder, so we write 3 as the next digit of the quotient. The answer is 43."
+    },
+    {
+      "title": "Set up the binary long division problem.",
+      "content": "Set up the binary long division problem. Let's use the example 10101 ÷ 11. Write this as a long division problem, with the 10101 as the dividend and the 11 as the divisor. Leave space above to write the quotient, and below to write your calculations. [4] X Research source"
+    },
+    {
+      "title": "Compare the divisor to the first digit of the dividend.",
+      "content": "Compare the divisor to the first digit of the dividend. This works just like a decimal long division problem, but it's actually quite a bit easier in binary. Either you can't divide the number by the divisor (0) or the divisor can go in one time (1): [5] X Research source 11 > 1, so 11 can't \"go into\" 1. Write a 0 as the first digit of the quotient (above the first digit of the dividend)."
+    },
+    {
+      "title": "Tack on the next digit and repeat until you get a 1.",
+      "content": "Tack on the next digit and repeat until you get a 1. [6] X Research source Here are the next couple steps to our example: Bring down the next digit of the dividend. 11 > 10. Write a 0 in the quotient. Bring down the next digit. 11 < 101. Write a 1 in the quotient."
+    },
+    {
+      "title": "Find the remainder.",
+      "content": "Find the remainder. As in decimal long division, we multiply the digit we just found (1) with the divisor (11), and write the result underneath our dividend aligned with the digit we just calculated. In binary, we can shortcut this, since 1 x the divisor always equals the divisor: Write the divisor underneath the dividend. Here, we write 11 aligned underneath the first three digits (101) of the dividend. Calculate 101 - 11 to get the remainder, 10. See how to subtract binary numbers if you need a review."
+    },
+    {
+      "title": "Repeat until the problem is finished.",
+      "content": "Repeat until the problem is finished. Bring down the next digit of the divisor to the remainder to make 100. Since 11 < 100, write a 1 as the next digit of the quotient. Continue the problem as before: Write 11 underneath the 100 and subtract to get 1. Bring down the final digit of the dividend to make 11. 11 = 11, so write a 1 as the final digit of the quotient (the answer). There is no remainder, so the problem is complete. The answer is 00111 , or simply 111."
+    },
+    {
+      "title": "Add a radix point if necessary.",
+      "content": "Add a radix point if necessary. Sometimes, the result is not an integer. If you still have a remainder after using the final digit, add a \".0\" to the dividend and a \".\" to your quotient, so you can bring down another digit and continue. Repeat until you reach the desired specificity, then round the answer. On paper you can round down by chopping off the last 0, or if the last digit is a 1, drop it and add 1 to the new last digit. In programming, follow one of the standard algorithms for rounding to avoid errors when converting between binary and decimal numbers. [7] X Research source Binary division problems often end up with repeating fractional portions, more often than they occur in decimal notation. [8] X Research source This is referred to with the more general term \"radix point,\" which applies in any base, since the \"decimal point\" is only used in the decimal system."
+    },
+    {
+      "title": "Understand the basic concept.",
+      "content": "Understand the basic concept. One way to solve division problems – in any base – is to keep subtracting the divisor from the dividend, then the remainder, while tallying up the number of times you can do so before getting a negative number. Here's an example in base ten, solving the problem 26 ÷ 7: [9] X Research source 26 - 7 = 19 (subtracted 1 time) 19 - 7 = 12 ( 2 ) 12 - 7 = 5 ( 3 ) 5 - 7 = -2. Negative number, so back up. The answer is 3 with a remainder of 5. Note that this method does not calculate any non-integer portion of the answer."
+    },
+    {
+      "title": "Learn to subtract by complements.",
+      "content": "Learn to subtract by complements. While you can easily use the method above in binary, we can subtract by a more efficient method as well, which saves time when programming computers to divide binary numbers. This is the subtraction by complements method in binary . Here are the basics, calculating 111 - 011 (make sure both numbers are the same length): [10] X Research source Find the ones' complement of the second term, subtracting each digit from 1. This is easily done in binary by switching each 1 to 0 and each 0 to 1. In our example, 011 becomes 100. Add one to the result: 100 + 1 = 101. This is called the twos complement, and lets us perform subtraction as an addition problem. [11] X Research source Essentially, the result is as though we added a negative number instead of subtracting a positive one, once we finish the process. Add the result to the first term. Write and solve the addition problem: 111 + 101 = 1100. Discard the carry digit. Discard the first digit of your answer to get the final result. 1100 → 100 ."
+    },
+    {
+      "title": "Combine the two concepts above.",
+      "content": "Combine the two concepts above. Now you know the subtraction method of solving division problems, and the twos' complement method of solving subtraction problems. [12] X Research source You can combine this into one method for solving division problems, using the steps below. If you like, you can try to figure it yourself before you continue."
+    },
+    {
+      "title": "Subtract the divisor from the dividend, by adding twos' complement.",
+      "content": "Subtract the divisor from the dividend, by adding twos' complement. Let's go through the problem 100011 ÷ 000101. The first step is solving 100011 - 000101, using the twos' complement method to turn it into an addition problem: Twos' complement of 000101 = 111010 + 1 = 111011 100011 + 111011 = 1011110 Discard carry bit → 011110"
+    },
+    {
+      "title": "Add one to the quotient.",
+      "content": "Add one to the quotient. In a computer program, this is the point where you increment the quotient by one. On paper, make a note somewhere in a corner where it won't get confused with your other work. We've successfully subtracted one time, so the quotient so far is 1 ."
+    },
+    {
+      "title": "Repeat by subtracting the divisor from the remainder.",
+      "content": "Repeat by subtracting the divisor from the remainder. The result of our last calculation is the remainder left over after the divisor \"went in\" once. Continue adding the twos' complement of the divisor each time and discarding the carry bit. Add one to the quotient each time, repeating until you get a remainder that's equal to or smaller than your divisor: [13] X Research source 011110 + 111011 = 1011001 → 011001 (quotient 1+1=10 ) 011001 + 111011 = 1010100 → 010100 (quotient 10+1=11 ) 010100 + 111011 = 1001111 → 001111 ( 11+1=100 ) 001111 + 111011 = 1001010 → 001010 ( 100+1=101 ) 001010 + 111011 = 10000101 → 0000101 ( 101+1=110 ) 0000101 + 111011 = 1000000 → 000000 ( 110+1=111 ) 0 is smaller than 101, so we stop here. The quotient 111 is the answer to the division problem. The remainder is the final result of our subtraction problem, in this case 0 (no remainder)."
+    }
+  ]
+}

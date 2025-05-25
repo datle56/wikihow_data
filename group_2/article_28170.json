@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Make-Text-Blink-in-HTML",
+  "title": "How to Make Text Blink in HTML: Easy Tutorial",
+  "steps": [
+    {
+      "title": "Create your HTML document.",
+      "content": "Create your HTML document. As always, set up your HTML page with <html>, <head>, and <body> tags."
+    },
+    {
+      "title": "Insert a blink script into the head of your HTML document.",
+      "content": "Insert a blink script into the head of your HTML document. In between the <head> and </head> tags of your HTML document, insert the following JavaScript code: function blinktext() { var f = document.getElementById('announcement'); setInterval(function() { f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden'); }, 1000); }"
+    },
+    {
+      "title": "Insert the command to load your script.",
+      "content": "Insert the command to load your script. The code above defined a function and named it \"blinktext.\" In order to use this function in your HTML, change the <body> tag to <body onload=\"blinktext();\">."
+    },
+    {
+      "title": "Define your blinking text as an announcement.",
+      "content": "Define your blinking text as an announcement. This script only affects elements with the id \"announcement.\" Place your blinking text inside any element and give it that id. For example, type <p id=\"announcement\">Blinking text here.</p> or <div id=\"announcement\">Blinking text here.</div>. You can rename this anything you like. Just make sure to use the same word in the script and the element id."
+    },
+    {
+      "title": "Adjust the script.",
+      "content": "Adjust the script. The number \"1000\" in the script sets the delay between blinks. This is in milliseconds, so a value of 1000 makes the text blink once per second. [2] X Research source Change this to a lower number to speed up the blinking, or a higher number to slow it down. The actual delay probably won't match this value perfectly. It tends to be slightly shorter, but can take longer if your browser is busy with other requests."
+    },
+    {
+      "title": "Create a CSS style sheet.",
+      "content": "Create a CSS style sheet. By creating a .css document in the same folder as your existing .html document, you will be able to easily connect it to your HTML code. Firefox does not support inline CSS for Animations, which is what you need to use make your text blink! [3] X Research source"
+    },
+    {
+      "title": "Link the CSS style sheet to the HTML document.",
+      "content": "Link the CSS style sheet to the HTML document. Open your HTML document and, between the <head> </head> elements enter <link rel=”stylesheet” type=”text/css” href=”NAME.css”> For a CSS document, rel and type will not change. It lets your browser know the format and purpose of the document you’re linking to – a text-based style sheet. href is the name of your file and its .css extension. As long as it is in the same folder as the .html document those are the only two pieces of information needed to connect them."
+    },
+    {
+      "title": "Select the text you want to blink.",
+      "content": "Select the text you want to blink. In the body of your HTML document, surround the text with <span class=\"announcement\">Blinking text here</span> which defines anything within the span as an “announcement” class. You can name your class anything you’d like, or use id instead of class , and of course change “Blinking text here” to the text of your choice."
+    },
+    {
+      "title": "Apply CSS Animations.",
+      "content": "Apply CSS Animations. Back in the .css file, define your “announcement” class with .announcement{ animation-name: blinkingText; animation-duration: 1.2s; animation-iteration-count: infinite; } animation-name can be anything you choose, and its actions will be defined separately within the CSS file. animation-duration defines how long the animation takes to complete – if it is not specified, no animation will occur. In the above example, the sequence will take 1.2 seconds, but you can test different times for faster or slower blinking. animation-iteration-count can either be set to a number – entering 4 means the text would only flash four times on page load and then stop - or “infinite” meaning it will blink forever. if you choose to use id instead of class you will replace .announcement with #announcement"
+    },
+    {
+      "title": "Define what your animation does.",
+      "content": "Define what your animation does. So far, the only thing the computer knows is that something will happen every 1.2 seconds for infinity. To create a working blinking text animation, you need to define blinkingText in your CSS document. Enter @keyframes blinkingText{ from {color: black;} to {color: transparent;} } By going from black to translucent, the code appears to blink at the animation-interval you set. You can add different stages using percentages. Instead of from {color: black;} to {color: transparent;} you could enter 0% {color: black;} 50% {color: red;} 100% {color: translucent;} to make the text flash from black to red to translucent. Instead of using color names, you can match the background of your website using the hex code for the color, preceded by a #."
+    }
+  ]
+}

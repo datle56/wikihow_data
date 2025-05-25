@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Use-If%E2%80%90Else-in-Excel",
+  "title": "How to Use If‐Else in Microsoft Excel: Step-by-Step Tutorial",
+  "steps": [
+    {
+      "title": "Open Excel and click Blank Document.",
+      "content": "Open Excel and click Blank Document . This will create a new spreadsheet . If Excel has already opened to a blank spreadsheet, you can skip this step. Alternatively, open an existing Excel file if you already have a dataset you want to apply the IF function to."
+    },
+    {
+      "title": "Enter the data you want to evaluate.",
+      "content": "Enter the data you want to evaluate. For example, you might have two columns of numbers in columns A and B. You can compare these numbers using an IF formula to see if they’re the same number. [1] X Research source"
+    },
+    {
+      "title": "Enter =IF(A1=B1, in a blank cell.",
+      "content": "Enter =IF(A1=B1, in a blank cell. The first argument in the IF function is the condition you want to evaluate. Replace A1=B1 with the condition you want to check. Here are some examples: [2] X Research source A1>B1 A1=“Canada” A1=3"
+    },
+    {
+      "title": "Enter \"yes\", after the comma.",
+      "content": "Enter \"yes\", after the comma. This is the second argument in the IF function. It’s the value you want to appear if the condition is true. You would now have =IF(A1=B1, \"yes\", . [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Enter \"no\") after the comma.",
+      "content": "Enter \"no\") after the comma. This is the third argument in the IF function. It’s the value you want to appear if the condition is false. You would now have =IF(A1=B1, \"yes\", \"no\") . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In other words, this example indicates that if A1 does equal B1, the text “yes” should appear in the IF formula cell. Otherwise, “no” should appear. You can replace the second and third values with different text, numbers, or functions (such as the SUM function ). Copy the IF formula as needed to apply it to other parts of your dataset."
+    },
+    {
+      "title": "Create a simple IF formula.",
+      "content": "Create a simple IF formula. This will be the base formula to which we can add logical operators. You can add the AND, OR, and NOT operators to the first argument in an IF function to evaluate multiple criteria or whether the criteria is not met. For a simple example, =IF(A1=B1, \"yes\", \"no\") evaluates one condition, whether A1 equals B1."
+    },
+    {
+      "title": "Add the AND operator.",
+      "content": "Add the AND operator. AND, OR, and NOT are formatted as functions. The AND function follows the format AND(condition 1, condition 2) . If both conditions are true, the entire AND argument will be true. If one or both conditions are false, the AND argument will evaluate to false. [5] X Research source Continuing our example, =IF(AND(A1=B1, A1=C1), \"yes\", \"no\") checks whether A1 equals B1 and C1."
+    },
+    {
+      "title": "Add the OR operator.",
+      "content": "Add the OR operator. The OR function follows the format OR(condition 1, condition 2) . If either condition is true, the entire OR argument will be true. If both conditions are false, the OR argument will evaluate to false. [6] X Research source Continuing our example, =IF(OR(A1=B1, A1=C1), \"yes\", \"no\") checks whether A1 equals B1 or C1."
+    },
+    {
+      "title": "Add the NOT operator.",
+      "content": "Add the NOT operator. The NOT function follows the format NOT(condition) . If the condition is true, the NOT argument will be false. If the condition is false, the NOT argument will be true. [7] X Research source Continuing our example, =IF(NOT(A1=B1), \"yes\", \"no\") checks whether A1 does not equal B1."
+    },
+    {
+      "title": "Open a Blank Document in Excel.",
+      "content": "Open a Blank Document in Excel. If Excel has already opened to a blank spreadsheet, you can skip this step. For this method, we’ll work with a blank document to create an example formula. In this example formula, we’ll say that if the value of A1 is greater than 5, multiply it by 1. If the value is less than or equal to 5, multiply it by 2. The end result of this formula will look like this: =IF(A1>5, A1*1, IF (A1<5, A1*2, A1*2))"
+    },
+    {
+      "title": "Type 2 into A1 and press ↵ Enter.",
+      "content": "Type 2 into A1 and press ↵ Enter ."
+    },
+    {
+      "title": "Double-click cell B1.",
+      "content": "Double-click cell B1. This is where you’ll type the example formula."
+    },
+    {
+      "title": "Type =IF( into the cell.",
+      "content": "Type =IF( into the cell. This starts the formula."
+    },
+    {
+      "title": "Type the first condition, followed by a comma.",
+      "content": "Type the first condition, followed by a comma. This is the first test you’ll be performing. In our example, we want a certain action to occur if the value of A1 is greater than 5. Type A1>5, . The formula should now read =IF(A1>5, , which means “if the number inside A1 is greater than 5.”"
+    },
+    {
+      "title": "Type the desired output if true.",
+      "content": "Type the desired output if true. This is the action you want to occur if the result of the first condition is true. In this example, we want the value to be multiplied by 1 if it’s greater than 5. So, type A1*1 . The formula now looks like this: =IF(A1>5, A1*1 . This means “if the value of A1 is greater than five, multiple the value by 1.”"
+    },
+    {
+      "title": "Type a , (comma) and press the spacebar.",
+      "content": "Type a , (comma) and press the spacebar. The formula should now look like this: =IF(A1>5, A1*1,"
+    },
+    {
+      "title": "Type IF( after the space.",
+      "content": "Type IF( after the space. Now you’re ready to add the second part of the formula."
+    },
+    {
+      "title": "Type the second condition, followed by a comma.",
+      "content": "Type the second condition, followed by a comma. This is the second test you’ll perform on the value of A1. In our example, we want to specify an action to occur if A1 is less than 5. So, type A1<5 . The formula should now read: =IF(A1>5, A1*1, IF(A1<5, ."
+    },
+    {
+      "title": "Type the desired output if true, followed by a comma.",
+      "content": "Type the desired output if true, followed by a comma. This is the action you want to occur if A1 is less than 5. In this example, we want the value to be multiplied by 2 if it’s less than 5. So, type A1*2, . The formula now looks like this: =IF(A1>5, A1*1, IF(A1<5, A1*2, ."
+    },
+    {
+      "title": "Type the desired output is false.",
+      "content": "Type the desired output is false. Since we’re doing a greater/less than operation, the only value that could be false is 5, since we’re checking for numbers that are greater or less than 5. In our example, we want the equal-to value to be multiplied by 2. So, you’ll type A1*2 . The formula should now look like this: =IF(A1>5, A1*1, IF(A1<5, A1*2, A1*2 . This means that if the value of A1 is equal to 5, it will be multiplied by 2."
+    },
+    {
+      "title": "Type )).",
+      "content": "Type )) . This ends both nested IF statements, as each needs their own “)” mark. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source The formula now looks like this: =IF(A1>5, A1*1, IF(A1<5, A1*2, A1*2)) ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This runs the formula and displays the result in cell B1. The example result should be 4, because the since the value of A1 (which is 2) is less than 5, it has been multiplied by 2."
+    }
+  ]
+}

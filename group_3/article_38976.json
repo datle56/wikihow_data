@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Set-a-Background-Image-in-HTML",
+  "title": "Add a Background Image to a Website: Step-by-Step Tutorial",
+  "steps": [
+    {
+      "title": "Open your HTML document.",
+      "content": "Open your HTML document. You can use any text editor, such as Notepad++ or TextEdit, to edit your HTML file. If you haven't created your webpage yet, check out our guide to creating a simple website in HTML . If you prefer, you can also add your CSS code to a file that's separate from your HTML document. This involves creating a styles.css file for your CSS code, and linking it to your HTML document using the <link> tag. We'll focus this guide on adding the CSS directly to your HTML file, but check out How to Create CSS to learn how to create separate style sheets."
+    },
+    {
+      "title": "Type <style> in the head of the HTML document.",
+      "content": "Type <style> in the head of the HTML document. This is the opening tag for cascading style sheets (CSS), which should go between the <head> and </head> tags. Alternatively, you can create your CSS on a separate CSS document and link it to your HTML document."
+    },
+    {
+      "title": "Type body { on the next line.",
+      "content": "Type body { on the next line. This is the opening of the CSS code that will style the body of your HMTL document. [1] X Research source"
+    },
+    {
+      "title": "Type the code to set a background image.",
+      "content": "Type the code to set a background image. background-image: url(\"filename.jpg\"); . Replace filename.jpg with the path to the background image you'd like to use. [2] X Research source If the background image is in the same folder as your HTML file, you can just use the file name of the image. For example, background-image: url(\"my_background.png\"); . If the image is on the web and not in the same folder as your HTML file, you'll need to specify the path to the image. This can be the full URL to the image. For example, background-image: url(\"https://www.wikihow.com/images/my_background.png\"); . You can also use the path to the image on your web server. For example, if you are editing the HTML file www.wikihow.com/mypage.html and your background image is at www.wikihow.com/images/my_background.png, you can set your background using background-image: url(\"/images/my_background.png\"); ."
+    },
+    {
+      "title": "Choose whether the background repeats or stays a single image.",
+      "content": "Choose whether the background repeats or stays a single image. By default, if the background image is smaller than the page, it will automatically repeat itself. If you want the background image to only appear once, type background-repeat: no-repeat; on the next line. [3] X Research source If you do want the background to repeat, such as when you have a small image that you want to tile like wallpaper, you can replace no-repeat with other options: background-repeat: repeat; : Repeats the image horizontally and vertically, like a traditional wallpaper effect. background-repeat: repeat-x; : Repeats the image horizontally. background-repeat: repeat-y; : Repeats the image vertically. background-repeat: space repeat; : Repeats the image so it runs vertically along the left and right sides of the page, with empty space at the center. background-repeat: space; : Repeats the image on all four corners of the page with space between the images."
+    },
+    {
+      "title": "Make the background cover the entire page.",
+      "content": "Make the background cover the entire page. If you chose not to repeat the background using background-repeat: no-repeat; , you'll want to make sure the background image covers the entire page, even if it's smaller than the frame. Otherwise, you'll see a bit of the page's background color around the edges of the background image. To do this, type or paste this code onto the next line: background-size: cover; . [4] X Research source"
+    },
+    {
+      "title": "Choose how the background behaves when scrolling.",
+      "content": "Choose how the background behaves when scrolling. If you want to keep the background fixed in place as the user scrolls through the page, you can anchor the background image to the viewport using the code background-attachment: fixed; on the next line. [5] X Research source Alternatively, if you want the background to scroll along with other HTML elements like paragraphs and images, you can use background-attachment: local; . [6] X Research source"
+    },
+    {
+      "title": "Type } at the end of the \"Body\" section of your CSS.",
+      "content": "Type } at the end of the \"Body\" section of your CSS. If you want to include other CSS code that affects the body of your document, such as setting font colors or centering your content, include them now. Then, type \"}\" below your last line of CSS to close the body section."
+    },
+    {
+      "title": "Type </style> at the end of your CSS.",
+      "content": "Type </style> at the end of your CSS. Add this line before the </head> tag. This tag closes your CSS."
+    },
+    {
+      "title": "Save the HTML file.",
+      "content": "Save the HTML file. When you are finished with everything, click File and then Save to save your work. Your entire HTML document should look something like this: <!DOCTYPE html> < html > < head > < title > Page Title </ title > < style > body { background-image : url ( \"/images/my_background.png\" ); background-repeat : no-repeat ; background-size : cover ; background-attachment : fixed ; } </ style > </ head > < body > </ body > </ html >"
+    },
+    {
+      "title": "Add a background image to any HTML tag.",
+      "content": "Add a background image to any HTML tag. Background images can be set for any HTML element, including paragraphs, headers, and more. In this example, we'll set a background image for the <p> tag, which makes it so all content in paragraph tags inherits the background image. In your CSS file, or within the <style></style> section of your HTML document, add a new CSS selector for the element you want to give a background image. In this example, we'll add a small background image at the center of the paragraph behind the text: <p> tag: < head > < style > p { background-image : url ( \"/images/my_background.png\" ); background-position : left ; } </ style > </ head >"
+    },
+    {
+      "title": "Use the background-size property to resize background images.",
+      "content": "Use the background-size property to resize background images. You can use CSS to change the size of your background in three ways: using the keywords cover or contain , by specifying a width value alone, or by specifying width and height values together. background-size: cover; Scales the background image to cover the entire container without stretching or shrinking the image. The container can be the entire web page or any other element. This is most common when setting a background image for an entire web page. background-size: contain; : This option scales the image to a smaller size to fit a container. [7] X Research source This option is useful if your background image is much larger than the container you're using it in. If the image is smaller, it will tile. background-size: background-size: 150px 200px; : This option makes the background image 150px wide and 200px tall. The first measurement is width, and the second is height. However, length is optional—if you only enter the width, the height will automatically scale without stretching or warping. You can also specify length and width in percentages."
+    },
+    {
+      "title": "Use the background-position property to align a background.",
+      "content": "Use the background-position property to align a background. This property will help you position your background image relative to the container, which could be the page (if used in the body tag), or any other container. You can specify two values for background-position—the first is always the horizontal value. If you don't specify a vertical value, the default will always be 50%. [8] X Research source Some examples: background-position: center; : Centers the background image. background-position: top; : Aligns to the top of the element. background-position: bottom; : Aligns to the bottom of the element. background-position: left; : Aligns to the left side of the element. background-position: right; : Aligns to the right side of the element. background-position: right top; : Aligns to the right side and the top of the element. background-position: center bottom; : Aligns to the center and the bottom of the element. background-position: top 20px right 10px; : Aligns to the top with a 20px offset, and the right with a 10px offset. You can also specify the pixels as percentages. background-position: 20% 60%; : Positions the background 20% horizontally from the left side, and 60% vertically from the top."
+    },
+    {
+      "title": "Set a background color.",
+      "content": "Set a background color. Even if you're adding a background image to your page, it's always a good idea to set a background color as well. If the background image doesn't load, the user will see the background color you select. To do this, add the background-color: #FF33F0; , replacing FF33F0 with your preferred HTML color hex code ."
+    }
+  ]
+}

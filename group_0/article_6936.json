@@ -1,0 +1,182 @@
+{
+  "url": "https://www.wikihow.com/Change-the-User-Interface-Language-of-LibreOffice",
+  "title": "How to Change the Interface Language in LibreOffice",
+  "steps": [
+    {
+      "title": "Download the LibreOffice setup file (if you no longer have it).",
+      "content": "Download the LibreOffice setup file (if you no longer have it). Even if you've already installed LibreOffice, you'll still need the setup file if you want to install languages that aren't already included in the interface. To download the file: Go to [1] X Research source . Select your operating system under the version of LibreOffice you're running. If you're not sure which version you have, open the LibreOffice app, click the Help menu, and select About LibreOffice . Click the Download button to save the install file to your computer (it ends with .msi)."
+    },
+    {
+      "title": "Double-click the installer file.",
+      "content": "Double-click the installer file. It's the file that begins with LibreOffice and ends with .msi , and you'll find it in your default downloads folder ."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . When the installer opens, it will detect that LibreOffice is already installed and ask if you want to modify, repair, or remove the application."
+    },
+    {
+      "title": "Select \"Custom\" and click Next.",
+      "content": "Select \"Custom\" and click Next . This option allows you to install components you didn't install before, including language packs."
+    },
+    {
+      "title": "Click the + next to \"User interface languages\".",
+      "content": "Click the + next to \"User interface languages\". This displays a list of all languages you can install. If you see a hard drive icon next to a language, that means the language pack is installed already and was installed by default. For example, both English versions are installed by default in the English version of LibreOffice, so they'll both have hard drive icons next to their names. If the language you want to install is already installed, skip to step 9 ."
+    },
+    {
+      "title": "Select the language you want to install.",
+      "content": "Select the language you want to install. Some options will appear."
+    },
+    {
+      "title": "Choose the option to install all features and subfeatures and click Next.",
+      "content": "Choose the option to install all features and subfeatures and click Next . The option you need is called This feature, and all subfeatures, will be installed on the hard drive. This ensures that all necessary language files are installed."
+    },
+    {
+      "title": "Finish the installation.",
+      "content": "Finish the installation. The remaining screens do not pertain to language, so select your desired options and click Install to finish. When the installation is complete, click Finish to close the installer. If prompted, you can set LibreOffice as the default application for documents."
+    },
+    {
+      "title": "Open any LibreOffice app.",
+      "content": "Open any LibreOffice app. You can change the user interface in LibreOffice from any LibreOffice app, such as Writer or Calc. If you didn't close the app before, close it now and re-open it."
+    },
+    {
+      "title": "Click the Tools menu and select Options.",
+      "content": "Click the Tools menu and select Options . The Tools menu is at the top of the app. You should now see your LibreOffice preferences."
+    },
+    {
+      "title": "Open your language settings.",
+      "content": "Open your language settings. To do this, double-click Languages and Locales in the left panel, and then click General just beneath it."
+    },
+    {
+      "title": "Select your language from the \"User interface\" menu and click OK.",
+      "content": "Select your language from the \"User interface\" menu and click OK . You should see a list of all installed languages here. Once you click OK, you'll be prompted to restart LibreOffice–click Restart Now to continue."
+    },
+    {
+      "title": "Download the LibreOffice installer in the language you need.",
+      "content": "Download the LibreOffice installer in the language you need. If you want to change the user interface language of LibreOffice in Linux, you'll just need to download the installer from the LibreOffice website in your preferred language. Here's how to get the installer you need: [2] X Research source"
+    },
+    {
+      "title": "Go to the LibreOffice download page.",
+      "content": "Go to the LibreOffice download page . Find the version of LibreOffice you are using. If you're unsure, open a LibreOffice application, click the LibreOffice menu, and then choose About LibreOffice . From the drop-down menu, choose one of the following options: Linux (64-bit) (rpm) if you're using a Red Hat-based version of Linux like Fedora, CentOS, or OpenSUSE Linux (64-bit) (deb) if you're using a Debian-based Linux like Ubuntu, Debian, or Linux Mint. Click need another language? below your selection. Select the language you want the UX to be in. Click the Translated User Interface: (language) to save the installer in your selected language."
+    },
+    {
+      "title": "Open a terminal window and run cd Downloads.",
+      "content": "Open a terminal window and run cd Downloads . If you have a different default downloads directory, change to that directory instead. If LibreOffice is running, close it now."
+    },
+    {
+      "title": "Run tar -zxvf name_of_file.",
+      "content": "Run tar -zxvf name_of_file . The name of the file will be something like LibreOffice_25.2.2_Linux_X86-64_deb_langpack_tl.tar.gz . You can run ls -a to find the exact name."
+    },
+    {
+      "title": "Run cd name of directory.",
+      "content": "Run cd name of directory . The name of the extracted directory is the same as the name of the tar.gz file, minus the \".tar.gz\" at the end."
+    },
+    {
+      "title": "Run cd DEBS (for Debian-based) or cd RPMS (for Red Hat-based).",
+      "content": "Run cd DEBS (for Debian-based) or cd RPMS (for Red Hat-based). You'll only have the directory for the package type you downloaded."
+    },
+    {
+      "title": "Install the package.",
+      "content": "Install the package. The steps are different depending on your package type: [3] X Research source On Ubuntu, Debian, or Linux Mint: sudo dpkg -i *.deb On Fedora, CentOS, or Red Hat: su -c 'yum install *.rpm' On some RPM-based systems, you will need to run su -c ‘rpm -Uvh *.rpm’ instead."
+    },
+    {
+      "title": "Open any LibreOffice app.",
+      "content": "Open any LibreOffice app. You can change the user interface language in any LibreOffice app, and it will update the language for all LibreOffice apps. If you didn't close the app before, close it now and re-open it."
+    },
+    {
+      "title": "Click the Tools menu and select Options.",
+      "content": "Click the Tools menu and select Options . The menu is at the top-left corner of the app. You should now see your LibreOffice preferences."
+    },
+    {
+      "title": "Open your language settings.",
+      "content": "Open your language settings. To do this, double-click Languages and Locales in the left panel, and then click General just beneath it."
+    },
+    {
+      "title": "Select your language from the \"User interface\" menu.",
+      "content": "Select your language from the \"User interface\" menu. It's the first menu at the top of the screen. You can also make any other region changes you need to make on this screen before you continue."
+    },
+    {
+      "title": "Click OK and restart LibreOffice.",
+      "content": "Click OK and restart LibreOffice. It's at the bottom of the window. You'll see a message asking you to restart LibreOffice. Click Restart Now to do so—when it comes back up, the new UI language settings will take effect in all LibreOffice apps."
+    },
+    {
+      "title": "Go to the LibreOffice download page and click need another language?.",
+      "content": "Go to the LibreOffice download page and click need another language? . To change the user interface language in LibreOffice, you will need to download the installer for your preferred language and run it to add the language pack to the list. To get started, go to the LibreOffice download page and click need another language? below your version of LibreOffice. If you're not sure which version you're using, open a LibreOffice application, click the LibreOffice menu, and then choose About LibreOffice ."
+    },
+    {
+      "title": "Select the language you want to install.",
+      "content": "Select the language you want to install. This will return you to the download page. You should now see the language you selected in the \"Supplementary downloads\" section next to \"Help for offline use.\""
+    },
+    {
+      "title": "Select your operating system from the drop-down menu.",
+      "content": "Select your operating system from the drop-down menu. Do not click Download; just choose the operating system. You can choose macOS (Apple Silicon) or macOS (Intel) . This refreshes the page and gives you the correct link to download the language pack. If you don't know whether your Mac uses Apple Silicon or Intel, click the Apple menu and select About This Mac . If your Mac has Apple Silicon, you'll see \"Chip,\" followed by the processor name. If it's Intel, you'll see \"Processor,\" followed by an Intel processor name. [4] X Research source"
+    },
+    {
+      "title": "Click Translated User Interface to download the language pack.",
+      "content": "Click Translated User Interface to download the language pack. It's under the \"Supplementary Downloads\" header, above the \"Help for offline use\" option. This downloads the required language files to your computer."
+    },
+    {
+      "title": "Double-click the DMG file you downloaded from LibreOffice.",
+      "content": "Double-click the DMG file you downloaded from LibreOffice. Its name starts with LibreOffice and ends with .dmg , and you'll find it in your default download folder. [5] X Research source If LibreOffice is open, close it before you continue."
+    },
+    {
+      "title": "Double-click the LibreOffice Language Pack icon to install the language pack.",
+      "content": "Double-click the LibreOffice Language Pack icon to install the language pack. If you see a warning message about downloading files from unknown sources, follow the on-screen instructions to open the file anyway, and then continue with the installation. [6] X Research source When the installation is complete, you can close any open windows."
+    },
+    {
+      "title": "Open any LibreOffice app.",
+      "content": "Open any LibreOffice app. It doesn't matter which–when you change the interface language for one LibreOffice app, you'll be changing them for all. If you didn't close the app before, close it now, then re-open it."
+    },
+    {
+      "title": "Click the menu LibreOffice menu Preferences.",
+      "content": "Click the menu LibreOffice menu Preferences . You should now see your LibreOffice preferences."
+    },
+    {
+      "title": "Open your language settings.",
+      "content": "Open your language settings. To do this, double-click Languages and Locales in the left panel, and then click General just beneath it."
+    },
+    {
+      "title": "Select your language from the \"User interface\" menu.",
+      "content": "Select your language from the \"User interface\" menu. It's the first menu at the top of the screen. You can also make any other region changes you need to make on this screen before you continue."
+    },
+    {
+      "title": "Click Apply and then restart LibreOffice.",
+      "content": "Click Apply and then restart LibreOffice. It's at the bottom of the window. You'll see a message asking you to restart LibreOffice—click Restart Now to re-open LibreOffice with its new interface language. This change will affect all LibreOffice apps."
+    },
+    {
+      "title": "Click the Tools menu (Windows/Linux) or LibreOffice menu (Mac) in Writer.",
+      "content": "Click the Tools menu (Windows/Linux) or LibreOffice menu (Mac) in Writer. If you want to change the language for the document itself, including spellcheck, grammar, hyphenation, decimal and thousands delimiter, and default currency format, use this method. [7] X Research source"
+    },
+    {
+      "title": "Click Options (Windows/Linux) or Preferences (Mac).",
+      "content": "Click Options (Windows/Linux) or Preferences (Mac). This opens your LibreOffice settings."
+    },
+    {
+      "title": "Open your language settings.",
+      "content": "Open your language settings. To do this, double-click Languages and Locales in the left panel, and then click General just beneath it."
+    },
+    {
+      "title": "Select your preferred region under \"Locale setting.\"",
+      "content": "Select your preferred region under \"Locale setting.\" Select the drop-down menu for the region and language you want to use. Change other regional defaults. You can also select a default currency, choose whether the decimal on the numeric keypad is a decimal or comma, and customize the date format."
+    },
+    {
+      "title": "Set a document language.",
+      "content": "Set a document language. If you want to choose a specific language as the default for all documents going forward, select your options in the \"Default Languages for Documents\" section. By default, the changes will apply to all documents going forward. If you only want to use this language for the current document, check the box next to \"For the current document only.\""
+    },
+    {
+      "title": "Click OK and restart LibreOffice Writer.",
+      "content": "Click OK and restart LibreOffice Writer. Follow the on-screen instructions to start the application. When it relaunches, your new settings will take effect."
+    },
+    {
+      "title": "Click the Tools menu and select Spelling.",
+      "content": "Click the Tools menu and select Spelling . Unlike changing the UI language, you don't have to download any language packs to select a different language for spellcheck. This method will only change the spellcheck language for the current document, not other document options. [8] X Research source"
+    },
+    {
+      "title": "Choose your preferred spellcheck language.",
+      "content": "Choose your preferred spellcheck language. You can select any language from the \"Text language\" menu at the top. Click Options… if you want to enable or disable specific dictionaries for the selected language."
+    },
+    {
+      "title": "Click Close.",
+      "content": "Click Close . Your language changes will take effect immediately."
+    }
+  ]
+}

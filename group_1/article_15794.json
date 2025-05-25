@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Encryption-Credentials-Have-Expired",
+  "title": "4 Ways to Fix the \"Encryption Credentials Have Expired\" Error On Mac",
+  "steps": [
+    {
+      "title": "Enter your printer's IP address in a new browser window.",
+      "content": "Enter your printer's IP address in a new browser window. If you've owned your printer for over 10 years, this error might be popping up due to an expired self-signed certificate (which is valid for about 10 years). To get your printer's IP address, go to System Settings (or System Preferences) > Printers & Scanners , then click on your printer in the sidebar. The IP address is listed next to Location on the right side of the window. If there is no location displayed, type localhost:631 in a new browser window. Click on the Printers tab, then open Terminal and run the command cupsctl WebInterface=yes . Refresh the webpage. Your printer's IP address may be listed under the \"Location\" heading, but if not, click the printer's name. The IP address will be next to the \"Connection\" tag."
+    },
+    {
+      "title": "Log in to your printer's web interface, if necessary.",
+      "content": "Log in to your printer's web interface, if necessary. If you've never set an administrator password for your printer, it may ask you to enter one now. If you don't remember the login for your printer, check your printer's manual, as it may have a generic login, or contact your printer manufacturer."
+    },
+    {
+      "title": "Navigate to your printer's certificate.",
+      "content": "Navigate to your printer's certificate. You can do this by going to Network > Advanced Settings > Network Security Settings > SSL/TLS > Certificate . The wording for each option may vary slightly depending on your printer model, but most printers have very similar web interfaces with similar menu items."
+    },
+    {
+      "title": "Click Update.",
+      "content": "Click Update . If your printer's web interface says Create a new self-signed certificate instead of update, click that instead."
+    },
+    {
+      "title": "Follow the on-screen prompts to update or create a new certificate.",
+      "content": "Follow the on-screen prompts to update or create a new certificate. If you need to select a length for the certificate, choose the maximum (usually 10 years)."
+    },
+    {
+      "title": "Wait for the certificate to update.",
+      "content": "Wait for the certificate to update. Once the certificate has been updated, exit the web interface and try using your printer again. If your printer still doesn't work, try removing and re-adding it."
+    },
+    {
+      "title": "Go to System Settings > Printers & Scanners.",
+      "content": "Go to System Settings > Printers & Scanners . When you reset the printing system, all of the printers on your computer are removed. You'll have to add them back after resetting the printing system."
+    },
+    {
+      "title": "Hold Ctrl and click the list on the left.",
+      "content": "Hold Ctrl and click the list on the left. This will open a contextual menu."
+    },
+    {
+      "title": "Select \"Reset printing system.\"",
+      "content": "Select \"Reset printing system.\" Your Mac's printing system will be reset. It may take a few moments for this to finish up. [1] X Research source"
+    },
+    {
+      "title": "Add your printer.",
+      "content": "Add your printer. Plug the printer into your computer with a USB cable, then click the Add button in the Printers & Scanners menu. Follow the on-screen instructions to finish adding your printer, but be sure to set up your printer as an AirPrint printer. This ensures your computer downloads the correct drivers for your printer. Check your printer's instructions for more detailed steps for your specific brand of printer."
+    },
+    {
+      "title": "Update the firmware on your printer.",
+      "content": "Update the firmware on your printer. Firmware is software that helps devices run as expected, and sometimes outdated firmware can cause your printer to have issues. There are many ways you can update your printer's firmware, but the specifics will vary based on what printer you have. Follow the manufacturer's instructions for your printer for specific steps. [2] X Research source Check your printer app, if your printer has one. You can usually find the firmware update option under General or Settings . Download the update from the printer manufacturer's website. Enter your printer model and download the latest firmware update, if there is one. Then, run the program and follow the on-screen instructions to finish updating. Some printers can update their own firmware. Simply go to the printer's Settings menu and check for a firmware update option (though it may be in another menu with the words Web Services or Update in the name)."
+    },
+    {
+      "title": "Go to System Settings > Printers & Scanners.",
+      "content": "Go to System Settings > Printers & Scanners . If nothing else works, you can try adding a generic print driver to your printer."
+    },
+    {
+      "title": "Click the + button and then select your printer.",
+      "content": "Click the + button and then select your printer. You should be able to do this when your printer is still added, but if not, you can remove it easily by resetting the printing system."
+    },
+    {
+      "title": "Select Generic PCL Printer in the \"Use\" dropdown.",
+      "content": "Select Generic PCL Printer in the \"Use\" dropdown. This option won't be available immediately; you'll need to wait a few seconds for it to show up. Once you've selected the generic PCL driver, click Add to finalize adding a new printer."
+    }
+  ]
+}

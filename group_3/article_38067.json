@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Save-Your-PowerPoint-Slides-As-High-Resolution-Images",
+  "title": "How to Save Your PowerPoint Slides As High Resolution Images",
+  "steps": [
+    {
+      "title": "Change the export resolution.",
+      "content": "Change the export resolution. To do this use the registry editor. Click ⊞ Win + R on your keyboard, and type in regedit the open option. Hit OK to execute the open command. This will open the Windows Registry Editor for some special settings that you can change."
+    },
+    {
+      "title": "Navigate to the folder HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\16.0\\Powerpoint\\Options.",
+      "content": "Navigate to the folder HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\16.0\\Powerpoint\\Options . Depending on the version of Office that you have installed (and are using), you have to open 14.0 for Microsoft Office version 2010, 15.0 for Microsoft Office version 2013 or 16.0 for Microsoft Office version 2016. Those are the internal version numbers as Microsoft have set them. This article uses Microsoft Office 2016, opening the 16.0 node or folder."
+    },
+    {
+      "title": "Right-click and choose New > DWORD (32-bit) Value in the pane at the right from the pop-up menu.",
+      "content": "Right-click and choose New > DWORD (32-bit) Value in the pane at the right from the pop-up menu."
+    },
+    {
+      "title": "Name this new entry ExportBitmapResolution and hit ↵ Enter.",
+      "content": "Name this new entry ExportBitmapResolution and hit ↵ Enter ."
+    },
+    {
+      "title": "Double-click this new entry and set the Base to \"Decimal\" and set the Value data to \"300\".",
+      "content": "Double-click this new entry and set the Base to \"Decimal\" and set the Value data to \"300\". Click OK to confirm."
+    },
+    {
+      "title": "Click Exit on the file menu and you are done.",
+      "content": "Click Exit on the file menu and you are done."
+    },
+    {
+      "title": "Open any presentation in PowerPoint of your choice which you’d like to save as images.",
+      "content": "Open any presentation in PowerPoint of your choice which you’d like to save as images. Click File ."
+    },
+    {
+      "title": "Click Save As.",
+      "content": "Click Save As ."
+    },
+    {
+      "title": "Save as type as PNG, JPG, GIF or TIFF format.",
+      "content": "Save as type as PNG, JPG, GIF or TIFF format. All of these are image format; it is suggested you select PNG format, since good quality of images can be expected with it, and the format is compatible with many other programs. Click Save finally."
+    },
+    {
+      "title": "Choose the slides to save.",
+      "content": "Choose the slides to save. Once you've selected your save options, you'll be asked to specify whether you want to export to a picture just the current slide or all slides in the presentation."
+    }
+  ]
+}

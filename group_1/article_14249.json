@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Dpc-Watchdog-Violation",
+  "title": "DPC Watchdog Violation: Common Causes & Fixes",
+  "steps": [
+    {
+      "title": "Disconnect external hardware and reboot your PC.",
+      "content": "Disconnect external hardware and reboot your PC. Unplug anything you've connected to the PC, including flash drives and other accessories, and restart your computer. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Use your PC without the external components to see if the problem persists. If you still get a DPC Watchdog Violation error with external components disconnected, you'll know the problem is not related to those components. If your PC does not reboot into Windows, you can continue troubleshooting in Safe Mode . To get to Safe Mode from the sign-in screen: Press and hold the Shift key as you select Power > Restart . When your PC reboots to the \"Choose an option\" screen, go to Troubleshoot > Advanced options > Startup Settings > Restart . [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Press 5 to enter Safe Mode with Networking."
+    },
+    {
+      "title": "Check for and install optional driver updates.",
+      "content": "Check for and install optional driver updates. Even if you've updated Windows recently or have updates configured to run automatically, new drivers may have been released since the last update and not installed because they are technically \"optional.\" To check for optional driver updates and install any you've missed: Windows 10: Open Settings and go to Update & Security > Windows Update . Click View optional updates in the left panel to see if any driver updates are available. If they are, check the boxes next to the latest updates and click Download and install . Windows 11: Open Settings and go to Windows Update . Click Optional updates toward the bottom of the right panel, check the boxes next to the optional driver updates, and click Download & install ."
+    },
+    {
+      "title": "Check the minidump file.",
+      "content": "Check the minidump file. When your PC blue screens, it usually creates a dump file in C:\\Windows\\Minidump. To view the dump file's contents , you can use a Microsoft program called WinDbg. This program isn't preinstalled, but you can download it from the Microsoft Store . [3] X Research source First, open File Explorer and go to C:\\Windows\\Minidump. If there's a file inside, copy it to your desktop so you can easily scan it in WinDbg. Open WinDbg and go to File > Open dump file . Select the dump file on your desktop and click Open to view the file. Browse the contents of the dump file to determine the root of the DPC Watchdog Violation error. If you don't know what the driver is by its file name, you can search for it online to see what hardware it works for. If you're having trouble understanding what you see, you can try another free tool called BlueScreenView, though it's a third-party tool not created by Microsoft. You can download BlueScreen View from https://www.nirsoft.net/utils/blue_screen_view.html (scroll all the way to the bottom for the download links)."
+    },
+    {
+      "title": "Check the Event Viewer.",
+      "content": "Check the Event Viewer. The Windows Event Viewer should have captured information about the DPC Watchdog Violation error when it occurred. Sometimes, the information here can lead you to the hardware or driver responsible for the error, though other times, the entry will be a little difficult to understand. Type event viewer into the Windows search bar and click Event Viewer . Expand the Windows Logs folder in the left panel. Click System in the left panel. In the list of \"System\" events, look for events marked with red or yellow exclamation points that occurred close to the time of the DPC Watchdog Violation error. Double-click the logged events to determine the source."
+    },
+    {
+      "title": "Uninstall problematic drivers.",
+      "content": "Uninstall problematic drivers. If you've narrowed the DPC Watchdog Violation error to a specific driver, you can uninstall it in Device Manager and try installing a fresh version. If it's a network-related driver, try downloading the latest driver from the manufacturer's website before uninstalling the presently installed driver. Type device into the Windows Search bar and click Device Manager . Double-click the device to open its general properties. Click the Driver tab. If the option is available, click Roll Back Driver to switch to the last version of the driver that was installed before the current version. If not, select Uninstall Device and follow the on-screen instructions. If you downloaded the latest driver from the manufacturer's website, you can usually double-click the downloaded file to install the driver. If the file you downloaded isn't an installer (for example, it ends with .dll and not .exe or .msi), you can install it through the device manager by double-clicking the device, selecting the Driver tab, clicking Update driver , and selecting the driver from your computer."
+    },
+    {
+      "title": "Run a memory diagnostic test.",
+      "content": "Run a memory diagnostic test. Windows has a built-in tool that can check for RAM problems upon reboot. To run the tool: Close any open programs. Type memory into the Windows search bar. Click Windows Memory Diagnostic . Click Restart Now and allow the test to complete. Your PC will reboot and check the RAM for errors. If errors are found, the DPC Watchdog Violation error could be RAM-related."
+    },
+    {
+      "title": "Check for file system errors.",
+      "content": "Check for file system errors. Corrupted system files can sometimes lead to DPC Watchdog Violation errors and the blue screen of death. To scan for and repair corrupted system files: Close all open programs. Type cmd into the Windows Search bar. Right-click \"Command Prompt\" and select Run as administrator . Type sfc /scannow and press Enter . Follow the on-screen instructions."
+    },
+    {
+      "title": "Perform a system restore.",
+      "content": "Perform a system restore. If you can't find a hardware issue, the problem is likely related to software or an update you've recently installed. If your computer is set up to create restore points, you can easily restore Windows to date before the DPC Watchdog Violation started happening. This will not delete any personal files. To restore your system: Type system restore into the Windows Search bar. Click Recovery , which has a blue monitor icon with a clock over it. Click Open System Restore and click Next . If you see a restore point from before the date the problem started happening, select it, then click Scan for affected programs to see what will be uninstalled. Click Next and follow the on-screen instructions to restore your PC. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "New hardware and accessories.",
+      "content": "New hardware and accessories. Seeing a blue screen DPC Watchdog Violation error soon after installing new hardware, connecting a new monitor, or even inserting a new storage device like an SSD, can indicate a faulty driver or compatibility issue. Your new hardware or its driver may not be compatible with your version of Windows. [5] X Research source Whatever you were doing at the time of the error can sometimes help you determine the hardware or driver responsible for the BSoD. For example, if you only get the DPC_WATCHDOG_VIOLATION blue screen error when playing games or watching videos, the issue could be due to a problem with your graphics card or its drivers, or possibly your network card."
+    },
+    {
+      "title": "Outdated, corrupted, or incompatible drivers.",
+      "content": "Outdated, corrupted, or incompatible drivers. If you didn't install new hardware or connect a new device, there may be a problem with a driver for existing hardware, such as for hard drives, controllers, or graphics cards. It's also possible a new driver that was installed by Windows Update is not compatible with your system."
+    },
+    {
+      "title": "Damaged system files.",
+      "content": "Damaged system files. A corrupted file required by a piece of hardware or Windows itself could result in a DPC Watchdog Violation error."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Simple-Program-to-Simplify-Radicals-on-a-TI-84",
+  "title": "How to Make a Program to Simplify Radicals on a TI-84: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Create a new program.",
+      "content": "Create a new program. To do this, press the PRGRM button, use the right-arrow to scroll to NEW , and then press ENTER . [2] X Research source"
+    },
+    {
+      "title": "Enter a name for the program and press ↵ Enter.",
+      "content": "Enter a name for the program and press ↵ Enter . You can name the program anything you want, as long as it's 8 characters or less. In this guide, we'll be calling the program \"SIMPRAD.\" After entering the program name, press ENTER to save it."
+    },
+    {
+      "title": "Add the ClrTable command.",
+      "content": "Add the ClrTable command. This will ensure your table is cleared out before you begin to avoid data carryover. Press PRGM , scroll to the I/O tab, and press the 9 key to select ClrTable. Press ENTER to move to the next line."
+    },
+    {
+      "title": "Add some display text for explanation (optional).",
+      "content": "Add some display text for explanation (optional). This step is optional, but is helpful incase you forget what number you're supposed to enter for this program. If you don't want to add this display text, skip to the next step. Press PRGM , scroll to the I/O tab, and press the 3 key to select Disp. Press 2ND then ALPHA and type something like \"Enter the number under the radical for N\" . Press ALPHA again to close the alphabet menu. Press ENTER to move to the next line."
+    },
+    {
+      "title": "Add an Input command.",
+      "content": "Add an Input command. This command allows you to input the radical you want to simplify. We'll be using the variable N to represent this number. Press PRGM , scroll to the I/O tab, and press 1 to select Input. Press ALPHA and write \"N . Press 2ND then MATH (Test), scroll to the TEST tab, and press 1 to select the equals sign (=). Press ALPHA and write \" . Press the comma button (,) to add a comma. Press ALPHA and write N . Press ENTER to move to the next line."
+    },
+    {
+      "title": "Add your formula and store it in the Y₁ variable.",
+      "content": "Add your formula and store it in the Y₁ variable. With this program, you'll be able to simplify radicals using a table. The formula added to the Y₁ variable will include the N variable you set up in the last step. Press ALPHA and write \"N . Press the divide button to get a slash (/). Press X,TØn to add an X variable. Press X² to add a square root to the X. Press ALPHA and write \" . Press STO> , then press VARS , scroll to the Y-VARS tab, and press 1 then 1 to select the Y₁ variable. Press ENTER to move to the next line."
+    },
+    {
+      "title": "Add a DispTable command.",
+      "content": "Add a DispTable command. This will show you the table you've created with the formula and the value of the N variable. Press PRGM , scroll to the I/O tab, and press 5 to select DispTable. Press ENTER to move to the next line."
+    },
+    {
+      "title": "Add a Stop command.",
+      "content": "Add a Stop command. The Stop command tells the calculator that it's reached the end of the program. Press PRGM , scroll to the CTL tab, and press ALPHA F (or scroll with the arrows) to select Stop."
+    },
+    {
+      "title": "Exit the program editor.",
+      "content": "Exit the program editor. To do this, press 2ND and MODE (Quit). To recap, this is what your program should look like before you exit out of it: PROGRAM:SIMPRAD :ClrTable :Disp \"Enter the number under the radical for N\" :Input \"N=\",N :\"N/X²\"→Y₁ :DispTable :Stop"
+    },
+    {
+      "title": "Run the program.",
+      "content": "Run the program. Press PRGM , go to the EXEC tab, and select the program you just made. In this guide, we made a program called SIMPRAD and we can run it by pressing the 2 button. Press ENTER to run the program."
+    },
+    {
+      "title": "Enter the radical you want to simplify.",
+      "content": "Enter the radical you want to simplify. For example, if you are simplifying √45, you would enter \"45\" where it says \"N=\" and press ENTER to confirm your input. When you enter a number for N, you'll see a plot list appear on screen."
+    },
+    {
+      "title": "Find the first Y₁ value that is a decimal that starts with 0.",
+      "content": "Find the first Y₁ value that is a decimal that starts with 0. In the example, the first decimal that starts with 0 is on line 7 (0.9183673469)."
+    },
+    {
+      "title": "Scroll up until you find the first row with a whole number.",
+      "content": "Scroll up until you find the first row with a whole number. In the example, the first row with a whole number above line 7 is line 3, and the Y₁ value is 5."
+    },
+    {
+      "title": "Use the row number and Y₁ value to create your simplified radical.",
+      "content": "Use the row number and Y₁ value to create your simplified radical. In the example, since the row was 3 and the Y₁ value was 5, the simplified radical is 3√5. You can test this by calculating √45 and 3√5 on your calculator. Both give the result 6.7082039325."
+    },
+    {
+      "title": "Create a new program.",
+      "content": "Create a new program. To do this, press the PRGRM button, use the right-arrow to scroll to NEW , and then press ENTER . This program is considered a legacy program because it may or may not work with the most recent TI-84 calculator models and/or operating systems."
+    },
+    {
+      "title": "Enter a name for the program and press ↵ Enter.",
+      "content": "Enter a name for the program and press ↵ Enter . Something like \"SIMPRAD\" should suffice. You can use up to 8 characters in your program name. After entering the program name, press ENTER to save it."
+    },
+    {
+      "title": "Write Prompt N.",
+      "content": "Write Prompt N . Press PRGRM , go to the I/O tab and select Prompt . Then type the letter N and press ENTER ."
+    },
+    {
+      "title": "Store 1 in C.",
+      "content": "Store 1 in C. Type 1 , then press STO> , then type C and hit ENTER ."
+    },
+    {
+      "title": "Store 2 in F.",
+      "content": "Store 2 in F. Type 2 , then press STO> , then type F and hit ENTER ."
+    },
+    {
+      "title": "Write While F≤ √(N).",
+      "content": "Write While F≤ √(N) . To do this, follow these steps: Press PRGRM and select While . Write the letter F . Press 2ND and then MATH (test). Select the ≤ symbol. Write √(N) and hit ENTER ."
+    },
+    {
+      "title": "Write While fPart(N/F²)=0.",
+      "content": "Write While fPart(N/F²)=0 . Because this part is wider than your screen, the line may be broken into two parts. Press PRGRM and select While . Press MATH . Go to the NUM tab and select fPART . Type N/F² , and close the parentheses. Press 2ND and then MATH (test). Select = and enter 0 (equal to zero). [3] X Research source"
+    },
+    {
+      "title": "Store C*F in C.",
+      "content": "Store C*F in C. Write C*F , press STO> , write C , and hit ENTER ."
+    },
+    {
+      "title": "Store N/F² in N.",
+      "content": "Store N/F² in N. Write N/F² , press STO> , write N , and hit ENTER ."
+    },
+    {
+      "title": "Write End.",
+      "content": "Write End . Press PRGRM , select End , and hit ENTER ."
+    },
+    {
+      "title": "Write If F=2.",
+      "content": "Write If F=2 . Press PRGRM , select If , and write F . Then, press 2ND and then MATH . Select = , write 2 , and hit ENTER ."
+    },
+    {
+      "title": "Store 1 in F.",
+      "content": "Store 1 in F. Type 1 and then press STO> . Then, type F and hit ENTER ."
+    },
+    {
+      "title": "Store 2+F in F.",
+      "content": "Store 2+F in F. Type 2+F and then press STO> . Next, type F and hit ENTER ."
+    },
+    {
+      "title": "Write End.",
+      "content": "Write End . Press PRGRM , select End , and then hit ENTER ."
+    },
+    {
+      "title": "Write Disp C,\"√(\", N.",
+      "content": "Write Disp C,\"√(\", N . Here's how: Press PRGRM . Go to the I/O tab and select Disp . Type C and press ALPHA + , 2ND , x² , ALPHA + and write N ."
+    },
+    {
+      "title": "Exit the program editor.",
+      "content": "Exit the program editor. After you're finished creating the program, press 2ND and then QUIT to exit. Your changes will be saved automatically."
+    },
+    {
+      "title": "Open the program.",
+      "content": "Open the program. To open your program, press the PRGRM button on the calculator, scroll to your program, select it, and then press ENTER ."
+    },
+    {
+      "title": "Enter the number under the radical you want to simplify.",
+      "content": "Enter the number under the radical you want to simplify. For example, if you want to simplify √(88), you'd enter 88 ."
+    },
+    {
+      "title": "Press ENTER.",
+      "content": "Press ENTER . The first number displayed is the coefficient of the simplified radical, while the second is the number under the simplified radical."
+    }
+  ]
+}

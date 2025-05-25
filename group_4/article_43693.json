@@ -1,0 +1,198 @@
+{
+  "url": "https://www.wikihow.com/The-Requested-Operation-Requires-Elevation",
+  "title": "8 Ways to Fix \"The Requested Operation Requires Elevation\" on Windows",
+  "steps": [
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account , you don't need to log out and log back in."
+    },
+    {
+      "title": "Open File Explorer.",
+      "content": "Open File Explorer. You can do this by clicking the File Explorer icon in the taskbar, searching for \"File Explorer\" in the taskbar search bar, or by pressing Win+E ."
+    },
+    {
+      "title": "Navigate to your hard drive.",
+      "content": "Navigate to your hard drive. If you have multiple drives, select the drive that holds the program that is throwing the error. You can also repeat these steps for all of your drives if you prefer. To get to your hard drive, click This PC . Your hard drives are the lettered drives under the \"Devices and drives\" header."
+    },
+    {
+      "title": "Right-click the hard drive and select Properties.",
+      "content": "Right-click the hard drive and select Properties . It's the bottom menu option in the contextual menu."
+    },
+    {
+      "title": "Navigate to Security > Advanced > Change.",
+      "content": "Navigate to Security > Advanced > Change . The Change button is next to the \"Owner\" tag and the specified owner of the drive ."
+    },
+    {
+      "title": "Select a new owner of the drive.",
+      "content": "Select a new owner of the drive. Once you've picked a new owner, click OK."
+    },
+    {
+      "title": "Finalize the change.",
+      "content": "Finalize the change. Before you do anything else, check the box next to \"Replace all child object permission entries with inheritable permission entries from this object.\" Then, click OK . [1] X Research source"
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Right-click on the app that gives the error and select Properties.",
+      "content": "Right-click on the app that gives the error and select Properties . It's the bottom option in the contextual menu."
+    },
+    {
+      "title": "Select the Compatibility tab.",
+      "content": "Select the Compatibility tab. It's at the top of the pop-up Properties window."
+    },
+    {
+      "title": "Check \"Run this program as an administrator\" and click OK.",
+      "content": "Check \"Run this program as an administrator\" and click OK . The app will now always run in administrator mode , which can make the error code go away. You can also run a program as an administrator just for the next session by right-clicking on the app and selecting Run as administrator ."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Right-click on the app that gives the error and select Properties.",
+      "content": "Right-click on the app that gives the error and select Properties . It's the bottom option in the contextual menu."
+    },
+    {
+      "title": "Select the Compatibility tab.",
+      "content": "Select the Compatibility tab. It's at the top of the pop-up Properties window."
+    },
+    {
+      "title": "Check \"Run this program in compatibility mode for:\"",
+      "content": "Check \"Run this program in compatibility mode for:\" and select a legacy OS. You can try any legacy OS, but for somewhat modern apps you should select Windows 7 or Windows 8."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . The application will now always run in compatibility mode. To turn this off, simply go back to Properties > Compatibility and uncheck \"Run this program in compatibility mode for:\"."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Search for UAC in the taskbar search bar.",
+      "content": "Search for UAC in the taskbar search bar. UAC (User Account Control) is what asks you for administrator permission when trying to do certain tasks, and it's a security measure to keep your computer safe. If you are disabling UAC , make sure you have active anti-malware protection and that you turn UAC back on once the issue has been resolved (or if UAC wasn't the culprit)."
+    },
+    {
+      "title": "Select \"Change User Account Control settings.\"",
+      "content": "Select \"Change User Account Control settings.\" This will directly open your UAC settings."
+    },
+    {
+      "title": "Drag the slider down to \"Never Notify\" and click OK.",
+      "content": "Drag the slider down to \"Never Notify\" and click OK . You will have to give administrator permission to change your UAC settings. If you figure out the issue or UAC wasn't the cause behind the error, return to the UAC menu and turn UAC back on to your desired setting level."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Type Virus & threat protection in the taskbar search bar.",
+      "content": "Type Virus & threat protection in the taskbar search bar. Select the first System Settings option that comes up. These steps will help you temporarily disable Windows Security , which is Windows's built-in antivirus software. If you have any additional antivirus software, be sure to open their applications and temporarily disable them (methods vary depending on your antivirus software)."
+    },
+    {
+      "title": "Click Manage settings.",
+      "content": "Click Manage settings . It's under the \"Virus & threat protection settings\" heading."
+    },
+    {
+      "title": "Toggle off Real-time protection.",
+      "content": "Toggle off Real-time protection . You will have to give administrator approval to turn off real-time protection. Once you disable real-time protection, it will turn itself back on automatically after a short time period. However, once you determine the cause of the error, you can return to your Virus & threat protection settings and manually enable real-time protection."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Search cmd in the taskbar search bar.",
+      "content": "Search cmd in the taskbar search bar. Running an SFC scan can help fix corrupted or damaged files in your system, which may help resolve this permissions error."
+    },
+    {
+      "title": "Right-click Command Prompt and select Run as administrator.",
+      "content": "Right-click Command Prompt and select Run as administrator . This will open the Command Prompt with administrator privileges ."
+    },
+    {
+      "title": "Type the command sfc /scannow and press ↵ Enter.",
+      "content": "Type the command sfc /scannow and press ↵ Enter . The SFC scan will begin. It may take some time to complete, so don't close the Command Prompt window until it says the SFC scan is finished. [2] X Research source Once the SFC scan is done, you can close the Command Prompt and check to see if the error is still popping up."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Press ⊞ Win+R to open the Run dialog.",
+      "content": "Press ⊞ Win + R to open the Run dialog. You can use the Group Policy Editor to change the security settings that might be causing this error to pop up. However, be very careful when editing anything in the Group Policy Editor, and follow the instructions below exactly."
+    },
+    {
+      "title": "Type gpedit.msc and press ↵ Enter.",
+      "content": "Type gpedit.msc and press ↵ Enter . This will open the Group Policy Editor."
+    },
+    {
+      "title": "Expand the following files in the left pane.",
+      "content": "Expand the following files in the left pane. Expand Computer Configuration , then Windows Settings , then Security Settings , then Local Policies ."
+    },
+    {
+      "title": "Select Security Options.",
+      "content": "Select Security Options . A bunch of information will appear in the right pane."
+    },
+    {
+      "title": "Locate a specific policy.",
+      "content": "Locate a specific policy. Look for User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode , then double-click it."
+    },
+    {
+      "title": "Choose Elevate without prompting in the dropdown.",
+      "content": "Choose Elevate without prompting in the dropdown. The dropdown is in the Local Security Setting tab, which is the default tab for this window."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This will apply the policy change, and may fix the issue with the error."
+    },
+    {
+      "title": "Log into an administrator account, if you're not on one already.",
+      "content": "Log into an administrator account, if you're not on one already. If your main account is an administrator account, you don't need to log out and log back in."
+    },
+    {
+      "title": "Press ⊞ Win+I to open your Windows Settings.",
+      "content": "Press ⊞ Win + I to open your Windows Settings. If nothing else works, you can try making a brand new administrator account to see if it can get around the error code."
+    },
+    {
+      "title": "Click Accounts.",
+      "content": "Click Accounts . It's the option with the icon of a person."
+    },
+    {
+      "title": "Select Family & other users in the sidebar.",
+      "content": "Select Family & other users in the sidebar. The Family & other users button may also say Accounts or Other users . It's the second from the last option, and it has an icon of a person with a plus sign."
+    },
+    {
+      "title": "Click Add someone else to this PC.",
+      "content": "Click Add someone else to this PC . It's the bottom option, under the \"Other users\" heading."
+    },
+    {
+      "title": "Select I don't have this person's sign-in information.",
+      "content": "Select I don't have this person's sign-in information . It's under the field to enter an email or phone number."
+    },
+    {
+      "title": "Click Add a user without a Microsoft account.",
+      "content": "Click Add a user without a Microsoft account . It's the bottom option, right above the buttons that say Back and Next ."
+    },
+    {
+      "title": "Enter a username and password, then click Next.",
+      "content": "Enter a username and password, then click Next . You can use any username and password as long as it's not already in use on the computer. Follow the on-screen instructions to finish up with the account creation pop-up."
+    },
+    {
+      "title": "Press ⊞ Win+I once again.",
+      "content": "Press ⊞ Win + I once again. Now that the new account is created, you must give it administrator privileges."
+    },
+    {
+      "title": "Go to Accounts > Family & other users.",
+      "content": "Go to Accounts > Family & other users . The Family & other users button may also say Accounts or Other users ."
+    },
+    {
+      "title": "Click Change account type under your new account.",
+      "content": "Click Change account type under your new account. It will be located under the \"Other users\" heading."
+    },
+    {
+      "title": "Choose Administrator from the dropdown.",
+      "content": "Choose Administrator from the dropdown. Click OK to confirm your choice and finish creating your new administrator account. [3] X Research source You can then switch to the new admin account and see if the error still occurs."
+    }
+  ]
+}

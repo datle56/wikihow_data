@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Uninstall-Razer-Synapse-on-PC-or-Mac",
+  "title": "How to Uninstall Razer Synapse on PC or Mac",
+  "steps": [
+    {
+      "title": "Close Razer Synapse.",
+      "content": "Close Razer Synapse. It's a green icon that resembles a cloud in the bottom-right corner of the system tray. Right-click the Razer Synapse icon (click ∧ first if it's not visible). Click Close Razer Synapse ."
+    },
+    {
+      "title": "Uninstall Razer Synapse.",
+      "content": "Uninstall Razer Synapse. You can uninstall Razer Synapse using the Uninstall file in the Razer Synapse directory, or use the following steps. Open Start . Click Settings . Click Apps . Scroll down and select Razer Synapse . Click Uninstall . Click Uninstall to confirm."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. If Razer Synapse is no longer on your computer, stop right here. If it continues to be a problem, there may still be some remnants of it in your registry. Backup your files and continue with the next steps. [2] X Research source Use the following steps to restart your computer. Click Start . Click the Power icon . Click Restart ."
+    },
+    {
+      "title": "Launch the Registry Editor app.",
+      "content": "Launch the Registry Editor app. It's the app that has an icon of blue cubes. Use the following steps to launch the Registry editor. Click Start . Type regedit . Click the Registry Editor app."
+    },
+    {
+      "title": "Click Computer.",
+      "content": "Click Computer . It's at the top of the registry editor sidebar on the left."
+    },
+    {
+      "title": "Click Edit.",
+      "content": "Click Edit . It's the second option in the menu bar at the top."
+    },
+    {
+      "title": "Click Find.",
+      "content": "Click Find . It's in the edit menu. This will open a search bar."
+    },
+    {
+      "title": "Type Razer in the search bar and press ↵ Enter.",
+      "content": "Type Razer in the search bar and press ↵ Enter . This will search for any items from Razer."
+    },
+    {
+      "title": "Right-click any items from Razer.",
+      "content": "Right-click any items from Razer. They will say \"Razer inc\" in the data column."
+    },
+    {
+      "title": "Click Delete.",
+      "content": "Click Delete . This will delete the registry item. Warning: Be careful what you delete from the registry. Deleting the wrong items can cause your system to not function properly."
+    },
+    {
+      "title": "Click .",
+      "content": "Click . The icon that resembles a folder in the taskbar is the File Explorer."
+    },
+    {
+      "title": "Click This PC.",
+      "content": "Click This PC . This will open your root menu on your computer."
+    },
+    {
+      "title": "Type Razer in the search bar and press ↵ Enter.",
+      "content": "Type Razer in the search bar and press ↵ Enter . The search bar is in the upper-right corner of the File Explorer. This will search for any remaining items from Razer on your computer. The search may take a few minutes."
+    },
+    {
+      "title": "Select all items.",
+      "content": "Select all items. Hold ⇧ Shift and click to select more than one item."
+    },
+    {
+      "title": "Drag items to the recycling bin.",
+      "content": "Drag items to the recycling bin. The recycling bin is in the upper-left corner of your Desktop. This will delete all remaining Razer items."
+    },
+    {
+      "title": "Open Finder .",
+      "content": "Open Finder . The Finder is the app that has an blue and white image with a smiley face."
+    },
+    {
+      "title": "Click Go.",
+      "content": "Click Go . It's in the menu bar at the top of the screen. This opens a drop-down menu."
+    },
+    {
+      "title": "Click Utilities.",
+      "content": "Click Utilities . This will open your system Utilities."
+    },
+    {
+      "title": "Double-click Terminal .",
+      "content": "Double-click Terminal . It's the app with the icon a black screen with a text cursor in its top-left corner. This will launch the Terminal window on your Mac."
+    },
+    {
+      "title": "Type several commands to delete the Razer files and directories.",
+      "content": "Type several commands to delete the Razer files and directories. Enter each command into terminal and press ⏎ Return after each line. You may prompted to enter your administrator password to continue. launchctl remove com.razer.rzupdater launchctl remove com.razerzone.rzdeviceengine sudo rm /Library/LaunchAgents/com.razer.rzupdater.plist sudo rm /Library/LaunchAgents/com.razerzone.rzdeviceengine.plist"
+    },
+    {
+      "title": "Open Finder .",
+      "content": "Open Finder . This will return you to the Finder."
+    },
+    {
+      "title": "Click Applications.",
+      "content": "Click Applications . You can click Applications in the left sidebar, or in the \"Go\" menu."
+    },
+    {
+      "title": "Drag Razer Synapse to the trash.",
+      "content": "Drag Razer Synapse to the trash. This will uninstall Razer Synapse."
+    },
+    {
+      "title": "Return to your Terminal window.",
+      "content": "Return to your Terminal window. You should still have the terminal window open, but if not, you can re-open it just as before."
+    },
+    {
+      "title": "Type the following lines in the terminal.",
+      "content": "Type the following lines in the terminal. This will remove the support folders for Razer Synapse. [3] X Research source sudo rm -rf /Library/Application\\ Support/Razer/ rm -rf ~/Library/Application\\ Support/Razer/"
+    }
+  ]
+}

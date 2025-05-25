@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Install-Debian-sid",
+  "title": "How to Install Debian sid",
+  "steps": [
+    {
+      "title": "Download and install the stable version of Debian",
+      "content": "Download and install the stable version of Debian , if you have not done so already."
+    },
+    {
+      "title": "Open a terminal window or TTY console.",
+      "content": "Open a terminal window or TTY console. Because this is a major upgrade, you should not attempt this with SSH unless you have physical access to the computer or an alternative method of gaining shell access."
+    },
+    {
+      "title": "Move/backup your existing sources lists.",
+      "content": "Move/backup your existing sources lists. Use the following commands: sudo mv /etc/apt/sources.list /etc/apt/sources.list.old sudo mv /etc/apt/sources.list.d /etc/apt/sources.list.d.old sudo mkdir /etc/apt/sources.list.d"
+    },
+    {
+      "title": "Create a new sources.list.",
+      "content": "Create a new sources.list. Run the command sudo sensible-editor /etc/apt/sources.list and add the following: deb http://deb.debian.org/debian sid main contrib non-free deb-src http://deb.debian.org/debian sid main contrib non-free"
+    },
+    {
+      "title": "Run sudo apt update and sudo apt dist-upgrade.",
+      "content": "Run sudo apt update and sudo apt dist-upgrade. apt will attempt to download new versions of any programs you have installed. You will very likely encounter dependency issues or broken packages, and you'll need to fix these manually. Sometimes, running sudo apt update --fix-missing and sudo apt install -f and then sudo apt dist-upgrade again will be enough; other times you may have to remove a package with dpkg -r to make the upgrade progress."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. This will load the latest kernel."
+    },
+    {
+      "title": "Download and install balenaEtcher.",
+      "content": "Download and install balenaEtcher . It is a free, cross-platform tool for safely writing disk images to USB Flash drives."
+    },
+    {
+      "title": "Download the \"nocloud\" image for AMD64.",
+      "content": "Download the \"nocloud\" image for AMD64. It is located at http://cloud.debian.org/images/cloud/sid/daily/latest/debian-sid-nocloud-amd64-daily.raw"
+    },
+    {
+      "title": "Plug in your Flash drive, and then start balenaEtcher.",
+      "content": "Plug in your Flash drive, and then start balenaEtcher. Click Flash from file , and select the raw image."
+    },
+    {
+      "title": "Click \"Select target\".",
+      "content": "Click \"Select target\". Choose your Flash drive, and then click \"Select.\""
+    },
+    {
+      "title": "Click \"Flash.\"",
+      "content": "Click \"Flash.\" balenaEtcher will begin writing the image to your Flash drive. You may see messages warning that the drive needs to be formatted. This is normal, as Windows doesn't support most Linux file systems."
+    },
+    {
+      "title": "Reboot your computer, with your Flash drive plugged in.",
+      "content": "Reboot your computer, with your Flash drive plugged in. You may need to tell your computer to boot from it, by pressing a specific key, or changing the boot order in your BIOS. After Debian finishes booting, log in. The default username is root ; there is no password."
+    },
+    {
+      "title": "(Optional) Create a swap file.",
+      "content": "(Optional) Create a swap file. The cloud image doesn't contain a swap file or partition. Adding one is a good idea if your computer doesn't have a lot of RAM, as it will prevent Debian from crashing under heavy load. If it is used, it will reduce the lifespan of your Flash drive, though. Use the following commands (as root, or with sudo): fallocate -l 512M /swapfile chmod 600 /swapfile mkswap /swapfile swapon /swapfile sh -c 'echo /swapfile none swap sw 0 0 >> /etc/fstab' Be careful when entering the last command. If you enter it incorrectly, you could overwrite your fstab file. If you are at all unsure, edit it with nano instead."
+    },
+    {
+      "title": "Download a recent Live version of Debian, Ubuntu, or most derivatives.",
+      "content": "Download a recent Live version of Debian, Ubuntu, or most derivatives."
+    },
+    {
+      "title": "Write the image to a CD, DVD, or a Flash drive.",
+      "content": "Write the image to a CD, DVD, or a Flash drive. You can use balenaEtcher (mentioned previously) to write it to a Flash drive. Windows users can burn ISO images to CD/DVD by right-clicking the ISO image and selecting Burn disc image ."
+    },
+    {
+      "title": "Boot the computer from the CD/DVD/Flash drive.",
+      "content": "Boot the computer from the CD/DVD/Flash drive. You may need to press a specific key or change the boot order in UEFI/BIOS setup to use a different boot device."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. You can do this in most desktops by pressing Alt + F2 and entering x-terminal-emulator ."
+    },
+    {
+      "title": "Check that you have the necessary repository components enabled.",
+      "content": "Check that you have the necessary repository components enabled. For distributions based directly on Debian, there should be a contrib in each line (excluding the CD). For Ubuntu-based distributions, there should be a universe in each line. You can edit this file by entering sudo nano /etc/apt/sources.list . When you have made the changes, press Ctrl + O to save, and then Ctrl + X to exit."
+    },
+    {
+      "title": "Install GParted and grml-debootstrap.",
+      "content": "Install GParted and grml-debootstrap. Enter the following commands: sudo apt update sudo apt install gparted grml-debootstrap"
+    },
+    {
+      "title": "Launch GParted.",
+      "content": "Launch GParted. Enter sudo gparted into your terminal."
+    },
+    {
+      "title": "Select your hard drive from the menu in the top right-hand corner.",
+      "content": "Select your hard drive from the menu in the top right-hand corner. If you booted from a CD/DVD and you only have one hard drive, there should only be one listed. If you booted from a Flash drive, it will be listed as well."
+    },
+    {
+      "title": "Create a partition table.",
+      "content": "Create a partition table. Click the Device menu, and select Create partition table If you are using a computer with UEFI, choose gpt as the partition table type If you are using a computer with a legacy BIOS, or need to boot in legacy mode on a modern computer, choose msdos as the partition table type."
+    },
+    {
+      "title": "Partition the hard drive (for UEFI computers).",
+      "content": "Partition the hard drive (for UEFI computers). You will need to create at least three partitions. For each of these, go to the Partition menu, and select New . Adjust the size and type as follows: A FAT32 partition at the beginning of the drive. 100 MB is sufficient. A \"linux-swap\" partition second. At least 512 MB is a good idea, but you may need more. An ext4 partition for the remainder of the drive. You can create additional partitions, but you will have to set them up manually in order for Debian to use them. When you have finished creating the partition layout, click the checkbox."
+    },
+    {
+      "title": "Change the flags on the FAT32 partition (for UEFI computers).",
+      "content": "Change the flags on the FAT32 partition (for UEFI computers). Right-click the FAT32 partition and select Manage flags . Check the box marked esp, then click Close ."
+    },
+    {
+      "title": "Partition the hard drive (for legacy BIOS computers).",
+      "content": "Partition the hard drive (for legacy BIOS computers). You will need to create at least two partitions. For each of these, go to the Partition menu, and select New . Adjust the size and type as follows: A \"linux-swap\" partition first. At least 512 MB is a good idea, but you may need more. An ext4 partition for the remainder of the drive. You can create additional partitions, but you will have to set them up manually in order for Debian to use them. When you have finished creating the partition layout, click the checkbox."
+    },
+    {
+      "title": "Write down the partition information.",
+      "content": "Write down the partition information. You will need to know where each type of partition is, so that you can accurately mount it later. For example: /dev/sdX1 fat32 /dev/sdX2 swap /dev/sdX3 ext4 When you have written everything down, close GParted."
+    },
+    {
+      "title": "Edit the list of packages that will be installed.",
+      "content": "Edit the list of packages that will be installed. Enter sudo nano /etc/debootstrap/packages in your terminal and add network-manager to the bottom. You can add other packages here if you know the name. For example, if you want an Xfce desktop, add xfce4 , lightdm , lightdm-gtk-greeter , and xserver-xorg ."
+    },
+    {
+      "title": "Run grml-deboostrap.",
+      "content": "Run grml-deboostrap. In your terminal, enter sudo grml-debootsrap -r sid -t /dev/sdX# --efi /dev/sdX# --grub /dev/sdX --hostname <hostname> --contrib --non-free -t /dev/sdX# should point to the ext4 partition. --efi /dev/sdX# should point to the FAT32 partition --grub /dev/sdX should be the drive, without any numbers after it. <hostname> should be what you want the name of the computer to be. If you are installing on a computer with a legacy BIOS, you may omit the --efi /dev/sdX# parameter. Enter y or yes when warned about formatting and deleting data."
+    },
+    {
+      "title": "Enter a root password when prompted.",
+      "content": "Enter a root password when prompted. grml-debootstrap will perform a couple more steps, and then announce that it is complete."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. Be sure to remove your CD/DVD/Flash drive or change the boot order in your BIOS, so that the hard drive is loaded. You should see the GRUB boot menu appear, and an option to boot Debian."
+    }
+  ]
+}

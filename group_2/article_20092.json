@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Get-Your-Computer-to-Recognize-Your-iPod-(Windows)",
+  "title": "4 Easy Ways to Get Windows to Recognize Your iPod",
+  "steps": [
+    {
+      "title": "Connect the device to your PC with a different USB cable.",
+      "content": "Connect the device to your PC with a different USB cable. It is possible that the cable you are using is defective. In some cases, using an uncertified charging cable can result in reduced functionality. [1] X Research source"
+    },
+    {
+      "title": "Connect the device to a different USB port.",
+      "content": "Connect the device to a different USB port. It is possible that the USB port you are using is defective. Try both different ports and buses on the computer. If you are using a desktop (tower) PC with both front and rear USB ports, you can often use one set even if the other is malfunctioning, since they are usually connected to a different bus. If you have both USB 2.0 and USB 3.0 ports, they usually utilize separate USB chips and will function separately. If you are using a USB hub, try using a root port on the computer instead. This will tell you whether the hub or the computer bus is at the heart of the problem."
+    },
+    {
+      "title": "Make sure the iPod is charged.",
+      "content": "Make sure the iPod is charged. If the iPod battery is completely depleted, it may not be detected until it is charged enough to power on. Connect the iPod to a wall charger for a faster charge than via USB."
+    },
+    {
+      "title": "Update iTunes.",
+      "content": "Update iTunes. In iTunes, open the “Help” menu and select “Check for Updates”. You may need to hit Ctrl + B to make the menu bar appear. You can also download the latest version of iTunes from https://www.apple.com/itunes/download/ . Later versions of iTunes may utilize a newer version of the Apple Mobile Device Driver."
+    },
+    {
+      "title": "Update Windows.",
+      "content": "Update Windows. Open Windows Settings and Select “Update and Security”. Click “Check for Updates” to receive the latest updates to your operating system. Updates to Windows may include updates to USB chips or other relevant software. On older versions of Windows, look for Windows Update in the Control Panel."
+    },
+    {
+      "title": "Connect the iPod to the computer.",
+      "content": "Connect the iPod to the computer. Plug the USB cable that you use to charge the iPod into one of the USB ports on the computer. [2] X Research source If an alert box appears on your iPod or computer saying “Trust This Computer”, choose “Yes”. Make sure that the USB cable is firmly plugged into both the iPod and the computer."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. Hit ⊞ Win + S and enter “Device Manager” into the search field. Select “Device Manager” from the results."
+    },
+    {
+      "title": "Expand the “Universal Serial Bus Controllers” section.",
+      "content": "Expand the “Universal Serial Bus Controllers” section. Click the arrow next to the list item to expand. This is located at the bottom of the list and you should see “Apple Mobile Device Driver” displayed in the expanded list. [3] X Research source If you do not see Apple Mobile Device Driver listed here, try disconnecting and reconnect your device. If you still do not see it, check for an “Apple” device listed in “Imaging Devices” or “Portable Devices” and proceed to the manual update steps ."
+    },
+    {
+      "title": "Examine any icons displayed on “Apple Mobile Device Driver”.",
+      "content": "Examine any icons displayed on “Apple Mobile Device Driver”. You may see a down arrow, an exclamation/question mark, or no icon at all. If you see a down arrow icon, right-click the “Apple Mobile Device Driver” and select “Enable”. If you see an exclamation/question mark, proceed to the manual update steps . If you see no icon then try restarting the Apple Mobile Device Service ."
+    },
+    {
+      "title": "Right-click “Apple Mobile Device Driver” and select “Update Driver Software”.",
+      "content": "Right-click “Apple Mobile Device Driver” and select “Update Driver Software”. A window will appear prompting you how to update."
+    },
+    {
+      "title": "Select \"Browse my computer for driver software\".",
+      "content": "Select \"Browse my computer for driver software\". This will take you to another page with more options."
+    },
+    {
+      "title": "Click \"Let me pick from a list of device drivers on my computer”.",
+      "content": "Click \"Let me pick from a list of device drivers on my computer”. This is located at the bottom of the page and will take you a new page with browsing options."
+    },
+    {
+      "title": "Click “Have Disk”.",
+      "content": "Click “Have Disk”. This is located in the lower right, just below the list of hardware."
+    },
+    {
+      "title": "Click “Browse”.",
+      "content": "Click “Browse”. This is located in the bottom right corner of the “Browse” popup window."
+    },
+    {
+      "title": "Navigate to your iTunes “Drivers” folder..",
+      "content": "Navigate to your iTunes “Drivers” folder.. The most common filepath for this is: “C:\\Program Files\\Common Files\\Apple\\Mobile Device Support\\Drivers”. On newer 64-bit operating systems, the likely filepath is “C:\\Program Files (x86)\\Common Files\\Apple\\Mobile Device Support\\Drivers”."
+    },
+    {
+      "title": "Select the file named \"usbaapl\" (“usbaapl64” if running 64-bit version of Windows).",
+      "content": "Select the file named \"usbaapl\" (“usbaapl64” if running 64-bit version of Windows). Once selected, click “Open” to return to the “Have Disk” page with the full filepath displayed. If you do not see the file listed here, then you may be in the wrong folder location. Double check your filepath."
+    },
+    {
+      "title": "Install the driver software.",
+      "content": "Install the driver software. Click “Next”, then “Finish” as prompted. Windows will now install/update the driver."
+    },
+    {
+      "title": "Open iTunes.",
+      "content": "Open iTunes. Once the download is complete your device will appear in iTunes. If you still do not see your device, try restarting the Apple Mobile Device Service ."
+    },
+    {
+      "title": "Close iTunes.",
+      "content": "Close iTunes. Click the red ‘X” in the upper right corner."
+    },
+    {
+      "title": "Disconnect your device from the computer.",
+      "content": "Disconnect your device from the computer. If you still have the device manager open, the listing for the Apple Mobile Device Driver will disappear."
+    },
+    {
+      "title": "Hit ⊞ Win+R.",
+      "content": "Hit ⊞ Win + R . This will open up the Windows “Run” command."
+    },
+    {
+      "title": "Enter “services.msc” and click “OK”.",
+      "content": "Enter “services.msc” and click “OK”. This will open up the Windows Services console."
+    },
+    {
+      "title": "Right-click “Apple Mobile Device Services” and select “Properties”.",
+      "content": "Right-click “Apple Mobile Device Services” and select “Properties”. All services appear on the right in descending alphabetical order."
+    },
+    {
+      "title": "Select the dropdown menu next to “Startup Type” and choose “Automatic”.",
+      "content": "Select the dropdown menu next to “Startup Type” and choose “Automatic”. This menu is located about halfway down the “General” tab."
+    },
+    {
+      "title": "Click “Stop”.",
+      "content": "Click “Stop”. This button is located below the dropdown menu. After a moment the Service Status will display “Stopped”."
+    },
+    {
+      "title": "Click “Start”.",
+      "content": "Click “Start”. This button is located to the left of “Stop”. After a moment the Service Status will display “Running”."
+    },
+    {
+      "title": "Click “OK”.",
+      "content": "Click “OK”. This will save your settings and close the window."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. This ensures that your changes will take effect."
+    },
+    {
+      "title": "Connect your device to the computer.",
+      "content": "Connect your device to the computer. Once booted into the OS, connecting the device will launch iTunes automatically and appear listed in the software. [4] X Research source It is possible that you may need to launch iTunes manually, but the device should still successfully appear listed among your devices in iTunes."
+    }
+  ]
+}

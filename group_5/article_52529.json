@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Convert-from-Binary-to-Decimal",
+  "title": "Converting Binary to Decimal: Positional Notation & Doubling",
+  "steps": [
+    {
+      "title": "Write down the binary number and list the powers of 2 from right to left.",
+      "content": "Write down the binary number and list the powers of 2 from right to left. Let's say we want to convert the binary number 10011011 2 to decimal. First, write it down. Then, write down the powers of two from right to left. Start at 2 0 , evaluating it as \"1\". Increment the exponent by one for each power. Stop when the amount of elements in the list is equal to the amount of digits in the binary number. The example number, 10011011, has eight digits, so the list, with eight elements, would look like this: 128, 64, 32, 16, 8, 4, 2, 1. [1] X Research source"
+    },
+    {
+      "title": "Write the digits of the binary number below their corresponding powers of two.",
+      "content": "Write the digits of the binary number below their corresponding powers of two. Now, just write 10011011 below the numbers 128, 64, 32, 16, 8, 4, 2, and 1 so that each binary digit corresponds with its power of two. The \"1\" to the right of the binary number should correspond with the \"1\" on the right of the listed powers of two, and so on. You can also write the binary digits above the powers of two, if you prefer it that way. What's important is that they match up."
+    },
+    {
+      "title": "Connect the digits in the binary number with their corresponding powers of two.",
+      "content": "Connect the digits in the binary number with their corresponding powers of two. Draw lines, starting from the right, connecting each consecutive digit of the binary number to the power of two that is next in the list above it. Begin by drawing a line from the first digit of the binary number to the first power of two in the list above it. Then, draw a line from the second digit of the binary number to the second power of two in the list. Continue connecting each digit with its corresponding power of two. This will help you visually see the relationship between the two sets of numbers. [2] X Research source"
+    },
+    {
+      "title": "Write down the final value of each power of two.",
+      "content": "Write down the final value of each power of two . Move through each digit of the binary number. If the digit is a 1, write its corresponding power of two below the line, under the digit. If the digit is a 0, write a 0 below the line, under the digit. [3] X Research source Since \"1\" corresponds with \"1\", it becomes a \"1.\" Since \"2\" corresponds with \"1,\" it becomes a \"2.\" Since \"4\" corresponds with \"0,\" it becomes \"0.\" Since \"8\" corresponds with \"1\", it becomes \"8,\" and since \"16\" corresponds with \"1\" it becomes \"16.\" \"32\" corresponds with \"0\" and becomes \"0\" and \"64\" corresponds with \"0\" and therefore becomes \"0\" while \"128\" corresponds with \"1\" and becomes 128."
+    },
+    {
+      "title": "Add the final values.",
+      "content": "Add the final values. Now, add up the numbers written below the line. Here's what you do: 128 + 0 + 0 + 16 + 8 + 0 + 2 + 1 = 155. This is the decimal equivalent of the binary number 10011011. [4] X Research source"
+    },
+    {
+      "title": "Write the answer along with its base subscript.",
+      "content": "Write the answer along with its base subscript. Now, all you have to do is write 155 10 , to show that you are working with a decimal answer, which must be operating in powers of 10. The more you get used to converting from binary to decimal, the more easy it will be for you to memorize the powers of two, and you'll be able to complete the task more quickly."
+    },
+    {
+      "title": "Use this method to convert a binary number with a decimal point to decimal form.",
+      "content": "Use this method to convert a binary number with a decimal point to decimal form. You can use this method even when you want to convert a binary number such as 1.1 2 to decimal. All you have to do is know that the number on the left side of the decimal is in the units position, like normal, while the number on the right side of the decimal is in the \"halves\" position, or 1 x (1/2). The \"1\" to the left of the decimal point is equal to 2 0 , or 1. The 1 to the right of the decimal is equal to 2 -1 , or .5. Add up 1 and .5 and you get 1.5, which is 1.1 2 in decimal notation."
+    },
+    {
+      "title": "Write down the binary number.",
+      "content": "Write down the binary number. This method does not use powers. As such, it is simpler for converting large numbers in your head because you only need to keep track of a subtotal. The first thing you need to do is to write down the binary number you'll be converting using the doubling method. Let's say the number you're working with is 1011001 2 . Write it down."
+    },
+    {
+      "title": "Starting from the left, double your previous total and add the current digit.",
+      "content": "Starting from the left, double your previous total and add the current digit. Since you're working with the binary number 1011001 2 , your first digit all the way on the left is 1. Your previous total is 0 since you haven't started yet. You'll have to double the previous total, 0, and add 1, the current digit. 0 x 2 + 1 = 1, so your new current total is 1. [5] X Research source"
+    },
+    {
+      "title": "Double your current total and add the next leftmost digit.",
+      "content": "Double your current total and add the next leftmost digit. Your current total is now 1 and the new current digit is 0. So, double 1 and add 0. 1 x 2 + 0 = 2. Your new current total is 2. [6] X Research source"
+    },
+    {
+      "title": "Repeat the previous step.",
+      "content": "Repeat the previous step. Just keep going. Next, double your current total, and add 1, your next digit. 2 x 2 + 1 = 5. Your current total is now 5. [7] X Research source"
+    },
+    {
+      "title": "Repeat the previous step again.",
+      "content": "Repeat the previous step again. Next, double your current total, 5, and add the next digit, 1. 5 x 2 + 1 = 11. Your new total is 11. [8] X Research source"
+    },
+    {
+      "title": "Repeat the previous step again.",
+      "content": "Repeat the previous step again. Double your current total, 11, and add the next digit, 0. 2 x 11 + 0 = 22. [9] X Research source"
+    },
+    {
+      "title": "Repeat the previous step again.",
+      "content": "Repeat the previous step again. Now, double your current total, 22, and add 0, the next digit. 22 x 2 + 0 = 44. [10] X Research source"
+    },
+    {
+      "title": "Continue doubling your current total and adding the next digit until you've run out of digits.",
+      "content": "Continue doubling your current total and adding the next digit until you've run out of digits. Now, you're down to your last number and are almost done! All you have to do is take your current total, 44, and double it along with adding 1, the last digit. 2 x 44 + 1 = 89. You're all done! You've converted 10011011 2 to decimal notation to its decimal form, 89. [11] X Research source"
+    },
+    {
+      "title": "Write the answer along with its base subscript.",
+      "content": "Write the answer along with its base subscript. Write your final answer as 89 10 to show that you're working with a decimal, which has a base of 10."
+    },
+    {
+      "title": "Use this method to convert from any base to decimal.",
+      "content": "Use this method to convert from any base to decimal. Doubling is used because the given number is of base 2. If the given number is of a different base, replace the 2 in the method with the base of the given number. For example, if the given number is in base 37, you would replace the \"x 2\" with \"x 37\". The final result will always be in decimal (base 10)."
+    }
+  ]
+}

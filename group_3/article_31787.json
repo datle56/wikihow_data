@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Open-the-Root-Terminal-in-Kali-Linux",
+  "title": "How to Enable Root in Kali Linux and Open a Root Terminal",
+  "steps": [
+    {
+      "title": "You can open a root terminal in Kali Linux without enabling the root user.",
+      "content": "You can open a root terminal in Kali Linux without enabling the root user. Even if you're just signed in as your regular user account, you can open a root terminal from the GUI to avoid having to use sudo to enter a bunch of commands. To open a root terminal, click the menu at the upper-left corner, type root , and then click Root Terminal Emulator in the search results. The root user account is not enabled by default in Kali Linux. While you can enable it if need be, it is not recommended and is usually not needed. [2] X Research source You can also open a terminal in Kali by pressing Ctrl + Alt + T , then use the command sudo -i to make it a root terminal. If you just need to run a few commands as root, just type sudo before them to run them with superuser rights. For example, sudo apt upgrade upgrades all installed packages on the system."
+    },
+    {
+      "title": "Log in to Kali Linux.",
+      "content": "Log in to Kali Linux. If you haven't set up a user account yet, log in with the default user credentials , which is kali as the username, and kali as the password. [3] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T if you're using the GUI.",
+      "content": "Press Ctrl + Alt + T if you're using the GUI. If you aren't logged in via SSH or on the console, press Ctrl + Alt + T to open a terminal window."
+    },
+    {
+      "title": "Type sudo passwd and press ↵ Enter.",
+      "content": "Type sudo passwd and press ↵ Enter . You will be prompted to enter the current user's password. [4] X Research source"
+    },
+    {
+      "title": "Enter your user password and press ↵ Enter.",
+      "content": "Enter your user password and press ↵ Enter . Now you will be prompted to create a new password."
+    },
+    {
+      "title": "Enter and confirm a new root password.",
+      "content": "Enter and confirm a new root password. This should be different from your user account password. Once you confirm the new password, the root account will be enabled. [5] X Research source If you want to log in to Kali Linux as root, you will need to allow root logins via SSH or GNOME/KDE ."
+    },
+    {
+      "title": "Open a root shell.",
+      "content": "Open a root shell. Now that root is enabled, you can become root in the terminal by typing sudo -i and pressing ↵ Enter ."
+    },
+    {
+      "title": "Enter the root password.",
+      "content": "Enter the root password. This command opens a root login shell using root's home directory , .bashrc, and .profile. [6] X Research source"
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This command updates the package manager in Kali Linux. To be able to log in as root at the GNOME or KDE login prompt, you'll need to install the kali-root-login package. [7] X Research source If you haven't already enabled the root user , you will need to do that first."
+    },
+    {
+      "title": "Type sudo apt install -y kali-root-login and press ↵ Enter.",
+      "content": "Type sudo apt install -y kali-root-login and press ↵ Enter . This installs the root login package for Kali Linux and all its dependencies . [8] X Research source"
+    },
+    {
+      "title": "Log out of your current user account.",
+      "content": "Log out of your current user account. To do so, click the power icon at the top-right and select Log Out ."
+    },
+    {
+      "title": "Log in to Kali Linux as root.",
+      "content": "Log in to Kali Linux as root. To do so, type \"root\" in the username field on the login screen, then type the root password you set earlier. This logs you in to the root account. [9] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the terminal.",
+      "content": "Press Ctrl + Alt + T to open the terminal. Now that you are logged in as root, every terminal you open will be a root terminal."
+    },
+    {
+      "title": "Open sshd_config in a text editor with sudo.",
+      "content": "Open sshd_config in a text editor with sudo . The full path to the file is /etc/ssh/sshd_config , and you can open it in any text editor. For example, sudo nano /etc/sshd_config will open the config file in the text editor Nano. If you haven't already enabled the root user , you will need to do that first."
+    },
+    {
+      "title": "Add the line PermitRootLogin yes.",
+      "content": "Add the line PermitRootLogin yes . If the line is already there but no is selected, just change it to yes . If your root user needs to be able to log in with an SSH key and not have to enter a password, the line should read PermitRootLogin without-password instead."
+    },
+    {
+      "title": "Save your changes and restart sshd.",
+      "content": "Save your changes and restart sshd. After saving sshd_config, use the command sudo systemctl restart ssh to restart the ssh service. Once restarted, you can log in to Kali Linux as root via SSH."
+    },
+    {
+      "title": "Install the kali-grant-root package.",
+      "content": "Install the kali-grant-root package. An alternative to logging in or su'ing root is to give your account passwordless sudo rights. This is not recommended, as if your account were to be compromised, the hacker would have root privileges on your system. Still, if you need to do this for a certain user for a certain purpose, it is possible. To install the package, run the command sudo apt install -y kali-grant-root . [10] X Research source"
+    },
+    {
+      "title": "Run sudo dpkg-reconfigure kali-grant-root.",
+      "content": "Run sudo dpkg-reconfigure kali-grant-root . You will be prompted to choose some options. [11] X Research source"
+    },
+    {
+      "title": "Select \"Enable password-less privilege escalation\" from the options.",
+      "content": "Select \"Enable password-less privilege escalation\" from the options. You can now run sudo commands without entering your password."
+    },
+    {
+      "title": "Default password for new installs",
+      "content": "Default password for new installs This default password will work for Live Boot and pre-created virtual machines and ARM images: [12] X Research source User: kali Password: kali"
+    },
+    {
+      "title": "Vagrant base box images",
+      "content": "Vagrant base box images User: vagrant Password: vagrant"
+    },
+    {
+      "title": "Amazon EC2",
+      "content": "Amazon EC2 User: kali Password: (your SSH key)"
+    },
+    {
+      "title": "What is the kex command to launch Kali Linux?",
+      "content": "What is the kex command to launch Kali Linux? You can open Kali Linux from WSL using the command kex --win -s . If you're launching it from the Windows command line, use wsl -d kali-linux kex --win -s instead. [13] X Research source If you're using an ARM device, you may need to use kex --esm --ip --sound if you're experiencing packet loss. [14] X Research source"
+    },
+    {
+      "title": "Why can't I cd to root in Kali Linux?",
+      "content": "Why can't I cd to root in Kali Linux? You need root privileges to cd to root's home directory. If you have already enabled the root user, use sudo -i to become root, and you will then be able to cd into root's home directory."
+    },
+    {
+      "title": "Should I enable root in Kali Linux?",
+      "content": "Should I enable root in Kali Linux? There is usually no reason to allow root logins–anything you need to do, you should be able to do it using sudo. When you log in as root, every program you run runs as the root user. If you run something that has an exploit, a skilled hacker could root your system."
+    },
+    {
+      "title": "",
+      "content": "When typing a password, a Linux terminal won't display any characters or asterisks. Use caution when logged in as a root user. There is nothing to stop you from accidentally deleting a critical system file or executing a critical command that causes permanent damage to your system."
+    }
+  ]
+}

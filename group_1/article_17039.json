@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Find-a-File-in-Linux",
+  "title": "Finding Linux Files: Complete Guide to Using Find Commands",
+  "steps": [
+    {
+      "title": "You'll typically use the find command with the syntax find /path -type f -iname filename.",
+      "content": "You'll typically use the find command with the syntax find /path -type f -iname filename . You can use a variation of this command to find any file or directory on your Linux machine . We'll break down the command into simple parts. [1] X Research source"
+    },
+    {
+      "title": "/path/to/file",
+      "content": "/path/to/file is the directory in which you want to search for the file. For example, to search the current directory, use . as the path. To search your entire Linux file system, use / as the path."
+    },
+    {
+      "title": "-type",
+      "content": "-type indicates the type of file or directory you're searching for. You'll follow -type with a flag. In our example, we're using the f flag. When searching for files, you'll typically use any of these three flags: f: This means \"regular file,\" which can be a text file, image, program, configuration file, executable, and basically any type of file (including hidden files ). Tip: -type f is the default for the find command. This means that if you're looking for a file (not a directory or symbolic link), you can actually leave -type f out of the file command. d: Searches for directories (folders). l: Searches for symbolic links to other files. You can search for multiple types by separating the letters with commas. For example, to find all files, directories, and symbolic links called \"etc,\" you'd use find / -type f,d,l -iname etc"
+    },
+    {
+      "title": "-iname",
+      "content": "-iname tells find to ignore case-sensitivity. This is important if you're not 100% sure of the file's name or case. However, if you want find to specifically match the case you type, replace -iname with -name , which is case-sensitive. [2] X Research source"
+    },
+    {
+      "title": "filename",
+      "content": "filename is the name of the file you're looking for. If you know the exact name of the file, you'll type it completely. If not, you can use wildcards anywhere in your search term. [3] X Research source For example, to find all configuration files on your computer, you might use find / -type f -iname \" *.conf \" . This returns the names of files ending with .conf ."
+    },
+    {
+      "title": "Use find /path -iname filename to search for a file by exact name.",
+      "content": "Use find /path -iname filename to search for a file by exact name. If you know the exact name and directory of the file, you'd use this command to find it."
+    },
+    {
+      "title": "Use the wildcard character * to search for anything that matches the part of the query.",
+      "content": "Use the wildcard character * to search for anything that matches the part of the query. The wildcard * character is useful for finding files when you don't know the full name. This can help you find files with specific file extensions (e.g., .pl or .c ). Some helpful examples: find /home/pat -iname \"*.conf\" This will return all of the .conf files in Pat's user directory and subdirectories. find / -type d -iname \"*lib*\" This command finds all directories on the Linux filesystem containing the string \"lib.\""
+    },
+    {
+      "title": "Make your search results easier to manage with the less command.",
+      "content": "Make your search results easier to manage with the less command. If you're getting lots of results, it can be difficult to sift through them. By piping the results to the less command, you can scroll through them easily. For example: find /home/pat -iname \"*.conf\" | less"
+    },
+    {
+      "title": "Use the -mtime option to find files by modification date (in days).",
+      "content": "Use the -mtime option to find files by modification date (in days). Use this option when you want to find files last modified a certain number of days ago (or between two day ranges). Some examples: [4] X Research source find /home/pat -iname \"*.txt \" -mtime -2 This command will find all files ending with .txt in the directory /home/pat modified in the last two days. Place a + before the number of days to indicate \"longer than x days ago, or a - to indicate fewer than x days ago. For example: find . -mtime +90 : This command will display all files in the current directory that were modified more than 90 days ago. find /home/pat -iname \"*test*\" -mtime -90 : This command will list all files in /home/pat with \"test\" in the name edited in the past 90 days. If you want to find files modified by minutes instead of days, use -mmin instead. For example, to find all files in the current directory modified in the last 10 minutes, you'd use find . -type f -mmin -10 ."
+    },
+    {
+      "title": "Use -atime and -ctime to find files by the date last accessed or date created.",
+      "content": "Use -atime and -ctime to find files by the date last accessed or date created. Replace -mtime with -atime to search by the last date accessed (opened), or -ctime to search by the day the file was created (e.g., 15 days ago, or more than 90 days ago. [5] X Research source If you'd rather search by minutes instead of days, replace -atime with -amin and -ctime with -cmin ."
+    },
+    {
+      "title": "Find files between two timestamps.",
+      "content": "Find files between two timestamps. To search for files between two specific dates and times, use the -newermt option. You'll need to use this option twice in your command—one for the start date of your search, and another for the end date. Here's how it will look: find / -type f -newermt \"2022-12-02 11:00:00\" ! -newermt \"2023-2-08 12:00:00\" This command will find all files on the Linux system with timestamps between 12/02/2022 at 11:00 AM and 2/08/2023 at 12PM."
+    },
+    {
+      "title": "Filter your search results by size.",
+      "content": "Filter your search results by size. If you have lots of files with similar names, but know the size you are looking for, you can filter results by size . [6] X Research source find / -size +50M -iname filename This example will return results that are 50 megabytes or larger. You can use + or - to search for greater or lesser sizes. Omitting the + or - will search for files exactly the specified size. You can filter by bytes ( c ), kilobytes ( k ), megabytes ( M ), gigabytes ( G ), or 512-byte blocks ( b )."
+    },
+    {
+      "title": "Use the -user, -group, and -perm options to find files by owner or permissions.",
+      "content": "Use the -user , -group , and -perm options to find files by owner or permissions. If you are trying to find a specific file owned by a user, or files with certain permissions , you can narrow the search. [7] X Research source Examples: find / -user pat -iname filename searches for files called filename owned by the user pat . find / -group users -iname filename searches for files called filename in the users group. find / -perm 777 -iname filename searches for files called filename with 777 permissions (no restrictions)."
+    },
+    {
+      "title": "Use boolean operators to combine search filters.",
+      "content": "Use boolean operators to combine search filters. You can use the -and , -or , and -not operators to combine different types of searches into one. For example: find /travelphotos -type f -size +200k -not -iname \"*2015*\" The command will find files in the \"travelphotos\" directory that are greater than 200 kb in size but do not have \"2015\" anywhere in the file name."
+    },
+    {
+      "title": "Combine commands to perform actions when files are located.",
+      "content": "Combine commands to perform actions when files are located. You can combine find with other commands so that you can execute them on the files that are returned by the query. You can also use this feature to run the files that appear in find results. Separate the find command and the second command with the -exec flag, and then end the line with {} \\; . For example: find . -type f -perm 777 -exec chmod 755 {} \\; This will search the current directory (and all subdirectories) for files that have 777 permissions. It will then use the chmod command to change the permissions to 755."
+    },
+    {
+      "title": "Use the grep command to search for strings of text within files.",
+      "content": "Use the grep command to search for strings of text within files. If you are looking for a file that contains a certain phrase or string of characters, you can use the grep command. Here's an example of a basic grep command: grep -r -i \"search query\" /path/to/directory/ The -r flag sets the search to \"recursive\", so it will search the current directory and all subdirectories for any file that contains the query string. The -i flag indicates that the query is not case-sensitive. If you want to force the search to pay attention to case, omit the -i flag."
+    },
+    {
+      "title": "Cut out the extra text.",
+      "content": "Cut out the extra text. When you perform a grep search as above, you'll see the file name along with the text with the matching query highlighted. You can hide the matching text and just display the file names and paths by including the following: grep -r -i \"search query\" /path/to/directory/"
+    },
+    {
+      "title": "Hide error messages.",
+      "content": "Hide error messages. The grep command will return an error when it tries to access folders without the correct permissions or runs into empty folders. You can send the error messages to /dev/null, which will hide them from the output. grep -r -i \"search query\" /path/to/directory/ 2>/dev/null"
+    }
+  ]
+}

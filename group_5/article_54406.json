@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Find-the-Null-Space-of-a-Matrix",
+  "title": "How to Find the Null Space of a Matrix",
+  "steps": [
+    {
+      "title": "Consider a matrix A {\\displaystyle A} with dimensions of m × n {\\displaystyle m\\times n} .",
+      "content": "Consider a matrix A {\\displaystyle A} with dimensions of m × n {\\displaystyle m\\times n} . [1] X Research source Below, your matrix is 3 × 5. {\\displaystyle 3\\times 5.} A = ( − 3 6 − 1 1 − 7 1 − 2 2 3 − 1 2 − 4 5 8 − 4 ) {\\displaystyle A={\\begin{pmatrix}-3&6&-1&1&-7\\\\1&-2&2&3&-1\\\\2&-4&5&8&-4\\end{pmatrix}}}"
+    },
+    {
+      "title": "Row-reduce",
+      "content": "Row-reduce to reduced row-echelon form (RREF). [2] X Research source For large matrices, you can usually use a calculator. Recognize that row-reduction here does not change the augment of the matrix because the augment is 0. ( 1 − 2 0 − 1 3 0 0 1 2 − 2 0 0 0 0 0 ) {\\displaystyle {\\begin{pmatrix}1&-2&0&-1&3\\\\0&0&1&2&-2\\\\0&0&0&0&0\\end{pmatrix}}} We can clearly see that the pivots - the leading coefficients - rest in columns 1 and 3. That means that x 1 {\\displaystyle x_{1}} and x 3 {\\displaystyle x_{3}} have their identifying equations. The result is that x 2 , x 4 , x 5 {\\displaystyle x_{2},x_{4},x_{5}} are all free variables."
+    },
+    {
+      "title": "Write out the RREF matrix in equation form.",
+      "content": "Write out the RREF matrix in equation form. [3] X Research source x 1 − 2 x 2 − x 4 + 3 x 5 = 0 x 3 + 2 x 4 − 2 x 5 = 0 {\\displaystyle {\\begin{aligned}x_{1}-2x_{2}-x_{4}+3x_{5}&=0\\\\x_{3}+2x_{4}-2x_{5}&=0\\end{aligned}}}"
+    },
+    {
+      "title": "Reparameterize the free variables and solve.",
+      "content": "Reparameterize the free variables and solve. [4] X Research source Let x 2 = r , x 4 = s , x 5 = t . {\\displaystyle x_{2}=r,x_{4}=s,x_{5}=t.} Then x 1 = 2 r + s − 3 t {\\displaystyle x_{1}=2r+s-3t} and x 3 = − 2 s + 2 t . {\\displaystyle x_{3}=-2s+2t.} x = ( 2 r + s − 3 t r − 2 s + 2 t s t ) {\\displaystyle \\mathbf {x} ={\\begin{pmatrix}2r+s-3t\\\\r\\\\-2s+2t\\\\s\\\\t\\end{pmatrix}}}"
+    },
+    {
+      "title": "Rewrite the solution as a linear combination of vectors.",
+      "content": "Rewrite the solution as a linear combination of vectors. [5] X Research source The weights will be the free variables. Because they can be anything, you can write the solution as a span. Nul ⁡ A = Span ⁡ { ( 2 1 0 0 0 ) , ( 1 0 − 2 1 0 ) , ( − 3 0 2 0 1 ) } {\\displaystyle \\operatorname {Nul} A=\\operatorname {Span} \\left\\{{\\begin{pmatrix}2\\\\1\\\\0\\\\0\\\\0\\end{pmatrix}},{\\begin{pmatrix}1\\\\0\\\\-2\\\\1\\\\0\\end{pmatrix}},{\\begin{pmatrix}-3\\\\0\\\\2\\\\0\\\\1\\end{pmatrix}}\\right\\}} This null space is said to have dimension 3, for there are three basis vectors in this set, and is a subset of R 5 , {\\displaystyle \\mathbb {R} ^{5},} for the number of entries in each vector. Notice that the basis vectors do not have much in common with the rows of A {\\displaystyle A} at first, but a quick check by taking the inner product of any of the rows of A {\\displaystyle A} with any of the basis vectors of Nul ⁡ A {\\displaystyle \\operatorname {Nul} A} confirms that they are orthogonal."
+    }
+  ]
+}

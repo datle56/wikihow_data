@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Use-JavaScript-Injections",
+  "title": "How to Use JavaScript Injections",
+  "steps": [
+    {
+      "title": "You must enter the code in the URL address bar of the window.",
+      "content": "You must enter the code in the URL address bar of the window. Try these injections: Note - If you use Firefox, you will have to use another way, like cmd-shift-k on a Mac javascript:alert(\"Hello!\"); To bring up an alert box saying \"Hello!\":"
+    },
+    {
+      "title": "javascript:alert(\"Hello\"); alert(\"World\");",
+      "content": "javascript:alert(\"Hello\"); alert(\"World\"); To bring up 2 alert boxes, the one in the front will say \"Hello\" and once you click OK, the one saying \"World\" will appear:"
+    },
+    {
+      "title": "javascript:alert(document.forms[0].to.value=\"something\")",
+      "content": "javascript:alert(document.forms[0].to.value=\"something\") To change the value of form [0] to something:"
+    },
+    {
+      "title": "javascript:void(document.bgColor=\"blue\")",
+      "content": "javascript:void(document.bgColor=\"blue\") To change the background color to blue. You can put any other color in the place of blue to change it to a different color:"
+    },
+    {
+      "title": "javascript:alert(\"The actual url is:",
+      "content": "javascript:alert(\"The actual url is: \\t\\t\" + location.protocol + \"//\" + location.hostname + \"/\" + \"\\nThe address URL is:\\t\\t\" + location.href + \"\\n\" + \"\\nIf the server names do not match, this may be a spoof.\"); To see the real server name of the site you are looking at. You should use it if you think that you are viewing a spoofed website, or anytime just to make sure:"
+    },
+    {
+      "title": "javascript:R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.images; DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=Math.sin(R*x1+i*x2+x3)*x4+x5; DIS.top=Math.cos(R*y1+i*y2+y3)*y4+y5}R++}setInterval('A()',5); void(0);",
+      "content": "javascript:R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.images; DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=Math.sin(R*x1+i*x2+x3)*x4+x5; DIS.top=Math.cos(R*y1+i*y2+y3)*y4+y5}R++}setInterval('A()',5); void(0); To make pictures fly around. Make sure to find a site like Google Images so there are more pictures!(If you press the refresh button, it goes really fast, but might only work with macOS):"
+    },
+    {
+      "title": "javascript:R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.images; DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=Math.cos(R*x1+i*x1+x2)*x4+x5; DIS.top=Math.cos(R*y1+i*y2+y3)*y4+y5}R++}setInterval('A()',5); void(0);",
+      "content": "javascript:R=0; x1=.1; y1=.05; x2=.25; y2=.24; x3=1.6; y3=.24; x4=300; y4=200; x5=300; y5=200; DI=document.images; DIL=DI.length; function A(){for(i=0; i-DIL; i++){DIS=DI[ i ].style; DIS.position='absolute'; DIS.left=Math.cos(R*x1+i*x1+x2)*x4+x5; DIS.top=Math.cos(R*y1+i*y2+y3)*y4+y5}R++}setInterval('A()',5); void(0); To spin circle of pictures. It funnels the pictures in a snake-like motion:"
+    },
+    {
+      "title": "javascript:document.body.contentEditable='true';document.designMode='on';void 0",
+      "content": "javascript:document.body.contentEditable='true';document.designMode='on';void 0 To move things around on the webpage:"
+    }
+  ]
+}

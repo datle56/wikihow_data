@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Uninstall-iTunes",
+  "title": "How to Uninstall iTunes",
+  "steps": [
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . You'll find its icon in the Start menu. If you're using Windows 7 or 8, you'll need to open the Start menu, click Control Panel , select Programs , and then Programs and Features . Then, skip to Step 3. The remaining steps will be similar to Windows 10. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Apps.",
+      "content": "Click Apps . You'll find this in the second column, above \"Time & Language.\" A list of all your installed apps and programs will load. Depending on how many programs you have and your disk space, this may take a few seconds or a minute to completely load."
+    },
+    {
+      "title": "Click to select iTunes.",
+      "content": "Click to select iTunes . You'll see the program highlight in blue and expand."
+    },
+    {
+      "title": "Click Uninstall.",
+      "content": "Click Uninstall . You'll see this button appear in the highlighted and expanded area next to \"Modify.\""
+    },
+    {
+      "title": "Follow the uninstall steps.",
+      "content": "Follow the uninstall steps. Click Uninstall when prompted, and Yes if prompted. Then wait for iTunes to finish uninstalling. If prompted to restart your computer, click Restart later ."
+    },
+    {
+      "title": "Uninstall other Apple services.",
+      "content": "Uninstall other Apple services. You only need to do this if you installed the desktop version of iTunes. If you installed the UWP or Microsoft Store version, you do not have to do so. To completely get rid of iTunes, uninstall the following programs in this order: Apple Software Update Apple Mobile Device Support Bonjour Apple Application Support (64-bit) Apple Application Support (32-bit)"
+    },
+    {
+      "title": "Restart your computer after you uninstall all the components.",
+      "content": "Restart your computer after you uninstall all the components. Open Start , click the power icon, and click Restart to do so. Once your computer reboots, iTunes and any partner software will be gone from your computer."
+    },
+    {
+      "title": "Disable Apple System Integrity Protection (SIP).",
+      "content": "Disable Apple System Integrity Protection (SIP). Since iTunes is a default app, it'll be very difficult to uninstall. You'll have to disable SIP to be able to uninstall iTunes. Restart your computer and press Ctrl + R to boot into recovery mode. Navigate to Utilities > Terminal to open Terminal in recovery mode. Type csrutil disable in the Terminal window and press ⏎ Return on your keyboard. You'll see that SIP has been disabled. [2] X Research source"
+    },
+    {
+      "title": "Restart your Mac and log in to your admin account.",
+      "content": "Restart your Mac and log in to your admin account. You'll only be allowed to uninstall apps from an account with administrative rights. [3] X Research source"
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You'll find it in the Applications folder under Utilities . You can also search Spotlight for terminal ."
+    },
+    {
+      "title": "Type cd /Applications/ and press ⏎ Return.",
+      "content": "Type cd /Applications/ and press ⏎ Return . You'll see the applications directory."
+    },
+    {
+      "title": "Type sudo rm-rf iTunes.app/ and press ⏎ Return.",
+      "content": "Type sudo rm-rf iTunes.app/ and press ⏎ Return . That command will delete the iTunes app from your Mac."
+    },
+    {
+      "title": "Re-enable SIP.",
+      "content": "Re-enable SIP. To do this, reboot your Mac and press Ctrl + R to boot into recovery mode, open Terminal, and run this command: csrutil enable ."
+    }
+  ]
+}

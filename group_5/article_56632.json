@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Linux-How-to-Add-User-to-a-Group",
+  "title": "Adding & Managing Users in Linux Groups",
+  "steps": [
+    {
+      "title": "Use sudo usermod -a -G <groupname> <username> to add a user to a secondary group.",
+      "content": "Use sudo usermod -a -G <groupname> <username> to add a user to a secondary group. Every Linux user belongs to a primary group, which is used by default when they create files. Users can also be assigned to secondary groups to receive additional permissions. In most cases, you'll want to add a user to a secondary group without affecting their other group memberships or changing their primary group. This command ensures that behavior. The -a option appends the username to the group without replacing the user's existing groups. The -G option indicates that you're adding to a secondary rather than changing the primary group. If you leave out -a -G , the user will be removed from all secondary groups that are not included in the command. [1] X Research source"
+    },
+    {
+      "title": "Use sudo usermod -g <groupname> <username> to change a user's primary group.",
+      "content": "Use sudo usermod -g <groupname> <username> to change a user's primary group. Sometimes, it's necessary to change a user's primary group. For example, suppose a user on your company's server is promoted or moved to another department. In that case, you may need to change their primary group to give them the same level of access as the rest of their department by default. This command reassigns a Linux user to the specified group."
+    },
+    {
+      "title": "To add a user to multiple groups, separate group names with commas.",
+      "content": "To add a user to multiple groups, separate group names with commas. For example, if you need to add user billybob to the www , dns , and staff groups, use sudo usermod -a -G www,dns,staff billybob ."
+    },
+    {
+      "title": "Use groups <username> to list a user's groups.",
+      "content": "Use groups <username> to list a user's groups. This command displays a simple list of the groups a user belongs to—both their primary group and any secondary groups. If you want to see the GIDs (group IDs) of each group the user belongs to, use id <username> instead."
+    },
+    {
+      "title": "Use getent group <groupname> to see who is in a group.",
+      "content": "Use getent group <groupname> to see who is in a group. This command lists the group's name, GID (group ID), and usernames of each group member. To view all groups on a system, use getent group or cat /etc/group ."
+    },
+    {
+      "title": "Use sudo gpasswd -d <groupname> <username> to remove a user from a group.",
+      "content": "Use sudo gpasswd -d <groupname> <username> to remove a user from a group. For example, if you no longer want user billybob to be a part of the www group, you'd use sudo gpasswd -d www billybob . [2] X Research source"
+    },
+    {
+      "title": "Use sudo groupadd <groupname> to create a group.",
+      "content": "Use sudo groupadd <groupname> to create a group. For example, if you wanted to create a group called www , you'd type the command sudo groupadd www . If you want to specify a group ID (GID) during creation, use sudo groupadd -g <groupid> <groupname> instead. [3] X Research source Otherwise, the group will be assigned a unique GID automatically. [4] X Research source"
+    },
+    {
+      "title": "You can create a user and add them to groups in one command.",
+      "content": "You can create a user and add them to groups in one command. Let's say you want to add a new user account called billybob to your Linux server. You know that billybob's primary group should be the users group, and their secondary groups should be www and ftp . To create this user's account and add them to the necessary groups simultaneously, you'd use sudo useradd -g users -G www,ftp billybob . Don't forget to set a password for the new user after creation."
+    },
+    {
+      "title": "Use sudo groupdel <groupname> to delete a group.",
+      "content": "Use sudo groupdel <groupname> to delete a group. This removes a group from the system. You can only delete a group if it's not the primary group of a Linux user . If you want to do that, you'll need to delete the user first or change the user's primary group to something else. [5] X Research source"
+    },
+    {
+      "title": "Use sudo chgrp <groupname> <filename> to change group ownership.",
+      "content": "Use sudo chgrp <groupname> <filename> to change group ownership. For example, if you want the developers group to own a file called users.txt , you’d enter sudo chgrp developers users.txt . Anyone who is a member of the developers group will now have the developer's group's permissions for that file. You can also use chgrp to change the owner of a directory. Just replace the filename with a directory name. To change the ownership of a directory and all of its contents (including subdirectories), add the -R option to make the command recursive."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Find-Proper-MTU-Size-for-Network",
+  "title": "How to Find Proper MTU Size for Network",
+  "steps": [
+    {
+      "title": "Launch the command prompt.",
+      "content": "Launch the command prompt. From your desktop, click on \"Start\" to launch your Programs menu. Click \"Run\" and type in “incommand” (for Windows 95, 98, and ME) or “INCMD” (for Windows NT, 2000, and XP), without the quotation marks. This will call the command prompt by launching a black window."
+    },
+    {
+      "title": "Search for the command prompt.",
+      "content": "Search for the command prompt. If your Windows operating system is newer or doesn’t have the Run option from step 1, you can find the command prompt by navigating through the Programs menu. Click on \"Start,\" then \"All Programs.\" Look for the Accessories folder and open it. Click on \"Command Prompt.\" This will call the command prompt by launching a black window. You can skip this step if you’ve already found the command prompt from step 1."
+    },
+    {
+      "title": "Set ping syntax.",
+      "content": "Set ping syntax. In the command prompt window, type the following syntax: ping [url] [-f] [-l] [MTU value]. There’s a space in between each command. This is quite technical, but just follow the syntax. The next few steps will explain the parameters of the syntax."
+    },
+    {
+      "title": "Set a URL.",
+      "content": "Set a URL. In the syntax from step 3, after the command “ping,” type in a URL or website address you commonly use. This is the website the command will send a ping to. For example, use www.yahoo.com or www.google.com."
+    },
+    {
+      "title": "Set a test packet size.",
+      "content": "Set a test packet size. In the syntax from step 3, the last parameter states “MTU value.” This pertains to the test packet size in bytes that would be sent together in your ping. It’s a four-digit number. Try to start with 1500."
+    },
+    {
+      "title": "Send the ping.",
+      "content": "Send the ping. If you use Yahoo’s website, the syntax would be as follows: ping www.yahoo.com –f –l 1500 Press \"Enter\" on your keyboard to send the ping."
+    },
+    {
+      "title": "Read the diagnosis.",
+      "content": "Read the diagnosis. After the ping, the results will be shown on the command prompt. If the results display “Packet needs to be fragmented but DF set,” this means the packet size isn’t optimal yet. Proceed to step 8."
+    },
+    {
+      "title": "Reduce the MTU value.",
+      "content": "Reduce the MTU value. Reduce the packet size by 10 or 12 bytes. You’re trying to figure out the correct packet size that won’t need fragmentation."
+    },
+    {
+      "title": "Resend the ping.",
+      "content": "Resend the ping. Repeat step 6 using the adjusted or reduced MTU value. Repeat steps 6 to 9 until you don’t see a message saying that the packet still needs to be fragmented. Once you don’t see the message anymore, proceed to step 10."
+    },
+    {
+      "title": "Increase MTU value.",
+      "content": "Increase MTU value. Once you have a packet size or MTU value that doesn’t fragment, increase this value in small increments. Try increments of 2 or 4 bytes."
+    },
+    {
+      "title": "Resend the ping.",
+      "content": "Resend the ping. Send another ping using the adjusted or increased MTU value. Repeat steps 10 to 11 until you determine the largest packet size that won’t be fragmented."
+    },
+    {
+      "title": "Add 28 to the MTU value.",
+      "content": "Add 28 to the MTU value. Take the maximum packet size you got from the ping tests and add 28 to it. These 28 bytes are reserved for the header data. The resulting value is your optimal MTU setting."
+    },
+    {
+      "title": "Launch router configuration.",
+      "content": "Launch router configuration. Go to your web browser and type in your router’s configuration IP address. Log in using your admin user name and password."
+    },
+    {
+      "title": "Locate the MTU setting.",
+      "content": "Locate the MTU setting. Navigate through your router’s configuration settings until you find the MTU field. This may vary depending on a router’s brand and type."
+    },
+    {
+      "title": "Input the optimal MTU value.",
+      "content": "Input the optimal MTU value. Once you find the appropriate field, key in the MTU value you’ve computed from step 12 of part 1. Remember to include the extra 28 bytes."
+    },
+    {
+      "title": "Save the settings.",
+      "content": "Save the settings. Click on \"Save\" to save your changes. Your network is now set to its optimum MTU."
+    }
+  ]
+}

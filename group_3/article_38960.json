@@ -1,0 +1,170 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-an-OpenGL-FreeGLUT-GLEW-Template-Project-in-Visual-Studio",
+  "title": "How to Set Up an OpenGL FreeGLUT GLEW Template Project in Visual Studio",
+  "steps": [
+    {
+      "title": "Emphasize the actions you plan to take.",
+      "content": "Emphasize the actions you plan to take. Highlight a step, a substep, or a section of it, then carry it out. Take a look at the image above."
+    },
+    {
+      "title": "Get Visual Studio 2022 here.",
+      "content": "Get Visual Studio 2022 here. You can download it from https://www.visualstudio.com/downloads if you haven't already. While downloading, check the box labeled \"Desktop development with C++ workload.\" Scroll down the page if needed (see the image below). Select \"Language pack\" and tick the \"English\" option. Click \"General\" in the \"Development settings\" menu of the \"Personalize your Visual Studio experience\" wizard during installation. > click \"Visual C++\" > click Start Visual Studio ."
+    },
+    {
+      "title": "Make the GL and GLP folders.",
+      "content": "Make the GL and GLP folders. Launch the File Explorer in Windows > Open the directory (disk) C. It's okay if the folders GL and GLP exist. If not, perform a right-click in an empty space > choose \"New\" > \"Folder\" > type \"GL\" > press ↵ Enter . Create the \"GLP\" folder in the same manner."
+    },
+    {
+      "title": "Install the GLEW application.",
+      "content": "Install the GLEW application. It's okay if you've already downloaded and placed the GLEW binaries in the GL folder. If not, please click the following link and choose \"Open Link in New Window\" http://glew.sourceforge.net . Under \"Downloads\", opposite \"Binaries\", select \"Windows 32-bit and 64-bit\". The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL. In the new File Explorer click folder glew-2.1.0 , (or latest) > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy GLEWbin > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Close the new File Explorer > close the GLEW window."
+    },
+    {
+      "title": "Install the freeglut 3.0.0 MSVC Package.",
+      "content": "Install the freeglut 3.0.0 MSVC Package . Right-click on the following link and choose \"Open Link in New Window\" https://www.transmissionzero.co.uk/software/freeglut-devel/ . In the \"freeglut 3.0.0 MSVC Package\" section (see image below), click \"Download freeglut 3.0.0 for MSVC\". Be careful not to use the \"freeglut 3.0.0 MinGW Package\". The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL. In the new File Explorer click folder freeglut > click it again and drag into C:\\GL. Once the folder has completed copying, and pasting, copy GLUTbin > click folder > right click > click \"Rename\" > Paste > hit ↵ Enter . Close the new File Explorer > close the \"freeglut\" window. Now in folder GL you have folders: GLEWbin and GLUTbin ."
+    },
+    {
+      "title": "Create an empty project.",
+      "content": "Create an empty project. If you open Visual Studio for first time . Click Create a new project . In Create a new project wizard, in the list of templates, select Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLUTx32-GLEWx32-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add\" > \"New Item…\" In the \"Add New Item\" wizard instead of \"FileName\" type Main > hit ↵ Enter ). The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Properties Pages\".",
+      "content": "Configure \"Properties Pages\". In Solution Explorer, right click on the name of your project (name in image is different but it doesn't matter), that is GLUTx32-GLEWx32-0 , and select Properties (the last one). . 1. Main menu . In GLUTx32-GLEWx32-0 Property Pages wizard main menu, in Configuration: select Active(Debug) > Platform: Win32 or x86 > click Configuration Manager . \"Configuration Manager\" wizard In \"Active solution platform:\" select x86 or Win32 In \"Platform\", Win32 or x86 is automatically selected Click Close . 2. Additional Include Directories . See below for images. Open the C/C++ drop-down menu. Click General > Additional Include Directories > down arrow at the right of the field > click <Edit...> 2.1. Copy C:\\GL\\GLUTbin\\include > in Additional Include Directories wizard, click first icon > paste. 2.2. Copy C:\\GL\\GLEWbin\\include > click again first icon > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories . Open the Linker drop-down menu, and click General > click Additional Library Directories entry > down arrow at the right of the field > <Edit...> . 3.1. Copy C:\\GL\\GLUTbin\\lib > in Additional Library Directories wizard click first icon > paste. 3.2. Copy C:\\GL\\GLEWbin\\lib\\Release\\Win32 > click first icon > paste. In Additional Library Directories wizard click OK . 4. Additional Dependencies . In the Linker drop-down menu, click Input > click the Additional Dependencies entry > the down arrow at the right of the field > click <Edit...> . Copy freeglut.lib; glew32.lib; opengl32.lib and paste on the top-most text box of the Additional Dependencies wizard. Click OK in the Additional Dependencies wizard. Click Apply , then OK on the GLUTx32-GLEWx32-0 Property Pages wizard."
+    },
+    {
+      "title": "Add dll files paths (addresses) to \"System Variables\".",
+      "content": "Add dll files paths (addresses) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\GLUTbin\\bin > click New > Paste. Copy C:\\GL\\GLEWbin\\bin\\Release\\Win32 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. If project opens it's okay. If not, in \"Open recent\" list, click \"GLUTx32-GLEWx32-0.sln\", the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following link and select Open Link in New Window badprog . Scroll down the page and find section Testing the setup (see image below). Copy code and paste in Main.cpp code area > in main menu select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". You should see two windows: one black (the console) and other with white square in black background. If you do not see that, do the below step."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLUTx32-GLEWx32-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 3, step 2, and add it now. In \"Error List\" if you see error about file with extension .h, Check whether folders GLEWbin and GLUTbin exist in C:\\GL. If they exist, go to previous Part, step 1, sub step 2. Additional Include Directories and follow instructions. Also check whether folders GLEWbin and GLUTbin exist in C:\\GL. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. In addition, to step 1, sub step 4. Additional Library Directories . Additionally, confirm that the \"freeglut 3.0.0 MSVC Package\" was downloaded rather than the \"freeglut 3.0.0 MinGW Package\". Thrown wizard about System or file .dll go to previous Part step 2, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLUTx32-GLEWx32-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 3. Good job."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio main menu and, while \"GLUTx32-GLEWx32-0\" is open , click Project > Export Template... (see above image). On Export template Wizard check Project Template , if it's not checked. Click Next > . On Select Template Options , if Template name is GLUTx32-GLEWx32-0 it's okay. If it's not, type (or copy and paste) GLUTx32-GLEWx32-0 . Click Finish . Template has been created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio GUI, click File > New > Project... . In Create a new project wizard, in the list of templates, select GLUTx32-GLEWx32-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, if \"Project name\" is GLUTx32-GLEWx32-01 it's okay. If is not copy GLUTx32-GLEWx32-01 and paste. Location should be C:\\GLP\\. If it's not, copy C:\\GLP\\ and paste. Be sure Place solution and project in the same directory is checked. Click Create . In Visual Studio's GUI main menu, select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". You should see two windows: one black (the console) and other with white square in black background. Good job. TIP. Remember, when you create project with this template, in Visual Studio GUI main menu select x86 ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download libraries freeGLUT and GLEW.",
+      "content": "Download libraries freeGLUT and GLEW. If you have not already downloaded them go to Part 2, steps 2 and 3 and follow them."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Click Create a new project . In Create a new project wizard, in the list of templates, select Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above, if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLUTx64-GLEWx64-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In \"Add New Item\" wizard, instead of \"FileName\" type Main > hit ↵ Enter ). The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Properties Pages\".",
+      "content": "Configure \"Properties Pages\". In Solution Explorer, right click on the name of your project, that is GLUTx64-GLEWx64-0 , and select Properties (the last one). Name in image is different, but it doesn't matter. In GLUTx64-GLEWx64-0 Property Pages wizard, . 1. Main menu . In Configuration: select Active(Debug) > Platform: x64 > click Configuration Manager . In \"Configuration Manager\" wizard In \"Active solution platform:\" select x64 In \"Platform\", x64 is automatically selected Click Close . 2. Additional Include Directories . See below for images. Open the C/C++ drop-down menu. Click General > Additional Include Directories > down arrow at the right of the field > click <Edit...> 2.1. Copy C:\\GL\\GLUTbin\\include > in Additional Include Directories wizard, click first icon > paste. 2.2 Copy C:\\GL\\GLEWbin\\include > click again first icon > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories . Open the Linker drop-down menu, and click General > click Additional Library Directories entry > down arrow at the right of the field > <Edit...> . 3.1. Copy C:\\GL\\GLUTbin\\lib\\x64 > in Additional Library Directories wizard click first icon > paste. 3.2. Copy C:\\GL\\GLEWbin\\lib\\Release\\x64 > click first icon > paste. In Additional Library Directories wizard click OK . 4. Additional Dependencies . In the Linker drop-down menu, click Input > click the Additional Dependencies entry > the down arrow at the right of the field > click <Edit...> . Copy freeglut.lib; glew32.lib; opengl32.lib and paste on the top-most text box of the Additional Dependencies wizard. Click OK in the Additional Dependencies wizard. Click Apply , then OK on the GLUTx64-GLEWx64-0 Property Pages wizard."
+    },
+    {
+      "title": "Add dll files paths (addresses) to \"System Variables\".",
+      "content": "Add dll files paths (addresses) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environement variable\" wizard is thrown. Copy C:\\GL\\GLUTbin\\bin\\x64 > click New > Paste. Copy C:\\GL\\GLEWbin\\bin\\Release\\x64 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. It's okay if the folder \"GLUTx64-GLEWx64-0.sln\" opens. If not, select the first file, \"GLUTx64-GLEWx64-0.sln\", from the \"Open recent\" list. Your project is now available for testing."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following link and select Open Link in New Window badprog . Scroll down the page and find section Testing the setup (see image above). Copy code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". You should see two windows: one black (the console) and other with white square in black background. If you do not see that, do following step."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy C:\\GLP\\GLUTx64-GLEWx64-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 7, step 4, and add it now. In \"Error List\" if you see error about file with extension .h, Check whether folders GLUTbin and GLEWbin exist in C:\\GL. If they exist, go to previous Part, step 1, sub step '\"2. Additional Include Directories and follow instructions. Also check whether folders GLUTbin and GLEWbin exist in C:\\GL. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. In addition, to step 1, subsection 4. Additional Library Directories . Additionally, confirm that the \"freeglut 3.0.0 MSVC Package\" was downloaded rather than the \"freeglut 3.0.0 MinGW Package\". Thrown wizard about System or file .dll go previous Part step 2, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLUTx64-GLEWx64 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 7. Good job."
+    },
+    {
+      "title": "Tip:",
+      "content": "Tip: Even if in Property Pages main settings it is Platform: x64 , click Configuration manager... and in Active solution platform: select x64."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio main menu and, while GLUTx64-GLEWx64-0 is open , click Project > Export Template... (see above image). On Export template Wizard check Project Template , if it's not checked. Click Next > . On Select Template Options , if Template name is GLUTx64-GLEWx64-0 it's okay. If it's not, type (or copy and paste) GLUTx64-GLEWx64-0 Click Finish . Template has been created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu > Click File > New > Project... . In Create a new project wizard, in templates list, select GLUTx64-GLEWx64-0 (If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard, in \"'Project name\"' is GLUTx64-GLEWx64-01 it's okay. If it's not, type (or copy and paste) GLUTx64-GLEWx64-01 If Location is C:\\GLP it's okay. If it's not, copy C:\\GLP and paste. Be sure Place solution and project in the same directory is checked. Click Create . In Visual Studio's GUI main menu, select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". TIP. When you create project with this template remember in Visual Studio GUI's main menu select x64 ."
+    },
+    {
+      "title": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide.",
+      "content": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide. It is also important that binaries you get target x64 platform."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download CMake.",
+      "content": "Download CMake. Right-click on the following address and select Open Link in new File Explorer window https://cmake.org/download/ . Below \"Latest Release (3.31.2)\" (or latest), in second \"Platform\" list (Binary distributions:), find (see image below) \"Windows x64 ZIP\" and click the beside entry cmake-3.31.2-windows-x86_64.zip (or latest). The unzipped folder ought to appear in a new File Explorer."
+    },
+    {
+      "title": "Copy and paste the unzip folder.",
+      "content": "Copy and paste the unzip folder. Open folder C:\\GL In the new File Explorer click unzip folder cmake-3.31.2-windows-x86_64 > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy CMake > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new File Explorer > close the \"CMake\" window. Double click folder \"CMake\" > double click folder bin > inside you should see CMake's logo next to file name cmake-gui > double click this file. Now on your screen you have CMake GUI > go back to GL folder. Each time you need CMake, navigate to C:\\ > GL > double click folder CMake > double click \"bin\" > double click file cmake-gui (the one with CMake's logo)."
+    },
+    {
+      "title": "Download FreeGLUT source.",
+      "content": "Download FreeGLUT source. Right-click on the following address and select Open Link in New Window https://github.com/FreeGLUTProject/freeglut/releases/tag/v3.2.2 . Below (see image below) Assets , click \"Source code (zip)\". The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL In the new File Explorer click unzip folder freeglut-3.2.2 > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy GLUTsrc > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the downloading new File Explorer window > close \"github\" window. Now in folder GL you have folder GLUTsrc."
+    },
+    {
+      "title": "Download GLEW source.",
+      "content": "Download GLEW source. Right-click on the following address and select Open Link in New Window http://glew.sourceforge.net/ . Beside Source (see image below) click ZIP. The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL. In the new File Explorer click unzip folder glew-2.1.0 > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy GLEWsrc > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the downloading new File Explorer window > close \"glew\" window. Now in folder GL you have folders CMake , GLUTsrc , and GLEWsrc ."
+    },
+    {
+      "title": "Compile FreeGLUT by CMake and Visual Studio.",
+      "content": "Compile FreeGLUT by CMake and Visual Studio. Go to CMake GUI. See the below image. Where is the source code: Copy (attention: do not copy any space) C:/GL/GLUTsrc and paste in text field. Where to build the binaries: Copy (do not copy any space) C:/GL/GLUTsrc/build and paste in text field. Configure and generate. In CMake GUI, click Configure > in wizard Create Directory click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". If, instead, wizard \"Error\" is thrown, click OK > click \"File\" > click \"Delete Cache\" > in thrown wizard \"Delete Cache\", click Yes . Build your solution. Copy C:\\GL\\GLUTsrc\\build and paste in File Explorer's Address Bar > hit ↵ Enter > double click \"freeglut.sln\", or \"freeglut\", or \"ALL_BUILD.vcxproj\". An instance of Visual Studio appears. Wait until in main menu, Build entry appears. Click Build > Build Solution (the first option). Wait till you read the last line in \"Output\" window: ========== Build: 28 succeeded, 0 failed, 0 up-to-date, 1 skipped\" ========== Number of \"succeeded\" changes in freeglut versions. Copy C:\\GL\\GLUTsrc\\build\\lib\\Debug and paste in File Explorer's Address Bar > hit ↵ Enter . Inside you should see file freeglutd.lib below other files. Close this Visual Studio GUI."
+    },
+    {
+      "title": "Compile GLEW by CMake and Visual Studio.",
+      "content": "Compile GLEW by CMake and Visual Studio. Go to CMake GUI. Copy (attention: do not copy any space) C:/GL/GLEWsrc/build/cmake and paste in first text field. Copy (attention: do not copy any space) C:/GL/GLEWsrc/build and paste in second text field. Configure and generate. In CMake GUI, click Configure > if wizard Create Directory appears, click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". Copy C:\\GL\\GLEWsrc\\build and paste in File Explorer's Address Bar > hit ↵ Enter > double click \"glew.sln\", or \"glew\", or \"ALL_BUILD.vcxproj\". An instance of Visual Studio appears. Wait until in main menu Build entry appears. Click Build > Build Solution (the first option). Wait till you read the last line in \"Output\" window: ========== Build: 6 succeeded, 0 failed, 0 up-to-date, 2 skipped\" ========== Number of \"succeeded\" changes in glew versions. Copy C:\\GL\\GLEWsrc\\build\\lib\\Debug and paste in File Explorer's Address Bar > hit ↵ Enter . Inside you should see file glew32d.lib among other files. Close Cmake GUI. Close this instance of Visual Studio."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Click Create a new project . In Create a new project wizard, in the list of templates, select Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLUTsrc-GLEWsrc-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add\" > \"New Item…\" In \"Add New Item\" wizard instead of \"FileName\" type Main > hit ↵ Enter . The file \"Main.cpp\" will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Properties pages\".",
+      "content": "Configure \"Properties pages\". In Solution Explorer wizard, right click Project's name that is GLUTsrc-GLEWsrc-0 > select Properties , the last one. Name in image is different, but it doesn't matter. . 1. Main menu . In Configuration: select Active(Debug) In Platform entry select x64 > click Configuration Manager... . In Active solution platform: select x64 . In Platform entry, x64 is automatically selected. Click Close . 2. Additional Include Directories . See below for images. Open the C/C++ drop-down menu. Click General > Additional Include Directories > down arrow at the right of the field > click <Edit...> 1. Copy C:\\GL\\GLUTsrc\\include > click first icon in Additional Include Directories wizard > paste. 2. Copy C:\\GL\\GLEWsrc\\include > click first icon > paste. Click OK in Additional Include Directories wizard. 3. Additional Library Directories . Double click Linker > click General > Additional Library Directories > click the down arrow at the end of the field > click Edit... . 1. Copy C:\\GL\\GLUTsrc\\build\\lib\\Debug > click first icon > paste. 2. Copy C:\\GL\\GLEWsrc\\build\\lib\\Debug > click first icon > paste. In Additional Library Directories wizard, click OK . 4. Additional Dependencies . In Linker drop-down menu select Input > in beside menu select the first one, Additional Dependencies > click the down arrow at the end of the field > Edit... Copy opengl32.lib; freeglutd.lib; glew32d.lib and paste in Additional Dependencies wizard's upper-most text box In Additional Dependencies wizard, click OK . In GLUTsrc-GLEWsrc-0 Property Pages wizard, click Apply and then OK ."
+    },
+    {
+      "title": "Add dll files paths (addresses) to \"System Variables\".",
+      "content": "Add dll files paths (addresses) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. If it's not chosen, click the \"Advanced\" tab in the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environement variable\" wizard is thrown. Copy C:\\GL\\GLUTsrc\\build\\bin\\Debug > click New > Paste. Copy C:\\GL\\GLEWsrc\\build\\bin\\Debug > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. It's okay if the folder \"GLUTsrc-GLEWsrc-0.sln\" opens. If not, select the first file, \"GLUTsrc-GLEWsrc-0.sln\", from the \"Open recent\" list. Your project is now available for testing."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on the following link and select Open Link in New Window badprog . Scroll down the page and find section Testing the setup (see image above). Copy code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". You should see two windows: one black (the console) and other with white square in black background. If you do not see that, do the below step."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLUTsrc-GLEWsrc-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 14, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLUTsrc and GLEWsrc exist in C:\\GL. If they exist go to previous Part, step 1, sub step 1, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. Also to step 1, sub step 4. Additional Library Directories . Thrown wizard about System or file .dll go to previous Part step 2, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLUTsrc-GLEWsrc-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 14. Good job."
+    },
+    {
+      "title": "Create template.",
+      "content": "Create template. Go to Visual Studio main menu and, while GLUTsrc-GLEWsrc-0 is open , click Project > Export Template... (see above image). On Export template Wizard check Project Template , if it's not checked. Click Next > . On Select Template Options , in Template name: if name is GLUTsrc-GLEWsrc-0 it's okay. If not, copy it and paste in text box > click Finish . Template has been created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu select x64 . Click File > New > Project... . In Create a new project wizard, in templates list, select GLUTsrc-GLEWsrc-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard, in \"'Project name\"', if name is GLUTsrc-GLEWsrc-01 , it's okay. If not copy it and paste in text field. Copy C:\\GLP , and paste in Location text field. Be sure Place solution and project in the same directory is checked. Click Create . In Visual Studio GUI's main menu select x64 (next to Debug) > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job TIP: Remember, in every project you create with this template, select x64 (next to Debug) in Visual Studio's GUI."
+    },
+    {
+      "title": "In this tutorial you learn 3 was to set up FreeGLUT and GLEW in Project with Visual Studio.",
+      "content": "In this tutorial you learn 3 was to set up FreeGLUT and GLEW in Project with Visual Studio. Set up binaries x86 (32 bits). It's the easiest. You should start learning set up from here. Set up binaries x64 (64 bits). It targets x64 platform. Choose it only when you have specific reason for doing so. Set up compiled source (also 64 bits). Targets x64 too. The most difficult. The best though."
+    }
+  ]
+}

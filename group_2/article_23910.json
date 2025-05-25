@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Install-Adblockers-on-Roku-TV",
+  "title": "Can You Install an AdBlocker on Roku? The Best Options to Minimize Ads",
+  "steps": [
+    {
+      "title": "No—you can't install an ad-blocker on a Roku.",
+      "content": "No—you can't install an ad-blocker on a Roku. Devices with Roku OS, including Roku TVs, don't allow you to install ad-blocking apps. However, you can still reduce the number of ads you see by adjusting your Roku privacy settings. You can also upgrade the subscriptions of your streaming services, such as YouTube or HBO Max , to prevent ads."
+    },
+    {
+      "title": "Open your Roku's Settings.",
+      "content": "Open your Roku's Settings . If you don't want to see pop-up ads for certain Roku apps (like Netflix or Hulu) or the \"More Ways to Watch\" screens, you can disable the \"Smart TV experience\" option. Start by selecting Settings on your Roku's Home screen."
+    },
+    {
+      "title": "Select Privacy.",
+      "content": "Select Privacy . Additional options will appear."
+    },
+    {
+      "title": "Select Smart TV experience.",
+      "content": "Select Smart TV experience . Now you'll see a few checkboxes."
+    },
+    {
+      "title": "Remove the checkmarks from both options.",
+      "content": "Remove the checkmarks from both options. The two options on this screen may cause ads (including streaming apps) to appear when watching movies or TV shows on cable, satellite, or other streaming apps. Use the arrows to select the checkmark next to \"Use info from TV inputs,\" then press OK to remove the checkmark. This ensures you won't see ads from Roku apps when watching cable or satellite. Select the checkmark next to \"Enable auto notifications\" and press OK . Disabling this feature prevents you from seeing the \"More Ways to Watch\" notification and other relevant Roku pop-ups. [1] X Research source"
+    },
+    {
+      "title": "Go to Settings.",
+      "content": "Go to Settings . Power on your Roku device and use the remote to open the menu. Scroll up and find Settings about the Home tab. While this method won't turn off ads completely, it will prevent Roku from using your viewing history and personal details to show you ads."
+    },
+    {
+      "title": "Select Privacy.",
+      "content": "Select Privacy . This will be below Legal notices ."
+    },
+    {
+      "title": "Select Advertising.",
+      "content": "Select Advertising . This will be the first tab."
+    },
+    {
+      "title": "Check the box for \"Limit ad tracking\".",
+      "content": "Check the box for \"Limit ad tracking\". This prevents Roku from using your data to show personalized ads on your device."
+    },
+    {
+      "title": "Restart your Roku.",
+      "content": "Restart your Roku. Turn off your device and turn it on again. Once restarted, the changes will take effect. [2] X Research source"
+    },
+    {
+      "title": "Install Pi-Hole on a Linux machine on your network.",
+      "content": "Install Pi-Hole on a Linux machine on your network. If you're a Linux user , you can block ads on your entire Wi-Fi network (including on your Roku TV), by installing Pi-Hole and using the Linux machine as your router's DNS server. This makes it so Roku ads cannot be shown on your Roku TV as long as the Linux machine is up and running. [3] X Research source To install Pi-Hole, run the command curl -sSL https://install.pi-hole.net in your Linux Terminal. [4] X Research source This method works best if you're already well-versed in Linux and have the ability leave your Linux system online at all times. If you're not already running Linux or have a Raspberry Pi machine, this method won't be ideal. You will need admin access access to your router to change its DNS server and assign your Pi-Hole system a static IP address."
+    },
+    {
+      "title": "Make your Linux system use Pi-Hole for DNS.",
+      "content": "Make your Linux system use Pi-Hole for DNS. If your system uses dhcpd, use the command static domain_name_servers=127.0.0.1 to ensure that the DNS server for Linux is set to Pi-Hole. [5] X Research source You can verify and change Pi-Hole settings in your web browser by visiting https://pi-hole.net/ . By default, OpenDNS will be set as your upstream DNS servers, but you can opt for Google, Norton, or other providers instead. Roku ads are blocked by Pi-Hole by default, so you won't have to add any domains manually."
+    },
+    {
+      "title": "Configure your router.",
+      "content": "Configure your router. Once Pi-Hole is installed, you'll need to log into your router and make the following changes: Adjust the internal DHCP settings to assign the Linux machine running Pi-Hole a static IP address. Once the IP address is assigned, edit the router's DNS server configuration to use that static IP address as its only DNS server. You'll usually find this in the \"DHCP Settings\" or \"Network Address Server Settings\" area of your router's admin panel. [6] X Research source Be sure to set the static IP address of your Pi-Hole server as the only DNS server on your router. You may need to restart your router for the changes to take effect."
+    },
+    {
+      "title": "Watch Roku without ads.",
+      "content": "Watch Roku without ads. Now that you've blocked Roku ads at the router level, you can enjoy your Roku TV without intrusive ads."
+    }
+  ]
+}

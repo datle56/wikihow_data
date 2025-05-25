@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Download-iTunes-on-Chromebook",
+  "title": "Install iTunes on a Chromebook: Simple Step-by-Step Tutorial",
+  "steps": [
+    {
+      "title": "Open your Chromebook's Settings.",
+      "content": "Open your Chromebook's Settings. Before we can install iTunes on our Chromebook, we need to enable the version of Debian Linux (currently Debian 11 Bullseye) that's built-in to your Chromebook. [1] X Research source Click the time in the bottom-right corner of your screen and select \"Settings\", represented by a gear icon."
+    },
+    {
+      "title": "Go to Advanced and then Developers.",
+      "content": "Go to Advanced and then Developers . This page will include several high-level settings that may seem overwhelming at first, but setting up Linux is simple and will not disrupt anything on your Chromebook. If you're using your work or school Chromebook, you may not be able to enable Linux , even if your model is supported. If you don't see these options, you won't be able to enable Linux, which means you can't install iTunes on your Chromebook. However, if you subscribe to Apple Music and your Chromebook has the Play Store, you can install the Apple Music app."
+    },
+    {
+      "title": "Click Turn On next to \"Linux development environment.\"",
+      "content": "Click Turn On next to \"Linux development environment.\" From here, simply follow the onscreen instructions. The overall setup will take approximately 10 minutes. [2] X Research source When setting things up, take note of your Linux username. You will need this info later. When your Chromebook has finished setting up the Linux environment, a terminal window with a command prompt will open."
+    },
+    {
+      "title": "Enter the command to update all system packages.",
+      "content": "Enter the command to update all system packages. At the prompt, type sudo apt-get update and press Enter to run the command. Wine is a compatibility layer that allows you to install Windows software on Linux. Since iTunes is not available for ChromeOS or Linux, you'll need to install the Windows version of iTunes on your Chromebook, which you can do easily with Wine. If you don't see a Terminal window with a command prompt or you closed it by accident, it's easy to reopen. Press the Search key on your keyboard, type terminal , and click Terminal in the search results."
+    },
+    {
+      "title": "Enable 32-bit architecture.",
+      "content": "Enable 32-bit architecture. Type sudo dpkg --add-architecture i386 and press Enter . This command will allow you to run 32-bit programs like the version of iTunes you'll need for your Chromebook. [3] X Research source"
+    },
+    {
+      "title": "Update your package libraries.",
+      "content": "Update your package libraries. Type sudo apt update and press Enter ."
+    },
+    {
+      "title": "Download and add the Wine repository key.",
+      "content": "Download and add the Wine repository key. To do this, you'll need to type two commands: Type sudo mkdir -pm755 /etc/apt/keyrings and press Enter . Type sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key and press Enter . [4] X Research source"
+    },
+    {
+      "title": "Download the WineHQ sources file.",
+      "content": "Download the WineHQ sources file. This will allow you to install Wine from the developer's repository. Type sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources and press Enter . Type sudo apt update once installed to update your package information."
+    },
+    {
+      "title": "Enter the command to download and install Wine.",
+      "content": "Enter the command to download and install Wine. Type sudo apt install --install-recommends winehq-stable wine32 fonts-wine libwine:i386 and press Enter . This command installs Wine, as well as all of the required fonts and libraries you'll need to use it. If prompted, press y and then Enter to proceed. Wine is now up and running on your Chromebook!"
+    },
+    {
+      "title": "Download",
+      "content": "Download the 32-bit version of iTunes for Windows. Now that you have a Windows emulator for Linux on your Chromebook, you can install the Windows version of iTunes in your web browser. The catch is that you'll need the 32-bit version of iTunes 12. To get the right file, go to [5] X Research source and download the file. When downloading, choose the Linux files folder in the left panel, and call the file iTunesSetup.exe (or similar). You'll need this file name in a moment, so be sure to call the file something you'll remember."
+    },
+    {
+      "title": "Run the following command to install iTunes.",
+      "content": "Run the following command to install iTunes. Type or paste the following command, but before pressing Enter , replace username with your Linux username, and iTunesSetup.exe with the name of the iTunes file you downloaded earlier: [6] X Research source {{{1}}} Your Linux username is at the top of the Terminal window before the \"@.\""
+    },
+    {
+      "title": "Follow the installation wizard until you get to the \"Congratulations\" window.",
+      "content": "Follow the installation wizard until you get to the \"Congratulations\" window. Click through each window to complete the installation. On the \"Congratulations\" window, don't click Finish yet."
+    },
+    {
+      "title": "Remove the checkmark from \"Open iTunes after the installer exits\" and click Finish.",
+      "content": "Remove the checkmark from \"Open iTunes after the installer exits\" and click Finish . For now, you don't want iTunes to open automatically. We'll need to make a few quick changes before we can use it."
+    },
+    {
+      "title": "Open your Chromebook's \"Linux Files\" folder.",
+      "content": "Open your Chromebook's \"Linux Files\" folder. If you try opening iTunes right now, you will see a \"Path not found\" error message. We need to correct the file's path within your Chromebook. Navigate to your Linux Files to get started."
+    },
+    {
+      "title": "Show hidden files.",
+      "content": "Show hidden files. Click the three vertical dots in the top-right corner and select Show hidden files . Now you'll be able to see hidden Linux files. [7] X Research source"
+    },
+    {
+      "title": "Find and open the iTunes folder.",
+      "content": "Find and open the iTunes folder. Navigate to .local > share > applications > wine > Program Files , then double-click the folder called iTunes ."
+    },
+    {
+      "title": "Open the \"iTunes.desktop\" file in a text editor.",
+      "content": "Open the \"iTunes.desktop\" file in a text editor. To do this, rename the file called \"iTunes.desktop\" to \"iTunes.txt.\" Then you can right-click it, select Open with , and then choose Text Editor . The Text app comes preinstalled on your Chromebook."
+    },
+    {
+      "title": "Find the command that begins \"Exec= \" and enter the path.",
+      "content": "Find the command that begins \"Exec= \" and enter the path. You will want to keep the part that says \"Exec=\" but delete the rest of the path that follows. Then, after the '\"Exec=\" part, type or paste this path: [8] X Research source {{{1}}} Replace \"username\" both times with your actual username. The finished command would look like this for a user called wikiHow: {{{1}}}"
+    },
+    {
+      "title": "Save the file and exit.",
+      "content": "Save the file and exit. You can save by clicking the three-line menu at the top-left and choosing Save . You can then exit the text editor. Rename the txt file so it's \"iTunes.desktop\" again."
+    },
+    {
+      "title": "Open iTunes.",
+      "content": "Open iTunes. iTunes is now installed on your Chromebook! To use iTunes to sync your iPhone or iPad , just press the Search key on your keyboard, type iTunes , and click iTunes in the search results. Once you open iTunes, you can sign in with your Apple ID. If iTunes doesn't open when you click its icon, double-check the paths you entered into the \"iTunes.desktop\" file to make sure they match our instructions exactly, and that you've replaced \"wikiHow\" or \"username\" in the paths with your actual username."
+    }
+  ]
+}

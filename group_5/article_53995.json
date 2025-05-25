@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Err-Cache-Miss",
+  "title": "How to Solve the ERR_CACHE_MISS Error on Google Chrome",
+  "steps": [
+    {
+      "title": "Cache conflict.",
+      "content": "Cache conflict. Your browser stores a cache of every website you visit, so it can load faster in the future. However, that cache is susceptible to growing outdated, corrupted, or incompatible with the website you're visiting, which results in the \"ERR_CACHE_MISS\" error."
+    },
+    {
+      "title": "Extensions.",
+      "content": "Extensions. Some extensions can interfere with the caching process, which leads to the cache error. These include extensions that modify a site's header or alter how your browser works."
+    },
+    {
+      "title": "Poor internet connection.",
+      "content": "Poor internet connection. If the network you're connected to has a weak connection to the internet, you'll most likely see the \"ERR_CACHE_MISS\" error message."
+    },
+    {
+      "title": "Refresh the page.",
+      "content": "Refresh the page. Sometimes the simplest fixes are the ones that work. The error states that Chrome wasn't able to fetch the necessary cache for the website, so refreshing the page lets Chrome try again. Refresh the page by clicking the refresh arrow to the left of the top toolbar or press Cmd + R (Mac)/ Ctrl + R (Windows)."
+    },
+    {
+      "title": "Restart Chrome.",
+      "content": "Restart Chrome. Temporary glitches in Chrome can trigger the error, so restarting it might help. Follow these steps to restart Chrome: Close Chrome by clicking the \"X\" in the top right-hand corner. Use Task Manager or Activity Monitor to make sure Chrome isn't running. Wait a moment for Chrome to completely close. Open Chrome again. Revisit the website you were initially trying to view and see if the \"ERR_CACHE_MISS\" message still appears."
+    },
+    {
+      "title": "Delete browsing data.",
+      "content": "Delete browsing data. This will clear out any potentially corrupted or outdated files that cause the error message to appear. Clearing your browsing data includes cookies, cached images, and your browsing history, which gives Chrome a clean slate to recollect and recache that website's data. To clear the cache in Chrome, follow these steps: Press Cmd + Shift + Return (Mac) or Ctrl + Shift + Delete (Windows) to open the \"Delete browsing data\" window. Check all the boxes and select a time range. The default selection of \"Last 4 weeks\" is usually good enough, but select \"All time\" if you haven't deleted all this data in a long time. Click Delete Data . Close Chrome and restart it."
+    },
+    {
+      "title": "Disable your extensions.",
+      "content": "Disable your extensions. Maybe an extension you're using is causing the error, so following these troubleshooting steps to disable them will help you figure out if an extension or something else is the culprit. Click the jigsaw puzzle piece icon in your toolbar or click the three-dot menu icon and go to \"Extensions\". Click Manage Extensions from either menu. Toggle off any extensions that are on. The switch will be grey and pointing to the left if it's off. You want all your extensions off for this step. Restart Chrome and see if the error message still appears on that page. If you don't get the error message anymore, you know that an extension was the trigger for the caching error. To figure out which extension is guilty of causing the error, turn one back on in the \"Manage Extensions\" menu, then restart Chrome. When you see the error message again, you know that the last extension that you turned on is the causing the caching error. Update or remove that extension from your browser."
+    },
+    {
+      "title": "Reset your DNS settings.",
+      "content": "Reset your DNS settings. This gets rid of any DNS issues causing the caching error. The process is different for Windows and Mac computers: Flush and reset Windows DNS Cache : Run Command Prompt as an admin and enter \" ipconfig /flushdns \". Press Enter to send the command. Enter \" netsh int ip reset \". Press Enter to send the command. Restart your computer. Flush and reset Mac DNS Cache : Open Terminal and enter \" sudo dscacheutil -flushcache \". Press Enter to send the command. Enter the admin password and press Enter . Enter \" sudo killall -HUP mDNSResponder \" and press Enter to send the command. Restart your computer."
+    },
+    {
+      "title": "Update Chrome.",
+      "content": "Update Chrome. Outdated software can cause a lot of errors, including the caching error. You can update Chrome in the \"About Chrome\" page."
+    },
+    {
+      "title": "Check your Internet connection.",
+      "content": "Check your Internet connection. Your internet connection can be weak and trigger the caching error message. You want to troubleshoot your router and network to make sure that's not the problem. Restarting your router seems to fix most problems."
+    },
+    {
+      "title": "Reset Google Chrome settings.",
+      "content": "Reset Google Chrome settings. If you've gotten this far without solving the caching error, there can be settings in your browser causing the message. Resetting Chrome's settings means that you'll lose all your bookmarks, history, saved passwords, or other personalized data in Chrome. But none of that really matters unless you aren't using a sign-in since most of that data is stored in your profile. To reset, follow these steps: Open Settings. Select Reset settings . Click Restore settings to their original defaults . Confirm by clicking Reset settings . Close and reload Chrome to see if the error still displays on the page."
+    },
+    {
+      "title": "Disable your cache system.",
+      "content": "Disable your cache system. This checkbox might let Chrome fetch the data it needs to in order to display the website. Follow these steps to disable the cache system: Right-click on any page and select Inspect . This will open the Chrome DevTools panel. Click the Network tab. Check the box next to \"Disable cache\". Press F5 (Windows) or Cmd + R (Mac) to refresh the page."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Rename-Directory-Linux",
+  "title": "How to Rename Linux Directory in Ubuntu, Fedora, & More",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal .",
+      "content": "Press Ctrl + Alt + T to open the Terminal . On most Linux distributions, the Terminal has an icon that resembles a black screen with a white cursor. You can click the Terminal icon in your Apps menu or use the keyboard shortcut \"Ctrl + Alt + T\" to open the Terminal."
+    },
+    {
+      "title": "Navigate to the directory that contains the directory you want to change.",
+      "content": "Navigate to the directory that contains the directory you want to change. This command is easier if you are in the parent directory of the one you want to rename. To change directories, type cd followed by the path, then press Enter . For example, if you want to rename a directory called \"Important\" in your Documents directory, you'd enter cd /home/yourusername/Documents and press Enter ."
+    },
+    {
+      "title": "Type mv in the Terminal.",
+      "content": "Type mv in the Terminal. In addition to using mv to move files and directories , you can use this command to rename directories. Do not press Enter just yet. There is still more you need to type to complete the command."
+    },
+    {
+      "title": "Add any optional commands.",
+      "content": "Add any optional commands. This is not required, but you can add any options you want to the \"mv\" command. [1] X Research source To add an option, add a space followed by one of the following options: --backup : This will create a backup of all the files being moved. -f : This option will force an overwrite of files or folders without a prompt. -i : This option will prompt you before overwriting any files or folders. -v : This option will explain everything that is being done by the command."
+    },
+    {
+      "title": "Add the name of the directory you want to change.",
+      "content": "Add the name of the directory you want to change. If you are currently in the directory that contains the directory you want to change, you only need to enter the name of the directory. To view all directories and folders in your current directory, type ls -la and press Enter . This will show all folders and hidden folders as well as which user has permission to access these folders."
+    },
+    {
+      "title": "Add the new directory name and press ↵ Enter.",
+      "content": "Add the new directory name and press ↵ Enter . To do so, add a space after the directory name you want to change. Then press Enter to change the directory name. If you are not in the directory that contains the directory that you want to change, you will need to add the path to where you want to save the new directory name. For example, /home/user/new_directory . You can also do this to change the location of the directory. The entire command should look something like the following: mv -v /home/username/temp_dir /home/username/new_dir ."
+    },
+    {
+      "title": "Open your File Browser app.",
+      "content": "Open your File Browser app. This will be different with each Linux distribution. On Ubuntu and Fedora, there is an app called \"Files,\" with an icon resembling a file cabinet drawer. Click the Files app to open Files."
+    },
+    {
+      "title": "Right-click the folder you want to rename.",
+      "content": "Right-click the folder you want to rename. You can rename folders using the graphical user interface the same way you would using Windows or macOS. Right-click the folder you want to rename."
+    },
+    {
+      "title": "Click Rename.",
+      "content": "Click Rename . It should be in the menu that appears when you right-click the file."
+    },
+    {
+      "title": "Enter a new name and click Rename.",
+      "content": "Enter a new name and click Rename . A box will appear with a field you can use to enter the new name for your folder. Enter the new name and click Rename . This will instantly rename the folder."
+    },
+    {
+      "title": "Install the \"Rename\" command.",
+      "content": "Install the \"Rename\" command. The Rename command is not available on all Linux distributions, but you can install the package easily. Rename is a good option if you want to rename multiple directories at once, as you can use regular expressions or patterns without writing a script . Open a terminal window, then run the following command for your distribution: Debian/Ubuntu : sudo apt install rename Fedora & RedHat : sudo dnf install prename (note the 'p' at the beginning, which stands for \"perl\") Arch Linux & Manjaro : sudo pacman -Syu perl-rename"
+    },
+    {
+      "title": "Enter the directory that contains the directory you want to change.",
+      "content": "Enter the directory that contains the directory you want to change. To change directories, type cd followed by the path, then press Enter . For example, if you want to rename a directory called \"Important\" in your Documents directory, you'd enter cd /home/yourusername/Documents and press Enter . Don't press Enter just yet. There is still more of the command that needs to be entered."
+    },
+    {
+      "title": "Enter the rename command.",
+      "content": "Enter the rename command. The rename syntax will be slightly different depending on whether you want to rename a single directory or multiple directories. If you're using Fedora or RedHat, use prename . On Arch or Manjaro, use perl-rename . Syntax: rename 's/[pattern]/[replacement]/' [current_name] Replace \"[pattern]\" with the name or (or string of characters from) of the directory or directories you want to rename. Replace \"[replacement]\" with the text you want to rename it with. To remove the string of characters from the directory/directories, leave this blank (e.g., rename 's/[pattern]//' [current_name] ). Replace \"[current_name]\" with the name of the directory you want to rename. You can use wildcards here. Keep in mind that rename also works on individual files. If there are files in the directory that match the string you're searching for, they will also be renamed. Example: If you have a bunch of folders that end with \"_backup\" and want to remove the \"_backup\" from all of their names, you can use rename 's/_backup//' *_backup . Example: Let's say you have a bunch of directories that end with \"_backup,\" but you only want to remove \"_backup\" from the directories that begin with the word \"files.\" In this case, you'd use rename 's/_backup//' files*_backup Example: In this example, we'll change all directory names that contain \"2023\" with \"2024\": rename 's/2023/2024/' *2023*"
+    },
+    {
+      "title": "Use options with the rename command (optional).",
+      "content": "Use options with the rename command (optional). This is not required, but you can add any options you want to the \"rename\" command. For example: rename -v : Adds the \"verbose\" option, which prints successfully renamed file and directory names to the screen. rename -n . Use this if you don't want to rename the directory just yet, but instead want to see which files and directories would be renamed with the command. rename -f : This will force-overwrite existing files and directories without prompting you."
+    },
+    {
+      "title": "Create a new shell script.",
+      "content": "Create a new shell script. The \"mv\" command can be used to rename a single directory at a time. However, if you want to rename multiple directories, you can do so by writing a shell script . To create a new script, type vim script_name.sh at the prompt, where script_name.sh is the name you're giving your script. his will create a new file and open it in the Vim text editor. For example, vim change_directories.sh ."
+    },
+    {
+      "title": "Type for d in *; do on the first line.",
+      "content": "Type for d in *; do on the first line. This creates a loop in which the script will check all files within the directory the shell file is in."
+    },
+    {
+      "title": "Type if [ -d \"$d\" ]; then on the second line.",
+      "content": "Type if [ -d \"$d\" ]; then on the second line. This line of code checks if a file is a directory."
+    },
+    {
+      "title": "Type mv -- \"$d\" \"<new_directory_names>\" on the third line.",
+      "content": "Type mv -- \"$d\" \"<new_directory_names>\" on the third line. This will change all directories in the current directory to the new name with a number at the end of it. Alternatively, you can add a new name to the end of each directory instead of changing it completely. To do so, mv --\"$d\" \"${d}_$(<new_directory_name>\") instead. For example, if you want to add the date to the end of each directory, you could type mv -- \"$d\" \"${d}_$(date +%Y%m%d)\" on the third line."
+    },
+    {
+      "title": "Type fi on the fourth line.",
+      "content": "Type fi on the fourth line. This closes the loop and returns to the beginning."
+    },
+    {
+      "title": "Type done on the fifth line.",
+      "content": "Type done on the fifth line. This ends the script. The entire script should look something like the following: for d in * ; do if [ -d \" $d \" ] ; then mv -- \" $d \" \" ${ d } _ $( date +%Y%m%d ) \" fi done"
+    },
+    {
+      "title": "Save the script and exit Vim.",
+      "content": "Save the script and exit Vim. To do so, press Esc , type :wq , and press Enter . You will be returned to the prompt."
+    },
+    {
+      "title": "Make the shell file executable.",
+      "content": "Make the shell file executable. To do so, type chmod +x <filename> and press Enter . For example, if you named your shell file \"change_directories.sh\", you would type chmod +x change_directories.sh and press Enter . Make sure you are in the same directory as the shell file. To change directories, type cd followed by the path of the shell file (i.e., cd /home/user/ and press Enter ."
+    },
+    {
+      "title": "Execute the script.",
+      "content": "Execute the script. To do so, simply type the name of the shell file (i.e., ./change_directories.sh and press Enter ."
+    },
+    {
+      "title": "Find the directory.",
+      "content": "Find the directory. In a terminal, type find . -depth -type d -name <directory_name> and press Enter if you are not sure where the directory you want to rename is located and need to find it . This command will search your entire file system for a directory with the name you replace \"<directory_name>\" with. Don't press Enter just yet. You still need to add the part of the command that will change the directory name."
+    },
+    {
+      "title": "Add -execdir mv {} <new_directory_name> \\; and press Enter.",
+      "content": "Add -execdir mv {} <new_directory_name> \\; and press Enter . This adds the \"mv\" command to change the directory name once it is located. The entire command should look something like find . -depth -type d -name temp_directory -execdir mv {} new_directory_name \\;"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Zip-File",
+  "title": "6 Simple Ways to Create a .ZIP File from Files or Folders",
+  "steps": [
+    {
+      "title": "Create a folder",
+      "content": "Create a folder with your files. The quickest way to create a zip file is to place all of the files that you want to archive into one folder. You can place multiple files and folders into the folder that you are creating the ZIP file from. Rename the folder to whatever you want the ZIP file to be named."
+    },
+    {
+      "title": "Right-click on the folder.",
+      "content": "Right-click on the folder. A drop-down menu will open."
+    },
+    {
+      "title": "Hover over Send to.",
+      "content": "Hover over Send to . More options will appear."
+    },
+    {
+      "title": "Click Compressed (zipped) folder.",
+      "content": "Click Compressed (zipped) folder . The zipped file will be created in the same location as the original folder. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can also select multiple files in your file explorer, right-click on one of them, and then follow the above steps. The resulting ZIP file will contain all of the selected files and will be named after the file that you right-clicked on. According to Oppido, you'll just need to \"double-click on the file and it opens up another folder [or screen] that shows all the contents.\" [2] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 31 July 2019."
+    },
+    {
+      "title": "Create a folder.",
+      "content": "Create a folder. The quickest way to create a zip file is to place all of the files that you want to archive into one folder. You can place multiple files and folders into the folder that you are creating the ZIP file from. [3] X Research source Rename the folder to whatever you want the ZIP file to be named. .ZIP files get their name because they're similar to zippered satchels; once you unzip the zipper, you can find things you can't see from the outside. [4] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 31 July 2019."
+    },
+    {
+      "title": "Right-click on the folder",
+      "content": "Right-click on the folder . A drop-down menu will open."
+    },
+    {
+      "title": "Click Compress.",
+      "content": "Click Compress . The folder will be compressed into a ZIP file. The new ZIP file will be located in the same location as the folder that you compressed. You can also select multiple files in your file explorer, right-click on one of them, and then follow the above steps. The resulting ZIP file will contain all of the selected files and will be named Archive.zip ."
+    },
+    {
+      "title": "Open the terminal",
+      "content": "Open the terminal . Its symbol looks like a black rectangle with some bright characters on it. On some platforms, it is called Konsole, xTerm, or something similar. You can use the shortcut Ctrl + Alt + T ."
+    },
+    {
+      "title": "Create a directory.",
+      "content": "Create a directory. This is done with the mkdir command, which takes the name of the directory as argument. For example, if you want to create a directory \"zipArchive\", write mkdir zipArchive ."
+    },
+    {
+      "title": "Move or copy all files that should be in the ZIP file into the directory.",
+      "content": "Move or copy all files that should be in the ZIP file into the directory. Files are moved with the mv command. Moving a file means that it is no longer in its original place, and instead in the place you specified. Copying a file is done with the cp command. It makes a copy of the file in the place you specified, but the same file is still on its original position. Note that you need to use cp -r to copy a directory. Both commands take the original position as first argument, and where to copy or move as second. For example, to move a file called \"textToArchive.txt\" to the directory \"zipArchive\", write: mv textToArchive.txt zipArchive"
+    },
+    {
+      "title": "Zip the directory.",
+      "content": "Zip the directory. This is done with the zip -r command. It takes the name of the zip file as the first argument and the name of the folder to archive as the second. If you, for example, want to archive the directory \"zipArchive\" to a zip file called \"zipArchive.zip\", write: zip -r zipArchive.zip zipArchive . It will print out the names of all files it adds to the archive, so you can check whether everything you want to be included in the archive actually is there."
+    },
+    {
+      "title": "Open the File Manager.",
+      "content": "Open the File Manager. You can find this in your app drawer."
+    },
+    {
+      "title": "Tap ⋮.",
+      "content": "Tap ⋮ . This is in the top-right corner."
+    },
+    {
+      "title": "Tap all the files you want to compress.",
+      "content": "Tap all the files you want to compress. You'll see them selected."
+    },
+    {
+      "title": "Tap Compress.",
+      "content": "Tap Compress . This is at the bottom of the screen."
+    },
+    {
+      "title": "Tap Save.",
+      "content": "Tap Save . The new .ZIP file will be created in the same location. You can now upload it or send it elsewhere."
+    },
+    {
+      "title": "Open the Files app.",
+      "content": "Open the Files app . You can find this in your App Library."
+    },
+    {
+      "title": "Locate the files you want to compress.",
+      "content": "Locate the files you want to compress. If you want to compress multiple files, tap ••• in the top-right corner and select New Folder . Then, add the files you want to compress."
+    },
+    {
+      "title": "Long-press the file or folder.",
+      "content": "Long-press the file or folder. A pop-up menu will open."
+    },
+    {
+      "title": "Tap Compress.",
+      "content": "Tap Compress . This is the third option. The compressed .ZIP file will be created in the same location. You can now upload it or send it elsewhere; just long-press the file and tap Share ."
+    },
+    {
+      "title": "Use a compression program (Windows).",
+      "content": "Use a compression program (Windows). Newer versions of Windows cannot create password-protected ZIP files without installing additional software. Compression software is available both for free and for purchase, though you don’t need anything fancy to create a protected ZIP. In the program, add the files you want to compress and create a ZIP, then enter a password when prompted. You'll need to use that password to access the contents in the future. The most popular compression programs include: 7-Zip [5] X Research source WinRAR IZArc PeaZip"
+    },
+    {
+      "title": "Create a password-protected ZIP file in Terminal (Mac).",
+      "content": "Create a password-protected ZIP file in Terminal (Mac). To create a password-protected Zip file in Mac, you can use the Terminal and you don’t need to download any other programs. First, place all of the files that you want to compress into a single folder, and then rename that folder to the name that you want your ZIP file to have. Open the Terminal. This can be found in the Utilities folder in your Applications folder. Navigate to where the folder that you want to compress is located. Enter the command: zip –er <foldername>.zip <foldername>/* Create a password . You will be asked to enter your password twice to verify it. Once you have entered the password, the ZIP file will be created."
+    }
+  ]
+}

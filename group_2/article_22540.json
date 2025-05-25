@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Hide-Files-in-Cmd",
+  "title": "How to Hide Files in Windows Using CMD",
+  "steps": [
+    {
+      "title": "Press ⊞ Win.",
+      "content": "Press ⊞ Win . Your Start menu will open."
+    },
+    {
+      "title": "Type \"Command Prompt.",
+      "content": "Type \"Command Prompt. \" When you open the Start menu and begin typing, you'll automatically perform a search for your keywords."
+    },
+    {
+      "title": "Click the Command Prompt search result.",
+      "content": "Click the Command Prompt search result. This is listed as an application that you can run."
+    },
+    {
+      "title": "Navigate to the files you want to hide.",
+      "content": "Navigate to the files you want to hide. Use cd C:\\Users\\admin\\Desktop\\Files as a template and continue the file path until you're in the same folder as the files you want to hide. You can find the file's location by finding it in your File Explorer, right-clicking it, then clicking Properties > Location . Refer to How to Find a File's Path on Windows for more information."
+    },
+    {
+      "title": "Enter the following code and press ↵ Enter:",
+      "content": "Enter the following code and press ↵ Enter : attrib +h \"Secret Files\" . Replace \"Secret Files\" with the name of the file you want to hide; you only need quotation marks if you have a space in the file name. If you want to hide the folder and everything with the file, use attrib +h /s /d . To make the files visible again, type attrib -h \"Secret Files\" . Again, change the words \"Secret Files\" to your files' name. To unhide the entire folders' contents, type attrib -h /s /d [1] X Research source"
+    }
+  ]
+}

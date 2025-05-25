@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Find-Your-IP-Address-on-a-Mac",
+  "title": "How to Find Your Internal & External IP Address on a Mac",
+  "steps": [
+    {
+      "title": "Click the Apple icon on the upper-left corner of the screen.",
+      "content": "Click the Apple icon on the upper-left corner of the screen. To find your internal (or private) IP address, you can simply look in your Mac’s settings. To get started, open the Apple menu ."
+    },
+    {
+      "title": "Select System Settings.",
+      "content": "Select System Settings . In older versions of macOS, click System Preferences instead."
+    },
+    {
+      "title": "Click Network.",
+      "content": "Click Network . You’ll see this option in the menu bar on the left side of the window. In older versions of macOS, look for Network in the main System Preferences window."
+    },
+    {
+      "title": "Select your connection.",
+      "content": "Select your connection. Typically, you will be connected to the network via Wi-Fi (wireless) or Ethernet (wired). The connection you are using will say Connected next to it. Click on your connection to see more information. In older versions of macOS, your IP address will be listed directly beneath your connection status, in smaller print. You’ll see this as soon as you select your connection."
+    },
+    {
+      "title": "Click Details next to your network.",
+      "content": "Click Details next to your network. Once you click your connection type, a new menu will open listing your available networks. The one you’re currently connected to will appear at the top. Click the Details button next to it."
+    },
+    {
+      "title": "Locate your IP address.",
+      "content": "Locate your IP address. Near the bottom of the Details menu, you’ll see two headers: one that says IP address and another that says Router . The numbers next to these headers are your Mac’s private IP address and your router’s private IP address, respectively. You can also see your IP address by clicking on the TCP/IP tab on the left side of the Details window. This tab displays additional information too, such as your IPv6 address (a longer IP address that contains a mixture of numbers and letters). For earlier versions of macOS, find your IP address by going to Apple menu > System Preferences > Network > Your Connection > Advanced > TCP/IP . You’ll see your Mac’s IP address next to the IPv4 header and your router’s address next to Router ."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal . This can be found in the Utilities section of your Applications folder. You can also find it by clicking the Spotlight search icon at the top of your screen and typing in terminal ."
+    },
+    {
+      "title": "Use the ipconfig command.",
+      "content": "Use the ipconfig command. The correct command will depend on whether your connection is wireless (Wi-Fi) or wired (e.g., Ethernet or cable). Wi-Fi connection: Type or copy and paste the command ipconfig getifaddr en0 , then press Return . Wired connection: Type or copy and paste ipconfig getifaddr en1 and press Return ."
+    },
+    {
+      "title": "Copy your IP address.",
+      "content": "Copy your IP address. Your Mac’s local IP address will be displayed directly below the command you entered."
+    },
+    {
+      "title": "Google search what is my IP address.",
+      "content": "Google search what is my IP address . You can even just type in “ip address.” One of the first results will be a box displaying your public IP address."
+    },
+    {
+      "title": "Use an IP lookup website.",
+      "content": "Use an IP lookup website. There are several websites that allow you to easily look up your public IP address. Try a service like Can You See Me or What Is My IP Address to check your external IP address."
+    },
+    {
+      "title": "Try the ifconfig command in Terminal.",
+      "content": "Try the ifconfig command in Terminal. Like ipconfig, the ifconfig command will show you your IP address. However, this command shows your public IP rather than your internal or private one. To do it: Launch the Terminal app. Type in curl ifconfig.me and press Return . Copy your public IP address. It may look like an IPv6 address (a long string of numbers and letters in groups separated by colons)."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Vim-How-to-Delete-Lines",
+  "title": "Vim: How to Delete Lines Efficiently in Any Mode",
+  "steps": [
+    {
+      "title": "Press Esc to enter command (normal) mode.",
+      "content": "Press Esc to enter command (normal) mode. You can use the \"dd\" command in Vim's command mode to delete one or more lines easily. This method will also work for the original Vi text editor . If it's your first time using Vim, you can open a file for editing using the command vim <yourfilename> ."
+    },
+    {
+      "title": "Use the arrow keys to move to the line you want to delete.",
+      "content": "Use the arrow keys to move to the line you want to delete. Alternatively, you can press k to go up, or j to go down. [1] X Research source"
+    },
+    {
+      "title": "Type dd.",
+      "content": "Type dd . Entering dd instantly deletes the current line from your text file. If you change your mind, press u to undo the deleted line. [2] X Research source"
+    },
+    {
+      "title": "Delete multiple lines.",
+      "content": "Delete multiple lines. If you want to delete more than one line, just type the number of lines you want to delete before the dd . Here's how: Move your cursor to the first line you want to delete. If you want to delete 3 lines, beginning with the current line, type 3dd (replace \"3\" with the number of lines you want to delete). This deletes the current line and the following 2 lines. If you wanted to delete multiple lines above the current line instead of below it, you'd use d3k (replace \"3\" with your preferred number of lines)."
+    },
+    {
+      "title": "Enter command mode.",
+      "content": "Enter command mode. If you're not already in command (normal) mode, press Esc to enter it now. From command mode, you can easily switch to visual mode, which makes it easy to delete one or more lines."
+    },
+    {
+      "title": "Move the cursor to the line you want to delete.",
+      "content": "Move the cursor to the line you want to delete. Before ending visual mode, use the arrow keys to move to the line you want to delete. If you need to delete multiple lines, just move the cursor to the first line in the group you want to remove. If you're not already in command mode, press Esc to enter it first."
+    },
+    {
+      "title": "Press v to enter visual mode.",
+      "content": "Press v to enter visual mode. Vim's visual mode makes it especially easy to delete multiple lines."
+    },
+    {
+      "title": "Type a capital V.",
+      "content": "Type a capital V . Make sure to use a capital V, as this command highlights the entire line. [3] X Research source"
+    },
+    {
+      "title": "Select additional lines (optional).",
+      "content": "Select additional lines (optional). If you want to delete multiple lines, use the up and down arrows to select all lines that you want to delete. This expands the selection."
+    },
+    {
+      "title": "Press d.",
+      "content": "Press d . This deletes all selected lines."
+    },
+    {
+      "title": "Press Esc to enter command (normal) mode.",
+      "content": "Press Esc to enter command (normal) mode. If you want to remove a line from one location and move it to another, you're in luck—the dd command also works like the Cut command you may recognize from your PC or Mac. Not only does it delete the current line, it also saves it to a virtual clipboard."
+    },
+    {
+      "title": "Move the cursor to the line you want to cut.",
+      "content": "Move the cursor to the line you want to cut."
+    },
+    {
+      "title": "Type dd.",
+      "content": "Type dd . The line will disappear, but not forever. If you'd rather copy the line instead of cut it, type yy instead."
+    },
+    {
+      "title": "Move the cursor to another location and press p.",
+      "content": "Move the cursor to another location and press p . This pastes the deleted line to its new location."
+    },
+    {
+      "title": "Press Esc to enter command (normal) mode.",
+      "content": "Press Esc to enter command (normal) mode. If you want to delete all lines that contain a certain character or set of characters in order, you can do with a simple command."
+    },
+    {
+      "title": "Type :g/<pattern>/d.",
+      "content": "Type :g/<pattern>/d . For example, if you want to delete all lines in an HTML file that contain the word \"copyright,\" your command will look like this: :g/copyright/d . Keep in mind that the command is case-sensitive."
+    },
+    {
+      "title": "Press ↵ Enter to run the command.",
+      "content": "Press ↵ Enter to run the command. This deletes all lines in the text file that match the pattern. If you'd rather delete all lines that don't match the pattern, use :v/<pattern>/d instead. [4] X Research source"
+    },
+    {
+      "title": "Press Esc to enter command mode.",
+      "content": "Press Esc to enter command mode. If your text file has multiple blank lines that you don't need, you can delete them quickly using Vim's command mode."
+    },
+    {
+      "title": "Type :g/^$/d.",
+      "content": "Type :g/^$/d . This instantly removes all blank lines from the text file . [5] X Research source"
+    },
+    {
+      "title": "Delete blank lines that contain only whitespace.",
+      "content": "Delete blank lines that contain only whitespace. If you still have blank lines in your file, there may be spaces and tabs in those lines that you can't see. To remove them all at once, use the command :g/^\\s\\+$/d ."
+    }
+  ]
+}

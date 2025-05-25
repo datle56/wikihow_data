@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Find-the-WiFi-Password-of-a-Past-Connection-Using-Command-Prompt-(CMD)",
+  "title": "How to Find the WiFi Password of a Past Connection Using Command Prompt (CMD)",
+  "steps": [
+    {
+      "title": "Open CMD with administrator permissions",
+      "content": "Open CMD with administrator permissions (as an admin) on the connected device. Press ⊞ Win + R or go to your search bar, type cmd , right click and then select Run as administrator . Using this option requires being on the admin account on the device or at least having the admin password."
+    },
+    {
+      "title": "Type netsh wlan show profiles to get a list of networks.",
+      "content": "Type netsh wlan show profiles to get a list of networks. This command returns a list of networks that the device has previously connected to."
+    },
+    {
+      "title": "Choose the WiFi profile you’d like to get the password of.",
+      "content": "Choose the WiFi profile you’d like to get the password of."
+    },
+    {
+      "title": "Type \"netsh wlan show profiles (profile-name) key=clear\".",
+      "content": "Type \" netsh wlan show profiles (profile-name) key=clear \". Replace with the name of the profile you’d like the password of (if the profile is two words long put quotes around the name). This command is what returns the password along with a lot of other info."
+    },
+    {
+      "title": "Find “Security Key” within the list, It's usually under the “Security settings” header.",
+      "content": "Find “Security Key” within the list, It's usually under the “Security settings” header. The password is either “Security Key” or “Key content”. If not visible re-check if the WiFi connection is a WPA,WPA2, or WEP; you can find that in the first set of information paired with “Type”. If it's not any of those types, then the WiFi password either varies based on user or has an extra set of protection blocking public access."
+    },
+    {
+      "title": "Open Terminal",
+      "content": "Open Terminal . Hover the mouse near the top of the desktop or screen. Find and click on the search icon you should see a pop up with greyed out text saying \"Spotlight Search\". An alternative way of opening Spotlight is ⌘ Cmd + Space ."
+    },
+    {
+      "title": "Once Spotlight comes up, type terminal in place of the greyed out text.",
+      "content": "Once Spotlight comes up, type terminal in place of the greyed out text."
+    },
+    {
+      "title": "Type the command security find-generic-password -wa your-wifi.",
+      "content": "Type the command security find-generic-password -wa your-wifi . Make sure to replace \"your-wifi\" with your WI name. [1] X Research source You may have to enter your admin username and password. This command should return the WiFi password of the WiFi you're currently connected to, as long as you replace \"your-wifi\" with the WiFi you're already connected to."
+    }
+  ]
+}

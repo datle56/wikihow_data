@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Update-R",
+  "title": "How to Update R in RStudio or Manually: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Open RStudio.",
+      "content": "Open RStudio. On Windows, you can update R directly in RStudio with the \"installr\" package. MacOS doesn't have \"installr,\" but you can use a similar package called \"updateR\" to update R instead. [1] X Research source"
+    },
+    {
+      "title": "Run the installr or updateR command.",
+      "content": "Run the installr or updateR command. Run the following command in RStudio to begin the update: Windows: install.packages(\"installr\") library(installr) updateR() Mac (where PASSWORD is your system password): install.packages(\"devtools\") devtools::install_github(\"AndreaCirilloAC/updateR\") updateR(admin_password = \"PASSWORD\")"
+    },
+    {
+      "title": "Allow the command to install the latest version of R.",
+      "content": "Allow the command to install the latest version of R. The \"installr\" or \"updateR\" package will check for a new version of R, download it, and install it for you."
+    },
+    {
+      "title": "Decide if you want to move your packages.",
+      "content": "Decide if you want to move your packages. After installing the new version of R, \"installr\" or \"updateR\" will ask if you want to move your packages to the new R library. Follow the on-screen instructions to move your packages, if you decide to."
+    },
+    {
+      "title": "Decide if you want to update your packages.",
+      "content": "Decide if you want to update your packages. After moving your packages, \"installr\" or \"updateR\" will offer to update your packages. Follow the on-screen instructions to update your packages, if you decide to."
+    },
+    {
+      "title": "Open the new Rgui and quit the old R.",
+      "content": "Open the new Rgui and quit the old R. \"Installr\" or \"updateR\" will complete these tasks for you manually. Once you've quit the old R, your system will be updated to the latest version."
+    },
+    {
+      "title": "Go to the CRAN website for your operating system.",
+      "content": "Go to the CRAN website for your operating system. You can manually download the latest version of R and install it on your computer, if you prefer. While you will have to move and install your R packages manually, this method gives you more control over the update process. Visit this link to get the latest version of R for Windows and this link for macOS."
+    },
+    {
+      "title": "Download and run the installer for the latest version of R.",
+      "content": "Download and run the installer for the latest version of R. The installer will walk you through the process. If you have RStudio open, make sure to close it."
+    },
+    {
+      "title": "Open RStudio once the new version of R is installed.",
+      "content": "Open RStudio once the new version of R is installed. RStudio will detect that a new version of R has been installed. To check what version of R your RStudio is using, run the command R.version.string . If the new version of R is shown, you can move on. Otherwise, do the following: Click Tools > Global Options > General > R version > Change . Select the new version of R. Click OK to close the \"R Version Chooser\" window. Click Apply and then OK to close the \"Global Options\" window."
+    },
+    {
+      "title": "Move your packages to the new R library.",
+      "content": "Move your packages to the new R library. Go to your old R library, copy all of your package folders, and move them to the new R library. Your R libraries are found in the following locations by default: Windows: C:\\Users\\[your username]\\Documents\\R\\win-library\\[x.xx] macOS: /Library/Frameworks/R.framework/Versions/[x.xx]/Resources/Library In the filepath, [x.xx] refers to the R version. You should go to the folder for the old version first, copy your packages, and then go to the folder for the new version to paste them."
+    },
+    {
+      "title": "Update your packages in RStudio.",
+      "content": "Update your packages in RStudio. In RStudio, run the following command to update your packages. When prompted, press y for every question to update the packages. update.packages(checkBuilt = TRUE)"
+    },
+    {
+      "title": "Verify the version of your R install and packages.",
+      "content": "Verify the version of your R install and packages. To make sure everything is updated properly, run the following command in RStudio. If your R version and package versions are displaying as the newest version, you've successfully updated R. If not, go back and repeat the steps in this article carefully. version packageStatus()"
+    }
+  ]
+}

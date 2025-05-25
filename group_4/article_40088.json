@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Solve-Higher-Degree-Polynomials",
+  "title": "How to Solve Higher Degree Polynomials",
+  "steps": [
+    {
+      "title": "Factor out common factors from all terms.",
+      "content": "Factor out common factors from all terms. If every term in the polynomial has a common factor, factor it out to simplify the problem. This is not possible with all polynomials, but it's a good approach to check first. [1] X Research source Example 1: Solve for x in the polynomial 2 x 3 + 12 x 2 + 16 x = 0 {\\displaystyle 2x^{3}+12x^{2}+16x=0} . Each term is divisible by 2x, so factor it out: ( 2 x ) ( x 2 ) + ( 2 x ) ( 6 x ) + ( 2 x ) ( 8 ) = 0 {\\displaystyle (2x)(x^{2})+(2x)(6x)+(2x)(8)=0} = ( 2 x ) ( x 2 + 6 x + 8 ) {\\displaystyle =(2x)(x^{2}+6x+8)} Now solve the quadratic equation using the quadratic formula or factoring: ( 2 x ) ( x + 4 ) ( x + 2 ) = 0 {\\displaystyle (2x)(x+4)(x+2)=0} The solutions are at 2x = 0, x+4=0, and x+2=0. The solutions are x=0, x=-4, and x=-2 ."
+    },
+    {
+      "title": "Identify polynomials that act like a quadratic.",
+      "content": "Identify polynomials that act like a quadratic. You likely already know how to solve second degree polynomials, in the form a x 2 + b x + c {\\displaystyle ax^{2}+bx+c} . You can solve some higher-degree polynomials the same way, if they're in the form a x 2 n + b x n + c {\\displaystyle ax^{2n}+bx^{n}+c} . Here are a couple examples: Example 2: 3 x 4 + 4 x 2 − 4 = 0 {\\displaystyle 3x^{4}+4x^{2}-4=0} Let a = x 2 {\\displaystyle a=x^{2}} : 3 a 2 + 4 a − 4 = 0 {\\displaystyle 3a^{2}+4a-4=0} Solve the quadratic using any method: ( 3 a − 2 ) ( a + 2 ) = 0 {\\displaystyle (3a-2)(a+2)=0} so a = -2 or a = 2/3 Substitute x 2 {\\displaystyle x^{2}} for a: x 2 = − 2 {\\displaystyle x^{2}=-2} or x 2 = 2 / 3 {\\displaystyle x^{2}=2/3} x = ±√(2/3) . The other equation, x 2 = − 2 {\\displaystyle x^{2}=-2} , has no real solution. (If using complex numbers, solve as x = ±i√2 ). Example 3: x 5 + 7 x 3 − 9 x = 0 {\\displaystyle x^{5}+7x^{3}-9x=0} does not follow this pattern, but notice you can factor out an x: ( x ) ( x 4 + 7 x 2 − 9 ) = 0 {\\displaystyle (x)(x^{4}+7x^{2}-9)=0} You can now treat x 4 + 7 x 2 − 9 {\\displaystyle x^{4}+7x^{2}-9} as a quadratic, as shown in example 2."
+    },
+    {
+      "title": "Factor sums or differences of cubes.",
+      "content": "Factor sums or differences of cubes. These special cases look difficult to factor, but have properties which make the problem much easier: Sum of cubes: A polynomial in the form a 3 + b 3 {\\displaystyle a^{3}+b^{3}} factors to ( a + b ) ( a 2 − a b + b 2 ) {\\displaystyle (a+b)(a^{2}-ab+b^{2})} . [2] X Research source Difference of cubes: A polynomial in the form a 3 − b 3 {\\displaystyle a^{3}-b^{3}} factors to ( a − b ) ( a 2 + a b + b 2 ) {\\displaystyle (a-b)(a^{2}+ab+b^{2})} . [3] X Research source Note that the quadratic portion of the result is not factorable. [4] X Research source Note that x 6 {\\displaystyle x^{6}} , x 9 {\\displaystyle x^{9}} , and x to any power divisible by 3 all fit these patterns."
+    },
+    {
+      "title": "Look for patterns to find other factors.",
+      "content": "Look for patterns to find other factors. Polynomials that do not look like the examples above may not have any obvious factors. But before you try the methods below, try looking for a two-term factor (such as \"x+3\"). Grouping terms in different orders and factoring out part of the polynomial may help you find one. [5] X Research source This is not always a feasible approach, so don't spend too much time trying if no common factor seems likely. Example 4: − 3 x 3 − x 2 + 6 x + 2 = 0 {\\displaystyle -3x^{3}-x^{2}+6x+2=0} This has no obvious factor, but you can factor the first two terms and see what happens: ( − x 2 ) ( 3 x + 1 ) + 6 x + 2 = 0 {\\displaystyle (-x^{2})(3x+1)+6x+2=0} Now factor the last two terms (6x+2), aiming for a common factor: ( − x 2 ) ( 3 x + 1 ) + ( 2 ) ( 3 x + 1 ) = 0 {\\displaystyle (-x^{2})(3x+1)+(2)(3x+1)=0} Now rewrite this using the common factor, 3x+1: ( 3 x + 1 ) ( − x 2 + 2 ) = 0 {\\displaystyle (3x+1)(-x^{2}+2)=0}"
+    },
+    {
+      "title": "Try to identify one root of the polynomial.",
+      "content": "Try to identify one root of the polynomial. Synthetic division is a useful way to factor high-order polynomials, but it only works if you know one of the roots (or \"zeroes\") already. You may be able to find this by factoring as described above, or the problem may provide one. If so, skip down to the synthetic division instructions . If you do not know a root, continue to the next step to try to find one. [6] X Research source The root of a polynomial is the value of x for which y = 0. Knowing a root c also gives you a factor of the polynomial, (x - c)."
+    },
+    {
+      "title": "List the factors of the constant term.",
+      "content": "List the factors of the constant term. The \"rational roots\" test is a way to guess at possible root values. To begin, list all the factors of the constant (the term with no variable). [7] X Research source Example: The polynomial 2 x 3 + x 2 − 12 x + 9 {\\displaystyle 2x^{3}+x^{2}-12x+9} has the constant term 9. Its factors are 1, 3, and 9."
+    },
+    {
+      "title": "List the factors of the leading coefficient.",
+      "content": "List the factors of the leading coefficient. This is the coefficient in the first term of the polynomial, when it is arranged from the highest-degree term to the lowest. List all of that number's factors on a separate line. Example (cont.): 2 x 3 + x 2 − 12 x + 9 {\\displaystyle 2x^{3}+x^{2}-12x+9} has a leading coefficient of 2. Its factors are 1 and 2."
+    },
+    {
+      "title": "Find the possible roots.",
+      "content": "Find the possible roots. If the polynomial has a rational root (which it may not), it must be equal to ± (a factor of the constant)/(a factor of the leading coefficient). Only a number c in this form can appear in the factor (x-c) of the original polynomial. [8] X Research source Example (cont.): Any rational roots of this polynomial are in the form (1, 3, or 9) divided by (1 or 2). Possibilities include ±1/1, ±1/2, ±3/1, ±3/2, ±9/1, or ±9/2. Don't forget the \"±\": each of these possibilities could be positive or negative."
+    },
+    {
+      "title": "Test roots until you find one that fits.",
+      "content": "Test roots until you find one that fits. None of these are guaranteed to be roots, so you'll need to test them with the original polynomial. Example: (1/1=1) is a possible root. If it turns out to be an actual root, plugging it into the polynomial should result in zero. 2 ( 1 ) 3 + ( 1 ) 2 − 12 ( 1 ) + 9 = 2 + 1 − 12 + 9 = 0 {\\displaystyle 2(1)^{3}+(1)^{2}-12(1)+9=2+1-12+9=0} , so 1 is confirmed to be a root. This means the polynomial has the factor (x-1). If none of the possibilities work out, the polynomial has no rational roots and cannot be factored."
+    },
+    {
+      "title": "Set up a synthetic division problem.",
+      "content": "Set up a synthetic division problem. Synthetic division is a way to find all the factors of a polynomial, if you already know one of them. To set it up, write a root of the polynomial. Draw a vertical line to its right, then write the coefficients of your polynomial arranged from highest degree exponent to lowest. (You do not need to write the terms themselves, just the coefficients.) [9] X Research source Note: You may need to insert terms with a coefficient of zero. For example, rewrite the polynomial x 3 + 2 x {\\displaystyle x^{3}+2x} as x 3 + 0 x 2 + 2 x + 0 {\\displaystyle x^{3}+0x^{2}+2x+0} . Example (cont.) : The rational roots test above told us that the polynomial 2 x 3 + x 2 − 12 x + 9 {\\displaystyle 2x^{3}+x^{2}-12x+9} has the root 1. Write the root 1, followed by a vertical line, followed by the coefficients of the polynomial: ( 1 | 2 1 − 12 9 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\end{pmatrix}}}"
+    },
+    {
+      "title": "Carry down the first coefficient.",
+      "content": "Carry down the first coefficient. Copy the first coefficient onto the answer line. Leave a blank line in between the two numbers for later calculations. Example (cont.) : Carry the 2 down to the answer line: ( 1 | 2 1 − 12 9 2 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\\\\\&2\\end{pmatrix}}}"
+    },
+    {
+      "title": "Multiply that number by the root.",
+      "content": "Multiply that number by the root. Write the answer directly below the next term, but not on the answer line. [10] X Research source Example (cont.) : Multiply the 2 by the root, 1, to get 2 again. Write this 2 in the following column, but on the second row instead of the answer line: ( 1 | 2 1 − 12 9 2 2 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\&&2\\\\&2\\end{pmatrix}}}"
+    },
+    {
+      "title": "Add the contents of the column together to get the next portion of the answer.",
+      "content": "Add the contents of the column together to get the next portion of the answer. The second coefficient column now contains two numbers. Sum them together and write the result on the answer line directly below them. Example (cont.) : 1 + 2 = 3 ( 1 | 2 1 − 12 9 2 2 3 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\&&2\\\\&2&3\\end{pmatrix}}}"
+    },
+    {
+      "title": "Multiply the result by the root.",
+      "content": "Multiply the result by the root. Just as you did before, multiply the latest number on the answer line by the root. Write your answer underneath the next coefficient. Example (cont.) : 1 x 3 = 3: ( 1 | 2 1 − 12 9 2 3 2 3 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\&&2&3\\\\&2&3\\end{pmatrix}}}"
+    },
+    {
+      "title": "Find the sum of the next column.",
+      "content": "Find the sum of the next column. As before, add up the two numbers in the column and write the result on the answer line. Example (cont.) : -12 + 3 = -9: ( 1 | 2 1 − 12 9 2 3 2 3 − 9 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\&&2&3\\\\&2&3&-9\\end{pmatrix}}}"
+    },
+    {
+      "title": "Repeat this process until you reach the final column.",
+      "content": "Repeat this process until you reach the final column. The last number on your answer line will always be zero. If you get any other result, check your work for mistakes. Example (cont.) : Multiply -9 by the root 1, write the answer under the final column, then confirm that the sum of the final column is zero: ( 1 | 2 1 − 12 9 2 3 − 9 2 3 − 9 0 ) {\\displaystyle {\\begin{pmatrix}1|&2&1&-12&9\\\\&&2&3&-9\\\\&2&3&-9&0\\end{pmatrix}}}"
+    },
+    {
+      "title": "Use the answer line to find another factor.",
+      "content": "Use the answer line to find another factor. You have now divided the polynomial by the term (x - c) , where c is your factor. The answer line tells you the coefficient of each term in your answer. The x portion of each term has an exponent one lower than the original term directly above it. Example (cont.) : The answer line is 2 3 -9 0, but you can ignore the final zero. Since the first term of the original polynomial included an x 3 {\\displaystyle x^{3}} , the first term of your answer is one degree lower: x 2 {\\displaystyle x^{2}} . Therefore, the first term is 2 x 2 {\\displaystyle 2x^{2}} Repeat this process to get the answer 2 x 2 + 3 x − 9 {\\displaystyle 2x^{2}+3x-9} . You have now factored 2 x 3 + x 2 − 12 x + 9 {\\displaystyle 2x^{3}+x^{2}-12x+9} into ( x − 1 ) ( 2 x 2 + 3 x − 9 ) {\\displaystyle (x-1)(2x^{2}+3x-9)} ."
+    },
+    {
+      "title": "Repeat if necessary.",
+      "content": "Repeat if necessary. You may be able to factor your answer into smaller parts using the same synthetic division method. However, you may be able to use a faster method to finish the problem. For example, once you have a quadratic expression, you can factor it using the quadratic formula. Remember, to start the synthetic division method, you'll need to know one root already. Use the rational roots test again to get this. If none of the rational root possibilities check out, the expression cannot be factored. Example (cont.) You've found the factors ( x − 1 ) ( 2 x 2 + 3 x − 9 ) {\\displaystyle (x-1)(2x^{2}+3x-9)} , but the second factor can be broken down further. Try the quadratic equation, traditional factoring , or synthetic division. The final answer is ( x − 1 ) ( x + 3 ) ( 2 x − 3 ) {\\displaystyle (x-1)(x+3)(2x-3)} , so the roots of the polynomial are x = 1, x = -3, and x = 3/2 ."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Remove-Chrome-Extensions-Installed-by-Administrator",
+  "title": "Uninstalling Chrome Extensions Installed by Your Administrator",
+  "steps": [
+    {
+      "title": "Type \"chrome://extensions\" into the URL bar and press ↵ Enter.",
+      "content": "Type \" chrome://extensions \" into the URL bar and press ↵ Enter . This shows you all the extensions you have installed on Chrome, even if they are disabled."
+    },
+    {
+      "title": "Toggle on the \"Developer mode\" switch .",
+      "content": "Toggle on the \"Developer mode\" switch . It's at the top-right corner of the page. If the switch is light blue and pointing to the right, it is on. If the developer mode switch is not available, it may have been disabled by your administrator. If you are the administrator, reenable developer tools in the group policy editor under Computer Configuration > Google Chrome > Control where developer tools can be used . [1] X Research source"
+    },
+    {
+      "title": "Copy the extension ID from the extension you can't uninstall.",
+      "content": "Copy the extension ID from the extension you can't uninstall. When developer mode is enabled, you'll see long ID codes below each extension's name. Highlight the code (the part after ID), and press Ctrl + C to copy it. [2] X Research source You can paste this in a text editor like Notepad or Sticky Notes for now. Close all open Chrome windows when you're finished."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. Press the Windows key on your keyboard, type regedit , and press Enter to do so. When prompted, click Yes to run registry editor with admin privileges. Because editing the registry can be risky, it's usually a good idea to make a backup before making changes."
+    },
+    {
+      "title": "Press Ctrl+F.",
+      "content": "Press Ctrl + F . This opens the Find window."
+    },
+    {
+      "title": "Paste the copied ID and click Find Next.",
+      "content": "Paste the copied ID and click Find Next . To paste, click inside the \"Find what\" box, then press Ctrl + V on your keyboard. The registry editor will now search the registry for that ID."
+    },
+    {
+      "title": "Right-click the value with that ID and select Delete.",
+      "content": "Right-click the value with that ID and select Delete . The value you're clicking is in the right panel on the window. Don't just delete the ID from the field—you'll want to delete the entire registry value. Repeat for any other extensions you can't remove."
+    },
+    {
+      "title": "Check for more values containing the ID.",
+      "content": "Check for more values containing the ID. Once the first value is removed, press Ctrl + F again—the ID should still be in the field. Click Find Next to check the registry for any other instances of the ID. If you find another value containing the extension's ID, right-click it and select Delete . In all, you'll usually be deleting two different registry values. Sometimes there could be more or less."
+    },
+    {
+      "title": "Restart Chrome and remove the extension.",
+      "content": "Restart Chrome and remove the extension. Now that you've deleted the registry entry, you delete the extension like any other. To delete the extension, go to chrome://extensions , click Remove next to the extension you want to delete, and follow the on-screen instructions to remove it from Chrome. After you've deleted the extension from Chrome, you should run an anti-malware scan to make sure you don't have any other malicious files hanging around."
+    },
+    {
+      "title": "Remove Chrome browser management policies.",
+      "content": "Remove Chrome browser management policies. If the extension is automatically reinstalled, Chrome may be managed by a browser management policy. You can check by clicking the three-dot menu in Chrome and looking for Managed by your organization at the bottom of the menu. If you have admin rights on your PC, you can delete the policy by deleting several registry keys and values. [3] X Research source Close Chrome. Reopen the registry editor and use Ctrl + F to find the following keys. When you find a key, delete it. HKEY_CURRENT_USER\\Software\\Google\\Chrome HKEY_CURRENT_USER\\Software\\Policies\\Google\\Chrome HKEY_LOCAL_MACHINE\\Software\\Google\\Chrome HKEY_LOCAL_MACHINE\\Software\\Policies\\Google\\Chrome HKEY_LOCAL_MACHINE\\Software\\Policies\\Google\\Update HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Google\\Enrollment Search the registry for CloudManagementEnrollmentToken . You'll find it in a key called HKEY_LOCAL_MACHINE\\Software\\WOW6432Node\\Google\\ Update\\ClientState\\{430FD4D0-B729-4F61-AA34-91526481799D}. Delete the value CloudManagementEnrollmentToken (not the entire registry key) from the key. Open File Explorer and paste the following address into the address bar: %ProgramFiles(x86)%\\Google\\ . Delete the folder called Policies ."
+    },
+    {
+      "title": "Remove any Chrome policy management profiles from your Mac.",
+      "content": "Remove any Chrome policy management profiles from your Mac. If you can't delete a Chrome extension that was installed by an administrator, there may be a security policy in place. You can check by clicking the three-dot menu in Chrome and looking for Managed by your organization at the bottom of the menu. [4] X Research source If Chrome is managed, start by checking for and removing any unneeded profiles: Click the Apple menu and select System Settings . Click Profiles . If you see a profile you don't need, select it and click the minus sign > Remove . Reopen Chrome and try deleting the extension again."
+    },
+    {
+      "title": "Delete any apps you didn't install.",
+      "content": "Delete any apps you didn't install. If no profiles were found, or the extension comes back after you uninstall it, it may be due to malware. Open your Applications folder in Finder and delete any programs you don't recognize or remember installing yourself."
+    },
+    {
+      "title": "Clear Chrome's user defaults.",
+      "content": "Clear Chrome's user defaults. If you still can't permanently delete the extension, clear Chrome's defaults using these steps: Open the Terminal . You'll find it on your Launchpad. Type defaults delete com.google.Chrome and press Return . Enter your account password when prompted to complete the action."
+    },
+    {
+      "title": "Delete additional Chrome management files.",
+      "content": "Delete additional Chrome management files. If you still can't delete the extension permanently, check for and delete the following files: /Library/Preferences/com.google.Chrome.plist /Library/Managed Preferences/com.google.Chrome.plist ~/Library/Application Support/Google/Chrome Cloud Enrollment/*"
+    },
+    {
+      "title": "The developer switch isn't working or isn't visible.",
+      "content": "The developer switch isn't working or isn't visible. If you can't turn on developer mode in Chrome, it's usually because your administrator has disabled this feature. If you're the administrator, re-enable developer mode in your Chrome security policy. You can also try running Chrome as an administrator . To do this, type chrome into the Windows search bar, right-click \"Chrome,\" and select Run as administrator ."
+    },
+    {
+      "title": "The extension keeps reinstalling itself on Windows.",
+      "content": "The extension keeps reinstalling itself on Windows. This happens if the extension was originally installed by your computer's administrator, or in the case of a malware infection. If your computer isn't managed by an administrator other than yourself, use Microsoft Defender to run a malware scan."
+    },
+    {
+      "title": "You don't want to manage this instance of Chrome anymore.",
+      "content": "You don't want to manage this instance of Chrome anymore. If you're a Google Workspace admin who manages Chrome installations in the Google Admin console, you can remove this instance of Chrome from the managed browser list. Here's how: Log in to Google admin console using your administrator account. Go to ☰ > Devices > Chrome > Managed browsers . Select the browser you want to remove and select More > Delete ."
+    }
+  ]
+}

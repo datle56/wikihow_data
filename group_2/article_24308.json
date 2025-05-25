@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Install-the-Windows-7-OS-on-a-Portable-Hard-Drive",
+  "title": "How to Install the Windows 7 OS on a Portable Hard Drive",
+  "steps": [
+    {
+      "title": "Open up Command Prompt as administrator by clicking the Windows Start button.",
+      "content": "Open up Command Prompt as administrator by clicking the Windows Start button. Type in 'cmd', then right click cmd, click 'Run as administrator' and enter the password if prompted."
+    },
+    {
+      "title": "Type 'diskpart'.",
+      "content": "Type 'diskpart'."
+    },
+    {
+      "title": "Type 'list disk'.",
+      "content": "Type 'list disk'."
+    },
+    {
+      "title": "Type 'select disk #' (replace # with your portable drive number).",
+      "content": "Type 'select disk #' (replace # with your portable drive number). You can find which one it is by checking the size of its hard drive and matching it up with one on the list."
+    },
+    {
+      "title": "Type 'clean'.",
+      "content": "Type 'clean'."
+    },
+    {
+      "title": "Type 'create partition primary'.",
+      "content": "Type 'create partition primary'."
+    },
+    {
+      "title": "Type 'select partition 1'.",
+      "content": "Type 'select partition 1'."
+    },
+    {
+      "title": "Type 'active'.",
+      "content": "Type 'active'."
+    },
+    {
+      "title": "Type 'format fs=ntfs quick'.",
+      "content": "Type 'format fs=ntfs quick'."
+    },
+    {
+      "title": "Type 'assign'.",
+      "content": "Type 'assign'."
+    },
+    {
+      "title": "Exit out of Command Prompt.",
+      "content": "Exit out of Command Prompt."
+    },
+    {
+      "title": "Open Windows Easy Install.",
+      "content": "Open Windows Easy Install. Extract it to your desktop or somewhere where you can find it."
+    },
+    {
+      "title": "Open Windows Easy Install.",
+      "content": "Open Windows Easy Install. Click on the folder Windows Easy Install, then folder NT6.x_fast_installer, then finally click on the folder Windows 7."
+    },
+    {
+      "title": "Click on installer and run it as administrator.",
+      "content": "Click on installer and run it as administrator. Enter the admin password if prompted. A green command window should open up. Press enter."
+    },
+    {
+      "title": "Wait for it to say \"Please select the path of install.wim\".",
+      "content": "Wait for it to say \"Please select the path of install.wim\". Open your Windows 7 Installer USB or CD. When it is opened, click on sources."
+    },
+    {
+      "title": "Find install.wim at the bottom.",
+      "content": "Find install.wim at the bottom. Click on it then open it. There should be a list of Windows 7 versions, select one."
+    },
+    {
+      "title": "Enter the drive letter of the partition where you want to install Windows.",
+      "content": "Enter the drive letter of the partition where you want to install Windows. Simply select your portable drive number."
+    },
+    {
+      "title": "Enter the drive letter of your active primary partition.",
+      "content": "Enter the drive letter of your active primary partition. Enter your portable drive where you will be installing Windows' number"
+    },
+    {
+      "title": "Enter Y when it asks, \"Is YOUR DRIVE NUMBER a USB hard disk?\"",
+      "content": "Enter Y when it asks, \"Is YOUR DRIVE NUMBER a USB hard disk?\""
+    },
+    {
+      "title": "Wait for it to tell you the information is collected.",
+      "content": "Wait for it to tell you the information is collected. If you want to use another drive letter, put it in then press enter."
+    },
+    {
+      "title": "Wait for the installation to complete.",
+      "content": "Wait for the installation to complete. When it's done, boot it up from your portable drive."
+    }
+  ]
+}

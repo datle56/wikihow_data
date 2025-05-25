@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Convert-a-FAT-Volume-to-NTFS-in-Windows",
+  "title": "How to Convert a FAT Volume to NTFS in Windows",
+  "steps": [
+    {
+      "title": "Open the Start menu and search command prompt.",
+      "content": "Open the Start menu and search command prompt . To do so, click on the Windows icon on the taskbar, or press the Windows key ( ⊞ Win ). Once the start menu opens, search for the Command Prompt. The icon may look a bit different on Windows 7 ."
+    },
+    {
+      "title": "Open the Command Prompt",
+      "content": "Open the Command Prompt as an administrator. Such permission is required because of the sensitive nature of the task. On Windows 11, click on the Run as administrator button. On other versions, the button may be hidden behind the right-click menu. [5] X Research source With default settings, Windows will show you a UAC (User Account Control) dialog on doing such an action. If that happens, click Yes and the Command Prompt will open for your use ."
+    },
+    {
+      "title": "Use the convert command.",
+      "content": "Use the convert command. [6] X Research source [7] X Research source The syntax for it is CONVERT volume /FS:NTFS [/V] [/CvtArea:filename] [/NoSecurity] [/X] . [8] X Research source [9] X Research source Replace volume with the drive letter followed by a colon ( : ) and use the optional parameters if you'd like. [10] X Research source Then press ↵ Enter to run the command. /V is used to make the convert run in verbose mode. /CvtArea:filename specifies a contiguous file in the root directory which will act as a placeholder for NTFS system files. /NoSecurity makes it so that the security settings on the converted files and directories would allow access by all users. /X forces the volume to dismount first (if necessary). Any open handles to the volume will no longer be valid."
+    },
+    {
+      "title": "Follow the on-screen instruction.",
+      "content": "Follow the on-screen instruction. You will be asked to provide the current volume label of the drive. Enter the name and press ↵ Enter . Then just wait for Windows to perform the task. You will also be shown the file system type of the drive at that point in time."
+    },
+    {
+      "title": "Infer information from what appears on your screen.",
+      "content": "Infer information from what appears on your screen. In an ideal successful case, you'll see a bunch of information and \"Conversion completed\" at the end. You may verify the change manually by opening the File Explorer , going into This PC, right-clicking the drive, clicking Properties and checking the file system displayed beside the \"File System:\" text."
+    },
+    {
+      "title": "Close the Command Prompt.",
+      "content": "Close the Command Prompt. To do so, simply type the exit command and hit ↵ Enter . Alternatively, you can click on the \"X\" window control button on the top-right, which in Windows 10 and above will have a white (or the default colour depending on your desktop theme ) background until hovered on, changing it to red instead. You can also use the universal shortcut key for closing windows , Alt + F4 ."
+    },
+    {
+      "title": "Open the File Explorer",
+      "content": "Open the File Explorer To do so, open the start menu and search file explorer . The start menu can be opened by clicking on the Windows icon on the taskbar, or by pressing the Windows key ( ⊞ Win ). Once the start menu opens, search for the File Explorer. Alternatively, press ⊞ Win + X and click on File Explorer . [11] X Research source You can also use the keyboard shortcut ⊞ Win + E to quickly open the File Explorer. [12] X Research source [13] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you want to open it using the Run window , open it , type explorer and press ↵ Enter . [14] X Research source Specific instructions for Windows 8 can be found here ! The icon may look a bit different on Windows 7 or in Windows 10's start menu ."
+    },
+    {
+      "title": "Navigate to This PC.",
+      "content": "Navigate to This PC. Once you open File Explorer , look for \"This PC\". In older versions of Windows, such as Windows 7, this was known as \"My Computer\". [15] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source The icon hasn't changed much over the years, showing a desktop, sometimes with an additional utility or so. [16] X Research source This is the page where all the system's drives, e.g. Local Disk (C:), are shown. Once you are there, locate the drive you'd like to have converted."
+    },
+    {
+      "title": "Right-click the drive and click Format.",
+      "content": "Right-click the drive and click Format . Once you locate the drive, right-click it. (with or without a mouse) This shall display a variety of options representing actions that can be taken on the drive. Find \"Format\" and click on it. This shall open up a new window for formatting that drive. On Windows 11, the format option is available in the menu that can be opened by selecting the drive and clicking on the 3 dots present on the ribbon."
+    },
+    {
+      "title": "Choose the NTFS file system.",
+      "content": "Choose the NTFS file system. Once the format window appears, you'll see a variety of dropdowns and options. Open the File system dropdown and click on NTFS (Default) . Before selection, you will usually see the current file system of the drive, which can be useful for checking in general."
+    },
+    {
+      "title": "Review all other settings and click on Start.",
+      "content": "Review all other settings and click on Start . Before performing the format, Windows allows you to modify other properties of the drive as well, like capacity, allocation unit size, etc. Decide whether you want to perform a Quick Format or not, give a new name if desired and click on the Start button. You can click on Restore device defaults to set the settings to default, but make sure you change the file system back to NTFS if it gets modified in the process."
+    },
+    {
+      "title": "Read the warning and finalize the action.",
+      "content": "Read the warning and finalize the action. Since formatting is not a routine task and has a large potential, it is important to be careful. Read the warning carefully and choose an action. Be warned that formatting usually removes all data. [17] X Research source Back up anything you'd like to keep on the drive. Clicking OK would go ahead with the format of the drive. Clicking Cancel would cancel the operation."
+    },
+    {
+      "title": "Close",
+      "content": "Close the open windows after completion. While the format is underway, you can see the progress in the green bar in the preceding (main) window. Once the format completes, you'll see a message in a dialog box that says \"Format Complete.\" Click on OK to close the focused window and Cancel to close the preceding window. Alternatively, you can also use the universal shortcut key for closing windows , Alt + F4 for closing the preceding window."
+    },
+    {
+      "title": "Open Disk Management using the start menu.",
+      "content": "Open Disk Management using the start menu. Click on the Windows icon on the taskbar or press the ⊞ Win key on your keyboard to open the start menu. Then, type disk management in the search bar , which can be found at the top of the Start menu in Windows 11 and at the bottom in older versions. Afterward, click on \"Create and format hard disk partitions\" to open the utility. An alternative route to opening disk management would be opening the Run window , typing diskmgmt.msc [18] X Research source and pressing ↵ Enter . You can also press ⊞ Win + X and select Disk Management from the menu. The utility can also be accessed through the Control Panel."
+    },
+    {
+      "title": "Locate your drive.",
+      "content": "Locate your drive. Once the disk management utility opens, you'll see a table containing a list of drives present on the system, showing their properties like name, drive letter, layout, type, file system, status, capacity, free space and % free. Locate the drive from the list and left-click on it. Doing so would make its cell background blue and the text white, indicating its selection. The first drive on the list may be automatically selected for you. Without a mouse, you may also use the up and down arrow keys ↑ ↓ to shift your selection between drives."
+    },
+    {
+      "title": "Open the format window.",
+      "content": "Open the format window. To do so, right-click the name of the drive and click on Format... from the list of options that appear on your screen. Alternatively, with the selection active, click on Action at the top, then open the All Tasks > dropdown and choose the Format... option from the list."
+    },
+    {
+      "title": "Change the file system.",
+      "content": "Change the file system. After the format window opens, you'll see various drive settings that may be changed (with care), like label, file system and allocation unit size, similar to what you would see using the format window through the File Explorer. Click on the dropdown to open it, then select NTFS ."
+    },
+    {
+      "title": "Review the other options.",
+      "content": "Review the other options. Assign a new name if desired, and change the allocation unit size if you'd like. Then, decide whether to \"quick format\" or not. A normal format is better [19] X Research source (as it scans the hard drive for faulty sectors and overwrites each sector with a zero) but may take more time. Enabling file and folder compression is an optional choice. Once you're done fiddling with the settings, click on OK ."
+    },
+    {
+      "title": "Read the warning and finalize the action.",
+      "content": "Read the warning and finalize the action. Since formatting is not a routine task and has a large potential, it is important to be careful. Read the warning carefully and choose an action. Be warned that formatting removes all data. [20] X Research source Back up anything you'd like to keep. Clicking OK would go ahead with the format of the drive. Clicking Cancel would cancel the operation."
+    },
+    {
+      "title": "Verify the change(s) and close the utility.",
+      "content": "Verify the change(s) and close the utility. Once the format is done, look at the table again and check if the drive file system is NTFS and that any other changes you made are reflected. Then press Alt + F4 or click the \"X\" button on the top-right to exit."
+    }
+  ]
+}

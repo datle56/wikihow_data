@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Enable-USB-Booting-on-Chromebook",
+  "title": "2 Easy Ways to Enable USB Booting on Chromebook",
+  "steps": [
+    {
+      "title": "Back up your Chromebook.",
+      "content": "Back up your Chromebook. Starting your Chromebook in Developer Mode will cause it to reset to factory settings. Some things, like your browser settings and files stored in the cloud, should be automatically backed up if you have syncing set up in Chrome . But if you’re worried about losing any of your data, particularly any Linux files or apps, do a backup first. [1] X Research source"
+    },
+    {
+      "title": "Hold down Esc + and press .",
+      "content": "Hold down Esc + and press . Hold the Esc and Refresh keys down at the same time, then press the Power button. This will cause your Chromebook to reboot in Recovery Mode. [2] X Research source On some models you’ll need to hold down Esc + Maximize instead. The Maximize button looks like 4 right-angle brackets arranged into a square shape. If neither key combination works, try shutting your Chromebook down first."
+    },
+    {
+      "title": "Press Ctrl+D to activate Developer Mode.",
+      "content": "Press Ctrl + D to activate Developer Mode . Once you see the Recovery screen, this combination will ask if you want to turn off OS verification."
+    },
+    {
+      "title": "Press ↵ Enter to continue.",
+      "content": "Press ↵ Enter to continue. You'll see a message that confirms you've disabled OS Verification."
+    },
+    {
+      "title": "Press Ctrl+D again.",
+      "content": "Press Ctrl + D again. You'll then see a message that says \"Your system is transitioning to Developer Mode,\" and a timer at the top of the screen. Once the timer runs out, your Chromebook will enter Developer Mode. This process can take up to 15 minutes."
+    },
+    {
+      "title": "Press Ctrl+Alt+F2 on the white splash screen.",
+      "content": "Press Ctrl + Alt + F2 on the white splash screen. The F2 key is also the right-pointing arrow. This displays a login prompt."
+    },
+    {
+      "title": "Log in as the chronos user with no password.",
+      "content": "Log in as the chronos user with no password. This user has no password, so you won't need to enter one to log in. Once signed in, you'll see a prompt."
+    },
+    {
+      "title": "Type sudo su - and press ↵ Enter.",
+      "content": "Type sudo su - and press ↵ Enter . This gives you superuser access. Because there is no root password, you will not need to enter a password now. If prompted, just press Enter . [3] X Research source"
+    },
+    {
+      "title": "Enable USB boot mode.",
+      "content": "Enable USB boot mode. This mode allows you to boot from external media, such as a USB flash drive or SD card. To do this, just type crossystem dev_boot_usb=1 and press ↵ Enter ."
+    },
+    {
+      "title": "Insert your bootable USB flash drive.",
+      "content": "Insert your bootable USB flash drive. If you haven't done so already, insert your flash drive now."
+    },
+    {
+      "title": "Restart your Chromebook.",
+      "content": "Restart your Chromebook. Your Chromebook will reboot once again to the warning screen. [4] X Research source"
+    },
+    {
+      "title": "Press Ctrl+U on the white splash screen.",
+      "content": "Press Ctrl + U on the white splash screen. This prompts your Chromebook to boot from the connected USB flash drive. Developer Mode will remain enabled until you disable it. To disable Developer Mode, reboot your Chromebook. On the Warning screen, hit Spacebar to boot up in Normal Mode."
+    },
+    {
+      "title": "Make a USB disk using the Recovery Extension.",
+      "content": "Make a USB disk using the Recovery Extension . If you want to recover a Chromebook using a bootable USB disk, the Recovery Extension will allow you to format your bootable disk easily. On a separate computer, install the Recovery Extension in your Chrome browser. Then: [5] X Research source Click the Extensions button, which looks like a puzzle piece, in the top right corner of the Chrome browser window. Select the Chromebook Recovery Utility extension. An extension window should pop up. Click Get Started in the pop-up window. Select your Chromebook model in the Select a model from a list menu. You can also type in your model number if you know it. Select Continue , then insert your USB drive into the USB port on your computer. Choose your USB drive from the dropdown menu, click Continue , then click Create Now . Remove the USB drive once you see a message telling you that your recovery disk is ready."
+    },
+    {
+      "title": "Start your Chromebook up in Recovery Mode.",
+      "content": "Start your Chromebook up in Recovery Mode. To do this on most models, hold down Esc and Refresh at the same time, then press the Power button. On some other models, you may need to hold Esc and Maximize (which looks like 4 right-angle brackets arranged in a square) while pressing Power . Let go of the keys when you see a message letting you know you are in Recovery Mode ."
+    },
+    {
+      "title": "Select Recover using external disk.",
+      "content": "Select Recover using external disk . On the Recovery Mode screen, you should see a couple different recovery options. Choose Recover using external disk to boot up and restore your system from a USB drive."
+    },
+    {
+      "title": "Follow the prompts on the screen.",
+      "content": "Follow the prompts on the screen. Your Chromebook will guide you through the process of restoring your Chromebook from the USB disk. Insert the disk when prompted and follow the instructions to finish the recovery process. If you get an error message saying The device you inserted doesn’t contain ChromeOS , you may need to erase the USB drive and try again, or use a different USB drive."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Change-MAC-Address-on-Ubuntu",
+  "title": "How to Change MAC Address on Ubuntu",
+  "steps": [
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal."
+    },
+    {
+      "title": "Log in as root so type:",
+      "content": "Log in as root so type: sudo -i and then write your password."
+    },
+    {
+      "title": "View your current address by typing:",
+      "content": "View your current address by typing: ip link show"
+    },
+    {
+      "title": "Set the device down to avoid problems.",
+      "content": "Set the device down to avoid problems. Type: \"ip link set dev xxxx down\" where xxxx is the name of device you want to set down, so for example: ip link set dev wlan0 down"
+    },
+    {
+      "title": "Change your MAC address.",
+      "content": "Change your MAC address. Write into terminal this: ip link set dev xxxx address xx:xx:xx:xx:xx:xx where xxxx is the device and xx:xx:xx:xx:xx:xx is your new MAC address. MAC addresses need hexadecimal digits (0-9 and a-f) which you can pick randomly. The command will look like: ip link set dev wlan0 address 74:d0:3b:9f:d8:48"
+    },
+    {
+      "title": "Set up your device so type:",
+      "content": "Set up your device so type: ip link set dev xxxx up, where xxxx is the name of your device"
+    }
+  ]
+}

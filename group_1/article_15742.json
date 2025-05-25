@@ -1,0 +1,142 @@
+{
+  "url": "https://www.wikihow.com/Enable-Regedit",
+  "title": "How to Enable the Registry Editor (Regedit) if Disabled",
+  "steps": [
+    {
+      "title": "Open Group Policy Editor.",
+      "content": "Open Group Policy Editor. If you get an error that says \"Registry editing has been disabled by your administrator,\" an administrator will need to reenable it in the Group Policy Editor. If your Windows account has administrator privileges, you can make this change. Keep in mind that Group Policy Editor is not available in Home editions of Windows—you will need a Pro, Business, or Server edition of Windows to use it. To open Group Policy Editor: Press Win + R to open Run. Type gpedit.msc into Run. Click OK ."
+    },
+    {
+      "title": "Navigate to the System folder.",
+      "content": "Navigate to the System folder. Use the following steps to do so: Double-click to expand the User Configuration section. Open the Administrative Templates folder. Open the System folder."
+    },
+    {
+      "title": "Double-click Prevent access to registry editing tools.",
+      "content": "Double-click Prevent access to registry editing tools . You'll find this item on the right side of the window. You may have to scroll down to find it."
+    },
+    {
+      "title": "Select the \"Not Configured\" option.",
+      "content": "Select the \"Not Configured\" option. It's on the left side of the pop-up window."
+    },
+    {
+      "title": "Click Apply, then click OK.",
+      "content": "Click Apply , then click OK . These are both at the bottom of the window. Doing so should re-enable Registry Editor on your computer. You should now be able to open and use Regedit ."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator .",
+      "content": "Open the Command Prompt as an administrator . You can use the Command Prompt (CMD) to enable the Registry Editor with a single command. To do so, you will need to have a Windows account with administrative privileges and run the Command Prompt as an administrator . Use the following steps to do so: Click the Windows Start menu. Type CMD . Right-click the Command Prompt . Click Run as administrator . Click Yes when prompted."
+    },
+    {
+      "title": "Enter the Registry refresh command.",
+      "content": "Enter the Registry refresh command. To do so, enter the following command and press Enter : reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" /t Reg_dword /v DisableRegistryTools /f /d 0"
+    },
+    {
+      "title": "Close Command Prompt.",
+      "content": "Close Command Prompt. Your command should have re-enabled the Registry Editor."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Open Start , click the Power icon , and click Restart . Once your computer finishes restarting, you can try opening Registry Editor again. If Registry Editor still won't open, you may be able to use a script to force it to open."
+    },
+    {
+      "title": "Open a new Notepad document.",
+      "content": "Open a new Notepad document. Use the following steps to do so: Click the Windows Start button. Type Notepad . Click the blue Notepad icon. Click File in the menu bar at the top. Click New ."
+    },
+    {
+      "title": "Copy the following code into the Notepad document:",
+      "content": "Copy the following code into the Notepad document: Option Explicit Dim WSHShell , n , MyBox , p , t , mustboot , errnum , vers Dim enab , disab , jobfunc , itemtype Set WSHShell = WScript . CreateObject ( \"WScript.Shell\" ) p = \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\\" p = p & \"DisableRegistryTools\" itemtype = \"REG_DWORD\" mustboot = \"Log off and back on, or restart your pc to\" & vbCR & \"effect the changes\" enab = \"ENABLED\" disab = \"DISABLED\" jobfunc = \"Registry Editing Tools are now \" t = \"Confirmation\" Err . Clear On Error Resume Next n = WSHShell . RegRead ( p ) On Error Goto 0 errnum = Err . Number if errnum <> 0 then WSHShell . RegWrite p , 0 , itemtype End If If n = 0 Then n = 1 WSHShell . RegWrite p , n , itemtype Mybox = MsgBox ( jobfunc & disab & vbCR & mustboot , 4096 , t ) ElseIf n = 1 then n = 0 < br > WSHShell . RegWrite p , n , itemtype Mybox = MsgBox ( jobfunc & enab & vbCR & mustboot , 4096 , t ) End If"
+    },
+    {
+      "title": "Click File followed by Save As….",
+      "content": "Click File followed by Save As… . It's in the top-left side of the Notepad window."
+    },
+    {
+      "title": "Select a save location.",
+      "content": "Select a save location. Click the Desktop folder on the left side of the Save As window."
+    },
+    {
+      "title": "Enter Registry Editor.vbs as the file name.",
+      "content": "Enter Registry Editor.vbs as the file name. Do this in the \"File name:\" field."
+    },
+    {
+      "title": "Select a file type.",
+      "content": "Select a file type. Click the drop-down box next to \"Save as type:\", then click All Files . This will save your document in the correct file format."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's in the bottom-right corner of the Save As window. This will create your file."
+    },
+    {
+      "title": "Close Notepad.",
+      "content": "Close Notepad. Click the X in the top-right corner of Notepad to do so."
+    },
+    {
+      "title": "Double-click the VBS file.",
+      "content": "Double-click the VBS file. Doing so will prompt the script to run. This script will switch the registry editor's disabled/enabled setting. Do not run it a second time, or the registry editor will be disabled again."
+    },
+    {
+      "title": "Disable any third-party antivirus programs.",
+      "content": "Disable any third-party antivirus programs. If your Registry Editor isn't working and you are the administrator, your PC may be infected with a virus or malware. However, it's also possible that third-party antivirus programs (e.g., McAfee, Norton, Kaspersky) can be blocking access to regedit. Because of this, disable all antivirus protection that isn't Windows Defender before continuing."
+    },
+    {
+      "title": "Open Windows Security.",
+      "content": "Open Windows Security. Use the following steps to do so: Click the Windows Start button. Type Windows Security . Click Windows Security Click Virus & threat protection"
+    },
+    {
+      "title": "Click Scan options.",
+      "content": "Click Scan options . It's a link below the Quick scan button in the middle of the page. On some versions of Windows Defender, click Advanced scan instead."
+    },
+    {
+      "title": "Make sure \"Full scan\" is checked.",
+      "content": "Make sure \"Full scan\" is checked. Click the circle to the left of \"Full scan\" at the top of the page if it isn't already filled in."
+    },
+    {
+      "title": "Click Scan now.",
+      "content": "Click Scan now . It's in the middle of the page. Windows Defender will start scanning your computer for malicious software that might be preventing Registry access. This may take a little bit of time. If this scan doesn't find anything, repeat the scan with \"Windows Defender Offline scan\" checked instead of \"Full scan\" checked."
+    },
+    {
+      "title": "Try to open Registry Editor.",
+      "content": "Try to open Registry Editor. If you can't Open Registry Editor you may need to reinstall Windows. You may need to restart your computer before you can access Registry Editor after the scan."
+    },
+    {
+      "title": "Back up your computer.",
+      "content": "Back up your computer. When reinstalling Windows, it's possible you may lose your files and data. Be sure to back up any data and information you need . You can back up your data using an external hard drive, or using a cloud service such OneDrive or Google Drive ."
+    },
+    {
+      "title": "Navigate to the reset option.",
+      "content": "Navigate to the reset option. While running a full virus scan may get rid of viruses and malware, it may not fix the damage that has already been done. If you are still not able to open Registry Editor, you may need to reinstall Windows . You can do so from the Windows Settings menu. Use the following steps to get started: Click the Windows Start . Click the Settings icon. Click System (Windows 11) or Update & Security (Windows 10). Click Recovery . Click Reset PC or Get Started next to \"Reset this PC.\""
+    },
+    {
+      "title": "Click Keep my files or Remove everything.",
+      "content": "Click Keep my files or Remove everything . It's recommended you click Keep my files to avoid losing your data. However, if this doesn't work, you may need to click Remove everything to completely reformat your computer. In this case, you will lose all your files and data on your computer."
+    },
+    {
+      "title": "Select Cloud Download.",
+      "content": "Select Cloud Download . If you have an internet connection, click Cloud Download to download the latest version of Windows from the internet. If you don't have an internet connection, you can click Local reinstall to reinstall Windows from a local file."
+    },
+    {
+      "title": "Review your settings and click Next followed by Confirm.",
+      "content": "Review your settings and click Next followed by Confirm . For the next couple of pages, you will be presented with the settings you selected. Verify they are correct and follow the prompts."
+    },
+    {
+      "title": "Click Reset.",
+      "content": "Click Reset . This will begin the process of reinstalling Windows. This may take a while. Your PC may restart several times during this process."
+    },
+    {
+      "title": "Go through the Windows setup process.",
+      "content": "Go through the Windows setup process. After you reinstall Windows, you will need to go through the setup process again. Follow the prompts to go through the Windows setup process."
+    },
+    {
+      "title": "Press the Windows key on the keyboard.",
+      "content": "Press the Windows key on the keyboard. You can also just click the Start menu if you prefer."
+    },
+    {
+      "title": "Type regedit into the search bar.",
+      "content": "Type regedit into the search bar. A list of search results will appear."
+    },
+    {
+      "title": "Press ↵ Enter or click Registry Editor.",
+      "content": "Press ↵ Enter or click Registry Editor . If the Registry Editor prompts you for permission and then opens when you click Yes , you can now use the editor to modify the registry . If the Registry Editor doesn't open, you'll need to try another method in this article."
+    }
+  ]
+}

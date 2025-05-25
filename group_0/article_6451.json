@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Center-Text-in-HTML",
+  "title": "How to Center Text in HTML",
+  "steps": [
+    {
+      "title": "Open the file that contains your CSS styles.",
+      "content": "Open the file that contains your CSS styles. Though the <center> tag is obsolete, you can create a new element to add to any part of a page to center text within its boundaries. If you don't have a separate file for your CSS, you'll find the styles at the top of the HTML file between the \"<style>\" and \"</style>\" tags. [2] X Research source If you don't already have <style> and </style> tags, add them directly below <body> at the top of the file like this: <!DOCTYPE html> < html > < body > < style > </ style >"
+    },
+    {
+      "title": "Create a class that centers text.",
+      "content": "Create a class that centers text. The <div> tag will tell your HTML document to reference a specified section of text, so you'll create a class for that tag. Type the following into the space between the \"style\" tags, making sure to press ↵ Enter twice after the first line: div . a { }"
+    },
+    {
+      "title": "Add the text-align property.",
+      "content": "Add the text-align property. Type text-align: center; into the space between the two curly brackets in the div.a section. The header should now look like this: <! DOCTYPE html > < html > < body > < style > div . a { text-align : center ; } </ style >"
+    },
+    {
+      "title": "Add the proper div tag to text that should be centered.",
+      "content": "Add the proper div tag to text that should be centered. You'll do this by placing the <div class=\"a\"> tag above the text you want to center and closing with a </div> tag below the text you want to center. For example, to center a header and its paragraph text, you would enter the following: < div class = \"a\" > < h1 > Welcome to My Website </ h1 > < p > This website is primarily for the purpose of providing information about things .</ p > </ div >"
+    },
+    {
+      "title": "Use the div.a tag to center other areas.",
+      "content": "Use the div.a tag to center other areas. To center another element (e.g., content between tags like <p></p> and <h2></h2> ), type <div class=\"a\"> before the item, and </div> after it. Since you already have \"div.a\" specified as the centering command, this will center the text just like it did before: < style > div . a { text-align : center ; } </ style > < div class = \"a\" > < h2 > Donations Welcome </ h2 > < p > please </ p > </ div >"
+    },
+    {
+      "title": "Review your document.",
+      "content": "Review your document. Though the content will vary, your document should look something like this: [3] X Research source <! DOCTYPE html > < html > < body > < style > div . a { text-align : center ; } </ style > < div class = \"a\" > < h1 > Welcome to My Website </ h1 > < p > This website is primarily for the purpose of providing information about things .</ p > </ div > < div class = \"a\" > < h2 > Donations Welcome </ h2 > < p > please </ p > </ div > </ body > </ html >"
+    },
+    {
+      "title": "Open your HTML document.",
+      "content": "Open your HTML document. This method describes how to use the HTML <center> tag, which is now obsolete. As of December 2018, this tag may still work in some web browsers, however, it's not advised to rely on this tag in the long run."
+    },
+    {
+      "title": "Find the text you want to center.",
+      "content": "Find the text you want to center. Scroll down until you find the header, paragraph, or other text that you want to center."
+    },
+    {
+      "title": "Add the \"center\" tag to each side of the text.",
+      "content": "Add the \"center\" tag to each side of the text. The center tag is in the format <center>text</center> where \"text\" is your text. If your text has tags on it (e.g., \"<p></p>\" for paragraph text), the \"center\" tags can go outside the existing tags: < center >< h1 > Welcome to My Website </ h1 ></ center > < center > Make yourself at home! </ center >"
+    },
+    {
+      "title": "Review your HTML document.",
+      "content": "Review your HTML document. Your document should look something like this: [4] X Research source <!DOCTYPE html> < html > < body > < h1 >< center > Welcome to My Website </ center ></ h1 > < center > Make yourself at home! </ center > < p1 > The purpose of this website is to display information about things. </ p1 > </ body > </ html >"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Format-an-External-Hard-Drive-to-Fat32",
+  "title": "How to Format an External Drive to FAT32 on Windows & Mac",
+  "steps": [
+    {
+      "title": "Connect your external hard drive to your PC.",
+      "content": "Connect your external hard drive to your PC. If you haven't already done so, use a USB cable to connect your external hard drive to an available USB port on your PC. If the drive is larger than 2 TB, you can't format it as FAT32. [1] X Research source If your goal is to make the drive compatible with as many operating systems as possible, use the exFAT file system instead. If you're using a laptop, make sure it's plugged into a reliable power source. Formatting the drive can take about an hour, depending on the drive's size and speed."
+    },
+    {
+      "title": "Find the drive letter of the external hard drive.",
+      "content": "Find the drive letter of the external hard drive. To format the drive, you'll need to know which letter represents it on your PC. Here's how: Press Windows key + E to open File Explorer. Double-click This PC in the left panel. Now look at the right panel under \"Devices and drives.\" Each connected drive has a letter, such as C: or D:. Make note of the one assigned to your external hard drive."
+    },
+    {
+      "title": "Press ⊞ Win+X.",
+      "content": "Press ⊞ Win + X . This opens the Windows Power User menu."
+    },
+    {
+      "title": "Click Command Prompt (Admin).",
+      "content": "Click Command Prompt (Admin) . This opens an administrator-level command prompt. If you see PowerShell (Admin) instead, click that. The commands will be the same whether you're using Command Prompt or PowerShell."
+    },
+    {
+      "title": "Type the format command at the prompt.",
+      "content": "Type the format command at the prompt. You'll need to replace the \"X\" with the correct letter of your external hard drive. Here's the command: format /FS:FAT32 X: For example, if your external hard drive is E:, you'd type format /FS:FAT32 E:"
+    },
+    {
+      "title": "Press ↵ Enter to run the command.",
+      "content": "Press ↵ Enter to run the command. You'll see a message that says all of the data on the drive will be lost. This is required for formatting the drive."
+    },
+    {
+      "title": "Press the Y key and then press ↵ Enter.",
+      "content": "Press the Y key and then press ↵ Enter . Windows will now format the drive as FAT32."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. To do this, type \"cmd\" into the taskbar search bar, right-click \"Command Prompt,\" and click Run as administrator . This method works whether your external drive has more or less than 32GB of storage. However, if your external drive has more than 32GB, this method will create a 32GB partition that will be formatted to FAT32. The rest of the storage space on the external drive won't be changed."
+    },
+    {
+      "title": "Type diskpart.",
+      "content": "Type diskpart . Press Enter to run the command. [2] X Research source"
+    },
+    {
+      "title": "Type list disk.",
+      "content": "Type list disk . Press Enter to run the command."
+    },
+    {
+      "title": "Type select disk #.",
+      "content": "Type select disk # . Replace the # with the disk number from the disk list in step 3."
+    },
+    {
+      "title": "Type clean.",
+      "content": "Type clean . Press Enter to run the command."
+    },
+    {
+      "title": "Type create partition primary size=32768.",
+      "content": "Type create partition primary size=32768 . This will create a 32GB partition on your external drive. Press Enter to run the command."
+    },
+    {
+      "title": "Type assign letter=[letter].",
+      "content": "Type assign letter=[letter] . Replace [letter] with the drive letter you want to give the partition. Press Enter to run the command."
+    },
+    {
+      "title": "Type list partition.",
+      "content": "Type list partition . Press Enter to run the command."
+    },
+    {
+      "title": "Type select partition #.",
+      "content": "Type select partition # . Replace the # with the partition number from the partition list in step 8. Press Enter to run the command."
+    },
+    {
+      "title": "Type format fs=fat32 quick.",
+      "content": "Type format fs=fat32 quick . Press Enter to run the command. The 32GB partition on the external drive will be immediately formatted into FAT32."
+    },
+    {
+      "title": "Connect your external hard drive to your PC.",
+      "content": "Connect your external hard drive to your PC. If you haven't already done so, use a USB cable to connect your external hard drive to an available USB port on your PC. This method should work as long as your external hard drive is smaller than 32 GB."
+    },
+    {
+      "title": "Right-click the Windows menu and select File Explorer.",
+      "content": "Right-click the Windows menu and select File Explorer . You can also open File Explorer by pressing Windows key + E ."
+    },
+    {
+      "title": "Double-click This PC.",
+      "content": "Double-click This PC . It's on the left panel."
+    },
+    {
+      "title": "Right-click the external hard drive.",
+      "content": "Right-click the external hard drive. It'll be in the right panel. A menu will expand."
+    },
+    {
+      "title": "Click Format on the menu.",
+      "content": "Click Format on the menu. This opens the \"Format\" dialog, which is a small window containing some formatting tools."
+    },
+    {
+      "title": "Select FAT32 from the \"File system\" menu.",
+      "content": "Select FAT32 from the \"File system\" menu. This option will only appear if the drive is smaller than 32 GB. If you don't see this option and the drive is smaller than 32 GB, try the Drives Larger Than 32 GB method instead."
+    },
+    {
+      "title": "Enter a name for the drive in \"Volume label.\"",
+      "content": "Enter a name for the drive in \"Volume label.\" You can keep the default name or change it if you'd like. This is just how the drive shows up when connected to the computer."
+    },
+    {
+      "title": "Check the box next to \"Quick format.\"",
+      "content": "Check the box next to \"Quick format.\" This drastically speeds up the formatting process. The only reason you might want to avoid using quick scan is if you're getting rid of the external hard drive and worried that someone with amazing tech skills will be able to access your deleted data. Since you're formatting as FAT32, it's safe to assume you have a reason to still use the drive!"
+    },
+    {
+      "title": "Click Start to start formatting.",
+      "content": "Click Start to start formatting. When the formatting is complete, you'll see a message that tells you so."
+    },
+    {
+      "title": "Click OK to close the window.",
+      "content": "Click OK to close the window. Your external hard drive is now formatted in the FAT32 format."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. The fastest way to do this is to open Spotlight (either by clicking on the icon in the dock, or by pressing Cmd+Space ) and type \"disk utility.\""
+    },
+    {
+      "title": "Click on your external drive.",
+      "content": "Click on your external drive. It will be under the \"External\" heading on the left-hand sidebar."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . This button is located in the upper-right part of the window."
+    },
+    {
+      "title": "Choose MS-DOS (FAT) in the dropdown.",
+      "content": "Choose MS-DOS (FAT) in the dropdown. This option is the same as FAT32 on a Windows system."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . The external drive will immediately be formatted."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Auto-Refresh-in-Chrome",
+  "title": "Automatically Reload a Page in Chrome: Easy Extension & Script",
+  "steps": [
+    {
+      "title": "Search for an auto-refresh extension on the Chrome Web Store.",
+      "content": "Search for an auto-refresh extension on the Chrome Web Store. Plenty of extensions offer auto-refresh in Google Chrome, including one called \"Auto Refresh Plus.\" If you want to download Auto Refresh Plus from the Google Web Store, you can do so here . We will be using this addon to show this step-by-step process."
+    },
+    {
+      "title": "Click Add to Chrome in the top right corner.",
+      "content": "Click Add to Chrome in the top right corner. You'll see a box pop up that verifies the extension will be able to access your browser history."
+    },
+    {
+      "title": "Click Add Extension.",
+      "content": "Click Add Extension . Once the installation is complete, you will be redirected to a new page. On this page, you'll be able to change the default time interval."
+    },
+    {
+      "title": "Set the \"Default time interval.\"",
+      "content": "Set the \"Default time interval.\" This will be how often the page refreshes. This is set to 12 sec by default, but you can increase or decrease this setting. Choose any other options. In some auto-refresh add-ons, like Auto Refresh Plus, you can set random intervals, which means that your page will refresh randomly between a set number of seconds."
+    },
+    {
+      "title": "Click the extension's icon next to the address bar.",
+      "content": "Click the extension's icon next to the address bar. It should appear here automatically, but you may need to pin it if you have multiple extensions. To pin an extension, click the jigsaw puzzle icon to open a drop-down of your installed extensions, then click the pin icon next to the auto-refresher."
+    },
+    {
+      "title": "Click Start.",
+      "content": "Click Start . Select any options to customize how the page refreshes, then click Start to enable the extension. Each extension has its own terminology and steps for doing things, but if you click the icon next to the address bar, you should see options related to the auto-refresh settings."
+    },
+    {
+      "title": "Open at least two Chrome tabs.",
+      "content": "Open at least two Chrome tabs. You need to open a page that you want to keep reloading, then another tab to force the other to refresh. You can open a new tab in Chrome by pressing Ctrl + T (Windows) or Cmd + T (Mac)."
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+I (Windows) or ⌘ Cmd+⇧ Shift+I.",
+      "content": "Press Ctrl + ⇧ Shift + I (Windows) or ⌘ Cmd + ⇧ Shift + I . Make sure you have the \"extra\" tab active, not the tab that you want to refresh. [1] X Research source This keyboard shortcut will open Chrome's control console."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: [2] X Research source win1 = window.open(\"https://www.yourpage.com\"); timer1 = setInterval(function(){win1.location.href=\"https://www.yourpage.com\"},10*60*1000); win1 should be replaced with the info for the page that you want to reload. This code forces the window to auto-refresh every 10 minutes. If you want to cancel the refresh, just close the console tab or both of them."
+    }
+  ]
+}

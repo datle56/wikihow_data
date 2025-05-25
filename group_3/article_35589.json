@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Redirect-a-URL",
+  "title": "How to Redirect a URL: 301 Redirects, Meta Refresh, PHP, & More",
+  "steps": [
+    {
+      "title": "Open the .htaccess file on your web server.",
+      "content": "Open the .htaccess file on your web server. If the URL is moving permanently, you can use a 301 redirect to send traffic to a different URL. If you manage your website by editing files manually, you can create your redirect in a file called .htaccess . The file is usually in your website's root directory (typically called public_html , htdocs , or www ). Download the file and open it in a text editor like Notepad for Windows or TextEdit for Mac, or edit it directly on the server if you have access to do so. If there is no .htaccess file, your web server may not be an Apache server. Contact your web host for instructions on creating a redirect. If the redirect is temporary, you can create a 302 redirect. Just replace 301 in our examples with 302 to indicate that the URL redirection is not permanent. If your website uses WordPress, you can use this method if you can edit your web server configuration files by hand."
+    },
+    {
+      "title": "Locate (or create) the rewrite engine.",
+      "content": "Locate (or create) the rewrite engine. To create a redirect, you'll need to enable the rewrite engine in the Apache mod_rewrite engine. If you don’t see the following code, add it to the bottom of the file: <IfModule mod_rewrite.c> RewriteEngine On </IfModule>"
+    },
+    {
+      "title": "Redirect a single URL.",
+      "content": "Redirect a single URL. Now that the rewrite engine is enabled, you can add your redirects just below the line \"RewriteEngine On.\" If you only want to redirect a particular page or directory on your website to another location, add a redirect like this: <IfModule mod_rewrite.c> RewriteEngine On Redirect 301 /oldpage https://example.com/newpage </IfModule> \"Redirect 301\" indicates that we're doing a 301 (permanent) redirect. After that comes the path to the directory on your webserver (or the file) that you're redirecting elsewhere. Last is the URL you're redirecting to . In the above example, all visitors to the /oldpage directory on the website will be routed to the /newpage directory of example.com. You can redirect files (e.g., index.html) and directories (e.g., /about/) to local or remote directories. For example, to redirect https://mywebsite.com/oldpage/index.html to https://example.com/newpage/), you'd use Redirect 301 /oldpage/index.html https://example.com/newpage/) . You can also redirect a URL to another file on the same web server—just leave out the domain name on the second part of the redirect. For example, if you changed the name of index.html to home.html, you can redirect Redirect 301 /index.html /home.html ."
+    },
+    {
+      "title": "Redirect all URLs on this website to another website (optional).",
+      "content": "Redirect all URLs on this website to another website (optional). If you are switching domain names and want all traffic to your existing website to go to the new website, you can do so by adding the following line to the bottom of your .htaccess file: <IfModule mod_rewrite.c> Redirect 301 / https://example.com/ </IfModule> In this example, all hits to this website's domain name will automatically be redirected to the URL https://example.com ."
+    },
+    {
+      "title": "Save your changes and reupload the file.",
+      "content": "Save your changes and reupload the file. Once you've added your redirect, you'll need to place it back into the root directory of your website. If you downloaded the file, do not add a file extension (e.g., txt) when saving the new file. Test the redirect in a private (incognito) window. Open a new private browsing window and type the old URL into your browser. If you've done everything correctly, it will redirect you to the new site."
+    },
+    {
+      "title": "Log in to your cPanel account.",
+      "content": "Log in to your cPanel account. If you use cPanel to manage your website , you can redirect a URL to another—either a 301 (permanent) or 302 (temporary) redirect—without editing any text files manually."
+    },
+    {
+      "title": "Click the Domains menu.",
+      "content": "Click the Domains menu. Configuration options for the domains hosted on your account will appear."
+    },
+    {
+      "title": "Click Redirects.",
+      "content": "Click Redirects . Now you'll see the option to redirect an individual page, a domain, or all hosted domains to another URL."
+    },
+    {
+      "title": "Select a redirect type from the menu.",
+      "content": "Select a redirect type from the menu. If you plan to redirect the URL to the new address permanently, select Permanent (301) . If the redirect is only temporary, select Temporary (302) . [1] X Research source If a visitor has the page bookmarked, a 301 redirect will automatically update the bookmark to reflect the URL change."
+    },
+    {
+      "title": "Choose a page to redirect.",
+      "content": "Choose a page to redirect. To redirect all hits to all of your hosted domains to another URL, select All Public Domains from the \"https://?(www.)?\" menu. Otherwise, select the domain name you want to redirect. If you just want to redirect one page on that domain to another URL, enter the path to that page into the \"/\" field. For example, if you want to redirect https://example.com/about/home.html to another URL, enter example.com into the first field, and about/home.html into the second."
+    },
+    {
+      "title": "",
+      "content": "Enter the URL you want to redirect to. In the \"Redirects to\" field, type the full URL (including https:// or another protocol) into the field."
+    },
+    {
+      "title": "Select a www redirection setting.",
+      "content": "Select a www redirection setting. If you want to redirect traffic to the URL regardless of whether the user types www. before your domain name (e.g., you want to redirect both https://www.example.com and https://example.com), select Redirect with or without www. Otherwise, you can select whether to redirect only when www. is included, or only when it is not."
+    },
+    {
+      "title": "Choose whether to set up a wildcard redirect.",
+      "content": "Choose whether to set up a wildcard redirect. If you are in the process of moving your website to a new location and want to redirect hits to all files and directories on the current site to the same structure on the new site, check the box next to \"Wild Card Redirect.\" For example, all hits to files/directories like https://www.example.com/picture.jpg and https://www.example.com/users/ will redirect to https://www.newdomain.com/picture.jpg and https://www.newdomain.com/users/."
+    },
+    {
+      "title": "Click Add to add your URL redirect.",
+      "content": "Click Add to add your URL redirect. Now that you've added a redirect, you can test it in a new browser tab or window. It's not possible to edit an existing redirect. If you need to make a change, you must delete the redirect and then recreate it. [2] X Research source"
+    },
+    {
+      "title": "Install the Redirection plugin for WordPress.",
+      "content": "Install the Redirection plugin for WordPress. If you use WordPress and can't (or don't want to) edit the .htaccess file manually , you can create 301 (permanent) or 302 (temporary) redirects easily with this plugin. [3] X Research source You can get the plugin from https://wordpress.org/plugins/redirection/ . To install the plugin, download the ZIP file from the website, unzip it , and upload the redirection directory to your /wp-content/plugins directory. [4] X Research source Once installed, enable the plugin on the plugin management page."
+    },
+    {
+      "title": "Open the tools menu and select Redirection.",
+      "content": "Open the tools menu and select Redirection . You'll see the Tools menu on the left panel in your WordPress installation. This is where you can manage all of your URL redirects. [5] X Research source"
+    },
+    {
+      "title": "Click Redirects.",
+      "content": "Click Redirects . You'll see this in the top menu bar."
+    },
+    {
+      "title": "Enter the page you want to redirect into the \"Source URL\" field.",
+      "content": "Enter the page you want to redirect into the \"Source URL\" field. The source URL is relative to your website, which means instead of entering https://www.example.com/home.html to redirect home.html , just enter /home.html ."
+    },
+    {
+      "title": "/newpage/",
+      "content": "Enter the URL you want to redirect to. If you're redirecting to another domain, enter the full URL (e.g., https://www.newdomain.com). If you're redirecting one page to another on the same domain, you can use a relative URL like /newpage/ ."
+    },
+    {
+      "title": "Click the gear to access more options.",
+      "content": "Click the gear to access more options. Here's where you can fine-tune your redirect."
+    },
+    {
+      "title": "Select a redirect type.",
+      "content": "Select a redirect type. Select Redirect to URL from the \"When matched\" menu, then choose the redirect type ( 301 – Moved Permanently or 302 – Moved Temporarily ) from the \"with HTTP code\" menu. [6] X Research source You can also add more advanced redirect configurations here. See Redirection's support guide for all options."
+    },
+    {
+      "title": "Click Add Redirect to save your redirect.",
+      "content": "Click Add Redirect to save your redirect. Once your redirect is live, the source page will automatically route traffic to the destination URL. You can edit any of your saved redirects by clicking Edit below its entry."
+    },
+    {
+      "title": "Open the HTML code for the page you want to redirect.",
+      "content": "Open the HTML code for the page you want to redirect. A meta redirect allows you to redirect a single webpage to another URL using a simple HTML tag. It's usually better to go with a 301 redirect for a permanent URL redirect. But if you don't have access to your web server configuration, an instant meta refresh redirect is the next best option, and is also interpreted by Google as a \"permanent\" redirect. [7] X Research source Some people believe that meta refresh redirects may be seen as spammy and thus negatively impact your SEO performance . Google doesn't say this for sure, but it's something to remember."
+    },
+    {
+      "title": "Add the meta refresh code to your HTML <head></head> tags.",
+      "content": "Add the meta refresh code to your HTML <head></head> tags. In this example, we'll create a redirect that sends the user to https://www.newsite.com/newurl.html as soon as the page loads. The \"0\" indicates 0 seconds, or an instant redirect. <!doctype html> < html > < head > < meta https-equiv = \"refresh\" content = \"0; URL=https://www.newsite.com/newurl.html\" > </ head >"
+    },
+    {
+      "title": "Save the file and reupload it to your old domain.",
+      "content": "Save the file and reupload it to your old domain. Once the file is reuploaded, you can test the redirect in any web browser. As soon as the page loads, you'll be taken to the URL specified in the redirect."
+    },
+    {
+      "title": "Open the PHP file you want to redirect.",
+      "content": "Open the PHP file you want to redirect. If you want to redirect a PHP page to another location, you can create a permanent PHP redirect using the header() function. PHP redirects can send users to any URL or local file, even if the destination isn't a PHP-based page."
+    },
+    {
+      "title": "Add the PHP redirect code to your file.",
+      "content": "Add the PHP redirect code to your file. In this example, we'll redirect hits from the current page to https://www.example.com : <?php header ( \"Location: https://www.example.com/\" ); ?> If you want to redirect the user to a different page on the server, replace the URL with a local path (ex. <?php header(\"Location: NewSite/index.php\"); ?> . [8] X Research source"
+    },
+    {
+      "title": "Save and reupload the file.",
+      "content": "Save and reupload the file. Now, when visitors open the page in their browsers, they'll be redirected to the specified URL."
+    },
+    {
+      "title": "Open the HTML code for the page you want to redirect.",
+      "content": "Open the HTML code for the page you want to redirect. While less common than 301 and meta refresh redirects, JavaScript redirects can come in handy if you cannot use either of the options above. However, because JavaScript redirects can prevent search engine crawling bots from properly indexing pages, you should only use this type of redirect if you're not worried about SEO or need a temporary option. [9] X Research source"
+    },
+    {
+      "title": "Add the JavaScript redirect code to your HTML <head></head> tags.",
+      "content": "Add the JavaScript redirect code to your HTML <head></head> tags. In this example, we'll redirect all hits to the URL specified in this code. <!doctype html> < html > < head > < script > window . location . href = \"https://www.example.com/newlocation\" ; </ script > </ head >"
+    },
+    {
+      "title": "Save and reupload the file.",
+      "content": "Save and reupload the file. Once the file is accessible online, anyone visiting that page will be redirected to the specified URL."
+    },
+    {
+      "title": "Use a 301 redirect for permanent changes.",
+      "content": "Use a 301 redirect for permanent changes. If you're changing your URL structure, switching to a new domain name, updating your URL structure, or making any other permanent changes, always use a 301 redirect to ensure the best experience for your visitors. If a visitor has the page bookmarked, a 301 redirect will also automatically update their bookmark to reflect the new address. [10] X Research source"
+    },
+    {
+      "title": "For temporary changes, use a 302 redirect if possible.",
+      "content": "For temporary changes, use a 302 redirect if possible. If you want to temporarily send visitors to another URL and have access to your web server configuration, a 302 redirect is the best option. However, if you can't access your web server configuration, you can opt for a meta refresh redirect, or use a PHP redirect if your website uses PHP . A JavaScript redirect should be your last option, as it can negatively impact the user's experience and your website's search engine performance ."
+    }
+  ]
+}

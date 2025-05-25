@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Virtual-Networks-by-Using-VMware-Workstation",
+  "title": "How to Create a Virtual Networks by Using VMware Workstation",
+  "steps": [
+    {
+      "title": "Open Virtual Machine1 by click it in the left window, but do not power it on.",
+      "content": "Open Virtual Machine1 by click it in the left window, but do not power it on."
+    },
+    {
+      "title": "Choose VM > Settings.",
+      "content": "Choose VM > Settings."
+    },
+    {
+      "title": "On the Hardware tab, click Network Adapter.",
+      "content": "On the Hardware tab, click Network Adapter."
+    },
+    {
+      "title": "Select bridge as the network type to use.",
+      "content": "Select bridge as the network type to use."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK."
+    },
+    {
+      "title": "Choose VM > Settings.",
+      "content": "Choose VM > Settings."
+    },
+    {
+      "title": "On the Hardware tab, click Add.",
+      "content": "On the Hardware tab, click Add."
+    },
+    {
+      "title": "Select Network Adapter and click Next.",
+      "content": "Select Network Adapter and click Next."
+    },
+    {
+      "title": "select Custom, choose the VMnet2 network to use from the drop‐down menu.",
+      "content": "select Custom, choose the VMnet2 network to use from the drop‐down menu."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish."
+    },
+    {
+      "title": "Open Virtual Machine2 by click it in the left window, but do not power it on.",
+      "content": "Open Virtual Machine2 by click it in the left window, but do not power it on."
+    },
+    {
+      "title": "On the Hardware tab, click Network Adapter.",
+      "content": "On the Hardware tab, click Network Adapter."
+    },
+    {
+      "title": "In the right windows,select Custom and choose the VMnet2 network to use from the drop‐down menu.",
+      "content": "In the right windows,select Custom and choose the VMnet2 network to use from the drop‐down menu."
+    },
+    {
+      "title": "Open Virtual Machine3 by click it in the left window, but do not power it on.",
+      "content": "Open Virtual Machine3 by click it in the left window, but do not power it on."
+    },
+    {
+      "title": "On the Hardware tab, click Network Adapter.",
+      "content": "On the Hardware tab, click Network Adapter."
+    },
+    {
+      "title": "In the right windows,select Custom and choose the VMnet2 network to use from the drop‐down menu.",
+      "content": "In the right windows,select Custom and choose the VMnet2 network to use from the drop‐down menu."
+    },
+    {
+      "title": "Use the virtual machine settings editor to add a second virtual network adapter.",
+      "content": "Use the virtual machine settings editor to add a second virtual network adapter."
+    },
+    {
+      "title": "Connect the second adapter to Custom (VMnet3).",
+      "content": "Connect the second adapter to Custom (VMnet3)."
+    },
+    {
+      "title": "Open virtual machine 4 by click it in the left window, but do not power it on.",
+      "content": "Open virtual machine 4 by click it in the left window, but do not power it on."
+    },
+    {
+      "title": "Use the virtual machine settings editor to add a virtual network adapter.",
+      "content": "Use the virtual machine settings editor to add a virtual network adapter."
+    },
+    {
+      "title": "Connect the adapter to Custom (VMnet3).",
+      "content": "Connect the adapter to Custom (VMnet3)."
+    },
+    {
+      "title": "Choose Edit > Virtual Network Editor.",
+      "content": "Choose Edit > Virtual Network Editor."
+    },
+    {
+      "title": "On the Virtual Network Editor dialog box, click Add Network.",
+      "content": "On the Virtual Network Editor dialog box, click Add Network."
+    },
+    {
+      "title": "On the Add a Virtual Network dialog box, choose the VMnet2 network to add from the drop‐down menu.",
+      "content": "On the Add a Virtual Network dialog box, choose the VMnet2 network to add from the drop‐down menu."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK."
+    },
+    {
+      "title": "Add VMnet3",
+      "content": "Add VMnet3"
+    },
+    {
+      "title": "Click DHCP Setting, check the range of IP addresses for VMnet2 and VMnet2 in the DHCP settings dialog box.",
+      "content": "Click DHCP Setting, check the range of IP addresses for VMnet2 and VMnet2 in the DHCP settings dialog box."
+    },
+    {
+      "title": "Power on the four virtual machines",
+      "content": "Power on the four virtual machines"
+    },
+    {
+      "title": "Open the firewall in virtual machine1 and virtual machine 3 but close the others.",
+      "content": "Open the firewall in virtual machine1 and virtual machine 3 but close the others."
+    },
+    {
+      "title": "set IP address for the adapters in Virtual Machine1 by keeping the default settings for the bridged network adapter and assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2",
+      "content": "set IP address for the adapters in Virtual Machine1 by keeping the default settings for the bridged network adapter and assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2"
+    },
+    {
+      "title": "set IP address for the two adapters in Virtual Machine2 by assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2",
+      "content": "set IP address for the two adapters in Virtual Machine2 by assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2"
+    },
+    {
+      "title": "set IP address for the adapter in Virtual Machine3 by assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2 and IP address for the adapter connect to VMnet3 in the range you are using with VMnet3",
+      "content": "set IP address for the adapter in Virtual Machine3 by assigning IP address for the adapter connect to VMnet2 in the range you are using with VMnet2 and IP address for the adapter connect to VMnet3 in the range you are using with VMnet3"
+    },
+    {
+      "title": "set IP address for the adapter in Virtual Machine4 by assigning IP address for the adapter connect to VMnet3 in the range you are using with VMnet3",
+      "content": "set IP address for the adapter in Virtual Machine4 by assigning IP address for the adapter connect to VMnet3 in the range you are using with VMnet3"
+    }
+  ]
+}

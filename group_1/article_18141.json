@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Format-a-USB-Using-Cmd",
+  "title": "How to Format a USB Using CMD (Command Prompt)",
+  "steps": [
+    {
+      "title": "Plug your USB drive",
+      "content": "Plug your USB drive into your computer. Plug it into one of the various USB ports on your computer to continue. Normally, you'd format a USB drive by right-clicking it and selecting Format from the menu. You'll only use Command Prompt if that other method does not work. You can also use this method if you can't see the USB drive in File Explorer."
+    },
+    {
+      "title": "Open Command Prompt",
+      "content": "Open Command Prompt as an administrator. To do this, press the Win key on your keyboard and type \"cmd\" to search for the program. [1] X Research source Click Run as Administrator from the results list that appears."
+    },
+    {
+      "title": "Type \"diskpart\" and press ↵ Enter.",
+      "content": "Type \" diskpart \" and press ↵ Enter . You'll see some feedback about your computer and initiates the DiskPart utility. [2] X Research source"
+    },
+    {
+      "title": "Type \"list disk\" and press ↵ Enter.",
+      "content": "Type \" list disk \" and press ↵ Enter . In the list, you should be able to determine which listed disk is your USB. [3] X Research source"
+    },
+    {
+      "title": "Type \"select disk [Your disk]\" and press ↵ Enter.",
+      "content": "Type \" select disk [Your disk] \" and press ↵ Enter . From the disk list, you'll need to replace the [Your disk] line with your disk number. [4] X Research source For example, if your USB is located in disk 2, you'd enter \" select disk 2 .\" Once the command is accepted, you'll see \"[Your disk] is now the selected disk.\""
+    },
+    {
+      "title": "Type \"clean\" and press ↵ Enter.",
+      "content": "Type \" clean \" and press ↵ Enter . Wait a little bit while Command Prompt formats your USB drive. [5] X Research source You'll see \"DiskPart succeeded in cleaning the disk\" when it's finished."
+    },
+    {
+      "title": "Type \"create partition primary\" and press ↵ Enter.",
+      "content": "Type \" create partition primary \" and press ↵ Enter . You'll need to do this before you can further format your USB drive. [6] X Research source Command Prompt will display \"DiskPart succeeded in creating the specified partition\" when it's done."
+    },
+    {
+      "title": "Type \"format fs=ntfs\" and press ↵ Enter.",
+      "content": "Type \" format fs=ntfs \" and press ↵ Enter . This command will tell your USB drive to format with ntfs format. You can also use fat32 or exfat instead by replacing \"ntfs\" in the command. You'll see \"DiskPart successfully formatted the volume\" when it's finished."
+    },
+    {
+      "title": "Type \"assign letter=[letter]\" and press ↵ Enter.",
+      "content": "Type \" assign letter=[letter] \" and press ↵ Enter . This command will assign a specific letter to your drive. In place of [letter], enter a single letter. For example, you'd enter \" assign letter=h \"."
+    },
+    {
+      "title": "Type \"exit\" and press Enter.",
+      "content": "Type \" exit \" and press Enter . This will exit the DiskPart program so you can continue using the USB drive to save files or disconnect it from your computer."
+    }
+  ]
+}

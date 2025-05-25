@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Fix-a-Formula-in-Excel",
+  "title": "How to Fix a Formula in Microsoft Excel",
+  "steps": [
+    {
+      "title": "Make sure you have automatic calculating enabled.",
+      "content": "Make sure you have automatic calculating enabled. If your formulas aren't calculating, this could be the most obvious fix. Go to File > Options > Formulas > Automatic to enable that feature."
+    },
+    {
+      "title": "Make sure your formula is formatted correctly.",
+      "content": "Make sure your formula is formatted correctly. Excel won't consider your syntax a formula unless it starts with an equal sign (=). For example, if you have \"A2 + B2,\" you need to write \"=A2 + B2\" for Excel to treat it as a formula. You also must use the asterisk (*) to multiply. If you use the X key on your keyboard, the formula will not calculate. Your formula will not calculate if your sheet name (if more than the default \"D3\") is not in single quotation marks ('). For example, if your cell references your third worksheet, you need to write \" ='Example Sheet'D3! \" If you're referring to a workbook outside of your current file, make sure it is formatted correctly. The outside file name must be surrounded by brackets ([]) followed by the worksheet name and cell range. For example, you'd enter \" =[Example Workbook.xlsx]Example Sheet!A1:A8 .\""
+    },
+    {
+      "title": "Check your parentheses and quotation marks.",
+      "content": "Check your parentheses and quotation marks. For Excel to correctly use your formula, it needs to have an equal amount of open and closed parentheses and quotation marks. For example, if you have \"=IF(B5<0),\"Not valid\",B5*1.05),\" you need to change it to \"=IF(B5<0,\"Not valid\",B5*1.05)\" so you have the same amount of open and closed parentheses. For quotation marks, you want to surround any text you want to stay text in your formula. For example, if you input \" =\"Today is \" & TEXT(TODAY(),\"dddd, mmmm dd\") \", you'll get \"Today is Thursday, January 9.\""
+    },
+    {
+      "title": "Fix incorrect values.",
+      "content": "Fix incorrect values. You'll need to change certain values in your formula according to the error to fix the issue. Some examples: If you see the pound sign (#) in the error, you might have an incorrect value. For example, \"#VALUE!\" indicates incorrect formatting or unsupported data types in arguments. If you see \"#REF!\", the formula refers to cells you entered that have been deleted or replaced with other data. If you're dividing by 0, you might get the \"#DIV!/0!\" error. Your calculation could result in a no-value or you need to change some values."
+    },
+    {
+      "title": "Fix any formatting that might be confusing Excel.",
+      "content": "Fix any formatting that might be confusing Excel. If you have a dollar amount in a cell, you shouldn't use the dollar sign ($) since it stands for a function instead of being a dollar sign symbol. If you have 1000 dollars, make sure you write \"1000\" in the cell, not \"$1000.\" An \"####\" means the cell is not wide enough to show the cell contents. Drag the cell to widen it or go to Home > Format > AutoFit Column Width . [1] X Research source"
+    },
+    {
+      "title": "Fix broken links (if there are any).",
+      "content": "Fix broken links (if there are any). You can do this by clicking Update when you're prompted by a pop-up box upon opening the spreadsheet project."
+    },
+    {
+      "title": "Display the value of your cells, not the syntax.",
+      "content": "Display the value of your cells, not the syntax. If your cell is displaying the actual formula (e.g., \"=A2 + B2\" instead of \"25\"), you can fix this by clicking the Formulas tab and clicking Formula Auditing > Show Formulas . You can also check the formatting of your cells if the first step doesn't work. Right-click the cell that isn't displaying correctly and click Format Cells > General and press F2 and Enter on your computer keyboard."
+    },
+    {
+      "title": "Make sure you don't have circular references in your formula.",
+      "content": "Make sure you don't have circular references in your formula. A circular reference occurs when a formula is located in the same cell it's referencing. To fix this, you can change the location of the formula or change the formula syntax. For example, if you have a formula that says \"=A2 + B2\" and it's located in A2, most of the time that won't calculate since A2 is an unknown value."
+    },
+    {
+      "title": "Make sure your syntax has the appropriate arguments.",
+      "content": "Make sure your syntax has the appropriate arguments. Arguments make the function work (except if you're using \"PI\" or \"TODAY\"). You can check out the list of formulas at Microsoft's categorized list of formulas ."
+    },
+    {
+      "title": "Keep your formula less than 64 functions.",
+      "content": "Keep your formula less than 64 functions. Excel will only calculate formulas with less than 64 functions."
+    },
+    {
+      "title": "Make sure you copy and paste the formula and not the resulting value.",
+      "content": "Make sure you copy and paste the formula and not the resulting value. Copy the cell contents and click the top-left area in the cell to get the paste options. Click Paste Values and Formula . You'll paste the formula instead of the value into the cell."
+    },
+    {
+      "title": "Open your project in Excel.",
+      "content": "Open your project in Excel. You can either open the program within Excel by clicking File > Open , or you can right-click the file in your file explorer. This will work for Excel for Office 365, Excel for Office 365 for Mac, Excel for the web, Excel 2019, Excel 2016, Excel 2019 for Mac, Excel 2013, Excel 2010, Excel 2007, Excel 2016 for Mac, Excel for iPad, Excel for Android tablets, and Excel Starter 2010."
+    },
+    {
+      "title": "Navigate to the cell with the broken formula.",
+      "content": "Navigate to the cell with the broken formula. You can use your arrows to navigate through the cells, or you can single-click a cell to select it."
+    },
+    {
+      "title": "Correct the formula.",
+      "content": "Correct the formula. The formula bar will open, which you can usually find above the cell or document space. If you entered \"=\" as the first character in the cell but didn't intend to enter a formula, you can type an apostrophe before the \"=\" to avoid inputting a formula. For example, type \"'=\". If you can't immediately find the typo that's messing up your formula, you can press the ESC key or Cancel to completely erase the formula and try again."
+    }
+  ]
+}

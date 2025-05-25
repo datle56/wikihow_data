@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Know-if-You-Have-Spyware-on-Your-Computer",
+  "title": "How to Know if You Have Spyware on Your Computer",
+  "steps": [
+    {
+      "title": "Download and install HijackThis.",
+      "content": "Download and install HijackThis . HijackThis is a diagnostic tool for Windows used to detect the presence of spyware. Double-click the installer to run it. Once installed, launch the software. Other free software like Adaware or MalwareBytes, will also function with a similar process."
+    },
+    {
+      "title": "Press “Config…”.",
+      "content": "Press “Config…”. This button is located in the lower right corner under “Other Stuff” and will take you to a list of options for the program. Here you can toggle important options (like file backups) on or off. Making a backup is a good, safe practice when working with removing files or software. They do take up a small amount of storage space, but the backups can always be removed later by deleting them from the backups folder. Note that “Make backups before fixing items” is toggled on by default."
+    },
+    {
+      "title": "Press “Back” to return to the main menu.",
+      "content": "Press “Back” to return to the main menu. This button replaces the “Config…” button while the configuration menu is open."
+    },
+    {
+      "title": "Press “Scan”.",
+      "content": "Press “Scan”. This button is located in the lower left corner and will generate a list of potentially bad files. It is important to note that HijackThis does a quick scan of likely locations for malicious software. Not all of the results will be harmful."
+    },
+    {
+      "title": "Select the checkbox next to a suspicious item and click “Info on selected item…”.",
+      "content": "Select the checkbox next to a suspicious item and click “Info on selected item…”. This will give details about the item and why it was flagged in a separate window. Close the window when you are done reviewing. Details will typically include the file location, the likely use of the file, and the action to be taken as a fix."
+    },
+    {
+      "title": "Press “Fix checked”.",
+      "content": "Press “Fix checked”. This button is located in the lower left and the software will either repair or remove the selected file, depending on its diagnosis. You can fix multiple files at a time by selecting the checkbox next to each file. Before making any changes, HijackThis will create a backup (by default) so that you can undo your change."
+    },
+    {
+      "title": "Restore from a backup.",
+      "content": "Restore from a backup. If you want to undo the changes made by HijackThis, press “Config” in the lower right, then “Backup”. Select your backup file (marked with the date and timestamp it was created) from the list and press “Restore”. [1] X Research source Backups persist through different sessions. You can close HijackThis and then restore a file from a backup at a later time."
+    },
+    {
+      "title": "Open a command line window.",
+      "content": "Open a command line window. Netstat is a built-in Windows utility that can help detect the presence of spyware or other malicious files. Press ⊞ Win + R to manually run a program and enter “cmd”. The command line allows you to interact with the operating system using text commands. This approach is good for those who want to avoid using third party software or take a more manual approach to the malicious software removal. Make sure you run an elevated command prompt window by choosing Run as administrator ."
+    },
+    {
+      "title": "Enter the text “netstat -b” and hit ↵ Enter.",
+      "content": "Enter the text “netstat -b” and hit ↵ Enter . This will display a list of programs utilizing a connection or listening port (i.e. processes connecting to the internet). In this context, ‘b’ stands for binary. The command displays the running “binaries” (or executables) and their connections."
+    },
+    {
+      "title": "Identify bad processes.",
+      "content": "Identify bad processes. Look for unfamiliar process names or port usage. If you are unsure about a process or its port, research its name online. You'll find others who have encountered the process and they can help identify it as malicious (or harmless). When you have confirmed a process as malicious, it is time to remove the file running it. If you are unsure whether the process is malicious or not after researching, then it is best to leave it alone. Tampering with the wrong files may cause other software to not work properly."
+    },
+    {
+      "title": "Press Ctrl + Alt + Delete simultaneously.",
+      "content": "Press Ctrl + Alt + Delete simultaneously. This will open the Windows Task Manager, which lists all of the processes running on your computer. Scroll to locate the name of the bad process you found in the command line."
+    },
+    {
+      "title": "Right-click the process name and select “Show In Folder”.",
+      "content": "Right-click the process name and select “Show In Folder”. This will take you to the directory location of the bad file."
+    },
+    {
+      "title": "Right-click the file and select “Delete”.",
+      "content": "Right-click the file and select “Delete”. This will move the bad file to the Recycling Bin. Processes cannot run from this location. If you receive an alert that the file cannot be deleted because it is in use, return to the Task Manager, select the process and press “End Task”. This will end the process immediately so that it can be moved to recycling. If you deleted the wrong file, you can double-click the recycling to open it and then click and drag to move the file back out."
+    },
+    {
+      "title": "Right-click the Recycling Bin and select “Empty Recycling Bin”.",
+      "content": "Right-click the Recycling Bin and select “Empty Recycling Bin”. This will permanently delete the file."
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. Through the Terminal, you'll be able to run a diagnostic that can detect the presence of spyware on your computer. Go to “Applications > Utilities” and double-click Terminal to launch. This program allows you to interact with the operating system using text commands. Alternately you can search for “Terminal” in the Launchpad."
+    },
+    {
+      "title": "Enter the text “sudo lsof -i | grep LISTEN” and hit ⏎ Return.",
+      "content": "Enter the text “sudo lsof -i | grep LISTEN” and hit ⏎ Return . This will instruct the computer to output a list of processes and their network information. [2] X Research source sudo gives root access to the command, allowing it to view system files. ”lsof” is short for “list of open files”. This allows you to see running processes. ”-i” specifies that the list of open files must be utilizing the network interface. Spyware will try to use to the network to communicate with outside sources. ”grep LISTEN” is a command to the operating system to filter for those using listening ports -- a necessity for spyware."
+    },
+    {
+      "title": "Enter your computer’s administrator password and hit ⏎ Return.",
+      "content": "Enter your computer’s administrator password and hit ⏎ Return . Your password will not be displayed in the terminal, but it will be entered. This is necessary for the ‘sudo’ command."
+    },
+    {
+      "title": "Identify bad processes.",
+      "content": "Identify bad processes. Look for unfamiliar process names or port usage. If you are unsure about a process or its port, research its name online. You'll find others who have encountered the process and they can help identify it as malicious (or harmless). When you have confirmed a process as malicious, it is time to remove the file running it. If you are unsure whether the process is malicious or not after researching then it is best to leave it alone. Tampering with the wrong files may cause other software to not work properly."
+    },
+    {
+      "title": "Enter “lsof | grep cwd” and hit ⏎ Return.",
+      "content": "Enter “lsof | grep cwd” and hit ⏎ Return . This will list the folder locations of the processes on your computer. Find the bad process in the list and copy the location. ”cwd” stands for current working directory. To make the lists easier to read through, you can run this command in a new Terminal window by pressing ⌘ Cmd + N while in the Terminal."
+    },
+    {
+      "title": "Enter “sudo rm -rf [path to file]” and hit ⏎ Return.",
+      "content": "Enter “sudo rm -rf [path to file]” and hit ⏎ Return . Paste the location into the bracketed space (do not type the brackets). This command will delete the file at that path. ”rm” is short for “remove”. Make absolutely sure you want to remove the entered item. This process is irreversible! You may want to perform a Time Machine backup beforehand. Go to “Apple >System Preferences > Time Machine” and select “Backup”."
+    },
+    {
+      "title": "Identify suspicious behavior.",
+      "content": "Identify suspicious behavior. If you are experiencing frequently slow network speeds, or are receiving unfamiliar/suspicious text messages, then you may have spyware on your phone. [3] X Research source Text messages with gibberish text or requesting replies with certain codes are good indicators that you may have spyware."
+    },
+    {
+      "title": "Check your data usage.",
+      "content": "Check your data usage. Open the “Settings” app and tap “Data Usage”. You can scroll down to view the data usage of your different apps. Unusually high data usage may be a sign of spyware."
+    },
+    {
+      "title": "Back up your data.",
+      "content": "Back up your data. Connect your phone to your computer via USB, then drag and drop your data (e.g. photos or contact info) to back it up. Since the device and your computer are running different operating systems, your computer will not become infected."
+    },
+    {
+      "title": "Open the “Settings” app and tap “Backup and Reset”.",
+      "content": "Open the “Settings” app and tap “Backup and Reset”. This opens a menu with a number of restoration options, including restoring the phone to factory settings."
+    },
+    {
+      "title": "Tap “Factory data reset”.",
+      "content": "Tap “Factory data reset”. This button appears at the bottom of the \"Backup and Reset\" menu."
+    },
+    {
+      "title": "Tap “Reset Phone”.",
+      "content": "Tap “Reset Phone”. Your phone will automatically restart and remove all apps and data, including any spyware, restoring the phone to its factory state. Resetting the phone removes ALL of your stored data on the device. Make sure you make a backup first or don't mind losing the data!"
+    }
+  ]
+}

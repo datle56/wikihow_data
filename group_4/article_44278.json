@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Transfer-Files-from-One-Linux-Server-to-Another",
+  "title": "How to Transfer Files from One Linux Server to Another",
+  "steps": [
+    {
+      "title": "For a single file, try the \"scp\" command.",
+      "content": "For a single file, try the \"scp\" command. You can use this as a \"push\" or a \"pull\" command, but let's start with pushing the file to the other server. Let's assume for these discussions that our servers are Alice and Madhat, and that our user on Alice is rabbit, and our user on madhat is Fieldmouse. While on Alice, use the command scp localfile fieldmouse@madhat:remotefilename . This will copy the file over to the other system, into the fieldmouse userid, with the name \"remotefilename\". If you were logged in on Madhat, you could just as easily pull the file with the command scp rabbit@alice:localfilename remotefilename and get the same results. You can omit the remote file name if you want the file to keep the same name once transferred."
+    },
+    {
+      "title": "To copy an entire directory, we can again turn to the \"scp\" command.",
+      "content": "To copy an entire directory, we can again turn to the \"scp\" command. This time we'll add the -r switch, to cause the copy to act recursively.\" scp -r /path/to/local_directory username@hostname:/path/to/remote_directory will copy the entire directory \"/path/to/local_directory\" over to the other system in its /path/to/remote_directory directory, including all of its subdirectories."
+    },
+    {
+      "title": "What if you have a large \"mess\" of files and directories to copy?",
+      "content": "What if you have a large \"mess\" of files and directories to copy? You could use the \"tar\" command to create a single file, and then copy that file as above, then use tar to expand it on the other server. But that would seem so un-Unix-like. There has to be a way to do it in a single step, right? Well of course! Enter your favorite shell's pipes. We can still use tar to package up the files we want, then use ssh to get it to the other system (which is what scp has been using under the covers), and tar on the other side to expand the files back out. But why waste time and space creating an actual tar file, when we could create a pipe that spans the two systems and transfer the tar data through it? Using the same directory as in the previous example, try tar -cf - mydir/*"
+    }
+  ]
+}

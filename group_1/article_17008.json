@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Find-Your-WiFi-Password",
+  "title": "How Can I Find out My Wi-Fi Password?",
+  "steps": [
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the button with the Windows logo. By default, it's in the lower-left corner of the taskbar."
+    },
+    {
+      "title": "Type cmd.",
+      "content": "Type cmd . This displays the Command Prompt icon in the Windows Start menu."
+    },
+    {
+      "title": "Right-click the Command Prompt and click Run as Administrator.",
+      "content": "Right-click the Command Prompt and click Run as Administrator . This opens the Command Prompt with administrative privileges. You must be logged in to a Windows user account with administrative privileges to be able to run the Command Prompt as an administrator."
+    },
+    {
+      "title": "Type netsh wlan show profiles and press ↵ Enter.",
+      "content": "Type netsh wlan show profiles and press ↵ Enter . This displays a list of networks your computer has been connected to. [1] X Research source Troubleshooting: Open the “Run” menu by pressing the Windows key and “R” at the same time. Type in services.msc to open up the “Services” window, and scroll down until you find the “WLAN AutoConfig” option. Right-click on this and hit “Start.”"
+    },
+    {
+      "title": "Type netsh wlan show profiles name=\"network name\" key=clear and press ↵ Enter.",
+      "content": "Type netsh wlan show profiles name=\"network name\" key=clear and press ↵ Enter . Replace \"network name\" with the name of the network you want to find a password for. Make sure you put the network name in quotation (\" \") marks. For example, if your network is called \"PTCL-BB\", you would type \"netsh wlan show profiles name=\"PTCL-BB\" key=clear\" and press the \"Enter\" button. This displays information about the network. [2] X Research source"
+    },
+    {
+      "title": "Locate the password.",
+      "content": "Locate the password. The password is listed next to \"Key content\" in the network information listed in the Command Prompt."
+    },
+    {
+      "title": "Click the magnifying glass icon .",
+      "content": "Click the magnifying glass icon . It's in the menu bar at the top in the upper-right corner. This displays the Spotlight search bar."
+    },
+    {
+      "title": "Type Keychain Access in the search bar and press ↵ Enter.",
+      "content": "Type Keychain Access in the search bar and press ↵ Enter . This opens the Keychain Access app."
+    },
+    {
+      "title": "Click System.",
+      "content": "Click System . It's in the sidebar panel to the left in the Keychain Access app below \"Keychains\". [3] X Research source"
+    },
+    {
+      "title": "Click Passwords.",
+      "content": "Click Passwords . It's in the sidebar panel to the left in the Keychain Access app below \"Keychains\". This filters the Keychain items to items with a password. [4] X Research source"
+    },
+    {
+      "title": "Double-click a Wi-Fi network name.",
+      "content": "Double-click a Wi-Fi network name. All Wi-Fi networks your Mac have been connected to are listed below \"Name\" in the Keychain Access app. Double-click a network name to view information about the network connection. [5] X Research source"
+    },
+    {
+      "title": "Click the checkbox next to \"Show Password.\"",
+      "content": "Click the checkbox next to \"Show Password.\" It's at the bottom of the network information window. [6] X Research source"
+    },
+    {
+      "title": "Enter an administrator's username and password and click Allow.",
+      "content": "Enter an administrator's username and password and click Allow . After you authenticate your username, it asks you to enter the username and password of an administrator. Enter the username and password of an account that has administrative privileges on your Mac. Click Allow to continue. You may have to enter this information twice."
+    },
+    {
+      "title": "Locate the password.",
+      "content": "Locate the password. The password is listed in the field next to \"Show Password\" at the bottom of the network information window. [7] X Research source"
+    },
+    {
+      "title": "Check the label on your router.",
+      "content": "Check the label on your router. The Wi-Fi router password is often printed on a label on your router. Before doing anything, check to see if your Wi-Fi password is printed on your router. [8] X Research source If the default username and password to log in to your router's user interface is listed, note that as well."
+    },
+    {
+      "title": "Get your router's IP address.",
+      "content": "Get your router's IP address. Common router addresses include 10.0.0.1, 192.168.1.1, or 192.168.0.1 or similar. Use the following steps to get your router's IP address. [9] X Research source Windows: Click the Windows Start menu. Click the Gear (Settings) icon. Click Network & Internet. Click Status. Click View hardware and connection properties. Scroll down and note the number next to \"IPv4 DNS Servers:\". Mac: Click the Apple icon in the upper-left corner. Click System Settings. Click the Network icon. Select “Details” next to your Wi-Fi- network. Find your IP address on the following page. ' iPhone:' Open the Settings app. Tap Wi-Fi. Tap the icon with an \"i\" next to your Wi-Fi network. Note your IP address next to “IP Address.\" Android: Open the Settings app. Tap the magnifying glass icon and search for Wi-Fi. Tap Wi-Fi. Tap the gear icon next to your Wi-Fi connection. Note your IP Address."
+    },
+    {
+      "title": "Enter your IP address in the address bar of a web browser.",
+      "content": "Enter your IP address in the address bar of a web browser. This opens the user interface for your router. [10] X Research source Your router assigns a unique IP address to each device connected to it if your IP address is listed as \"192.168.0.154,\" \"192.168.1.155,\" or something similar, that is the IP address of your device, not the router. To find the IP address of your router, remove the last two digits from the number at the end of the IP address. For example, instead of \"192.168.0.154,\" enter \"192.168.0.1\" into your web browser."
+    },
+    {
+      "title": "Log in to the user interface.",
+      "content": "Log in to the user interface. If you have not set up your router, you'll need to log in with the default username and password to log in to your router. Consult the user's manual or manufacturer's web page to find out what the default username and password are. Common usernames and passwords include admin , password , 12345 or just leaving the field blank. The default username and password may also be printed on a label on your router."
+    },
+    {
+      "title": "Locate the Wireless Settings.",
+      "content": "Locate the Wireless Settings. The user interface for each router is different. Look for the Wireless settings in the menu to the left or at the top of the page. Click the Wireless Settings when you find them. [11] X Research source"
+    },
+    {
+      "title": "Click or tap the Password settings.",
+      "content": "Click or tap the Password settings. It may be under “Wireless Security,” “Security Key,” or something similar."
+    },
+    {
+      "title": "Check the password.",
+      "content": "Check the password. It should be in the password box. You may have to click or tap a checkbox that says \"Show Password\". If the password is not visible, you can use this menu to change the password."
+    },
+    {
+      "title": "Go to the Settings app and hit Wi-Fi.",
+      "content": "Go to the Settings app and hit Wi-Fi . It’s on the main page, between “Airplane Mode” and “Bluetooth.” [12] X Research source"
+    },
+    {
+      "title": "Tap on the Wi-Fi network you’re connected to.",
+      "content": "Tap on the Wi-Fi network you’re connected to. It should have a blue checkmark to the left of it, and it’ll be separated from the other Wi-Fi networks."
+    },
+    {
+      "title": "Tap the Password option to see your password.",
+      "content": "Tap the Password option to see your password. Keep in mind that you’ll need to use Face ID or a similar security measure to access the password. Did you know? You can share your Wi-Fi password with another iPhone user, assuming that they’re already in your contacts (including their Apple ID email) and that you both have Bluetooth and Wi-Fi turned on. Just have your friend open up their Settings app and select your Wi-Fi network. Then, your phone should get a notification inviting you to share the password with them directly. [13] X Research source"
+    },
+    {
+      "title": "Android 10 or higher",
+      "content": "Android 10 or higher If a friend with an Android phone needs your Wi-Fi password (and you also have an Android), do the following: Hit “Network & internet” in your Settings app. Tap “Internet.” Select your Wi-Fi network. Tap the gear icon next to your Wi-Fi network. Tap the “Share” button with a QR code icon. Use your unlock code to confirm the QR code. Show them the QR code, so they can scan it. What if I have an iPhone? Head to the “Wi-Fi” section of your Settings app and tap your Wi-Fi network. Then, tap the “Password” field and complete a security measure to access the password."
+    },
+    {
+      "title": "Android 9 or lower",
+      "content": "Android 9 or lower Here's a quick look at what you need to do: Make sure you have an app downloaded to your phone that lets you search through your system files on a rooted device (like MiXplorer or Root Browser ). Root your Android device. Open up your root-browsing app. Navigate through your phone’s folders as follows: /data/misc/wifi . Access “wpa_supplicant.conf.” Search for the “ssid” to identify the correct network name and “psk” to access the password. [14] X Research source"
+    }
+  ]
+}

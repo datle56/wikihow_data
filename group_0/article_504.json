@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Add-Autonumber-in-Excel",
+  "title": "2 Easy Ways to Add Auto-Numbering in Microsoft Excel",
+  "steps": [
+    {
+      "title": "Click the first cell where the series of numbers will begin.",
+      "content": "Click the first cell where the series of numbers will begin. This method explains how to make each cell in a column display its corresponding row number. [1] X Research source This is a good method to use if rows are frequently added and removed in your worksheet. To create a basic row of consecutive numbers (or other data, such as days of the week or months of the year), see Filling a Column with Continous Numbers ."
+    },
+    {
+      "title": "Type =ROW(A1) into the cell (if it is cell A1).",
+      "content": "Type =ROW(A1) into the cell (if it is cell A1). If the cell is not A1, use the correct cell number. For example, if you are typing in cell B5, type =ROW(B5) instead."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . The cell will now display its row number. If you typed =ROW(A1) , the cell will say 1 . If you typed =ROW(B5) , the cell will read 5 . [2] X Research source To start with 1 no matter which row you want to begin your series of numbers, count the number of rows above your current cell, then subtract that number from your formula. For example, if you entered =ROW(B5) and want the cell to display a 1, edit the formula to say =ROW(B5)-4 , as B1 is back 4 rows from B5. [3] X Research source"
+    },
+    {
+      "title": "Select the cell containing the first number in the series.",
+      "content": "Select the cell containing the first number in the series."
+    },
+    {
+      "title": "Hover the cursor over the box at the bottom right corner of the selected cell.",
+      "content": "Hover the cursor over the box at the bottom right corner of the selected cell. This box is called the Fill Handle. When the mouse cursor is directly above the Fill Handle, the cursor will change to a crosshair symbol. If you don’t see the Fill Handle, navigate to File > Options > Advanced and place a check next to “Enable fill handle and cell drag-and-drop.”"
+    },
+    {
+      "title": "Drag the Fill Handle down to the final cell in your series.",
+      "content": "Drag the Fill Handle down to the final cell in your series. The cells in the column will now display their corresponding row numbers. If you delete a row included in this series, the cells numbers will automatically correct themselves based on their new row numbers."
+    },
+    {
+      "title": "Click the cell where your series of numbers will begin.",
+      "content": "Click the cell where your series of numbers will begin. This method will show you how to add a series of continuous numbers to the cells in a column. If you use this method and later have to delete a row, you will need to repeat the steps to renumber the entire column. If you think you will be manipulating rows of data often, see Numbering Rows instead."
+    },
+    {
+      "title": "Type the first number of your series into the cell.",
+      "content": "Type the first number of your series into the cell. For instance, if you will be numbering entries down a column, type 1 into this cell. You don’t have to start with 1. Your series can start at any number, and can even follow other patterns (such as even numbers, in multiples of 5, and more). Excel also supports other types “numbering,” including dates, seasons, and days of the week. To fill a column with the days of the week, for example, the first cell should say “Monday.”"
+    },
+    {
+      "title": "Click the next cell in the pattern.",
+      "content": "Click the next cell in the pattern. This should be the cell directly beneath the currently active cell."
+    },
+    {
+      "title": "Type the second number of the series to create the pattern.",
+      "content": "Type the second number of the series to create the pattern. To number consecutively (1, 2, 3, etc), type a 2 here. [4] X Research source If you wanted your continuous numbers to be something like 10, 20, 30, 40, etc, the first two cells in the series should be 10 and 20 . If you are using days of the week, type the next day of the week into the cell."
+    },
+    {
+      "title": "Click and drag to select both cells.",
+      "content": "Click and drag to select both cells. When you release the mouse button, the both cells will be highlighted."
+    },
+    {
+      "title": "Hover the cursor over the tiny box at the bottom right corner of the highlighted area.",
+      "content": "Hover the cursor over the tiny box at the bottom right corner of the highlighted area. This box is called the Fill Handle. When the mouse pointer is directly on top of the Fill Handle, the cursor will become a crosshair symbol. If you don’t see the Fill Handle, navigate to File > Options > Advanced and place a check next to “Enable fill handle and cell drag-and-drop.”"
+    },
+    {
+      "title": "Click and drag the Fill Handle down to the final cell in your desired series.",
+      "content": "Click and drag the Fill Handle down to the final cell in your desired series. Once you release the mouse button, the cells in the column will be numbered according to the pattern you established in the first two cells."
+    }
+  ]
+}

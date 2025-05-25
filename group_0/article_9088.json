@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Configure-Your-PC-to-a-Local-Area-Network",
+  "title": "Easy Ways to Set Up and Connect to a Local Area Network (LAN)",
+  "steps": [
+    {
+      "title": "Determine the number of computers you want to connect.",
+      "content": "Determine the number of computers you want to connect. The number of computers you're connecting will determine the type of network hardware you'll need. If you are connecting four or fewer computers, you'll just need a single router, or one switch if you don't need internet. If you're connecting more than four computers, you'll want a router and a switch, or just a switch if you don't need internet."
+    },
+    {
+      "title": "Determine your network layout.",
+      "content": "Determine your network layout. If you're installing a permanent LAN solution, you'll want to keep cable length in mind. CAT5 Ethernet cables should not run longer than 250 feet. If you need to cover larger distances, you'll need switches at regular intervals, or you'll need to use CAT6 cables. You'll need one Ethernet cable for each computer you want to connect to the LAN, as well as an Ethernet cable to connect the router to the switch (if applicable)."
+    },
+    {
+      "title": "Obtain the network hardware.",
+      "content": "Obtain the network hardware. To create a LAN, you'll need a router and/or a network. These pieces of hardware are the \"hub\" of your LAN, and all of your computers will be connected to them. According to Harris, the easiest way to create a LAN where every computer has access to the internet is to use a router, and then add a network switch if the router doesn't have enough ports. [1] X Expert Source Mitch Harris Consumer Technology Expert Expert Interview. 16 July 2021. A router will automatically assign an IP address to every computer that is connected to it. Switches are similar to routers but do not automatically assign IP addresses. Switches typically have many more Ethernet ports than a router has."
+    },
+    {
+      "title": "Connect your modem to the WAN port on the router.",
+      "content": "Connect your modem to the WAN port on the router. This port may be labeled \"INTERNET\" instead. This will provide internet access to every computer that is connected to your LAN. You can skip this if you're setting up a LAN without internet access. You don't need a router at all to create a LAN, but it makes things easier. If you just use a network switch, you'll need to manually assign IP addresses to each computer after connecting them."
+    },
+    {
+      "title": "Connect the switch to a LAN port on the router.",
+      "content": "Connect the switch to a LAN port on the router. If you're using a network switch to connect more computers, connect it to one of the LAN ports on the router. You can use any open port on the switch to make the connection. When connected, the router will provide IP addresses for every computer that is connected to either device."
+    },
+    {
+      "title": "Find the Ethernet port on your PC.",
+      "content": "Find the Ethernet port on your PC. You can usually find this on the back of your desktop tower, or along the side or back of a laptop. Slim laptops may not have an Ethernet port, in which case you'll need to either use a USB Ethernet adapter or connect wirelessly if your router allows it."
+    },
+    {
+      "title": "Plug one end of an Ethernet cable into your computer.",
+      "content": "Plug one end of an Ethernet cable into your computer. Make sure you're using an Ethernet cable (RJ45), not a telephone cable (RJ11)."
+    },
+    {
+      "title": "Plug the other end of the cable into an open LAN port.",
+      "content": "Plug the other end of the cable into an open LAN port. This can be any open LAN port on either the router or the switch, depending on your LAN setup. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Test out your network (router only).",
+      "content": "Test out your network (router only). If you're using a router, your work is complete. According to Harris, once all of the computers are connected to a LAN port, they will be assigned IPs automatically and will appear on the network. [3] X Expert Source Mitch Harris Consumer Technology Expert Expert Interview. 16 July 2021. If you set up your LAN for gaming , you should be able to start your LAN game and have each computer connect. If you're using a switch and no router, you'll still need to assign IP addresses to each computer."
+    },
+    {
+      "title": "Enable file and printer sharing.",
+      "content": "Enable file and printer sharing. You won't be able to access resources on a networked computer until file and printer sharing is enabled. You can select specific files, folders, and drives to share on each computer, as well as share access to printers . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Right-click on your network connection and click Network and Internet Settings.",
+      "content": "Right-click on your network connection and click Network and Internet Settings . You'll see the network icon in your task bar. If you are connecting your computers through a switch with no router, you'll need to assign each computer on the network its own individual IP address. This process is handled automatically if you're using a router. [5] X Research source Think of an IP address as a mailing address. Each computer on the network needs a unique IP address so that information sent across the network reaches the correct destination."
+    },
+    {
+      "title": "Click Ethernet.",
+      "content": "Click Ethernet . It's near the top of the menu showing an ethernet cable next to a monitor."
+    },
+    {
+      "title": "Click Edit next to \"IP assignment.\"",
+      "content": "Click Edit next to \"IP assignment.\" You may need to click \"Ethernet\" first to expand the menu. Clicking this prompts a window to pop up."
+    },
+    {
+      "title": "Select \"Manual\" from the drop-down menu.",
+      "content": "Select \"Manual\" from the drop-down menu."
+    },
+    {
+      "title": "Toggle IPv4 or IPv6, then edit the text fields.",
+      "content": "Toggle IPv4 or IPv6, then edit the text fields. You can enable both or one of the toggles, then continue with the next steps: Enter 192.168.1.50 into the IP address field. Enter 255.255.0.0 into the Subnet mask field. Enter 192.168.0.0 into the Default gateway field."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . This will save the settings for that computer. This computer is now configured on your network with a unique IP address."
+    },
+    {
+      "title": "Open the \"Network and Internet\" settings on the next computer.",
+      "content": "Open the \"Network and Internet\" settings on the next computer. Follow the steps above on the second computer to open the same IP menu in \"Ethernet\". [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type 192.168.1.51 into the IP address field.",
+      "content": "Type 192.168.1.51 into the IP address field. Notice that the final group of numbers has incremented by 1."
+    },
+    {
+      "title": "Enter the same values for Subnet mask and Gateway.",
+      "content": "Enter the same values for Subnet mask and Gateway . These values should be the same as they were on the first computer (255.255.0.0 and 192.168.0.0 respectively). [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Give each additional computer a unique IP.",
+      "content": "Give each additional computer a unique IP. Repeat these steps for each additional computer, incrementing the IP address by 1 each time (up to 255). The \"Subnet mask\" and \"Gateway\" fields should be the same on each computer."
+    }
+  ]
+}

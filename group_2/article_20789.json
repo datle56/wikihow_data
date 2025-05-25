@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Git-Remove-Untracked-Files",
+  "title": "Using the \"git clean\" Command to Delete Untracked Files",
+  "steps": [
+    {
+      "title": "Navigate to your repository's root directory.",
+      "content": "Navigate to your repository's root directory. Open a terminal ( Linux & Mac) or PowerShell window, then use the cd command to enter your repository's primary directory."
+    },
+    {
+      "title": "Run the command git status.",
+      "content": "Run the command git status . This displays a list of untracked files in the directory. [1] X Research source If you want to see untracked directories in addition to files, use git status --untracked-files=all instead. Removing untracked files with git clean is permanent. To avoid losing untracked files you might need, be sure to back them up first. Cloning the repository will not back up your untracked files—you'll need to copy the files to another directory manually."
+    },
+    {
+      "title": "Do a \"dry run\" first (optional).",
+      "content": "Do a \"dry run\" first (optional). Before permanently removing all untracked files, run the command git clean -n to see what git clean will delete without actually deleting the files. This gives you another opportunity to review your untracked files to make sure there's nothing you want to keep. [2] X Research source If you saw untracked directories when running git status , use the command git clean -n -d to ensure that your simulation includes those directories."
+    },
+    {
+      "title": "Run git clean -f to permanently remove untracked files.",
+      "content": "Run git clean -f to permanently remove untracked files. All untracked files in the current directory will now be deleted. If you also want to delete untracked directories , use git clean -f -d instead. You can also use --exclude to exclude certain files or patterns from removal. For example, if you want to delete everything except for filenames that contain the word \"help,\" you can use git clean -f -d -e *help*"
+    },
+    {
+      "title": "Run git status again to view untracked files.",
+      "content": "Run git status again to view untracked files. You'll see that the untracked files that appeared previously are now deleted."
+    },
+    {
+      "title": "Run git clean -i to use git clean's interactive mode.",
+      "content": "Run git clean -i to use git clean's interactive mode. This command displays a list of all untracked files in the current directory, along with numbered prompts. Using interactive mode is a safer way to use git clean. Instead of forcefully deleting all untracked files at once, you can select files using an interactive prompt and delete them individually. When you start interactive mode, you'll see a list of options, each with its own number."
+    },
+    {
+      "title": "Press 4 (ask each) to delete untracked files one by one.",
+      "content": "Press 4 (ask each) to delete untracked files one by one. While 4 isn't the first option on the interactive menu, it's a great starting point, as it's a safe way to remove untracked files. With this option, you'll see each untracked file's name individually, with the option to keep or delete it. When the first untracked file is displayed, you'll be asked to press y if you'd like to delete it permanently, or n to keep it. Once you make a decision, the next untracked file will appear. Enter y to delete, or n to keep for each file until you've reviewed and marked them all. Once you reach the end of the list, the untracked files you've marked for deletion will be permanently removed."
+    },
+    {
+      "title": "Press 1 (Clean) to force-delete all untracked files.",
+      "content": "Press 1 (Clean) to force-delete all untracked files. The first option on the menu is the equivalent of running git clean -f to force deletion, as we covered in this method . It's best not to use this option until you’ve made selections using the other menu options."
+    },
+    {
+      "title": "Press 2 (filter by pattern) to exclude certain files.",
+      "content": "Press 2 (filter by pattern) to exclude certain files. This brings up the \"Input ignore patterns\" prompt, where you can type a file name, extension, or wildcard to exclude certain untracked files from deletion. For example, if you want to remove all untracked files except those ending in .c, type *.c and press Enter or Return . You'll then see a list of all untracked files except those ending in .c. You can then add another parameter or file name to ignore, or press Enter or Return to go back to the menu. At the main menu, interactive mode will remember your exclusions. You can now press 1 to clean (remove) all untracked files except for ones that match your exclusionary criteria, or use 4 to delete them one by one."
+    },
+    {
+      "title": "Press 3 to select files by numbers.",
+      "content": "Press 3 to select files by numbers. This option allows you to see a list of untracked files that have corresponding numbers, and then select only those files you want to delete. At the \"Select items to delete\" prompt, press the number that corresponds with the file you want to delete. You can enter multiple numbers by separating them with commas, and/or adding ranges. For example, if you want to delete files 2, 5 through 8, and 10, you'd type 2, 5-8, 10 and press Enter or Return . Press Enter or Return again to go back to the interactive menu. You'll now see only those files you've selected in the list of untracked files. To delete all selected files, press 1 . To delete one by one, press 4 ."
+    },
+    {
+      "title": "Press q to quit.",
+      "content": "Press q to quit. Use this option when you're finished with interactive mode."
+    }
+  ]
+}

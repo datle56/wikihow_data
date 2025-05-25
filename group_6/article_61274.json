@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Truncate-Text-in-Excel",
+  "title": "How to Truncate Text in Excel",
+  "steps": [
+    {
+      "title": "Open Microsoft Excel.",
+      "content": "Open Microsoft Excel. If you have an existing document with your data already entered, you can double-click it to open it; otherwise, you'll need to open a new workbook and enter your data now."
+    },
+    {
+      "title": "Select the cell where you want the truncated text to appear.",
+      "content": "Select the cell where you want the truncated text to appear. This method is useful for text that you already have in your spreadsheet. Note that this cell must be different than the cell in which your target text appears."
+    },
+    {
+      "title": "Type the LEFT or RIGHT formula into your selected cell.",
+      "content": "Type the LEFT or RIGHT formula into your selected cell. The LEFT and RIGHT formula are built on the same premise, though the LEFT formula displays characters from the left side of your cell's text and the RIGHT formula displays characters from the right. The formula is \"=DIRECTION(Cell Name, Number of characters to display)\" without the quotation marks. For example: [1] X Research source =LEFT(A3, 6) displays the first six characters in cell A3. If the text in A3 says \"Cats are better\", the truncated text will read \"Cats a\" in your selected cell. =RIGHT(B2, 5) displays the last 5 characters in cell B2. If the text in B2 says \"I love wikiHow\", the truncated text will read \"kiHow\" in your selected cell. Keep in mind that spaces count as characters."
+    },
+    {
+      "title": "Press Enter when the formula is complete.",
+      "content": "Press Enter when the formula is complete. Your selected cell will automatically fill with the truncated text."
+    },
+    {
+      "title": "Select the cell where you want the truncated text to appear.",
+      "content": "Select the cell where you want the truncated text to appear. This cell must be different than the cell in which your target text appears. If you haven't already added your data to Excel, you'll need to do so first."
+    },
+    {
+      "title": "Type the MID formula into your selected cell.",
+      "content": "Type the MID formula into your selected cell. MID chops characters off of the beginning and end of your selected cell's text. To set up the MID formula, you type \"=MID(Cell Name, Starting Character Number, Number of characters to display)\" without the quotation marks. For example: =MID(A1, 3, 3) displays three characters from cell A1, the first of which is the third character from the left in the text. If A1's text says \"racecar\", the truncated text will read \"cec\" in your selected cell. Similarly, =MID(B3, 4, 8) displays eight characters from cell B3, starting with the fourth character from the left. If B3's text says \"bananas aren't people\", the truncated text will read \"anas are\" in your selected cell."
+    },
+    {
+      "title": "Press Enter when the formula is complete.",
+      "content": "Press Enter when the formula is complete. This will add the truncated text to your selected cell."
+    },
+    {
+      "title": "Select the cell you wish to split up.",
+      "content": "Select the cell you wish to split up. This should be a cell that has more characters than space."
+    },
+    {
+      "title": "Click Data.",
+      "content": "Click Data . It's in the toolbar at the top of your Excel page."
+    },
+    {
+      "title": "Select Text to Columns.",
+      "content": "Select Text to Columns . You'll find this option in the \"Data Tools\" section of the Data tab. This function divides the cell’s contents of one Excel cell into separate columns."
+    },
+    {
+      "title": "Select Fixed Width.",
+      "content": "Select Fixed Width . After clicking on Text to Columns window will pop up, called \"Convert Text to Columns Wizard Step 1 of 3.\" The window will have two selections: \"Delimited\" and \"Fixed Width.\" Delimited means that characters, such as tabs or commas will divide each field. You will usually select delimited when you’re importing data from another application, such as a database. The fixed width option means that the fields are lined up in columns that have spaces between the individual field."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . This window shows three options. If you want to create a break line, click on the position where you want the text to break. If you want to delete the break line, double click on the line. To adjust the line, click and drag it around the data."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . This window has several options, \"General\", \"Text,\" \"Date\" and \"Do not import column (skip).\" Unless you want to force your cell's formatting to do something different than its natural state, you can skip this page."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . Your text should now be divided between two or more cells."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Enable-a-Port-on-a-Cisco-Switch",
+  "title": "How to Enable a Port on a Cisco Switch",
+  "steps": [
+    {
+      "title": "Connect to your switch.",
+      "content": "Connect to your switch. You can use PuTTY or any other SSH or telnet app to make a serial connection. The process of making the connection varies depending on the model you're using, so check your manual for specific instructions. [1] X Research source"
+    },
+    {
+      "title": "Type show interface status and press ↵ Enter.",
+      "content": "Type show interface status and press ↵ Enter . This displays a list of all ports, as well as their logical IDs. [2] X Research source Once you know the ID of the port you want to enable, you can run the command to enable it."
+    },
+    {
+      "title": "Type enable and press ↵ Enter.",
+      "content": "Type enable and press ↵ Enter . If your switch has a password, you'll be prompted to enter it now. If not, you'll just be taken to the next line."
+    },
+    {
+      "title": "Type configure terminal and press ↵ Enter.",
+      "content": "Type configure terminal and press ↵ Enter . This puts the switch into configuration mode. [3] X Research source"
+    },
+    {
+      "title": "Type interface port-id and press ↵ Enter.",
+      "content": "Type interface port-id and press ↵ Enter . Replace port-id with the ID of the port you want to enable, for example, interface fastEthernet 0/1 or interface Gi1/10 . Now your switch knows which interface to configure. [4] X Research source"
+    },
+    {
+      "title": "Type no shutdown and press ↵ Enter.",
+      "content": "Type no shutdown and press ↵ Enter . This turns the port on. [5] X Research source If you want to turn the port off, you'd use shutdown instead."
+    },
+    {
+      "title": "Run copy running-config startup-config to make the changes permanent.",
+      "content": "Run copy running-config startup-config to make the changes permanent. This overwrites the startup configuration file with the new changes. [6] X Research source"
+    },
+    {
+      "title": "Type end and press ↵ Enter.",
+      "content": "Type end and press ↵ Enter . This exists configuration mode."
+    }
+  ]
+}

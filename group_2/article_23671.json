@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Inaccessible-Boot-Device",
+  "title": "12 Ways to Troubleshoot \"Inaccessible Boot Device\"",
+  "steps": [
+    {
+      "title": "It may be a temporary glitch.",
+      "content": "It may be a temporary glitch. Restarting your computer can usually fix temporary glitches in your system. Before trying anything else, power your computer off. Wait 30 seconds and power it back on again. See if this resolves the issue."
+    },
+    {
+      "title": "Windows Recovery gives you options to troubleshoot Windows.",
+      "content": "Windows Recovery gives you options to troubleshoot Windows. Since the \"inaccessible boot device\" error prevents you from booting into Windows, you will need to enter Windows Recovery Environment to try to troubleshoot any issues you have. There are a couple of ways you can boot into Windows Recovery Environment: Restart your computer three times. One of the easiest ways to boot into Windows Recovery is to restart your computer three times. Power your computer off and then power it on. As soon as you see the manufacturer's logo, press and hold the Power button to immediately force your computer to shut down. Repeat three times to boot into Windows Recovery Environment. On some computers, you may be able to press F11, F9, or F12 as your PC boots up to boot into Windows Recovery. Use a Windows Installation Media or recovery drive. If you are unable to boot into Windows Recovery Environment during the boot process, you will need to create a Windows Recovery Media drive or a Windows Installation Media drive using a USB drive and a separate functioning computer. You'll need to boot into your BIOS/UEFI settings and ensure your USB drive is set to boot first in the boot order. Then insert the USB drive into a USB port on your computer and boot from the Windows Recovery drive. If you are using a Windows Installation Media, click Repair your computer in the lower-left corner. You can generally boot into the BIOS by press F1, F2, Del, F10, F12, or Esc while your computer boots up. You can also boot into the BIOS by selecting UEFI Firmware Settings in Windows Recovery Environment. You can download the Installation Media Creation tool for any version of Windows here"
+    },
+    {
+      "title": "Your BIOS/UEFI settings may be incorrect.",
+      "content": "Your BIOS/UEFI settings may be incorrect. Boot into your BIOS/UEFI settings as your computer boots up. If you have more than one hard drive or partition, check to make sure the hard drive or partition that contains your Windows installation is set as the primary boot drive (besides your USB drive). If you're able to, make sure the SATA mode is switched to AHCI mode. The BIOS menu is different from one computer manufacturer to the next. Look for \"Boot order\" or \"Boot Settings\" or something similar. Consult the user's manual for your computer for more information. You can generally boot into the BIOS by press F1, F2, Del, F10, F12, or Esc while your computer boots up. You can also boot into the BIOS by selecting UEFI Firmware Settings in Windows Recovery Environment."
+    },
+    {
+      "title": "You may have corrupt files or a file system.",
+      "content": "You may have corrupt files or a file system. Chkdsk is a Windows utility that scans your entire hard disk and file system for errors. I can also attempt to correct any errors it finds if instructed to. Use the following steps to check your disk for errors using Chkdsk: Boot into Windows Recovery Environment . Click Troubleshoot . Click Advanced Startup Options . Click Command Prompt Type CHKDSK /f C: and press Enter ."
+    },
+    {
+      "title": "You may have some corrupt start-up files.",
+      "content": "You may have some corrupt start-up files. System File Checker is another Windows Utility that will scan your system files and attempt to fix any broken files it finds. Use the following steps to run System File Checker: Boot into Windows Recovery Environment . Click Troubleshoot . Click Advanced Startup Options . Click Command Prompt Type sfc /scannow and press Enter ."
+    },
+    {
+      "title": "A recent update may be causing the error.",
+      "content": "A recent update may be causing the error. If the error started occurring after a recent update, you may be able to remove it using the Command Prompt. Check to see if this resolves the issue. You may need to remove more than one package. Use the following steps to check your recently installed packages and remove them if necessary: Boot into Windows Recovery Environment . Click Troubleshoot . Click Advanced Startup Options . Click Command Prompt Type Dism / Image: C:\\/ Get-Packages and press Enter . Check the list of recently installed updates by date. Type {{dism.exe /image:c:\\ /remove-package /[package name]}} and press Enter to remove any packages installed around the same time the error started."
+    },
+    {
+      "title": "Pending and uninstalled packages may cause a boot disk error.",
+      "content": "Pending and uninstalled packages may cause a boot disk error. In some cases, a Windows update may get stuck and uninstalled packages may cause an \"inaccessible boot device\" error. Use the following steps to remove pending package installations: Boot into Windows Recovery Environment . Click Troubleshoot . Click Advanced Startup Options . Click Command Prompt Type DISM.exe /image:C:\\ /cleanup-image /revertpendingactions and press Enter ."
+    },
+    {
+      "title": "Safe Mode can help you troubleshoot problems.",
+      "content": "Safe Mode can help you troubleshoot problems. Safe Mode boots into Windows with only the minimal amount of programs and drivers needed to run Windows. If you can boot into Safe Mode, you can use it to do some troubleshooting to get your computer running normally again. Use the following steps to boot into Safe Mode: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Boot into Windows Recovery . Select Troubleshoot . Select Advanced Options . Select Startup Settings . Select Restart . Press 5 to enter Safe Mode with Networking."
+    },
+    {
+      "title": "You may have a virus or malware.",
+      "content": "You may have a virus or malware. If you are able to boot into Windows using Safe Mode, you can use Windows Defender to run a virus scan. This will remove any viruses that may be causing the error. Use the following steps to run a virus scan: Boot into Safe Mode . Click the Windows Start menu. Type Windows Security . Click Windows Security (Windows 11) or Windows Security Center (Windows 10). Click Virus & threat protection . Click Quick Scan or Scan Now . Alternatively, you can use a third-party virus scanner app, like Malwarebytes ."
+    },
+    {
+      "title": "A system restore may be able to fix changes that corrupted your system.",
+      "content": "A system restore may be able to fix changes that corrupted your system. Windows creates a restore point whenever it updates or a new app is installed. You can also create restore points manually. You can use these restore points to restore your computer to a previous state. If you are able to boot into Safe Mode, use the following steps to restore your computer to a previous restore point: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Boot into Safe Mode . Click the Windows Start menu. Type Control Panel . Click Control Panel . Search \"Recovery\" using the search bar at the top. Click Create a restore point . Click System Restore . Select a previous restore point. Follow the prompts to restore your computer."
+    },
+    {
+      "title": "Your Windows installation may be corrupt.",
+      "content": "Your Windows installation may be corrupt. If nothing is working, your Windows installation may be corrupt and need to be reinstalled. There is a possibility that this will wipe all data on your hard drive and you will lose all your files. If you are able to boot into Safe Mode , try to back up all the files and data you want to keep. When reinstalling Windows, you will have the option to keep your files or erase everything. Try to keep your files first, and if that doesn't work, then you may need to erase everything. Use the following steps to reinstall Windows : [3] X Research source Create a Windows installation media USB drive. Boot your computer from the Windows Installation media drive. Alternatively, you can boot into Windows Recovery Environment and select Troubleshoot and Reset this PC . Select your language, time, and date, currency, and keyboard layout and click Next . Enter your activation key, or click I don't have an activation key . Select your version of Windows. Select your installation drive. Follow the prompts to complete the installation."
+    },
+    {
+      "title": "Your hard drive may have failed.",
+      "content": "Your hard drive may have failed. If you are not able to boot into Windows, or reinstall Windows, your hard drive may have failed. In this case, you will either need to purchase a new computer or purchase and install a new hard drive . If you purchase a new hard drive, you will also need to install Windows on the hard drive once the new hard drive is installed. If you are not able to boot from a USB drive, it's possible your motherboard may have failed. If that's the case, you will need to purchase a new motherboard or take your computer in for repair."
+    }
+  ]
+}

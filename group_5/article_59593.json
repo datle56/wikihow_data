@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Run-CUDA-C-or-C%2B%2B-on-Jupyter-(Google-Colab)",
+  "title": "How to Run CUDA C or C++ on Jupyter (Google Colab)",
+  "steps": [
+    {
+      "title": "Create a new Notebook.",
+      "content": "Create a new Notebook. Click: here ."
+    },
+    {
+      "title": "Click on New Python 3 Notebook at the bottom right corner of the window.",
+      "content": "Click on New Python 3 Notebook at the bottom right corner of the window."
+    },
+    {
+      "title": "Click on Runtime > Change runtime type.",
+      "content": "Click on Runtime > Change runtime type ."
+    },
+    {
+      "title": "Select GPU from the drop down menu and click on Save.",
+      "content": "Select GPU from the drop down menu and click on Save ."
+    },
+    {
+      "title": "Uninstall any previous versions of CUDA completely.",
+      "content": "Uninstall any previous versions of CUDA completely. (The '!' added at the beginning of a line allows it to be executed as a command line command.) ! apt - get -- purge remove cuda nvidia * libnvidia -* ! dpkg - l | grep cuda - | awk ' { print $ 2 } ' | xargs - n1 dpkg -- purge ! apt - get remove cuda -* ! apt autoremove ! apt - get update"
+    },
+    {
+      "title": "Install CUDA Version 9.",
+      "content": "Install CUDA Version 9. ! wget https : //developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb ! dpkg - i cuda - repo - ubuntu1604 - 9 - 2 - local_9 .2.88 - 1 _amd64 . deb ! apt - key add / var / cuda - repo - 9 - 2 - local / 7f a2af80 . pub ! apt - get update ! apt - get install cuda - 9.2"
+    },
+    {
+      "title": "Check your version using this code:",
+      "content": "Check your version using this code: ! nvcc -- version This should print something like this: nvcc : NVIDIA ( R ) Cuda compiler driver Copyright ( c ) 2005 - 2018 NVIDIA Corporation Built on Wed_Apr_11_23 : 16 : 29 _CDT_2018 Cuda compilation tools , release 9.2 , V9 .2.88"
+    },
+    {
+      "title": "Execute the given command to install a small extension to run nvcc from Notebook cells.",
+      "content": "Execute the given command to install a small extension to run nvcc from Notebook cells. ! pip install git + git : //github.com/andreinechaev/nvcc4jupyter.git"
+    },
+    {
+      "title": "Load the extension using this code:",
+      "content": "Load the extension using this code: % load_ext nvcc_plugin"
+    },
+    {
+      "title": "Execute the code below to check if CUDA is working.",
+      "content": "Execute the code below to check if CUDA is working. To run CUDA C/C++ code in your notebook, add the %%cu extension at the beginning of your code. %% cu #include <stdio.h> #include <stdlib.h> __global__ void add ( int * a , int * b , int * c ) { * c = * a + * b ; } int main () { int a , b , c ; // host copies of variables a, b & c int * d_a , * d_b , * d_c ; // device copies of variables a, b & c int size = sizeof ( int ); // Allocate space for device copies of a, b, c cudaMalloc (( void ** ) & d_a , size ); cudaMalloc (( void ** ) & d_b , size ); cudaMalloc (( void ** ) & d_c , size ); // Setup input values c = 0 ; a = 3 ; b = 5 ; // Copy inputs to device cudaMemcpy ( d_a , & a , size , cudaMemcpyHostToDevice ); cudaMemcpy ( d_b , & b , size , cudaMemcpyHostToDevice ); // Launch add() kernel on GPU add <<< 1 , 1 >>> ( d_a , d_b , d_c ); // Copy result back to host cudaError err = cudaMemcpy ( & c , d_c , size , cudaMemcpyDeviceToHost ); if ( err != cudaSuccess ) { printf ( \"CUDA error copying to Host: %s \\n \" , cudaGetErrorString ( err )); } printf ( \"result is %d \\n \" , c ); // Cleanup cudaFree ( d_a ); cudaFree ( d_b ); cudaFree ( d_c ); return 0 ; } If all went well this code should output: result is 8\\n ."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Task-Host-Window-Preventing-Shutdown",
+  "title": "How to Fix Task Host Window Preventing Shutdown: Easy Tips",
+  "steps": [
+    {
+      "title": "Scan your computer for viruses.",
+      "content": "Scan your computer for viruses. While the Windows Task Host isn't a virus or malware, you'll want to make sure you don't have any other malicious programs on your device. You can use a third-party antivirus program, or you can run the built-in scanner in Windows Security ."
+    },
+    {
+      "title": "Run the Windows Troubleshooter.",
+      "content": "Run the Windows Troubleshooter. This built-in tool helps you find errors on your device. It'll show you recommended troubleshooting steps if it finds an issue. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source To launch the tool, do the following: Click the Start menu and type \"troubleshoot settings\". Click Troubleshoot settings . Click Additional troubleshooters . Click an option and click Run the troubleshooter . Repeat for all options."
+    },
+    {
+      "title": "Disable Fast startup.",
+      "content": "Disable Fast startup. This option may be causing the Task Host window to appear when you're trying to shut down your computer. To disable it, do the following: Click the Start menu and type \"control panel\". Click Control Panel . Click Power Options . Click Choose what the power buttons do in the left panel. Click Change settings that are currently unavailable at the top. Uncheck the box for Turn on fast startup . Restart your computer."
+    },
+    {
+      "title": "Make sure background applications are closed.",
+      "content": "Make sure background applications are closed. When you try to turn off your computer with apps running in the background, you'll get a pop-up prompt from Windows notifying you. If you proceed, Windows will force-shutdown the apps. To prevent this window, make sure all apps are closed. You can check by doing the following: Right-click the taskbar. Click Task manager . Select an open program. Click End task ."
+    },
+    {
+      "title": "Check your scheduled updates.",
+      "content": "Check your scheduled updates. If you don't have any apps running in the background when you shut down Windows, you may have an update scheduled for later. To check any awaiting updates, do the following: Click the Start menu and type \"check for updates\". Click Check for updates . Click Check for updates again. If needed, click Change active hours to update at a different time, or Pause updates to update it manually on your own time."
+    },
+    {
+      "title": "Run the System File Checker.",
+      "content": "Run the System File Checker. This built-in command scans your computer for corrupted files. To use it, do the following: Open the Command Prompt as an administrator. Type sfc /scannow and press Enter . Type Dism /Online /Cleanup-Image /CheckHealth and press Enter . Type Dism /Online /Cleanup-Image /ScanHealth and press Enter . Type DISM /Online /Cleanup-Image /RestoreHealth and press Enter . Restart your computer."
+    },
+    {
+      "title": "Perform a clean boot.",
+      "content": "Perform a clean boot. A clean boot starts Windows up with minimal drivers and programs. This helps you determine if another app is affecting your computer's performance. This is only recommended if you're familiar with advanced boot options. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Do the following: Make sure you're on the administrator account. Click the Start menu and type msconfig . Click System Configuration . Click the Services tab. Check the box for Hide all Microsoft services . Click Disable all . Click Apply . Click the Startup tab and click Open Task Manager . Select a program that has the Enabled status. Click Disable . Close the Task Manager. In System Configuration, click OK . Restart your computer to look for errors. To enable it again, open System Configuration and select Normal Startup . Select the Services tab, uncheck the box for Hide all Microsoft services , click Enable all , and then click Apply . Enable all disabled programs in the Task Manager. Then, restart your computer."
+    },
+    {
+      "title": "Wait for an update.",
+      "content": "Wait for an update. The Task Host window error has appeared for most users after a certain Windows update. Since it's not recommended to revert updates (as these contain important security fixes), you may need to wait for Microsoft to release a new update that fixes this issue. Windows 10 support will end in October 2025. If you want to continue receiving new updates, you'll need to upgrade to Windows 11 ."
+    },
+    {
+      "title": "Task Host is a Windows program.",
+      "content": "Task Host is a Windows program. If you're worried about viruses or malware, don't worry. The Task Host itself is a built-in program. However, if you have other unknown programs popping up, be sure to run an antivirus scan to rule out any harmful applications."
+    },
+    {
+      "title": "The error shows the Task Host window when trying to shut down a PC.",
+      "content": "The error shows the Task Host window when trying to shut down a PC. This window may pop up for only a second before the computer shuts down, raising concerns from some users. However, the Task Host is a Windows program, so you shouldn't be too worried about viruses. Many users reported seeing this error after installing a new update."
+    }
+  ]
+}

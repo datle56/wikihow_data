@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Copy-a-Directory-Linux",
+  "title": "How to Copy a Directory with the cp Command on Linux",
+  "steps": [
+    {
+      "title": "Use cp -r /source/directory /target/directory/.",
+      "content": "Use cp -r /source/directory /target/directory/ . This command copies the source directory (including all of the files and subfolders inside) to the target destination. If you don't have permission to access the source directory or write to the target directory, preface the command with sudo . By default, cp does not warn you if you'll be overwriting an existing file. If you're worried about accidentally overwriting a file, add the -i option to use interactive mode. E.g., cp -r -i /home/jen/pictures /home/john/ . [1] X Research source You can use the ls -a command to view all files and folders within a directory."
+    },
+    {
+      "title": "Use cp /source/directory/* /target/directory/.",
+      "content": "Use cp /source/directory/* /target/directory/ . If you only want to copy the files from a directory, not the directory itself, use the wildcard (*). For example, let's say you want to copy the pictures from /home/jen/pictures into /home/john/pictures: Since /home/john/pictures already exists, you don't want to copy /home/jen/pictures/, as this will create /home/john/pictures/pictures. Instead, you'll just want to copy the image files into the existing pictures folder in John's home directory. To copy the pictures without creating a new subdirectory, you'd use cp /home/jen/pictures/* /home/john/pictures/ ."
+    },
+    {
+      "title": "Use cp /source/directory/filename /target/directory/.",
+      "content": "Use cp /source/directory/filename /target/directory/ . If you just want to copy one file to a different directory, you can use the cp command without any special options. Just make sure you add a forward slash after the target directory's name to specify that the destination is a directory, not a new file called filename . For example, to copy tree.jpg from the pictures folder in user jen's home directory to /home/john/pictures/, you'd use cp /home/jen/pictures/tree.jpg /home/john/pictures/ . You can also copy multiple files from the directory this way. For example, cp /home/jen/tree.jpg /home/jen/frog.jpg /home/jen/cat.jpg /home/john/pictures/ ."
+    },
+    {
+      "title": "Enter the parent directory and use cp with a wildcard.",
+      "content": "Enter the parent directory and use cp with a wildcard. If you want to copy multiple directories to another parent directory, start by using the cd command to enter the directory containing the ones you want to copy. For example, if you want to copy /home/jen/pictures and /home/jen/music to /home/john, use cd /home/jen to enter /home/jen. To copy the directories, use cp -r pictures music /home/john/ . The -r option ensures you'll copy any subdirectories."
+    },
+    {
+      "title": "Use mv /old/name /new/name.",
+      "content": "Use mv /old/name /new/name . The mv (move) command is used to rename directories and files and will not harm the files or subfolders within the directory."
+    },
+    {
+      "title": "You can use scp to copy directories remotely.",
+      "content": "You can use scp to copy directories remotely. The syntax is scp -r /source/directory username@hostname:/destination/directory . Scp makes it easy to copy directories to remote Linux systems securely without using ftp or sftp. For example, let's say you want to copy the pictures directory from your home directory to your account on a remote server called chihuahua.wikihow.com . scp -r /home/myusername/pictures/ myusername@chihuahua.wikihow.com:/home/myusername/ ."
+    },
+    {
+      "title": "Permission denied",
+      "content": "Permission denied error. If you get \"permission denied\" when using cp -r to copy a directory, there may already be a directory with that name at the target destination, containing at least one file with the same name. It's also possible that you do not have write permissions in the target directory. For example, let's say you get this error when copying /home/jen/pictures to /home/john/pictures. Use ls -l /home/john to check for a directory called \"pictures.\" If /home/john/pictures exists, run ls -l /home/john/pictures to see if there are already files in the directory with the same name(s) as the ones you're trying to copy from /home/jen/pictures. And because ls -l shows permissions, make sure you have write permissions on the target directory. You can also try using cp -rp /source/directory /target/directory/ instead to preserve permissions from the original directory."
+    },
+    {
+      "title": "No such file or directory",
+      "content": "No such file or directory error. This error indicates that either the source or target directory does not exist. Use ls -l to check both the source and target directories."
+    },
+    {
+      "title": "Symlinks aren't being copied.",
+      "content": "Symlinks aren't being copied. If the directory you're copying contains symbolic links to other directories, use cp -a instead of cp -r . If you've already copied the directory and now want to copy the symlinks , use cp -d /source/directory/symlink /target/directory/ ."
+    }
+  ]
+}

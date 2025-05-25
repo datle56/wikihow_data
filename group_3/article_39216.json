@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Share-Ethernet-As-Wi-Fi",
+  "title": "Share Ethernet As Wi-Fi on Windows and macOS Easily & Quickly",
+  "steps": [
+    {
+      "title": "Open Mobile Hotspot in Settings.",
+      "content": "Open Mobile Hotspot in Settings. Get there quickly by pressing Win + I and navigating to Network & Internet > Mobile hotspot . You can also click the Mobile hotspot icon in your Quick Settings panel on Windows 11 to use the last settings used. Or you can right-click it and select Go to settings to change the connection."
+    },
+    {
+      "title": "Choose the connection you want to share.",
+      "content": "Choose the connection you want to share. Since you're sharing an Ethernet connection, make sure that is selected. For Windows 11, choose to use Wi-Fi or Bluetooth to share your connection; Wi-Fi is a faster connection. If you change the network you're sharing, you'll need to enter the new network name and password."
+    },
+    {
+      "title": "Tap the toggle (Win 11) or click \"Share my Internet connection…\" (Win 10).",
+      "content": "Tap the toggle (Win 11) or click \"Share my Internet connection…\" (Win 10). On the other device, connect to the shared network in the Wi-Fi settings, or scan the QR code if one is available. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Navigate to your Network Connections window.",
+      "content": "Navigate to your Network Connections window. You can easily find this by searching network connections in the Start menu's search bar. A control panel opens to display your network connections. This helps if those you're sharing the connection with are getting a \"failed to obtain IP address\" error."
+    },
+    {
+      "title": "Right-click your Ethernet connection and select Properties.",
+      "content": "Right-click your Ethernet connection and select Properties . Since you're sharing an Ethernet connection, that's what you'll click to address the IP problem."
+    },
+    {
+      "title": "Click the Sharing tab.",
+      "content": "Click the Sharing tab. It's at the top of the \"Ethernet Properties\" window."
+    },
+    {
+      "title": "Enable \"Allow other users to connect…\" and press OK.",
+      "content": "Enable \"Allow other users to connect…\" and press OK . This will get rid of the IP address error for other devices connected to your computer to access the Internet."
+    },
+    {
+      "title": "Open System Settings.",
+      "content": "Open System Settings. It's in the Apple menu at the top of your screen. macOS Monterey and below will show System Preferences instead."
+    },
+    {
+      "title": "Click General and Sharing.",
+      "content": "Click General and Sharing . You'll see General in the sidebar next to an icon of a gear. Sharing will open a menu of more options."
+    },
+    {
+      "title": "Click next to \"Internet Sharing.\"",
+      "content": "Click next to \"Internet Sharing.\" This opens a pop-up window."
+    },
+    {
+      "title": "Select your connection info.",
+      "content": "Select your connection info. In the \"Share your connection from\" window, select your computer. To share your Ethernet connection wirelessly, select your Ethernet connection. In the \"To computers using\" section, select \"Wi-Fi\" to share your Ethernet connection over Wi-Fi."
+    },
+    {
+      "title": "Click Wi-Fi Options.",
+      "content": "Click Wi-Fi Options . You need to configure the Wi-Fi so others can connect to it. Enter the Wi-Fi name, channel (the default is ok), security, and password. You'll need to enter your admin name and password before you can edit this section. Click OK when you're done. [2] X Research source"
+    },
+    {
+      "title": "Launch Command Prompt.",
+      "content": "Launch Command Prompt. Search for command prompt in the Start menu search bar and open the app result."
+    },
+    {
+      "title": "Enter the command:",
+      "content": "Enter the command: netsh wlan show drivers . If “Hosted network supported” says “Yes\", then you’re equipped to proceed. Otherwise, you need a hardware upgrade, so this method will not work."
+    },
+    {
+      "title": "Enter the command:",
+      "content": "Enter the command: netsh wlan set hostednetwork mode=allow ssid= ABC key= ABC . Replace ABC with the SSID and key of your network. The SSID is simply the network name. It can be anything you'd like. The key is the Wi-Fi password. Make it secure by keeping it at a minimum of eight characters long. For example: netsh wlan set hostednetwork mode=allow ssid=T2Lead key=12345678"
+    },
+    {
+      "title": "Enter the command:",
+      "content": "Enter the command: netsh wlan start hostednetwork . Before entering this, the network has been made. This command starts the network. After this, type \"exit\" to close the Command Prompt."
+    },
+    {
+      "title": "Open Network and Sharing Center.",
+      "content": "Open Network and Sharing Center. Navigate to \"Change Adapter Settings\". You can access Network and Sharing Center in Control Panel."
+    },
+    {
+      "title": "Right-click your Ethernet connection and select Properties.",
+      "content": "Right-click your Ethernet connection and select Properties . This may require admin permissions; if it asks for a password, enter it and select \"Continue\". If you are not an admin or do not know the password, ask the admin for it."
+    },
+    {
+      "title": "Click the Sharing tab.",
+      "content": "Click the Sharing tab. Check “Allow other network users to connect through this computer’s Internet Connection”."
+    },
+    {
+      "title": "In the drop-down menu, select “Local Area Connection” and click “OK”.",
+      "content": "In the drop-down menu, select “Local Area Connection” and click “OK”."
+    },
+    {
+      "title": "Connect to another device using a hotspot.",
+      "content": "Connect to another device using a hotspot. How to create a hotspot is covered earlier in this article here ."
+    },
+    {
+      "title": "Open the Network Connections window.",
+      "content": "Open the Network Connections window. Search for network connections in the Start menu's search box and open the Control Panel app result. You can also get to this window by navigating Windows 11 through Settings > Network & Internet > Status > Change adapter options ."
+    },
+    {
+      "title": "Select the Wi-Fi and Ethernet connections.",
+      "content": "Select the Wi-Fi and Ethernet connections. Press and hold the Ctrl key on your keyboard as you click each connection so they are both highlighted. If your computer has more than 1 Ethernet connection, only select the one that you are using."
+    },
+    {
+      "title": "Right-click your selection and click Bridge Connections.",
+      "content": "Right-click your selection and click Bridge Connections . You will see another pop-up window as the connection is bridged. If an error pops up, the bridge may have still been created, and you can ignore this message. The bridge should get rid of any errors the other devices on your network are experiencing! In case the bridge doesn't exist, try this method again."
+    },
+    {
+      "title": "Right-click the bridge to delete it (when you're done using it).",
+      "content": "Right-click the bridge to delete it (when you're done using it). Return to the Network Connections window to delete the bridge when you are done with it. Click Yes to confirm that you want to delete the bridge. [3] X Research source"
+    },
+    {
+      "title": "Visit the Connectify website.",
+      "content": "Visit the Connectify website . Find the icon that says \"Download\", and select it. If another page shows up without beginning the download, simply click the \"next\" button at the bottom of the page to start the download. This program is compatible with Windows 7 and up."
+    },
+    {
+      "title": "Allow your computer to save and download the file.",
+      "content": "Allow your computer to save and download the file."
+    },
+    {
+      "title": "Begin the installation process.",
+      "content": "Begin the installation process. Choose where Connectify should be located on your computer (it should create its own place) and other options. Wait for it to finish installing. This should take about ten minutes, but it can depend on the speed of your computer. The installation may require a reboot to finish."
+    },
+    {
+      "title": "Run it.",
+      "content": "Run it. Type in the SSID and password. On the free version of Connectify, it requires you to have \"Connectify-\" and then whatever SSID you'd like. The password can be anything you want. Click \"Start Hotspot\" and your network will be instantly formed. You can stop the network at any time by clicking \"Stop Hotspot\". If you look at your devices, the network should show in Wi-Fi settings. Tap your network, enter the password, and you will be connected to Wi-Fi! On the Clients tab, you can view devices connected to your network. You can also view devices previously connected."
+    }
+  ]
+}

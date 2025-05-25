@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Subtract-Binary-Numbers",
+  "title": "How to Subtract Binary Numbers",
+  "steps": [
+    {
+      "title": "Align the numbers as an ordinary subtraction problem.",
+      "content": "Align the numbers as an ordinary subtraction problem. Write the larger number above the smaller number. If the smaller number has fewer digits, line them up on the right, as you would in a decimal (base ten) subtraction problem. [1] X Research source"
+    },
+    {
+      "title": "Try some basic problems.",
+      "content": "Try some basic problems. Some binary subtraction problems are no different than base ten subtraction. Line up the columns and, starting from the right, find the result for each digit. Here are a few easy examples: [2] X Research source 1 - 0 = 1 11 - 10 = 1 1011 - 10 = 1001"
+    },
+    {
+      "title": "Set up a more complicated problem.",
+      "content": "Set up a more complicated problem. You only need to know one special \"rule\" to complete any binary subtraction problem. This rule tells you how to \"borrow\" from the digit to the left so you can solve a \"0 - 1\" column. [3] X Research source For the rest of this section, we'll set up a couple example problems and solve them using the borrow method. Here's the first: 110 - 101 = ?"
+    },
+    {
+      "title": "\"Borrow\" from the second digit.",
+      "content": "\"Borrow\" from the second digit. Starting from the right column (the ones place), we need to solve the problem \"0 - 1.\" In order to do this, we need to \"borrow\" from the digit to the left (the twos place). This has two steps to it: First, cross out the 1 and replace it with a 0, to get this: 1 0 1 0 - 101 = ? You've subtracted 10 from the first number, so you can add this \"borrowed\" number to the ones place: 1 0 1 10 0 - 101 = ?"
+    },
+    {
+      "title": "Solve the rightmost column.",
+      "content": "Solve the rightmost column. Now each column can be solved as usual. Here's how to solve the rightmost column (the ones place) in this problem: [4] X Research source 1 0 1 10 0 - 101 = ? The rightmost column is now: 10 - 1 = 1. If you can't figure out how to reach this answer, here's how to convert the problem back to decimal : 10 2 = (1 x 2) + (0 x 1) = 2 10 . (The sub numbers indicate which base the number is written in.) 1 2 = (1x1) = 1 10 . Therefore, in decimal form this problem is 2 - 1 = ?, so the answer is 1."
+    },
+    {
+      "title": "Finish the problem.",
+      "content": "Finish the problem. The rest of the problem can now be solved easily. Solve it column by column, moving from right to left: 1 0 1 10 0 - 101 = __1 = _01 = 001 = 1 ."
+    },
+    {
+      "title": "Try a difficult problem.",
+      "content": "Try a difficult problem. Borrowing comes up a lot in binary multiplication, and sometimes you'll need to borrow multiple times just to solve one column. For example, here's how to solve 11000 - 111 . We can't \"borrow\" from a 0, so we need to keep borrowing from the left until we turn it into something we can borrow from: [5] X Research source 1 0 1 10 0 00 - 111 = 1 0 1 1 10 0 10 0 0 - 111 = (remember, 10 - 1 = 1) 1 0 1 1 10 0 1 10 0 10 0 - 111 = Here it is written more tidily: 1011 10 0 - 111 = Solve column by column: _ _ _ _ 1 = _ _ _ 0 1 = _ _ 0 0 1 = _ 0 0 0 1 = 1 0 0 0 1"
+    },
+    {
+      "title": "Check your answer.",
+      "content": "Check your answer. There are three ways to check your answer. [6] X Research source One quick way is to find a binary calculator online and plug in the problem. The other two methods are still useful, since you may need to check by hand on a test, and they will make you more familiar and comfortable with binary numbers: Add in binary to check your work. Add the answer together with the smaller number, and you should get the larger number. Using our last example (11000 - 111 = 10001), we get 10001 + 111 = 11000, which is the larger number we started with. Alternatively, convert each number from binary to decimal and see whether it is true. Using the same example (11000 - 111 = 10001), we can convert each number into decimal and get 24 - 7 = 17. This is a true statement, so our solution is correct."
+    },
+    {
+      "title": "Align the two numbers as you would in decimal subtraction.",
+      "content": "Align the two numbers as you would in decimal subtraction. This method is used by computers to subtract binary numbers, since it uses a more efficient program. For a human used to ordinary decimal subtraction problems, this is probably the more difficult method to use, but could be useful to understand as a programmer. [7] X Research source We'll use the example 101 - 11 = ?"
+    },
+    {
+      "title": "Append leading zeros if necessary to represent both numbers with the same number of digits.",
+      "content": "Append leading zeros if necessary to represent both numbers with the same number of digits. For example, convert 101-11 to 101-011 so that both have three digits. [8] X Research source 101 - 011 = ?"
+    },
+    {
+      "title": "Switch the digits in the second term.",
+      "content": "Switch the digits in the second term. Change all the 0s to 1s and all the 1s to 0s in the second term. In our example, the second term becomes: 011 → 100 . [9] X Research source What we're actually doing is \"taking the one's complement,\" or subtracting each digit in the term from one. The \"switching\" shortcut works in binary, since the only two possibilities result in switching the term: 1 - 0 = 1 and 1 - 1 = 0 ."
+    },
+    {
+      "title": "Add one to the new second term",
+      "content": "Add one to the new second term . Once you have the \"reversed\" term, add one to the result. In our example, we get 100 + 1 = 101 ."
+    },
+    {
+      "title": "Solve the new problem as a binary addition problem",
+      "content": "Solve the new problem as a binary addition problem . Use binary adding techniques to add the new term to the original term, instead of subtracting: [10] X Research source 101 + 101 = 1010 If this does not make sense to you, review how to add binary numbers ."
+    },
+    {
+      "title": "Discard the first digit.",
+      "content": "Discard the first digit. This method should always end up with an answer one digit too long. For example, our example problem involved three-digit numbers (101 + 101), but we ended up with a four digit solution (1010). Simply cross out the first digit, and you'll have the answer to the original subtraction problem: [11] X Research source 1 010 = 10 Therefore, 101 - 011 = 10 If you don't have an extra digit, you tried to subtract a larger number from a smaller one. See the tips section for how to solve problems like that, and start again."
+    },
+    {
+      "title": "Try this method in base ten.",
+      "content": "Try this method in base ten. This method is called the \"two's complement\" method, since the \"reverse the digits\" steps results in the \"one's complement,\" and then the number 1 is added. If you'd like a more intuitive understanding of why this method works, try it in base ten: [12] X Research source 56 - 17 Since we're using base ten, we'll take the \"nine's complement\" of the second term (17) by subtracting each digit from nine. 99 - 17 = 82 . Change this into an addition problem: 56 + 82 . If you compare this to the original problem (56 - 17), you can see that we've added 99. 56+82= 138. But since our changes added 99 to the original problem, we'll need to subtract 99 from the answer. Again, we'll use a shortcut, just like in the binary method above: add 1 to the total number, then delete the digit on the left (which represents 100): 138 + 1 = 139 → 1 39 → 39 This is finally the solution to our original problem, 56-17."
+    }
+  ]
+}

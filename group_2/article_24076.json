@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Install-Software-in-Debian-Linux",
+  "title": "How to Install Software in Debian Linux",
+  "steps": [
+    {
+      "title": "Open the Synaptic graphical package manager.",
+      "content": "Open the Synaptic graphical package manager. Synaptic comes preinstalled in Debian as long as you've installed the version with desktop support. [1] X Research source You'll find it in your Applications menu, or under System > Administration . If you want to use a different graphical package manager, open that instead—most work similarly. You can also run Synaptic from the command line using sudo synaptic ."
+    },
+    {
+      "title": "Click Search.",
+      "content": "Click Search . It's the magnifying glass icon near the top of the window."
+    },
+    {
+      "title": "Search for the software you want to install.",
+      "content": "Search for the software you want to install. You can use the search bar to find something in particular or browse the list by category."
+    },
+    {
+      "title": "Select the package(s) you want to install.",
+      "content": "Select the package(s) you want to install. Check the box next to the name of any package you want to install. You can install multiple packages at once if you wish."
+    },
+    {
+      "title": "Click the Apply button.",
+      "content": "Click the Apply button. It's at the bottom of the window. Synaptic will now download and install the selected packages."
+    },
+    {
+      "title": "Open a terminal.",
+      "content": "Open a terminal. If you're using a graphical user interface (GUI), you can usually do this by clicking the terminal icon or by pressing Ctrl + Alt + T . [2] X Research source"
+    },
+    {
+      "title": "Run sudo apt-get update to update the package manager.",
+      "content": "Run sudo apt-get update to update the package manager. After typing that command at the prompt, press ↵ Enter or ⏎ Return to run it. After verifying your root password, the package manager will update to include the latest software sources. [3] X Research source"
+    },
+    {
+      "title": "Search for the package you want to install.",
+      "content": "Search for the package you want to install. If you already know the exact name of the package you want to install, skip to the next step. Otherwise, run apt-cache search softwareName (with softwareName being the name of your software) at the prompt. This can sometimes print out a lot of options, of which many are irrelevant. Be patient and read the description of every package to determine which one you want to install. If you're unsure, you can also use apt show packageName , with packageName being the name of any listed package, to get a longer description of what the package is. If you're unsure what your software is called, you might try searching for a word that describes what the package does. For example, typing apt-cache search paint will print the package names of many painting programs, including GIMP and Krita."
+    },
+    {
+      "title": "Run sudo apt-get install packageName to install the package.",
+      "content": "Run sudo apt-get install packageName to install the package. Replace packageName with the actual package name. For example, if you want to install the package dillo (that's a web browser), you would type sudo apt-get install dillo . If additional dependencies are required for the package to install, follow the on-screen instructions to choose whether to install them now. To remove an installed package, use sudo apt-get remove packageName . [4] X Research source"
+    },
+    {
+      "title": "Download a package file.",
+      "content": "Download a package file. If you want to install a package that ends with the .deb file extension, you can use a built-in tool called dpkg . [5] X Research source Start by downloading the desired *.deb file from your preferred source."
+    },
+    {
+      "title": "Open a terminal.",
+      "content": "Open a terminal. If you're using a graphical user interface (GUI), you can usually do this by clicking the terminal icon or by pressing Ctrl + Alt + T . [6] X Research source"
+    },
+    {
+      "title": "Use cd to enter the directory of the downloaded file.",
+      "content": "Use cd to enter the directory of the downloaded file. For example, if you've saved the file to a folder in your local directory called downloads , type cd downloads and press ↵ Enter or ⏎ Return ."
+    },
+    {
+      "title": "Run sudo dpkg –i packageName.",
+      "content": "Run sudo dpkg –i packageName . Replace packageName with the full name of the package ending in .deb. This installs the software package. [7] X Research source For example, to install a package called icewm_0.8.11-2.deb, type sudo dpkg –i icewm_0.8.11-2.deb and press ↵ Enter or ⏎ Return . Type your root password when prompted to complete the command."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Bootable-Windows-XP-ISO-from-a-Folder",
+  "title": "How to Create or Download a Bootable Windows XP ISO",
+  "steps": [
+    {
+      "title": "Create a new folder.",
+      "content": "Create a new folder. If you do have a Windows XP installation, you can use this method to make your own bootable image. For simplicity, name your new folder WINXP and place it in the root directory of your hard drive (e.g., C:\\WINXP). This folder will temporarily house the Windows installation."
+    },
+    {
+      "title": "Copy the installation files.",
+      "content": "Copy the installation files. To create a bootable disc from your Windows folder, you will need to have an i386 folder on your computer. You can find it at the root of your Windows installation hard drive. The typical location is C:\\i386. Copy the folder C:\\i386 to the C:\\WINXP folder you created in the first step. Make sure that you copy and do not move the files. To do this, right-click the i386 folder and select Copy . Navigate to C:\\WINXP, right-click, and select Paste . The files will begin copying. Depending on the speed of your computer, this could take a few minutes. After copying, you should have an i386 folder in your WINXP folder. The directory should look like C:\\WINXP\\i386\\."
+    },
+    {
+      "title": "Create a text file called \"Windows\" in C:",
+      "content": "Create a text file called \"Windows\" in C: \\WINXP\\i386. Go to C:\\WINXP folder. Right-click in the window and select New > Text Document . In the text file, type Windows . Add a single space after the word and press Enter once. Go to File' > Save . Name the new document \"Win51\" . Be sure to include the quotes so the file is saved without an extension. Click Save ."
+    },
+    {
+      "title": "Copy the text file.",
+      "content": "Copy the text file. Depending on which version of Windows you originally installed, you will need to make a copy of the file you just created with a specific file name. All the files that you create should be located in the WINXP folder. XP Home: Make a copy of the file named WIN51IC. XP Home SP1: make the above file plus one named WIN51IC.SP1 XP Home SP2: make the above files plus one named WIN51IC.SP2 XP Home SP3: make the above files plus one named WIN51IC.SP3 XP Pro: Make a copy of the file named WIN51IP. XP Pro SP1: make the above file plus one named WIN51IP.SP1 XP Pro SP2: make the above files plus one named WIN51IP.SP2 XP pro SP3: make the above files plus one named WIN51IP.SP3"
+    },
+    {
+      "title": "Slipstream the latest SP update.",
+      "content": "Slipstream the latest SP update. If you have ever upgraded your Windows XP installation with a Service Pack, you will need to upgrade your installation. This is because even though the system is upgraded when a Service Pack is installed, the installation files are not. Download the Service Pack installation file from Microsoft. A few are still available for download, including Service Pack 3 and Service Pack 2 . Make sure to download the pack that was last installed. This guide will assume you are slipstreaming to SP3. Rename the downloaded file to XPSP3.EXE and place it at the root of your C: drive for easy access. Open the command prompt. To do this, click Start , select Run… , type cmd , and press Enter Type the following command and press Enter : C:\\XPSP3.EXE /integrate:C:\\WINXP"
+    },
+    {
+      "title": "Download the Windows boot sector.",
+      "content": "Download the Windows boot sector. You can download the Windows boot sector legally and for free from various places online. The file should be called \"w2ksect.bin\". Be sure you are downloading from a trusted source and downloading a Windows XP boot sector in the correct language. We found several downloads at Archive.org , but do due diligence to check them for viruses. Place the boot image in the root of your C: (e.g., C:\\w2ksect.bin)."
+    },
+    {
+      "title": "Download and install ImgBurn.",
+      "content": "Download and install ImgBurn. Various free programs are available that can create bootable discs on Windows XP. This guide will assume you are using ImgBurn . You will need to make adjustments to the program’s settings before you begin burning."
+    },
+    {
+      "title": "Adjust your settings.",
+      "content": "Adjust your settings. Open ImgBurn and switch to Build mode. In the output menu, choose whether you are burning to a blank disc or creating an image on your hard drive."
+    },
+    {
+      "title": "Prepare to create the ISO image.",
+      "content": "Prepare to create the ISO image. Drag and drop your C:\\WINXP folder into ImgBurn. Click the Options tab and change \"File System\" to ISO9660. Make sure \"Recurse Subdirectories\" is checked. Click the Advanced tab and then the Bootable Disc tab. Check the box for \"Make Image Bootable\" and select None (Custom) from the \"Emulation Type\" dropdown menu. Click the folder icon and select the C:\\w2ksect.bin file you downloaded earlier. Change the \"Sectors to Load\" value from 1 to 4 . Select the destination for your ISO from the \"Destination\" menu."
+    },
+    {
+      "title": "Click the Write/Build button.",
+      "content": "Click the Write/Build button. Confirm the changes you have made to the settings above. This creates a bootable ISO image of the Windows XP installation at the selected destination."
+    },
+    {
+      "title": "If you don't have a Windows XP installation, you can download a bootable ISO.",
+      "content": "If you don't have a Windows XP installation, you can download a bootable ISO. Windows XP ISOs are available for download on Archive.org and through MalwareWatch.org . Despite the name \"Malware Watch,\" it is a safe anti-malware site! We have provided two download links below that we have confirmed to be virus-free, but always keep your antivirus protection turned on to be on the safe side before downloading: Windows XP Pro SP3 x86 Windows XP Pro x64 If you are using Windows 10 or 11, use a free tool like Rufus to create bootable Windows XP flash drive, or make a bootable CD or DVD by right-clicking the ISO, selecting Burn disc image , and selecting your optical drive. [1] X Research source"
+    }
+  ]
+}

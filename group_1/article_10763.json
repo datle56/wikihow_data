@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Create-a-SQL-Server-Database",
+  "title": "Creating a Database With SQL Server Management Studio",
+  "steps": [
+    {
+      "title": "Download SQL Server if you don't have it installed already.",
+      "content": "Download SQL Server if you don't have it installed already. If you are creating a database using your computer as a server, you must have SQL Server installed. You can download SQL Server from Microsoft's website . For a free option, choose Developer or Express . You can also choose Windows , Mac , or Linux , but these versions of SQL Server are not free. You can, however, get a free trial by filling in your information on the respective download page for each version. If you are connecting to an SQL Server hosted on a different computer, you don't need to install SQL Server yourself."
+    },
+    {
+      "title": "Install SQL Server.",
+      "content": "Install SQL Server. You can choose the Basic settings, or you can customize the installation settings as you like. Note: Once you get to the last page (after SQL Server is installed), note the instance name. By default, it should be something like SQLEXPRESS , but yours may be different. You'll need that to open up the instance in SQL Server Management Studio. Before closing the installer, click Connect to connect to your instance. If you want to create another SQL Server instance easily, simply re-run this installer."
+    },
+    {
+      "title": "Install the SQL Server Management Studio software.",
+      "content": "Install the SQL Server Management Studio software. This software is available for free from Microsoft and allows you to connect to and manage your SQL server from a graphical interface instead of having to use the command line. You can download it from Microsoft's website . In order to connect to a remote instance of an SQL server, you will need this or similar software. Mac users can use open-source programs such as DbVisualizer or SQuirreL SQL. The interfaces will be different but the same general principles apply. [1] X Research source To learn how to create databases using command-line tools, see this guide."
+    },
+    {
+      "title": "Start up SQL Server Management Studio.",
+      "content": "Start up SQL Server Management Studio. When you first start the program, you will be asked what server you would like to connect to. If you already have a server up and running and have the permissions necessary to connect to it, you can enter the server address and authentication information. If you want to create a local database, follow these steps: Ensure that Database Engine is chosen in the \"Server type\" dropdown. Enter .\\[instance name] in the \"Server name\" field. For example, if your instance is named SQLEXPRESS , you'd write .\\SQLEXPRESS . Choose Windows Authentication in the \"Authentication\" dropdown. Check the box next to Trust server certificate . Click Connect ."
+    },
+    {
+      "title": "Locate the Database folder.",
+      "content": "Locate the Database folder. After the connection to the server, either local or remote, is made, the Object Explorer pane on the left will populate. At the top of the Object Explorer tree will be the server you are connected to. If it is not expanded, click the \"+\" icon next to it. Located the Databases folder. [2] X Research source"
+    },
+    {
+      "title": "Create a new database.",
+      "content": "Create a new database. Right-click on the Databases folder and select \"New Database...\". A window will appear, allowing you to configure the database before creating it. Give the database a name that will help you identify it. Most users can leave the rest of the settings at their default. [3] X Research source You will note that as you type the database name, two additional files will be created automatically: the Data and the Log file. The data file houses all of the data in your database, while the log file tracks changes to the database. Click OK to create the database. You will see your new database appear in the expanded Database folder. It will have a cylinder icon."
+    },
+    {
+      "title": "Create a table.",
+      "content": "Create a table. A database can only store data if you create a structure for that data. A table holds the information that you enter into your database, and you will need to create it before you can proceed. Expand the new database in your Database folder, right-click on the Tables folder, and select \"New Table...\". Windows will open on the rest of the screen, which will allow you to manipulate your new table."
+    },
+    {
+      "title": "Create the Primary Key.",
+      "content": "Create the Primary Key. It is highly recommended that you create a Primary Key as the first column on your table. This acts as an ID number, or record number, that will allow you to easily recall these entries later. To create this, enter \"ID\" in the Column Name field, type int into the Data Type field, and uncheck the \"Allow Nulls.\" Click the Key icon in the toolbar to set this column as the Primary Key. You don't want to allow null values because you always want the entry to be at least \"1\". If you allow nulls, your first entry will be \"0\". In the Column Properties window, scroll down until you find the Identity Specification option. Expand it and set \"(ls Identity)\" to \"Yes\". This will automatically increase the value of the ID column for each entry, effectively automatically numbering each new entry."
+    },
+    {
+      "title": "Understand how tables are structured.",
+      "content": "Understand how tables are structured. Tables are composed of fields or columns. Each column represents one aspect of a database entry. For example, if you were creating a database of employees, you might have a \"FirstName\" column, a \"LastName\" column, an \"Address\" column, and a \"PhoneNumber\" column."
+    },
+    {
+      "title": "Create the rest of your columns.",
+      "content": "Create the rest of your columns. When you finish filling out the fields for the Primary Key, you will notice that new fields appear underneath it. These allow you to enter in your next column. Fill out the fields as you see fit, and ensure that you pick the right data type for the information that will be entered in that column: nchar(#) - This is the data type you should use for text, such as names, addresses, etc. The number in parentheses is the maximum number of characters allowed for this field. Setting a limit ensures that your database size stays manageable. Phone numbers should be stored with this format, as you don't perform mathematical functions on them. int - This is for whole numbers and is typically used in the ID field. decimal(x,y) - This will store numbers in decimal form, and the numbers within the parentheses denote the total number of digits and the number of digits following the decimal, respectively. For example, decimal(6,2) would store numbers as 0000.00."
+    },
+    {
+      "title": "Save your table.",
+      "content": "Save your table. When you are finished creating your columns, you will need to save the table before entering information. Click the Save icon in the toolbar, and then enter in a name for the table. Naming your table in a way that helps you recognize the contents is advisable, especially for larger databases with multiple tables."
+    },
+    {
+      "title": "Add data to your table.",
+      "content": "Add data to your table. Once you've saved your table, you can begin adding data to it. Expand the Tables folder in the Object Explorer window. If your new table is not listed, right-click on the Tables folder and select Refresh. Right-click on the table and select \"Edit Top 200 Rows\". [4] X Research source The center window will display fields for you to begin entering data. Your ID field will be filled automatically, so you can ignore it right now. Fill out the information for the rest of the fields. When you click on the next row, you will see the ID field in the first row fill automatically. Continue this process until you've entered all the information you need."
+    },
+    {
+      "title": "Execute the table to save the data.",
+      "content": "Execute the table to save the data. Click the Execute SQL button on the toolbar when you are finished entering the information to save it to the table. The SQL server will run in the background, parsing all of the data into the columns you created. The button looks like a red exclamation point. You can also press Ctrl + R to execute as well. If there are any errors, you will be shown which entries are filled out incorrectly before the table can be executed."
+    },
+    {
+      "title": "Query your data.",
+      "content": "Query your data. At this point, your database has been created. You can create as many tables as you need within each database (there is a limit, but most users will not need to worry about that unless they are working on enterprise-level databases). You can now query your data for reports or any other administrative purposes. See this guide for detailed information on running queries."
+    }
+  ]
+}

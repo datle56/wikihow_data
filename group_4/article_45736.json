@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Update-Rlang",
+  "title": "The Complete Guide to Updating Rlang + Troubleshooting Solutions",
+  "steps": [
+    {
+      "title": "Clear your R environment.",
+      "content": "Clear your R environment. You can do this in both RStudio or the R Console, whichever you prefer working with. Run the following command to clear your R environment: rm(list = ls ())"
+    },
+    {
+      "title": "Restart RStudio or R Console.",
+      "content": "Restart RStudio or R Console. The reason you want to clear your R environment and restart RStudio or the R Console is to ensure no other packages load that use rlang. This will cause issues when trying to update the package. In RStudio, you can alternatively press Ctrl+Shift+F10 to clear your global environment and restart the application."
+    },
+    {
+      "title": "Run the rlang installation command.",
+      "content": "Run the rlang installation command. When you restart RStudio or R Console, make sure to update your rlang package before you do anything else to avoid errors or the update not working. The command to update rlang is as follows: install.packages(\"rlang\") If you need to update rlang to a specific version, not just the latest, you can use this command, where [url] is the URL to the package on CRAN's website: install.packages(\"[URL]\", repo=NULL, type= \"source\") You can also choose to update all of your R packages (including rlang) with the following command: update.packages(checkBuilt = TRUE)"
+    },
+    {
+      "title": "Open RStudio.",
+      "content": "Open RStudio. If RStudio is currently open on your computer, close it and open it again. You can press Ctrl+Shift+F10 to restart RStudio while also clearing the global environment."
+    },
+    {
+      "title": "Click on Packages.",
+      "content": "Click on Packages . It's a tab near the top of the window, between Plots and Help . Do this before you do anything else in RStudio to avoid getting errors when updating rlang. You can use this window to check your rlang version if you're not sure what version you're using."
+    },
+    {
+      "title": "Tick the checkbox next to rlang.",
+      "content": "Tick the checkbox next to rlang. This indicates that you only want to update rlang. You can check multiple boxes here if you want to update multiple packages."
+    },
+    {
+      "title": "Click Update.",
+      "content": "Click Update . It's above your package list, with a green arrow button. This will check for any updates for the selected packages (rlang, in this case). [1] X Research source Follow the steps presented in the GUI to update rlang. You can also check for updates by clicking the Tools menu and selecting Check for Package Updates… ."
+    },
+    {
+      "title": "RStudio's environment doesn't clear when pressing Ctrl+⇧ Shift+F10.",
+      "content": "RStudio's environment doesn't clear when pressing Ctrl + ⇧ Shift + F10 . You likely have your settings set to save your workspace to .RData when RStudio closes. You can fix this by doing the following: Go to Tools > Global Options… > General . The \"General\" tab is the top tab in your RStudio settings and should open by default. Uncheck the box next to \"Restore .RData into workspace at startup\". In the dropdown next to \"Save workspace to .RData on exit\", select Never . Click Apply , then OK to save your settings. RStudio will now clear your global environment the next time you restart."
+    },
+    {
+      "title": "RStudio/R Console gives an error when trying to update rlang.",
+      "content": "RStudio/R Console gives an error when trying to update rlang. Many packages are dependent on rlang. If these packages are loaded in RStudio or R Console, you won't be able to update the package. If restarting RStudio/R Console with a clear environment doesn't help, you may have to uninstall rlang completely and reinstall the newer version. Load the installer package by running the following command: library(installr) Uninstall rlang with the following command: uninstall.packages(\"rlang\") Restart RStudio or R Console. Install rlang with the following command: install.packages(\"rlang\", dependencies = TRUE)"
+    }
+  ]
+}

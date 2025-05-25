@@ -1,0 +1,138 @@
+{
+  "url": "https://www.wikihow.com/Enable-a-Virtual-WiFi-in-Windows",
+  "title": "How to Turn On a Virtual Wi-Fi Hotspot on a Windows PC",
+  "steps": [
+    {
+      "title": "Connect your computer to the network via Ethernet.",
+      "content": "Connect your computer to the network via Ethernet. If you want to turn your Windows 10 computer into a wireless hotspot, you'll need to be connected to your network using an Ethernet cable. If you're connected to your network via Wi-Fi, you won't be able to create a wireless hotspot and stay connected to the network with the same adapter. If you have two wireless adapters installed, you can connect to the network with one and create the hotspot with the other. You cannot use one to do both. You will need to have a wireless adapter installed to enable virtual Wi-Fi. Look for a connection labeled \"Wi-Fi.\" This indicates that you have a wireless adapter installed. If you don't have one, you'll need to install one before you can create a wireless hotspot with your computer. You can use a USB adapter or install a network card."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ⊞ Win + X and select \"Command Prompt (Admin).\" Confirm when Windows asks if you want to continue. This will load the Command Prompt with you logged in as an administrator."
+    },
+    {
+      "title": "Enter the command to check if your card supported creating a wireless network.",
+      "content": "Enter the command to check if your card supported creating a wireless network. Enter the following command to check if your card is compatible: netsh wlan show drivers After running this command, scroll back up and look for the Hosted network supported line. If it says \"Yes,\" your wireless card supports creating a wireless hotspot. If it says \"No\", see the Any Version of Windows section below."
+    },
+    {
+      "title": "Enter the command to create a wireless hotspot.",
+      "content": "Enter the command to create a wireless hotspot. Enter the following command to create your new hotspot, replacing NetworkName with the name you want your network to appear as, and Password with the password you want to use to protect it: netsh wlan set hostednetwork mode=allow ssid= NetworkName key= Password"
+    },
+    {
+      "title": "Enter the command to start the hotspot.",
+      "content": "Enter the command to start the hotspot. Once you've created the hotspot, you'll need to enter another command to actually enable it: netsh wlan start hostednetwork"
+    },
+    {
+      "title": "Press .",
+      "content": "Press . ⊞ Win + X and select \"Network Connections.\" This will display the network connections installed on your computer."
+    },
+    {
+      "title": "Right-click on the network connection your computer uses to get internet and select \"Properties.\"",
+      "content": "Right-click on the network connection your computer uses to get internet and select \"Properties.\" If you are connected to your network via Ethernet, it will be the Ethernet adapter. If you have two wireless adapters, select the one that is connected to the network providing internet access."
+    },
+    {
+      "title": "Click the \"Sharing\" tab.",
+      "content": "Click the \"Sharing\" tab. This will open the sharing settings for your internet connection."
+    },
+    {
+      "title": "Check the box allowing the internet connection to be shared.",
+      "content": "Check the box allowing the internet connection to be shared. This is the first box in the window, labeled \"Allow other network users to connect through this computer's Internet connection.\""
+    },
+    {
+      "title": "Click the drop-down menu beneath the checkbox and select the new network.",
+      "content": "Click the drop-down menu beneath the checkbox and select the new network. It will be labeled \"Local Area Connection *'\"X \" with X being replaced by a random number. Click OK to save your changes."
+    },
+    {
+      "title": "Connect your devices to the new wireless hotspot.",
+      "content": "Connect your devices to the new wireless hotspot. Your mobile devices will now be able to find the new network in their list of available wireless networks, and will be able to access the internet once they're connected. Android - Open the Settings app and tap Wi-Fi . Select your new network from the list and enter the password you created. iOS - Open the Settings app on your Home screen. It may be in a folder labeled \"Utilities.\" Tap the \"Wi-Fi\" option, then select your new network. Enter the password when prompted."
+    },
+    {
+      "title": "Stop your network.",
+      "content": "Stop your network. When you're finished broadcasting, open the Command Prompt (Admin) again and enter the following command: netsh wlan stop hostednetwork"
+    },
+    {
+      "title": "Use this method if the method for your version of Windows above didn't work.",
+      "content": "Use this method if the method for your version of Windows above didn't work. The app described in this section can create a mobile hotspot for you, but its functionality is limited and the speed is slow. However, it has the very important benefit of being able to broadcast a wireless network from the same wireless adapter that you use to connect to the internet. This connection will be very slow."
+    },
+    {
+      "title": "Download Connectify.",
+      "content": "Download Connectify. Connectify is a paid program with a free version that allows you to create basic wireless hotspots. You can download Connectify from https://connectify.me ."
+    },
+    {
+      "title": "Run the Connectify installer.",
+      "content": "Run the Connectify installer. Double-click the downloaded program to run it, and confirm when Windows prompts you to proceed. Decline any offers to upgrade to the Pro version."
+    },
+    {
+      "title": "Reboot your computer after installation.",
+      "content": "Reboot your computer after installation. Your computer will need to be rebooted in order for Connectify to finish installing its virtual Wi-Fi adapter. You can reboot your computer from the Start menu or screen."
+    },
+    {
+      "title": "Start Connectify after rebooting.",
+      "content": "Start Connectify after rebooting. Proceed through the prompts to continue using the free \"Lite\" version. This is all you need to create a virtual wireless network."
+    },
+    {
+      "title": "Allow Connectify through Windows Firewall when prompted.",
+      "content": "Allow Connectify through Windows Firewall when prompted. Depending on your firewall settings, you may be prompted by Windows Firewall to allow Connectify through on your current network. Make sure to allow it, or the new wireless hotspot won't work."
+    },
+    {
+      "title": "Select Wi-Fi Hotspot at the top of the Connectify window.",
+      "content": "Select Wi-Fi Hotspot at the top of the Connectify window. Connectify will create a new wireless hotspot and share your computer's internet connection."
+    },
+    {
+      "title": "Select the network adapter that currently has an internet connection.",
+      "content": "Select the network adapter that currently has an internet connection. Choose this adapter from the \"Internet to Share\" menu. You can use Connectify to create a wireless hotspot with the same adapter you're using to connect to the internet. The connection speed will be much lower than your computer's current connection. For best results, you'll want to share a wired Ethernet connection with your new wireless hotspot. This will result in the best speeds."
+    },
+    {
+      "title": "Enter a name for your wireless hotspot.",
+      "content": "Enter a name for your wireless hotspot. The free version of Connectify requires starting the network name with \"Connectify-\". Make sure to not include any personal information, as this network name will be public."
+    },
+    {
+      "title": "Create a password for your network.",
+      "content": "Create a password for your network. This will prevent unauthorized users from accessing your internet connection. A password is always recommended, even if you're at home."
+    },
+    {
+      "title": "Click the Start Hotspot button.",
+      "content": "Click the Start Hotspot button. Your new wireless network will begin broadcasting. You'll be able to see it on your mobile device's list of available wireless networks."
+    },
+    {
+      "title": "Connect to your new hotspot.",
+      "content": "Connect to your new hotspot. You'll be able to see the \"Connectify- Name \" network on your mobile device's wireless network list. Tap it and enter the password you created when prompted."
+    },
+    {
+      "title": "Connect your computer to the network via Ethernet.",
+      "content": "Connect your computer to the network via Ethernet. If you intend to create a wireless network using your computer's wireless adapter, you'll need to be connected to the network via Ethernet. You can't use the same wireless connection to both connect to your network and create a new hotspot. If you are using a computer without an Ethernet port, such as some laptops, you may need to use a USB Ethernet adapter."
+    },
+    {
+      "title": "Ensure you have a wireless network adapter installed.",
+      "content": "Ensure you have a wireless network adapter installed. If you're using a laptop, you're pretty much guaranteed to have one. If you're using a desktop, you may need to install a wireless card or use a wireless USB adapter. Press ⊞ Win , type ncpa.cpl , and then press ↵ Enter . This will open the Network Connections window. If you have a connection labeled \"Wireless Network Connection\" or \"Wi-Fi,\" you have a wireless adapter installed."
+    },
+    {
+      "title": "Download and install Virtual Router.",
+      "content": "Download and install Virtual Router. This is a free, open-source program that allows you to easily configure your wireless adapter to become a wireless hotspot. You can download it for free from https://github.com/crpietschmann/VirtualRouter . Double-click the downloaded file in your Downloads folder to start the installer. Follow the prompts to install Virtual Router. You can leave the installation settings at their default."
+    },
+    {
+      "title": "Start Virtual Router.",
+      "content": "Start Virtual Router. You can find Virtual Router Manager in your Start menu or screen in the All Apps/All Programs section. If everything in Virtual Router is grayed out, you may need to update your network card drivers. Press ⊞ Win and type devmgmt.msc to open the Device Manager. Expand the \"Network adapters\" section, then right-click on your wireless adapter. Select \"Update Driver Software\" and then click \"Search automatically for updated driver software.\" Follow the prompts to install any available updates."
+    },
+    {
+      "title": "Enter the name you want to use for your network.",
+      "content": "Enter the name you want to use for your network. This name will be broadcast and will appear on your mobile device's list of available networks. Make sure it doesn't include any personal information."
+    },
+    {
+      "title": "Enter the password you want to use for the network.",
+      "content": "Enter the password you want to use for the network. A password is required in order to create the hotspot. You'll be prompted for this password when you attempt to connect to the new hotspot."
+    },
+    {
+      "title": "Select the network connection that you are receiving internet from in the \"Shared Connection\" menu.",
+      "content": "Select the network connection that you are receiving internet from in the \"Shared Connection\" menu. If you're connected to your network via Ethernet, this will say either \"Ethernet\" or \"Local Area Connection.\""
+    },
+    {
+      "title": "Click \"Start Virtual Router.\"",
+      "content": "Click \"Start Virtual Router.\" This will begin broadcasting your new wireless hotspot, which will share the internet from your computer's Ethernet connection."
+    },
+    {
+      "title": "Connect your wireless device to the new network.",
+      "content": "Connect your wireless device to the new network. You'll be able to find your new wireless network in the list of available wireless networks on your mobile device. Connect to it just like you would any other wireless network. Android - Open the Settings and select \"Wi-Fi.\" Tap your new connection and then enter the password. iOS - Tap the Settings app on your Home screen. Tap \"Wi-Fi\" and then select the new network. Enter the password when prompted."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Install-TrueType-Fonts-on-Ubuntu",
+  "title": "How to Install TrueType (.TTF) Fonts on Ubuntu Linux: Complete Guide",
+  "steps": [
+    {
+      "title": "Download a TrueType font.",
+      "content": "Download a TrueType font. The file extension for TrueType fonts is .ttf. Installing TrueType fonts on Ubuntu is super easy, and you don't even have to use a terminal. If you download a .ZIP file, you will need to unzip it first."
+    },
+    {
+      "title": "Double-click the TTF file.",
+      "content": "Double-click the TTF file. This opens the Fonts browser so you can see a preview of the font, as well as the option to install it."
+    },
+    {
+      "title": "Click Install to install the font.",
+      "content": "Click Install to install the font. This copies the font to the necessary folder and makes it available for use in Ubuntu. [1] X Research source If you aren't able to use the font in your apps after this, type sudo fc-cache -vr and press ↵ Enter to build the font cache. If you don't have the Font viewer, you can install it from the Snap Store using the command sudo snap install gnome-font-viewer . [2] X Research source"
+    },
+    {
+      "title": "Type fc-cache -vr and press ↵ Enter.",
+      "content": "Type fc-cache -vr and press ↵ Enter . This builds the font info cache files and makes your fonts available in Ubuntu apps. If you get the error \"command not found,\" run sudo apt install fontconfig first. If you want to use a font in an app like LibreOffice Writer and don't see it available, you'll need to close and reopen the app first."
+    },
+    {
+      "title": "Install GNOME Font Manager.",
+      "content": "Install GNOME Font Manager. This GUI app makes it easy to install one or more fonts (TrueType and OpenType) in Ubuntu. It works in GNOME, KDE, XFCE, Enlightenment, and more desktop environments. [3] X Research source You can get it easily using apt in a terminal: Open a terminal window. Type sudo apt update and press Enter . Type sudo apt install font-manager and press Enter . Press y when prompted."
+    },
+    {
+      "title": "Download and unzip your fonts.",
+      "content": "Download and unzip your fonts. If you haven't already, unzip any font files you've downloaded from the web."
+    },
+    {
+      "title": "Open Font Manager.",
+      "content": "Open Font Manager. You can open it by searching for it in Activities view or by running font-manager & at the prompt. The first time you open Font Manager, it will scan and display your currently installed fonts."
+    },
+    {
+      "title": "Click the + to add a new font.",
+      "content": "Click the + to add a new font. It's near the upper-left corner. This opens the file picker."
+    },
+    {
+      "title": "Select the font(s) you want to install and click Open.",
+      "content": "Select the font(s) you want to install and click Open . This adds the selected fonts to Ubuntu. If you want to use a font in an app like LibreOffice Writer and don't see it available, you'll need to close and reopen the app first."
+    },
+    {
+      "title": "Install the ttf-mscorefonts-installer package.",
+      "content": "Install the ttf-mscorefonts-installer package. If you need Microsoft fonts like Arial, Georgia, Verdana, Comic Sans, Impact, and Times New Roman, you can install them easily from this package. [4] X Research source Open a terminal window. Type sudo apt update and press Enter . Type sudo apt install ttf-mscorefonts-installer and press Enter . Press y when prompted. This will open a colorful installer right inside your terminal."
+    },
+    {
+      "title": "Agree to the Microsoft EULA.",
+      "content": "Agree to the Microsoft EULA. Once you agree, the fonts will be installed. Scroll all the way down. Press Tab to highlight the OK button and press Enter . Select Yes and press Enter ."
+    },
+    {
+      "title": "Type sudo fc-cache -vr and press ↵ Enter.",
+      "content": "Type sudo fc-cache -vr and press ↵ Enter . This builds the font info cache files. If you get the error \"command not found,\" run sudo apt install fontconfig first."
+    },
+    {
+      "title": "Confirm the installation.",
+      "content": "Confirm the installation. Open the Fonts browser in Ubuntu (it comes preinstalled with GNOME) by typing Fonts into the activities menu and selecting Fonts . You should now see your newly installed Microsoft TTF fonts. If you don't have the font viewer, you can install it from the Snap Store –just use sudo snap install gnome-font-viewer to install. If you want to use a font in an app like LibreOffice Writer and don't see it available, you'll need to close and reopen it first."
+    },
+    {
+      "title": "Download TrueType fonts.",
+      "content": "Download TrueType fonts. If you have downloaded multiple fonts from the web and want to use them in Ubuntu, you will just need to make sure they are in the right directory, then run a quick command to build your font cache. If the font files are zipped, unzip them before you continue. You can use this method to add multiple fonts to Ubuntu at once, as well as add just a single font, using terminal commands."
+    },
+    {
+      "title": "Create a directory in your home directory for your fonts.",
+      "content": "Create a directory in your home directory for your fonts. If you only want the fonts to be available for your user account (recommended), you can create a new directory called .fonts in your home directory. To do this, open a Terminal window, type mkdir -p .fonts , and press Enter . If you want the new fonts to be available for all users of the system (less common), you can skip this step and instead place your fonts in /usr/share/fonts ."
+    },
+    {
+      "title": "Enter the directory that contains your current font files.",
+      "content": "Enter the directory that contains your current font files. For example, if you downloaded all your fonts to the Downloads folder, cd Downloads now. Do a quick ls -a to see how your font files are named. They may not all end in .ttf or have uniform capitalization."
+    },
+    {
+      "title": "Move or copy your font files to your fonts directory.",
+      "content": "Move or copy your font files to your fonts directory. For example, if all your downloaded fonts end with .ttf or .TTF, you can copy them to your fonts folder using cp .ttf .TTF ~/.fonts . If you're making the fonts available system-wide, use sudo cp .ttf .TTF /usr/share/fonts ."
+    },
+    {
+      "title": "Type fc-cache -vr and press ↵ Enter.",
+      "content": "Type fc-cache -vr and press ↵ Enter . This builds the font info cache files and makes your fonts available in Ubuntu apps. If you get the error \"command not found,\" run sudo apt install fontconfig first. If you want to use a font in an app like LibreOffice Writer and don't see it available, you'll need to close and reopen the app first."
+    },
+    {
+      "title": "Where can I find fonts for Ubuntu?",
+      "content": "Where can I find fonts for Ubuntu? Here are a few ways to find fonts for download: Search for ttf in your preferred package manager. For example, if you want to find TrueType fonts in apt, use apt search ttf . Install free Google Fonts . Try a free font site like DaFont or 1001 Free Fonts ."
+    },
+    {
+      "title": "How do I see if a font is installed on Ubuntu?",
+      "content": "How do I see if a font is installed on Ubuntu? Use fc-match <fontname> to see if a font is installed on any version of Linux. For example, fc-match impact will tell you whether the Impact font is installed."
+    },
+    {
+      "title": "How do I install MS fonts in Ubuntu?",
+      "content": "How do I install MS fonts in Ubuntu? You just need to install the ttf-mscorefonts-installer package using the command sudo apt install ttf-mscorefonts-installer . Follow the on-screen instructions to accept Microsoft's EULA and install the fonts, then run fc-cache -f -v to make the fonts available."
+    },
+    {
+      "title": "Why aren't my fonts showing up in LibreOffice?",
+      "content": "Why aren't my fonts showing up in LibreOffice? If you had LibreOffice open when you installed your new fonts, you will need to close and reopen it for the fonts to become available."
+    },
+    {
+      "title": "What is the default font in Ubuntu?",
+      "content": "What is the default font in Ubuntu? Ubuntu's default fonts come from the Ubuntu font family. [5] X Research source If you are using a different version of Linux (or another operating system like Windows or macOS), you can download the Ubuntu family of fonts from Ubuntu at design.ubuntu.com/font –just scroll down and click Download the Ubuntu Font Family to save the ZIP file of TrueType fonts to your computer."
+    }
+  ]
+}

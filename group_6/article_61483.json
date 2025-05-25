@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Unrar-Files-in-Linux",
+  "title": "How to Open RAR Files in Linux using Unrar",
+  "steps": [
+    {
+      "title": "Debian & Ubuntu.",
+      "content": "Debian & Ubuntu. Unrar, which is the Linux command line version of the popular WinRAR app, is easy to download with apt-get . Type sudo apt-get update and press Enter . Type sudo apt-get install unrar and press Enter ."
+    },
+    {
+      "title": "Redhat, CentOS, & Fedora.",
+      "content": "Redhat, CentOS, & Fedora. On Redhat-based Linux distros, you can use dnf to install the Unrar package. Type sudo dnf upgrade and press Enter . Type sudo dnf install unrar and press Enter ."
+    },
+    {
+      "title": "Arch Linux.",
+      "content": "Arch Linux. You can use pacman to install Unrar: Type pacman -Syu and press Enter . Type pacman -S unrar and press Enter ."
+    },
+    {
+      "title": "OpenSUSE.",
+      "content": "OpenSUSE. You can use zypper to install Unrar: Type zypper refresh and press Enter . Type zypper install unrar and press Enter ."
+    },
+    {
+      "title": "Downloading the binaries.",
+      "content": "Downloading the binaries. Some distributions may not have Unrar in their repositories because the software isn't open source. If you can't find Unrar in your distro's package manager, you can download the source code and install it easily: First, download the latest version of RAR using this command: x64: wget https://www.rarlab.com/rar/rarlinux-x64-621.tar.gz x86: wget https://www.rarlab.com/rar/rarlinux-x32-621.tar.gz You can double-check the latest version at https://www.rarlab.com . Untar and unzip the downloaded file: x64: tar -zxvf rarlinux-x64-621.tar.gz x86: tar -zxvf rarlinux-x32-621.tar.gz Enter the new directory called rar by typing cd rar and pressing Enter . Type sudo make and press Enter . This copies the Rar and Unrar binaries to /usr/local/bin."
+    },
+    {
+      "title": "Use unrar x filename.rar to unrar the file.",
+      "content": "Use unrar x filename.rar to unrar the file. When you use the x option, you'll preserve the directory structure (folders and subfolders) when extracting the files. [1] X Research source This command will extract all files and folders from the RAR file to the current directory. If you want to extract the files to a different directory, use unrar x filename.rar /path/to/directory . If the RAR file requires a password, you'll be prompted to enter it. Many RAR files are protected by passwords for security purposes."
+    },
+    {
+      "title": "Use unrar e filename.rar to extract files without preserving directories.",
+      "content": "Use unrar e filename.rar to extract files without preserving directories. If you want all files from the archive to be extracted to the same location instead of keeping the directory structure in which they were compressed, use this option. In most cases, it's better to use the x option instead. You can specify the directory you want to extract the file to with unrar e as well. E.g., unrar e myfile.rar /usr/local/bin If you have a RAR file that came with multiple parts (e.g., .rar, .rar.00, .rar.01), you'll only need to use the above command on the first file (the one ending in .rar). This will extract the files from the RAR's other parts."
+    },
+    {
+      "title": "Use unrar l filename.rar to list files and directories in the archive.",
+      "content": "Use unrar l filename.rar to list files and directories in the archive. If you want to see what's inside the RAR file before extracting the files, you can use this command to view the files and structure."
+    },
+    {
+      "title": "Use unrar t filename.rar to test the integrity of a file.",
+      "content": "Use unrar t filename.rar to test the integrity of a file. This checks the structure of the RAR archive and displays the results."
+    }
+  ]
+}

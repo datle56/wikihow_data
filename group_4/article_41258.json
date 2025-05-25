@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Stop-Printer-Spooling-on-a-Windows-Computer",
+  "title": "How to Stop Printer Spooling on a Windows Computer",
+  "steps": [
+    {
+      "title": "Open the Start menu.",
+      "content": "Open the Start menu. You can open the Start menu by pressing either the Windows key on your keyboard, or by clicking the Start icon in the lower left corner of your screen."
+    },
+    {
+      "title": "Type cmd.",
+      "content": "Type cmd. In the start menu, type cmd , which is the code for Command Prompt. You should see the Command Prompt program listed."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. Right-click the Command Prompt icon and select Run As Administrator from the dropdown menu. Click yes on the pop-up warning dialog box. The command prompt allows you to enter in text-based commands to your computer. These commands can also be accomplished by using the graphical interface, your keyboard, and the mouse, but you can sometimes save time by using the command prompt"
+    },
+    {
+      "title": "Type \"net stop spooler\".",
+      "content": "Type \"net stop spooler\". Type net stop spooler into the command prompt, then press ↵ Enter . You will see a line saying, The Print Spooler service is stopping . After a bit of time, and if successful, you will see The Print Spooler service was stopped successfully . [1] X Research source"
+    },
+    {
+      "title": "Delete print jobs.",
+      "content": "Delete print jobs. In order for the printer to not just start printing out documents once you restart spooling, you will have to cancel any outstanding print jobs. Enter C:\\Windows\\system32\\spool\\PRINTERS into the File Explorer address bar and press ↵ Enter . You may be asked to Continue as an admin from a pop-up dialog box. Click Continue if prompted. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Do not delete the PRINTERS folder, only the entries inside."
+    },
+    {
+      "title": "Restart the spooling.",
+      "content": "Restart the spooling. In order for your system to print documents in the future, you will have to restart the spooling service. Type net start spooler into the command prompt and press ↵ Enter . If successful, you will see The Print Spooler service was started successfully ."
+    },
+    {
+      "title": "Close the Command Prompt.",
+      "content": "Close the Command Prompt. The spooling service should now be terminated and your printer will no longer print any documents from the queue. You can close the command prompt."
+    },
+    {
+      "title": "Pause printing.",
+      "content": "Pause printing. If possible, pausing printing will stop the queue momentarily and will give you time to cancel the tasks already in the queue."
+    },
+    {
+      "title": "Open Control Panel.",
+      "content": "Open Control Panel. Press the Windows key, type Control Panel , then press ↵ Enter ."
+    },
+    {
+      "title": "Find and double-click on Administrative Tools.",
+      "content": "Find and double-click on Administrative Tools. Within the Control Panel, you should see an option listed, titled Administrative Tools . Opening this option will allow you to access system preferences and settings. Note that altering too many options within the Administrative Tools program does have the potential to damage your system. Try to stick to the task of stopping printer spooling."
+    },
+    {
+      "title": "Find and double-click on Services.",
+      "content": "Find and double-click on Services. Within the Administrative Tools window, you should see an option titled, Services . Double-click this option to open up a list of current services running on your computer. If you have trouble finding this option, try tapping the 's' key while in the Administrative Tools window. Each time you press the 's' key, you will automatically cycle through all the options in the list which start with the letter 's'."
+    },
+    {
+      "title": "Right-click \"Print Spooler\" and select Stop.",
+      "content": "Right-click \"Print Spooler\" and select Stop. Within the Services window, find and right-click on the Print Spooler option. From the dropdown menu, select the Stop option. This will end the spooling service and cancel any documents in the printer queue. If you have trouble finding the Print Spooler option, try tapping the 'p' key to cycle through all options in the list that start with the letter 'p'."
+    },
+    {
+      "title": "Delete print jobs.",
+      "content": "Delete print jobs. In order for the printer to not just start printing out documents once you restart spooling, you will have to cancel any outstanding print jobs. Enter C:\\Windows\\system32\\spool\\PRINTERS into the File Explorer address bar and press ↵ Enter . You may be asked to Continue as an admin from a pop-up dialog box. Click Continue if prompted. Do not delete the PRINTERS folder, only the entries inside."
+    },
+    {
+      "title": "Restart spooling.",
+      "content": "Restart spooling. Right-click the same Print Spooler option and click Start . Your printer should now be ready to accept new print jobs."
+    },
+    {
+      "title": "Open Task Manager.",
+      "content": "Open Task Manager. Press Ctrl + Alt + Delete , then click Task Manager."
+    },
+    {
+      "title": "Click the services tab.",
+      "content": "Click the services tab. From the tabs on the top of the Task Manager window, click the one titled, Services You will see a list of all services currently running on your computer."
+    },
+    {
+      "title": "Stop spooling.",
+      "content": "Stop spooling. Find the Spooler service, right-click, and select Stop from the dropdown menu. [3] X Research source If you have trouble finding the Spooler service, try tapping the 's' key to cycle through all items in the list that start with the letter 's'."
+    },
+    {
+      "title": "Delete print jobs.",
+      "content": "Delete print jobs. In order for the printer to not just start printing out documents once you restart spooling, you will have to cancel any outstanding print jobs. Enter C:\\Windows\\system32\\spool\\PRINTERS into the File Explorer address bar and press ↵ Enter . You may be asked to Continue as an admin from a pop-up dialog box. Click Continue if prompted. Do not delete the PRINTERS folder, only the entries inside."
+    },
+    {
+      "title": "Restart the spooler.",
+      "content": "Restart the spooler. Right-click the Spooler option from the Task Manager's service list and select Start from the dropdown menu. [4] X Research source"
+    }
+  ]
+}

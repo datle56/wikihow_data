@@ -1,0 +1,182 @@
+{
+  "url": "https://www.wikihow.com/Root-an-Android-Tablet",
+  "title": "How to Root an Android Tablet",
+  "steps": [
+    {
+      "title": "Understand the risks of rooting your tablet.",
+      "content": "Understand the risks of rooting your tablet. Rooting your tablet gives you superuser permissions over your tablet. The process for rooting your tablet varies quite a bit from one model to the next. It also takes away many of the security features that Google has put in place. This puts your tablet at greater risk of viruses and malware. Some apps and services may stop working on a rooted tablet. Many carriers do not support rooting your tablet and may deny access to their network. In most cases, rooting your tablet will void the warranty from your carrier or tablet's manufacturer. Continue at your own risk. Many tablet models and carriers do not allow you to unlock bootloader. If you are unable to unlock bootloader, you may be able to find an unofficial way to unlock your bootloader at https://forum.xda-developers.com/ . If you can't find an unofficial way to unlock the bootloader on your tablet, it is unlikely you will be able to root your tablet. Unlocking the bootloader on Samsung tablets will break Knox and you will not be allowed to use any Samsung services such as the Galaxy Store, Samsung Pay, Samsung Cloud, etc. Additionally, the process will wipe all data from your tablet."
+    },
+    {
+      "title": "Back up everything you want to keep on your tablet.",
+      "content": "Back up everything you want to keep on your tablet. The process for rooting your Android tablet requires you to flash a new recovery system onto your tablet. This may wipe all data on your tablet. Before you begin, be sure to transfer any photos and videos you want to keep to your computer. You can back up your account settings, app data, and other information to your Google Cloud account using thing the following steps: Open the Settings app. Tap the magnifying glass icon in the upper-right corner. Search the Settings menu for \"Backup\". Tap the Backup & Restore option. Tap Backup data . Tap Back up ."
+    },
+    {
+      "title": "Install the USB drivers for your tablet on your computer.",
+      "content": "Install the USB drivers for your tablet on your computer. You'll need the USB drivers for your Android tablet to interface with your computer. Especially if you are using a Windows computer. You'll need to download the drivers from the manufacturer's web page. Use Google to search for the drivers for the make and model of your Android tablet. Locate the drivers on your manufacturer's web page and download and install them. The following are some of the websites you can download the device drivers for your Android tablet: Samsung LGE HTC Sony Huawei"
+    },
+    {
+      "title": "Get the unlock code from your tablet's manufacturer (if needed).",
+      "content": "Get the unlock code from your tablet's manufacturer (if needed). Some tablet manufacturer's such as Sony , HTC , and Huawei require you to get a special code to unlock the bootloader for your tablet. To do get that, you will need to go to the manufacturer's bootloader unlocking page and select your tablet model. Then you will need to sign in or create an account to request an unlock code. You should receive the bootloader unlock code an any special instructions through email. Samsung does not offer unlock codes for their products. Instead, you will need to download and install a separate program called Odin on your computer , which can be used flash new firmware onto Samsung tablets. Odin is available for both Windows and Mac."
+    },
+    {
+      "title": "Download and install Android SDK.",
+      "content": "Download and install Android SDK. Android SDK are command line tools that allow your computer to interface with your device using the command prompt or terminal. Use the following steps to download Android SDK tools. Go to https://developer.android.com/studio/releases/platform-tools in a web browser. Click the download link for the operating system your computer is using. Open the zip file in your web browser or Downloads folder. Extract the \"Platform-tools\" folder to your desktop or another location or your choice."
+    },
+    {
+      "title": "Enable OEM unlocking and USB debugging on your tablet.",
+      "content": "Enable OEM unlocking and USB debugging on your tablet. In order to interface with your tablet on your computer, you'll need to enable OEM unlocking and USB debugging. Not all tablets have OEM unlocking. Don't worry too much if it's not available on your tablet. Use the following steps to enable OEM unlocking and USB debugging mode. Open the Settings app in your Apps menu. Tap About tablet . Tap Build number 7 times to unlock Developer Options. Tap the back button in the upper-right corner to return to the root Settings menu. Tap Developer Options . Tap the toggle switch to enable OEM unlocking (if available) and enter your passcode. Tap the toggle switch to enable USB debugging and enter your passcode."
+    },
+    {
+      "title": "Boot your tablet into Bootloader mode and connect it to your computer.",
+      "content": "Boot your tablet into Bootloader mode and connect it to your computer. The way you do this is going to be different depending on the make and model of your tablet. First you'll need to start by completely turning off your tablet. Then you'll need to press and hold a button combination to boot your tablet into bootloader mode. If your tablet displays a boot menu, use the Volume Up and Volume Down buttons to navigate the menu. Press the Power button to select the bootloader option. The button combination to unlock the Bootloader is as follows: Press and hold the Volume Up and Power button to boot into the bootloader menu on most Android tablets. Release the power button and continue holding the Volume Up botton when you see your tablet's logo on-screen. Some tablet models require you to press and hold the Volume Down and Power button to boot into the Bootloader menu. On Samsung Galaxy tablets with a Bixby button, press and hold the Bixby , Volume Down , and the Power button all at the same time. Alternatively, you can connect your tablet to your computer, open the Terminal on Mac, or open the \"Platform-tools\" folder, hold Shift and right-click any empty space and click Open Powershell window here . Type adb reboot bootloader and press Enter."
+    },
+    {
+      "title": "Open the Terminal on Mac or \"Platform-tools\" folder in a CMD/Powershell window on Windows.",
+      "content": "Open the Terminal on Mac or \"Platform-tools\" folder in a CMD/Powershell window on Windows. If you are using a Mac, you only need to open the Terminal. On Windows, open the Platform-tools folder you downloaded and extracted, hold Shift and right-click any empty space. Then click Open Powershell window here To check if your tablet is properly connected, type the command \"adb devices\". It should display your tablet's serial number. To see if your bootloader is unlockable type the command \"fastboot flashing get_unlock_ability\". If it returns a code of \"1\", your tablet's bootloader can be unlocked. If it returns a code of \"0\", your bootloader can't be unlocked and you will need to find an unofficial way to unlock your tablet's bootloader."
+    },
+    {
+      "title": "Enter the command to unlock your tablet's bootloader.",
+      "content": "Enter the command to unlock your tablet's bootloader. This is different depending on the your tablet's make and model. The most common command to unlock the bootloader is \"fastboot oem unlock\" or \"fastboot flashing unlock\". Some tablet models may require you to enter the unlock code in addition to the command. Follow the instructions from your tablet's manufacturer to enter the correct unlock command. You may also see a confirmation prompt on your tablet's screen. If so, use the volume buttons to select the option to confirm that you want to unlock your bootloader. [1] X Research source [2] X Research source Be aware that this will most likely void your warranty on your tablet. Samsung users will not be able to unlock their bootloader using the terminal or command line. Instead, launch Odin."
+    },
+    {
+      "title": "Download TWRP for your tablet.",
+      "content": "Download TWRP for your tablet. TWRP is a custom recovery that allows you to install custom software on your tablet, including the software needed to root your tablet. TWRP is not available for all tablet models, but it is available for most. If you can't find it on the website, try search Google or xda-developers.com . Use the following steps to download TWRP for your tablet model. Go to https://twrp.me/Devices/ in a web browser. Click your tablet's manufacturer name. Click your tablet's model. Click the download like to download TWRP for your tablet. Download the latest \".img\" file for TWRP (Samsung users download the \".img.tar\" file)."
+    },
+    {
+      "title": "Download Magisk.",
+      "content": "Download Magisk. Magisk is the utility that you will be using to root your tablet. Use the following steps to download Magisk: Go to https://github.com/topjohnwu/Magisk in a web browser. Scroll down and click the latest version of Magisk below \"Downloads\". Save the zip file to your tablet's internal storage where you can find it. You can transfer files using the USB connection."
+    },
+    {
+      "title": "Boot your tablet into fastboot mode and connect it to your computer.",
+      "content": "Boot your tablet into fastboot mode and connect it to your computer. If your tablet is not already in fastboot mode and connected to your computer use the same methods as before to put it in fastboot mode and use the USB cable to connect it to your computer. Open the terminal or Powershell window in the Platform-tools folder and type \"adb devices\" and press enter to make sure it is connected."
+    },
+    {
+      "title": "Type fastboot boot and drag the TWRP image file into the window.",
+      "content": "Type fastboot boot and drag the TWRP image file into the window. This will give you the command to boot your tablet into the TWRP custom recovery from the file on your computer. This will not install TWRP on your tablet, but it will temporarily boot it into TWRP. When your tablet boots TWRP, select \"Keep read only\" and swipe the arrows at the bottom to the right. Samsung users open Odin and click AP on Windows or PDA on Mac. Select the TWRP \"img.tar\" file and click Open . Click the Options tap and uncheck Auto Recovery . Then click Start to flash TWRP to your tablet. Then you will need to reboot your tablet into recovery mode to boot into TWRP. You will also need to use TWRP to wipe the data on your tablet in order to remove the encryption. Additionally, you will need to download a file called No Verity from here and save it to your tablet's internal storage. This file will keep your tablet from getting stuck in a boot loop and unable to function. [3] X Research source"
+    },
+    {
+      "title": "Flash Magisks to your tablet.",
+      "content": "Flash Magisks to your tablet. Almost done. Once you flash Magisk to your tablet it will reboot and then it will be rooted. Use the following steps to flash Magisk to your tablet in TWRP. Tap Install . Browse to and select the Magisk zip file. Swipe to flash the magisk file to your tablet (Samsung users also need to use this same method to install the No Verity file)."
+    },
+    {
+      "title": "Understand the risks of rooting your tablet.",
+      "content": "Understand the risks of rooting your tablet. Rooting your tablet gives you superuser permissions over your tablet. The process for rooting your tablet varies quite a bit from one model to the next. It also takes away many of the security features that Google has put in place. This puts your tablet at greater risk of viruses and malware. Some apps and services may stop working on a rooted tablet. Many carriers do not support rooting your tablet and may deny access to their network. In most cases, rooting your tablet will void the warranty from your carrier or tablet's manufacturer. Continue at your own risk. Rooting a Samsung tablets will break Knox and you will not be allowed to use any Samsung services such as the Galaxy Store, Samsung Pay, Samsung Cloud, etc. Additionally, the process will wipe all data from your tablet."
+    },
+    {
+      "title": "Back up your data.",
+      "content": "Back up your data. You can back up all data on your Android to Google’s servers, your computer, or to a third-party cloud storage service. Rooting will erase all personal data from your tablet, such as photos, contacts, and music. [4] X Research source"
+    },
+    {
+      "title": "Open the Settings menu.",
+      "content": "Open the Settings menu. It has an icon that resembles a gear. You can find it in your Apps drawer."
+    },
+    {
+      "title": "Unlock Developer Options.",
+      "content": "Unlock Developer Options. Use the following steps to unlock Development Options in the Settings menu: Scroll down and tap About Tablet'. Tap the Build Number 7 times. Tap the back arrow to return to the root Settings menu."
+    },
+    {
+      "title": "Enable USB Debugging.",
+      "content": "Enable USB Debugging. This will allow the rooting software to communicate with your device. Use the following steps to enable USB debugging in the Settings menu: Scroll to and tap on Developer options . Place a checkmark next to or tap the toggle switch next to “USB debugging.\""
+    },
+    {
+      "title": "Navigate to https://www.kingoapp.com/ in a web browser on your computer.",
+      "content": "Navigate to https://www.kingoapp.com/ in a web browser on your computer. This is the website where you can download Kingoroot. It is the software needed to root your Android device."
+    },
+    {
+      "title": "Select the option to download the Kingo app to your computer.",
+      "content": "Select the option to download the Kingo app to your computer. Kingo is available for both Windows and Mac. Click which ever version is appropriate for your system."
+    },
+    {
+      "title": "Install Kingo.",
+      "content": "Install Kingo. Double-click on the Kingo installation file in your Downloads folder or web browser. Then follow the on-screen prompts to install Kingo on your computer."
+    },
+    {
+      "title": "Connect the tablet to your computer using a USB cable.",
+      "content": "Connect the tablet to your computer using a USB cable. Kingo will automatically detect your device, and start installing the latest drivers for the tablet on your computer. If it does not install the latest drivers for your Android Tablet, you can download them from the manufacturer's web page of your Android tablet. If you are asked if you want to allow your computer to connect to your Android tablet, place a checkmark next to “Always allow from this computer” on your tablet, then tap on Ok ."
+    },
+    {
+      "title": "Click Root in the Kingo app on your computer.",
+      "content": "Click Root in the Kingo app on your computer. Kingo will start rooting your tablet, which may take up to several minutes."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . This will appear when Kingo displays that it has successfully rooted your Android tablet."
+    },
+    {
+      "title": "Eject the tablet from your computer.",
+      "content": "Eject the tablet from your computer. To eject your tablet, open File Explorer on Windows or Finder on Mac. On Windows, right-click your tablet name and click Eject . On Mac, click the eject icon next to your tablet."
+    },
+    {
+      "title": "Restart your tablet.",
+      "content": "Restart your tablet. If it doesn't reboot automatically, simply press and hold the power button to power off and then press it again to power it back on. After your tablet restarts, the SuperSU app will display in the app tray, and your Android will be rooted."
+    },
+    {
+      "title": "Understand the risks of rooting your tablet.",
+      "content": "Understand the risks of rooting your tablet. Rooting your tablet gives you superuser permissions over your tablet. The process for rooting your tablet varies quite a bit from one model to the next. It also takes away many of the security features that Google has put in place. This puts your tablet at greater risk of viruses and malware. Some apps and services may stop working on a rooted tablet. Many carriers do not support rooting your tablet and may deny access to their network. In most cases, rooting your tablet will void the warranty from your carrier or tablet's manufacturer. Continue at your own risk. Rooting a Samsung tablets will break Knox and you will not be allowed to use any Samsung services such as the Galaxy Store, Samsung Pay, Samsung Cloud, etc. Additionally, the process will wipe all data from your tablet."
+    },
+    {
+      "title": "Back up your data.",
+      "content": "Back up your data. You can back up all data on your Android to Google’s servers, your computer, or to a third-party cloud storage service. Rooting will erase all personal data from your tablet, such as photos, contacts, and music. [5] X Research source"
+    },
+    {
+      "title": "Open the Settings menu.",
+      "content": "Open the Settings menu. It has an icon that resembles a gear. To open the Settings app, tap on Menu, then tap on “Settings” on your Android tablet."
+    },
+    {
+      "title": "Tap on Security.",
+      "content": "Tap on Security . The Security menu has an option that allows you to allow your tablet to download apps from unknown sources."
+    },
+    {
+      "title": "Place a checkmark next to “Unknown sources.\"",
+      "content": "Place a checkmark next to “Unknown sources.\" This will allow your tablet to install programs from sources outside of Google Play Store."
+    },
+    {
+      "title": "Navigate to https://towelroot.com/ in a web browser.",
+      "content": "Navigate to https://towelroot.com/ in a web browser. This is the website where you can download to Towelroot APK file. Use any web browser on your tablet to navigate to the website."
+    },
+    {
+      "title": "Tap on the Lambda symbol.",
+      "content": "Tap on the Lambda symbol. It is the red icon that kind of resembles an \"A\". It's located in the middle of the landing page."
+    },
+    {
+      "title": "Select the option to save the Towelroot .apk file to your tablet.",
+      "content": "Select the option to save the Towelroot .apk file to your tablet. This will download a file called \"tr.apk\" to your tablet."
+    },
+    {
+      "title": "Install TowelRoot.",
+      "content": "Install TowelRoot. When the download is finished, tap on Download Complete , then tap on Install. The Towelroot app will begin the installation process on your tablet."
+    },
+    {
+      "title": "Root your tablet.",
+      "content": "Root your tablet. When the installation is complete, tap on Installation Complete , then tap on Make it Ra1n . Your Android tablet will begin the rooting process, which may take up to several minutes to complete."
+    },
+    {
+      "title": "Launch the Google Play Store app on your tablet when rooting is complete.",
+      "content": "Launch the Google Play Store app on your tablet when rooting is complete."
+    },
+    {
+      "title": "Search for an app called “SuperSU” by Chainfire.",
+      "content": "Search for an app called “SuperSU” by Chainfire. This superuser app will help prevent unauthorized apps from making changes to your tablet."
+    },
+    {
+      "title": "Select the option to install the SuperSU app.",
+      "content": "Select the option to install the SuperSU app."
+    },
+    {
+      "title": "Open SuperSU when installation is complete.",
+      "content": "Open SuperSU when installation is complete. The app will automatically configure and prepare your device for use with rooted apps, and the rooting process will be complete. [6] X Research source"
+    },
+    {
+      "title": "Follow these steps to unbrick your rooted Android device",
+      "content": "Follow these steps to unbrick your rooted Android device if the rooting process renders your tablet inoperable. The rooting process is not supported by Android, and may not work across all devices. Unbricking your Android can often help resolve major software problems, and return your device to the original factory settings."
+    },
+    {
+      "title": "Try using another rooting software program if the first method you choose fails to properly root your device.",
+      "content": "Try using another rooting software program if the first method you choose fails to properly root your device. For instance, Towelroot may not work effectively for Android tablets manufactured by HTC or Motorola. In most cases, you can check the developer’s website for updates regarding software compatibility for your Android tablet."
+    },
+    {
+      "title": "Try performing a recovery reset on your Android",
+      "content": "Try performing a recovery reset on your Android if rooting fails to work and causes problems on your device. A recovery reset, also known as a hard reset, can help restore your device back to the original factory settings."
+    }
+  ]
+}

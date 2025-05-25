@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Import-a-Repository-on-Github",
+  "title": "How to Import a Repository on GitHub",
+  "steps": [
+    {
+      "title": "Open your GitHub project page.",
+      "content": "Open your GitHub project page. To use the Importer, you'll first need the URL of your desired repository."
+    },
+    {
+      "title": "Click the \"+\" button.",
+      "content": "Click the \"+\" button. This should be in the upper right-hand or left-hand corner of your screen; clicking it will prompt a drop-down menu."
+    },
+    {
+      "title": "Click the \"Import Repository\" option.",
+      "content": "Click the \"Import Repository\" option. This will take you to the import menu."
+    },
+    {
+      "title": "Enter your repository's URL.",
+      "content": "Enter your repository's URL. You'll need to do this in the field under the \"Your old repository's clone URL\" heading. [1] X Research source"
+    },
+    {
+      "title": "Set up your repository's tags.",
+      "content": "Set up your repository's tags. These include the user account with which the repository is associated and a name for the repository."
+    },
+    {
+      "title": "Click \"Public\" or \"Private\" to categorize your repository.",
+      "content": "Click \"Public\" or \"Private\" to categorize your repository. Public repositories are available to the entire GitHub community, whereas Private repositories are restricted to you and any collaborators with whom you choose to share."
+    },
+    {
+      "title": "Click \"Begin Import\".",
+      "content": "Click \"Begin Import\". This should be in the lower right-hand corner of the Import menu. You may have to enter the account credentials associated with your repository if it's being imported from an account with password-protected attributes. In the event that you have multiple projects saved at the target URL, click your desired file name to import that repository."
+    },
+    {
+      "title": "Choose \"Include large files\" if necessary.",
+      "content": "Choose \"Include large files\" if necessary. If you are importing numerous files, you can choose to include or exclude large files from within the repository. Click \"Continue\" to finalize this process. Importing large files can cost extra, so review your payment plan if you're uncertain about the implications of importing large files."
+    },
+    {
+      "title": "Wait for your import to finish.",
+      "content": "Wait for your import to finish. GitHub will send you an email at your registered address when the process is complete."
+    },
+    {
+      "title": "Open your GitHub project page.",
+      "content": "Open your GitHub project page. If you want to import an old repository from a private network, you'll want to use a command line to do so. You'll need to have your old repository's URL and your GitHub username available before continuing."
+    },
+    {
+      "title": "Create a new GitHub repository.",
+      "content": "Create a new GitHub repository. You can do this from within the \"+\" menu in the upper right- or left-hand corner of your project window."
+    },
+    {
+      "title": "Open the \"Git Shell\" application.",
+      "content": "Open the \"Git Shell\" application. This will allow you to type commands into GitHub in order to perform certain actions; to use Git Shell, you will need to have GitHub installed on your computer."
+    },
+    {
+      "title": "Enter the command to clone your repository.",
+      "content": "Enter the command to clone your repository. The command should say \"git clone --bare [external Git URL][external user account]/[target repository name].git\", excluding the quotation marks and brackets. Fill in the bracketed information with your own pertinent information. [2] X Research source"
+    },
+    {
+      "title": "Push the repository to GitHub.",
+      "content": "Push the repository to GitHub. This command should say \"cd *[repository name].git*\", followed by \"git push --mirror https://github.com/ [GitHub user account]/[target repository name].git\" on a separate line. Exclude the quotation marks and brackets, and fill in the bracketed information with your own pertinent information."
+    },
+    {
+      "title": "Remove your local repository's temporary files.",
+      "content": "Remove your local repository's temporary files. This command should say \"cd ..\", followed by \"rm -rf [target repository name].git\" on a separate line. Exclude the quotation marks and brackets, and fill in the bracketed information with your own pertinent information."
+    },
+    {
+      "title": "Review your local repository.",
+      "content": "Review your local repository. If your old repository's files are now in your new repository, your import was successful!"
+    },
+    {
+      "title": "Open your GitHub project page.",
+      "content": "Open your GitHub project page. If you're importing using the command line or you're just trying to start a project from scratch, you'll need to start a new repository."
+    },
+    {
+      "title": "Click the \"+\" button.",
+      "content": "Click the \"+\" button. This should be in the upper right-hand or left-hand corner of your screen; clicking it will prompt a drop-down menu."
+    },
+    {
+      "title": "Click \"New Repository\".",
+      "content": "Click \"New Repository\". This will take you to the repository options. [3] X Research source"
+    },
+    {
+      "title": "Click the account drop-down menu.",
+      "content": "Click the account drop-down menu. This is in the top left corner of the repository options menu; you'll need to select the account on which you wish to save the repository."
+    },
+    {
+      "title": "Type in a name and description for your repository.",
+      "content": "Type in a name and description for your repository. The name will help differentiate the repository from others like it, and the description will help other users determine whether or not the repository is relevant to them."
+    },
+    {
+      "title": "Click \"Public\" or \"Private\" to categorize your repository.",
+      "content": "Click \"Public\" or \"Private\" to categorize your repository. Public repositories are available to the entire GitHub community, whereas Private repositories are restricted to you and any collaborators with whom you choose to share."
+    },
+    {
+      "title": "Add optional items to your repository if you wish.",
+      "content": "Add optional items to your repository if you wish. Start-up options include the following: A README file, which describes the contents and purpose of the repository. A .gitignore file, which tells the repository which files to ignore when uploading the repository's contents to GitHub. [4] X Research source A software license, which will allow others to freely use and benefit from your repository's contents. [5] X Research source"
+    },
+    {
+      "title": "Click \"Create Repository\".",
+      "content": "Click \"Create Repository\". This is at the bottom of the repository options menu."
+    },
+    {
+      "title": "Click \"Set up in Desktop\".",
+      "content": "Click \"Set up in Desktop\". This will set up your repository for you in the desktop location of your choosing. You have successfully created a repository! [6] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "url": "https://www.wikihow.com/Insert-Boot-Media",
+  "title": "How to Fix \"Select Proper Boot Device\" & \"Insert Boot Media\"",
+  "steps": [
+    {
+      "title": "Remove all connected drives and/or CDs/DVDs.",
+      "content": "Remove all connected drives and/or CDs/DVDs. Before you do anything else, make sure you don't have a flash or external drive connected to the PC, and remove any CDs or DVDs from your optical drive. Then, restart your PC to see if this resolves the issue. If your PC boots up without removable media connected, it was trying to boot from a drive that didn't contain a bootable operating system. You can avoid this in the future by removing connected/inserted media when rebooting, or by continuing with this method to change the boot order. If your PC still doesn't boot, continue with this method anyway."
+    },
+    {
+      "title": "Reboot your PC into the BIOS or UEFI.",
+      "content": "Reboot your PC into the BIOS or UEFI. If your PC is set to boot from external media like a USB flash drive or optical disc before your hard drive, it'll check for a bootable operating system on the removable media at boot time. If it doesn't find an operating system on the removable drive, you'll be prompted to insert boot media. To reboot into the BIOS or UEFI, you'll need to know your PC's setup key . This key is usually F2, F8, Del, Esc, or F10. When you reboot your PC, press the setup key repeatedly as soon as the PC restarts. You may see a message on the PC that says \"Press (setup key) to enter SETUP.\""
+    },
+    {
+      "title": "Locate the Boot, Boot Order, or Boot Sequence area.",
+      "content": "Locate the Boot , Boot Order , or Boot Sequence area. Each BIOS or UEFI is different—you'll need to browse through the menus to find this section. You may find it in a section called Advanced or System Configuration . If your system has a UEFI, you can usually use your mouse to click and select menus and options. If your mouse is unavailable, use your keyboard's arrow keys to navigate, and press Enter to select options."
+    },
+    {
+      "title": "Select your hard drive (or preferred boot device) as the first option in the boot order.",
+      "content": "Select your hard drive (or preferred boot device) as the first option in the boot order. If you want to boot into the version of Windows or Linux installed on your PC, select the hard drive from the device list. To boot from a removable device like a flash or external drive, choose Removable or similar. If your hard drive is not found, the drive itself might be disconnected from the motherboard. You will need to open your computer and check the cabling. If everything is nice and secure, it's likely your hard drive is dead. The steps to choose a boot order are different in each BIOS. You may have to manually reorder all devices by selecting them and using the arrow keys to move them up or down. Sometimes you'll have to choose 1st and select a device. The device you set as first in the boot order will be the first drive your PC boots from each time you turn it on. If you set a removable drive or CD/DVD as first in the boot order, you can still boot into the operating system installed on your hard drive—just be sure to disconnect the removable media or remove the CD/DVD when rebooting."
+    },
+    {
+      "title": "Disable Legacy Mode.",
+      "content": "Disable Legacy Mode. Depending on your BIOS or UEFI, you may see an option called Legacy Mode or Legacy Boot . It could be in the Boot Order section, but it may also be in another menu. Browse around for a \"Legacy\" option, and choose the alternative option, such as UEFI or Secure . [1] X Research source"
+    },
+    {
+      "title": "Save your changes and exit.",
+      "content": "Save your changes and exit. You'll usually need to press F10 or choose Save to save your changes and exist. The specific key you'll need to use usually appears at the bottom of the BIOS screen. Once your changes are saved, your PC will reboot from the selected device."
+    },
+    {
+      "title": "Boot your PC from a Windows installation or recovery disc/drive.",
+      "content": "Boot your PC from a Windows installation or recovery disc/drive. As long as you have access to bootable installation or recovery media, you can easily perform additional troubleshooting tasks, including running a startup repair. [2] X Research source If you don't have the original Windows DVD or a bootable repair disc, you can create a bootable install drive using any working PC. To boot from a bootable drive or DVD, you'll need to go back into the UEFI or BIOS to make your removable or optical drive first in the boot order. Insert the install or recover media, reboot your PC, and follow any on-screen instructions to boot from the installed media."
+    },
+    {
+      "title": "Click Repair your computer on the Windows screen.",
+      "content": "Click Repair your computer on the Windows screen. This takes you to a blue screen with several options."
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . Another set of options will appear."
+    },
+    {
+      "title": "Click Advanced options.",
+      "content": "Click Advanced options . It's at the bottom of the screen. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Startup Repair.",
+      "content": "Click Startup Repair . This may be called Automatic Repair on some PCs. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . Windows will now attempt to repair the boot issue. Follow any on-screen instructions that appear when the process is complete to reboot your PC. If Startup Repair is able to fix the issue, you'll now be able to boot into the operating system. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Boot your PC from a Windows installation or recovery disc/drive.",
+      "content": "Boot your PC from a Windows installation or recovery disc/drive. If setting your partition as active didn't resolve the problem or you're now getting different boot errors, you might need to rebuild the master boot record. Reboot your PC using Windows installation or recovery media. If you don't have the original Windows DVD or a bootable repair disc, you can create a bootable install drive using any working PC."
+    },
+    {
+      "title": "Click Repair your computer on the Windows screen.",
+      "content": "Click Repair your computer on the Windows screen. This takes you to a blue screen with several options."
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . Another set of options will appear."
+    },
+    {
+      "title": "Click Command Prompt.",
+      "content": "Click Command Prompt . This opens a Windows command prompt."
+    },
+    {
+      "title": "Type the following commands to rebuild the boot record.",
+      "content": "Type the following commands to rebuild the boot record. Once you've typed all of these commands, continue to the next step. [6] X Research source Type bootrec /FixMbr and press Enter . Type bootrec /FixBoot and press Enter . Type bootrec /ScanOs and press Enter . Type bootrec /RebuildBcd and press Enter ."
+    },
+    {
+      "title": "Remove your installation or recovery media.",
+      "content": "Remove your installation or recovery media. Before you reboot, you'll want to make sure your Windows installation disc or drive is no longer connected to the PC."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. This will hopefully resolve the issue. You can now set the boot order back to your hard drive being the primary boot device."
+    },
+    {
+      "title": "Boot your PC from a Windows installation or recovery disc/drive.",
+      "content": "Boot your PC from a Windows installation or recovery disc/drive. If you've partitioned your hard drive, your primary partition may not be set as active. You can fix partition issues by booting with a Windows installation or recovery DVD or flash drive. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don't have the original Windows DVD or a bootable repair disc, you can create a bootable install drive using any working PC. To boot from a bootable drive or DVD, you'll need to go back into the UEFI or BIOS to make your removable or optical drive first in the boot order. Insert the install or recover media, reboot your PC, and follow any on-screen instructions to boot from the installed media."
+    },
+    {
+      "title": "Click Repair your computer on the Windows screen.",
+      "content": "Click Repair your computer on the Windows screen. This takes you to a blue screen with several options. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . Another set of options will appear."
+    },
+    {
+      "title": "Click Command Prompt.",
+      "content": "Click Command Prompt . This opens a Windows command prompt. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type diskpart and press ↵ Enter.",
+      "content": "Type diskpart and press ↵ Enter . This activates the Diskpart tool."
+    },
+    {
+      "title": "Type list disk and press ↵ Enter.",
+      "content": "Type list disk and press ↵ Enter . This displays all hard drives installed in your PC."
+    },
+    {
+      "title": "Type select disk (number) and press ↵ Enter.",
+      "content": "Type select disk (number) and press ↵ Enter . Choose the number of the drive on which you've installed Windows, e.g., select disk 0 or select disk 1 ."
+    },
+    {
+      "title": "Type list partition and press ↵ Enter.",
+      "content": "Type list partition and press ↵ Enter . This displays all partitions on the selected drive."
+    },
+    {
+      "title": "Type select partition (number) and press ↵ Enter.",
+      "content": "Type select partition (number) and press ↵ Enter . This time, choose the number of the partition on which Windows is installed, e.g., select partition 0 or select partition 1 ."
+    },
+    {
+      "title": "Type active and press ↵ Enter.",
+      "content": "Type active and press ↵ Enter . This sets the selected partition as active."
+    },
+    {
+      "title": "Remove your installation or recovery media.",
+      "content": "Remove your installation or recovery media. Before you reboot, you'll want to make sure your Windows installation disc or drive is no longer connected to the PC."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. This will hopefully resolve the issue. You can now set the boot order back to your hard drive being the primary boot device."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Install-FFmpeg-on-Windows",
+  "title": "Easily Download and Install FFmpeg on a Windows PC",
+  "steps": [
+    {
+      "title": "Install 7-Zip.",
+      "content": "Install 7-Zip. If you don't have 7-Zip already installed, you'll need it to be able to extract the FFmpeg files. This tool is free, and you can download it from https://www.7-zip.org . Once you've downloaded the installer, double-click the downloaded file, then follow the on-screen instructions to install."
+    },
+    {
+      "title": "Go to https://www.gyan.dev/ffmpeg/builds.",
+      "content": "Go to https://www.gyan.dev/ffmpeg/builds . This page hosts the precompiled FFmpeg binary files you'll need for Windows. [1] X Research source"
+    },
+    {
+      "title": "Click the release builds link.",
+      "content": "Click the release builds link. You'll see this in the left panel."
+    },
+    {
+      "title": "Click the link to download ffmpeg-release-full.7z.",
+      "content": "Click the link to download ffmpeg-release-full.7z . The full text of the link is https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z . This link downloads the latest FFmpeg files to your PC in a compressed format."
+    },
+    {
+      "title": "Extract the downloaded file.",
+      "content": "Extract the downloaded file. Here's how: Right-click the Windows/Start button and select File Explorer . Click the Downloads folder in the left panel (you may have to click This PC first to find it). Right-click the file that begins with \"ffmpeg\" and ends with \".7z.\" (Windows 11 only) Click Show more options . Select the 7-Zip menu and click Extract Here . This creates a new folder with the same name as the .7z file ."
+    },
+    {
+      "title": "Rename the extracted folder FFmpeg.",
+      "content": "Rename the extracted folder FFmpeg . To do this: Right-click the folder. If you're using Windows 10, click Rename . If you have Windows 11, click the icon of an \"A\" followed by a cursor at the bottom of the menu. Type FFmpeg and press Enter ."
+    },
+    {
+      "title": "Click the FFmpeg folder once and press Control+X.",
+      "content": "Click the FFmpeg folder once and press Control + X . This \"cuts\" the folder from the Downloads folder so you can paste it into the root of your hard drive."
+    },
+    {
+      "title": "Click This PC in File Explorer.",
+      "content": "Click This PC in File Explorer. It's the computer icon in the left panel."
+    },
+    {
+      "title": "Click your hard drive.",
+      "content": "Click your hard drive. It's usually called \"Windows (C:)\" or \"OS (C:),\" but the name and drive letter may vary."
+    },
+    {
+      "title": "Right-click a blank area of the right panel and select Paste.",
+      "content": "Right-click a blank area of the right panel and select Paste . This moves the folder to the root of your hard drive."
+    },
+    {
+      "title": "Open Command Prompt as an administrator",
+      "content": "Open Command Prompt as an administrator . To do this, just type cmd into the Windows search bar, right-click Command Prompt , select Run as administrator , and then click Yes ."
+    },
+    {
+      "title": "Add FFmpeg to your system path.",
+      "content": "Add FFmpeg to your system path . To do this from the command line, type or paste setx /m PATH \"C:\\ffmpeg\\bin;%PATH%\" and press Enter . [2] X Research source When you're finished, close the Command Prompt window. You've now installed FFmpeg and set the proper environment variables. To confirm that FFmpeg is working, open a new command prompt window, type ffmpeg -version , and then press Enter ."
+    }
+  ]
+}

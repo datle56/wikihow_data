@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Convert-Linksys-WRT54G-to-Be-an-Access-Point",
+  "title": "How to Use a Linksys WRT54G as an Access Point: Easy Config Guide",
+  "steps": [
+    {
+      "title": "Find the IP address of your current router.",
+      "content": "Find the IP address of your current router. To add a Linksys WRT54G to your network, you'll need to know which gateway address it needs to use. To find the router's IP address : Windows Open Command Prompt. Type ipconfig and press Enter . Locate the entry for the adapter you're using to connect to the network. Make a note of the IP address next to \"Default Gateway\" (e.g., 192.168.1.1). Mac Click the Apple menu and select System Settings . Click Network in the left panel. Select your network connection. Click the Details button next to the network. Find the IP address next to \"Router\" (e.g., 192.168.1.1)."
+    },
+    {
+      "title": "Reset your Linksys WRT54G to its factory settings.",
+      "content": "Reset your Linksys WRT54G to its factory settings. If the router is old, it probably has a configuration set up already. To make sure you can connect to it, it's best to reset it and start fresh. To do this, press and hold the Reset button on the back of the router for about 5 seconds, or until the router reboots. [1] X Research source"
+    },
+    {
+      "title": "Connect your computer to the WRT54G's LAN port.",
+      "content": "Connect your computer to the WRT54G's LAN port. Use an ethernet cable to do so. Do not connect to the WAN port! If your computer is also connected to Wi-Fi, disconnect from that network for now."
+    },
+    {
+      "title": "Open the router's admin page.",
+      "content": "Open the router's admin page. The default IP address for the Linksys WRT54G router is 192.168.1.1 . Type that address into the address bar of any web browser, then press Enter or Return to access the login page. If you can't get to this address, you might need to reboot your computer."
+    },
+    {
+      "title": "Log in with the default password.",
+      "content": "Log in with the default password. The default password for the Linksys WRT54G router is admin . Leave the \"username\" field blank–you're only typing admin into the password field. This will log you into the admin interface."
+    },
+    {
+      "title": "Click the Wireless tab.",
+      "content": "Click the Wireless tab. You'll see it at the top of the admin page."
+    },
+    {
+      "title": "Enter the same SSID and password of your primary access point.",
+      "content": "Enter the same SSID and password of your primary access point. For example, if your main Wi-Fi router's name is \"Chicken,\" type \"Chicken\" into the SSID field now. To enter the password, click the Wi-Fi Security sub-tab, select WPA2 Personal, and enter the password into the \"WPA Shared Key\" field."
+    },
+    {
+      "title": "Select 1 as the wireless channel.",
+      "content": "Select 1 as the wireless channel. You'll want the channel to be different from your main router's channel. [2] X Research source In most cases, 1 will not be the default used by your main router."
+    },
+    {
+      "title": "Save your settings.",
+      "content": "Save your settings. Click Save Settings to save all your changes. Your Linksys router may reboot, in which case you'll need to reconnect to its website and log in again."
+    },
+    {
+      "title": "Assign the access point an IP address.",
+      "content": "Assign the access point an IP address. For your Linksys WRT54G to function as an access point on your network, you will need to assign it a static IP address from the range assigned by your main router. On the Basic Setup tab, select Static IP as the internet connection type. [3] X Research source Enter a static IP address from your main router's range into the \"Internet IP address\" field. If you're unsure which IP addresses your router assigns to systems that connect to the network, log in to your main router's admin page and locate its DHCP settings . Choose a high-end available IP from the DHCP range. For example, if your main router's DHCP server starts assigning IP addresses at 192.168.1.100 and can assign a maximum of 100 IP addresses, 192.168.1.199 should be safe. Enter the default gateway IP address you found earlier into the Gateway field."
+    },
+    {
+      "title": "Turn off the DHCP server on the Linksys WRT54G.",
+      "content": "Turn off the DHCP server on the Linksys WRT54G. Go to the Network Setup area (in the Network Address Server Settings section) and select Disabled next to \"DHCP server\" to turn it off. You don't want your access point to try to assign you an IP address. Your main router will provide them automatically to all devices connected to it, including devices that connect to your new access point."
+    },
+    {
+      "title": "Save your settings and reboot.",
+      "content": "Save your settings and reboot. Click Save Settings , and the router will restart. You can now disconnect your computer from the WRT54G router. The router will restart."
+    },
+    {
+      "title": "Connect the WRT54G router to any LAN port of your main router.",
+      "content": "Connect the WRT54G router to any LAN port of your main router. Use one of the 4 LAN ports on your Linksys WRT54G, even if that feels wrong–it's not! Some people recommend placing tape over the WAN port on the WRT54G so you don't accidentally connect anything to it. After a few moments, the WRT54G should connect to your main router and be assigned the static IP address you entered. After a few moments, any Wi-Fi capable device within its range should be able to connect to it using the same SSID and password used for your main router. If you need to make configuration changes to your Linksys WRT54G, you'll need to access it using the new IP address you've assigned it. So, instead of the default 192.168.1.1, you'll now go to the static IP address you entered."
+    }
+  ]
+}

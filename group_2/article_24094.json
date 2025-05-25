@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Install-Tomcat-on-Windows",
+  "title": "The Best Way to Install Apache Tomcat on Windows",
+  "steps": [
+    {
+      "title": "Download a Java Runtime Environment (JRE) installer.",
+      "content": "Download a Java Runtime Environment (JRE) installer. To run the latest version of Apache Tomcat on Windows, you'll to install Java 11 or later. [1] X Research source To get the latest version of Java, you'll want to download the latest JDK (Java Development Toolkit) installer: Go to https://www.oracle.com/java/technologies/downloads/ and click the Windows tab. Click the download link next to \"x64 Installer\" to save the installer to your PC. If you've already installed Java, skip to Installing Tomcat ."
+    },
+    {
+      "title": "Run the JDK installer.",
+      "content": "Run the JDK installer. Double-click the file you downloaded, then follow the on-screen instructions on the installer. Once Java is installed, click Close on the wizard. Java will install to C:\\Program Files\\Java\\jdk(version number) by default."
+    },
+    {
+      "title": "Navigate to the Java folder in File Explorer.",
+      "content": "Navigate to the Java folder in File Explorer. Once installed, press Windows key + E to open File Explorer, click This PC in the left panel, and navigate to Program Files > Java . If you installed Java in a different location, go to that location now."
+    },
+    {
+      "title": "Double-click the jdk folder.",
+      "content": "Double-click the jdk folder. For example, you'll see a folder called jdk-21 (if you installed Java 21) in the Java folder. Double-click the JDK folder to open it."
+    },
+    {
+      "title": "Copy the folder's full path.",
+      "content": "Copy the folder's full path. At the top of File Explorer, click the path to the folder, select the full path to the current folder, right-click it, and select Copy on the menu."
+    },
+    {
+      "title": "Open the System Properties panel.",
+      "content": "Open the System Properties panel. Now that the path is copied, you'll need to update your environment variables . To open System Properties: Type advanced system into the Windows search bar. Click View advanced system settings ."
+    },
+    {
+      "title": "Click the Environment Variables button.",
+      "content": "Click the Environment Variables button. This button is near the bottom-right corner of the dialogue box."
+    },
+    {
+      "title": "Click the New… button under the \"System variables\" section.",
+      "content": "Click the New… button under the \"System variables\" section. This section is the second box at the bottom of the Environment Variables window."
+    },
+    {
+      "title": "Type JAVA_HOME into the \"Variable name\" field.",
+      "content": "Type JAVA_HOME into the \"Variable name\" field. This will be the name of your new system variable."
+    },
+    {
+      "title": "Paste the copied folder directory into the \"Variable value\" field.",
+      "content": "Paste the copied folder directory into the \"Variable value\" field. Right-click the bottom field and select Paste to paste the copied folder directory."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This will add your new system variable."
+    },
+    {
+      "title": "Select Path in the \"System variables\" section.",
+      "content": "Select Path in the \"System variables\" section. Scroll down the variable list in the bottom box, and click Path to select it."
+    },
+    {
+      "title": "Click the Edit… button.",
+      "content": "Click the Edit… button. This will allow you to edit the contents of the Path variable in a new dialogue box."
+    },
+    {
+      "title": "Click New in the new dialogue box.",
+      "content": "Click New in the new dialogue box. It's in the upper-right corner of the window. This will add a new entry at the bottom of the list."
+    },
+    {
+      "title": "Type %JAVA_HOME%\\bin into the new field and click OK.",
+      "content": "Type %JAVA_HOME%\\bin into the new field and click OK . This will be added to the Path variable in your system. Click OK 2 more times until all System Properties windows are closed. You are now ready to download and install the Tomcat files on your computer."
+    },
+    {
+      "title": "Download the latest Tomcat installer.",
+      "content": "Download the latest Tomcat installer. As of October 2023, you can download Apache Tomcat 10.1.14. The Apache Software Foundation recommends using the Windows Service Installer, which makes it easy to install Tomcat on both 64-bit and 32-bit Windows systems. [2] X Research source Go to https://tomcat.apache.org . Click the Tomcat 10 link in the left panel. Under \"Binary Distributions,\" click 32-bit/64-bit Windows Service Installer . If prompted, select a saving location for the installer file."
+    },
+    {
+      "title": "Open the installer and click Next.",
+      "content": "Open the installer and click Next . This will open the License Agreement on a new page."
+    },
+    {
+      "title": "Click the I Agree button.",
+      "content": "Click the I Agree button. It's on the bottom-right corner of the installer window."
+    },
+    {
+      "title": "Select Full as your install type and click Next.",
+      "content": "Select Full as your install type and click Next . This option ensures that you'll be installing the core aspects of Tomcat, a script that launches the server automatically at boot time, the admin management panel, the Tomcat Host app, and the Servlet and JSP Examples web app. Optionally, you can click and uncheck the components you don't want to install on the list here."
+    },
+    {
+      "title": "Customize your configuration and click Next.",
+      "content": "Customize your configuration and click Next . By default, Tomcat will run on port 8080. If you want it to run on a different port, replace the port. You can also give the Tomcat service a name other than \"Tomcat10,\" and create an administrator username and password for the HTML interfaces here. You will need to open TCP port 8080 (or the custom port you entered) to allow inbound connections."
+    },
+    {
+      "title": "Click the three-dot button next to the text field.",
+      "content": "Click the three-dot button next to the text field. When you're prompted to specify the location of your JRE (Java Runtime Environment), click this button to select your file location."
+    },
+    {
+      "title": "Select your JDK folder and click Next.",
+      "content": "Select your JDK folder and click Next . The default path is C:\\Program Files\\Java\\jdk(version number)."
+    },
+    {
+      "title": "Select an install location and click Install.",
+      "content": "Select an install location and click Install . By default, Tomcat will install to C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1. You can change the installation location if you'd like. Once you click Install , Tomcat will install on Windows."
+    },
+    {
+      "title": "Click Finish on the last page.",
+      "content": "Click Finish on the last page. When your Tomcat setup is finished, click this button to close the installer. If you leave the \"Run Apache Tomcat\" option selected, Tomcat will launch instantly. Because you chose the Full installation, the Windows Tomcat service will launch automatically each time you restart your PC. Even though Tomcat is running, you won't see an icon for it in your system tray. However, when you open Task Manager, you'll see it on the Processes tab and an entry for it on the Startup apps tab."
+    },
+    {
+      "title": "Use the Configure Tomcat app to adjust your settings.",
+      "content": "Use the Configure Tomcat app to adjust your settings. Instead of editing configuration files directly, you can use this GUI tool in your Start menu to adjust the following: Control whether the Tomcat service launches automatically. Choose whether to log on as a local service account, network service account, local system account, or a specific account. Choose what appears in your server logs and where the server logs are stored. Specify which version of Java to use (helpful if you install more than one version), and specify Java options, memory preferences, and classpath. Add startup flags to Tomcat (check the Readme file for options). Choose shutdown options."
+    }
+  ]
+}

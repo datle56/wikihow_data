@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Connect-a-MIDI-Keyboard-to-Pro-Tools",
+  "title": "Using a MIDI Keyboard in Pro Tools: Quickstart Guide + Troubleshooting",
+  "steps": [
+    {
+      "title": "Get a MIDI keyboard that works with Pro Tools.",
+      "content": "Get a MIDI keyboard that works with Pro Tools. If you're still looking for a MIDI keyboard and are set on using Pro Tools, you'll need to find one that works with Pro Tools. If you're shopping online on a site like Sweetwater or Musician's Friend, you can see which DAWs each MIDI keyboard is compatible with right on the listing."
+    },
+    {
+      "title": "Check the outputs on the back of the keyboard.",
+      "content": "Check the outputs on the back of the keyboard. Some MIDI controller keyboards have MIDI out ports, which are round, with a notch at the top and five pinholes along the bottom. Many newer models can also do MIDI over USB, which means you won't need a MIDI cable to connect it to your computer–just a USB cable that can transmit data."
+    },
+    {
+      "title": "Get an audio interface if needed.",
+      "content": "Get an audio interface if needed. If your keyboard has a USB output, you don't need an audio interface to connect your MIDI keyboard. However, if your keyboard only has a MIDI output, you will need an audio interface with MIDI inputs. You can purchase a stand-alone MIDI audio interface or an interface with multiple inputs. If you're looking for a standard audio interface that's easy to find, not super spendy, and officially supported by Pro Tools, consider a Focusrite Scarlett interface, such as the Scarlett Solo. Avid also offers some professional audio interfaces that work with the latest versions of Pro Tools. [1] X Research source It's a good idea to get an audio interface even if your keyboard has a USB output. An audio interface can allow you to connect microphones, guitars, and other instruments to your computer as well as a keyboard, and many also have more capable sound cards than what is in your computer. If you don't have an AVID audio interface, install your audio interface's software and drivers. If you don't, you will run into problems using your MIDI keyboard in Pro Tools. [2] X Research source"
+    },
+    {
+      "title": "Connect the MIDI keyboard to your computer.",
+      "content": "Connect the MIDI keyboard to your computer. If you are using the MIDI out port on your keyboard, connect a MIDI cable to the \"MIDI Out\" port on your keyboard and the other end to the MIDI input on your audio interface. Then, connect the square-shaped end of a USB cable to the USB port of your audio interface and the standard USB end to a USB port on your PC or Mac. If your MIDI keyboard has a USB port, you can connect a USB cable directly from your keyboard to your computer. Alternatively, if your keyboard also has built-in sounds, you can connect it to your audio interface using its audio-out ports, which may be RCA, USB, or even a standard instrument cable port. Using this method, you will need to treat your keyboard as an audio instrument instead of a MIDI instrument."
+    },
+    {
+      "title": "Turn on your keyboard.",
+      "content": "Turn on your keyboard. Most MIDI controllers require you to plug it into a power source, but some USB keyboards may get power over USB. If your keyboard doesn't have a power cable, you can turn it on once it's connected to your computer's USB port."
+    },
+    {
+      "title": "Install any software required for your MIDI keyboard.",
+      "content": "Install any software required for your MIDI keyboard. Most newer keyboards are plug-and-play, but some have software you'll need to install to make it work with Pro Tools. For example, to map buttons to functions in Pro Tools, you may need your keyboard's software. Windows or macOS will automatically scan for the drivers when you connect the keyboard to your computer. On some keyboard models, you may need to install the drivers using the install disk that came with the keyboard or by downloading the drivers from the manufacturer's website and installing them."
+    },
+    {
+      "title": "Open or create a session in Pro Tools.",
+      "content": "Open or create a session in Pro Tools. Open Pro Tools, then select Create Blank Session to start fresh, or Open Session… to choose an existing session to resume."
+    },
+    {
+      "title": "Open the MIDI input enable menu.",
+      "content": "Open the MIDI input enable menu. For a MIDI device such as a keyboard to be able to communicate with Pro Tools, you need to enable it. You can do this in the MIDI input enable menu. Here's how to get there: Click the Setup in the menu bar at the top. Hover your mouse cursor over MIDI . Select Input Devices… to display a list of detected devices."
+    },
+    {
+      "title": "Check the box(es) for your device and click OK.",
+      "content": "Check the box(es) for your device and click OK . Depending on your device, you may need to check multiple boxes to enable different functions, such as USB MIDI and/or MIDI DIN. For example, if you have an M-Audio Oxygen Pro and are using USB over MIDI, you'll want to enable Oxygen Pro USB MIDI and Oxygen Pro Mackie/HUI."
+    },
+    {
+      "title": "Open the MIDI peripherals menu.",
+      "content": "Open the MIDI peripherals menu. Now that your MIDI keyboard is enabled in Pro Tools, you'll need to configure your MIDI keyboard's control knobs, faders, and buttons. Not all keyboards’ MIDI controllers with faders and knobs are supported by Pro Tools. You will need to consult the user's manual or manufacturer's website to see what protocol type your keyboard uses. To access the panel: Click Setup in the menu bar at the top. Click Peripherals . Click the MIDI Controllers tab."
+    },
+    {
+      "title": "Select your MIDI controller and its options.",
+      "content": "Select your MIDI controller and its options. Select your keyboard's protocol under \"Type\". This will usually be HUI (Human User Interface Protocol). Select your MIDI keyboard under \"Receive From\" and \"Send To\"—for example, MIDIIN2 . Leave 8 as the number of channels unless your controller has other instructions. Click OK ."
+    },
+    {
+      "title": "Create a new track.",
+      "content": "Create a new track. If you are recording using MIDI, you need to create a new instrument track. Click Track in the menu bar at the top. Click New… Select Stereo from the first menu, and Instrument Track from the second. Click Create ."
+    },
+    {
+      "title": "Add an instrument to the MIDI track.",
+      "content": "Add an instrument to the MIDI track. To be able to play with your keyboard on a MIDI channel, you need to add one or more instruments to the channel. To add an instrument to a channel: Click one of the insert panels in the instrument track. Select an instrument. Click the drop-down under \"Instrument\" at the top of the channel strip and select your MIDI keyboard, followed by all channels . [3] X Research source Set the instrument output to your playback device, such as Out 1-2 ."
+    },
+    {
+      "title": "Arm the track.",
+      "content": "Arm the track. To play or record an instrument, the track must be armed. Click the red button with a circle in the instrument track to arm it. You can now play and record using your MIDI keyboard. To record, click the red circle button in the Transport (playback control) window. [4] X Research source"
+    },
+    {
+      "title": "Activate the virtual MIDI keyboard in Pro Tools.",
+      "content": "Activate the virtual MIDI keyboard in Pro Tools. If you don't have a MIDI controller, you can still use a MIDI keyboard by activating Pro Tools' virtual MIDI keyboard, which allows you to use your physical typing keyboard as a MIDI controller, as well as a virtual on-screen keyboard. To bring it up, just click the Window menu and select MIDI keyboard . [5] X Research source You can also quickly toggle the virtual MIDI keyboard on and off using the keyboard shortcut Shift + K ."
+    },
+    {
+      "title": "Play an instrument.",
+      "content": "Play an instrument. Now that you have enabled the virtual MIDI keyboard in Pro Tools, you can use it to play various instruments and plugins the same way you would with a keyboard. Just add a new instrument track, arm it, and click the keys to play. Alternatively, you can use your typing keyboard, and even your trackpad."
+    },
+    {
+      "title": "Learn how the keyboard keys translate to notes.",
+      "content": "Learn how the keyboard keys translate to notes. If you want to play virtual instruments with your physical typing keyboard, here's what you'll need to know: Natural notes A : C S : D D : E F : F G : G H : A J : B K : C Sharps and flats W : C♯ / D♭ E : D♯ / E♭ T : F♯ / G♭ Y : G♯ / A♭ U : A♯ / B♭ Controls X : Octave up Z : Octave down V : Velocity up C : Velocity down"
+    },
+    {
+      "title": "Enable MIDI Thru.",
+      "content": "Enable MIDI Thru. Pro Tools may not enable this feature by default. Click the Options menu and look for a checkmark next to \"MIDI Thru\" in the menu. If there is no checkmark, click MIDI Thru to enable it. You should then be able to use your MIDI keyboard. [6] X Research source"
+    },
+    {
+      "title": "Make sure your audio interface is set up correctly.",
+      "content": "Make sure your audio interface is set up correctly. If you can't hear audio when you use your MIDI keyboard to play instruments in Pro Tools, you may need to select your playback engine. Click the Setup menu, select Playback Engine …, select your audio device, and click OK . [7] X Research source"
+    },
+    {
+      "title": "Verify that your MIDI keyboard is detected.",
+      "content": "Verify that your MIDI keyboard is detected. Check to see whether your keyboard is listed under Setup > MIDI > Input Devices . If your keyboard is not displayed under “Input Devices,” there may be a problem with the keyboard itself. Contact the keyboard’s manufacturer to find out which additional steps must be taken to make the keyboard compatible with Pro Tools. You may need to put your MIDI keyboard into a special mode to be detected in Pro Tools. Check your keyboard's manual."
+    },
+    {
+      "title": "Try installing the latest drivers for your keyboard.",
+      "content": "Try installing the latest drivers for your keyboard. Sometimes, your computer may not recognize your keyboard if drivers are outdated or not installed. Visit the keyboard manufacturer’s website to find and install the latest drivers for your keyboard on your Windows or Mac computer."
+    },
+    {
+      "title": "Try resetting the MIDI Controllers area of Peripherals.",
+      "content": "Try resetting the MIDI Controllers area of Peripherals. Go to Setup > Peripherals > MIDI Controllers and set all menus to none. Save your settings and try again."
+    },
+    {
+      "title": "Try closing and relaunching Pro Tools.",
+      "content": "Try closing and relaunching Pro Tools. Closing and reopening Pro Tools can help refresh software settings and force the program to recognize your keyboard’s input and output."
+    },
+    {
+      "title": "Try a different USB cable or audio interface.",
+      "content": "Try a different USB cable or audio interface. Sometimes, a faulty USB cable or adapter can cause connection issues between your keyboard and Pro Tools."
+    },
+    {
+      "title": "Try logging in using an administrator account.",
+      "content": "Try logging in using an administrator account. In some cases, MIDI settings may not initialize properly unless you’re logged in as an administrator during setup. You can also try running Pro Tools as an administrator or with root privileges ."
+    }
+  ]
+}

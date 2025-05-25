@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Install-Bin-Files-in-Linux",
+  "title": "Install & Execute BIN files in Linux: Ubuntu, CentOS & More",
+  "steps": [
+    {
+      "title": "Download the BIN file to your computer.",
+      "content": "Download the BIN file to your computer. If you're downloading the file from the internet, you can save it to your default download location. Check the installation directions for any files you download from the internet. Depending on the file, you may need to install it in a certain way—for example, some BIN installers must be run by specifying an installation directory. If you downloaded a compressed file (such as a .tgz, .zip, or .tar.gz file ), look for a \"README\" or \"INSTALL\" file after decompressing the file. Use the more command to open the file (e.g., more README ) to look for specific instructions or dependencies."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. You can do this on most Linux distributions by pressing Ctrl + Alt + T at the same time. Otherwise, click the Terminal icon in your app list. [1] X Research source"
+    },
+    {
+      "title": "Use the cd command to enter the directory to which you saved the BIN file.",
+      "content": "Use the cd command to enter the directory to which you saved the BIN file. For example, if you downloaded the file to the Downloads folder in your home directory, just type cd downloads . If you don't remember where you saved the file, you can use the locate or find commands to find it ."
+    },
+    {
+      "title": "Type chmod +x filename.bin to make the file executable.",
+      "content": "Type chmod +x filename.bin to make the file executable. Replace filename with the name of the BIN file you downloaded, then press Enter to run the command. This changes the file's permissions so you can run it like a program. [2] X Research source"
+    },
+    {
+      "title": "Execute the file by placing .",
+      "content": "Execute the file by placing . / before the file name. For example, to execute the file j2re-1_4_0-linux-i386.bin , you'd use ./j2re-1_4_0-linux-i386.bin . This runs the installation program. [3] X Research source If you need to install the program in a directory that requires root permissions (or you get a permissions error during installation), use su before the command. For example, su ./j2re-1_4_0-linux-i386.bin ."
+    },
+    {
+      "title": "Follow the on-screen instructions to install.",
+      "content": "Follow the on-screen instructions to install. Depending on the installer, you might see a graphical wizard that walks you through the installation, or an installation script may execute in the terminal window. Follow any on-screen prompts to install the software."
+    },
+    {
+      "title": "Open the directory that contains your BIN file.",
+      "content": "Open the directory that contains your BIN file. If you don't want to use the command line and are using a standard window manager like GNOME, KDE, or Cinnamon, you can make your BIN file executable and run it from the graphical user interface. Start by navigating to the BIN file in your file manager. Check the installation directions for any files you download from the internet. Depending on the file, you may need to install it at the command line instead of your desktop environment so you can specify an installation directory."
+    },
+    {
+      "title": "Right-click the BIN file and select Properties.",
+      "content": "Right-click the BIN file and select Properties . You'll see this option on the right-click menu."
+    },
+    {
+      "title": "Click the Permissions tab.",
+      "content": "Click the Permissions tab. Depending on your window manager, you may already be on this tab. If not, click Permissions to get there."
+    },
+    {
+      "title": "Check the box next to \"Allow executing file as program.\"",
+      "content": "Check the box next to \"Allow executing file as program.\" This checkbox makes the file executable so you can run it like a program. When you're finished, click Close or the X to close the window and save your changes."
+    },
+    {
+      "title": "Double-click your BIN File to run it.",
+      "content": "Double-click your BIN File to run it. This will launch the installer, which should begin installing your software. Follow any on-screen instructions to complete the installation. If you get an error, try running the bin file in a terminal window instead by typing ./filename.bin , replacing \"filename\" with the name of your bin file."
+    }
+  ]
+}

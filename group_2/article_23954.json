@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Install-Debian",
+  "title": "Easy Debian Linux Installation Tutorial",
+  "steps": [
+    {
+      "title": "Check your system specifications.",
+      "content": "Check your system specifications. Debian is a lightweight operating system that should run on most modern computers meeting the minimum system requirements: [1] X Research source A Pentium 4 1GHz processor or better. 512 MB RAM (without a GUI desktop) or 2 GB (with GUI). 2 GB hard drive space (without GUI) or 10 GB (with GUI). Bootable USB/CD/DVD drive. [2] X Research source"
+    },
+    {
+      "title": "Back up any important files on your computer.",
+      "content": "Back up any important files on your computer. Whether you plan to wipe out another operating system like Windows and replace it with Debian or set up a dual boot situation, back up any existing data on your computer in case something goes wrong. [3] X Research source If you're going to dual-boot Debian with Windows or another operating system, make sure you have that operating system's installation or recovery media in case you ever need to reinstall it . [4] X Research source"
+    },
+    {
+      "title": "Back up the contents of your USB flash drive.",
+      "content": "Back up the contents of your USB flash drive. Since the drive will need to be bootable, everything on it will now be formatted and erased before you install Debian. Make sure to save any files you wish to keep. Your USB drive should be at least 2 GB so there's enough room for the CD installer. If you'd rather install Debian from a bootable CD-R or DVD-R, you can do that instead."
+    },
+    {
+      "title": "Download a Debian image from https://www.debian.org/distrib/netinst.",
+      "content": "Download a Debian image from https://www.debian.org/distrib/netinst . Debian 12 offers a variety of installation media for different platforms. Download the image that is best for your computer's architecture. Debian installers are based on your hardware. So, if you have a 64-bit PC with an Intel or AMD processor, select amd64 under the \"Small CDs or USB sticks\" header. If you have a 64-bit system with an ARM processor, click arm64 instead. If you have a 32-bit system, click i386 . The ISO file will download immediately."
+    },
+    {
+      "title": "Download Balena Etcher.",
+      "content": "Download Balena Etcher. Etcher allows you to create a bootable USB drive using an ISO file. You can download it from https://etcher.balena.io . Alternatively, you can use Rufus on Windows to make a bootable USB drive ."
+    },
+    {
+      "title": "Insert your USB drive and open Etcher.",
+      "content": "Insert your USB drive and open Etcher. You can insert a USB drive into any free USB port on your computer or laptop. If you want to create a bootable CD or DVD instead, insert a blank CD-R or DVD-R into your optical disk drive. Right-click the Debian ISO file and click Burn Disk Image . You can burn an ISO file to a CD or DVD using Disk Utility on Mac."
+    },
+    {
+      "title": "Select the Debian ISO file.",
+      "content": "Select the Debian ISO file. To do so, drag and drop the ISO file into the Balena Etcher window or click Flash from File and select the ISO file. Balena Etcher should detect your USB drive automatically. If the correct USB drive is not listed below the flash drive icon, click Change and select your USB drive."
+    },
+    {
+      "title": "Click Flash.",
+      "content": "Click Flash . This starts writing the Debian ISO file to your USB drive and makes the drive bootable. [5] X Research source"
+    },
+    {
+      "title": "Boot into your computer's BIOS.",
+      "content": "Boot into your computer's BIOS. Reboot your computer and press the hotkey that appears at the bottom of the screen while your computer reboots to enter the BIOS. Some common hotkeys are F2 (Acer, Asus, Lenovo, Dell, Origin PC, Samsung, Sony, Toshiba), F1 (Lenovo desktops and ThinkPad models, Sony), F10 (HP), and the Del key (Acer, Asus, MSI). If your computer boots too quickly, you can use these steps from Windows to get to the BIOS: [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows menu and select Settings . Click Update & Security on Windows 10 or System on Windows 11 Click Recovery Click Restart now under \"Advanced startup.\" Click Troubleshoot Click Advanced options Click UEFI Firmware Settings . Click Restart ."
+    },
+    {
+      "title": "Find the boot order menu.",
+      "content": "Find the boot order menu. The BIOS menu looks different depending on your computer/motherboard manufacturer. You'll want to find the \"Boot order\" menu or similar. You can use the arrow keys to navigate the BIOS menu and press Enter to make selections."
+    },
+    {
+      "title": "Set your USB drive/removable media first in the boot order.",
+      "content": "Set your USB drive/removable media first in the boot order. You'll need to ensure your computer is set to boot from the USB or CD/DVD drive before the hard drive. This ensures that your PC will know to boot from the Debian media you created instead of into the existing operating system."
+    },
+    {
+      "title": "Save changes and exit the BIOS.",
+      "content": "Save changes and exit the BIOS. Your PC will restart and automatically boot from your Debian installation media if connected. If not, it'll boot back into your primary operating system."
+    },
+    {
+      "title": "Boot from your installation media.",
+      "content": "Boot from your installation media. If your Debian flash drive or disc wasn't inserted when you rebooted, insert it now and reboot your PC."
+    },
+    {
+      "title": "Select Graphical Install.",
+      "content": "Select Graphical Install . Use the arrow key to make the selection, and then press the Enter key to select it. [7] X Research source You can also select the regular Install option. The process is the same for both options."
+    },
+    {
+      "title": "Select a language and region.",
+      "content": "Select a language and region. The first three screens will ask you to choose your language, location, and keyboard region. Once you've made your selections, the installer will ask you to configure your network."
+    },
+    {
+      "title": "Select your network interface.",
+      "content": "Select your network interface. Depending on your computer, you may have one or two options (i.e., a wired and wireless option). Select whichever you plan on using. If you're installing over the internet (this is the case if you downloaded the smaller ISO file), you'll also be walked through instructions for connecting your PC to the internet. If you receive an error about your Wi-Fi adapter, connect your computer to your modem or router using an ethernet cable and use a wired connection instead."
+    },
+    {
+      "title": "Enter a hostname and domain name.",
+      "content": "Enter a hostname and domain name. The hostname is the name that identifies your computer on the network. If you have a domain name assigned to your network, you can enter it on the line. If not, just leave that line blank and select Continue ."
+    },
+    {
+      "title": "Create or skip a root password.",
+      "content": "Create or skip a root password. Although you were once required to create a root (admin) account and password when installing Debian, you can now skip this step. [8] X Research source Skipping the root password step means sudo will automatically be set up for your user account, giving you root access. It's safer to not have a root password since you won't need to share it with other admins. You can then elevate other accounts that also need administrative access. To skip creating a root password, leave the \"Set up users and passwords\" screen blank and click Continue . If you make a root password now, you won't have sudo access set up immediately, meaning you'll need to use \"su root\" whenever you want to do something administrative rather than \"sudo.\""
+    },
+    {
+      "title": "Create a user account.",
+      "content": "Create a user account. Now you can create your own account, which is how you'll log in to Debian. Enter your full name (or whatever name you want to use), select Continue , and create your username and secure password . As long as you skipped adding a root account, this new account will be given sudo rights."
+    },
+    {
+      "title": "Select a time zone and click Continue.",
+      "content": "Select a time zone and click Continue . This ensures your system clock is set properly. [9] X Research source"
+    },
+    {
+      "title": "Select a partition option.",
+      "content": "Select a partition option. The option you choose for partitioning depends on your needs: If you just want to install Debian on existing unused drive space, select Guided – use the largest continuous free space . If you only want to use Debian on this drive and not anything else, select Guided – use entire disk . Select Manual if you want to retain other partitions on the computer, such as your Windows installation."
+    },
+    {
+      "title": "Follow the on-screen instructions to partition your drive(s).",
+      "content": "Follow the on-screen instructions to partition your drive(s). This process varies depending on how you're installing Debian. If you chose one of the Guided options, let the on-screen instructions walk you through the process. When given the option to choose a file system, select Ext4 journaling file system . When the partitioning is complete, Debian will start installing. When asked to select a partition scheme, you can choose to have all files on one partition (recommended for new users), have a separate partition for your Home directory, or separate partitions for home, var, and tmp directories. Once you make your selection, review the changes that will be made to your disk, click Finish partitioning and write changes to disk , and select Yes to confirm. If you are asked to scan for another DVD or CD, select No and then Continue ."
+    },
+    {
+      "title": "Choose a network mirror.",
+      "content": "Choose a network mirror. Select whichever country is closest to you, then select the Debian mirror archive. The first or recommended option is the best option. If you use a proxy server, enter the information when prompted. If not, leave the space blank and click Continue ."
+    },
+    {
+      "title": "Select software to install and click Continue.",
+      "content": "Select software to install and click Continue . Select at least one desktop environment, such as GNOME or KDE, and the option for \"standard system utilities.\" If you want to be able to connect to your Debian system remotely through SSH, select the \"SSH server\" option. [10] X Research source If you do not want to use a desktop environment, unselect all desktop environment options. Once you click Continue , Debian will begin the bulk of the installation process."
+    },
+    {
+      "title": "Click Continue when the installation is complete.",
+      "content": "Click Continue when the installation is complete. It can take several minutes for this to appear, depending on the speed of your computer (and network speed if you installed it over the internet). This will immediately reboot the computer into the GRUB bootloader. [11] X Research source"
+    },
+    {
+      "title": "Select Debian GNU/Linux to boot into Debian.",
+      "content": "Select Debian GNU/Linux to boot into Debian. It should be the first option. The GRUB bootloader was installed with Debian and will come up any time the computer is rebooted. Once you select this option, you'll be brought to the Debian login screen. Congratulations, you've installed Debian! If you have Windows installed and want to boot into it instead, choose Windows Boot Manager . To access your system BIOS from Grub, choose the System setup option."
+    }
+  ]
+}

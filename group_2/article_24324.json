@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Integrate-Large-Data-Sets-in-Excel",
+  "title": "How to Integrate Large Data Sets in Excel",
+  "steps": [
+    {
+      "title": "Understand the basics of the trapezoid rule.",
+      "content": "Understand the basics of the trapezoid rule. This is how the integral will be approximated. Imagine the stress-strain curve above, but separated into hundreds of trapezoidal sections. Each section's area will be added to find the area under the curve."
+    },
+    {
+      "title": "Load the data into Excel.",
+      "content": "Load the data into Excel. You can do this by double-clicking on the .xls or .xlsx file that is exported by the machine."
+    },
+    {
+      "title": "Convert the measurements into a usable form, if needed.",
+      "content": "Convert the measurements into a usable form, if needed. For this particular data set, it means converting the tensile machine measurements from \"Travel\" to \"Strain\", and \"Load\" to \"Stress\", respectively. This step may require different calculations or may not be needed at all, depending on the data from your machine."
+    },
+    {
+      "title": "Determine which columns will represent the width and height of the trapezoid.",
+      "content": "Determine which columns will represent the width and height of the trapezoid. Once again, this will be determined by the nature of your data. For this set, \"Strain\" corresponds to the width and \"Stress\" corresponds to the height."
+    },
+    {
+      "title": "Click on a blank column and label it \"Width\".",
+      "content": "Click on a blank column and label it \"Width\". This new column will be used to store the width of each trapezoid."
+    },
+    {
+      "title": "Select the empty cell below \"Width\" and type \"=ABS(\".",
+      "content": "Select the empty cell below \"Width\" and type \"=ABS(\". Type it exactly as shown, and do not stop typing in the cell yet. Note that the \"typing\" cursor is still flashing."
+    },
+    {
+      "title": "Click on the second measurement corresponding to the width, then press the - key.",
+      "content": "Click on the second measurement corresponding to the width, then press the - key."
+    },
+    {
+      "title": "Click on the first measurement in the same column, and type in the closing parenthesis, and press ↵ Enter.",
+      "content": "Click on the first measurement in the same column, and type in the closing parenthesis, and press ↵ Enter . The cell should now have a number in it."
+    },
+    {
+      "title": "Select the newly created cell and move the mouse cursor to the bottom right corner of the cell directly below, until a cross appears.",
+      "content": "Select the newly created cell and move the mouse cursor to the bottom right corner of the cell directly below, until a cross appears. Once it appears, left click, hold, and drag the cursor down . Stop at the cell directly above the last measurement. Numbers should populate all the selected cells after."
+    },
+    {
+      "title": "Click on a blank column and label it \"Height\" directly next to the \"Width\" column.",
+      "content": "Click on a blank column and label it \"Height\" directly next to the \"Width\" column."
+    },
+    {
+      "title": "Select the column underneath the \"Height\" label, and type \"=0.5*(\".",
+      "content": "Select the column underneath the \"Height\" label, and type \"=0.5*(\". Once again, do not exit the cell just yet."
+    },
+    {
+      "title": "Click the first measurement in the column corresponding to the height, then press the + key.",
+      "content": "Click the first measurement in the column corresponding to the height, then press the + key."
+    },
+    {
+      "title": "Click on the second measurement in the same column, and type the closing parenthesis, and press ↵ Enter.",
+      "content": "Click on the second measurement in the same column, and type the closing parenthesis, and press ↵ Enter . The cell should have a number in it."
+    },
+    {
+      "title": "Click on the newly created cell.",
+      "content": "Click on the newly created cell. Repeat the same procedure you did before to apply the formula to all the cells in the same column. Once again, stop at the cell before the last measurement. Numbers should appear in all the selected cells."
+    },
+    {
+      "title": "Click on a blank column and label it \"Area\" next to the \"Height\" column.",
+      "content": "Click on a blank column and label it \"Area\" next to the \"Height\" column. This will store the area for each trapezoid."
+    },
+    {
+      "title": "Click on the cell directly underneath \"Area\", and type \"=\".",
+      "content": "Click on the cell directly underneath \"Area\", and type \"=\". Once again, do not exit the cell."
+    },
+    {
+      "title": "Click on the first cell in the \"Width\" column, and type an asterisk (*) directly after.",
+      "content": "Click on the first cell in the \"Width\" column, and type an asterisk (*) directly after."
+    },
+    {
+      "title": "Click on the first cell in the \"Height\" column, and press ↵ Enter.",
+      "content": "Click on the first cell in the \"Height\" column, and press ↵ Enter . A number should now appear in the cell."
+    },
+    {
+      "title": "Click on the newly created cell.",
+      "content": "Click on the newly created cell. Repeat the procedure you applied before again to apply the formula to all the cells in the same column. Once again, stop at the cell before the last measurement. Numbers should appear in the selected cells after this step."
+    },
+    {
+      "title": "Click on a blank column and label it \"Integral\" next to the \"Area\" column.",
+      "content": "Click on a blank column and label it \"Integral\" next to the \"Area\" column."
+    },
+    {
+      "title": "Click on the cell below \"Integral\", and type in \"=SUM(\", and do not exit the cell.",
+      "content": "Click on the cell below \"Integral\", and type in \"=SUM(\", and do not exit the cell."
+    },
+    {
+      "title": "Click on the first cell under \"Area\", hold, and drag downwards until all the cells in the \"Area\" column are selected, then press ↵ Enter.",
+      "content": "Click on the first cell under \"Area\", hold, and drag downwards until all the cells in the \"Area\" column are selected, then press ↵ Enter . A number under \"Integral\" should appear, and will be the answer."
+    }
+  ]
+}

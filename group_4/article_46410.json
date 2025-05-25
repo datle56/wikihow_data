@@ -1,0 +1,162 @@
+{
+  "url": "https://www.wikihow.com/Use-VLC-Media-Player-to-Stream-Multimedia-to-Another-Computer",
+  "title": "Use VLC Media Player to Stream Multimedia to Another Computer",
+  "steps": [
+    {
+      "title": "Install VLC Media Player",
+      "content": "Install VLC Media Player on both computers. If you haven't yet done so, you'll need to install VLC Media Player on both the computer that you want to use to stream and the computer on which you want to receive the stream. VLC is available for free on both Windows and Mac computers, as well as on most Linux distributions. Download VLC from the official website: https://www.videolan.org/ ."
+    },
+    {
+      "title": "Find the IP address",
+      "content": "Find the IP address of both computers. In order to stream a video from your computer to another computer on your network, you'll need to know the IP address of both computers. This is your computer’s local IP address rather than your public IP address. Here’s how to find it: On a PC, go to Start > Settings > Network & internet > Wi-Fi . Select the network you’re connected to, then find your IPv4 under the Properties header. On a Mac, go to Apple menu > System Settings > Network > Wi-Fi . Click Details next to the name of your network, then select the TCP/IP tab. Locate the IP address near the top of the menu."
+    },
+    {
+      "title": "Make sure that both computers are on the same network.",
+      "content": "Make sure that both computers are on the same network. Both the computer you’re streaming from and the one you’re streaming to must be connected to the same Internet network (e.g., your home router) for you to be able to stream video to the other computer. If your router has multiple channels (e.g., a 2.4 GHz channel and a 5.0 GHz channel), make sure that both computers are on the same channel as well."
+    },
+    {
+      "title": "Make sure you have a strong internet connection.",
+      "content": "Make sure you have a strong internet connection. If your network has a low upload speed or several items using it at once (e.g., phones, consoles, other computers, etc.), you may be unable to stream across your network. This can be remedied by upgrading your Internet speed through your service provider. If your router and/or modem are more than a few years old, attempting to stream may cause one or both of them to crash."
+    },
+    {
+      "title": "Open VLC Media Player.",
+      "content": "Open VLC Media Player. Its app icon resembles an orange-and-white traffic cone."
+    },
+    {
+      "title": "Click Media.",
+      "content": "Click Media . This tab is in the top-left corner of the VLC Media Player window. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Stream….",
+      "content": "Click Stream… . It's near the bottom of the Media drop-down menu. Doing so opens the Stream window."
+    },
+    {
+      "title": "Click Add….",
+      "content": "Click Add… . You'll see this button on the right side of the window in the \"File selection\" section. This will prompt a File Explorer window to open. Make sure you’re on the File tab in the “Open Media” window."
+    },
+    {
+      "title": "Select a video.",
+      "content": "Select a video. Click a video that you want to stream. You may first have to select a folder in the left-hand sidebar or open a folder in the main File Explorer window to find the file that you want."
+    },
+    {
+      "title": "Click Open.",
+      "content": "Click Open . It's in the bottom-right corner of the window. This will add the video to the stream."
+    },
+    {
+      "title": "Click Stream.",
+      "content": "Click Stream . You'll find it at the bottom of the window."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's in the bottom-right side of the window. Doing so takes you to the Destination Setup window."
+    },
+    {
+      "title": "Click the \"New destination\" drop-down box.",
+      "content": "Click the \"New destination\" drop-down box. This drop-down box usually has the word \"File\" in it. A drop-down menu will appear."
+    },
+    {
+      "title": "Click HTTP.",
+      "content": "Click HTTP . It's in the drop-down box. If you want to see your stream on both computers at once, click the check box next to Display locally before you continue."
+    },
+    {
+      "title": "Click Add.",
+      "content": "Click Add . This is to the right of the HTTP box. Doing so opens the HTTP setup page."
+    },
+    {
+      "title": "Note the port listed here.",
+      "content": "Note the port listed here. You'll need to know through which port the stream is traveling later. By default, this port is usually 8080 ."
+    },
+    {
+      "title": "Leave the “Path” field blank.",
+      "content": "Leave the “Path” field blank. While you can enter the IP address of the computer you’d like to stream to here, it’s not necessary to do so. Entering an IP address may reduce your chances of connecting successfully. If you leave the field blank, you can stream to any other device on the same network. If you’d prefer to enter the other computer’s IP address here, don’t delete the “/” at the beginning of the “Path” field. Type or paste the destination IP directly after it. Click Next to continue."
+    },
+    {
+      "title": "Uncheck the \"Activate Transcoding\" box.",
+      "content": "Uncheck the \"Activate Transcoding\" box. It's near the top of the window. If you can’t get the stream to work properly, experiment with leaving this box checked instead. We were able to get it to work both ways during testing."
+    },
+    {
+      "title": "Leave the default codec selection in the \"Profile\" drop-down box.",
+      "content": "Leave the default codec selection in the \"Profile\" drop-down box. You'll find this on the right side of the window. Clicking it prompts a dropdown menu with different video and audio codecs. Attempt to use the default selection first, but you may need to experiment with different options to find one that works. If you encounter visual or audio glitches while streaming, return here to pick a different codec. Click Next to continue."
+    },
+    {
+      "title": "Check the \"Stream all elementary streams\" box.",
+      "content": "Check the \"Stream all elementary streams\" box. It's near the top of the page."
+    },
+    {
+      "title": "Click Stream.",
+      "content": "Click Stream . It's at the bottom of the window. Doing so will complete the stream setup and begin streaming your video to the network."
+    },
+    {
+      "title": "Open VLC on the other computer.",
+      "content": "Open VLC on the other computer. You need to have VLC installed on the computer you want to stream to."
+    },
+    {
+      "title": "Open the Network Stream window.",
+      "content": "Open the Network Stream window. Click Media , then click Open Network Stream… . You can also press Ctrl + N . If the other computer is a Mac, select File > Open Network ."
+    },
+    {
+      "title": "Enter the stream's address in the URL field.",
+      "content": "Enter the stream's address in the URL field. Type in http://ipaddress:port where \"ipaddress\" is the streaming computer's IP address and \"port\" is the port number that was listed on the \"HTTP\" page. For a stream from a computer with an IP address of 123.456.7.8 and a port of 8080, you would type http://123.456.7.8:8080 here."
+    },
+    {
+      "title": "Click Play.",
+      "content": "Click Play . After a delay of up to 30 seconds, you should see the other computer's video begin playing in your media player. On a Mac, the stream will be added to a playlist window. Double-click it or select it and click the Play icon at the bottom of the window to start the stream. Unfortunately, even when following all the steps described above, streaming from one computer to another is tricky and unreliable. You may need to experiment with different codecs and fiddle with other settings (such as leaving “Activate Transcoding” checked or unchecked) to get it to work."
+    },
+    {
+      "title": "Open VLC Media Player.",
+      "content": "Open VLC Media Player. Its app icon resembles an orange-and-white traffic cone."
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . This menu item is in the upper-left side of the Mac's screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Convert/Stream.",
+      "content": "Click Convert/Stream . It’s near the bottom of the menu."
+    },
+    {
+      "title": "Select a video to stream.",
+      "content": "Select a video to stream. You can either drag and drop your video into the box at the top of the window, or click Open media… to browse for a video in Finder."
+    },
+    {
+      "title": "Leave the default codec in the “Choose Profile” section.",
+      "content": "Leave the default codec in the “Choose Profile” section. If this doesn’t work, you can go back and try selecting a different codec from the dropdown menu. You can also click the Customize… button for more advanced options."
+    },
+    {
+      "title": "Click Stream.",
+      "content": "Click Stream . You’ll find this button at the bottom of the window, under the Choose Destination header."
+    },
+    {
+      "title": "Click Setup Streaming….",
+      "content": "Click Setup Streaming… . This button will appear after you click the Stream button."
+    },
+    {
+      "title": "Enter the IP of the other computer in the “Address” section.",
+      "content": "Enter the IP of the other computer in the “Address” section. Unlike on the Windows version of VLC, where you can leave the destination path blank, you must enter something in this field to stream from a Mac. Type in the private IP address of the computer where you’d like to receive the stream. Make note of the port listed in this menu, to the right of the “Address” field. You’ll need to enter it on the receiving computer. By default, it may be something like “1234.”"
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . This will take you back to the main Convert & Stream window."
+    },
+    {
+      "title": "Click Stream.",
+      "content": "Click Stream . This button is in the bottom right corner of the window. This will add your video to a playlist in the main VLC Media Player window."
+    },
+    {
+      "title": "Open VLC on the other computer.",
+      "content": "Open VLC on the other computer."
+    },
+    {
+      "title": "Open the Network Stream window.",
+      "content": "Open the Network Stream window. Click File , then click Open Network… . If the other computer is a PC, select Media > Open Network Stream… instead."
+    },
+    {
+      "title": "Enter the stream's address.",
+      "content": "Enter the stream's address. Type in http://ipaddress:port where \"ipaddress\" is the streaming computer's IP address and \"port\" is the port number that was listed on the \"HTTP\" page. For a stream from a computer with an IP address of 123.456.7.8 and a port of 8080, you would type http://123.456.7.8:8080 here."
+    },
+    {
+      "title": "Click Play.",
+      "content": "Click Play . After a delay of up to 30 seconds, you should see the other computer's video begin playing in your media player. Unfortunately, this process is tricky and unreliable, and you may need to do some experimenting to get it to work. If you get an error message, try setting up the stream again with a different codec."
+    }
+  ]
+}

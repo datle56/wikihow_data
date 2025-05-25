@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Create-Bold-Text-With-HTML",
+  "title": "How to Create Bold Text With HTML",
+  "steps": [
+    {
+      "title": "<strong>Use the strong tag</strong>.",
+      "content": "<strong>Use the strong tag</strong>. In HTML5, the preferred standard, the strong tag is recommended for important text. This is almost always displayed as bold text in browsers. Place the text you want bolded in between these tags: <strong> bold text here </strong>."
+    },
+    {
+      "title": "Use heading tags instead when appropriate.",
+      "content": "Use heading tags instead when appropriate. \"Headings\" are usually placed at the top of the web page or at the beginning of a new section. Usually, headings are displayed as bold and larger than the regular font, but this can vary. There are six different heading tags, from <h1> to <h6>. Follow these guidelines when using them: The h1 tag, written <h1> Your Heading Here </h1> is the most important heading, typically the largest text at the top of the page. <h2> The h2 tag </h2> is for the second most important heading, and so on down to <h6> h6, the smallest </h6>. Use these sparingly, only to organize your page. Users should be able to skim the headings quickly and find the topic they're looking for. When creating subheadings, move down just one level at a time. In other words, don't skip from <h1> to <h3>. This helps the HTML page preserve its formatting when transferred to another format. [1] X Research source"
+    },
+    {
+      "title": "<b>Use the b tag as a last resort</b>.",
+      "content": "<b>Use the b tag as a last resort</b>. The <b> tag is still supported in HTML5, but <strong> is preferred in most situations. Use the <b> tag only when the text should be bolded for stylistic reasons, not to add emphasis. Examples include key words or vocabulary words in a passage, or product names in a review. [2] X Research source As with most tags, <b>place the affected text between a start tag and an end tag</b>."
+    },
+    {
+      "title": "Understand when to use CSS.",
+      "content": "Understand when to use CSS. CSS is a more powerful and consistent way to style your web page. This makes it the ideal way to determine how your page looks , while HTML is designed to determine what your page means . It's completely fine to use HTML tags when you want to emphasize important text, but CSS will give you more close control over the visual appearance of your bold text. Try opening a basic HTML page with different browsers, and you might notice differences in the display. CSS tells the browser exactly how to display text altered by a given tag, to minimize the amount of variation."
+    },
+    {
+      "title": "Add a <span> tag to your text.",
+      "content": "Add a <span> tag to your text. If you don't know CSS yet, using \"inline CSS\" is a good way to get started. While you can use this to alter tags such as <p> or <h1>, sometimes you'll want to change text that's not already between tags. [3] X Research source In this case, place the text between <span></span> tags. This has no effect on its own, but gives us something to work with. Here's the example we'll be using: <span>I learned how to make this text bold with inline CSS.</span>"
+    },
+    {
+      "title": "Add the style attribute.",
+      "content": "Add the style attribute. HTML attributes are written directly in the tag, inside the < >brackets. The style attribute is necessary to insert CSS into the HTML tag, so we'll insert style= into the span tag: <span style=>I learned how to make this text bold with inline CSS.</span> There's no reason to add the style attribute without specifying any styles. We're just taking this one step at a time to make it easy to follow."
+    },
+    {
+      "title": "Add the font-weight property.",
+      "content": "Add the font-weight property. CSS properties are added as part of the style attribute. In our case, we'll use the font-weight property, which determines how thick to draw the font. This single property can be used to display bold (extra-thick) text, thin text, or even specify that the text should be displayed with normal thickness. Add \"font-weight: \" after the = sign, like this: <span style=\"font-weight: \">I learned how to make this text bold with inline CSS.</span> Again, this is unfinished and won't do anything by itself. Don't forget the quotation marks before and after font-weight: ."
+    },
+    {
+      "title": "Add the bold value.",
+      "content": "Add the bold value. The only thing we need to do now is add a value for font-weight, between the font-weight: and the final quotation mark. There are quite a few options for different amounts of \"boldness,\" but the value bold is the easiest to use : [4] X Research source <span style=\"font-weight:bold\"> I learned how to make this text bold with inline CSS. </span>"
+    },
+    {
+      "title": "Experiment with other values.",
+      "content": "Experiment with other values. CSS gives you many more options than HTML, so you don't need to feel constricted. Here are several alternatives to the \"bold\" value: [5] X Research source <span style=\"font-weight:bolder\"> \"Bolder\" text will always be thicker than the parent element. </span> For example, if you make an entire paragraph \"bold,\" then use \"bolder\" on an individual sentence inside that paragraph, it will be even thicker. <span style=\"font-weight:normal\"> \"Normal\" text will be displayed as normal even if the span is inside a bold tag. </span> <span style=\"font-weight:900\"> You can instead use a number from 100 to 900 to specify thickness. 400 is normal text, while bold text uses a thickness of 700 by default. </span> [6] X Research source"
+    }
+  ]
+}

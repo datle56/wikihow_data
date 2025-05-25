@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Age-on-Excel",
+  "title": "How to Calculate Age on Microsoft Excel Using Functions",
+  "steps": [
+    {
+      "title": "Create a \"Name\" column and a \"Birthday\" column.",
+      "content": "Create a \"Name\" column and a \"Birthday\" column. These columns will allow you to keep track of the age for a list of people. The \"Birthday\" column will contain a birthdate for each individual."
+    },
+    {
+      "title": "Enter the birthdates using a common format.",
+      "content": "Enter the birthdates using a common format. Make sure each birthday is entered using the same format, such as MM/DD/YYYY. Excel should automatically detect that you are entering dates, and will format the data accordingly. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the data is being auto-formatted as something else, highlight the cells and click the drop-down menu in the \"Numbers\" section of the Home tab. Select \"Short Date\" from the list of options. If you need to change the date to a different format (like DD/MM/YYYY): Go to Home and click the Number Format button in the Numbers section. Go to the Date tab and change \"Locale\" to the country with the correct formatting."
+    },
+    {
+      "title": "Create an \"Age\" column.",
+      "content": "Create an \"Age\" column. This column will display the age for each entry after you enter the formula."
+    },
+    {
+      "title": "Select the first empty cell in the \"Age\" column.",
+      "content": "Select the first empty cell in the \"Age\" column. This is where you'll enter the formula to calculate age."
+    },
+    {
+      "title": "Type the YEAR formula to calculate age in years.",
+      "content": "Type the YEAR formula to calculate age in years. The YEAR function returns the year of a given date. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source This formula subtracts the current year from the birth year. Type the following into the cell: [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source =(YEAR(NOW())-YEAR(B2)) Replace B2 with the cell containing the birth date. Press ↵ Enter to confirm the formula and calculate the age. You can click and drag the small square down to copy the formula to the cells below."
+    },
+    {
+      "title": "Create a \"Name\" column and a \"Birthday\" column.",
+      "content": "Create a \"Name\" column and a \"Birthday\" column. These columns will allow you to keep track of the age for a list of people. The \"Birthday\" column will contain a birthdate for each individual."
+    },
+    {
+      "title": "Enter the birthdates using a common format.",
+      "content": "Enter the birthdates using a common format. Make sure each birthday is entered using the same format, such as MM/DD/YYYY. Excel should automatically detect that you are entering dates, and will format the data accordingly. If the data is being auto-formatted as something else, highlight the cells and click the drop-down menu in the \"Numbers\" section of the Home tab. Select \"Short Date\" from the list of options. If you need to change the date to a different format (like DD/MM/YYYY): Go to Home and click the Number Format button in the Numbers section. Go to the Date tab and change \"Locale\" to the country with the correct formatting."
+    },
+    {
+      "title": "Create an \"Age\" column.",
+      "content": "Create an \"Age\" column. This column will display the age for each entry after you enter the formula."
+    },
+    {
+      "title": "Select the first empty cell in the \"Age\" column.",
+      "content": "Select the first empty cell in the \"Age\" column. This is where you'll enter the formula to calculate age."
+    },
+    {
+      "title": "Type the YEARFRAC formula to find the age in years.",
+      "content": "Type the YEARFRAC formula to find the age in years. This function calculates the fraction of the year between the specified dates. For example, the fractional years between 1/1/1990 and 3/25/2023 is 33.23. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source This indicates there are 33 years and 23 percent of a year between the dates. To find an age, use this formula: [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source =YEARFRAC(B2,TODAY(),1) Replace B2 with the cell containing the birth date. The 1 indicates that the function should use the actual day count, instead of a different standard like 30/360. Press ↵ Enter to confirm the formula and calculate the age. You can click and drag the small square down to copy the formula to the cells below."
+    },
+    {
+      "title": "Create a \"Name\" column and a \"Birthday\" column.",
+      "content": "Create a \"Name\" column and a \"Birthday\" column. These columns will allow you to keep track of the age for a list of people. The \"Birthday\" column will contain a birthdate for each individual. This is great for creating a database of ages for a group of people using Excel . You could then use VLOOKUP to quickly find a specific person's age."
+    },
+    {
+      "title": "Enter the birthdates using a common format.",
+      "content": "Enter the birthdates using a common format. Make sure each birthday is entered using the same format, such as MM/DD/YYYY. Excel should automatically detect that you are entering dates, and will format the data accordingly. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the data is being auto-formatted as something else, highlight the cells and click the drop-down menu in the \"Numbers\" section of the Home tab. Select \"Short Date\" from the list of options. If you need to change the date to a different format (like DD/MM/YYYY): Go to Home and click the Number Format button in the Numbers section. Go to the Date tab and change \"Locale\" to the country with the correct formatting."
+    },
+    {
+      "title": "Create an \"Age\" column.",
+      "content": "Create an \"Age\" column. This column will display the age for each entry after you enter the formula."
+    },
+    {
+      "title": "Select the first empty cell in the \"Age\" column.",
+      "content": "Select the first empty cell in the \"Age\" column. This is where you'll enter the formula to calculate age."
+    },
+    {
+      "title": "Enter the formula for calculating the age in years.",
+      "content": "Enter the formula for calculating the age in years. Type the following formula, which assumes that the first birthday is listed in cell B2: [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source =DATEDIF(B2,TODAY(),\"Y\") DATEDIF is a function that calculates the difference between two dates. (B2,TODAY(),\"Y\") tells DATEDIF to calculate the difference between the date in cell B2 (the first birthday listed) and the current date ( TODAY() ). It outputs the calculation in years ( \"Y\" ). If you'd rather see the age in days or months, use \"D\" or \"M\" instead. If you want to calculate someone's age on a specific date, change TODAY() to a cell reference containing that date."
+    },
+    {
+      "title": "Click and drag the square in the bottom-right corner of the cell down.",
+      "content": "Click and drag the square in the bottom-right corner of the cell down. This will copy and apply the same formula to each line, adjusting it accordingly so that the correct birthday is calculated. You're done! Now you can create a graph of ages or perform data analytics on the dataset."
+    },
+    {
+      "title": "Troubleshoot a formula that isn't working.",
+      "content": "Troubleshoot a formula that isn't working. If the formula is displaying something like #VALUE! or #NAME? , then there is likely an error somewhere in the formula. Make sure that the syntax is exactly correct, and that you are pointing to the correct cells in the spreadsheet. Note that the DATEDIF() formula does not work for dates before 01/01/1900."
+    },
+    {
+      "title": "Create a \"Name\" column and a \"Birthday\" column.",
+      "content": "Create a \"Name\" column and a \"Birthday\" column. These columns will allow you to keep track of the age for a list of people. The \"Birthday\" column will contain a birthdate for each individual."
+    },
+    {
+      "title": "Enter the birthdates using a common format.",
+      "content": "Enter the birthdates using a common format. Make sure each birthday is entered using the same format, such as MM/DD/YYYY. Excel should automatically detect that you are entering dates, and will format the data accordingly. If the data is being auto-formatted as something else, highlight the cells and click the drop-down menu in the \"Numbers\" section of the Home tab. Select \"Short Date\" from the list of options. If you need to change the date to a different format (like DD/MM/YYYY): Go to Home and click the Number Format button in the Numbers section. Go to the Date tab and change \"Locale\" to the country with the correct formatting."
+    },
+    {
+      "title": "Create an \"Age\" column.",
+      "content": "Create an \"Age\" column. This column will display the age for each entry after you enter the formula."
+    },
+    {
+      "title": "Select the first empty cell in the \"Age\" column.",
+      "content": "Select the first empty cell in the \"Age\" column. This is where you'll enter the formula to calculate age."
+    },
+    {
+      "title": "Use the DAYS formula to calculate age.",
+      "content": "Use the DAYS formula to calculate age. This function returns the number of days between two dates. To find someone's age today: [11] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source =DAYS(TODAY(),B2) Replace B2 with the cell containing the birth date. Press ↵ Enter to confirm the formula and calculate the age. You can click and drag the small square down to copy the formula to the cells below."
+    },
+    {
+      "title": "Create a \"Name\" column and a \"Birthday\" column.",
+      "content": "Create a \"Name\" column and a \"Birthday\" column. These columns will allow you to keep track of the age for a list of people. The \"Birthday\" column will contain a birthdate for each individual. This method calculates the date someone will turn a certain age."
+    },
+    {
+      "title": "Enter the birthdates using a common format.",
+      "content": "Enter the birthdates using a common format. Make sure each birthday is entered using the same format, such as MM/DD/YYYY. Excel should automatically detect that you are entering dates, and will format the data accordingly. [12] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the data is being auto-formatted as something else, highlight the cells and click the drop-down menu in the \"Numbers\" section of the Home tab. Select \"Short Date\" from the list of options. If you need to change the date to a different format (like DD/MM/YYYY): Go to Home and click the Number Format button in the Numbers section. Go to the Date tab and change \"Locale\" to the country with the correct formatting."
+    },
+    {
+      "title": "Create a \"Future Date\" column.",
+      "content": "Create a \"Future Date\" column. This column will contain the formula for calculating what date it will be when someone turns a specific age."
+    },
+    {
+      "title": "Use the DATE function to calculate the date.",
+      "content": "Use the DATE function to calculate the date. The DATE function uses a year, month, and day to calculate the date at that specified time. You can use the function to find the date someone turns a certain age by adding that many years to their birth year. For example, to calculate when someone will turn 20: [13] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source =DATE(YEAR(B2)+20, MONTH(B2), DAY(B2)) This assumes the birthdays are in column B. Change the \"20\" to another age to calculate a different date."
+    }
+  ]
+}

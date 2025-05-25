@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/What-Software-Opens-DLL-Files-for-Free",
+  "title": "What Software Opens DLL Files for Free? The Top 7 Options",
+  "steps": [
+    {
+      "title": "Resource Hacker lets you browse icons, images, and other media inside a DLL.",
+      "content": "Resource Hacker lets you browse icons, images, and other media inside a DLL. If your goal is to grab certain content from a DLL file, including sounds and videos, Resource Hacker makes it easy. It has a graphical interface that's straightforward, and even lets you edit DLL content with both plain text and binary editors. Download Resource Hacker free from https://angusj.com/resourcehacker/ ."
+    },
+    {
+      "title": "Try Resource Tuner 2 if you want to view, edit, and extract a variety of media files from a DLL.",
+      "content": "Try Resource Tuner 2 if you want to view, edit, and extract a variety of media files from a DLL. This tool is very similar to Resource Hacker, but with some added features—including the ability to extract several additional file types, including PNGs. The drawback is that Resource Tuner 2 is only free for 30 days—after that, you'll need to pay to keep using it. Download the 30-day trial version of Resource Tuner 2 from http://www.restuner.com/download.htm ."
+    },
+    {
+      "title": "If you just want to browse a list of all the DLL's required components, try Dependencies.",
+      "content": "If you just want to browse a list of all the DLL's required components, try Dependencies. Based on the once-popular tool Dependency Walker, which used to be included with Microsoft's Visual Studio, Dependencies scans a DLL file and displays a hierarchical tree of all dependencies and required files. [1] X Research source This program doesn't decompile the DLL file or allow you to make edits, but it's great for troubleshooting DLL errors. Download Dependencies free from https://github.com/lucasg/Dependencies ."
+    },
+    {
+      "title": "If you want to see the code that makes up a DLL, you'll need a decompiler like ILSpy.",
+      "content": "If you want to see the code that makes up a DLL, you'll need a decompiler like ILSpy. This .NET decompiler—which is also available for Linux and macOS in addition to Windows—is open source and actively maintained. [2] X Research source You can use it to browse the contents of a DLL, decompile it to Visual Basic, and save the code as a C# project. Download the standalone ILSpy program from https://github.com/icsharpcode/ILSpy . You can download the Visual Studio plugin from https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.ILSpy ."
+    },
+    {
+      "title": "This free standalone decompiler from JetBrains is another option for viewing a DLL's code.",
+      "content": "This free standalone decompiler from JetBrains is another option for viewing a DLL's code. If your goal is to turn a .NET DLL into equivalent C# or IL code, dotPeek is a full-featured decompiler with a simple interface. This decompiler also allows you to save the code as a .csproj file, which you can then open, modify, and recompile in Visual Studio. [3] X Research source Download dotPeek from https://www.jetbrains.com/decompiler ."
+    },
+    {
+      "title": "This Windows hex editor allows you to edit a DLL's hex code directly.",
+      "content": "This Windows hex editor allows you to edit a DLL's hex code directly. DLLs are compiled code that can't be edited with a traditional text editor. If you don't want to decompile the DLL and edit the linked source code files directly, you can use a hex code editor to edit the contents of the binary. While there are a variety of hex code editors available, HxD also has the ability to compare the hex code of two different files. You can download HxD Hex Editor from https://www.portablefreeware.com/?id=1454 . Keep in mind that hex code is literally just 1s and 0s—you won't be editing any programming code with an editor like HxD."
+    },
+    {
+      "title": "If you have Visual Studio, use the dumpbin command to view information about a DLL.",
+      "content": "If you have Visual Studio, use the dumpbin command to view information about a DLL. Dumpbin is a part of Visual Studio (including the free Community versions) that displays information about DLL files. [4] X Research source You'll need to run dumpbin from the Visual Studio command prompt, not the Windows command prompt. To check a DLL file with dumpbin, use the syntax dumpbin [options] filename.dll . Some helpful options: Use dumpbin /DEPENDENTS filename.dll to view all dependencies. [5] X Research source Use dumpbin /HEADERS filename.dll to view headers for each member object. [6] X Research source Use dumpbin /EXPORTS filename.dll to see all definitions exported from the DLL. [7] X Research source Visit https://learn.microsoft.com/en-us/cpp/build/reference/dumpbin-options?view=msvc-170 for a list of all dumpbin options."
+    }
+  ]
+}

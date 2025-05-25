@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Shop-in-Roblox-Studio",
+  "title": "How to Make a Shop in Roblox Studio",
+  "steps": [
+    {
+      "title": "Pick three weapons from \"Weapons\" in the toolbox.",
+      "content": "Pick three weapons from \"Weapons\" in the toolbox. Your weapons appear in the \"Workspace\" branch in the explorer tree."
+    },
+    {
+      "title": "Drag the weapons into the \"Replicated Storage\" branch.",
+      "content": "Drag the weapons into the \"Replicated Storage\" branch."
+    },
+    {
+      "title": "Rename the three weapons.",
+      "content": "Rename the three weapons. To rename a weapon, right-click its name and type something unique (without spaces). Be descriptive!"
+    },
+    {
+      "title": "Make an NPC.",
+      "content": "Make an NPC. NPCs are commonly made from bricks, countertops, or boxes, although you are free to use whatever you wish. If you decide to use bricks, make sure you've anchored the bricks in place."
+    },
+    {
+      "title": "Select the three pieces of your NPC and rename them \"NPC.\"",
+      "content": "Select the three pieces of your NPC and rename them \"NPC.\" To do this, drag the mouse to select all three pieces, right-click the selected area, and then click Group . Call the group \"NPC.\""
+    },
+    {
+      "title": "Select the NPC's head from the right panel and click Head.",
+      "content": "Select the NPC's head from the right panel and click Head ."
+    },
+    {
+      "title": "Insert a dialog.",
+      "content": "Insert a dialog. To do this, right-click Head and go to Insert > Object > dialog ."
+    },
+    {
+      "title": "Change the \"Purpose\" property to \"Shop.\"",
+      "content": "Change the \"Purpose\" property to \"Shop.\" It's in the Properties section."
+    },
+    {
+      "title": "Type what you want your NPC to say.",
+      "content": "Type what you want your NPC to say. This goes into the initialprompt box."
+    },
+    {
+      "title": "Select the dialog in Explorer and go to Insert > Object.",
+      "content": "Select the dialog in Explorer and go to Insert > Object ."
+    },
+    {
+      "title": "Select DialogChoice and change the UserDialog property value.",
+      "content": "Select DialogChoice and change the UserDialog property value. Change it to something like, \"May I browse your goods?\""
+    },
+    {
+      "title": "Add a response and dialog choices.",
+      "content": "Add a response and dialog choices. Set the ResponseDialog property to \"Sure!\" Then, insert three \"DialogChoices\" into the \"DialogChoice\" we just made. Rename them from their defaults and set their UserDialog properties to the names of the weapons."
+    },
+    {
+      "title": "Add a script into the dialog (not dialog choice).",
+      "content": "Add a script into the dialog (not dialog choice). Now you can add the lua code for your script. [1] X Research source . It should read: local dialog = script . Parent . DialogChoiceSelected : connect ( function ( player , choice ) -- Check the player has a stats object local stats = player : FindFirstChild ( 'leaderstats' ) if not stats then return end -- And that the stats object contains a gold member local gold = stats : FindFirstChild ( 'Gold' ) if not gold then return end if choice == script . Parent . DialogChoice . ChoiceA then if gold . Value >= 5 then -- 5 is the amount of gold you need to purchase this weapon game . ReplicatedStorage . Weapon1 : Clone (). Parent = player . Backpack gold . Value = gold . Value - 5 -- subtract the amount of gold you need to purchase end elseif choice == dialog . DialogChoice . ChoiceB then if gold . Value >= 10 then game . ReplicatedStorage . Weapon2 : Clone (). Parent = player . Backpack gold . Value = gold . Value - 10 end elseif choice == dialog . DialogChoice . ChoiceC then if gold . Value >= 15 then game . ReplicatedStorage . Weapon3 : Clone (). Parent = player . Backpack gold . Value = gold . Value - 15 end end end )"
+    },
+    {
+      "title": "Save your game.",
+      "content": "Save your game. Your store is now ready to use."
+    }
+  ]
+}

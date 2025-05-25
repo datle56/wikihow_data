@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Disable-Ipv6-on-Linux",
+  "title": "How to Disable IPv6 on Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+t on the keyboard.",
+      "content": "Press Ctrl + Alt + t on the keyboard. This opens a terminal window."
+    },
+    {
+      "title": "Type sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 and press ↵ Enter.",
+      "content": "Type sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 and press ↵ Enter ."
+    },
+    {
+      "title": "Type sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1 and press ↵ Enter.",
+      "content": "Type sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1 and press ↵ Enter ."
+    },
+    {
+      "title": "Type sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1 and press ↵ Enter.",
+      "content": "Type sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1 and press ↵ Enter ."
+    },
+    {
+      "title": "Type cat /proc/sys/net/ipv6/conf/all/disable_ipv6 and press ↵ Enter.",
+      "content": "Type cat /proc/sys/net/ipv6/conf/all/disable_ipv6 and press ↵ Enter . As long as you see \"1\" as the result, you can continue to the next step. If you see \"0\" instead, type sudo sysctl -p and press Enter . You will see three entries that all end with \"1,\" which means you can continue. [1] X Research source"
+    },
+    {
+      "title": "Type sudo vi /etc/default/grub and press ↵ Enter.",
+      "content": "Type sudo vi /etc/default/grub and press ↵ Enter . The remaining steps will make it so you IPv6 remains disabled even after you reboot your PC. You'll be prompted to enter your password. If you prefer to use a text editor other than Vi, such as Nano or Pico, feel free to use that instead. Enter your password when prompted to do so."
+    },
+    {
+      "title": "Edit the value of GRUB_CMDLINE_LINUX_DEFAULT.",
+      "content": "Edit the value of GRUB_CMDLINE_LINUX_DEFAULT. The current value is probably blank. Edit it so it looks like this instead: GRUB_CMDLINE_LINUX_DEFAULT=\"ipv6.disable=1\" If there were any other parameters here, such as \"quiet splash,\" simply separate that parameter from the new one with a space (e.g., GRUB_CMDLINE_LINUX_DEFAULT=\"quiet spash ipv6.disable=1\""
+    },
+    {
+      "title": "Edit the value of GRUB_CMDLINE_LINUX.",
+      "content": "Edit the value of GRUB_CMDLINE_LINUX. Change this line so it looks like this: GRUB_CMDLINE_LINUX=\"ipv6.disable=1\""
+    },
+    {
+      "title": "Save and exit the configuration file.",
+      "content": "Save and exit the configuration file. If you're using Vi, press the esc key, type wq! , and then press Enter ."
+    },
+    {
+      "title": "Type sudo update-grub at the prompt and press ↵ Enter.",
+      "content": "Type sudo update-grub at the prompt and press ↵ Enter . This ensures that IPv6 will remain disabled when you reboot your PC. [2] X Research source"
+    }
+  ]
+}

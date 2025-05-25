@@ -1,0 +1,186 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-OpenGL-GLFW-GLEW-GLM-on-a-Project-with-Visual-Studio",
+  "title": "How to Set Up OpenGL GLFW GLEW GLM on a Project with Visual Studio",
+  "steps": [
+    {
+      "title": "Emphasize a step or a substep.",
+      "content": "Emphasize a step or a substep. Point to the step or steps you intend to complete, then carry them out. View the above image as an example."
+    },
+    {
+      "title": "Install Visual Studio 2022.",
+      "content": "Install Visual Studio 2022. You can get it from https://www.visualstudio.com/downloads if you haven't already. While downloading, check the box labeled \"Desktop development with C++ workload.\" Scroll down the page if needed (see the image below). Click \"Language pack\" and check \"English\" box. Click \"General\" in the \"Development settings\" menu of the \"Personalize your Visual Studio experience\" wizard during installation. > click \"Visual C++\" > click Start Visual Studio ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. It's okay if the folders GL and GLP exist. If not, perform a right-click in an empty space. > select New > Folder > type GL > hit ↵ Enter . Create the GLP folder in the same manner."
+    },
+    {
+      "title": "Download GLFW.",
+      "content": "Download GLFW. Open Link in New Window will appear when you right-click on the following address https://www.glfw.org/download.html . It is the URL. Click 32-bit Windows binaries . You will get \"glfw-3.4.bin.WIN32.zip\" or the latest version. Open folder C:\\GL In the new File Explorer click folder \"glfw-3.4.bin.WIN32\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLFWx32 > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLFW window."
+    },
+    {
+      "title": "Download GLEWbin.",
+      "content": "Download GLEWbin. Right click on the following link and select Open Link in New Window http://glew.sourceforge.net/ . Below Downloads , find Binaries and click Windows 32-bit and 64-bit . Open folder C:\\GL In the new File Explorer click folder \"glew-2.1.0\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLEWbin > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLEW window."
+    },
+    {
+      "title": "Download GLM.",
+      "content": "Download GLM. Right click on the following address and select Open Link in New Window https://glm.g-truc.net/0.9.9/index.html . In the upper left corner click Download GLM 0.9.9.7 or latest version (see above picture). Open folder C:\\GL. In the new File Explorer click folder \"glm\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLM > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Now in folder GL you have folders GLFWx32 , GLEWbin , and GLM . Close the new \"File Explorer\" window > close the GLM window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWx32-GLEWx32-GLM-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above.."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In the \"Add New Item\" wizard instead of \"FileName\", type Main > hit ↵ Enter . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project GLFWx32-GLEWx32-GLM-0 > select \"Properties\" (the last one). In \"GLFWx32-GLEWx32-GLM-0 Property Pages\" wizard, 1. Main menu. In Configuration: select Active(Debug) > Platform: Win32 or x86 > click Configuration Manager . \"Configuration Manager\" wizard \"Active solution platform:\" select x86 or Win32 \"Platform\" Win32 or x86 is automatically selected Click Close . 2. Additional Include Directories. In GLFWx32-GLEWx32-GLM-0 Property Pages window double click C/C++ > click General > Additional Include Directories > down arrow at the end of the field > click <Edit...>. 1. Copy C:\\GL\\GLFWx32\\include > in Additional Include Directories wizard click first icon > paste. 2. Copy C:\\GL\\GLEWbin\\include > in Additional Include Directories wizard click first icon > paste. 3. Copy C:\\GL\\GLM > in Additional Include Directories wizard click first icon > paste. In Additional Include Directories wizard click OK . 3. Additional Library Directories. In \"GLFWx32-GLEWx32-GLM-0 Property Pages\" wizard, double click Linker > click General > Additional Library Directories > down arrow at the end of the field > click <Edit... >. 1. Copy C:\\GL\\GLFWx32\\lib-vc2022 > click Additional Library Directories wizard's first icon > Paste. 2. Copy C:\\GL\\GLEWbin\\lib\\Release\\Win32 > click again Additional Library Directories wizard's first icon > Paste. Click OK in Additional Library Directories wizard. 4. Additional Dependencies. In \"Linker\" drop down menu, click Input > Additional Dependencies > down arrow at the end of the field > click <Edit...>. Copy opengl32.lib; glfw3.lib; glfw3dll.lib; glew32.lib and paste on the top-most text box of the Additional Dependencies wizard. In \"Additional Dependencies\" wizard click OK . In \"GLFWx32-GLEWx32-GLM-0 Property Pages\" wizard click Apply and then OK ."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section (the second one) double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\GLEWbin\\bin\\Release\\Win32 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"GLFWx32-GLEWx32-GLM-0.sln\", the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window tutorial01.cpp . Copy the code and paste in Main.cpp code area > in main menu select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear. One black and other blue. If only the black window (the console) appears with message: \"Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorial.\", set up is okay, but function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLFWx32-GLEWx32-GLM-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 3, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWx32, GLEWbin, and GLM exist in C:\\GL. If they exist, go to previous Part, step 1, Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, Additional Library Directories , and follow instructions. Also to Additional Dependencies . Thrown wizard about System or file .dll, go to previous Part step 2 and follow instructions. For other errors, if you can not correct them, close Visual Studio > delete project folder GLFWx32-GLEWx32-GLM-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 3. Good programming."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFWx32-GLEWx32-GLM-0 is open , click Project > Export Template... . On Export template Wizard check Project Template , if it's not checked > click Next > . On \"Export Template Wizard\" ( Select Template Options ), Template name should be GLFWx32-GLEWx32-GLM-0 > click Finish . The Template has been created. Delete thrown window with template's address."
+    },
+    {
+      "title": "Create your project.",
+      "content": "Create your project. In Visual Studio main menu click File > New > Project... . In Create a new project wizard, in the list of templates, select GLFWx32-GLEWx32-GLM-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In the Configure your new project wizard, \"Project name\" should be GLFWx32-GLEWx32-GLM-01 . Location should be C:\\GLP . Be sure Place solution and project in the same directory is checked. Click Create , and wait till project be created. In Visual Studio's GUI main menu, select x86 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". TIP. Remember, when you create project with this template, in Visual Studio GUI main menu select x86 ."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download GLFW 64 bits.",
+      "content": "Download GLFW 64 bits. Right click on following address and select Open Link in New Window https://www.glfw.org/download.html . Click 64-bit Windows binaries . You get \"glfw-3.4.bin.WIN64.zip\" or latest version. Open folder C:\\GL. In the new File Explorer click folder \"glfw-3.4.bin.WIN64\" > click it again and drag into folder C:\\GL. Once the folder has completed unzipping, copying, and pasting, copy GLFWx64 > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLFW window."
+    },
+    {
+      "title": "Download GLEWbin.",
+      "content": "Download GLEWbin. If you don't already have downloaded it, right click on the following link and select Open Link in New Window http://glew.sourceforge.net/ . Below Downloads , find Binaries and click Windows 32-bit and 64-bit . Open folder C:\\GL. In the new File Explorer click folder \"glew-2.1.0\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLEWbin > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLEW window."
+    },
+    {
+      "title": "Download GLM.",
+      "content": "Download GLM. If you already have downloaded it it's okay. If not, right click on the following address and select Open Link in New Window https://glm.g-truc.net/0.9.9/index.html . In the upper left corner click Download GLM 0.9.9.7 or latest version (see picture above). Open folder C:\\GL. In the new File Explorer click folder \"glm\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLM > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Now in folder GL you have folders GLFWx64 GLEWbin GLM Close the new \"File Explorer\" window > close the GLM window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWx64-GLEWx64-GLM-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above.."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In \"Add New Item\" wizard instead of \"FileName\" type Main > hit ↵ Enter . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project GLFWx64-GLEWx64-GLM-0 > select \"Properties\" (the last one). In \"GLFWx64-GLEWx64-GLM-0 Property Pages\" wizard, 1. Main menu. In Configuration entry select Active(Debug) > in Platform: entry, select \"x64\" > Click {{macButton|Configuration manager...}. In Configuration Manager wizard, Active solution platform: select \"x64\" Platform entry, \"x64\" is automatically selected. Click Close 2. Additional Include Directories. In GLFWx64-GLEWx64-GLM-0 Property Pages window double click C/C++ > click General > Additional Include Directories > down arrow at the end of the field > click <Edit...>. 1. Copy C:\\GL\\GLFWx64\\include > in Additional Include Directories wizard click first icon > Paste. 2. Copy C:\\GL\\GLEWbin\\include and paste as before. 3. Copy C:\\GL\\GLM and paste as before. In Additional Include Directories wizard click OK . 3. Additional Library Directories. In \"GLFWx64-GLEWx64-GLM-0 Property Pages\" wizard, double click Linker > click General > Additional Library Directories > down arrow at the end of the field > click <Edit... >. 1. Copy C:\\GL\\GLFWx64\\lib-vc2022 and paste in Additional Library Directories wizard's upper-most text field. 2. Copy C:\\GL\\GLEWbin\\lib\\Release\\x64 and paste in Additional Library Directories wizard's upper-most text field. Click OK in Additional Library Directories wizard. In Additional Library Directories wizard click OK . 4. Additional Dependencies. In \"Linker\" drop down menu, click Input > Additional Dependencies > down arrow at the end of the field > click <Edit...>. Copy opengl32.lib; glfw3.lib; glfw3dll.lib; glew32.lib and paste on the top-most text box of the Additional Dependencies wizard. In \"Additional Dependencies\" wizard click OK . Click Apply and then OK ."
+    },
+    {
+      "title": "Add dll file path (address) to \"System Variables\".",
+      "content": "Add dll file path (address) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. Double click the \"Path\" (or \"PATH\") Variable in the \"System Variables\" section. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\GLEWbin\\bin\\Release\\x64 > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"GLFWx64-GLEWx64-GLM-0.sln\", the first one. Now your project is open ready for test. TIP: Even if in Property Pages main settings it is Platform: x64 , click Configuration manager... , and in Active solution platform: select x64."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window tutorial01.cpp . Copy the code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear. One black and other blue. If only the black window (the console) appears with message: \"Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorial.\", set up is okay, but function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLFWx64-GLEWx64-GLM-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 7, step 5, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWx64, GLEWbin, and GLM exist in C:\\GL. If they exist, go to previous Part, step 1, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. Also to sub step 4. Additional Dependencies . Thrown wizard about System or file .dll, go to previous Part step 2 and follow instructions. For other errors, if you can not correct them, close Visual Studio > delete project folder GLFWx64-GLEWx64-GLM-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 7."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFWx64-GLEWx64-GLM-0 is open , click Project > Export Template... . On Export template Wizard check Project Template , if it's not checked > click Next > . On \"Export Template Wizard\" ( Select Template Options ), Template name should be GLFWx64-GLEWx64-GLM-0 > click Finish . The Template has been created. Delete thrown window with template's address."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. Go to Visual Studio main menu and click File > New > Project... . In Create a new project wizard, in the list of templates, select GLFWx64-GLEWx64-GLM-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In the Configure your new project wizard, \"Project name\" should be GLFWx64-GLEWx64-GLM-01 . Location should be C:\\GLP. Be sure Place solution and project in the same directory is checked. Click Create , and wait till project be created. In Visual Studio's GUI main menu, select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". TIP. When you create project with this template, remember in Visual Studio GUI's main menu select x64 ."
+    },
+    {
+      "title": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide.",
+      "content": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide. It is also important that binaries you get target x64 platform."
+    },
+    {
+      "title": "Create folders GL and GLP.",
+      "content": "Create folders GL and GLP. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download CMake.",
+      "content": "Download CMake. Right-click on following address and select Open Link in New Window https://cmake.org/download/ . Scroll down the page and find \"Latest Release (3.31.6)\", (or latest). In second \"Platform\" list (Binary distributions:), find (see image below) \"Windows x64 ZIP\" and click the beside entry cmake-3.31.6-windows-x86_64.zip (or latest)."
+    },
+    {
+      "title": "Copy and unzip the zip folder.",
+      "content": "Copy and unzip the zip folder. Open folder C:\\GL. In the new File Explorer click folder \"cmake-3.31.6-windows-x86_64\" > click it again and drag into folder C:\\GL. Once the folder has completed unzipping, copying, and pasting, copy CMake > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the \"CMake\" window. Double click folder \"CMake\" > double click folder bin > inside you should see CMake's logo next to file name cmake-gui > double click this file. Now on your screen you have CMake GUI > go back to GL folder. Each time you need CMake, navigate to C:\\ > GL > double click folder CMake > double click \"bin\" > double click file cmake-gui (the one with CMake's logo)."
+    },
+    {
+      "title": "Download GLFW source.",
+      "content": "Download GLFW source. Right-click on following address and select Open Link in New Window https://www.glfw.org/download.html . Select \"Source package\". Open folder C:\\GL In the new File Explorer click folder \"glfw-3.4\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLFWsrc > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLFW window."
+    },
+    {
+      "title": "Download GLEW source.",
+      "content": "Download GLEW source. Right-click on following address and select Open Link in New Window http://glew.sourceforge.net/ . Beside Source click ZIP. Attention avoid the TGZ. Open folder C:\\GL. In the new File Explorer click folder \"glew-2.1.0\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLEWsrc > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLEW window."
+    },
+    {
+      "title": "Download GLM.",
+      "content": "Download GLM. If you already have downloaded it it's okay. If not, right click on the following address and select Open Link in New Window https://glm.g-truc.net/0.9.9/index.html . In the upper left corner click Download GLM 0.9.9.7 or latest version (see above picture). Open folder C:\\GL. In the new File Explorer click folder \"glm\" > click it again and drag into folder C:\\GL. Once the folder has completed copying and pasting, copy GLM > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Now in folder GL you have folders GLFWsrc , GLEWsrc , GLM . Close the new \"File Explorer\" window > close the GLM window."
+    },
+    {
+      "title": "Build GLFW by CMake and Visual Studio.",
+      "content": "Build GLFW by CMake and Visual Studio. Go to CMake GUI. Copy ( Be careful do not copy any blank space ) C:/GL/GLFWsrc and paste in first text field. Copy ( Be careful do not copy any blank space ) C:/GL/GLFWsrc/build and paste in second text field (\"Where to build the binaries:\"). Configure and generate. In CMake GUI, click Configure > in wizard Create Directory click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". If, instead, wizard \"Error\" is thrown, click OK > click \"File\" > click \"Delete Cache\" > in thrown wizard \"Delete Cache\", click Yes . Build your solution. Copy C:\\GL\\GLFWsrc\\build and paste in File Explorer Address Bar > hit ↵ Enter > double click \"GLFW.sln\", or \"GLFW\", or \"ALL_BUILD.vcxproj\". An instance of Visual Studio appears. Wait until in main menu Build entry appears. Click it > \"Build Solution\". Wait till you read the last line in \"Output\" window: ========== Build: 32 succeeded, 0 failed, 0 up-to-date, 2 skipped\" ========== Number of \"succeeded\" and/or skipped\" may changes in glfw versions. Copy C:\\GL\\GLFWsrc\\build\\src\\Debug and paste in File Explorer Address Bar > hit ↵ Enter . Inside you should see file glfw3.lib . Close this instance of Visual Studio."
+    },
+    {
+      "title": "Build GLEW by CMake and Visual Studio.",
+      "content": "Build GLEW by CMake and Visual Studio. Go again to CMake GUI. Copy ( Be careful do not copy any blank space ) C:/GL/GLEWsrc/build/cmake and paste in first text field. Copy ( Be careful do not copy any blank space ) C:/GL/GLEWsrc/build and paste in second text field (\"Where to build the binaries:\"). Configure and generate. In CMake GUI, click Configure > if the Create Directory wizard displays, click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". If, instead, wizard \"Error\" is thrown, click OK > click \"File\" > click \"Delete Cache\" > in thrown wizard \"Delete Cache\", click Yes . Build your solution. Copy C:\\GL\\GLEWsrc\\build and paste in File Explorer Address Bar > hit ↵ Enter > double click \"glew.sln\", or \"glew\", or \"ALL_BUILD.vcxproj\". An instance of Visual Studio appears. Wait until in main menu Build entry appears. Click it > \"Build Solution\". Wait till you read the last line in \"Output\" window: ========== Build: 6 succeeded, 0 failed, 0 up-to-date, 2 skipped\" ========== Number of \"succeeded\" and/or \"skipped\" may changes in glew versions. Copy C:\\GL\\GLEWsrc\\build\\lib\\Debug and paste in File Explorer Address Bar > hit ↵ Enter . Inside you should see file glew32d.lib among other files. Close this instance of Visual Studio."
+    },
+    {
+      "title": "Build GLM by CMake and Visual Studio.",
+      "content": "Build GLM by CMake and Visual Studio. Go once more to CMake GUI. Copy ( Be careful do not copy any blank space ) C:/GL/GLM and paste in first text field. Copy ( Be careful do not copy any blank space ) C:/GL/GLM/build and paste in second text field (\"Where to build the binaries:\"). Configure and generate. In CMake GUI, click Configure > if the Create Directory wizard displays, click Yes > in wizard \"Specify the generator for this project\" click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". If, instead, wizard \"Error\" is thrown, click OK > click \"File\" > click \"Delete Cache\" > in thrown wizard \"Delete Cache\", click Yes . Build your solution. Copy C:\\GL\\GLM\\build and paste in File Explorer Address Bar > hit ↵ Enter > double click the file \"ALL_BUILD.vcxproj\" or the file (not the folder) \"glm\" or \"glm.sln\". An instance of Visual Studio appears. Wait until in main menu Build entry appears. Click it > click \"Build Solution\". Wait till you read the last line in \"Output\" window: ========== Build: 165 succeeded, 0 failed, 0 up-to-date, X skipped\" ========== Number of \"succeeded\" and/or \"skipped\" may changes in GLM versions. If number of succeeded is less than 165, close Visual Studio instance > delete CMake GUI > go to C: > GL > double click \"CMake\" > double click \"bin\" > double click file \"cmake-gui\". New CMake GUI appears. Follow present step. If now you see ========== Build: 0 succeeded, 0 failed, 165 up-to-date, 2 skipped ==========, or, if you see ========== Build: 3 succeeded, 0 failed, 162 up-to-date, 2 skipped ==========, build is done. Copy C:\\GL\\GLM\\build\\glm\\Debug and paste in File Explorer Address Bar > hit ↵ Enter . Inside you should see file glm_static.lib among other files. Close this instance of Visual Studio. Close CMake GUI."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If Visual Studio is not open . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWsrc-GLEWsrc-GLMsrc-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If Visual Studio is open . In main menu click File > New > Project… > the rest as above."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In \"Add New Item\" wizard delete \"FileName\" > type Main > hit ↵ Enter . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Configure project's Properties.",
+      "content": "Configure project's Properties . In Solution Explorer wizard, right click Project's name that is GLFWsrc-GLEWsrc-GLMsrc-0 > select Properties (the last one). In GLFWsrc-GLEWsrc-GLMsrc-0 Property Pages wizard, . 1. Main menu. In \"Configuration:\" select \"Active(Debug)\" > Platform entry select x64 > click Configuration Manager... . In Active solution platform: select x64 . In Platform entry, x64 is automatically selected. Click Close . 2. Additional Include Directories . Click C/C++ > General > In beside menu select the first one, Additional Include Directories > click the down arrow at the end of the field > click Edit... . 1. Copy C:\\GL\\GLFWsrc\\include > in \"Additional Include Directories\" wizard click first icon > paste in the uppermost text field. 2. Copy C:\\GL\\GLEWsrc\\include > click again first icon > paste. 3. Copy C:\\GL\\GLM > click once more first icon > paste. In \"Additional Include Directories\" wizard click OK . 3. Additional Library Directories . Double click Linker > click General > Additional Library Directories > click the down arrow at the end of the field > click Edit... . 1. Copy C:\\GL\\GLFWsrc\\build\\src\\Debug > in Additional Library Directories\" wizard click first icon > paste in upper-most text field. 2. Copy C:\\GL\\GLEWsrc\\build\\lib\\Debug > click again first icon > paste. 3. Copy C:\\GL\\GLM\\build\\glm\\Debug > click once more first icon > paste. In \"Additional Library Directories\" wizard click OK . 4. Additional Dependencies . In Linker drop-down menu select Input > in beside menu select the first one, Additional Dependencies > click the down arrow at the end of the field > Edit... . Copy opengl32.lib; glfw3.lib; glew32d.lib; glm_static.lib > paste in \"Additional Dependencies\" wizard's upper-most text box. In \"Additional Dependencies\" wizard click OK . Click Apply and OK ."
+    },
+    {
+      "title": "Add dll files paths (addresses) to \"System Variables\".",
+      "content": "Add dll files paths (addresses) to \"System Variables\". In Windows search text field (bottom left of the screen) type envir > click \"Edit the System Environment Variables\". \"System Properties\" wizard is thrown. Select the \"Advanced\" tab from the top bar > click Environment Variables... . \"Environment Variables\" wizard is thrown. In the \"System Variables\" section, double click the \"Path\" (or \"PATH\") Variable. \"Edit environment variable\" wizard is thrown. Copy C:\\GL\\GLM\\build\\glm\\Debug > click New > Paste. Copy C:\\GL\\GLEWsrc\\build\\bin\\Debug > click New > Paste. Click OK in all 3 wizards. Close Visual Studio > in thrown wizard asking \"Save changes to the following items?\" click Save . Restart your PC > open Visual Studio. In \"Open recent\" list, click \"C:\\GLP\\GLFWsrc-GLEWsrc-GLMsrc-0\", the first one. Now your project is open ready for test."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window tutorial01.cpp . Copy the code and paste in Main.cpp code area > in main menu select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Two windows should appear. One black and other blue. If only the black window (the console) appears with message: \"Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorial.\", set up is okay, but function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLFWsrc-GLEWsrc-GLMsrc-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 14, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWsrc, GLEWsrc, and GLM exist in C:\\GL. If they exist, go to previous Part, step 1, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. Also to sub step 4. Additional Dependencies . Thrown wizard about System or file .dll, go to previous Part step 2 and follow instructions. For other errors, if you can not correct them, close Visual Studio > delete project folder GLFWsrc-GLEWsrc-GLMsrc-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 14. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFWsrc-GLEWsrc-GLMsrc-0 is open , click Project > Export Template... . On Export template Wizard check Project Template , if it's not checked > click Next > . On \"Export Template Wizard\" ( Select Template Options ), Template name should be GLFWsrc-GLEWsrc-GLMsrc-0 > click Finish . The Template has been created. Delete thrown window with template's address."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. Go to Visual Studio main menu and click File > New > Project... . In Create a new project wizard, in the list of templates, select GLFWsrc-GLEWsrc-GLMsrc-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In the Configure your new project wizard, \"Project name\" should be GLFWsrc-GLEWsrc-GLMsrc-01 . Location should be C:\\GLP. Be sure Place solution and project in the same directory is checked. Click Create , and wait till project be created. In Visual Studio GUI's main menu select x64 (next to Debug) > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job TIP: Remember, in every project you create with this template, select x64 (next to Debug) in Visual Studio's GUI."
+    },
+    {
+      "title": "In this tutorial you learn 3 was to set GLFW, GLEW and GLM in Project with Visual Studio.",
+      "content": "In this tutorial you learn 3 was to set GLFW, GLEW and GLM in Project with Visual Studio. Set up binaries x86 (32 bits). It's the easiest. You should start learning set up from here. Set up binaries x64 (64 bits). It targets x64 platform. Choose it only when you have specific reason for doing so. Compile GLFW source, GLEW source, GLM source, and set up them in project. Targets x64 too.The most difficult. The best though."
+    }
+  ]
+}

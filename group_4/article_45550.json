@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Uninstall-Internet-Explorer-11-for-Windows-7",
+  "title": "How to Uninstall Internet Explorer 11 for Windows 7",
+  "steps": [
+    {
+      "title": "Open the Control Panel.",
+      "content": "Open the Control Panel. You can open the Control Panel from the Start menu."
+    },
+    {
+      "title": "Open the program manager.",
+      "content": "Open the program manager. Click the Uninstall a program link if you are in Category view, or Programs and Features if you are in Icon view. This will open a list of all the programs installed on your computer."
+    },
+    {
+      "title": "Click View installed updates.",
+      "content": "Click View installed updates . This is on the left side of the window and will open the list of installed Windows updates. Since Internet Explorer is a Windows service, any updates will be listed here."
+    },
+    {
+      "title": "Find the Internet Explorer 11 entry.",
+      "content": "Find the Internet Explorer 11 entry. You can either scroll to find it or type \"Internet Explorer\" into the search field at the top of the window."
+    },
+    {
+      "title": "Uninstall Internet Explorer 11.",
+      "content": "Uninstall Internet Explorer 11. Either select the Internet Explorer 11 entry and click the Uninstall button, or right-click on the entry and select Uninstall . Confirm that you want to uninstall the update by clicking Yes . You may be prompted again by User Account Control. Wait for the uninstallation to complete. Uninstalling Internet Explorer 11 may take a few minutes, but once the uninstallation is complete, click Restart Now to reboot your computer and complete the process. Internet Explorer will be reverted to the previously installed version. This could be Internet Explorer 10, 9, or 8."
+    },
+    {
+      "title": "Hide the update.",
+      "content": "Hide the update. If you don't want to be prompted to install Internet Explorer 11 again later, you can hide it from Windows Update so it gets ignored. Open the Control Panel. You can open the Control Panel from the Start Menu. Select \"Windows Update\". If you are in Category view, select \"System and Security\" and then \"Windows Update\". Click the \" # optional update(s) available\" link. Right-click on the Internet Explorer 11 entry. Select \"Hide update\"."
+    },
+    {
+      "title": "Install a different version of Internet Explorer.",
+      "content": "Install a different version of Internet Explorer. If you are downgraded to an older version of Internet Explorer, you can upgrade to any later edition if you want. For example, if uninstalling Internet Explorer 11 leaves you with Internet Explorer 8, you can install Internet Explorer 9 or 10 manually. [2] X Research source"
+    },
+    {
+      "title": "Open an elevated Command Prompt.",
+      "content": "Open an elevated Command Prompt. You can do this by clicking the Start Menu, clicking Accessories, right-clicking on Command Prompt, and then selecting \"Run as administrator\"."
+    },
+    {
+      "title": "Copy and paste the following command.",
+      "content": "Copy and paste the following command. This command will uninstall the Windows Explorer updates: [3] X Research source FORFILES /P %WINDIR%\\servicing\\Packages /M Microsoft-Windows-InternetExplorer-*11.*.mum /c \"cmd /c echo Uninstalling package @fname && start /w pkgmgr /up:@fname /norestart\" Paste the above command and press ↵ Enter"
+    },
+    {
+      "title": "Accept the errors.",
+      "content": "Accept the errors. You will likely receive several errors messages upon running the command. You will need to click OK in each of the error windows that appears."
+    },
+    {
+      "title": "Restart the computer.",
+      "content": "Restart the computer. Once you are returned to the Command Prompt, the uninstallation process is almost complete. You will need to reboot your computer to finish the process."
+    },
+    {
+      "title": "Hide the update.",
+      "content": "Hide the update. If you don't want to be prompted to install Internet Explorer 11 again later, you can hide it from Windows Update so it gets ignored. Open the Control Panel. You can open the Control Panel from the Start Menu. Select \"Windows Update\". If you are in Category view, select \"System and Security\" and then \"Windows Update\". Click the \" # optional update(s) available\" link. Right-click on the Internet Explorer 11 entry. Select \"Hide update\"."
+    },
+    {
+      "title": "Install a different version of Internet Explorer.",
+      "content": "Install a different version of Internet Explorer. If you are downgraded to an older version of Internet Explorer, you can upgrade to any later edition if you want. For example, if uninstalling Internet Explorer 11 leaves you with Internet Explorer 8, you can install Internet Explorer 9 or 10 manually."
+    }
+  ]
+}

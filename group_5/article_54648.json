@@ -1,0 +1,178 @@
+{
+  "url": "https://www.wikihow.com/Format-a-Hard-Drive",
+  "title": "How to Format a Hard Drive",
+  "steps": [
+    {
+      "title": "Create a recovery drive.",
+      "content": "Create a recovery drive. If you want to reformat the hard drive on which Windows is installed, you'll need to do so from outside of the operating system. To do this, you'll need to boot from a recovery disk. The easiest way to make a recovery disk is to use a USB flash drive, but you can burn a recovery DVD if you prefer that method. Insert a blank USB flash drive that's 16 GB or larger. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If there's any data on the drive already, you'll want to back it up—it will be deleted during the creation process. In the Windows search bar, type recovery , and click Create a recovery drive in the search results. Check the box next to \"Back up system files to the recovery drive\" and click Next . Select your USB flash drive and click Next . Click Create . Leave the USB drive in the port, as you'll need to boot from it in a few minutes."
+    },
+    {
+      "title": "Back up any files you want to keep.",
+      "content": "Back up any files you want to keep. Since formatting your hard drive will erase all of the data that's on it, you'll want to make a backup of your important data before you continue."
+    },
+    {
+      "title": "Set your PC to boot from the USB drive.",
+      "content": "Set your PC to boot from the USB drive. If you already know that your PC can boot from a USB drive, you can skip this step. Otherwise, follow these steps to ensure that your computer can boot from USB: Open the Windows Start menu and click Settings (the gear). Click Update & Security . Click the Recovery tab on the left. Click Restart now under \"Advanced\" in the right tab. Go to Troubleshoot > Advanced options > UEFI Firmware Settings > Restart . [2] X Research source When the PC reboots, you'll be in the BIOS/UEFI. Now you'll need to go to the section called Boot , Boot Order , or Startup . This area looks different depending on your model of PC, so you may have to do some poking around to find it. When you find the right section, you should see a list of devices your PC can boot from—optical drive, USB drive, hard drive, etc. [3] X Research source Make the USB drive the first option in the boot order. If you don't see \"USB drive,\" the option may be called \"Removable Media.\" The steps to make it first in the boot order also vary by model, but the instructions should appear at the bottom of the screen. Save an exit to reboot. The key to do this is usually F10 , but you may have a different key option."
+    },
+    {
+      "title": "Boot from the USB drive.",
+      "content": "Boot from the USB drive. If you just made changes in the BIOS/UEFI, your computer should automatically reboot from the drive. Select Boot from disk when prompted to continue. If you didn't make changes in the BIOS/UEFI, restart your PC now (click the Start menu, click the Power option, and select Restart ) and select Boot from disk when prompted."
+    },
+    {
+      "title": "Select your location preferences and click Next.",
+      "content": "Select your location preferences and click Next . After choosing your language and regional settings, selecting Next will prompt you to install Windows."
+    },
+    {
+      "title": "Click Install now.",
+      "content": "Click Install now . Now you'll be taken through some welcome screens."
+    },
+    {
+      "title": "Select Custom on the \"Which type of installation do you want?\"",
+      "content": "Select Custom on the \"Which type of installation do you want?\" window. Move through the welcome screen and accept any terms and policies displayed during the process. When you arrive to \"What type of installation do you want,\" click Custom: Install Windows only (advanced) . This is the option you'll need if you want to actually reformat the drive. Don't worry—if you made a backup of your data, you'll be able to recover it after formatting and reinstalling Windows."
+    },
+    {
+      "title": "Select the primary partition and click Format.",
+      "content": "Select the primary partition and click Format . This is the partition on which Windows was previously installed. [4] X Research source It's the one that's labeled \"Primary.\""
+    },
+    {
+      "title": "Click OK on the warning message.",
+      "content": "Click OK on the warning message. This message just warns you that any data on the drive or partition will be lost if you continue. Once selected, the selected drive or partition will be formatted."
+    },
+    {
+      "title": "Delete other partitions (optional).",
+      "content": "Delete other partitions (optional). You'll usually notice some other partitions on the drive. You should leave the system partition intact instead of deleting it, as it contains boot information you may need for your hardware, especially if you plan to use BitLocker. [5] X Research source But if there are other partitions you don't want, you can delete them to turn that area into unallocated space, or simply format those separately to keep them as-is. To delete a partition, select it and click Delete . To combine your unallocated space with your newly formatted partition, select the formatted partition and click Delete . Now you can create new partitions as needed by selecting the unallocated space, clicking New , and sizing them how you wish. If you don’t want to install Windows, you're done!"
+    },
+    {
+      "title": "Select your formatted partition and click Next to install Windows.",
+      "content": "Select your formatted partition and click Next to install Windows. Now that you've formatted the drive, you can follow the on-screen instructions to perform a clean Windows installation. After Windows is installed, you'll be able to sign in with your Microsoft account (or create a new local account) and set up your computer like new. You can now restore your backed up files."
+    },
+    {
+      "title": "Open the Windows Disk Management tool.",
+      "content": "Open the Windows Disk Management tool. To do so, press Windows key + S to activate the Windows search bar, type partitions into the search field, and then click Create and format hard disk partitions . This method will not erase and reinstall Windows. Instead, you can use this to create and format a new partition on your internal drive."
+    },
+    {
+      "title": "Select your hard drive.",
+      "content": "Select your hard drive. Click your hard drive's name in the window near the bottom of the screen."
+    },
+    {
+      "title": "Click Action.",
+      "content": "Click Action . This tab is in the upper-left side of the window. A drop-down menu will appear."
+    },
+    {
+      "title": "Select All Tasks.",
+      "content": "Select All Tasks . It's near the bottom of the drop-down menu. You'll see a pop-out menu display to the right of the drop-down menu."
+    },
+    {
+      "title": "Click Shrink Volume….",
+      "content": "Click Shrink Volume… . This option is in the middle of the pop-out menu. A new window will open after Windows figures out how much space you have available. [6] X Research source It may take Windows several minutes to determine your available space."
+    },
+    {
+      "title": "Enter a size for your new partition.",
+      "content": "Enter a size for your new partition. Type the number of megabytes that you would like your partition to be into the \"Enter the amount of space to shrink in MB\" text field on the right side of the page. This will indicate how big the drive you want to format will be. The maximum number of megabytes that you can allocate is listed directly above the field that you type in. There are 1000 megabytes (MB) in one gigabyte (GB). To create a 5 GB partition, you would type 5000 into the text field."
+    },
+    {
+      "title": "Click Shrink.",
+      "content": "Click Shrink . It's at the bottom of the page. Doing so will remove a section of space from your computer's hard drive and create a new \"hard drive\" with it. This will likely take a few minutes to complete."
+    },
+    {
+      "title": "Select the new partition.",
+      "content": "Select the new partition. Click the \"Unallocated\" box to the right of the hard drive's box."
+    },
+    {
+      "title": "Click the Action menu and select All Tasks.",
+      "content": "Click the Action menu and select All Tasks . The pop-out menu will reappear."
+    },
+    {
+      "title": "Click New Simple Volume….",
+      "content": "Click New Simple Volume… . It's near the top of the pop-out menu. A new window will open."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . It's in the bottom-right side of the window."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . Doing so will accept your partition's size and take you to the next page."
+    },
+    {
+      "title": "Select a drive letter and click Next.",
+      "content": "Select a drive letter and click Next . You can change the partition's drive letter (e.g., \"E\") by clicking the drop-down box and then clicking a new letter. If you don't care about your drive's letter, click Next to skip this step."
+    },
+    {
+      "title": "Select your formatting options.",
+      "content": "Select your formatting options. Check the \"Format this volume with the following settings\" box, then click the \"File system\" box and select one of the following: NTFS - Used for Windows-only drives. FAT32 - Used for Windows and Mac. Has a storage limit of 32 gigabytes with an individual file size of 4 gigabytes. exFAT - Used this for multiple devices (Mac, Windows, consoles, and so on). No storage limit."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . This will take you to the confirmation page."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . It's at the bottom of the page. Doing so will begin partitioning your drive. Once partition is created, you can open it like any other hard drive from within the This PC program. If you ever want to change the partition's format, you can format it like a flash drive from within the File Explorer (Windows) or the Disk Utility (Mac)."
+    },
+    {
+      "title": "Back up your important data.",
+      "content": "Back up your important data. Since formatting your Mac's primary hard drive will erase all of the data on it, you'll need to make sure you have a backup of anything important before you continue. Use this method if you want to completely erase and reformat your Mac's internal boot drive."
+    },
+    {
+      "title": "Find out whether your processor is Intel or Apple silicon.",
+      "content": "Find out whether your processor is Intel or Apple silicon. This is important for knowing which steps to use to format your primary hard drive. To find out, click the Apple menu and select About this Mac . If you see \"Processor\" followed by a processor name that includes the word \"Intel,\" you'll use the Intel instructions. If you see \"Chip\" followed by a name like \"Apple M1,\" you'll use the Apple silicon instructions."
+    },
+    {
+      "title": "Shut down your Mac.",
+      "content": "Shut down your Mac. To do so, click the Apple menu and select Shut down ."
+    },
+    {
+      "title": "Restart your Mac into Disk Utility.",
+      "content": "Restart your Mac into Disk Utility. The steps are different depending on your processor type: Intel: Press the power button to turn on your Mac, and then immediately press and hold Command + R until the Apple logo appears. [7] X Research source If you are prompted to sign in, log in with an administrator account. Then, select Disk Utility and click Continue . Apple silicon: Press and hold the power button, continuing to hold the button down until you see a hard drive and a gear on the screen. Lift your finger from the button, click Options and then Continue . Log in using your administrator account, select Disk Utility , and then click Continue . [8] X Research source"
+    },
+    {
+      "title": "Select your hard drive.",
+      "content": "Select your hard drive. It'll be in the left sidebar, and is usually called \"Macintosh HD.\" If you have an Apple silicon processor and used Disk Utility to add internal volumes to the drive, delete all of those volumes before you continue. To do so, just select each volume you want to remove under \"Internal volumes\" and click the minus (-) button. Don't delete the internal volumes called Macintosh HD, Macintosh HD - Data, or any volumes under the \"External\" or \"Disk Images\" headers."
+    },
+    {
+      "title": "Click the Erase button.",
+      "content": "Click the Erase button. It's at the top of the window."
+    },
+    {
+      "title": "Enter a name and format for the drive.",
+      "content": "Enter a name and format for the drive. You'll want to name the newly formatted drive Macintosh HD . For the format, choose the recommended option, which will usually be APFS or Mac OS Extended (journaled)."
+    },
+    {
+      "title": "Click Erase Volume Group.",
+      "content": "Click Erase Volume Group . If you don’t see this button, click Erase instead. You may be asked to confirm your password to continue. Intel: Once the content is erased and formatted, you can delete any internal volumes you've created by selecting them under \"Internal volumes\" and clicking the minus sign. Just don't delete the internal volumes called Macintosh HD, Macintosh HD - Data, or any volumes under the \"External\" or \"Disk Images\" headers. Apple silicon: When prompted, click Erase this Mac and Restart to format and restart."
+    },
+    {
+      "title": "Install macOS on the formatted drive.",
+      "content": "Install macOS on the formatted drive. Here's how: Intel: Click the red circle to close Disk Utility, select Reinstall macOS , and click Continue . Follow the on-screen instructions to set up your Mac. Apple silicon: After your Mac restarts, follow the on-screen instructions to select your preferences, connect to Wi-Fi, and activate. Next, click Exit to Recovery Utilities , click Reinstall macOS , and click Continue . Now you can follow the on-screen instructions to set up your Mac."
+    },
+    {
+      "title": "Open Disk Utility on your Mac.",
+      "content": "Open Disk Utility on your Mac. To do so, press Command + Spacebar , type disk utility , and then click Disk Utility in the search results."
+    },
+    {
+      "title": "Select your hard drive and click Partition.",
+      "content": "Select your hard drive and click Partition . Your hard drive is typically called Macintosh HD, and you'll see it in the left sidebar. The Partition button is at the top of the window."
+    },
+    {
+      "title": "Click +.",
+      "content": "Click + . It's below the hard drive circle. Doing so will open a set of options for your partition."
+    },
+    {
+      "title": "Enter a name and size for your new partition.",
+      "content": "Enter a name and size for your new partition. The name defines how your partition will appear in Finder. To enter a size, click and drag the knob at the bottom of the hard drive circle counterclockwise to increase the partition's size, or clockwise to reduce it. You can also type a number in gigabytes (GB) into the \"Size:\" field to set your partition's size."
+    },
+    {
+      "title": "Select a format for the partition:",
+      "content": "Select a format for the partition: Click the Format drop-down menu and select one of the following formats: APFS: This is the most common macOS format and will usually be preselected by default. It works with all versions of macOS beginning with 10.13. [9] X Research source If you want to encrypt the partition, choose the APFS (Encrypted) option instead. Mac OS Extended (Journaled): This format was the main format type up through macOS 10.12. You can use this format if you plan to use this disk on Macs running earlier operating systems. You can also choose the Encrypted option if you want to encrypt the partition. MS-DOS (FAT) or ExFAT: Both of these options are cross-compatible with Windows PCs. ExFAT is more modern and supports files that are 4GB and larger."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . It's in the bottom-right corner of the window. Your Mac will begin creating the partition. This process can take some time, so be patient."
+    },
+    {
+      "title": "Click Done when the format is complete.",
+      "content": "Click Done when the format is complete. Your Mac's partition has successfully been created and formatted. You'll see this partition listed as a hard drive in the Finder. If you ever need to reformat the drive, you can change the partition's format the same way in which you would change a flash drive's format ."
+    }
+  ]
+}

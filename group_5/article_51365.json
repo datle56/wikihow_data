@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Daily-Interest",
+  "title": "Calculate the Daily Interest on a Loan, Account, or Credit Balance",
+  "steps": [
+    {
+      "title": "Divide your percent interest rate by 365.",
+      "content": "Divide your percent interest rate by 365. Loans, savings accounts, and credit cards often have annual interest rates. If you have a credit card, you may want to divide by your APR (Annual Percentage Rate), instead. [1] X Research source APR takes fees into account, as well as interest, and is often 0.1 - 0.5% higher than your interest rate. [2] X Research source An annual interest rate of 0.5% is 0.00137% daily."
+    },
+    {
+      "title": "Multiply the principal by the decimal form of the daily interest rate.",
+      "content": "Multiply the principal by the decimal form of the daily interest rate. Divide your interest rate by 100 to convert it into a decimal. [3] X Research source For example, 0.00137% becomes 0.0000137. If the principle is $10,000, the daily interest is 10,000 * 0.0000137 = $.1370. Rounded up, this account will earn approximately $.14 per day. [4] X Research source"
+    },
+    {
+      "title": "Check your math.",
+      "content": "Check your math. Multiply the principal, $10,000, by the annual percentage rate of .5 percent or .005 to calculate interest manually. The answer is $50.00. Multiply the daily interest amount of $.1370 by 365 days; the answer is also $50.00."
+    },
+    {
+      "title": "Gather the information needed to calculate interest.",
+      "content": "Gather the information needed to calculate interest. This includes the amount of money you will be investing or saving, the length of the term, and the proposed interest rates. You may have several sets of variables if your intention is to compare alternatives. [5] X Research source You will need to prepare a calculation for each alternative to complete your comparison."
+    },
+    {
+      "title": "Label your data in the first column of a spreadsheet.",
+      "content": "Label your data in the first column of a spreadsheet. Assign labels in column A, rows 1-4, for the Principal, Interest Rate, Periods, and Daily Interest. These labels are for your reference only. [6] X Research source You can expand the cell by clicking on the right line of the column number, A, B, or C, etc., then using the arrows to drag the edges of the cell."
+    },
+    {
+      "title": "Enter your data in column B, rows 1-3, to coincide with the labels.",
+      "content": "Enter your data in column B, rows 1-3, to coincide with the labels. Convert the percent interest to a decimal by dividing it by 100, then divide it by 365 to get the daily rate. Use the number of days of your investment or loan as your period. Leave cell B4 (Daily Interest) blank for now. [7] X Research source The interest rate is usually shown as an annual figure; which is why it needs to be divided by 365 to reach the daily interest rate. For example, if your principal to invest is $10,000, and your savings account offers .5 percent annual interest, enter \"10000\" in cell B1 and \"=.005/365\" in cell B2. The number of periods determines how long your investment will remain in the account untouched, except for the added compounding interest."
+    },
+    {
+      "title": "Create a function in cell B4 to calculate the annual interest as a daily amount.",
+      "content": "Create a function in cell B4 to calculate the annual interest as a daily amount. Click on cell B4 to select it, then click inside the formula bar. Type =IPMT(B2,1,1,-B1)\" in the formula bar. Press the Enter key. [8] X Research source The daily interest earned on this account, for the first month, is $.1370 per day."
+    },
+    {
+      "title": "Enter your principal, interest rate, and number of years on a spreadsheet.",
+      "content": "Enter your principal, interest rate, and number of years on a spreadsheet. Assign labels in column A, rows 1-5, for the Principal, Interest Rate, Period (days in a year), Number of Years and Compound Interest Balance. Enter the data for each in cells B1-B4. The period is 365, and the number of years is how long you plan to keep money in the account. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, principal = $2,000, interest rate = 8% or .08 (divide percentages by 100 to get their decimal value), compounding periods = 365 and the number of years is 5."
+    },
+    {
+      "title": "Write =B1*(1+B2/B3)^(B4*B3) in cell B5 and click enter.",
+      "content": "Write =B1*(1+B2/B3)^(B4*B3) in cell B5 and click enter. This is the daily compound interest formula. [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Compounded daily, the total principal and interest earned balance is $2983.52 after 5 years. This shows how beneficial it can be to reinvest your interest. The formula breakdown is: Initial investment * (1 + Annual interest rate / Compounding periods per year) ^ (Years * Compounding periods per year). The ^ indicates an exponent. [11] X Research source For example, using the same information from Step 3, principal = $2,000, interest rate = 8% or .08, compounding periods = 365 and the number of years is 5. Compound interest =2,000 * (1 + .08/365) ^ (5 * 365) = $2983.52."
+    }
+  ]
+}

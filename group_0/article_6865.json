@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Change-the-Default-Numlock-State",
+  "title": "How to Change the Default Numlock State to On or Off",
+  "steps": [
+    {
+      "title": "Press Win + R and type in regedit.",
+      "content": "Press Win + R and type in regedit . You can also search for \"Run\" in the search bar of the Start menu to open the Run program. Press Enter or click OK to run the Registry Editor. Be very careful when editing the registry , as editing the wrong key or typing the wrong number could damage Windows."
+    },
+    {
+      "title": "Navigate to HKEY_USERS\\.Default\\Control Panel\\Keyboard.",
+      "content": "Navigate to HKEY_USERS\\.Default\\Control Panel\\Keyboard . When Registry Editor opens, there's an address bar at the top where you can enter the path to navigate to it quickly. Alternatively, you can click through each directory in the path to find the same \"Keyboard\" entry."
+    },
+    {
+      "title": "Right-click InitialKeyboardIndicators and click Modify.",
+      "content": "Right-click InitialKeyboardIndicators and click Modify . A menu appears with more options. You can also double-click the entry to modify it."
+    },
+    {
+      "title": "Change the value.",
+      "content": "Change the value. To turn on NumLock permanently, type 2 or 2147483648 . To turn number lock off, type 0 ."
+    },
+    {
+      "title": "Restart the computer.",
+      "content": "Restart the computer. When your PC comes back up, your change to NumLock should be complete. On some computers, changes you make to the registry may be overridden by the BIOS. If changing NumLock in the registry didn't work for you, see Changing the Setting in BIOS ."
+    },
+    {
+      "title": "Enter the BIOS/UEFI.",
+      "content": "Enter the BIOS/UEFI. Press the setup key on your keyboard as your computer starts up to launch BIOS. This key is sometimes F2 , Del , or F9 . You can also enter the BIOS/UEFI from Windows on compatible PCs."
+    },
+    {
+      "title": "Find and change the 'Keyboard NumLock' (or similar) setting.",
+      "content": "Find and change the 'Keyboard NumLock' (or similar) setting. The name of this value may vary, but you're looking for a setting that allows you to turn number lock on or off automatically. Highlight this item and change the NumLock setting to what you want (usually by pressing the spacebar). Unless your computer has a modern UEFI , you usually won't be able to use your mouse in the BIOS. Instead, use the arrow and tab keys to navigate. Press Enter to make a selection and press Spacebar to toggle settings. Not all BIOS/UEFI versions have this option."
+    },
+    {
+      "title": "Save and exit.",
+      "content": "Save and exit. When you are finished adjusting your settings, you will need to save and exit by using your BIOS' \"Save and Exit\" key (usually F10) for your changes to take effect. When you save and restart, your NumLock setting will be changed. Check the BIOS key legend to see which key is the \"Save and Exit\" key. [1] X Research source . Some computers save and exit if you just press ESC instead."
+    }
+  ]
+}

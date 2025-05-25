@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Pip-Uninstall-Package",
+  "title": "How to Uninstall a Python Package With Pip: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Determine which pip command to use.",
+      "content": "Determine which pip command to use. While you most commonly may use pip , there are different pip commands you can use depending on your circumstances: pip : Python 2.7 pip3.4 : Python 3.4 pip3.6 : Python 3.6"
+    },
+    {
+      "title": "Open a terminal or command window.",
+      "content": "Open a terminal or command window. The program you open to use Pip depends on your operating system."
+    },
+    {
+      "title": "Enter the pip uninstall command.",
+      "content": "Enter the pip uninstall command. If you're on Unix or macOS , start your command with python . If you're on Windows, start it with py . Then, write the following command: -m pip uninstall [packagename] [1] X Research source Replace pip with one of the alternatives in step 1, if necessary. Replace [packagename] with the name of the package you want to uninstall."
+    },
+    {
+      "title": "Execute the command, then type y to continue.",
+      "content": "Execute the command, then type y to continue. The terminal will ask if you want to proceed when you attempt to uninstall a file. Type y to proceed (or no to cancel the uninstall)."
+    },
+    {
+      "title": "Uninstall the package globally, if necessary.",
+      "content": "Uninstall the package globally, if necessary. If you installed a package globally as well as locally, uninstalling it globally is necessary to cleanly remove the package from your computer. Windows: After entering the command window, press Ctrl + ⇧ Shift + ↵ Enter to get admin privileges, then execute the pip uninstall [packagename] command again. Unix/macOS: After opening a terminal window, execute the command sudo su pip uninstall [packagename] ."
+    },
+    {
+      "title": "Uninstall package dependencies, if necessary.",
+      "content": "Uninstall package dependencies, if necessary. Some packages also install dependencies, and these are not removed when you uninstall a package. There are two ways you can remove dependent packages: Run a pip uninstall requirements.txt command. If the requirements file is not named requirements.txt , change the command to the proper requirements file name. Run pip show [packagename] to see the dependencies for the given package. You can then use pip uninstall to uninstall these packages. Always make sure the dependent packages are not dependencies for other packages you still have installed."
+    }
+  ]
+}

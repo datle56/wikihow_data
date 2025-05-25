@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Restart-IIS-in-Windows-Server-2016",
+  "title": "4 Ways to Restart Your IIS Server in Windows 2016",
+  "steps": [
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . By default, it is the icon that has the Windows logo in the lower-left corner. [1] X Research source If you make major changes to your server, or your server has been running for a long time, you may need to restart it to allow the changes to take effect, or to keep your server running smoothly. You can restart IIS using the Command Prompt or Powershell."
+    },
+    {
+      "title": "Type CMD.",
+      "content": "Type CMD . This displays the Command Prompt icon in the Windows Start menu."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt . The Command Prompt has an icon that resembles a black screen with a white cursor. Right-click the Command Prompt icon to display a context menu next to it. Alternatively, if you would rather use PowerShell instead of Command Prompt, right-click the Windows Start menu, and click Windows PowerShell (admin) ."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . This launches the Command Prompt as an Administrator. [2] X Research source In order to open the Command Prompt as an administrator, your Windows user account must have administrative privileges."
+    },
+    {
+      "title": "Type iisreset and press ↵ Enter.",
+      "content": "Type iisreset and press ↵ Enter . This resets all the websites and services on your server. It should only take a few minutes, but nobody will be able to access your server while it is restarting."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . By default, it is the icon that has the Windows logo in the lower-left corner. If you make a small change to one of your websites hosted on Windows Server, you can restart the website quickly using IIS Manager. [3] X Research source"
+    },
+    {
+      "title": "Type IIS.",
+      "content": "Type IIS . If IIS has been installed on your computer, you can launch IIS from within the Windows Start menu. Type IIS to display the IIS manager in the Windows Start menu."
+    },
+    {
+      "title": "Click the Internet Information Services (IIS) Manager icon.",
+      "content": "Click the Internet Information Services (IIS) Manager icon. It has an icon that resembles a computer tower next to a globe. Click the IIS Manager icon to launch IIS Manager."
+    },
+    {
+      "title": "Click Sites to expand the list of sites.",
+      "content": "Click Sites to expand the list of sites. It's in the menu to the left in IIS Manager. Click \"Sites\" to expand and show a list of all websites on your server."
+    },
+    {
+      "title": "Right-click Default web site or the site you want to restart.",
+      "content": "Right-click Default web site or the site you want to restart. This displays a context menu to the right of the website."
+    },
+    {
+      "title": "Hover over Manage Website.",
+      "content": "Hover over Manage Website . It's in the context menu that appears when you click on a website below the list of sites."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . It's the first option in the \"Manage Websites\" menu. This restarts your website. It will happen so fast that you will not see any indication that the website was restarted. [4] X Research source Alternatively, you can click Stop and then Start in the \"Manage Website\" menu to restart a website. [5] X Research source"
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . By default, it is the icon that has the Windows logo in the lower-left corner. Sometimes restarting the web servers isn't enough. Sometimes you need to restart the individual application pools. You can do so using IIS Manager."
+    },
+    {
+      "title": "Type IIS.",
+      "content": "Type IIS . If IIS has been installed on your computer, you can launch IIS from within the Windows Start menu. Type IIS to display the IIS manager in the Windows Start menu."
+    },
+    {
+      "title": "Click the IIS Manager icon.",
+      "content": "Click the IIS Manager icon. It has an icon that resembles a computer tower next to a globe. Click the IIS Manager icon to launch IIS Manager. [6] X Research source"
+    },
+    {
+      "title": "Click Application Pools.",
+      "content": "Click Application Pools . Doing so displays a list of all the application pools on your server. [7] X Research source"
+    },
+    {
+      "title": "Right-click one of the application pools.",
+      "content": "Right-click one of the application pools. There are multiple application pools related to the different services and websites on your server. Right-click one of the application pools to display a context menu next to it."
+    },
+    {
+      "title": "Click Recycle.",
+      "content": "Click Recycle . It's in the context menu. This restarts the application pool. It will happen so quickly that you won't notice it restarting. [8] X Research source If this doesn't fix the problem, try restarting all the other application pools in IIS manager."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . By default, it is the icon that has the Windows logo in the lower-left corner. If you have IIS installed on your server, you can restart the World Wide Web service using Server Manager."
+    },
+    {
+      "title": "Type Server Manager.",
+      "content": "Type Server Manager . This displays Server Manager in the Windows Start menu."
+    },
+    {
+      "title": "Click Server Manager.",
+      "content": "Click Server Manager . It has an icon that resembles a toolbox next to a computer tower. Click the Server Manager icon to launch Server Manager."
+    },
+    {
+      "title": "Click Tools.",
+      "content": "Click Tools . It's in the upper-right corner of Server Manager. This displays a drop-down menu with a list of different tools."
+    },
+    {
+      "title": "Click Services.",
+      "content": "Click Services . It's in the drop-down menu that appears when you click Tools in Server Manager. This opens a list of services in a separate window."
+    },
+    {
+      "title": "Scroll down and right-click World Wide Web Publishing Service.",
+      "content": "Scroll down and right-click World Wide Web Publishing Service . It will be near the bottom of the list. Right-click World Wide Web Publishing Service to display a context menu next to the service. World Wide Web Publishing Service is only available on servers with IIS installed."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . It's in the context menu that appears when you right-click a service in the Services menu. This restarts the service. [9] X Research source"
+    }
+  ]
+}

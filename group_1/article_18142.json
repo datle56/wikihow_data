@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Format-a-USB-to-FAT32-on-Mac",
+  "title": "How to Format a USB Flash Drive to FAT32 on a Mac",
+  "steps": [
+    {
+      "title": "Insert a USB drive.",
+      "content": "Insert a USB drive. You can insert a USB drive into any available USB slot on your Mac. Warning: Formatting a USB drive will erase all data on the drive. Be sure to back up any files you want to keep on the drive before continuing."
+    },
+    {
+      "title": "Click the magnifying glass icon .",
+      "content": "Click the magnifying glass icon . It's in the menu bar in the upper-right corner. This opens the Spotlight search feature."
+    },
+    {
+      "title": "Type Disk Utility in the search bar.",
+      "content": "Type Disk Utility in the search bar. This displays all apps related to Disk Utility."
+    },
+    {
+      "title": "Click the Disk Utility app.",
+      "content": "Click the Disk Utility app. Disk Utility has an icon that resembles a hard drive with a stethoscope over the top. Click the Disk Utility app icon to launch Disk Utility. [1] X Research source"
+    },
+    {
+      "title": "Click the USB drive.",
+      "content": "Click the USB drive. It should be listed in the menu bar to the left in Disk Utility. This selects the USB drive."
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . It's in the button that has an icon that resembles a hard drive being erased with an eraser. It's the middle button at the top of the Disk Utility app."
+    },
+    {
+      "title": "Enter a new name for your USB drive (optional).",
+      "content": "Enter a new name for your USB drive (optional). If you want to rename your USB drive, enter a new name for the USB drive in the field next to \"Name.\" [2] X Research source"
+    },
+    {
+      "title": "Select \"MS-DOS (FAT)\" as the format.",
+      "content": "Select \"MS-DOS (FAT)\" as the format. This is the name that macOS uses for FAT32. Use the drop-down menu next to \"Format\" to select \"MS-DOS (FAT).\" [3] X Research source If you need to transfer files that are larger than 4 GB, or you have files that have long names, you may want to consider selecting \"exFAT\" as the format instead. FAT32 does not support large files or long file names."
+    },
+    {
+      "title": "Select \"Master Boot Record\" as the scheme.",
+      "content": "Select \"Master Boot Record\" as the scheme. This is the partition scheme supported by the widest variety of computers and devices. Use the drop-down menu next to \"Scheme\" to select \"Master Boot Record.\""
+    },
+    {
+      "title": "Click Erase.",
+      "content": "Click Erase . It's in the lower-right corner of the pop-up dialogue. This begins reformatting the USB drive immediately. Allow a few minutes for the process to complete. Do not remove the USB drive until the process is complete. [4] X Research source"
+    },
+    {
+      "title": "Eject the USB drive .",
+      "content": "Eject the USB drive . When you are ready to remove the USB drive, be sure to eject it. To do so, click the eject icon next to the USB drive name in Disk Utility or in Finder. Alternatively, you can click and drag the USB drive name to the trash on your desktop. [5] X Research source Ejecting your USB drive prevents electric discharge that can damage your USB drive upon removing it."
+    },
+    {
+      "title": "Insert a USB drive.",
+      "content": "Insert a USB drive. You can insert a USB drive into any available USB slot on your Mac. Warning: Formatting a USB drive will erase all data on the drive. Be sure to back up any files you want to keep on the drive before continuing."
+    },
+    {
+      "title": "Click the magnifying glass icon .",
+      "content": "Click the magnifying glass icon . It's in the menu bar in the upper-right corner. This opens the Spotlight search feature."
+    },
+    {
+      "title": "Type Terminal in the search bar.",
+      "content": "Type Terminal in the search bar. This searches for all apps related to the Terminal. [6] X Research source"
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. It has an icon that resembles a black screen with a white cursor. Click the Terminal icon to launch the Terminal."
+    },
+    {
+      "title": "Type diskutil list and press ↵ Enter.",
+      "content": "Type diskutil list and press ↵ Enter . This displays a list of all disk drives currently mounted on your Mac and their location."
+    },
+    {
+      "title": "Note the location of your USB drive.",
+      "content": "Note the location of your USB drive. The disk location is listed above all the other drive features (e.g \"/dev/disk2\"). It will say \"(external, physical)\" next to the drive location. You can also find the drives name listed below the drive location."
+    },
+    {
+      "title": "Type sudo diskutil eraseDisk FAT32 MBRFormat [location] and press ↵ Enter.",
+      "content": "Type sudo diskutil eraseDisk FAT32 MBRFormat [location] and press ↵ Enter . Replace \"[location]\" with the actual location of the USB drive (e.g. \"/dev/disk2\"). This command reformats the USB disk. sudo: This commands gives you root user access. diskutil: This command calls on the Disk Utility program. eraseDisk: This command tells Disk Utility to reformat the drive. FAT32: This command tells Disk Utility to reformat the drive in FAT32 format. You can replace this with \"ExFAT\" to format it in ExFAT format. MBRFormat: This command tells Disk Utility to format the drive in Master Boot Record partition scheme. [Location]: This command tells Disk Utility the location of the USB drive."
+    },
+    {
+      "title": "Eject the USB drive .",
+      "content": "Eject the USB drive . Once the USB drive has been reformatted and you are ready to remove it, be sure to eject it to prevent your Mac from doing damage to your USB drive. To eject the USB drive, click the Eject icon next to the drive in Finder, or click and drag the USB drive to the Trash on your desktop. [7] X Research source"
+    }
+  ]
+}

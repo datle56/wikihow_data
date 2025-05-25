@@ -1,0 +1,150 @@
+{
+  "url": "https://www.wikihow.com/Install-Windows-from-Ubuntu",
+  "title": "Installing Windows 10 or 11 on Ubuntu: A Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Boot your PC from the live Ubuntu installation media.",
+      "content": "Boot your PC from the live Ubuntu installation media. You'll want to do this because you can't unmount and allocate hard drive space to Windows while Ubuntu is running. This live installation media is the bootable installation drive you created to install Ubuntu. [1] X Research source Make sure your BIOS/UEFI settings are set to boot from a USB flash drive first. If you don't already have a bootable installation drive, you can download the ISO file for Ubuntu from https://ubuntu.com/download/desktop , and create a bootable USB drive from the ISO using Balena Etcher. After booting from the installation drive, select the option to Try Ubuntu . You don't need to install Ubuntu since it's already installed."
+    },
+    {
+      "title": "Install Gparted.",
+      "content": "Install Gparted. Even if you already have Gparted installed, you may need to install it in the Ubuntu Live environment. You'll use Gparted to partition your hard drive and allocate space for Windows. To install Gparted: Press Ctrl + Alt + T to open the Terminal. Type sudo apt update and press Enter to update the software repository. Type sudo apt install gparted and press Enter ."
+    },
+    {
+      "title": "Open Gparted.",
+      "content": "Open Gparted. You'll use this tool to create a new partition for Windows. Type sudo gparted and press Enter to open Gparted. You'll see a list of all drives and partitions."
+    },
+    {
+      "title": "Right-click the partition you want to allocate for Windows and select Resize/Move.",
+      "content": "Right-click the partition you want to allocate for Windows and select Resize/Move . This allows you to create a new partition that you will use to install Windows. The partition that contains your Ubuntu installation will most likely have an \"ext4\" file system format."
+    },
+    {
+      "title": "Enter the new partition size (in MB) and click Resize.",
+      "content": "Enter the new partition size (in MB) and click Resize . You should allocate at least 20 GB (20000 MB) for Windows 10 or 64 GB (64000 MB) for Windows 11. If you plan to install apps and use Windows regularly, you'll probably want to increase that amount. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Apply to save your changes.",
+      "content": "Click Apply to save your changes. You'll see this green checkmark icon in the top toolbar. Once you do this, you'll see your unallocated space."
+    },
+    {
+      "title": "Reboot into your normal Ubuntu installation.",
+      "content": "Reboot into your normal Ubuntu installation. Now you have created a new part partition to install Windows on, remove the USB drive you booted from, and reboot your PC."
+    },
+    {
+      "title": "Download the Windows 10 or 11 ISO from Microsoft.",
+      "content": "Download the Windows 10 or 11 ISO from Microsoft. You'll need a blank USB drive with at least 8 GB of space to create a Windows installation disk. Any data on the USB drive will be erased during this process. [3] X Research source Windows 11: Go to https://www.microsoft.com/software-download/windows11 . In the \"Download Windows 11 Disk Image (ISO) for X64 devices\" section, select a Windows 11 version, then click Download Now to save the image. Windows 10: Go to https://www.microsoft.com/en-us/software-download/windows10 . Under the \"Windows 10 2023\" header, select a Windows 10 edition and click Confirm . Select a language, then click the download link for the version of Windows you want to install."
+    },
+    {
+      "title": "Download Ventoy.",
+      "content": "Download Ventoy. You will use Ventoy to create an installation drive for Windows. Use the following steps to download Ventoy: Go to https://github.com/ventoy/Ventoy/releases in your web browser. Scroll down and click ventoy-[version number]-linux.tar.gz below \"Assets.\""
+    },
+    {
+      "title": "Unpack Ventoy.",
+      "content": "Unpack Ventoy. Here's how: Open a Terminal and use cd Downloads to enter your Downloads directory. Type tar -xzvf ventoy-[version number]-linux.tar.gz to unpack Ventoy. Be sure to replace \"[version number]\" with the actual version number."
+    },
+    {
+      "title": "Insert a blank USB drive and run Ventoy.",
+      "content": "Insert a blank USB drive and run Ventoy. Warning: Any data on the USB drive will be erased during this process. Be sure to back up any files on the USB drive before you begin. To run Ventoy, you'll need to run a script that isn't executable yet. Here's what you'll need to do: Type cd Ventoy.x86_64 and press Enter to change directories to the untarred Ventoy directory. Type chmod +x VentoyGUI.x86_64 to make the script executable. Type sudo ./VentoyGUI.x86_64 to run the GUI."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . First, if your USB drive isn't already selected from the menu (it should be by default), select it now. Then, click Install to create two partitions on the USB drive. One partition will be hidden and is used to make the drive bootable."
+    },
+    {
+      "title": "Copy the Windows ISO file to the USB drive.",
+      "content": "Copy the Windows ISO file to the USB drive. Now that you have created a blank bootable USB drive, you only need to copy the Windows ISO file to the drive, and Ventoy will do the rest. Use the Files app to navigate to where you downloaded the Windows ISO (probably your Downloads folder), and drag it over (or copy and paste it) to your USB drive. You will only see one partition available on the drive. The USB drive is now bootable."
+    },
+    {
+      "title": "Boot your PC from the Windows install drive.",
+      "content": "Boot your PC from the Windows install drive. Make sure your BIOS/UEFI settings are set to boot from a USB flash drive first. Insert the Windows installation drive and restart your computer. Allow your computer to boot from the Windows Installation media. If prompted to select a boot device, select your USB drive."
+    },
+    {
+      "title": "Select your language and other preferences and click Next.",
+      "content": "Select your language and other preferences and click Next . The first menu of the Windows installation menu asks you to select your language, date, and currency format, as well as keyboard layout. Use the drop-down menus to select your preferences and click Next ."
+    },
+    {
+      "title": "Start the installation process and agree to the terms and conditions.",
+      "content": "Start the installation process and agree to the terms and conditions. On the next page, click Install now , click the checkbox to agree to the terms and conditions, and then click Next ."
+    },
+    {
+      "title": "Click Custom: Install Windows only (advanced).",
+      "content": "Click Custom: Install Windows only (advanced) . It's the second option on the window. A list of partitions will appear."
+    },
+    {
+      "title": "Select your Windows partition and click Next.",
+      "content": "Select your Windows partition and click Next . This is the partition you just created. Windows will now install on the selected partition. It should be unallocated space."
+    },
+    {
+      "title": "Follow the on-screen instructions to install Windows.",
+      "content": "Follow the on-screen instructions to install Windows. During the Windows setup, you will be asked to select your country, connect to Wi-Fi, and sign in to your Microsoft account (Windows 11 only). Follow the prompts to complete the installation. Once you are finished installing Windows, your PC will boot directly into Windows."
+    },
+    {
+      "title": "Download rEFInd.",
+      "content": "Download rEFInd. rEFInd is a tool you can use to dual-boot Windows and Ubuntu. Currently, Ubuntu is installed on a separate partition that isn't accessible to the Windows boot manager, and rEFInd will fix that for you. To do download rEFInd, go to https://sourceforge.net/projects/refind/ and click the large green Download button. This will download rEFInd as a zip file. You should complete these steps in Windows, not Ubuntu."
+    },
+    {
+      "title": "Extract the ZIP file.",
+      "content": "Extract the ZIP file. After downloading the zip file, open your Downloads folder and extract the contents of the rEFInd zip file."
+    },
+    {
+      "title": "Run the Command Prompt as an administrator.",
+      "content": "Run the Command Prompt as an administrator. To do this, type cmd into the Windows search bar, right-click Command Prompt , and select Run as administrator . Click Yes to confirm."
+    },
+    {
+      "title": "Mount the EFI system partition.",
+      "content": "Mount the EFI system partition. This is the primary drive that contains the various boot systems. Here's how: Type diskpart and press Enter to start Diskpart. Type list disk and press Enter to list your disk drives. Type select disk # and press Enter to select your primary disk drive. Replace \"#\" with the actual disk number (probably \"disk 0\"). Type list partition and press Enter to list the disk partitions. Type select partition # and press Enter to select the drive with your system partition. Replace \"#\" with the actual drive number. Type assign letter=[drive letter] and press Enter to assign the drive a letter. Replace \"[drive letter]\" with the letter you want to assign the drive (i.e., \"x\")."
+    },
+    {
+      "title": "Copy the \"refind\" folder from the folder you extracted.",
+      "content": "Copy the \"refind\" folder from the folder you extracted. Press Windows key + E to open File Explorer and open the \"rEFInd-bin\" folder you extracted (probably in your Downloads folder). Select and copy the \"refind\" folder from within."
+    },
+    {
+      "title": "Open the System partition via Task Manager.",
+      "content": "Open the System partition via Task Manager. Even though the System partition shows up in File Explorer, you will probably be denied access if you try to access it directly. To get around this, you can access it via Task Manager. Use the following steps to do so: Right-click the taskbar at the bottom of the screen. Click Task Manager . Click Run new task at the top. Click Browse . Click This PC in the menu to the left. Open the System drive—it's the one that has the drive letter you assigned it."
+    },
+    {
+      "title": "Paste the \"refind\" binary folder into the System drive.",
+      "content": "Paste the \"refind\" binary folder into the System drive. Just right-click the System drive and select Paste to do so."
+    },
+    {
+      "title": "Download and install Easy UEFI.",
+      "content": "Download and install Easy UEFI. Easy UEFI is a tool you can use to add rEFInd to your system's boot options. You can add rEFInd to your system boot options using the free trial version of Easy UEFI. Use the following steps to download it: Go to https://www.easyuefi.com/index-us.html in a web browser. Click Free Trial . Open the Easy UEFI trial installation file in your Downloads folder. Follow the prompts to complete the installation."
+    },
+    {
+      "title": "Open Easy UEFI and click Manage EFI Boot options.",
+      "content": "Open Easy UEFI and click Manage EFI Boot options . It's the first option in the Easy UEFI app."
+    },
+    {
+      "title": "Click the Add new entry button.",
+      "content": "Click the Add new entry button. It's the calendar icon with a \"+\" in the middle column."
+    },
+    {
+      "title": "Select Linux or other OS.",
+      "content": "Select Linux or other OS . You can do so using the drop-down menu next to \"Type\" in the upper-left corner."
+    },
+    {
+      "title": "Enter a description.",
+      "content": "Enter a description. Use the field labeled \"Description\" to add a description (i.e., \"rEFInd Boot Manager.)."
+    },
+    {
+      "title": "Select the partition with the EFI folder.",
+      "content": "Select the partition with the EFI folder. Click the radio option in the system partition in the bar graph. The system partition is usually about 1 GB and formatted in a \"FAT32\" file format."
+    },
+    {
+      "title": "Select the rEFInd main file.",
+      "content": "Select the rEFInd main file. Click Browse next to \"Path file.\" Click the plus icon next to the drive icon to expand the system drive. Open the \"EFI\" folder. Open the \"refind\" folder. Select the \"refind_x64.efi\" file. Click OK ."
+    },
+    {
+      "title": "Click Ok to save your changes.",
+      "content": "Click Ok to save your changes. This should add rEFInd to your boot order."
+    },
+    {
+      "title": "Move \"rEFInd boot manager\" to the top of the boot order.",
+      "content": "Move \"rEFInd boot manager\" to the top of the boot order. To do so, click rEFInd Boot Manager to select it, click the green arrow pointing up to move it to the top of the boot order, then click Done . You can now close Easy UEFI."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. When your computer boots up, it should boot into the rEFInd boot menu. You can now choose whether to boot into Ubuntu or Windows."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Dde-Server-Window",
+  "title": "How to Stop DDE Server from Preventing Shutdown: Windows Guide",
+  "steps": [
+    {
+      "title": "Windows DDE server is not a virus.",
+      "content": "Windows DDE server is not a virus. DDE is an old technology that allows processes to communicate with each other—this is called interprocess communication, or IPC. DDE was actually superseded by a different IPC technology in 1990, but DDE has been retained in Windows operating systems for backwards compatibility."
+    },
+    {
+      "title": "There are several reasons you might see a DDE server window pop up.",
+      "content": "There are several reasons you might see a DDE server window pop up. This could be due to outdated software, an outdated Windows operating system, software conflicts, a bug or glitch, corrupt system files, or resource limitations. The DDE server window is usually seen when a Windows computer is shutting down. If this window doesn't cause any issues (such as preventing the computer from shutting down), you don't need to do anything, since DDE is a normal Windows function. If a DDE server window is causing problems on your machine, skip ahead to our troubleshooting section."
+    },
+    {
+      "title": "Refresh Windows Explorer.",
+      "content": "Refresh Windows Explorer. Many times, Windows Explorer is the culprit behind the DDE server windows. This is especially true if you see \"explorer.exe\" in the error message that pops up. To refresh Windows Explorer: Right-click the taskbar. Click Task Manager . Scroll down and find Windows Explorer . Right-click Windows Explorer and click Restart . Your computer may pause for a moment or act strangely while Windows Explorer restarts; this is normal."
+    },
+    {
+      "title": "Disable the \"Automatically Hide Taskbar\" setting.",
+      "content": "Disable the \"Automatically Hide Taskbar\" setting. Some users have found that enabling the \"Automatically Hide Taskbar\" setting caused DDE server errors. To disable this setting: Right-click the taskbar. Click Taskbar Settings . Toggle off the \"Automatically Hide Taskbar\" settings. There are two options: desktop mode and tablet mode. Disable them both if you have them both."
+    },
+    {
+      "title": "Update Windows.",
+      "content": "Update Windows. The DDE server error may pop up more prevalently if your Windows operating system is outdated. Update Windows to see if it's the culprit for this error. To update Windows: Type update in the taskbar search bar. Click Check for updates . Install any pending updates that are displayed in the update window."
+    },
+    {
+      "title": "Update relevant third-party software.",
+      "content": "Update relevant third-party software. You may see a file name in the DDE server error that ends with a .exe . This means the file is an executable file and is more than likely referring to some software installed on your computer. If you can figure out what the application is based on the file name, try updating it. You may be prompted to update the software when you open it, or you may have to manually download and install the update from the developer. If you're not sure, use Google or your favorite search engine to find out what the process is for the app in question. If you can't figure out what the application is based on the file name, use Google or your favorite search engine to look it up. You can also try searching the file name in the taskbar search bar to see if it will direct you to the location of that file."
+    },
+    {
+      "title": "Run a DISM/SFC scan.",
+      "content": "Run a DISM/SFC scan. DISM and SFC are built-in tools that scan your files for issues. If you're running Windows 8 or later, you must do a DISM scan before you do an SFC scan. If you're on Windows 7 or Vista, you can skip the DISM scan and do an SFC scan. To run these scans: Write \"cmd\" in the taskbar search bar and right-click Command Prompt . Select Run as an administrator . Type DISM.exe /Online /Cleanup-image /Restorehealth and press Enter . The DISM scan will take some time to complete, so wait until it is finished before moving on. Type sfc /scannow once the DISM scan is done, and press Enter . The SFC scan will also take some time to complete. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Scan for malware.",
+      "content": "Scan for malware. While DDE isn't a virus in and of itself, there is a small chance that the error you're getting is due to a virus. Run Windows Security or the antivirus software of your choice to identify any malware on your computer, and quarantine it if there is."
+    },
+    {
+      "title": "Perform a clean boot.",
+      "content": "Perform a clean boot. When you reboot your computer, there are always a number of applications that open at startup. A clean boot means your computer will reboot with only Microsoft software starting at startup. This can help you identify if the error is caused by third-party software. To do this: Type msconfig in the taskbar search bar. Click System Configuration . Go to the Services tab. Check Hide all Microsoft services . Click Disable all . Go to the Startup tab. Click Open Task Manager . Disable any enabled programs. Take note of which programs you disable. Exit the Task Manager and click OK . Restart your computer, then try to get the DDE server error to pop back up. If it doesn't occur, the issue is likely with one or more of your third-party applications. Before using your computer again, go back to System Configuration and re-enable the startup programs you disabled above, then restart your computer again."
+    },
+    {
+      "title": "Use a workaround to shut down your computer.",
+      "content": "Use a workaround to shut down your computer. Some users have found that the DDE server error only occurs when they shut down their computer from the Start menu. While this won't fix the underlying problem, you can try one of these workarounds to shutting down your computer if you don't have time to diagnose the issue just yet: ⊞ Win + X > Shut down or sign out > Shut down ⊞ Win + R , then type shutdown /s and click OK"
+    },
+    {
+      "title": "Disable or uninstall third-party antivirus software.",
+      "content": "Disable or uninstall third-party antivirus software. Some users have found that disabling or uninstalling a third-party antivirus helps resolve the DDE server error. As long as you have Windows Security enabled (which you more than likely do, as it's enabled by default and can't be easily permanently disabled), you will be protected from viruses, malware, and online threats. Each third-party antivirus software is slightly different. However, each one should have the ability to switch it off in the application, and you can uninstall them by right-clicking the Windows button, selecting Apps & Features , scrolling until you find the antivirus software, and clicking Uninstall ."
+    },
+    {
+      "title": "Create a new user on the computer.",
+      "content": "Create a new user on the computer. Rarely, the DDE server issue could be an issue with your user account on the computer. To determine if this is the case, you'll need to make a new user account : Press ⊞ Win + I to open Settings. Click Accounts . Click Add someone else to this PC under the \"Other users\" heading. Select I don't have this person's sign-in information . Click Add a user without a Microsoft account . Fill out a username and password for the new account. Click Next . Follow any additional instructions, then try to reproduce the error when you're logged in on your new account."
+    },
+    {
+      "title": "Roll back the latest Windows update.",
+      "content": "Roll back the latest Windows update. If the DDE error was not occurring until you did a recent Windows update, try rolling back to the previous version of Windows you were using. To do this: Type windows update into the taskbar search bar. Click Check for updates . Select View update history . Click Uninstall updates . Follow the on-screen instructions to uninstall the newest Windows update. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Use the Registry Editor.",
+      "content": "Use the Registry Editor. If nothing else has worked, you can try changing the key in the registry that handles the shutdown sequence. Note: don't attempt this method if you're not familiar with the Registry Editor . Deleting or changing the wrong thing can make your computer unusable. Press ⊞ Win + R and type regedit . Press Enter . Navigate to the following location in the sidebar: Computer\\HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control . Expand the Control folder. Double-click the WaitToKillServiceTimeout option in the right pane. Change the \"Value data\" field to 2000 . At this point, try restarting your computer. If the issue still occurs, open the Registry Editor again. Navigate to the following location in the Registry Editor: Computer\\HKEY_CURRENT_USER\\Control Panel\\Desktop . Right-click on Desktop in the left pane. Choose New > String Value . Name the string AutoEndTask and set the value data to 1. Click OK and restart your computer again to see if the error persists."
+    },
+    {
+      "title": "Contact Microsoft Support.",
+      "content": "Contact Microsoft Support. If nothing has fixed the issue, you will need to contact Microsoft Support for further help. Go to the Microsoft Support page and select Windows . Choose whether you have a Home or Business edition of Windows. Type DDE error into the search box. Click Sign in to contact Support . Sign in with your Microsoft account and follow the on-screen instructions to contact Microsoft Support."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Delete-Apps-on-Android",
+  "title": "How to Delete Apps on Android",
+  "steps": [
+    {
+      "title": "Open your device's Settings app.",
+      "content": "Open your device's Settings app. You cannot use this method to uninstall apps that came preloaded on your device. See the next section for details on removing preloaded apps."
+    },
+    {
+      "title": "Scroll down and tap Apps.",
+      "content": "Scroll down and tap Apps . It's in the \"Device\" section."
+    },
+    {
+      "title": "Scroll down and tap the app you want to deleted.",
+      "content": "Scroll down and tap the app you want to deleted."
+    },
+    {
+      "title": "Tap UNINSTALL.",
+      "content": "Tap UNINSTALL . If there is no UNINSTALL button, the app is a default or system app that can't be deleted without rooting your device. You can tap DISABLE to prevent it from functioning and hide it on your device. To permanently delete it, you'll need to root your device and delete it from a desktop computer."
+    },
+    {
+      "title": "Tap OK to confirm.",
+      "content": "Tap OK to confirm. The app will be removed from your device."
+    },
+    {
+      "title": "Root your Android device.",
+      "content": "Root your Android device. This is by far the most complicated part of the process, since rooting is different for every single model of Android. Even the carrier you use can affect your ability to root the device. On some phones, such as the Nexus line, rooting is very easy. On others, it may be impossible. Rooting is required to uninstall apps that came preloaded on your device. See How to Root Android Phones for instructions on rooting several popular devices, as well as tips on finding specific instructions for your device."
+    },
+    {
+      "title": "Install the Android SDK on your computer.",
+      "content": "Install the Android SDK on your computer. Once your device is rooted, you can use the Android Debug Bridge (ADB) tool included in the Android SDK to uninstall the app via command line. You can download the Android SDK for free here . You just need the \"SDK Tools only\" package, not the entire development environment. Download and run the installer for your operating system."
+    },
+    {
+      "title": "Connect your Android device to your computer via USB.",
+      "content": "Connect your Android device to your computer via USB. Use your standard USB cable to connect your Android device. Install any drivers that you may be prompted to install."
+    },
+    {
+      "title": "Turn on USB Debugging mode on your device.",
+      "content": "Turn on USB Debugging mode on your device. If you didn't have this turned on already during the root process, you'll need to enable USB debugging now. [1] X Research source Open the Settings app and tap \"About phone.\" Tap the \"Build number\" entry seven times to enable the hidden \"Developer options\" menu. Open the new \"Developer options\" menu at the bottom of the previous screen. Enable \"USB debugging.\""
+    },
+    {
+      "title": "Open ADB on your computer.",
+      "content": "Open ADB on your computer. ADB runs through the Command Prompt. The best way to launch it is to find it using Windows Explorer first. Go to the folder in which you installed ADB. By default, it is usually C:\\Users\\ username \\AppData\\Local\\Android\\android-sdk\\platform-tools . Hold ⇧ Shift and right-click in the folder. Click Open command window here . This will launch the Command Prompt at the current location."
+    },
+    {
+      "title": "Display a list of applications installed on the device.",
+      "content": "Display a list of applications installed on the device. Once you're in the Command Prompt, you can tell ADB to retrieve the list of apps installed on your device. Type the following into the Command Prompt: Type adb shell and press ↵ Enter . This will start a dedicated command prompt for your device. Type cd system/app and press ↵ Enter . This will open the apps folder on your device. Type ls and press ↵ Enter . This will display a list of all of the apps installed on your device."
+    },
+    {
+      "title": "Find the app that you want to uninstall.",
+      "content": "Find the app that you want to uninstall. The list of apps will likely be fairly large. Scroll through the list and find the app you want to remove. Note the entire file name of the app."
+    },
+    {
+      "title": "Uninstall the system app that you want to remove.",
+      "content": "Uninstall the system app that you want to remove. Type rm AppName .apk and press ↵ Enter to remove the app. You can repeat this for any other apps you want to remove. [2] X Research source Type reboot and press ↵ Enter after you are finished removing apps to reboot your phone and finish the process."
+    }
+  ]
+}

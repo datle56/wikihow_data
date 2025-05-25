@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Normalize-a-Vector",
+  "title": "How to Normalize a Vector",
+  "steps": [
+    {
+      "title": "Define a unit vector.",
+      "content": "Define a unit vector. The unit vector of a vector A is the vector with the same initial point and direction as A, but with a length of 1 unit. [1] X Research source It can be mathematically proven that there is one and only one unit vector for each given vector A."
+    },
+    {
+      "title": "Define the Normalization of a vector.",
+      "content": "Define the Normalization of a vector. This is the process of identifying the unit vector for a given vector A. [2] X Research source"
+    },
+    {
+      "title": "Define a bound vector.",
+      "content": "Define a bound vector. A bound vector in Cartesian space has its initial point at the origin of the coordinate system, expressed as (0,0) in two dimensions. This allows you to identify a vector solely in terms of its terminal point. [3] X Research source"
+    },
+    {
+      "title": "Describe vector notation.",
+      "content": "Describe vector notation. By restricting ourselves to bound vectors, A = (x, y) where the coordinate pair (x,y) indicates the location of the terminal point for vector A. [4] X Research source"
+    },
+    {
+      "title": "Establish the known values.",
+      "content": "Establish the known values. From the definition of the unit vector, we know that the initial point and direction of the unit vector is the same as the given vector A. Furthermore, we know the length of the unit vector is 1. [5] X Research source"
+    },
+    {
+      "title": "Determine the unknown value.",
+      "content": "Determine the unknown value. The only variable we need to calculate is the terminal point of the unit vector."
+    },
+    {
+      "title": "Find the terminal point for the unit vector of vector A = (x, y).",
+      "content": "Find the terminal point for the unit vector of vector A = (x, y). From the proportionality of similar triangles , you know that any vector that has the same direction as vector A will have a terminal point (x/c, y/c) for some c. Furthermore, you know the length of the unit vector is 1. [6] X Research source Therefore, by the Pythagorean Theorem, [x^2/c^2 + y^2/c^2]^(1/2) = 1 -> [(x^2 + y^2)/c^2]^(1/2) -> (x^2 + y^2)^(1/2)/c = 1 -> c = (x^2 + y^2)^(1/2). Therefore, the unit vector u for the vector A = (x, y) is given as u = (x/(x^2 + y^2)^(1/2), y/(x^2 + y^2)^(1/2))"
+    },
+    {
+      "title": "Let vector A be a vector with its initial point at the origin and terminal point at (2,3), such that A = (2,3).",
+      "content": "Let vector A be a vector with its initial point at the origin and terminal point at (2,3), such that A = (2,3). Calculate the unit vector u = (x/(x^2 + y^2)^(1/2), y/(x^2 + y^2)^(1/2)) = (2/(2^2 + 3^2)^(1/2), 3/(2^2 + 3^2)^(1/2)) = (2/(13^(1/2)), 3/(13^(1/2))). Therefore, A = (2,3) normalizes to u = (2/(13^(1/2)), 3/(13^(1/2)))."
+    },
+    {
+      "title": "Generalize the equation for vector normalization in space of any dimension.",
+      "content": "Generalize the equation for vector normalization in space of any dimension. [7] X Research source A vector A (a, b, c, …), u = (a/z, b/z, c/z, …) where z = (a^2 + b^2 + c^2 …)^(1/2)."
+    }
+  ]
+}

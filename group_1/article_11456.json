@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Cygwin-Command-Cheat-Sheet",
+  "title": "Cygwin Command Cheat Sheet",
+  "steps": [
+    {
+      "title": "Navigate to the content you want to copy in Windows.",
+      "content": "Navigate to the content you want to copy in Windows. This can be any application or text from a web page."
+    },
+    {
+      "title": "Highlight what you want to copy and press Ctrl+C.",
+      "content": "Highlight what you want to copy and press Ctrl + C . You can also go to Edit > Copy once you've highlighted what you want to copy."
+    },
+    {
+      "title": "Go to the Cygwin window and right-click a blank spot.",
+      "content": "Go to the Cygwin window and right-click a blank spot. The keyboard shortcut Alt + Tab will allow you to change active windows while right-clicking prompts a menu to pop up."
+    },
+    {
+      "title": "Hover your mouse over Edit and select Paste.",
+      "content": "Hover your mouse over Edit and select Paste . The content you previously copied will paste into the window."
+    },
+    {
+      "title": "cp <filename> <new filename>",
+      "content": "cp <filename> <new filename> . This will create a copy of a file."
+    },
+    {
+      "title": "cp -R <directory> <new directory>",
+      "content": "cp -R <directory> <new directory> . This code creates a copy of a directory."
+    },
+    {
+      "title": "mv <filename> <new filename>",
+      "content": "mv <filename> <new filename> . This moves or renames a file."
+    },
+    {
+      "title": "rm <filename>",
+      "content": "rm <filename> . This deletes a file."
+    },
+    {
+      "title": "cd <directory>",
+      "content": "cd <directory> . Will change the directory you're currently in."
+    },
+    {
+      "title": "ls",
+      "content": "ls . This lists the files in the current directory."
+    },
+    {
+      "title": "ls -l",
+      "content": "ls -l . Lists all the files in the current directory as well as their attributes."
+    },
+    {
+      "title": "mkdir <new directory name>",
+      "content": "mkdir <new directory name> . This creates a new directory."
+    },
+    {
+      "title": "pwd",
+      "content": "pwd . This tells you what directory you're in."
+    },
+    {
+      "title": "tar -zcvf <filename> <directory> # create gzipped tar archive of <directory>",
+      "content": "tar -zcvf <filename> <directory> # create gzipped tar archive of <directory> . Pick one of z,c,v,f to execute a command. -z - filter the archive through gzip -c - create a new archive -v - verbosely list files processed -f - use archive file"
+    },
+    {
+      "title": "tar -xvzf <filename> # extract tarred, gzipped <filename> in current directory",
+      "content": "tar -xvzf <filename> # extract tarred, gzipped <filename> in current directory . Pick one of x,v,z,f to execute a command. -x - extract files from an archive -v - verbosely list files processed -z - filter the archive through gzip -f - use archive file"
+    },
+    {
+      "title": "chmod u+x <filename>",
+      "content": "chmod u+x <filename> . Pick one of u+x to execute a command. -u user -+ adds permissions -x executable rights"
+    }
+  ]
+}

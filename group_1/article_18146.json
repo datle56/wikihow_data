@@ -1,0 +1,230 @@
+{
+  "url": "https://www.wikihow.com/Format-a-Write%E2%80%93Protected-Pen-Drive",
+  "title": "How to Format a Write–Protected Pen Drive",
+  "steps": [
+    {
+      "title": "Toggle the switch on the USB drive.",
+      "content": "Toggle the switch on the USB drive. If your USB drive has a physical write-protection switch on its exterior, it might be in the wrong (locked) position. Try toggling the switch before you continue with this method. In some instances, a pen drive can be locked using security software that prevents permission changes on a flash drive. If this is the case, you may not be able to remove write protection from the USB drive. You will need to use the program that was used to apply the write-protection to remove it. [1] X Research source"
+    },
+    {
+      "title": "Insert the pen drive into an open USB slot.",
+      "content": "Insert the pen drive into an open USB slot. You can use any available USB slot on your PC."
+    },
+    {
+      "title": "Right-click the Start menu.",
+      "content": "Right-click the Start menu. It's usually at the bottom-left corner of the screen. This displays a menu."
+    },
+    {
+      "title": "Click Run.",
+      "content": "Click Run . It's at the bottom of the menu that appears when you right-click the Windows Start menu. This opens Run in a new window."
+    },
+    {
+      "title": "Type diskpart into Run and press ↵ Enter.",
+      "content": "Type diskpart into Run and press ↵ Enter . This opens Diskpart in the Command Prompt ."
+    },
+    {
+      "title": "Type list disk and press ↵ Enter.",
+      "content": "Type list disk and press ↵ Enter . A list of all drives, including your pen drive, will appear. Each drive is labeled \"Disk (number)\", and each number is unique to that drive. You should be able to identify your USB drive by how much space it has listed under \"Size\". For example, if your USB drive is a 32 GB drive, it should say \"32 GB\" or close to that below \"Size\" in the Command Prompt."
+    },
+    {
+      "title": "Type select disk # and press ↵ Enter.",
+      "content": "Type select disk # and press ↵ Enter . Replace # with the number of your pen drive (i.e. \"select disk 3\"). This selects the USB drive in Diskpart."
+    },
+    {
+      "title": "Type attributes disk clear readonly and press ↵ Enter.",
+      "content": "Type attributes disk clear readonly and press ↵ Enter . This should remove write-protected status from the drive."
+    },
+    {
+      "title": "Type clean and press ↵ Enter.",
+      "content": "Type clean and press ↵ Enter . This should remove the data from the drive. Once it's removed, you'll be able to set it up for use."
+    },
+    {
+      "title": "Type create partition primary and press ↵ Enter.",
+      "content": "Type create partition primary and press ↵ Enter . This creates a partition on the USB drive."
+    },
+    {
+      "title": "Type format fs=ntfs, format fs=fat32 or format fs=exFAT and press ↵ Enter.",
+      "content": "Type format fs=ntfs , format fs=fat32 or format fs=exFAT and press ↵ Enter . .\\This selects the file system you want the USB drive to use. Type \"format fs=ntfs\" if you want the drive to be readable only by a Windows computer. Type \"format fs=fat32\". If the drive is less than 32GB, and you want it to be compatible with the largest number of devices. Type \"format fs=exFAT\" if the drive is greater than 32GB, and you want it to be compatible with the largest number of devices."
+    },
+    {
+      "title": "Type exit and press ↵ Enter.",
+      "content": "Type exit and press ↵ Enter . This returns you to the standard command prompt. The drive should now be available for data storage and other uses."
+    },
+    {
+      "title": "Download CleanGenius.",
+      "content": "Download CleanGenius. CleanGenius is a free program you can download for Windows. It has lots of tools to help optimize your system, but it also has a feature that can remove write-protection on a USB drive. Click the following link to download CleanGenius: [2] X Research source https://down.easeus.com/product/win_cleangenius_trial"
+    },
+    {
+      "title": "Install CleanGenius.",
+      "content": "Install CleanGenius. Clicking the link downloads an executable file. By default, you can find the downloaded file in your Downloads folder or in your web browser. Click the \"win_cleangenius_trial.exe\" file to open it. Follow the instructions to complete the installation."
+    },
+    {
+      "title": "Insert the USB drive.",
+      "content": "Insert the USB drive. Insert the USB drive with write protection into a free USB port on your computer. If the USB drive has a write-protection switch on it, ensure the switch is disabled."
+    },
+    {
+      "title": "Open CleanGenius.",
+      "content": "Open CleanGenius. It has a blue icon with a \"C\" that has a star in the middle of it. Click the icon in the Windows Start menu to open CleanGenius."
+    },
+    {
+      "title": "Click Optimization.",
+      "content": "Click Optimization . It's the third option in the menu bar to the left. It has an icon that resembles three slider bars. [3] X Research source"
+    },
+    {
+      "title": "Click Write Protection.",
+      "content": "Click Write Protection . It's the third option in the top row. It has an icon that resembles a shield with a green checkmark in the box. [4] X Research source"
+    },
+    {
+      "title": "Ensure the correct USB drive is selected.",
+      "content": "Ensure the correct USB drive is selected. Use the drop-down menu below \"Choose drive\" to select the correct USB drive and drive letter."
+    },
+    {
+      "title": "Click Disable.",
+      "content": "Click Disable . It's the blue button in the upper-right corner. This disables write-protection on your USB drive. [5] X Research source If the write-protection was applied using a different program, you may need to use that program to disable write-protection . It may not be possible to disable is using another program."
+    },
+    {
+      "title": "Toggle the switch on the USB drive.",
+      "content": "Toggle the switch on the USB drive. If your USB drive has a physical write-protection switch on its exterior, it might be in the wrong (locked) position. Try toggling the switch before you continue with this method."
+    },
+    {
+      "title": "Open the Windows Registry Editor on your PC.",
+      "content": "Open the Windows Registry Editor on your PC. Warning: Making incorrect changes to the system registry can cause damages to your operating system. This is only recommended for advanced users. Do not make any changes unless you know what you are doing. Use the following steps to open the Registry Editor: Press ⊞ Win + S to open the search bar. Type regedit into the search field. Click Registry Editor in the search results. Click Yes to run the app."
+    },
+    {
+      "title": "Go to the Control folder.",
+      "content": "Go to the Control folder. Use the following steps to navigate to the Control folder in the system registry. You should see several more folders inside the Control folder. Click the HKEY_LOCAL_MACHINE folder. Click the SYSTEM folder. Click the CurrentControlSet folder. Click the Control folder."
+    },
+    {
+      "title": "Click the StorageDevicePolicies folder (if it exists).",
+      "content": "Click the StorageDevicePolicies folder (if it exists). If you see this folder in the left panel (under the \"Control\" folder), double-click it to display its contents in the right panel. If you don't see this folder, perform the following steps to create it: [6] X Research source Right-click a blank area of the right panel to open the context menu. Select New and then Key on the menu. Type StorageDevicePolicies and then click the blank area to save the new key. Click StorageDevicePolicies in the left panel to open it. Right-click a blank area in the right panel and select New > DWORD . Type WriteProtect and then click anywhere to save the DWORD."
+    },
+    {
+      "title": "Double-click WriteProtect in the right column.",
+      "content": "Double-click WriteProtect in the right column. A dialog window will appear."
+    },
+    {
+      "title": "Enter \"0\" as the \"Value Data\" amount and click OK.",
+      "content": "Enter \"0\" as the \"Value Data\" amount and click OK . Enter the numerical zero without the quotes. [7] X Research source"
+    },
+    {
+      "title": "Close Registry Editor and restart your PC.",
+      "content": "Close Registry Editor and restart your PC. Changes you make in the Registry Editor usually require a restart to take effect."
+    },
+    {
+      "title": "Download AOMEI Partition Manager.",
+      "content": "Download AOMEI Partition Manager. AOMEI Partition Manager Standard Edition is a freeware program for Windows that you can use to format a USB drive. In some cases, it may be able to format a write-protected USB drive. Use the following steps to download and install AOMEI Partition Manager: Go to https://www.diskpart.com/download.html in a web browser. Click the green button that says Download Freeware . Click the PAssist_Std.exe file in your Downloads folder or web browser. Follow the instruction to install the program."
+    },
+    {
+      "title": "Insert the USB drive.",
+      "content": "Insert the USB drive. Insert the USB drive with write-protection into a free USB slot on your computer. If the USB drive has a write-protection switch on it, make sure it is disabled."
+    },
+    {
+      "title": "Open AOMEI Partition Manager.",
+      "content": "Open AOMEI Partition Manager. It has an icon that resembles a blue, red, and green pie chart with a green checkmark in the middle."
+    },
+    {
+      "title": "Right-click your USB drive.",
+      "content": "Right-click your USB drive. It should be the bar listed at the bottom of the list of drives on your computer. It contains the drive name and the amount of storage space the drive holds. Right-click it to display a drop-down menu. Be careful not to click one of the other drives on your computer. Check the drive name and the amount of space to make sure you are selecting the right drive. Ensure you have backed up any data on the drive you want to keep."
+    },
+    {
+      "title": "Click Format Partition.",
+      "content": "Click Format Partition . This displays a dialogue box you can use to format your USB drive."
+    },
+    {
+      "title": "Enter the drive name.",
+      "content": "Enter the drive name. Enter the new name for the drive next to \"Partition Label.\" This is the name that will be given to the drive after it is formatted."
+    },
+    {
+      "title": "Select the file system.",
+      "content": "Select the file system. Use the drop-down menu next to \"File system\" to select how you want to format the drive. You should select one of the following options: NTFS is a file system that is only compatible with Windows. NTFS drives are not compatible with other devices. FAT32 is a universal file system that works with most devices. Select this if your drive is less than 32 GB. exFAT is a newer version of \"FAT32\" that works with a wide variety of devices, but may not work on some older devices. Select this option if your USB drive is greater than 32 GB."
+    },
+    {
+      "title": "Click Ok.",
+      "content": "Click Ok . It's the blue button in the dialogue box. This saves your changes."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . It's the icon with the checkmark in the upper-left corner. This displays a preview dialogue box that lists the changes that will be made to your USB drive."
+    },
+    {
+      "title": "Click Proceed and then click Yes.",
+      "content": "Click Proceed and then click Yes . It's the blue button in the lower-left corner of the dialogue box. Then click Yes in the confirmation box. This formats your USB drive with the settings you selected. In some cases, AOMEI will format the drive without removing write-protection. If still get an error message that the USB drive is write-protected when you try to use it, you will need to use one of the other methods to remove write-protection. If the write-protection was applied using specific software, you may need to use that program to remove the write-protection."
+    },
+    {
+      "title": "Insert the USB drive.",
+      "content": "Insert the USB drive. Insert the USB drive with write-protection into a free USB slot on your computer. If the USB drive has a write-protection switch on it, make sure it is disabled."
+    },
+    {
+      "title": "Right-click the Windows Start menu .",
+      "content": "Right-click the Windows Start menu . It's the icon with the Windows Start menu in the lower-left corner. Right-clicking it displays an alternate system menu that is different from the usual Start menu. [8] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Disk Managament.",
+      "content": "Click Disk Managament . This opens the Disk Management wizard. It should display a list of all your connected drives. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Right-click your USB drive.",
+      "content": "Right-click your USB drive. It should be listed below \"Volume:\" in the list at the top. Check the drive letter and the amount of storage size the drive has to make sure you select the right drive."
+    },
+    {
+      "title": "Click Format and click Yes.",
+      "content": "Click Format and click Yes . It's in the menu that appears when you right-click a drive. Then click Yes in the pop-up window to acknowledge that this will erase all data on the drive. Ensure you have backed up any data on the drive you want to keep."
+    },
+    {
+      "title": "Enter a new name for the drive.",
+      "content": "Enter a new name for the drive. This is the name that the drive will be given after it is formatted. Enter it in the space next to \"Volume Label:\""
+    },
+    {
+      "title": "Select the file system.",
+      "content": "Select the file system. Use the drop-down menu next to \"File System\" to select the file system you want the drive to use. You can select \"exFAT\", \"FAT32\", or \"NTFS\". NTFS is a file system that is only compatible with Windows. NTFS drives are not compatible with other devices. FAT32 is a universal file system that works with most devices. Select this if your drive is less than 32 GB. exFAT is a newer version of \"FAT32\" that works with a wide variety of devices, but may not work on some older devices. Select this option if your USB drive is greater than 32 GB."
+    },
+    {
+      "title": "Click Ok twice.",
+      "content": "Click Ok twice. Clicking \"OK\" in the dialogue box displays a warning that this will erase all data on the drive. Clicking \"OK\" again will proceed to format the drive. [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Toggle the switch on the USB drive.",
+      "content": "Toggle the switch on the USB drive. If your USB drive has a physical write-protection switch on its exterior, it might be in the wrong (locked) position. Try toggling the switch before you continue with this method."
+    },
+    {
+      "title": "Insert the write-protected pen drive into a USB slot on your Mac.",
+      "content": "Insert the write-protected pen drive into a USB slot on your Mac."
+    },
+    {
+      "title": "Open Finder .",
+      "content": "Open Finder . It's the first icon on the Dock, which is usually at the bottom of the screen."
+    },
+    {
+      "title": "Click the Applications folder.",
+      "content": "Click the Applications folder. It should be in the left panel. Some icons will appear in the right panel."
+    },
+    {
+      "title": "Double-click the Utilities folder.",
+      "content": "Double-click the Utilities folder. It's in the right panel."
+    },
+    {
+      "title": "Double-click Disk Utility.",
+      "content": "Double-click Disk Utility . It's the hard drive icon with a stethoscope in the right panel. This opens a tool you can use to format drives. [11] X Research source"
+    },
+    {
+      "title": "Select your pen drive in the left panel.",
+      "content": "Select your pen drive in the left panel. Some info about the drive will appear in the right panel."
+    },
+    {
+      "title": "Click the Erase tab in the right panel.",
+      "content": "Click the Erase tab in the right panel. It's near the top of the panel. [12] X Research source"
+    },
+    {
+      "title": "Enter a name for the drive (optional).",
+      "content": "Enter a name for the drive (optional). You can keep the default name if you wish."
+    },
+    {
+      "title": "Select a file system type from the \"Format\" menu.",
+      "content": "Select a file system type from the \"Format\" menu. If you want your pen drive to be compatible with both PCs and Mac, select MS-DOS (FAT) (pen drives under 32GB) or ExFAT (drives over 32GB). Otherwise, choose your desired Mac filesystem type."
+    },
+    {
+      "title": "Click the Erase button.",
+      "content": "Click the Erase button. It's at the bottom-right corner of the active window. Your Mac will reformat the write-protected pen drive and change the sharing and permissions status to “read and write\". [13] X Research source If this process does not make your drive usable, the issue is likely mechanical and you should replace the pen drive."
+    }
+  ]
+}

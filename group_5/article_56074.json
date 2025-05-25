@@ -1,0 +1,146 @@
+{
+  "url": "https://www.wikihow.com/Install-Puppy-Linux",
+  "title": "How to Install Puppy Linux on a USB Drive or PC",
+  "steps": [
+    {
+      "title": "Download the ISO file from http://puppylinux.com.",
+      "content": "Download the ISO file from http://puppylinux.com . You'll always find the latest official images at this location. The \"Compatibility\" column tells you which distribution packages and components are incorporated in that image of Puppy Linux. Click Main next to the version you want to download to download the ISO file. [1] X Research source As you can see, there are many official distributions of Puppy Linux, including FossaPup, BionicPup, and Slacko. You can play around with any Puppy distribution you'd like, but make sure the version you download matches your system architecture (e.g., 64-bit or 32-bit). If you're not sure which version you need, it's easy to check on Linux and Windows . The latest versions of Puppy Linux are at the top of the list."
+    },
+    {
+      "title": "Insert a USB drive.",
+      "content": "Insert a USB drive. It is recommended you use a USB drive that is between 16 to 32 GB so you have enough space to save your own files. Alternatively, if you have an optical disk burner, you can burn the ISO image to a CD or DVD."
+    },
+    {
+      "title": "Download UNetBootin.",
+      "content": "Download UNetBootin. UNetBootin is a free program used specifically to make a Linux bootable USB drive. It also allows you to preserve space on the USB drive for file storage if you want to boot Puppy Linux from the USB without installing it. Alternatively, Windows users can use Rufus , and Mac users can use Balena Etcher (though Etcher does not give you the option to preserve disk space on the USB drive). To download: Go to https://unetbootin.github.io/ Click the download button for your operating system at the top of the page. Open the installation file in your Downloads folder. Follow any prompts to complete the installation."
+    },
+    {
+      "title": "Open UNetBootin and select Puppy Linux as the distribution.",
+      "content": "Open UNetBootin and select Puppy Linux as the distribution. The first drop-down menu at the top of UNetBootin allows you to select a Linux distribution. Use this drop-down menu to select \"Puppy Linux.\""
+    },
+    {
+      "title": "Select your disk image.",
+      "content": "Select your disk image. To do so, click the button with three dots ( ⋯ ) on the right side next to \"Diskimage.\" Then select the ISO file for the version of Puppy Linux you downloaded and click Open ."
+    },
+    {
+      "title": "Select your USB drive and click OK.",
+      "content": "Select your USB drive and click OK . UNetBootin should select your USB drive automatically. Check the drive letter next to \"Drive\" to ensure the correct USB drive is selected, and then click OK to begin writing the ISO file to your USB drive. This may take several minutes. Once it is complete, you can use the USB drive to boot Puppy Linux."
+    },
+    {
+      "title": "Boot into your BIOS/UEFI.",
+      "content": "Boot into your BIOS/UEFI. How you do this will be different for each computer make and model. When you boot up your computer, it will generally tell you what button to press to boot into the BIOS . It's usually F1, F2, F11, F12, Esc, or Del. If your computer boots too fast for you to see what button to press, use these steps to boot into the BIOS from within Windows: Click the Windows Start menu. Click the Settings/Gear icon. Click Update & Security (Windows 10) or system (Windows 11). Click Recovery Click Restart Now next to or below \"Advanced Startup.\" Click Troubleshoot . Click UEFI Firmware Settings . Click Restart ."
+    },
+    {
+      "title": "Locate the boot order menu.",
+      "content": "Locate the boot order menu. Use the arrow keys to navigate the menu and press Enter to make a selection. The menu may be called \"Boot menu,\" \"Boot order,\" or similar."
+    },
+    {
+      "title": "Place your USB drive first in the boot order.",
+      "content": "Place your USB drive first in the boot order. This ensures that your PC will try to boot from a USB drive before trying to boot from your hard drive. If no USB drive is present, your computer will boot from the hard drive like normal."
+    },
+    {
+      "title": "Save and exit the BIOS.",
+      "content": "Save and exit the BIOS. After changing the boot order, select the option to save and exit the BIOS. Your computer will restart."
+    },
+    {
+      "title": "Boot from the USB drive.",
+      "content": "Boot from the USB drive. To boot from the USB drive, insert it into a free USB slot on your PC, then restart your computer. To boot from a USB drive on a Mac, insert the USB drive into a free USB slot and restart your Mac. Press and hold the Option key after you hear the startup sound. This will open the boot menu. Select your USB drive to boot from. If prompted, select your USB drive."
+    },
+    {
+      "title": "Select the first option on the boot menu.",
+      "content": "Select the first option on the boot menu. For example, if you have FossaPup installed on your USB drive, you would select Fossapup64 9.5 at the top of the menu."
+    },
+    {
+      "title": "Select your language, time zone, and keyboard layout.",
+      "content": "Select your language, time zone, and keyboard layout. You will see a Quick Setup menu when Puppy Linux loads. Select your language, time zone, and preferred keyboard layout."
+    },
+    {
+      "title": "Select additional options and click OK.",
+      "content": "Select additional options and click OK . The Quick Setup menu also has options that allow you to change the hostname, enable a firewall, run the video wizard to change your screen resolution, etc. When you're finished, click OK to move to the welcome screen."
+    },
+    {
+      "title": "Set up an internet connection.",
+      "content": "Set up an internet connection. You will likely need to connect to the internet. Use the following steps to do so: Click Internet Connection on the Welcome screen or Connect on the desktop. Select the option to connect via a wired or wireless LAN or a Wireless GPRS modem. Select your wired or wireless connection. Enter your Wi-Fi Password. Click Connect Now ."
+    },
+    {
+      "title": "Save your session (optional).",
+      "content": "Save your session (optional). If you just want to play around with Puppy Linux and not install it, feel free to do so. Since the operating system runs entirely in RAM, all of your changes and actions will be deleted when you shut down your PC. If you choose not to install Puppy Linux but want to save the changes you've made to the operating system, follow these steps to do so: [2] X Research source When you're ready to log out, go to Menu and select Reboot or Shutdown . Click SAVE on the pop-up window. Choose a partition and click Ok . You can choose a partition on your hard drive or storage space on your USB drive. Select Normal if you don't need to encrypt the file (common), or select Encrypt with LUKS and follow the on-screen instructions to encrypt your saved files. Select a file system and click Ok . Select how big you want your save space to be and click Ok . 512 MB is the recommended, but you can use up to 4 GB. Enter a name for the save and click OK . Click YES, SAVE if the current location works. If not, click CHANGE FOLDER and select a different location."
+    },
+    {
+      "title": "Boot from your Puppy Linux installation media.",
+      "content": "Boot from your Puppy Linux installation media. Puppy Linux is mostly designed to run off a USB drive. However, if you want a more permanent installation, start by booting from the image you created . Once you've reached the desktop, move to the next step."
+    },
+    {
+      "title": "Click Install on the desktop.",
+      "content": "Click Install on the desktop. It has an icon that resembles a puppy face. It's in the first row of applications on the desktop. Alternatively, you can access the installer in the menu by clicking Menu followed by Setup followed by Puppy Installer ."
+    },
+    {
+      "title": "Select Installer.",
+      "content": "Select Installer . It's in the install menu. You can do both a regular and a frugal install with this option, as well as dual-boot Puppy Linux."
+    },
+    {
+      "title": "Select Internal Hard Drive.",
+      "content": "Select Internal Hard Drive . It's at the bottom of the menu."
+    },
+    {
+      "title": "Select your boot drive.",
+      "content": "Select your boot drive. The menu will display information about each drive, including how much space is on each drive. Select the main hard drive that your computer boots from. If you want to dual-boot Puppy Linux with another operating system like Windows, you should partition the hard drive in Windows before installing Puppy Linux. Create a separate partition for Windows and Puppy Linux."
+    },
+    {
+      "title": "Click GParted.",
+      "content": "Click GParted . GParted is the drive management and partition application built into Puppy Linux. This tool can format your drives for a Puppy Linux installation."
+    },
+    {
+      "title": "Delete any partitions that are on the drive.",
+      "content": "Delete any partitions that are on the drive. To do so, right-click the partitions and click Delete ."
+    },
+    {
+      "title": "Create a new 2 GB partition.",
+      "content": "Create a new 2 GB partition. To do so, right-click the unallocated hard drive space and click New . Set the partition space to about 2 gigabytes. This will be the Linux Swap Space partition. Enter \"2,048\" (in megabytes) next to \"Size.\""
+    },
+    {
+      "title": "Select \"Linux-swap\" as the File System and click Add.",
+      "content": "Select \"Linux-swap\" as the File System and click Add . This will create a new partition for the Linux Swap Space."
+    },
+    {
+      "title": "Right-click the remaining unallocated space and click New.",
+      "content": "Right-click the remaining unallocated space and click New . This opens a new partition window."
+    },
+    {
+      "title": "Leave everything as is and click Add.",
+      "content": "Leave everything as is and click Add . You can use the remaining hard drive space (unless you want to create separate partitions). Make sure the File System is \"ext4.\" Make sure \"Primary partition\" is selected as \"Create as.\" If you want, you can name the drive next to \"Label.\" Click Add to create a new portion."
+    },
+    {
+      "title": "Apply the changes to the hard drive.",
+      "content": "Apply the changes to the hard drive. To do so, click the green checkmark icon at the top of the page and click Apply . Once you are done, you can exit out of GParted."
+    },
+    {
+      "title": "Click Installer.",
+      "content": "Click Installer . It's the third option in the Install menu."
+    },
+    {
+      "title": "Select your hard drive.",
+      "content": "Select your hard drive. This is the main hard drive listed next to \"Hard Drive\" in the list of available hard drives."
+    },
+    {
+      "title": "Click the install button next to the primary partition and click OK.",
+      "content": "Click the install button next to the primary partition and click OK . This is the partition with most of your hard drive space. For example, if \"sda1\" is the swap space partition, and \"sda2\" is the drive with most of the hard drive space, click the install button next to \"sda2.\""
+    },
+    {
+      "title": "Enter a unique name (optional) and click Install.",
+      "content": "Enter a unique name (optional) and click Install . If you want to create a unique name for the installation folder, enter it in the text field. It cannot have any spaces in the name. Otherwise, you can leave the default name and click Install ."
+    },
+    {
+      "title": "Click Yes and then OK to create bootloader.",
+      "content": "Click Yes and then OK to create bootloader. This will create a new bootloader containing both Puppy Linux and any other operating systems you have installed. If you receive an error message, click Proceed anyway ."
+    },
+    {
+      "title": "Enter a label for each operating system (optional) and click Ok.",
+      "content": "Enter a label for each operating system (optional) and click Ok . You can leave the labels as their defaults or enter your own labels for Puppy Linux and any other operating systems you have installed. Click OK when you are done."
+    },
+    {
+      "title": "Click Ok on the remaining windows.",
+      "content": "Click Ok on the remaining windows. You will see a few more confirmation windows. The first one confirms that you want to install the bootloader. Then, you will see a confirmation pop-up once the bootloader is installed and a few more pop-up windows with some information. Click OK on all the pop-up Windows. Once you are done, you can select which operating system you want to boot when you boot your PC. [3] X Research source"
+    }
+  ]
+}

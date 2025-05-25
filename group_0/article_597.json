@@ -1,0 +1,174 @@
+{
+  "url": "https://www.wikihow.com/Add-JARs-to-Project-Build-Paths-in-Eclipse-(Java)",
+  "title": "How to Add JARs to Project Build Paths in Eclipse (Java)",
+  "steps": [
+    {
+      "title": "Create a new folder named lib in your project folder.",
+      "content": "Create a new folder named lib in your project folder. This stands for \"libraries\" and will contain all the JARs you'll be using for that project."
+    },
+    {
+      "title": "Copy and paste the JARs you need to lib.",
+      "content": "Copy and paste the JARs you need to lib . Select the JAR files you need and right-click them. Select them and click copy. Then paste them into the lib folder by clicking File then Paste or using Control or Command V."
+    },
+    {
+      "title": "Refresh your project.",
+      "content": "Refresh your project. Do this by right-clicking the project name and selecting Refresh. The lib folder will now be visible in Eclipse with the JARs inside."
+    },
+    {
+      "title": "Expand the lib folder in Eclipse.",
+      "content": "Expand the lib folder in Eclipse. Click the arrow to the left of the folder to expand it."
+    },
+    {
+      "title": "Select all the JARs you need.",
+      "content": "Select all the JARs you need. Hold ⇧ Shift and click the JARs in the expanded folder."
+    },
+    {
+      "title": "Right-click the JARs.",
+      "content": "Right-click the JARs. This opens a pop-up menu to the right."
+    },
+    {
+      "title": "Navigate to Build Path.",
+      "content": "Navigate to Build Path . Placing the mouse cursor over \"Build Path\" displays a submenu to the left."
+    },
+    {
+      "title": "Select Add to Build Path.",
+      "content": "Select Add to Build Path . The JARs will disappear from lib and reappear in Referenced Libraries ."
+    },
+    {
+      "title": "Right-click the project name.",
+      "content": "Right-click the project name. This displays a pop-up menu to the right."
+    },
+    {
+      "title": "Navigate to Build Path.",
+      "content": "Navigate to Build Path . It's in the pop-up menu that displays when you right-click on the project name. This displays a sub-menu to the right."
+    },
+    {
+      "title": "Click Configure Build Path.",
+      "content": "Click Configure Build Path . The project properties window will appear showing your build path configurations."
+    },
+    {
+      "title": "Select the Libraries tab.",
+      "content": "Select the Libraries tab. It's at the top of the project properties window."
+    },
+    {
+      "title": "Click Add JARs.",
+      "content": "Click Add JARs . It's on the right side of the project properties window."
+    },
+    {
+      "title": "Select the JARs you want and click OK.",
+      "content": "Select the JARs you want and click OK . The JARs will now appear in the list of libraries in the build path."
+    },
+    {
+      "title": "Click OK to close the properties window.",
+      "content": "Click OK to close the properties window. The JARs will now be in Referenced Libraries instead of lib ."
+    },
+    {
+      "title": "Right-click the project name.",
+      "content": "Right-click the project name. This displays a pop-up menu to the right. Note: It is much better to reference JARs that exist in your project or in other projects - this allows you to check in all of your dependencies to your version control system."
+    },
+    {
+      "title": "Navigate to Build Path.",
+      "content": "Navigate to Build Path . This displays a sub-menu to the right."
+    },
+    {
+      "title": "Click Configure Build Path.",
+      "content": "Click Configure Build Path . The project properties window will appear showing your build path configurations."
+    },
+    {
+      "title": "Click Add Variable.",
+      "content": "Click Add Variable . It's to the right of the project properties window."
+    },
+    {
+      "title": "Click Configure Variables.",
+      "content": "Click Configure Variables . It's at the bottom of the New Variables window."
+    },
+    {
+      "title": "Click New.",
+      "content": "Click New . It's at the bottom of the preferences window."
+    },
+    {
+      "title": "Type a name for the new variable.",
+      "content": "Type a name for the new variable. For example, if these are JARs for Tomcat, perhaps you could call it \"TOMCAT_JARS\"."
+    },
+    {
+      "title": "Browse to the directory that contains the JAR for the path.",
+      "content": "Browse to the directory that contains the JAR for the path. Click the Folder button and browse to the directory that contains the JAR path. You can also Click File and select a specific jar file for the variable, if you prefer."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This defines the variables."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This closes the preferences dialog."
+    },
+    {
+      "title": "Select the variable from the list.",
+      "content": "Select the variable from the list. Click the variable to select it."
+    },
+    {
+      "title": "Click Extend.",
+      "content": "Click Extend . It's the button to the right of the list of variables."
+    },
+    {
+      "title": "Select the JAR(s) that you want to add to the classpath.",
+      "content": "Select the JAR(s) that you want to add to the classpath. Click to select the JARs. Hold ⇧ Shift to select multiple JARs."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This closes the extend dialog window."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This closes the new classpath variable dialog."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This closes the build path setup dialog. If you share the project with someone else, they must also define the variable. They can define it under Window -> Preferences -> Java -> Build Path -> Classpath Variables ."
+    },
+    {
+      "title": "Right-click the project name.",
+      "content": "Right-click the project name. This displays a pop-up menu to the side. Note: If you use this method, the external JAR will need to be in the same location on the hard drive for anyone who uses this project. This can make sharing a common project more difficult."
+    },
+    {
+      "title": "Navigate to Build Path.",
+      "content": "Navigate to Build Path . This displays a sub-menu to the right."
+    },
+    {
+      "title": "Click Add External Archives.",
+      "content": "Click Add External Archives . It's in the Build Path sub-menu."
+    },
+    {
+      "title": "Select the JARs you want and click Open.",
+      "content": "Select the JARs you want and click Open . The JARs will now appear in Referenced Libraries ."
+    },
+    {
+      "title": "Right-click the project name.",
+      "content": "Right-click the project name. This displays a pop-up menu to the right. Note: If you use this method, the external JAR will need to be in the same location on the hard drive for anyone who uses this project. This can make sharing a common project more difficult."
+    },
+    {
+      "title": "Navigate to Build Path.",
+      "content": "Navigate to Build Path . It's in the pop-up menu that appears when you right-click the project name."
+    },
+    {
+      "title": "Click Configure Build Path.",
+      "content": "Click Configure Build Path . The project properties window will appear showing your build path configurations."
+    },
+    {
+      "title": "Select the Libraries tab.",
+      "content": "Select the Libraries tab. It's at the top of the project properties window."
+    },
+    {
+      "title": "Click Add External JARs.",
+      "content": "Click Add External JARs . It's on the right side of the project properties window."
+    },
+    {
+      "title": "Select the JARs you want and click Open.",
+      "content": "Select the JARs you want and click Open . The JARs will now appear in the list of libraries in the build path."
+    },
+    {
+      "title": "Click OK to close the properties window.",
+      "content": "Click OK to close the properties window. The JARs will now be in Referenced Libraries ."
+    }
+  ]
+}

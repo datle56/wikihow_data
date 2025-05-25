@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Sudo-Command-Not-Found",
+  "title": "2 Ways to Fix the \"Sudo Command Not Found\" Error on Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal .",
+      "content": "Press Ctrl + Alt + T to open the Terminal . You can use the keyboard shortcut to open the terminal on most versions of Linux. Most Linux distributions come with the sudo package installed. This method mostly only applies if you're using Gentoo, Arch Linux, or if you installed Debian with a root password."
+    },
+    {
+      "title": "Log in as root.",
+      "content": "Log in as root. To install the sudo package, you must become root . Type sudo su - , press Enter , and then Enter the root user password."
+    },
+    {
+      "title": "Enter the command to install the sudo package.",
+      "content": "Enter the command to install the sudo package. Enter one of the following commands to install the sudo package based on your Linux distribution: Debian/Ubuntu: Type apt update -y and press Enter , then type apt install sudo and press Enter . Fedora/CentOS/Rocky/Alma Linux: Type yum install sudo and press Enter . Arch Linux/Manjaro: Type pacman -S sudo and press Enter . Gentoo: Type emerge --ask app-admin/sudo and press Enter . [1] X Research source"
+    },
+    {
+      "title": "Add your user account to the sudo group.",
+      "content": "Add your user account to the sudo group. After you install the sudo package, you need to add anyone who needs access to the sudo command to the \"sudoers\" group. To do this, type usermod -aG sudo [username] and press Enter . Replace \"[username]\" with the username you want to add."
+    },
+    {
+      "title": "Switch back to your regular username.",
+      "content": "Switch back to your regular username. Use the following command to do so: Type su [username] and press Enter . Replace \"[username]\" with your actual username. You should now be able to use sudo . You can test it by typing sudo followed by the command you want to run."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal .",
+      "content": "Press Ctrl + Alt + T to open the Terminal . You can use the keyboard shortcut to open the terminal on most versions of Linux."
+    },
+    {
+      "title": "Type echo $PATH and press ↵ Enter.",
+      "content": "Type echo $PATH and press ↵ Enter . This will check if sudo's directory is in PATH. If it is in your path, you should see /usr/bin as one of the directories (the most common install location). However, sudo may also be installed in /usr/local/bin, /opt/bin, /bin, or /srv/bin. If the directory where sudo is installed is not listed in your path, continue to the next step. If /usr/bin or any of these other directories aren't in your path, you've probably also noticed that other commonly used commands are also giving you \"command not found.\" If you're not sure where sudo is installed, use this guide to learn how to find files in Linux."
+    },
+    {
+      "title": "Export the \"user/bin\" folder to the PATH variable.",
+      "content": "Export the \"user/bin\" folder to the PATH variable. After adding this directory to your PATH variable, sudo should be working. [2] X Research source Type export PATH=$PATH:/usr/bin and press Enter . This command is temporary and only applies to the current terminal window. To permanently add /usr/bin (or whichever directory sudo is installed) to the system path for all users, open /etc/profile in your favorite text editor, then add /usr/bin (or the directory where sudo is installed) to the directories in the path."
+    }
+  ]
+}

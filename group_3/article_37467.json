@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Restore-Factory-Settings-in-Microsoft-Word",
+  "title": "How to Reset Microsoft Word to Default Factory Settings",
+  "steps": [
+    {
+      "title": "Close Microsoft Word.",
+      "content": "Close Microsoft Word. Be sure to save any open documents. You won't be able to reset any of your settings while the application is open. This method requires modifying the Windows registry, which is an advanced task. Before you edit the registry, it's a good idea to back it up so you can restore it if something goes wrong."
+    },
+    {
+      "title": "Press ⊞ Win+E.",
+      "content": "Press ⊞ Win + E . This opens the File Explorer. You can also open File Explorer by clicking it in the Windows menu. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Set the File Explorer to show hidden files and folders.",
+      "content": "Set the File Explorer to show hidden files and folders . This is necessary for displaying a folder you'll need to edit: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the View menu at the top of File Explorer. Click Options at the top-right corner of the window. Click the View tab. Select Show hidden files, folders, and drives under \"Hidden files and folders\". Click Apply , and then click OK ."
+    },
+    {
+      "title": "Navigate to your Users folder in File Explorer.",
+      "content": "Navigate to your Users folder in File Explorer. To do this, click the address bar at the top of File Explorer, type C:\\Users\\ , and then press Enter . If Windows is installed on another drive, replace C with the appropriate drive letter."
+    },
+    {
+      "title": "Navigate to your Microsoft Templates folder.",
+      "content": "Navigate to your Microsoft Templates folder. Follow these steps: [3] X Research source Double-click the folder for your username in the right panel. Double-click the AppData folder (this is usually hidden). Double-click the Roaming folder. Double-click the Microsoft folder. Double-click the Templates folder."
+    },
+    {
+      "title": "Rename the \"Normal.dotm\" file to Normal.old.",
+      "content": "Rename the \"Normal.dotm\" file to Normal.old . This file contains many of your Word options—when you rename the file, Word will have to create a new file with its original factory settings. [4] X Research source Here's how to rename the file: Right-click Normal.dotm and select Rename . Remove .dotm from the end of the file name and replace it with .old . Press the Enter key. Now that you're finished in File Explorer, it's a good idea to go back to View > Options > View and rehide hidden files and folders."
+    },
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R . This key combination opens the Run window, which is where you'll be able to open the registry editor for the remaining settings changes."
+    },
+    {
+      "title": "Type regedit and click OK.",
+      "content": "Type regedit and click OK . This opens the registry editor. [5] X Research source You may have to click Yes to open the editor."
+    },
+    {
+      "title": "Double-click HKEY_CURRENT_USER.",
+      "content": "Double-click HKEY_CURRENT_USER . It's in the left panel of the registry editor. This expands more options inside."
+    },
+    {
+      "title": "Double-click SOFTWARE.",
+      "content": "Double-click SOFTWARE . It's in the new set of folders that expanded in the left panel. More folders will appear."
+    },
+    {
+      "title": "Double-click Microsoft.",
+      "content": "Double-click Microsoft . It's also in the left panel. Even more folders will expand."
+    },
+    {
+      "title": "Double-click Office.",
+      "content": "Double-click Office . More folders will expand."
+    },
+    {
+      "title": "Double-click the correct folder for your version of Word.",
+      "content": "Double-click the correct folder for your version of Word. The next folder you'll enter depends on which version of Word you're using: Word 365, 2019, and 2016: Double-click the 16.0 folder. Word 2013: Double-click the 15.0 folder. Word 2010: Double-click the 14.0 folder. Word 2007: Double-click the 12.0 folder. Word 2003: Double-click the 11.0 folder."
+    },
+    {
+      "title": "Click the Word folder one time.",
+      "content": "Click the Word folder one time. Don't double-click—just click it once to select it."
+    },
+    {
+      "title": "Press the Del key to delete the key.",
+      "content": "Press the Del key to delete the key. When you're prompted to confirm, click Yes to do so. Now that you've made these changes, you can close the registry editor and File Explorer. Restart your computer. You can now start from scratch in Word."
+    },
+    {
+      "title": "Close Word and all other Office applications.",
+      "content": "Close Word and all other Office applications. You'll need to move some files around, and you won't be able to do so while Office applications are open. This method should work on all modern versions of Word for macOS, including Word 2016, Word 2019, and Word 365."
+    },
+    {
+      "title": "Open the Finder .",
+      "content": "Open the Finder . It's the two-toned smiley face icon on the left side of the Dock."
+    },
+    {
+      "title": "Press the ⌥ Option key as you click the Go menu.",
+      "content": "Press the ⌥ Option key as you click the Go menu. It's at the top of the screen. This displays a menu that contains the Library folder, which would've been hidden if you hadn't used the Option key. [6] X Research source"
+    },
+    {
+      "title": "Click the Library folder.",
+      "content": "Click the Library folder. A list of files will appear."
+    },
+    {
+      "title": "Double-click the Group Containers folder.",
+      "content": "Double-click the Group Containers folder. It's inside of the Library folder. Another set of files and folders will appear."
+    },
+    {
+      "title": "Double-click the UBF8T346G9.Office folder.",
+      "content": "Double-click the UBF8T346G9.Office folder. Yet another folder and file list will appear."
+    },
+    {
+      "title": "Double-click the User Content folder.",
+      "content": "Double-click the User Content folder. Don't worry, you're almost there!"
+    },
+    {
+      "title": "Double-click the Templates folder.",
+      "content": "Double-click the Templates folder. This is the folder that contains the file containing your Word settings."
+    },
+    {
+      "title": "Rename the normal.dotm file.",
+      "content": "Rename the normal.dotm file. To rename it: Click normal.dotm one time to select it. Press the Return key. Delete the part that says \".dotm\" and replace it with .old . Press Return to save the new file name, which is now normal.old ."
+    },
+    {
+      "title": "Close Finder and restart your computer.",
+      "content": "Close Finder and restart your computer. When you open Word again, it will automatically recreate the normal.dotm file, giving you a fresh start. [7] X Research source"
+    }
+  ]
+}

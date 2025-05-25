@@ -1,0 +1,130 @@
+{
+  "url": "https://www.wikihow.com/Game-Pass-on-Steam-Deck",
+  "title": "Step-by-Step Guide: Play Xbox Game Pass Games on Steam Deck",
+  "steps": [
+    {
+      "title": "Switch to Desktop Mode.",
+      "content": "Switch to Desktop Mode. To do so, press the Steam button to bring up the Steam menu. Then select Power followed by Desktop . This process will be easier if you connect a keyboard and mouse to Your Steam Deck. However, you can use the trackpad or touchscreen as a mouse. Press A or R2 to left-click or L2 to right-click . You can also click the right and left sides of the trackpad. Press Steam + X to open the on-screen keyboard . [1] X Research source"
+    },
+    {
+      "title": "Open the Discover Software Center.",
+      "content": "Open the Discover Software Center. It's the icon that resembles a blue shopping back in the taskbar at the bottom of the screen."
+    },
+    {
+      "title": "Navigate to the web browsers.",
+      "content": "Navigate to the web browsers. Use the following steps to do so: Select Applications . Select Internet . Select Web browsers ."
+    },
+    {
+      "title": "Install Microsoft Edge.",
+      "content": "Install Microsoft Edge. Locate Microsoft Edge in the list of browsers and select it. Then select Install ."
+    },
+    {
+      "title": "Open the Application Launcher.",
+      "content": "Open the Application Launcher. To do so, return to the desktop and select the icon that resembles a blue circle with a white crescent in the front. It's in the taskbar at the bottom of the screen."
+    },
+    {
+      "title": "Select Internet.",
+      "content": "Select Internet . This displays internet-related programs."
+    },
+    {
+      "title": "Add Microsoft Edge to Steam.",
+      "content": "Add Microsoft Edge to Steam. To do so, right-click Microsoft Edge and click Add to Steam . This will open the \"Add a Game\" window."
+    },
+    {
+      "title": "Click the checkbox next to Microsoft Edge and click Add Selected Programs.",
+      "content": "Click the checkbox next to Microsoft Edge and click Add Selected Programs . This button is at the bottom of the menu."
+    },
+    {
+      "title": "Open the Application Launcher.",
+      "content": "Open the Application Launcher. To do so, return to the desktop and select the Application Launcher icon in the taskbar at the bottom of the screen."
+    },
+    {
+      "title": "Open the Konsole.",
+      "content": "Open the Konsole. The console is like a command-line terminal. Use the following steps to open it. Select System . Select Konsole ."
+    },
+    {
+      "title": "Enter the following command and press ↵ Enter.",
+      "content": "Enter the following command and press ↵ Enter . This will give Microsoft Edge access to your Steam Deck's controls. The command you need to enter is as follows: flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge ."
+    },
+    {
+      "title": "Type exit and press ↵ Enter.",
+      "content": "Type exit and press ↵ Enter . This will close the Konsole."
+    },
+    {
+      "title": "Open the Steam app.",
+      "content": "Open the Steam app. To do so, return to the desktop and click the app that has the Steam logo next to the Application Launcher."
+    },
+    {
+      "title": "Right-click Microsoft Edge and click Properties.",
+      "content": "Right-click Microsoft Edge and click Properties . You can find Microsoft Edge in your Library."
+    },
+    {
+      "title": "Change the name to \"Xbox Cloud Gaming.\"",
+      "content": "Change the name to \"Xbox Cloud Gaming.\" You can enter a new name for the app next to the app icon."
+    },
+    {
+      "title": "Append the code under \"LAUNCH OPTIONS.\"",
+      "content": "Append the code under \"LAUNCH OPTIONS.\" Add the following code after \"@@u @@\" in the box below \"LAUNCH OPTIONS.\" Note that there should be a space after \"@@\". Copy and paste the following code: --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk \"https://www.xbox.com/play\""
+    },
+    {
+      "title": "Close the window.",
+      "content": "Close the window. After you are done appending the code, close the Windows."
+    },
+    {
+      "title": "Right-click Microsoft Edge and click Properties.",
+      "content": "Right-click Microsoft Edge and click Properties . You can find Microsoft Edge in your Library in the Steam app."
+    },
+    {
+      "title": "Open the Controller Layout window.",
+      "content": "Open the Controller Layout window. Using the following steps to do so: Click Manage . Click Controller Layout ."
+    },
+    {
+      "title": "Select BROWSE CONFIGS.",
+      "content": "Select BROWSE CONFIGS . It's in the Steam Controller Configurator."
+    },
+    {
+      "title": "Select Gamepad with Mouse and Trackpad.",
+      "content": "Select Gamepad with Mouse and Trackpad . It's under \"Templates.\""
+    },
+    {
+      "title": "Select APPLY CONFIGURATION.",
+      "content": "Select APPLY CONFIGURATION . It's at the bottom of the window. This applies the Xbox button configuration to the Steam Deck."
+    },
+    {
+      "title": "Click Done.",
+      "content": "Click Done . This closes the Window. At this point, you use the modified Microsoft Edge shortcut to launch and stream Xbox Game Pass games within the web browser in Gaming mode. However, you may want to consider adding custom artwork to the shortcut to make it look more official. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Download the Xbox icon, capsule, and banner.",
+      "content": "Download the Xbox icon, capsule, and banner. Click here to download the Xbox icon, capsule, and banner. This will download the files in a zip file. You may need to download them to a computer. Unzip the zipe file to retrieve the image files."
+    },
+    {
+      "title": "Transfer the files to your Steam Deck.",
+      "content": "Transfer the files to your Steam Deck. You can transfer the files to your Steam Deck using a USB thumb drive. You can store them in the Documents folder."
+    },
+    {
+      "title": "Switch to Desktop mode (if needed).",
+      "content": "Switch to Desktop mode (if needed). If you are not already in Desktop Mode, press the Steam button and select Power . Then select Desktop ."
+    },
+    {
+      "title": "Open Steam.",
+      "content": "Open Steam. Click the icon with the Steam logo in the taskbar at the bottom."
+    },
+    {
+      "title": "Right-click Xbox Cloud Gaming and click Properties.",
+      "content": "Right-click Xbox Cloud Gaming and click Properties . This is the modified Microsoft Edge app that you renamed."
+    },
+    {
+      "title": "Apply the Xbox icon.",
+      "content": "Apply the Xbox icon. To do so, select the blank square to the left of the shortcut name. Navigate to the location where you saved the image files and select the \"Xbox_Cloud_Gaming_Icon.jpg\" file."
+    },
+    {
+      "title": "Apply the banner.",
+      "content": "Apply the banner. To do so, select the Xbox Cloud Gaming app in the library. Right-click the blank area in the title above the \"Play\" button. Click Set custom background . Navigate to the location you saved the image files and select the \"Xbox_Cloud_Gaming_Banner.jpg\" file."
+    },
+    {
+      "title": "Apply the capsule.",
+      "content": "Apply the capsule. Throughout the Steam library, you may see a blank icon for the \"Xbox Cloud Gaming\" app. When you see this, right-click it and click Manage followed by Set custom artwork . Navigate to the location where you saved the image files and select the \"Xbox_Cloud_Gaming_Capsule.jpg\" file."
+    }
+  ]
+}

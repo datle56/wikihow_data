@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Verify-a-PGP-Signature",
+  "title": "How to Verify a PGP Signature",
+  "steps": [
+    {
+      "title": "Install GPG if you're using a Mac.",
+      "content": "Install GPG if you're using a Mac. If you're using a Linux installation outside of macOS, you can skip this step. macOS users should first install Homebrew, and then use it to install the GnuPG software package: Open Terminal , which you'll find in Applications > Utilities . Type /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh )\" and press Return . [1] X Research source Follow the on-screen instructions to install Homebrew. Once Homebrew is installed, type brew install gnupg and press Return . [2] X Research source"
+    },
+    {
+      "title": "Download the PGP signature file.",
+      "content": "Download the PGP signature file. This is the file that ends with .sig. Be sure to save the signature file to the same directory as the file you want to check. An easy way to do this is from the command prompt is to cd into the appropriate directory and download the file using wget https://path/to/signaturefile.sig ."
+    },
+    {
+      "title": "Download the signer's public key.",
+      "content": "Download the signer's public key. You can usually download this from the signer's website or by saving an email attachment to your computer. The public key file usually ends with .asc. As with downloading the signature file, you can use wget to download the public key. If you have the key ID but not a path to download the file, use this command to get the key: gpg --recv-keys KEYID . If you receive the key this way, skip step 4 and go directly to step 5."
+    },
+    {
+      "title": "Import the public key into your public keyring.",
+      "content": "Import the public key into your public keyring. You can do this with the following command in a terminal window: gpg --import PUBLICKEY . Replace PUBLICKEY with the actual file name. [3] X Research source"
+    },
+    {
+      "title": "Verify the signature.",
+      "content": "Verify the signature. Now that all of the files are in their correct locations, you can verify the signature with the following command: gpg --verify SIGNATURE.SIG FILE . Replace SIGNATURE.SIG with the signature file name, and FILE with the name of the file you want to verify. If the output says \"Good Signature,\" you've successfully verified the key. If the signature is bad, you'll know the file is broken or has been edited since the signing."
+    },
+    {
+      "title": "Install Gpg4win.",
+      "content": "Install Gpg4win. You can get the application from https://www.gpg4win.org/download.html . During the installation, you'll see a list of apps that will be installed—just keep the default options selected. The default installation location is C:\\Program Files (x86)\\Gnu\\GnuPg\\gpg.exe. When you run the command required to verify the signature, you'll need to enter the full path to the gpg.exe file. If you choose a different install location, make sure you remember the full path. [4] X Research source"
+    },
+    {
+      "title": "Download the PGP signature.",
+      "content": "Download the PGP signature. This is the file that ends with .sig. You'll need to save the file to the same directory as the file you want to verify."
+    },
+    {
+      "title": "Download the signer's public key.",
+      "content": "Download the signer's public key. You can usually download this from the signer's website or by saving an email attachment to your computer. The public key file usually ends with .asc. This should also be saved to the same folder."
+    },
+    {
+      "title": "Open the Windows File Explorer.",
+      "content": "Open the Windows File Explorer. It's the folder icon on the taskbar. You can also open it by pressing the Windows key + E . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the folder containing the signature and file you want to check.",
+      "content": "Open the folder containing the signature and file you want to check. If you don't see a navigation pane in the left panel of File explorer, click the View menu at the top and select Navigation pane and then Navigation pane again to bring it up. This makes it easier to find what you're looking for."
+    },
+    {
+      "title": "Press ⇧ Shift as you right-click inside the folder.",
+      "content": "Press ⇧ Shift as you right-click inside the folder. A menu will expand."
+    },
+    {
+      "title": "Click Open Command Prompt here.",
+      "content": "Click Open Command Prompt here . If you don't see that option, select Open PowerShell window here ."
+    },
+    {
+      "title": "Import the public key file into your keychain.",
+      "content": "Import the public key file into your keychain. Here's how: Type C:\\Program Files (x86)\\Gnu\\GnuPg\\gpg.exe --import PUBLICKEY and press Enter . Replace PUBLICKEY with the actual file name. If you don't have a file containing the public key, but you do have a key ID, use this command instead: C:\\Program Files (x86)\\Gnu\\GnuPg\\gpg.exe --recv-keys KEYID ."
+    },
+    {
+      "title": "Check the signature.",
+      "content": "Check the signature. Now that the files are ready, here's how to verify the signature: [6] X Research source C:\\Program Files (x86)\\Gnu\\GnuPg\\gpg.exe --verify SIGNATURE.SIG FILE . Replace SIGNATURE.SIG with the signature file name, and FILE with the name of the file you want to verify. If the output says \"Good Signature,\" you've successfully verified the key. If the signature is bad, you'll know the file is broken or has been edited since the signing."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Refresh-Your-IP-Address-on-a-Windows-Computer",
+  "title": "How to Refresh Your IP Address on a Windows Computer",
+  "steps": [
+    {
+      "title": "Open the Command Prompt .",
+      "content": "Open the Command Prompt . To open Command Prompt: Click the Windows Start menu. Type cmd . Click Command Prompt"
+    },
+    {
+      "title": "Type in ipconfig and press ↵ Enter.",
+      "content": "Type in ipconfig and press ↵ Enter . This command finds and displays your computer's IP information. You should see some information appear in the Command Prompt window after a brief delay. If you're connected to the internet at home, IP addresses are usually automatically assigned by the ISP's DHCP server. Resetting your IP address will not always give you a brand-new public IP address that's visible to the world. However, this method should give you a new back-end (private) IP address on your local network, depending on your home router configuration."
+    },
+    {
+      "title": "Review your current IP address.",
+      "content": "Review your current IP address. To the right of the \"IPv4 Address\" heading, you should see a number (e.g., \"123.456.7.8\"). This is your computer's current IP address; the final number in the address represents the spot on the network that the computer occupies. Keep in mind that this is your computer's private IP address—other people on the internet cannot see this IP address. This IP address identifies your computer on your local network. When you refresh your computer's IP address, only the last number is liable to change—and even then, the number might not change."
+    },
+    {
+      "title": "Type in ipconfig /release and press ↵ Enter.",
+      "content": "Type in ipconfig /release and press ↵ Enter . Computer specialist Yaffet Meshesha explains, \"to get a new IP address, you can use a method called release and renew \". [1] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020. After typing this command, your current IP address will be released."
+    },
+    {
+      "title": "Wait for a few minutes.",
+      "content": "Wait for a few minutes. To maximize the chance of your router assigning you a different IP address, wait for at least five minutes before continuing on to renew your computer's IP address."
+    },
+    {
+      "title": "Type in ipconfig /renew and ↵ Enter.",
+      "content": "Type in ipconfig /renew and ↵ Enter . After a few seconds, Meshesha tells us, a new IP address will be assigned and your connection, to the internet will be restored. [2] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020. Don't panic if your IP address is the same as it was before—that just means that the best possible IP address for your computer was determined to be the one that you had before. You can exit Command Prompt at this point. You can do so by typing \"exit\" and pressing Enter , or by clicking the \"X\" icon."
+    },
+    {
+      "title": "Shut down your computer.",
+      "content": "Shut down your computer. If you want to get a new public IP address from your ISP, or you're having a tough time getting a new local IP address, you may be able to do so by disconnecting your modem and router from the internet for several minutes."
+    },
+    {
+      "title": "Unplug the power cable from your modem and router.",
+      "content": "Unplug the power cable from your modem and router. Be sure to completely disconnect the power cable from both the modem and the router if they are separate devices."
+    },
+    {
+      "title": "Wait at leave five minutes.",
+      "content": "Wait at leave five minutes. This will often be enough time for the server that assigns you an IP address automatically to choose a new one from the pool."
+    },
+    {
+      "title": "Plug your modem and/or router back in.",
+      "content": "Plug your modem and/or router back in. It may take a several minutes for your modem and router to reconnect to the internet, so be patient. [3] X Research source If you have a modem and a router, plug your modem back in first and wait about 3 minutes, and then plug your router in."
+    },
+    {
+      "title": "Turn your computer back on and connect to a network.",
+      "content": "Turn your computer back on and connect to a network. Once you've rebooted your computer, you can reconnect to Wi-Fi . If you have a wired connection, your computer should reconnect to the network automatically. Once you connect, your computer should be assigned a new local IP address, and possibly (depending on your ISP), a new public IP address."
+    }
+  ]
+}

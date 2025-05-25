@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Create-an-Unturned-Server",
+  "title": "How to Create an Unturned Server",
+  "steps": [
+    {
+      "title": "Access your Local Files.",
+      "content": "Access your Local Files. These files control what your game looks like, and all the stats of the game. You can access your local files in Steam. Using the following steps to open your local files. Open Steam . Click the Library tab at the top of the screen. Right-click Unturned in the list of games.. Click Properties at the bottom of the menu. Click the Local Files tab. Click Browse Local Files to open the Local File folder in Windows Explorer."
+    },
+    {
+      "title": "Right-click the Unturned.exe.",
+      "content": "Right-click the Unturned.exe . This is the Unturned launch file. It has the green Unturned icon that resembles a zombie's face. Right-clicking it displays a menu to the right of the file."
+    },
+    {
+      "title": "Click Create Shortcut.",
+      "content": "Click Create Shortcut . This will create another executable file called \"Unturned.exe - Shortcut\". This will be the file you will use to start your server later."
+    },
+    {
+      "title": "Rename the shortcut.",
+      "content": "Rename the shortcut. To rename the shortcut, click on it once to select it, then click it again to highlight the file name. Type a new file name. You can name it anything you want. It's recommended you name it something like \"Unturned - server\" or something similar that you can remember later on."
+    },
+    {
+      "title": "Right-click the shortcut.",
+      "content": "Right-click the shortcut. This displays a menu next to the file. Make sure you right-click the new shortcut and not the original \"Unturned.exe\" file."
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties . It's at the bottom of the menu that appears when you right-click the Unturned shortcut file."
+    },
+    {
+      "title": "Place the target location in quotations.",
+      "content": "Place the target location in quotations. The target location is in the field next to the field labeled \"Target\". It should read something like this:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Unturned\\Unturned.exe\". If it is not already in quotations marks, add a quotation mark before and after the text in the field."
+    },
+    {
+      "title": "Add a space then type -batchmode - nographics.",
+      "content": "Add a space then type -batchmode - nographics . This goes after the target location in the \"Target Field\"."
+    },
+    {
+      "title": "Add a space and type +secureserver/server_name.",
+      "content": "Add a space and type +secureserver/ server_name . This goes after \"-nographics\" in the \"Target\" field. Replace \"server_name\" with whatever you want to name your server. Your final target field should look like: \"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Unturned\\Unturned.exe\" -batchmode -nographics +Secureserver/Wikihow If you want to create a local server, replace \"secureserver\" with \"LAN server\". Only players on your local network will be able to join a LAN server. [1] X Research source"
+    },
+    {
+      "title": "Click Apply followed by Ok.",
+      "content": "Click Apply followed by Ok . This applies the changes to the file and closes the window."
+    },
+    {
+      "title": "Run the shortcut.",
+      "content": "Run the shortcut. You should see a command prompt window open. This also creates a new folder created called \"Servers\". Once the servers folder is created, close the Command Prompt window."
+    },
+    {
+      "title": "Open the Servers folder.",
+      "content": "Open the Servers folder. It's the newly created folder in your local files."
+    },
+    {
+      "title": "Open the folder named for your server.",
+      "content": "Open the folder named for your server. This folder should be named whatever you put in earlier after the secureserver. For example, if you put +Secureserver/Wikihow, the folder should be called \"Wikihow\"."
+    },
+    {
+      "title": "Open the Server folder.",
+      "content": "Open the Server folder. It's in the folder named after your server."
+    },
+    {
+      "title": "Double-click Commands.dat.",
+      "content": "Double-click Commands.dat . This opens the Command.dat file. If Windows doesn't recognize the file when you double-click on it, right-click on it and go to Open With . Click Notepad as the program to open the DAT file with it."
+    },
+    {
+      "title": "Type Name followed by the name of your server and press ↵ Enter.",
+      "content": "Type Name followed by the name of your server and press ↵ Enter . For example, Name wikiHow Server . This will be what other people over the internet see when they search for your server. The title can only be 50 characters or less."
+    },
+    {
+      "title": "Type map followed by the map you want to play on your server.",
+      "content": "Type map followed by the map you want to play on your server. For example map Russia . Whichever map you want your server to be on. Current maps include; Hawaii, Russia, Germany, PEI, Yukon, or Washington. You can also enter the name of a custom map you downloaded."
+    },
+    {
+      "title": "Press ↵ Enter and type port 27015.",
+      "content": "Press ↵ Enter and type port 27015 . This will be the Port your server uses to connect to other players. There are other ports you can connect to, but it's recommended you use port 27015."
+    },
+    {
+      "title": "Press ↵ Enter and type password followed by a password (optional).",
+      "content": "Press ↵ Enter and type password followed by a password (optional). If you want to add a password to your server, you can set on by typing \"password\" followed by the password you want to set."
+    },
+    {
+      "title": "Press ↵ Enter and type maxplayers 12.",
+      "content": "Press ↵ Enter and type maxplayers 12 . This sets how many players can connect to your server at once."
+    },
+    {
+      "title": "Press ↵ Enter and type perspective both.",
+      "content": "Press ↵ Enter and type perspective both . This sets the player perspective. Perspective can be set to only allow players to run the game through first-person , third-person , or both . it's recommended you set it to Both."
+    },
+    {
+      "title": "Press ↵ Enter and type mode followed by the difficulty.",
+      "content": "Press ↵ Enter and type mode followed by the difficulty. This sets the difficulty for your server. More difficult levels have more rewards. Difficulty levels include; Easy , Normal , Hardcore , and Gold . [2] X Research source Gold mode has twice the gold and experience as normal mode."
+    },
+    {
+      "title": "Press ↵ Enter and type pvp or pve.",
+      "content": "Press ↵ Enter and type pvp or pve . This sets the game type. You can set the game type as Player-vs-player (PVP) or Player-vs-environment (PVE)."
+    },
+    {
+      "title": "Press ↵ Enter and type cheats on.",
+      "content": "Press ↵ Enter and type cheats on . This sets whether admins can use cheats and commands or not. It's recommended you turn cheats on."
+    },
+    {
+      "title": "Press ↵ Enter and type owner followed by your Steam ID.",
+      "content": "Press ↵ Enter and type owner followed by your Steam ID . This sets you as the owner of the server. You will automatically be made an admin automatically when you connect to your server."
+    },
+    {
+      "title": "Press ↵ Enter and type Welcome followed by a welcome message.",
+      "content": "Press ↵ Enter and type Welcome followed by a welcome message. This is the message the server will automatically send in chat to anyone who joins. It can be friendly or stating the rules."
+    },
+    {
+      "title": "Save the Commands.dat file.",
+      "content": "Save the Commands.dat file. To save the DAT file, click File in the menu bar at the top, and click Save ."
+    },
+    {
+      "title": "Run your server again.",
+      "content": "Run your server again. Go back to the Unturned folder and double-click the server file. All of the changes should now appear upon starting your server. The top should say something such as \"Successfully set name to Wikihow!\""
+    },
+    {
+      "title": "Run your Unturned game and connect to your server.",
+      "content": "Run your Unturned game and connect to your server. To connect, go to Play, Servers, then on the left click LAN. Your server should pop up, connect to it and have fun! If you want to get people not on your wifi, you'll need to port forward your game."
+    }
+  ]
+}

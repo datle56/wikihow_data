@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Install-Software-Without-Admin-Privileges-on-Windows",
+  "title": "2 Ways to Install Windows Apps if You're Not an Administrator",
+  "steps": [
+    {
+      "title": "Download the app you want to install.",
+      "content": "Download the app you want to install. If you're using an older version of Windows, you may be able to install software without admin privileges by writing an easy batch script. Begin by downloading the installer to your PC. This method will not work for all software, although it will work for Steam and a variety of other apps. This workaround has been patched in Windows 11 and recent versions of Windows 10 . If your administrator has blocked you from running batch files , you won't be able to use this method. Administrators may block batch files on school computers, but you usually won't have trouble if you're using a computer at work or home."
+    },
+    {
+      "title": "Drag the installer to your \"Documents\" folder.",
+      "content": "Drag the installer to your \"Documents\" folder. If the installer is contained in a ZIP file, you can unzip the file once you move it to your Documents folder."
+    },
+    {
+      "title": "Create a new folder for the installer and other related files.",
+      "content": "Create a new folder for the installer and other related files. Make this new folder inside of your Documents folder. To create a new folder in Documents: [1] X Research source Open the Documents folder. Click New Folder (Windows 10) or + New > Folder (Windows 11). Name the folder anything you want and press Enter ."
+    },
+    {
+      "title": "Move the installer you downloaded into the new folder.",
+      "content": "Move the installer you downloaded into the new folder. You can drag the installer to the new folder, or copy and paste it into the new location."
+    },
+    {
+      "title": "Create a text file in the new folder.",
+      "content": "Create a text file in the new folder. To do this, right-click a blank area of the new folder, click New , and then click Text Document ."
+    },
+    {
+      "title": "Name the document anything you want and press Enter.",
+      "content": "Name the document anything you want and press Enter . This will not impact the installation process."
+    },
+    {
+      "title": "Type this into the text document after you open it.",
+      "content": "Type this into the text document after you open it. This will create a batch file that can install software without admin permissions. [2] X Research source On the first line, type set __COMPAT_LAYER=RunAsInvoker . There are two underscores (__) before \"COMPAT.\" Then, press enter to start a new line. On the new line, type or paste start (the exact name of the installer including the file extension) . For example, start Firefox Installer.exe . Make sure the file name is exactly as you see it in the new folder. If you don't see a file extension at the end of the installer name, you can leave that part out of your batch file."
+    },
+    {
+      "title": "Save the file as a .bat file.",
+      "content": "Save the file as a .bat file. Click the File menu and select Save As . Then: [3] X Research source Set the encoding of the file to ANSI in the drop-down menu at the bottom. From the \"Save as type\" menu, select All Files . Type a name for the file that ends with \".bat.\" For example, installer.bat . Click Save to save the file."
+    },
+    {
+      "title": "Double-click the batch file to install the program.",
+      "content": "Double-click the batch file to install the program. It's the file ending with \".bat.\" If this workaround will work for the software you want to install, the installer will launch and walk you through the installation process without the need for admin rights. If you're prompted to enter an administrator password, you'll know your administrator doesn't allow you to run batch files. When prompted to choose a folder to install the program in, be sure to choose the new folder you created inside of your Documents folder. If you select a different folder, the installation will fail. If a message pops up saying, \"Windows cannot find (name of software),\" make sure you've typed the name correctly, then try again. Follow the on-screen instructions to install the software. If you see an error, this method won't work for you."
+    },
+    {
+      "title": "Open the Microsoft Store on your Windows PC.",
+      "content": "Open the Microsoft Store on your Windows PC. You should find a Microsoft Store icon in your Start menu. If you don't see it, search for store in the Windows search bar and click Microsoft Store in the search results. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can use the Microsoft Store in Windows 10 and 11 to install many apps without admin privileges. Not all software is available in the Microsoft Store."
+    },
+    {
+      "title": "Search for the program you want to download.",
+      "content": "Search for the program you want to download. Type the name of the program or game into the search bar at the top, then press Enter . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don't see the software you're looking for, you can also browse the Microsoft Store by category to look for similar programs."
+    },
+    {
+      "title": "Select a program and click Get.",
+      "content": "Select a program and click Get . If you're already signed in with your Microsoft account, the program or game will begin to download. If not, you'll need to sign in with your Microsoft account to start the download. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Once the program is installed, you'll find it in your Windows menu. You will not be asked to log in as an admin to install the program."
+    }
+  ]
+}

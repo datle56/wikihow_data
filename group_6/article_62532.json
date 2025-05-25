@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Wipe-a-Hard-Drive",
+  "title": "How to Wipe a Hard Drive",
+  "steps": [
+    {
+      "title": "Enter \"Settings\" in the taskbar's search box, click \"System,\" and scroll down to select \"Recovery.\"",
+      "content": "Enter \"Settings\" in the taskbar's search box, click \"System,\" and scroll down to select \"Recovery.\" Please note that the steps for wiping a hard drive via Windows Settings can vary from different Windows systems. This will use Windows 11 as an example in this section."
+    },
+    {
+      "title": "Tap the \"Reset PC\" button under reset this PC in the \"Recovery\" part where you can find two recovery options.",
+      "content": "Tap the \"Reset PC\" button under reset this PC in the \"Recovery\" part where you can find two recovery options. This step can help you choose to keep or remove your personal files, and then reinstall Windows. Then, there you will see a pop up window asking what you want to remove from your PC."
+    },
+    {
+      "title": "Choose an option between keep and remove your files in the \"Reset this PC\" window.",
+      "content": "Choose an option between keep and remove your files in the \"Reset this PC\" window. Since you want to wipe your hard drive, select \"Remove everything\" to remove all your data, including personal files, apps and settings."
+    },
+    {
+      "title": "Select how would you like to reinstall Windows after removing all your data.",
+      "content": "Select how would you like to reinstall Windows after removing all your data. Consider that reinstalling Windows from this device is faster than downloading and reinstalling Windows from the cloud theoretically, select \"Local reinstall.\" If this option is not working on your computer, you can use \"Cloud download.\""
+    },
+    {
+      "title": "Adjust some additional settings in this window, which decides what the wipe action will do.",
+      "content": "Adjust some additional settings in this window, which decides what the wipe action will do. Although there are already some current settings, you need to click \"Change settings\" under current settings to adjust more settings."
+    },
+    {
+      "title": "Switch the \"Clean data\" from \"No\" to \"Yes\" in the choose settings and click \"Confirm\" to ensure.",
+      "content": "Switch the \"Clean data\" from \"No\" to \"Yes\" in the choose settings and click \"Confirm\" to ensure. The \"Clean data\" can just remove your files, which is quicker but less secure. Then, you will get back to the previous window and click \"Next\" to continue."
+    },
+    {
+      "title": "Check the list of what reset will do and any notifications in the \"Reset this PC\" window.",
+      "content": "Check the list of what reset will do and any notifications in the \"Reset this PC\" window. If you have backed up the valuable data on your hard drive in advance, you can select \"Reset\" to reset this PC."
+    },
+    {
+      "title": "Press the \"Windows + X\" key and choose Disk Management.",
+      "content": "Press the \"Windows + X\" key and choose Disk Management. And there are other ways to open Disk Management: you can press the \"Windows + R\" key and type \"diskmgmt.msc\" into the dialog and click \"OK\" to run it, or enter \"Disk Management\" into the Windows search box and hit \"enter\" to open it."
+    },
+    {
+      "title": "Right-click on the hard drive that you want to wipe and select \"Format\" on the interface of Disk Management which displays all your hard drives.",
+      "content": "Right-click on the hard drive that you want to wipe and select \"Format\" on the interface of Disk Management which displays all your hard drives. Be careful when you choose the target hard drive, or you may accidentally wipe other hard drives."
+    },
+    {
+      "title": "Check out the box of the \"Perform a quick format\" option in the pop-up format hard drive window, and make sure the \"Enable file and folder compression\" option is unchecked.",
+      "content": "Check out the box of the \"Perform a quick format\" option in the pop-up format hard drive window, and make sure the \"Enable file and folder compression\" option is unchecked. You don't need to change other settings. Then, click \"OK\" to perform the format operation."
+    },
+    {
+      "title": "Click \"OK\" when you receive a notice message.",
+      "content": "Click \"OK\" when you receive a notice message. It will warn you that this format operation will erase all your data on this hard drive, and remind you to back up the data you want to keep, and ask if you want to continue."
+    },
+    {
+      "title": "Use Diskpart of Windows to permanently erase the data on your hard drive with the clean all command lines.",
+      "content": "Use Diskpart of Windows to permanently erase the data on your hard drive with the clean all command lines. In the search box of Windows, type \"cmd\" or \"Command Prompt\" and right click it to choose \"Run as administrator.\""
+    },
+    {
+      "title": "Type the following four command lines in the Command Prompt window, and hit \"Enter\" after them to execute each CMD:",
+      "content": "Type the following four command lines in the Command Prompt window, and hit \"Enter\" after them to execute each CMD: \"diskpart\" > \"list disk\" > \"select disk 1\" (Replace \"1\" with the hard drive number you wish to wipe.) > \"clean all.\" Think twice before you use the clean all command since it will destroy all your data on the target hard drive."
+    },
+    {
+      "title": "Wait patiently after you complete the above steps, and Diskpart will delete all your files on the hard drive.",
+      "content": "Wait patiently after you complete the above steps, and Diskpart will delete all your files on the hard drive. Once the process is finished, you can type \"exit\" and hit \"Enter\" to close the Command Prompt window."
+    }
+  ]
+}

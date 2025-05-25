@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Bypass-the-Administrator-Password-in-Windows",
+  "title": "How to Bypass the Administrator Password in Windows",
+  "steps": [
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. You should have either the Windows Installation disk or Windows-Bootable USB in your computer."
+    },
+    {
+      "title": "Press any key when prompted.",
+      "content": "Press any key when prompted. You’ll see the screen prompt you to press any key to use the disk or USB to start."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . You have an opportunity here to change the default language, time and currency settings, as well as the keyboard input."
+    },
+    {
+      "title": "Click Repair your computer.",
+      "content": "Click Repair your computer . You’ll see this to the left under “Install Now.”"
+    },
+    {
+      "title": "Click Troubleshoot.",
+      "content": "Click Troubleshoot . This is the second item in the menu."
+    },
+    {
+      "title": "Click Advanced Options.",
+      "content": "Click Advanced Options ."
+    },
+    {
+      "title": "Click Command Prompt.",
+      "content": "Click Command Prompt . You’ll usually find this in the second column. Command Prompt will open, defaulting to looking in the current folder and drive. For example, your USB drive is most commonly labeled “X”, so Command Prompt will open in X."
+    },
+    {
+      "title": "Navigate to your main drive.",
+      "content": "Navigate to your main drive. Many main drives are labeled “C”. So you’ll type in C: and press ↵ Enter on your keyboard. You’ll see Command Prompt changes to search C. To make sure Windows is installed on this drive, type dir and press ↵ Enter on your keyboard. If Windows is installed on “C,” you’ll see it listed in Command Prompt. If not, try to locate your Windows installation location."
+    },
+    {
+      "title": "Navigate to the Windows folder.",
+      "content": "Navigate to the Windows folder. Type cd windows and press ↵ Enter on your keyboard."
+    },
+    {
+      "title": "Navigate to System32.",
+      "content": "Navigate to System32. Type cd system32 and press ↵ Enter on your keyboard."
+    },
+    {
+      "title": "Type dir osk.exe and press ↵ Enter.",
+      "content": "Type dir osk.exe and press ↵ Enter . Osk.exe is the on-screen keyboard for Windows computers. This command is similar to one of the previous steps, as it will check if osk.exe is in the System32 folder you’ve navigated to."
+    },
+    {
+      "title": "Rename the osk.exe file name.",
+      "content": "Rename the osk.exe file name. Type ren osk.exe osk.exe.new and press ↵ Enter . That command renames the file from “osk.exe” to “osk.exe.new.”"
+    },
+    {
+      "title": "Copy the file.",
+      "content": "Copy the file. Type copy cmd.exe osk.exe and press ↵ Enter . You’ll see Command Prompt verify that you have copied that one file. Since you’ve renamed the original file, you’ve now created a new osk.exe file. You want to copy that new one."
+    },
+    {
+      "title": "Exit Command Prompt.",
+      "content": "Exit Command Prompt. Type exit and press ↵ Enter ."
+    },
+    {
+      "title": "Click Continue.",
+      "content": "Click Continue . Your computer will automatically restart."
+    },
+    {
+      "title": "Do not press any keys or you will need to restart again.",
+      "content": "Do not press any keys or you will need to restart again."
+    },
+    {
+      "title": "Click the timer icon, also called “Ease of access.”",
+      "content": "Click the timer icon, also called “Ease of access.” You’ll find this on the bottom right corner of your screen."
+    },
+    {
+      "title": "Click On-Screen Keyboard.",
+      "content": "Click On-Screen Keyboard . A window similar to Command Prompt will open."
+    },
+    {
+      "title": "Reset the password for the Admin.",
+      "content": "Reset the password for the Admin. Type \"net user Admin *\" and press ↵ Enter . If the username is different than Admin, you enter that here. The window will prompt you for a new password."
+    },
+    {
+      "title": "Enter a new password for that user.",
+      "content": "Enter a new password for that user. You’ll have to confirm this password."
+    },
+    {
+      "title": "Type exit.",
+      "content": "Type exit . The window will disappear and you’ll see the screen to login with your password."
+    },
+    {
+      "title": "Type your new password in the field.",
+      "content": "Type your new password in the field."
+    }
+  ]
+}

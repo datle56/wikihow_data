@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Find-the-Correlation-Coefficient",
+  "title": "How to Determine the Correlation Coefficient",
+  "steps": [
+    {
+      "title": "Assemble your data.",
+      "content": "Assemble your data. To begin calculating a correlation efficient, first examine your data pairs. It is helpful to put them in a table, either vertically or horizontally. Label each row or column x and y. [1] X Research source For example, suppose you have four data pairs for x and y . Your table may look like this: x || y 1 || 1 2 || 3 4 || 5 5 || 7"
+    },
+    {
+      "title": "Calculate the mean of x.",
+      "content": "Calculate the mean of x . In order to calculate the mean, you must add all the values of x , then divide by the number of values. [2] X Research source Using the example above, note that you have four values for x . To calculate the mean, add all the values given for x , then divide by 4. Your calculation would look like this: μ x = ( 1 + 2 + 4 + 5 ) / 4 {\\displaystyle \\mu _{x}=(1+2+4+5)/4} μ x = 12 / 4 {\\displaystyle \\mu _{x}=12/4} μ x = 3 {\\displaystyle \\mu _{x}=3}"
+    },
+    {
+      "title": "Find the mean of y.",
+      "content": "Find the mean of y . To find the mean of y , follow the same steps, adding all the values of y together, then dividing by the number of values. [3] X Research source In the example above, you also have four values for y . Add all these values, then divide by 4. Your calculations would look like this: μ y = ( 1 + 3 + 5 + 7 ) / 4 {\\displaystyle \\mu _{y}=(1+3+5+7)/4} μ y = 16 / 4 {\\displaystyle \\mu _{y}=16/4} μ y = 4 {\\displaystyle \\mu _{y}=4}"
+    },
+    {
+      "title": "Determine the standard deviation of x.",
+      "content": "Determine the standard deviation of x . Once you have your means, you can calculate standard deviation. To do so, use the formula: [4] X Research source σ x = 1 n − 1 Σ ( x − μ x ) 2 {\\displaystyle \\sigma _{x}={\\sqrt {{\\frac {1}{n-1}}\\Sigma (x-\\mu _{x})^{2}}}} With the sample data, your calculations should look like this: σ x = 1 4 − 1 ∗ ( ( 1 − 3 ) 2 + ( 2 − 3 ) 2 + ( 4 − 3 ) 2 + ( 5 − 3 ) 2 ) {\\displaystyle \\sigma _{x}={\\sqrt {{\\frac {1}{4-1}}*((1-3)^{2}+(2-3)^{2}+(4-3)^{2}+(5-3)^{2})}}} σ x = 1 3 ∗ ( 4 + 1 + 1 + 4 ) {\\displaystyle \\sigma _{x}={\\sqrt {{\\frac {1}{3}}*(4+1+1+4)}}} σ x = 1 3 ∗ ( 10 ) {\\displaystyle \\sigma _{x}={\\sqrt {{\\frac {1}{3}}*(10)}}} σ x = 10 3 {\\displaystyle \\sigma _{x}={\\sqrt {\\frac {10}{3}}}} σ x = 1.83 {\\displaystyle \\sigma _{x}=1.83}"
+    },
+    {
+      "title": "Calculate the standard deviation of y.",
+      "content": "Calculate the standard deviation of y . Using the same basic steps, find the standard deviation of y . You will use the same formula, using the y data points. [5] X Research source With the sample data, your calculations should look like this: σ y = 1 4 − 1 ∗ ( ( 1 − 4 ) 2 + ( 3 − 4 ) 2 + ( 5 − 4 ) 2 + ( 7 − 4 ) 2 ) {\\displaystyle \\sigma _{y}={\\sqrt {{\\frac {1}{4-1}}*((1-4)^{2}+(3-4)^{2}+(5-4)^{2}+(7-4)^{2})}}} σ y = 1 3 ∗ ( 9 + 1 + 1 + 9 ) {\\displaystyle \\sigma _{y}={\\sqrt {{\\frac {1}{3}}*(9+1+1+9)}}} σ y = 1 3 ∗ ( 20 ) {\\displaystyle \\sigma _{y}={\\sqrt {{\\frac {1}{3}}*(20)}}} σ y = 20 3 {\\displaystyle \\sigma _{y}={\\sqrt {\\frac {20}{3}}}} σ y = 2.58 {\\displaystyle \\sigma _{y}=2.58}"
+    },
+    {
+      "title": "Review the basic formula for finding a correlation coefficient.",
+      "content": "Review the basic formula for finding a correlation coefficient. The formula for calculating a correlation coefficient uses means, standard deviations, and the number of pairs in your data set (represented by n ). The correlation coefficient itself is represented by the lower-case letter r or the lower-case Greek letter rho, ρ. For this article, you will use the formula known as the Pearson correlation coefficient, shown below: [6] X Research source ρ = ( 1 n − 1 ) Σ ( x − μ x σ x ) ∗ ( y − μ y σ y ) {\\displaystyle \\rho =\\left({\\frac {1}{n-1}}\\right)\\Sigma \\left({\\frac {x-\\mu _{x}}{\\sigma _{x}}}\\right)*\\left({\\frac {y-\\mu _{y}}{\\sigma _{y}}}\\right)} You may notice slight variations in the formula, here or in other texts. For example, some will use the Greek notation with rho and sigma, while others will use r and s. Some texts may show slightly different formulas; but they will be mathematically equivalent to this one."
+    },
+    {
+      "title": "Find the correlation coefficient.",
+      "content": "Find the correlation coefficient. You now have the means and standard deviations for your variables, so you can proceed to use the correlation coefficient formula. Remember that n represents the number of values you have. You have already worked out the other relevant information in the steps above. [7] X Research source Using the sample data, you would enter your data in the correlation coefficient formula and calculate as follows: ρ = ( 1 n − 1 ) Σ ( x − μ x σ x ) ∗ ( y − μ y σ y ) {\\displaystyle \\rho =\\left({\\frac {1}{n-1}}\\right)\\Sigma \\left({\\frac {x-\\mu _{x}}{\\sigma _{x}}}\\right)*\\left({\\frac {y-\\mu _{y}}{\\sigma _{y}}}\\right)} ρ = ( 1 3 ) ∗ {\\displaystyle \\rho =\\left({\\frac {1}{3}}\\right)*} [ ( 1 − 3 1.83 ) ∗ ( 1 − 4 2.58 ) + ( 2 − 3 1.83 ) ∗ ( 3 − 4 2.58 ) {\\displaystyle \\left({\\frac {1-3}{1.83}}\\right)*\\left({\\frac {1-4}{2.58}}\\right)+\\left({\\frac {2-3}{1.83}}\\right)*\\left({\\frac {3-4}{2.58}}\\right)} + ( 4 − 3 1.83 ) ∗ ( 5 − 4 2.58 ) + ( 5 − 3 1.83 ) ∗ ( 7 − 4 2.58 ) {\\displaystyle +\\left({\\frac {4-3}{1.83}}\\right)*\\left({\\frac {5-4}{2.58}}\\right)+\\left({\\frac {5-3}{1.83}}\\right)*\\left({\\frac {7-4}{2.58}}\\right)} ] ρ = ( 1 3 ) ∗ ( 6 + 1 + 1 + 6 4.721 ) {\\displaystyle \\rho =\\left({\\frac {1}{3}}\\right)*\\left({\\frac {6+1+1+6}{4.721}}\\right)} ρ = ( 1 3 ) ∗ 2.965 {\\displaystyle \\rho =\\left({\\frac {1}{3}}\\right)*2.965} ρ = ( 2.965 3 ) {\\displaystyle \\rho =\\left({\\frac {2.965}{3}}\\right)} ρ = 0.988 {\\displaystyle \\rho =0.988}"
+    },
+    {
+      "title": "Interpret your result.",
+      "content": "Interpret your result. For this data set, the correlation coefficient is 0.988. This number tells you two things about the data. Look at the sign of the number and the size of the number. [8] X Research source Because the correlation coefficient is positive, you can say there is a positive correlation between the x-data and the y-data. This means that as the x values increase, you expect the y values to increase also. Because the correlation coefficient is very close to +1, the x-data and y-data are very closely connected. If you were to graph these points, you would see that they form a very good approximation of a straight line."
+    },
+    {
+      "title": "Search the Internet for correlation calculators.",
+      "content": "Search the Internet for correlation calculators. Measuring correlation is a fairly standard calculation for statisticians. The calculation can become very tedious if done by hand for large data sets. As a result, many sources have made correlation calculators available online. Use any search engine and enter the search term “correlation calculator.”"
+    },
+    {
+      "title": "Enter your data.",
+      "content": "Enter your data. Carefully review the instructions on the website so you will enter your data properly. It is important that your data pairs are kept in order, or you will generate an incorrect correlation result. Different websites use different formats to enter data. For example, at the website https://ncalculators.com/statistics/correlation-coefficient-calculator.htm , you will find one horizontal box for entering x-values and a second horizontal box for entering y-values. You enter your terms, separated only by commas. Thus, the x-data set that was calculated earlier in this article should be entered as 1,2,4,5. The y-data set should be 1,3,5,7. At another site, https://www.statskingdom.com/correlation-calculator.html , you can enter data either horizontally or vertically, as long as you keep the data points in order."
+    },
+    {
+      "title": "Calculate your results.",
+      "content": "Calculate your results. These calculation sites are popular because, after you enter your data, you generally need only to click on the button that says “Calculate,” and the result will appear automatically."
+    },
+    {
+      "title": "Enter your data.",
+      "content": "Enter your data. Using a handheld graphing calculator, enter your calculator’s statistics function and then select the “Edit” command. [9] X Research source Each calculator will have slightly different key commands. This article will give the specific instructions for the Texas Instruments TI-86. Enter the Stat function by pressing [2nd]-Stat (above the + key), then hit F2-Edit."
+    },
+    {
+      "title": "Clear any old stored data.",
+      "content": "Clear any old stored data. Most calculators will keep statistical data until cleared. To make sure that you do not confuse old data with new data, you should first clear any previously stored information. [10] X Research source Use the arrow keys to move the cursor to highlight the heading “xStat.” Then press Clear and Enter. This should clear all values in the xStat column. Use the arrow keys to highlight the yStat heading. Press Clear and Enter to empty the data from that column as well."
+    },
+    {
+      "title": "Enter your data values.",
+      "content": "Enter your data values. Using the arrow keys, move the cursor to the first space under the xStat heading. Type in your first data value and then hit Enter. You should see the space at the bottom of the screen display “xStat(1)=__,” with your value filling the blank space. When you hit Enter, the data will fill the table, the cursor will move to the next line, and the line at the bottom of the screen should now read “xStat(2)=__.” [11] X Research source Continue entering all the x-data values. When you complete the x-data, use the arrow keys to move to the yStat column and enter the y-data values. After all the data has been entered, hit Exit to clear the screen and leave the Stat menu."
+    },
+    {
+      "title": "Calculate the linear regression statistics.",
+      "content": "Calculate the linear regression statistics. The correlation coefficient is a measure of how well the data approximates a straight line. A statistical graphing calculator can very quickly calculate the best-fit line and the correlation coefficient. [12] X Research source Enter the Stat function and then hit the Calc button. On the TI-86, this is [2nd][Stat][F1]. Choose the Linear Regression calculations. On the TI-86, this is [F3], which is labeled “LinR.” The graphic screen should then display the line “LinR _,” with a blinking cursor. You now need to enter the names of the two variables that you want to calculate. These are xStat and yStat. On the TI-86, select the Names list by hitting [2nd][List][F3]. The bottom line of your screen should now show the available variables. Choose [xStat] (this is probably button F1 or F2), then enter a comma, then [yStat]. Hit Enter to calculate the data."
+    },
+    {
+      "title": "Interpret your results.",
+      "content": "Interpret your results. When you hit Enter, the calculator will instantly calculate the following information for the data that you entered: [13] X Research source y = a + b x {\\displaystyle y=a+bx} : This is the general formula for a straight line. However, instead of the familiar “y=mx+b,” this is presented in reverse order. a = {\\displaystyle a=} . This is the value of the y-intercept of the best-fit line. b = {\\displaystyle b=} . This is the slope of the best-fit line. corr = {\\displaystyle {\\text{corr}}=} . This is the correlation coefficient. n = {\\displaystyle n=} . This is the number of data pairs that were used in the calculation."
+    },
+    {
+      "title": "Understand the concept of correlation.",
+      "content": "Understand the concept of correlation. Correlation refers to the statistical relationship between two quantities. The correlation coefficient is a single number that you can calculate for any two sets of data points. The number will always be something between -1 and +1, and it indicates how closely connected the two data sets tend to be. [14] X Research source For example, if you were to measure the heights and ages of children up to the age of about 12, you would expect to find a strong positive correlation. As children get older, they tend to get taller. An example of negative correlation would be data comparing a person’s time spent practicing golf shots and that person’s golf score. As the practice increases, the score should decrease. Finally, you would expect very little correlation, either positive or negative, between a person’s shoe size, for example, and SAT scores."
+    },
+    {
+      "title": "Know how to find a mean.",
+      "content": "Know how to find a mean. The arithmetic mean, or “average,” of a set of data is calculated by adding all of the values of the data together, then dividing by the number of values in the set. When you find the correlation coefficient for your data, you will need to calculate the mean of each set of data. [15] X Research source The mean of a variable is denoted by the variable with a horizontal line above it. This is often referred to as “x-bar” or “y-bar” for the x and y data sets. Alternatively, the mean may be signified by the lower-case Greek letter mu, μ. To indicate the mean of x-data points, for example, you could write μ x or μ(x). As an example, if you have a set of x-data points (1,2,5,6,9,10), then the mean of this data is calculated as follows: μ x = ( 1 + 2 + 5 + 6 + 9 + 10 ) / 6 {\\displaystyle \\mu _{x}=(1+2+5+6+9+10)/6} μ x = 33 / 6 {\\displaystyle \\mu _{x}=33/6} μ x = 5.5 {\\displaystyle \\mu _{x}=5.5}"
+    },
+    {
+      "title": "Note the importance of standard deviation.",
+      "content": "Note the importance of standard deviation. In statistics, standard deviation measures variation, showing how numbers are spread out in relationship to the mean. A group of numbers with a low standard deviation are fairly tightly collected. A group of numbers with a high standard deviation are widely scattered. [16] X Research source Symbolically, standard deviation is expressed with either the lower-case letter s or the lower-case Greek letter sigma, σ. Thus, the standard deviation of the x-data is written as either s x or σ x ."
+    },
+    {
+      "title": "Recognize summation notation.",
+      "content": "Recognize summation notation. The summation operator is one of the most common operators in mathematics, indicating a sum of values. It is represented by the upper-case Greek letter, sigma, or ∑. [17] X Research source As an example, if you have a set of x-data points (1,2,5,6,9,10), then ∑x means: 1+2+5+6+9+10 = 33."
+    }
+  ]
+}

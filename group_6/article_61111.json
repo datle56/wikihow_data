@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Track-iOS-App-Installs",
+  "title": "iOS Install Tracking: How to Track iOS App Installs with Firebase",
+  "steps": [
+    {
+      "title": "Install Xcode and CocoaPods on your Apple computer.",
+      "content": "Install Xcode and CocoaPods on your Apple computer. On the Apple computer you are using for app development, install Xcode 12.2 or later , then install CocoaPods 1.10.0 by running the command sudo gem install cocoapods in Terminal. [1] X Research source [2] X Research source Unfortunately, Xcode is only available for macOS. While it is possible to run Xcode using a virtual machine, it will certainly run more slowly than it would on a physical Mac, and VM-specific issues may arise that are difficult to debug. Be sure your app is designed for these operating system versions or later: iOS 10, macOS 10.12, tvOS 12, and watchOS 6."
+    },
+    {
+      "title": "Run your app on a physical or simulated Apple device.",
+      "content": "Run your app on a physical or simulated Apple device. To test data collection and the functionality of your app as a whole, set up a physical Apple device or use a simulator. If you would like to use Cloud Messaging, a feature that allows you to receive notification and data payloads of up to 4,000 bytes, you have to run the app from a physical Apple device. [3] X Research source"
+    },
+    {
+      "title": "Sign into Firebase with a Google account.",
+      "content": "Sign into Firebase with a Google account. Signing in will take you to the Firebase console, where you will eventually be able to manage a number of settings and view analytics for your app."
+    },
+    {
+      "title": "Open the Firebase console and click Create a project.",
+      "content": "Open the Firebase console and click Create a project . After opening the console , create a new project for your app with the white Create a project button."
+    },
+    {
+      "title": "Name your project and click Continue.",
+      "content": "Name your project and click Continue . Once you have typed in a name, click the blue Continue button to continue setting up your project."
+    },
+    {
+      "title": "Enable Google Analytics and click Continue.",
+      "content": "Enable Google Analytics and click Continue . Google Analytics is necessary to track your app installs, so be sure to enable it before moving to the next step. In addition to tracking app installs, Google Analytics also provides a number of useful features including crash analytics, cloud messaging, A/B testing, and more."
+    },
+    {
+      "title": "Adjust your Analytics location and data sharing.",
+      "content": "Adjust your Analytics location and data sharing. Use the dropdown menu to select your country, then decide what Analytics data to share with Google by either accepting their default settings or changing it yourself by unchecking the blue checkbox."
+    },
+    {
+      "title": "Accept the Google Analytics terms and create your project.",
+      "content": "Accept the Google Analytics terms and create your project. Click the blue checkbox to accept the Google Analytics terms, then press the blue Create project button."
+    },
+    {
+      "title": "Click Continue once your project is done loading.",
+      "content": "Click Continue once your project is done loading. After you click the blue Continue button, you will be brought back to the Firebase console. The top of the page will now display the name of your project, and a variety of management options will appear on screen. Firebase has both a free model called the “Spark plan” and a pay-as-you-go model called the “Blaze plan”. Determine which is right for your app by comparing the features each plan offers ."
+    },
+    {
+      "title": "Open the Firebase console and click iOS+.",
+      "content": "Open the Firebase console and click iOS+ . When you open the console , click the white, circular button labelled iOS+ under “Get started by adding Firebase to your app”."
+    },
+    {
+      "title": "Find the bundle ID of your app in Xcode and enter it in the “Apple button ID” box.",
+      "content": "Find the bundle ID of your app in Xcode and enter it in the “Apple button ID” box. Your app bundle ID will be listed next to “Bundle Identifier” in the General tab of your app."
+    },
+    {
+      "title": "Enter a nickname and the App Store ID for your app.",
+      "content": "Enter a nickname and the App Store ID for your app. If you choose to enter a nickname for your app, it will be used to identify your app in your Firebase project. Including an App Store ID will allow Firebase Dynamic Links to send users to your app page on the App Store and Google Analytics to import and measure conversion events in Google Ads. Your App Store ID is the series of numbers after “id” at the end of your app’s URL. If your app does not have an App Store ID yet, you can input one later in your project settings."
+    },
+    {
+      "title": "Click Register app and download the config file.",
+      "content": "Click Register app and download the config file. After clicking the blue Register app button, the next step will appear. Click the new Download GoogleService-Info.plist button to download the necessary config file."
+    },
+    {
+      "title": "Add the config file into your Xcode project.",
+      "content": "Add the config file into your Xcode project. Move the “GoogleService-Info.plist” file into the root of your Xcode project."
+    },
+    {
+      "title": "Open a Terminal window and select the directory of the Xcode project for your app.",
+      "content": "Open a Terminal window and select the directory of the Xcode project for your app. To navigate to your project directory, move through higher level directories by typing cd (directory name) until you reach the folder containing your project’s directory, then type cd (project name) ."
+    },
+    {
+      "title": "Create a Podfile through Terminal with pod init.",
+      "content": "Create a Podfile through Terminal with pod init . Podfiles are used by CocoaPods, a dependency management software used by Firebase."
+    },
+    {
+      "title": "Open the Podfile and write pod ‘Firebase/Analytics’, then save the file.",
+      "content": "Open the Podfile and write pod ‘Firebase/Analytics’ , then save the file. This will import the Analytics software development kit (SDK), allowing you to track and manipulate data from your app. You can also add other supported Firebase SDKs from the list linked here ."
+    },
+    {
+      "title": "Run pod install in the Terminal, then open your newly created .xcworkspace file with open (project name).xcworkspace.",
+      "content": "Run pod install in the Terminal, then open your newly created .xcworkspace file with open (project name).xcworkspace . You should use the new “.xcworkspace” file for all future development on your app."
+    },
+    {
+      "title": "Import the Firebase module in your AppDelegate class.",
+      "content": "Import the Firebase module in your AppDelegate class. The Firebase module should be imported with import Firebase if you are coding in Swift or @import Firebase; if you are using Objective-C."
+    },
+    {
+      "title": "Configure an instance of FirebaseApp.",
+      "content": "Configure an instance of FirebaseApp . For Swift users, do so with FirebaseApp.configure() ; for Objective-C users, write [FIRApp configure]; . Typically, these instances will be configured in your application:didFinishLaunchingWithOptions: method."
+    },
+    {
+      "title": "Verify your successful installation of Firebase by running your app.",
+      "content": "Verify your successful installation of Firebase by running your app. Once you have run the app, check the Firebase console to ensure you have installed Firebase correctly."
+    },
+    {
+      "title": "Open your Firebase project from the console.",
+      "content": "Open your Firebase project from the console. Go to the Firebase console , then open the project labeled with your app’s nickname."
+    },
+    {
+      "title": "Click Dashboard under “Analytics” on the sidebar.",
+      "content": "Click Dashboard under “Analytics” on the sidebar. Once the Analytics Dashboard is open, you will see a variety of stats about user activity and engagement."
+    },
+    {
+      "title": "Find the graph titled “Users by App version” and filter it by user type.",
+      "content": "Find the graph titled “Users by App version” and filter it by user type. Click the arrow at the top right of the graph to open a dropdown menu that will allow you to make a graph detailing all users, new users, or returning users. The new users graph will show you how many users opened your app for the first time over a certain time period, essentially tracking new installations."
+    }
+  ]
+}

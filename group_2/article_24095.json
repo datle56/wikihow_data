@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Install-Tor-on-Linux",
+  "title": "How to Install Tor on Linux",
+  "steps": [
+    {
+      "title": "Open Tor Project's website.",
+      "content": "Open Tor Project's website. Open https://www.torproject.org/download/ in your web browser. This is where you'll download the Tor setup file."
+    },
+    {
+      "title": "Click the Download tab.",
+      "content": "Click the Download tab. It's in the upper-right corner of the page. Doing so takes you to the Tor download page."
+    },
+    {
+      "title": "Click DOWNLOAD.",
+      "content": "Click DOWNLOAD . This purple button is on the far-left side of the page. This button should have \"Linux 64-bit\" written at the bottom of it. If you see another operating system's name (e.g., \"Windows\"), first click the Linux link to the right of the button. If asked what to do with the setup file, make sure that you select the \"Save\" or \"Download\" option before proceeding."
+    },
+    {
+      "title": "Wait for the setup file to download.",
+      "content": "Wait for the setup file to download. This should only take a few seconds."
+    },
+    {
+      "title": "Note the setup file's name.",
+      "content": "Note the setup file's name. You should see the setup file's name somewhere in the window; you'll need to know the language and version for the Tor setup file in order to install it. For example, downloading the U.S. English version of Tor would result in the file name \"tor-browser-linux64-7.5.2_en-US.tar.xz\" for the most recent 64-bit version of Tor. If you can't find the file's name, you'll be able to review it in the Downloads folder on your computer."
+    },
+    {
+      "title": "Download the signature",
+      "content": "Download the signature"
+    },
+    {
+      "title": "Open Terminal",
+      "content": "Open Terminal"
+    },
+    {
+      "title": "Now type in \"gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org\" and press ↵ Enter",
+      "content": "Now type in \"gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org\" and press ↵ Enter"
+    },
+    {
+      "title": "Now type in:",
+      "content": "Now type in: \"gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290\" and press ↵ Enter The signature may be changed in the future in which case you should follow: https://support.torproject.org/tbb/how-to-verify-signature/"
+    },
+    {
+      "title": "Then type in:",
+      "content": "Then type in: \"gpgv --keyring ./tor.keyring ~/Downloads/tor-browser-linux64-9.0_en-US.tar.xz.asc ~/Downloads/tor-browser-linux64-9.0_en-US.tar.xz\" Don't forget to change the version to your current one If you get \"No such file or directory\" then check if you have correctly specified the right file or directory"
+    },
+    {
+      "title": "Now you should get \"Good signature from \"Tor Browser Developers (signing key) <torbrowser@torproject.org>\"",
+      "content": "Now you should get \"Good signature from \"Tor Browser Developers (signing key) <torbrowser@torproject.org>\" If it fails the install may be corrupt"
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. Click the Terminal app icon, which resembles a black box with white text in it, to do so. You'll usually find the Terminal icon in the Dock or on the Desktop. Some versions of Linux require you to open the Menu and then select Terminal from the list of apps. You can also just press Alt + Ctrl + T to open the Terminal window."
+    },
+    {
+      "title": "Switch to the Downloads directory.",
+      "content": "Switch to the Downloads directory. Type in cd Downloads and press ↵ Enter . This will shift the Terminal's focus into the Downloads folder, which is where your downloaded Tor setup file should be. If you downloaded the Tor setup file into a different folder, you'll have to change to that folder's directory instead."
+    },
+    {
+      "title": "Extract the Tor setup file's contents.",
+      "content": "Extract the Tor setup file's contents. Type in tar -xvJf tor-browser-linux64-7.5.2_ language-region .tar.xz and make sure to substitute the file name's language (e.g., en-US ) for the language-region section, then press ↵ Enter . [1] X Research source For example, in order to extract the U.S. English version of Tor, you'd type in tar -xvJf tor-browser-linux64-7.5.2_en-US.tar.xz and press ↵ Enter ."
+    },
+    {
+      "title": "Open the Tor browser's directory.",
+      "content": "Open the Tor browser's directory. Type in cd tor-browser_ language where language is the language tag for your selected version of Tor, then press ↵ Enter ."
+    },
+    {
+      "title": "Run the Tor setup.",
+      "content": "Run the Tor setup. Type in ./start-tor-browser.desktop and press ↵ Enter , then wait for Tor's setup window to open."
+    },
+    {
+      "title": "Click Connect.",
+      "content": "Click Connect . It's in the lower-left side of the window. Doing so will connect you to the Tor network and, once the connection is successful, open the Tor browser. You should now be able to browse using Tor."
+    }
+  ]
+}

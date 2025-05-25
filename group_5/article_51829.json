@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Change-the-Time-Synchronization-Interval-in-Windows",
+  "title": "How to Change the Time Synchronization Interval in Windows",
+  "steps": [
+    {
+      "title": "Open Internet Time Synchronization.",
+      "content": "Open Internet Time Synchronization. To do this, open Date and Time Settings. You can do this either through the Control Panel, or by clicking on the time on the taskbar, then clicking \"Change date and time settings...\" then clicking the \"Internet Time\" tab. Verify the computer is set to synchronize automatically."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. There are several ways of doing this, choose the most convenient for you. If you get a User Account Control dialog, click Yes. Press the Windows logo key and R. This will open the Run dialog. Then type regedit and click OK. Alternatively, open the Start Menu and type \"regedit\" in the search box. Click the regedit program to open."
+    },
+    {
+      "title": "Navigate to HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\W32Time\\TimeProviders\\NtpClient.",
+      "content": "Navigate to HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\W32Time\\TimeProviders\\NtpClient. Just click the arrows next to the folder icons to navigate to the correct directories. You may have to scroll a bit when you reach the SYSTEM key."
+    },
+    {
+      "title": "Right click on the SpecialPollInterval key, then click Modify.",
+      "content": "Right click on the SpecialPollInterval key, then click Modify."
+    },
+    {
+      "title": "Convert your desired time to seconds.",
+      "content": "Convert your desired time to seconds. You can quickly do this using Google or a website like Easysurf ."
+    },
+    {
+      "title": "Click Decimal.",
+      "content": "Click Decimal. Then, enter your interval in seconds (without commas), and click OK."
+    },
+    {
+      "title": "Close the Registry Editor.",
+      "content": "Close the Registry Editor."
+    },
+    {
+      "title": "Open Date and Time Settings.",
+      "content": "Open Date and Time Settings. Click Internet Time, click Change Settings, then Update Now. This will immediately synchronize your clock. Click OK to close the dialog."
+    },
+    {
+      "title": "Confirm your new synchronization interval works.",
+      "content": "Confirm your new synchronization interval works. If it does, the next synchronization time should be exactly one interval away from the time you synchronized."
+    }
+  ]
+}

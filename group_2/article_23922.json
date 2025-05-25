@@ -1,0 +1,366 @@
+{
+  "url": "https://www.wikihow.com/Install-Arch-Linux-Dual-Boot",
+  "title": "How to Install Arch Linux Dual Boot on Any Computer",
+  "steps": [
+    {
+      "title": "Check your System Specs.",
+      "content": "Check your System Specs. Arch Linux is an incredibly lightweight system that doesn't need a lot to run. However, it does have a few system requirements. You can check your system specs using one of the following steps: Windows: Open the Windows Start menu click the Settings/Gear icon. Click the System option and then About . [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Mac: Click the Apple menu and select About this Mac . [2] X Research source Linux: Open the command line, type \"hwinfo\", and press Enter ."
+    },
+    {
+      "title": "Make sure you have a UEFI motherboard and a 64-bit processor.",
+      "content": "Make sure you have a UEFI motherboard and a 64-bit processor. Most modern PCs have UEFI motherboards. However, if you are using a particularly old computer, your motherboard may only be using legacy BIOS. If this is the case, you can still install Arch Linux, but the process may be different than what is covered in this article. Arch Linux is designed to work with x86-64 architectures, so make sure you have a 64-bit processor . [3] X Research source"
+    },
+    {
+      "title": "Have a minimum of 1 GB RAM.",
+      "content": "Have a minimum of 1 GB RAM. Arch Linux only needs 512 MB of RAM to run. However, you will need more than 512 MB of RAM to run the bootable Live media disk needed to install Arch Linux."
+    },
+    {
+      "title": "Ensure you have a minimum of 2 GB of hard drive space.",
+      "content": "Ensure you have a minimum of 2 GB of hard drive space. The Arch Linux install is less than 2 GB, but you will want to allow some extra space to install apps and programs. You will need to partition your hard drive to create space to install Arch Linux. It is recommended you allocate at least 10 GB of hard drive space for Arch Linux. [4] X Research source In addition to a standard partition for your Linux installation and file system, Linux also uses swap space when your memory gets full. The amount of swap space you need depends on how much RAM your computer has. If you have less than 2GB of RAM, it is recommended you allocate double the amount of RAM you have for your swap space. If you have between 2 - 8 GB of RAM, you can allocate swap space that is equal to the amount of RAM you have. If you have greater than 8 GB of RAM, it is recommended you allocate a minimum of 4GB of RAM for swap space."
+    },
+    {
+      "title": "Connect to the internet.",
+      "content": "Connect to the internet. It is crucial that you have an internet connection when installing Linux. You can use a Wi-Fi connection, but a wired connection will be much easier to use during the installation process. [5] X Research source"
+    },
+    {
+      "title": "Acquire a USB drive.",
+      "content": "Acquire a USB drive. It is recommended you use a USB drive that has at least 4 GB of space on it. Note: Formatting the USB drive will erase all data on the USB drive, so make sure you back up all data you want to keep."
+    },
+    {
+      "title": "Download the Arch Linux ISO file.",
+      "content": "Download the Arch Linux ISO file. Alternatively, if you want an easier way to install Arch Linux, you can download the Calam Arch installer from Sourceforge . The Calam Arch installer uses a graphical user interface and allows you to pick your own packages and desktop environment. More advanced users can use the following steps to download the official Arch Linux ISO file. Go to https://archlinux.org/download . Scroll down and click a link below your country. Click the Arch Linux ISO file at the top."
+    },
+    {
+      "title": "Download Balena Etcher.",
+      "content": "Download Balena Etcher. Balena Etcher is a free program that can write an ISO file to a USB disk to create a bootable USB drive. Go to https://www.balena.io/etcher/ in a web browser. Click the green download button to download Etcher for your operating system. Open the Balena Etcher setup file in your web browser or Downloads folder. Click I Agree and follow the on-screen instructions."
+    },
+    {
+      "title": "Insert your USB drive and open Balena Etcher.",
+      "content": "Insert your USB drive and open Balena Etcher. It has an icon that resembles a green cube. Alternatively, you can use Rufus to flash a USB drive."
+    },
+    {
+      "title": "Click Flash from File.",
+      "content": "Click Flash from File . It's the blue button on the left. Click this option to select an ISO file."
+    },
+    {
+      "title": "Select the ISO file and click Open.",
+      "content": "Select the ISO file and click Open . You can select the Arch Linux file or the Calam Arch installer file. They are most likely in your Downloads folder."
+    },
+    {
+      "title": "Click Select Target.",
+      "content": "Click Select Target . It's the blue button in the middle. This allows you to select a USB drive."
+    },
+    {
+      "title": "Select your USB drive and click Select.",
+      "content": "Select your USB drive and click Select . Click your USB drive in the menu and click the blue button that says \"Select\" in the lower-right corner."
+    },
+    {
+      "title": "Click Flash.",
+      "content": "Click Flash . It's the blue button on the right. This starts flashing the ISO file to your USB drive. Allow a few minutes for the process to complete. Once the process is complete. you can use the USB drive to boot your PC."
+    },
+    {
+      "title": "Decide how much hard drive space you need.",
+      "content": "Decide how much hard drive space you need. According to Oppido, one of the most important things to do before installing a second operating system is to map out your partitions in advance. It is recommended you allocate at least 10 GB of hard drive space for Arch Linux, which includes the 2 GB operating system files, as well as a separate swap space partition."
+    },
+    {
+      "title": "Partition your Windows drive.",
+      "content": "Partition your Windows drive. In Windows, you can do so using the Disk Management utility. Do not partition the EFI System partition or the Recovery partition. Use the following steps to partition your drive in Windows: [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start menu. Type \"Disk Management\". Click Create and format hard disk partitions . Right-click your Windows partition. Click Shrink Volume and wait for it to query your hard drive. Enter the amount of space you want to allocate in MB (i.e., 10000 for 10 GB) in the third box down. Click Shrink ."
+    },
+    {
+      "title": "Partition your Mac hard drive.",
+      "content": "Partition your Mac hard drive. On a Mac, you can partition your hard drive using Disk Utility. You will need to select \" ext4 \" as the file system. Use the following steps to partition your hard drive on Mac: [7] X Research source Click the magnifying glass icon in the upper-right corner. Type \"Disk Utility\" in the search bar. Click Disk Utility.app . Select your main hard drive in the menu to the left. Click the plus (+) icon below the pie chart. Click Add Partition . Type a name for the partition. Click the Format pop-up menu and select \" ext4 \" as the format. Enter the size of the partition or click and drag the control dot in the pie chart. Click Apply > Continue > Done ."
+    },
+    {
+      "title": "Partition a disk drive in Linux.",
+      "content": "Partition a disk drive in Linux. In Linux, you will need to use the Terminal or command line to partition a disk drive. Use the following steps to partition a hard drive in Linux: [8] X Research source Press Ctrl + Alt + T to open the Terminal or command line. Type sudo parted -l and press Enter to display a list of hard drives. Identify which hard drive you want to partition. Note the path next to \"Disk\" (i.e., \"/dev/sda\"). Type sudo parted [path to disk] and press Enter (i.e., \"sudo parted /dev/sda\") Type mklabel gpt and press Enter to set a disk label as \"gpt.\" Type mkpart primary ext4 1 MB xx GB and press Enter . Replace \"xx\" with the number of GB you want to allocate to the new partition."
+    },
+    {
+      "title": "Boot your PC into the BIOS/UEFI menu (Windows and Linux only).",
+      "content": "Boot your PC into the BIOS/UEFI menu (Windows and Linux only). To boot into the BIOS, start by rebooting your PC. You'll need to press one of the function keys on your keyboard as your computer reboots. Which button you need to press varies between different computer models. It will usually say which button to press in the lower-right comer. If your computer boots up too fast, you can use the following steps to boot into the BIOS/UEFI: [9] X Research source Click the Windows Start menu. Click the Settings/Gear icon. Click Update & Security . Click Recovery in the menu to the left. Click Restart under \"Advanced Setup.\" Click Troubleshoot . Click Advanced Options . Click UEFI Firmware Settings . Click Restart ."
+    },
+    {
+      "title": "Locate the boot order settings in the BIOS menu.",
+      "content": "Locate the boot order settings in the BIOS menu. The BIOS menu is arranged differently depending on the make and model of your motherboard. Use the arrow keys on the keyboard to navigate the BIOS menu and press Enter to make a selection. The boot order section is usually listed under \"Boot\" or something similar."
+    },
+    {
+      "title": "Make sure the USB drive is first in the boot order.",
+      "content": "Make sure the USB drive is first in the boot order. This ensures your computer will try to boot from the USB drive before booting into your main operating system. If no USB drive is inserted, your computer will boot into your operating system as normal. Follow the instructions on your BIOS menus to change the boot order of your drives."
+    },
+    {
+      "title": "Disable Secure Boot.",
+      "content": "Disable Secure Boot. Computers that come with Windows 8, 10, and 11 come with Secure Boot enabled by default. Arch Linux does not yet support Secure Boot. It can only be disabled in the BIOS/UEFI settings. [10] X Research source Locate the Secure Boot option in your BIOS/UEFI settings and ensure it is disabled. You may also want to clear any keys and certificates after disabling Secure Boot. If the option is available, you may want to enable Microsoft’s third-party UEFI."
+    },
+    {
+      "title": "Save your BIOS settings and restart.",
+      "content": "Save your BIOS settings and restart. After changing the boot order, locate the option to Save your BIOS Settings and exit. It will usually say Save and Exit or something similar."
+    },
+    {
+      "title": "Insert your Arch Linux USB installation drive and boot up your PC.",
+      "content": "Insert your Arch Linux USB installation drive and boot up your PC. Now that your BIOS is set to boot from a USB drive first, your system will boot Arch Linux live from the USB drive instead of booting into your normal operating system. Mac Users: If you are using a Mac, restart your Mac. When you hear the startup sound, press and hold the Option key. The Startup Manager will start scanning for other devices it can boot from."
+    },
+    {
+      "title": "Select Arch Linux archiso x86_64 UEFI CD.",
+      "content": "Select Arch Linux archiso x86_64 UEFI CD . It's the first option in the Arch Linux startup menu. It will do a brief system check and then it will display the command line."
+    },
+    {
+      "title": "Type ls /sys/firmware/efi/efivars and press ↵ Enter.",
+      "content": "Type ls /sys/firmware/efi/efivars and press ↵ Enter . This should display a list of items in the EFI firmware directory. This confirms that you are using a UEFI motherboard. If you receive an error message that the directory does not exist, you are not using a UEFI motherboard and you will need to use a different installation process. [11] X Research source If the Terminal command line appears to be too small, type setfont ter-132n and press Enter to make the font size bigger."
+    },
+    {
+      "title": "Type ping google.com and press ↵ Enter.",
+      "content": "Type ping google.com and press ↵ Enter . This will ping the Google server several times and display the time it took to connect. This confirms that you have an internet connection. Press Ctrl +C to stop pinging. If you are not connected to the internet, you can connect to your modem or router directly using an Ethernet cable, or you can use the following steps to connect to Wi-Fi: [12] X Research source Type iwctl and press Enter . Type device list and press Enter to display a list of network interfaces. Type station [interface name] scan to scan for Wi-Fi networks. Replace \"[interface name]\" with the interface you want to use (i.e. \"station wlan0 scan\".) Type station [interface name] get-networks and press Enter to display a list of networks. Type station [interface name] connect [Wi-Fi Network Name] and press Enter . Replace \"[Wi-Fi Network Name]\" with your network SSID. Enter your Wi-Fi password and press Enter . Type station [interface name] show and press enter to confirm you are connected to Wi-Fi. Type exit and press Enter to exit iwctl."
+    },
+    {
+      "title": "Type timedatectl set-ntp true and press ↵ Enter.",
+      "content": "Type timedatectl set-ntp true and press ↵ Enter . This updates and sets the system time and date. [13] X Research source You can confirm the system time and date by typing timedatectl status and pressing Enter ."
+    },
+    {
+      "title": "Type cfdisk and press ↵ Enter.",
+      "content": "Type cfdisk and press ↵ Enter . This displays a list of all disks and partitions along with the partitions for your other operating system."
+    },
+    {
+      "title": "Select the partition you want to install Arch Linux on.",
+      "content": "Select the partition you want to install Arch Linux on. Use the keys on the keyboard to navigate the list of partitions, and press Enter to select a partition. It should say what each partition is being used for. The partition you made for Arch Linux will most likely be called \"Free Space.\" If you are asked to select a label for the hard disk, select \"GPT.\""
+    },
+    {
+      "title": "Select New and press ↵ Enter.",
+      "content": "Select New and press ↵ Enter . This creates a new Partition."
+    },
+    {
+      "title": "Enter 512M and press ↵ Enter.",
+      "content": "Enter 512M and press ↵ Enter . This allocates 512 MB for your Linux root installation."
+    },
+    {
+      "title": "Select Type.",
+      "content": "Select Type . Use the keys on the keyboard to navigate the menu at the bottom. Select Type and press Enter ."
+    },
+    {
+      "title": "Select EFI System and press ↵ Enter.",
+      "content": "Select EFI System and press ↵ Enter . It's near the top of the List menu. This sets the type as EFI so that your computer can boot from this hard drive installation."
+    },
+    {
+      "title": "Select the Free Space drive and press ↵ Enter.",
+      "content": "Select the Free Space drive and press ↵ Enter . This drive should contain the remaining free space available after allocating 512 MB for the root file system. Select the remaining free space partition and press Enter."
+    },
+    {
+      "title": "Enter the amount of swap space you need.",
+      "content": "Enter the amount of swap space you need. The amount of swap space you need depends on how much RAM your computer has. Enter the amount of swap space you need (i.e., 4G) and press Enter . If you have less than 2GB of RAM, allocate double the amount of RAM you have for your swap space. If you have between 2 - 8 GB of RAM, you can allocate swap space that is equal to the amount of RAM you have. If you have greater than 8 GB of RAM, it is recommended you allocate a minimum of 4GB of RAM for swap space."
+    },
+    {
+      "title": "Select Type and press ↵ Enter.",
+      "content": "Select Type and press ↵ Enter . Use the keys on the keyboard to navigate the menu at the bottom."
+    },
+    {
+      "title": "Select Linux Swap and press ↵ Enter.",
+      "content": "Select Linux Swap and press ↵ Enter . This creates a new partition for your Linux Swap. [14] X Research source"
+    },
+    {
+      "title": "Allocate the remaining hard drive space as Linux Filesystem.",
+      "content": "Allocate the remaining hard drive space as Linux Filesystem . You can do so using the same method as above. Select the remaining \"Free Space\" partition, select Type at the bottom, then select Linux Filesystem as the type."
+    },
+    {
+      "title": "Select Write.",
+      "content": "Select Write . It's the second to last button at the bottom of the screen. Select it and press Enter . This writes your partitions in the format you specified. You will be asked if you are sure you want to write the disk partitions. To confirm, type \"yes\" and press Enter . Once you write your disk partitions, you cannot undo that change. Be sure to double-check your system partitions to make sure they are correct. If you write to the wrong disk drive, you could mess up the installation for your other operating system."
+    },
+    {
+      "title": "Select Quit and press ↵ Enter.",
+      "content": "Select Quit and press ↵ Enter . This exits the cfdisk utility."
+    },
+    {
+      "title": "Type fdisk -l and press ↵ Enter.",
+      "content": "Type fdisk -l and press ↵ Enter . This displays all the drives and partitions on your computer. Note the path of the entire disk drive next to \"Disk\" at the top. Also note the path of each partition listed below \"Device.\" You can see the partition type listed below \"Type.\" [15] X Research source Use this command any time you review the path to a partition."
+    },
+    {
+      "title": "Format your root installation drive.",
+      "content": "Format your root installation drive. To do so, type mkfs.fat -F32 [path to partition] and press Enter . Replace \"[path to partition]\" with the path to your root installation drive (i.e. \"mkfs.fat -F32 /dev/sda1\")."
+    },
+    {
+      "title": "Format your Linux file system partition.",
+      "content": "Format your Linux file system partition. To do so, type mkfs.ext4 [path to partition] and press Enter . Replace \"[path to partition]\" with the path to your Linux File system drive (i.e. \"mkfs.ext4 /dev/sda2\")."
+    },
+    {
+      "title": "Format your swap space partition.",
+      "content": "Format your swap space partition. To do so type mkswap [path to swap space] and press Enter . Replace \"[path to swap space]\" with the path to the swap space partition (i.e. \"mkswap /dev/sda2\"). [16] X Research source"
+    },
+    {
+      "title": "Activate the swap space partition.",
+      "content": "Activate the swap space partition. To do so, type swapon [path to swap space]\" and press enter. Replace \"[path to swap space]\" with the path to the swap space partition (i.e. \"swapon /dev/sda2\")"
+    },
+    {
+      "title": "Mount the file system partition.",
+      "content": "Mount the file system partition. To do so, type mount [path to file system] /mnt and press Enter . Replace \"[path to file system]\" with the path to the file system partition (i.e., \"mount /dev/sda3 /mnt\")."
+    },
+    {
+      "title": "Make a \"boot\" directory on the file system partition.",
+      "content": "Make a \"boot\" directory on the file system partition. To do so, type mkdir /mnt/boot and press Enter ."
+    },
+    {
+      "title": "Mount the EFI system partition to the \"boot\" partition.",
+      "content": "Mount the EFI system partition to the \"boot\" partition. To do so, type mount [path to EFI system] /mnt/boot and press Enter . Replace \"[path to EFI system]\" with the path to the EFI partition."
+    },
+    {
+      "title": "Enter the command to install the base Linux package and Linux firmware.",
+      "content": "Enter the command to install the base Linux package and Linux firmware. To do so, run one of the following commands and press Enter . This command will also install a couple of other packages you will need, including nano, sudo, and more. You may be prompted to enter a number. If so, enter the default value that is listed. This may take a while, so now might be a good time to take a break. The commands are as follows: [17] X Research source AMD Processor: pacstrap -i /mnt base base-devel linux linux-headers linux-firmware amd-ucode sudo git nano vim neofetch htop cmake make bluez bluez-utils networkmanager cargo gcc mpv Intel Processor: pacstrap -i /mnt base base-devel linux linux-headers linux-firmware intel-ucode sudo git nano vim neofetch htop cmake make bluez bluez-utils networkmanager cargo gcc mpv"
+    },
+    {
+      "title": "Install the vi text editor.",
+      "content": "Install the vi text editor. You will need this program to edit a few files during the installation process. To install the vi, type pacman -Sy vi and press Enter"
+    },
+    {
+      "title": "Generate the fstab file.",
+      "content": "Generate the fstab file. This generates a new UUID file which gives a unique identifier to the file system. To generate the fstab file type genfstab -U /mnt >> /mnt/etc/fstab and press Enter . [18] X Research source You can check the resulting fstab file by typing vi /mnt/etc/fstab and pressing Enter . You should see some new UUIDs being generated for each file system. To exit out of the VI text editor, type :q! and press Enter ."
+    },
+    {
+      "title": "Change root to the new file system.",
+      "content": "Change root to the new file system. To do so, type arch-chroot /mnt and press Enter ."
+    },
+    {
+      "title": "Set your local time zone.",
+      "content": "Set your local time zone. You can use the following steps to set your local time zone: [19] X Research source Type ln -sf /usr/share/zoneinfo/ and press Tab to display a list of all possible regions. Add your region to the end of the command as listed in the list of regions and press Tab . Type Y and press Enter to list all locations in your region. Add the location nearest to you as listed in the list of locations to the end of the command. Add a space followed by /etc/localtime to the end of the command and press Enter . The entire command should look something like ln -sf /usr/share/zoneinfo/America/Denver /etc/localtime"
+    },
+    {
+      "title": "Sync the hardware clock.",
+      "content": "Sync the hardware clock. To do so, type hwclock --systohc and press Enter . [20] X Research source"
+    },
+    {
+      "title": "Set your language variables.",
+      "content": "Set your language variables. To do this, you will need to open the \"locale.gen\" file which lists all possible language variables. Uncomment the language locales you want to use by deleting the hash (#) in front of them. You will also need to write down the locales you want to use. The locale for American English is \"en_US.UTF-8 UTF-8.\" Use the following steps to set your language: Type vi /etc/locale.gen and press Enter . Scroll down and find the locale(s) you want to use. Highlight the hash in front of it and press Delete (not backspace). Write down the locale(s) you want to use. Type :x and press Enter to save the locate file. Type locale-gen and press Enter to run the locale file. It should list the locales you uncommented."
+    },
+    {
+      "title": "Create a new locale configuration file.",
+      "content": "Create a new locale configuration file. You will be creating a new locale configuration file in the \"/etc\" directory. Use the following steps to do so. Type vi /etc/locale.conf and press Enter to create a new file. Press \"i\" to switch to Insert mode. Type LANG= followed by your locale(s) (i.e. \"LANG=en_US.UTF-8\"). Press \"Esc\" to return to Command mode. Type :x and press Enter to save and exit vi."
+    },
+    {
+      "title": "Change the keyboard layout (optional).",
+      "content": "Change the keyboard layout (optional). By default, Arch Linux uses a standard US keyboard layout. If you want to set a different keyboard layout, you can use the following steps to do so: Type ls /usr/share/kbd/keymaps/**/*.map.gz and press Enter to list all possible keyboard layouts. Identify which keyboard layout you want to use before the \".map.gz\" file extension (i.e. \"de-latin1\" for German). Type vi /etc/vconsole.conf and press Enter to create a new vconsole configuration file. Press \"i\" to switch to Insert mode. Type keymap= followed by the keymap you want to use (i.e. \"keymap=amiga-us\"). Press \"Esc\" to switch to command mode. Type :x and press Enter to save and exit VI."
+    },
+    {
+      "title": "Create a hostname for your computer.",
+      "content": "Create a hostname for your computer. This will be your computer's name on a network. [21] X Research source Type vi /etc/hostname and press Enter . Press \"i\" to enter Insert Mode. Type a hostname for your computer. It can be your computer name or anything you want. Press \"Esc\" to enter Command mode. Type :x and press Enter to save and exit."
+    },
+    {
+      "title": "Update the hosts file.",
+      "content": "Update the hosts file. After creating a local hostname, you will need to update the host file. Replace \"[Tab]\" with a Tab press on the keyboard, and replace \"[hostname]\" with the hostname you chose for your computer. Use the following steps to update your host file: [22] X Research source Type vi /etc/hosts and press Enter to open the Hosts file. Press \"i\" to enter Insert mode. Type 127.0.0.1 [Tab] localhost just below the first 2 lines at the top of the file. Type ::1 [Tab] [Tab] localhost in the next line down. Type 127.0.1.1 [Tab] hostname.localhost [Tab] hostname on the next line down. If you have a static IP address replace \"127.0.1.1\" with your static IP address. Press \"Esc\" to enter Command mode. Type :x and press Enter to save and exit."
+    },
+    {
+      "title": "Enable Bluetooth.",
+      "content": "Enable Bluetooth. To use Bluetooth, enter systemctl enable bluetooth and press Enter ."
+    },
+    {
+      "title": "Enable NetworkManager.",
+      "content": "Enable NetworkManager. This allows you to use the internet connection. Type systemctl enable NetworkManager and press Enter . This command is case sensitive."
+    },
+    {
+      "title": "Set a root user password.",
+      "content": "Set a root user password. To do so, type passwd and press Enter . Type a root user password and press Enter . Then, type your password again and press Enter . [23] X Research source"
+    },
+    {
+      "title": "Add a new user.",
+      "content": "Add a new user. To do so, type useradd -m [username] and press Enter . Replace \"[username]\" with the user's username they will use to log in to Arch Linux. [24] X Research source The \"-m\" option creates a separate home directory for the user. If you want to add the user to a group, you can add \"-G\" followed by the group name after the \"useradd\" command. If you want to create a custom home directory for the user, type \"-d\" followed by the path to the user's home directory after the \"useradd\" command. Type passwd followed by the username and press Enter . Enter a new password for the user and press Enter ."
+    },
+    {
+      "title": "Install the GRUB bootloader.",
+      "content": "Install the GRUB bootloader. This allows you to boot back into Arch Linux upon rebooting. To install the GRUB bootloader, type pacman -S grub efibootmgr dosfstools mtools and press Enter . Press \"y\" when prompted and press Enter ."
+    },
+    {
+      "title": "Install OS-Prober.",
+      "content": "Install OS-Prober. This allows you to find the Windows setup so that you can dual boot. To install OS prober, type pacman -S os-prober and press Enter . Type \"y\" when prompted and press Enter . To test if OS Prober is properly installed, simply type \"os-prober\" after the installation is complete."
+    },
+    {
+      "title": "Install GRUB.",
+      "content": "Install GRUB. To do so, type grub-install --target=x86_64-efi --efi-directory=/boot/ --bootloader-id=GRUB and press Enter . This command installs GRUB using x86_64 architecture. It also specifies the boot directory. [25] X Research source"
+    },
+    {
+      "title": "Make a new directory for your other operating system.",
+      "content": "Make a new directory for your other operating system. To do so, simply type mkdir /mnt2 and press Enter . This creates a new directory called \"mnt2\" which will be used to mount the partition with the other operating system you want to dual-boot."
+    },
+    {
+      "title": "Mount the partition for your other operating system.",
+      "content": "Mount the partition for your other operating system. To do so, type mount [path to partition] /mnt2 and press Enter Replace \"[path to partition]\" with the path to drive that your other operating system is installed on (i.e. \"mount /dev/sda2 /mnt2). This mounts that partition to the newly created \"mnt2\" folder."
+    },
+    {
+      "title": "Generate a GRUB configuration file.",
+      "content": "Generate a GRUB configuration file. To do so, type mkconfig -o /boot/grub/grub.cfg and press Enter . This will generate the GRUB configuration file automatically. OS-Prober should detect the other operating system you are dual-booting and report that it found that operating system."
+    },
+    {
+      "title": "Type exit and press ↵ Enter.",
+      "content": "Type exit and press ↵ Enter . This exits back to the root user."
+    },
+    {
+      "title": "Unmount your USB drive.",
+      "content": "Unmount your USB drive. To do so, type umount -lR /mnt and press Enter . You can now remove your USB drive."
+    },
+    {
+      "title": "Type reboot and press ↵ Enter.",
+      "content": "Type reboot and press ↵ Enter . This reboots your computer. Upon rebooting, you should boot into the GRUB menu. You should see Arch Linux as your first selection, Advanced Options as your second option, and your other operating system as your third option. Select which operating system you want to use. When you boot into Arch Linux, you will be asked to log in with your username and password. [26] X Research source"
+    },
+    {
+      "title": "Connect to Wi-Fi.",
+      "content": "Connect to Wi-Fi. When you first boot into Arch Linux, you will still be using the Terminal command line. You can connect to Wi-Fi using Itwcl. Use the following steps to do so: Type iwctl and press Enter . Type device list and press Enter to display a list of network interfaces. Type station [interface name] scan to scan for Wi-Fi networks. Replace \"[interface name]\" with the interface you want to use (i.e. \"station wlan0 scan\".) Type station [interface name] get-networks and press Enter to display a list of networks. Type station [interface name] connect [Wi-Fi Network Name] and press Enter . Replace \"[Wi-Fi Network Name]\" with your network SSID. Enter your Wi-Fi password and press Enter . Type station [interface name] show and press enter to confirm you are connected to Wi-Fi. Type exit and press Enter to exit iwctl."
+    },
+    {
+      "title": "Fix the Discover backend.",
+      "content": "Fix the Discover backend. This is one of the first things you should do after installing Arch Linux. Enter the following command to install Flatpak and use it as the backend for Discover: sudo pacman -Sy flatpak ."
+    },
+    {
+      "title": "Identify your graphics card.",
+      "content": "Identify your graphics card. To identify your graphics card, type lspci | grep -e VGA and press Enter ."
+    },
+    {
+      "title": "Install your graphics driver.",
+      "content": "Install your graphics driver. To do so, you will first need to consult the Xorg driver installation guide and determine which driver needs to be installed for your graphics card. Then you will need to enter the command to install the graphics driver and related utilities. [27] X Research source For example, to install NVIDIA drivers, you would type sudo pacman -S nvidia nvidia-utils nvidia-settings and press Enter . To install AMD drivers, you would type pacman -S xf86-video-amdgpu mesa and press Enter . Make sure you install the correct drivers for your graphics card model. [28] X Research source"
+    },
+    {
+      "title": "Install a display server.",
+      "content": "Install a display server. To install a GUI user interface on Linux, you will first need to install a display server . To install the Xorg server, type sudo pacman -S xorg xterm xorg-xinit and press Enter . Type startx to test the installation. Choose a GUI . Unlike other Linux distributions, Arch Linux does not come with a graphical user interface (GUI) installed. If you want to use a GUI instead of Terminal commands, you'll need to decide which GUI you want to install. The remaining steps will show you how to install some of the most popular desktop environments. You only need to choose one GUI."
+    },
+    {
+      "title": "Install GNOME.",
+      "content": "Install GNOME. GNOME is a popular user-friendly interface that is used with a variety of Linux distributions. However, it is resource-intensive, lacks advanced features that other interfaces have, and isn't quite as customizable. GNOME requires the equivalent of a 2.0 GHz dual-core processor or better, 2GB of RAM, 20 GB of hard drive space, and a graphics card that supports OpenGL 3.3 or higher. Use the following steps to install GNOME: Type sudo pacman -S gnome gnome-extra and press Enter . Type sudo pacman -S gdm and press Enter . Type sudo systemctl enable gdm and press Enter . Type sudo systemctl start gdm and press Enter ."
+    },
+    {
+      "title": "Install MATE.",
+      "content": "Install MATE. MATE is a traditional desktop environment that is efficient and highly customizable. However, it lacks some of the features that other desktop environments have. MATE requires a 1.0 GHz processor, 2GB of RAM, 10 GB of drive space, and a 1024 x 768 resolution graphics card. Use the following steps to install MATE: Type sudo pacman -S mate mate-extra and press Enter . Type sudo pacman -S lightdm and press Enter . Type sudo pacman -S lightdm-gtk-greeter and press Enter . Type sudo systemctl enable lightdm and press Enter . Type sudo systemctl start lightdm and press Enter ."
+    },
+    {
+      "title": "Install Cinnamon.",
+      "content": "Install Cinnamon. Cinnamon is a user-friendly interface that is highly customizable and known for its stability and reliability. However, it is more resource-intensive, and it relies on specific hardware. Application integration isn't as deep as other interfaces. Cinnamon requires a 1.6 GHz process or higher, 2GB of RAM, 15 GB of hard drive space, and a 1024 x 768 resolution graphics card. Use the following steps to install Cinnamon: Type sudo pacman -S cinnamon nemo-fileroller and press Enter . Type sudo pacman -S lightdm and press Enter . Type sudo pacman -S lightdm-gtk-greeter and press Enter . Type sudo systemctl enable lightdm and press Enter . Type sudo systemctl start lightdm and press Enter ."
+    },
+    {
+      "title": "Install XFCE4.",
+      "content": "Install XFCE4. XFCE4 is an efficient desktop environment that is very stable and highly customizable. However, it lacks modern aesthetic, doesn't have many core features, and has poor application integration. XFCE4 requires a 1.6 GHz process or higher, 2GB or RAM, 15 GB of hard drive space, and a 1024 x 768 resolution graphics card. Use the following steps to install XFCE4: Type sudo pacman -S xfce4 xfce4-goodies and press Enter . Type sudo pacman -S lightdm and press Enter . Type sudo pacman -S lightdm-gtk-greeter and press Enter . Type sudo systemctl enable lightdm and press Enter . Type sudo systemctl start lightdm and press Enter ."
+    },
+    {
+      "title": "Install KDE Plasma.",
+      "content": "Install KDE Plasma. KDE Plasma is highly customizable with many features and configuration options. It allows you to add desktop widgets and as well as use themes. However, it does have a bit of a steep learning curve for new users. Plasma requires the equivalent of a 2.0 GHz dual-core processor or better, 2GB of RAM, 25 GB of hard drive space, and a graphics card that supports OpenGL 3.3 or higher. Use the following steps to install KDE Plasma: Type sudo pacman -S plasma kdeplasma-addons and press Enter . Type sudo pacman -S sddm and press Enter . Type sudo systemctl enable sddm and press Enter . Type sudo systemctl start sddm and press Enter ."
+    },
+    {
+      "title": "Install LXDE.",
+      "content": "Install LXDE. LXDE is a very lightweight desktop environment that is designed for speed and efficiency. It is also highly customizable. However, it has limited features, a less modern design, and lacks application integration. It's a good GUI for older computers. LXDE needs a Pentium III or equivalent processor, 512 MB of RAM, 10 GB of hard drive space, and an 800 x 600 resolution graphics card or higher. Use the following steps to install LXDE: Type sudo pacman -S lxde and press Enter . Type sudo pacman -S lxdm and press Enter . Type sudo systemctl enable lxdm and press Enter . Type sudo systemctl start lxdm and press Enter ."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. To restart your computer, simply type sudo reboot now and press Enter ."
+    },
+    {
+      "title": "Install Pulse Audio.",
+      "content": "Install Pulse Audio. If you want a decent sound system to go along with your Arch Linux experience, you can install Pulse Audio. To install, type sudo pacman -S pulseaudio pulseaudio-alsa pavucontrol and press Enter ."
+    },
+    {
+      "title": "Install the GNOME Terminal and system monitor.",
+      "content": "Install the GNOME Terminal and system monitor. To do so, type sudo pacman -S gnome-terminal gnome-system-monitor and press Enter ."
+    },
+    {
+      "title": "Install Firefox.",
+      "content": "Install Firefox. Type sudo pacman -S firefox and press Enter ."
+    },
+    {
+      "title": "Install VLC.",
+      "content": "Install VLC. If you want to listen to music or play video files on your computer, you will need a media player to do so. Type sudo pacman -S vlc and press Enter ."
+    },
+    {
+      "title": "Install Libre Office.",
+      "content": "Install Libre Office. This is a free, open source alternative to Microsoft Office. Type sudo pacman -S libreoffice and press Enter ."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Program-Using-JavaScript",
+  "title": "How to Program Using JavaScript",
+  "steps": [
+    {
+      "title": "Decide what you should code with.",
+      "content": "Decide what you should code with. JavaScript is used in all websites on the World Wide Web. It is already installed on your computer, so you don't need to install anything. But you need to decide what app or site you should code on. [1] X Research source There are many options for kids. Code.org is a free option for kids from preschool-9th grade. Tynker and Udemy are websites for kids to code many programming languages, such as JavaScript, Python, and Java. You'll need to purchase a subscription though, so they aren't free options. freeCodeCamp is a free option for all ages. You just need to create an account on the website to start coding! The JavaScript website also gives you tutorials on how to code JavaScript. You can also run code in your browser. Just click on the menu button on the right edge of your browser. It looks like ☰ , ⋮ , or ⋯ . Then, scroll down to More tools . Click on Developer Tools , Web Developer , or Develop . Lastly, click on the Console option. There, you can start typing. [2] X Research source If you want to code offline, you can use a text editor. Windows has NotePad for you to use, MacOS has TextEdit, Chrome OS has Text (a Chromebook app), and Linux has Notepadqq. You can also download software such as Visual Studio Code , Atom , Sublime Text , and Eclipse . [3] X Research source Note that while the version of JavaScript included in the browser is quite powerful and can translate to real-world professional JavaScript development, professional developers more often program in supersets of the language, such as TypeScript or the latest ECMAScript."
+    },
+    {
+      "title": "Find tutorials on JavaScript.",
+      "content": "Find tutorials on JavaScript. There are many resources you can use when learning JavaScript. You can read books about JavaScript or scour the web for materials. There are many websites and YouTube channels that teach JavaScript. W3 Schools and freeCodeCamp are good websites for learning JavaScript. They are also free. Tynker is a website for kids to learn coding. There are many programming languages available (like block coding, Python, Java, and JavaScript), including JavaScript. There are many YouTube channels that teach JavaScript such as Programming with Mosh , freeCodeCamp.org , SuperSimpleDev , and WebDevSimplified . There are also books that teach JavaScript, such as JavaScript for Kids - A Playful Introduction to Programming and JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language ."
+    },
+    {
+      "title": "Write comments in your code.",
+      "content": "Write comments in your code. Comments are pieces of code that don't do anything. When you run your code, they won't interfere with the rest of your code. You can write notes to yourself or make headers using comments. [4] X Research source Use // when typing one-line comments. For multi-line comments, put the words you need between /* and */ ."
+    },
+    {
+      "title": "Declare variables in JavaScript.",
+      "content": "Declare variables in JavaScript. Variables are used to store data. Your computer will store the values of variables in an address in its memory. JavaScript uses var , let , and const to declare variables. For example, var x = 1; , let x = 1; , and const x = 1; are the same. If you want to run your code in an older browser, it's best to use var , since it was added in 1995 when JavaScript was first invented. If you don't want to change the values of your variables, use const . There are specific rules to naming your variables. Names have to start with letters (no symbols or numbers). Names are case sensitive (y and Y are different variables since they aren't both uppercase or both lowercase). The names themselves can contain symbols and numbers. You can use Camel Case, which is a system of naming variables in which the first part of the name is lowercase and the second part of the name begins with an uppercase letter. (e.g. carName , lastName , fruitType , videoGameType ) You can also use Snake Case, which is a system of naming variables in which parts of a variable name are separated using underscores. (e.g. car_name , last_name , fruit_type , video_game_type ) Pascal Case is also a system of naming variables. Each part of the variable name has its first letter capitalized. (e.g. CarName , LastName , FruitType , VideoGameType ) You cannot name a variable that is already a default keyword in JavaScript like var , let , const , boolean , true , false , and import . You can find a full list of reserved words here . [5] X Research source"
+    },
+    {
+      "title": "Use different data types.",
+      "content": "Use different data types. JavaScript has eight different data types; strings which is basically text, numbers , booleans , objects , symbols , undefined , null , and BigInt . [6] X Research source The basic/primitive data types are string , number , boolean , undefined , and null . [7] X Research source Strings are a series of characters. Write strings with single or double quotes surrounding them. Numbers are numbers smaller than 2 53 − 1 {\\displaystyle 2^{53}-1} . Booleans are binary variables that have values true or false . BigInt is used to represent numbers greater than 2 53 − 1 {\\displaystyle 2^{53}-1} [8] X Research source Undefined is used to describe variables which haven't been declared (meaning you create a variable, but don't declare it using var , let , or const .) or haven't been assigned a value. [9] X Research source Null is used when there is an intentional absence of a value. [10] X Research source If you don't know the type of a JavaScript variable, you can use the typeof operator to find it out. [11] X Research source"
+    },
+    {
+      "title": "Perform basic arithmetic in JavaScript.",
+      "content": "Perform basic arithmetic in JavaScript. JavaScript uses the basic operators for addition, subtraction, multiplication, and division. + is for addition. - is for subtraction. * is for multiplication. / is for division. % is for the remainder of division. (also called modulus) ** is for exponents. ++ is an increment. -- is for a decrement."
+    },
+    {
+      "title": "Use functions.",
+      "content": "Use functions. Functions are blocks of code that perform a specific task. You can create functions easily. You make a function by typing function name(parameter1, parameter2, parameter3) {} . Make sure to indent everything inside of the function by pressing tab . Function parameters are the names listed inside of the function. Function arguments are the actual values passed to and received by the function. Call a function by typing (function name) (parameter1, parameter2, parameter3); Know the difference between global and local variables. Global variables are declared outside of functions. Local variables are declared inside of functions. Global variables can be called anywhere in a JavaScript program (even outside of a function), whereas local variables can only be called within a function. [12] X Research source [13] X Research source"
+    },
+    {
+      "title": "Create objects.",
+      "content": "Create objects. Objects can contain many values as opposed to variables. Objects have properties and methods . Properties are the values of objects, and methods contain function definitions (the properties). [14] X Research source You create one by typing const (name of object) = {name:value} If you add line breaks and spaces, the computer can still understand the object. People often create objects using const . You can access the properties of an object by typing (objectName).(propertyName) or (objectName)[\"propertyName\"]"
+    },
+    {
+      "title": "Use arrays in JavaScript.",
+      "content": "Use arrays in JavaScript. Arrays, like objects, can store more than one value. The difference is that values in objects describe one thing, whereas arrays store individual values that are different from each other like a grocery list. [15] X Research source [16] X Research source Create arrays by typing const array_name = [item1, item2, ...]; Change a value in an array by typing cars[(index of value)] = (new value); Keep in mind that the first value of a list has the index of 0, so the order goes like 0, 1, 2, 3... instead of 1, 2, 3, 4... . You can have variables of any type instead of just one type. For example, strings, numbers, and objects can be in the array. Arrays themselves can be in arrays too."
+    },
+    {
+      "title": "Make comparisons between two things.",
+      "content": "Make comparisons between two things. There are special symbols you need to use to compare two things. == is the equal to sign. It is different than = because the second equals (=) assigns values to variables, whereas the first equals (==) actually compares two variables. === is the equal value and same type sign. It compares two variables and their values and data types. The other two equals don't compare data types. != is the not equal sign. It compares two variables to see if they are unequal to each other. !== is the not equal value or type sign. It compares two variables to see if they are unequal to each other or have different data types. > is the greater than sign . It compares two variables to see if the first one is greater than the second one. >= compares two variables to see if they are greater than or equal to each other. < is the less than sign . It compares two variables to see if the first one is less than the second one. <= compares two variables to see if they are less than or equal to each other."
+    },
+    {
+      "title": "Use logical operators.",
+      "content": "Use logical operators. Logical operators are used in code like if statements. They are used to compare the logic between variables or values. [17] X Research source && is used to connect two statements using the word and . If someone wrote an if statement and wrote if (x>10) && (x<20) {return x }, the && would link the two statements and say, \"If x is greater than ten AND x is smaller than twenty, return the variable x.\" || is used to connect two statements using the word or . If someone wrote an if statement and wrote if (x>10) }, the || would link the two statements and say, \"If x is greater than ten OR x is smaller than twenty, return the variable x.\" ! is used to connect two statements using the word not . If someone wrote an if statement and wrote if (x!=20) {return x} , the ! would link the two statements and say, \"If x is NOT equal to twenty, return the variable x.\""
+    },
+    {
+      "title": "Use if statements.",
+      "content": "Use if statements. If statements run code if the statement is true. [18] X Research source You write an if statement by typing if (condition) {(code to be run if the condition is true) } You can use the else if block to specify what to do if the if statement is false. Type the else if part of an if-else statement like this: else if {(block of code to be executed if the condition is false) }. You can write multiple else if blocks. You can use the else block to specify what to do if the if and else if statements are false. Type the else part of an if-else statement like this: else {(block of code to be executed if the condition is false) }. Write the else part of the statement below the if part. [19] X Research source You then enter and indent anything that goes inside of the function by pressing tab ."
+    },
+    {
+      "title": "Create simple projects when coding using JavaScript.",
+      "content": "Create simple projects when coding using JavaScript. To test your JavaScript coding knowledge, you should make a few projects. Make a JavaScript quiz . Code an alert . Create a phrasal template word game , also known as a mad lib. Generate random numbers ."
+    },
+    {
+      "title": "Learn about classes.",
+      "content": "Learn about classes. Classes can be used to make objects. The parameters of a class are the names of variables present in the class. The format is class ClassName { constructor() { ... }} Use the keyword class to make objects. The format is (var, let, or const) objectName = new className(parameters of the object); You should always add a method called constructor(); in the class."
+    },
+    {
+      "title": "Print out something in JavaScript.",
+      "content": "Print out something in JavaScript. There are no print() statements in JavaScript. To show output, use one of the following pieces of code. document.getElementById(id).innerHTML to access an HTML element. document.write(); for testing purposes. window.alert(); - displays an alert box with a message. console.log(); - to debug and run in the console."
+    },
+    {
+      "title": "Use for loops.",
+      "content": "Use for loops. For loops repeat an instruction. They are very useful because you can just use loops instead of writing out instructions multiple times. Write one by typing for (initialization; condition; finalExpression) {(code) }. Enter and indent anything that goes inside of the for loop by pressing tab . The initialization is for the variable in the loop to be initialized or set up. The most common variable used is i . The condition decides how many times to run the loop and when the loop should end (for example, the loop could end when i is greater than 10 if you're printing numbers out). If you don't write a specific condition, your code will loop forever. Since your computer can't run forever, it will crash. If you don't want to write a condition, use the keyword break to end the loop. [20] X Research source The final expression is optional. It increments the variable (e.g. i++, i = i + 10, or i--). [21] X Research source"
+    },
+    {
+      "title": "Use while loops.",
+      "content": "Use while loops. While loops perform a task as long as a condition is true. They are similar to for loops . Write a while loop by typing while (condition) {(code to run) }. You then enter and indent anything that goes inside of the while loop by pressing tab . Make sure to increase the variable used in the condition. Your code will run forever, so your computer will crash if you don't increase it. Use a do-while loop. It is a variant of the while loop. It runs code once, then checks if the condition is true or false. If it is currently true, the code will run like a while loop. If the code is false, then it will stop running. [22] X Research source The syntax for a do-while loop is like this: do {(code to be run)} while (condition);"
+    },
+    {
+      "title": "Use array methods.",
+      "content": "Use array methods. You can do many things with arrays in JavaScript. The .toString() method converts an array to a string. The values are separated by commas. The .join() method joins together values from an array. You input what symbol to separate each element in the parenthesis. The .pop() method removes the last element of an array. The .push() method adds an element to the end of an array. .shift() removes the first array element and shifts all other elements to a different index. Use length to easily add/append a new element into an array. The .concat() method merges arrays together. This is called concatenating. .includes() returns true if a certain element is found in an array, and returns false if it does not contain a certain element."
+    },
+    {
+      "title": "Use the math object.",
+      "content": "Use the math object. The math object is static, and properties and methods can be used without creating a math object. Use the math object to find out constants and do other math functions. [23] X Research source Math.round(x); , Math.ceil(x); , Math.floor(x); , or Math.trunc(x); to round numbers. Math.ceil(x); rounds up to the nearest integer, Math.floor(x); rounds down to the nearest integer, and Math.trunc(x); returns the integer part of a number (no decimals). Math.power(x, y); returns the value of x to the power of y. Math.sqrt(x); returns the square root of a number. Math.cbrt(x); returns the cube root of a number. Math.abs(x); returns the absolute value (its distance from zero, which is always positive) of a number. Math.max(); finds the maximum/greatest number out of a list of numbers. Math.min(); finds the minimum/smallest number out of a list of numbers. Math.sin(x); returns the sine of the angle x. Math.cos(x); returns the cosine of the angle x. Math.tan(x); returns the tangent of the angle x. Math.random(); returns a random number between 0 and 1. Math.log(x); returns the natural logarithm of x."
+    },
+    {
+      "title": "Understand more about what scope is.",
+      "content": "Understand more about what scope is. Scope is the accessibility of variables. They let us know where a variable can be accessed. [24] X Research source The keywords let and const create variables with a block-scope. This is when variables can only be accessed within the block (usually enclosed by { }. Variables created with the keyword var can be accessed anywhere in a computer program. This is called global scope ."
+    },
+    {
+      "title": "Use JSON.",
+      "content": "Use JSON. JavaScript has something called JSON . It stands for J ava S cript O bject N otation. It helps convert unreadable computer data to human-readable information. It is a lightweight text format. Any programming language can use JSON since it is language independent. [25] X Research source [26] X Research source You write JSON by typing {name:value }. It has a similar format to JavaScript since it is a subset of the programming language. The data is separated by commas. The values can be strings , numbers , booleans , objects , or arrays ."
+    }
+  ]
+}

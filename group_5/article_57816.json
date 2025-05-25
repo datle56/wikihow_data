@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Monitor-Network-Traffic",
+  "title": "2 Simple Ways to Track Network Traffic with Wireshark and More",
+  "steps": [
+    {
+      "title": "Go to your router's admin page in a web browser.",
+      "content": "Go to your router's admin page in a web browser. You can use any web browser to go to your router's IP address, the default is often \"192.168.1.1.\" If you need clarification on the correct IP address, you can find it in a few different ways. For Windows, open Command Prompt and enter ipconfig and locate your IP next to \"Gateway.\" For Mac or Linux, open Terminal and enter ip r . Sign in if prompted. You'll find your username and password on your router unless you changed it."
+    },
+    {
+      "title": "Go to the device list.",
+      "content": "Go to the device list. Every router looks different when you log into it, so look for a place that will list the devices on your network. For some routers, this could be under an Overview header. You can view a list of all the devices that are connected to your router. If the user of a particular device has given it a name, you will be able to see that name alongside its IP address. The list will also provide information about how the device is connected to the network (whether via ethernet cable or LAN) and how long it has been connected. Additionally, you can check the Wi-Fi details for that connection, such as the signal strength and available bandwidth."
+    },
+    {
+      "title": "Go to a status, bandwidth, or network monitoring section.",
+      "content": "Go to a status, bandwidth, or network monitoring section. However, not every router has this available, so you might need to use a third-party tool to monitor your network activity. If you can find this section, you'll see information like how much bandwith a specific device is using as well as transmission rates and other useful stats. Along with that information, you can also see who's connected to your network and kick them off ."
+    },
+    {
+      "title": "Open Wireshark.",
+      "content": "Open Wireshark. If you don't have the free program for Windows, Mac, and Linux, you can download it from their website . Wireshark is a packet-sniffing tool, so it will definitely give you signals that your network traffic is doing poorly. First, you need to make sure that Wireshark is capturing packets in promiscuous mode, then you can continue to monitor your network traffic."
+    },
+    {
+      "title": "Navigate to \"Edit\" and click Preferences.",
+      "content": "Navigate to \"Edit\" and click Preferences . You'll find \"Edit\" in the menu bar along the top of the Wireshark window. Clicking Preferences will open a new window."
+    },
+    {
+      "title": "Click the Capture tab.",
+      "content": "Click the Capture tab. It's in the panel on the left side of the window."
+    },
+    {
+      "title": "Ensure \"Capture packets in promiscuous mode\" is selected and press OK.",
+      "content": "Ensure \"Capture packets in promiscuous mode\" is selected and press OK . You want to make sure the correct mode is chosen before you check your network traffic since the other mode and this one will have very different results. Close the Wireshark Preferences window if it doesn't close automatically. Using this tool in promiscuous mode on a network that you don't own or have permission to access this way is illegal."
+    },
+    {
+      "title": "Click the blue fin icon to start recording.",
+      "content": "Click the blue fin icon to start recording. You can also press Ctrl + E . You'll see a graph that indicates your network activity. If there was something you've done in the past that indicated some network issues, try it again to see if Wireshark can find it."
+    },
+    {
+      "title": "Press the red fin icon to stop recording.",
+      "content": "Press the red fin icon to stop recording. You'll see the previous history in the window at the top of your screen. Click on an instance to see the IP addresses it was going to and coming from as well as additional data."
+    },
+    {
+      "title": "Use NetFlow or sfFow.",
+      "content": "Use NetFlow or sfFow. Your router may only support one, so make sure you know what that is before you use one. For example, if you have a Cisco router, chances are that you'll only be able to use NetFlow."
+    },
+    {
+      "title": "Use built-in tools.",
+      "content": "Use built-in tools. Many operating systems have tools built in that you can try. They may not offer as much information as 3rd-party tools, but they are better than nothing!"
+    },
+    {
+      "title": "Use a hardware device like a network TAP or packet broker.",
+      "content": "Use a hardware device like a network TAP or packet broker. This is most likely a better solution if you have a medium-sized network to look after and it's not reliant on Wi-Fi, like a small office suite."
+    },
+    {
+      "title": "Use a cloud-based service.",
+      "content": "Use a cloud-based service. There are services, like CloudWatch, that offer network monitoring. These allow you to monitor the network even if you're away from the office! Many of these tools are not free but might offer a free trial. These are probably the best option if you're monitoring a larger network, like a company with multiple offices."
+    },
+    {
+      "title": "Use an app like SolarWinds for Wi-Fi networks.",
+      "content": "Use an app like SolarWinds for Wi-Fi networks. If you don't have an ethernet connection, you can use SolarWinds to monitor your Wi-Fi activity."
+    }
+  ]
+}

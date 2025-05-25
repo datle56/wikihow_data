@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Delete-Temporary-Files-and-Delete-Prefetch-Files-from-Your-Computer",
+  "title": "Delete Temporary Files and Delete Prefetch Files from Your Computer",
+  "steps": [
+    {
+      "title": "Open Disk Cleanup on your PC.",
+      "content": "Open Disk Cleanup on your PC. The quickest way to do this is to type disk cleanup in the Windows search bar and then click Disk Cleanup in the search results. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Clean up system files button.",
+      "content": "Click the Clean up system files button. It's near the bottom-left corner of the dialog window. After Windows scans your primary hard drive (which is where your temp files are stored), a new window will appear. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source When prompted, click Yes to continue."
+    },
+    {
+      "title": "Select files to delete.",
+      "content": "Select files to delete. Windows creates many types of temporary files. Click each type to see a description before selecting or deselecting an option. The amount of hard drive space consumed by each file type appears alongside it. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Make sure to remove the checkmarks next to any type of file you do not want to delete. For example, if you download files from the internet to your Downloads folder and keep them there, you'll definitely want to remove the checkmark from \"Downloads.\" One folder that takes up a lot of space is \"Windows Update Cleanup,\" which contains a compressed version of the last few Windows Updates you installed, just in case you need to roll back an update. If you don't think you'll need to uninstall an update, selecting this option (if available) is a good way to gain hard drive space."
+    },
+    {
+      "title": "Click OK to delete all selected files.",
+      "content": "Click OK to delete all selected files. This part might take a while if you're deleting several GB of files. Once the files are deleted, you'll have regained all the space they once consumed. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press ⊞ Win+R to open the Run dialog.",
+      "content": "Press ⊞ Win + R to open the Run dialog. Another way to open the Run dialog is to type run into the Windows search bar and click Run in the results. Prefetch files are automatically created to speed up the launch of certain applications and don't usually take up much space on your drive. There's no real reason to delete these files unless you need to free up a small amount of space. Not all computers save prefetch files. If you're using a newer version of Windows and have an SSD, prefetch is likely disabled, and there may not be prefetch files to delete."
+    },
+    {
+      "title": "Type prefetch into the \"Run\" box and press ↵ Enter.",
+      "content": "Type prefetch into the \"Run\" box and press ↵ Enter . This opens the Prefetch folder in the File Explorer. Depending on your security settings, you may need to click Continue to access this read-only folder. If nothing happens when you run this command, open File Explorer manually by pressing Windows key + E (or by selecting File Explorer from the Windows menu), then navigate to C:\\Windows\\Prefetch."
+    },
+    {
+      "title": "Enable the option to display hidden files and folders.",
+      "content": "Enable the option to display hidden files and folders. If you see a list of files in the Prefetch folder, skip to the next step. If the folder appears empty or you get an error that says you can't open it, follow these steps: On Windows 11, click the View tab at the top of File Explorer and select Show > Hidden items . On Windows 10 and 8, click the View menu in File Explorer, select Options , then click Change folder and search options . On the View tab, select \"Show hidden files, folders, and drives,\" and click OK . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source On Windows 7 and earlier, click Organize in File Explorer, select Folder and search options , click the View tab, and select \"Show hidden files, folders, and drives.\" Click OK to close the window."
+    },
+    {
+      "title": "Press Ctrl+A to select all Prefetch files.",
+      "content": "Press Ctrl + A to select all Prefetch files. This should highlight all files in the folder in the right panel. If not, click a blank area of the folder first to activate the panel."
+    },
+    {
+      "title": "Press the Del key.",
+      "content": "Press the Del key. This deletes the selected files from the folder. If any of the files you try to delete are in use, you'll see an error that tells you it can't be deleted. Just click Skip on such messages—you won't be able to delete these files until you close whichever apps are using them. The files will not be permanently deleted until you empty your Recycle Bin. You can do this by opening Recycle Bin and clicking Empty Recycle Bin at the top."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. An easy way to do this is to type cmd into the Windows Search bar, right-click Command Prompt , and select Run as administrator ."
+    },
+    {
+      "title": "Type command to delete prefetch files.",
+      "content": "Type command to delete prefetch files. At the prompt, type del C:\\Windows\\prefetch\\*.*/s/q and press Enter . This deletes everything in the Windows Prefetch folder."
+    }
+  ]
+}

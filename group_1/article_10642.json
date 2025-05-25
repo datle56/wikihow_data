@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Create-a-File-in-Unix",
+  "title": "How to Create a File in Unix",
+  "steps": [
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're using a window manager, you can usually press Ctrl + Alt + T to open a new terminal window. If not, log into the system on which you want to create a file through the console."
+    },
+    {
+      "title": "Use cd to change to the desired directory.",
+      "content": "Use cd to change to the desired directory. If you're already in the directory where you'd like to create the file you can skip this step."
+    },
+    {
+      "title": "Type touch newfilename and press ↵ Enter.",
+      "content": "Type touch newfilename and press ↵ Enter . Replace newfilename with the desired file name. This creates a new blank file with that name in the current directory. [1] X Research source"
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're using a window manager, you can usually press Ctrl + Alt + T to open a new terminal window. If not, log into the system on which you want to create a file through the console."
+    },
+    {
+      "title": "Type cat > newfilename and press ↵ Enter.",
+      "content": "Type cat > newfilename and press ↵ Enter . Replace newfilename with whatever you'd like to call your new file. This opens a new blank line."
+    },
+    {
+      "title": "Type some text.",
+      "content": "Type some text. Anything you type here will be added to the file."
+    },
+    {
+      "title": "Press ↵ Enter to move to a blank line.",
+      "content": "Press ↵ Enter to move to a blank line. You'll need to be on a blank line to finish the cat command. [2] X Research source"
+    },
+    {
+      "title": "Press Ctrl+D.",
+      "content": "Press Ctrl + D . This saves the file to the current directory with the name you entered. To view the vile, type cat filename and press ↵ Enter ."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're using a window manager, you can usually press Ctrl + Alt + T to open a new terminal window. If not, log into the system on which you want to create a file through the console."
+    },
+    {
+      "title": "Use cd to change to the desired directory.",
+      "content": "Use cd to change to the desired directory. You'll want to be in the directory where you'd like to store your new file before opening the text editor."
+    },
+    {
+      "title": "Type vi and press ↵ Enter.",
+      "content": "Type vi and press ↵ Enter . This opens the Vi (or Vim, depending on the version of Unix you're using) text editor. [3] X Research source To edit a specific text file with Vi, type vi filename' instead."
+    },
+    {
+      "title": "Press i to enter input mode.",
+      "content": "Press i to enter input mode. Vi has two modes—insert mode and command mode. You must be in input mode to type text into the new file. [4] X Research source"
+    },
+    {
+      "title": "Type some text (optional).",
+      "content": "Type some text (optional). If you want to create a blank file you can just skip this step. Otherwise, type any text you wish to add now. You can't use your mouse or the arrow keys in Vi. If you make a mistake when typing, you'll need to run a command in command mode. Press Esc to make the arrow keys available, use them to move the cursor to the location of the mistake, and then use any of these commands: x deletes the character under the cursor. dw deletes the current word. dd deletes the entire line. r replaces the letter under the cursor with the next one you type. This will automatically put you back into input mode after use. See How to Learn Vi to learn about more Vi commands."
+    },
+    {
+      "title": "Press Esc when you're ready to save the file.",
+      "content": "Press Esc when you're ready to save the file. This places you into command mode."
+    },
+    {
+      "title": "Type :w newfilename and press ↵ Enter.",
+      "content": "Type :w newfilename and press ↵ Enter . Replace newfilename with the name of the file. This saves the file to the current directory. If you want to keep editing the file, press i to go back into input mode. The next time you want to save the file, you can just type :w in command mode (no file name necessary)."
+    },
+    {
+      "title": "Press q and press ↵ Enter to quit Vi.",
+      "content": "Press q and press ↵ Enter to quit Vi. This returns you to the command line."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're using a window manager, you can usually press Ctrl + Alt + T to open a new terminal window. If not, log into the system on which you want to create a file through the console."
+    },
+    {
+      "title": "Use cd to change to the desired directory (optional).",
+      "content": "Use cd to change to the desired directory (optional). You'll be using the cp (copy) command to copy an existing file to another new file. You'll either need to move to the directory that contains the original file or know its full path. [5] X Research source"
+    },
+    {
+      "title": "Type cp originalfile newfile and press ↵ Enter.",
+      "content": "Type cp originalfile newfile and press ↵ Enter . Replace originalfile with the name of the file you want to copy, and newfile with the name of the desired new file. This creates a new file that contains the contents of the old file. [6] X Research source Use the full path to the file if you're working with files outside of the current working directory (e.g., cp /home/maria/textfile1 /home/maria/contracts/textfile2 )."
+    }
+  ]
+}

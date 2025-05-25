@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Fix-Ntoskrnl.exe-Missing-or-Corrupt-Error",
+  "title": "How to Fix Ntoskrnl.exe Missing or Corrupt Error",
+  "steps": [
+    {
+      "title": "Test the error.",
+      "content": "Test the error. Before trying the steps below, you can test to fix this error by following these 2 quick tips. Do the following: Boot your Windows into Last Known Good Configuration (press F8 at startup to do so) Disconnect any PS/2 or serial keyboards you may have and try again. If the above doesn't work, continue to the next step."
+    },
+    {
+      "title": "Boot into the recovery console from your installation disk.",
+      "content": "Boot into the recovery console from your installation disk. If you don't have your installation disk, check the Tips section below for alternatives. If you are unsure how to do this check out the Microsoft Knowledge base article ID: 314058 for a quick guide."
+    },
+    {
+      "title": "Once in run chkdsk /r and once done reboot.",
+      "content": "Once in run chkdsk /r and once done reboot. If this doesn’t work, boot into the recovery console once again and try the following:"
+    },
+    {
+      "title": "From the prompt type attrib -R C:",
+      "content": "From the prompt type attrib -R C : \\boot.ini followed by enter"
+    },
+    {
+      "title": "Then del C:",
+      "content": "Then del C : \\boot.ini followed by enter"
+    },
+    {
+      "title": "With the boot.ini gone, it’s time to rebuild it type bootcfg /rebuild followed by enter",
+      "content": "With the boot.ini gone, it’s time to rebuild it type bootcfg /rebuild followed by enter"
+    },
+    {
+      "title": "When prompted to search for installed OS’s entery",
+      "content": "When prompted to search for installed OS’s enter y"
+    },
+    {
+      "title": "When prompted for the load identifier enter the name of the installed OS, for exampleMicrosoft Server 2003 R2 Standard Edition followed by enter",
+      "content": "When prompted for the load identifier enter the name of the installed OS, for example Microsoft Server 2003 R2 Standard Edition followed by enter"
+    },
+    {
+      "title": "When prompted for the load options enter type /fastdetect followed by enter",
+      "content": "When prompted for the load options enter type /fastdetect followed by enter"
+    },
+    {
+      "title": "Next enter fixboot C:",
+      "content": "Next enter fixboot C : followed by enter"
+    },
+    {
+      "title": "Now to give it a whirl, reboot and see if it’s fixed",
+      "content": "Now to give it a whirl, reboot and see if it’s fixed"
+    },
+    {
+      "title": "If none of the above worked hop into the recovery console once again and enter fixmbr C:",
+      "content": "If none of the above worked hop into the recovery console once again and enter fixmbr C : followed by enter and then reboot."
+    },
+    {
+      "title": "If nothing from above worked, you may need to run this command to replace the ntoskrnl.exe file itself:",
+      "content": "If nothing from above worked, you may need to run this command to replace the ntoskrnl.exe file itself: expand D:\\i386\\ntoskrnl.exe C:\\Windows\\system32 or try to run bootcfg /rebuild"
+    }
+  ]
+}

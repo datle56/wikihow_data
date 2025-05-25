@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Change-File-Dates",
+  "title": "How to Change File Dates",
+  "steps": [
+    {
+      "title": "Download BulkFileChanger if you do not already have a copy in your system.",
+      "content": "Download BulkFileChanger if you do not already have a copy in your system. This utility program enables you to create lists of Windows files and change their attributes."
+    },
+    {
+      "title": "Run BulkFileChanger.",
+      "content": "Run BulkFileChanger. When the main menu appears, click File and then Add Files."
+    },
+    {
+      "title": "Select the file (or folder) where you want to change the date/time attribute.",
+      "content": "Select the file (or folder) where you want to change the date/time attribute. It will show up as an entry on a list."
+    },
+    {
+      "title": "Click on Actions and then Change Time/Attributes.",
+      "content": "Click on Actions and then Change Time/Attributes."
+    },
+    {
+      "title": "Change the Date Created or Date Modified attribute.",
+      "content": "Change the Date Created or Date Modified attribute. You can just check the boxes on the menu for what you want to modify. You can add a specific amount to the current times on the file or even copy time from one file to another to make them match."
+    },
+    {
+      "title": "Click on Do it when you have changed the time as desired.",
+      "content": "Click on Do it when you have changed the time as desired. The files will now reflect the new \"Date Created\" and \"Date Modified\" times you created. [1] X Research source"
+    },
+    {
+      "title": "Launch the OS X \"Terminal.\"",
+      "content": "Launch the OS X \"Terminal.\" Pull down the \"Applications\" menu, then click on \"Utilities\", then launch Terminal."
+    },
+    {
+      "title": "Find the file path of the file you are interested in.",
+      "content": "Find the file path of the file you are interested in. Drag and drop the file onto the Terminal window, and Terminal will provide the file path at the command prompt. The file path can then be copied. [2] X Research source"
+    },
+    {
+      "title": "Enter the terminal command \"touch -mt YYYYMMDDhhmm.ss [file path]\" into the Terminal.",
+      "content": "Enter the terminal command \"touch -mt YYYYMMDDhhmm.ss [file path]\" into the Terminal. This will change the modification date. This sends a command to the touch utility (which sets the modification and access times of files) to set the new date and time. NOTE: YYYY means the year, MM the month, DD the day, hh the hour, mm the minute, ss the second of the target time."
+    },
+    {
+      "title": "Enter the command \"touch -at YYYYMMDDhhmm.ss [file path]\".",
+      "content": "Enter the command \"touch -at YYYYMMDDhhmm.ss [file path]\". This will change the access date."
+    },
+    {
+      "title": "Enter the command \"touch -t YYYYMMDDhhmm.ss [file path]\".",
+      "content": "Enter the command \"touch -t YYYYMMDDhhmm.ss [file path]\". This will change the creation date, unfortunately, only if the target time is before the original creation time. If your target time is after the original creation time, see the citation for the solution. [3] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Change-an-iLO-Password",
+  "title": "A Complete Guide to Changing an iLO Password",
+  "steps": [
+    {
+      "title": "Connect a keyboard, mouse and monitor to the back of the server.",
+      "content": "Connect a keyboard, mouse and monitor to the back of the server."
+    },
+    {
+      "title": "Plug the server into a power source.",
+      "content": "Plug the server into a power source. If there are multiple slots for power cords, plug them all in."
+    },
+    {
+      "title": "Connect the server to a router that has an internet connection.",
+      "content": "Connect the server to a router that has an internet connection."
+    },
+    {
+      "title": "Power up the server while watching the monitor.",
+      "content": "Power up the server while watching the monitor. If the server was already on, turn it off and then on again."
+    },
+    {
+      "title": "Wait for the message \"Integrated lights-out server, press <f8> to continue.\"",
+      "content": "Wait for the message \"Integrated lights-out server, press <f8> to continue.\" This will happen shortly after an HP Prolite graphic appears."
+    },
+    {
+      "title": "Press F8 and go to Users.",
+      "content": "Press F8 and go to Users."
+    },
+    {
+      "title": "Scroll down to Edit and select Administrator.",
+      "content": "Scroll down to Edit and select Administrator."
+    },
+    {
+      "title": "Change the password as desired and press F10 to save.",
+      "content": "Change the password as desired and press F10 to save."
+    },
+    {
+      "title": "Go to Network and select Information.",
+      "content": "Go to Network and select Information."
+    },
+    {
+      "title": "Write down the IP address and press Esc to return to the previous menu.",
+      "content": "Write down the IP address and press Esc to return to the previous menu."
+    },
+    {
+      "title": "Go to File and select Exit to quit.",
+      "content": "Go to File and select Exit to quit."
+    },
+    {
+      "title": "On your computer, enter in the IP address that you wrote down into a browser and log in using the name Administrator and your new password.",
+      "content": "On your computer, enter in the IP address that you wrote down into a browser and log in using the name Administrator and your new password."
+    },
+    {
+      "title": "Follow these steps to reset your password.",
+      "content": "Follow these steps to reset your password. Create a DOS bootable USB flash key NOTE: You can use HP USB Key Utility."
+    },
+    {
+      "title": "Download the IPMItool from this link:",
+      "content": "Download the IPMItool from this link: https://sourceforge.net/projects/ipmitool/"
+    },
+    {
+      "title": "Copy the IPMItool.exe to the bootable disk.",
+      "content": "Copy the IPMItool.exe to the bootable disk."
+    },
+    {
+      "title": "Boot the server using the bootable disk (check boot order in RBSU).",
+      "content": "Boot the server using the bootable disk (check boot order in RBSU)."
+    },
+    {
+      "title": "Run ipmitool.exe 20 18 47 03 02 61 64 6d 69 6e 00 00 00 00 00 00 00 00 00 00 00 #*NOTE:",
+      "content": "Run ipmitool.exe 20 18 47 03 02 61 64 6d 69 6e 00 00 00 00 00 00 00 00 00 00 00 #*NOTE: You can copy this command and paste to batch file. Example: run.bat in step 3"
+    },
+    {
+      "title": "Now the password for admin account should reset back to admin .",
+      "content": "Now the password for admin account should reset back to admin ."
+    }
+  ]
+}

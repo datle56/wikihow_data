@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Kernel-Security-Check-Failure",
+  "title": "What to Do When You Get a Kernel Security Check Failure BSOD",
+  "steps": [
+    {
+      "title": "Safe mode will help prevent crashes while you troubleshoot.",
+      "content": "Safe mode will help prevent crashes while you troubleshoot. When you boot Windows in Safe Mode , it boots with only the essential drivers, files, and programs. Boot Windows into Safe Mode with Networking so that you have internet access to research the problem. Use the following steps to do so: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start menu. If you cannot boot into Windows, boot up your computer and press and hold the Power button as soon as you see the Windows or manufacturer's logo. This will force the shutdown of your computer. Repeat three times to force your computer to boot into Recovery Mode. Click the Gear/Settings icon. Click System . Click Update & security (Windows 10 only). Click Recovery . Click Restart Now next to \"Advanced Startup\" to boot into Recovery Mode. Click Troubleshoot . Click Advanced Options . Click Start up Settings . Click Restart . Press 5 to boot into Safe Mode with Networking."
+    },
+    {
+      "title": "A recent operating system or driver update may contain a fix.",
+      "content": "A recent operating system or driver update may contain a fix. Windows updates often contain critical security updates and fix known bugs, and one of these fixes might target the \"Kernel Security Check Failure\" error. Use the following steps to update Windows : Click the Windows Start menu. Click the Gear/Settings icon. Click System . Click Update & security (Windows 10 only). Click Windows Update . Click Check for updates . Click Download and install if an update is available."
+    },
+    {
+      "title": "Malware can cause the \"Kernel Security Check Failure\" error.",
+      "content": "Malware can cause the \"Kernel Security Check Failure\" error. If you have a virus or your computer is infected with malware, you should be able to catch it by running a scan. Open your antivirus program and select the option to run a full scan. Wait for the scan to finish and quarantine any malicious files that are found. Windows has its own built-in antivirus program called Windows Defender. To use it, click the Start menu, type Windows Security , and click Windows Security . Go to Virus & threat protection and click Quick Scan or Scan now . If you want to scan for malware using a third-party program for good measure, you can download and install the free version of Malwarebytes ."
+    },
+    {
+      "title": "Dump (.dmp) files can help you troubleshoot BSOD issues.",
+      "content": "Dump (.dmp) files can help you troubleshoot BSOD issues. When Windows crashed and showed the \"Kernel Security Check Failure\" error, it likely generated a minidump (.dmp) file. These files are usually located in the \"C:\\Windows\\minidump\" folder. There are a few programs you can install that will read the minidump files and report any errors that are found, including WinDbg , which you can download from the Microsoft Store, and BlueScreenView which you can download from https://www.nirsoft.net/utils/blue_screen_view.html/ . To use WinDbg , install the program and load a dump file that occurred around the time you saw the \"Kernel Security Check Failure.\" of the crash. Type \"!analyze -v\" in the command line and check for errors in the \"Debug Analysis\" area. You can do a Google search for any errors or files responsible for the crash. This will help you determine what caused the crash (i.e., a graphics driver, memory, your hard drive, etc.). To use BlueScreenView , install the program and load a dump file that occurred around the time of the crash. It will analyze the dump file, highlight any files or programs responsible for the crash in red, and report any error codes."
+    },
+    {
+      "title": "You may have installed a program that is causing conflicts.",
+      "content": "You may have installed a program that is causing conflicts. Uninstall any programs you installed around the time of the crash, especially if they are not from a trusted source. Use the following steps to do so: [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start menu. Click the Gear/Settings icon. Click Apps . Click Installed Apps or Apps & features . Select \"Date installed\" in the drop-down menu next to \"Sort By.\" Locate any programs that were installed around the date the problem started. Click the icon with three dots ( ⋯ ) next to the app (Windows 11 only). Click Uninstall Follow the prompts to uninstall the application."
+    },
+    {
+      "title": "You may have a corrupt driver.",
+      "content": "You may have a corrupt driver. If the kernel error started after a driver update, there's a good chance that the driver is the culprit. You can also check your minidump files to see what particular driver may be responsible for the crash. Drivers are usually updated automatically when you update Windows, but Windows Update may not install all the driver updates. It is recommended that you update your disk drivers and your graphics drivers at a minimum. If this doesn't fix the problem, you can uninstall and reinstall the driver from the manufacturer's web page. To check for uninstalled drivers in Windows Update, click Advanced Options > Optional Updates . If you see drivers listed here, select the ones you want to install and click Download & install . To check for driver updates manually: RIght-click the Windows Start menu. Click Device Manager . Expand a device (i.e., \"Disk Drivers,\" \"Display Adapters ). Right-click a driver. Click Update Driver . Click Search automatically for drivers . Follow the prompts to complete the installation. Alternatively, if you want to uninstall a driver, right-click the driver and click Uninstall driver . Then, download the driver from the manufacturer's website."
+    },
+    {
+      "title": "Run the Windows Memory Diagnostic Tool to check for RAM problems.",
+      "content": "Run the Windows Memory Diagnostic Tool to check for RAM problems. This test will restart your computer and check for problems. Use the following steps to run the Windows Memory Diagnostic Tool: Click the Windows Start menu. Type Windows Memory Diagnostic . Click the Windows Memory Diagnostic tool. Click Restart Now and Check for Problems ."
+    },
+    {
+      "title": "Kernel errors may be caused by file corruption.",
+      "content": "Kernel errors may be caused by file corruption. You can run the Windows file scanner utility using the Command Prompt, which scans your hard drive for corrupt files and attempts to fix any found. Use the following steps to run the file scanner utility: Click the Windows Start menu. Type cmd . Right-click the Command Prompt and click Run as administrator . Type SFC /scan now and press Enter ."
+    },
+    {
+      "title": "Your hard drive may be causing \"Kernel Security Check Failure\" errors.",
+      "content": "Your hard drive may be causing \"Kernel Security Check Failure\" errors. You can run the Windows disk checker utility using the Command Prompt to check the health of your hard drive and fix any issues. Use the following steps to run the disk checker utility: Click the Windows Start menu. Type cmd . Right-click the Command Prompt and click Run as administrator . Type chkdsk C: /f and press Enter . Press Y and press Enter ."
+    },
+    {
+      "title": "If the kernel error persists, there could be Windows registry corruption.",
+      "content": "If the kernel error persists, there could be Windows registry corruption. Problems with the Windows registry or corrupt files could cause your computer to crash and display kernel errors. You may need to reinstall Windows to fix the issue. Do this as a last resort, and back up any files and data you want to keep before starting. When you reinstall Windows, you have the option to keep your files or remove everything. Removing everything will completely erase your hard drive and all your files and data. Try to keep your files first; if that doesn't work, try removing everything. Use the following steps to reinstall Windows: Click the Windows Start menu. You can also boot into Recovery mode by booting up your computer and pressing and holding the Power button as soon as you see the Windows or manufacturer's logo. Repeat three times to force your computer to start in Recovery Mode. You can also create a Windows boot disk and boot from the disk to reinstall Windows. Click the Gear/Settings icon. Click System . Click Update & security (Windows 10 only). Click Recovery Click Reset PC or Get Started next to \"Reset this PC.\" Click Keep my files . Click Remove everything if the problem continues. Click Cloud download to download a fresh copy of Windows. If this option isn't available or you're not connected to the internet, click Local reinstall instead. Click Next , Click Next again. Click Reset ."
+    }
+  ]
+}

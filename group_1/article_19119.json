@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Get-Online-Without-Using-a-Browser",
+  "title": "How to Go on the Internet Through Other Methods Without a Browser",
+  "steps": [
+    {
+      "title": "Open Command Prompt or PowerShell.",
+      "content": "Open Command Prompt or PowerShell. For Windows 10 and 11, right-click the Start button or press Win + X and select Command Prompt or PowerShell. File Transfer Protocol (FTP) is not used much by average users today, but it was very common in the age before the World Wide Web. You can connect to a server, look around in the filesystem, and download any files you want without using a browser. Refer to this wikiHow article to learn more about using FTP."
+    },
+    {
+      "title": "Type ftp and press ↵ Enter.",
+      "content": "Type ftp and press ↵ Enter . Once you enter that command, your PowerShell or Command Prompt will send back ftp> ."
+    },
+    {
+      "title": "Type open and the FTP server address you want to connect to.",
+      "content": "Type open and the FTP server address you want to connect to. For example, what you'd enter would look like this: open ftp.microsoft.com ."
+    },
+    {
+      "title": "Enter the username and password (if prompted).",
+      "content": "Enter the username and password (if prompted). If you have permission to use the server, you'll have a username and password. However, you can try using \"Anonymous\" and a blank password to see if anonymous users can use the FTP."
+    },
+    {
+      "title": "Navigate the server with dir and cd commands.",
+      "content": "Navigate the server with dir and cd commands. Use dir to see the content of the directories on the server. Use cd to change to another directory. For example, enter cd example to move to a directory called \"Example.\""
+    },
+    {
+      "title": "Download files with the get command.",
+      "content": "Download files with the get command. If you want to download a file called \"Example.txt\", enter get example.txt ."
+    },
+    {
+      "title": "Upload files with the put command.",
+      "content": "Upload files with the put command. For example, to upload a file called \"Example.txt\" from your computer to the FTP server, enter put \"C:\\Users\\YOURNAME\\Desktop\\example.txt\""
+    },
+    {
+      "title": "Leave the server with quit.",
+      "content": "Leave the server with quit . When you're ready to close the connection, you can type quit and press Enter . [1] X Research source You can use FTP software like Cyberduck or FileZilla to easy use FTP without Command Prompt or PowerShell."
+    },
+    {
+      "title": "Install a mailbox program.",
+      "content": "Install a mailbox program. If you have a stable Internet connection and a working email account, you can use a third-party mailbox program to access your email without using a browser. Any email account will work: Microsoft, Google, Yahoo! – anything that you would access through a browser. Ask a friend, a relative, or a coworker to email you a browser install file; you can load this onto your computer and download a browser! If you use Windows, try activating Microsoft Outlook. This program comes automatically installed on Windows. Try Gmail - It's an inbox app on your smartphone or tablet, and you can add other email addresses like Hotmail !"
+    },
+    {
+      "title": "Open your mailbox program.",
+      "content": "Open your mailbox program. You don't need a browser to do this – it just needs to be installed on your computer. Make sure that you have a working email account, a stable Internet connection, and a previously-set-up mailbox program"
+    },
+    {
+      "title": "Set up your mail account in the mailbox program.",
+      "content": "Set up your mail account in the mailbox program. Most programs will prompt you to set up your account upon your first launch. The exact steps will vary from client to client, but they should be fairly straightforward. When you've set up the account, click the \"Get Mail\" button to access your inbox. If you have any trouble, find the \"Help\" section of the mailbox program, or run a web search for \"how to set up a mail account in [so-and-so mailbox program].\""
+    },
+    {
+      "title": "Have someone send you a browser file.",
+      "content": "Have someone send you a browser file. Ask anyone who's reasonably tech-savvy: a friend, a coworker, a family member. The install files for most standard browsers are available on the developer websites: your friend can download Chrome directly from the Google site, for instance, Safari directly from Apple, or Firefox directly from Mozilla. If you have trouble finding the file, run a web search for \"download [browser name]\" to find the specific download page. Have your friend attach the file to an email, and then follow these steps: Open the email using your non-browser mailbox program. Look for the attached browser file, then click it to download. Open the file, and click \"Install\". Follow the steps to install the browser of your choice onto your computer. Browse the Internet using your new browser. Keep the install file saved on your computer, just in case."
+    },
+    {
+      "title": "Use an instant-messaging service.",
+      "content": "Use an instant-messaging service. It's also possible to send files over instant messaging, though you still need to know who to contact. If you use Linux, then you might have an IM client like Pidgin or Thunderbird already installed."
+    },
+    {
+      "title": "Use BitTorrent to download files.",
+      "content": "Use BitTorrent to download files. BitTorrent is a peer-to-peer file-sharing program. Instead of way to communicating with a central server, BitTorrent reaches out to your peers (people just like you!). It's a great way to download files quickly. Although it has earned its reputation as a piracy tool, there are many files that can be legally torrented, including some browsers. You'll need to find it first, though – which might be hard without a browser."
+    },
+    {
+      "title": "Try using Telnet to download files.",
+      "content": "Try using Telnet to download files. Despite its name, Telnet has nothing to do with telephone lines. It's just a simple, two-way text communications protocol, mostly used for command-line applications. While it's technically possible to download stuff over Telnet, it's not common to actually do this. [2] X Research source"
+    },
+    {
+      "title": "Explore Newsgroups on Usenet (NNTP).",
+      "content": "Explore Newsgroups on Usenet (NNTP). The Network News Transfer Protocol (NNTP) is an application protocol that moves Usenet news articles—net news—between news servers. People also use it to read and post articles by end user client applications. Web forums effectively replaced Usenet. You can explore all the Newsgroups without needing to \"know the right people,\" like you would with all the above protocols, and you can probably find a browser if you look hard enough. However, it may be difficult to get access to a server at first. Many servers charge money to access Usenet."
+    },
+    {
+      "title": "Use non-browser tools to download files and access limited sites.",
+      "content": "Use non-browser tools to download files and access limited sites. There are many non-browser tools that use the Web. Some file explorers will download files if given a Web address. Curl and wget are command-line tools that can access files from FTP, HTTP, and HTTPS. [3] X Research source They will download a file from the Web, but they can't render pages. On a system with the curl or wget installed, one of these commands will download Firefox for Linux: wget: https://download.mozilla.org/?product=firefox-40.0-SSL&os=linux64&lang=en-US curl: https://download.mozilla.org/?product=firefox-40.0-SSL&os=linux64&lang=en-US"
+    },
+    {
+      "title": "Use a package manager or an app store.",
+      "content": "Use a package manager or an app store. If you use Linux, these applications are very powerful: package managers will allow you to download applications, libraries, manuals, window manager themes, device drivers, browser addons/extensions, OS kernals, command-line programs, and practically anything your computer might need to function. If you use Windows or a Mac, however, you can only get applications this way."
+    }
+  ]
+}

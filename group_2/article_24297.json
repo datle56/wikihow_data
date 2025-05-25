@@ -1,0 +1,238 @@
+{
+  "url": "https://www.wikihow.com/Install-macOS-on-a-Windows-PC",
+  "title": "How to Install macOS on a Windows PC: Easy-to-Follow Tutorials",
+  "steps": [
+    {
+      "title": "Check your computer's specifications.",
+      "content": "Check your computer's specifications . Your Windows computer must have an Intel Core i3, i5, i7, or i9 processor in order to run macOS, as well as a minimum of four gigabytes of RAM. [1] X Research source To check these specs: Open Start . Type in system information . Click System Information at the top of the menu. Look at the name of the processor to the right of the \"Processor\" heading. Scroll down and look at the number to the right of the \"Installed Physical Memory\" heading. You can also go to Dortania's GPU's Buyer Guide to see if your GPU is compatible with macOS. As of macOS Monterey, Kepler was dropped, so there's no support for NVIDIA drivers. In short, you can't make your PC a Mac if you have an NVIDIA driver."
+    },
+    {
+      "title": "Check your computer's BIOS type.",
+      "content": "Check your computer's BIOS type . Next to the \"BIOS Mode\" heading in the System Information menu, check to see whether it says \"UEFI\" or \"BIOS\". Keep this information in mind for later. [2] X Research source You can exit System Information after this point."
+    },
+    {
+      "title": "Determine your computer's bit type.",
+      "content": "Determine your computer's bit type . There are two types of computers: 32-bit, and 64-bit. Your computer must be able to support 64-bit operation in order to install macOS. [3] X Research source"
+    },
+    {
+      "title": "Gather the required equipment.",
+      "content": "Gather the required equipment. In order to install macOS on your Windows computer, you will need the following hardware: [4] X Research source USB drive - Find a flash drive that can hold at least 32GB. Blank hard drive - Find a USB external hard drive that holds at least 100 gigabytes if you don't want to partition your Windows hard drive. You'll need lots of free space for either OS to run smoothly, so consider getting an external if the built-in one is over half-full."
+    },
+    {
+      "title": "Get your CPU information.",
+      "content": "Get your CPU information. Press Ctrl + Shift + Esc to open Task Manager and click the Performance tab (on the left)."
+    },
+    {
+      "title": "Get the codename for your CPU.",
+      "content": "Get the codename for your CPU. Open a web browser and navigate to Etech Labs . Type in the information for your CPU, then click Go to Specs . Near the top of the chart is your CPU's codename and architecture. You will need this information to download the correct EFI file."
+    },
+    {
+      "title": "Download Balena Etcher.",
+      "content": "Download Balena Etcher. Go to this site to download this tool that flashes OS images to USB drives. Download the appropriate file for Windows."
+    },
+    {
+      "title": "Download Pre-Built OpenCore EFI.",
+      "content": "Download Pre-Built OpenCore EFI. You'll see two main sections on this site : desktop and laptop. Look in the appropriate section for the codename of your CPU and click Download next to it. Be careful to click the right button since the site contains ads with similar Download buttons. You should see text appear in the bottom left corner of your browser window when you hover over the correct Download button. Your best option is to use ad blockers to prevent seeing these ads."
+    },
+    {
+      "title": "Download Explorer++.",
+      "content": "Download Explorer++. You can find the Explorer++ site here . It's a lightweight and fast file manager for Windows. Click the Download 64-bit option."
+    },
+    {
+      "title": "Download GenSMBIOS.",
+      "content": "Download GenSMBIOS. This is used to generate a unique serial for your Mac so you can use Apple services. You can find it here . Click Code and Download Zip ."
+    },
+    {
+      "title": "Download MiniTool Partition Wizard.",
+      "content": "Download MiniTool Partition Wizard. You'll find this tool here . You want to download the free version, so click Download Now ."
+    },
+    {
+      "title": "Download OpenCore Configurator.",
+      "content": "Download OpenCore Configurator. Go to this site and click Download. This is also referred to as \"OCC.\""
+    },
+    {
+      "title": "Download macOS Sequoia.",
+      "content": "Download macOS Sequoia. You can find a working version here . You should have 8 items in your downloads folder for this project: Sequoia OCC Pw-free-online genSMBIOS-master Explorerpp_x64 Balenaetcher EFI"
+    },
+    {
+      "title": "Double-click the downloaded balenaEtcher-2.1.0.Setup.exe file to run it.",
+      "content": "Double-click the downloaded balenaEtcher-2.1.0.Setup.exe file to run it. You should find it in your Downloads folder."
+    },
+    {
+      "title": "Click Flash from file.",
+      "content": "Click Flash from file . It's the first option on the menu."
+    },
+    {
+      "title": "Double-click the downloaded Sequoia file.",
+      "content": "Double-click the downloaded Sequoia file. It's in your Downloads folder. Alternatively, single-click it and click Open ."
+    },
+    {
+      "title": "Click Select target.",
+      "content": "Click Select target . If your USB flash drive is plugged in, you'll see it appear. If not, plug it in to continue. Click Select to continue."
+    },
+    {
+      "title": "Click Flash.",
+      "content": "Click Flash . This might take 30+ minutes, so don't rush it! When it's done, you'll see the window change to \"Flash Completed!\"."
+    },
+    {
+      "title": "Get the right SMBIOS for your system.",
+      "content": "Get the right SMBIOS for your system. This is based on your graphics card and is desktop-laptop different, so read carefully to make sure you have the right one. You can find the right one here ."
+    },
+    {
+      "title": "Extract GenSMBIOS.",
+      "content": "Extract GenSMBIOS. To do this, go to Downloads and select the GenSMBIOS-master folder. Click Extract all and save it to the same Downloads folder."
+    },
+    {
+      "title": "Extract the zipped EFI folder.",
+      "content": "Extract the zipped EFI folder. With modern systems, built-in programs can extract zipped folders without you having to download additional software. To do this, click the zipped folder and click Extract all . Save the extracted folder in the Downloads folder so you can easily find it later."
+    },
+    {
+      "title": "Run the GenSMBIOS Windows Batch File.",
+      "content": "Run the GenSMBIOS Windows Batch File. You'll find the extracted file in Downloads > GenSMBIOS-master > GenSMBIOS-master ."
+    },
+    {
+      "title": "Enter 1.",
+      "content": "Enter 1 . This will allow you to install/update MacSerial. Press Enter after the number to enter the code. Press Enter to go back."
+    },
+    {
+      "title": "Enter 2.",
+      "content": "Enter 2 . This will let you enter the configuration plist."
+    },
+    {
+      "title": "Drag and drop the \"config.plist\" file into GenSMBIOS.",
+      "content": "Drag and drop the \"config.plist\" file into GenSMBIOS. Find the configuration plist in Downloads > EFI > EFI > OC . Press Enter to continue. You'll see the plist listed at the top of the window under the MacSerial info."
+    },
+    {
+      "title": "Enter 3.",
+      "content": "Enter 3 . You need to create a serial number so you can use Apple services on your Mac."
+    },
+    {
+      "title": "Enter the platform that your PC is compatible with.",
+      "content": "Enter the platform that your PC is compatible with. Check the chart here to see which platform you can use. For example, a CPU with a \"Penryn(M)\" codename is compatible with a MacBook 7,1. Press Enter to continue. The serial number has been inserted automatically in the \"config.plist\" file and is listed above. Press Enter again to go back and then you can close the window."
+    },
+    {
+      "title": "Double-click the \"pw-free-online\" file to install it.",
+      "content": "Double-click the \"pw-free-online\" file to install it. This is the Mini Partition Wizard that you downloaded earlier, so you'll find it in your Downloads folder."
+    },
+    {
+      "title": "Continue through the setup wizard.",
+      "content": "Continue through the setup wizard. Select your language, then press OK . Continue with the free version by making sure \"Continue installing free edition\" is checked, then clicking Next . In the next window, deselect \"Participate in the Customer Experience Improvement Program\". Make sure \"Mini Tool Partition Wizard Free\" is selected. Press Next to continue. Launch the wizard after it installs."
+    },
+    {
+      "title": "Right-click the EFI partition in Disk 2 and select Change Letter.",
+      "content": "Right-click the EFI partition in Disk 2 and select Change Letter . Use the drop-down menu to assign it a new letter, like \"X:\" or \"D:\". Press OK to continue."
+    },
+    {
+      "title": "Right-click the unallocated partition in Disk 2 and select Create.",
+      "content": "Right-click the unallocated partition in Disk 2 and select Create . Click Yes to continue."
+    },
+    {
+      "title": "Label the partition.",
+      "content": "Label the partition. For example, name it \"OCC\" so you can remember it contains the OpenCore Configuration. Press Ok to continue."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . It's in the lower left corner of the partition wizard. Click Yes and close any open windows. You should see a \"Success\" message and can close the wizard."
+    },
+    {
+      "title": "Extract Explorer++.",
+      "content": "Extract Explorer++. Click the zipped folder in Downloads and click Extract all . Save the unzipped folder in the same location so you can find it easily."
+    },
+    {
+      "title": "Run Explorer++ as an administrator.",
+      "content": "Run Explorer++ as an administrator. To do this, double-click the Explorer++ folder in Downloads , right-click the Explorer++ Application , and select Run as administrator ."
+    },
+    {
+      "title": "Locate the \"This PC\" location.",
+      "content": "Locate the \"This PC\" location. This should be the default location and you can skip this step. However, you can also navigate here using the menu on the left."
+    },
+    {
+      "title": "Double-click the EFI partition you just made.",
+      "content": "Double-click the EFI partition you just made. You should see a list of drives on your computer including the new ones that you created with the Mini Partitioner tool."
+    },
+    {
+      "title": "Delete everything inside the drive.",
+      "content": "Delete everything inside the drive. Inside the EFI drive, you'll find default EFI files and folders that you need to delete. Press Ctrl + A to select everything, then press Delete ."
+    },
+    {
+      "title": "Copy your EFI folder into the EFI partition.",
+      "content": "Copy your EFI folder into the EFI partition. Using Explorer++, navigate to your Downloads folder and find the unzipped EFI folder. Remember, since it's unzipped, there's an extra EFI folder level that we don't want to copy. To make sure to get the right folder, click through the EFI folders until you see \" OC \" and \" Boot \". Go up one level and copy that folder (right-click it and select Copy ). Return to your EFI partition and paste the copied folder (right-click an empty space in the drive and select Paste ). Close Explorer++."
+    },
+    {
+      "title": "Open Disk Management.",
+      "content": "Open Disk Management. To open this quickly, press the Windows key and enter create partitions . Then click the Control Panel app. This also says \"Create and format hard disk partitions.\""
+    },
+    {
+      "title": "Right-click the C:",
+      "content": "Right-click the C: drive and select Shrink Volume . You're doing this to make room for the macOS. This number depends on your hard drive; but you want to reserve a good amount of space for macOS to use (like 50GB+)."
+    },
+    {
+      "title": "Right-click the empty volume and select New Simple Volume.",
+      "content": "Right-click the empty volume and select New Simple Volume . Click Next to continue past the first and second pages. The default values on the second page will be fine. Assign a letter to your drive and click Next . Label the volume. For example, name it macOS 15 so it's easily identifiable. Click Next and Finish . Close Disk Manager and return to your Downloads folder."
+    },
+    {
+      "title": "Copy the zipped OCC folder to your USB flash drive.",
+      "content": "Copy the zipped OCC folder to your USB flash drive. Click the folder to select it, then click Copy . Go to This PC > OCC . It's the OCC drive on your flash drive that you created with Mini Partition Wizard. Paste the folder by right-clicking empty space and selecting Paste ."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. In the Start menu, click the \"Power\" icon, then select Restart ."
+    },
+    {
+      "title": "Enter your BIOS.",
+      "content": "Enter your BIOS. As your PC restarts, press the button needed to launch BIOS. Common manufacturers are listed in this wikiHow article , but you can also find the buttons you need to press online by searching your motherboard's manufacturer and model number."
+    },
+    {
+      "title": "Disable Fast Boot.",
+      "content": "Disable Fast Boot. Navigate to the Boot tab and choose \"Disabled\" in the drop-down next to \"Fast Boot.\""
+    },
+    {
+      "title": "Clear Secure Boot Keys.",
+      "content": "Clear Secure Boot Keys. The location of this menu is different between manufacturers, so refer to your manual if these steps don't match. You can find Secure Boot Keys in: Boot > Secure Boot > Key Management > Clear Secure Boot Keys ."
+    },
+    {
+      "title": "Change the SATA Mode to AHCI.",
+      "content": "Change the SATA Mode to AHCI. You might find this under Advanced > PCH Storage Configuration > SATA Mode Selection ."
+    },
+    {
+      "title": "Save your changes and reset.",
+      "content": "Save your changes and reset. Go to the Exit tab and select Save Changes & Reset ."
+    },
+    {
+      "title": "Choose a boot drive.",
+      "content": "Choose a boot drive. As your computer loads, press and hold F8 . This keyboard shortcut is different depending on your PC's manufacturer."
+    },
+    {
+      "title": "Load the \"UEFI:",
+      "content": "Load the \"UEFI: FAT (Your USB Name)\". Select it using the arrow keys on your keyboard and press Enter ."
+    },
+    {
+      "title": "Select \"Reset NVRAM\" and press ↵ Enter.",
+      "content": "Select \"Reset NVRAM\" and press ↵ Enter . Your PC will reboot again."
+    },
+    {
+      "title": "Select \"OpenCore\" and press ↵ Enter.",
+      "content": "Select \"OpenCore\" and press ↵ Enter . Boot options should load automatically for you. If not, try again and press the button to see Boot Options."
+    },
+    {
+      "title": "Select \"Install macOS Sequoia\" and press ↵ Enter.",
+      "content": "Select \"Install macOS Sequoia\" and press ↵ Enter . You'll see lots of code flicker across the screen, then you'll be asked to choose a language for installation."
+    },
+    {
+      "title": "Select \"Disk Utility\" and press Continue.",
+      "content": "Select \"Disk Utility\" and press Continue . Disk Utility will open so you can install macOS Sequoia."
+    },
+    {
+      "title": "Select \"macOS 15\" and click Erase.",
+      "content": "Select \"macOS 15\" and click Erase . \"macOS 15\" is the partition you created in Windows, so you'll need to format it for Mac before you can use it. Set the format to \"APFS\" and click Erase . When it's finished, click Done and close the Disk Utility window."
+    },
+    {
+      "title": "Click \"Install macOS Sequoia\" and Continue.",
+      "content": "Click \"Install macOS Sequoia\" and Continue . Click Continue again to proceed. Select the Mac hard drive. In this case, it's macOS 15. Click Continue again to proceed. This can take a while (around an hour!) and your computer may restart a few times."
+    },
+    {
+      "title": "You can use macOS or Windows whenever you start your computer.",
+      "content": "You can use macOS or Windows whenever you start your computer. If you're using macOS and want to switch to Windows, shut down your computer by clicking Shut Down from the Apple menu. Turn your computer back on and select Windows when prompted."
+    }
+  ]
+}

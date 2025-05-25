@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Merge-Cells-in-Excel",
+  "title": "How to Merge Cells in Microsoft Excel: A Quick Guide",
+  "steps": [
+    {
+      "title": "Select the cells you want to merge.",
+      "content": "Select the cells you want to merge. To do so, click one cell, then drag your cursor to select the other cells you want to merge. [1] X Research source The cells you merge must be touching each other. For example, you can merge A1 with B1 but not A1 with only F5. Merging cells is a great way to add formatting to an Excel spreadsheet. For example, you could put “July Calendar” at the top of an Excel calendar in a larger cell without changing the width of the columns below. Merging cells only retains the value of the leftmost cell and results in a larger cell on the sheet. If you want to merge two or more existing cell values into a single cell, see Merging Values ."
+    },
+    {
+      "title": "Click the Home tab.",
+      "content": "Click the Home tab. It's on the top-left side of the Excel window. This will bring up the Home toolbar. You can also get to the Home tab quickly with keyboard shortcuts. Press and release the Alt key on your keyboard, then press H to access the Home tab."
+    },
+    {
+      "title": "Click Merge & Center on the toolbar.",
+      "content": "Click Merge & Center on the toolbar. If the cells contain values, you'll see a warning that says, \"Merging cells only keeps the upper-left value and discards other values.\" Click OK to merge the cells. If not, the cells will merge instantly. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you don't want to center the cells' content, click the ▼ icon to the right of the Merge & Center button and select a different alignment option. If you pressed Alt and then H to get to the Home tab, you can press M and then C to merge and center your cells."
+    },
+    {
+      "title": "Unmerge cells",
+      "content": "Unmerge cells . To unmerge cells, follow these steps: [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Select the merged cell. Go to the Home tab. Click the ▼ icon next to the Merge & Center button. Select Unmerge Cells ."
+    },
+    {
+      "title": "Use the formula =CONCAT(A1,B1) to merge two cell values.",
+      "content": "Use the formula =CONCAT(A1,B1) to merge two cell values. The CONCAT function makes it easy to concatenate the values into a single cell. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source In this example, the contents of the two cells will appear in the new cell without a space separating them. For example, if A1 contains the word \"wiki\" and B1 contains \"How,\" the new cell will be wikiHow . If A1 is \"John\" and B1 is \"Smith,\" the new cell will be JohnSmith ."
+    },
+    {
+      "title": "Use =CONCAT(A1,\" \",B1) to combine values with a space between them.",
+      "content": "Use =CONCAT(A1,\" \",B1) to combine values with a space between them. This formula will come in handy if you're combining two words that aren't supposed to butt right into each other, such as a first and last name. [5] X Research source If A1 is \"wiki\" and \"B1\" is \"How,\" the new cell will be wiki How . If A1 is \"John\" and B1 is \"Smith,\" the new cell will be John Smith ."
+    },
+    {
+      "title": "Use =CONCAT(A1,\" and \",B1 to place the word \"and\" between values.",
+      "content": "Use =CONCAT(A1,\" and \",B1 to place the word \"and\" between values. You can replace and with any text you'd like. Note that there are spaces between \"and\" and the quote marks, which inserts spaces. [6] X Research source You can use CONCAT with more than two cells. For example, =CONCAT(A1,\" \",B1,\" \",F6,\" \",E6) ."
+    },
+    {
+      "title": "Use the & operator instead of CONCAT.",
+      "content": "Use the & operator instead of CONCAT. Another way to merge cell values is the ampersand: [7] X Research source =A1&B1 will merge the values of A1 and B1 the same way as =CONCAT(A1,B1) . A1,\" \",B1 will combine the cell values and add a space between them, just like =CONCAT(A1,\" \",B1) ."
+    }
+  ]
+}

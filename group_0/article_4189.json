@@ -1,0 +1,114 @@
+{
+  "url": "https://www.wikihow.com/Block-an-Application-or-.EXE-from-Running-in-Windows",
+  "title": "Block an .exe Running in Windows",
+  "steps": [
+    {
+      "title": "Open the Start menu .",
+      "content": "Open the Start menu . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Find the program you want to block.",
+      "content": "Find the program you want to block. You may need to click All Apps to expand the list."
+    },
+    {
+      "title": "Right-click the program and select More.",
+      "content": "Right-click the program and select More . Another menu will expand."
+    },
+    {
+      "title": "Click Open file location.",
+      "content": "Click Open file location . This opens the file location of the program's shortcut in File Explorer."
+    },
+    {
+      "title": "Right-click the shortcut and select Open file location.",
+      "content": "Right-click the shortcut and select Open file location . This opens the program's actual file location."
+    },
+    {
+      "title": "Right-click the program's icon and select Properties.",
+      "content": "Right-click the program's icon and select Properties . Doing so opens the Properties window for the program."
+    },
+    {
+      "title": "Review the application's name and extension.",
+      "content": "Review the application's name and extension. The file's name is listed in the text box at the top of the Properties window, while the extension is in parentheses to the right of the \"Type of file\" heading. You'll combine these two (e.g., \"name.extension\") to create the file's name in the Registry Editor. The extension will almost always be \".exe\". For example, if you looked up the file location of Notepad, you'd find that its name is \"Notepad.exe\"."
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. To get to Registry Editor quickly, type regedit into the Windows Search bar, then click Registry Editor in the search results. Click Yes when prompted. If you aren't an administrator , you won't be able to open the Registry Editor."
+    },
+    {
+      "title": "Navigate to the \"Policies\" folder.",
+      "content": "Navigate to the \"Policies\" folder. To do so: Double-click the HKEY_CURRENT_USER folder in the top-left side of the window. Double-click the Software folder below \"HKEY_CURRENT_USER\". Double-click the Microsoft folder. Double-click the Windows folder. Double-click the CurrentVersion folder. Click the Policies folder once to display its contents in the right panel."
+    },
+    {
+      "title": "Click the Edit menu.",
+      "content": "Click the Edit menu. This tab is in the upper-left side of the Registry Editor window."
+    },
+    {
+      "title": "Select New and click Key.",
+      "content": "Select New and click Key . A new folder will appear below the \"Policies\" folder on the left-hand side of the window."
+    },
+    {
+      "title": "Type Explorer and press ↵ Enter.",
+      "content": "Type Explorer and press ↵ Enter . This will create a new folder that's titled \"Explorer\" in the \"Policies\" folder."
+    },
+    {
+      "title": "Click the Explorer folder in the left panel.",
+      "content": "Click the Explorer folder in the left panel. This is the folder you just created."
+    },
+    {
+      "title": "Create a new DWORD value in the Explorer folder.",
+      "content": "Create a new DWORD value in the Explorer folder. To do so, click the Edit menu, select New , and then click DWORD (32-bit) Value."
+    },
+    {
+      "title": "Type DisallowRun and press ↵ Enter.",
+      "content": "Type DisallowRun and press ↵ Enter . Doing so renames your DWORD value as \"DisallowRun\"."
+    },
+    {
+      "title": "Double-click DisallowRun.",
+      "content": "Double-click DisallowRun . This will open the \"DisallowRun\" value."
+    },
+    {
+      "title": "Change the \"DisallowRun\" value to \"1\".",
+      "content": "Change the \"DisallowRun\" value to \"1\". Type 1 into the \"Value data\" field, then click OK ."
+    },
+    {
+      "title": "Select the \"Explorer\" folder again.",
+      "content": "Select the \"Explorer\" folder again. Click this folder in the left-hand column again."
+    },
+    {
+      "title": "Create a new key inside the folder.",
+      "content": "Create a new key inside the folder. Click Edit , select New , and click Key ."
+    },
+    {
+      "title": "Type DisallowRun and press ↵ Enter.",
+      "content": "Type DisallowRun and press ↵ Enter . This creates a new folder inside of the \"Explorer\" folder titled \"DisallowRun\"."
+    },
+    {
+      "title": "Select the \"DisallowRun\" folder.",
+      "content": "Select the \"DisallowRun\" folder. Click this folder below the \"Explorer\" folder on the left side of the window."
+    },
+    {
+      "title": "Create a new string value.",
+      "content": "Create a new string value. Click Edit , select New , and click String Value ."
+    },
+    {
+      "title": "Type 1 and press ↵ Enter.",
+      "content": "Type 1 and press ↵ Enter . This will name your string value \"1\"."
+    },
+    {
+      "title": "Open the string value.",
+      "content": "Open the string value. Double-click the 1 string value to open it."
+    },
+    {
+      "title": "Enter your application's name.",
+      "content": "Enter your application's name. Click the \"Value data\" field, then type in the name and extension of the application that you checked in part one. For example, to block Notepad, you would type in notepad.exe here."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . Doing so saves your string value. This string value will prevent the specified program from being opened. If you want to add subsequent string values for other programs, name them in numerical order (e.g., \"2\", \"3\", \"4\", etc.)."
+    },
+    {
+      "title": "Close the Registry Editor.",
+      "content": "Close the Registry Editor. At this point, you should no longer be able to open the program, but you may need to restart your computer before these changes take effect."
+    }
+  ]
+}

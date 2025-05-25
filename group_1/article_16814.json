@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Find-Out-What-Graphics-Card-You-Have",
+  "title": "4 Simple Ways to Find Out What Graphics Card You Have",
+  "steps": [
+    {
+      "title": "Open the Start menu .",
+      "content": "Open the Start menu . Click the Windows logo in the bottom-left corner of the screen or press the Windows key on your keyboard. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can also right-click the Start icon to open the Advanced Options menu. Knowing your current graphics card can help if you need to fix or change a graphics card ."
+    },
+    {
+      "title": "Open the Device Manager.",
+      "content": "Open the Device Manager. Type \"Device Manager\" into the Start menu, then click Device Manager at the top of the search results. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you opened Start with a right-click, click Device Manager in the pop-up menu. A new window will open."
+    },
+    {
+      "title": "Locate the \"Display adapters\" heading.",
+      "content": "Locate the \"Display adapters\" heading. This looks like a monitor icon with a small chip-like icon. You may need to scroll down to find it. The options in the Device Manager window are organized in alphabetical order, so you'll find the \"Display adapters\" heading in the \"D\" section. If you see indented options below the \"Display adapters\" heading, skip the next step."
+    },
+    {
+      "title": "Double-click the \"Display adapters\" heading.",
+      "content": "Double-click the \"Display adapters\" heading. Doing so expands it to show your installed graphics card(s). You can also click the right-facing arrow to the left of Display adapters ."
+    },
+    {
+      "title": "Review your graphics card(s).",
+      "content": "Review your graphics card(s). Your installed graphics card's name will appear under the Display adapters heading. If you see more than one name there, it means you have both a built-in graphics card and an installed graphics card. If you want to install a new graphics card , be sure to research for your specific needs before choosing one."
+    },
+    {
+      "title": "Open the Apple menu .",
+      "content": "Open the Apple menu . Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear. [3] X Research source"
+    },
+    {
+      "title": "Click System Settings.",
+      "content": "Click System Settings . This will be near the top of the menu. [4] X Research source"
+    },
+    {
+      "title": "Click General.",
+      "content": "Click General . This will be next to the grey cog icon. [5] X Research source You may need to scroll down to find this."
+    },
+    {
+      "title": "Click About.",
+      "content": "Click About . This will be located in the right panel."
+    },
+    {
+      "title": "Click System Report.",
+      "content": "Click System Report . A new page will open. [6] X Research source"
+    },
+    {
+      "title": "Click Graphics/Displays.",
+      "content": "Click Graphics/Displays . This can be found underneath the Hardware header. If the header isn't expanded, click the arrow to the left of Hardware ."
+    },
+    {
+      "title": "Look for your graphics card's name.",
+      "content": "Look for your graphics card's name. It will appear at the top of the right-hand pane. Select your graphics card to view its specifications listed below."
+    },
+    {
+      "title": "Open the Apple menu .",
+      "content": "Open the Apple menu . Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear. [7] X Research source"
+    },
+    {
+      "title": "Click About This Mac.",
+      "content": "Click About This Mac . This option is at the top of the drop-down menu. [8] X Research source You may find your graphics card listed next to Graphics . If you don't see it, proceed to the next step."
+    },
+    {
+      "title": "Click System Report….",
+      "content": "Click System Report… . It's at the bottom of the About This Mac window. [9] X Research source"
+    },
+    {
+      "title": "Click ▼ to the left of Hardware.",
+      "content": "Click ▼ to the left of Hardware . This option is in the left-hand pane of the System Report window."
+    },
+    {
+      "title": "Click Graphics/Displays.",
+      "content": "Click Graphics/Displays . It's about halfway down the group of options that appear below the Hardware heading in the left-hand pane."
+    },
+    {
+      "title": "Look for your graphics card's name.",
+      "content": "Look for your graphics card's name. It will appear at the top of the right-hand pane. You can view your graphics card's specifications listed below the card's name, or check other computer specifications ."
+    },
+    {
+      "title": "Open the Terminal app.",
+      "content": "Open the Terminal app. Click the Terminal app icon, which resembles a black box, or press CTRL + ALT + T at the same time to open a new Terminal window. [10] X Research source"
+    },
+    {
+      "title": "Update your computer's list of PCI items.",
+      "content": "Update your computer's list of PCI items. Type the following command into Terminal, then press Enter . [11] X Research source sudo update-pciids"
+    },
+    {
+      "title": "Enter your password.",
+      "content": "Enter your password. Type in the password that you use to log into your computer, then press Enter . Doing so will confirm your command and update your computer's PCI list. The password's characters will not appear when you type in Terminal."
+    },
+    {
+      "title": "Look up your computer's list of PCI items.",
+      "content": "Look up your computer's list of PCI items. Type in the following command and press Enter to bring up a list of installed and built-in PCI items (including graphics cards): [12] X Research source lspci -v | less"
+    },
+    {
+      "title": "Find your graphics card.",
+      "content": "Find your graphics card. Scroll up in the Terminal window until you find the \"Video controller\", \"VGA compatible\", \"3D\", or \"Integrated graphics\" heading. Your graphics card's name will be listed next to this heading."
+    },
+    {
+      "title": "Note the graphics card's ID number.",
+      "content": "Note the graphics card's ID number. This number is to the left of the graphics card's heading, and will usually be in the following format: 00:00.0"
+    },
+    {
+      "title": "Open a new Terminal window.",
+      "content": "Open a new Terminal window. Press CTRL + ALT + T again, or right-click the Terminal app icon and click New Terminal Window (or similar)."
+    },
+    {
+      "title": "Look up your graphics card's information.",
+      "content": "Look up your graphics card's information. Type the following command into Terminal—making sure to replace \"00:02.0\" with your graphics card's actual ID number—and press Enter to see your graphics card's specific information: [13] X Research source sudo lspci -v -s 00 :02.0"
+    }
+  ]
+}

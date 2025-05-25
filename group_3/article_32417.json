@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Password-Protect-Files-on-a-Mac",
+  "title": "4 Easy Ways to Password Protect Files on Mac",
+  "steps": [
+    {
+      "title": "Place the files you want to encrypt in a folder.",
+      "content": "Place the files you want to encrypt in a folder. To create a new folder, right-click or Ctrl -click the desktop or a blank area in the Finder, then select New Folder from the pop-up menu. Click the new folder to select it, then click the default name of the folder and type in whatever name you like. Drag and drop or copy and paste the file(s) you want to encrypt into the folder. This method allows you to turn the folder into a password-protected disk image, or DMG file. You can only open these types of files on a Mac."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. You can either do this by finding it in Finder > Applications > Utilities or by searching for disk utility with the Spotlight Search tool in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Select New Image from the File menu.",
+      "content": "Select New Image from the File menu. At the top of the screen, click File and hover over New Image . A menu will pop out."
+    },
+    {
+      "title": "Click Image from Folder.",
+      "content": "Click Image from Folder . This will open a Finder window where you can browse for your folder."
+    },
+    {
+      "title": "Select your folder and click Choose.",
+      "content": "Select your folder and click Choose . A new window will open with options for saving your DMG file."
+    },
+    {
+      "title": "Choose the level of encryption you want in the Encryption menu.",
+      "content": "Choose the level of encryption you want in the Encryption menu. Click the dropdown next to the Encryption header and select an option. Either option will work, but Apple recommends 256-bit AES encryption . You can also use this window to set other options, such as the name and location of the encrypted folder and whether the folder is compressed, read only, read/write, etc. Selecting compressed for the folder type will create a simple encrypted archive with your files inside."
+    },
+    {
+      "title": "Enter a password when prompted.",
+      "content": "Enter a password when prompted. A window will pop up asking you to enter a password as soon as you choose an encryption type. Type in the password, enter it again in the Verify field, then click Choose ."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . The encrypted folder will be saved in the location you specified. It may take a few seconds for the process to complete. Click Done once the status window tells you the operation was successful."
+    },
+    {
+      "title": "Double-click the DMG and enter the password to open it.",
+      "content": "Double-click the DMG and enter the password to open it. Your encrypted folder will look like a regular DMG file, which resembles an image of a hard drive. Double-click it, then enter your password when prompted. You’ll also have the option to add the password to your Mac’s keychain so you can easily look it up if you forget it."
+    },
+    {
+      "title": "Open the file you want to password protect.",
+      "content": "Open the file you want to password protect. Several of your Mac’s built-in apps have a feature that lets you password protect individual documents. You can do this in apps like Pages, Numbers, Keynote, and Notes. The basic process is the same for most of these apps. To get started, launch the app and open the file you want to lock with a password. [1] X Research source"
+    },
+    {
+      "title": "Open the File menu and select Set Password.",
+      "content": "Open the File menu and select Set Password . A new window will open."
+    },
+    {
+      "title": "Enter and verify your desired password.",
+      "content": "Enter and verify your desired password. In the window that opens, type in the password you want to use, then enter it again in the Verify field. If you want, you can also enter a password hint. Click Set Password when you’re done. If you don’t want to type in the password every time you open the file, check the box next to Open with Touch ID . Next time you try to open the document, you’ll be prompted to enter your password (or use Touch ID, if you have that option enabled). To change a document password, open the document and select File > Change Password . You can also remove the password from the Change Password menu."
+    },
+    {
+      "title": "Use the Lock Note option to password protect a Note.",
+      "content": "Use the Lock Note option to password protect a Note. Notes work a little differently from other Apple files. To password protect a Note, open the Note, then go to File > Lock Note . You can either choose to use the login password for your Mac user account, or create a new password just for that Note."
+    },
+    {
+      "title": "Create a folder on your desktop and place the files you want to encrypt inside.",
+      "content": "Create a folder on your desktop and place the files you want to encrypt inside. You’ll be turning this folder into an encrypted ZIP file with Terminal, your Mac’s command line interface. [2] X Research source"
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. You can find this in Applications > Utilities or search for it with the Spotlight Search tool in the menu bar at the top of the screen."
+    },
+    {
+      "title": "Enter the command zip -er YOURFILENAME.zip, followed by a space.",
+      "content": "Enter the command zip -er YOURFILENAME.zip , followed by a space. Replace “YOURFILENAME” with whatever you want to call your encrypted zip file. Don’t press Return yet –instead, enter a space after the command."
+    },
+    {
+      "title": "Drag and drop your folder into the Terminal window and press ⏎ Return.",
+      "content": "Drag and drop your folder into the Terminal window and press ⏎ Return . You should see a path to the folder appear in Terminal after the command you entered. Press Return to execute the command."
+    },
+    {
+      "title": "Type in your desired password for the encrypted folder.",
+      "content": "Type in your desired password for the encrypted folder. After you type it, press Return . When prompted to verify, retype the password and press Return again. You won’t be able to see the password you typed in the Terminal window. Depending on how much data you are trying to compress, the process may take a few moments to complete. By default, the file you create will appear in Macintosh HD > Users > [your username] . To open the file, double-click on it and enter the password when prompted, then click OK ."
+    },
+    {
+      "title": "Download a third-party file encryption app.",
+      "content": "Download a third-party file encryption app. There are tons of apps on the market that will encrypt your files and folders for you in a few simple clicks. Some of these are free, while others cost a small amount or offer additional features for a fee. A few options you can find in the App Store include Encrypto , Privaulty , and SNote ."
+    },
+    {
+      "title": "Create encrypted ZIP files with FossZip.",
+      "content": "Create encrypted ZIP files with FossZip. FossZip is a file extraction and compression app that works with a wide variety of compression formats, including ZIP and RAR. It allows you to create password-protected ZIP files without the hassle of using the Terminal. It isn’t free–the Mac version currently costs $19.95–but there is a free trial option so you can try it out before you commit. FossZip isn’t available in the App Store. You have to download it directly from the developer's website ."
+    },
+    {
+      "title": "Add encryption to documents using built-in app features.",
+      "content": "Add encryption to documents using built-in app features. Some third-party apps, like most of the programs in the Microsoft 365 suite, have their own encryption features you can use. You’ll need to check the documentation for the individual app to find out how to encrypt files. For example, to encrypt a Word document, you’d open the doc and click the Review tab, then click Protect > Protect Document . From there, you have a variety of options, such as setting separate passwords for opening or modifying the document, or for specific types of changes (such as comments or tracked changes). When you’ve set your password(s), click OK . [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "How do I put a lock on a file on Mac?",
+      "content": "How do I put a lock on a file on Mac? There are several ways to lock or password protect a file on a Mac. You can place your files in a password-protected folder using Disk Utility or Terminal , or password-protect individual documents using the built-in security features of the app where you created them ."
+    },
+    {
+      "title": "How do I password protect Word files on Mac?",
+      "content": "How do I password protect Word files on Mac? Open the file in Word and go to Review (in the ribbon menu at the top of the document window) > Protect > Protect Document . Choose which actions you want to lock with a password (e.g., opening or editing the document), set your password(s), and click OK ."
+    },
+    {
+      "title": "Where can I find my passwords on Mac?",
+      "content": "Where can I find my passwords on Mac? When you password-protect a file on Mac, sometimes you have the option of storing the password in your keychain. To access your stored passwords, click the Spotlight Search icon at the top of your screen and type in passwords . Open the Passwords app from the search results and enter the same password you use to log into your Mac. You can now browse or search for the password you want."
+    },
+    {
+      "title": "How can I password protect my photos?",
+      "content": "How can I password protect my photos? To keep your photos private, you can either save the image files in an encrypted folder using one of the methods above, or store them in a hidden folder in the Photos app. To hide a photo, open it in Photos, right-click or Ctrl -click the photo, and select Hide 1 Photo from the menu that pops up. You can also Shift -click several photos to select them all, then right-click or Ctrl -click the group and select Hide [number] Photos . To see your hidden photos, go to Utilities > Hidden in the left sidebar. You might need to select Show Hidden Photo Album from the View menu at the top of the screen to see it. Click View Album and enter your Mac’s user password or use Touch ID when prompted."
+    }
+  ]
+}

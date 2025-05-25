@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Calculate-an-Interest-Payment-Using-Microsoft-Excel",
+  "title": "Calculate Interest Payments on a Loan with the IPMT Function",
+  "steps": [
+    {
+      "title": "Open a Blank Workbook.",
+      "content": "Open a Blank Workbook. Launch Excel, then click Blank workbook to get started. Skip this step on Mac."
+    },
+    {
+      "title": "Set up your rows.",
+      "content": "Set up your rows. Enter your payment headings in each of the following cells: Cell A1 - Type in Principal Cell A2 - Type in Interest Cell A3 - Type in Periods Cell A4 - Type in Payment"
+    },
+    {
+      "title": "Enter the payment's total value.",
+      "content": "Enter the payment's total value. In cell B1 , type in the total amount you owe. For example, if you bought a boat valued at $20,000 for $10,000 down, you would type 10,000 into B1 ."
+    },
+    {
+      "title": "Enter the current interest rate.",
+      "content": "Enter the current interest rate. In cell B2 , type in the percentage of the interest that you have to pay each period. For example, if your interest rate is three percent, you would type 0.03 into B2 ."
+    },
+    {
+      "title": "Enter the number of payments you have left.",
+      "content": "Enter the number of payments you have left. This goes in cell B3 . If you're on a 12-month plan, for example, you would type 12 into cell B3 ."
+    },
+    {
+      "title": "Select cell B4.",
+      "content": "Select cell B4 . Simply click B4 to select it. This is where you'll enter the formula to calculate your interest payment."
+    },
+    {
+      "title": "Enter the interest payment formula.",
+      "content": "Enter the interest payment formula. Type =IPMT(B2, 1, B3, B1) into cell B4 and press ↵ Enter . Doing so will calculate the amount that you'll have to pay in interest for each period. This doesn't give you the compounded interest , which generally gets lower as the amount you pay decreases. You can see the compounded interest by subtracting a period's worth of payment from the principal and then recalculating cell B4 ."
+    }
+  ]
+}

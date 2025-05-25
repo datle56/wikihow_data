@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Send-SQL-Queries-to-MySQL-from-the-Command-Line",
+  "title": "How to Send SQL Queries to MySQL from the Command Line",
+  "steps": [
+    {
+      "title": "Find the MySQL program (Should be in a subdirectory called bin under the directory where MySQL was installed)",
+      "content": "Find the MySQL program (Should be in a subdirectory called bin under the directory where MySQL was installed) E.g. Windows users: C:\\mysql\\bin\\mysql.exe E.g. Linux/Unix users: /usr/local/mysql/bin/mysql"
+    },
+    {
+      "title": "Start MySQL - At the command prompt, type:",
+      "content": "Start MySQL - At the command prompt, type: mysql -h hostname -u username -p, where host is the machine where the MySQL server is running username is the MySQL account you want to use -p will make MySQL prompt you for the MySQL account password."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted."
+    },
+    {
+      "title": "Type your SQL command followed by a semi-colon (;) and press the Enter key.",
+      "content": "Type your SQL command followed by a semi-colon (;) and press the Enter key. The response from the server should be displayed on your screen. Get out of MySQL, type quit at the prompt and press the Enter key."
+    },
+    {
+      "title": "Find the MySQL program (Should be in a subdirectory called bin under the directory where MySQL was installed)",
+      "content": "Find the MySQL program (Should be in a subdirectory called bin under the directory where MySQL was installed) E.g. Windows users: C:\\mysql\\bin\\mysql.exe E.g. Linux/Unix users: /usr/local/mysql/bin/mysql"
+    },
+    {
+      "title": "Start MySQL.",
+      "content": "Start MySQL. At the command prompt, type: mysql -h hostname -u username -p db_name -e \" query \" where host is the machine where the MySQL server is running username is the MySQL account you want to use -p will make MySQL prompt you for the MySQL account password. db_name is the name of the database to run the query in, and, query is the query that you want to run."
+    },
+    {
+      "title": "Enter your password when prompted.",
+      "content": "Enter your password when prompted. MySQL should return the result of your query."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Connect-One-Router-to-Another-to-Expand-a-Network",
+  "title": "How to Connect One Router to Another to Expand a Network",
+  "steps": [
+    {
+      "title": "Connect the modem to the first router.",
+      "content": "Connect the modem to the first router. Use an Ethernet cable to connect to the WAN port of a router to the WAN/Internet port of the high-speed modem. For the purpose of this wikiHow, we will refer to the router that’s connected to the modem as “Router 1.\" Some routers act as a high-speed modem and router. If this is the case for Router 1, simply connect it to the cable that carries your internet connection. The WAN port may be labeled “Internet.”"
+    },
+    {
+      "title": "Connect Router 1 to a computer.",
+      "content": "Connect Router 1 to a computer. Use an Ethernet cable to connect from one of Router 1’s LAN ports to a computer’s Ethernet port. You can also connect to the router wirelessly using the wi-fi name and passkey. [1] X Research source"
+    },
+    {
+      "title": "Turn on the modem and Router 1.",
+      "content": "Turn on the modem and Router 1. Allow a few moments for them both to boot up."
+    },
+    {
+      "title": "Open a web browser.",
+      "content": "Open a web browser. You’ll need a web browser to connect to the admin user interface of Router 1."
+    },
+    {
+      "title": "Enter Router 1's IP address in the address bar.",
+      "content": "Enter Router 1's IP address in the address bar. Type the IP address for Router 1 into the address bar at the top of your web browser. This opens the router's admin login screen. [2] X Research source Check the user's manual or manufacturer's website to find the default IP address for Router 1. Here are some default IP addresses for common router brands: 2Wire: 192.168.1.1, 192.168.0.1, 192.168.1.254, 10.0.0.138 Apple: 10.0.0.1 Belkin: 192.168.1.1, 192.168.2.1, 10.0.0.2, 10.1.1.1 Dlink: 192.168.1.1, 192.168.0.1, 192.168.0.101, 192.168.0.30, 192.168.0.50, 192.168.15.1, 192.168.254.254, 192.168.1.254, 192.168.0.10, 192.168.15.1, 10.0.0.1, 10.0.0.2, 10.1.1.1, 10.90.90.90, Netgear: 192.168.0.1, 192.168.0.227 [3] X Research source"
+    },
+    {
+      "title": "Log in using Router 1's admin username and password.",
+      "content": "Log in using Router 1's admin username and password. This opens Router 1's admin user interface. Check the user's manual, or the manufacturer's website to find the default username and password for the Router 1. Most router's use \"admin\" as the username and password. You can also try \"Password\" or \"12345678\" as the password. For some router's, the username or password is left blank. [4] X Research source If you’re using the right password but still can’t connect, check the user's manual or manufacturer's website to learn how to reset the router's to it's factory settings. [5] X Research source"
+    },
+    {
+      "title": "Enable DHCP on Router 1.",
+      "content": "Enable DHCP on Router 1. This will allow Router 1 to assign all of the IP addresses in your network. You can usually find these settings under “Network settings,” or “LAN settings.” The admin user interface layout is different from one router make and model to another. In most cases, the DHCP server is turned on by default."
+    },
+    {
+      "title": "Test your network and internet connection.",
+      "content": "Test your network and internet connection. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Visit any website (like https://www.wikihow.com ) to verify that you can connect to the Internet. Make sure that the physical configuration of your network leaves room for one LAN port to be open on Router 1."
+    },
+    {
+      "title": "Disconnect Router 1 from the computer.",
+      "content": "Disconnect Router 1 from the computer. Remove the Ethernet cable between Router 1 and the computer. Everything else can remain on and plugged in."
+    },
+    {
+      "title": "Plug the second router in and turn it on.",
+      "content": "Plug the second router in and turn it on. Make sure you have a free electrical outlet and a computer near where you want the second router to be located. Plug it in and turn it on. For the purposes of this wikiHow, we will refer to the second router as \"Router 2\"."
+    },
+    {
+      "title": "Connect a computer to the Router 2.",
+      "content": "Connect a computer to the Router 2. Use an Ethernet cable to connect to the LAN port on Router 2. Then connect to the Ethernet port on a computer. [7] X Research source"
+    },
+    {
+      "title": "Type Router 2's IP address in the address bar of a web browser.",
+      "content": "Type Router 2's IP address in the address bar of a web browser. This opens the admin login screen for Router 2. With most router's, the IP address is 192.168.0.1, 192.168.1.1, or 10.0.0.1."
+    },
+    {
+      "title": "Log in using Router 2's username and password.",
+      "content": "Log in using Router 2's username and password. Use the default username and password to log in to the admin user interface for Router 2, just as you did with Router 1. Check the user's manual or manufacturer's website to find the default username and password. With most routers, \"admin\" is both the username and password."
+    },
+    {
+      "title": "Disable DHCP on Router 2.",
+      "content": "Disable DHCP on Router 2. Since DHCP is enabled on Router 1, it should be disabled on Router 2 to prevent IP conflicts. Locate the DHCP settings in the admin user interface and switch the DHCP server to “Off.”"
+    },
+    {
+      "title": "Assign a new IP address to Router 2.",
+      "content": "Assign a new IP address to Router 2. [8] X Research source As of now, there’s a good possibility that Routers 1 and 2 have the same default IP address. To prevent IP conflicts, Router 2 needs to have a different IP address than Router 1. Find the area in the routers admin user interface called “LAN” or “Local Network.” There should be a box that contains the current IP address. Type a new IP address in place of the existing one. The new IP address on Router 2 must be on the same subnet as Router 1. This means the first three sets of numbers in the IP address should be the same as Router 1. Change the number after the third period in the IP address to something different from Router 1. It also can’t be an IP currently assigned to another device."
+    },
+    {
+      "title": "Configure Router 2's Wi-Fi name and passkey.",
+      "content": "Configure Router 2's Wi-Fi name and passkey. They should be identical to Router 1. [9] X Research source You should find these settings under a menu called “Wireless”, “Wi-Fi setup”, or something similar If you’re unsure of Router 1’s SSID and passkey, it should be printed on the device. Router 2 is not a wireless router, skip this step."
+    },
+    {
+      "title": "Disconnect the power from Router 2.",
+      "content": "Disconnect the power from Router 2. Now that Router 2’s all set up, it’s a good idea to give it a restart—though, for now, leave the power unplugged instead of turning it right back on."
+    },
+    {
+      "title": "Connect the first router to the second router.",
+      "content": "Connect the first router to the second router. Use an Ethernet cable to connect to a LAN port on Router 1. Then connect to the first LAN port on Router 2. Make sure you’re not plugging it into the WAN port as they look similar."
+    },
+    {
+      "title": "Plug Router 2 back in and turn it on.",
+      "content": "Plug Router 2 back in and turn it on. When the router comes back up, it will have the IP address you configured. As long as Router 1 has Internet access, Router 2 will now also be online."
+    },
+    {
+      "title": "Restart the computer that’s connected to Router 2.",
+      "content": "Restart the computer that’s connected to Router 2. Anytime you connect a computer to a new network device, it's a good idea to restart your computer."
+    },
+    {
+      "title": "Connect other computers and devices.",
+      "content": "Connect other computers and devices. This can be done wirelessly , or by connecting Ethernet cables to unused LAN ports on either router. Router 1’s DHCP server will automatically assign each device its own IP address in the same subnet. Enjoy your expanded network!"
+    }
+  ]
+}

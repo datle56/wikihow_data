@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Delete-Read-Only-Files-in-Linux",
+  "title": "How to Delete Read-Only Files in Linux",
+  "steps": [
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If a file you own is read-only, you won't be able to delete it unless you give yourself write permission for that file. If you're using a window manager, press Ctrl + Alt + T to open a terminal window now. [1] X Research source Use this method if you're trying to delete a file that belongs to you but (e.g., you're the owner or in a group that has access to read the file) but don't have permission to delete it. If you're signed in remotely and already at a command prompt, just skip to the next step."
+    },
+    {
+      "title": "Use cd to enter the directory of the file you want to delete.",
+      "content": "Use cd to enter the directory of the file you want to delete. For example, if the file you want to delete is inside a folder called documents in your home directory, you'd use cd documents or cd /home/ username /documents ."
+    },
+    {
+      "title": "Use ls -al to display the file permissions for the files in the directory.",
+      "content": "Use ls -al to display the file permissions for the files in the directory. Using ls -l displays a list of files in the directory, along with the owner of each file and its permissions. [2] X Research source Adding the a to ls -l also shows hidden files and folders in the directory."
+    },
+    {
+      "title": "Evaluate the permissions of the file you want to delete.",
+      "content": "Evaluate the permissions of the file you want to delete. The permissions for a file appear before its name like this: r--r--r-- . The owner's name appears after it, followed by the group name. r is read permissions, w is write permissions, and x is execute permissions. The first three characters in the permissions (in this example, r-- ), are the file owner's permissions. So, in this example, the owner of the file only has read permissions, which means they can't write to, execute, or delete the file. [3] X Research source The second three characters are group permissions. If you're a member of a group and that group has write permissions to the file, you'll be able to delete it even if you're not the owner. The third three characters are world permissions, which is everyone else."
+    },
+    {
+      "title": "Use chmod -v u+rw filename to give yourself read and write permissions.",
+      "content": "Use chmod -v u+rw filename to give yourself read and write permissions. You can omit the r if you already have read permissions. Once you have write permissions, you'll be able to delete the file. If you're not the file owner but have root access to the system, you can use sudo chmod -v u+rw filename to give yourself the right permissions. [4] X Research source To see the file's new permissions, run ls -al again."
+    },
+    {
+      "title": "Use rm filename to delete the file.",
+      "content": "Use rm filename to delete the file. Now that you have write permissions on the file, deleting it will be simple. If you aren't able to delete the file after making it writable, its partition may be mounted read-only. See Fixing the Read Only File System Error to troubleshoot."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. You can use the sudo command to delete a read-only file that you aren't able to delete with your user account. If you're using a window manager, press Ctrl + Alt + T to open a terminal window now. Use this method if you are not the owner of the file you want to delete and you'd rather just delete the file instead of first changing its permissions. If you're signed in remotely and already at a command prompt, just skip to the next step."
+    },
+    {
+      "title": "Use cd to enter the directory of the file you want to delete.",
+      "content": "Use cd to enter the directory of the file you want to delete. For example, if the file you want to delete a file inside a folder called documents in your home directory, you'd use cd documents or cd /home/ username /documents ."
+    },
+    {
+      "title": "Use ls -al to view the contents of the directory.",
+      "content": "Use ls -al to view the contents of the directory. This command will display all of the files in the current directory, as well as each file's owner and permissions."
+    },
+    {
+      "title": "Use sudo rm filename to delete the file.",
+      "content": "Use sudo rm filename to delete the file. You'll be prompted to enter your password to obtain root-level permissions. Once your password is accepted, the read-only file will be deleted. If you aren't able to delete the file with sudo, its partition may be mounted read-only. See Fixing the Read Only File System Error to troubleshoot."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're trying to delete a file and getting an error that says rm: cannot remove '(filename)' : Read only file system , there are a few possible causes. Start by pressing Ctrl + Alt + T to open a terminal window if you're using a window manager. If you're signed in remotely, just move to the next step."
+    },
+    {
+      "title": "Run df -h to view all mounted devices.",
+      "content": "Run df -h to view all mounted devices. You'll need to know the exact mount point of the drive that's giving you trouble. This displays all mounted drives."
+    },
+    {
+      "title": "Run the command mount .",
+      "content": "Run the command mount . Replace mount point with the actual mount point, e.g., /media/usbdisk . If you're trying to delete a file on a removable disk or network drive, such as an old backup, the disk where the file is stored might be mounted as read-only. If you see ro in the results, the file system is read-only. Remounting the drive should fix the error. To do so, use mount -o remount,rw mount point . You can then delete the file. If the permissions are rw , the disk is mounted with read-write permissions, which means you should be able to delete files without problems. This usually means there's a problem with the file system on the drive. Continue with this method. If you see remount-ro , this means the there's a problem with the file system and the drive was remounted as read-only to limit additional damage. This also means there's a problem with the file system on the drive. Continue with this method."
+    },
+    {
+      "title": "If the permissions are correct, unmount the drive.",
+      "content": "If the permissions are correct, unmount the drive. To do this, run sudo umount device . Replace device with the device name, e.g., /dev/sdd1 . Since you can't unmount a root file system, you can't check the file system of the root partition unless you're booted into recovery mode. If the error is on the root file system, boot into recovery mode first."
+    },
+    {
+      "title": "Run sudo fsck -n device to check the drive.",
+      "content": "Run sudo fsck -n device to check the drive. This checks the integrity of the drive without making any changes. If the drive is okay, you'll see \"clean\" in the results. If there are errors, you will see them. If there are errors, back up the drive before you continue in case the file system cannot be repaired."
+    },
+    {
+      "title": "Run sudo fsck device to repair errors.",
+      "content": "Run sudo fsck device to repair errors. If there are errors, you'll be prompted to correct them. Even if you are able to correct errors, make a backup just in case the drive is dying."
+    },
+    {
+      "title": "Remount the drive once repaired.",
+      "content": "Remount the drive once repaired. If you were able to repair the errors, remounting the drive will make it so you can delete your files. Use mount -o remount,rw mount point to ensure the drive is remounted with read and write permissions. You should then be able to modify and delete files on the drive."
+    }
+  ]
+}

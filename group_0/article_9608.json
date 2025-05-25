@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Convert-Binary-to-Octal-Number",
+  "title": "How to Convert Binary to Octal Number",
+  "steps": [
+    {
+      "title": "Recognize series of binary numbers.",
+      "content": "Recognize series of binary numbers. Binary numbers are simply strings of 1's and 0's, such as 101001, 001, or even just 1. If you see this kind of string it is usually binary. However, some books and teachers further denote binary numbers through a subscript \"2\", such as 1001 2 , which prevents confusion with the number \"one thousand and one.\" This subscript denotes the \"base\" of the number. Binary is a base-two system, octal is base-eight."
+    },
+    {
+      "title": "Group all the 1's and 0's in the binary number in sets of three, starting from the far right.",
+      "content": "Group all the 1's and 0's in the binary number in sets of three, starting from the far right. There are two different binary numbers and only eight octal. Since 2 3 = 8 , {\\displaystyle 2^{3}=8,} you'll need three binary numbers to designate each octal number. Start from the right to make your groups. For example, the binary number 101001 would break down to 101 001."
+    },
+    {
+      "title": "Add zeros to the left of the last digit if you don't have enough digits to make a set of three.",
+      "content": "Add zeros to the left of the last digit if you don't have enough digits to make a set of three. The binary number 10011011 has eight digits, which, though not a multiple of three, can still convert to octal. Just add extra zeros to your front group until it has three places. For example: Original Binary: 10011011 Grouping: 10 011 011 Adding Zeros for Groups of Three: 010 011 011 [1] X Research source"
+    },
+    {
+      "title": "Add a 4, 2, and a 1 underneath each set of three numbers to note your placeholders.",
+      "content": "Add a 4, 2, and a 1 underneath each set of three numbers to note your placeholders. Each of the three binary numbers in a set stands for a place in the octal number system. The first number is for a 4, the second a 2, and the third a 1. To keep things straight, write these numbers underneath your sets of three binary numbers. For example: 010 011 011 421 421 421 001 421 110 010 001 421 421 421 Note, if you're looking for a shortcut, you can skip this step and just compare your sets of binary numbers to this octal conversion chart ."
+    },
+    {
+      "title": "If there is a one above any of your placeholders, write that number (4, 2, or 1) to start your octal numbers.",
+      "content": "If there is a one above any of your placeholders, write that number (4, 2, or 1) to start your octal numbers. If there is a one above the \"4,\" then your octal number has a 4 in it. If there is a 0 above the one's place, the octal number does not have a one in it, so leave a blank, zero, or dash. As seen in an example: Problem: Convert 101010011 2 to octal. Separate into threes: 101 010 011 Add placeholders: 101 010 011 421 421 421 Mark each places: 101 010 011 421 421 421 401 020 021 [2] X Research source"
+    },
+    {
+      "title": "Add up the new numbers in each set of three.",
+      "content": "Add up the new numbers in each set of three. Once you know what places are in the octal number, simply add up each set of three individually. So, for 101, which turns into 4, 0, and 1, you end up with 5 ( 4 + 0 + 1 = 5 {\\displaystyle 4+0+1=5} ). Continuing the example above: Problem: Convert 101010011 2 to octal. Separate, add placeholders, and mark each place: 101 010 011 421 421 421 401 020 021 Add up each set of three: ( 4 + 0 + 1 ) ( 0 + 2 + 0 ) ( 0 + 2 + 1 ) = 5 , 2 , 3 {\\displaystyle (4+0+1)(0+2+0)(0+2+1)=5,2,3}"
+    },
+    {
+      "title": "Place your newly converted answers together to form your final octal number.",
+      "content": "Place your newly converted answers together to form your final octal number. Splitting up the binary number was just to make solving easier -- the original number was one lone string. So, now that you've converted, put everything back together to get your final answer. That's all it takes. Problem: Convert 101010011 2 to octal. Separate, add placeholders, mark places, and add totals: 101 010 011 5 — 2 — 3 Put converted numbers back together: 523"
+    },
+    {
+      "title": "Add a subscript 8 (like this8) to complete the conversion.",
+      "content": "Add a subscript 8 (like this 8 ) to complete the conversion. There is technically no way to know if 523 refers to an octal number or a normal base-ten number without proper notation. To ensure that your teacher knows you've been doing the work well, place a subscript 8, referring to octal as a base-8 system, on your answer. Problem: Convert 101010011 2 to octal. Conversion: 523. Final Answer: 523 8 [3] X Research source"
+    },
+    {
+      "title": "Use a simple octal conversion chart to save time and work.",
+      "content": "Use a simple octal conversion chart to save time and work. This won't work on a test, but is a great choice in any other setting. Since there are only 8 possible combinations of numbers, it is actually a pretty easy chart to memorize. All you have to do is separate the numbers in groups of three, then match them with the chart in the pictures. [4] X Research source Note how numbers 8 and 9 don't have straight conversions. In octal, these numbers do not exist, since there are only 8 digits (0-7) in a base-eight system."
+    },
+    {
+      "title": "Keep the decimal where it is and work outward if you are dealing with decimals.",
+      "content": "Keep the decimal where it is and work outward if you are dealing with decimals. Say you need to convert the binary number 10010.11 to an octal number. Normally, you work from right to left to group the numbers into sets of three. With the decimal, you work away from the point. So, for the numbers left of the decimal (10010), you start at the point and work left (010 010). For the numbers to the right (.11), you start from the point and work right (110). When adding zeros, always add them in the direction you're working. The final breakdown is 010 010 . 110. 101.1 → 101 . 100 1.01001 → 001 . 010 010 1001101.0101 → 001 001 101 . 010 100"
+    },
+    {
+      "title": "Use the octal conversion chart to convert from octal back to binary.",
+      "content": "Use the octal conversion chart to convert from octal back to binary. You'll need the chart to work backward, as a simple \"3\" doesn't give you enough information to do the math unless you already know the octal system well and want to re-think each combination. Simply use the following chart to easily convert each octal digit into a set of three binary numbers, then ram them together: 0 → 000 1 → 001 2 → 010 3 → 011 4 → 100 5 → 101 6 → 110 7 → 111 [5] X Research source"
+    }
+  ]
+}

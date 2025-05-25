@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Combinations",
+  "title": "How to Calculate Combinations",
+  "steps": [
+    {
+      "title": "Consider an example problem where order does not matter and repetition is not allowed.",
+      "content": "Consider an example problem where order does not matter and repetition is not allowed. In this kind of problem, you won't use the same item more than once. For instance, you may have 10 books, and you'd like to find the number of ways to combine 6 of those books on your shelf. In this case, you don't care about order - you just want to know which groupings of books you could display, assuming you only use any given book once. This kind of problem is often labeled as n C r {\\displaystyle {}_{n}C_{r}} , C ( n , r ) {\\displaystyle C(n,r)} , ( n r ) {\\displaystyle {\\binom {n}{r}}} , or \"n choose r \". In all of these notations, n {\\displaystyle n} is the number of items you have to choose from (your sample) and r {\\displaystyle r} is the number of items you're going to select. [2] X Research source"
+    },
+    {
+      "title": "Know the formula:",
+      "content": "Know the formula: n C r = n ! ( n − r ) ! r ! {\\displaystyle {}_{n}C_{r}={\\frac {n!}{(n-r)!r!}}} . [3] X Research source [4] X Research source The formula is similar the one for permutations but not exactly the same. Permutations can be found using n P r = n ! ( n − r ) ! {\\displaystyle {}_{n}P_{r}={\\frac {n!}{(n-r)!}}} . The combination formula is slightly different because order no longer matters; therefore, you divide the permutations formula by r ! {\\displaystyle r!} in order to eliminate the redundancies. [5] X Research source You are essentially reducing the result by the number of options that would be considered a different permutation but the same combination (because order doesn't matter for combinations). [6] X Research source [7] X Research source"
+    },
+    {
+      "title": "Plug in your values for n {\\displaystyle n} and r {\\displaystyle r} .",
+      "content": "Plug in your values for n {\\displaystyle n} and r {\\displaystyle r} . In the case above, you would have this formula: n C r = 10 ! ( 10 − 6 ) ! 6 ! {\\displaystyle {}_{n}C_{r}={\\frac {10!}{(10-6)!6!}}} . It would simplify to n C r = 10 ! ( 4 ! ) ( 6 ! ) {\\displaystyle {}_{n}C_{r}={\\frac {10!}{(4!)(6!)}}} ."
+    },
+    {
+      "title": "Solve the equation to find the number of combinations.",
+      "content": "Solve the equation to find the number of combinations. You can do this either by hand or with a calculator. If you have a calculator available, find the factorial setting and use that to calculate the number of combinations. If you're using Google Calculator, click on the x! button each time after entering the necessary digits. If you have to solve by hand, keep in mind that for each factorial , you start with the main number given and then multiply it by the next smallest number, and so on until you get down to 0. For the example, you can calculate 10! with (10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1), which gives you 3,628,800. Find 4! with (4 * 3 * 2 * 1), which gives you 24. Find 6! with (6 * 5 * 4 * 3 * 2 * 1), which gives you 720. Then multiply the two numbers that add to the total of items together. In this example, you should have 24 * 720, so 17,280 will be your denominator. Divide the factorial of the total by the denominator, as described above: 3,628,800/17,280. In the example case, you'd do get 210. This means that there are 210 different ways to combine the books on a shelf, without repetition and where order doesn't matter."
+    },
+    {
+      "title": "Consider an example problem where order does not matter but repetition is allowed.",
+      "content": "Consider an example problem where order does not matter but repetition is allowed. In this kind of problem, you can use the same item more than once. For instance, imagine that you're going to order 5 items from a menu offering 15 items; the order of your selections doesn't matter, and you don't mind getting multiples of the same item (i.e., repetitions are allowed). This kind of problem can be labeled as n + r − 1 C r {\\displaystyle {}_{n+r-1}C_{r}} . You would generally use n {\\displaystyle n} to represent the number of options you have to choose from and r {\\displaystyle r} to represent the number of items you're going to select. [8] X Research source Remember, in this kind of problem, repetition is allowed and the order isn't relevant. This is the least common and least understood type of combination or permutation, and isn't generally taught as often. [9] X Research source Where it is covered, it is often also known as a k -selection, a k -multiset, or a k -combination with repetition. [10] X Research source"
+    },
+    {
+      "title": "Know the formula:",
+      "content": "Know the formula: n + r − 1 C r = ( n + r − 1 ) ! ( n − 1 ) ! r ! {\\displaystyle {}_{n+r-1}C_{r}={\\frac {(n+r-1)!}{(n-1)!r!}}} . [11] X Research source [12] X Research source"
+    },
+    {
+      "title": "Plug in your values for n {\\displaystyle n} and r {\\displaystyle r} .",
+      "content": "Plug in your values for n {\\displaystyle n} and r {\\displaystyle r} . In the example case, you would have this formula: n + r − 1 C r = ( 15 + 5 − 1 ) ! ( 15 − 1 ) ! 5 ! {\\displaystyle {}_{n+r-1}C_{r}={\\frac {(15+5-1)!}{(15-1)!5!}}} . It would simplify to n + r − 1 C r = 19 ! ( 14 ! ) ( 5 ! ) {\\displaystyle {}_{n+r-1}C_{r}={\\frac {19!}{(14!)(5!)}}} ."
+    },
+    {
+      "title": "Solve the equation to find the number of combinations.",
+      "content": "Solve the equation to find the number of combinations. You can do this either by hand or with a calculator. If you have a calculator available, find the factorial setting and use that to calculate the number of combinations. If you're using Google Calculator, click on the x! button each time after entering the necessary digits. If you have to solve by hand, keep in mind that for each factorial , you start with the main number given and then multiply it by the next smallest number, and so on until you get down to 0. For the example problem, your solution should be 11,628. There are 11,628 different ways you could order any 5 items from a selection of 15 items on a menu, where order doesn't matter and repetition is allowed."
+    }
+  ]
+}

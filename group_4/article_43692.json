@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/The-Recovery-Server-Could-Not-Be-Contacted",
+  "title": "6 Ways to Fix “The recovery server could not be contacted” on a Mac",
+  "steps": [
+    {
+      "title": "The server may be down.",
+      "content": "The server may be down. If you receive this error, it is possible the server may be temporarily down. You can check to see if any Apple services are down using this page . Make sure the Mac App Store and macOS Software Update are up and running. If they are not, wait and try again later."
+    },
+    {
+      "title": "You don't have a stable internet connection.",
+      "content": "You don't have a stable internet connection. If you don't have a stable internet connection, you won't be able to download the installation files for macOS. Click the Wi-Fi icon at the top of the screen and make sure you are connected to a stable internet connection. Check other devices to see if there are any connection issues (i.e. loading slowly, not able to connect) with other devices."
+    },
+    {
+      "title": "The date and time need to be in sync with the server.",
+      "content": "The date and time need to be in sync with the server. If the date and time are not in sync, the server may refuse a connection. Use one of the following steps to make sure your date and time are in-sync: If you are able to access the System Settings in macOS, use the following steps to set the date and time: Click the Apple icon in the upper-right corner. Click System Settings (or System Preferences ). Click General . Click Date and time . Ensure \"Set date and time automatically\" is checked. If you're stuck in Recovery Mode and you have macOS 10.14 Mojave or later, use these steps to set the date and time: Click Utilities in the menu bar at the top. Click Terminal . Enter sudo sntp -sS time.apple.com and press Return . Enter your username and password. If you are stuck in Recovery Mode and you have macOS 10.13 High Sierra or earlier, use the following steps to set the date and time: Click Utilities in the menu bar at the top. Click Terminal . Enter sudo ntpdate -u time.apple.com and press Return . Enter your username and password."
+    },
+    {
+      "title": "There is an issue with the internal SSL security verification.",
+      "content": "There is an issue with the internal SSL security verification. This most commonly happens when trying to reinstall macOS 10.13 High Sierra. The easiest way to get around this issue is to install the latest version of macOS. However, this will not be an option for all Mac users. The latest versions of macOS do not support the hardware of older Mac computers. The way you boot into Recovery mode will be different depending on if you have a Mac with an Apple Silicon processor (most Macs produced after 2021), or an Intel processor (most older Macs). Use the following steps to install the latest version of macOS that is compatible with your Mac: [1] X Research source [2] X Research source Apple Silicon: Power off your Mac. Press and hold the Power button. Release the Power button when you see the menu with the Options button. Click Options . Click Reinstall [latest macOS version] Click Continue . Follow the on-screen instructions. Do not close your MacBook lid or put your computer in sleep mode. Macs with Intel chips: Power off your Mac. Press and release the Power button. Immediately press and hold Command + Option + R . Release the buttons when you see the Apple logo or spinning globe. Connect to the internet, if prompted. Select a user and enter the password if prompted. Click Reinstall [latest macOS version] Click Continue . Follow the on-screen instructions. Do not close your MacBook lid or put your computer in sleep mode."
+    },
+    {
+      "title": "Try connecting to a different server.",
+      "content": "Try connecting to a different server. If you can't connect to the usual server, you can change the URL that your Mac connects to. Use the following steps to do so:"
+    },
+    {
+      "title": "Boot into Recovery mode.",
+      "content": "Boot into Recovery mode. The way you do this will be different depending on if you have a Mac with an Apple Silicon chip or an Intel chip. Use one fo the following steps to boot into Recovery Mode Apple Silicon: Power off your Mac. Press and hold the Power button. Release the Power button with you see the menu with the Options button. Click Options . Macs with Intel chips: Power off your Mac. Press and release the Power button. Immediately press and hold Command + R .to reinstall your current version of macOS, or press and hold Command + Option + R to install the latest compatible version. Release the buttons when you see the Apple logo or spinning globe. Connect to the internet, if prompted. Select a user and enter the password if prompted."
+    },
+    {
+      "title": "Click Reinstall macOS or Install macOS.",
+      "content": "Click Reinstall macOS or Install macOS . Depending on if you want to reinstall macOS or install the latest version, click the option that's right for you."
+    },
+    {
+      "title": "Open the Installer log.",
+      "content": "Open the Installer log. You will probably get an error message when you try to install macOS, but the installer log will give you the URL it is trying to connect to. Use the following steps to open the Installer log: Click Window in the menu bar at the top. Click Installer log."
+    },
+    {
+      "title": "Click Continue.",
+      "content": "Click Continue . This will attempt to install macOS. If you get an error message, continue to the next step."
+    },
+    {
+      "title": "Copy the URL from the message at the top.",
+      "content": "Copy the URL from the message at the top. Use the following steps to do so: Scroll to the top of the Installer Log and look for a message that looks similar to the following: Failed to load catalog https://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog: Error Domain=MSUProductManagerErrorDomain Highlight and copy the URL from the message. The URL is this line in the message that looks something like the following: https://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. Use the following steps to do so: Click Utilities in the menu bar at the top. Click Terminal ."
+    },
+    {
+      "title": "Enter the following command.",
+      "content": "Enter the following command. Do not press Return just yet. You still need to modify the URL. Start by entering the following command: nvram IASUCatalogURL="
+    },
+    {
+      "title": "Paste the URL in quotes after the equals (=) sign.",
+      "content": "Paste the URL in quotes after the equals (=) sign. Do not press Return just yet. So far the entire command should look something like the following: nvram IASUCatalogURL=\"https://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog\""
+    },
+    {
+      "title": "Remove the \"s\" in \"https\" and press ⏎ Return.",
+      "content": "Remove the \"s\" in \"https\" and press ⏎ Return . Look for \"https\" at the beginning of the URL. Remove the \"s\" and press Return. This will redirect the URL to the non-secure server. The entire command should look something like the following: nvram IASUCatalogURL=\"http://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog\""
+    },
+    {
+      "title": "Try to install macOS.",
+      "content": "Try to install macOS. See if you are able to install macOS. To do so, click Install macOS or Reinstall macOS and then click Continue . Follow the instructions to complete the installation. [3] X Research source"
+    },
+    {
+      "title": "Use this method if you're still unable to connect to the server.",
+      "content": "Use this method if you're still unable to connect to the server. If you can't connect to the server, either due to an unstable internet connection or problems with the internal verification system, you can create a USB installer and use that to install macOS. To do this, you will need to download macOS from the App Store. You may need to use a second Mac that is compatible with the version of macOS you want to install to do this. Use the following steps to install macOS from a USB drive:"
+    },
+    {
+      "title": "Create a bootable USB installer.",
+      "content": "Create a bootable USB installer. Use the following steps to create a Bootable USB drive: [4] X Research source Open your version of macOS in the App Store. You can use one of the following links to do so: macOS 14 Sonoma macOS 13 Ventura macOS 12 Monterey macOS 11 Big Sur macOS 10.15 Catalina macOS 10.14 Mojave macOS 10.13 High Sierra macOS 10.11 El Capitan Click Get in the App Store (the links to the older versions of macOS above will download a DMG file instead). Click Download (If you are not prompted to download the installer, go back to the App Store and click Get again). Press Command + Q to quit the installer once it is finished downloading. Insert a blank USB drive (it is recommended you use a USB drive with at least 32 GB of storage space). This process will erase all data on the USB drive. Make sure you back up any files you want to keep. Click the Spotlight/Magnifying glass icon and type terminal in the search bar. Open the Terminal. Enter one of the following commands depending on the version of macOS you want to install (don't press Enter just yet). macOS 14 Sonoma: sudo /Applications/Install\\ macOS\\ Sonoma.app/Contents/Resources/createinstallmedia --volume macOS 13 Ventura: sudo /Applications/Install\\ macOS\\ Ventura.app/Contents/Resources/createinstallmedia --volume macOS 12 Monterey: sudo /Applications/Install\\ macOS\\ Monterey.app/Contents/Resources/createinstallmedia --volume macOS 11 Big Sur: sudo /Applications/Install\\ macOS\\ Big\\ Sur.app/Contents/Resources/createinstallmedia --volume macOS 10.15 Catalina: sudo /Applications/Install\\ macOS\\ Catalina.app/Contents/Resources/createinstallmedia --volume macOS 10.14 Mojave: sudo /Applications/Install\\ macOS\\ Mojave.app/Contents/Resources/createinstallmedia --volume macOS 10.13 High Sierra: sudo /Applications/Install\\ macOS\\ High\\ Sierra.app/Contents/Resources/createinstallmedia --volume macOS 10.11 El Capitan: sudo /Applications/Install\\ OS\\ X\\ El\\ Capitan.app/Contents/Resources/createinstallmedia --volume Open the Finder. Right-click your USB drive and click Show in Enclosed folder . Drag the USB drive location to the end of the command in the terminal. The entire command should look something like sudo /Applications/Install\\ macOS\\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyUSBDrive Press Return or Enter and enter the administrative password. Press Y and press Return to confirm. If asked to give the Terminal access to the USB drive, click Ok . Wait for the Terminal to finish writing the drive (this may take a while). Eject the USB drive."
+    },
+    {
+      "title": "Install macOS from a USB installer.",
+      "content": "Install macOS from a USB installer. Once the USB drive is finished installing, you'll need to boot into Recovery Mode. The way you do this will be different depending on if you are using an Apple Silicon Mac or an Intel Mac. Use one of the following steps to install macOS from a USB drive: Apple Silicon: Power off your Mac. Insert the USB drive. Press and hold the Power button. Release the Power button with you see the menu with your bootable USB drive. Select your bootable USB drive and click Continue . Follow the instructions to complete the installation. Macs with Intel chips: Power off your Mac. Insert the USB drive. Press and release the Power button. Immediately press and hold Option . Release the Option button when you see the screen with your bootable USB drive. Select your Bootable USB drive and click the on-screen arrow. Follow the instructions to complete the installation."
+    }
+  ]
+}

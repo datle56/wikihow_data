@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Reduce-Noise-in-FL-Studio",
+  "title": "2 Easy Ways to Remove Background Noise in FL Studio",
+  "steps": [
+    {
+      "title": "Open Edison in FL Studio.",
+      "content": "Open Edison in FL Studio. You can use the Edison plug-in, which comes with FL Studio Producer Edition, to denoise pre-recorded audio samples. To open Edison, click the Edit icon that looks like a pair of scissors at the top-right corner. Alternatively, you can press Ctrl + E (PC) or Command + E (Mac)."
+    },
+    {
+      "title": "Load an audio sample.",
+      "content": "Load an audio sample. You can do so by dragging and dropping an audio sample into Edison from your computer's file browser, or from the Browser window in FL Studio. Alternatively, you can click the floppy disk icon to open a file browser and select the audio sample."
+    },
+    {
+      "title": "Select a sample of the noise.",
+      "content": "Select a sample of the noise. Click and drag to highlight a sample of the noise you want to remove. Highlight a section that just has noise and nothing else you want to keep (instruments, vocals, speech, etc.). Edison works best to remove continuous noise, like a fan or a hiss in the background. You can either select the noise from the wavelength screen or switch to spectral view to see the horizontal lines that usually indicate a continuous noise."
+    },
+    {
+      "title": "Right-click the noise-reduction tool.",
+      "content": "Right-click the noise-reduction tool. This is the brush icon in the menu at the top of the editing space. You should see \"Noise profile acquired\" scroll up."
+    },
+    {
+      "title": "Click the noise-reduction tool.",
+      "content": "Click the noise-reduction tool. This will open the clean-up (denoise) window."
+    },
+    {
+      "title": "Make sure \"De-Noiser\" is selected and \"De-Clipper\" and \"De-Clicker\" are off.",
+      "content": "Make sure \"De-Noiser\" is selected and \"De-Clipper\" and \"De-Clicker\" are off. This ensures that all levels of the sound you previously selected will be removed from the audio sample."
+    },
+    {
+      "title": "Set \"Threshold\" to 0db and \"Amount\" to 22.",
+      "content": "Set \"Threshold\" to 0db and \"Amount\" to 22. The \"Threshold\" and \"Amount\" knobs are at the top."
+    },
+    {
+      "title": "Click Preview at the bottom.",
+      "content": "Click Preview at the bottom. If you don't like the sound, go back and change the threshold and amount settings. You can select \"Output Noise Only\" to hear the noise that will be removed. It should be cutting out the noise you want to remove and not the audio you want to keep. If you hear any voices or instruments in the \"Output Noise Only\", lower the settings. [1] X Research source"
+    },
+    {
+      "title": "Click Accept.",
+      "content": "Click Accept . This will redirect you to the spectral view of your sound. [2] X Research source Save the file once you are done. To do so, click File followed by Save ."
+    },
+    {
+      "title": "Route a track that has noise you want to reduce to the mixer.",
+      "content": "Route a track that has noise you want to reduce to the mixer. The Fruity Limiter plug-in in FL Studio has a noise gate you can use to reduce background noise while mixing, or as you record. To route a track, double-click it, then select which mixer channel you want to route it to using the box in the upper-left corner of the window. You can either drag and drop imported audio samples into a track to mix, or arm a track to record with."
+    },
+    {
+      "title": "Apply Fruity Limiter to the channel.",
+      "content": "Apply Fruity Limiter to the channel. To do so, select the channel in the mixer at the bottom of the screen. Then click the arrow (⏵) next to an effect slot in the panel to the right of the mixer. Then select the Fruity Mixer plug-in."
+    },
+    {
+      "title": "Open the Fruity Limiter plug-in.",
+      "content": "Open the Fruity Limiter plug-in. To do so, double-click the Fruity Limiter plug-in in the effects panel."
+    },
+    {
+      "title": "Adjust the threshold (Thresh).",
+      "content": "Adjust the threshold (Thresh). The Threshold knob is in the lower-right corner of the Fruity Limiter effect window. The threshold adjusts the volume at which the noise gate opens and allows sound to pass. Sounds below the threshold volume will be blocked by the noise gate. Noise gates are useful for blocking out background noises, such as fan noise, or buzzing from a guitar amp when there is no other sound. As you adjust the threshold, you will see a vertical line in the window that displays the waveform. Play the audio back to view the waveform. This will give you an idea of how loud the background is and where to set the threshold."
+    },
+    {
+      "title": "Adjust the gain.",
+      "content": "Adjust the gain. The Gain knob is to the left of the threshold knob in the lower-right corner. The gain knob adjusts how much the noise gate blocks sounds 100% gain allows all sound to pass through the noise gate with no gating. No gain blocks all sound passing through the noise gate."
+    },
+    {
+      "title": "Adjust the Release (Rel).",
+      "content": "Adjust the Release (Rel). The release knob is the third knob in the lower-right corner. It adjusts the time it takes for the noise gate to close and block sound. Turning the release knob too low may cause abrupt cut-offs in the audio sample or recording. Longer release times allow the sound to ring out more naturally. [3] X Research source"
+    },
+    {
+      "title": "Preview the sound.",
+      "content": "Preview the sound. To preview the sound, simply play back the audio. The noise gate will be applied to the mix in real-time as you mix or record. If there is too much background noise getting through, raise the threshold and lower the gain. If the parts you want to record are cutting off too abruptly, increase the release."
+    }
+  ]
+}

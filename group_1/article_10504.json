@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Create-DLL-Files",
+  "title": "How to Create DLL Files",
+  "steps": [
+    {
+      "title": "Open Visual Studio.",
+      "content": "Open Visual Studio. You can find this in your Start Menu or Applications folder. Since a DLL is a library of information, it is only one piece of a project, and usually requires an accompanying app to access it. You can get Visual Studio for Windows here: https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022 Visual Studio for Mac can be downloaded here: https://learn.microsoft.com/en-us/previous-versions/visualstudio/mac/installation?view=vsmac-2022 This wikiHow will be using code provided by Microsoft to explain how to build a DLL file."
+    },
+    {
+      "title": "Click the File.",
+      "content": "Click the File . You’ll find this either above the project space (Windows) or along the top of your screen (Macs). [1] X Research source"
+    },
+    {
+      "title": "Click New and Project.",
+      "content": "Click New and Project . The “Create a New Project” dialog box will pop up. [2] X Research source"
+    },
+    {
+      "title": "Set the options for Language, Platform, and Project Type.",
+      "content": "Set the options for Language , Platform , and Project Type . These will filter what kinds of project templates appear. Click Language to get a drop-down menu and click C++ ."
+    },
+    {
+      "title": "Click Platform to get a drop-down menu and click Windows.",
+      "content": "Click Platform to get a drop-down menu and click Windows ."
+    },
+    {
+      "title": "Click Project Type to get a drop-down menu and click Library.",
+      "content": "Click Project Type to get a drop-down menu and click Library . [3] X Research source"
+    },
+    {
+      "title": "Click Dynamic-link Library (DLL).",
+      "content": "Click Dynamic-link Library (DLL) . Your choice will highlight blue. Click Next to continue. [4] X Research source"
+    },
+    {
+      "title": "Type a name in the Name Box for the project.",
+      "content": "Type a name in the Name Box for the project. For example, type “MathLibrary” in the box for a sample name. [5] X Research source"
+    },
+    {
+      "title": "Click Create.",
+      "content": "Click Create . The DLL project is created. [6] X Research source"
+    },
+    {
+      "title": "Add a header file to the DLL.",
+      "content": "Add a header file to the DLL. You can do this by clicking “ Add New Item ” from “ Project ” in the menu bar. Select Visual C++ from the left menu of the dialog box. Select Header file (.h) from the center of the dialog box. Type the name as “MathLibrary.h” in the name field below the menu choices. Click Add to generate the blank header file."
+    },
+    {
+      "title": "Type the following code into the blank header file.",
+      "content": "Type the following code into the blank header file. // MathLibrary.h - Contains declarations of math functions #pragma once #ifdef MATHLIBRARY_EXPORTS #define MATHLIBRARY_API __declspec(dllexport) #else #define MATHLIBRARY_API __declspec(dllimport) #endif // The Fibonacci recurrence relation describes a sequence F // where F(n) is { n = 0, a // { n = 1, b // { n > 1, F(n-2) + F(n-1) // for some initial integral values a and b. // If the sequence is initialized F(0) = 1, F(1) = 1, // then this relation produces the well-known Fibonacci // sequence: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... // Initialize a Fibonacci relation sequence // such that F(0) = a, F(1) = b. // This function must be called before any other function. extern \"C\" MATHLIBRARY_API void fibonacci_init ( const unsigned long long a , const unsigned long long b ); // Produce the next value in the sequence. // Returns true on success and updates current value and index; // false on overflow, leaves current value and index unchanged. extern \"C\" MATHLIBRARY_API bool fibonacci_next (); // Get the current value in the sequence. extern \"C\" MATHLIBRARY_API unsigned long long fibonacci_current (); // Get the position of the current value in the sequence. extern \"C\" MATHLIBRARY_API unsigned fibonacci_index (); This is sample code provided from the Microsoft help website."
+    },
+    {
+      "title": "Add a CPP file to the DLL.",
+      "content": "Add a CPP file to the DLL. You can do this by clicking Add New Item from “Project” in the menu bar. Select “ Visual C++ ” from the left menu of the dialog box. Select “ C++ File (.cpp) ” from the center of the dialog box. Type the name as “MathLibrary.cpp” in the name field below the menu choices. Click Add to generate the blank file."
+    },
+    {
+      "title": "Type the following code into the blank file.",
+      "content": "Type the following code into the blank file. // MathLibrary.cpp : Defines the exported functions for the DLL. #include \"stdafx.h\" // use pch.h in Visual Studio 2019 #include <utility> #include <limits.h> #include \"MathLibrary.h\" // DLL internal state variables: static unsigned long long previous_ ; // Previous value, if any static unsigned long long current_ ; // Current sequence value static unsigned index_ ; // Current seq. position // Initialize a Fibonacci relation sequence // such that F(0) = a, F(1) = b. // This function must be called before any other function. void fibonacci_init ( const unsigned long long a , const unsigned long long b ) { index_ = 0 ; current_ = a ; previous_ = b ; // see special case when initialized } // Produce the next value in the sequence. // Returns true on success, false on overflow. bool fibonacci_next () { // check to see if we'd overflow result or position if (( ULLONG_MAX - previous_ < current_ ) || ( UINT_MAX == index_ )) { return false ; } // Special case when index == 0, just return b value if ( index_ > 0 ) { // otherwise, calculate next sequence value previous_ += current_ ; } std :: swap ( current_ , previous_ ); ++ index_ ; return true ; } // Get the current value in the sequence. unsigned long long fibonacci_current () { return current_ ; } // Get the current index position in the sequence. unsigned fibonacci_index () { return index_ ; } This is sample code provided from the Microsoft help website."
+    },
+    {
+      "title": "Click Build in the menu bar.",
+      "content": "Click Build in the menu bar. You’ll find this either above the project space (Windows) or along the top of your screen (Macs)."
+    },
+    {
+      "title": "Click Build Solution.",
+      "content": "Click Build Solution . After you click that, you should see text similar to this: 1 >------ Build started : Project : MathLibrary , Configuration : Debug Win32 ------ 1 > MathLibrary . cpp 1 > dllmain . cpp 1 > Generating Code ... 1 > Creating library C : \\ Users \\ username \\ Source \\ Repos \\ MathLibrary \\ Debug \\ MathLibrary . lib and object C : \\ Users \\ username \\ Source \\ Repos \\ MathLibrary \\ Debug \\ MathLibrary . exp 1 > MathLibrary . vcxproj -> C : \\ Users \\ username \\ Source \\ Repos \\ MathLibrary \\ Debug \\ MathLibrary . dll 1 > MathLibrary . vcxproj -> C : \\ Users \\ username \\ Source \\ Repos \\ MathLibrary \\ Debug \\ MathLibrary . pdb ( Partial PDB ) ========== Build : 1 succeeded , 0 failed , 0 up - to - date , 0 skipped ========== If your DLL creation was successful, you'll see that here. If there was an error, it will be listed here for you to fix."
+    }
+  ]
+}

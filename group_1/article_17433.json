@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Fix-DNS-Server-Not-Responding-Problem",
+  "title": "DNS Server Isn't Responding? Easy Troubleshooting & Fixes",
+  "steps": [
+    {
+      "title": "Run a network troubleshooter.",
+      "content": "Run a network troubleshooter. If you haven't already, you can use the built-in network troubleshooters to check for connectivity issues. If the issue is related to DNS specifically, you'll see an error like \"The DNS server is not responding,\" \"Your computer appears to be correctly configured, but the device or resource (DNS server) is not responding,\" or \"your DNS server might be unavailable.\" Windows 10: Go to Start > Settings > Network & Internet > Status . Click Network troubleshooter under \"Change your network settings.\" Follow the steps in the troubleshooter. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Windows 11: Right-click the Wi-Fi, globe, or ethernet icon at the bottom-right corner (in the system tray) and select Diagnose network problems . If a problem is detected, you'll see an error. Mac: Press and hold Option as you click the Wi-Fi status icon in the menu bar. [2] X Research source Click Open Wireless Diagnostics and follow the on-screen instructions. If you see \"DNS resolution failure,\" the issue is DNS related. If you see a broader error like \"LAN Connectivity Failure,\" the issue is likely your connection to the internet."
+    },
+    {
+      "title": "Clear your web browser's DNS cache.",
+      "content": "Clear your web browser's DNS cache. If Chrome, Safari, Edge, or your preferred browser is giving you a DNS error, there could be a problem with the DNS cache. To clear it: Chrome and Edge: Type or paste chrome://net-internals/#dns into the address bar at the top of your browser and press Enter or Return . Click Clear host cache and then restart your browser. Safari: If you don't see the Develop menu when Safari is open, enable it in Safari > Settings > Advanced > Show features for web developers . [3] X Research source Click the Develop menu and select Empty Caches . Restart Safari and try browsing again."
+    },
+    {
+      "title": "Try connecting with a different device.",
+      "content": "Try connecting with a different device. If you can connect another device, such as a phone, tablet, or computer, to the same Wi-Fi network that's giving you the DNS server error, try doing so. You'll know your network is working fine if the other device doesn't give you the same DNS error."
+    },
+    {
+      "title": "Flush the DNS cache.",
+      "content": "Flush the DNS cache. If you don't have another device to test with, or you're only getting a DNS error on one device, flushing the DNS cache on that device will often fix the problem. Windows: Close your web browser and all open programs. Press the Windows key , type cmd , and press Enter to open Command Prompt . Type ipconfig /flushdns and press Enter . Mac: In your Launchpad, type terminal , then click Terminal in the search results. Type sudo killall -HUP mDNSResponder and press Return . Type your password when prompted to complete the flush."
+    },
+    {
+      "title": "Power cycle your network.",
+      "content": "Power cycle your network. If all devices on the network are getting DNS errors, restarting your router and/or modem will often fix the problem. To completely clear the cache on your network, you'll want to restart the modem, router, and your device in a particular way: If your router and modem are two separate devices, unplug the power cords from each device. If you have one combined unit, unplug it. Wait about a minute. Plug the modem back in and wait 3-5 minutes. If you have a separate router, don't plug it back in yet. (If your modem/router is not combined into one unit): Once the modem is back up (after 3-5 minutes), plug your router back in and wait another 3-5 minutes. When the modem and router (or combo gateway) are back online, reconnect to Wi-Fi if your computer doesn't connect automatically, then try using the internet again."
+    },
+    {
+      "title": "Try restarting your computer in Safe Mode.",
+      "content": "Try restarting your computer in Safe Mode. In some cases, some software installed on your computer—often security and antivirus software—can cause the DNS servers not to respond. If you don't get the \"DNS server isn't responding\" error in safe mode, uninstall any recently installed software that may be interfering with your connection. If you're unsure how to boot into safe mode, see our guide to booting into safe mode for Mac and Windows."
+    },
+    {
+      "title": "See if you can ping IP addresses directly.",
+      "content": "See if you can ping IP addresses directly. This test will determine whether the problem relates to your internet connection or the DNS servers. On Windows, reopen Command Prompt. On a Mac, reopen Terminal. Then, follow these steps: Type ping 8.8.4.4 and press Enter or Return . Mac only: After about 15-20 seconds, press Ctrl + C to stop the ping. If you see \"Reply from 8.8.4.4\" or \"64 bytes from 8.8.4.4\" followed by some statistics, your internet connection is working. If you see \"Request timed out\" or \"Destination host unreachable,\" there is a problem with your internet connection, not your DNS servers. See our guide to troubleshooting your internet connection . Now type ping dns.google and press Enter or Return . If you get an error like \"Ping request could not find host,\" \"Name or service not known,\" or \"cannot resolve dns.google: Unknown host,\" but were able to ping 8.8.4.4, the DNS servers your computer is using are not working, but your internet is working. In this case, see this method to learn how to change your DNS servers to ones that won't give you errors."
+    },
+    {
+      "title": "Windows",
+      "content": "Windows Press Windows key , type control panel , and click Control Panel . Go to Network and Internet > Network and Sharing Center > Change adapter settings . Right-click your connection and select Properties . Select Internet Protocol Version 4 (TCP/IPv4) and click Properties . If you're using IPv6, select Internet Protocol Version 6 (TPC/IPv6) instead. If \"Obtain an IPv4/6 address automatically\" is selected, your ISP's DNS servers are having trouble, or there's a setting in your router or firewall preventing you from accessing them. Continue with this method. If \"Use the following DNS server addresses\" is selected and IP addresses are listed, there's a problem with those server addresses. Before changing your DNS servers to the public Google servers, select \"Obtain an IPv4/6 address automatically\" first to see if that fixes the problem. If it doesn't, continue with this method. Select \"Use the following DNS server addresses\" and enter 8.8.8.8 and 8.8.4.4 . If using IPv6, enter 2001:4860:4860::8888 and 2001:4860:4860::8844 . [4] X Research source Click OK and OK again to save your changes. Restart your computer, and clear your browser cache once it comes back up. This should fix your DNS errors. If the DNS not resolving errors persist, contact your ISP."
+    },
+    {
+      "title": "Mac",
+      "content": "Mac Open the Apple menu and go to System Settings > Network > Wi-Fi (or your network type). Go to Details > DNS . [5] X Research source Click + to add the following DNS servers: 8.8.8.8 and 8.8.4.4 . If using IPv6, enter 2001:4860:4860::8888 and 2001:4860:4860::8844 . Remove the other DNS servers listed and click OK . Restart your computer, and clear your browser cache once it comes back up. This should fix your DNS errors. If the DNS not resolving errors persist, contact your ISP."
+    }
+  ]
+}

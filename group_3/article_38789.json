@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Send-an-Encrypted-Email-on-iPhone-or-iPad",
+  "title": "How to Encrypt Emails in iOS Using S/MIME",
+  "steps": [
+    {
+      "title": "Obtain the certificate.",
+      "content": "Obtain the certificate. To send encrypted messages from your iOS device, you’ll need to install an S/MIME (Secure/Multipurpose Internet Mail Extensions) certificate on your iPhone or iPad. If you’re using an official organizational account (e.g., from your school or workplace), you may be able to get a certificate from your organization. You can also get a certificate from a certificate authority (CA). Free S/MIME certificates are available from companies like Actalis and Comodo . When you sign up for a certificate, you’ll receive a password that you’ll need to install the certificate. Copy it or write it down and keep it in a safe place so you don’t lose it."
+    },
+    {
+      "title": "Download the emailed certificate to your iPhone or iPad.",
+      "content": "Download the emailed certificate to your iPhone or iPad. Typically, you’ll be sent an email with the file you need to install your S/MIME certificate. Open the email on your iPhone or iPad and download it to your device. Save it to a location in your Files that you can easily find again. Unzip the file if necessary. Your certificate may arrive as a compressed .zip file. Just tap on it to unzip it."
+    },
+    {
+      "title": "Tap the file and select your device.",
+      "content": "Tap the file and select your device. Once you’ve downloaded and unzipped the file, tap on it to open it. A popup will open asking you to select which device you want to install it on. For example, if you’re on your iPhone, tap iPhone in the Choose a Device popup. Tap Close on the Profile Downloaded popup."
+    },
+    {
+      "title": "Open your Settings app.",
+      "content": "Open your Settings app. You’ll need to go into Settings to complete the installation process."
+    },
+    {
+      "title": "Tap Profile Downloaded.",
+      "content": "Tap Profile Downloaded . It will be close to the top of your Settings menu, under your Apple ID settings. A new screen will open with information about the certificate you downloaded."
+    },
+    {
+      "title": "Select Install.",
+      "content": "Select Install . It’s in the top right corner of the screen."
+    },
+    {
+      "title": "Enter your device’s passcode.",
+      "content": "Enter your device’s passcode. This is the same passcode you use to unlock your iPhone or iPad. Note that you can’t install an S/MIME certificate unless you have a passcode enabled on your device. You can’t use Face ID or Touch ID to complete this process."
+    },
+    {
+      "title": "Tap Install again if prompted.",
+      "content": "Tap Install again if prompted. If the certificate you downloaded is unsigned, you may see a screen warning you that you’re about to install an unsigned profile. Tap Install to continue, then tap Install again to verify your choice."
+    },
+    {
+      "title": "Type or paste in the password for your certificate.",
+      "content": "Type or paste in the password for your certificate. You should have received this password when you requested the certificate. Tap Next to continue."
+    },
+    {
+      "title": "Tap Done.",
+      "content": "Tap Done . Your new certificate is now installed!"
+    },
+    {
+      "title": "Open your iPhone or iPad’s Settings .",
+      "content": "Open your iPhone or iPad’s Settings . It’s usually at the bottom of the Home Screen. [1] X Research source"
+    },
+    {
+      "title": "Select Mail.",
+      "content": "Select Mail . Scroll down until you find Mail in the main Settings menu. It’s in a group with other built-in apps that come with your iOS device. Tap it to open a new screen."
+    },
+    {
+      "title": "Tap Accounts.",
+      "content": "Tap Accounts . It’s near the top of the menu."
+    },
+    {
+      "title": "Select your email account.",
+      "content": "Select your email account. All the email accounts linked to your device appear under the Accounts header. Tap the one you want to use to send an encrypted message."
+    },
+    {
+      "title": "Tap Account Settings.",
+      "content": "Tap Account Settings . You’ll see this option near the bottom of the menu for your selected account."
+    },
+    {
+      "title": "Tap Advanced.",
+      "content": "Tap Advanced . It’s at the bottom of the screen."
+    },
+    {
+      "title": "Scroll down and tap Encrypt by Default.",
+      "content": "Scroll down and tap Encrypt by Default . It’s the last option in the Advanced menu."
+    },
+    {
+      "title": "Toggle on the switch next to Encrypt by Default.",
+      "content": "Toggle on the switch next to Encrypt by Default . In the next screen, tap the Encrypt by Default switch. If it turns green, you have successfully turned on S/MIME encryption. If you don’t have a valid certificate installed already, you won’t be able to switch this setting on. The switch will stay grayed out. Your certificates will be listed on the same screen, under the Certificates header. If you see more than one certificate, select the one with the most distant expiration date."
+    },
+    {
+      "title": "Enable Sign if to use a virtual signature.",
+      "content": "Enable Sign if to use a virtual signature. For an extra layer of security, enable the Sign feature. This will also allow you and your recipient to exchange public keys so you can send and receive encrypted messages. From the Encrypt by Default menu, tap Back to return to the Advanced screen. From there: Tap Sign under the S/MIME header. Toggle on the switch next to Sign . If there are multiple certificates to choose from, select the same one you used when you toggled on Encrypt by Default ."
+    },
+    {
+      "title": "Go back to the Account Settings screen and tap Done.",
+      "content": "Go back to the Account Settings screen and tap Done . You are now ready to start sending encrypted and signed emails."
+    },
+    {
+      "title": "Open the Mail app.",
+      "content": "Open the Mail app. It’s the envelope icon that’s usually at the bottom of the home screen."
+    },
+    {
+      "title": "Compose a message to the desired recipient.",
+      "content": "Compose a message to the desired recipient. If you’re using an Exchange account and you and your recipient are already in the same Exchange environment, or if you’re both using email accounts provided by the same organization, then you may be able to send encrypted emails automatically. Otherwise, there will be a few more steps involved. [2] X Research source Check the “To” field to see if there’s a blue lock there. If you see an unlocked blue icon, simply tap it to lock it, then go ahead and send the message. If the blue lock icon is already locked, leave it alone and send the message. The message is already encrypted. If you see a blue lock with a line through it, you’ll need to exchange public keys with the recipient before you can send them an encrypted message. Go on to the next steps."
+    },
+    {
+      "title": "Send the recipient a signed email.",
+      "content": "Send the recipient a signed email. If you see a closed blue lock icon with a line through it next to the To: field, your email to the recipient will be sent with standard (TLS) encryption. This is the standard encryption level for most email messages. In this case, send a digitally signed email to your recipient asking them to send a signed email back. If you toggled on Sign in your account settings when you enabled encryption , your email will be signed automatically. Your recipient will receive an email with your public key attached. They will need to obtain their own S/MIME certificate in order to send you a signed email."
+    },
+    {
+      "title": "Open a signed email from your recipient.",
+      "content": "Open a signed email from your recipient. If their signature is trusted, you’ll see a blue checkmark icon next to their address, and you should now be able to send them an encrypted message. If you see a red question mark next to their address when you tap it, you’ll need to manually install their certificate: Tap their email address and then tap View Certificate . Tap Install . When the Install button changes to a red Remove button, tap Done in the upper right corner of the screen. iOS will now associate the certificate you just installed with the sender’s email address, allowing you to exchange encrypted messages with them."
+    },
+    {
+      "title": "Start a new message and check the lock in the To: field.",
+      "content": "Start a new message and check the lock in the To: field. Fill in your recipient’s email address. If you see an unlocked blue lock icon, tap it to lock it and enable encryption. If the lock icon is already locked, leave it alone."
+    },
+    {
+      "title": "Write your message and tap Send.",
+      "content": "Write your message and tap Send . The encrypted message will be delivered to the recipient. Only the recipient will be able to access the message, as they have your public key."
+    }
+  ]
+}

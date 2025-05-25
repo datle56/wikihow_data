@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Format-a-PC",
+  "title": "How to Format a PC",
+  "steps": [
+    {
+      "title": "Backup any important data.",
+      "content": "Backup any important data. Formatting your drive will delete all of the data on it and remove the operating system. Make sure that you have any important files backed up to another location, such as an external drive or the cloud. If you're trying to securely erase the data on a drive before disposing of it, see the Securely Formatting a Drive section of this article instead."
+    },
+    {
+      "title": "Insert your Windows installation disc.",
+      "content": "Insert your Windows installation disc. You'll be using your Windows installation disc to format your drive. This is the easiest way to format the primary drive, as you cannot do this from within Windows itself. You don't need to use your own installation disc, as you won't actually be entering a product key (unless you proceed with reinstalling Windows). If you can't find your installation disc, you may still have options depending on your version of Windows: Windows 7 - You can download an ISO file for Windows 7 be entering your product key here . You'll then be transferring this ISO file to a blank DVD or USB drive using the Windows 7 USB/DVD Download Tool which you can download here . Windows 8 - You can download the Windows 8 Media Creation tool from Microsoft here . This program will download and create Windows installation media on either a blank DVD or USB drive (4GB or larger). Run the tool and follow the prompts to create the installation media. Windows 10 - You can download the Windows 10 Media Creation tool from Microsoft here . Run this program to download and create your Windows 10 installation disk on either a blank DVD or USB drive. Most users should download the 64-bit version of the tool. If you aren't sure, see How to Check if Windows is 32-Bits or 64-Bits ."
+    },
+    {
+      "title": "Set your computer to boot from the installation drive.",
+      "content": "Set your computer to boot from the installation drive. In order to run the installer and format the drive, you'll need to set your computer to boot from that drive (DVD or USB) instead of your hard drive. The process for this varies depending on whether your computer came with Windows 7 (or older), or if your computer came with Windows 8 (or newer). Windows 7 (and older) - Reboot your computer and press the BIOS, SETUP, or BOOT key that is displayed when the computer first starts. The most common keys are F2 , F11 , F12 , and Del . In the BOOT menu, set your installation drive as the primary boot device. Windows 8 (and newer) - Click the Power button in the Start screen or menu. Hold ⇧ Shift and click Restart to reboot into the \"Advanced startup\" menu. Select the \"Troubleshoot\" option and then \"Advanced options\". Click \"UEFI Firmware Settings\" and then open the BOOT menu. Set your installation drive as the primary boot device."
+    },
+    {
+      "title": "Start the setup process.",
+      "content": "Start the setup process. Windows will load the setup files and then start the installation process. You'll be asked to select your language and accept the terms before you proceed."
+    },
+    {
+      "title": "Select a \"Custom\" installation.",
+      "content": "Select a \"Custom\" installation. This will allow you to format your hard drive during the installation."
+    },
+    {
+      "title": "Select the partition you want to format.",
+      "content": "Select the partition you want to format. After proceeding through the initial installation screens, you'll be shown all of the hard drives and their partitions. You will typically have several partitions on your computer, one for your operating system, one recovery partition, and any additional partitions you may have created or drives you may have installed. You can delete partitions on the same drive to combine them all into a single unallocated partition. This will delete any data on the partitions. Click the \"Drive options\" button to see the \"Delete\" option for partitions. If you delete all of your partitions, you'll need to create a new one before it can be formatted. Select the unallocated space and click \"New\" to create a new partition. You'll be able to set the size of the partition out of the available free space. Note that you typically cannot create more than four partitions on a single drive."
+    },
+    {
+      "title": "Format the selected partition.",
+      "content": "Format the selected partition. Click the \"Format\" button after selecting the partition or drive. If you don't see the Format button, click the \"Drive options\" button to reveal it. You will be warned that the format process will delete all data on the partition. Once you agree, the format will happen automatically. This may take a few moments to complete. [1] X Research source"
+    },
+    {
+      "title": "Install your operating system.",
+      "content": "Install your operating system. Formatting your primary removes the operating system, so you won't be able to use the PC until you install an operating system again. You can proceed with the Windows installation after formatting the drive, or you can install a different operating system such as Linux. To install Windows, follow the rest of the prompts in the setup program after formatting. To install Linux, you'll need Linux installation media. See How to Install Linux for instructions on installing a variety of different Linux versions."
+    },
+    {
+      "title": "Open the Disk Management utility.",
+      "content": "Open the Disk Management utility. When you connect a new external drive or install a new internal hard drive, you'll need to format it before it appears in Windows Explorer. You can do this using the Disk Management utility. Press ⊞ Win + R and type diskmgmt.msc to launch Disk Management. In Windows 8 and 10, you can right-click on the Start button and select \"Disk Management\". It may take a few moments for all of your installed hard drives to appear. If you're trying to securely erase the data on a drive before disposing of it, see the Securely Formatting a Drive section of this article instead."
+    },
+    {
+      "title": "Partition the new drive (if prompted).",
+      "content": "Partition the new drive (if prompted). If you're opening Disk Management for the first time after installing a new drive, you'll likely be prompted to initialize the disk. Don't worry if this window doesn't appear. Select \"GPT\" if the new disk is 2TB or larger. Select \"MBR\" if the new disk is smaller than 2TB."
+    },
+    {
+      "title": "Select the drive you want to format.",
+      "content": "Select the drive you want to format. All of your drives and partitions will be listed in Disk Management. If you've just installed a new drive, it will likely be on its own row with the \"Unallocated\" label. Expand the \"Status\" column to see more details about each partition. You cannot format the \"Boot\" partition in Windows, as this is the partition that Windows is installed on. Formatting will delete all of the data on the disk, so make absolutely sure you select the correct one."
+    },
+    {
+      "title": "Create a partition (if necessary).",
+      "content": "Create a partition (if necessary). If the drive is Unallocated, you will need to right-click on it and select \"New Simple Volume\". Follow the prompts to create a partition out of the Unallocated space."
+    },
+    {
+      "title": "Right-click on the drive or partition and select \"Format\".",
+      "content": "Right-click on the drive or partition and select \"Format\". This will open the Format window."
+    },
+    {
+      "title": "Set your formatting options.",
+      "content": "Set your formatting options. You can give the drive a new name (Volume label), as well as choose its file system. For Windows, select \"NTFS\" as the file system for maximum compatibility. You can choose whether or not you want to perform a quick format. Only uncheck this option if you are worried that your drive is damaged."
+    },
+    {
+      "title": "Wait for the format to complete.",
+      "content": "Wait for the format to complete. Click the Format button once you are satisfied with your settings. The formatting process may take a few minutes. Once the formatting is complete, you can use the drive to store files and install programs to it."
+    },
+    {
+      "title": "Open the Disk Management utility.",
+      "content": "Open the Disk Management utility. You can shrink any of your existing drives to convert the free space on them into a new partition. This can be useful if you have a lot of free space on a drive and want to create a dedicated drive for specific files, such as media. Press ⊞ Win + R and type diskmgmt.msc to quickly launch the Disk Management utility. You can also right-click the Start button in Windows 8 and 10 to select Disk Management from the menu."
+    },
+    {
+      "title": "Select the partition that you want to shrink.",
+      "content": "Select the partition that you want to shrink. You can shrink any partition that has some free space. You'll likely want to choose one that you can at least get several GB out of to make your new partition useful. Make sure to leave enough space for the existing partition, especially if it is your boot partition. Windows performs best when it has at least 20% of the partition free."
+    },
+    {
+      "title": "Right-click the partition and select \"Shrink volume\".",
+      "content": "Right-click the partition and select \"Shrink volume\". This will open a new window after Disk Management determines how much space is available to create a new partition out of."
+    },
+    {
+      "title": "Enter in the size of your new partition.",
+      "content": "Enter in the size of your new partition. The window will display how much space is available to shrink the existing drive in megabytes (MB). 1024MB is equal to a single gigabyte (GB). You'll need to enter in the size you want to shrink the drive by (creating a new partition that size)."
+    },
+    {
+      "title": "Start the shrinking process.",
+      "content": "Start the shrinking process. Click \"Shrink\" to carve out the space that you specified in the existing drive. It will appear in Disk Management as Unallocated space on the same drive as the old partition."
+    },
+    {
+      "title": "Create a partition.",
+      "content": "Create a partition. Right-click on the unallocated space and select \"New simple volume\". This will start the Simple Volume Wizard."
+    },
+    {
+      "title": "Follow the prompts to create the partition.",
+      "content": "Follow the prompts to create the partition. You'll be able to select how much of the Unallocated space you want to use for the new partition. You'll also be assigning a drive letter."
+    },
+    {
+      "title": "Format the new partition.",
+      "content": "Format the new partition. During the wizard, you'll be prompted to format the partition. You can format it with a file system now, or do it later by performing the steps in the previous method."
+    },
+    {
+      "title": "Download DBAN.",
+      "content": "Download DBAN. [2] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. DBAN is a free hard drive formatting tool that can securely overwrite your data so that it cannot be recovered. You'll want to perform this if you are donating, selling, or recycling your computer or drive to prevent identity theft. You can download DBAN from dban.org . The free version will be suitable for most users. You cannot use DBAN to securely wipe solid state drives (SSDs). You'll need to use a paid program like Blancco instead."
+    },
+    {
+      "title": "Burn DBAN to a blank DVD or CD.",
+      "content": "Burn DBAN to a blank DVD or CD. [3] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. DBAN is small, and will fit on a blank CD or DVD. If you are using Windows 7 or later, you can right-click on the downloaded ISO file and select \"Burn to Disc\" to burn it to a blank disc in your drive."
+    },
+    {
+      "title": "Set your computer to boot from the DBAN disc.",
+      "content": "Set your computer to boot from the DBAN disc. [4] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. You'll need to set your computer to boot from your optical drive in order to launch DBAN. Windows 7 (and older) - Reboot your computer and press the BIOS, SETUP, or BOOT key that is displayed at the manufacturer logo screen. The key is usually F2 , F11 , F12 , or Del . Open the BOOT menu and set your optical drive as the primary boot device Windows 8 (and newer) - Click the Power button in the Start screen or menu. Hold ⇧ Shift and click Restart to reboot into the \"Advanced startup\" menu. Select the \"Troubleshoot\" option and then \"Advanced options\". Click \"UEFI Firmware Settings\" and then navigate to the BOOT menu. Set your optical drive as the primary boot device."
+    },
+    {
+      "title": "Start DBAN.",
+      "content": "Start DBAN. After setting the boot order, reboot the computer to launch DBAN. Press ↵ Enter on the main DBAN screen to start the program."
+    },
+    {
+      "title": "Select the drive you want to wipe.",
+      "content": "Select the drive you want to wipe. [5] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. Use the arrow keys to highlight select the hard drive that you want to erase, and then press Space to select it. Be careful selecting drives if you have data you want to keep, as there is no going back once you've started. You can easily erase your Windows installation if you aren't careful."
+    },
+    {
+      "title": "Press .",
+      "content": "Press . F10 to start the wipe. This will use DBAN's default settings which will securely wipe your data. It will be next to impossible to retrieve data after performing this wipe. [6] X Expert Source Luigi Oppido Computer & Tech Specialist Expert Interview. 13 November 2020. The default DBAN wipe will likely take several hours to complete. If you want to be extra sure that everything is absolutely erased, press M on your selected drive and select \"DoD 5220.22-M\" or \"Gutmann Wipe\". These will take a lot longer to complete, but the wipe will be even more secure."
+    }
+  ]
+}

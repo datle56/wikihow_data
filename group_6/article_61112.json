@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Track-iOS-App-Installs-in-Google-Ads",
+  "title": "How to Keep Track of iOS App Installs from Google Ads",
+  "steps": [
+    {
+      "title": "Register your app in Firebase.",
+      "content": "Register your app in Firebase. If you didn’t add Firebase to your app in the development phase, it’s not too late. Go to the Firebase homepage ( https://firebase.google.com/ ) on a web browser and click Create a Project. After you’ve filled out the required fields, add your iOS app to your new project by clicking the round “iOS” button under your project name. Fill out the required information to finish registering your app with Firebase. Be sure to set up Firebase using the same account associated with your Google Ads account."
+    },
+    {
+      "title": "Add Firebase to your app.",
+      "content": "Add Firebase to your app. In order for Firebase to collect installation data, you’ll need to add it to your app’s code. First, add a Firebase configuration file, which you can find by clicking Download GoogleService-Info.plist. [1] X Research source Next, add Google Analytics to your app using a Firebase SDK."
+    },
+    {
+      "title": "Add installations as an event in Firebase.",
+      "content": "Add installations as an event in Firebase. Once you complete the first two steps, Firebase will automatically begin tracking certain events for your app. These include first opens and in-app purchases. Installations are not automatically tracked, but you can add an event by sharing the Log Event setup link from Firebase with your developer. You can find the link under event descriptions. [2] X Research source"
+    },
+    {
+      "title": "Mark the new event as a conversion.",
+      "content": "Mark the new event as a conversion. In your Firebase project page, click analytics, then click events. For your installation event, toggle on “Mark as conversion.” Labelling the event as a conversion will allow Google Ads to track it to your ad campaign. [3] X Research source"
+    },
+    {
+      "title": "Link your Google Ads account to your Firebase project.",
+      "content": "Link your Google Ads account to your Firebase project. From the Firebase project you've created for your app, use the gear icon to navigate to the Project Settings page. Select the Integrations tab, scroll to the Google Play square, then click Link. A pop up message will appear to tell you more about linking the accounts and confirm the action; click \"Link to Google Play.\" [4] X Research source"
+    },
+    {
+      "title": "Go to the iOS app conversions page of your Google Ads account.",
+      "content": "Go to the iOS app conversions page of your Google Ads account. Log in to Google Ads then click tools, the wrench icon at the top right of your screen. From the dropdown menu, select “Conversions” under “Measurement.”"
+    },
+    {
+      "title": "Import your installations event from Firebase.",
+      "content": "Import your installations event from Firebase. At this point, you should see a table listing any previous conversions you tracked. Click the plus sign to the top left of the table, and you will be prompted to select the type of conversion you want to add to the tracking table. Click on App, then select “Google Analytics 4 properties (Firebase)” from the multiple choice menu. Google Ads will prompt you to select which of your Firebase conversions you want to import. Select your installations event then click “Import and Continue.” [5] X Research source"
+    }
+  ]
+}

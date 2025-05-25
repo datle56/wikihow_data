@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Block-Remote-Desktop-Access",
+  "title": "How to Block Remote Desktop Access on Mac and PC",
+  "steps": [
+    {
+      "title": "Open the Windows Search bar.",
+      "content": "Open the Windows Search bar. Click the magnifying glass on the left-hand side of your toolbar. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type \"remote access\" into the search field.",
+      "content": "Type \"remote access\" into the search field. This will yield a few different results. Select Allow remote connections to this computer . It may sound counter-intuitive, but this will open the section of our PC's Settings where we can then disable remote access. Keep in mind that the Home edition of Windows 10 and 11 do not support remote desktop access anyway, and will therefore not present you with these options. If you still suspect someone is accessing your desktop remotely, ensure it is not coming from a third-party app such as TeamViewer ."
+    },
+    {
+      "title": "Click on \"Allow remote access to this computer\" to open the Remote Access Settings.",
+      "content": "Click on \"Allow remote access to this computer\" to open the Remote Access Settings. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Uncheck the Checkbox \"Allow remote support connections to this computer\".",
+      "content": "Uncheck the Checkbox \"Allow remote support connections to this computer\"."
+    },
+    {
+      "title": "Click \"OK\" and your computer will no longer accept remote desktop connections.",
+      "content": "Click \"OK\" and your computer will no longer accept remote desktop connections."
+    },
+    {
+      "title": "Open the Windows Registry Editor.",
+      "content": "Open the Windows Registry Editor. Also known as regedit , the Registry Editor allows you to edit with a whole host of your computer's settings. Type regedit into the Windows Search bar to open it. Editing the Registry Editor incorrectly can permanently damage your computer, so only use this method if you are comfortable using the Registry Editor ."
+    },
+    {
+      "title": "Export a backup of the current regedit.",
+      "content": "Export a backup of the current regedit. Whenever you edit the Windows Registry, you should save a backup first, in case your changes negatively affect your system. Click File and then Export . Name the backup something you will recognize, and save it somewhere you will remember."
+    },
+    {
+      "title": "Open HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Terminal Server Client.",
+      "content": "Open HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Terminal Server Client. Using the keys (i.e. folders) located along the left-hand side, navigate until you reach the Terminal Server Client within HKEY_LOCAL_MACHINE . [3] X Research source"
+    },
+    {
+      "title": "Add the following three keys:",
+      "content": "Add the following three keys: DisableClipboardRedirection DisableDriveRedirection DisablePrinterRedirection Add each key as a DWORD and set the value of each key to REG_DWORD 1 . [4] X Research source"
+    },
+    {
+      "title": "Export the Registry again.",
+      "content": "Export the Registry again. Save another backup of this newly updated Registry and open the file to run it on your computer. Consider having someone try to access your desktop remotely to ensure that the edits worked. You may also revisit the Registry Editor to enable remote desktop access again."
+    },
+    {
+      "title": "Open \"System Preferences\".",
+      "content": "Open \"System Preferences\". Click the Apple menu in the top-left corner of your desktop, then select System Preferences . [5] X Research source"
+    },
+    {
+      "title": "Click \"Sharing\".",
+      "content": "Click \"Sharing\". From the various subsections available, select Sharing to tinker with your remote access settings. [6] X Research source Most of the \"Sharing\" settings require administrator approval. Your Mac may therefore prompt you to sign in as a user with administrator privileges."
+    },
+    {
+      "title": "Uncheck the Remote Management checkbox.",
+      "content": "Uncheck the Remote Management checkbox. You have now blocked remote access to your Mac. You may revisit this checkbox at any time to enable remote access."
+    },
+    {
+      "title": "Open the \"Remote Desktop\" app.",
+      "content": "Open the \"Remote Desktop\" app. Use Finder on your Mac to open Remote Desktop , where you can manage both incoming and outgoing desktop connections."
+    },
+    {
+      "title": "Enter a command to disable remote access and deny previously established connections.",
+      "content": "Enter a command to disable remote access and deny previously established connections. Enter the following command: sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate . [7] X Research source You have now blocked remote access to your Mac. You may revisit your System Preferences at any time to enable access again."
+    }
+  ]
+}

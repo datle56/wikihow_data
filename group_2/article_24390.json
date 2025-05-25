@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Invalid-Value-for-Registry",
+  "title": "Easily Fix “Invalid Value for Registry” on your Windows Computer",
+  "steps": [
+    {
+      "title": "The Photos app may have corrupt settings or cached data.",
+      "content": "The Photos app may have corrupt settings or cached data. You may be able to resolve this issue by resetting the Photos app. This will clear all your settings and cached data for the Photos app. Use the following steps to reset the Photos app: Click the Windows Start button. Click Settings . Click Apps . Click Installed apps (Windows 11) or Apps & features (Windows 10). Click Microsoft Photos (Windows 10) or click the icon with three dots (⋮) next to Photos (Windows 11). Click Advanced options . Scroll down and click Reset . Click Reset ."
+    },
+    {
+      "title": "Your graphics drivers may be outdated.",
+      "content": "Your graphics drivers may be outdated. Outdated drivers could cause problems with the Windows Registry. If you have more than one graphics driver, update each of them. Use the following steps to update your graphics drivers: Right-click the Windows Start button. Click Device Manager . Expand Display adapters . Right-click your graphics driver (you may have more than one). Click Update driver . Click Search automatically for drivers . Follow the prompts if an update is available."
+    },
+    {
+      "title": "The cache for Windows Store applications (such as Photos) may be corrupt.",
+      "content": "The cache for Windows Store applications (such as Photos) may be corrupt. You can easily reset the Windows Store cache. Use the following steps to do so: Press Ctrl + R to open Run. Type WSreset.exe and press Enter ."
+    },
+    {
+      "title": "Your system cache may be full or corrupt.",
+      "content": "Your system cache may be full or corrupt. You can use the disk cleanup tool to clear your cache. Use the following steps to do so: Click the Windows Start button. Type disk cleanup . Click Disk Cleanup . Click Cleanup System Files . Ensure “Temporary Files” (and anything else you want to clean out) is checked. Click Ok . Click Delete"
+    },
+    {
+      "title": "There may be a minor issue with your Windows system.",
+      "content": "There may be a minor issue with your Windows system. Luckily, Windows has many built-in troubleshooters that can help resolve issues with your system. Use the following steps to run a Windows troubleshooter. Click the Windows Start button. Type troubleshoot . Click Troubleshoot settings . Click Additional Troubleshooters or Other troubleshooters . Click Run troubleshooter below “Windows Store apps” (Windows 10) or click Run next to “Program Compatibility troubleshooter” (Windows 11). Follow the prompts."
+    },
+    {
+      "title": "You may have a virus or malware.",
+      "content": "You may have a virus or malware. Most antivirus software will scan your system registry for errors in addition to scanning for viruses and malware. You can use a third-party antivirus program, such as Malwarebytes . Use the following steps to scan for a virus using Windows' built-in Windows Defender: Click the Windows Start button. Type Windows Security . Click Windows Security . Click Virus & threat protection . Click Scan options . Click the radio option next to Full Scan . Click Scan now ."
+    },
+    {
+      "title": "There may be a minor error with your system’s files.",
+      "content": "There may be a minor error with your system’s files. You run System File Checker to repair minor files using System File Checker. Use the following steps to do so: Click the Windows Start menu. Type CMD . Right-click the Command Prompt and click Run as Administrator . Type sfc/scannow and press Enter ."
+    },
+    {
+      "title": "There may be corrupt system files.",
+      "content": "There may be corrupt system files. If System File Checker doesn’t fix broken system files, you can use the Deployment Imaging and Servicing Management tool to fix these issues. DISM compares your current Windows image to a known good version of Windows and can fix any issues that are detected. Use the following steps to run DISM: Click the Windows Start menu. Type CMD . Right-click the Command Prompt and click Run as Administrator . Type Dism.exe /Online /Cleanup-Image /ScanHealth to scan for errors. Type Dism.exe /Online /Cleanup-Image /CheckHealth to determine if any found errors can be fixed. Type Dism.exe /Online /Cleanup-Image /RestoreHealth to fix any errors."
+    },
+    {
+      "title": "There’s a problem with the Photos app.",
+      "content": "There’s a problem with the Photos app. If you are only experiencing problems with the Photos app, but everything else is working fine, you may just want to use a third-party photo viewer app. Alternatively, you can upload your photos to Google Photos and view them on the internet. The following are some third-party image viewers you can try: InfanView ImageGlass XnView FastStone Image Viewer"
+    },
+    {
+      "title": "The Windows Registry may be corrupt.",
+      "content": "The Windows Registry may be corrupt. You can fix Windows registry problems and errors by performing a system restore. This will restore Windows back to the state it was in at an earlier time. In order to do this, you must have System Restore enabled and have created previous restore points: [1] X Research source Click the Windows Start button. Type System Restore . Click Create a restore point . Click System Restore . Click Next . Select a restore point from before when the problem started. Click Next . Follow the prompts to complete the restore."
+    },
+    {
+      "title": "The registry settings may be incorrect.",
+      "content": "The registry settings may be incorrect. In order to do this, you need to make sure you are logged in with an account that has administrative privileges. If you do not have administrative privileges, you’ll need to talk to an administrator. It takes a little technical know-how to make changes and identify registry items. Warning: Making unknown changes to the system registry can render your system inoperable. Proceed at your own risk. Use the following steps to change the registry settings:: [2] X Research source Press Ctrl + R to open Run. Type regedit and press Enter . Click Yes when prompted. Navigate to the following folder location: HKEY_CURRENT_USER > Software > Classes > Local Settings > Software > Microsoft > Windows > CurrentVersion > AppModel > Repository > Families > Microsoft.Windows(or Wallet).Photos_8wekyb3d8bbwe If there are eight entries, 4 are outdated. If there are four entries, two are outdated. Right-click one of the outdated entries and click Properties or Permissions . Click the Security tab. Select your username in the Group window. Click Advanced . Click Change next to “Owner” at the top. Enter your username in the box labeled “Enter object name to select” and click Check Names . If you can’t remember your exact username, click Advanced at the bottom and click Find Now . Select your username and click Ok . Click Ok . Ensure your username is selected and click the checkbox next to Full Control . Click Apply followed by Ok . Right-click the outdated entry and click Delete . Repeat for any other outdated entries."
+    },
+    {
+      "title": "Your Windows installation may be broken.",
+      "content": "Your Windows installation may be broken. If you’ve tried everything and you are still getting “Invalid value for registry” error, your Windows installation may be corrupt. You may need to reset Windows. During this process, you will be asked if you want to keep your files or delete everything. Select the option to keep your files first so you don’t lose your data. If that doesn’t work, you may need to select the option to delete everything, in which case you will lose all your files and data. Be sure to back up anything you want to keep before you proceed. Use the following steps to reset Windows : Click the Windows Start button. Type Reset this PC . Click Reset this PC . Click Get Started or Reset PC next to “Reset this PC.” Select Keep my files or Remove everything . Follow the prompts to reset your PC."
+    }
+  ]
+}

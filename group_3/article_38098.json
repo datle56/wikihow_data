@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Save-a-Text-Chat-on-Skype",
+  "title": "How to Save a Text Chat on Skype",
+  "steps": [
+    {
+      "title": "Open Skype on your PC or Mac.",
+      "content": "Open Skype on your PC or Mac. Since the latest version of Skype doesn't have options for saving individual chats or copying-and-pasting a whole conversation, you'll have to get creative. [1] X Research source If you don't want to save all of your conversations in one large file , you can individually select messages, copy them, and then paste them into a file."
+    },
+    {
+      "title": "Click a chat in the left panel.",
+      "content": "Click a chat in the left panel. The conversation will expand on the right."
+    },
+    {
+      "title": "Right-click any of the messages in the conversation.",
+      "content": "Right-click any of the messages in the conversation. It doesn't matter which message you select. A menu will expand."
+    },
+    {
+      "title": "Click Select Messages on the menu.",
+      "content": "Click Select Messages on the menu. Empty bubbles will appear to the right of each message in the chat."
+    },
+    {
+      "title": "Click the bubbles next to each message you want to save.",
+      "content": "Click the bubbles next to each message you want to save. Clicking a bubble places a checkmark inside so you'll know that message is selected."
+    },
+    {
+      "title": "Click Copy.",
+      "content": "Click Copy . It's below the conversation. This copies the selected messages to your clipboard."
+    },
+    {
+      "title": "Open the file in which you want to paste the conversation.",
+      "content": "Open the file in which you want to paste the conversation. Any application that lets you type will suffice, such as Notepad (Windows), TextEdit (Mac), Microsoft Word, or Google Docs."
+    },
+    {
+      "title": "Right-click the typing area and select Paste.",
+      "content": "Right-click the typing area and select Paste . This pastes the selected messages into the file. You'll see the name of the sender above each message, as well as timestamps."
+    },
+    {
+      "title": "Save the file.",
+      "content": "Save the file. This process may vary depending on the app you're using, but you'll usually need to click the File menu at the top-left corner, select Save as , choose a file name and location, and then click Save ."
+    },
+    {
+      "title": "Sign into your Skype account at https://go.skype.com/export.",
+      "content": "Sign into your Skype account at https://go.skype.com/export . Although Skype doesn't offer a way to save individual conversations to your computer, you can use this web-based tool to save all of your conversations into a single downloadable file. The resulting file will in a format that can be read with another downloadable tool from Skype. The chats in the downloaded file are organized in such a way that it's easy to browse them. If you're using Windows, it will be helpful (though not mandatory) to have an application that can unpack files with the .TAR file extension. Some free options are WinRAR and 7-Zip. Otherwise, you'll need to do some typing at the command prompt."
+    },
+    {
+      "title": "Check the box next to \"Conversations.\"",
+      "content": "Check the box next to \"Conversations.\" This tells Skype to select your entire chat history."
+    },
+    {
+      "title": "Click the blue Submit request button.",
+      "content": "Click the blue Submit request button. A message will pop-up that says \"Your export is being prepared.\""
+    },
+    {
+      "title": "Click Continue to close the pop-up window.",
+      "content": "Click Continue to close the pop-up window. This returns you to the previous page, where you'll see the status of your export at the top of the page. \"Pending\" status means the file is not ready for download yet."
+    },
+    {
+      "title": "Refresh the page to see if your file is ready to download.",
+      "content": "Refresh the page to see if your file is ready to download. You can refresh the page in most web browsers by right-clicking the page and selecting Reload or Refresh , and/or by clicking a curved-arrow icon in your browser's toolbar. If the file is ready to download, a blue \"Download\" button will appear at the top of the page instead of the word \"Pending.\" This process can take a while if you've participated in a lot of Skype conversations. If the file is still pending, wait a few minutes and refresh again. The file will remain available for download at https://secure.skype.com/en/data-export for 30 days before the link expires."
+    },
+    {
+      "title": "Click Download to save the file.",
+      "content": "Click Download to save the file. If the download doesn't start automatically, you may have to click Save to begin. Once the file is finished downloading, it'll be saved to your default download folder."
+    },
+    {
+      "title": "Unpack the .TAR file.",
+      "content": "Unpack the .TAR file. Your chats are in a compressed file that needs to be unpacked. After unpacking, a file called messages.json will appear in the folder. [2] X Research source Here's how to unpack the file: macOS: Double-click the file. That's it! Windows (using a third-party app): If you have WinRAR or another app that can unpack .TAR files, double-click the .TAR file to open it, select the Extract option, choose a saving location, and follow the on-screen instructions to extract the file. Windows (using command prompt): Though this is a bit more complex, you won't need to install a third-party app. To do this: Press the Windows Key + the R key to open the Run dialog. Type cmd and click OK . Type cd Downloads and press Enter if the file is in your Downloads folder. If not, replace Downloads with the correct folder name (e.g., Desktop, Documents). Type tar -xvf FILENAME_export.tar , but replace FILENAME with the full name of the file. If you don't know the name, you can type dir and press Enter to see all of the files in the folder—the one you're looking for begins with \"8\" and usually follows the format \"8_live_yourname_export.tar\". Press Enter to unpack the .TAR file."
+    },
+    {
+      "title": "Click the link on the Skype export page to download the message viewer.",
+      "content": "Click the link on the Skype export page to download the message viewer. If you closed the browser, return to https://secure.skype.com/en/data-export , and then click the here link near the bottom of the page (below the blue \"Submit request\" button. This downloads a ZIP file, although you may have to click Save to start the download."
+    },
+    {
+      "title": "Unzip the file called skype-parser.zip.",
+      "content": "Unzip the file called skype-parser.zip . It'll be in your default download folder. If you're using a Mac, double-click the file to unzip it. On Windows, right-click the file, select Extract all , choose a location, and click Extract . This will create a folder with the same name. If the folder doesn't open automatically, double-click the folder called skype-parser in Finder or the File Explorer to open it now. It'll be in your default download folder."
+    },
+    {
+      "title": "Double-click index.html in the folder.",
+      "content": "Double-click index.html in the folder. This opens the Skype parser in your default web browser."
+    },
+    {
+      "title": "Select the messages.json file.",
+      "content": "Select the messages.json file. To do this, just click the Choose File button on the parser, select messages.json in the folder you extracted from the .TAR file, and click Open ."
+    },
+    {
+      "title": "Click the blue Load button.",
+      "content": "Click the blue Load button. A list of your chats will appear. Clicking any of the chats in the left column will display the chat on the right. You can keep the messages.json file on your computer indefinitely and use the Skype parser to view your chats any time. You can copy messages from the conversation using the mouse and keyboard—just highlight everything you want to copy in the right panel and press Ctrl + C (Windows) or Command + C (Mac) to copy. Then, paste the file into a text file or document by right-clicking the typing area and selecting Paste ."
+    }
+  ]
+}

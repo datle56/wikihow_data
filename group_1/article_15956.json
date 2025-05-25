@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Error-Code-522",
+  "title": "How to Troubleshoot Cloudflare Code 522: Fixes, Workarounds, & More",
+  "steps": [
+    {
+      "title": "Check Cloudflare's system status.",
+      "content": "Check Cloudflare's system status. While it's not likely that Cloudflare is the reason for the error (since error 522 refers to the origin server failing to respond), you should still check Cloudflare's system status first. If there's issues with Cloudflare, you may want to wait until those issues are resolved to troubleshoot—both because your site might work properly after Cloudflare is operational again, and you may have issues troubleshooting effectively if Cloudflare is down. You can check Cloudflare's system status here ."
+    },
+    {
+      "title": "Check to see if your hosting provider is doing maintenance.",
+      "content": "Check to see if your hosting provider is doing maintenance. If your hosting provider is doing maintenance (or the hosting provider is having issues), your site may be throwing error code 522 since the server isn't accessible. Unfortunately, the only thing you can do in this situation is to wait for your hosting provider to be back up. Each provider will have a different way of communicating maintenance and outages. Check your host's site for more information, or contact them for help."
+    },
+    {
+      "title": "Check if your web server is working.",
+      "content": "Check if your web server is working. If your hosting provider doesn't have a reported outage or maintenance, you can manually check your web server using traceroute. If you run a traceroute and discover an issue or abnormality, you can continue with the other suggestions in this article to try and fix the issue. Windows & Linux: In the command-line interface (CLI), run the command $ tracert [URL] (for IPv4) or $ tracert -6 [URL] for IPv6, where [URL] is replaced with your website's URL. Mac: Open the Network Utility application and click on the Traceroute tab. Enter your site's domain name or IP address into the input field and click the Trace button. Make sure to save the results of the traceroute in case your provider or Cloudflare needs the information."
+    },
+    {
+      "title": "Make sure your hosting provider allows Cloudflare IP addresses.",
+      "content": "Make sure your hosting provider allows Cloudflare IP addresses. One of the most common reasons your website is showing a 522 error is due to a blocked or rate limited Cloudflare IP address. If you can't manually add your Cloudflare IP, you may need to ask your web host to whitelist your Cloudflare IP. You may be able to edit this directly from your host's dashboard or admin panel, but if not try the following: Open your site's .htaccess file. Add a line that says #DO NOT REMOVE THIS LINE . Add a line under that which says allow from [IP address] , where [IP address] is replaced with your Cloudflare IP. Add a line under that which says #DO NOT REMOVE THIS LINE . The \"do not remove\" lines should sandwich the \"allow from\" code with your Cloudflare IP address."
+    },
+    {
+      "title": "Check your Cloudflare DNS settings.",
+      "content": "Check your Cloudflare DNS settings. If your Cloudflare DNS settings are incorrect, this is an obvious cause for the 522 error on your site. To edit Cloudflare's DNS settings, start by going to DNS > Records in the Cloudflare dashboard. Make sure the A Record IP addresses match between your server and Cloudflare. If you don't know the IP address of your server's A Record, you can get this from your host's dashboard or admin panel. If there is a mismatch, click the Edit button next to the corresponding entry and make the necessary fixes before clicking Save . [1] X Research source"
+    },
+    {
+      "title": "Enable keepalive in your origin web server.",
+      "content": "Enable keepalive in your origin web server. Keepalive (also stylized as KeepAlive or keep-alive) is a feature in TCP that allows you to use the same TCP connection for HTTP requests instead of opening a new one for every request. There are a couple ways you can enable keepalive: Enable it in your web server config file (if you have access). Change the following lines: KeepAlive On MaxKeepAliveRequests 50 to 75 KeepAliveTimeout 1 to 5 Add the following code to your .htaccess file: <ifModule mod_headers.c> Header set Connection keep-alive </ifModule>"
+    },
+    {
+      "title": "Check your site's resource usage.",
+      "content": "Check your site's resource usage. If your site is reaching the limit on its CPU usage, RAM usage, processes, or inputs/outputs, it may slow down and end up throwing the 522 error. Each web host will have a different way to check resource usage, but you can usually find it somewhere in your dashboard or admin panel. If your resource usage is high, try these tips: Reduce the amount of plugins, if you're using any. These plugins can create a higher load than is necessary on the web server, which can lead to the server being too busy to respond to Cloudflare's requests (and thus lead to a 522 error). Fix your code. If your site code is using up a lot of CPU, it can slow down the site drastically, which leads to 522 errors. A common culprit for this is having a lot of animations in your code, especially using JavaScript or jQuery. Upgrade your hosting plan. If you are consistently reaching the upper limits of your memory usage, you might want to consider upgrading your hosting plan. Contact your web host for more information and guidance with this issue, as the solutions will vary greatly depending on your website, your website's resource usage, and what web host you use."
+    },
+    {
+      "title": "Contact your web host if nothing fixes the issue.",
+      "content": "Contact your web host if nothing fixes the issue. If you're still getting a 522 error after trying all the solutions in this article, contact your web host for more help. They may ask you to repeat some of the steps you've already done in this article; to avoid this, explain what troubleshooting you've tried already if given the opportunity to add additional notes or context when you contact support. Per Cloudflare, make sure to include the following information when contacting your hosting provider about a 522 error: [2] X Research source The specific error code and message The time the error occurred (including timezone) The specific URL that encountered the error code Don't contact Cloudflare for 522 errors unless you've already talked to your web host and they recommended that you contact Cloudflare support. If you need to contact Cloudflare support, make sure you have the traceroute results from earlier in this article, as well as details or logs from the web host's investigation."
+    },
+    {
+      "title": "Disable Cloudflare temporarily.",
+      "content": "Disable Cloudflare temporarily. If you aren't able to resolve the issue and users aren't able to access your site, disable Cloudflare while you try to fix the issue (either on your own or with the support of your web host). Check your hosting provider's documentation for specific instructions on disabling Cloudflare, as each provider will have different steps to do this. Once you're ready to use Cloudflare again, you may want to restart your Cloudflare account to avoid encountering other issues."
+    },
+    {
+      "title": "Error code 522 means the site's connection timed out.",
+      "content": "Error code 522 means the site's connection timed out. This error code (also called an HTTP status code) [3] X Research source is specific to Cloudflare, and there are two ways it can occur: [4] X Research source Before the connection is established, the origin web server doesn't complete the TCP 3-way handshake within 15 seconds. When Cloudflare tries to connect to the origin web server, it will send a SYN packet. The server must return a SYN-ACK packet (the second step of the 3-way handshake), after which Cloudflare will send an ACK packet. If the web server doesn't respond with a SYN/ACK packet in 15 seconds, the connection will time out and Cloudflare will display the HTTP status code 522. After the connection is established, the origin web server doesn't send an ACK to Cloudflare within 90 seconds of a resource request. After Cloudflare is connected to the origin web server, it will periodically request resources (via the GET HTTP request method). The origin web server must send an ACK packet to acknowledge it got the GET request within 90 seconds. If it doesn't, the connection will time out and Cloudflare will display the HTTP status code 522."
+    },
+    {
+      "title": "A number of things can cause error code 522.",
+      "content": "A number of things can cause error code 522. A few common causes for this error code are as follows: Server overload. If the origin server is getting too many requests, it may not reply to Cloudflare's request in time, thus showing a 522 code. Blocked or incorrect IP addresses. Most commonly, a Cloudflare IP address may be blocked by the hosting provider. The origin's IP address may also be entered incorrectly in your Cloudflare DNS app. Keepalives are disabled. Keepalives are a TCP feature to help identify dead connections. If they are disabled, you might get more 522 codes than necessary."
+    },
+    {
+      "title": "You might be able to bypass error code 522 as a visitor to a website.",
+      "content": "You might be able to bypass error code 522 as a visitor to a website. If you aren't able to wait for a site to get fixed, there are a couple ways you can try to bypass error code 522: with a VPN or alternate domain. As 522 can sometimes occur due to an issue with a regional server, accessing the site from a different server may work. However, these are not guaranteed workarounds, and you still might run into error 522 after trying them. Use a VPN with a location set far away from your own to try accessing the site. This will ensure you connect to the site via a different server. Use an alternate domain for the site you're trying to go to. Note that not every site will have multiple domains, and some sites can be accessed by typing different URLs into your browser but the URL simply redirects you to the site's main domain, which is not the same as having alternate domains."
+    },
+    {
+      "title": "Waiting a few minutes may help you bypass error 522.",
+      "content": "Waiting a few minutes may help you bypass error 522. While this isn't really \"bypassing,\" if the 522 code is popping up due to server overload, waiting a few minutes might fix the problem. After a few minutes try refreshing the site to see if you're able to connect. If not, the issue may be deeper than just a server overload and you may have to wait until the site owner fixes the problem."
+    }
+  ]
+}

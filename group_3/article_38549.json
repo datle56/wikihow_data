@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/See-Who-Liked-You-on-Bumble",
+  "title": "How to See Who Liked You on Bumble",
+  "steps": [
+    {
+      "title": "Wait for a notification or message that says someone likes you.",
+      "content": "Wait for a notification or message that says someone likes you. This hack is popular on Reddit's /r/Bumble forum and is reported to still work great as of early 2022. [1] X Research source"
+    },
+    {
+      "title": "Open the Bumble app.",
+      "content": "Open the Bumble app. You can use your Android, iPhone, iPad, or even a web browser on a computer."
+    },
+    {
+      "title": "Tap the filter icon at the top-right corner of your swipe queue.",
+      "content": "Tap the filter icon at the top-right corner of your swipe queue. This opens your filter preferences. [2] X Research source If you're using a computer, click your profile photo and select Settings instead."
+    },
+    {
+      "title": "Increase your distance",
+      "content": "Increase your distance to the maximum. You can change this back later. [3] X Research source"
+    },
+    {
+      "title": "Close and reopen the app.",
+      "content": "Close and reopen the app. Now that you've changed your distance, the people who've liked you within that distance will now appear at the top of your match stack."
+    },
+    {
+      "title": "Open your Bumble matches in Chrome on your computer.",
+      "content": "Open your Bumble matches in Chrome on your computer. This trick will only work if you're using a computer to access Bumble. If Bumble figures out this workaround, they might make changes so it no longer works. Try it while you can!"
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+J (PC) or ⌘ Command+⌥ Option+J (Mac).",
+      "content": "Press Ctrl + ⇧ Shift + J (PC) or ⌘ Command + ⌥ Option + J (Mac). This opens your Chrome developer console. [4] X Research source"
+    },
+    {
+      "title": "Click the Network tab.",
+      "content": "Click the Network tab. It's at the top of the right panel. If you don't see it, click the two sideways arrows >> at the top to expand more options."
+    },
+    {
+      "title": "Refresh the page",
+      "content": "Refresh the page . You can do so by clicking the curved arrow at the top of Chrome or by right-clicking a blank area of the page and selecting Reload . Now you'll see several URLs in the right panel. If you don't see anything in the \"Name\" section, double-check to make sure there is nothing typed into the \"Filter\" field above it."
+    },
+    {
+      "title": "Click the special URL.",
+      "content": "Click the special URL. Scroll through the options under \"Name\" until you find /mwebapi.phtml?SERVER_GET_ENCOUNTERS . You may need to make the window larger to find it. [5] X Research source"
+    },
+    {
+      "title": "Click the Response tab.",
+      "content": "Click the Response tab. This is parallel to the \"Name\" field in the right panel."
+    },
+    {
+      "title": "Copy the information",
+      "content": "Copy the information in the Response box. To make sure you get everything in the box, click inside the box and press Control + A (PC) or Command + A (Mac) to highlight everything, and then press Control + C (PC) or Command + C (Mac) to copy."
+    },
+    {
+      "title": "In another browser tab, open an online JSON reader.",
+      "content": "In another browser tab, open an online JSON reader. A simple fast option is https://jsonviewer.stack.hu/ ."
+    },
+    {
+      "title": "Right-click the blank area in the JSON reader and select Paste.",
+      "content": "Right-click the blank area in the JSON reader and select Paste . This pastes a big chunk of text with assorted URLs into the reader. If this doesn't work for you, you can also paste it by clicking in the typing area and pressing Control + V (PC) or Command + V (Mac)."
+    },
+    {
+      "title": "Click the Viewer tab in the JSON reader.",
+      "content": "Click the Viewer tab in the JSON reader. This organizes that mess of data into something you can browse."
+    },
+    {
+      "title": "Navigate to the ClientEncounters/Results menu.",
+      "content": "Navigate to the ClientEncounters/Results menu. Once you do this, you'll have a list of potential matches. Here's how: Expand the body menu. Expand the 0 menu. Expand the ClientEncounters menu. Expand the Results menu, where you'll find a set of folders numbered from 0 to 9 ."
+    },
+    {
+      "title": "Expand all of the numbered folders.",
+      "content": "Expand all of the numbered folders. To do this, just click the + next to each of the numbers. Under each number, you'll see another folder called user . The information you're looking for is in the user folder. Each of these numbered folders represents the first 10 people in your queue."
+    },
+    {
+      "title": "Expand the first user folder.",
+      "content": "Expand the first user folder. As you can see, the name and age will match up with the person that's active in your match list."
+    },
+    {
+      "title": "Look at the value of \"has_user_voted\" above the user folder.",
+      "content": "Look at the value of \"has_user_voted\" above the user folder. The value will either be true or false . [6] X Research source If the value is true , the user probably liked you—to confirm, look for match_message in their user menu. If you see \"They like you too! Now X has 24 hours to message you, the person definitely liked you. If the value is false , the either didn't swipe right. This could mean they haven't seen you yet, but it also could mean they swiped left. You can now repeat this process for the next 10 people in your queue."
+    }
+  ]
+}

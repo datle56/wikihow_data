@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Renew-a-DHCP-Lease-on-a-Mac",
+  "title": "How to Renew a DHCP Lease on a Mac",
+  "steps": [
+    {
+      "title": "Click on the apple icon on the top left corner of the Menu Bar on the desktop.",
+      "content": "Click on the apple icon on the top left corner of the Menu Bar on the desktop."
+    },
+    {
+      "title": "Click on System Preferences.",
+      "content": "Click on System Preferences."
+    },
+    {
+      "title": "Click on the Network.",
+      "content": "Click on the Network."
+    },
+    {
+      "title": "Select your network service that provides DHCP.",
+      "content": "Select your network service that provides DHCP. (Example: Ethernet)"
+    },
+    {
+      "title": "Click on Advanced...",
+      "content": "Click on Advanced..."
+    },
+    {
+      "title": "Click TCP/IP and select Renew DHCP Lease then select OK.",
+      "content": "Click TCP/IP and select Renew DHCP Lease then select OK."
+    },
+    {
+      "title": "Click on Launchpad.",
+      "content": "Click on Launchpad."
+    },
+    {
+      "title": "Click Terminal.",
+      "content": "Click Terminal."
+    },
+    {
+      "title": "Type sudo ipconfig set en0 BOOTP",
+      "content": "Type sudo ipconfig set en0 BOOTP"
+    },
+    {
+      "title": "Type sudo ipconfig set en0 DHCP",
+      "content": "Type sudo ipconfig set en0 DHCP"
+    },
+    {
+      "title": "To check your Ethernet IP address type ipconfig getifaddr en0",
+      "content": "To check your Ethernet IP address type ipconfig getifaddr en0"
+    }
+  ]
+}

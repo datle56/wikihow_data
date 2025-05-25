@@ -1,0 +1,106 @@
+{
+  "url": "https://www.wikihow.com/Throttle-Your-Browser-for-Testing",
+  "title": "Browser Throttling: Simulate Slow Internet & CPU for Testing",
+  "steps": [
+    {
+      "title": "Open Chrome DevTools.",
+      "content": "Open Chrome DevTools. \"Device Mode\" in Chrome DevTools allows you to quickly throttle both the network and the CPU at the same time to emulate slower devices on 3G connections. To open DevTools in your browser, press Ctrl + Shift + i (Windows or Linux) or Cmd + Option + i (Mac). You can also right-click the page you want to test, then click Inspect Element . [1] X Research source Device Mode only has 2 throttling presets for basic testing. If you need to specify custom network throttling speeds, use the network throttling method instead."
+    },
+    {
+      "title": "Expand the left panel to show all toolbar options.",
+      "content": "Expand the left panel to show all toolbar options. Some options are hidden from the toolbar at the top of the left panel by default, so you'll need to expand it. Hover your mouse over the center vertical bar that divides the left and right panels until you see a double-arrow cursor, then drag the bar right until you see the \"No throttling\" menu atop the left panel."
+    },
+    {
+      "title": "Select a viewport profile.",
+      "content": "Select a viewport profile. First, if you don't see a toolbar above the left panel of DevTools that begins with a \"Dimensions\" menu, press Ctrl + Shift + M (PC) or Cmd + Shift M (Mac) to toggle on the Device Toolbar. Then, select a device profile from the \"Dimensions\" menu in the upper-left corner. By default, the view in DevTools is Mobile . If you'd rather emulate a computer user, click the menu that's set to Mobile and select Desktop . You can select from a variety of profiles for different models, such as Samsung Galaxy A51/71 or iPhone 5/SE . If you don't see the device you're looking for, click the Dimensions menu and select Edit . Then, check the box next to the device you want to add, or click Add custom device to add your own viewport profile. This option only changes the screen dimensions to the selected device. It's not possible to emulate that device's hardware entirely."
+    },
+    {
+      "title": "Select an option from the \"No throttling\" menu.",
+      "content": "Select an option from the \"No throttling\" menu. This is the last menu at the top of the left panel. Here, you'll find two options: Mid-tier mobile: This option simulates a fast 3G connection while throttling your CPU 4 times slower than it is normally. Low-end mobile: Choose this option to emulate a slower 3G connection and throttle the CPU 6 times slower than normal. Both throttling options are relative to the CPU in your computer. In other words, choosing one of these options on a computer with an ultra-fast CPU will yield faster results than the same test on a slower computer. [2] X Research source"
+    },
+    {
+      "title": "Click the Network tab.",
+      "content": "Click the Network tab. It's at the top of the right panel."
+    },
+    {
+      "title": "Check the box next to \"Disable cache.\"",
+      "content": "Check the box next to \"Disable cache.\" You'll see this in the toolbar below \"Network.\" This turns off your browser's cache for this site so you can load a fresh version."
+    },
+    {
+      "title": "Refresh the page to throttle the browser.",
+      "content": "Refresh the page to throttle the browser. Click the Refresh button at the top of Chrome (the curved arrow), or press Ctrl + R (PC) or Cmd + R (Mac) to refresh the page. You'll now see the throttled version of the page in the left panel. You will see the load times for each element in the right panel on the Network tab, along with the total load time and amount of data transferred."
+    },
+    {
+      "title": "Open Chrome DevTools.",
+      "content": "Open Chrome DevTools. Network throttling allows you to see how quickly your website loads on slower internet connections. You can throttle the network to test a website in your browser at any network speed without throttling the CPU. To open DevTools, press Ctrl + Shift + i (Windows or Linux) or Cmd + Option + i (Mac). You can also right-click the page you want to test, then click Inspect Element . [3] X Research source"
+    },
+    {
+      "title": "Select a viewport profile.",
+      "content": "Select a viewport profile. If you don't see a toolbar above the left panel of DevTools that begins with a \"Dimensions\" menu, press Ctrl + Shift + M (PC) or Cmd + Shift M (Mac) to toggle on the Device Toolbar. Then, choose the device or screen dimensions of the device you want to emulate. To emulate a phone or tablet screen size, select a profile from the \"Dimensions\" menu in the upper-left corner. You can select from a variety of profiles for different models, such as Surface Duo or Galaxy Note III . Note that these profiles only affect the viewport size, not the device's actual hardware. By default, the view is Mobile . If you'd rather test the desktop version of the site, click the menu that's set to Mobile and select Desktop . If you don't see this option, just hover your mouse cursor over the center vertical bar that divides the two panels, then drag the bar right until you it. You can also add other device profiles (or create a custom profile) if you don't see the screen size or device you're looking for. To do this, click the Dimensions menu and select Edit . Then, check the box next to the device you want to add, or click Add custom device to add your own dimensions."
+    },
+    {
+      "title": "Click the Network tab.",
+      "content": "Click the Network tab. You'll see this in the right panel between \"Sources\" and \"Performance.\""
+    },
+    {
+      "title": "Add a custom network throttling profile (optional).",
+      "content": "Add a custom network throttling profile (optional). Near the top of the right panel, you'll see a menu that's set to \"No Throttling\" by default. While there are some speed presets you can use, you can also add your own custom profile to throttle the network by specifying download and upload speeds: Click the No Throttling menu and select Add under \"Custom.\" Click Add custom profile . Type a name for your custom profile, and enter the download and upload speeds you want to test (in kb/s). To test the website with latency , enter how much latency you want to test with (in ms). Click Add to create your profile."
+    },
+    {
+      "title": "Select a network throttling option.",
+      "content": "Select a network throttling option. Click the No throttling menu at the top of the right panel, then select a preset. [4] X Research source The built-in presets are Fast 3G , Slow 3G , or Offline . If you created a custom network throttling profile, you can select it under \"Custom.\""
+    },
+    {
+      "title": "Check the box next to \"Disable cache.\"",
+      "content": "Check the box next to \"Disable cache.\" By default, you'll be loading the cached version of the site, which loads faster than in typical network conditions. Because people visiting your site for the first time won't be loading the site from cache, checking this box at the top of the right panel emulates a user's first visit."
+    },
+    {
+      "title": "Reload the page in your throttled environment.",
+      "content": "Reload the page in your throttled environment. You can refresh the page by pressing Ctrl + R (PC) or Cmd + R . As the site reloads, you'll see the emulated version of the site in the left panel. You'll also see how long each element took to load in the \"Time\" column, and the total loading time next to \"Load\" at the bottom of the list of elements. You can also interact with the page in the viewport area to see how each element of your site is impacted by the throttled connection. If you also want to use your custom network throttling settings with CPU throttling, see CPU Throttling ."
+    },
+    {
+      "title": "Open Chrome DevTools.",
+      "content": "Open Chrome DevTools. If you want to test your website on a low-powered CPU, you can use the CPU throttling tools built in to Chrome DevTools. To open DevTools, press Ctrl + Shift + i (Windows or Linux) or Cmd + Option + i (Mac). You can also right-click the page you want to test, then click Inspect Element . If you want to throttle both the internet connection and the CPU, complete the steps in the Network Throttling method, then skip to step 4 ."
+    },
+    {
+      "title": "Show the Device Toolbar (if not visible).",
+      "content": "Show the Device Toolbar (if not visible). When you open DevTools, the view of the current page is split vertically. On the left panel, you will see the site you're testing. If you don't see a bar running along the top-left corner of DevTools that begins with a \"Dimensions\" menu, press Ctrl + Shift + M (PC) or Cmd + Shift M (Mac) to toggle on the Device Toolbar."
+    },
+    {
+      "title": "Select a viewport profile.",
+      "content": "Select a viewport profile. By default, the view in DevTools is Mobile . If you want to emulate a smartphone or tablet screen size, you can select a device from the \"Dimensions\" menu in the upper-left corner of the DevTools view. The viewport is set to \"Responsive\" by default, but you can select from a variety of profiles for different models, such as Galaxy Fold or iPhone Pro . If you'd rather emulate a computer user, click the menu that's set to Mobile and select Desktop . If you don't see this menu in the left panel, hover your mouse over the center dividing bar until the cursor turns into a double-arrow, then drag right until it's visible. If you don’t see the device or dimensions you're looking for, click the Dimensions menu, then click Edit . You can then check the box for any device you want to add to the list, or click Add custom device… to specify the resolution that you want to test."
+    },
+    {
+      "title": "Click the Performance tab.",
+      "content": "Click the Performance tab. It's at the top of the right panel."
+    },
+    {
+      "title": "Click the gear icon in the Capture Settings toolbar.",
+      "content": "Click the gear icon in the Capture Settings toolbar. You'll actually see two gear icons in the right panel—one in the top toolbar, and one the toolbar just below it. You'll want to click the second gear icon, which is in the same row as the Record button (the circle). More options will appear in the right panel."
+    },
+    {
+      "title": "Select an option from the \"CPU throttling\" menu.",
+      "content": "Select an option from the \"CPU throttling\" menu. Choose either of the two throttling options— 4x slowdown throttles the CPU to 4 times slower than its normal operating speed, while 6x slowdown throttles to 6 times slower than its normal operating speed. Keep in mind that throttling the CPU is relative to your own CPU. In other words, throttling 6 times lower than your normal CPU speed will produce a faster load on a modern Intel i9 processor than a Celeron. If your web app uses the navigator.hardwareConcurrency property to read the number of processors in the user's device, you can optionally check the box next to \"Hardware concurrency\" and enter the number of processor cores to emulate. [5] X Research source"
+    },
+    {
+      "title": "Disable the cache.",
+      "content": "Disable the cache. To prevent your browser from loading a cached version of the website while you're throttling, click the Network conditions tab at the bottom of the right panel, then check the box next to \"Disable cache.\""
+    },
+    {
+      "title": "Enable network throttling (optional).",
+      "content": "Enable network throttling (optional). If you want to throttle the network while throttling the CPU, you'll see a \"Network throttling\" menu on the \"Network conditions\" tab. You can select either Fast 3G or Slow 3G to simultaneously throttle both the CPU and internet speed for your test."
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+E (PC) or ⌘ Cmd+⇧ Shift+E (Mac).",
+      "content": "Press Ctrl + ⇧ Shift + E (PC) or ⌘ Cmd + ⇧ Shift + E (Mac). Alternatively, you can click the small curved arrow at the top of the right panel. This is the \"Start profiling and reload page\" option, which refreshes the page and then displays the results of your throttling test. Once the page is finished loading, you'll see how long each element took to load, and details about each element's load on the simulated CPU. If you want to test more than just the page load, click the Record button at the top of the right panel instead, and then interact with the page in the left panel as a user would. When you're finished, click Stop to view the report in the right panel."
+    },
+    {
+      "title": "Emulate the experience of your visitors.",
+      "content": "Emulate the experience of your visitors. It's important that you know how your website performs in real-world conditions. More than half of internet users access the web on mobile devices, which means you should always test your site on a variety of screen sizes, network speeds, and CPUs. [6] X Research source Though some smartphone owners have speedy 5G or Wi-Fi connections, plenty use slower 3G cellular networks, which can frustrate your visitors. Browser throttling will give you an idea of how quickly your website displays on these slower connections and devices so you can make changes for visitor satisfaction."
+    },
+    {
+      "title": "Page loading speed affects your Google search ranking.",
+      "content": "Page loading speed affects your Google search ranking. Google uses the mobile contents of a website for indexing and ranking, so the mobile version of your website should load quickly on all devices. [7] X Research source Optimizing your website for Android and iPhones using cellular connections should be a crucial part of your SEO strategy . [8] X Research source Before your site goes live, use network and CPU throttling in your browser to see which elements on your website take a long time to load in different conditions. Then, you can adjust the mobile version (or tweak the responsive design ) of your website as needed."
+    }
+  ]
+}

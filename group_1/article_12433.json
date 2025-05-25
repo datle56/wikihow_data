@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Delete-a-File-or-Folder-Showing-Error-%22Access-Is-Denied%22",
+  "title": "How to Delete a File or Folder Showing Error \"Access Is Denied\"",
+  "steps": [
+    {
+      "title": "Select the file or folder you want to delete.",
+      "content": "Select the file or folder you want to delete. It should be highlighted. Keep in mind that this method will permanently delete the file. Back up the files if you want to recover them later. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press Shfit+Del.",
+      "content": "Press Shfit + Del . This keyboard combination will bypass the Recycle Bin and delete the file permanently. Del is different from the backspace key and can be found on the right side of a full-sized keyboard."
+    },
+    {
+      "title": "Close any open programs.",
+      "content": "Close any open programs. The most common cause of this error message is a program currently accessing the file you are trying to delete. For example, if you are trying to delete a document that is currently open in Word, or trying to delete a song that is currently playing. [2] X Research source"
+    },
+    {
+      "title": "Open the \"Task Manager.\"",
+      "content": "Open the \"Task Manager.\" Press Ctrl + Alt + Del and select \"Task Manager\" from the menu. Click on the \"User Name\" tab and find the entries under your username. Most of these programs can be ended without causing the system to crash."
+    },
+    {
+      "title": "Close the programs you recognize.",
+      "content": "Close the programs you recognize. You can do this by selecting them and clicking \"End Process.\" If you close a program that causes the system to become unstable, restart your computer to restore."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Oftentimes, restarting your computer will release the hold that a program had on a specific file. Try deleting the file after you have completed the restart and before you open any other programs. If the file still shows the error message, continue on to the next method."
+    },
+    {
+      "title": "Download Microsoft Process Explorer from here:",
+      "content": "Download Microsoft Process Explorer from here: https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer . It is free-of-cost and portable. No installation is required."
+    },
+    {
+      "title": "Open the Process Explorer.",
+      "content": "Open the Process Explorer."
+    },
+    {
+      "title": "Click on the Find menu, select the Find handle or DLL option.",
+      "content": "Click on the Find menu, select the Find handle or DLL option."
+    },
+    {
+      "title": "In the new dialog, enter the exact path of the file or folder you're unable to delete.",
+      "content": "In the new dialog, enter the exact path of the file or folder you're unable to delete."
+    },
+    {
+      "title": "Click on the Search button.",
+      "content": "Click on the Search button."
+    },
+    {
+      "title": "Microsoft Process Explorer will display the applications or processes locking your file or folder.",
+      "content": "Microsoft Process Explorer will display the applications or processes locking your file or folder."
+    },
+    {
+      "title": "Right-click on the corresponding application or process, and terminate it.",
+      "content": "Right-click on the corresponding application or process, and terminate it."
+    },
+    {
+      "title": "Find a process unlocking program.",
+      "content": "Find a process unlocking program. Popular options include Process Explorer, LockHunter, and Unlocker or Lock-UnMatic and Mac OS File Unlocker for Mac. All of these programs are free and integrate into your Windows interface. If you choose to use Unlocker, be wary when navigating their website because there are numerous tricky ads that may lead to malware on your computer."
+    },
+    {
+      "title": "Install the program.",
+      "content": "Install the program. All of the programs have relatively simple installs. Unzip the file if necessary and open the Setup or Install file. The typical installation settings will work for most users. Some programs may try to install web browser toolbars during the installation. Make sure to deselect these if you don't want new toolbars."
+    },
+    {
+      "title": "Right-click on the file you want to delete.",
+      "content": "Right-click on the file you want to delete. Select the newly-installed tool from the menu. This will open a new window. A list will be displayed showing all of the programs that are currently accessing the file."
+    },
+    {
+      "title": "End the programs.",
+      "content": "End the programs. Select the program that you want to end and click the \"Kill Process\" button. Once all of the locking programs are closed, you will be able to delete the file without issue."
+    },
+    {
+      "title": "Locate the file stored on your hard drive.",
+      "content": "Locate the file stored on your hard drive. If you are unable to locate the file, try using the Search option. Click the \"Start menu\" and enter the file name into the Search field. In Windows 8, start typing the file name when you are at your Start screen."
+    },
+    {
+      "title": "Right-click on the file and choose \"Properties.\"",
+      "content": "Right-click on the file and choose \"Properties.\" Remove (uncheck) all the attributes of the file or folder."
+    },
+    {
+      "title": "Make a note of the file location.",
+      "content": "Make a note of the file location. You will need to relocate this later when forcibly deleting it in the Command Prompt."
+    },
+    {
+      "title": "Open a Command Prompt window.",
+      "content": "Open a Command Prompt window. You can do this by clicking on Start and typing “cmd” into the Search field without the quotation marks."
+    },
+    {
+      "title": "Close all open programs.",
+      "content": "Close all open programs. Leave the Command Prompt window open, but proceed to close all other open programs."
+    },
+    {
+      "title": "Open the window Task Manager.",
+      "content": "Open the window Task Manager. You can do this by either pressing Ctrl + Alt + Del and selecting \"Task Manager\" from the menu or by going to the Start menu, pressing \"Run,\" and then entering \"TASKMGR.EXE.\""
+    },
+    {
+      "title": "Click on the \"Processes\" tab of the windows Task Manager.",
+      "content": "Click on the \"Processes\" tab of the windows Task Manager. Find the process named “explorer.exe”. Select it and click on \"End Process.\" Minimize, but do not close , Task Manager."
+    },
+    {
+      "title": "Return to the Command Prompt window.",
+      "content": "Return to the Command Prompt window. Here you may forcibly delete a file or a folder through employing a basic command line tool. While both files and folders can be deleted in basically the same way, there are subtle differences in the command you will use."
+    },
+    {
+      "title": "Find the path:",
+      "content": "Find the path: C:\\Documents and Settings\\Your User Name>. This will be in your command prompt."
+    },
+    {
+      "title": "Execute your command.",
+      "content": "Execute your command. In the Command Prompt window, enter cd My Documents after Your User Name."
+    },
+    {
+      "title": "Delete your file.",
+      "content": "Delete your file. After \"My documents,\" enter the Delete command followed by the name of the file you wish to delete. For example, \"del unwanted file.exe.\""
+    },
+    {
+      "title": "Use the DEL command to delete the offending file in Command Prompt window.",
+      "content": "Use the DEL command to delete the offending file in Command Prompt window. The final command should look as follows: C:\\Documents and Settings\\Your User Name\\My Documents>del unwantedfile.exe [3] X Research source"
+    },
+    {
+      "title": "Delete a folder.",
+      "content": "Delete a folder. If you are seeking to delete a folder rather than a file, use the \"RMDIR /S /Q\" command instead of the \"del\" command. This will look something like this: C:\\Documents and Settings\\Your User Name>rmdir /s /q \"C:\\Documents and Settings\\Your User Name\\My Documents\\unwanted folder\" [4] X Research source"
+    },
+    {
+      "title": "Press ALT+TAB.",
+      "content": "Press ALT+TAB. This will bring you back to Task Manager where you can click File, select New Task and then enter \"EXPLORER.EXE\" to restart the Windows interface."
+    },
+    {
+      "title": "Close the Task Manager.",
+      "content": "Close the Task Manager. The file should now be deleted but you can check by searching for it by going to Start and then entering it into the search bar."
+    }
+  ]
+}

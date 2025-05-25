@@ -1,0 +1,14 @@
+{
+  "url": "https://www.wikihow.com/Do-Division-in-Java",
+  "title": "How to Do Division in Java (Integer and Floating Point)",
+  "steps": [
+    {
+      "title": "When you divide two integers in Java, the fractional part (the remainder) is thrown away.",
+      "content": "When you divide two integers in Java, the fractional part (the remainder) is thrown away. For example, if you were to divide 7 by 3 on paper, you'd get 2 with a remainder of 1. But when you divide two integers in Java, the remainder will be removed and the answer will just be 2. [2] X Research source To use integer division, you'd use this syntax: int a = 7 ; int b = 3 ; int result = a / b ; // result will be 2 Dividing two integers always results in an integer. If you want to get a decimal result from dividing two integers, use floating point division . If you try to divide an integer by 0 using integer division, you'll get an ArithmeticException error at runtime, even if the program compiles fine. [3] X Research source"
+    },
+    {
+      "title": "If either operand in the equation is of the float or double type, you'll need to use float division.",
+      "content": "If either operand in the equation is of the float or double type, you'll need to use float division. You can also use float division if you are dividing two numbers and want a decimal result. To use this division type, set the dividend and divisor to a float. [4] X Research source With our example of 7 divided by 3, our code would look like this: float a = 7.0f ; float b = 3.0f ; int result = a / b ; // result will be 2.33 When dividing by zero with floating point division, the result will be NaN (Not a Number). [5] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Use-the-Command-Terminal-in-Windows-10-to-Move-and-Copy-Files/Folders",
+  "title": "How to Use the Windows 10 CLI to Move & Copy Files or Folders",
+  "steps": [
+    {
+      "title": "Click the Start button at the bottom left of the screen to open up the start menu.",
+      "content": "Click the Start button at the bottom left of the screen to open up the start menu. All versions of the Microsoft Windows Operating system have some form of the Start Menu, typically associated with the Microsoft logo itself."
+    },
+    {
+      "title": "Type in either “cmd” or “command line” on the navigation bar and hit enter",
+      "content": "Type in either “cmd” or “command line” on the navigation bar and hit enter The term “cmd” is the Microsoft term for the Windows Terminal"
+    },
+    {
+      "title": "Ensure you're logged in as an administrator.",
+      "content": "Ensure you're logged in as an administrator. In order to properly move files, one must be logged in as an administrator, to do this after selecting the Command line icon click “Run as Administrator”. The Command line icon appears as a black box with a little scribble in the top left. This is indicative of the GUI of the Terminal which is literally just a black background with white text."
+    },
+    {
+      "title": "Type in the move command.",
+      "content": "Type in the move command. At the prompt line type in “move /?” The “move” command will be the primary command used to transport files/folders in the Windows Terminal. The “/?” option of the command is essentially a help manual. With any command, after inputting “/?”, it brings up a manual for all the respective options and varieties for that respective command."
+    },
+    {
+      "title": "At the prompt line type in “dir”.",
+      "content": "At the prompt line type in “dir”. The “dir” command essentially lists all the files/folders that are situated in your current directory. It is short for directory. The file names that are listed in blue are all files that can be accessed by the current user, those in white are only available to administrators."
+    },
+    {
+      "title": "At the prompt line type in “copy /?”",
+      "content": "At the prompt line type in “copy /?” Keep in mind, the copy command simply duplicates a file/folder and pastes it to the intended destination. The original file/folder still exists in its original spot and must be deleted. If you wish to do this, simply input “del [filename]”, and the file/folder should be deleted"
+    },
+    {
+      "title": "Establish the directory.",
+      "content": "Establish the directory. If you are planning on moving your files to a new directory it is important to first establish this new directory before moving the files. To do this simply input “mkdir [filename]”. The command “mkdir” stands for “make directory” A directory is a file system that stores and organizes a variety of files, folders, documents, and even other directories"
+    },
+    {
+      "title": "Understand how to move a file.",
+      "content": "Understand how to move a file. To move a file/folder simply input “move [filename] [destination]” into the prompt. The terms in brackets should be replaced with their literal substitutes."
+    },
+    {
+      "title": "Understand the copy command.",
+      "content": "Understand the copy command. To copy a file/folder in Windows simply type in “copy [source] [destination]” There is no need to do a paste command of any sort, technically speaking it is already in the command. The destination half of the command represents the paste command."
+    },
+    {
+      "title": "Validate whether or not the file/folder was actually moved/copied.",
+      "content": "Validate whether or not the file/folder was actually moved/copied. Simply type in “cd [directory]”, and then input “dir” to display all the stored files/folders. If done properly, the name of the file/folder should appear in blue"
+    }
+  ]
+}

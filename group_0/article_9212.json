@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Connect-Two-WiFi-Routers-Without-a-Cable",
+  "title": "How to Connect Two WiFi Routers Without a Cable",
+  "steps": [
+    {
+      "title": "Consider a mesh Wi-Fi system.",
+      "content": "Consider a mesh Wi-Fi system. Adding a second wireless router to your home network is less common now that mesh Wi-Fi (also known as \"whole home Wi-Fi\") are more common. A mesh Wi-Fi system consists of one main wireless router and a serious of wireless access points placed around the home or office. [1] X Research source When you buy a mesh Wi-Fi system, all of your equipment is designed to work together. If you simply buy a second wireless router to add to your network, there's no guarantee your new router will work wirelessly with your existing router. Mesh systems generally run between $130 and $300 USD, but costs will vary depending on the number of units you'll need to cover your space. You can find mesh systems at any major retailer. Most mesh networks can be set up in minutes with a mobile app. This makes them a lot easier to configure and manage than adding a second router. You could also try a wireless extender, which is a great way to boost Wi-Fi signal in larger spaces ."
+    },
+    {
+      "title": "Make sure the second router supports bridging.",
+      "content": "Make sure the second router supports bridging. If you want to connect two routers wirelessly without a mesh network, the second router on your network must be able to \"bridge\" with the existing router. If your router's documentation says it supports WDS, has something called \"bridge mode,\" or works as a \"repeater,\" you can probably use it as a second Wi-Fi access point on your network. If router you want to add to your network doesn't support WDS, you can't use it to expand your network wirelessly."
+    },
+    {
+      "title": "Get an ethernet cable.",
+      "content": "Get an ethernet cable. Even though you'll be setting up a wireless network, you will need an ethernet cable so you can configure your two routers from your computer."
+    },
+    {
+      "title": "Plug in your primary router and connect it to the internet.",
+      "content": "Plug in your primary router and connect it to the internet. Before you can add a second router to your network, you'll want to make sure your main router is online. The main router is usually given to you by your internet provider. Some internet providers will give you a single modem/router combination, while others give you two separate devices. If you have a modem that is separate from your wireless router, run an ethernet cable from the port on your modem to the WAN port on your router. Sometimes the WAN port is labeled \"Internet.\" If your modem and router are a single unit, connect it to the wall port using an ethernet or coaxial cable as instructed by your internet provider."
+    },
+    {
+      "title": "Connect to the router with an ethernet cable.",
+      "content": "Connect to the router with an ethernet cable. If you've already been using this router as your wireless access point, you can connect to it wirelessly instead. But if not, go ahead and plug one end of the ethernet cable into one of the LAN ports on the router, and the other end into your computer's ethernet port . If your computer doesn't have an ethernet port (it looks like a larger phone jack), you will need an adapter. Ethernet-to-USB and Ethernet-to-Thunderbolt are two common adapter types."
+    },
+    {
+      "title": "Find the router's IP address.",
+      "content": "Find the router's IP address . To configure your router, you'll need to know the IP address. Here's how to find it: Windows: Click the network icon near the clock on the taskbar. If you're connected wirelessly, it'll be several curved lines. Otherwise, it'll usually look like a globe or a computer. Click Network & Internet settings . Click View hardware and connection properties . The IP address is next to \"Default Gateway.\" Mac: Open your System Preferences and click the Network icon. Click your current internet connection. Click Advanced . Click TCP/IP . Find the router's IP address next to \"Router.\""
+    },
+    {
+      "title": "",
+      "content": "Log in to your router's admin website. The website is located at the IP address you found in the previous step. To log in, just navigate to that IP address (e.g., http://192.168.1.1) and sign in with the admin username and password. All routers come with preset passwords and usernames (sometimes no username is required) that are simple, such as \"admin\" and \"password.\" See https://routerslogin.com/all/default-router-list for a list of common router admin logins and passwords. If you changed your router's admin password and don't remember what it is, you can always reset the router to its original settings by pressing its \"reset\" button."
+    },
+    {
+      "title": "Make sure the DHCP server is turned on.",
+      "content": "Make sure the DHCP server is turned on. Your router should already be running a DHCP server, which is the service that assigns IP addresses to devices on your network. But to make sure, go to your router's Network setup or LAN setup area and look for a section with \"DHCP\" in its title. If the server is disabled, select the option to enable it."
+    },
+    {
+      "title": "Write down the necessary information from your router.",
+      "content": "Write down the necessary information from your router. When it's time to add your new router to the network, you'll need some information from the main router to make them work together: In the DHCP section of your router settings, look for the range of addresses used by the server. You may see something like \"Starting IP address,\" \"DHCP range,\" or \"IP Address Range.\" You'll want to write down the first and last addresses in this range (e.g., 192.168.1.0 to 192.168.1.254). Go to the Wireless or Wi-Fi settings and write down the SSID (the name of the wireless network) and password. Write down the security mode (usually WPA2-PSK AES) and the band frequency (e.g., 2.4GHz or 5GHz). Write down the IP address (this is the same address you navigated to to open the admin site) and subnet mask (e.g., 255.255.255.0). Depending on your secondary, you may need to write down the router's MAC address. If both of your routers are TP-Link or Linksys routers, you can skip this step."
+    },
+    {
+      "title": "Disconnect from the router.",
+      "content": "Disconnect from the router. If you made any changes to the router while logged in (such as turning on the DHCP server), save those changes first—this will also restart the router. Then, remove the ethernet cable you've connected to your computer (or disconnect from the Wi-Fi network) to disconnect."
+    },
+    {
+      "title": "Connect your computer to the second router.",
+      "content": "Connect your computer to the second router. Now that you've gathered information from the primary router, you have everything you need to set up the second router. To connect to this router, use an ethernet cable the same way you did with the first router. If your computer has Wi-Fi enabled, disconnect it now—you'll need to make sure you're not accidentally connecting to the first router when you're trying to set up the new one."
+    },
+    {
+      "title": "Go to the second router's admin website.",
+      "content": "Go to the second router's admin website. The steps to do this are the same as when you logged in to the first router—locate its IP address, type that into a web browser, and then log in with the default admin password."
+    },
+    {
+      "title": "Turn on bridging mode.",
+      "content": "Turn on bridging mode. Because this second router will be the \"bridge\" to the first router, you'll need to enable bridging mode. You'll usually find this option in a section called \"Advanced,\" and then under \"Network mode\" or \"Connection type.\" Bridging mode may also be called \"WDS Bridging,\" \"Wireless Repeater,\" or similar. If you have a Netgear router, navigate to Advanced > Advanced Setup > Router/AP/Bridge/Repeating Mode , choose Enable Wireless Repeating Function , and then select Wireless Repeater . If you have a TP Link router, go to Advanced > System Tools > System Parameters and choose Enable WDS Bridging . [2] X Research source"
+    },
+    {
+      "title": "Enter the details you gathered from the first router.",
+      "content": "Enter the details you gathered from the first router. In the same area in which you turned on bridging or WDS, you should see the option to add the information you gathered from the first router: Enter the first router's SSID and wireless password so this router can connect to it. Type the primary router's IP address (the one you wrote down earlier) into the \"Default Gateway\" field. Give this router an IP address on the same subnet as the primary router. The IP address must be different than the main router's IP address but on the same subnet. So, if the main router's IP address is 192.168.0.1 and the subnet mask is 255.255.255.0, you might want to make this router's IP address 192.168.0.2. If prompted, enter the MAC address for the original router."
+    },
+    {
+      "title": "Set up Wi-Fi on this router.",
+      "content": "Set up Wi-Fi on this router. After setting up bridging, you'll need to make sure this router is ready to accept wireless connections. Give this router an SSID (network name) that's similar to, but slightly different from, the original router's SSID. For example, if your main router is called MyWi-Fi is downstairs and this router will be upstairs, you might name this router MyWi-FiUpstairs . Assign this router the same password as the first router and choose the same security method. Select the same band/frequency as the original router."
+    },
+    {
+      "title": "Turn off the DHCP server.",
+      "content": "Turn off the DHCP server. Turning on bridging mode should automatically disable the DHCP server on this router. You'll need to double-check, as only the main router should be assigning IP addresses. Go to the router's Network setup or LAN setup area and look for a section with \"DHCP\" in its title, and then disable DHCP if it's on."
+    },
+    {
+      "title": "Connect the bridge router to the main router.",
+      "content": "Connect the bridge router to the main router. If both routers have WPS buttons (most do these days), you can press that button on both routers to connect them wirelessly. [3] X Research source If not, there should be an option to connect in the bridging section of your settings."
+    },
+    {
+      "title": "Save your changes and disconnect from the router.",
+      "content": "Save your changes and disconnect from the router. When the new configuration is applied, the router will reboot. At that point, it will have a new IP address (the one you assigned it) so if you need to connect to its admin website again, use that IP address instead."
+    },
+    {
+      "title": "Position the bridge router.",
+      "content": "Position the bridge router. The second router on your network will need to be within range of the original router, but also far enough away that it can extend your network beyond the original router's reach. [4] X Research source Whether you're using 2.4 GHz or 5 GHz, the second router should be within 200 ft for most routers. The closer the routers are together, the better the wireless performance. [5] X Research source Walls, ceilings, and large furniture can interfere with your connection. If there is no way to eliminate physical barriers between the routers, place both modems as high up as possible (such as on top of bookshelves)."
+    },
+    {
+      "title": "Connect any computer, phone, or tablet to the new router.",
+      "content": "Connect any computer, phone, or tablet to the new router. Now that you have two routers on your network, you can disconnect any device from the original router and connect to the new one instead."
+    }
+  ]
+}

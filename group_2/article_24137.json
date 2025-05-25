@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Install-Windows-XP",
+  "title": "How to Install Windows XP (With Pictures)",
+  "steps": [
+    {
+      "title": "Ensure your computer can run Windows XP.",
+      "content": "Ensure your computer can run Windows XP. First, it's important to remember that Windows XP is extremely old and vulnerable to viruses and malware. Computer repair specialist Matt Ham doesn't recommend installing it on your computer. If you have an older PC that doesn't support Windows 10 or 11, consider Windows 7 instead, and running any XP-specific software in compatibility mode. But if you want to experiment or install XP on a virtual machine, read on. If you built the PC yourself and used much older hardware that was compatible with Windows XP, or you're installing on a virtual machine, you'll be fine as long as the minimum requirements are met or exceeded: 233 MHz Intel or AMD CPU 64 MB of RAM 1.5 GB of available drive space Super VGA (800 x 600) or higher display adapter However, things get tricky if you want to install Windows XP on a modern computer. While any modern PC has more than enough power to run Windows XP, finding drivers for your hardware, including SATA hard drives, will be tough. Sometimes, the built-in drivers will be enough to support the most crucial hardware, but you'll probably run into problems with sound cards and network interfaces."
+    },
+    {
+      "title": "Get Windows XP installation media.",
+      "content": "Get Windows XP installation media. If you don't have a Windows XP installation CD or DVD, you'll need an ISO image. You can then use the ISO image to install Windows XP on a virtual machine or create a bootable installation disc . The safest place to download a Windows XP ISO image is from Archive.org, but you'll still want to use your more modern OS's antivirus tools to make sure these files don't have a malware infection: Windows XP Pro Service Pack 3 x86: https://archive.org/details/WinXPProSP3x86 Windows XP Home Edition Service Pack 3: https://archive.org/details/WinXPHomeEditionSP3x86 You can find even more options at https://archive.org/details/operatingsystemcds ."
+    },
+    {
+      "title": "Find a Windows XP product key.",
+      "content": "Find a Windows XP product key. If you have the original software and its 25-digit product key, you're good to go. Or, if you have an old computer that had Windows XP installed, you can usually find the product key sticker somewhere on the hardware. You may be able to find product keys online, but it might be tough to activate them, as phone activation for Windows XP is no longer supported. Some users on the Microsoft Answers forum have had success activating Windows XP by calling their local activation number found in this Microsoft tool . [1] X Research source"
+    },
+    {
+      "title": "Set your computer to boot from CD/DVD.",
+      "content": "Set your computer to boot from CD/DVD. If you're installing Windows XP on a PC using a CD or DVD, you'll need to set your computer to boot from the optical drive instead of from the hard drive. This will allow you to load the Windows XP setup files before your computer boots to its installed operating system. You can change the boot order in the BOOT menu in your BIOS . To enter the BIOS of your computer, you usually press the setup key (which might be F9 or DEL) when your computer starts or notifies you that you can enter \"setup\". In the BOOT menu, set the order so that your CD/DVD-ROM drive is set as the first boot device. If you are installing Windows XP from a USB drive , make sure that the USB drive is set as the first boot device. You may need to have the USB drive inserted for it to appear as an option."
+    },
+    {
+      "title": "Load the installer.",
+      "content": "Load the installer. Once the boot order is set, Ham says you'll need to insert the Windows XP installation media. Save and Exit from the BIOS, which will then reboot your computer from the installation media. You will be presented with the message: Press any key to boot from CD . Press any key on your keyboard to start the Setup program. Setup will load files necessary to begin the installation, which may take a few moments. Once the loading is complete, you will be taken to the Welcome screen. If you're using a virtual machine like VirtualBox or VMware , create a new virtual machine for your XP installation and boot from the ISO image. [2] X Research source"
+    },
+    {
+      "title": "Press ↵ Enter to begin installation.",
+      "content": "Press ↵ Enter to begin installation. Once the loading is complete, you will be taken to the Welcome screen. You are given several options, but if you are installing or reinstalling Windows XP, you’ll want to press Enter to start the installation configuration."
+    },
+    {
+      "title": "Press F8 to agree to the license.",
+      "content": "Press F8 to agree to the license. This document tells you what you can and can’t do with Windows and your rights as the consumer."
+    },
+    {
+      "title": "Select the partition you want to install on.",
+      "content": "Select the partition you want to install on. You will see a list of available partitions on your installed hard drives. If you are installing Windows XP on a new hard drive, you should see only one entry labeled \"Unpartitioned space.\" If you have a previous version of Windows or Linux installed on your computer, you will potentially have multiple partitions. Ham notes that if you want to completely wipe the machine before installing, you can delete any existing partitions. Installing Windows XP will erase all the data on the partition you choose. Select an empty partition or one containing data you do not care about losing. To delete a partition, select it and press D . This will return them to “Unpartitioned space”. Any data on the partition will be lost when it is deleted."
+    },
+    {
+      "title": "Create a new partition.",
+      "content": "Create a new partition. Select the Unpartitioned space and press C . This will open a new screen where you can set the partition’s size from the available space. Enter the size in megabytes (MB) for the new partition, then press Enter . By default, the partition will be set to the maximum amount of available space. Unless you plan on creating multiple partitions, you can usually leave this at its default. Windows XP requires at least 1.5 gigabytes (1536 MB) for its installation files, but you will want more than this for programs, documents, downloads, and other files. 5 GB (5120 MB) is a good baseline amount for Windows XP, with more if you plan on installing a lot of programs. You can create multiple partitions on a single drive. This can allow you to separate your programs from your movies and music, or to install another operating system. Windows XP can only be installed on one discrete partition."
+    },
+    {
+      "title": "Format the partition as NTFS.",
+      "content": "Format the partition as NTFS. Select your new partition and press Enter , then select \"Format the Partition using the NTFS File System\" and press Enter . NTFS is the preferred file system type, supporting more disk space per partition than FAT and including security features at the file system level and system-level compression. There are almost no situations anymore where choosing FAT would be preferable. If your partition size is larger than 32 GB, you will not be given the option to choose FAT. It is highly recommended to avoid Quick Format, as this skips an important process that checks the hard drive for errors or bad sectors. This scan consumes most of the time taken when performing a full format. If there are errors on a disk at the physical level, it's best to catch them now rather than later. The system will now format the partition. The time this process requires depends on the speed and size of the drive. The larger the partition, the longer the process will take."
+    },
+    {
+      "title": "Press ↵ Enter when prompted to reboot.",
+      "content": "Press ↵ Enter when prompted to reboot. Wait for the Setup files to copy from the installation disc, then press Enter and allow your computer to boot normally. You will see the message asking you to press a key to boot from CD. Ignore it and allow the computer to continue booting from the hard drive. You will see the Windows logo as the Setup program loads. After the Windows logo disappears, you will see a list of remaining steps on the left side of the screen and tips for using Windows on the right. The time remaining for the installation will be displayed below the list of remaining steps. It is normal for the screen to flicker, turn on and off, or resize during this process."
+    },
+    {
+      "title": "Choose your language and region settings and click Next.",
+      "content": "Choose your language and region settings and click Next . During installation, a dialog window will appear, asking you to choose your Regional settings. Select appropriate settings native to your area. Enter your full name if you want. This will be set as the “owner” of Windows, and will be attached to certain things, such as Document creation."
+    },
+    {
+      "title": "Enter your product key.",
+      "content": "Enter your product key. You cannot complete the installation process without a valid product key. Enter the key, then click Next to continue. Some versions of Windows will not ask for the Product Key until installation is complete."
+    },
+    {
+      "title": "Set your computer’s name.",
+      "content": "Set your computer’s name. This will be the name that represents the computer on a network. Windows sets a default name, but you can change it if you would like. You can also set a password for the Administrator account. This is optional but recommended for public computers."
+    },
+    {
+      "title": "Select your time zone.",
+      "content": "Select your time zone. Ensure that the date/time are correct. Click \"Next\" to continue."
+    },
+    {
+      "title": "Choose your network settings.",
+      "content": "Choose your network settings. Almost all users installing Windows XP on a home computer can leave \"Typical Settings\" selected for network setup. If you are installing Windows XP in a corporate or academic environment, check with the system administrator, though Typical Settings will most likely work. In the next window, nearly all users can select “No, this computer is not on a network, or is on a network without a domain.” If you are in a corporate setting, ask your system administrator which you should choose. You can typically leave the workgroup name set to default."
+    },
+    {
+      "title": "Wait for the installation to complete.",
+      "content": "Wait for the installation to complete. This will only take a few minutes, and the computer will reboot after installing. Once the computer reboots, you will be taken to the Windows XP desktop. At this point, installation is complete, though there are a few things left to do before Windows is completely usable."
+    },
+    {
+      "title": "Set your display preferences.",
+      "content": "Set your display preferences. Once Windows loads, you will be told that Windows will automatically configure your display. Click OK to start the configuration. Your screen will flash a couple of times, and then you will be asked if you can read the box that appears."
+    },
+    {
+      "title": "Set your internet connection preferences.",
+      "content": "Set your internet connection preferences. If your computer is connected to the internet , select your connection type, and click Next to continue. Microsoft does not recommend connecting a computer running Windows XP to the internet. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you plan to do so, be sure to put the computer behind a firewall ."
+    },
+    {
+      "title": "Activate your copy of Windows.",
+      "content": "Activate your copy of Windows. If connected to the internet, select Activate Now to activate your product key. If you haven’t entered your Product Key yet, you will need to enter it now. If you choose telephone activation instead, you can try the phone number you're provided, but many users have noticed the agents can no longer help with Windows XP activation. If you're stuck activating, visit this Microsoft support document about activating older versions of Microsoft Office to get the latest number—you should be able to call the number provided and receive an activation link via email. Be sure to activate Windows within 30 days of installation. Otherwise, the system will not allow you to log on until activation is complete."
+    },
+    {
+      "title": "Start using Windows.",
+      "content": "Start using Windows. After activating, you'll be prompted to create users for the system and then taken to the default Windows XP Desktop. Congratulations! There are a few things that you should probably do now that you have Windows up and running: Install any drivers that you need for your computer’s hardware. Install an antivirus program if you are connected to the internet. Set your BIOS to boot from the hard drive instead of the CD again."
+    }
+  ]
+}

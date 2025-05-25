@@ -1,0 +1,174 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-OpenGL%E2%80%90GLFW%E2%80%90GLAD-on-a-Project-with-Visual-Studio",
+  "title": "How to Set Up OpenGL‐GLFW‐GLAD on a Project with Visual Studio",
+  "steps": [
+    {
+      "title": "Emphasize the actions you plan to take.",
+      "content": "Emphasize the actions you plan to take. Highlight a step, a substep, or a section of it, then carry it out. Take a look at the image above."
+    },
+    {
+      "title": "Download Visual Studio 2022 Community.",
+      "content": "Download Visual Studio 2022 Community. While downloading, check the box labeled \"Desktop development with C++ workload.\" Scroll down the page if needed (see the image below. Select \"Language pack\" and tick the \"English\" option. Click \"General\" in the \"Development settings\" menu of the \"Personalize your Visual Studio experience\" wizard during installation. > click \"Visual C++\" > click Start Visual Studio ."
+    },
+    {
+      "title": "Make the GL and GLP folders.",
+      "content": "Make the GL and GLP folders. Launch the File Explorer in Windows > Open the directory (disk) C. It's okay if the folders GL and GLP exist. If not, perform a right-click in an empty space > choose \"New\" > \"Folder\" > type GL > press ↵ Enter . Create the GLP folder in the same manner. Make a folder named GLAD inside the \"GL\" folder."
+    },
+    {
+      "title": "Download GLFW x32.",
+      "content": "Download GLFW x32. Choose Open Link in New Window by right-clicking on the following address: https://www.glfw.org/download.html . Click 32-bit Windows binaries . You receive the most recent version, glfw-3.4.bin.WIN32 (or latest). The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL. In the new File Explorer click folder glfw-3.4.bin.WIN32 , (or latest) > click it again and drag into C:\\GL. Close the new \"File Explorer\" window > close the GLFW window. Once the folder has completed copying, and pasting, copy GLFWx32 > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Now in \"GL\" folder you have folders \"GLAD\" (empty) and \"GLFWx32\"."
+    },
+    {
+      "title": "Download GLAD.",
+      "content": "Download GLAD. Right click on following address and select Open Link in New Window https://glad.dav1d.de/ . In Language leave C/C++ . Below API , in gl entry, select the latest version, which is 4.6 as of 26/11/2024. In Specification leave OpenGL . In Profile select Core . Ignore the Extensions . Make sure in Options list \"Generate a loader\" option is ticked. Click GENERATE . In \"Glad\" window (see picture above), click \"glad.zip\". In downloading new File Explorer window you have two unzip folders: include and src . Open folder C:\\GL\\GLAD. Click folder include > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Click folder src > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Now in folder GLAD you have two unzip folders: include and src . Go back to GL folder. Close GLAD window > close downloading new File Explorer window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWx32-GLAD-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above.."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In the \"Add New Item\" wizard instead of \"FileName\" type Main > hit ↵ Enter . The source file Main.cpp will open in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Add file glad.c.",
+      "content": "Add file glad.c . Go to Visual Studio > Solution Explorer > right click Source Files > click Add > Existing Item ... . Copy C:\\GL\\GLAD\\src and paste in \"Add Existing Item - GLFWx32-GLAD-0\" wizard Address Bar > hit Enter > click glad.c . \"File name\" should be glad.c . Click Add ."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project GLFWx32-GLAD-0 > select \"Properties\" (the last one). In \"GLFWx32-GLAD-0 Property Pages\" wizard, 1. Main menu. In Configuration: select Active(Debug) > Platform: Win32 or x86 > click Configuration Manager . \"Configuration Manager\" wizard \"Active solution platform:\" select x86 or Win32 \"Platform\" Win32 or x86 is automatically selected Click Close . 2. Additional Include Directories . Open C/C++ drop-down menu. Click General > Additional Include Directories. > the down arrow at the right of the field > click <Edit...> . 1. Copy C:\\GL\\GLFWx32\\include > in Additional Include Directories wizard click first icon > paste. 2. Copy C:\\GL\\GLAD\\include > in Additional Include Directories wizard click first icon > paste. On Additional Include Directories wizard click OK . 3. Additional Library Directories . Open the Linker drop-down menu, and click General . Click Additional Library Directories entry > down arrow at the right of the field > click <Edit...> . Copy C:\\GL\\GLFWx32\\lib-vc2022 > in \"Additional Library Directories\" wizard click first icon > Paste. In \"Additional Library Directories\" wizard click OK . 4. Additional Dependencies . In Linker drop down menu click \"Input\". Click Additional Dependencies entry > the down arrow at the right of the field > <Edit...> . Copy opengl32.lib; glfw3.lib; glfw3dll.lib and paste in the top-most text box in the Additional Dependencies wizard. Click OK in the Additional Dependencies wizard. Click Apply , then OK on the Project Property Pages wizard."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/2.1.hello_triangle/hello_triangle.cpp . Copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x86 > hit Ctr + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\", and wait... Two windows should appear: One is black, while the other has the words \"LearnOpenGL\" and an orange triangle inside of it. If only the black window (the console) appears with message: \"Failed to create GLFW window\", set up is okay, function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct any errors.",
+      "content": "Correct any errors. Files are missing. Copy GLFWx32-GLAD-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 3, step 2, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWx32 and GLAD exist in C:\\GL. If they exist, go to previous Part, step 1, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 1, sub step 3. Additional Library Directories , and follow instructions. Also to step 1, sub step 4. Additional Dependencies . file glad.c go to Part 3, step 3, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLFWx32-GLAD-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 3. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFWx32-GLAD-0 is open , click Project > Export Template... > in Choose Template Type , confirm \"Project template\" is selected > click Next > . On Select Template Options , Template name: should be GLFWx32-GLAD-0 . Click Finish . The Template has been created. Close the thrown window with template's path."
+    },
+    {
+      "title": "Create Project.",
+      "content": "Create Project. In Visual Studio main menu, click File > New > Project... . In Create a new project wizard in the list of templates select GLFWx32-GLAD-0 , (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, \"Project name\" should be GLFWx32-GLAD-01 . \"Location\" should be C:\\GLP . Make sure \"Place solution and project in the same directory\" is checked. Click Create , and wait for the project to be finished. In Visual Studio main menu, select x86 . Hit Ctr + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good job."
+    },
+    {
+      "title": "Tips.",
+      "content": "Tips. When you create project with template, remember, in Visual Studio main menu, select x86 ."
+    },
+    {
+      "title": "Create folders GL, GLP and GLAD.",
+      "content": "Create folders GL, GLP and GLAD. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP . Within the GL folder make the GLAD folder."
+    },
+    {
+      "title": "Download GLFW x64.",
+      "content": "Download GLFW x64. Right click on following address and select Open Link in New Window https://www.glfw.org/download.html Click 64-bit Windows binaries . You get \"glfw-3.4.bin.WIN64\" or latest version. The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL, if it's not already open. In the new File Explorer click folder glfw-3.4.bin.WIN64 , (or latest) > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy GLFWx64 > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > Paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the GLFW window."
+    },
+    {
+      "title": "Download GLAD.",
+      "content": "Download GLAD. Right click on following address and select Open Link in New Window https://glad.dav1d.de/ . In Language leave C/C++ . Below API , in gl entry, select the latest version (today is 4.6). In Specification leave OpenGL . In Profile select Core . Ignore the Extensions . Make sure in Options list \"Generate a loader\" option is ticked. Click GENERATE . In \"Glad\" window (see picture above), click \"glad.zip\". In downloading new File Explorer window you have two unzip folders: include and src . Open folder C:\\GL\\GLAD. Click folder include > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Click folder src > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Now in folder GLAD you have two unzip folders: include and src . Go back to GL folder. Close GLAD window > close downloading new File Explorer window."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWx64-GLAD-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above.."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" window right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In the \"Add New Item\" wizard, instead of \"FileName\", type Main > hit ↵ Enter . The source file Main.cpp opens in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Add file glad.c.",
+      "content": "Add file glad.c . Go to Visual Studio > Solution Explorer > right click Source Files > click Add > Existing Item ... . Copy C:\\GL\\GLAD\\src and paste in \"Add Existing Item - GLFWx64-GLAD-0\" wizard Address Bar > hit Enter > click glad.c . \"File name\" should be glad.c . Click Add ."
+    },
+    {
+      "title": "Configure \"Property Pages\".",
+      "content": "Configure \"Property Pages\". Go to \"Solution Explorer\" > right click on the name of your project GLFWx64-GLAD-0 > select \"Properties\" (the last one). In \"GLFWx64-GLAD-0 Property Pages\" wizard, . 1. Main menu. In Configuration entry select Active(Debug) > in Platform: entry, select \"x64\" > Click {{macButton|Configuration manager...}. In Configuration Manager wizard, Active solution platform: select \"x64\" Platform entry, \"x64\" is automatically selected. Click Close 2. Additional Include Directories . Open C/C++ drop-down menu. Click General > Additional Include Directories > the down arrow at the right of the field > click <Edit...> . 1. Copy C:\\GL\\GLFWx64\\include > in \"Additional Include Directories\" wizard click first icon > paste. 2. Copy C:\\GL\\GLAD\\include > in \"Additional Include Directories\" wizard click first icon > paste. On \"Additional Include Directories\" wizard click OK . 3. Additional Library Directories . Open the Linker drop-down menu, and click \"General\". Click \"Additional Library Directories\" entry > down arrow at the right of the field > click \"<Edit...>\". Copy C:\\GL\\GLFWx64\\lib-vc2022 > in \"Additional Library Directories\" wizard click first icon > Paste. In \"Additional Library Directories\" wizard click OK . 4. Additional Dependencies . In Linker drop down menu click \"Input\". Click \"Additional Dependencies\" entry > the down arrow at the right of the field > \"<Edit...>\". Copy opengl32.lib; glfw3.lib; glfw3dll.lib and paste in the topmost text box in the \"Additional Dependencies\" wizard. Click OK in the \"Additional Dependencies\" wizard. Click Apply , then OK on the \"Project Property Pages\" wizard."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/2.1.hello_triangle/hello_triangle.cpp . Copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x64 > hit Ctr + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\", and wait... Two windows should appear: One is black, while the other has the words \"LearnOpenGL\" and an orange triangle inside of it. If only the black window (the console) appears with message: \"Failed to create GLFW window\", set up is okay, function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLFWx64-GLAD-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to Part 7, step 5, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWx64 and GLAD exist in C:\\GL. If they exist, go to previous Part, step 2, sub step 2. Additional Include Directories and follow instructions. file with extension .lib go to previous Part, step 2, sub step 3. Additional Library Directories , and follow instructions. Also to step 2, sub step 4. Additional Dependencies . file glad.c go to Part 7, step 6, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLFWx64-GLAD-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 7. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFW64-GLAD-0 is open , click Project > Export Template... > in Choose Template Type , confirm \"Project template\" is selected. Click Next > . In Select Template Options , \"Template name\" should be GLFWx64-GLAD-0 . Click Finish . Template has been created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create project.",
+      "content": "Create project. In Visual Studio main menu > Click \"File\" > \"New\" > \"Project...\". In Create a new project wizard in the list of templates select \"GLFWx64-GLAD-0\" (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, \"Project name\" should be GLFWx64-GLAD-01 . If Location is C:\\GLP , it's okay. If it's not, copy C:\\GLP , and paste. Be sure \"Place solution and project in the same directory\" is checked. Click Create , and wait till project be created. In Visual Studio's GUI main menu, select x64 > hit Ctrl + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". TIP. When you create project with this template remember in Visual Studio GUI's main menu select x64 ."
+    },
+    {
+      "title": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide.",
+      "content": "Compiling a library from the source code guarantees that the resulting library is perfectly tailored for your CPU/OS, a luxury pre-compiled binaries don't always provide. It is also important that binaries you get target x64 platform."
+    },
+    {
+      "title": "Create folders GL, GLP and GLAD.",
+      "content": "Create folders GL, GLP and GLAD. Open Windows's File Explorer > Navigate to disk (directory) C. If folders GL and GLP exist it's okay. Make a folder named GLAD inside the \"GL\" folder. If they do not, right click in empty area > select New > Folder > type GL > hit ↵ Enter . By same way create folder GLP ."
+    },
+    {
+      "title": "Download CMake.",
+      "content": "Download CMake. Right-click on following address and select Open Link in New Window https://cmake.org/download/ . Scroll down the page and find \"Latest Release (3.31.6)\", (or latest). In second \"Platform\" list (Binary distributions:), find (see image below) \"Windows x64 ZIP\" and click the beside entry cmake-3.31.6-windows-x86_64.zip (or latest). The unzipped folder ought to appear in a new File Explorer."
+    },
+    {
+      "title": "Copy and unzip the zip folder.",
+      "content": "Copy and unzip the zip folder. Open folder C:\\GL. In the new File Explorer click folder cmake-3.31.6-windows-x86_64 , (or latest) > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy CMake > click folder > right click > click \"Rename\" (in Windows 11 it is an icon) > paste > hit ↵ Enter . Close the new \"File Explorer\" window > close the \"CMake\" window. Double click folder \"CMake\" > double click folder bin > inside you should see CMake's logo next to file name cmake-gui > double click this file. Now on your screen you have CMake GUI > go back to GL folder. Each time you need CMake, navigate to C:\\ > GL > double click folder CMake > double click \"bin\" > double click file cmake-gui (the one with CMake's logo)."
+    },
+    {
+      "title": "Download GLFW source code.",
+      "content": "Download GLFW source code. Right-click on following address and select Open Link in New Window https://www.glfw.org/download.html . Select \"Source package\". The unzipped folder ought to appear in a new File Explorer. Open folder C:\\GL. In the new File Explorer click folder glfw-3.4 , (or latest) > click it again and drag into C:\\GL. Once the folder has completed copying and pasting, copy GLFWsrc > click folder > right click > click \"Rename\" > paste > hit ↵ Enter . Close the downloading new File Explorer window > close \"GLFW\" window."
+    },
+    {
+      "title": "Download GLAD.",
+      "content": "Download GLAD. Right click on following address and select Open Link in New Window https://glad.dav1d.de/ . In Language leave C/C++ . Below API , in gl entry, select the latest version (today is 4.6). In Specification leave OpenGL . In Profile select Core . Ignore the Extensions . Make sure in Options list \"Generate a loader\" option is ticked. Click GENERATE . In \"Glad\" window (see picture above), click \"glad.zip\". In downloading new File Explorer window you have two unzip folders: include and src . Open folder C:\\GL\\GLAD. Click folder include > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Click folder src > click it again and drag into folder GLAD , at C:\\GL\\GLAD. Now in folder GLAD you have two unzip folders: include and src . Go back to GL folder. Close GLAD window > close downloading new File Explorer window."
+    },
+    {
+      "title": "Go to CMake GUI.",
+      "content": "Go to CMake GUI. See image above. Copy (attention: do not copy any space) C:\\GL\\GLFWsrc and paste in CMake GUI first text field. Copy (attention: do not copy any space) C:\\GL\\GLFWsrc\\build an paste in the second text field. Configure and generate. In CMake GUI, click Configure > in wizard Create Directory click Yes > in wizard \"Specify the generator for this project\" select \"Microsoft Visual Studio 17 2022\" > click Finish . When, in CMake GUI, you read: \"Configuring done\", click Generate . You should read: \"Generating done\". Build your solution. Copy C:\\GL\\GLFWsrc\\build and paste in File Explorer Address Bar > hit ↵ Enter > Double click \"GLFW.sln\", or \"GLFW\", or \"ALL_BUILD.vcxproj\". In thrown wizard \"Microsoft Visual Studio Version Selector\" select \"Microsoft Visual Studio 17 2022\" > click OK . An instance of Visual Studio appears. Wait until in main menu \"Build\" entry appears. Click it > click \"Build Solution\". Wait till you read the last line in \"Output\" window: ========== Build: X succeeded, 0 failed, 0 up-to-date, Y skipped\" ========== Numbers of succeeded (X) and skipped (Y) change in glfw versions. Today (29-June-2024) are 34 and 3 respectively. Copy C:\\GL\\GLFWsrc\\build\\src\\Debug and paste in File Explorer Address Bar > hit ↵ Enter . You should see file \"glfw3.lib\". Close this instance of Visual Studio > Close CMake GUI."
+    },
+    {
+      "title": "Create empty project.",
+      "content": "Create empty project. If it's the first time you open Visual Studio . Open it > click Create a new project . In Create a new project wizard, find Empty Project Start from scratch with C++ for Windows. Provides no starting files. (see image above. If it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click it > click Next . In Configure your new project wizard for \"Project name\" type (or copy and paste) GLFWsrc-GLAD-0 Copy C:\\GLP and paste in \"Location\" text field. Check \"Place solution and project in the same directory\". Click Create . Wait till Visual Studio instance appears. If it's not the first time . In main menu click File > New > Project… > the rest as above.."
+    },
+    {
+      "title": "Add your Source file to the project.",
+      "content": "Add your Source file to the project. In \"Solution Explorer\" right click the \"Source Files\" folder (the last one) > click \"Add > \"New Item…\" In the \"Add New Item\" wizard instead of \"FileName\" type Main > hit ↵ Enter . The source file Main.cpp opens in the main text editor but leave the file blank for now."
+    },
+    {
+      "title": "Add file glad.c.",
+      "content": "Add file glad.c . Go to Visual Studio > Solution Explorer > right click Source Files > click Add > Existing Item ... . Copy C:\\GL\\GLAD\\src and paste in \"Add Existing Item - GLFWsrc-GLAD-0\" wizard Address Bar > click glad.c . \"File name\" should be glad.c . Click Add . In Solution Explorer , below Source Files you should see two files: glad.c and Main.cpp ."
+    },
+    {
+      "title": "Configure project's Properties.",
+      "content": "Configure project's Properties . In Solution Explorer right click Project's name that is GLFWsrc-GLAD-0 > select Properties (the last one). In GLFWsrc-GLAD-0 Property Pages wizard, 1. \"Main menu\" . In \"Configuration\" entry, select \"Active(Debug)\" > in Platform entry, select x64 > click Configuration Manager... . In Active solution platform: select x64 . In Platform entry, x64 is automatically selected. Click Close . 2. \"Include\" . Open C/C++ drop-down menu > click General > In beside menu select the first one, Additional Include Directories > click the down arrow at the end of the field > click Edit... . Copy C:\\GL\\GLFWsrc\\include click first icon in Additional Include Directories wizard and paste. Copy C:\\GL\\GLAD\\include and, in Additional Include Directories wizard, click first icon > paste > click OK . Click OK on Additional Include Directories wizard. 3. \"Library\" . Double click Linker > click General > Additional Library Directories > click the down arrow at the end of the field > click Edit... . Copy C:/GL/GLFWsrc/build/src/Debug click first icon in Additional Library Directories wizard > paste. Click OK on Additional Library Directories wizard. 4. \"Dependencies\" . In Linker drop-down menu select Input > in beside menu select the first one, Additional Dependencies > click the down arrow at the end of the field > Edit... Copy opengl32.lib; glfw3.lib and paste in Additional Dependencies wizard's upper-most text box. Click OK on Additional Dependencies wizard. Click Apply and OK on GLFWsrc-GLAD-0 Property Pages wizard."
+    },
+    {
+      "title": "Test your project.",
+      "content": "Test your project. Right click on following address and select Open Link in New Window https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/2.1.hello_triangle/hello_triangle.cpp . Copy the code. Go to Visual Studio and paste in Main.cpp code area > in main menu select x64 > hit Ctr + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\", and wait... Two windows should appear: One is black, while the other has the words \"LearnOpenGL\" and an orange triangle inside of it. If only the black window (the console) appears with message: \"Failed to create GLFW window\", set up is okay, function glfwCreateWindow did not work."
+    },
+    {
+      "title": "Correct errors if any.",
+      "content": "Correct errors if any. Files are missing. Copy GLFWsrc-GLAD-0 and paste in File Explorer Address Bar. You should see file you added Main.cpp , and 4 other files added by Visual Studio. If they are missing you missed add file Main.cpp . Go to previous Part, step 6, and add it now. In \"Error List\" if you see error about file with extension .h Check whether folders GLFWsrc and GLAD exist in C:\\GL. If they exist, go to previous Part, step 8, sub step 2. Include and follow instructions. file with extension .lib go to previous Part, step 8, sub step 3. Library , and follow instructions. Also to step 8 sub step 4. Dependencies . file glad.c go to previous Part, step 7, and follow instructions. For other errors, if you cannot correct them, close Visual Studio > delete project folder GLFWsrc-GLAD-0 which lives in C:\\GLP > open Visual Studio > repeat set up from Part 11. Good job."
+    },
+    {
+      "title": "Create Template.",
+      "content": "Create Template. Go to Visual Studio main menu and, while GLFWsrc-GLAD-0 is open , click Project > Export Template... . On Export template Wizard check Project Template , if it's not checked. Click Next > . On Select Template Options , Template name should be GLFWsrc-GLAD-0 > click Finish . Template has been created. Close thrown window with template's path."
+    },
+    {
+      "title": "Create Project.",
+      "content": "Create Project. In Visual Studio main menu click File > New > Project... . In Create a new project wizard in the list of templates select GLFWsrc-GLAD-0 (if it's not visible, enter its name in the search bar above the list and press ↵ Enter ) > click Next . In Configure your new project wizard, \"Project name\" should be GLFWsrc-GLAD-01 . If \"Location\" is C:\\GLP it's okay. If it's not, copy and paste. Be sure Place solution and project in the same directory is checked. Click Create , and wait till Visual Studio GUI appears. In Visual Studio main menu, select x64 . Hit Ctr + F5 or in Visual Studio's main menu click the green triangle with phrase \"Local Windows Debugger\". Good programming."
+    },
+    {
+      "title": "TIPS:",
+      "content": "TIPS: In every project you create with it, remember, in Visual Studio's GUI, select x64 (next to Debug)."
+    },
+    {
+      "title": "In this tutorial you learn 3 was to set up GLFW and GLAD in Project with Visual Studio.",
+      "content": "In this tutorial you learn 3 was to set up GLFW and GLAD in Project with Visual Studio. Set up binaries x86 (32 bits). It's the easiest. You should start learning set up from here. Set up binaries x64 (64 bits). It targets x64 platform. Choose it only when you have specific reason for doing so. Compile GLFW source, and set up, together with GLAD, in project. Targets x64 too.The most difficult. The best though."
+    }
+  ]
+}

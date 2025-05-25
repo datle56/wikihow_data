@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Install-Mesa-(OpenGL)-on-Linux-Mint",
+  "title": "OpenGL on Linux Mint: Easy Mesa Install Guide",
+  "steps": [
+    {
+      "title": "Update the package index and installed packages.",
+      "content": "Update the package index and installed packages. Before installing the necessary libraries for OpenGL development , you'll need to make sure Linux Mint has the latest version of the package index, and that your existing packages are up to date. Run the following commands in your Terminal: sudo apt update sudo apt upgrade"
+    },
+    {
+      "title": "Remove previous Mesa PPAs.",
+      "content": "Remove previous Mesa PPAs. If you've already installed kisak-mesa and want to upgrade the libraries, remove the current installation first. To do so, run these commands: sudo apt install ppa-purge sudo ppa-purge -d jammy ppa:kisak/kisak-mesa If you're using a version of Linux Mint that isn't based on Ubuntu Jammy Jellyfish, replace jammy with your version. For example, if you're using Linux Mint 20, which is built on Ubuntu Focal Fossa, you'd use sudo ppa-purge -d focal ppa:kisak/kisak-mesa ."
+    },
+    {
+      "title": "Add the Kisak Mesa PPA.",
+      "content": "Add the Kisak Mesa PPA. You can use the Kisak PPA to get a newer version of Mesa on your Linux Mint system. [1] X Research source To do so, run these commands: sudo add-apt-repository ppa:kisak/kisak-mesa If you get an error that says \"command not found,\" run sudo apt-get install software-properties-common . Then, try again. sudo apt update"
+    },
+    {
+      "title": "Install Mesa Utilities.",
+      "content": "Install Mesa Utilities. the Kisak Mesa to Linux Mint. Now that you've added the PPA, run this command to install the Mesa utilities on Linux Mint: sudo apt install mesa-utils"
+    },
+    {
+      "title": "Verify the installation.",
+      "content": "Verify the installation. Once Mesa is installed, run the command glxinfo | grep \"OpenGL version\" to check your Mesa version. If you plan to upgrade Linux Mint or upgrade Mesa, remove this PPA before doing so using the command in Step 2 ."
+    },
+    {
+      "title": "Install additional libraries.",
+      "content": "Install additional libraries. To make sure you have what you'll need to be able to compile programs with GLEW (OpenGL Extension Wrangler Library), and have several other libraries installed: Run this command to install GNU make and other build tools: sudo apt install build-essential libxmu-dev libxi-dev libgl-dev binutils . [2] X Research source Install the GLEW packages using this command: sudo apt install glew-utils libglew2.2 libglewmx-dev libglewmx1.13 Install freeglut: sudo apt install freeglut3-dev freeglut3 Install mesa-common-dev: sudo apt install mesa-common-dev"
+    },
+    {
+      "title": "Create a directory for your program.",
+      "content": "Create a directory for your program. Change into your preferred directory, then use the mkdir command to create a directory for your program. For example, mkdir Sample-OpenGL-Programs ."
+    },
+    {
+      "title": "Create a text file with your favorite text editor.",
+      "content": "Create a text file with your favorite text editor. Enter the directory you created using cd Sample-OpenGL-Programs , then use any text editor (such as vi, nano, or gedit) to create a file called main.c . For example, nano main.c"
+    },
+    {
+      "title": "Copy and paste OR type the code:",
+      "content": "Copy and paste OR type the code: #include <GL/freeglut.h> #include <GL/gl.h> void renderFunction () { glClearColor ( 0.0 , 0.0 , 0.0 , 0.0 ); glClear ( GL_COLOR_BUFFER_BIT ); glColor3f ( 1.0 , 1.0 , 1.0 ); glOrtho ( - 1.0 , 1.0 , - 1.0 , 1.0 , - 1.0 , 1.0 ); glBegin ( GL_POLYGON ); glVertex2f ( - 0.5 , - 0.5 ); glVertex2f ( - 0.5 , 0.5 ); glVertex2f ( 0.5 , 0.5 ); glVertex2f ( 0.5 , - 0.5 ); glEnd (); glFlush (); } int main ( int argc , char ** argv ) { glutInit ( & argc , argv ); glutInitDisplayMode ( GLUT_SINGLE ); glutInitWindowSize ( 500 , 500 ); glutInitWindowPosition ( 100 , 100 ); glutCreateWindow ( \"OpenGL - First window demo\" ); glutDisplayFunc ( renderFunction ); glutMainLoop (); return 0 ; }"
+    },
+    {
+      "title": "Save the file and exit.",
+      "content": "Save the file and exit."
+    },
+    {
+      "title": "Compile your program.",
+      "content": "Compile your program. To build your program and link your Open GL libraries, use this command: g++ main.c -lglut -lGL -lGLU -o OpenGLExample"
+    },
+    {
+      "title": "Run the program.",
+      "content": "Run the program. To do this, type ./OpenGLExample and press Enter ."
+    },
+    {
+      "title": "Wait for a result.",
+      "content": "Wait for a result. If you did everything right, a window will open. It will show a white square on a black background. The window will be titled \"OpenGL - First window demo\"."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Dropdown-Menu-in-HTML-and-CSS",
+  "title": "How to Create a Dropdown Menu in HTML and CSS",
+  "steps": [
+    {
+      "title": "Open your HTML text editor.",
+      "content": "Open your HTML text editor. You can use a simple text editor, such as Notepad or TextEdit, or you can use a more advanced text editor like Notepad++ . If you do decide to use Notepad++, make sure you select HTML from the \"H\" section of the Language menu at the top of the window before you proceed."
+    },
+    {
+      "title": "Enter the document header.",
+      "content": "Enter the document header. This is the code that determines the code type used for the rest of the document: <!DOCTYPE html> < html > < head > < style >"
+    },
+    {
+      "title": "Create the drop-down menu itself.",
+      "content": "Create the drop-down menu itself. Type in the following code to determine the size and color of the drop-down menu, making sure to replace \"#\" with the number you want to use (the larger the number, the larger your drop-down menu will be). You can also replace the \"background-color\" and \"color\" values with any color (or HTML color code) of your choice: [1] X Research source . dropbtn { background-color : black ; color : white ; padding : #px ; font-size : #px ; border : none ; }"
+    },
+    {
+      "title": "Indicate that you want to place your links in the drop-down menu.",
+      "content": "Indicate that you want to place your links in the drop-down menu. Since you'll be adding links to the drop-down menu later, you can place them inside the drop-down menu by entering the following code: . dropdown { position : relative ; display : inline-block ; }"
+    },
+    {
+      "title": "Create the drop-down menu's appearance.",
+      "content": "Create the drop-down menu's appearance. The following code will determine the drop-down menu's size, position when other webpage elements are involved, and color. Be sure to replace the \"min-width\" section's \"#\" with your preferred number (e.g., 250) and change the \"background-color\" heading to your preferred color or HTML code: . dropdown-content { display : none ; position : absolute ; background-color : lightgrey ; min-width : #px ; z-index : 1 ; }"
+    },
+    {
+      "title": "Add detail to the drop-down menu's contents.",
+      "content": "Add detail to the drop-down menu's contents. The following code addresses the drop-down menu's text color and the size of the drop-down menu's button. Be sure to replace \"#\" with your preferred number of pixels to dictate the size of the button: . dropdown-content a { color : black ; padding : #px #px ; text-decoration : none ; display : block ; }"
+    },
+    {
+      "title": "Edit the drop-down menu's hover behavior.",
+      "content": "Edit the drop-down menu's hover behavior. When you hover your mouse over the drop-down menu's button, you'll need a few colors to change. The first \"background-color\" line refers to the color change that will appear when you select an item in the drop-down menu, while the second \"background-color\" line refers to the color change of the drop-down menu's button. Ideally, both of these colors will be lighter than their appearance when not selected: . dropdown-content a : hover { background-color : white ;} . dropdown : hover . dropdown-content { display : block ;} . dropdown : hover . dropbtn { background-color : grey ;}"
+    },
+    {
+      "title": "Close the CSS section.",
+      "content": "Close the CSS section. Enter the following code to indicate that you're done with the CSS portion of the document: </ style > </ head >"
+    },
+    {
+      "title": "Create the drop-down button's name.",
+      "content": "Create the drop-down button's name. Enter the following code, making sure to replace \"Name\" with whatever you want the drop-down button's name to be (e.g., Menu ): < div class = \"dropdown\" > < button class = \"dropbtn\" > Name </ button > < div class = \"dropdown-content\" >"
+    },
+    {
+      "title": "Add your drop-down menu's links.",
+      "content": "Add your drop-down menu's links. Each of the items in the drop-down menu should link to something, be that a page on your website or an external website. You can add items to the drop-down menu by entering the following code, making sure to replace https://www.website.com with the link's address (keep the quotation marks) and \"Name\" with the link's name. < a href = \"https://www.website.com\" > Name </ a > < a href = \"https://www.website.com\" > Name </ a > < a href = \"https://www.website.com\" > Name </ a >"
+    },
+    {
+      "title": "Close out your document.",
+      "content": "Close out your document. Enter the following tags to close the document and indicate the end of the drop-down menu's code: </ div > </ div > </ body > </ html >"
+    },
+    {
+      "title": "Review your drop-down box's code.",
+      "content": "Review your drop-down box's code. Your code should look similar to the following: [2] X Research source <!DOCTYPE html> < html > < head > < style > . dropbtn { background-color : black ; color : white ; padding : 16 px ; font-size : 16 px ; border : none ; } . dropdown { position : relative ; display : inline-block ; } . dropdown-content { display : none ; position : absolute ; background-color : lightgrey ; min-width : 200 px ; z-index : 1 ; } . dropdown-content a { color : black ; padding : 12 px 16 px ; text-decoration : none ; display : block ; } . dropdown-content a : hover { background-color : white ;} . dropdown : hover . dropdown-content { display : block ;} . dropdown : hover . dropbtn { background-color : grey ;} </ style > </ head > < div class = \"dropdown\" > < button class = \"dropbtn\" > Social Media </ button > < div class = \"dropdown-content\" > < a href = \"https://www.google.com\" > Google </ a > < a href = \"https://www.facebook.com\" > Facebook </ a > < a href = \"https://www.youtube.com\" > YouTube </ a > </ div > </ div > </ body > </ html >"
+    }
+  ]
+}

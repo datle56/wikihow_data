@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Table-in-HTML",
+  "title": "How to Create a Table in HTML",
+  "steps": [
+    {
+      "title": "Open a text-editing program.",
+      "content": "Open a text-editing program. You'll typically use Notepad++ on Windows and TextEdit on Mac. To find these programs: Windows - Open Start , type notepad into Start, and click Notepad at the top of the window. Mac - Open Spotlight , type in textedit , and click TextEdit below the Spotlight search field."
+    },
+    {
+      "title": "Type in <table> and press ↵ Enter.",
+      "content": "Type in <table> and press ↵ Enter . The <table> tag indicates the start of a table, and pressing ↵ Enter prompts your text editor to start a new line. When using HTML, you always have to press ↵ Enter after creating a line of code to move onto the next line."
+    },
+    {
+      "title": "Type in <tr> and press ↵ Enter.",
+      "content": "Type in <tr> and press ↵ Enter . This command indicates that you'll be creating a specific element of the table."
+    },
+    {
+      "title": "Add a column to your table.",
+      "content": "Add a column to your table. Type in <th> to indicate a column, type in the label for the column, type in </th> to close the column, and press ↵ Enter . For example: to create a table column labeled \"Number of Dogs\", you would type <th>Number of Dogs</th> into your text editor."
+    },
+    {
+      "title": "Add more columns.",
+      "content": "Add more columns. Depending on how many columns you want your table to have, this step will vary. Once you've added all of the columns that you want to use, proceed to the next step. Columns are created from left to right."
+    },
+    {
+      "title": "Type in </tr> and press ↵ Enter.",
+      "content": "Type in </tr> and press ↵ Enter . This command indicates that all of the table's columns have been created and closes that section of the table's code."
+    },
+    {
+      "title": "Type in <tr> again, then press ↵ Enter.",
+      "content": "Type in <tr> again, then press ↵ Enter . You'll now add your rows to your table."
+    },
+    {
+      "title": "Add a cell to your table.",
+      "content": "Add a cell to your table. Type in <td> to indicate a piece of information below the first column, type in the information, type in </td> to close the cell, and press ↵ Enter . For example: to create a cell with the number \"23\" in it, you would type <td>23</td> into your text editor."
+    },
+    {
+      "title": "Add more cells to your table.",
+      "content": "Add more cells to your table. The number of cells in a row should correlate to the number of columns; for example, if you have three columns, you should have three cells in a row. Once you've created an entire row, you can proceed."
+    },
+    {
+      "title": "Close the current row.",
+      "content": "Close the current row. Type in </tr> and press ↵ Enter to close the row. At this point, you can open another row by typing in <tr> and pressing ↵ Enter , adding individual cells, and then closing the row."
+    },
+    {
+      "title": "Close your table.",
+      "content": "Close your table. Below the final line of the table, type in </table> . This indicates the end of the table."
+    },
+    {
+      "title": "Review your table.",
+      "content": "Review your table. Your table should look something like this: [1] X Research source <table> <tr> <th>Day</th> <th>Month</th> <th>Year</th> </tr> <tr> <td>4</td> <td>March</td> <td>1990</td> </tr> <tr> <td>27</td> <td>July</td> <td>1993</td> </tr> </table>"
+    },
+    {
+      "title": "Save your work.",
+      "content": "Save your work. Press Ctrl + S (Windows) or ⌘ Command + S (Mac) to save your document, then enter a name for the document and click Save when prompted."
+    },
+    {
+      "title": "Widen your table.",
+      "content": "Widen your table. Replace the <table> tag at the top of the sheet with <table and then type style=\"width:100%\"> into the tag. Make sure that you keep a space between \"table\" and \"style\". The end result should look like this: <table style=\"width:100%\"> You can experiment with the percentage. For example, typing in 50 instead of 100 will result in a half-as-wide table."
+    },
+    {
+      "title": "Create borders for your table.",
+      "content": "Create borders for your table. Create a space at the very top of the document above the <table> tag, then do the following: Type in <style> and press ↵ Enter . Type in table, th, td { and press ↵ Enter . Type in border: 1px solid black; and press ↵ Enter . Type in border-collapse: collapse; and press ↵ Enter . Skip this line if you want your borders to have two lines instead of one. Type in } and press ↵ Enter . Type in </style> and press ↵ Enter ."
+    },
+    {
+      "title": "Add a label for your table.",
+      "content": "Add a label for your table. Create a space just below the <table> tag, then do the following: Type in <caption> Type in the text that you want to use (e.g., Birthdays ) Type in </caption> and press ↵ Enter . Your end result should resemble this: <caption>Birthdays</caption>"
+    }
+  ]
+}

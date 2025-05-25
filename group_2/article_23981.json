@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Install-Gnome-on-Ubuntu",
+  "title": "How to Install GNOME Desktop on Ubuntu: Full, Minimal, & Vanilla",
+  "steps": [
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you're using a different desktop environment, open a Terminal window by pressing Ctrl + Alt + T , or by selecting the Terminal app in your app list. [1] X Research source"
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This command updates the package index to include recent changes in repositories ."
+    },
+    {
+      "title": "Use sudo apt install ubuntu-gnome-desktop to install the full version of GNOME Desktop.",
+      "content": "Use sudo apt install ubuntu-gnome-desktop to install the full version of GNOME Desktop. If you want the full version of GNOME with all the bells and whistles, this is the command you'll need. GNOME Desktop comes with all the perks of the GNOME desktop environment, plus additional software like LibreOffice , the Firefox web browser, RhythmBox (a music player), GIMP , and more. The full version is the most resource-intensive version of GNOME and requires the most disk space (2GB). [2] X Research source"
+    },
+    {
+      "title": "Use sudo apt install ubuntu-desktop-minimal to install a minimal version of GNOME Desktop.",
+      "content": "Use sudo apt install ubuntu-desktop-minimal to install a minimal version of GNOME Desktop. If you don't want all of the extra software but like the GNOME interface, fonts, icons, and views, install GNOME Desktop Minimal. With GNOME Desktop Minimal, you'll get the same great desktop experience with fewer apps to clog up your hard drive. GNOME Desktop Minimal only needs about 800 MB of disk space compared to the full version's 2 GB."
+    },
+    {
+      "title": "Use sudo apt install vanilla-gnome-desktop vanilla-gnome-default-settings for the most pared-down version of GNOME.",
+      "content": "Use sudo apt install vanilla-gnome-desktop vanilla-gnome-default-settings for the most pared-down version of GNOME. While GNOME Minimal still has the typical GNOME sidebar running along the left side of the screen, Vanilla GNOME is even more stripped-down than that. If you need a bare-bones desktop environment with no added software or even core apps and tweaks, Vanilla GNOME is for you—even on very old hardware. Vanilla GNOME is so stripped down that there aren't even minimize buttons on the windows! If you want to be able to tweak Vanilla GNOME a bit to make it slightly less vanilla, install the GNOME Tweaks tool. To get it, add the Universe repository using the add-apt-repository universe command, then run sudo apt install gnome-tweaks to install. You can then run gnome-tweaks at the prompt to customize your interface."
+    },
+    {
+      "title": "Type sudo reboot and press ↵ Enter to reboot.",
+      "content": "Type sudo reboot and press ↵ Enter to reboot. Once your PC reboots, you'll be able to log in to GNOME using your user account."
+    },
+    {
+      "title": "Check your version of GNOME.",
+      "content": "Check your version of GNOME. If you're not sure which version of GNOME you're using, it's easy to find out. [3] X Research source Open Activities view, which you can do quickly by hovering your cursor over the top-left corner of your GNOME desktop. Type Activities . [4] X Research source On the window that appears, you'll find general system information, including your version of the GNOME desktop environment. [5] X Research source"
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. Pressing Ctrl + Alt + T , or press the Windows/Super key on the keyboard and type Terminal . [6] X Research source"
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This command updates the package index to include recent changes in repositories . [7] X Research source"
+    },
+    {
+      "title": "Type sudo apt list --upgradable and press ↵ Enter.",
+      "content": "Type sudo apt list --upgradable and press ↵ Enter . Now you'll see a list of all installed packages that have updates available. If you see your GNOME package (e.g., ubuntu-gnome-desktop ), you'll know an update is available. [8] X Research source"
+    },
+    {
+      "title": "Type sudo apt upgrade name-of-package and press ↵ Enter.",
+      "content": "Type sudo apt upgrade name-of-package and press ↵ Enter . For example, sudo apt upgrade ubuntu-gnome-desktop for GNOME Desktop. This installs the latest update for your version of GNOME. Alternatively, you can update all packages that have updates available using this command: sudo apt upgrade ."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Find-a-MAC-Address-on-a-Network",
+  "title": "4 Ways to Search for a MAC Address on Your Network",
+  "steps": [
+    {
+      "title": "Open the Terminal app.",
+      "content": "Open the Terminal app. The quickest way to find all discovered MAC addresses is done listing all the current entries in the ARP table. [1] X Research source sudo arp -a"
+    },
+    {
+      "title": "Ping the target IP.",
+      "content": "Ping the target IP. If the IP and MAC address pair aren't listed in the output, then you must first \"ping\" the target IP. ping 192.168.1.112"
+    },
+    {
+      "title": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP to MAC address mapping.",
+      "content": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP to MAC address mapping. sudo arp 192.168.1.112 sudo arp -a"
+    },
+    {
+      "title": "Open a command prompt.",
+      "content": "Open a command prompt. The quickest way to find all discovered MAC addresses is done listing all the current entries in the ARP table. [2] X Research source arp -a"
+    },
+    {
+      "title": "Ping the target IP.",
+      "content": "Ping the target IP. If the IP and MAC address pair aren't listed in the output, then you must first \"ping\" the target IP. ping 192.168.1.112"
+    },
+    {
+      "title": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP-to-MAC address mapping.",
+      "content": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP-to-MAC address mapping. arp 192.168.1.112 arp -a"
+    },
+    {
+      "title": "Open a Console window.",
+      "content": "Open a Console window. The quickest way to find all discovered MAC addresses is done listing all the current entries in the ARP table. sudo arp -a"
+    },
+    {
+      "title": "Ping the target IP.",
+      "content": "Ping the target IP. If the IP and MAC address pair aren't listed in the output, then you must first \"ping\" the target IP. ping 192.168.1.112"
+    },
+    {
+      "title": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP-to-MAC address mapping.",
+      "content": "If the ping returns a positive response, then you can review the ARP information using either of the following methods.Either of these commands will provide the IP-to-MAC address mapping. sudo arp 192.168.1.112 sudo arp -a"
+    },
+    {
+      "title": "On the Linux OS you can avoid pinging individual hosts and then querying for the MAC address by using the arp-scan utility.",
+      "content": "On the Linux OS you can avoid pinging individual hosts and then querying for the MAC address by using the arp-scan utility. The arp-scan utility makes it very easy to discover all the IP-to-MAC address pairs on a subnet."
+    },
+    {
+      "title": "Open a Console window.",
+      "content": "Open a Console window."
+    },
+    {
+      "title": "Issue a command.",
+      "content": "Issue a command. The arp-scan utility has many available options, but the simplest method is to issue the command with a subnet parameter. This will build an arp table of all network accessible hosts and print the output to the console. sudo arp-scan 192.168.1.0/24"
+    }
+  ]
+}

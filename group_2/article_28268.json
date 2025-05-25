@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Make-Windows-XP-Genuine-Forever",
+  "title": "How to Activate Windows XP & Keep It Running Forever",
+  "steps": [
+    {
+      "title": "Click the Start menu and then choose Run.",
+      "content": "Click the Start menu and then choose Run . Use this method if you have already entered a valid Windows XP product key but still get errors or pop-ups telling you your version of Windows is not genuine. If the Windows XP product key you used to activate was not accepted, or you cannot find your product key, jump down to Generating a Windows XP Product Key ."
+    },
+    {
+      "title": "Type regedit and click OK.",
+      "content": "Type regedit and click OK . This opens the Windows registry editor."
+    },
+    {
+      "title": "Double click HKEY_LOCAL_MACHINE or click the plus sign.",
+      "content": "Double click HKEY_LOCAL_MACHINE or click the plus sign."
+    },
+    {
+      "title": "Double click Software.",
+      "content": "Double click Software ."
+    },
+    {
+      "title": "Double click Microsoft.",
+      "content": "Double click Microsoft ."
+    },
+    {
+      "title": "Double click Windows NT.",
+      "content": "Double click Windows NT ."
+    },
+    {
+      "title": "Double click CurrentVersion.",
+      "content": "Double click CurrentVersion ."
+    },
+    {
+      "title": "Click WPAEvents once.",
+      "content": "Click WPAEvents once. This opens additional options in the right panel."
+    },
+    {
+      "title": "Right click OOBETimer and select Modify.",
+      "content": "Right click OOBETimer and select Modify ."
+    },
+    {
+      "title": "Delete everything in the \"Edit Binary Value\" window and close the editor.",
+      "content": "Delete everything in the \"Edit Binary Value\" window and close the editor. In the Edit Binary Value window, select all the values in the value data box, then press the Del or ← Backspace key to delete them all. Once deleted, click OK and close the Registry Editor."
+    },
+    {
+      "title": "Open the Activate Windows Wizard.",
+      "content": "Open the Activate Windows Wizard. Here's how: Click the Start menu and select Run . Type or paste this into the Run dialog: %systemroot%\\system32\\oobe\\msoobe.exe /a Click OK ."
+    },
+    {
+      "title": "Select the \"telephone\" option.",
+      "content": "Select the \"telephone\" option. In the Activate Windows wizard, choose the second option, which should be \"Yes, I want to telephone a customer service representative to activate Windows,\" and then click Next to continue. You won't actually need to call anyone."
+    },
+    {
+      "title": "Click the Change Product Key button.",
+      "content": "Click the Change Product Key button."
+    },
+    {
+      "title": "Enter your genuine product key into the New Key box and click Update.",
+      "content": "Enter your genuine product key into the New Key box and click Update . If it doesn't work, you might be using a product key for a different service pack or version of Windows XP. You can usually find product keys that work for Windows XP by searching for them online."
+    },
+    {
+      "title": "Verify that Windows XP is now genuine.",
+      "content": "Verify that Windows XP is now genuine. To make sure this worked, follow these steps: Click the Start menu and select Run . Type oobe/msoobe /a and click OK . If a box appears saying “Windows is already activated,\" it means your Windows XP is genuine. However, you'll still need to do one more thing to make Windows XP genuine forever ."
+    },
+    {
+      "title": "Make the change permanent.",
+      "content": "Make the change permanent. Now that you're using a genuine copy of Windows XP, complete these steps to make the change permanent: Click the Start menu and select Run . Type regedit and click OK . Navigate to the key you went to earlier: Double-click HKEY_LOCAL_MACHINE. Double-click Software . Double-click Microsoft . Double-click Windows NT . Double click CurrentVersion Click WPAEvents . Right-click WPAEvents in the left panel and select Permissions . Deny all permission to all groups and users so the changes cannot be reset. Click OK and restart Windows XP ."
+    },
+    {
+      "title": "Disable critical updates.",
+      "content": "Disable critical updates. To prevent Windows XP from attempting to install updates, thus triggering a warning about a non-genuine license, follow these steps: Go to Start > Control Panel . Be sure that the Control Panel is in classic view. Double-click Automatic Updates. Select Turn Off Automatic Updates and hit Apply . Since it will be annoying to have alerts every two minutes that Automatic Updates is turned off, double-click the small \"red\" icon by the clock in the bottom-right to open Security Center, select Change the way Security Center alerts me , and uncheck the \"Automatic Updates\" option."
+    },
+    {
+      "title": "Download XPKeygen from GitHub.",
+      "content": "Download XPKeygen from GitHub. If the product key you have isn't working, there is a tool you can use to generate a new one. However, it'll only work for the 32-bit version of Windows XP (all service packs). [1] X Research source You can download the EXE file from this download link Because this XPKeygen is a key generator, your browser will try to block the download and say it's a virus or ransomware. While many key generators are virus transport vectors , we tested Endermanch's tool and found the alerts to be false positives. To unblock the download in Chrome, you will need to disable Safe Browsing temporarily–be sure to turn it back on as soon as you're finished. To disable it: [2] X Research source Click the three-dot menu in Chrome and select Settings . Click Privacy & Security in the left sidebar. Click Security in the right panel. Select No protection and then Turn Off to confirm. Download the file. If you also get an error, open your Windows Virus & Threat Protection settings, click Protection History, select the most recent entry, and click Allow . Then, download the EXE again. If you're worried about running the program, you can download the EXE file and run it in a virtual machine or a sandbox app like Sandboxie Plus ."
+    },
+    {
+      "title": "Run the key generator.",
+      "content": "Run the key generator. You'll probably want to turn down the volume first, as the generator plays some 8-bit arcade music upon opening, just like in the days of the old internet ."
+    },
+    {
+      "title": "Select the version of Windows XP you're installing.",
+      "content": "Select the version of Windows XP you're installing. The XP versions available are the two most commonly available 32-bit versions of Windows XP, Windows XP VLK and Windows XP VLK (OEM), the latter of which was designed to mimic the version of Windows XP that came installed on computers purchased from manufacturers. According to the developers, the x64 versions are not currently working. [3] X Research source If this is an upgraded OS (for example, you upgraded from Windows 98 to XP), check the \"upgrade\" box."
+    },
+    {
+      "title": "Click Random to generate a random serial number.",
+      "content": "Click Random to generate a random serial number. The product key will be based on the random number you generate. [4] X Research source"
+    },
+    {
+      "title": "Click Generate.",
+      "content": "Click Generate . This generates a product key, the 16-digit alphanumeric code at the bottom. The key you generated should work, but you may want to try generating a few extra just in case. You can now use this product key to activate Windows XP permanently."
+    }
+  ]
+}

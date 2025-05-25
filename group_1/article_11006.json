@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Csm-Support",
+  "title": "What CSM Does, and Who Should Disable It: 2024 Guide",
+  "steps": [
+    {
+      "title": "CSM is used for compatibility with older components.",
+      "content": "CSM is used for compatibility with older components. CSM (which means \"compatibility support module\") simply emulates a BIOS environment so old operating systems, hard drive partitions, and software still work in a UEFI environment. BIOS (Basic Input/Output System) and UEFI (Unified Extensible Firmware Interface) are both firmware, which is embedded software that acts as an interface between the operating system software and the computer hardware. UEFI has replaced BIOS, but they are compatible with one another. [1] X Research source Despite UEFI replacing BIOS, many people colloquially still refer to UEFI as BIOS. [2] X Research source This can be confusing, especially with the advent of Windows 11. Windows 10 has both UEFI and Legacy BIOS mode, but Windows 11 only supports UEFI mode. [3] X Research source"
+    },
+    {
+      "title": "In general, CSM is fine both enabled or disabled.",
+      "content": "In general, CSM is fine both enabled or disabled. Even though CSM is included for compatibility reasons, it's very unlikely that you'll run into something on your computer that requires it to work. As such, it's totally fine to disable CSM. On the other hand, if you're not having any problems with your computer and CSM is enabled, you don't need to disable it. Some users have found that their computer boots slightly faster after disabling CSM. If you disable CSM and your computer doesn't start like it should, simply go back into the UEFI and enable CSM, then restart your computer. It should continue working like normal; disabling it if you need it won't damage your motherboard or computer at all."
+    },
+    {
+      "title": "If you want to upgrade to Windows 11, disable CSM.",
+      "content": "If you want to upgrade to Windows 11, disable CSM. Since Windows 11 only supports UEFI mode, CSM must be disabled before you can upgrade. Windows 10 must also be installed in UEFI mode. (You can switch from Legacy BIOS to UEFI with the MBR2GPT tool found in the Windows\\System32 folder. [4] X Research source )"
+    },
+    {
+      "title": "Restart your computer and open the UEFI at the startup screen.",
+      "content": "Restart your computer and open the UEFI at the startup screen. You'll want to hit the button to open your UEFI when you see your motherboard logo pop up on screen. The button to open the UEFI for the most popular motherboard brands are listed below, but you may want to check your motherboard manual for specifics: ASUS: Delete or F2 ASRock: Delete or F2 EVGA: Delete or F2 Gigabyte: Delete or F2 MSI: Delete"
+    },
+    {
+      "title": "Navigate to the Boot tab.",
+      "content": "Navigate to the Boot tab. Each motherboard manufacturer lays out their UEFI slightly differently, so the exact location will vary."
+    },
+    {
+      "title": "Scroll down to the CSM option.",
+      "content": "Scroll down to the CSM option. You may see CSM and/or Compatibility Support Module ."
+    },
+    {
+      "title": "Enable or disable CSM.",
+      "content": "Enable or disable CSM. For most people, CSM can be enabled or disabled. However, if you're planning on upgrading to Windows 11 and your Windows 10 is installed in UEFI mode, you should turn off CSM. If the option to enable CSM is disabled, you are likely using integrated graphics on an Intel 500 or later chipset motherboard. [5] X Research source The only way to fix this is to switch to a dedicated graphics card."
+    },
+    {
+      "title": "Return to the main UEFI screen and save your settings.",
+      "content": "Return to the main UEFI screen and save your settings. Along the top bar with the various tabs should be a button that says Save & Exit or just Exit . Be sure to save your settings when prompted. [6] X Research source If your computer doesn't start up normally once it restarts, simply go back into the UEFI and enable CSM. There's a good chance that one of your hard drive partitions is formatted as MBR (Master Boot Record), which requires CSM to work."
+    }
+  ]
+}

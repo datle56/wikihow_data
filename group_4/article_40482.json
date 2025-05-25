@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Ssd-Not-Showing-Up",
+  "title": "How to Get an SSD to Show Up",
+  "steps": [
+    {
+      "title": "Open the Disk Management tool.",
+      "content": "Open the Disk Management tool. Press ⊞ Win + R or search “Run” in the Start menu to pull up the Run program. Type diskmgmt.msc and press enter to open the Disk Management tool. [1] X Research source Alternatively, you can right-click the Start menu and select “Disk Management” from the drop-down menu."
+    },
+    {
+      "title": "Right-click the new drive and select New Simple Volume.",
+      "content": "Right-click the new drive and select New Simple Volume . Each disk installed on your PC is displayed in the Disk Management tool. Locate the disk that is not in use (it will be unnamed and empty) and right-click on it. Select New Simple Volume . [2] X Research source Do not mess with the disk where Windows is installed. If you have Windows 11, it’s installed on the drive marked “Disk 0.” For Windows 10, the system is installed on the “Local Disk” partition (almost always the C: drive). What if I don’t see my SSD? Try expanding the disk management window. For some reason, Windows doesn’t automatically expand the Disk Management tool to display all available drives."
+    },
+    {
+      "title": "Complete the partition wizard to format and use your new SSD.",
+      "content": "Complete the partition wizard to format and use your new SSD. A New Simple Volume Wizard tool will pop up. Complete the steps by entering the following information to format your new SSD: [3] X Research source Click Next to start. Keep the Simple Volume size identical to the Maximum Disk Space. For example, on a 10 GB drive, it will say something like “10,020” in the Maximum Disk Space line. You’d keep your simple volume at “10,020.” Assign a drive letter. It doesn’t matter what letter you use. Keep the file system as NTFS and the Allocation Unit Size at Default . Enter a name for the drive (you can call it whatever you’d like.” Keep Perform a quick format checked. Select Next and Finish and your drive will be ready to use."
+    },
+    {
+      "title": "Try changing the disk letter.",
+      "content": "Try changing the disk letter. If the drive still isn’t showing up in your PC, open Disk Management and right-click the drive if you can see it. Then, assign it a new letter. If you don’t see the drive in the Disk Management menu, re-run the Simple Volume tool and give the drive a new letter. This may help your PC recognize the drive. [4] X Research source Sometimes, Windows is just buggy about reading new drives. Giving the drive a new letter can help it recognize the SSD."
+    },
+    {
+      "title": "Enable (or reinstall) the driver for the SSD.",
+      "content": "Enable (or reinstall) the driver for the SSD. Search Device Manager in the Start menu and open the program. Check the arrow next to “Disk Drives” and right-click on the SSD you aren’t seeing on your PC. If you see Enable Device as an option, select that and see if the drive reappears. If “Enable Device” is greyed out, select the option to uninstall the device and restart your PC. Windows will automatically reinstall the drivers for the SSD if you uninstall them and restart the PC. If the drive still doesn’t show up, confirm the drive actually exists in the BIOS."
+    },
+    {
+      "title": "Confirm the cables are connected and the card is installed correctly.",
+      "content": "Confirm the cables are connected and the card is installed correctly. If you have a SATA drive, check the connection where it plugs into the SATA cable. Make sure the pins are aligned correctly on the SATA drive and that they’re inserted all the way. Then, check where the cable connects to the power supply to ensure it is correctly attached. [5] X Research source What if I have an M.2 NVME drive? If you installed your SSD on the motherboard, confirm that you slotted the drive into the motherboard slot at the proper angle. If you haven’t installed the heat shield yet, do that now. Most motherboards won’t read a drive if the heat shield isn’t in place."
+    },
+    {
+      "title": "Test the drive on another computer to diagnose a bad cable.",
+      "content": "Test the drive on another computer to diagnose a bad cable. If you have another PC you can use—even temporarily—try installing the SSD on that PC. If you can get the SSD to appear in the Disk Management tool on that second PC, it’s a sign that your PSU cable is bad. [6] X Research source Alternative solution: If you’ve got an old PSU that you know works for sure, just swap the PSU out on your new build and test the power. What if I don’t have a modular PSU? If you have a power supply unit with built-in cables, your PSU is probably bad. Get a new PSU, and the SSD should work just fine."
+    },
+    {
+      "title": "Swap out the SSD to see if you have a faulty drive.",
+      "content": "Swap out the SSD to see if you have a faulty drive. If you happen to have another SSD that you’ve used successfully in the past, try swapping out the drive that isn’t showing up with the drive that works. If that old SSD shows up in your PC just fine, you have a bum drive. Try returning your SSD. If you just bought the SSD, reach out to whoever you bought it from and explain the situation. Some SSDs are bad when they’re shipped, so they should replace it for free."
+    },
+    {
+      "title": "Update your BIOS to confirm the system can read your SSD.",
+      "content": "Update your BIOS to confirm the system can read your SSD. If you’ve confirmed the SSD and PSU are working just fine but the drive just isn’t showing up in the BIOS, your BIOS probably needs to be updated . Follow your motherboard’s instructions to update it. Typically, you’ll need to flash the BIOS using the buttons on the back of your motherboard. [7] X Research source It’s pretty common to need to update an old BIOS. Motherboards don’t always ship with the most recent copy pre-installed on them."
+    },
+    {
+      "title": "Initialize your drive in computer management.",
+      "content": "Initialize your drive in computer management. In Windows 10, open File Explorer and right-click This PC . Click on Manage to open the Computer Management tool. Select Disk Management under Storage (this is not the same app/screen as “disk management”). Select the missing drive and follow the on-screen prompts to initialize it. [8] X Research source Windows 11: The steps are identical to Windows 10 with one minor adjustment. After you open File Explorer and right click This PC , you must select More Options to find the Manage option. We’re assuming your SSD is showing up in the BIOS here. If you aren’t sure whether your drive is visible in BIOS or not, boot into BIOS and confirm the drive is visible there first."
+    },
+    {
+      "title": "Try changing the drive letter if you have multiple drives.",
+      "content": "Try changing the drive letter if you have multiple drives. If the drive still isn’t showing up in disk management, it’s possible there’s some kind of conflict with an existing drive. In the computer management’s “disk management” tab, right click the drive that’s missing and select Change Drive Letters and Paths . Select a different (unused) letter and restart your PC. [9] X Research source If the drive still isn’t showing up, rescan for it. Type Run in the search bar and press Enter . Type diskmgmt.msc . Select Action and Rescan Disks to pull the drive up. If even this doesn’t work, you must reinstall the drive ."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Standard-Deviation-in-Excel",
+  "title": "How to Calculate Standard Deviation in Microsoft Excel Using Functions",
+  "steps": [
+    {
+      "title": "Enter the values you want to use.",
+      "content": "Enter the values you want to use. Pick a column in which you want to enter your data, then type each data value into individual cells in that column. Using Excel is a great way to organize and analyze your data. For example, if you select column \"A\" as the area in which to enter your data, you might type a number into cell A1 , cell A2 , cell A3 , and so on. If needed, you can move columns in your spreadsheet to organize your data."
+    },
+    {
+      "title": "Note this information about the different functions.",
+      "content": "Note this information about the different functions. There are four functions in Excel for calculating standard deviation. The functions differ in two ways: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source The selected function will either calculate the standard deviation for a sample (using n - 1) or a population (using n), where n is the sample size. The selected function will include or exclude logical values (TRUE and FALSE) and text (numbers represented as text). TRUE is interpreted as a 1, while FALSE is 0."
+    },
+    {
+      "title": "Choose a standard deviation function.",
+      "content": "Choose a standard deviation function. Here are the four options for calculating standard deviation: STDEV.P — Finds the standard deviation of a population. This function doesn’t include logical values or text. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source STDEV.S — Finds the standard deviation of a sample. This function doesn’t include logical values or text. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source STDEVA — Finds the standard deviation of a sample. This function does include logical values or text. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source STDEVPA — Finds the standard deviation of a population. This function does include logical values or text. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source There are also two outdated functions that have been replaced by the above functions. They are still present in Excel for backward compatibility reasons, but may be phased out in future versions. STDEV — This function was replaced by STDEV.S. Finds the standard deviation of a sample. This function doesn’t include logical values or text. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source STDEVP — This function was replaced by STDEV.P. Finds the standard deviation of a population. This function doesn’t include logical values or text. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click a blank cell.",
+      "content": "Click a blank cell. This should be the cell in which you want to display the standard deviation value. Doing so selects the cell."
+    },
+    {
+      "title": "Type in the standard deviation function.",
+      "content": "Type in the standard deviation function. In the cell you selected, enter the standard deviation function you want to use. Here is STDEV.S() as an example: [8] X Research source =STDEV.S()"
+    },
+    {
+      "title": "Add your value range.",
+      "content": "Add your value range. To do so: In between the parentheses, type the letter and number of the cell containing your first data value. Type a colon (:) Type the letter and number of the last cell. For example, if you entered your data in column \"A\" from rows 1 through 10, you would have =STDEV.S(A1:A10) typed here. If you just want to display the standard deviation of the value of a few scattered cells such as A1 , B3 , and C5 , you can type the cell names separated by commas (e.g., =STDEV.S(A1,B3,C5) )."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will prompt Excel to run the formula, displaying the standard deviation of the selected cells in the formula's cell. [9] X Research source If you want to check your work, you can calculate the standard deviation by hand ."
+    }
+  ]
+}

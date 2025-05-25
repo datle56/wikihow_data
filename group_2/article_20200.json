@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Get-Your-Windows-10-Start-Menu-Back",
+  "title": "How to Get Your Windows 10 Start Menu Back",
+  "steps": [
+    {
+      "title": "See if you have any right click options at the Start Menu location.",
+      "content": "See if you have any right click options at the Start Menu location. If you do, select Task Manager. If you can't get to it that way, do the '3 Finger Salute' ( Ctrl + Alt + Delete ). That will bring up several options, one of which is the Task Manager."
+    },
+    {
+      "title": "In Task Manager, go to File and then Run new task.",
+      "content": "In Task Manager , go to File and then Run new task."
+    },
+    {
+      "title": "Type in 'powershell' and make sure that 'Create this task with administrative privileges.'",
+      "content": "Type in 'powershell' and make sure that 'Create this task with administrative privileges.' is marked. This is what you will be seeing."
+    },
+    {
+      "title": "Run the System File Checker.",
+      "content": "Run the System File Checker. Type in (or paste) 'sfc /scannow' after the C:/ prompt. It will run. Depending on your computer, it could be fairly quick or take a little while."
+    },
+    {
+      "title": "Check out the results.",
+      "content": "Check out the results. It may correct the problem there. Read what the screens says. Perhaps, even take a screenshot of it."
+    },
+    {
+      "title": "Restart and see if you have the Start Menu back.",
+      "content": "Restart and see if you have the Start Menu back."
+    },
+    {
+      "title": "If that doesn't work, reinstall the Windows Apps.",
+      "content": "If that doesn't work, reinstall the Windows Apps. While the apps aren't the problem, it does fix the issue."
+    },
+    {
+      "title": "Launch the Task manager, like before, and start another task with administrative privileges.",
+      "content": "Launch the Task manager, like before, and start another task with administrative privileges."
+    },
+    {
+      "title": "Type in 'powershell' and then type (or paste) the following:",
+      "content": "Type in 'powershell' and then type (or paste) the following: Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register \"$($_.InstallLocation)\\AppXManifest.xml\"}"
+    },
+    {
+      "title": "Let it take its course and then restart.",
+      "content": "Let it take its course and then restart. Your Start Menu should be working now."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Trace-an-Image-Using-Inkscape",
+  "title": "2 Simple Ways to Trace an Image or Bitmap With Inkscape",
+  "steps": [
+    {
+      "title": "Import your image into Inkscape.",
+      "content": "Import your image into Inkscape. Click File on the menu bar, and then select Import . Select the image from your device. Silhouettes work best with Inkscape's tracing tool, since the edges are more defined. This works similarly to creating vector outlines ."
+    },
+    {
+      "title": "Select the image.",
+      "content": "Select the image. Click the Selection tool (cursor icon) in the left panel, and then click and drag from one corner of the image to the other. [1] X Research source"
+    },
+    {
+      "title": "Right-click the image and select Trace Bitmap.",
+      "content": "Right-click the image and select Trace Bitmap . This is towards the middle of the menu. A new window will open."
+    },
+    {
+      "title": "Choose between single and multiple scans.",
+      "content": "Choose between single and multiple scans. Select a single scan option if you’d like to create a single path from the image, or a multiple scan option if you’d prefer many overlapping paths. To see the image as you make edits, check the box for Live Preview . Single scan options : Brightness cutoff uses the shade of a pixel to decide whether it should become black or white. The higher the threshold setting, the darker the image will become. Edge detection will create a path based on differences in the brightness of pixels. The threshold settings adjust the darkness of the output. Again, a higher threshold will produce darker output. Color quantization produces a path based on differences in color. The \"number of colors” setting gives you the opportunity to specify how many colors you’d want in your output were it possible to output in color. An algorithm is then used to turn those theoretical colors black or white. Multiple scan options : Brightness steps allows you to specify the total number of scans. Colours uses the number in the “Scans” box to determine how many colors to output. Grays is like colors, but with shades on the grayscale. Extra options : The \"Smooth\" option will apply a Gaussian blur before tracing, and \"Stack scans\" gets rid of holes in path coverage. Check \"Remove background\" to get rid of background, which usually has the lightest color."
+    },
+    {
+      "title": "Click OK to create the paths.",
+      "content": "Click OK to create the paths. The bitmap image will be preserved in the SVG file. If your lines appear too thick or not prominent enough in the preview, you likely selected a trace mode that’s better suited for a different type of image. Inkscape recommends running the tracer tool three times in order to determine which of the three options best suits your personal needs."
+    },
+    {
+      "title": "Delete the previous image.",
+      "content": "Delete the previous image. You should have two images: the original image and the new image with control points underneath it. Use the selection tool to drag the new image away. Double-click the original image, select Edit , and then Delete ."
+    },
+    {
+      "title": "Edit and fine-tune your results.",
+      "content": "Edit and fine-tune your results. Click on the Edit paths by nodes button to the left (or F2) to adjust nodes and curves. You can also crop the image if needed."
+    },
+    {
+      "title": "Import your image into Inkscape.",
+      "content": "Import your image into Inkscape. Click File on the menu bar, and then select Import . Select the image from your device."
+    },
+    {
+      "title": "Open the Layers panel.",
+      "content": "Open the Layers panel. While tracing on a new layer is technically optional, it will help you see what you are doing by giving you the option to play with the opacity settings on your image (or the tracing layer). Click Layer on the menu bar, then select Layers ."
+    },
+    {
+      "title": "Add a new layer.",
+      "content": "Add a new layer. Click the + button to add a new layer. Type a name for the layer (like \"tracing layer\") and switch to Above current for the position. Click Add ."
+    },
+    {
+      "title": "Select a tracing tool.",
+      "content": "Select a tracing tool. There are different tools available to suit different needs. Press the F6 key on your keyboard (or click on the pencil icon on the tool menu) to select the pencil/freehand tool. This tool will allow you to freely draw anywhere on your image. If you’re using a drawing tablet, have a steady hand or not much to trace, this tool may suit your needs. Press Shift+F6 simultaneously (or click on the pen icon on the tool menu) to open the pen/Bezier tool. This tool allows you to click at the ends of lines you want to trace, which will create small, easy-to-manipulate segments. If you have several lines to trace and/or are using a mouse, this tool will give you the most precise results. Double-click at the end of each line to end the path."
+    },
+    {
+      "title": "Using your drawing tablet or mouse, trace every line in your image.",
+      "content": "Using your drawing tablet or mouse, trace every line in your image. If you’re using the pen tool, try using shorter lines instead of a single continuous line. This will make your trace easier to edit, as you won’t have to start a long line all over again if you make a tiny mistake at the end. You can switch between your layers in the layer dialog box. Just double-click on the layer name you want to work with and you’ll be switched to that view. It may help to make your bitmap more (or less) opaque as you draw your paths. With the layer selected in the dialog box, move the slider bar beneath Opacity to see which settings work best for you. Start at 75% and decrease as needed."
+    },
+    {
+      "title": "Open the \"Edit Node\" tool.",
+      "content": "Open the \"Edit Node\" tool. On the tool menu, click the second arrow button from the top (the “edit” arrow) to active edit mode. In this mode, you’ll be able to click and drag nodes for fine-tuning. If you have too many nodes and it’s taking you too long to move them all where they need to be, you can simplify your nodes. This may change the shape of your line just slightly, but it may not be noticeable. Use CTRL + L (Windows) or CMD + L (Mac) to reduce the amount of nodes."
+    },
+    {
+      "title": "View your trace without the bottom layer.",
+      "content": "View your trace without the bottom layer. To make sure you have traced every line you want in your vector image, click on the first layer (the raster image) and reduce the opacity to 0%. If you find any missed lines, return the opacity to the previous setting and fill in those lines."
+    },
+    {
+      "title": "Remove the bottom layer and save your image.",
+      "content": "Remove the bottom layer and save your image. In the Layer panel, click on the first layer (the layer containing the original artwork) and delete it by clicking the subtraction symbol. To save your newly traced image, click File and select Save As ."
+    }
+  ]
+}

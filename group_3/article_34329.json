@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Print-in-C",
+  "title": "2 Easy Ways to Print in C and C++ Programming",
+  "steps": [
+    {
+      "title": "Open a C++ file in your integrated development environment.",
+      "content": "Open a C++ file in your integrated development environment. Most programming is done in an integrated development environment (IDE). There are many IDEs to chose from, including; Netbeans, Microsoft Visual Studio, Eclipse , and Xcode for developing Mac and iOS applications . Open your preferred IDE. Then open an existing C++ file or create a new program."
+    },
+    {
+      "title": "Include the input/output stream class.",
+      "content": "Include the input/output stream class. The \"cout\" object used to output a string is part of the output class stream. Since your program will also likely be using inputs as well as outputs, go ahead and include the input/output stream. Add the following line at the top of your program to do so: [1] X Research source #include <iostream>"
+    },
+    {
+      "title": "Use the standard (std) namespace directive (optional).",
+      "content": "Use the standard (std) namespace directive (optional). In C++, there are a variety of different namespaces that contain different functions, classes, objects, and variables. The \"cout\" object is part of the standard (or \"std\") namespace. You will need to declare this namespace to use the \"cout\" object. If you want, you can use the standard (std) directive to declare this namespace for your entire program. This means that your compiler will use the std namespace by default when no other namespace is specified. To add the standard namespace directive, add the following line below the line that includes your input/output stream: using namespace std; Alternatively, you can declare the standard namespace just for the \"cout\" object. To do so, type using std::cout; instead. This will declare the \"std\" namespace whenever the \"cout\" object is used by default."
+    },
+    {
+      "title": "Initialize the function that will be used to print.",
+      "content": "Initialize the function that will be used to print. To do so, type int <function name>() . Replace \"<function name>\" with the name of the function. Then add an opening bracket (\"{\") on the next line. All code for this function will be added after the opening bracket. If this is a new program, you will need to initialize the main function, which is the starting function for your entire program. Add the following line of code to initialize the main function: int main() . Then add the opening { on the next line."
+    },
+    {
+      "title": "Type cout on the line you want to print.",
+      "content": "Type cout on the line you want to print. The \"cout\" object is the preferred way to print in C++. Enter this on the line you want to print. If you did not declare the \"std\" namespace at the beginning of your program, you can declare it on each line you use the \"cout\" object. To do so, type std::cout each time you use the \"cout\" object."
+    },
+    {
+      "title": "Type << followed what you want to print.",
+      "content": "Type << followed what you want to print. Enter \"<<\" before each item you want to print on the same line as the \"cout\" object. You can print a string (i.e, cout << \"Hello World!\" ), a variable, or both (i.e, cout << \"X is equal to \" << x ). [2] X Research source When printing a string, put the text of your string in quotation marks. When printing a variable, just enter the variable name without quotation marks after \"<<\".. If you want to add a line break after your printed text, add the modifier << endl after text and variables you want to print. The next printed object will be printed on a new line."
+    },
+    {
+      "title": "Add a semi-colon (;) at the end of the line.",
+      "content": "Add a semi-colon ( ; ) at the end of the line. This is how you end each line of code in a function."
+    },
+    {
+      "title": "Add a closing bracket (}) at the end of your function.",
+      "content": "Add a closing bracket ( } ) at the end of your function. Your function begins with an opening bracket. When you have finished the last line of code in your function, enter the closing bracket of your function ( } ) below the last line. When you reach the last line of code in your main function, enter return 0; as the last line of code. This signifies the program has been completed successfully. Then enter the closing bracket after this line. Your program should look something like the following: #include <iostream> using namespace std ; int main () { int x = 25 ; //This specifies that the integer \"x\" is equal to 25. cout << \"X is equal to \" << x ; //This should print \"X is equal to 25.\" return 0 ; }"
+    },
+    {
+      "title": "Open a C++ file in your integrated development environment.",
+      "content": "Open a C++ file in your integrated development environment. Most programming is done in an integrated development environment (IDE). There are many IDEs to chose from, including; Netbeans, Microsoft Visual Studio, Eclipse , and Xcode for developing Mac and iOS applications . Open your preferred IDE. Then open an existing C++ file or create a new program."
+    },
+    {
+      "title": "Include the standard input/output header.",
+      "content": "Include the standard input/output header. The \"printf\" object is typically used in C to write to standard output. While it is typically used in C, it can also be used in C++. To do so, you need to include the standard input/output header. Enter the following line at the top of your program to do so: #include <stdio.h>"
+    },
+    {
+      "title": "Initialize the function that will be used to print.",
+      "content": "Initialize the function that will be used to print. To do so, type int <function name>() . Replace \"<function name>\" with the name of the function. Then add an opening bracket (\"{\") on the next line. All code for this function will be added after the opening bracket. If this is a new program, you will need to initialize the main function, which is the starting function for your entire program. Use the following steps to initialize the main function: [3] X Research source int main() . Then add the opening { on the next line. You can use the \"printf\" object as its own function. To do so, type int printf();"
+    },
+    {
+      "title": "Type printf(); on the line you want to print.",
+      "content": "Type printf(); on the line you want to print. This object stands for \"print formatted.\" It should have a parenthesis at the end of it. The characters, strings, integers, and specifiers you want to print will be placed inside the parenthesis."
+    },
+    {
+      "title": "Enter what you want to print in the proper format in the parenthesis.",
+      "content": "Enter what you want to print in the proper format in the parenthesis. The proper format is \"constant string with any format specifiers\", variable name . Enter any words or phrases you want to print first in quotation marks. This method also requires that you include a specifier. These specify the format in which any variables you want to print will be printed. Then enter a comma (\",\") after the quotation marks and then enter the variable name. The format specifiers you can use are as follows: [4] X Research source %c — Character %s — String %p — Pointer address %i or %d — Signed integer %u — Unsigned integer %o — Unsigned octal %x or %X — Unsigned hexadecimal (lower/upper case) %e or %E — Floating point %g or %G — Shortest representation %a or %A — Hexidecimal Floating Point <li< \\n — Creates a line break after the printed text"
+    },
+    {
+      "title": "Add a closing bracket (}) at the end of your function.",
+      "content": "Add a closing bracket ( } ) at the end of your function. Your function begins with an opening bracket. When you have finished the last line of code in your function, enter the closing bracket of your function (kbd|}) below the last line. [5] X Research source When you reach the last line of code in your main function, enter return 0; as the last line of code. This signifies the program has been completed successfully. Then enter the closing bracket after this line. Your program should look something like the following: #include <stdio.h> int main () { int x = 15 ; // This specifies that the integer \"x\" is equal to 15. printf ( \"X is equal to %d \\n \" , x ); // This should print \"X is equal to 15.\" The \"%d\" specifies the variable is a signed integer, and the \"\\n\" adds a line break after the printed text. return 0 ; }"
+    }
+  ]
+}

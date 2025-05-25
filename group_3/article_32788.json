@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Ping-an-IP-Address",
+  "title": "How to Ping an IP Address + Troubleshooting & FAQ",
+  "steps": [
+    {
+      "title": "Open the Command Prompt or Terminal.",
+      "content": "Open the Command Prompt or Terminal. Every operating system has a command line interface that allows you to run the Ping command. The Ping command operates virtually identically on all systems. If using Windows, you can open Command Prompt, Windows PowerShell, or Terminal (depending on your Windows version). If you're on Windows 10, right-click the Windows icon in your taskbar and click Command Prompt or Windows PowerShell . If you're on Windows 11, right-click the Windows icon in your taskbar and click Terminal . If you're on an older version of Windows, type cmd into the taskbar search bar or Start menu and open Command Prompt . This also works on Windows 10 and 11. If using Mac OS, open the Terminal. Open your Applications folder, and then open the Utilities folder. Select Terminal . If using Linux, open a Terminal window. It is most often found in the Accessories folder in your Applications directory. In Ubuntu and most other Linux distributions, you can use the keyboard shortcut Ctrl + Alt + T to open the Terminal."
+    },
+    {
+      "title": "Enter the Ping command.",
+      "content": "Enter the Ping command. Type ping IP address or ping hostname . A hostname is typically a website address. Replace hostname with the website or server that you want to ping. For example, to ping wikiHow’s main web server, type ping www.wikihow.com . An IP address is a computer’s location on a network, either locally or on the internet. If you know the IP address you want to ping, replace \"IP address\" with it. [1] X Research source For example, to ping the IP address 192.168.1.1, type ping 192.168.1.1 . To have your PC ping itself, type ping 127.0.0.1 ."
+    },
+    {
+      "title": "Press ↵ Enter/⏎ Return to see your ping output.",
+      "content": "Press ↵ Enter / ⏎ Return to see your ping output. The results will be displayed beneath the current command line. See the lower section for how to read the output. [2] X Research source"
+    },
+    {
+      "title": "Open the Network Utility.",
+      "content": "Open the Network Utility. Open your Applications folder and select Utilities. Look for Network Utility. Network Utility is only available in macOS Catalina and earlier. With macOS Big Sur, Network Utility was deprecated."
+    },
+    {
+      "title": "Click on the Ping tab.",
+      "content": "Click on the Ping tab. Specify a hostname or IP Address. A hostname is typically a website address. For example, to ping wikiHow’s main web server, type www.wikihow.com in the field. An IP address is a computer’s location on a network, either locally or on the internet. For example, to ping the IP address 192.168.1.1, type 192.168.1.1 into the field."
+    },
+    {
+      "title": "Set how many pings you want to send.",
+      "content": "Set how many pings you want to send. You can typically get a good measurement with only 4-6 pings. Click Ping when you are ready, and the output will be displayed in the lower part of the window."
+    },
+    {
+      "title": "Read the first line.",
+      "content": "Read the first line. The first line tells you what the command is doing. It will repeat the address you put in and tell you how much data is being sent. For example: Pinging www.wikihow.com [173.203.142.5] with 32 bytes of data:"
+    },
+    {
+      "title": "Read the body of the output.",
+      "content": "Read the body of the output. A successful Ping command will return lines that display how long it took the address to respond. TTL represents the number of hops that occurred during the packet transfer process. The lower the number, the more routers the packet passed through. [3] X Research source [4] X Research source Time is how long in milliseconds the connection took: Reply from 173.203.142.5: bytes=32 time=102ms TTL=48 Reply from 173.203.142.5: bytes=32 time=105ms TTL=48 Reply from 173.203.142.5: bytes=32 time=105ms TTL=48 Reply from 173.203.142.5: bytes=32 time=108ms TTL=48 You may need to press Ctrl + C to stop pinging."
+    },
+    {
+      "title": "Read the summary.",
+      "content": "Read the summary. After the operation is complete, a summary of the results will be displayed. Lost packets mean your connection to the address is unreliable, and data is being lost in the transfer. The summary will also display the average time the connection took: Ping statistics for 173.203.142.5: Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), Approximate round trip times in milli-seconds: Minimum = 102ms, Maximum = 108ms, Average = 105ms"
+    },
+    {
+      "title": "Check your entry.",
+      "content": "Check your entry. One of the common error reports looks similar to Ping request could not find host www.wikihow.com. Please check the name and try again. This usually means that you have misspelled the hostname. Try retyping it to correct any spelling errors. If that doesn’t fix the problem, try another well-known hostname, such as a search engine or news site. If that reports “Unknown host,” then the problem is most likely the address of the domain name server. Ping using the host’s IP address instead of its name (ex., 173.203.142.5). If this is successful, then either the address you are using for the domain name server is incorrect, or it is unreachable or down. [5] X Research source"
+    },
+    {
+      "title": "Check your connection.",
+      "content": "Check your connection. Another error message is sendto: No route to host . This may mean the address of the gateway is incorrect or that the connection from your PC is not up and running. Ping 127.0.0.1: that's your own PC . If this fails, your TCP/IP is not functioning correctly, and your network adapter needs to be reconfigured. [6] X Research source Check your wireless connection or the connection from your PC to your router, especially if it was working previously. Most PC network ports have an indicator light that indicates a good connection and one that blinks as data is transferred. As the ping command transmits packets at about 1 per second, you should be able to see the data light blink. Check that the router has the proper indicator lights (and no faults), including the one that indicates a good connection to your PC. If a fault indicator is on, follow the cable from your PC to the router to make sure it is properly connected, then call your cable or broadband provider if necessary."
+    },
+    {
+      "title": "What does pinging an IP address do?",
+      "content": "What does pinging an IP address do? Ping (named after the submarine echo location) uses the simplest packet type. The response is done by the communication subsystem (TCP/IP) portion of the Operating System. [7] X Research source It does not need any applications to be running, does not access any files, and needs no configuration, and has almost no impact on any other activity. It does require all of the hardware, gateways, routers, firewalls, name servers, and intermediate hosts to be working. If the ping is successful and you cannot access the target host with a browser or other application, it's most likely not your problem."
+    },
+    {
+      "title": "When would you want to use ping?",
+      "content": "When would you want to use ping? Like all diagnostics, it is best to use ping in a working configuration to understand how it is supposed to work. You can ping your PC using \"ping -c5 127.0.0.1\" . When first setting up your PC, changing your network, or if browsing the internet doesn't work, use ping to validate your equipment and configurations."
+    },
+    {
+      "title": "What other options can I use with ping?",
+      "content": "What other options can I use with ping? Your options depend on the implementation. Here are a few: [8] X Research source ping -c <number of packets> <ip address> . On Linux and macOS, this sends the number of packets and then stops. The other way to stop a ping is to press Control + C . This option is convenient for scripts that periodically check network behavior. On Windows, use ping -n instead. ping -t <ip address> . Runs the ping command continuously until you stop it. ping -w <timeout in milliseconds> <ip address> . Specifies how long to wait for a response before the packet is declared to be timed out or lost. Ping with a longer timeout to identify latency problems, for example, ping -w 10000 . ping -s <packet size> <ip address> . Specifies the size of each packet sent (in bytes). This option is not available on Windows. ping -f <ip address> . Flood with packets as fast as possible. This is used to stress test the performance of a network. This option is not available on Windows. ping /? (Windows) or man ping (Mac/Linux). Displays additional ping options, syntax, and help."
+    }
+  ]
+}

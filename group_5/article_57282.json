@@ -1,0 +1,150 @@
+{
+  "url": "https://www.wikihow.com/Make-a-File-Downloadable-from-Your-Website",
+  "title": "How to Make a File Downloadable from Your Website",
+  "steps": [
+    {
+      "title": "Create an HTML page if you don't have one yet.",
+      "content": "Create an HTML page if you don't have one yet. You'll be adding your download link to an HTML web page. If you don't have an existing site, you can create a basic HTML page to test out the download link. See Create a Simple Web Page with HTML for details."
+    },
+    {
+      "title": "Open a folder on your server for both the page and the file.",
+      "content": "Open a folder on your server for both the page and the file. The easiest way to link a file is by placing the file in the same folder as the page's HTML file. Use the control panel file manager or the file browser in your FTP program to navigate to the folder containing the HTML file you'll be adding the link to. Your FTP client should already be configured to connect to your webserver since you've uploaded your site there before. If it isn't, see How to Use FTP for instructions on configuring your FTP client to connect to your server. If your web server has an online control panel, you can access your server files directly through the web management interface. You'll be able to access this when you sign into your site as an administrator. Once you're in the control panel, select the \"File Manager\" option. If you created your website using a website creation tool like WordPress, Weebly, or Wix, see the platform-specific instructions in the methods below."
+    },
+    {
+      "title": "Upload the file you want to create a link to.",
+      "content": "Upload the file you want to create a link to. You can upload pretty much any type of file, from PDF files to ZIP files. Note that some servers may limit the size of the file you are allowed to upload, and large files can eat through your allotted bandwidth pretty quickly. Browsers may block potentially malicious files from being downloaded by your visitors, such as EXE or DLL files. To upload files using your FTP program, drag the file into the folder in the FTP window that you want to upload it to. It will begin uploading immediately. Your upload speeds will typically be much slower than your download speeds, so it may take a while to completely upload the file. If you are using the virtual control panel file manager, click the \"Upload\" button at the top of the window. Browse your computer for the file you want to upload. Large files may take a while to upload to your server."
+    },
+    {
+      "title": "Open the page you want to add your link to in your code editor.",
+      "content": "Open the page you want to add your link to in your code editor. Once the file is uploaded, you'll need to add the link to it on your web page. Open the HTML file that you want to add the link to. You can double-click it in the control panel file manager to open it in the built-in page editor. If you're using an FTP, right-click the HTML file on your server and use \"Open With\" to open it in your code or text editor."
+    },
+    {
+      "title": "Find the spot on the page that you want to add the link.",
+      "content": "Find the spot on the page that you want to add the link. Place your cursor in the spot in the code that you want to insert your download link. This could be in the body of a paragraph, at the bottom of a page, or anywhere else."
+    },
+    {
+      "title": "Add the code for the link.",
+      "content": "Add the code for the link. Enter the following HTML5 code for your download link. This will start the download immediately for users after they click the link. As long as the file to be downloaded is in the same folder as the HTML file, you just need to use the name and extension. If the file is located in another folder, you'll need to include the folder structure. [1] X Research source <!-- Uploaded file in same location as HTML file --> < a href = \"examplefile.pdf\" download > Link text </ a > <!-- Uploaded file in different location than HTML file --> < a href = \"/path/to/file/examplefile2.jpg\" download > Link text </ a > The <a> download attribute does not work in Safari, Internet Explorer, or Opera Mini. Users with these browsers will open the file in a new page and have to save it manually. [2] X Research source"
+    },
+    {
+      "title": "Create a download button instead of a link.",
+      "content": "Create a download button instead of a link. You can use an image instead of text to create the download link. This requires a button image already on your web server. < a href = \"examplefile.pdf\" download > < img src = \"/images/downloadbutton.jpg\" > </ a >"
+    },
+    {
+      "title": "Rename the downloaded file.",
+      "content": "Rename the downloaded file. If you define the <a> download attribute, you can change the name for the file when someone downloads it. This can make it easier for users to identify files that they download from you. < a href = \"083116sal_rep.pdf\" download = \"August 31 2016 Sales Report\" > Download the report </ a >"
+    },
+    {
+      "title": "Save the changes to your HTML file.",
+      "content": "Save the changes to your HTML file. Once you're satisfied with your code, save the changes to your HTML file and reupload it if necessary. You'll be able to see your new download button live on your website."
+    },
+    {
+      "title": "Open your site in the WordPress site editor.",
+      "content": "Open your site in the WordPress site editor. If you use WordPress to manage and publish your website, you can use the built-in tools to add a download link to any of your pages. Log into your WordPress dashboard using the admin account."
+    },
+    {
+      "title": "Place your cursor where you want the link to appear.",
+      "content": "Place your cursor where you want the link to appear. You can put the link in the middle of an existing paragraph or create a new line for it."
+    },
+    {
+      "title": "Click the \"Add Media\" button.",
+      "content": "Click the \"Add Media\" button. You'll find this above the posting tools at the top of the page."
+    },
+    {
+      "title": "Click the \"Upload Files\" tab and then drag the file into the window.",
+      "content": "Click the \"Upload Files\" tab and then drag the file into the window. You can upload a variety of different files, but WordPress may limit the size based on your account type. It may take a little while to upload files, as most connections are slower uploading than downloading."
+    },
+    {
+      "title": "Add a description for the file.",
+      "content": "Add a description for the file. You can enter a description underneath the file in the Add Media window. This will be the text that displays as the download link."
+    },
+    {
+      "title": "Click the \"Insert into post/page\" button.",
+      "content": "Click the \"Insert into post/page\" button. This will insert the download link at the location of your cursor. Note that this will link to an attachment page and not the actual file. This is a limitation of the WordPress software."
+    },
+    {
+      "title": "Open your website in the Weebly editor.",
+      "content": "Open your website in the Weebly editor. Log into the Weebly site and open your web page in the Weebly editor."
+    },
+    {
+      "title": "Select the text or object that you want to turn into a link.",
+      "content": "Select the text or object that you want to turn into a link. You can highlight text in a text field or select an image on your page that you want to turn into the download link for your file."
+    },
+    {
+      "title": "Click the \"Link\" button.",
+      "content": "Click the \"Link\" button. When you have text selected, this looks like a chainlink, and can be found at the top of the text editor. When you have an image selected, click \"Link\" in the image control panel."
+    },
+    {
+      "title": "Select \"File\" and then click \"upload a file.\"",
+      "content": "Select \"File\" and then click \"upload a file.\" This will open the file browser."
+    },
+    {
+      "title": "Select the file you want to make available for download.",
+      "content": "Select the file you want to make available for download. Once you select the file, it will begin uploading. Basic users are limited to files 5 MB and smaller. Premium users have a 100 MB file size limit."
+    },
+    {
+      "title": "Publish your site to see the new link.",
+      "content": "Publish your site to see the new link. After uploading the file, the link will be ready to use. Click the Publish button to push your changes to the live site. Your visitors will now be able to click the link and download the file."
+    },
+    {
+      "title": "Open your website in the Wix editor.",
+      "content": "Open your website in the Wix editor. If you use Wix to create and manage your site, log into the Wix website and load your webpage in the site editor."
+    },
+    {
+      "title": "Select the text or image that you want to turn into a link.",
+      "content": "Select the text or image that you want to turn into a link. You can create links from text on your page or from images."
+    },
+    {
+      "title": "Turn your selection into a link.",
+      "content": "Turn your selection into a link. The process varies a little for text and images: Text - Click the Link button in the Text Settings window. The button looks like a chainlink. This will open the link menu. Image - Select \"A link open\" from the \"When image is clicked\" menu in the Image Settings window. Click \"Add a link\" in the \"What does the link do?\" section. This will open the link menu."
+    },
+    {
+      "title": "Select \"Document\" from the list of link options.",
+      "content": "Select \"Document\" from the list of link options. This will allow you to upload various document files."
+    },
+    {
+      "title": "Click the \"Choose File\" button.",
+      "content": "Click the \"Choose File\" button. This will open the file uploader."
+    },
+    {
+      "title": "Drag the file you want to upload into the window.",
+      "content": "Drag the file you want to upload into the window. You can only upload DOC, PDF, PPT, XLS, and ODT (and their subformats) files. This means you're essentially limited to uploading documents. File sizes are limited to 15 MB."
+    },
+    {
+      "title": "Publish your site.",
+      "content": "Publish your site. Once you've uploaded the file, your link is ready to go. Click the \"Publish\" button in the upper-right corner to save your changes and push them to the live site."
+    },
+    {
+      "title": "Open your site in the GoDaddy site editor.",
+      "content": "Open your site in the GoDaddy site editor. If you used the GoDaddy site builder, log into the GoDaddy website and open your website in the editor."
+    },
+    {
+      "title": "Select the object or text that you want to turn into a link.",
+      "content": "Select the object or text that you want to turn into a link. You can turn any object on your site into a link, as well as any text from your text boxes. If you want to create a download button, click the \"Button\" option from the left menu to insert one."
+    },
+    {
+      "title": "Create a link from your selected object or text.",
+      "content": "Create a link from your selected object or text. If you have an object selected, click the Settings button to open the menu. If you have text selected, click the \"Link\" button in the text formatting tools, which looks like a chainlink."
+    },
+    {
+      "title": "Click the red arrow below \"Link (URL)\" and select \"Upload.\"",
+      "content": "Click the red arrow below \"Link (URL)\" and select \"Upload.\" This will allow you to select the file you want to upload to your website."
+    },
+    {
+      "title": "Click the \"Browse\" button and find the file you want to upload.",
+      "content": "Click the \"Browse\" button and find the file you want to upload. Files are limited to 30 MB in size. You cannot upload HTML, PHP, EXE, DLL and several other potentially dangerous types of files."
+    },
+    {
+      "title": "Click \"Insert\" once the file has uploaded.",
+      "content": "Click \"Insert\" once the file has uploaded. You'll see a checkmark next to the file in the window when it has finished uploading."
+    },
+    {
+      "title": "Click \"Save\" to create the link.",
+      "content": "Click \"Save\" to create the link. Clicking \"Save\" will apply the file to the object or text link you created."
+    },
+    {
+      "title": "Click \"Publish\" to save the changes to your site.",
+      "content": "Click \"Publish\" to save the changes to your site. This will make your new link live, and your visitors will be able to download the linked file. [3] X Research source"
+    }
+  ]
+}

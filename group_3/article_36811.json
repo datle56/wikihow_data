@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Remove-the-Password-from-a-Zip-File-Without-Knowing-the-Password",
+  "title": "Remove the Password from a ZIP File Without the Password",
+  "steps": [
+    {
+      "title": "Understand the risk.",
+      "content": "Understand the risk. You'll need to download a program that can guess the password on the ZIP folder. Before you do this, be aware that this can infect your computer with a virus. Review safe browsing practices and install antivirus software before you continue. Most free trial versions will only crack short passwords. If a program not listed here offers unlimited cracking for free, refrain from downloading it as it may be malware."
+    },
+    {
+      "title": "Expect this process to take a large amount of time.",
+      "content": "Expect this process to take a large amount of time. Most password-cracking programs will take several hours to guess the simplest of passwords; realistically, you can expect this process to take several days to complete. There is no way to routinely guess the password within a few minutes. Any service claiming to do so is most likely malware. [1] X Research source"
+    },
+    {
+      "title": "Close background programs.",
+      "content": "Close background programs. You'll need as much of your computer's processor speed as possible, so close any processing-heavy programs such as Photoshop, video games, audio and video players, and so on. Even with your computer's maximum amount of processing speed allocated to cracking the ZIP folder's password, the process can still take days."
+    },
+    {
+      "title": "Place your ZIP folder on the desktop.",
+      "content": "Place your ZIP folder on the desktop. The desktop is the most-easily accessed location on your computer, so drag the ZIP folder onto the desktop before attempting to crack its password. You can also copy-and-paste the ZIP folder by selecting the folder, pressing Ctrl + C (Windows) or ⌘ Command + C (Mac), going to the desktop, and pressing Ctrl + V or ⌘ Command + V . If the ZIP folder is on a mobile item such as a smartphone or a tablet, transfer the folder onto a computer before proceeding."
+    },
+    {
+      "title": "Understand how this method works.",
+      "content": "Understand how this method works. John the Ripper is a free, command line-based program that can be used to crack passwords. Unfortunately, while it is free, it can be tricky to install and use."
+    },
+    {
+      "title": "Download John the Ripper.",
+      "content": "Download John the Ripper. Go to http://www.openwall.com/john/ in your computer's web browser, then click the John the Ripper 1.8.0-jumbo-1 (Windows binaries, ZIP, 34 MB) link in the \"community enhanced version\" section near the bottom of the page."
+    },
+    {
+      "title": "Extract John the Ripper.",
+      "content": "Extract John the Ripper. Double-click the downloaded ZIP folder, click the Extract tab, click Extract all , click Extract , and wait for the window to open."
+    },
+    {
+      "title": "Install John the Ripper.",
+      "content": "Install John the Ripper. John the Ripper can't be installed like normal programs, but you can install it to your desktop by moving its folder there and then renaming it to \"john\": In the extracted window which opens, click the \"john180j1w\" folder. Press Ctrl + C Open your desktop, then press Ctrl + V . Right-click the folder, then click Rename Type in john and press ↵ Enter ."
+    },
+    {
+      "title": "Place your ZIP folder in the John the Ripper \"run\" folder.",
+      "content": "Place your ZIP folder in the John the Ripper \"run\" folder. Copy the folder by clicking it and pressing Ctrl + C , then open the \"john\" folder, open the \"run\" folder, click a blank space, and press Ctrl + V ."
+    },
+    {
+      "title": "Open Command Prompt.",
+      "content": "Open Command Prompt. This is your computer's command line program: Click Start Type in command prompt Click Command Prompt at the top of the Start window."
+    },
+    {
+      "title": "Change the directory to John the Ripper's \"run\" folder.",
+      "content": "Change the directory to John the Ripper's \"run\" folder. Type in cd desktop/john/run and press ↵ Enter ."
+    },
+    {
+      "title": "Enter the \"run\" command.",
+      "content": "Enter the \"run\" command. Type in zip2john.exe name.zip > name.hash (making sure to replace \"name\" with the name of your ZIP folder) and press ↵ Enter . For a ZIP folder named \"hello\", for example, you'd type zip2john.exe hello.zip > hello.hash here."
+    },
+    {
+      "title": "Define the ZIP folder's hash.",
+      "content": "Define the ZIP folder's hash. Type in name.hash (where \"name\" is the name of your hash file) and press ↵ Enter . At this point, you're ready to begin cracking the password."
+    },
+    {
+      "title": "Begin cracking the password.",
+      "content": "Begin cracking the password. Type in john.exe --pot=name.pot --wordlist=john/run/password.lst name.hash and press ↵ Enter . John the Ripper will begin comparing your ZIP folder's password to its database of passwords. [2] X Research source You'll need to replace \"name\" in both \"name.pot\" and \"name.hash\" with your ZIP folder's name. The \"password.lst\" file contains a list of passwords and their permutations."
+    },
+    {
+      "title": "Prompt the cracked password to display.",
+      "content": "Prompt the cracked password to display. Once the password has been determined, you'll see \"Session complete\" appear at the bottom of Command Prompt. At this point, you can type in type name.pot (again, substitute your folder's name for \"name\") and press ↵ Enter to view the password for the ZIP folder."
+    },
+    {
+      "title": "Understand how this works.",
+      "content": "Understand how this works. Most professional password-cracking software will allow you to crack a file's password if it's under a certain number of characters. In order to crack most files, though, you'll need to purchase the program. The positive side of using these programs is that they are usually user-friendly."
+    },
+    {
+      "title": "Know what to look for.",
+      "content": "Know what to look for. Your selected password cracker should come with a free trial, and it should be able to use brute-force password techniques."
+    },
+    {
+      "title": "Download and install a professional password cracker.",
+      "content": "Download and install a professional password cracker. The following options are recommended, though you will ultimately need to buy the software: [3] X Research source Advanced Archive Password Recovery — https://www.elcomsoft.com/archpr.html ZipKey — https://www.passware.com/kit-standard/freedemo/"
+    },
+    {
+      "title": "Open your password cracker.",
+      "content": "Open your password cracker. Once you've installed your password cracker, open it by clicking or double-clicking its program icon."
+    },
+    {
+      "title": "Select your password-protected ZIP folder.",
+      "content": "Select your password-protected ZIP folder. You'll usually do this by clicking Browse , Open , or Add in the program, selecting the ZIP folder that you want to crack, and clicking Open or Choose . Some password crackers may allow you to click and drag the ZIP folder into the program's window."
+    },
+    {
+      "title": "Choose a password-guessing option.",
+      "content": "Choose a password-guessing option. In most cases, you'll want to select the Brute force option, but you may be able to select Dictionary (or similar) to check a list of words similar to one that you input. The Dictionary method is best used for instances in which you either know part of the password or know the phrase that you used (but not the capitalization or characters)."
+    },
+    {
+      "title": "Start cracking the ZIP password.",
+      "content": "Start cracking the ZIP password. Click the Start or Run button in your application, then wait for the password to finish cracking. As mentioned previously, this process may take days to complete."
+    },
+    {
+      "title": "Review the cracked ZIP password.",
+      "content": "Review the cracked ZIP password. Once the password has been cracked, you should see a notification in the program. You can then use the cracked password to open the ZIP folder."
+    }
+  ]
+}

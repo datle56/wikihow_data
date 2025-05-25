@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Make-a-JavaScript-Image-Rollover",
+  "title": "How to Make a JavaScript Image Rollover",
+  "steps": [
+    {
+      "title": "Prepare two images for the rollover effect.",
+      "content": "Prepare two images for the rollover effect. Select two different images to make a rollover image and save them in the same folder where you will save your HTML file displaying a rollover image."
+    },
+    {
+      "title": "Open any text editor of your choice.",
+      "content": "Open any text editor of your choice. Dreamweaver will be used as the text editor in this article. Otherwise, if your text editor is blank when you open it, you need to enter HTML elements to build a web page."
+    },
+    {
+      "title": "Locate the <head></head> section.",
+      "content": "Locate the <head></head> section. JavaScript code will be inserted within the <head></head> tag. Two JavaScript functions will be created to change the images. The two functions are named MouseRollover and MouseOut in the code below. The image's src property will be used to change the image's source when those two functions are called."
+    },
+    {
+      "title": "Copy the following JavaScript code:",
+      "content": "Copy the following JavaScript code: < script language = \"javascript\" > function MouseRollover ( MyImage ) { MyImage . src = \"MyPicture2.jpg\" ; } function MouseOut ( MyImage ) { MyImage . src = \"MyPicture1.jpg\" ; } < /script>"
+    },
+    {
+      "title": "Paste the JavaScript code in between the <head></head> section onto your text editor.",
+      "content": "Paste the JavaScript code in between the <head></head> section onto your text editor. The MyPicture2.jpg in the function MouseRollover should be replaced by your rollover image's name and the MyPicture1.jpg in the function called MouseOut should be replaced by your original image's name. [1] X Research source"
+    },
+    {
+      "title": "Locate the <body></body> section.",
+      "content": "Locate the <body></body> section. The image tag <image src=”FileName” Alt=”Title” boarder=\"0px\" width=\"650px\" height=\"550px\"/> will be applied to display the rollover image. [2] X Research source In this example, the Alt=”Title” that refers to the image title's name is omitted."
+    },
+    {
+      "title": "Copy the following code:",
+      "content": "Copy the following code: < div align = \"center\" > <!--The rollover image displays here.--> < img src = \"MyPicture1.jpg\" border = \"0px\" width = \"650px\" height = \"550px\" onMouseOver = \"MouseRollover(this)\" onMouseOut = \"MouseOut(this)\" /> </ div >"
+    },
+    {
+      "title": "Paste the code in between the <body></body> section.",
+      "content": "Paste the code in between the <body></body> section. The onmouseover property is added inside the image tag above and will be assigned to call the JavaScript function Image Rollover to change your original image to a new rollover image. Replace MyPicture1.jpg with your original image's name. Moreover, another property called onMouseOut is added in order to change the image back into its original one when you move your mouse away from the rollover image. [3] X Research source"
+    },
+    {
+      "title": "Review the entire code.",
+      "content": "Review the entire code. Your code should look similar to the code below. You can play around with the code from this example and see how things change. <!doctype html> < html > < head > < meta charset = \"utf-8\" > < title > How to Make a JavaScript Image Rollover </ title > <!--JavaScript code goes here.--> < script language = \"javascript\" > function MouseRollover ( MyImage ) { MyImage . src = \"MyPicture2.jpg\" ; } function MouseOut ( MyImage ) { MyImage . src = \"MyPicture1.jpg\" ; } </ script > </ head > < body > < div align = \"center\" > <!--The rollover image displays here.--> < img src = \"MyPicture1.jpg\" boarder = \"0px\" width = \"650px\" height = \"550px\" onMouseOver = \"MouseRollover(this)\" onMouseOut = \"MouseOut(this)\" /> </ div > </ body > </ html >"
+    },
+    {
+      "title": "Click “File” and select “Save.",
+      "content": "Click “File” and select “Save. ”"
+    },
+    {
+      "title": "Enter a name to save your HTML document.",
+      "content": "Enter a name to save your HTML document. “index.html” is used to test the file. Select “Save as type” to HTML documents."
+    },
+    {
+      "title": "Click the “Save” button.",
+      "content": "Click the “Save” button."
+    },
+    {
+      "title": "Preview the finished web page in a browser.",
+      "content": "Preview the finished web page in a browser. Click “File” and then go to “Preview in Browser.” Click “Firefox” or any Web browser being installed in your text editor."
+    }
+  ]
+}

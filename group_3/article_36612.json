@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Remove-Write-Protection-from-a-USB-Drive",
+  "title": "How to Remove Write Protection from a USB Pen Drive",
+  "steps": [
+    {
+      "title": "Find the physical lock switch on the USB drive.",
+      "content": "Find the physical lock switch on the USB drive. It is typically located on the right or left side of the USB. Its location may vary for different USB brands. Check the surface of your USB drive, and you can find it."
+    },
+    {
+      "title": "Turn off the physical lock switch.",
+      "content": "Turn off the physical lock switch. Slide the switch from \"On\" to \"Off.\" This operation will remove the write protection from the USB drive."
+    },
+    {
+      "title": "Check if you succeeded in removing write protection from the USB.",
+      "content": "Check if you succeeded in removing write protection from the USB. Plug the USB back into the PC, and try to edit the files. You can edit the files if the write protection has been removed."
+    },
+    {
+      "title": "Press Windows Key + R.",
+      "content": "Press Windows Key + R . This opens a Run window, which can help you run apps and programs if you type the correct commands."
+    },
+    {
+      "title": "Type diskpart in the Run window and press ↵ Enter.",
+      "content": "Type diskpart in the Run window and press ↵ Enter . This command launches Diskpart.exe. You can also type diskpart in the search box (usually on the taskbar) to launch it."
+    },
+    {
+      "title": "Type list disk in the diskpart window and hit ↵ Enter.",
+      "content": "Type list disk in the diskpart window and hit ↵ Enter . This command lists all the disks connected to your Windows PC, including the USB pen drive."
+    },
+    {
+      "title": "Select your USB drive.",
+      "content": "Select your USB drive. To do this, identify the drive number for your USB drive (you should be able to figure it out based on the size in the \"Size\" column), then type select disk (number) , and press ↵ Enter . For example, if your USB drive is Disk 2, type select disk 2 ."
+    },
+    {
+      "title": "Type attributes disk clear readonly and press ↵ Enter.",
+      "content": "Type attributes disk clear readonly and press ↵ Enter . This command removes the write protection on your USB drive. [1] X Research source The Diskpart application will inform you that the write protection on the USB drive has been cleared. Type exit when you're finished to close Diskpart. If you get an error or removing write protection does not work, try formatting the drive. If it doesn't work, try it on another computer. If you still cannot format the USB drive , it's likely damaged. [2] X Research source"
+    },
+    {
+      "title": "Open File Explorer.",
+      "content": "Open File Explorer. You can click the File Explorer icon in the Start menu or right-click the Start menu and select File Explorer to do so."
+    },
+    {
+      "title": "Right-click your USB drive and select Properties.",
+      "content": "Right-click your USB drive and select Properties . This opens the properties for the pen drive."
+    },
+    {
+      "title": "Remove the checkmark from the \"Read-only\" box and click OK.",
+      "content": "Remove the checkmark from the \"Read-only\" box and click OK . This removes write protection from the USB drive. If removing write protection does not work, try formatting the drive . If it doesn't work, try it on another computer. If you still cannot format the USB drive, it's likely damaged. [3] X Research source"
+    },
+    {
+      "title": "Open the Registry Editor.",
+      "content": "Open the Registry Editor. You can edit the registry to remove write protection on a USB pen drive. To open the editor, type regedit into the Windows search bar and click Registry Editor ."
+    },
+    {
+      "title": "Go to the Control Folder.",
+      "content": "Go to the Control Folder. Here's how to get there: Open the HKEY_LOCAL_MACHINE folder. Click the SYSTEM folder. Click the CurrentControlSet folder. Click the Control folder."
+    },
+    {
+      "title": "Open or create the StorageDevicePolicies folder.",
+      "content": "Open or create the StorageDevicePolicies folder. If you don't see this in the Control folder, right-click a blank area of the right panel and select New > Key . Type StorageDevicePolicies and press Enter ."
+    },
+    {
+      "title": "Create a new DWORD.",
+      "content": "Create a new DWORD. To do this, select the StorageDevicePolicies folder, then right-click the right panel and select New > DWORD . Type WriteProtect and press ↵ Enter ."
+    },
+    {
+      "title": "Double-click WriteProtect.",
+      "content": "Double-click WriteProtect . This opens the \"Edit DWORD\" window."
+    },
+    {
+      "title": "Type a 0 into the \"Value data\" field and click OK.",
+      "content": "Type a 0 into the \"Value data\" field and click OK . The zero will disable write protection on the pen drive. If removing write protection does not work, try formatting the drive . If it doesn't work, try it on another computer. If you still cannot format the USB drive, it's likely damaged. [4] X Research source"
+    },
+    {
+      "title": "Open File Explorer.",
+      "content": "Open File Explorer. Use this method if your USB drive is encrypted by BitLocker . You can easily open File Explorer by right-clicking the Start menu and selecting File Explorer . You will see your USB drive under \"This PC\" in the left panel. If there's a padlock on the drive, you'll know it's locked by BitLocker."
+    },
+    {
+      "title": "Right-click the USB drive and choose Manage BitLocker.",
+      "content": "Right-click the USB drive and choose Manage BitLocker . When you right-click the USB drive, you can see many options. This allows you to turn off the BitLocker."
+    },
+    {
+      "title": "Click Turn off BitLocker.",
+      "content": "Click Turn off BitLocker . This operation disables BitLocker on your USB drive and removes write protection. You will see a notice telling you the operation will take some time."
+    }
+  ]
+}

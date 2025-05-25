@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Open-an-Img-File-on-PC-or-Mac",
+  "title": "How to Open an IMG File on a PC or Mac: 6 Easy Options",
+  "steps": [
+    {
+      "title": "Press ⊞ Win+E.",
+      "content": "Press ⊞ Win + E . This opens the Windows File Explorer. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open the folder that contains the IMG file.",
+      "content": "Open the folder that contains the IMG file. Navigate to the folder containing the file that ends with .img."
+    },
+    {
+      "title": "Right-click the IMG file and select Mount.",
+      "content": "Right-click the IMG file and select Mount . Windows will mount the IMG file as an optical drive. Depending on the IMG, you may see a list of files you can open individually. Some IMG files are not archives of files, but images of filesystems from other devices. In these cases, you may not see a list of files. When you’re finished, unmount the .img file. To do this, scroll down the left panel of the File Explorer, right-click the mounted .img “drive,” then click Eject ."
+    },
+    {
+      "title": "Install ImgBurn for Windows.",
+      "content": "Install ImgBurn for Windows. ImgBurn is a free Windows application used to create disk images and burn them to CD, DVD, and even Blu-Ray. You can also use ImgBurn to create your own IMG files. To download ImgBurn: Go to https://www.imgburn.com and click Download . Under the \"Download\" heading, click the mirror link provided by ImgBurn or MajorGeeks—both are trustworthy sources. When we tested this process, we ran into problems with the downloaded files from other mirrors. Double-click the installer (its name begins with setup ), and click Yes to confirm. Follow the on-screen instructions to install."
+    },
+    {
+      "title": "Double-click the .img file.",
+      "content": "Double-click the .img file. Once you're finished installing the ImgBurn, double-clicking the file will open it in ImgBurn and display its contents without having to mount it as a drive."
+    },
+    {
+      "title": "Install 7-Zip.",
+      "content": "Install 7-Zip. If the IMG file is an archive and not a mountable filesystem, you can essentially \"unzip\" it in 7-Zip to view the files inside. If you don’t have 7-Zip installed, you can download it for free for Windows from https://www.7-zip.org/download.html . Click the Download link for your system architecture ( 32-bit/x86 or 64-bit/x64 ). Double-click the downloaded file and follow the on-screen instructions to install."
+    },
+    {
+      "title": "Right-click the IMG file and select Open with.",
+      "content": "Right-click the IMG file and select Open with . A list of options will appear."
+    },
+    {
+      "title": "Select 7-Zip File Manager.",
+      "content": "Select 7-Zip File Manager . If you don't see it, click Choose another app first, then select it."
+    },
+    {
+      "title": "Browse the files.",
+      "content": "Browse the files. If the IMG file can be browsed, you will see a list of files inside. If you get an error or do not see any files, it is likely the .IMG must be mounted like a drive ."
+    },
+    {
+      "title": "Control",
+      "content": "Control + click the IMG file and select Open with . This will bring up a list of options."
+    },
+    {
+      "title": "Select DiskImageMounter.",
+      "content": "Select DiskImageMounter . If the IMG file can be mounted, this will mount it as a drive and show it on your desktop). It will also open a window that contains the files inside the .img file. [2] X Research source When you’re finished, unmount the .img file. To do this, go to the desktop, then drag the new drive (the .img) to the Eject icon at the bottom of the screen (where the Trash is usually located). If you could not open the IMG file, try opening it in Daemon Tools . If you're using a vintage Mac and downloaded an old game or old software, you can mount IMG files with a tool like Virtual CD/DVD-ROM Utility, which can be downloaded free at https://macintoshgarden.org/apps/virtual-dvd-romcd-utility ."
+    },
+    {
+      "title": "Install Daemon Tools.",
+      "content": "Install Daemon Tools. This tool allows you to mount all types of disk image files, including .IMG files, on your Mac. Some features cost money, but mounting an IMG file is free. [3] X Research source To get the tool: Go to https://disc-tools.com . Click Download under \"Daemon Tools for Mac.\" Double-click the downloaded DMG file. Drag Daemon Tools.app to the Applications folder. [4] X Research source"
+    },
+    {
+      "title": "Open the IMG file in Daemon Tools.",
+      "content": "Open the IMG file in Daemon Tools. Open Daemon Tools from the Applications folder, then drag the IMG file into the app window. You can now browse the contents of the file."
+    },
+    {
+      "title": "Make a directory for the mounted drive.",
+      "content": "Make a directory for the mounted drive. For example, if you want to mount the IMG file at /mnt/MyIMG, type mkdir /mnt/MyIMG ."
+    },
+    {
+      "title": "Enter the directory containing your IMG file.",
+      "content": "Enter the directory containing your IMG file. For example, use cd Downloads if it's in your Downloads folder."
+    },
+    {
+      "title": "Mount the IMG file at the location you created.",
+      "content": "Mount the IMG file at the location you created. To do this, you'll use the mount command: mount -o loop MyIMG.img /mnt/MyIMG Replace MyIMG.img with the name of the .img file you want to open."
+    },
+    {
+      "title": "View the contents of the IMG file.",
+      "content": "View the contents of the IMG file. Now that the IMG file is mounted, you can use the ls command to see what's inside it like any other directory. For example, ls -l /mnt/MyIMG . If the IMG file contains a drive image with multiple partitions, you will need to use kpartx instead. Here's how: Install the kpartx package from your distribution's default package manager. For example, on Ubuntu and other Debian-based Linux distros, use sudo apt install kpartx . Enter the directory containing the .img file. Use kpartx -av MyIMG.img to mount all partitions within the IMG file. This will mount all partitions to /dev/mapper and report the names of each partition (e.g., /dev/mapper/loop1p1 and /dev/mapper/loop1p2)."
+    }
+  ]
+}

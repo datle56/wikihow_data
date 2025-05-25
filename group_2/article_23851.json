@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Insert-Spaces-in-HTML",
+  "title": "How to Insert Spaces in HTML",
+  "steps": [
+    {
+      "title": "Open your HTML code in a text editor.",
+      "content": "Open your HTML code in a text editor. You can use any text editor, such as Notepad for Windows, or TextEdit for macOS, to edit your code. If you press the spacebar multiple times to add extra space between words or characters, you won't see those extra spaces on your webpage—HTML automatically converts multiple spaces into a single space. You can fix this by using non-breaking space characters instead of pressing the spacebar."
+    },
+    {
+      "title": "Type &nbsp; where you want to insert an extra space.",
+      "content": "Type &nbsp; where you want to insert an extra space. Add one non-breaking space character for every space you want to add. Unlike pressing the spacebar multiple times in your HTML code, typing &nbsp; more than once creates as many spaces as there are instances of &nbsp; . For example, let's say you want three spaces between the words \"What will you learn\" and \"today?\" Instead of pressing the spacebar three times, just type &nbsp;&nbsp;&nbsp; between the two segments. Here's an example: <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > </ head > < body > < p > What will you learn &amp; nbsp; &amp; nbsp; &amp; nbsp;today? </ p > </ body > </ html > Basically, &nbsp; just translates to \"one space\" in HTML."
+    },
+    {
+      "title": "Use other spacing characters as shortcuts.",
+      "content": "Use other spacing characters as shortcuts. If you want to insert two spaces, four spaces, or indent the beginning of a line, you don't have to type &nbsp; multiple times: [1] X Research source Two spaces: Type &ensp; Four spaces: Type &emsp;"
+    },
+    {
+      "title": "Open your HTML code.",
+      "content": "Open your HTML code. Another way to add more spaces to your code is to use the HTML <pre> tag. This tag essentially displays the text exactly as you type or paste it, spaces and all. Start by opening your code in a text editor like Notepad for Windows or TextEdit for macOS."
+    },
+    {
+      "title": "Type <pre> </pre> tags in the body of your document.",
+      "content": "Type <pre> </pre> tags in the body of your document. Any text you want to keep preformatted with a particular amount of spaces and/or line breaks will go between these tags: [2] X Research source <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > </ head > < body > < pre > </ pre > </ body > </ html >"
+    },
+    {
+      "title": "Type or paste text exactly as intended between the \"<pre>\" and ''",
+      "content": "Type or paste text exactly as intended between the \"<pre>\" and '' <pre>'' tags. In this example, we're creating three spaces between words, as well as a line break. When pre-formatting text, any spaces between words, as well as line breaks you create by pressing \"Enter\" or \"Return,\" will be displayed on the webpage. [3] X Research source <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > </ head > < body > < pre > What will you learn today? </ pre > </ body > </ html >"
+    },
+    {
+      "title": "Open your HTML code in a text editor.",
+      "content": "Open your HTML code in a text editor. Do you want to add extra space between paragraphs or other elements on the page? Pressing Enter or Return a bunch of times in your code won't do the trick, but adding a line break tag <br> will! Start by opening the HTML code of the page you want to edit."
+    },
+    {
+      "title": "Type <br> on each line you want to make blank.",
+      "content": "Type <br> on each line you want to make blank. For example, if you want to insert just one extra blank horizontal line between two paragraphs, you'd just type one <br> once. But if you wanted to add three line breaks, you could type it three times: [4] X Research source <br><br><br> . In this example, we're adding two lines of extra space between our sentences: <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > </ head > < body > < pre > What will you learn today? </ pre > < br >< br > < p > You will learn a lot! </ p > </ body > </ html >"
+    },
+    {
+      "title": "Open an HTML document.",
+      "content": "Open an HTML document. Let's say you want to indent the beginning a paragraph with some space—let's say 10 pixels. The best way to do this would be to use CSS (Cascading Style Sheets). We'll cover two ways to do this—one lets you indent each paragraph manually, and another indents all paragraphs at once. Start by opening up your HTML document in a text editor."
+    },
+    {
+      "title": "Indent a single paragraph.",
+      "content": "Indent a single paragraph. If we want to indent the paragraph in our example, we can do so by adding the text-indent property to its <p> tag. [5] X Research source In this example, we'll be indenting our paragraph by 10px: <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > </ head > < body > < p style = \"text-indent:10px\" > Welcome to wikiHow, the most trusted how-to site on the internet. wikiHow is where trusted research and expert knowledge come together. </ p > < p > Since 2005, wikiHow has helped billions of people learn how to solve problems large and small. We work with credentialed experts, a team of trained researchers, and a devoted community to create the most reliable, comprehensive and delightful how-to content on the Internet. </ p > </ body > </ html > Since we added the text-indent property to just the first paragraph, that is the only paragraph that will be indented. Read on to learn how to indent all paragraphs on the page the same way instead of just one!"
+    },
+    {
+      "title": "Create a style section for your CSS.",
+      "content": "Create a style section for your CSS. If we want to indent all paragraphs on our page, we can do so by defining the paragraph style in CSS. The style section goes into the head of your HTML code, or on a separate style sheet. Let's add ours to the head, which is between the <head> and </head> tags: <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > < style > </ style > </ head > < body > < p style = \"text-indent:10px\" > Welcome to wikiHow, the most trusted how-to site on the internet. wikiHow is where trusted research and expert knowledge come together. </ p > < p > Since 2005, wikiHow has helped billions of people learn how to solve problems large and small. We work with credentialed experts, a team of trained researchers, and a devoted community to create the most reliable, comprehensive and delightful how-to content on the Internet. </ p > </ body > </ html >"
+    },
+    {
+      "title": "Type the indenting code into the style area.",
+      "content": "Type the indenting code into the style area. So, we want every paragraph to begin with 10px of space, not just one. This means we'll need to create a style for the paragraph tag (<p>) that automatically adds 10px of space to the beginning of the first word in each paragraph. We'll also want to remove the text-indent property from our original example, as it won't be needed anymore. [6] X Research source The property should look like this: <!DOCTYPE html> < html > < head > < title > wikiHow: How-to instructions you can trust. </ title > < style > p { text : indent : 10 px ; </ style > </ head > < body > < p > Welcome to wikiHow, the most trusted how-to site on the internet. wikiHow is where trusted research and expert knowledge come together. </ p > < p > Since 2005, wikiHow has helped billions of people learn how to solve problems large and small. We work with credentialed experts, a team of trained researchers, and a devoted community to create the most reliable, comprehensive and delightful how-to content on the Internet. </ p > </ body > </ html > You can adjust the number of spaces by typing a different number after \"text-indent:\". You can use unites other than pixels to define the size of your indent, such as percentage (i.e. \"text-indent: 15%;\") or measurements (e.g., \"text-indent: 3mm;\")."
+    },
+    {
+      "title": "Type <p> at the beginning of each paragraph.",
+      "content": "Type <p> at the beginning of each paragraph. Since we've added specific instructions to indent the <p> tag, every paragraph on the page will be indented 2.5em. This goes for our existing paragraphs, and any new paragraphs we add to the page. [7] X Research source"
+    }
+  ]
+}

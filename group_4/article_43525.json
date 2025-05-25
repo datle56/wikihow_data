@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Test-With-PHP",
+  "title": "How to Test With PHP",
+  "steps": [
+    {
+      "title": "Make sure you have XAMPP installed.",
+      "content": "Make sure you have XAMPP installed. XAMPP is one of the most popular PHP-testing environments for both Windows and Mac computers. You can download and install XAMPP for free."
+    },
+    {
+      "title": "Close XAMPP if it's running.",
+      "content": "Close XAMPP if it's running. This will allow you to update the \"htdocs\" folder without interfering with existing processes. Skip this step on a Mac."
+    },
+    {
+      "title": "Place your PHP files in the \"htdocs\" folder.",
+      "content": "Place your PHP files in the \"htdocs\" folder. Depending on your operating system, do one of the following: Windows — Open \"This PC\", double-click your hard drive's name, double-click the \"xampp\" folder, double-click the \"htdocs\" folder, and move any necessary PHP files into the folder. Mac — Click the Volumes tab in the XAMPP control panel, click Mount , click Explorer , double-click the \"htdocs\" folder, and move any necessary PHP files into the folder."
+    },
+    {
+      "title": "Open XAMPP.",
+      "content": "Open XAMPP. Click or double-click the XAMPP app icon, which resembles a white \"X\" on an orange background."
+    },
+    {
+      "title": "Start Apache.",
+      "content": "Start Apache. Click Start to the right of the \"Apache\" heading to start your Apache web server. You should see the indicator to the right of \"Apache\" turn green. If you encounter an error and Apache doesn't start, do the following: [1] X Research source Click Config next to the \"Apache\" heading, then click Apache (httpd.conf) in the resulting menu. Find the \"Listen 80\" line and replace \"80\" with \"8080\". Find the \"Server name localhost: 80\" line and replace \"80\" with \"8080\". Press Ctrl + S (Windows) or ⌘ Command + S (Mac) to save your changes, then close the file."
+    },
+    {
+      "title": "Note Apache's second port.",
+      "content": "Note Apache's second port. This is the port to the right of the first port number. If you edited the \"httpd.conf\" file, the second port should be \"8080\"."
+    },
+    {
+      "title": "Open a web browser.",
+      "content": "Open a web browser. You can use any web browser (e.g., Chrome) to test your PHP scripts."
+    },
+    {
+      "title": "Click the address bar.",
+      "content": "Click the address bar. It's at the top of the browser. If there's any text in the address bar, delete it before proceeding."
+    },
+    {
+      "title": "Enter the address of the PHP script you want to check.",
+      "content": "Enter the address of the PHP script you want to check. Type in localhost: and your Apache server's second port number (e.g., 8080 ), then type a slash (/) and enter the name of the PHP document you want to test (e.g., index.php ). For example, to test a script called \"LandingPage\" on port 80, you would type in localhost:80/landingpage.php here. Make sure you include \".php\" at the end of the address."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so will load your PHP script in your browser. If the script is working, you should see the page load without any problems. If your script has errors, they will manifest in a number of different visual ways. Look for elements of your page that failed to load correctly to discern errors."
+    },
+    {
+      "title": "Open your PHP document",
+      "content": "Open your PHP document . You'll use your computer's PHP-editing software (e.g., Notepad++ on Windows or BBEdit on Mac) to do so: Right-click the PHP document (or, on a Mac, click the document and then click File ). Select Open With . Click your PHP-editing program's name."
+    },
+    {
+      "title": "Select your document's contents.",
+      "content": "Select your document's contents. Click once anywhere in the document, then press Ctrl + A (Windows) or ⌘ Command + A (Mac) to select the entire document."
+    },
+    {
+      "title": "Copy the contents.",
+      "content": "Copy the contents. Press either Ctrl + C (Windows) or ⌘ Command + C (Mac) to do so."
+    },
+    {
+      "title": "Open the Online PHP Functions site.",
+      "content": "Open the Online PHP Functions site. Go to http://sandbox.onlinephpfunctions.com/ in your computer's web browser."
+    },
+    {
+      "title": "Paste in your copied code.",
+      "content": "Paste in your copied code. Select the code in the \"Your script\" window, then press either Ctrl + V (Windows) or ⌘ Command + V (Mac) to replace it with your copied code."
+    },
+    {
+      "title": "Select a PHP version.",
+      "content": "Select a PHP version. Click the \"Run on PHP version\" drop-down box below the \"Your script\" window, then click your PHP version number in the drop-down menu. As of October 2018, the most recent version of PHP that is supported by Online PHP Functions is version 7.2.4."
+    },
+    {
+      "title": "Click Execute code.",
+      "content": "Click Execute code . It's below the \"Run on PHP version\" drop-down box. Doing so runs your PHP code and displays the results in the \"Result\" text box below the Execute code button."
+    },
+    {
+      "title": "Review any errors.",
+      "content": "Review any errors. In the \"Result\" text box, you should see your code's appearance. If there are any errors in the code, they will appear in between \"<br \\>\" tags. Each error will be reported as belonging to a specific line (e.g., \"on line 2\"). You can view each line's number by looking on the left side of the \"Your script\" window. Errors will also appear as red-and-white \"X\" icons to the left of the pertinent lines in the \"Your code\" text box."
+    }
+  ]
+}

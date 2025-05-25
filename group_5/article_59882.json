@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-VNC-on-Mac-OS-X",
+  "title": "How to Set up VNC on a Mac and Fix Common Issues",
+  "steps": [
+    {
+      "title": "Open System Settings on the host Mac.",
+      "content": "Open System Settings on the host Mac. macOS has a built-in VNC server that allows people to access a Mac's desktop using a VNC client. To get started, click the Apple menu and select System Settings (or System Preferences on older versions). [1] X Research source Perform these steps on the Mac you want to connect to ."
+    },
+    {
+      "title": "Click Sharing.",
+      "content": "Click Sharing . If prompted, enter the username and password you use to access your Mac."
+    },
+    {
+      "title": "Enable Screen Sharing.",
+      "content": "Enable Screen Sharing . To do this, select Screen Sharing in the left panel, then check the box beside it. If the VNC connections you're accepting are coming from users with the Apple Remote Desktop app, you'll need to select and enable Remote Management instead. Not that most other VNC viewers will not work if Remote Management is enabled, and you cannot enable Screen Sharing and Remote Management at the same time. [2] X Research source"
+    },
+    {
+      "title": "Click the small \"i\" in a circle and select your VNC options.",
+      "content": "Click the small \"i\" in a circle and select your VNC options. Check the box next to VNC viewers may control screen with password , then create a unique password others can use to connect to this Mac. For the Screen Sharing option, which is used by most VNC viewers, this is the only option others can use to connect to this Mac. If you want to allow those who connect with a VNC viewer to also control your Mac's screen, check the box next to \"Anyone may request permission to control screen\" as well."
+    },
+    {
+      "title": "Choose who can access your Mac's desktop.",
+      "content": "Choose who can access your Mac's desktop. If you're using Screen Sharing so non-Mac devices can connect with VNC, select All users from the \"Allow access for\" menu—this allows people to connect via VNC using the password you set. If you're using Remote Management, you can choose Only these users to select specific user accounts that can connect. This option is best if those connecting are using Apple Remote Desktop and have user accounts on this Mac."
+    },
+    {
+      "title": "Click Done.",
+      "content": "Click Done . VNC is now enabled for this Mac. To see the VNC connection address for this Mac, click the small \"I\" in a circle next to Screen Sharing. It should look like vnc://example.address. [3] X Research source"
+    },
+    {
+      "title": "Open a VNC client on another computer.",
+      "content": "Open a VNC client on another computer. If you don't have a VNC viewer, you have many to choose from. On Windows or Linux, try TightVNC Viewer, a free, open-source VNC viewer that makes it easy to connect to a Mac with VNC. [4] X Research source You can also try RealVNC , a VNC Viewer that works on Windows, Mac, Linux, Raspberry Pi , iOS, and Android. The Lite version is free for personal use. [5] X Research source Remote Ripple is another free VNC viewer that works on Windows, Mac, Android, iPhone, and iPad. [6] X Research source"
+    },
+    {
+      "title": "Enter the address of the Mac you want to connect to.",
+      "content": "Enter the address of the Mac you want to connect to. Type vnc:// , followed by the IP address of the computer to which you want to make a connection. If you're on the same network as the Mac you're connecting to, you can replace the IP address with the Mac's hostname (Example: vnc://mymac)."
+    },
+    {
+      "title": "Enter your username and password (if required) and click Connect.",
+      "content": "Enter your username and password (if required) and click Connect . Or, depending on the viewer, you may need to click Connect before entering a username and/or password. Once you're authenticated, you'll see the Mac's desktop."
+    },
+    {
+      "title": "Check the firewall settings on the server Mac.",
+      "content": "Check the firewall settings on the server Mac. TCP port 5900 must be open for a Mac to accept VNC connections. [7] X Research source If it's not open, nobody will be able to connect with their VNC viewer."
+    },
+    {
+      "title": "Enable Screen Sharing instead of Remote Management (or vice-versa).",
+      "content": "Enable Screen Sharing instead of Remote Management (or vice-versa). In most cases, unless the client computer is using Apple Remote Desktop to connect to the host Mac, Screen Sharing should be enabled, and Remote Management should be disabled. The two cannot be enabled at the same time. On the VNC server, go to Apple menu > System Settings > Sharing , remove the checkmark next to \"Remote Management\" if present, and then check the box next to \"Screen Sharing.\" If you set up your connection preferences for Remote Management (allowed users, passwords, etc.), you'll need to set them up again for Screen Sharing. In some cases, your VNC viewer may actually require Remote Management instead of Screen Sharing. In this case, do the opposite—turn off Screen Sharing, then enable Remote Management. [8] X Research source"
+    },
+    {
+      "title": "Make sure the VNC server isn't asleep.",
+      "content": "Make sure the VNC server isn't asleep. If the Mac you're trying to log into is asleep, it cannot accept VNC connections. You can adjust your Mac's sleep settings in System Settings > Battery (MacBooks) or System Settings > Energy Saver (Mac desktops). [9] X Research source"
+    },
+    {
+      "title": "Use a VNC password instead of a user account.",
+      "content": "Use a VNC password instead of a user account. If a user cannot connect to the Mac with their username and password, create a VNC password and use that password to connect instead."
+    }
+  ]
+}

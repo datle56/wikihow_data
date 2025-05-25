@@ -1,0 +1,102 @@
+{
+  "url": "https://www.wikihow.com/Rename-the-User-Folder-on-Windows",
+  "title": "How to Rename the User Folder on Windows",
+  "steps": [
+    {
+      "title": "Back up",
+      "content": "Back up your Windows account. This method involves creating a new Windows user account and deleting your old account. Once you sign in to the new account with your Microsoft account, all your Windows settings and app purchases will sync with the new account. However, it is recommended that you create a backup of your old account and save any important files you want to keep before you begin. You can save all your important files to an external hard drive, flash drive, or you can use a cloud-based service such as OneDrive, Google Drive, or Dropbox. Most apps that are manually installed on Windows (i.e. through a \".exe\" or \".msi\" file) should still be installed on your new account. However, you may need to reenter the license number in order to access them."
+    },
+    {
+      "title": "Create a new local user account.",
+      "content": "Create a new local user account. Make sure you name the new account whatever you want the user folder to be named. Do not sign in to your Microsoft account just yet. Use the following steps to create a new local user account : [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start icon. Click the Settings icon. Click Accounts . Click Family & other users in the menu panel to the left. Click Add someone else to this PC below \"Other users.\" Click I don't have this person's Sign-in information. Click Add new user without a Microsoft account. . Enter a new user name (make sure it's the name you want the user folder to be named). Enter and re-enter the user password and click Next . Select a password hint or security question and click Next ."
+    },
+    {
+      "title": "Make the new account an administrative account.",
+      "content": "Make the new account an administrative account. Use the following steps to make the new account you just created an administrative account. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start icon. Click the Settings icon. Click Accounts . Click Family & other users in the menu panel to the left. Click the account you just created below \"Other users.\" Click Change account type below the account. Click Administrative below \"Account type\" and click Ok ."
+    },
+    {
+      "title": "Sign out of your account.",
+      "content": "Sign out of your account. Use the following steps to sign out of your user account. Click the Windows Start icon. Click your user profile icon. Click Sign Out ."
+    },
+    {
+      "title": "Sign in to your new account.",
+      "content": "Sign in to your new account. Use the following steps to sign in to your new user account. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click and drag up on the sign-in screen. Click your new user profile in the lower-left corner. Enter your user password and press Enter to log in."
+    },
+    {
+      "title": "Delete your old user account.",
+      "content": "Delete your old user account. As long as there is another user with your Microsoft account on your computer, you will not be able to sign in to the new account with your Microsoft account. Use the following steps to delete your old account: [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start icon. Click the Settings icon. Click Accounts . Click Family & other users in the menu panel to the left. Click your old account below \"Other users.\" Click Remove below your account."
+    },
+    {
+      "title": "Sign in with your Microsoft account.",
+      "content": "Sign in with your Microsoft account. Make sure you use the same Microsoft account you used with your old account. When you sign in with your Microsoft account, your software purchases and Windows settings will sync with your new account. You will need to download all your software and apps again, but this is the safest way to change your user folder name and make sure everything still works. Use the following steps to sign in to your Microsoft account: [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start icon. Click the Settings icon. Click Sign in below your user profile name at the top. Enter the email address and password associated with your Microsoft and/or Outlook account and click Next ."
+    },
+    {
+      "title": "Understand the risks.",
+      "content": "Understand the risks. Many applications and settings in Windows 10 rely on the correct name of the user folder in order to access data. Changing the user folder name may render many programs inoperable or render your entire user account unusable. It may be best to avoid this method unless you really know what you are doing. Continue at your own risk."
+    },
+    {
+      "title": "Create a system restore point.",
+      "content": "Create a system restore point. Creating a restore point saves the exact state of your operating system and data. Do this before making any major changes to your system. That way if things go wrong, you can perform a system restore and restore your user profile back to its current state. Use the following steps to create a restore point: [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start icon. Type \"Create a restore point\" and click Create a restore point . Select your Windows installation drive (usually C:) and click Create . Click Configure . Click the radio option next to \"Turn on system protection and click Apply . Click Ok Click the Windows Installation drive and click Create . Type a name for the system restore point and click Create . Click Close ."
+    },
+    {
+      "title": "Back up",
+      "content": "Back up your important data. Just to be safe, you might also want to back up all the important files and data before you begin. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can back up your data using an external hard drive, USB drive, or a cloud service like OneDrive, Google Drive, or Dropbox."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. The Command Prompt has an icon that resembles a black screen with a white text cursor. Use the following steps to open the Command Prompt as an administrator: Click the Windows Start icon. Type \"cmd\" Right-click the Windows Command Prompt icon and click Run as Administrator . Click Yes when prompted."
+    },
+    {
+      "title": "Get the SID value for your user account.",
+      "content": "Get the SID value for your user account. If you have multiple users on your computer, you will need to use the following steps to get the SID value for your user account. Type wmic useraccount list full and press Enter . Find your username next to \"FullName,\" or your user folder name next to \"Name.\" Write down the full number next to \"SID\"."
+    },
+    {
+      "title": "Activate the Administrator account.",
+      "content": "Activate the Administrator account. You can activate the administrator account inside the Administrator Command Prompt. With the Command Prompt window still open type net user Administrator /active:yes and press Enter to activate the Administrator account. [8] X Research source"
+    },
+    {
+      "title": "Sign out of your account.",
+      "content": "Sign out of your account. Use the following steps to sign out of your user account: Click the Windows Start icon. Click your user profile icon. Click Sign Out ."
+    },
+    {
+      "title": "Log in to the Administrative account.",
+      "content": "Log in to the Administrative account. The Administrator account doesn't require a password to sign into it by default. Use the following steps to log in to the Administrative account: Click and drag up on the sign-in screen. Click Administrator in the lower-left corner. Click Sign In ."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator.",
+      "content": "Open the Command Prompt as an administrator. The Command Prompt has an icon that resembles a black screen with a white text cursor. Use the following steps to open the Command Prompt as an administrator: Click the Windows Start icon. Type \"cmd\" Right-click the Windows Command Prompt icon and click Run as Administrator . Click Yes when prompted."
+    },
+    {
+      "title": "Navigate to the user folder.",
+      "content": "Navigate to the user folder. To navigate to the user folder using the Command Prompt, simply type cd c:\\users and press Enter . It should then say \"C:\\Users>\" next to the text prompt."
+    },
+    {
+      "title": "Type ren \"[old folder name]\" \"[new folder name]\" and press ↵ Enter.",
+      "content": "Type ren \"[old folder name]\" \"[new folder name]\" and press ↵ Enter . Replace \"[old folder name]\" with the name of the folder you want to change. Then replace \"[new folder name}\" with the name you want to change it to. This command changes the name of the user folder. If either the older or new folder name has a space in it, you will need to put the folder name in quotation marks (\" \")."
+    },
+    {
+      "title": "Open the Registry Editor as an Administrator.",
+      "content": "Open the Registry Editor as an Administrator. To do so, click the Windows Start icon and type regedit . Then right-click the Registry Editor icon and click Run as Administrator ."
+    },
+    {
+      "title": "Navigate to the ProfileList in Registry Editor.",
+      "content": "Navigate to the ProfileList in Registry Editor. Use the panel to the left to navigate to ProfileList folder. Use the following steps to navigate to the ProfileList folder in Registry Editor: [9] X Research source Expand KEY_LOCAL_MACHINE . Expand SOFTWARE . Expand Microsoft . Expand WindowsNT . Expand Currentversion . Expand ProfileList ."
+    },
+    {
+      "title": "Click the folder with the correct user SID.",
+      "content": "Click the folder with the correct user SID. Match the folder name with the user SID you wrote down in a previous step. Click that folder to open it."
+    },
+    {
+      "title": "Double-click ProfileImagePath.",
+      "content": "Double-click ProfileImagePath . This opens the ProfileImagePath key.<re> https://youtu.be/JyApYaVMBhY?t=48 </re>"
+    },
+    {
+      "title": "Change the value data to match the new folder name and click Ok.",
+      "content": "Change the value data to match the new folder name and click Ok . The space below \"Value data\" displays the path of the user folder. Replace the old folder name at the end of the path with the new folder name and click Ok. Make sure the spelling and capitalization match the new folder name exactly."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Click the Windows Start icon and then click the power icon. Click Restart . Once you restart your computer, you can log back into your account and check the user folder. It should have the name you selected."
+    }
+  ]
+}

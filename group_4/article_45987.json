@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Use-Deluge",
+  "title": "Using Deluge to Download Torrents: Windows, Mac, & Linux",
+  "steps": [
+    {
+      "title": "Windows.",
+      "content": "Windows. While the latest versions of Deluge (2.0 and later) aren't available for Windows, there are still 2 ways you can run the app on your PC: The easiest way is to install an older version—the most recent version available for Windows is 1.3.15, and you can download it from https://ftp.osuosl.org/pub/deluge/windows/?C=M;O=D . Once downloaded, double-click the installer to run it. [1] X Research source When installing Deluge, you might see a security alert from your firewall. If so, choose to allow Deluge to run on your network and click Allow Access when prompted. If you've enabled Windows Subsystem for Linux , you can easily install the latest Linux release of Deluge through Ubuntu. Just launch Ubuntu from the Start menu, then run these commands: sudo add-apt-repository ppa:deluge-team/ppa sudo apt-get update sudo apt-get install deluge"
+    },
+    {
+      "title": "Mac.",
+      "content": "Mac. Just like with Windows, the latest versions of Deluge (2.0 and later) aren't available for macOS. But you can still use Deluge reliably: To use an older version (1.3.15.1), go to https://ftp.osuosl.org/pub/deluge/mac_osx/?C=M;O=D , download the installer, and double-click to install. If you want the most recent release, you can install the Linux version using Homebrew at the command line. [2] X Research source In a Terminal window, run these commands: First, install Homebrew if you haven't already with this command: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh )\" . Then, run this command to install Deluge: brew install --cask deluge"
+    },
+    {
+      "title": "Linux.",
+      "content": "Linux. The best way to install Deluge on Ubuntu or Debian Linux is using apt-get. Run these commands to install the graphical version of Deluge: sudo add-apt-repository ppa:deluge-team/stable sudo apt-get update sudo apt-get install deluge If you'd rather compile Deluge from source code, you can download the source for Ubuntu, Debian, Fedora, OpenSUSE, Arch, or Gentoo from https://dev.deluge-torrent.org/wiki/Download ."
+    },
+    {
+      "title": "Understand the risks.",
+      "content": "Understand the risks. If you're downloading legitimate software or content from a source you trust, downloading torrents is safe and easy. But if you want to download copyrighted games, movies, applications, or other files, you'll need to understand the risks. Torrenting any copyrighted content that you don't already own is illegal. If you get caught, your ISP could issue you a warning. If you incur multiple warnings, you could lose your service. Depending on what you download (and your ISP), you could be served with a copyright infringement notice. It's possible such notices can ultimately result in fines and penalties. Downloading torrents from unknown sources is a surefire way to get malware and viruses. Before downloading torrents, make sure you have solid antivirus and antimalware protection. Using a secure VPN service that doesn't keep activity logs might help you download torrents without getting in trouble. Just make sure to do thorough research on any VPN services before signing up."
+    },
+    {
+      "title": "Find a torrent you want to download.",
+      "content": "Find a torrent you want to download. When browsing for torrents, stick to sites that allow users to rate and review the downloads and/or have ranking systems for users. It's also a good idea to look for files that have a lot of seeders, as more popular files are less likely (but not immune) to be infected with viruses. Sites that require memberships (such as TorrentLeech) are generally safer than open sites . Sites like Pirate Bay are popular and have built-in ranking systems, but can be risky as far as legality and safety are concerned."
+    },
+    {
+      "title": "Download the .torrent file for the file(s).",
+      "content": "Download the .torrent file for the file(s). Before you can download the files you want with Deluge, you'll first need to save the .torrent file to your computer. This file contains the information Deluge needs to download the files you want to your computer."
+    },
+    {
+      "title": "Open Deluge and click Add.",
+      "content": "Open Deluge and click Add . If you're using the Windows or macOS version of Deluge, click +Add at the top-left. If you're using the Linux version, click File and select Add Torrent . If you chose to associate .torrent files with Deluge while installing, you can double-click the downloaded .torrent file to open it in Deluge instantly."
+    },
+    {
+      "title": "Click the File button.",
+      "content": "Click the File button. This tells Deluge that you want to use a .torrent file you've downloaded to your computer."
+    },
+    {
+      "title": "Select the torrent file and click Open.",
+      "content": "Select the torrent file and click Open . This adds the .torrent file to Deluge."
+    },
+    {
+      "title": "Choose a download location.",
+      "content": "Choose a download location. You can customize where the downloaded file(s) will save. Just click the Options tab and select a folder. Your Downloads folder is the default location."
+    },
+    {
+      "title": "Click Add.",
+      "content": "Click Add . This saves your preferences and starts the download. In the main window of Deluge, you will see the Down Speed, which is the rate of download, and the ETA, which means Estimated Time of Arrival. The speed of the download depends on how many seeders there are. You can keep track of the progress by watching the Progress bar. You can pause the download at any time by right-clicking the torrent and selecting Pause ."
+    },
+    {
+      "title": "Seed the file after downloading (optional).",
+      "content": "Seed the file after downloading (optional). Once the download is complete, Deluge will automatically seed the file without you needing to do anything. Torrents are downloadable because of seeders, so seeding is a terrific way to give back to the seeding community. If you'd rather not let people download the file from you on the BitTorrent network, you can stop seeding by right-clicking the file and selecting Pause . Or, you can delete the torrent from Deluge (this won't affect the files you've already downloaded) by right-clicking the torrent and selecting Remove Torrent ."
+    },
+    {
+      "title": "Open the location of the file.",
+      "content": "Open the location of the file. Once your download has finished, you can open your download folder by right-clicking the row of the file and selecting Open Folder. This displays the files you've downloaded. Because torrented files are likely to be large, the files you need may be compressed into archives like Zip and RAR files. You'll need to decompress these files to access the files inside."
+    },
+    {
+      "title": "Click the File menu and select Create Torrent.",
+      "content": "Click the File menu and select Create Torrent . You'll see the File menu at the top-left corner of Deluge on all platforms."
+    },
+    {
+      "title": "Select the file or folder you want to include in your torrent.",
+      "content": "Select the file or folder you want to include in your torrent. Select File to torrent an individual file, such as video or archive, or Folder to share an entire folder. Then, choose the file or folder and select Open to add it. Be incredibly careful when creating a torrent for an entire folder—when you choose a folder, everything in that folder will be available to anyone who can find it."
+    },
+    {
+      "title": "Fill out the torrent info.",
+      "content": "Fill out the torrent info. In the \"Author name\" field, you can add any name you wish to go by. Use the \"Comments\" field to enter a name for the torrent—this is how the torrent will appear to those downloading it. [3] X Research source"
+    },
+    {
+      "title": "Add trackers to your torrent.",
+      "content": "Add trackers to your torrent. Trackers are servers that keep track of each peer who has a particular file available. If you already know which trackers you want to use, great! If not, you can go to https://www.bittorrent.com/ in a browser and copy all the trackers on the page. Go back to Deluge and click the Trackers tab on your new torrent. Click Add and paste the copied trackers into the field. Click OK ."
+    },
+    {
+      "title": "Click the Options tab.",
+      "content": "Click the Options tab. This is where you can set more preferences for your torrent."
+    },
+    {
+      "title": "Choose your options.",
+      "content": "Choose your options. Check the box next to \"Add this torrent to the session\" so you can instantly start seeding the torrent. If you want to flag the torrent as private, you can also check the box next to \"Set Private Flag.\""
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . Now you'll have to choose a location to which you'll save the torrent file."
+    },
+    {
+      "title": "Select a location and click Save.",
+      "content": "Select a location and click Save . This creates a new .torrent file containing all the necessary information others will need to download the file(s) or folder from you. Once you save the file, your torrent will start seeding immediately."
+    },
+    {
+      "title": "Share the .torrent file with your friends.",
+      "content": "Share the .torrent file with your friends. If you want to share a large file with your friends, you can now just attach the .torrent file to an email or message and they'll be able to download it in their preferred torrent client (they don't have to be using Deluge). You can also share the .torrent file on the torrent website of your choice. As long as Deluge remains open on your computer, others will be able to download the torrent from you. If the people who download the files from you choose to seed the files afterwards from their own computers, other people on the web will be able to download the file if any seeders are online—even if you're not."
+    }
+  ]
+}

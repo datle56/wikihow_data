@@ -1,0 +1,142 @@
+{
+  "url": "https://www.wikihow.com/Retrieve-Passwords-in-Windows-XP",
+  "title": "How to Retrieve Passwords in Windows XP",
+  "steps": [
+    {
+      "title": "Log in as an administrator.",
+      "content": "Log in as an administrator. Accounts that have administrative privileges can change any other user’s password. You can do this if you can use the username and password for an administrator's account to log in with admin privileges). [1] X Research source"
+    },
+    {
+      "title": "Open the Start menu and click “Run.”",
+      "content": "Open the Start menu and click “Run.” A text box will appear."
+    },
+    {
+      "title": "Type cmd into the text box and press ↵ Enter.",
+      "content": "Type cmd into the text box and press ↵ Enter . This will open a command prompt window."
+    },
+    {
+      "title": "Type net user [Username]*.",
+      "content": "Type net user [Username]* . For example, net user Wiki * (if “Wiki” is the account that needs a new password). Make sure there is a space between * and the username as shown, then press ↵ Enter ."
+    },
+    {
+      "title": "Type a new password, then press ↵ Enter.",
+      "content": "Type a new password, then press ↵ Enter . You’ll be asked to confirm the password by typing it again. Once the password is confirmed, it can be used to access the account."
+    },
+    {
+      "title": "Insert your Windows XP CD into your CD-ROM drive.",
+      "content": "Insert your Windows XP CD into your CD-ROM drive. This method will only work if you have a bootable Windows XP CD. If it’s an original Windows XP CD then it will be bootable. If it’s a burned CD, it may not boot, but there’s no way to know unless you try."
+    },
+    {
+      "title": "Reboot your computer.",
+      "content": "Reboot your computer. When the computer restarts, you’ll see a message that says “press any key to boot from disk.” Press a key on the keyboard. [2] X Research source If the computer boots up without asking you to press a key, then the Windows XP CD you’re using isn’t bootable. You can borrow Windows XP CD from someone (or have someone burn you a bootable copy). It doesn’t have to be the same CD that came with this version of Windows."
+    },
+    {
+      "title": "Press the R key to “repair” your installation.",
+      "content": "Press the R key to “repair” your installation."
+    },
+    {
+      "title": "Press ⇧ Shift+F10 when the screen says “Installing Devices.”",
+      "content": "Press ⇧ Shift + F10 when the screen says “Installing Devices.” This will open a command prompt."
+    },
+    {
+      "title": "Type NUSRMGR.CPL and then press ↵ Enter.",
+      "content": "Type NUSRMGR.CPL and then press ↵ Enter . This will open the User Account Control Panel, where you will be able to reset any password by selecting a user and adding a new password."
+    },
+    {
+      "title": "Find an existing Administrator username to use if possible.",
+      "content": "Find an existing Administrator username to use if possible. There is no password set by default on the administrator account, so this can work unless someone has already configured a special password for the Administrator account. In some cases, there will be no password assigned yet."
+    },
+    {
+      "title": "If you need a password, assign one to any existing username while in the \"safe mode with command prompt\":",
+      "content": "If you need a password, assign one to any existing username while in the \"safe mode with command prompt\": Restart the computer while tapping the required, special key to activate the startup menu. To find the special key for your computer, try tapping a key rapidly while rebooting. Try Esc or F2 or F8 or F10 and watch for the menu to show up on a black screen (if you don't know that special key). ( Alternatively: unplug the electrical cord of your computer while it is running -- wait about 10 second -- then replug it. Now boot it again, and it will usually display a startup menu to choose normal or safe mode for startup. )"
+    },
+    {
+      "title": "Select “Safe Mode with Command Prompt.”",
+      "content": "Select “Safe Mode with Command Prompt.” Quickly use the ↑ and ↓ keys to highlight your selected choice. You have a limited time to read, choose it and to press ↵ Enter to begin your chosen startup process -- or else it will boot up normally, if so try again."
+    },
+    {
+      "title": "Retrieve a list of all of the users/accounts on the computer.",
+      "content": "Retrieve a list of all of the users/accounts on the computer. Type the magic command: net user at the command prompt, and press ↵ Enter ."
+    },
+    {
+      "title": "Select the username to be assigned the new password.",
+      "content": "Select the username to be assigned the new password. Type, for example, net user Wiki 12345678 where “Wiki” is the existing username needing a password by, for example, typing 12345678 to create your new password you chose ( 12345678 ). Now, press ↵ Enter to continue. Instead of retyping a command you can edit it, to correct it: Use F3 to bring back your last command, and edit it using ← and → cursor keys and the Delete and ← Backspace and type your correction and press ↵ Enter ."
+    },
+    {
+      "title": "Type shutdown –r when you are ready to restart your computer.",
+      "content": "Type shutdown –r when you are ready to restart your computer. The computer will restart normally, and the user whose password you’ve changed will now be able to log in with your newly assigned password."
+    },
+    {
+      "title": "Boot the machine with a “live” version of Linux.",
+      "content": "Boot the machine with a “live” version of Linux. Ubuntu is recommended by experts. [3] X Research source A “live” version allows you to boot into Linux without installing it. Put the disk into your CD Rom drive and restart the computer. When prompted to “press any key to boot from CD,” press any key."
+    },
+    {
+      "title": "Access the live Linux desktop.",
+      "content": "Access the live Linux desktop. Depending on the version of Linux you’re using, you may be prompted to choose a version to use. Choose “Live” or “Try Linux” to access the Linux desktop."
+    },
+    {
+      "title": "Press Ctrl+L.",
+      "content": "Press Ctrl + L . This will open the location bar. [4] X Research source"
+    },
+    {
+      "title": "Type computer:/// and press ↵ Enter.",
+      "content": "Type computer:/// and press ↵ Enter . Make sure you type all 3 slashes (/). A list of hard drives will appear."
+    },
+    {
+      "title": "Mount the Windows drive.",
+      "content": "Mount the Windows drive. Right-click on the hard drive that contains your Windows installation and select “Mount.” If there’s only one hard drive in the machine, it will be the drive that doesn’t say “System Reserved.”"
+    },
+    {
+      "title": "Double-click the Windows drive.",
+      "content": "Double-click the Windows drive. Now look at the top of the screen where you previously typed computer:/// . Write down (or copy) the full path that now appears in that window. You’ll need it in a minute."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the command prompt.",
+      "content": "Press Ctrl + Alt + T to open the command prompt. [5] X Research source You’ll be entering a series of commands into this terminal window, and they are all case sensitive."
+    },
+    {
+      "title": "Enter the Windows drive through the terminal.",
+      "content": "Enter the Windows drive through the terminal. Type cd /path/to/windows/drive where “/path/to/windows/drive” is the full path that you previously wrote down or copied. Press ↵ Enter to continue."
+    },
+    {
+      "title": "Type cd Windows/System32 and press ↵ Enter.",
+      "content": "Type cd Windows/System32 and press ↵ Enter . Do not type a slash, \"/\", in front of the word Windows. The directory names and path is case sensitive here."
+    },
+    {
+      "title": "Install and run the “chntpw” tool.",
+      "content": "Install and run the “chntpw” tool. Type in sudo apt-get install chntpw and press ↵ Enter to install. Once you are returned to the command prompt, type sudo chntpw –u username SAM . Replace the word “username” with the account name of the Windows user whose password you want to erase, and remember that everything is case-sensitive. Press ↵ Enter to show a list of options."
+    },
+    {
+      "title": "Press 1 to clear the user’s password.",
+      "content": "Press 1 to clear the user’s password. Press ↵ Enter , then y to confirm that you want to erase the password."
+    },
+    {
+      "title": "Reboot into Windows.",
+      "content": "Reboot into Windows. Press the “power” icon at the top right of the screen to reboot the computer. Boot into Windows first removing the Linux CD. When the Windows login screen appears, you can now log in to the affected account without a password."
+    },
+    {
+      "title": "Understand the process.",
+      "content": "Understand the process. Use this method if you’re unable to get the user’s password with other methods. This method won’t allow you to find or reset the password, but you can access the user’s files so that their data is not lost. You’ll need administrative access to another Windows computer for this to work. You will be temporarily removing the hard drive from the Windows XP PC and installing it in the second PC. To use this method, you’ll need to have some familiarity with removing a hard drive from a PC as well as putting a hard drive in an external USB hard drive enclosure. If you don’t have an enclosure, you could also put the hard drive in the other PC . If the computer with the missing password is a laptop, the instructions are similar, except you’ll definitely need an external hard drive enclosure to connect a laptop hard drive to a desktop computer (and vice-versa)."
+    },
+    {
+      "title": "Remove the hard drive from the Windows XP computer with the missing password.",
+      "content": "Remove the hard drive from the Windows XP computer with the missing password. With the computer turned off and unplugged, open the case and disconnect the hard drive."
+    },
+    {
+      "title": "Put the hard drive into an external drive enclosure and connect it to the other PC.",
+      "content": "Put the hard drive into an external drive enclosure and connect it to the other PC. Alternatively you could open the second PC and install it."
+    },
+    {
+      "title": "Boot the second PC and log in with its Administrator account.",
+      "content": "Boot the second PC and log in with its Administrator account. Because you’re logged in as an administrator and have the other hard drive connected to the computer, you now have access to everything on the other hard drive."
+    },
+    {
+      "title": "Copy any data you need from the Windows XP hard drive to the second PC.",
+      "content": "Copy any data you need from the Windows XP hard drive to the second PC. Press ⊞ Win + E to open the File Explorer. The second hard drive will show under “Computer” or “This PC,” depending on the version of Windows you are using. Double-click this drive and navigate to the user’s files, which are located in C:\\Windows\\Documents and Settings\\User, where “User” is the name of your user. Press ⊞ Win + E again to open a second instance of the File Explorer, which will make it simple to drag files from your user’s directory to the second computer. You can drag the files anywhere, including a flash drive."
+    },
+    {
+      "title": "Put the drive back into the original computer.",
+      "content": "Put the drive back into the original computer. While you haven’t recovered the password, you’ve copied the user’s files so they haven’t lost any data."
+    }
+  ]
+}

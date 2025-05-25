@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Divide-in-Java-with-Decimals",
+  "title": "How to Divide in Java with Decimals",
+  "steps": [
+    {
+      "title": "Java, like other programming languages, uses integer division by default.",
+      "content": "Java, like other programming languages, uses integer division by default. If dividing two integers results in a remainder, the remainder is discarded, leaving you with a whole integer as the answer. If you need to divide two integers and get a decimal result, you can cast either the numerator or denominator to double before the operation. is performed. In this example, we'll cast a to double so we get a decimal result: int a = 55 ; int b = 25 ; double r = ( double ) a / b // The answer is 2.2."
+    },
+    {
+      "title": "When you're dividing a decimal number by another decimal number, you'll use double division.",
+      "content": "When you're dividing a decimal number by another decimal number, you'll use double division. [2] X Research source Similarly, if one of the two operands is an integer (a non-decimal number), the result will still be a decimal number if the other operand is a double. Here is a simple example of dividing two decimal numbers with double division: double x = 10.5 ; double y = 2.5 ; x / y // the answer is 4.2"
+    },
+    {
+      "title": "If you're working with currency or need the most precise decimal result, use the BigDecimal class.",
+      "content": "If you're working with currency or need the most precise decimal result, use the BigDecimal class. Floating point arithmetic (which is what you're doing with double ) is less precise, as double stores numbers as binary representations of fractions and exponents instead of exact representations (fixed-point numbers). [3] X Research source To ensure you're working with fixed-point numbers, use BigDecimal . In this example, we'll use BigDecimal to divide two numbers for a precise result: BigDecimal bdec = new BigDecimal ( \"706\" ); BigDecimal bdecRes = bdec . divide ( new BigDecimal ( \"20\" )); System . out . println ( \"Divide: \" + bdecRes ); // Divide with MathContext MathContext mc = new MathContext ( 2 , RoundingMode . FLOOR ); BigDecimal bdecMath = bdec . divide ( new BigDecimal ( \"20\" ), mc ); System . out . println ( \"Divide with MathContext: \" + bdecMath ); // the first result will be 45.25, and the second will be 45. When you use BigDecimal, you'll need to specify the RoundingMode for the result, which can be UP (away from zero), DOWN (toward zero), CEILING (toward positive infinity), FLOOR (toward negative infinity), HALF_UP (toward nearest neighbor, or up if both neighbors are equal), HALF_DOWN (toward nearest neighbor, or down if equal), HALF_EVEN (toward nearest neighbor, or to the nearest even neighbor if equal), or UNNECESSARY (result should be exact). [4] X Research source"
+    }
+  ]
+}

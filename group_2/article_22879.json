@@ -1,0 +1,202 @@
+{
+  "url": "https://www.wikihow.com/Host-a-Minecraft-Server",
+  "title": "How to Host a Minecraft Server",
+  "steps": [
+    {
+      "title": "Check which version of Minecraft you are running.",
+      "content": "Check which version of Minecraft you are running. There are two versions of Minecraft - Minecraft: Bedrock Edition and Minecraft: Java Edition. You will need to download the appropriate server software for whichever version of Minecraft you are running. To determine which version of Minecraft you are running, launch Minecraft and check the title screen. If it says \"Java Edition\" below \"Minecraft\" on the title screen, you are running Minecraft: Java Edition. If the title screen just says \"Minecraft\" with no text below it, you are running the Bedrock Edition. The server software for Minecraft: Bedrock Edition is still in it's Alpha testing phase. It may be more buggy than Minecraft: Java Edition. Only players on PC and Mac can connect to Minecraft: Java Edition servers. Players on Windows 10, Android, iPhone, iPad, Xbox One, Nintendo Switch, and PS4 can connect to a Minecraft Bedrock server. Alternatively, you can sign up for a free Minecraft server at Minehut.com. You can also subscribe to Minecraft Realms to host a permanent server."
+    },
+    {
+      "title": "Consider your computer's capabilities.",
+      "content": "Consider your computer's capabilities. If you plan to use your computer as a server for Minecraft, you'll need to have a fast CPU and sufficient RAM to handle the number of people you anticipate logging on to your server to play. You will also need additional resources to run your computer's operating system, and the game itself. The following are the recommended computer specs needed to host a Minecraft server, depending on the number of players connected: [1] X Research source 1-3 Players: 2 GB RAM, Intel Core-Based CPUs or AMD K8-Based CPUs and better, 10 GB empty hard drive space. 3-5 Players: 3 GB RAM, Intel Core-Based CPUs or AMD K8-Based CPUs and better, 18 GB empty hard drive space. 5-7 Players: 6 GB RAM, Intel Nehalem-Based CPUs or AMD K10-Based CPUs and better, 25 GB empty hard drive space. 8+ Players: 8 GB RAM, Intel Nehalem-Based CPUs or AMD K10-Based CPUs at 3.6GHz or higher, 35 GB empty hard drive space with high read/write speeds recommended."
+    },
+    {
+      "title": "Check your Internet connection speed.",
+      "content": "Check your Internet connection speed . You'll need a fast upload and download speed to allow players to interact with one another in real time. The following is the recommended internet connection speeds depending on how many players are connected: 1-3 Players: 6 Mbps upload, 3 Mbps download 3-5 Players: 8 Mbps upload, 4 Mbps download 5-7 Players: 14 Mbps upload, 7 Mbps download 8+ Players: 30 Mbps upload, 15 Mbps download"
+    },
+    {
+      "title": "Be sure to have the most current version of Java on your system.",
+      "content": "Be sure to have the most current version of Java on your system. The software that enables you to use your computer as a Minecraft server requires Java to run. Windows computers do not usually come with Java pre-installed. You can install a current version of Java from https://www.java.com/en/download/manual.jsp . Java is available in 32-bit and 64-bit versions. You can run 32-bit Java on a 64-bit computer , particularly if you're using an older browser that only supports 32-bit Java, but you can't run 64-bit Java on a PC with 32-bit architecture. Macintosh computers, in contrast, usually come with Java pre-installed and update it automatically. If your Mac doesn't have a current version of Java installed, you can get it from the same source as the Windows version."
+    },
+    {
+      "title": "Create a folder",
+      "content": "Create a folder for the server application program. This is the folder that will contain the server software and all the files. You can name it anything you want. It's recommended that you name it something recognizable like \"Minecraft Server\" or similar. You can create it anywhere that is accessible on your computer. Use the following steps to create a new folder: Navigate to the location you want to create the folder in File Explorer on Windows or Finder on Mac. Right-click any blank area and click New Click Folder . Type a name for the folder."
+    },
+    {
+      "title": "Download the right Minecraft server application program.",
+      "content": "Download the right Minecraft server application program. The Minecraft server application program is a Java (.jar) file. Use the following steps to download the Minecraft server application file. Go to https://www.minecraft.net/en-us/download/server Click the green text that says minecraft_server.1.17.1.jar . If your browser says the file can be harmful, click Keep ."
+    },
+    {
+      "title": "Copy the server.jar file to your server folder.",
+      "content": "Copy the server.jar file to your server folder. By default, downloaded files can be found in your Downloads folder on PC and Mac. Locate the \"server.jar\" file and copy or cut it. Then navigate to the server folder you just created and paste the file in the server folder."
+    },
+    {
+      "title": "Create a new start file.",
+      "content": "Create a new start file. The way you ready the file for use is different depending on if you are using Windows or Mac. Windows: Right-click inside your server folder and click New . Click Text document . Name the text document \"start\" Open the text document. Type \"@ECHO OFF\" in the first line (no quotations). Copy and paste \"java -Xmx1024M -Xms1024M -jar server.jar nogui\" into the second line (Without quotes, make sure \"server.jar\" in the command line matches the file name of the .jar file) Type \"pause\" on the third line (no quotations). Click File . Click Save as . Select \"All files\" next to \"Save as type\". Change the \".txt\" extension to \".bat\". Click Save . Mac Open TextEdit Choose \"Make Plain Text\" from the \"Format\" menu. Copy and paste \"#!/bin/bash\" into the first line (without quotes) Copy and paste \"cd \"$(dirname \"$0\")\"\" into the second line (without the first and last quote marks) Copy and paste \"exec java -Xms1G -Xmx1G -jar server.jar nogui\" (without the quotes, make sure \"server.jar\" matches the filename of the server folder.). Save the file in your server folder as \"start.command\" file (change the \".txt\" extension to \".command\"). [2] X Research source"
+    },
+    {
+      "title": "Run the \"start\" file.",
+      "content": "Run the \"start\" file. After you've created a \"start.bat\" file on Windows, and a \"start.command\" file on Mac, run the file to run the \"server.jar\" file. If you receive any errors, make sure you have installed the latest version of Java, and that is the appropriate version for your operating system (i.e. 64-bit, 32-bit). Use the following steps to run the \"start\" file: Windows: Double-click the \"start.bat\" file. Mac: Open the Terminal. Type \"chmod a+x ,\" (including the space, but not the quotes), Drag the .command file into the terminal window. Press the Enter key. Double-click the start.command file."
+    },
+    {
+      "title": "Agree to the End User License Agreement.",
+      "content": "Agree to the End User License Agreement. This is required in order to run the server software. Use the following steps to agree to the end user license agreement: Open \"eula.txt\" in your server folder. Change \"eula=false\" to \"eula=true\" at the end. Click File Click Save ."
+    },
+    {
+      "title": "Open the \"server.properties\" file in NotePad or TextEdit.",
+      "content": "Open the \"server.properties\" file in NotePad or TextEdit. Use the following steps to open the file in NotePad or TextEdit: Right-click the \"server.properties\" file. Click Open with . Click NotePad or TextEdit ."
+    },
+    {
+      "title": "Customize settings for the way you want to play Minecraft.",
+      "content": "Customize settings for the way you want to play Minecraft. Type a value after the \"=\" signs to change the settings. If you don't know what a setting is, leave it as it is. Also locate teh server port number and write it down. Some of the following are server settings you may want to change include the following: gamemode=survival : Change \"survival\" to whatever game mode you want. You can change it to \"survival\", \"creative\", or \"adventure\". difficulty=easy : Change \"easy\" to whatever difficulty you want. You can change it to \"peaceful\", \"easy\", \"normal\", or \"hard\". allow-nether=true : Change \"true\" to \"false\" to turn off the Nether. player-idle-timeout=0 : To kick idle players from the server, change \"0\" to the number of minutes you want to allow a player to remain idle. spawn-monsters=true : To turn off monster spawning, change \"true\" to \"false\". pvp=true : To turn off Player-vs-player, change \"true\" to \"false\". hardcore=false : To enable hardcore mode, change \"false\" to \"true\". enable-command-block=false : To allow command blocks, change \"false\" to \"true\". max-players=20 : Change \"20\" to the maximum number of players you want to allow on your server. server-port=25565 : Only change the port number if you are using Port Forwarding on your router. Make a note of the port number . You will need it later. spawn-npcs=true : To disable the spawning of non-player characters, change \"true\" to \"false\". allow-flight=false : To enable flying, change \"false\" to \"true\". level-name=world : Change \"world\" to whatever you want to name your world. view-distance=10 : To increase the view distance, change \"10\" to a larger number. To lower the view distance, change \"10\" to a lower number. spawn-animals=true : To turn off animal spawning, change \"true\" to \"false\". white-list=false: Change \"false\" to \"true\" if you want to restrict players to those on your whitelist. Then, edit the \"whitelist.json\" file in your server folder, and add your username and the username of each player you want to allow access to your server. Press Enter after each username. generate-structures=true : To turn off random structure spawning, change \"true\" to \"false\". level-seed= : If you have a specific seed number you want to use to generate your world, you can enter it after the \"=\" sign. motd=A Minecraft Server : Change \"A Minecraft server\" to whatever you want as your message of the day."
+    },
+    {
+      "title": "Save your server settings.",
+      "content": "Save your server settings. When you are done editing your server settings, use the following steps to save your file. Click File Click Save ."
+    },
+    {
+      "title": "Determine who has administrator privileges.",
+      "content": "Determine who has administrator privileges. Edit the \"whitelist.json\" file in your server folder to assign privileges. Administrators, or moderators, can issue commands from chat mode while the game is running to add or block players or otherwise change the game. You assign administrator privileges by entering usernames into the Ops or Admin (for older versions of Minecraft) list the same way as for the white list. You'll want to enter your own username to the Ops list, along with the username of someone you trust to assist you."
+    },
+    {
+      "title": "Get your default IP address and IPv4 address.",
+      "content": "Get your default IP address and IPv4 address. You will need to enter this number into your router settings to allow your computer to act as a server. Use the following steps to get your IPv4 address and default gateway address: Windows: Click the Windows Start menu. Type \"CMD\". Click Command Prompt Type \"ipconfig\" and press \"Enter\". Note the number next to \"IPv4 address\" and \"Default Gateway\" Mac Click the Apple icon in the upper-left corner. It's right by Safari in the tabs. Click System Preferences . Click the Network icon. Click the network that is connected in the sidebar to the left. Click Advanced in the lower-right corner. Click TCP/IP Note your IPv4 address, and your router (Default Gateway) address."
+    },
+    {
+      "title": "Enter your default IP address into a web browser.",
+      "content": "Enter your default IP address into a web browser. Your default IP address is listed next to \"Default Gateway\" in the Command Prompt and next to \"Router\" on Mac. This opens your router's user interface. The default IP address is usually something like \"192.168.0.1\", or \"10.0.0.1\" or something similar."
+    },
+    {
+      "title": "Login to your router's user interface.",
+      "content": "Login to your router's user interface. You will need to know the username and password to log in to your router. If you have not changed it, you should be able to find the default username and password by consulting the user's manual or manufacturer's web page for your router. The default username and password may also be listed on a label on the side of your router. Enter the username and password to log in to your router's user interface."
+    },
+    {
+      "title": "Locate your Port Forwarding settings.",
+      "content": "Locate your Port Forwarding settings. Each router's user interface is different. Your Port Forwarding settings may be listed under \"Advanced Settings\" or something similar."
+    },
+    {
+      "title": "Create a new Port Forwarding rule.",
+      "content": "Create a new Port Forwarding rule. Click the option to create a new port forwarding rule. You may be required to provide a name for the server. You can call it \"MinecraftMC\" or something similar. Enter your IPv4 address as the Internal IP address. Use the Minecraft server port number as the starting, ending, internal and external port number. By default, the port number is \"25565\". Select the option to use both TCP and UDP. Click the option to apply your new port forwarding setting. Save your router configuration if needed."
+    },
+    {
+      "title": "Get your external IP address.",
+      "content": "Get your external IP address. In order for your friends to connect to your Minecraft server, you will need to give them your external IP address. Use the following steps to get your external IP address. Go to https://www.whatismyip.com/ Note the number next to \"My Public IPv4 is:\" at the top of the page."
+    },
+    {
+      "title": "Click the \"start\" file in your server folder.",
+      "content": "Click the \"start\" file in your server folder. This starts the server."
+    },
+    {
+      "title": "Open the Minecraft launcher.",
+      "content": "Open the Minecraft launcher. It has an icon that resembles a grass block. Click the Minecraft launcher on your desktop, Windows Start menu, Dock, or Applications folder."
+    },
+    {
+      "title": "Click Play.",
+      "content": "Click Play . It's the green button at the bottom of the launcher. This launches Minecraft."
+    },
+    {
+      "title": "Click Multiplayer.",
+      "content": "Click Multiplayer . It's the second option on the Minecraft title screen."
+    },
+    {
+      "title": "Click Direct Connect.",
+      "content": "Click Direct Connect . It's the second button at the bottom of the screen in the center."
+    },
+    {
+      "title": "Enter your IP address.",
+      "content": "Enter your IP address. Use the space in the center to enter your computer's IP address. To connect to a server hosted on the same computer you are running Minecraft on, enter \"0\" or \"localhost\". If you changed the port number in the \"server.properties\" file, you will need to enter \"localhost:\" followed by the port number. To connect to your Minecraft server from a different computer on the same network, you will need to enter your computer's internal IPv4 address. [3] X Research source To connect to your Minecraft server from a different computer on a different network, you will need to enter your computer's external IP address, which can be found by going to https://www.whatismyip.com/"
+    },
+    {
+      "title": "Click Join Server.",
+      "content": "Click Join Server . This connects you to the server."
+    },
+    {
+      "title": "Create a server folder on your computer.",
+      "content": "Create a server folder on your computer. This is the folder that will contain the server software and all the files. You can name it anything you want. It's recommended that you name it something recognizable like \"Minecraft Server\" or similar. You can create it anywhere that is accessible on your computer. Use the following steps to create a new folder: Navigate to the location you want to create the folder in File Explorer. Right-click any blank area and click New Click Folder . Type a name for the folder."
+    },
+    {
+      "title": "Download the Minecraft Bedrock Edition server software.",
+      "content": "Download the Minecraft Bedrock Edition server software. The server software is available for Windows and Ubuntu. Use the following steps to download the Minecraft server software: Go to https://www.minecraft.net/en-us/download/server/bedrock . Click the checkbox next to \"I agree to the Minecraft End User License Agreement and Privacy Policy\" below your operating system. Click Download ."
+    },
+    {
+      "title": "Extract the downloaded file into your Server folder.",
+      "content": "Extract the downloaded file into your Server folder. The server software is downloaded as a zip file. You need to [ the zip file ] into the Minecraft server folder you just created. You need a program like Winzip, WinRAR, or 7-Zip to extract a zip file. By default, downloaded files can be found in your Downloads folder, or in your web browser. Use the following steps to extract the contents of the zip file to your Minecraft server folder. Double-click the \"bedrock-server-1.14.32.1.zip\" file. Select everything in the zip file. Click Extract to , Extract all , or something similar. Click Browse (if available). Navigate to your Minecraft server file and select it. Click Extract , Ok or something similar."
+    },
+    {
+      "title": "Open the Minecraft server folder.",
+      "content": "Open the Minecraft server folder. After you extract all the files from the downloaded zip file to the Minecraft server folder, navigate to the Minecraft server folder and open it."
+    },
+    {
+      "title": "Open the \"server.properties\" file in Notepad.",
+      "content": "Open the \"server.properties\" file in Notepad. This file contains all the server settings. To open it in Notepad , right-click it and click Open with . Click More apps and select Notepad. The click Ok . This selects NotePad as the default program the file opens in."
+    },
+    {
+      "title": "Change your server settings.",
+      "content": "Change your server settings. You can change your server settings my editing the value after the equal signs for each setting. The allowed values are listed below each listed setting. The Settings are as follows. server-name=Dedicated server : Change \"Dedicated server\" to any name you want to name your server. gamemode=survival : Change \"survival\" to whatever gamemode you want. You can change it to \"survival\", \"creative\", or \"adventure\". difficulty=easy : Change \"easy\" to whatever difficulty you want. You can change it to \"peaceful\", \"easy\", \"normal\", or \"hard\". allow-cheats=false : If you want to allow cheats, change \"false\" to \"true\". max-players=10 : Change \"10\" to whatever the maximum number of players you want to allow to connect to your server. online-mode=true : This requires all connected players to be authenticated through Xbox Live. Change to \"False\" if you want to allow Local Area Network (LAN) players without an Xbox Live account to connect. All non-LAN players will be required to be authenticated through Xbox Live anyway. white-list=false : Change to \"true\" if you want to limit connected players to those listed in the \"whitelist.json\" file. server-port=19132 : Only change the port number if you are using port-forwarding. Note the port number . You will need it later. server-portv6=19133 : Only change the port number if you are using port-forwarding. view-distance=32 : Change \"32\" to a higher number to increase the view distance. Change to a lower number to lower the view distance. tick-distance=4 : This affects how far away from the player world events (i.e. mob spawning, weather effects) can happen. You can change the number to any number between 4 and 12. player-idle-timeout=30 : Change \"30\" to the number of minutes a player is allowed to sit idle until they are kicked from the server. Set to \"0\" to turn off player idle timeout. level-name=Bedrock level : Change \"Bedrock level\" to any name you want to name your world. level-seed= : If you have a specific seed number you want to use to generate your world, you can enter it after the \"=\" sign. default-player-permission-level=member : Change \"member\" to whatever permission level you want to set for players joining the first time. Permissions you can use include: \"visitor\", \"member\", \"operator\". texturepack-required=false : Change \"false\" to \"true\" if you want to force the client to use a specific texture pack. Leave all other settings as is, unless you are an advanced user."
+    },
+    {
+      "title": "Save the \"server.properties\" file.",
+      "content": "Save the \"server.properties\" file. When you are finished setting up your server settings, use the following steps to save the file. Click File . Click Save ."
+    },
+    {
+      "title": "Get your default IP address and IPv4 address.",
+      "content": "Get your default IP address and IPv4 address. You will need to enter this number into your router to allow your computer to act as a server. Use the following steps to get your IPv4 address. Click the Windows Start menu . Type \"CMD\". Click Command Prompt Type \"ipconfig\" and press \"Enter\". Note the number next to \"IPv4 address\" and \"Default Gateway\""
+    },
+    {
+      "title": "Enter your default IP address into a web browser.",
+      "content": "Enter your default IP address into a web browser. Your default IP address is listed next to \"Default Gateway\" in the Command Prompt. This opens your router's user interface. The default IP address is usually something like \"192.168.0.1\", or \"10.0.0.1\" or something similar."
+    },
+    {
+      "title": "Login to your router's user interface.",
+      "content": "Login to your router's user interface. You will need to know the username and password to log in to your router. If you have not changed it, you should be able to find the default username and password by consulting the user's manual or manufacturer's web page for your router. The default username and password may also be listed on a label on the side of your router. Enter the username and password to log in to your router's user interface."
+    },
+    {
+      "title": "Locate your Port Forwarding settings.",
+      "content": "Locate your Port Forwarding settings. Each router's user interface is different. Your Port Forwarding settings may be listed under \"Advanced Settings\" or something similar."
+    },
+    {
+      "title": "Create a new Port Forwarding rule.",
+      "content": "Create a new Port Forwarding rule. Click the option to create a new port forwarding rule. You may be required to provide a name for the server. You can call it \"MinecraftMC\" or something similar. Enter your IPv4 address as the Internal IP address. Use the Minecraft server port number as the starting, ending, internal and external port number. By default, the port number is \"19132\". Select the option to use both TCP and UDP. Click the option to apply your new port forwarding setting. Save your router configuration if needed."
+    },
+    {
+      "title": "Open the \"Bedrock_server.exe\" file.",
+      "content": "Open the \"Bedrock_server.exe\" file. It's in the Minecraft server folder you created and extracted all the files to. Double-click the file to open it. This launches your Minecraft server with the specified settings. If you receive a prompt that says \"Windows protected your PC\", this is because the Minecraft server program is still in Alpha mode. To bypass this alert, click More Info and then click Run anyway . Don't worry. It is built by Microsoft and is completely safe."
+    },
+    {
+      "title": "Get your external IP address.",
+      "content": "Get your external IP address. In order for your friends to connect to your Minecraft server, you will need to give them your external IP address. Use the following steps to get your external IP address. Go to https://www.whatismyip.com/ Note the number next to \"My Public IPv4 is:\" at the top of the page."
+    },
+    {
+      "title": "Open Minecraft.",
+      "content": "Open Minecraft. Minecraft has an icon that resembles a grass block. Click it on your desktop or Windows Start menu to launch Minecraft."
+    },
+    {
+      "title": "Click Play.",
+      "content": "Click Play . It's the first button on the Minecraft title screen."
+    },
+    {
+      "title": "Click Servers.",
+      "content": "Click Servers . It's the third tab at the top of the Play menu."
+    },
+    {
+      "title": "Enter your server name at the top.",
+      "content": "Enter your server name at the top. It's the same name you gave your server at the top of the server.properties file."
+    },
+    {
+      "title": "Enter your external IP address.",
+      "content": "Enter your external IP address. You can find your external IP address by going to https://www.whatismyip.com/ in a web browser. Anyone who wants to connect to your server can use your external IPv4 address to connect to it."
+    },
+    {
+      "title": "Enter your port number.",
+      "content": "Enter your port number. The default port number for most Minecraft servers is 19132. If you are using Port Forwarding, you may have a different IP address."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . This saves your server to your server list."
+    },
+    {
+      "title": "Click your server.",
+      "content": "Click your server. Your server should be listed below \"More Servers\" at the bottom of the servers listed in the \"Servers\" tab. Click your server to connect to it. It may take a while to connect the first time you connect to it."
+    }
+  ]
+}

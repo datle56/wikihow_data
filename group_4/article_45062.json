@@ -1,0 +1,154 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Caps-Lock",
+  "title": "5 Ways to Turn Off or Disable Caps Lock on Any Keyboard",
+  "steps": [
+    {
+      "title": "Press the Caps Lock key again.",
+      "content": "Press the Caps Lock key again. If you turned on Caps Lock by pressing the Caps Lock key (accidentally or otherwise), pressing it a second time will turn off Caps Lock if the key itself is functioning properly. [1] X Research source This can be annoying given Caps Lock's proximity to the ⇧ Shift and Tab ↹ keys, so you may want to disable it entirely. This is possible on Windows and Mac computers."
+    },
+    {
+      "title": "Clean the stuck key",
+      "content": "Clean the stuck key . If the Caps Lock button doesn't turn off when you press it a second time, it might be stuck in a lowered position. Clean it with a can of compressed air , or wipe it carefully with a cotton swab dipped in rubbing alcohol. [2] X Research source Be careful when doing this, as harming the key or its underlying components may void your computer's warranty."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Sometimes restarting your computer will be enough to cancel out a stuck or broken Caps Lock key. To do so: Windows - Open Start , click Power , and click Restart . [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Mac - Open the Apple menu , click Restart... , and click Restart when prompted. [4] X Research source"
+    },
+    {
+      "title": "Press Search + Alt.",
+      "content": "Press Search + Alt . Chromebooks don’t have a dedicated hardware key for toggling Caps Lock. Use this keyboard shortcut to turn off Caps Lock. [5] X Research source"
+    },
+    {
+      "title": "Open the Windows Settings menu.",
+      "content": "Open the Windows Settings menu . You can find it by right-clicking on the Windows icon and selecting Settings. The Shift key can be set as the keyboard shortcut to turn off caps lock."
+    },
+    {
+      "title": "Go to Time & language.",
+      "content": "Go to Time & language . This menu includes categories for your computer’s date, time, language, typing, and speech."
+    },
+    {
+      "title": "Select Language in the menu options.",
+      "content": "Select Language in the menu options. There’s a globe symbol next to “Language.” This will be called “Language & region” on some versions of Windows."
+    },
+    {
+      "title": "Click Spelling, typing, & keyboard settings.",
+      "content": "Click Spelling, typing, & keyboard settings . This will be under “Related settings.” On Windows 11, this will be called “Typing” instead of “Spelling, typing, & keyboard settings.”"
+    },
+    {
+      "title": "Navigate to Typing.",
+      "content": "Navigate to Typing . If you’re using Windows 11, skip this step since you’ll already be in the Typing menu."
+    },
+    {
+      "title": "Click Advanced keyboard settings.",
+      "content": "Click Advanced keyboard settings. This will open a menu with advanced options to change the way keyboard input works on your device."
+    },
+    {
+      "title": "Click Language bar options.",
+      "content": "Click Language bar options . The “Text Services and Input Languages” menu will open."
+    },
+    {
+      "title": "In the “Advanced Key Settings” tab, click Press the SHIFT key.",
+      "content": "In the “Advanced Key Settings” tab, click Press the SHIFT key . This will allow you to use the Shift key to turn off caps lock. [6] X Research source"
+    },
+    {
+      "title": "Back up the Registry.",
+      "content": "Back up the Registry. Incorrectly editing the Registry can permanently damage your computer. Follow our guide on backing up the Registry before starting this method. Here’s a quick overview of the backup process: Click Computer in the Registry Editor’s left side menu. Click File in the top left. Click Export… to open the Export Registry File window. Enter a name for your backup file. Select a save location. Click Save. This will export a copy of the Registry's current settings, values, and other data."
+    },
+    {
+      "title": "Open Start",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen."
+    },
+    {
+      "title": "Type in notepad.",
+      "content": "Type in notepad . This will search your computer for the Notepad program, which is what you'll use to prevent Caps Lock from working on this computer."
+    },
+    {
+      "title": "Click Notepad.",
+      "content": "Click Notepad . It's a blue, notepad-shaped icon at the top of the Start window. A Notepad window will open."
+    },
+    {
+      "title": "Enter the Caps Lock termination code.",
+      "content": "Enter the Caps Lock termination code. The Notepad document that you'll create consists of a heading, an empty line, a line indicating a destination, and the code itself: [7] X Research source Type in Windows Registry Editor Version 5.00 and then press ↵ Enter twice. Type in [HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Keyboard Layout] and press ↵ Enter . Type \"Scancode Map\"=hex:00,00,00,00,00,00,00,00,02,00,00,00,00,00,3a,00,00,00,00,00 into the final line of Notepad."
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . It's in the top-left corner of the Notepad window. Clicking it prompts a drop-down menu."
+    },
+    {
+      "title": "Click Save As….",
+      "content": "Click Save As… . This option is near the bottom of the drop-down menu. A \"Save As\" window will open."
+    },
+    {
+      "title": "Enter the file name.",
+      "content": "Enter the file name. Type disable_caps_lock.reg into the \"File name\" text box that's near the bottom of the window."
+    },
+    {
+      "title": "Click the \"Save as type\" drop-down box.",
+      "content": "Click the \"Save as type\" drop-down box. It's below the \"File name\" text box. Clicking it causes a drop-down menu to appear."
+    },
+    {
+      "title": "Click All Files.",
+      "content": "Click All Files . This option is in the drop-down menu."
+    },
+    {
+      "title": "Select a save location.",
+      "content": "Select a save location. Click an easy-to-get-to folder (e.g., Desktop ) on the left side of the window. Remember the folder that you choose—you'll be opening it in just a minute."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . It's in the bottom-right corner of the window. This will save your file in your selected folder."
+    },
+    {
+      "title": "Install the file.",
+      "content": "Install the file. Go to the folder in which you saved the file (if you selected the Desktop folder, just minimize any open windows), then double-click it to open it and click Yes until you receive a notification that the registry file was successfully merged."
+    },
+    {
+      "title": "Click OK when prompted.",
+      "content": "Click OK when prompted. This will appear on a prompt notifying you that your changes to the registry were successful."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Click Start , click Power , and click Restart in the resulting pop-up menu. Once your computer finishes restarting, you'll notice that your Caps Lock key no longer works."
+    },
+    {
+      "title": "If you want to re-enable the Caps Lock key on Windows, restore the Registry backup you created in Step 1.",
+      "content": "If you want to re-enable the Caps Lock key on Windows, restore the Registry backup you created in Step 1. To restore a Registry backup, you'll click the File tab, click Import… in the drop-down menu, and then select your Registry backup file."
+    },
+    {
+      "title": "Alternatively, you can edit the Registry to re-enable the Caps Lock key.",
+      "content": "Alternatively, you can edit the Registry to re-enable the Caps Lock key. Erase the disable_caps_lock.reg file from the \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Keyboard Layout\" section of the Registry Editor. Then, restart your computer."
+    },
+    {
+      "title": "Open the Apple menu .",
+      "content": "Open the Apple menu . Click the Apple logo in the top-left corner of the screen. A drop-down menu will appear."
+    },
+    {
+      "title": "Click System Preferences….",
+      "content": "Click System Preferences… . It's in the drop-down menu. Doing so opens the System Preferences window."
+    },
+    {
+      "title": "Click Keyboard.",
+      "content": "Click Keyboard . This keyboard-shaped icon is in the System Preferences window. The Keyboard window will open."
+    },
+    {
+      "title": "Click the Keyboard tab.",
+      "content": "Click the Keyboard tab. You'll find this in the top-left corner of the Keyboard window."
+    },
+    {
+      "title": "Click Modifier Keys….",
+      "content": "Click Modifier Keys… . It's in the bottom-right corner of the Keyboard window. A pop-up window will appear."
+    },
+    {
+      "title": "Click the Caps Lock drop-down box.",
+      "content": "Click the Caps Lock drop-down box. You'll find this in the middle of the pop-up window. Doing so prompts a drop-down menu."
+    },
+    {
+      "title": "Click No Action.",
+      "content": "Click No Action . It's in the drop-down menu. If you have a Mac that has a Touch Bar instead of a row of function keys, you might want to click Escape here instead, as doing so will bind the \"Escape\" function to the Caps Lock key."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This blue button is at the bottom of the pop-up window. Doing so will save your changes; your Caps Lock key will now result in no action when pressed. If you notice that you can still activate Caps Lock after doing this, restart your Mac to solidify the changes. You can do so by clicking the Apple menu , clicking Restart… , and clicking Restart when prompted."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Calculate-Stardates",
+  "title": "How to Calculate Stardates",
+  "steps": [
+    {
+      "title": "Understand how long a year is.",
+      "content": "Understand how long a year is. There are 1000 stardate units in one Earth year."
+    },
+    {
+      "title": "Look at how long your year is.",
+      "content": "Look at how long your year is. 365 days normally, 366 for a leap year. This number is called n ."
+    },
+    {
+      "title": "Choose a base date.",
+      "content": "Choose a base date. The base date will determine all of your other calculations. There are two base dates that you can use: 2005 = 58000.00 and 2323 = 00000.00 The standard year (2005 or 2323) is now called b and the stardate year (58000.00 or 00000.00) is called c ."
+    },
+    {
+      "title": "Calculate the \"month number\".",
+      "content": "Calculate the \"month number\". This number shall be called m . Here's a list: January = 0; February = 31. For all other months, add one if it is a leap year. March = 59; April = 90; May = 120; June = 151; July = 181; August = 212; September = 243; October = 273; November = 304; December = 334."
+    },
+    {
+      "title": "Find the day and year.",
+      "content": "Find the day and year. The day in the month is called d , and the year is called y . So, using 2005 as the base date, 23 May 2008 has these values: n = 366; b = 2005; c = 58000.00; m = 121 (120, +1 for leap year); d = 23; y = 2008."
+    },
+    {
+      "title": "Put these values into the formula.",
+      "content": "Put these values into the formula. The stardate formula is this: c + (1000*(y-b)) + ((1000/n)*(m + d -1)) = Stardate. Using the above values, the stardate works out to be 61390.71. Stardates are usually quoted to two decimal places."
+    },
+    {
+      "title": "Know the base date that has been used.",
+      "content": "Know the base date that has been used. As an example, lets look at the stardate from the last method, 61390.71. The base date is 2005 = 58000.00"
+    },
+    {
+      "title": "To calculate the year, look at the thousands (and above) digits.",
+      "content": "To calculate the year, look at the thousands (and above) digits. Ignore the hundreds and tens (and units and decimals). In this example, you get 61000."
+    },
+    {
+      "title": "From this number, subtract the stardate base date, divide by 1000, and then add the common base date.",
+      "content": "From this number, subtract the stardate base date, divide by 1000, and then add the common base date. 61000-58000 = 3000. 3000/1000 = 3. 2005 + 3 = 2008. This is the year."
+    },
+    {
+      "title": "Determine if it's a leap year.",
+      "content": "Determine if it's a leap year. A year that divides by four but not 100 is a leap year. A year that divides by four and 100 but not 400 is not a leap year. A year that divides by four, 100 and 400 (e.g. 2000) is a leap year. 2008 will divide by four but not 100, so it is a leap year."
+    },
+    {
+      "title": "To calculate month and day, look at the hundreds digit, and the lower digits.",
+      "content": "To calculate month and day, look at the hundreds digit, and the lower digits. Ignore the thousands and anything higher. You get 390.71."
+    },
+    {
+      "title": "Multiply by 365 (366 for leap years).",
+      "content": "Multiply by 365 (366 for leap years). When you multiply 390.71 by 366, you get 142,999.86."
+    },
+    {
+      "title": "Divide by a thousand, then round to the nearest whole number.",
+      "content": "Divide by a thousand, then round to the nearest whole number. 142,999.86/1000 = 142.99986. Round up to 143."
+    },
+    {
+      "title": "Add one.",
+      "content": "Add one. You get 144."
+    },
+    {
+      "title": "Determine the largest month number that can be subtracted from this number.",
+      "content": "Determine the largest month number that can be subtracted from this number. This number will be the month. Remember to add one to the month number if it's a leap year (and after February). The largest month number that goes into 144 is 121, so the month is May."
+    },
+    {
+      "title": "Subtract the month number to get the date.",
+      "content": "Subtract the month number to get the date. 144-121 = 23. So your date is 23 May 2008. That's correct, it's the day you started with."
+    }
+  ]
+}

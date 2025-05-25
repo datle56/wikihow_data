@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Add-and-Remove-a-Program-Icon-From-the-Dock-of-a-Mac-Computer",
+  "title": "3 Ways to Add & Remove Apps from a Mac's Dock",
+  "steps": [
+    {
+      "title": "Navigate to the program you want to add to the Dock.",
+      "content": "Navigate to the program you want to add to the Dock. Open the folder that contains the program. You can also add a folder or document. If you're not sure where it is, search for the name using Spotlight (the magnifying glass in the top right corner), or the search bar in the top right of any Finder folder."
+    },
+    {
+      "title": "Drag the program icon to the left side of the Dock.",
+      "content": "Drag the program icon to the left side of the Dock. Your Dock has a small dividing line. Programs can only go on the left side of this line, while folders and documents go on the right. If your Dock is arranged vertically, programs go above the line, and documents go below it."
+    },
+    {
+      "title": "Drop the file onto the Dock.",
+      "content": "Drop the file onto the Dock. Hover the icon over the Dock until the two nearby icons move apart to make room for it. Release the mouse button to drop the icon onto your Dock."
+    },
+    {
+      "title": "Add icons using Launchpad.",
+      "content": "Add icons using Launchpad. To see all your applications at once, open Launchpad in the Applications folder. You should see a grid of all your application icons, which you can drag onto your Dock."
+    },
+    {
+      "title": "Quit the program.",
+      "content": "Quit the program. All programs will appear on the Dock while they are open. Quit the application first so you can tell when you've successfully removed it from the Dock. A program is open if it has a small dot next to the Dock icon, even if no windows are open. Right-click the icon (or hold Control and click}) and select \"Quit\" or \"Force Quit\" to close the program. If you've already tried removing a program from the Dock but ran into problems, check out these helpful troubleshooting tips ."
+    },
+    {
+      "title": "Drag the icon off the Dock and across the screen.",
+      "content": "Drag the icon off the Dock and across the screen. Click and hold the program icon on your Dock. Drag the icon at least a third of the way across the screen, away from the Dock."
+    },
+    {
+      "title": "Wait a couple of seconds.",
+      "content": "Wait a couple of seconds. Don't release the mouse button right away, or the program will just jump back to the Dock. Wait until the program icon turns transparent. (You might see other visual indicators on some versions of OS X, such as the word \"Remove\" or a little cloud appearing over the icon.) If nothing happens to the icon, move it farther from the Dock."
+    },
+    {
+      "title": "Release the mouse button.",
+      "content": "Release the mouse button. An animation resembling a poof of smoke will indicate that the program icon has been removed from the Dock."
+    },
+    {
+      "title": "Use the right-click menu instead.",
+      "content": "Use the right-click menu instead. You can also use a drop down menu to remove an item from the Dock: Right-click the icon (or hold down Control and click). Hover over \"Options.\" Select \"Remove from Dock.\" If the Options sub-menu says \"Keep in Dock\" as well, the program is open. Click \"Keep in Dock\" to uncheck that option, and the program will disappear from the Dock once you close it."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. This may fix the problem if the application is failing to quit properly. There are many issues this won't fix, but it's an easy option that's worth trying first."
+    },
+    {
+      "title": "Look for the program in Activity Monitor.",
+      "content": "Look for the program in Activity Monitor. If you can add and remove most programs, but one of them won't leave your Dock, it's probably \"open\" — even if it doesn't look like it. If restarting didn't solve the problem, try this: Go to Applications → Utilities and open Activity Monitor. Search the list for a process with the name of the application you are trying to remove from the Dock. Click that name, then click the \"X\" button at the top of the window to quit that process. Repeat the process for all other processes with a similar name."
+    },
+    {
+      "title": "Check parental controls.",
+      "content": "Check parental controls. If you are using an account with parental controls, you may not be able to change the Dock. If you have the password for an administrator account, you can enable Dock modification: Open System Preferences in the Applications folder. Select your account. If the options are greyed out, click the lock in the bottom left corner and enter an administrator username and password. Select the \"Other\" tab. Uncheck \"Prevent the Dock from being modified\" or \"Allow this user to modify the Dock.\""
+    },
+    {
+      "title": "Repair Disk Permissions.",
+      "content": "Repair Disk Permissions. Problems with accessing or changing files can happen if the files that set user permissions are corrupted. Try running an automatic repair process to see if this fixes the issue: If you are using 10.11 El Capitan, your computer should protect your permissions automatically. This option is only available (and only necessary) on 10.10 Yosemite or earlier. Go to Applications → Utilities and open Disk Utility. Select your hard drive in the left pane. Click the First Aid button near the top of the window. Press Repair Disk Permissions and wait for it to finish. This may take a long time, especially if you have a large or slow hard drive. Your computer may be slow or unresponsive during this time."
+    },
+    {
+      "title": "Relaunch Dock in Terminal.",
+      "content": "Relaunch Dock in Terminal. You can use Terminal to enable changes to your Dock and relaunch it to fix buggy behavior, all in one command. Just follow these instructions: [1] X Research source Go to Applications → Utilities and open Terminal. Copy-paste this command into the Terminal window: defaults write com.apple.dock contents-immutable -bool false;killall Dock Press ⏎ Return . Wait a few seconds while your Dock relaunches."
+    },
+    {
+      "title": "Reset the Dock completely.",
+      "content": "Reset the Dock completely. If nothing else works, you can restore your Dock to its default state. This will remove any icons you've added to the Dock. Follow these instructions: [2] X Research source Go to Applications → Utilities and open Terminal. Copy-paste this command into Terminal: defaults delete com.apple.dock; killall Dock Press ⏎ Return . Wait for your Dock to relaunch with default icons."
+    },
+    {
+      "title": "Get rid of malware",
+      "content": "Get rid of malware . If the icon stuck on your Dock is an advertisement or a program you didn't put there, install antivirus software. Have it scan your hard drive for malware, and delete the malware causing the problem."
+    }
+  ]
+}

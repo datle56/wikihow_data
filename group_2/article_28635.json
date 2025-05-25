@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Birthday-Card-with-HTML-and-CSS",
+  "title": "How to Make a Birthday Card with HTML and CSS",
+  "steps": [
+    {
+      "title": "Open a text editor.",
+      "content": "Open a text editor. You can use any editor that is pre-installed on your system: Notepad on Windows, TextEdit on Mac, Nano on Linux. If you prefer another text editor, you are welcome to use it."
+    },
+    {
+      "title": "Declare the document type.",
+      "content": "Declare the document type. This is important so that the browser knows that this is a HTML file. Write into the text editor: <!DOCTYPE html>"
+    },
+    {
+      "title": "Add an opening and closing html tag.",
+      "content": "Add an opening and closing html tag. This is where your HTML code will go. The document type declaration doesn't belong into between the html tags. Your code should now look like this: <!DOCTYPE html> < html > </ html >"
+    },
+    {
+      "title": "Add a head.",
+      "content": "Add a head. Most items placed in the head are things that are not visible on the page. Add a head by writing an opening and closing head tag. Include a title. The title is the text on the browser tab. It is written between an opening and closing title tag. A title should be short. You can choose something like \"Happy Birthday!\" for your birthday card. Declare an encoding. This is to make sure that the text in your birthday card is displayed correctly. You should choose UTF-8 as an encoding, especially if you're not writing your card in English, since it is very common and supports characters that are not Latin letters, numbers or punctuation. If your text editor provides an option to save in different encodings, make sure to choose the one you declared. Note that instead of writing a closing meta tag, you write a / before the > . Your HTML file should now look like this (the spaces/indentation is not required, but makes it more readable): <!DOCTYPE html> < html > < head > < title > Happy Birthday </ title > < meta charset = \"utf-8\" /> </ head > </ html >"
+    },
+    {
+      "title": "Open the file in a web browser to check whether everything is correct so far.",
+      "content": "Open the file in a web browser to check whether everything is correct so far. You need to save it first. Use a descriptive name and the .html extension, for example birthday.html . Open a new tab in the web browser. Open the file in that tab. This is usually done either by clicking on File → Open File... or by pressing Ctrl + O . It will show an empty page with \"Happy Birthday\" as the title."
+    },
+    {
+      "title": "Add a body.",
+      "content": "Add a body. This belongs below the head. The body is where the visible content will be. It is made using an opening and a closing body tag. <!DOCTYPE html> < html > < head > < title > Happy Birthday </ title > < meta charset = \"utf-8\" /> </ head > </ html >"
+    },
+    {
+      "title": "Write your content into the body.",
+      "content": "Write your content into the body. This can be whatever you want to write in a birthday card. For now, it will just look like text. You'll add advanced formatting later. Use an h-tag to add a heading. There are levels of headings from 1 to 6, with level 1 being the biggest and level 6 the smallest. A level 1 heading is declared with the h1 tag, level 2 with the h2 tag, and so on. Put each paragraph of text between an opening and closing p tag. Text between an opening and closing strong tag will be printed bold by default, the em tag will make it italic. Put text that is inside a paragraph that you want to have a special style, for example another color or font or size, into a span . Assign the span some descriptive class, for example \"redText\" if you want to change the text colour to red. You can also assign an entire paragraph a class. An example of what your HTML could look like now (replace the words as you see necessary and it will still work): <!DOCTYPE html> < html > < head > < title > Happy Birthday </ title > < meta charset = \"utf-8\" /> </ head > < body > < h1 > Happy Birthday, < span class = \"redText\" > Karl </ span > ! </ h1 > < p > You are < span class = \"redText\" > 15 </ span > years old now. </ p > < p > I sincerely wish you < strong > success </ strong > and < strong > happiness </ strong > in your future life. </ p > < p > You're a great person! </ p > < p class = \"signature\" > –Your friend, Daniela </ p > </ body > </ html >"
+    },
+    {
+      "title": "Put your content into a div.",
+      "content": "Put your content into a div. This will allow you to draw a border around it and to set its width. The div itself will not be visible before you draw a border. Give the div an ID, for example \"birthdayCard\": unlike classes, IDs are unique, which makes more sense since you're going to create only one birthday card on this page. <!DOCTYPE html> < html > < head > < title > Happy Birthday </ title > < meta charset = \"utf-8\" /> </ head > < body > < div id = \"birthdayCard\" > < h1 > Happy Birthday, < span class = \"redText\" > Karl </ span > ! </ h1 > < p > You are < span class = \"redText\" > 15 </ span > years old now. </ p > < p > I sincerely wish you < strong > success </ strong > and < strong > happiness </ strong > in your future life. </ p > < p > You're a great person! </ p > < p class = \"signature\" > –Your friend, Daniela </ p > </ div > </ body > </ html >"
+    },
+    {
+      "title": "Reload the file in your browser to preview it.",
+      "content": "Reload the file in your browser to preview it. Remember to save the content in the text editor first. It should now show the content, but with no formatting like colours or different fonts. The span elements should be invisible for now."
+    },
+    {
+      "title": "Open a new file in the text editor.",
+      "content": "Open a new file in the text editor. Keep the HTML content open in case you will need to adjust something. This new file will contain your CSS style, so save it with the .css extension, for example as birthday.css ."
+    },
+    {
+      "title": "Set the background and default text colour.",
+      "content": "Set the background and default text colour. If you specify these things for the ID \"birthdayCard\", which refers to the div you placed the content in, they will be set for everything inside the div, except when explicitly specified otherwise. In CSS, a style for an ID is specified by typing the # symbol, then the element name and then in curly brackets the style. You can use both RGB colours and colour words. For example, you can use both \"#FF0000\" and \"red\" to create a bright red. A complete list of colour words and the corresponding codes can be found here . A possible combination could be: # birthdayCard { background : darkorange ; color : #111111 ; } Connect the HTML with the CSS. Save your CSS file. Go into the head of the HTML file and add the following line: < link rel = \"stylesheet\" href = \"birthday.css\" /> Replace \"birthday.css\" with the name of your CSS file if it's something else. Then save and reload the page."
+    },
+    {
+      "title": "Set the div width.",
+      "content": "Set the div width. As it is now, the div spans across the entire window width. That doesn't look good. You should set the width to a fraction of the screen size and specify a minimum size so that it doesn't become too small on small screens. # birthdayCard { background : darkorange ; color : #111111 ; width : 25 % ; min-width : 300 px ; }"
+    },
+    {
+      "title": "Draw a border.",
+      "content": "Draw a border. This will visually set off the card from the rest of the screen, making it look better. You can specify border width, colour and style for all borders, or make some of them different. Solid is a normal border with no special appearance. Other possible border styles are dotted , dashed , double , groove , ridge , inset and outset . # birthdayCard { background : darkorange ; color : #111111 ; width : 25 % ; min-width : 300 px ; border : 8 px solid orange ; border-left : 10 px solid #DD0000 ; }"
+    },
+    {
+      "title": "Add padding and margins.",
+      "content": "Add padding and margins. Right now, the text is too close to the div border, and the div border is too close to the page border. This doesn't look good. To fix this, you can use padding and margins. Padding is used to set off the elements inside the div from the div border. Margins are used to set off the div from whatever is outside of it, in this case the page border. For both margins and padding, you can specify either one or four values. If you specify four values, each of them is for a different side. If you specify one value, it will be used for all four sides. # birthdayCard { background : darkorange ; color : #111111 ; width : 25 % ; min-width : 300 px ; border : 8 px solid orange ; border-left : 10 px solid #DD0000 ; margin : 10 px ; padding : 20 px ; }"
+    },
+    {
+      "title": "Add class and element styles.",
+      "content": "Add class and element styles. In a previous step, you had assigned paragraphs and spans different classes. Until now, this hasn't been visible, but now, you should actually add the styles these classes are supposed to have. Defining a style for a class is done with a . symbol, then the name of the class, then curly brackets with the style. A style for an element is done by writing the name of the element and then the curly brackets. # birthdayCard { background : darkorange ; color : #111111 ; width : 25 % ; min-width : 300 px ; border : 8 px solid orange ; border-left : 10 px solid #DD0000 ; margin : 10 px ; padding : 20 px ; } . redText { color : #CC0000 ; } . signature { text-align : right ; } strong { font-size : large ; color : #CC0000 ; }"
+    },
+    {
+      "title": "Save all files and reload the tab.",
+      "content": "Save all files and reload the tab. Look at the final result. Adjust the style and content if you're not satisfied with it. Otherwise, you can close the text editor and the tab."
+    },
+    {
+      "title": "Send the birthday card.",
+      "content": "Send the birthday card. You can use e-mail , give it to them on a USB stick (you could even make a USB stick yourself with the necessary materials and tools), upload it to a social network, or send it in whatever other way you consider practical. Since you have two files and both are necessary to display the birthday card correctly, you could create a zip file (works on all major platforms) or a tar file (only if the recipient uses Mac or Linux, since it's hard to open these on Windows)."
+    }
+  ]
+}

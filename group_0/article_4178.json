@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Block-a-Program-with-Windows-Firewall",
+  "title": "Block a Program from Accessing the Internet with Windows Firewall",
+  "steps": [
+    {
+      "title": "Open Windows Defender Firewall.",
+      "content": "Open Windows Defender Firewall. Press the Win key, type in Windows Defender Firewall , then click Windows Defender Firewall at the top of the Start window."
+    },
+    {
+      "title": "Click Allow an app or feature through Windows Firewall.",
+      "content": "Click Allow an app or feature through Windows Firewall . This link is at the top-left side of the Firewall window."
+    },
+    {
+      "title": "Click Change settings.",
+      "content": "Click Change settings . It's at the upper-right side of the window, just above the list of programs on your computer. You may have to click Yes on a pop-up window after doing this before you can continue. If you don't have administrator privileges on your computer, you won't be able to do this."
+    },
+    {
+      "title": "Locate a program you wish to block.",
+      "content": "Locate a program you wish to block. The list of programs in the middle of the page displays all programs that Windows Firewall is blocking or allowing; you can scroll down to find your specific program."
+    },
+    {
+      "title": "Add a program to the list if necessary.",
+      "content": "Add a program to the list if necessary. If you can't find your program in the list, you can add it by doing the following: Click Allow another app... below the list. Click Browse... . Go to the location of the app or program file (usually an EXE) you want to block. Select the app or program file. Click Open , then select the program's name in the window and click Add if it doesn't automatically add."
+    },
+    {
+      "title": "Click the checkmark to the left of the program.",
+      "content": "Click the checkmark to the left of the program. Doing so should remove the checkmark, thereby blocking the program through Windows Firewall. If there is no checkmark to the left of the program, Windows Firewall is already blocking the program. Leave the two checkboxes to the right of the program (\"Home/Work (Private)\" and \"Public\") alone."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. This will both save your changes and prevent the program from connecting through the network (and/or from running properly on your computer). [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Open Windows Defender Firewall.",
+      "content": "Open Windows Defender Firewall. Press the Win key, then type in Windows Defender Firewall , then click Windows Defender Firewall at the top of the Start window. You can also block a port this way if you don't want data to be sent or received."
+    },
+    {
+      "title": "Click Advanced settings.",
+      "content": "Click Advanced settings . It's a link in the menu on the left side of the window."
+    },
+    {
+      "title": "Click Outbound Rules.",
+      "content": "Click Outbound Rules . This tab is on the left side of the window."
+    },
+    {
+      "title": "Click New Rule….",
+      "content": "Click New Rule… . It's in the upper-right corner of the window. Doing so opens a new window in which you'll create your Firewall rule."
+    },
+    {
+      "title": "Check the \"Program\" box.",
+      "content": "Check the \"Program\" box. You'll find this option at the top of the page. Click Next to continue. If you'd rather close a port, you can select that option instead."
+    },
+    {
+      "title": "Select a program.",
+      "content": "Select a program. Before you can block a program, you'll need to select the program to find its path: Check the \"This program path\" box and click Browse... . Click This PC on the left side of the window. Scroll down and double-click your hard drive's name (e.g., OS (C:) ). Double-click the Program Files folder. If the program you want to block is elsewhere, go to the program's folder instead. Find the folder for your program, then double-click the folder. Select the program file by clicking it once."
+    },
+    {
+      "title": "Copy the program's path.",
+      "content": "Copy the program's path. Click the address bar at the top of the window to select the path there, then press Ctrl + C to copy the path. This is necessary because Windows will restructure the path to the file once you open the file in Firewall, thus breaking your outbound rule. You can bypass this problem by manually pasting the path to the file."
+    },
+    {
+      "title": "Click Open.",
+      "content": "Click Open . It's in the bottom-right corner of the window."
+    },
+    {
+      "title": "Replace the path before the app's name with your copied one.",
+      "content": "Replace the path before the app's name with your copied one. Highlight the path in the \"This program path\" text box all the way up to the last backslash before the app's name, then press Ctrl + V to paste in your copied path. For example, if you wanted to block Chrome in the path \"C:\\Program Files\\Google\\Application\\chrome.exe\", you would select all but the \"\\chrome.exe\" section and replace it with your copied text. Leaving the app's name and extension at the end of the path is crucial, as failing to do so will leave you with a rule that doesn't block anything."
+    },
+    {
+      "title": "Continue through the on-screen instructions and name your rule.",
+      "content": "Continue through the on-screen instructions and name your rule. You can add and create conditions and parameters to your rule, but if you're simply blocking a program, ignore these pages and press Next until you have to name the rule. Type whatever you want to name your rule into the top text box on the page. For example, if you're blocking Google Chrome on your computer, you might name your rule \"Chrome Block\" here."
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . It's at the bottom of the window. Doing so saves and applies your rule; from now until you delete or disable the rule, your program will not be able to access the Internet."
+    }
+  ]
+}

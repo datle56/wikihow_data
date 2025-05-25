@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Use-Taskkill",
+  "title": "How to Use Taskkill to End Processes in Windows",
+  "steps": [
+    {
+      "title": "Open Command Prompt.",
+      "content": "Open Command Prompt. Click start , type Command Prompt into the search bar, and then click on \"Command Prompt\" in the results. To start Command Prompt as administrator, right-click it, and select \"Run as administrator\". You will need to do this to end any programs that are also running as administrator."
+    },
+    {
+      "title": "Type in tasklist.",
+      "content": "Type in tasklist . This will display all running processes on the computer. [2] X Research source It's important to run this command first so that you can find the process names of the ones that you want to terminate."
+    },
+    {
+      "title": "Review the list.",
+      "content": "Review the list. Review the task list to search for the program that you want to end. Look at the \"Image Name\" specifically, since you will need this information to kill the task. You will probably have to scroll down to review all of the processes since they won't fit all on one page."
+    },
+    {
+      "title": "Kill the task.",
+      "content": "Kill the task. First, you need to type in taskkill . Then, you have to specify that you are killing the task based on its image name, so put in a space, and then type in /IM . After this, put in another space, and then type in the Image Name of the program that you want to end. For this example, notepad.exe will be the task that will be killed. Afterwards, press ↵ Enter . This will kill the task. For this example, the whole command would look like taskkill /IM notepad.exe ."
+    },
+    {
+      "title": "Type in tasklist.",
+      "content": "Type in tasklist . Just like the previous task, you need to type in tasklist to view the running programs and to retrieve the image name. [3] X Research source"
+    },
+    {
+      "title": "Type in the regular taskkill command.",
+      "content": "Type in the regular taskkill command. You would first type in the command like your normally would. For example, to forcefully kill notepad.exe, you would type in taskkill /IM notepad.exe . [4] X Research source"
+    },
+    {
+      "title": "Add /F to the end of the command.",
+      "content": "Add /F to the end of the command. The \"/F\" argument tells taskkill that you want to forcefully end the process. Keep in mind that you have to add a space before adding this argument. [5] X Research source"
+    },
+    {
+      "title": "Type in taskkill.",
+      "content": "Type in taskkill . This is the beginning of the command."
+    },
+    {
+      "title": "Type /FI \"STATUS eq NOT RESPONDING\".",
+      "content": "Type /FI \"STATUS eq NOT RESPONDING\" . This specifies that you want to kill all programs that are not responding. Remember that you need to add a space after taskkill . [6] X Research source"
+    },
+    {
+      "title": "Add /F to the end.",
+      "content": "Add /F to the end. Since non-responsive programs will not close on their own, they need to be forcefully closed. Then, press ↵ Enter . This will end all non-responsive programs. [7] X Research source Remember to add the space before typing /F ."
+    }
+  ]
+}

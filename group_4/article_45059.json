@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-BitLocker",
+  "title": "How to Disable BitLocker Encryption in Windows 10 and 11",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen. The Start menu will pop up."
+    },
+    {
+      "title": "Type in manage BitLocker.",
+      "content": "Type in manage BitLocker . This will display the \"manage Bitlocker\" Control Panel option in the Windows Start menu."
+    },
+    {
+      "title": "Click Manage BitLocker.",
+      "content": "Click Manage BitLocker . It should be at the top of the Start menu. It has an icon that resembles a hard drive with a set of keys over the top. Clicking this option opens the BitLocker Control Panel page."
+    },
+    {
+      "title": "Click to expand the correct hard drive.",
+      "content": "Click to expand the correct hard drive. Scroll down until you find the drive for which you want to disable BitLocker. Click the icon that resembles a bracket pointing down to expand the drive you want to decrypt. Skip this step if BitLocker is only encrypting one hard drive. You can use BitLocker to encrypt and decrypt internal hard drives and removable USB drives ."
+    },
+    {
+      "title": "Click Turn Off BitLocker.",
+      "content": "Click Turn Off BitLocker . It's a link below and to the right of the BitLocker heading."
+    },
+    {
+      "title": "Click Turn Off BitLocker when prompted.",
+      "content": "Click Turn Off BitLocker when prompted. Doing so causes BitLocker to begin decrypting your drive. This can take several hours to complete. You may be asked to enter your Administrator password or PIN before BitLocker will begin turning off. It may take a while for Windows to completely decrypt the drive you want to decrypt. You can continue to use your computer in the meantime."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the button with the Windows logo in the taskbar at the bottom of the screen. This displays the Windows Start menu."
+    },
+    {
+      "title": "Type CMD.",
+      "content": "Type CMD . This displays the Command Prompt in the Windows Start menu."
+    },
+    {
+      "title": "Right-click the Command Prompt icon and click {{MacButton|Run as Administrator.",
+      "content": "Right-click the Command Prompt icon and click {{MacButton|Run as Administrator. This opens the Command Prompt with administrative privileges . If you are not signed in to an administrative account, you may be asked to enter an administrative password."
+    },
+    {
+      "title": "Type manage-bde -off <drive letter>: and press ↵ Enter.",
+      "content": "Type manage-bde -off <drive letter>: and press ↵ Enter . Replace \"<drive letter>\" with the drive letter that you want to decrypt. This will decrypt that drive. [1] X Research source For example, if you want to decrypt your C: drive, you would type manage-bde -off C: and press Enter . To check the status of BitLocker in the Command Prompt, type manage-bde -status and press Enter ."
+    },
+    {
+      "title": "Right-click the Windows Start menu .",
+      "content": "Right-click the Windows Start menu . Right-clicking the Windows Start menu displays a context menu with a variety of system applications."
+    },
+    {
+      "title": "Click Windows Powershell (admin).",
+      "content": "Click Windows Powershell (admin) . This opens Powershell with administrative privileges. If you are not signed in to an administrative account , you may be asked to enter an administrative password."
+    },
+    {
+      "title": "Type Disable-BitLocker -MountPoint \"<drive letter>:\"",
+      "content": "Type Disable-BitLocker -MountPoint \"<drive letter>:\" and press ↵ Enter . Replace \"<drive letter>\" with the letter of the drive you want to decrypt. This will decrypt the drive. For example, if you want to decrypt your C: drive, you would type Disable-BitLocker -MountPoint \"C:\" and press Enter . If you want to check the status of BitLocker, type Get-BitLockerVolume and press Enter . [2] X Research source To decrypt all drives, type Disable-BitLocker -MountPoint $BLV and press Enter. [3] X Research source"
+    },
+    {
+      "title": "Find your recovery key.",
+      "content": "Find your recovery key. When you set up BitLocker on your computer, you were given a 48-digit recovery key to use when you forget your BitLocker password. You'll need to find this key before you can unlock BitLocker : [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If you printed out your recovery key, look for it in any location in which you keep important documents. If you saved your recovery key as a text file on a USB drive, plug the USB drive into a different Windows computer to open the text file and view the key. If your system administrator or IT professional set up BitLocker for you, contact them for specific instructions on getting back your key."
+    },
+    {
+      "title": "Start your computer if necessary.",
+      "content": "Start your computer if necessary. If your computer isn't already turned on to the BitLocker screen, turn on your computer. If your computer is turned on to the BitLocker screen, skip this step and the next one."
+    },
+    {
+      "title": "Wait for the BitLocker screen to load.",
+      "content": "Wait for the BitLocker screen to load. It can take several minutes for the BitLocker login screen to open."
+    },
+    {
+      "title": "Press Esc.",
+      "content": "Press Esc . Doing so indicates that you want to enter the recovery key instead of your BitLocker password. [5] X Research source"
+    },
+    {
+      "title": "Enter your BitLocker recovery key.",
+      "content": "Enter your BitLocker recovery key. Type the 48-digit recovery key into the provided text box at the top of the screen."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will submit your key."
+    },
+    {
+      "title": "Follow the on-screen prompts.",
+      "content": "Follow the on-screen prompts. Depending on your computer, you may have additional options after submitting your key. Once you've navigated through any extra prompts, you're free to turn off BitLocker from within Settings."
+    }
+  ]
+}

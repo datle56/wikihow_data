@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Detect-Encrypted-Files",
+  "title": "How to Find and Detect Encrypted Files on a Computer",
+  "steps": [
+    {
+      "title": "Type cmd into the Windows search bar.",
+      "content": "Type cmd into the Windows search bar. You'll usually see the search bar at the bottom-left corner of the screen. If you don't see it, click the magnifying glass or circle to open it. You can also pull up the search with ⊞ Win + S . Search results will appear as you type."
+    },
+    {
+      "title": "Click Command Prompt in the search results.",
+      "content": "Click Command Prompt in the search results. This opens a black window with a command prompt inside."
+    },
+    {
+      "title": "Type cipher /u /n and press ↵ Enter.",
+      "content": "Type cipher /u /n and press ↵ Enter . A list of all the encrypted files on your computer and their locations will appear along with their locations on your hard drive. If you want to decrypt a file, make note of the location and continue with this method."
+    },
+    {
+      "title": "Open File Explorer.",
+      "content": "Open File Explorer. You can find this on your Start menu or by pressing ⊞ Win + E ."
+    },
+    {
+      "title": "Navigate to the folder that contains the file you want to decrypt.",
+      "content": "Navigate to the folder that contains the file you want to decrypt."
+    },
+    {
+      "title": "Right-click the encrypted file/folder and select Properties.",
+      "content": "Right-click the encrypted file/folder and select Properties . This opens a dialog box to the \"General\" tab."
+    },
+    {
+      "title": "Click Advanced.",
+      "content": "Click Advanced . It's in the \"Attributes\" section."
+    },
+    {
+      "title": "Uncheck the box next to “Encrypt Contents to Secure Data.\"",
+      "content": "Uncheck the box next to “Encrypt Contents to Secure Data.\""
+    },
+    {
+      "title": "Click Ok twice.",
+      "content": "Click Ok twice. All the pop-up boxes will disappear and your file will be decrypted instantly. If this does not work, you may not have the ability or permission to decrypt this file, which may indicate malicious software."
+    },
+    {
+      "title": "Open Finder .",
+      "content": "Open Finder . It's the first icon on the Dock, which is usually at the bottom of your desktop."
+    },
+    {
+      "title": "Click the File menu.",
+      "content": "Click the File menu. It's at the top-left corner of the screen."
+    },
+    {
+      "title": "Click Find.",
+      "content": "Click Find . You can also press ⌘ Cmd + F ."
+    },
+    {
+      "title": "Click the Kind drop-down box.",
+      "content": "Click the Kind drop-down box. You’ll see this immediately under the tool bar."
+    },
+    {
+      "title": "Click Other from the drop-down box.",
+      "content": "Click Other from the drop-down box. The options will change."
+    },
+    {
+      "title": "Click Security in the attributes list.",
+      "content": "Click Security in the attributes list."
+    },
+    {
+      "title": "Check the “In Menu” box.",
+      "content": "Check the “In Menu” box. A checked box indicates this is enabled. You can now browse your folders for encrypted files."
+    },
+    {
+      "title": "Open Terminal.",
+      "content": "Open Terminal. You can find this by searching Spotlight or in the Utilities folder of Finder."
+    },
+    {
+      "title": "Type the following code:",
+      "content": "Type the following code: openssl enc -aes-256-cbc -d -in *path-to-file-you-want-to-decrypt* -out *path-to-where-the-decrypted-file-will-be-saved* ."
+    },
+    {
+      "title": "Press ⏎ Return.",
+      "content": "Press ⏎ Return . You'll be prompted for a password."
+    },
+    {
+      "title": "Type the admin password and press ⏎ Return.",
+      "content": "Type the admin password and press ⏎ Return ."
+    },
+    {
+      "title": "Press ⏎ Return.",
+      "content": "Press ⏎ Return . You'll find the decrypted file in the location you specified in Terminal."
+    }
+  ]
+}

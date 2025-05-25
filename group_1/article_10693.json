@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Javascript-Console-in-Sublime-Text",
+  "title": "Simple Ways to Create a Javascript Console in Sublime Text",
+  "steps": [
+    {
+      "title": "Launch Sublime Text.",
+      "content": "Launch Sublime Text. JSC is a command-line JavaScript runner, cooked directly into Mac OS X. Because most Macs already contains everything you need to run the script, creating the build system in Sublime Text is incredibly easy. If you have a Windows computer, see the directions for Node.js below."
+    },
+    {
+      "title": "Go to Tools > Build System > New Build System in the top bar.",
+      "content": "Go to Tools > Build System > New Build System in the top bar."
+    },
+    {
+      "title": "Paste this code into the resulting new tab that Sublime Text opened.",
+      "content": "Paste this code into the resulting new tab that Sublime Text opened. Replace anything else in it: { \"cmd\" : [ \"/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc\" , \"$file\" ], \"selector\" : \"source.js\" }"
+    },
+    {
+      "title": "Save the file as JSC.sublime-build in the default \"user\" folder.",
+      "content": "Save the file as JSC.sublime-build in the default \"user\" folder. Now you have created your build system!"
+    },
+    {
+      "title": "Open the JavaScript file that you want to run in Sublime Text.",
+      "content": "Open the JavaScript file that you want to run in Sublime Text."
+    },
+    {
+      "title": "Use debug() instead of console.log() in your script.",
+      "content": "Use debug() instead of console.log() in your script."
+    },
+    {
+      "title": "Go to Tools > Build System in the top bar and select JSC.",
+      "content": "Go to Tools > Build System in the top bar and select JSC . This is the build system that you just created."
+    },
+    {
+      "title": "Build the JavaScript file.",
+      "content": "Build the JavaScript file. Use either the shortcut ( Ctrl + B for Windows, and ⌘ Cmd + B for Mac), or choose Build from the Tools menu. A console will now appear in a pane at the bottom of the window, showing the results of your script!"
+    },
+    {
+      "title": "Download the Node installer from the project's homepage and run it.",
+      "content": "Download the Node installer from the project's homepage and run it. Simply use the default settings. Node.js (Node) is a platform built to allow JavaScript to run on a server. However, it can also be installed on your local computer, providing a relatively simple way to run JavaScript and get the results without using a browser."
+    },
+    {
+      "title": "Go to Tools > Build System > New Build System in the top bar.",
+      "content": "Go to Tools > Build System > New Build System in the top bar."
+    },
+    {
+      "title": "Paste this code into the resulting new tab that Sublime Text opened.",
+      "content": "Paste this code into the resulting new tab that Sublime Text opened. Replace anything else in it: { \"cmd\" : [ \"node\" , \"$file\" ], \"selector\" : \"source.js\" } If you receive a \"[Errno 2]\" error, then you'll need to change node in the code above to the path where node is located. To do this, open terminal and run which node . This will print out the path to the node binary."
+    },
+    {
+      "title": "Save the file as node.sublime-build in the default \"user\" folder.",
+      "content": "Save the file as node.sublime-build in the default \"user\" folder. Now you have created your build system!"
+    },
+    {
+      "title": "Open the JavaScript file that you want to run in Sublime Text.",
+      "content": "Open the JavaScript file that you want to run in Sublime Text."
+    },
+    {
+      "title": "Go to Tools > Build System in the top bar and select node.",
+      "content": "Go to Tools > Build System in the top bar and select node . This is the build system that you just created."
+    },
+    {
+      "title": "Build the JavaScript file.",
+      "content": "Build the JavaScript file. Use either the build shortcut ( Ctrl + B for Windows, and ⌘ Cmd + B for Mac), or choose Build from the Tools menu. A console will now appear in a pane at the bottom of the window, showing the results of your script!"
+    }
+  ]
+}

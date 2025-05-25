@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Install-Crouton-on-Your-Chromebook",
+  "title": "How to Install Crouton on Your Chromebook: A Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Reboot your Chromebook with a special keyboard shortcut.",
+      "content": "Reboot your Chromebook with a special keyboard shortcut. To enable developer mode , hold down the Esc and Reload keys at the same time, and press the Power button. Your computer will reboot, and a big exclamation mark will appear. On some Chromebooks, you'll need to hold down the Esc and Fullscreen keys instead. [1] X Research source Entering Developer Mode will also powerwash your Chromebook, so make sure you've backed up anything that isn't synced to your Google account. If you have a newer Chromebook that's still receiving updates, you shouldn't use this method to install Linux, as it's deprecated. Instead, you can enable the Linux development environment from within your Chromebook's settings. [2] X Research source"
+    },
+    {
+      "title": "Press Ctrl+D and then ↵ Enter.",
+      "content": "Press Ctrl + D and then ↵ Enter . This confirms that you want to enable developer mode. Your Chromebook will reboot again and reinstall the operating system in developer mode. It can take a while for your Chromebook to prepare for developer mode. Spend a few minutes getting a cup of coffee or relaxing. When it's finished installing, you'll see a screen with an exclamation point."
+    },
+    {
+      "title": "Press Ctrl+D to enter developer mode.",
+      "content": "Press Ctrl + D to enter developer mode. You can also wait a few moments for your Chromebook to enter developer mode on its own."
+    },
+    {
+      "title": "Set up your Chromebook like new.",
+      "content": "Set up your Chromebook like new. Just like when you first got your Chromebook, you'll have to set up your laptop. Make sure you connect your Chromebook to Wi-Fi so you can download the files to install Crouton."
+    },
+    {
+      "title": "Install the Crouton Integration extension.",
+      "content": "Install the Crouton Integration extension. Before installing Crouton, add this extension while you're still in developer mode. This extension allows you to use the same clipboard as you switch between ChromeOS and Linux, allows you to use ChromeOS to handle URLs, and allows chroots to create graphical sessions as ChromeOS windows. [3] X Research source You can install the extension by visiting its site on the web store and clicking Add to Chrome ."
+    },
+    {
+      "title": "Download the latest Crouton release.",
+      "content": "Download the latest Crouton release. You can get it from https://git.io/JZEs0 . This will save a file called crouton to your Downloads folder. [4] X Research source"
+    },
+    {
+      "title": "Open a shell (crosh).",
+      "content": "Open a shell (crosh). You can do this by pressing Ctrl + Alt + T , typing shell , and pressing ↵ Enter . [5] X Research source"
+    },
+    {
+      "title": "Move the Crouton installer to an executable location.",
+      "content": "Move the Crouton installer to an executable location. To do this, type sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton and press ↵ Enter . This makes the installer executable by moving it into /usr/local/bin so you can use it to install Crouton."
+    },
+    {
+      "title": "Run the Crouton installer.",
+      "content": "Run the Crouton installer. Type sudo crouton -t xfce and press ↵ Enter . Follow any on-screen instructions that appear, such as creating a username and password for Crouton. By default, Crouton will install Ubuntu 16.04 (xenial). If you want a different version, run crouton -r list to see your options, or just specify the name of the Ubuntu release. You can specify the release to install using sudo crouton -r (releasename) -t xfce . Release names can be found at https://releases.ubuntu.com ."
+    },
+    {
+      "title": "Enter Xfce (the Crouton GUI).",
+      "content": "Enter Xfce (the Crouton GUI). To do this, type sudo startxfce4 and press ↵ Enter . If that doesn't work, you can also use sudo enter-chroot startxfce4 . This takes you into your Linux installation. You can switch between Crouton and ChromeOS by pressing Ctrl + Alt + Shift + Back and Ctrl + Alt + Shift + Forward ."
+    },
+    {
+      "title": "Check for a new version.",
+      "content": "Check for a new version. Open a terminal in your Ubuntu installation by pressing Ctrl + Alt + T , then run the command croutonversion -u -c to see if a new version is available. If a new version is available, you'll see its name (e.g., xenial). You'll also see your current version listed. If you don't have the newest version, you can continue with this method to install it."
+    },
+    {
+      "title": "Shut down Ubuntu.",
+      "content": "Shut down Ubuntu. If a new version is available, you'll want to install it from ChromeOS, not Ubuntu. You can shut down Ubuntu by logging out, or by toggling back over to ChromeOS, selecting the terminal window you launched Crouton from, and pressing Ctrl + C . [6] X Research source"
+    },
+    {
+      "title": "Update the Crouton chroot.",
+      "content": "Update the Crouton chroot. To do this, use sudo sh ~/Downloads/crouton -u -n (versionname) , where (versionname) is the latest version that's available. This will update your chroot to the latest version. Once the update is complete, you can restart Crouton to access the updated version."
+    }
+  ]
+}

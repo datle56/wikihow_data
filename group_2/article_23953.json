@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Install-DEB-Files",
+  "title": "How to Install DEB Files in Linux: Gdebi, Apt, Dpkg, & More",
+  "steps": [
+    {
+      "title": "Double-click the .DEB file.",
+      "content": "Double-click the .DEB file. If you're using Ubuntu, this method will guide you through one of the most straightforward ways to install DEB packages. Start by double-clicking the file in your file manager, which will instantly open the Ubuntu Software tool. If that doesn't work, right-click the file and choose Open with software install . If you run into trouble with dependencies when using this method, try using Gdebi instead."
+    },
+    {
+      "title": "Click the Install button.",
+      "content": "Click the Install button. If prompted, you may need to enter your password to complete the installation process. Once the software is installed, you'll find its name and icon in your app grid. Having trouble finding your installed package? Just press the Super key (also known as the Windows key) on your keyboard, search for the application name, and then click it in the search results. To uninstall a package, just launch Ubuntu Software, click Installed , choose the package you want to delete, and then click Remove . [1] X Research source"
+    },
+    {
+      "title": "Install Gdebi if you haven't already done so.",
+      "content": "Install Gdebi if you haven't already done so. Gdebi is one of the most reliable ways to install DEB packages because of its ability to determine and resolve dependencies. [2] X Research source If Gdebi finds that the program requires other programs or libraries to run, the tool will also install those required files. If you have Linux Mint, GDebi is already set up as your default package manager. If you're using Ubuntu or Debian , you'll need to install Gdebi. On Ubuntu, you can get Gdebi from Ubuntu Software . On Debian (or if you prefer Apt in Ubuntu), use these steps: Press Ctrl + Alt + T to open a terminal window. Type sudo apt update and press Enter . Enter your password when prompted. Type sudo apt install gdebi and press Enter or Return ."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're logged into a shell account, just skip to the next step. Otherwise, you can press Ctrl + Alt + T to open a terminal window in most desktop environments. If you're using Linux Mint, you can install the DEB file now through Gdebi by double-clicking it in your file manager and selecting Install Package . If you're using Ubuntu or Debian and want to use the Gdebi GUI, open your file manager, right-click the DEB file, and select Open with Other Application . Choose Gdebi when prompted, and then click Install Package to complete the installation."
+    },
+    {
+      "title": "Use cd to navigate to the directory with the DEB file.",
+      "content": "Use cd to navigate to the directory with the DEB file. For example, if you saved the file to /home/username/Downloads , type cd /home/username/Downloads and press Enter ."
+    },
+    {
+      "title": "Type sudo gdebi filename.deb and press ↵ Enter.",
+      "content": "Type sudo gdebi filename.deb and press ↵ Enter . Replace filename.deb with the DEB file's actual name. This installs the DEB package and all related dependencies. If you want to make Gdebi the default install tool for DEB packages in Ubuntu or any Ubuntu-related distribution, it's easy: Right-click a .DEB file and choose Properties . Click the \"Open with\" drop-down menu and choose Gdebi Package Installer . If you want to uninstall a package you installed with Gdebi, use the apt command . The syntax is sudo apt remove packagename ."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're logged into a shell account, just skip to the next step. Otherwise, you can press Ctrl + Alt + T to open a terminal window in most window managers. Apt is normally used to download and install software from remote sources, but you can use it to install local DEB packages using a special syntax. Unlike when using Gdebi to install DEB files locally, Apt may not automatically resolve all dependencies. However, Apt does resolve dependencies automatically if you use it to install software from remote repositories."
+    },
+    {
+      "title": "Use cd to navigate to the directory with the DEB file.",
+      "content": "Use cd to navigate to the directory with the DEB file. For example, if you saved the file to /home/username/Downloads , type cd /home/username/Downloads and press ↵ Enter or ⏎ Return ."
+    },
+    {
+      "title": "Run the installation command.",
+      "content": "Run the installation command. Type sudo apt install ./ filename.deb and press ↵ Enter or ⏎ Return . The software will now install. Be sure to replace filename.deb with the actual name of the file, take note of the ./ before it—if you leave it out, the apt tool will try searching for the package in remote repositories. If it's the first time you've run a command using sudo in this window, you'll have to enter your password when prompted to continue. To see a list of all installed packages with Apt, use the command sudo apt list --installed . To remove a package with Apt, use the command sudo apt remove packagename ."
+    },
+    {
+      "title": "Open a terminal window.",
+      "content": "Open a terminal window. If you're logged into a shell account, just skip to the next step. Otherwise, you can press Ctrl + Alt + T to open a terminal window in most window managers. Dpkg comes preinstalled on all Debian-based Linux systems, including Ubuntu and Linux Mint. If you have trouble with dependencies using Dpkg, give Gdebi a try instead."
+    },
+    {
+      "title": "Use cd to navigate to the directory with the DEB file.",
+      "content": "Use cd to navigate to the directory with the DEB file. For example, if you saved the file to /home/username/Downloads , type cd /home/username/Downloads and press ↵ Enter ."
+    },
+    {
+      "title": "Type sudo dpkg -i filename.deb and press ↵ Enter.",
+      "content": "Type sudo dpkg -i filename.deb and press ↵ Enter . Replace filename.deb with the name of the DEB file. This command will install the package. Make sure you enter the -i using a lowercase i , as Dpkg commands are case-sensitive. If it's the first time you've run a command using sudo in this window, you'll have to enter your password when prompted to continue."
+    },
+    {
+      "title": "Resolve any dependency errors (optional).",
+      "content": "Resolve any dependency errors (optional). If the previous command threw an error about dependencies, run sudo apt-get install -f to resolve them. To see a list of all installed packages with Dpkg, use the command sudo dpkg-query -l . You can easily remove packages with Dpkg using dpkg -r packagename . [3] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Simple-Program-in-C%2B%2B",
+  "title": "How to Create a Simple Program in C++",
+  "steps": [
+    {
+      "title": "Get a compiler and/or IDE.",
+      "content": "Get a compiler and/or IDE. Three good choices are GCC , or if your computer is running Windows, Visual Studio Express Edition or Dev-C++ ."
+    },
+    {
+      "title": "Try some example programs.",
+      "content": "Try some example programs. Copy and paste the following into a text/code editor: A simple program is given by Bjarne Stroustrup (developer of C++) to check your compiler: #include <iostream>[[Image:Create a Simple Program in C++ Step 1 Version 3.jpg|center]] #include <string> using namespace std ; int main () { string s ; cout << \"Your Name \\n \" ; cin >> s ; cout << \"Hello, \" << s << '\\n' ; return 0 ; } A program for finding the sum of two numbers: [[ Image : Create a Simple Program in C ++ Step 2 Version 3. jpg | center ]] #include <iostream> using namespace std ; int main () { int no1 , no2 , sum ; cout << \" \\n Enter the first number = \" ; cin >> no1 ; cout << \" \\n Enter the second number = \" ; cin >> no2 ; sum = no1 + no2 ; cout << \" \\n The sum of \" << no1 << \" and \" << no2 << \" = \" << sum << '\\n' ; return 0 ; } A program for finding the product in multiplication problems: [[ Image : Create a Simple Program in C ++ Step 3 Version 3. jpg | center ]] #include <iostream> int main () { int v1 , v2 , range ; std :: cout << \"Please input two numbers:\" << std :: endl ; std :: cin >> v1 >> v2 ; if ( v1 <= v2 ) { range = v2 - v1 ; } else { range = v1 - v2 ; } std :: cout << \"range = \" << range << std :: endl ; return 0 ; } A program for finding the value of exponents: [[ Image : Create a Simple Program in C ++ Step 4 Version 3. jpg | center ]] #include <iostream> using namespace std ; int main () { int value , pow , result = 1 ; cout << \"Please enter operand:\" << endl ; cin >> value ; # cout << \"Please enter exponent:\" << endl ; cin >> pow ; for ( int cnt = 0 ; cnt != pow ; cnt ++ ) result *= value ; cout << value << \" to the power of \" << pow << \" is: \" << result << endl ; return 0 ; }"
+    },
+    {
+      "title": "Save this as a .cpp file with a name that accurately reflects your program.",
+      "content": "Save this as a .cpp file with a name that accurately reflects your program. Don't confuse there are many other extensions for C++ files, choose any of them (like *.cc, *.cxx, *.c++, *.cp) . Hint : It should say Save as Type: {select \"All Files\"}"
+    },
+    {
+      "title": "Compile it.",
+      "content": "Compile it. For users of linux and gcc compiler, use Command : g++ sum.cpp . Users of Window can use any C++ compiler, such as MS Visual C++ , Dev-C++ or any other preferred program."
+    },
+    {
+      "title": "Run the program.",
+      "content": "Run the program. For users of Linux and gcc compiler Command : ./a.out (a.out is an executable file produce by compiler after compilation of program.)"
+    }
+  ]
+}

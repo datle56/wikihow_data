@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Install-Ubuntu-Packages",
+  "title": "How to Install Packages on Ubuntu Linux: Command Line & GUI Tools",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open a terminal.",
+      "content": "Press Ctrl + Alt + T to open a terminal. You can also search for the Terminal app on the Ubuntu Dash."
+    },
+    {
+      "title": "Run sudo apt update to update the package index.",
+      "content": "Run sudo apt update to update the package index. Before searching for or installing Ubuntu packages , type sudo apt update and press Enter to update the database of available packages."
+    },
+    {
+      "title": "Use sudo apt search <keyword> to search for a package.",
+      "content": "Use sudo apt search <keyword> to search for a package. Replace \"<keyword>\" with the name or type of software you want to install. You can also search for packages that contain any keyword, such as \"office\" or \"ssh,\" depending on what you want to install. For example, if you want to install nmap , you can use sudo apt search nmap to display a list of all packages that contain \"nmap.\" Or, you can search for a type of software, like sudo apt search youtube to find YouTube clients, downloaders , and more. If the package list is long, run the same search command, but end it with \"| more\" so you can page through the results screen-by-screen using the spacebar. For example, sudo apt search youtube ."
+    },
+    {
+      "title": "Use sudo apt show <packagename> to learn more about a package.",
+      "content": "Use sudo apt show <packagename> to learn more about a package. If you want to view details about a package, including the version, download size, dependencies, and description, use sudo apt show <packagename> . For example, running the command sudo apt show libreoffice will display information about LibreOffice, including a list of optional packages that work with the software."
+    },
+    {
+      "title": "Use sudo apt install <packagename> to install the package.",
+      "content": "Use sudo apt install <packagename> to install the package. This installs the specified packages and any required dependencies."
+    },
+    {
+      "title": "Manage installed packages.",
+      "content": "Manage installed packages. Use sudo apt list to view all installed packages. Use sudo apt remove <packagename> to uninstall a package."
+    },
+    {
+      "title": "Click the App Center icon on the Dock.",
+      "content": "Click the App Center icon on the Dock. Beginning with Ubuntu 23.10, Ubuntu's previous GNOME Software Center (a GUI package installer) has been replaced by the App Center. App Center is a lot more convenient for installing software as it supports installing both Snaps and Debian packages . [1] X Research source If you're still using an older version of Ubuntu, you can still use Software Center , or you can install App Center with these commands: In a terminal window, run the command snap-store --quit . Run the following command, replacing \"ubuntu-23.10\" with your version: sudo snap refresh snap-store --channel=latest/stable/ubuntu-23.10 . If you get an error that says cannot refresh \"snap store\": snap \"snap-store\" has running apps , note the process ID at the end of the error (e.g., 3000), and kill the process using kill -9 <pid> . Then, run sudo snap refresh snap-store --channel=latest/stable/ubuntu-23.10 again."
+    },
+    {
+      "title": "Search for a program you want to install.",
+      "content": "Search for a program you want to install. App Center will display Debian (.deb) and snap packages that match your search."
+    },
+    {
+      "title": "Select a package and click Install.",
+      "content": "Select a package and click Install . This installs the selected package. [2] X Research source To uninstall a package, select it from the list of installed packages, then click Remove . [3] X Research source"
+    },
+    {
+      "title": "Install Gdebi.",
+      "content": "Install Gdebi. If you have a package file ending with .deb and have a recent version of Ubuntu with App Center, you've probably noticed you can't just double-click the package to install it with Software Center. While App Center will eventually support installing DEB packages manually, it doesn't yet. [4] X Research source In the meantime, install GDebi so you can easily install DEB packages and their dependencies through a GUI or command line interface. In a terminal window, type sudo apt update and press Enter . Type sudo apt install gdebi and press Enter . Follow the on-screen instructions to install."
+    },
+    {
+      "title": "Right-click a package and go to Open With Other Application > GDebi Package Installer.",
+      "content": "Right-click a package and go to Open With Other Application > GDebi Package Installer . Doing this with a .deb file will display information about the package in GDebi's GUI. You can also install DEB packages with Apt using the command sudo apt install <path_to_package.deb> . However, Gdebi is a far better option, as it resolves all dependencies during installation. Click Details to learn more about the package, including which dependencies GDebi will download and install."
+    },
+    {
+      "title": "Click Install to install the DEB package.",
+      "content": "Click Install to install the DEB package. Follow the on-screen instructions to give appropriate permissions when prompted. If you want to remove a package, right-click the original .deb file, select Open With Other Application > GDebi Package Installer and then click Uninstall . Alternatively, you can also remove packages using Synaptic or Apt . If you'd rather install a package from the command line, use sudo gdebi <path-to DEB-file> ."
+    },
+    {
+      "title": "Make GDebi the default installer for DEB packages.",
+      "content": "Make GDebi the default installer for DEB packages. This will allow you to easily install DEB packages by double-clicking a DEB file, just like you could in Software Center. Right-click any .deb file and select Properties . Select GDebi Package Installer from the \"Open with\" menu and click Close . Now, when you double-click a file ending in .deb, it will install through GDebi."
+    },
+    {
+      "title": "Install the Snap Store.",
+      "content": "Install the Snap Store. You can use the Snap Store on Ubuntu to install snap packages, which are easy-to-install packages that include all dependencies in a single download. Snaps are super convenient, as they are universal—the same Snap can be installed on a Debian-based Linux as a Red Hat-based system. The Snap Store has a graphical user interface, but you can also use it from the command line. Open a terminal window. Run sudo apt update . If you are using an older version of Ubuntu (anything below 16.04), run sudo apt install snapd and follow the on-screen instructions to install the snap daemon. For more recent versions, you can skip this step. To install the Snap Store GUI, run the command sudo apt install snap-store ."
+    },
+    {
+      "title": "Use the Snap Store GUI to find and install packages.",
+      "content": "Use the Snap Store GUI to find and install packages. To browse the store for packages to install, launch the Snap Store app from your Launcher. This opens an App Store-like interface that makes it easy to browse for and install apps. Browse by category or click the magnifying glass to find an app to install. When you find an app you want to install, click Install . To remove an app, select it and click Remove ."
+    },
+    {
+      "title": "Find a package to install using the command line.",
+      "content": "Find a package to install using the command line. If you'd rather use commands in a terminal, you can browse or search the Snap Store online at https://snapcraft.io/store , or use the command snap find <keyword> to find snaps by name or type. If there are spaces in your search terms (e.g., media player ), use quotes (e.g., snap find \"media player\" . [5] X Research source To learn more about a package, use the command snap info <packagename> ."
+    },
+    {
+      "title": "Use sudo snap install <packagename> to install a snap.",
+      "content": "Use sudo snap install <packagename> to install a snap. If you searched for the package using the snap find command, use the package name listed in the results. If you find a snap on the web-based Snap Store, you can either search for it from the command line to find its package name, or click the install button at the top-right corner of the app's info page to see the installation command."
+    },
+    {
+      "title": "Manage your snaps.",
+      "content": "Manage your snaps. Use snap list to view a list of all installed snaps. Use sudo snap remove <package-name> to uninstall a snap package."
+    },
+    {
+      "title": "Open Synaptic.",
+      "content": "Open Synaptic. Synaptic is a GUI interface to the Apt package manager. If you prefer using a graphical interface to install packages but like the flexibility of Apt, you can use it to install packages. Type synaptic into the Activities search bar, then click Synaptic in the search results. If you don't have Synaptic (it isn't installed by default), you can install it using Apt. [6] X Research source Press Ctrl + Alt + T to open Terminal, type sudo apt install synaptic and press Enter ."
+    },
+    {
+      "title": "Search for an application.",
+      "content": "Search for an application. You’ll find the search bar on the right side of the window."
+    },
+    {
+      "title": "Click the application you want to install.",
+      "content": "Click the application you want to install. The line will be highlighted, and a box will pop up."
+    },
+    {
+      "title": "Click Mark for Installation.",
+      "content": "Click Mark for Installation . The box will disappear, but another box will pop up, explaining what else needs to be installed for the application you want to work."
+    },
+    {
+      "title": "Click Mark.",
+      "content": "Click Mark . All the dependencies and required applications will also be marked for installation. You can continue selecting packages to install."
+    },
+    {
+      "title": "Click Apply.",
+      "content": "Click Apply . You’ll see this in the top toolbar. You’ll need to confirm this action. Installation might take a while, depending on how many packages you are installing and your internet speed. You can find your installed applications by searching from the Launcher. Some applications may require you to restart your computer before you can use them."
+    },
+    {
+      "title": "Open Software Center.",
+      "content": "Open Software Center. If you're using a version of Ubuntu that doesn't have App Center, you can use Ubuntu Software Center (Ubuntu's older package manager) to install packages. You’ll find this in your Launcher."
+    },
+    {
+      "title": "Search or browse for an application.",
+      "content": "Search or browse for an application. The search bar is located on the upper right side of the window; the categories for you to browse are on the left, including categories such as Accessories , Books and Magazines , Developer Tools , Education , and Fonts ."
+    },
+    {
+      "title": "Click on the application you want.",
+      "content": "Click on the application you want. The line will highlight."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . You’ll see this to the right of the application name. When you click to install, a window will pop up for your login information. If you don’t see the button to install, you might need to allow downloading from different sources from “Software Sources” in the “Edit” tab. You’ll need to make sure all the boxes are checked."
+    },
+    {
+      "title": "Type your password and click Authenticate.",
+      "content": "Type your password and click Authenticate . You’ll see a progress bar for the installation progress. The app you installed can now be found in the Launcher."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Share-Files-Between-Linux-Computers-Using-NFS",
+  "title": "Easily Share Files Between Linux Systems with NFS",
+  "steps": [
+    {
+      "title": "Install the NFS server on the host system.",
+      "content": "Install the NFS server on the host system. You can install the latest version of NFS on your Linux server (NFS 4) using your distribution's package manager. For example, if you're using Ubuntu or another Debian-based Linux, run sudo apt install nfs-kernel-server in a terminal to install the NFS server package. [1] X Research source On a Red Hat -based Linux server, use sudo dnf install nfs-utils . [2] X Research source"
+    },
+    {
+      "title": "Start the NFS server.",
+      "content": "Start the NFS server. Because NFS is a systemd service, you'll use systemctrl to start it. Run this command: Ubuntu/Debian: sudo systemctl start nfs-kernel-server.service Red Hat/Fedora/CentOS: sudo systemctl enable --now nfs-server Note that beginning with NFS 4, it's no longer necessary to use the rcpbind service with NFS."
+    },
+    {
+      "title": "Create a directory for sharing files (optional).",
+      "content": "Create a directory for sharing files (optional). If you're using NFS to store users' home directories on a central server instead of on individual clients, you can skip this step. If you want to store other general files in a directory that's accessible to other Linux systems on the network, you can create a directory for your NFS share. Here's how: Let's say you want to create a directory at /var/nfs/employees for files that employees need to access on their Linux systems. To create that directory, use sudo mkdir -p /var/nfs/employees . Using sudo ensures that the directory is owned by root on the server. This will prevent users with root access on their own systems from having root access on the server directory. Then, change the group ownership of the directory using sudo chown nobody:nogroup /var/nfs/employees to match how NFS translates any root operations on the client system. However, don't change group ownership of /home if you plan to also share home directories via NFS unless you want to break things. You can create multiple directories to share if you'd like. You can share as many directories as you need to."
+    },
+    {
+      "title": "Open /etc/exports for editing.",
+      "content": "Open /etc/exports for editing. Directories listed in /etc/exports are those you'll be sharing with NFS. You can use any text editor, such as Vim or Nano, to edit the file. Use sudo to edit the file. E.g., sudo vim /etc/exports . If you're setting up NFS for the first time, this file won't exist yet. Don't worry if it's blank."
+    },
+    {
+      "title": "List each directory you want to share from this server.",
+      "content": "List each directory you want to share from this server. The syntax you'll use is <directory> <host(s) to share with>(<options>) . Here are some examples: /var/nfs/employees *.internal.wikihow.com(ro,sync,subtree_check) In this example, the directory /var/nfs/employees can be mounted on any host at *.internal.wikihow.com with read-only ( ro ) permissions. subtree_check double-checks permissions of subdirectories before mounting. /home 192.168.122.0/24(rw,no_subtree_check) In this example, users' home directories can be mounted with read/write permissions by any client with an IP address on the 192.168.122.* network. no_subtree_check disables a security measure that can slow down access to home directories. It's best to only use subtree_check for read-only filesystems. [3] X Research source To view a list of all options and how they work, check out https://linux.die.net/man/5/exports ."
+    },
+    {
+      "title": "Apply your configuration changes.",
+      "content": "Apply your configuration changes. When you make changes to /etc/exports, run the command sudo exportfs -ar to make them active."
+    },
+    {
+      "title": "Allow NFS through your firewall.",
+      "content": "Allow NFS through your firewall. Before you can mount NFS directories on client systems, you'll need to ensure the NFS service is allowed through your firewall. The commands will vary depending on the type of firewall you have. For example, if you're using firewalld, use sudo firewall-cmd --add-service nfs –permanent . For ufw, you can use sudo ufw allow from <client_ip> to any port nfs ."
+    },
+    {
+      "title": "Install NFS on the client systems.",
+      "content": "Install NFS on the client systems. Each Linux system on your network that needs access to the shared files must install the NFS client. Ubuntu/Debian: sudo apt install nfs-common Red Hat, Fedora, CentOS: Use the same command you used to install NFS on the server sudo dnf install nfs-utils"
+    },
+    {
+      "title": "Create a directory to mount the shared files.",
+      "content": "Create a directory to mount the shared files. You can name this whatever you'd like. For example, you can type sudo mkdir /nfs to create a folder called \"nfs.\" In our previous example, we created /var/nfs/employees on the server system. If we want to mount that directory at /nfs/employees on the client system, we'll also need to sudo mkdir /nfs/employees locally. Create a directory even if you're mounting home directories from the NFS server. E.g., you can create /nfs/home on this system."
+    },
+    {
+      "title": "Mount the shared directory to the client system.",
+      "content": "Mount the shared directory to the client system. To do this, you'll use the mount command . In this example, we'll mount /var/nfs/employees from our server, whose IP address is 192.168.0.5, to the /nfs/employees directory on the client system: sudo mount 192.168.0.5:/var/nfs/employees /nfs/employees"
+    },
+    {
+      "title": "Open /etc/fstab for editing.",
+      "content": "Open /etc/fstab for editing. To ensure the files shared from the NFS server are mounted automatically at boot time, we'll want to add the mounts to /etc/fstab on the client systems. You can use any text editor, such as Vim, Nano, or Pico, to edit the file. Use sudo to edit the file. E.g., sudo vim /etc/fstab ."
+    },
+    {
+      "title": "Add the NFS server name and directory to /etc/fstab.",
+      "content": "Add the NFS server name and directory to /etc/fstab. Add a separate entry for each directory you want to mount. The syntax is serverIP : sharedDirectory nfs rsize=8192,wsize=8192,timeo=14,intr . For a full explanation of the different values, use man nfs at the prompt. Replace serverIP with the IP address or hostname of the NFS server. Replace sharedDirectory with the local NFS mount point (e.g., /nfs/home). Using the above examples, the line might look like: 192.168.1.5:/export/Shared /sharedFiles nfs rsize=8192,wsize=8192,timeo=14,intr ."
+    },
+    {
+      "title": "Test the mount.",
+      "content": "Test the mount. To make sure the shared files are mounted on the client system, type mount -a to view all mount points. You should now be able to access files from the server system on the client."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Calculate-the-Cross-Product-of-Two-Vectors",
+  "title": "How to Calculate the Cross Product of Two Vectors",
+  "steps": [
+    {
+      "title": "Consider two general three-dimensional vectors defined in Cartesian coordinates.",
+      "content": "Consider two general three-dimensional vectors defined in Cartesian coordinates. [1] X Research source a = A i + B j + C k b = D i + E j + F k {\\displaystyle {\\begin{aligned}\\mathbf {a} &=A\\mathbf {i} +B\\mathbf {j} +C\\mathbf {k} \\\\\\mathbf {b} &=D\\mathbf {i} +E\\mathbf {j} +F\\mathbf {k} \\end{aligned}}} Here, i , j , k {\\displaystyle \\mathbf {i} ,\\mathbf {j} ,\\mathbf {k} } are unit vectors, and A , B , C , D , E , F {\\displaystyle A,B,C,D,E,F} are constants."
+    },
+    {
+      "title": "Set up the matrix.",
+      "content": "Set up the matrix. One of the easiest ways to compute a cross product is to set up the unit vectors with the two vectors in a matrix. [2] X Research source a × b = | i j k A B C D E F | {\\displaystyle \\mathbf {a} \\times \\mathbf {b} ={\\begin{vmatrix}\\mathbf {i} &\\mathbf {j} &\\mathbf {k} \\\\A&B&C\\\\D&E&F\\end{vmatrix}}}"
+    },
+    {
+      "title": "Calculate the determinant",
+      "content": "Calculate the determinant of the matrix. Below, we use cofactor expansion (expansion by minors). [3] X Research source a × b = ( B F − E C ) i − ( A F − D C ) j + ( A E − D B ) k {\\displaystyle \\mathbf {a} \\times \\mathbf {b} =(BF-EC)\\mathbf {i} -(AF-DC)\\mathbf {j} +(AE-DB)\\mathbf {k} } This vector is orthogonal to both a {\\displaystyle \\mathbf {a} } and b . {\\displaystyle \\mathbf {b} .}"
+    },
+    {
+      "title": "Consider the two vectors below.",
+      "content": "Consider the two vectors below. u = 2 i − j + 3 k v = 5 i + 7 j − 4 k {\\displaystyle {\\begin{aligned}\\mathbf {u} &=2\\mathbf {i} -\\mathbf {j} +3\\mathbf {k} \\\\\\mathbf {v} &=5\\mathbf {i} +7\\mathbf {j} -4\\mathbf {k} \\end{aligned}}}"
+    },
+    {
+      "title": "Set up the matrix.",
+      "content": "Set up the matrix. u × v = | i j k 2 − 1 3 5 7 − 4 | {\\displaystyle \\mathbf {u} \\times \\mathbf {v} ={\\begin{vmatrix}\\mathbf {i} &\\mathbf {j} &\\mathbf {k} \\\\2&-1&3\\\\5&7&-4\\end{vmatrix}}}"
+    },
+    {
+      "title": "Calculate the determinant of the matrix.",
+      "content": "Calculate the determinant of the matrix. u × v = ( 4 − 21 ) i − ( − 8 − 15 ) j + ( 14 + 5 ) k = − 17 i + 23 j + 19 k {\\displaystyle {\\begin{aligned}\\mathbf {u} \\times \\mathbf {v} &=(4-21)\\mathbf {i} -(-8-15)\\mathbf {j} +(14+5)\\mathbf {k} \\\\&=-17\\mathbf {i} +23\\mathbf {j} +19\\mathbf {k} \\end{aligned}}}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://www.wikihow.com/Turn-the-Connect-Reconnect-Noise-Off",
+  "title": "How to Stop USB Connection Sounds on Your Windows Computer",
+  "steps": [
+    {
+      "title": "Disable Device Connect and Device Disconnect sounds in your Settings.",
+      "content": "Disable Device Connect and Device Disconnect sounds in your Settings. Windows computers automatically have “event sounds” for specific notifications, including connecting and disconnecting a USB device. [1] X Research source Type in “Control Panel” in the Start menu and select it from the search results. Select Hardware and Sound . Click on the Sound heading. Choose the Sounds tab at the top of the new window. Find Device Connect in the Program Events menu. Open the Sounds dropdown and select (None) from the top of the list Select Device Disconnect and set the sound to (None) as well. Click Apply and then OK to save your settings."
+    },
+    {
+      "title": "There’s a loose USB connection.",
+      "content": "There’s a loose USB connection. If one of the cords or devices isn’t fully plugged into the USB port, your computer may think that it’s being repeatedly unplugged and plugged back in. There may also be an issue with the cord, device, or where the USB port connects inside your computer. How to Fix: Check all of the cords and devices you have connected to your computer and make sure they’re completely plugged in. Make sure to check the connection at the other end of the cord as well. If any of the USB cords look worn or damaged, replace them with new ones. If you’re unable to figure out which device or cord is causing the issue, use a program like USB LogView to see all the devices connected to your computer and the last times they disconnected."
+    },
+    {
+      "title": "The USB port is dirty or damaged.",
+      "content": "The USB port is dirty or damaged. When dust or debris gets inside of the USB port, it can interfere with how your device connects to your computer. Additionally, if your USB drive is old or has been damaged from regular wear and tear, your device may continuously disconnect and reconnect from your computer. [2] X Research source How to Fix: Try plugging your device into a different USB port on your computer. If you notice dust or buildup inside the USB port, use a can of compressed air to clear it out. If you see any damage, take your computer to a repair specialist to have the ports fixed. If you’re using a USB hub, disconnect it from your computer and plug your device into the port on your computer directly. A USB hub may cause connection errors if it’s damaged or outdated."
+    },
+    {
+      "title": "The USB drivers are outdated.",
+      "content": "The USB drivers are outdated. USB drivers are programs that help your computer read data from a device you plug in. When a USB driver is outdated or starts acting buggy, it may cause an error that plays the USB connect/disconnect noise. [3] X Research source How to Fix: Update the drivers using the Windows Device Manager. Open the Device Manager program from your Start menu. Scroll until you find Universal Serial Bus controllers and expand the dropdown. Look for a USB device that disappears and reappears. Right-click on the device and select Update driver . Select Search automatically to find the most recent driver update to install."
+    },
+    {
+      "title": "The USB Selective Suspend feature is buggy.",
+      "content": "The USB Selective Suspend feature is buggy. The USB Selective Suspend feature reduces the amount of power to your USB drive when it’s not in use. If the feature isn’t working properly or if it reduces the power to low, it may cause your computer to think the device is disconnected. [4] X Research source How to Fix: Disable the USB Selective suspend feature from your computer’s power settings. On Windows 11, open Command Prompt as an administrator and enter REG ADD HKLM\\SYSTEM\\CurrentControlSet\\Control\\Power\\PowerSettings\\2a737441-1930-4402-8d77-b2bebba308a3\\48e6b7a6-50f5-4782-a5d4-53bb8f07e226 /v Attributes /t REG_DWORD /d 2 /f to add the USB options back to your settings. Type in “Control Panel” at the Start menu and pick it from the search results. Select Hardware and Sound . Choose Power Options . Click on Change plan settings under the Preferred plans heading. Select Change advanced power settings . Expand the USB Settings and USB selective suspend setting menus. Select Disabled from the dropdown menu. Click Apply and OK to confirm your settings."
+    }
+  ]
+}

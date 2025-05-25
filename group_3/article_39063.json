@@ -1,0 +1,162 @@
+{
+  "url": "https://www.wikihow.com/Set-up-an-FTP-Between-Two-Computers",
+  "title": "How to Set up an FTP Between Two Computers",
+  "steps": [
+    {
+      "title": "Open the Windows Features menu.",
+      "content": "Open the Windows Features menu. You'll do this on the computer that will function as the FTP server. To get there, type windows features into the Windows search bar and click Turn Windows features on or off ."
+    },
+    {
+      "title": "Click the + next to \"Internet Information Services.\"",
+      "content": "Click the + next to \"Internet Information Services.\" This expands additional options."
+    },
+    {
+      "title": "Check the \"FTP Server\" box.",
+      "content": "Check the \"FTP Server\" box. It's right below the \"Internet Information Services\" heading."
+    },
+    {
+      "title": "Click the + next to \"FTP Server.\"",
+      "content": "Click the + next to \"FTP Server.\""
+    },
+    {
+      "title": "Check both the \"FTP Extensibility\" and \"FTP Service\" boxes.",
+      "content": "Check both the \"FTP Extensibility\" and \"FTP Service\" boxes."
+    },
+    {
+      "title": "Check the \"Web Management Tools\" box.",
+      "content": "Check the \"Web Management Tools\" box. It's below the FTP options. This is the final box you need to check."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. Windows will install the necessary software."
+    },
+    {
+      "title": "Click Restart now when prompted.",
+      "content": "Click Restart now when prompted. Now that your FTP server software is enabled, you can proceed with setting up the server."
+    },
+    {
+      "title": "Create a new folder for your files.",
+      "content": "Create a new folder for your files. You'll want to designate a single folder to contain all of the files on your FTP server. You can create additional folders inside of this folder if you wish. To create a new folder: Press ⊞ Win + E to open the File Explorer. Navigate to the drive on which you want to create the folder. Right-click a blank space in the right panel. Select New and click Folder . Type a name for the folder and press ↵ Enter ."
+    },
+    {
+      "title": "Open the IIS Manager.",
+      "content": "Open the IIS Manager. You can do this by typing iis into the Windows search bar and clicking Internet Information Services (IIS) Manager in the results."
+    },
+    {
+      "title": "Click the arrow next to your computer's name .",
+      "content": "Click the arrow next to your computer's name . It's at the top of the column titled \"Connections\" on the left side of the window."
+    },
+    {
+      "title": "Right-click Sites in the left panel.",
+      "content": "Right-click Sites in the left panel. A context menu will appear."
+    },
+    {
+      "title": "Click Add FTP Site… on the menu.",
+      "content": "Click Add FTP Site… on the menu."
+    },
+    {
+      "title": "Type a name for your FTP server into the \"FTP site name\" field.",
+      "content": "Type a name for your FTP server into the \"FTP site name\" field."
+    },
+    {
+      "title": "Select the FTP folder you created.",
+      "content": "Select the FTP folder you created. To do so, click the folder ⋯ to the right of the bottom text box, navigate to and select the folder, and then click OK ."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . This is at the bottom of the page."
+    },
+    {
+      "title": "Enter the IP address for the server computer.",
+      "content": "Enter the IP address for the server computer. This is the static IP address that is assigned to this PC by your local router. The default FTP port is 21. If you want to change it to something else, you can edit the \"Port\" box. Just make sure you don't select a port that's already in use by another application."
+    },
+    {
+      "title": "Check the \"No SSL\" box if you won't be allowing connections from outside of the network.",
+      "content": "Check the \"No SSL\" box if you won't be allowing connections from outside of the network. It's toward the bottom of the window under the \"SSL\" header. If you're only using your FTP server to transfer files between two computers on your local network, it's okay to avoid using an SSL certificate here. [1] X Research source If you plan to allow users outside of your network to FTP to this server, you should definitely use SSL. If you don't have a certificate from an authority, here's how you can create one: [2] X Research source In IIS Manager, go to IIS > Server Certificates . Click Create Self-Signed Certificate . Enter a name for the certificate and click OK ."
+    },
+    {
+      "title": "Click Next.",
+      "content": "Click Next . This is at the bottom of the page."
+    },
+    {
+      "title": "Check the \"Basic\" box.",
+      "content": "Check the \"Basic\" box. It's near the top of the window. The \"Basic\" option will require users to log in with an account."
+    },
+    {
+      "title": "Select who can connect to the FTP server.",
+      "content": "Select who can connect to the FTP server. Choose your desired options in the \"Authorization\" section to specify who can access the server, and which level of permissions they'll have. If you want to allow any user with an account on this PC to log in via FTP, select All Users . You can always create user accounts on the PC as needed. If you just want to use a specific account for FTP purposes, select Specified users and enter a username. This is useful if you want to create a user account that's specifically for FTP. Use the \"Read\" and \"Write\" boxes to control which level of access the selected user(s) will have to the directory."
+    },
+    {
+      "title": "Click the Finish button.",
+      "content": "Click the Finish button. It's at the bottom of the window. This will close the window and return you to the Internet Information Services Manager. You'll see your new FTP server under the \"Sites\" header in the left panel. Your FTP server will now go online whenever your computer is both on and connected to the network."
+    },
+    {
+      "title": "Open the \"Allowed Apps\" Firewall page.",
+      "content": "Open the \"Allowed Apps\" Firewall page. To do so, open the Windows Search bar and type allow an app . When Allow an app through Windows Firewall appears in the results, click it."
+    },
+    {
+      "title": "Click the Change settings button.",
+      "content": "Click the Change settings button. It's at the top of the window. You can now edit the items in the checklist."
+    },
+    {
+      "title": "Scroll down to the \"FTP Server\" option.",
+      "content": "Scroll down to the \"FTP Server\" option. This option is in the \"F\" section of allowed apps."
+    },
+    {
+      "title": "Check all three \"FTP Server\" boxes.",
+      "content": "Check all three \"FTP Server\" boxes. This includes the box to the left of \"FTP Server,\" as well as both the \"Private\" and \"Public\" boxes."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . It's at the bottom of the window. Your FTP server should now allow incoming connections on your local network. If you want your FTP server to be accessible outside of your home or office network, you'll also need to open port 21 to and from the rest of the internet."
+    },
+    {
+      "title": "Find out your router's local IP address.",
+      "content": "Find out your router's local IP address. If you don't plan to allow people outside of your network to connect via FTP, skip this part and head to Connecting to the FTP Server . If you do want your FTP server to be accessible outside to people outside of your local network, you'll need to make some changes on your router. Start by gathering the router's local IP address: Open the Start menu and click Settings (the gear icon). Click Network & Internet . Scroll down and click View your network properties in the right panel. Scroll down to the \"Wi-Fi\" section (if you're using a Wi-Fi network) or one the Ethernet connection (if you're using a wired connection. Look at the address to the right of the \"Default Gateway\" heading (it should be a collection of small numbers separated by periods)."
+    },
+    {
+      "title": "Go to your router's IP address in a web browser.",
+      "content": "Go to your router's IP address in a web browser. Type the router's address into the address bar of a web browser (starting with http:// ), and then press Enter to bring up the login page."
+    },
+    {
+      "title": "Log in to your router's admin page.",
+      "content": "Log in to your router's admin page. If you're not sure what the username and password are, check the sticker on the router. You can also search the web for the router model and the words \"admin password\" to find out the default login info."
+    },
+    {
+      "title": "Create a new port forwarding entry.",
+      "content": "Create a new port forwarding entry. You can do this in the Port Forwarding section of the router settings, which you'll usually find in a section called WAN, NAT, or Advanced. This entry will be specifically for the FTP port. [3] X Research source If prompted to do so, you can enter or select a name for this entry."
+    },
+    {
+      "title": "Add your FTP server's static IP address.",
+      "content": "Add your FTP server's static IP address. It will usually go in the \"IP\" or \"Local Address\" box."
+    },
+    {
+      "title": "Set both the inbound and outbound ports to \"21.\"",
+      "content": "Set both the inbound and outbound ports to \"21.\" Depending on you router, you may be able to choose an \"FTP\" option that automatically fills in the ports. If not, make sure 21 (or the port you created on the server if it differs) is permitted."
+    },
+    {
+      "title": "Select \"TCP\" as the protocol.",
+      "content": "Select \"TCP\" as the protocol."
+    },
+    {
+      "title": "Save and enable the rule.",
+      "content": "Save and enable the rule. Make sure the rule has a checkmark next to it (if possible), then click Save or OK to save the rule. Your router may restart after approving these changes."
+    },
+    {
+      "title": "Determine the FTP server's IP address.",
+      "content": "Determine the FTP server's IP address. If you'll just be connecting from the same local network, the IP address will be the static one assigned to the PC that runs the server. If you're going to connect to the FTP server from a remote location, follow these steps on the PC running the FTP server to determine which IP address the remote computer must connect to: Go to https://www.google.com on the PC that runs the FTP server. Type what is my ip and press Enter . Review the IP address at the top of the search results. This is the IP address that remote users will need to connect to (on port 21) to log in."
+    },
+    {
+      "title": "Open a web browser on the other computer.",
+      "content": "Open a web browser on the other computer. On a computer other than the one on which you're hosting your FTP server, open any web browser other than Microsoft Edge. If you plan to use FTP to access the server a lot, consider installing a free FTP client like Filezilla instead of your browser. If you set up SSL on the FTP server, make sure anyone who connects to the server is using an FTP client that supports SFTP (Secure FTP)."
+    },
+    {
+      "title": "Enter your FTP address and press ↵ Enter.",
+      "content": "Enter your FTP address and press ↵ Enter . The address should follow the format ftp://ip-address-of-ftp-server:21 . Replace \"ip-address-of-ftp-server\" with the actual IP address. If you're using an FTP client like Filezilla, create a new connection to the IP address, and don't worry about the \"ftp://\" part. If you're connecting via SFTP, follow the on-screen instructions to accept the certificate."
+    },
+    {
+      "title": "Sign in to the FTP server.",
+      "content": "Sign in to the FTP server. When prompted to sign in, use the login information you selected when setting up the server to do so. Once you're authenticated, you'll see the contents of the folder you shared on the FTP server."
+    }
+  ]
+}

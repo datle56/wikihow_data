@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Turn-Off-Windows-Activation",
+  "title": "Get Rid of the \"Activate Windows\" Watermark in 3 Ways",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Activating Windows is the best way to get rid of the watermark, and you can find legit copies of Windows at low costs. You can check eBay and Groupon for cheap deals on Windows, but the key may not work. Sometimes, Microsoft will host sales so you can get Windows at low prices. If you're upgrading from a previous version of Windows, activation might be free!"
+    },
+    {
+      "title": "Open Settings .",
+      "content": "Open Settings . Click the gear-shaped icon in the left-hand side of the Start window. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Update & security.",
+      "content": "Click Update & security . This circular arrow-shaped icon is at the bottom of the Settings window."
+    },
+    {
+      "title": "Click Activation.",
+      "content": "Click Activation . It's a tab on the left side of the window. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Activate your copy of Windows.",
+      "content": "Activate your copy of Windows. You can do this in one of two ways, depending on whether you have to buy a key or have already upgraded for free on a different computer: [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Free Upgrade - Click Troubleshoot , enter your Microsoft email address and password if prompted, click Activate Windows , and click Activate when prompted. Purchased Key - Click Go to store , click Buy below your preferred version of Windows, and enter your payment information. [5] X Research source"
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Click Start , click Power , and click Restart . Once your computer finishes restarting, your version of Windows should be activated."
+    },
+    {
+      "title": "Open Registry Editor.",
+      "content": "Open Registry Editor. Press the Win key on your keyboard and type regedit to search for the app, then click the first app search result to open it. Alternatively, press Win + R to open the Run dialog and enter regedit . Click Yes when prompted to continue to use the editor."
+    },
+    {
+      "title": "Navigate to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\SoftwareProtectionPlatform\\Activation.",
+      "content": "Navigate to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\SoftwareProtectionPlatform\\Activation . Click the arrow next to the directory name to expand it and see more folders inside. For example, click \"HKEY_LOCAL_MACHINE\" to expand it, then click \"SOFTWARE\". Alternatively, enter the \"activation\" pathway into the address bar in the Registry Editor."
+    },
+    {
+      "title": "Double-click Manual.",
+      "content": "Double-click Manual . An \"Edit DWORD\" window will pop up."
+    },
+    {
+      "title": "Set \"Base\" to Hexadecimal.",
+      "content": "Set \"Base\" to Hexadecimal . Click the circle next to it to select it."
+    },
+    {
+      "title": "Set the \"Value data\" to and click OK. Here's what you should see in the pop-up. \"Value Name\" Manual. \"Value data\" 0. \"Base\" Hexadecimal.",
+      "content": "Set the \"Value data\" to and click OK . Here's what you should see in the pop-up. \"Value Name\" Manual. \"Value data\" 0. \"Base\" Hexadecimal."
+    },
+    {
+      "title": "Double-click NotificationDisabled.",
+      "content": "Double-click NotificationDisabled . An \"Edit DWORD\" window will pop up."
+    },
+    {
+      "title": "Set \"Base\" to Hexadecimal.",
+      "content": "Set \"Base\" to Hexadecimal . Click the circle next to it to select it."
+    },
+    {
+      "title": "Set the \"Value data\" to and click OK. Here's what you should see in the pop-up. \"Value Name\" NotificationDisabled. \"Value data\" 0. \"Base\" Hexadecimal.",
+      "content": "Set the \"Value data\" to and click OK . Here's what you should see in the pop-up. \"Value Name\" NotificationDisabled. \"Value data\" 0. \"Base\" Hexadecimal."
+    },
+    {
+      "title": "Restart your Windows computer or laptop.",
+      "content": "Restart your Windows computer or laptop. Once you close the Editor, you can restart your device, and the Windows pop-up will disappear. [6] X Research source You might see the notification appear again in a few hours, and you can repeat this process to get rid of the watermark again."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. Press the Win key, enter cmdprompt , right-click the app search result, and click Open as administrator . You will run into errors if Secure Boot is enabled on your system and if you don't run Command Prompt as an administrator."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: bcdedit -set TESTSIGNING OFF and press ↵ Enter ."
+    },
+    {
+      "title": "You'll see confirmation in the Command Prompt that the command worked.",
+      "content": "You'll see confirmation in the Command Prompt that the command worked."
+    },
+    {
+      "title": "Restart your computer or laptop.",
+      "content": "Restart your computer or laptop. Once you close the Editor, you can restart your device, and the Windows pop-up will disappear. [7] X Research source You might see the notification appear again in a few hours, and you can repeat this process to get rid of the watermark again."
+    }
+  ]
+}

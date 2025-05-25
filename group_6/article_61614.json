@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Use-MASM-in-Visual-Studio-2022",
+  "title": "How to Use MASM in Visual Studio 2022",
+  "steps": [
+    {
+      "title": "Navigate to the Visual Studio download website.",
+      "content": "Navigate to the Visual Studio download website. Scroll down and click on download Visual Studio and from drop down menu, select the “Community 2022” option."
+    },
+    {
+      "title": "Open the installer.",
+      "content": "Open the installer. Once you have downloaded the installer, click on the installer to open it. After the installer opens, it will ask you to pick what programming languages you want to install with Visual Studio and we will select “Desktop development with C++” and click on install."
+    },
+    {
+      "title": "Create a new project.",
+      "content": "Create a new project. After installing Visual Studio, open Visual Studio and create a new project, and from there select the Empty Project. After selecting an empty project, it will ask you for a project name. You may name it whatever you would like. Then click “Create.”"
+    },
+    {
+      "title": "Set up MASM.",
+      "content": "Set up MASM. After you have created the project, go to the solution explorer on the left side and right-click on your project name, from the menu navigate to \"Build Dependencies\" -> Build Customizations. A small window will pop up from the window, check MASM, and hit “Ok.”"
+    },
+    {
+      "title": "Add a new file to the project.",
+      "content": "Add a new file to the project. Right-click on Template and navigate to Add Item, New File. Select the C++ File from the window and on the bottom change the name from “Source.cpp” to “main.asm”"
+    },
+    {
+      "title": "Copy and paste the template from the pastebin linked in the Things You'll Need section.",
+      "content": "Copy and paste the template from the pastebin linked in the Things You'll Need section. You are advised to check that the build mode is set to x86 and not x64."
+    },
+    {
+      "title": "Done!",
+      "content": "Done! The IDE is now set to build MASM. However, these steps will need to be followed every time you need to build in MASM so to make it easier, follow along in the third part of the tutorial which will show how to make a project template."
+    },
+    {
+      "title": "Create the template.",
+      "content": "Create the template. To create the template, go to Project on the top, and then from the drop down menu, select \"Export Template.\" A window will pop and then hit next. it will then ask you for a template name, icon and description. Name it “Assembly Language Project” and hit \"Finish.\""
+    },
+    {
+      "title": "Create a new project.",
+      "content": "Create a new project. After creating the template, all that's needed to do build MASM is to create a new project in visual studio and search up the template name in the search bar."
+    }
+  ]
+}

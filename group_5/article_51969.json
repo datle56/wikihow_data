@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Choose-a-Primary-Key-in-a-Database",
+  "title": "How to Choose a Primary Key in a Database",
+  "steps": [
+    {
+      "title": "Ensure all records in the primary key are unique.",
+      "content": "Ensure all records in the primary key are unique. This means you'll want to choose a column that contains some sort of unique identifier that never repeats in other rows. If a column contains any values that are identical for more than one row, it should not be your primary key. [1] X Research source For example, if you are building a database of employees and each employee has a unique employee number, you could use the column that contains the employee ID number as your primary key—however, you should only do this if there's no chance the same ID will be re-used in the future. [2] X Research source You may want to consider using a composite key, which is a primary key that uses multiple columns. Combining more than one column into your key (e.g., combining DateofBirth, CountryofOrigin, and EmployeeID) reduces the chance of duplicate entries."
+    },
+    {
+      "title": "Choose a value that will not change.",
+      "content": "Choose a value that will not change. Once you assign a column as the primary key, you can't change any of the values in that column. Choose something static—something you know you will never need to update. [3] X Research source For example, in our employee ID example, you'd only want to use the employee ID column as the primary ID if there's no chance the employee will ever be assigned a different employee ID. Other pieces of information that can change are peoples' names, addresses, phone numbers, and addresses. Avoid these when selecting a primary key."
+    },
+    {
+      "title": "There can't be any null values in the primary key.",
+      "content": "There can't be any null values in the primary key. Every row must have an identifier—there can be no null values the primary key column for any row. For example, let's say you're creating a database containing patient information. Because social security numbers are unique and don't change, such a column might seem like a good candidate for a private key. However, you'd need a social security number entry for all patients—if a patient hasn't provided one, you won't be able to add them to the table if that column is your primary key."
+    },
+    {
+      "title": "Consider using a surrogate key.",
+      "content": "Consider using a surrogate key. A natural key is a key that contains real data, such as a social security number or employee ID number—all of our previous examples are natural keys. It can be hard to find something that meets all of the aforementioned qualifiers! If you can't identify a column that would work as a (natural) primary key, try a surrogate key: A surrogate key contains unique values that are generated when new records are entered. To use a surrogate key, you'd need to create a new column that doesn't reflect any real data—for example, if you have a list of customers, you might create a new column called CustomerID that you'll use exclusively as a unique database identifier for each customer. In the CustomerID example, each time you enter a new customer into your database, you'd assign them a new CustomerID that would serve as their permanent unique identifier. You could use a number generator, or just add 1 to the previous value to make a unique new customer ID."
+    }
+  ]
+}

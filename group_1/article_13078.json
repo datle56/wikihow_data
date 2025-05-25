@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Discord-Crashing-when-Streaming",
+  "title": "The Most Effective Ways to Fix Discord Crashing When You Stream",
+  "steps": [
+    {
+      "title": "The integrated graphics card isn't as powerful and can crash.",
+      "content": "The integrated graphics card isn't as powerful and can crash. Skip this step if your computer or laptop only has one graphics card. This is most commonly seen with an NVIDIA graphics card along with an integrated Intel card but can happen with other kinds of cards as well. To change which graphics card you're using: Open the NVIDIA control panel (right-click any empty space on your desktop and select \"NVIDIA control panel\"). Click Manage 3D settings in the menu on the left. Click the Program Settings tab and click Add under \"Select a program to customize.\" Select \"Discord\" and click Add Selected Program . Select \"High-performance NVIDIA processor\" under \"2. Select the preferred graphics processor for this program\" Click Apply at the bottom of the window and restart Discord to see if the problem is fixed."
+    },
+    {
+      "title": "Change the subsystem to \"Legacy\".",
+      "content": "Change the subsystem to \"Legacy\". This setting seems to work for NVIDIA users as well. [1] X Research source Go to Voice & Video in Discord Settings. Change the drop-down under \"Audio Subsystem\" to Legacy . Click OK to allow Discord to restart."
+    },
+    {
+      "title": "Software installed with Asus might interfere with Discord's streaming ability.",
+      "content": "Software installed with Asus might interfere with Discord's streaming ability. This software is sometimes called \"Sonic Suite companion\" and you'll have to find it manually, by looking through the Start menu since it's not listed under \"Programs & Software.\" You only need to disable the autostart feature, as discovered by a Discord user on Reddit. [2] X Research source Do this by looking through the Start menu and in Options or Settings, you can disable autostart."
+    },
+    {
+      "title": "Update Discord.",
+      "content": "Update Discord. The app usually updates automatically whenever it launches, but you can also force an update to install by closing the app and re-launching it. Make sure the program is completely closed when you close it. Look in your taskbar or menu bar to see if the Discord icon is there; if so, click it and select Quit ."
+    },
+    {
+      "title": "Update drivers on your computer.",
+      "content": "Update drivers on your computer. There are a few different ways that you can update your drivers : Automatically for Windows and Mac: Most operating systems will automatically update drivers with a security update. For Windows, go to Settings > Update & Security (Win 10 only) > Windows Update > Check for updates . For Mac, go to System Settings > General > Software Update . [3] X Research source Manually using Device Manager in Windows: Open Device Manager and double-click to expand \"Display adapters\". Click your graphic card's name and select Update Driver ."
+    },
+    {
+      "title": "Disable hardware acceleration.",
+      "content": "Disable hardware acceleration. While this may sound useful, it can also negatively impact your streaming experience. To turn this off: Click the gear icon to open User Settings. Click Voice & Video . Click the toggle next to Hardware Acceleration to turn it off (the switch should be grey)."
+    },
+    {
+      "title": "Delete excess data.",
+      "content": "Delete excess data. The cache may be full of unnecessary data that can slow it down, make your graphics card work too hard, and crash while you're streaming. To clear up this space on Windows and Mac, follow these steps: Windows: Press Win + R to open Run. Type %AppData%\\discord and press Enter . Double-click \"Cache\" to open the folder. Press Ctrl + A to select everything and delete your selection (you can either press Del on your keyboard or right-click and select Delete .) Go back to the main folder and double-click the \"Local Storage\" folder. Press Ctrl + A to select everything and delete your selection (you can either press Del on your keyboard or right-click and select Delete .) Mac: Press ⇧ Shift + ⌘ Cmd + G in Finder. This will open the \"Go to Folder\" prompt if you're in Finder. Type this destination: ~/Library/Application Support/discord/ and press Return . Press ⌘ Cmd and click the \"Cache,\" \"Code Cache,\" and \"GPU Cache\" to select them all. Right-click these folders and select Move to Trash . Right-click the Trash icon in the Dock and select Empty Trash ."
+    },
+    {
+      "title": "Turn off \"Use our latest technology\" in Discord.",
+      "content": "Turn off \"Use our latest technology\" in Discord. This has only worked for some users, so don't worry if it doesn't work for you [4] X Research source ! To turn this setting off: Go to Voice & Video in Settings. Click the switch next to \"Use our latest technology to capture your screen\" under the \"Voice Diagnostics\" header. The switch will be grey if it's disabled."
+    },
+    {
+      "title": "Upgrade your computer's memory.",
+      "content": "Upgrade your computer's memory. A lot of times, Discord will crash while you're streaming because you've maxed out your memory. This is most likely the culprit if you're streaming games that use a lot of memory, like League of Legends, and Discord freezes in the middle of a session. If you're confident that you can DIY, you can add RAM yourself . You can also get a professional or computer-savvy friend to add a RAM stick for you."
+    }
+  ]
+}

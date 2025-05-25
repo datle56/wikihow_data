@@ -1,0 +1,190 @@
+{
+  "url": "https://www.wikihow.com/Program-a-Game-in-Python-with-Pygame",
+  "title": "How to Program a Game in Python with Pygame",
+  "steps": [
+    {
+      "title": "Download Pygame.",
+      "content": "Download Pygame. Find it for your platform from http://www.pygame.org/download.shtml ."
+    },
+    {
+      "title": "Run the installer.",
+      "content": "Run the installer."
+    },
+    {
+      "title": "Verify that the installation worked.",
+      "content": "Verify that the installation worked. Open a Python terminal. Type \"import pygame.\" If you don't see any errors then Pygame was successfully installed. import pygame"
+    },
+    {
+      "title": "Open a new file.",
+      "content": "Open a new file."
+    },
+    {
+      "title": "Import Pygame.",
+      "content": "Import Pygame. Pygame is a library that provides access to graphics functions. If you want more information on how these functions work, you can look them up on the Pygame website. https://www.pygame.org/docs/ import pygame from pygame.locals import *"
+    },
+    {
+      "title": "Set the window resolution.",
+      "content": "Set the window resolution. You'll be making a global variable for the screen resolution so that can be referenced in several parts of the game. It's also easy to find at the top of the file so it can be changed later. For advanced projects, putting this information in a separate file would be a better idea. resolution = ( 400 , 300 )"
+    },
+    {
+      "title": "Define some colors.",
+      "content": "Define some colors. Colors in pygame are (RBGA which range in values between 0 and 255. The alpha value (A) is optional but the other colors (red, blue, and green are mandatory). white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 )"
+    },
+    {
+      "title": "Initialize the screen.",
+      "content": "Initialize the screen. Use the resolution variable that was defined earlier. screen = pygame . display . set_mode ( resolution )"
+    },
+    {
+      "title": "Make a game loop.",
+      "content": "Make a game loop. Repeat certain actions in every frame of our game. Make a loop that will always repeat to cycle through all these actions. while True :"
+    },
+    {
+      "title": "Color the screen.",
+      "content": "Color the screen. screen . fill ( white )"
+    },
+    {
+      "title": "Display the screen.",
+      "content": "Display the screen. If you run the program, the screen will turn white and then the program will crash. This is because the operating system is sending events to the game and the game isn't doing anything with them. Once the game receives too many unhandled events, it will crash. while True : ... pygame . display . flip ()"
+    },
+    {
+      "title": "Handle events.",
+      "content": "Handle events. Get a list of all events that have occurred in each frame. You're only going to care about one event, the quit event. This occurs when the user closes the game window. This will also prevent our program from crashing due to too many events. while True : ... for event in pygame . event . get (): if event . type == QUIT : pygame . quit ()"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the code should look like now: import pygame from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) while True : screen . fill ( white ) pygame . display . flip () for event in pygame . event . get (): if event . type == QUIT : pygame . quit ()"
+    },
+    {
+      "title": "Make a new class and constructor.",
+      "content": "Make a new class and constructor. Set all the properties of the object. You're also providing default values for all the properties. class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\""
+    },
+    {
+      "title": "Define how to draw the object.",
+      "content": "Define how to draw the object. Use the properties that were defined in the constructor to draw the ball as a circle as well as to pass a surface into the function to draw the object on. The surface will be the screen object that was created using the resolution earlier. def draw ( self , surface ): pygame . draw . circle ( surface , black , ( self . x , self . y ), self . radius )"
+    },
+    {
+      "title": "Make an instance of the class as well as to tell the game loop to draw the ball in every loop.",
+      "content": "Make an instance of the class as well as to tell the game loop to draw the ball in every loop. ball = Ball () while True : ... ball . draw ( screen )"
+    },
+    {
+      "title": "Make the object move.",
+      "content": "Make the object move. Create a function that will update the position of the object. Call this function in every game loop. class Ball : ... def update ( self ): self . x += self . dx self . y += self . dy"
+    },
+    {
+      "title": "Limit the frame rate.",
+      "content": "Limit the frame rate. The ball will move really fast because the game loop is running hundreds of times a second. Use Pygame’s clock to limit the frame rate to 60 fps. clock = pygame . time . Clock () while True : ... clock . tick ( 60 )"
+    },
+    {
+      "title": "Keep the ball on the screen.",
+      "content": "Keep the ball on the screen. Add checks in the update function to reverse the ball’s direction if it hits one of the screen edges. class Ball : ... def update ( self ): ... if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the code should look like now: import pygame from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( self . x , self . y ), self . radius ) def update ( self ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 ball = Ball () clock = pygame . time . Clock () while True : screen . fill ( white ) ball . draw ( screen ) ball . update () pygame . display . flip () clock . tick ( 60 ) for event in pygame . event . get (): if event . type == QUIT : pygame . quit ()"
+    },
+    {
+      "title": "Use classes to organize everything.",
+      "content": "Use classes to organize everything. The game is going to get more complicated. Use object-oriented techniques to organize your code."
+    },
+    {
+      "title": "Make the game loop into a class.",
+      "content": "Make the game loop into a class. Since our game now has data including your game objects and functions, it makes sense to turn your game loop into a class. class game ():"
+    },
+    {
+      "title": "Add a constructor.",
+      "content": "Add a constructor. Here you will instantiate some game objects, create our screen and clock and initialize Pygame. Pygame needs to be initialized to use certain features like text or sound. class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock ()"
+    },
+    {
+      "title": "Handle events in a function.",
+      "content": "Handle events in a function. class game (): ... def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit ()"
+    },
+    {
+      "title": "Make the game loop a function.",
+      "content": "Make the game loop a function. Call the event handling function every loop. class game (): ... def run ( self ): while True : self . handleEvents () self . screen . fill ( white ) self . clock . tick ( 60 ) pygame . display . flip ()"
+    },
+    {
+      "title": "Handle multiple game objects.",
+      "content": "Handle multiple game objects. Right now this code has to call draw and update on our object each frame. This would get messy if you had a lot of objects. Let’s add our object to an array and then update and draw all objects in the array every loop. Now you can easily add another object and give it a different starting position. class game (): def __init__ ( self ): ... self . gameObjects = [] self . gameObjects . append ( Ball ()) self . gameObjects . append ( Ball ( 100 )) ... def run ( self ): while True : self . handleEvents () for gameObj in self . gameObjects : gameObj . update () self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip ()"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the code should look like now: import pygame from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( self . x , self . y ), self . radius ) def update ( self ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock () self . gameObjects = [] self . gameObjects . append ( Ball ()) self . gameObjects . append ( Ball ( 100 )) def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit () def run ( self ): while True : self . handleEvents () for gameObj in self . gameObjects : gameObj . update () self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip () game () . run ()"
+    },
+    {
+      "title": "Make a player class and constructor.",
+      "content": "Make a player class and constructor. You're going to make another circle that is controlled by the mouse. Initialize the values in the constructor. The radius is the only important value. class Player : def __init__ ( self , rad = 20 ): self . x = 0 self . y = 0 self . radius = rad"
+    },
+    {
+      "title": "Define how to draw the player object.",
+      "content": "Define how to draw the player object. It's going to be the same way you drew the other game objects. class Player : ... def draw ( self , surface ): pygame . draw . circle ( surface , red , ( self . x , self . y ), self . radius )"
+    },
+    {
+      "title": "Add mouse control for the player object.",
+      "content": "Add mouse control for the player object. In every frame, check the location of the mouse and set the players' objects’ location to that point. class Player : ... def update ( self ): cord = pygame . mouse . get_pos () self . x = cord [ 0 ] self . y = cord [ 1 ]"
+    },
+    {
+      "title": "Add a player object to gameObjects.",
+      "content": "Add a player object to gameObjects. Create a new player instance and add it to the list. class game (): def __init__ ( self ): ... self . gameObjects . append ( Player ())"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the code should look like now: import pygame from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( self . x , self . y ), self . radius ) def update ( self ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 class Player : def __init__ ( self , rad = 20 ): self . x = 0 self . y = 0 self . radius = rad self . type = \"player\" def draw ( self , surface ): pygame . draw . circle ( surface , red , ( self . x , self . y ), self . radius ) def update ( self ): cord = pygame . mouse . get_pos () self . x = cord [ 0 ] self . y = cord [ 1 ] class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock () self . gameObjects = [] self . gameObjects . append ( Player ()) self . gameObjects . append ( Ball ()) self . gameObjects . append ( Ball ( 100 )) def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit () def run ( self ): while True : self . handleEvents () for gameObj in self . gameObjects : gameObj . update () self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip () game () . run ()"
+    },
+    {
+      "title": "Change the Update functions.",
+      "content": "Change the Update functions. In order for objects to interact, they will need to have access to each other. Let’s add another parameter to Update to pass in the gameObjects list. You'll have to add it to both the player object and the Ball objects. If you have a lot of game objects, inheritance could help you keep all your method signatures the same. class Ball : ... def update ( self , gameObjects ): ... class Player : ... def update ( self , gameObjects ):"
+    },
+    {
+      "title": "Check for collisions between the player and balls.",
+      "content": "Check for collisions between the player and balls. Go through all the game objects and check if the objects’ type is ball. Then use the two objects’ radii and the distance formula to check if they are colliding. Circles are really easy to check collisions on. This is the biggest reason that you didn't use some other shape for this game. class Player : ... def update ( self , gameObjects ): ... for gameObj in gameObjects : if gameObj . type == \"ball\" : if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 :"
+    },
+    {
+      "title": "End the game if the player gets \"hit\".",
+      "content": "End the game if the player gets \"hit\". Lets just quit the game for now. if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 : pygame . quit ()"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's What the code should look like now: import pygame from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( self . x , self . y ), self . radius ) def update ( self , gameObjects ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 class Player : def __init__ ( self , rad = 20 ): self . x = 0 self . y = 0 self . radius = rad self . type = \"player\" def draw ( self , surface ): pygame . draw . circle ( surface , red , ( self . x , self . y ), self . radius ) def update ( self , gameObjects ): cord = pygame . mouse . get_pos () self . x = cord [ 0 ] self . y = cord [ 1 ] for gameObj in gameObjects : if gameObj . type == \"ball\" : if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 : pygame . quit () class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock () self . gameObjects = [] self . gameObjects . append ( Player ()) self . gameObjects . append ( Ball ()) self . gameObjects . append ( Ball ( 100 )) def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit () def run ( self ): while True : self . handleEvents () for gameObj in self . gameObjects : gameObj . update ( self . gameObjects ) self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip () game () . run ()"
+    },
+    {
+      "title": "Create a game controller class.",
+      "content": "Create a game controller class. Game controllers are responsible for \"running\" the game. It is different from our game class which is responsible for drawing and updating all our objects. The controller will periodically add another ball to the screen to make the game harder. Add a constructor and initialize some basic values. The interval will be the time before another ball is added. class GameController : def __init__ ( self , interval = 5 ): self . inter = interval self . next = pygame . time . get_ticks () + ( 2 * 1000 ) self . type = \"game controller\""
+    },
+    {
+      "title": "Add the update function.",
+      "content": "Add the update function. This will check how much time has passed since the time a ball was added or from the start of the game. If the time is more than the interval you'll reset the time and add a ball. class GameController : ... def update ( self , gameObjects ): if self . next < pygame . time . get_ticks (): self . next = pygame . time . get_ticks () + ( self . inter * 1000 ) gameObjects . append ( Ball ())"
+    },
+    {
+      "title": "Give the balls random velocities.",
+      "content": "Give the balls random velocities. You'll need to use random numbers to make the game different every time. However, the balls’ velocities are now a floating point number instead of an integer. class GameController : ... def update ( self , gameObjects ): if self . next < pygame . time . get_ticks (): self . next = pygame . time . get_ticks () + ( self . inter * 1000 ) gameObjects . append ( Ball ( xVel = random () * 2 , yVel = random () * 2 ))"
+    },
+    {
+      "title": "Fix the draw function.",
+      "content": "Fix the draw function. The draw function won't accept floats. Let’s convert the ball’s position to integers before the balls will be drawn. class Ball : ... def draw ( self , surface ): pygame . draw . circle ( surface , black , ( int ( self . x ), int ( self . y )), self . radius )"
+    },
+    {
+      "title": "Define a draw method for the game controller.",
+      "content": "Define a draw method for the game controller. Since it is a game object, the main loop will try to draw it. You will need to define a draw function that does nothing so the game doesn't crash. class GameController : ... def draw ( self , screen ): pass"
+    },
+    {
+      "title": "Add the game controller to gameObjects and remove the 2 balls.",
+      "content": "Add the game controller to gameObjects and remove the 2 balls. The game should now spawn a ball every five seconds. class game (): def __init__ ( self ): ... self . gameObjects = [] self . gameObjects . append ( GameController ()) self . gameObjects . append ( Player ())"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the code should look like now: import pygame from random import random from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( int ( self . x ), int ( self . y )), self . radius ) def update ( self , gameObjects ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 class Player : def __init__ ( self , rad = 20 ): self . x = 0 self . y = 0 self . radius = rad self . type = \"player\" def draw ( self , surface ): pygame . draw . circle ( surface , red , ( self . x , self . y ), self . radius ) def update ( self , gameObjects ): cord = pygame . mouse . get_pos () self . x = cord [ 0 ] self . y = cord [ 1 ] for gameObj in gameObjects : if gameObj . type == \"ball\" : if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 : pygame . quit () class GameController : def __init__ ( self , interval = 5 ): self . inter = interval self . next = pygame . time . get_ticks () + ( 2 * 1000 ) self . type = \"game controller\" def update ( self , gameObjects ): if self . next < pygame . time . get_ticks (): self . next = pygame . time . get_ticks () + ( self . inter * 1000 ) gameObjects . append ( Ball ( xVel = random () * 2 , yVel = random () * 2 )) def draw ( self , screen ): pass class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock () self . gameObjects = [] self . gameObjects . append ( GameController ()) self . gameObjects . append ( Player ()) def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit () def run ( self ): while True : self . handleEvents () for gameObj in self . gameObjects : gameObj . update ( self . gameObjects ) self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip () game () . run ()"
+    },
+    {
+      "title": "Add a score to the game controller class.",
+      "content": "Add a score to the game controller class. Create a font object and a score variable. You'll draw the font in every frame to display the score and increase the score every frame in update. class GameController : def __init__ ( self , interval = 5 ): ... self . score = 0 self . scoreText = pygame . font . Font ( None , 12 ) def update ( self , gameObjects ): ... self . score += 1 def draw ( self , screen ): screen . blit ( self . scoreText . render ( str ( self . score ), True , black ), ( 5 , 5 ))"
+    },
+    {
+      "title": "Modify how the game ends.",
+      "content": "Modify how the game ends. Let’s get rid of the quit when the player detects a collision. Instead you'll set a variable in the player that the game can check. When gameOver is set, stop updating objects. This will freeze everything in place so that player can see what happened and check their score. Note that the objects are still being drawn, just not updated. class Player : def __init__ ( self , rad = 20 ): ... self . gameOver = False def update ( self , gameObjects ): ... for gameObj in gameObjects : if gameObj . type == \"ball\" : if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 : self . gameOver = True class game (): def __init__ ( self ): ... self . gameOver = False def run ( self ): while True : self . handleEvents () if not self . gameOver : for gameObj in self . gameObjects : gameObj . update ( self . gameObjects ) if gameObj . type == \"player\" : self . gameOver = gameObj . gameOver"
+    },
+    {
+      "title": "Try it out!",
+      "content": "Try it out! Here's what the finished code should look like now: import pygame from random import random from pygame.locals import * resolution = ( 400 , 300 ) white = ( 255 , 255 , 255 ) black = ( 0 , 0 , 0 ) red = ( 255 , 0 , 0 ) screen = pygame . display . set_mode ( resolution ) class Ball : def __init__ ( self , xPos = resolution [ 0 ] / 2 , yPos = resolution [ 1 ] / 2 , xVel = 1 , yVel = 1 , rad = 15 ): self . x = xPos self . y = yPos self . dx = xVel self . dy = yVel self . radius = rad self . type = \"ball\" def draw ( self , surface ): pygame . draw . circle ( surface , black , ( int ( self . x ), int ( self . y )), self . radius ) def update ( self , gameObjects ): self . x += self . dx self . y += self . dy if ( self . x <= 0 or self . x >= resolution [ 0 ]): self . dx *= - 1 if ( self . y <= 0 or self . y >= resolution [ 1 ]): self . dy *= - 1 class Player : def __init__ ( self , rad = 20 ): self . x = 0 self . y = 0 self . radius = rad self . type = \"player\" self . gameOver = False def draw ( self , surface ): pygame . draw . circle ( surface , red , ( self . x , self . y ), self . radius ) def update ( self , gameObjects ): cord = pygame . mouse . get_pos () self . x = cord [ 0 ] self . y = cord [ 1 ] for gameObj in gameObjects : if gameObj . type == \"ball\" : if ( gameObj . x - self . x ) ** 2 + ( gameObj . y - self . y ) ** 2 <= ( gameObj . radius + self . radius ) ** 2 : self . gameOver = True class GameController : def __init__ ( self , interval = 5 ): self . inter = interval self . next = pygame . time . get_ticks () + ( 2 * 1000 ) self . type = \"game controller\" self . score = 0 self . scoreText = pygame . font . Font ( None , 12 ) def update ( self , gameObjects ): if self . next < pygame . time . get_ticks (): self . next = pygame . time . get_ticks () + ( self . inter * 1000 ) gameObjects . append ( Ball ( xVel = random () * 2 , yVel = random () * 2 )) self . score += 1 def draw ( self , screen ): screen . blit ( self . scoreText . render ( str ( self . score ), True , black ), ( 5 , 5 )) class game (): def __init__ ( self ): pygame . init () self . screen = pygame . display . set_mode ( resolution ) self . clock = pygame . time . Clock () self . gameObjects = [] self . gameObjects . append ( GameController ()) self . gameObjects . append ( Player ()) self . gameOver = False def handleEvents ( self ): for event in pygame . event . get (): if event . type == QUIT : pygame . quit () def run ( self ): while True : self . handleEvents () if not self . gameOver : for gameObj in self . gameObjects : gameObj . update ( self . gameObjects ) if gameObj . type == \"player\" : self . gameOver = gameObj . gameOver self . screen . fill ( white ) for gameObj in self . gameObjects : gameObj . draw ( self . screen ) self . clock . tick ( 60 ) pygame . display . flip () game () . run ()"
+    }
+  ]
+}

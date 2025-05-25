@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Add-in-Excel",
+  "title": "How to Add Numbers & Cells in Excel: Complete Guide",
+  "steps": [
+    {
+      "title": "Click the cell where you want to display the sum and type an equals sign.",
+      "content": "Click the cell where you want to display the sum and type an equals sign. This indicates the beginning of a formula. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type the first number you want to add.",
+      "content": "Type the first number you want to add. If you would rather add the value of an existing cell instead of typing a number manually, just click the cell you want to include in the equation. Otherwise, you can type a number manually. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, if you click cell C3, the value of C3 will be the first number in your equation. If you type 1 , the number 1 will be the first number in your equation."
+    },
+    {
+      "title": "Type a + sign.",
+      "content": "Type a + sign. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type another number select another cell.",
+      "content": "Type another number select another cell. This adds the second number or value to your equation. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can add multiple cells or numbers at once if you'd like—just separate each number or address with another + sign. For example, if you want to find the sum of cells C3, D4, and E5, your formula will look like this: =C3+D4+E5 . If you want to add 1 plus 1, your formula will look like this: =1+1 . You can add other operations, such as subtraction or multiplication, in the same equation. In this example, we'll add the values of C3 and D4 and then subtract 2: =C3+D4-2"
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . Now you'll see the sum of the added numbers or values in the selected cell."
+    },
+    {
+      "title": "Click the cell where you want to display the sum.",
+      "content": "Click the cell where you want to display the sum. The SUM function works like using the plus + sign, but is a bit easier to work with when you're adding multiple cells and ranges."
+    },
+    {
+      "title": "Type an equal sign followed by the word SUM =SUM.",
+      "content": "Type an equal sign followed by the word SUM =SUM . This indicates the beginning of the SUM formula. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Type an opening parenthesis (.",
+      "content": "Type an opening parenthesis ( . Your formula should now look like this: =SUM( . [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Select the range of cells you want to add.",
+      "content": "Select the range of cells you want to add. Click and drag over all of the cells you want to add together. For example, if you want to add the values of all cells from A1 through A10, select all of those cells now. [7] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can also select multiple columns and rows here. To select multiple non-adjacent columns and/or rows, hold down the Control key and as you select each range. You don't have to select entire ranges with the SUM function—you can also enter individual numbers or cell addresses. If you have a named range and you want to get the sum of it, simply type the name of the range instead of referencing the cells (i.e. if you have a range named \"Prices,\" you could write =SUM(Prices) ). [8] X Research source"
+    },
+    {
+      "title": "Type a clothing parenthesis ).",
+      "content": "Type a clothing parenthesis ) . This finishes the formula. [9] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Your formula should now look something like this: =SUM(B4,B8) In this example, we've selected cells B4 through B8. If you selected non-adjacent ranges, each range will be separated by a comma. In this example, we selected B4 through C8 (two adjacent columns) and E4 through E5: =SUM(B4:C8,E4:E5)"
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . The sum of the selected range now appears in this cell."
+    },
+    {
+      "title": "Click the cell immediately below or next to the values you want to add.",
+      "content": "Click the cell immediately below or next to the values you want to add. AutoSum will automatically create a formula that adds the values of an adjacent column or row. [10] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, if you want to add the values of cells A:2 through A:10, you would click cell A11. You can also add multiple columns or rows at the same time by selecting multiple cells. For example, to display the sums of values in columns A, B, and C, you could select cells A11, B11, and C11."
+    },
+    {
+      "title": "Click the AutoSum icon on the Home tab Σ.",
+      "content": "Click the AutoSum icon on the Home tab Σ . It's the Sigma icon (which looks like an \"E\") on the Home tab at the top of Excel. A formula will then appear in the selected cell. [11] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . Now you'll see the results of the formula in the cell. If you selected multiple blank cells, you'll see each individual column or row's value in the selected cells."
+    },
+    {
+      "title": "Click the cell where you want to put the final sum.",
+      "content": "Click the cell where you want to put the final sum. You can use SUMIF to add the sum of values in a range only if they meet one condition."
+    },
+    {
+      "title": "Type an equal sign followed by the word SUMIF =SUMIF.",
+      "content": "Type an equal sign followed by the word SUMIF =SUMIF . This will begin the SUMIF formula."
+    },
+    {
+      "title": "Type an opening parenthesis (.",
+      "content": "Type an opening parenthesis ( . Your formula should now look like this: =SUMIF( ."
+    },
+    {
+      "title": "Specify the range for the condition.",
+      "content": "Specify the range for the condition. For example, imagine you have a spreadsheet with a column named \"Products Sold\" and a column named \"Selling Price.\" If you want to find the sum of the selling prices of one particular product you'd enter the range of the \"Products Sold\" column. After specifying the range, type a comma , ."
+    },
+    {
+      "title": "Specify the condition criteria.",
+      "content": "Specify the condition criteria. In the above example, you would next input a cell reference to the name of the product that you want the selling prices of. It's best to use a static cell reference, not one that could change in the future. After specifying the criteria, type a comma , ."
+    },
+    {
+      "title": "Specify the sum range.",
+      "content": "Specify the sum range. In the above example, you would then enter the range of the \"Selling Price\" column. Finish by typing a closing parenthesis ) . Your finished formula should look like =SUMIF(condition_range, criteria, sum_range) ."
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . The sum of all the items that match the criteria will be displayed. [12] X Research source"
+    },
+    {
+      "title": "Click the cell where you want to put the final sum.",
+      "content": "Click the cell where you want to put the final sum. SUMIFS is similar to SUMIF, but the syntax is slightly different. You can use it to find the SUM of a range for items that match multiple criteria."
+    },
+    {
+      "title": "Type an equal sign followed by the word SUMIFS =SUMIFS.",
+      "content": "Type an equal sign followed by the word SUMIFS =SUMIFS . This will begin the SUMIFS formula."
+    },
+    {
+      "title": "Type an opening parenthesis (.",
+      "content": "Type an opening parenthesis ( . Your formula should now look like this: =SUMIFS( ."
+    },
+    {
+      "title": "Specify the range for the sums.",
+      "content": "Specify the range for the sums. For example, imagine you have a spreadsheet with a column named \"Products Sold\", a column named \"Sales Rep\", and a column named \"Selling Price\" and you want to find the sum of the selling price for a particular product sold by a particular sales rep. You'd first start by specifying the range of the \"Selling Price\" column. After specifying the sum range, type a comma , ."
+    },
+    {
+      "title": "Specify the first criteria range.",
+      "content": "Specify the first criteria range. In the above example, your first criteria range would be the range of the \"Products Sold\" column. After specifying the first criteria range, type a comma , ."
+    },
+    {
+      "title": "Specify the first criteria.",
+      "content": "Specify the first criteria. In the above example, you'd enter a cell reference to the product you want to find the sum for. It's best to use a static cell reference, not one that will change later. After specifying the first criteria, type a comma , ."
+    },
+    {
+      "title": "Specify the second criteria range.",
+      "content": "Specify the second criteria range. In the above example, your second criteria range would be the range of the \"Sales Rep\" column. After specifying the second criteria range, type a comma , ."
+    },
+    {
+      "title": "Specify the second criterion.",
+      "content": "Specify the second criterion. In the above example, you'd enter a cell reference to the sales rep you want to find the sum for. It's best to use a static cell reference, not one that will change later. After specifying the second criteria, type a comma , . If you need to enter more criteria, you can enter more criteria ranges followed by their criteria. Finish by typing a closing parenthesis ) . Your finished formula should look like =SUMIF(sum_range, criteria1_range, criteria1, criteria2_range, criteria2) ."
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . The sum of all the items that match the criteria(s) will be displayed. [13] X Research source"
+    }
+  ]
+}

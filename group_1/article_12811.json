@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Device-in-Read-Only-Mode-After-Jailbreak-iPhone",
+  "title": "Why Your Jailbroken iPhone Is Stuck in Read Only Mode and What to Do",
+  "steps": [
+    {
+      "title": "Try remounting your system as read/write.",
+      "content": "Try remounting your system as read/write. In some cases, fixing this problem is simply a matter of changing your file system’s access permissions. This is a common issue in palera1n. If you see the “dpkg error: Read-only file system” notification, try the following solution: [1] X Research source Open the palera1n loader app on your iPhone. Tap the gear icon. Select Remount R/W . Retry the operation that originally triggered the error."
+    },
+    {
+      "title": "You may see this error when using tweaks that don’t support rootless jailbreaks.",
+      "content": "You may see this error when using tweaks that don’t support rootless jailbreaks. With the release of iOS 15, certain parts of your iPhone’s system are now completely inaccessible. These system files are locked inside the SSV, or Sealed System Volume. For this reason, many recent jailbreaks, such as palera1n for iOS 15+, are “rootless” (meaning that they work without accessing or changing parts of your system that require root privileges). [2] X Research source Trying to use an older tweak that was designed for full-root environment with one of these rootless jailbreaks may result in a “read-only file system” error. Check with the developer of the tweak you’re trying to use. They may have an updated version that works with rootless jailbreaks."
+    },
+    {
+      "title": "Re-jailbreak your iPhone.",
+      "content": "Re-jailbreak your iPhone. If something went wrong with the jailbreaking process, it could trigger a variety of issues, including the “Read-only file system” error. When other troubleshooting steps don’t work, your best bet may be to unjailbreak your iPhone and then jailbreak it again. To unjailbreak your iPhone, you’ll need to put it in Recovery Mode and restore it using Finder or iTunes. Once your iPhone is restored, you can attempt to jailbreak it again."
+    },
+    {
+      "title": "Use an exit recovery command.",
+      "content": "Use an exit recovery command. If your iPhone keeps booting up in recovery mode after you jailbreak it, something probably went wrong during the jailbreaking process. You can use a utility like FutureRestore or a command line tool like irecovery while your iPhone is plugged into your computer to force the recovery loop to stop. Try one of the following commands: [3] X Research source Futurerestore : --exit-recovery Irecovery : irecovery -n Palera1n : palera1n -n"
+    },
+    {
+      "title": "Run the apfs-reseal script.",
+      "content": "Run the apfs-reseal script. If the Secure System Volume is accidentally compromised during the jailbreaking process, it could cause your iPhone to get stuck in Recovery Mode. [4] X Research source You may be able to resolve this issue by running the apfs-reseal script while your iPhone is connected to a Mac (this script is only fully functional on macOS): [5] X Research source Open a terminal and enter the following series of commands: sudo xcode-select --install sudo xcodebuild -license accept /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" brew tap esolitos/ipa brew install esolitos/ipa/sshpass libimobiledevice jq python3 sudo python3 -m pip install pyimg4 remotezip sudo curl -Lo /usr/local/bin/irecovery https://github.com/palera1n/palera1n/raw/legacy/binaries/Darwin/irecovery sudo chmod +x /usr/local/bin/irecovery sudo curl -Lo /usr/local/bin/palera1n https://github.com/palera1n/palera1n/releases/download/v2.0.0-beta.6.2/palera1n-macos-universal sudo chmod +x /usr/local/bin/palera1n git clone https://github.com/0xallie/apfs-reseal cd apfs-reseal ./apfs_reseal.command"
+    },
+    {
+      "title": "Restore your iPhone in Finder or iTunes.",
+      "content": "Restore your iPhone in Finder or iTunes. If your iPhone is stuck in a recovery loop and you can’t get an exit recovery command to work, you may be able to restore or update your iPhone on your computer in Finder or iTunes. After that, you’ll have to attempt to jailbreak your phone again. [6] X Research source"
+    }
+  ]
+}

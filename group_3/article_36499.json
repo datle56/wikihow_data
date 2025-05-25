@@ -1,0 +1,78 @@
+{
+  "url": "https://www.wikihow.com/Remove-Spaces-Between-Characters-and-Numbers-in-Excel",
+  "title": "3 Ways to Remove Leading, Trailing, & Extra Spaces in Excel",
+  "steps": [
+    {
+      "title": "Highlight the range where you want to remove all spaces.",
+      "content": "Highlight the range where you want to remove all spaces. For example, if you want to remove spaces from C2 through C30, highlight those cells. This method removes any extra spaces between numbers, words, and other characters. To eliminate leading and trailing spaces, see Using the TRIM Function . This method will not delete extra space at the beginning or end of the value, just spaces between characters."
+    },
+    {
+      "title": "Press Ctrl+H to open Find and Replace.",
+      "content": "Press Ctrl + H to open Find and Replace . This quick keyboard shortcut works on both Windows and macOS. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the box next to \"Find What.\"",
+      "content": "Click the box next to \"Find What.\""
+    },
+    {
+      "title": "Press the space bar on the keyboard.",
+      "content": "Press the space bar on the keyboard. Make sure to press it only once. This adds a space to the \"Find what\" field."
+    },
+    {
+      "title": "Click Replace All.",
+      "content": "Click Replace All . It's the second button at the bottom of the window. This searches for all spaces between numbers and other characters in the selected range and deletes them. A pop-up will show how many spaces were removed. Click \"'OK'\" on the pop-up to return to your worksheet."
+    },
+    {
+      "title": "Click the top cell in a blank column.",
+      "content": "Click the top cell in a blank column. To remove extra space between numbers, characters, or words in a cell, you can use the SUBSTITUTE function . Click a cell on the same row as the first cell in the column with the extra spaces. For example, if you want to remove spaces from column A, and A's first row of data is in row 1 (A1), click the first cell in your blank column (e.g., B1, C1, D1, etc.)."
+    },
+    {
+      "title": "Type =SUBSTITUTE into the cell.",
+      "content": "Type =SUBSTITUTE into the cell."
+    },
+    {
+      "title": "Click the first cell in the column with spaces.",
+      "content": "Click the first cell in the column with spaces. For example, if the first cell in the column that has extra spaces is A1, click it now. If you clicked cell A1, the formula should now look like this: =SUBSTITUTE(A1 ."
+    },
+    {
+      "title": "Type , (a comma).",
+      "content": "Type , (a comma). The cell should now look like this: =Substitute(A1, ."
+    },
+    {
+      "title": "Type \" \",.",
+      "content": "Type \" \", . That's a double quotation mark, a space, another double quotation mark, and then a comma. There's a space between the two sets of double quotes—this is important. The formula should now look like this: =SUBSTITUTE(A1,\" \", ."
+    },
+    {
+      "title": "Type \"\"",
+      "content": "Type \"\" . This time, there's NO space between the sets of quotes. The formula should now look like this: =SUBSTITUTE(A1,\" \",\"\" ."
+    },
+    {
+      "title": "Type a closed parenthesis ) and press ↵ Enter or ⏎ Return.",
+      "content": "Type a closed parenthesis ) and press ↵ Enter or ⏎ Return . In the end, the formula should now read =SUBSTITUTE(A1,\" \",\"\") . You will now see the contents of the selected cell (A1, in this example) without spaces in the new column. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, if C2 said w ww . wikih ow .com , your new cell will say www.wikihow.com ."
+    },
+    {
+      "title": "Apply the changes to the entire column.",
+      "content": "Apply the changes to the entire column. The easiest way to do this is to use Autofill: Click the cell into which you typed the formula to select it. Double-click the square at the bottom-right corner of the box. Alternatively, drag the square down until you've reached the bottom of the column. You can now easily copy the new column without spaces and paste it into the original column. Your new space-free data is now in place."
+    },
+    {
+      "title": "Click the top cell in a blank column.",
+      "content": "Click the top cell in a blank column. The TRIM function removes extra spaces from the beginning and end of a cell's value. It will also remove extra space (except for single spaces) between words. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the first cell on the same row as the first line of data in the column with the extra spaces."
+    },
+    {
+      "title": "Type =TRIM( into the cell.",
+      "content": "Type =TRIM( into the cell."
+    },
+    {
+      "title": "Click the first cell that contains extra spaces.",
+      "content": "Click the first cell that contains extra spaces. This adds the cell address to the TRIM formula. For example, if you click A1, your formula should now look like this: =TRIM(A1"
+    },
+    {
+      "title": "Type a closed parenthesis ) and press ↵ Enter or Return.",
+      "content": "Type a closed parenthesis ) and press ↵ Enter or Return . Your ending formula should look like this: =TRIM(A1) . This removes any excess spaces at the beginning or end of the selected cell. It will also remove extra space between words \"except\" for single spaces."
+    },
+    {
+      "title": "Apply the changes to the entire column.",
+      "content": "Apply the changes to the entire column. The easiest way to do this is to use Autofill: Click the cell into which you typed the formula to select it. Double-click the square at the bottom-right corner of the box. Alternatively, drag the square down until you've reached the bottom of the column. You can now easily copy the new column without extra space and paste it into the original column. Your new space-free data is now in place."
+    }
+  ]
+}

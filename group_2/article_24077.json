@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Install-Software-in-Red-Hat-Linux",
+  "title": "How to Install Software in Red Hat Linux",
+  "steps": [
+    {
+      "title": "In Linux, software is often bundled in packages.",
+      "content": "In Linux, software is often bundled in packages. Packages make it easy to install software without having to compile the source code from scratch. You can install packages using a package manager, which is a tool that downloads the packages from repositories (repos) and installs them in a few easy steps. Package managers automatically resolve dependencies on other software libraries."
+    },
+    {
+      "title": "Open a Terminal.",
+      "content": "Open a Terminal . You'll find Terminal in Applications > System Tools , or you can right-click the desktop and select Terminal ."
+    },
+    {
+      "title": "If you're installing system-wide software, you'll need administrative privileges.",
+      "content": "If you're installing system-wide software, you'll need administrative privileges. Type su - and type the root password when prompted."
+    },
+    {
+      "title": "To get the latest software packages, you'll need to update the yum package manager.",
+      "content": "To get the latest software packages, you'll need to update the yum package manager. To do this, just type yum check-update and press Enter ."
+    },
+    {
+      "title": "Type yum install \"program name\" and press ↵ Enter.",
+      "content": "Type yum install \"program name\" and press ↵ Enter . For example, to install the Dillo web browser, you would type yum install dillo ."
+    },
+    {
+      "title": "Press the Y key to start installing the software.",
+      "content": "Press the Y key to start installing the software. The software will now install. Once the installation is complete, you'll return to the command prompt."
+    }
+  ]
+}

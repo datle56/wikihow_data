@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Find-a-Router-Password",
+  "title": "How to Find a Router Password: Admin & Wi-Fi Passwords",
+  "steps": [
+    {
+      "title": "Check the sticker on your router.",
+      "content": "Check the sticker on your router. Most routers list the default username and password for the router on a sticker somewhere on the router itself. Unless you've changed your home router's admin password, it's likely still set to the manufacturer's default. You'll also find the default Wi-Fi network name and password printed on the router. Both passwords may be listed on the same or separate stickers."
+    },
+    {
+      "title": "Look up your router on a default router password website.",
+      "content": "Look up your router on a default router password website. Check out https://portforward.com/router-password/ for a comprehensive list of default admin passwords by manufacturer and model. [1] X Research source If you can't find any information about your model at Portforward.com, Google your router's manufacturer and model, and the words \"default router password.\" If you got the router from your ISP, your provider may have set an alternative router password. Check the manual that came with your router, or any paperwork or conformation emails you received from your provider, for password info."
+    },
+    {
+      "title": "See if you saved the router password in your web browser.",
+      "content": "See if you saved the router password in your web browser. If you have ever signed in to your router in the past, you may have saved the admin password in Safari or Chrome . Go to your router's IP address in your web browser, and click the admin or password field to see if the password automatically appears."
+    },
+    {
+      "title": "Reset your router if you can't find the admin password.",
+      "content": "Reset your router if you can't find the admin password. If you're still not able to find your router's password, you can reset the router to its original default settings. This will erase all settings, including any custom network names or passwords you've added, and restore them to the defaults. [2] X Research source Find the reset button on your router. It's typically a tiny recessed button that you won't be able to reach with your finger. To reset the router, insert a small thin tool, like a straightened paperclip or SIM card tool, into the reset button. Continue pressing the button until the lights on your router turn off and then back on. Once the router is reset, wait several minutes for it to come back online. Then, you'll be able to log into the router's admin website on your computer using the default admin username and password."
+    },
+    {
+      "title": "Find your router's IP address.",
+      "content": "Find your router's IP address. If you need to log in to your router to make changes, including changing the Wi-Fi network name or password , you can find its IP address as long as you're connected to the router. Here's how you can find yours: Windows: Open the Command Prompt , type ipconfig , and then press ↵ Enter . The address you need is next to \"Default Gateway.\" Mac: Go to System Settings > Network > your network connection > Details . The address appears next to \"Router.\""
+    },
+    {
+      "title": "Look for the sticker on your router.",
+      "content": "Look for the sticker on your router. If you haven't changed from the default password, you'll find the Wi-Fi password on the physical router near the network's name. If you have changed the password, you can skip this step. Your router password might also be listed as \"passphrase,\" \"network key,\" or \"wireless PIN.\" Use this method to find the password for the wireless network to which you're currently connected."
+    },
+    {
+      "title": "Open the Network and Sharing Center.",
+      "content": "Open the Network and Sharing Center. The steps will be a little different depending on whether you're using Windows 10 or Windows 11: Windows 11: Press the Windows key and type control panel . Click Control Panel . Click Network and Internet . Click Network and Sharing Center . [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Windows 10: Click the Start menu and select Settings . Click Network & Internet . Click Status . Click Network and Sharing Center ."
+    },
+    {
+      "title": "Click the name of your current Wi-Fi network.",
+      "content": "Click the name of your current Wi-Fi network. Another window will pop up."
+    },
+    {
+      "title": "Click Wireless Properties.",
+      "content": "Click Wireless Properties . You'll see this centered in the \"Wi-Fi Status\" window."
+    },
+    {
+      "title": "Click the Security tab.",
+      "content": "Click the Security tab. You'll see this at the top of the window next to \"Connection.\""
+    },
+    {
+      "title": "Click to check the box next to \"Show characters.",
+      "content": "Click to check the box next to \"Show characters. \" You'll see this under the text field that says, \"Network security key.\" This displays the Wi-Fi password for this connection. You'll need admin-level access to show the password characters. If you don't have admin-level security, you might be prompted to enter the computer's password before you can continue. If the Wi-Fi password for the network you're looking for has been changed, you'll need to contact the administrator to get the new password. If the router belongs to you, you can log in to the router to change the password ."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt . Type cmd into the search field in your Start Menu, then click Command Prompt in the search results to run it. Use this method to find the password for any wireless network you've connected to in the past using this computer."
+    },
+    {
+      "title": "Type netsh wlan show profiles and press ↵ Enter.",
+      "content": "Type netsh wlan show profiles and press ↵ Enter . This shows a list of Wi-Fi networks you've connected to in the past."
+    },
+    {
+      "title": "Type netsh wlan show profile name=EXAMPLE key=clear and press ↵ Enter.",
+      "content": "Type netsh wlan show profile name=EXAMPLE key=clear and press ↵ Enter . Replace \"EXAMPLE\" with the name of the profile you want to see the password for. [4] X Research source"
+    },
+    {
+      "title": "Find the password in the \"Key Content\" line.",
+      "content": "Find the password in the \"Key Content\" line. [5] X Research source If the Wi-Fi password for the network you're looking for has been changed, you'll need to contact the administrator to get the new password. If the router belongs to you, you can log in to the router to change the password ."
+    },
+    {
+      "title": "Open Keychain Access.",
+      "content": "Open Keychain Access. You can either find this in your Utilities folder in Finder, or you can press ⌘ Cmd + Space to open Spotlight and search Keychain Access . This method will display the Wi-Fi password for any network you've connected to on your Mac, including the current network."
+    },
+    {
+      "title": "Locate the Wi-Fi network.",
+      "content": "Locate the Wi-Fi network. Type the name of the Wi-Fi network into the search bar at the top-right corner to filter the results."
+    },
+    {
+      "title": "Double-click the Wi-Fi network.",
+      "content": "Double-click the Wi-Fi network. This opens a panel that contains information about this connection."
+    },
+    {
+      "title": "Click to select the box next to \"Show Password.",
+      "content": "Click to select the box next to \"Show Password. \" You'll see this next to the password field. If the Wi-Fi password for the network you're looking for has been changed, you'll need to contact the administrator to get the new password. If the router belongs to you, you can log in to the router to change the password ."
+    },
+    {
+      "title": "Enter your username and password.",
+      "content": "Enter your username and password. You'll need to confirm the password you use to access your Mac to continue. As long as you have permission to view the password, the password will now appear."
+    }
+  ]
+}

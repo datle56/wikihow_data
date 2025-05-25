@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Format-a-Hard-Drive-Using-Ubuntu",
+  "title": "How to Format a Hard Drive Using Ubuntu",
+  "steps": [
+    {
+      "title": "Open the Disks program.",
+      "content": "Open the Disks program. You can quickly find this by opening the Dash and typing disks . This will display all of your connected drives on the left side of the window."
+    },
+    {
+      "title": "Select the drive you want to format.",
+      "content": "Select the drive you want to format. All of your drives will appear in the left frame. Be careful when you're selecting your drive, as everything on the partition will be deleted when you format it."
+    },
+    {
+      "title": "Click the Gear button and select \"Format Partition.\"",
+      "content": "Click the Gear button and select \"Format Partition.\" This will open a new window for configuring the file system."
+    },
+    {
+      "title": "Select the file system you want to use.",
+      "content": "Select the file system you want to use. Click the \"Type\" menu and select the file system you want to use. If you want to use the drive to transfer files between Linux, Mac, and Windows computers, as well as most devices that support USB storage, select \"FAT.\" If you're just using the drive for your Linux computer, select \"Ext4.\" If you're planning on just using the drive in Windows, select \"NTFS.\""
+    },
+    {
+      "title": "Give the volume a name.",
+      "content": "Give the volume a name. You can enter a label for the formatted volume into the empty field. This can help you identify your connected drives."
+    },
+    {
+      "title": "Select whether or not you want a secure erase.",
+      "content": "Select whether or not you want a secure erase. By default, the format process will delete but not overwrite the data on the drive. If you want to securely erase the contents, select \"Overwrite existing data with zeroes\" from the \"Erase\" menu. This will result in a slower but more secure format."
+    },
+    {
+      "title": "Click the \"Format\" button to start the format process.",
+      "content": "Click the \"Format\" button to start the format process. You'll be asked to confirm before you proceed. The format process will take longer for larger drives, and if you selected the more secure erasing option. If you encounter difficulties formatting the drive, try GParted in the next section."
+    },
+    {
+      "title": "Mount the formatted drive.",
+      "content": "Mount the formatted drive. Once the drive has been formatted, click the \"Mount\" button that appears beneath the Volumes graph. This will mount the partition, allowing you to access the file system for storage. Click the link that appears to open it in your file browser, or open the Files program and look for the drive in the left frame. [1] X Research source"
+    },
+    {
+      "title": "Open the Terminal.",
+      "content": "Open the Terminal. You can open the Terminal from the Dash, or by pressing Ctrl + Alt + T ."
+    },
+    {
+      "title": "Install GParted.",
+      "content": "Install GParted. Enter the following command to install GParted. You'll be prompted for your user password, which won't appear as you type it: sudo apt-get install gparted Press Y when prompted to continue."
+    },
+    {
+      "title": "Start GParted from the Dash.",
+      "content": "Start GParted from the Dash. Open the Dash and type \"gparted\" to find the GParted Partition Editor.\" You'll see a bar representing the current drive's partitions and the free space on them."
+    },
+    {
+      "title": "Select the drive you want to format.",
+      "content": "Select the drive you want to format. Click the drop-down menu in the upper-right corner to select the drive you want to format. If you aren't sure which is which, use the size of the drive to help you determine."
+    },
+    {
+      "title": "Unmount the partition you want to change or remove.",
+      "content": "Unmount the partition you want to change or remove. Before you can make changes in GParted, you'll need to unmount the partition. Right-click the partition from the list or the graph and select \"Unmount.\""
+    },
+    {
+      "title": "Delete the existing partition.",
+      "content": "Delete the existing partition. This will delete the partition and turn it into unallocated space. You can then create a new partition from that space and format it with a file system. Right-click the partition you want to remove and click \"Delete.\""
+    },
+    {
+      "title": "Create a new partition.",
+      "content": "Create a new partition. After deleting the partition, right-click the unallocated space and select \"New.\" This will start the process to create a new partition."
+    },
+    {
+      "title": "Select the size of the partition.",
+      "content": "Select the size of the partition. When creating a new partition, you can use the slider to choose how much of the space you want to use for it."
+    },
+    {
+      "title": "Select the partition's file system.",
+      "content": "Select the partition's file system. Use the \"File system\" menu to choose the format for the partition. If you intend to use the drive for multiple operating systems and devices, select \"fat32.\" If you're just using the drive in Linux, select \"ext4.\""
+    },
+    {
+      "title": "Give the partition a label.",
+      "content": "Give the partition a label. This will allow you to easily identify it on your system."
+    },
+    {
+      "title": "Click \"Add\" when you're finished configuring the partition.",
+      "content": "Click \"Add\" when you're finished configuring the partition. The partition will be added to your operations queue at the bottom of the screen."
+    },
+    {
+      "title": "Resize a partition (optional).",
+      "content": "Resize a partition (optional). One of Gparted's features is the ability to resize partitions. You can resize a partition so that a new partition can be created from the resulting free space. This allows you to essentially split a single drive into multiple pieces. This will not affect any data on the drive. Right-click the partition you want to resize and select \"Resize/Move.\" Drag the edges of the partition to create free space before or after it. Click \"Resize/Move\" to accept your changes. You'll need to create new partitions from the resulting unallocated space following the instructions above."
+    },
+    {
+      "title": "Click the green checkmark button to begin applying your changes.",
+      "content": "Click the green checkmark button to begin applying your changes. None of your changes will be applied to the drive until you click this button. Once you click it, any partitions that you set to delete will be removed and you will lose all of the data on them. Be absolutely sure you have the correct settings before proceeding. It may take a while to complete all of the operations, especially if you're performing several or the drive is large."
+    },
+    {
+      "title": "Find your newly-formatted drive.",
+      "content": "Find your newly-formatted drive. Once the format process is complete, you can close GParted and find your drive. It will appear in the list of drives in your Files program. [2] X Research source"
+    }
+  ]
+}

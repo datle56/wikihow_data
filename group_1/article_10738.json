@@ -1,0 +1,194 @@
+{
+  "url": "https://www.wikihow.com/Create-a-Photo-Booth-with-the-Raspberry-Pi",
+  "title": "How to Create a Photo Booth with the Raspberry Pi",
+  "steps": [
+    {
+      "title": "Ensure your Raspberry Pi is up to date.",
+      "content": "Ensure your Raspberry Pi is up to date. You will need a Raspberry Pi model 2B or later, running the latest supported Raspbian operating system with a monitor, a keyboard, and a mouse. If you do not already have your Raspberry Pi set up this way, check out the guide How to Get Started with the Raspberry Pi for detailed step-by-step instructions."
+    },
+    {
+      "title": "Update your package libraries.",
+      "content": "Update your package libraries. Open a new terminal window by pressing the terminal icon in the top left of the taskbar and type the following: sudo apt - get update Then press ↵ Enter . This will update your software package lists so it can determine which programs need upgrading and which are already up-to-date."
+    },
+    {
+      "title": "Upgrade your packages.",
+      "content": "Upgrade your packages. In the terminal, type: sudo apt - get upgrade Then press ↵ Enter . This will upgrade your programs and operating system if newer versions are available."
+    },
+    {
+      "title": "Shut down the Raspberry Pi and disconnect the power.",
+      "content": "Shut down the Raspberry Pi and disconnect the power."
+    },
+    {
+      "title": "Locate the camera port.",
+      "content": "Locate the camera port."
+    },
+    {
+      "title": "Lift the back tab by pulling up on the two sides.",
+      "content": "Lift the back tab by pulling up on the two sides."
+    },
+    {
+      "title": "Insert the ribbon cable so the metal connectors are facing away from the Ethernet port and towards the HDMI port as pictured.",
+      "content": "Insert the ribbon cable so the metal connectors are facing away from the Ethernet port and towards the HDMI port as pictured."
+    },
+    {
+      "title": "Hold the camera ribbon cable in place, and press down on the two tabs.",
+      "content": "Hold the camera ribbon cable in place, and press down on the two tabs. This will lock the camera's ribbon cable into place. Ensure the ribbon cable is secure and sitting evenly in the camera port."
+    },
+    {
+      "title": "Reconnect the power and start up the Raspberry Pi.",
+      "content": "Reconnect the power and start up the Raspberry Pi."
+    },
+    {
+      "title": "Open the Raspberry Pi configuration menu.",
+      "content": "Open the Raspberry Pi configuration menu. Click the raspberry icon in the top left corner of the taskbar. Go to “Preferences” then click “Raspberry Pi Configuration.”"
+    },
+    {
+      "title": "Make sure the camera software is enabled in the Interfaces tab.",
+      "content": "Make sure the camera software is enabled in the Interfaces tab. Then press OK . The computer may prompt you that it needs to restart before changes can take effect. It will then ask if you want to restart the computer now, in which case, select Yes ."
+    },
+    {
+      "title": "Test the camera by taking a picture!",
+      "content": "Test the camera by taking a picture! Open up a new terminal window and type: raspistill -o cam.jpg Then press ↵ Enter . The camera preview will turn on a second later it will snap a picture. It will be saved to your user's home directory with the filename cam.jpg . You can replace cam.jpg in the above command with whatever filename you prefer so long as it ends with .jpg"
+    },
+    {
+      "title": "Open the picture file you just created.",
+      "content": "Open the picture file you just created. You can open the File Manager by clicking the file folder icon on the top left side of the taskbar. You should see the picture file in your home directory. Double click the file and this will open the picture with the Image Viewer. Excellent!"
+    },
+    {
+      "title": "Consider the pros and cons of various printers.",
+      "content": "Consider the pros and cons of various printers. Inkjet printers are usually less expensive and produce good photo-quality prints. However, they typically have slower print speeds and are deceivingly expensive when printing in large quantity. The photo paper is sold in sheets and the ink cartridges are sold separately by color. Laser printers have excellent print speeds but even color laser printers don't normally produce photo-quality images nor do they print on photo paper. For color laser printers, the toner cartridges are also sold separately by color. Dye-sublimation printers provide excellent photo-quality prints, fast printing speeds, and vary greatly in price. The photo paper for dye-sublimation printers is sold with the exact amount of dye film needed to print the same amount of paper. For the more expensive high volume models, the paper and dye are sold together in rolls and the printer automatically cuts each photo off after printing. For the less expensive lower quantity models, the photo paper and dye are sold together in sheets."
+    },
+    {
+      "title": "Consider your needs and your budget.",
+      "content": "Consider your needs and your budget. What type of event will your photo booth be used in and how many photos are you likely to print? What photo size do you want the prints to be and how costly is the required media? Are you going to use the photo booth in the future? Depending on your circumstance, it may be in your best interest to rent a professional event printer or buy a used model at a fraction of the cost."
+    },
+    {
+      "title": "Ensure your printer is compatible with the Raspberry Pi.",
+      "content": "Ensure your printer is compatible with the Raspberry Pi. Whatever printer you plan to use, it must be supported by Gutenprint. Gutenprint is an open source collection of free printer drivers for use with UNIX based printing systems, which is what the Raspberry Pi uses to print. Here is a list of printers which are currently compatible with Gutenprint . If it says “EXPERIMENTAL” next to your printer, it could have issues and may not work reliably on the Raspberry Pi."
+    },
+    {
+      "title": "Install CUPS.",
+      "content": "Install CUPS. CUPS (or Common Unix Printing System) is the program we need to be able to print from the Raspberry Pi. Open a new terminal window and type: sudo apt - get install cups Then press ↵ Enter and it will load the installation files. When prompted to proceed, type Y and press ↵ Enter . CUPS will begin the installation process which could take 15 minutes or longer."
+    },
+    {
+      "title": "Add the user 'pi' to the group that is allowed to print 'lpadmin'.",
+      "content": "Add the user 'pi' to the group that is allowed to print 'lpadmin'. In the terminal type: sudo usermod - a - G lpadmin pi Then press ↵ Enter ."
+    },
+    {
+      "title": "Plug in the printer to the Raspberry Pi using the USB cable.",
+      "content": "Plug in the printer to the Raspberry Pi using the USB cable. Then turn the printer on."
+    },
+    {
+      "title": "Open the internet browser by clicking the blue globe icon in the top left side of the task bar.",
+      "content": "Open the internet browser by clicking the blue globe icon in the top left side of the task bar. In the URL bar enter the following address: http://127.0.0.1:631 Then press ↵ Enter . This will open the CUPS setup page in your browser."
+    },
+    {
+      "title": "Click on the Administration tab.",
+      "content": "Click on the Administration tab. Then click on Add Printer . You will be prompted for your username and password. The default username is pi and the default password is raspberry unless it was previously changed."
+    },
+    {
+      "title": "Select your printer under the Local Printers list and click Continue.",
+      "content": "Select your printer under the Local Printers list and click Continue . Ignore the VNC Remote Printer and don't worry if your printer is listed twice."
+    },
+    {
+      "title": "Rename your printer to something easy to remember and simple to type.",
+      "content": "Rename your printer to something easy to remember and simple to type. In the example pictured, we will rename the printer from the default Sony_UP-DR200 to simply SonyUP so it's easier to remember and type. You can also enter a location tag if you wish. In this example we will enter photobooth as the location. Then click Continue ."
+    },
+    {
+      "title": "Select the printer driver for your specific printer's make and model.",
+      "content": "Select the printer driver for your specific printer's make and model. Then click Add Printer ."
+    },
+    {
+      "title": "Select the default print settings you would prefer on this printer.",
+      "content": "Select the default print settings you would prefer on this printer. If you don't know what a particular setting does, it's best to leave it alone. The most important setting is to ensure that the Media Size corresponds with the paper size you are currently using. Then click Set Default Options . You should see a confirmation page which displays \"Printer 'YourPrinterName' default options have been set successfully.\" This will then redirect you to the printer's main status and job page."
+    },
+    {
+      "title": "Check for active printers.",
+      "content": "Check for active printers. Open up a new terminal window and type: lpstat -p Then press ↵ Enter . This will return the name and status of the current default printer. The displayed printer name should be the one you designated earlier in the CUPS setup and the status should be \"idle\" if the printer is not in use."
+    },
+    {
+      "title": "List the files in your home directory.",
+      "content": "List the files in your home directory. In the terminal type: ls Then press ↵ Enter . This will return a list of directories and files that are in the home directory. In the list you should find the filename of the picture you took earlier in the Connect the Camera Module section."
+    },
+    {
+      "title": "Print the picture.",
+      "content": "Print the picture. In the terminal type: lp -d PRINTERNAME cam.jpg Instead of PRINTERNAME type in your own printer's name and substitute cam.jpg with the filename of your picture, then press ↵ Enter . Your picture will print from the printer! Great work!"
+    },
+    {
+      "title": "Pick a photo booth code.",
+      "content": "Pick a photo booth code. Creating a photo booth program from scratch is beyond the scope of this guide. Luckily, there are many different programs floating around on the net that different users have written for their own DIY photo booth projects! Luckier still, many of those awesome people have made their open source code free to the public for personal use. You can search places like GitHub.com for one that suits your needs, however this guide will use a program written by Kenneth Centurion, adorably named 'boothy,' as an example. It's simple and fairly easy to understand and could be customized without too much programming knowledge. You can inspect the files and explore the code in your browser here: https://github.com/zoroloco/boothy ."
+    },
+    {
+      "title": "Clone the boothy repository.",
+      "content": "Clone the boothy repository. Cloning is simply another way of saying 'downloading' and a repository is simply a collection of files. Open a new terminal window and change the directory by entering: cd /usr/local/src Then hit ↵ Enter . Clone the boothy repository to this folder by typing: sudo git clone git://github.com/zoroloco/boothy.git Then press ↵ Enter . This will copy the entire boothy depository and all it's files to the directory you are currently in. Great work!"
+    },
+    {
+      "title": "Change file and folder permissions.",
+      "content": "Change file and folder permissions. You will need to make many of these new files writable and executable so that you can edit and run the various files. You can learn more about the different permissions settings on the official Linux website . The quickest way is to make the entire boothy directory readable, writable, and executable to everyone. To do this, in the terminal window type: sudo chmod 777 -R /usr/local/src/boothy Press ↵ Enter ."
+    },
+    {
+      "title": "Run the INSTALL file as a bash script.",
+      "content": "Run the INSTALL file as a bash script. The INSTALL.txt file has a list of commands that will download and install various packages that you will need to run boothy. Instead of enter them all manually, you can run the text file as a script. In the terminal type: sudo bash /usr/local/src/boothy/INSTALL.txt Press ↵ Enter . Be sure to respond to any prompts during the installation process. This step could take quite a while, so this would be a great time to grab a cup of coffee! Wait until all the packages are installed before continuing to the next step."
+    },
+    {
+      "title": "Edit the \"run\" script.",
+      "content": "Edit the \"run\" script. In the terminal type: sudo nano /usr/local/src/boothy/run.sh Press ↵ Enter . This will open the file run.sh in a text editor within the terminal. Use the arrow keys to navigate and add a -i on the bottom line after the word \"python\" so the whole code appears as: #!/bin/bash # # chmod +x run.sh # # clear sudo python -i /usr/local/src/boothy/pbooth.py Press Ctrl + X and it will ask you if you want to save. Press y and press ↵ Enter ."
+    },
+    {
+      "title": "Shutdown the Raspberry Pi and disconnect the power.",
+      "content": "Shutdown the Raspberry Pi and disconnect the power."
+    },
+    {
+      "title": "Locate the GPIO pins for the button.",
+      "content": "Locate the GPIO pins for the button. GPIO stands for General Purpose Input Output and it refers to the 40 pins on the Raspberry Pi. They are used to hook up different electronic input output objects like buttons, switches, lights, etc. and can then be programmed to do just about anything. If you inspected the pbooth.py file earlier you might have noticed that the code designates the BUTTON pin as 26. Since they aren't labeled on the Raspberry Pi, refer to a schematic of the designated numbers."
+    },
+    {
+      "title": "Hook up a jumper wire to pin 26.",
+      "content": "Hook up a jumper wire to pin 26. Use another colored jumper wire and hook it up to a ground pin. There is actually a ground pin right next to pin 26 on the last pin in the same row. As shown in the image, a red jumper wire is hooked to pin 26 and a black jumper wire is hooked to ground."
+    },
+    {
+      "title": "Plug the jumper wires into a breadboard.",
+      "content": "Plug the jumper wires into a breadboard. Breadboards can make it much easier to wire circuits up without electrical tape or a soldering iron and are ideal for testing if you have everything wired up correctly. Plug the jumper wire connected to the ground into the (-) negative track, and plug the jumper wire connected to the button pin into the (+) positive track. As shown in the image, the red wire (connected to pin 26) is plugged into the positive track and the black wire (connected to ground) is plugged into the negative track."
+    },
+    {
+      "title": "Plug two lengths of hook-up wire into the breadboard.",
+      "content": "Plug two lengths of hook-up wire into the breadboard. With a wire stripper, strip both ends of two different color wires. Plug one side of each wire into the corresponding track of the breadboard. As pictured, a red hook-up wire is plugged into the positive track of the breadboard and a white wire is plugged into the negative track of the breadboard."
+    },
+    {
+      "title": "Connect the corresponding hook-up wires to the positive and negative contacts of the button.",
+      "content": "Connect the corresponding hook-up wires to the positive and negative contacts of the button."
+    },
+    {
+      "title": "Plug the power back into the Raspberry Pi and start it up.",
+      "content": "Plug the power back into the Raspberry Pi and start it up."
+    },
+    {
+      "title": "Test it out!",
+      "content": "Test it out! Check to see if all the elements are working. In a new terminal window type: /usr/local/src/boothy/run.sh"
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . The camera preview will start up and you will see a number counting down. Get ready to smile! It will take 3 pictures and print the resulting photo set. When it says \"Press red button to begin!\" it should repeat the entire process the instant that the red button is pressed! Congratulations, you made a photo booth!"
+    },
+    {
+      "title": "Close the photo booth program.",
+      "content": "Close the photo booth program. When you are ready to end the photo booth program, simply press Ctrl + C . This will end the program abruptly and take you back to the terminal window. Then press Ctrl + D to return back to the normal command prompt line."
+    },
+    {
+      "title": "Edit the python code.",
+      "content": "Edit the python code. If you want to further customize the program, you can edit the file pbooth.py in the python editor. Open a new file manager window and navigate to the boothy directory. Double click on the file pbooth.py. This should open the pbooth.py code in the python editor."
+    },
+    {
+      "title": "Save a backup!",
+      "content": "Save a backup! Click on \"File\" and the select \"Save As\" and save a new file called \"pbooth.py.bak\" as a backup file in case you change anything that will cause the python code not to work. If that does happen, simply delete the \".bak\" extension from the file and overwrite the broken file with it. This way you can feel safe experimenting with learning what each part of the code does!"
+    },
+    {
+      "title": "Customize the python code.",
+      "content": "Customize the python code. If you inspect the code a little closer, you'll see there are some variables and terms that are defined near the top that make it a little easier to customize this to your needs. IMG1 = \"1.jpg\" IMG2 = \"2.jpg\" IMG3 = \"3.jpg\" CurrentWorkingDir = \"/usr/local/src/boothy\" IMG4 = \"4logo.png\" logDir = \"logs\" archiveDir = \"photos\" SCREEN_WIDTH = 640 SCREEN_HEIGHT = 480 IMAGE_WIDTH = 640 IMAGE_HEIGHT = 480 BUTTON_PIN = 26 LED_PIN = 19 #connected to external 12v. PHOTO_DELAY = 8 Changing the values of SCREEN_WIDTH and SCREEN_HEIGHT will determine the screen size the camera preview displays at. You can change this to match the resolution of the screen you will be using for your photobooth, however changing this may result in off-center titles for the text when the program is running. Those too can be changed but are more spread throughout the code so are harder to change. If you are printing 4x6 sized prints, changing the values of IMAGE_WIDTH and IMAGE_HEIGHT to 640 and 425 respectively, utilizes the page space more effectively. Changing the value of PHOTO_DELAY which will determine how many seconds the timer counts down before each picture in a series. Change or replace the 4logo.png in the boothy directory to something that is personalized for your event or celebration."
+    },
+    {
+      "title": "Build an enclosure!",
+      "content": "Build an enclosure! There are lots of creative ways you could display your working photo booth and lots of examples on the internet of various installations people have made. Get creative and have fun!"
+    }
+  ]
+}

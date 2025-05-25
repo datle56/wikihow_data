@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Add-a-Password-to-a-.Bat-File",
+  "title": "A Complete Guide to Adding Password Protection to .Bat Files",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. You can open the Notepad application by typing \"notepad\" in the taskbar search bar and then clicking the application."
+    },
+    {
+      "title": "Begin your code with @echo off.",
+      "content": "Begin your code with @echo off . This is the line that you will use to start your script. Scripting is writing the code that causes the program to run correctly. The @echo off line keeps the resulting script tidier in the Command Prompt. [1] X Research source"
+    },
+    {
+      "title": "Write the prompt to ask for a password.",
+      "content": "Write the prompt to ask for a password. To do this, add the following two lines to your code: [2] X Research source set \"p=\" set /p \"p=Type your password: \" Feel free to change the label \"Type your password: \", but remember to leave quotes around it."
+    },
+    {
+      "title": "Set your password.",
+      "content": "Set your password. To do this, you'll need to use the logical operators \"if\" and \"if not\" to check whether the password is correct. Add these two lines to your code: if not \" %p% \" == \"pass\" goto : FAIL if \" %p% \" == \"pass\" goto : SUCCEED Change \"pass\" to your desired password. Remember to keep the quotes around it, however."
+    },
+    {
+      "title": "Add a failure message.",
+      "content": "Add a failure message. This will let the user know that they entered the password incorrectly. : FAIL echo Invalid password. goto : END"
+    },
+    {
+      "title": "Add a success message.",
+      "content": "Add a success message. This will allow the user to know that they entered the password correctly. : SUCCEED echo Correct password. The script will be run. goto : END"
+    },
+    {
+      "title": "Add the rest of your script.",
+      "content": "Add the rest of your script. After setting up the password protection, you can write the rest of your code. However, be aware that you cannot use the labels \"FAIL,\" \"SUCCEED,\" or \"END\" in the rest of your code. If you need to use those labels in your script, go back to the password protection part of the script and change :FAIL , :SUCCEED , and/or :END to something else. [3] X Research source"
+    },
+    {
+      "title": "Add the ending.",
+      "content": "Add the ending. Normally, batch files end abruptly. However, add the following lines at the end of your script to allow the script to pause until you press a button. : END echo Press any key to exit. pause > nul"
+    },
+    {
+      "title": "Save your file as a .bat file.",
+      "content": "Save your file as a .bat file. Go to File > Save as… and save your script with any name you like, but be sure to add .bat to the ending to save it as a batch file."
+    },
+    {
+      "title": "Run the script to make sure it works as intended.",
+      "content": "Run the script to make sure it works as intended. If anything doesn't work, ensure your code matches the full code below. @ echo off set \"p=\" set /p \"p=Type your password: \" if not \" %p% \" == \"pass\" goto : FAIL if \" %p% \" == \"pass\" goto : SUCCEED : FAIL echo Invalid password. goto : END : SUCCEED echo Correct password. The script will be run. goto : END : END echo Press any key to exit. pause > nul"
+    },
+    {
+      "title": "Hide the file.",
+      "content": "Hide the file. To keep other users from opening the batch file in Notepad to see the password, you can hide the file. However, note that hidden files can easily be viewed in File Explorer, so this isn't a foolproof way to protect the file. If you need something a little more robust, jump to our method on adding the file to a password-protected archive . To hide your .bat file, right-click it and choose Properties . At the bottom of the \"General\" tab (the default tab), tick the box next to Hidden . Click OK to save your choice. Note that you won't be able to see your file in File Explorer unless you click the View tab in File Explorer and tick the box next to Show hidden files ."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. You can open the Notepad application by typing \"notepad\" in the taskbar search bar and then clicking the application."
+    },
+    {
+      "title": "Begin your code with @echo off.",
+      "content": "Begin your code with @echo off . This is the line that you will use to start your script. Scripting is writing the code that causes the program to run correctly. The @echo off line keeps the resulting script tidier in the Command Prompt. [4] X Research source"
+    },
+    {
+      "title": "Write the prompt to ask for a password.",
+      "content": "Write the prompt to ask for a password. To do this, add the following two lines to your code: [5] X Research source : START set \"p=\" set /p \"p=Type your password: \" Feel free to change the label \"Type your password: \", but remember to leave quotes around it."
+    },
+    {
+      "title": "Set your password.",
+      "content": "Set your password. To do this, you'll need to use the logical operators \"if\" and \"if not\" to check whether the password is correct. Add these two lines to your code: if not \" %p% \" == \"pass\" goto : FAIL if \" %p% \" == \"pass\" goto : SUCCEED Change \"pass\" to your desired password. Remember to keep the quotes around it, however."
+    },
+    {
+      "title": "Add a failure message.",
+      "content": "Add a failure message. This will let the user know that they entered the password incorrectly. : FAIL echo Invalid password. Try again? goto : CHOICE"
+    },
+    {
+      "title": "Add a success message.",
+      "content": "Add a success message. This will allow the user to know that they entered the password correctly. : SUCCEED echo Correct password. The script will be run. goto : END"
+    },
+    {
+      "title": "Add some scripting to allow the user to try again.",
+      "content": "Add some scripting to allow the user to try again. If the user fails to enter the correct password, you can use the choice and errorlevel parameters to allow them to try again. Add the following lines to your script: : CHOICE echo [1]: Yes echo [2]: No choice /n /c:12 if errorlevel == 2 goto : END if errorlevel == 1 goto : START To use errorlevel to loop the user back to the start, you must use integers instead of alphabetical characters."
+    },
+    {
+      "title": "Add the rest of your script.",
+      "content": "Add the rest of your script. After setting up the password protection, you can write the rest of your code. However, be aware that you cannot use the labels \"START,\" \"FAIL,\" \"SUCCEED,\" \"CHOICE,\" or \"END\" in the rest of your code. If you need to use those labels in your script, go back to the password protection part of the script and change :START , :FAIL , :SUCCEED , :CHOICE , and/or :END to something else. [6] X Research source"
+    },
+    {
+      "title": "Add the ending.",
+      "content": "Add the ending. Normally, batch files end abruptly. However, add the following lines at the end of your script to allow the script to pause until you press a button. : END echo Press any key to exit. pause > nul"
+    },
+    {
+      "title": "Save your file as a .bat file.",
+      "content": "Save your file as a .bat file. Go to File > Save as… and save your script with any name you like, but be sure to add .bat to the ending to save it as a batch file."
+    },
+    {
+      "title": "Run the script to make sure it works as intended.",
+      "content": "Run the script to make sure it works as intended. If anything doesn't work, ensure your code matches the full code below. @ echo off : START set \"p=\" set /p \"p=Type your password: \" if not \" %p% \" == \"pass\" goto : FAIL if \" %p% \" == \"pass\" goto : SUCCEED : FAIL echo Invalid password. Try again? goto : CHOICE : SUCCEED echo Correct password. The script will be run. goto : END : CHOICE echo [1]: Yes echo [2]: No choice /n /c:12 if errorlevel == 2 goto : END if errorlevel == 1 goto : START : END echo Press any key to exit. pause > nul"
+    },
+    {
+      "title": "Hide the file.",
+      "content": "Hide the file. To keep other users from opening the batch file in Notepad to see the password, you can hide the file. However, note that hidden files can easily be viewed in File Explorer, so this isn't a foolproof way to protect the file. If you need something a little more robust, jump to our method on adding the file to a password-protected archive . To hide your .bat file, right-click it and choose Properties . At the bottom of the \"General\" tab (the default tab), tick the box next to Hidden . Click OK to save your choice. Note that you won't be able to see your file in File Explorer unless you click the View tab in File Explorer and tick the box next to Show hidden files ."
+    },
+    {
+      "title": "Download and install WinRAR.",
+      "content": "Download and install WinRAR. To easily password-protect your files, you can add them to a password-protected archive with WinRAR. You can get WinRAR from their website . If you already have a different archival program (such as 7-Zip), you can use that instead. However, note that the steps may differ slightly if you're not using WinRAR."
+    },
+    {
+      "title": "Right-click your .bat file and choose Add to archive….",
+      "content": "Right-click your .bat file and choose Add to archive… . This option will have the WinRAR logo next to it, which looks like a stack of books with a belt around them."
+    },
+    {
+      "title": "Change the archive's name, if desired.",
+      "content": "Change the archive's name, if desired. By default, the archive's name will be the same as the file that's in it. However, you can change it if you'd prefer the name to be something different."
+    },
+    {
+      "title": "Choose the archive format.",
+      "content": "Choose the archive format. By default, WinRAR will create a .rar archive. However, you can choose a .zip archive if you prefer."
+    },
+    {
+      "title": "Click Set password….",
+      "content": "Click Set password… . This button is in the bottom-right portion of the WinRAR window."
+    },
+    {
+      "title": "Type your password in the field.",
+      "content": "Type your password in the field. When you're done, click OK ."
+    },
+    {
+      "title": "Click OK to add your file to an archive.",
+      "content": "Click OK to add your file to an archive. To use the .bat file, double-click on the ZIP or RAR you just created and enter the password when prompted. Then, double-click the .bat file in the WinRAR window to run it. If you get a popup from WinRAR asking you to buy a license, you can simply click Close to close the window and keep using the program. WinRAR is a form of trialware, sometimes called \"beggarware,\" in that it will ask you to buy a license after the 40-day trial period is up, but you don't actually have to buy one unless you need its advanced features."
+    }
+  ]
+}

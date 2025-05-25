@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Hack-WPA/WPA2-Wi-Fi-with-Kali-Linux",
+  "title": "How to Hack WPA/WPA2 Wi Fi with Kali Linux",
+  "steps": [
+    {
+      "title": "Log into your Kali desktop as root.",
+      "content": "Log into your Kali desktop as root. This logs you in to the desktop environment as the root user. [1] X Research source If you haven't enabled root logins in Kali and are using KDE or GNOME, run sudo apt install kali-root-login at the prompt. [2] X Research source Once installed, you can set a root password by running sudo password (no username) and entering a new root password. At that point, you can log in to the desktop as root."
+    },
+    {
+      "title": "Plug your Wi-Fi card (if needed).",
+      "content": "Plug your Wi-Fi card (if needed). If you don't have a Wi-Fi card that allows monitoring (RFMON) or you're using Kali Linux in a virtual machine, you'll need to attach an external card that does. In most cases, simply attaching the card to your computer will be enough to set it up. Check the instructions for your Wi-Fi card to be sure. If you're not sure if your Wi-Fi card supports monitoring, it doesn't hurt to try these next few steps."
+    },
+    {
+      "title": "Disconnect from Wi-Fi.",
+      "content": "Disconnect from Wi-Fi. To successfully test a network, you'll want to make sure your computer is not actively connected to Wi-Fi—not even to the network you're testing."
+    },
+    {
+      "title": "In a terminal window, run the airmon-ng command.",
+      "content": "In a terminal window, run the airmon-ng command. This tool come with Kali Linux as a part of the aircrack-ng package, and will show you the names of the connected Wi-Fi interface(s). You'll want to take note of what you see under the \"Interface\" header for your card. If you don't see an interface name, your Wi-Fi card doesn't support monitoring."
+    },
+    {
+      "title": "Run airmon-ng start wlan0 to start monitoring the network.",
+      "content": "Run airmon-ng start wlan0 to start monitoring the network. If the name of your Wi-Fi interface isn't wlan0 , replace that part of the command with the correct name. This gives you a new virtual interface name, which will usually be something like mon0 , which you'll see next to \"(monitor mode enabled).\" [3] X Research source If you see a message that says \"Found processes that could cause trouble,\" run airmon-ng check kill to kill them."
+    },
+    {
+      "title": "Run airodump-ng mon0 to view the results.",
+      "content": "Run airodump-ng mon0 to view the results. Replace mon0 with the correct virtual interface name if that's not what you saw earlier. This displays a data table for all Wi-Fi routers in range. [4] X Research source"
+    },
+    {
+      "title": "Find the router you want to hack.",
+      "content": "Find the router you want to hack . At the end of each string of text, you'll see a router name. Make sure the router is using WPA or WPA2 security. If you see \"WPA\" or \"WPA2\" in the \"ENC\" column, you can proceed."
+    },
+    {
+      "title": "Find the BSSID and channel number of the router.",
+      "content": "Find the BSSID and channel number of the router. Now you'll want to make note of the values of the \"BSSID\" and \"CH\" fields for the router you want to hack. These pieces of information are to the left of the network's name."
+    },
+    {
+      "title": "Monitor the network for a handshake.",
+      "content": "Monitor the network for a handshake. A \"handshake\" occurs when an item connects to a network (e.g., when your computer connects to a router). You need to wait until a handshake occurs so you capture the data necessary to crack the password . To start monitoring, run the following command: airodump-ng -c number --bssid xx:xx:xx:xx:xx:xx -w /root/Desktop/ mon0 Replace the word number with the channel number you saw, and the xx:xx:xx:xx:xx:xx with the BSSID. As long as this command stays running, you'll be monitoring for all connections and new handshakes."
+    },
+    {
+      "title": "Understand what a deauth attack does.",
+      "content": "Understand what a deauth attack does. A deauth attack sends deauthentication packets to the router you're trying to break into, causing uses to disconnect and requiring them to log back in. [5] X Research source When a user logs back in, you will be provided with a handshake. If you don't do a deauth attack, you might have to wait around for a long time for a handshake to complete—you'll need that handshake to crack the password. If you already see a line with the tag \"WPA handshake:\" followed by a MAC address in the output of the airodump-ng command, skip to Step 5—you have what you need to crack the password and don't need to send deauth packets. Remember—use these tools for ethical purposes only."
+    },
+    {
+      "title": "Wait for something to connect to the network.",
+      "content": "Wait for something to connect to the network. Once you see two BSSID addresses appear next to each other—one labeled BSSID (the Wi-Fi router) and the other labeled STATION (the computer or other device)—this this means a client is connected. To force them into a handshake, you'll now send them deauth packets that kill their connection."
+    },
+    {
+      "title": "Open a new terminal.",
+      "content": "Open a new terminal. Make sure airodump-ng is still running in original terminal window, and drag it to another place on your desktop so both terminals are visible."
+    },
+    {
+      "title": "Send the deauth packets.",
+      "content": "Send the deauth packets. Run this command, replacing STATION BSSID with the BSSID of the client that connected to the network, and NETWORK BSSID with the router's BSSID: aireplay-ng -0 2 -a STATION BSSID -c NETWORK BSSID mon0 . [6] X Research source This command will send 2 deauth packets to disconnect the client from the network. [7] X Research source Don't try to send more than this—sending too many packets could prevent the client from reconnecting and generating the handshake. As long as you're close enough to the target client, they'll be disconnected from the router and forced to reconnect with a handshake. If this doesn't work, move closer to the client. As soon as the client reconnects, all of the information you'll need to crack the password will be available."
+    },
+    {
+      "title": "In the original terminal window, press Control+C to quit airodump-ng.",
+      "content": "In the original terminal window, press Control + C to quit airodump-ng. This stops the dump and saves a file ending with .cap to your desktop. [8] X Research source"
+    },
+    {
+      "title": "Decompress the rockyou.txt wordlist.",
+      "content": "Decompress the rockyou.txt wordlist. To crack the password, you'll need a wordlist. Fortunately, since you're using Kali Linux , you have several already in /usr/share/wordlists. [9] X Research source The one we'll want to use is called rockyou.txt , but it's zipped up by default. To unzip it, run gzip -d /usr/share/wordlists/rockyou.txt.gz . You won't be able to crack the password if it's not in the wordlist. You can always try one of the other wordlists if rockyou.txt doesn't crack the password."
+    },
+    {
+      "title": "Run the command to crack the password.",
+      "content": "Run the command to crack the password. You'll use a tool called aircrack-ng , which come with Kali Linux, to do so. The command is aircrack-ng -a2 -b NETWORK BSSID -w /usr/share/wordlists/rockyou.txt /root/Desktop/*.cap . Replace NETWORK BSSID with the BSSID for the router. Depending on the strength of the password and the speed of your CPU, this process can take anywhere from a few hours to a few days. If you're cracking static WEP key network instead of a WPA/WPA2-PSK network, replace -a2 with -a1 . [10] X Research source"
+    },
+    {
+      "title": "Look for \"KEY FOUND!\"",
+      "content": "Look for \"KEY FOUND!\" in the terminal window. When you see a \"KEY FOUND!\" heading appear, aircrack-ng has found the password, which will appear in plain text. [11] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Force-Quit-an-Application-on-a-Mac",
+  "title": "How to Quit an Unresponsive App on a Mac: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Press ⌘+⌥ Option+Esc.",
+      "content": "Press ⌘ + ⌥ Option + Esc . The \"Force Quit\" dialog box will open. According to Martinez, you can use the Option key on either side of the spacebar. [1] X Expert Source Gonzalo Martinez Computer & Phone Repair Specialist Expert Interview. 30 March 2021 If your Mac has a Touch Bar, look for the Esc key on the left side of the Touch Bar. [2] X Research source"
+    },
+    {
+      "title": "Click on the app you want to quit.",
+      "content": "Click on the app you want to quit. The note \"(Not Responding)\" will appear in red next to frozen apps."
+    },
+    {
+      "title": "Click on Force Quit.",
+      "content": "Click on Force Quit . The app will quit and can be restarted."
+    },
+    {
+      "title": "Open the Apple menu.",
+      "content": "Open the Apple menu. It's the black Apple on icon in the upper-left corner of the screen."
+    },
+    {
+      "title": "Click on Force Quit….",
+      "content": "Click on Force Quit… . It's toward the middle of the menu."
+    },
+    {
+      "title": "Click on the app you want to quit.",
+      "content": "Click on the app you want to quit. The note \"(Not Responding)\" will appear next to frozen apps."
+    },
+    {
+      "title": "Click on Force Quit.",
+      "content": "Click on Force Quit . The app will quit and can be restarted. If your computer is frozen, you may need to restart it."
+    },
+    {
+      "title": "Control-click the unresponsive application in the Dock.",
+      "content": "Control-click the unresponsive application in the Dock. Control-clicking is how Mac users can right-click (sometimes called a secondary click)."
+    },
+    {
+      "title": "Click Force Quit.",
+      "content": "Click Force Quit . The app will quit after a few moments and can be restarted. If the app isn't unresponsive, you'll see an option that says Quit instead of Force Quit ."
+    },
+    {
+      "title": "Click on Spotlight.",
+      "content": "Click on Spotlight. It's the magnifying glass in the upper-right corner of the screen."
+    },
+    {
+      "title": "Open the Activity Monitor.",
+      "content": "Open the Activity Monitor. Search for \"Activity Monitor\" and click on the result to open it. Martinez states that Activity Monitor is another good way to force quit applications on a Mac, plus it can also give you insight into how your apps are running on your computer. [3] X Expert Source Gonzalo Martinez Computer & Phone Repair Specialist Expert Interview. 30 March 2021"
+    },
+    {
+      "title": "Click on the application you want to quit.",
+      "content": "Click on the application you want to quit. Your open applications are listed in the left hand sidebar."
+    },
+    {
+      "title": "Click the Stop button in the upper-left side of the window.",
+      "content": "Click the Stop button in the upper-left side of the window. It looks like an octagon with an X in the middle. Select Force Quit from the menu that pops up. This will stop the application from running."
+    },
+    {
+      "title": "Open the Terminal utility.",
+      "content": "Open the Terminal utility. By default, this is in the Utilities folder, located in the Applications folder. If a normal Force Quit doesn't work, you may need to use this method to end the program."
+    },
+    {
+      "title": "Type \"top\" and press ⏎ Return.",
+      "content": "Type \"top\" and press ⏎ Return . The “top” command displays information about the applications that are currently running."
+    },
+    {
+      "title": "Find the program you want to close.",
+      "content": "Find the program you want to close. Under the column titled \"COMMAND\", find the name of the application you wish to quit. The COMMAND list may use a truncated name for the program. Look for a name that looks similar to the program you are trying to close."
+    },
+    {
+      "title": "Find the PID (Process ID).",
+      "content": "Find the PID (Process ID). Once you find the name of program, find the number to the immediate left of it, under the PID column. Make a note of the PID number. It may be difficult to spot the PID you want since the processes will shift around in the list."
+    },
+    {
+      "title": "Type \"q\".",
+      "content": "Type \"q\". This will exit the list of applications and return you to the command line."
+    },
+    {
+      "title": "Type \"kill ###\".",
+      "content": "Type \"kill ###\". Replace the \"###\" with the number from the PID Column you just located. For example: If you were trying to quit iTunes, and found iTunes to have PID number 3703, you would type \"kill 3703\". If the program does not respond to the “kill” command, type “sudo kill -9 ###”, replacing ### with the PID number."
+    },
+    {
+      "title": "Exit the terminal.",
+      "content": "Exit the terminal. The application should quit and can be relaunched."
+    }
+  ]
+}

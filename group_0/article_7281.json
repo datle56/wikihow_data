@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Check-the-Query-Performance-in-an-SQL-Server",
+  "title": "How to Check SQL Server Query Performance: Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Open the SQL Server Management Studio.",
+      "content": "Open the SQL Server Management Studio. You can use the Query Store feature of SQL Server to monitor your database for performance issues. This feature is included with SQL Server 2016 and later, but you'll need to enable it manually. [1] X Research source"
+    },
+    {
+      "title": "Open Object Explorer.",
+      "content": "Open Object Explorer. If you don’t see Object Explorer already, click the View menu at the top of the screen, then click Object Explorer . [2] X Research source"
+    },
+    {
+      "title": "Right-click the database you want to check.",
+      "content": "Right-click the database you want to check. A menu will appear. [3] X Research source The Query Store can’t be used to monitor the master or tempdb databases."
+    },
+    {
+      "title": "Click Properties.",
+      "content": "Click Properties ."
+    },
+    {
+      "title": "Click Query Store.",
+      "content": "Click Query Store . It’s on the Properties dialog box."
+    },
+    {
+      "title": "Select On under ″Operation Mode (Requested).",
+      "content": "Select On under ″Operation Mode (Requested). ″ The Query Store will begin tracking all queries."
+    },
+    {
+      "title": "Refresh the database in the Object Explorer panel.",
+      "content": "Refresh the database in the Object Explorer panel. This adds the Query Store folder to the panel."
+    },
+    {
+      "title": "Customize when the Query Store aggregates new data.",
+      "content": "Customize when the Query Store aggregates new data. The Query Store will aggregate new stats every 60 minutes by default. Here’s how to change the interval (using 15 minutes as an example): [4] X Research source ALTER DATABASE <database_name> SET QUERY_STORE (INTERVAL_LENGTH_MINUTES = 15); ."
+    },
+    {
+      "title": "Click the - next to ″Query Store″ in the Object Explorer.",
+      "content": "Click the - next to ″Query Store″ in the Object Explorer. This displays all Query Store options. Use this method to find out which specific queries are using the most server resources. [5] X Research source"
+    },
+    {
+      "title": "Click Top Resource Consuming Queries.",
+      "content": "Click Top Resource Consuming Queries . This opens a graph that displays the 25 most resource-consuming queries in the database. These results are pretty broad, but you can further customize the graph to get more helpful information. [6] X Research source"
+    },
+    {
+      "title": "Click Configure.",
+      "content": "Click Configure . It’s at the top-right corner of the report. A dialog window will appear."
+    },
+    {
+      "title": "Select your resource consumption criteria.",
+      "content": "Select your resource consumption criteria. In the top section (″Resource Consumption Criteria″), choose which resource you want to check (e.g., CPU Time , Memory Consumption ), and the desired statistic (e.g., Avg , Total )."
+    },
+    {
+      "title": "Select a time period.",
+      "content": "Select a time period. Under the ″Time Interval″ section, choose the time period for which you want to view results. You can select an option from the drop-down menu or insert specific dates into the provided boxes."
+    },
+    {
+      "title": "Choose how many results to see.",
+      "content": "Choose how many results to see. To see all queries for the selected time period, click All under the ″Return″ header. To display a specific number of queries, select Top and enter a number (e.g. 10 , 100 ). If you want to stick to the top 25 worst offenders, there’s no need to make any changes under the ″Return″ header."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . The stats will now refresh to display what you want to see."
+    },
+    {
+      "title": "Adjust the view (optional).",
+      "content": "Adjust the view (optional). Use the small graph icons (the grid, chart, and bar graph) to view the results in various formats. These buttons are at the top-right corner of the results."
+    },
+    {
+      "title": "Click the - next to ″Query Store″ in the Object Explorer.",
+      "content": "Click the - next to ″Query Store″ in the Object Explorer. This displays all Query Store options. Use this method to find specific queries that are performing more slowly than they used to. [7] X Research source"
+    },
+    {
+      "title": "Click Regressed Queries.",
+      "content": "Click Regressed Queries . This opens the Regressed Queries panel, where you’ll find the queries and plans in the Query Store. [8] X Research source"
+    },
+    {
+      "title": "Select a plan from the first drop-down menu.",
+      "content": "Select a plan from the first drop-down menu. It’s the menu labeled ″Check for regression in″ above the top-left corner of the panel. Each of the plans will display a different graphical performance report for your queries. For example, if you want to check for issues with in the amount of time it takes for queries to run, select Duration . To see issues relating to RAM usage, select Memory Consumption ."
+    },
+    {
+      "title": "Select a statistic from the second drop-down menu.",
+      "content": "Select a statistic from the second drop-down menu. This is the menu labeled ″Based on″ (to the right of the previous menu. This re-displays the results."
+    }
+  ]
+}

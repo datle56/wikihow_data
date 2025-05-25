@@ -1,0 +1,222 @@
+{
+  "url": "https://www.wikihow.com/Flash-an-Xbox-360",
+  "title": "How to Flash an Xbox 360",
+  "steps": [
+    {
+      "title": "Update your Xbox.",
+      "content": "Update your Xbox. Before you start disassembling and flashing, you'll want to ensure that your Xbox 360 has been updated recently. This is because the flashing software has been designed to work with the most recent updates, and you may run into some errors if you don't have your Xbox 360 current. [1] X Research source See this guide for more details on updating your Xbox 360."
+    },
+    {
+      "title": "Open the Xbox 360.",
+      "content": "Open the Xbox 360. In order to flash the DVD drive, you will need to pull it out of the Xbox 360. To do this, you will need to remove the outer panel of the Xbox. See this guide for detailed instructions on opening your Xbox 360 case."
+    },
+    {
+      "title": "Remove the DVD drive.",
+      "content": "Remove the DVD drive. Gently pull the DVD drive straight out of the Xbox. Make sure that you do not tug the cables that connect the drive to the Xbox’s circuitry."
+    },
+    {
+      "title": "Disconnect the drive.",
+      "content": "Disconnect the drive. After pulling the drive out, disconnect the two cables that attach the drive to the Xbox. You should now be able to remove the drive completely from the console."
+    },
+    {
+      "title": "Identify the DVD drive manufacturer.",
+      "content": "Identify the DVD drive manufacturer. There are four different possible DVD drive manufacturers that your Xbox 360 could be using. Some drives will require more tools than others. You can identify the drive by examining the sticker on it. You only need to know the manufacturer in order to determine what tools and process you will be using. The four manufacturers are Lite-On, Samsung, BenQ, and Hitachi."
+    },
+    {
+      "title": "Download the flashing software.",
+      "content": "Download the flashing software. In order to flash your drive, you will need to download the software designed for the process. There is a program called JungleFlasher which is designed specifically to flash Xbox 360 drives. You can download JungleFlasher for free from the developer's website. [2] X Research source You will also need the firmware files for your drive. Download the iXtreme LT+ 3.0 firmware files from the iXtreme website. JungleFlasher does not come packaged with these files for legal reasons. These firmware files change the way the Xbox 360 DVD drive functions, allowing you to install custom software. If you are flashing a Hitachi drive, you will need to download the extra iXtreme LT+ 3.0 Hitachi files as well."
+    },
+    {
+      "title": "Extract the JungleFlasher archive.",
+      "content": "Extract the JungleFlasher archive. After downloading JungleFlasher, extract the folder to an easy to access location on your computer. You do not need to install JungleFlasher in order to use it. Placing the JungleFlasher folder on your desktop or on the root of your hard drive will make it easy to access during the flashing process."
+    },
+    {
+      "title": "Copy the firmware files into the JungleFlasher directory.",
+      "content": "Copy the firmware files into the JungleFlasher directory. Once you've extracted JungleFlasher, extract the archive containing the iXtreme LT+ 3.0 firmware files. Open the extracted folder, and then open the Firmware folder. Copy all of the files into the Firmware folder in the JungleFlasher directory."
+    },
+    {
+      "title": "Copy the necessary DLL files.",
+      "content": "Copy the necessary DLL files. Open the JungleFlasher directory, and then open the libusb folder. Copy the libusb0.dll file from this folder and place it into the JungleFlasher root directory, the same location that the JungleFlasher.exe program is located. Open the PortIO folder and copy both of the files to the JungleFlasher root directory as well."
+    },
+    {
+      "title": "Gather your materials.",
+      "content": "Gather your materials. You will need several tools in order to connect your DVD drive to your computer so that it can be flashed: [3] X Research source USB Connector tool (Xecuter X360USB, X360USBPro) DVD Power-to-Molex adapter (Xecuter CK3 Lite). This isn't required if you are using the Xecuter X360USB tool, as it is already built in. If you are using the X360USBPro tool, you will need this adapter. Probe (TX CK3 PROBE 3, TX SPUTNIK360 UNLOCK PROBE, MAXIMUS 360 SCORPION TOOL V2). This is only required for the Lite-On drive. No other DVD drive requires this tool. Molex-to-outlet power connector (Molex to USB works as well)"
+    },
+    {
+      "title": "Disassemble your Lite-On DVD drive.",
+      "content": "Disassemble your Lite-On DVD drive. If you are flashing a Lite-On DVD drive, you will need to remove the protective panel on the DVD drive in order to access the circuitry. Flip the drive over and remove the four screws holding the panel in place. Remove the panel to expose the circuitry. You only need to do this for Lite-On drives. If you are using any other drive, you can skip this step."
+    },
+    {
+      "title": "Power the USB connector tool.",
+      "content": "Power the USB connector tool. If you are using the Xecuter X360USB tool, connect the Molex cable to the Molex adapter on the USB tool, and then connect the other end to the Molex-to-outlet adapter. Connect the USB tool to the DVD drive using the standard power cable (unless you are flashing a Lite-On, in which case refer to the next step). [4] X Research source If you are using the X360USBPro, connect the CK3 Lite to the DVD drive using the power cable, and then connect the CK3 Lite to the outlet using the Molex-to-outlet adapter."
+    },
+    {
+      "title": "Connect the probe (Lite-On only).",
+      "content": "Connect the probe (Lite-On only). Connect the probe cable to both the USB connector and the drive. Plug the end of the cable with the push button to the power connector on the DVD drive. Plug the other end of the cable into the USB connector. Attach the probe piece to the small wire coming out of the probe cable. The probe should light up."
+    },
+    {
+      "title": "Connect the SATA cable from the USB connector to the DVD drive.",
+      "content": "Connect the SATA cable from the USB connector to the DVD drive. This will allow data to be passed from your computer to the DVD drive."
+    },
+    {
+      "title": "Plug the USB connector into your computer.",
+      "content": "Plug the USB connector into your computer. Plug the connector into an open USB port on your computer. Avoid using a USB hub, as it will not provide enough power. You can use an extension cable if you can't reach a port. More lights should appear on the USB connector when plugged into the computer."
+    },
+    {
+      "title": "Start JungleFlasher.",
+      "content": "Start JungleFlasher. Once the drive is connected to the USB tool and your computer, you can start JungleFlasher to begin the flashing process."
+    },
+    {
+      "title": "Check your key status.",
+      "content": "Check your key status. Click the DVDKey 32 tab. This will display all the information on your drive's DVD key, which is essential for flashing. In the \"Drive Properties\" section, the \"DVD Key\" entry should say \"Unverified\"."
+    },
+    {
+      "title": "Unlock the drive.",
+      "content": "Unlock the drive. Click the MTK Flash 32 tab and then click the \"Sammy UnLock\" button. If you've never flashed the drive before click Yes , otherwise follow the instructions in the dialog box."
+    },
+    {
+      "title": "Wait for the drive to unlock.",
+      "content": "Wait for the drive to unlock. You will see text in the box at the bottom of the window. Once the drive has been unlocked, look for the \"Drive Properties\" section of the MTK Flash 32 tab. The \"Vendor\" field should read \"Drive in Vendor Mode\"."
+    },
+    {
+      "title": "Copy the old firmware.",
+      "content": "Copy the old firmware. Click the Read button. JungleFlasher will begin reading the Samsung firmware files. After it's finished, you will be prompted to save the original firmware as a backup. Choose a location that you can easily find if you want to restore your original firmware files."
+    },
+    {
+      "title": "Load the new firmware.",
+      "content": "Load the new firmware. After the firmware backup has been saved, you will be prompted to load the Samsung LT+ firmware files. Click Yes to proceed."
+    },
+    {
+      "title": "Save your drive key.",
+      "content": "Save your drive key. Click the Save Drive Key button and save the drive key somewhere safe. This will be useful if you want to restore your drive later."
+    },
+    {
+      "title": "Save your custom firmware.",
+      "content": "Save your custom firmware. Click the Save to File button to save your custom firmware files. This will make flashing the same drive in the future much easier."
+    },
+    {
+      "title": "Write the new firmware.",
+      "content": "Write the new firmware. Click the MTK Flash 32 tab and then click the Write button. You can monitor the writing process in the text box at the bottom of the window. The writing process will take a little while."
+    },
+    {
+      "title": "Exit vendor mode.",
+      "content": "Exit vendor mode. After the firmware writing is complete, click the Outro / ATA Reset button to exit vendor mode on your DVD drive. This will keep your Xbox 360 from getting banned immediately from Xbox Live. The \"DVD Key\" entry in the \"Drive Properties\" section should read \"Verified\". [5] X Research source"
+    },
+    {
+      "title": "Start JungleFlasher.",
+      "content": "Start JungleFlasher. Once the drive is connected to the USB tool and your computer, you can start JungleFlasher to begin the flashing process."
+    },
+    {
+      "title": "Check which Hitachi drive you have.",
+      "content": "Check which Hitachi drive you have. Click the Hitachi GDR3120 tab. If your Drive Revision section has the \"78/79\" option selected, you will need to burn an extra CD to unlock the drive. Click the \"Insert the 79 Unlock Audio CD\" link, which will open your browser and attempt to download a file. Save the file and then extract it. Burn the BIN file to a blank CD-R using your favorite image burning program. See this guide for more details."
+    },
+    {
+      "title": "Turn on Mode-B.",
+      "content": "Turn on Mode-B. In the Hitachi GDR3120 tab, click the Send Mode-B button. A window will appear with instructions, but these can be ignored since you're using the USB connector tool."
+    },
+    {
+      "title": "Insert the unlock disc.",
+      "content": "Insert the unlock disc. After you are in Mode-B, click the Open button to open the drive tray. Insert the disc and then click the Close button. Click the 79 Unlock button to read the disc. The drive will eject the disc automatically when finished. This step is only required if you have a version 79 drive."
+    },
+    {
+      "title": "Dump the drive data.",
+      "content": "Dump the drive data. In the \"Flashing Options\" section, make sure the \"Dump Drive\" option is selected, and then click the Read to Source button. Save the drive data backup file somewhere easily accessible in case you want to restore the drive later."
+    },
+    {
+      "title": "Save your drive key.",
+      "content": "Save your drive key. Click the Save Drive Key button and save the drive key somewhere safe. This will be useful if you want to restore your drive later."
+    },
+    {
+      "title": "Flash the LT+ firmware.",
+      "content": "Flash the LT+ firmware. Return to the Hitachi GDR3120 tab and select \"Flash LT-Plus\" in the \"Flashing Options\" section. Click the Flash LT-Plus button. Click Yes when the program says that the flashing report is stable."
+    },
+    {
+      "title": "Wait for the flashing process to complete.",
+      "content": "Wait for the flashing process to complete. You can see the progress in the text box at the bottom of the window. Once the flashing process is complete, return to the Hitachi GDR3120 tab. Turn the DVD drive on and off (you can simply pull the power cable from the DVD drive to reset it)."
+    },
+    {
+      "title": "Start JungleFlasher.",
+      "content": "Start JungleFlasher. Once the drive is connected to the USB tool and your computer, you can start JungleFlasher to begin the flashing process."
+    },
+    {
+      "title": "Unlock the drive.",
+      "content": "Unlock the drive. Click the MTK Flash 32 tab and then click the \"BenQ UnLock\" button. The DVD drive will be unlocked automatically."
+    },
+    {
+      "title": "Wait for the drive to unlock.",
+      "content": "Wait for the drive to unlock. You will see text in the box at the bottom of the window. Once the drive has been unlocked, look for the \"Drive Properties\" section of the MTK Flash 32 tab. The \"Vendor\" field should read \"Drive in Vendor Mode\"."
+    },
+    {
+      "title": "Copy the old firmware.",
+      "content": "Copy the old firmware. Click the Read button. JungleFlasher will begin reading the BenQ firmware files. After it's finished, you will be prompted to save the original firmware as a backup. Choose a location that you can easily find if you want to restore your original firmware files."
+    },
+    {
+      "title": "Load the new firmware.",
+      "content": "Load the new firmware. After the firmware backup has been saved, you will be prompted to load the BenQ LT+ firmware files. Click Yes to proceed."
+    },
+    {
+      "title": "Save your drive key.",
+      "content": "Save your drive key. Click the Save Drive Key button and save the drive key somewhere safe. This will be useful if you want to restore your drive later."
+    },
+    {
+      "title": "Save your custom firmware.",
+      "content": "Save your custom firmware. Click the Save to File button to save your custom firmware files. This will make flashing the same drive in the future much easier."
+    },
+    {
+      "title": "Write the new firmware.",
+      "content": "Write the new firmware. Click the MTK Flash 32 tab and then click the Write button. You can monitor the writing process in the text box at the bottom of the window. The writing process shouldn't take too long."
+    },
+    {
+      "title": "Exit vendor mode.",
+      "content": "Exit vendor mode. After the firmware writing is complete, click the Outro / ATA Reset to exit vendor mode on your DVD drive. This will keep your Xbox 360 from getting banned immediately from Xbox Live. The \"DVD Key\" entry in the \"Drive Properties\" section should read \"Verified\"."
+    },
+    {
+      "title": "Start JungleFlasher.",
+      "content": "Start JungleFlasher. Once the drive is connected to the USB tool and your computer, you can start JungleFlasher to begin the flashing process."
+    },
+    {
+      "title": "Find the MPX01 point on the Lite-On DVD circuitry board.",
+      "content": "Find the MPX01 point on the Lite-On DVD circuitry board. Flip your disassembled Lite-On drive to find the circuitry board. The MPX01 point is located on the circuitry of the DVD drive, and is where you will need to probe during the flashing process. You can find the MPX01 point next to the large chip installed on the circuitry."
+    },
+    {
+      "title": "Get ready to probe the drive.",
+      "content": "Get ready to probe the drive. Open the DVDKey 32 tab in JungleFlasher. Click the PhatKey button and wait a few moments for the program to load. The \"MTK Vendor Intro failed\" window will appear. You are now ready to probe the drive. Ensure that the light on the probe is on, indicating it is receiving power."
+    },
+    {
+      "title": "Probe the drive.",
+      "content": "Probe the drive. When the window pops up, press and hold the button on the probe cable. With the button held down, touch the probe to the MPX01 point. Release the probe cable button while continuing to hold the probe on the point. Click the Yes button on the window in JungleFlasher."
+    },
+    {
+      "title": "Remove the probe and reset the drive.",
+      "content": "Remove the probe and reset the drive. When the next window appears, you will need to remove the probe and reset the drive. Pull the probe away and kill the drive's power at the USB connector. Wait five seconds and then turn the power back on. Click OK in JungleFlasher."
+    },
+    {
+      "title": "Save the key.",
+      "content": "Save the key. After clicking OK , you will be prompted to save your extracted key. Save it somewhere that can be easily accessed. There will be multiple files that you will need to save in the same location."
+    },
+    {
+      "title": "Load the new firmware.",
+      "content": "Load the new firmware. After the firmware backup has been saved, you will be prompted to load the Lite-On LT+ firmware files. Click Yes to proceed."
+    },
+    {
+      "title": "Load the saved key.",
+      "content": "Load the saved key. Click the Manual Spoofing button in the FirmwareTool 32 tab, click the Load key bin button, and select the key that you saved earlier."
+    },
+    {
+      "title": "Save your custom firmware.",
+      "content": "Save your custom firmware. Click the {button|Save to File}} button to save your custom firmware files. This will make flashing the same drive in the future much easier."
+    },
+    {
+      "title": "Erase the drive.",
+      "content": "Erase the drive. Click the MTK Flash 32 tab and then click the \"Lite-On Erase\" button. Click the Yes buttons in the windows that appear. As soon as \"...\" appears in the text box at the bottom of the window, reset the power to your DVD drive by either using the kill switch on the CK3 Lite or by pulling out and reinserting the power cable for the DVD drive. If you were successful, look for the \"Drive Properties\" section of the MTK Flash 32 tab. The \"Vendor\" field should read \"Drive in Vendor Mode\"."
+    },
+    {
+      "title": "Write the new firmware.",
+      "content": "Write the new firmware. Click the MTK Flash 32 tab and then click the Write button. You can monitor the writing process in the text box at the bottom of the window. The writing process shouldn't take too long."
+    },
+    {
+      "title": "Exit vendor mode.",
+      "content": "Exit vendor mode. After the firmware writing is complete, click the Outro / ATA Reset to exit vendor mode on your DVD drive. This will keep your Xbox 360 from getting banned immediately from Xbox Live. The \"DVD Key\" entry in the \"Drive Properties\" section should read \"Verified\"."
+    }
+  ]
+}

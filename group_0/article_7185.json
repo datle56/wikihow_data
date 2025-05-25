@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Check-Your-Windows-Product-Key",
+  "title": "How to Find Your Windows Product Key",
+  "steps": [
+    {
+      "title": "Find your product key if your PC comes with Windows pre-installed.",
+      "content": "Find your product key if your PC comes with Windows pre-installed. If your PC comes with Windows pre-installed, you do not need to use your product key to activate Windows. It's already running. If you want to save a backup copy, you can do so, using the Command Prompt , PowerShell , or your Windows Registry . You can also find your Windows product key within the packaging your PC came with or within the Certificate of Authenticity. Most newer computers do not have the Windows product key printed on a sticker on the bottom of the computer like they used to. However, you should be able to find the Windows product key within the package your computer came in."
+    },
+    {
+      "title": "Find your product key if you bought a physical copy of Windows.",
+      "content": "Find your product key if you bought a physical copy of Windows. If you bought a physical copy of Windows 10 or 11 from an authorized retailer, you can find your Windows product key within the box that Windows came in."
+    },
+    {
+      "title": "Find your product key if you bought a digital copy of Windows.",
+      "content": "Find your product key if you bought a digital copy of Windows. If you bought a digital copy of Windows online or through the Microsoft Store, either as a new copy or an upgrade, you should have received a confirmation email. Your Windows product key should be in the confirmation email."
+    },
+    {
+      "title": "Find your Windows product key if you have a volume licensing agreement or MSDN subscription.",
+      "content": "Find your Windows product key if you have a volume licensing agreement or MSDN subscription. If you have a volume licensing agreement or MSDN subscription, you can find your Windows product key in the web portal for your program. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the icon with the Windows logo in the taskbar at the bottom of the screen. You can do this in Windows 10 or 11."
+    },
+    {
+      "title": "Type CMD.",
+      "content": "Type CMD . This displays the Command Prompt in the Windows Start menu."
+    },
+    {
+      "title": "Open the Command Prompt as an administrator .",
+      "content": "Open the Command Prompt as an administrator . To open the Command Prompt as an administrator, right-click the Command Prompt and click Run as Administrator . You must be signed in to Windows with an administrative account in order to open the Command Prompt as an administrator."
+    },
+    {
+      "title": "Type the command to display your product key.",
+      "content": "Type the command to display your product key. To display your product key, type the following command and press Enter . [3] X Research source wmic path softwareLicensingService get OA3xOriginalProductKey"
+    },
+    {
+      "title": "Note the product key.",
+      "content": "Note the product key. Your product key is the 25-letter key displayed under the text that says \"OA3xOriginalProductKey.\""
+    },
+    {
+      "title": "Save a copy of the product key.",
+      "content": "Save a copy of the product key. You can either take a screenshot of the results or write down the key to ensure you have access to it if needed."
+    },
+    {
+      "title": "Right-click the Windows Start menu .",
+      "content": "Right-click the Windows Start menu . It's the icon that resembles the Windows logo in the taskbar at the bottom of the screen. Right-clicking the Windows Start menu displays a context menu. This will work on both Windows 10 and 11."
+    },
+    {
+      "title": "Click Windows PowerShell (Admin).",
+      "content": "Click Windows PowerShell (Admin) . This will open PowerShell as an administrator. You must be logged into Windows with an administrative account in order run PowerShell as an administrator."
+    },
+    {
+      "title": "Enter the command to display the product key and press ↵ Enter.",
+      "content": "Enter the command to display the product key and press ↵ Enter . The command is as follows: [4] X Research source powershell \"(Get-WmiObject -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey\""
+    },
+    {
+      "title": "Note your product key.",
+      "content": "Note your product key. You should see the product key appear directly below the command that you entered; this is your product key. The product key will be 25 characters long. If you don't see the product key appear immediately, enter the code a second time and press Enter . [5] X Expert Source Yaffet Meshesha Computer Specialist Expert Interview. 22 September 2020."
+    },
+    {
+      "title": "Save a copy of the product key.",
+      "content": "Save a copy of the product key. You can either take a screenshot of the results or write down the key to ensure you have access to it if needed."
+    },
+    {
+      "title": "Press ⊞ Win+R to open Run.",
+      "content": "Press ⊞ Win + R to open Run. Pressing the Windows key and R at the same time will open the Run program. This will work on both Windows 10 and 11."
+    },
+    {
+      "title": "Type regedit and press ↵ Enter.",
+      "content": "Type regedit and press ↵ Enter . This will open the Registry Editor , where you can find the Windows Product Key. Warning: Editing files within the Registry Editor can cause permanent damage to your Windows operating system. Do not edit or move any files unless you know what you are doing."
+    },
+    {
+      "title": "Navigate to the SoftwareProtectionPlatform folder.",
+      "content": "Navigate to the SoftwareProtectionPlatform folder. You will see a series of folders listed in the panel to the left. Open the following folders to navigate to the \"SoftwareProtectionPlatform\" folder. Open the HKEY_LOCAL_MACHINE folder. Open the SOFTWARE folder. Open the Microsof folder. Open the Windows NT folder Open the CurrentVersion folder. Open the SoftwareProtectionPlatform folder."
+    },
+    {
+      "title": "Click the SoftwareProtectionPlatform folder.",
+      "content": "Click the SoftwareProtectionPlatform folder. This displays all the files within this folder in the large panel on the right."
+    },
+    {
+      "title": "Double-click the BackupProductKeyDefault file.",
+      "content": "Double-click the BackupProductKeyDefault file. This displays your 25-digit product key in the field that says \"Value Data.\" You can also read the product key under \"Data\" next to the BackupProductKeyDefault file. [6] X Research source"
+    },
+    {
+      "title": "Save a copy of the product key.",
+      "content": "Save a copy of the product key. You can either take a screenshot of the results or write down the key to ensure you have access to it if needed."
+    }
+  ]
+}

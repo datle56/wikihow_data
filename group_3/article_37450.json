@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Restart-Windows-Explorer-Without-Rebooting-Computer",
+  "title": "How to Restart Windows Explorer Without Rebooting Computer",
+  "steps": [
+    {
+      "title": "Open the Task Manager.",
+      "content": "Open the Task Manager . Right-click the Start menu and select Task Manager . If your taskbar is missing, press CTRL + ALT + Del and click Task Manager ."
+    },
+    {
+      "title": "Right-click Windows Explorer.",
+      "content": "Right-click Windows Explorer . This will be underneath the Name header, next to a folder icon. [1] X Research source If you aren't already on the Processes tab, click it to navigate there now. If you don't see any apps listed, click More details at the bottom of the window."
+    },
+    {
+      "title": "Click Restart.",
+      "content": "Click Restart . This will restart Windows Explorer. [2] X Research source"
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt . Click the Start menu and type \"cmd\". The Command Prompt will be the first result. Alternatively, press the Windows key + R to open the Run program. Type \"cmd\" and press Enter ."
+    },
+    {
+      "title": "Type taskkill /f /im explorer.exe and press ↵ Enter.",
+      "content": "Type taskkill /f /im explorer.exe and press ↵ Enter . This will run the code to stop explorer.exe. [3] X Research source"
+    },
+    {
+      "title": "Type start explorer.exe and press ↵ Enter.",
+      "content": "Type start explorer.exe and press ↵ Enter . This will run the code to start explorer.exe again. [4] X Research source"
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Use the command in the above method to create a batch file that will run the command for you."
+    },
+    {
+      "title": "Type the command into the text file.",
+      "content": "Type the command into the text file. Write taskkill /f /im explorer.exe & start explorer.exe ."
+    },
+    {
+      "title": "Save the file to your desktop.",
+      "content": "Save the file to your desktop. Name the file restartexplorer.bat or something similar. You can name the file anything you want, but make sure you include .bat at the end, so your computer knows it's a batch file."
+    },
+    {
+      "title": "Double-click the BAT file when you need to restart Explorer.",
+      "content": "Double-click the BAT file when you need to restart Explorer. Windows Explorer will close and restart in the same exact way as if you typed it into the Command Prompt yourself."
+    },
+    {
+      "title": "Hold Ctrl+⇧ Shift on your keyboard.",
+      "content": "Hold Ctrl + ⇧ Shift on your keyboard. Keep these keys pressed down. Note: this method does not work in Windows 11."
+    },
+    {
+      "title": "Right-click the taskbar.",
+      "content": "Right-click the taskbar. When the pop-up menu opens, you can release the keyboard keys."
+    },
+    {
+      "title": "Click Exit Explorer.",
+      "content": "Click Exit Explorer . This is at the very bottom of the menu."
+    },
+    {
+      "title": "Open the Task Manager.",
+      "content": "Open the Task Manager. Right-click the Start menu and select Task Manager . Alternatively, press CTRL + ALT + Del and click Task Manager . [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . This will be at the top-right corner. If you don't see anything listed, click More details at the bottom of the window."
+    },
+    {
+      "title": "Click Run new task.",
+      "content": "Click Run new task . A new window will open."
+    },
+    {
+      "title": "Enter explorer.exe and click OK.",
+      "content": "Enter explorer.exe and click OK . This will start explorer.exe again."
+    },
+    {
+      "title": "Press Ctrl+Alt+Del.",
+      "content": "Press Ctrl + Alt + Del . If your computer is still functioning but Explorer is being weird, you can sometimes fix it just by signing out of your account then signing back in. You may lose data in any open programs, however."
+    },
+    {
+      "title": "Click Sign out.",
+      "content": "Click Sign out . This will log you out of your current account."
+    },
+    {
+      "title": "Sign back into your account.",
+      "content": "Sign back into your account. Windows Explorer should be working properly again."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "url": "https://www.wikihow.com/Delete-Windows.Old",
+  "title": "3 Easy Ways to Remove Windows.old from Any PC",
+  "steps": [
+    {
+      "title": "Open your Windows Settings.",
+      "content": "Open your Windows Settings. You can do this easily by clicking Settings or the gear icon in your Windows Start menu. On both Windows 10 and 11, Windows.old and other previous operating system files are deleted automatically 10 days after the upgrade. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You can delete Windows.old early to reclaim several gigabytes of disk space. Just keep in mind that you won't be able to downgrade to your previous Windows version if you change your mind."
+    },
+    {
+      "title": "Click System.",
+      "content": "Click System . If you're using Windows 11, it'll be at the top of the left panel. On Windows 10, you'll see the system icon in the main panel."
+    },
+    {
+      "title": "Click Storage.",
+      "content": "Click Storage . Once you click this option, Windows will take a few moments to analyze your hard drive(s) and display how you're utilizing your disk space ."
+    },
+    {
+      "title": "Click Temporary Files.",
+      "content": "Click Temporary Files . You'll see this under your main hard drive."
+    },
+    {
+      "title": "Check the box next to \"Previous version of Windows.\"",
+      "content": "Check the box next to \"Previous version of Windows.\" If you've recently upgraded, you'll see this option in the list. If you don't see this option but still have a Windows.old folder, use this method to delete it. Remove the checkmarks from any other file types that you don't want to delete. For example, if you don't want to delete the files in your Downloads folder, remove the checkmark from the \"Downloads\" box."
+    },
+    {
+      "title": "Click Remove files.",
+      "content": "Click Remove files . You'll see this button above the list. A confirmation pop-up will appear."
+    },
+    {
+      "title": "Click Continue to confirm.",
+      "content": "Click Continue to confirm. This removes all selected files, including the Windows.old folder that contains your previous version of Windows."
+    },
+    {
+      "title": "Open the Disk Cleanup utility.",
+      "content": "Open the Disk Cleanup utility. This utility will delete the Windows.old folder on any version of Windows, including Windows 7 . There are a couple of different ways you can open it. On Windows 8, 10, and 11, you can press Windows key + S , type cleanup , and then click Disk Cleanup . You can also press Windows key + R , type cleanmgr , and press Enter . Another way is to open the Control Panel , select \"System and Security\", click \"Administrative Tools , then select Disk Cleanup ."
+    },
+    {
+      "title": "Select the drive that contains the Windows.old folder.",
+      "content": "Select the drive that contains the Windows.old folder. This is usually the C: drive."
+    },
+    {
+      "title": "Click the Clean up system files button.",
+      "content": "Click the Clean up system files button. You may be prompted for the administrator password."
+    },
+    {
+      "title": "Select your drive again if prompted.",
+      "content": "Select your drive again if prompted. Disk Cleanup will scan the drive again."
+    },
+    {
+      "title": "Check the \"Previous Windows installation(s)\" box.",
+      "content": "Check the \"Previous Windows installation(s)\" box. You can also check the boxes for any other types of files on the list you want to remove. If you don't want to delete any other files, remove the checkmarks from other selected options now. If you don't see this option but still have a Windows.old folder, see this method ."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This deletes Windows.old and all previous operating system files from your PC. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Try another method first.",
+      "content": "Try another method first. If you've already tried to delete Windows.old (or have multiple Windows.old files ending with different numbers) and were unsuccessful, you can use the Command Prompt to permanently delete the files."
+    },
+    {
+      "title": "Open the Command Prompt as an Administrator.",
+      "content": "Open the Command Prompt as an Administrator. To do this, type cmd into the Windows search bar, right-click Command prompt , then select Run as Administrator ."
+    },
+    {
+      "title": "Take ownership of the file.",
+      "content": "Take ownership of the file. To do this, type takeown /F \"C:\\Windows.old\" /A /R /D Y and press Enter . If your Windows.old folder is not on the C drive, replace C: with the correct drive letter."
+    },
+    {
+      "title": "Change the permissions to allow deletion.",
+      "content": "Change the permissions to allow deletion. To do this, type icacls \"C:\\Windows.old\" /grant *S-1-5-32-544:F /T /C /Q and press Enter ."
+    },
+    {
+      "title": "Use the RD command to delete Windows.old.",
+      "content": "Use the RD command to delete Windows.old. Type RD /S /Q \"C:\\Windows.old\" and press Enter to permanently delete the folder."
+    },
+    {
+      "title": "Repeat for additional Windows.old folders.",
+      "content": "Repeat for additional Windows.old folders. If you have multiple Windows.old folders, run all of these commands for each of them. For example, takeown /F \"C:\\Windows.old.000\" /A /R /D Y ."
+    }
+  ]
+}

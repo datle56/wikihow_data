@@ -1,0 +1,66 @@
+{
+  "url": "https://www.wikihow.com/Open-a-TAR-File-on-PC-or-Mac",
+  "title": "Easy Ways to Open TAR, TGZ, and TAR.GZ Files on PC & Mac",
+  "steps": [
+    {
+      "title": "Open Finder .",
+      "content": "Open Finder . You can find this two-toned smiley face icon in your Dock."
+    },
+    {
+      "title": "Go to your TAR file.",
+      "content": "Go to your TAR file. If you downloaded the file from the internet, you'll usually find it in your Downloads folder. If you're not sure where you placed the file, you can search for specific file types (such as .TAR or .TGZ) in Finder."
+    },
+    {
+      "title": "Double-click the file.",
+      "content": "Double-click the file. This extracts the files (and folders, if any) from the TAR file and places them in the current folder. You can now double-click any of the extracted files to open them in their default apps. [2] X Research source"
+    },
+    {
+      "title": "Open a Terminal or SSH into your Mac or Linux PC.",
+      "content": "Open a Terminal or SSH into your Mac or Linux PC. If you want to open a TAR, TGZ, or TAR.GZ file at the prompt in Linux or macOS, you can use the tar command. If you're using a Mac, it's a little easier to use Finder to extract these archived files, but using the command line is handy if you're connected remotely through SSH or writing scripts. If you're using Linux on a PC, press Ctrl + Alt + T to open a new Terminal window. [3] X Research source If you’re logged in to your Mac's desktop, you can open Terminal in Finder by navigating to Applications > Utilities > Terminal , or by searching for Terminal in Spotlight."
+    },
+    {
+      "title": "Use the cd command to go to the directory your TAR file is in.",
+      "content": "Use the cd command to go to the directory your TAR file is in. Type cd , followed by the full path to the file. Then, press Return or Enter to enter the directory. For example, if the TAR file is on your Mac's desktop, you'd type cd Desktop and press Return . If it's in your Mac's Downloads folder, you'd use cd Downloads . If you're not sure where the file is, you can locate it in Finder first (on a Mac) or use the locate or find command at the prompt. To make sure you're in the right folder, type ls -a and press Return or Enter at the prompt. You'll see a list of files, which should include your TAR, TGZ, or TAR.GZ file."
+    },
+    {
+      "title": "Use the tar command to extract the files.",
+      "content": "Use the tar command to extract the files. The command you'll use depends on the extension of the file: For .TAR files, type tar -xvf and press Return or Enter . For .TGZ and .TAR.GZ files, type tar -xvzf and press Return or Enter . Once extracted, any files and/or folders will appear in the current folder. You can access this folder at the command line in both macOS and Linux, as well as from the desktop in either operating system."
+    },
+    {
+      "title": "Download the 7-Zip setup file.",
+      "content": "Download the 7-Zip setup file. 7-Zip is a free file archival tool that makes it easy to create and extract TAR, TGZ, and TAR.GZ files in Windows. There are three versions of 7-Zip available for download, and you'll need to download the correct version for your version of Windows. First, find out if your processor is 64-bit, 32-bit, or ARM . Press Windows key + S and type about . Click About your PC . Next to \"System type,\" you'll see either \"x64-based processor,\" \"x86-based processor,\" or \"ARM-based processor.\" In any web browser, go to https://www.7-zip.org . Click the Download link that matches your processor type."
+    },
+    {
+      "title": "Install 7-ZIP.",
+      "content": "Install 7-ZIP. To install the program: Double-click the downloaded file ending in .exe—it'll usually be in your Downloads folder. If prompted, give the installer permission to run. Click Install . Click Close ."
+    },
+    {
+      "title": "Open the folder that contains your TAR, TGZ, or TAR.GZ file.",
+      "content": "Open the folder that contains your TAR, TGZ, or TAR.GZ file. For example, if your file is in the Downloads folder, you can open File Explorer (just right-click the Start menu and select File Explorer ), click This PC in the left column, then click Downloads in the right panel."
+    },
+    {
+      "title": "Make 7-Zip the default application for opening this file type.",
+      "content": "Make 7-Zip the default application for opening this file type. The easiest way to use 7-Zip is to make it the default program for extracting TAR, TGZ, and/or TAR.GZ files. Here's how: Right-click the file and choose Open With . If 7-Zip File Manager appears in the menu, select it. If not, select Choose another app , click More Apps , then select 7-Zip from the list."
+    },
+    {
+      "title": "Double-click the TAR, TAR.GZ, or TGZ file.",
+      "content": "Double-click the TAR, TAR.GZ, or TGZ file. This instantly displays the contents of the TAR file in 7-Zip File Manager."
+    },
+    {
+      "title": "Click Extract.",
+      "content": "Click Extract . It's the blue minus sign at the top of the window. If the file you're opening is a .TAR.GZ or .TGZ file, 7-Zip will first decompress the file and produce a new file ending in .TAR. Then, you can use 7-Zip again to extract the files from the new file ending in .TAR."
+    },
+    {
+      "title": "Select a location to extract the files.",
+      "content": "Select a location to extract the files. By default, all files inside of the archive will extract to the current folder. If you want to choose a different location, click the three dots to choose a location now. [4] X Research source"
+    },
+    {
+      "title": "Click OK to extract the files.",
+      "content": "Click OK to extract the files. This unpacks the files from the archive and places them into the selected folder. You can now double-click any of the extracted files to open them in their default programs."
+    },
+    {
+      "title": "Extract the .TAR files (if you started with a .TGZ or .TAR.GZ file).",
+      "content": "Extract the .TAR files (if you started with a .TGZ or .TAR.GZ file). If your file originally ended in .TGZ or .TAR.GZ, you now have a file ending with .TAR in the current folder. You'll just need to unpack the archive to access the files inside. [5] X Research source Right-click the .TAR file and select Open With . Select 7-Zip File Manager . Go to Choose another app > More apps if you don't see it. Click Extract . Select a location and click OK ."
+    }
+  ]
+}

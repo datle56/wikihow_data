@@ -1,0 +1,110 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-Two-Computers-for-LAN",
+  "title": "How to Set Up Two Computers for LAN",
+  "steps": [
+    {
+      "title": "Select start button on desktop.",
+      "content": "Select start button on desktop."
+    },
+    {
+      "title": "Go to “Control Panel” then ”Network and Internet” then”Network Sharing Centre”.",
+      "content": "Go to “Control Panel” then ”Network and Internet” then”Network Sharing Centre”."
+    },
+    {
+      "title": "Select “Manage Network Connections” on the left side of the window.\"",
+      "content": "Select “Manage Network Connections” on the left side of the window.\""
+    },
+    {
+      "title": "Now find your wireless connection and right click it and select “Properties”.",
+      "content": "Now find your wireless connection and right click it and select “Properties”. If you have more than one network, this icon will be identified as \"multiple networks.\""
+    },
+    {
+      "title": "In the properties window there is a list of items.",
+      "content": "In the properties window there is a list of items. Search for “Internet Protocol Version 4 (TCP/IPV4)” and double click it."
+    },
+    {
+      "title": "Choose whether to make your network private or public.",
+      "content": "Choose whether to make your network private or public. Generally, private is the best option."
+    },
+    {
+      "title": "Do step 3 and step 6on both computers.",
+      "content": "Do step 3 and step 6on both computers. Both computers have to do these steps on. Now in the window that comes up check the box which says; “Use the following IP address” Type in the IP address you wish to use or this one for example: 192.168.0.1. The number one at the end of this represents what the computer will be using it can be either 1 or 2."
+    },
+    {
+      "title": "Now for “Subnet Mask” type in 255.255.255.0.\"",
+      "content": "Now for “Subnet Mask” type in 255.255.255.0.\""
+    },
+    {
+      "title": "Then for the “Default Gateway” address type in 192.168.0.2.",
+      "content": "Then for the “Default Gateway” address type in 192.168.0.2. This IP address represents the other computers IP address. This means that if the IP address on computer two was 192.168.0.2 then computer one should have 192.168.0.1.\""
+    },
+    {
+      "title": "Double click on the other computer in the window.",
+      "content": "Double click on the other computer in the window. Enter your password if necessary."
+    },
+    {
+      "title": "Plug each end of the crossover cable into a network port on the back of each computer.",
+      "content": "Plug each end of the crossover cable into a network port on the back of each computer."
+    },
+    {
+      "title": "Select one of the computers to complete the rest of the process.",
+      "content": "Select one of the computers to complete the rest of the process."
+    },
+    {
+      "title": "Open The Network and Sharing Center.",
+      "content": "Open The Network and Sharing Center. Click \"Start,\" then \"Control Panel,\" then \"Network and Internet.\" Lastly, click \"Network and Sharing Center.\""
+    },
+    {
+      "title": "Double click the \"Unidentified Network\" icon.",
+      "content": "Double click the \"Unidentified Network\" icon. If you have more than one network, this icon will be identified as \"multiple networks.\""
+    },
+    {
+      "title": "In Network, click the information bar.",
+      "content": "In Network, click the information bar. Next, click on \"Turn on network discovery and file sharing.\" If you are prompted for a password or confirmation, type it in or provide confirmation."
+    },
+    {
+      "title": "Choose whether to make your network private or public.",
+      "content": "Choose whether to make your network private or public. Generally, private is the best option."
+    },
+    {
+      "title": "Connect an Ethernet cable from the Ethernet computer on one port to the Ethernet computer on the other.",
+      "content": "Connect an Ethernet cable from the Ethernet computer on one port to the Ethernet computer on the other. If you don't have an Ethernet port, you can also use a USB-to-Ethernet adapter."
+    },
+    {
+      "title": "On each computer, go to the Apple menu.",
+      "content": "On each computer, go to the Apple menu. Click on \"System Preferences\" and then click on \"Sharing.\""
+    },
+    {
+      "title": "Select one of the computers and go to Finder.",
+      "content": "Select one of the computers and go to Finder. Choose \"Go,\" then \"Connect to Server\" and click \"Browse.\""
+    },
+    {
+      "title": "Double click on the other computer in the window.",
+      "content": "Double click on the other computer in the window. Enter your password if necessary."
+    },
+    {
+      "title": "Go to Internet Options (this varies depending on the Operating System) and go to the dialog box that lets you change the TCP/IP protocol.",
+      "content": "Go to Internet Options (this varies depending on the Operating System) and go to the dialog box that lets you change the TCP/IP protocol."
+    },
+    {
+      "title": "Change the radio buttons from \"Obtain from DHCP server automatically\" to \"Use the following IP address:\".",
+      "content": "Change the radio buttons from \"Obtain from DHCP server automatically\" to \"Use the following IP address:\"."
+    },
+    {
+      "title": "Give each computer a different address from the host range.",
+      "content": "Give each computer a different address from the host range. Do not use the network address or the broadcast address."
+    },
+    {
+      "title": "Leave the \"Default Gateway\" and \"DNS server\" fields blank.",
+      "content": "Leave the \"Default Gateway\" and \"DNS server\" fields blank."
+    },
+    {
+      "title": "For the subnet mask, use the following:",
+      "content": "For the subnet mask, use the following: Class \"A\" Networks When the first number is 0 to 127 The Mask is - 255.0.0.0 Class \"B\" Networks When the first number is 128 to 191 The Mask is - 255.255.0.0 Class \"C\" Networks When the first number is 192 to 223 The Mask is - 255.255.255.0 IPv4 originally used the first number (ex. 192) to determine which part of the address is the network and which part is the host based on the address class. However, the advent of subnetting and classless networking made it necessary to provide a mask because other ways of dividing the address into network and host portions are now possible."
+    },
+    {
+      "title": "Verify connectivity.",
+      "content": "Verify connectivity. The simplest way to do this is with Ping. Bring up MS-DOS or the equivalent on other OS's. For Windows, open the command prompt which is located in the Start Menu, then go to \"Accessories\" and then \"Command Prompt.\" Type in: \"ping\" and insert the IP address of the other computer here (ex. 192.168.1.1). If you cannot reach the other computers address, read over the steps again or contact a professional."
+    }
+  ]
+}

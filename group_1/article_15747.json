@@ -1,0 +1,18 @@
+{
+  "url": "https://www.wikihow.com/Enable-Ssh-in-Centos-7",
+  "title": "How to Enable SSH in CentOS 7",
+  "steps": [
+    {
+      "title": "Enter the following code into your command-line utility:",
+      "content": "Enter the following code into your command-line utility: sudo yum -y install openssh-server openssh-clients . [1] X Research source This code installs the appropriate SSH server and client type."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: sudo systemctl start sshd . With this active, the SSH service will start and will listen continuously for actions from clients, like connection requests."
+    },
+    {
+      "title": "Enter the following code:",
+      "content": "Enter the following code: sudo systemctl status sshd . You should see an \"active\" status. If you don't, you may need to restart your system and try again. To stop SSH, enter systemctl stop sshd and you'll see an \"inactive\" tag. If you want SSH to automatically start whenever you reboot the system, enter: sudo systemctl enable sshd . Change \"enable\" to \"disable\" if you want to cancel the automatic setting."
+    }
+  ]
+}

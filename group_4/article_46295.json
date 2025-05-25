@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Use-Regedit",
+  "title": "Windows Registry Editor: Opening, Editing, Backups, & More",
+  "steps": [
+    {
+      "title": "Open Start .",
+      "content": "Open Start . Click the Windows logo in the bottom-left corner of the screen, or press the ⊞ Win key."
+    },
+    {
+      "title": "Type regedit into Start and select Registry Editor.",
+      "content": "Type regedit into Start and select Registry Editor . It's represented by a series of blue blocks stacked on top of one another. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Yes when prompted.",
+      "content": "Click Yes when prompted. Windows will ask you if you want to allow the regedit to make changes to your computer. Click Yes to continue opening the Registry Editor. If you aren't an administrator on your current computer, you won't be able to open the Registry Editor. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click the Computer item.",
+      "content": "Click the Computer item. It's the monitor-shaped icon at the top of the Registry sidebar, which is on the left side of the window. Doing so will select it. You may have to scroll up to the top of the sidebar to see this icon. This step will allow you to back up the entire Registry, but you can do this with a specific folder or set of folders in the Registry as well. You should always make a new backup of the entire Registry before editing it. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click File.",
+      "content": "Click File . This tab is in the top-left side of the Registry window. A drop-down menu will appear. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Export….",
+      "content": "Click Export… . It's near the top of the drop-down menu. Doing so opens a Export Registry File window. [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Enter a name for your backup file.",
+      "content": "Enter a name for your backup file. Type in the name for the backup. It's wise to use the current date or a recognizable identifier so you can find this file in the event you need to restore it."
+    },
+    {
+      "title": "Select a save location.",
+      "content": "Select a save location. Click a folder on the left side of the window to set it as the place where your backup will be saved, or click a folder in the middle of the window to specify a folder inside of your current location. Be sure to save the backup somewhere you can revisit easily."
+    },
+    {
+      "title": "Click Save.",
+      "content": "Click Save . This button is at the bottom of the window. Doing so will export a copy of the Registry's current settings, values, and other data. If something goes wrong with the Registry while you're in it, you can restore this backup to fix minor to moderate errors. [6] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Make sure the \"Export range\" at the bottom of the window is set to \"All\". If you are backing up only a section of the registry, set the range to \"Selected branch\" and ensure the field contains the appropriate key(s)."
+    },
+    {
+      "title": "Click > next to Computer.",
+      "content": "Click > next to Computer . This icon is to the left of the Computer icon you selected when making a backup. Doing so will expand the Computer folder, displaying the folders inside of it. If Computer already shows several folders below it, it is already expanded."
+    },
+    {
+      "title": "Review the built-in Registry folders.",
+      "content": "Review the built-in Registry folders. There will usually be five folders inside of the \"Computer\" folder: HKEY_CLASSES_ROOT - The most complex of your Registry's five main folders, it contains many of the applications used to open or read other files. HKEY_CURRENT_USER - This folder contains info unique to the logged-in user, such as your personal folders and Control Panel settings. HKEY_LOCAL_MACHINE - This folder contains info that applies to all users on the computer, including driver and OS settings. HKEY_USERS - This folder contains the info within HKEY_CURRENT_USER, as well as info for all other users on the computer. HKEY_CURRENT_CONFIG - This folder stores your computer's current configuration, which is also located in HKEY_LOCAL_MACHINE, alongside any other configurations on your computer."
+    },
+    {
+      "title": "Click a Registry folder.",
+      "content": "Click a Registry folder. Clicking any folder in the Registry Editor will display the folder's contents in the right-hand panel of the Registry Editor. For example, if you click the HKEY_CURRENT_USER folder, you should see at least one icon on the right side of the page with the name (Default) ."
+    },
+    {
+      "title": "Expand a Registry folder.",
+      "content": "Expand a Registry folder. Click the > icon to the left of a folder to expand it and view its contents. This will work for any folder in the Registry, regardless of where it is. You can also double-click folders to expand them. Some folders (e.g., HKEY_CLASSES_ROOT ) contain hundreds of subfolders, meaning that expanding them will result in the left-hand sidebar becoming flooded with subfolders. The Registry can be hard to navigate when this happens, but all folders are arranged alphabetically."
+    },
+    {
+      "title": "Review the toolbar items.",
+      "content": "Review the toolbar items. These are in the upper-left side of the Registry Window, and include the following: File - Import or export a Registry file, or print a selected item. Edit - Change aspects of a selected Registry item, or create a new one. View - Enable or disable the Registry address bar (not all versions of Windows 10 have this feature). You can also view the binary data for a selected Registry item. Favorite - Add a selected Registry item to your computer's Favorites folder. Help - View Microsoft's help page for the Registry."
+    },
+    {
+      "title": "Double-click a Registry folder's item.",
+      "content": "Double-click a Registry folder's item. You'll find an icon with a red ab on it labeled (Default) in most Registry folders. Double-clicking it will open it for you to view its contents."
+    },
+    {
+      "title": "Click Cancel.",
+      "content": "Click Cancel . This will close your opened Registry item."
+    },
+    {
+      "title": "Go to the folder in which you want to create an item.",
+      "content": "Go to the folder in which you want to create an item. You can do this by expanding a folder, scrolling down to a subfolder, expanding it, and repeating as necessary until you reach the folder you're looking for."
+    },
+    {
+      "title": "Select the folder.",
+      "content": "Select the folder. Click the folder in which you want to create an item. This will select the folder, meaning that anything you create will be created inside of it."
+    },
+    {
+      "title": "Click the Edit tab.",
+      "content": "Click the Edit tab. It's in the upper-left side of the window. Doing so prompts a drop-down menu."
+    },
+    {
+      "title": "Select New.",
+      "content": "Select New . This option is near the top of the drop-down menu. A pop-out menu will appear next to the drop-down menu."
+    },
+    {
+      "title": "Select the item you want to create.",
+      "content": "Select the item you want to create. Click one of the following items: String Value - These are things that control system functions (e.g., keyboard speed or icon size). DWORD Value - DWORD values work with string values to dictate how certain system processes work. Key - A Registry \"Key\" is just a folder. There are several variations of DWORD values and string values that you might select depending on the instruction you're given."
+    },
+    {
+      "title": "Enter your item's name.",
+      "content": "Enter your item's name. Type in a name for your DWORD, string value, or key, then press ↵ Enter . This will create your item in your specified location under the name you just entered. Key names cannot include a backslash (\\). [7] X Research source If you want to edit the item, you'll have to double-click it to open its contents and then modify them as needed."
+    },
+    {
+      "title": "Click the Registry item.",
+      "content": "Click the Registry item. Make sour the targeted item is now highlighted. Before proceeding, create a backup of the Registry. Keep in mind that doing this for any item other than the one you just created may permanently damage your computer."
+    },
+    {
+      "title": "Click Edit.",
+      "content": "Click Edit . This will open a drop-down menu."
+    },
+    {
+      "title": "Select Delete.",
+      "content": "Select Delete . Regedit will attempt to delete all highlighted files/keys, so make sure you have only selected the item you intend to delete."
+    },
+    {
+      "title": "Click OK when prompted.",
+      "content": "Click OK when prompted. Your item is now deleted."
+    },
+    {
+      "title": "Exit the Registry Editor.",
+      "content": "Exit the Registry Editor. Click the X in the top-right corner of the Registry Editor window. This will close the Registry Editor. Revisit the Registry Editor at any time to restore your backup (and therefore the deleted item)."
+    },
+    {
+      "title": "Click the File tab atop the Registry Editor.",
+      "content": "Click the File tab atop the Registry Editor."
+    },
+    {
+      "title": "Click Import... in the drop-down menu.",
+      "content": "Click Import... in the drop-down menu. This will open a File Explorer window, where you may navigate to find your backup file."
+    },
+    {
+      "title": "Find and select your Registry backup file.",
+      "content": "Find and select your Registry backup file. Double-click it to open and restore your Registry Editor. Only restore a backup if you are certain it is a functioning copy of the Registry, and not one that can cause damage to your computer."
+    }
+  ]
+}

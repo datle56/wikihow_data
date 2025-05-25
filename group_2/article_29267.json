@@ -1,0 +1,74 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Kill-Block-on-Roblox",
+  "title": "How to Make a Kill Block on Roblox",
+  "steps": [
+    {
+      "title": "Head to the Create tab (www.roblox.com/Create).",
+      "content": "Head to the Create tab ( www.roblox.com/Create ). You need to download Roblox Studio if you don't have it installed. Roblox Studio is the platform to create a game on Roblox, where all the games are created. Roblox Studio is currently only available on Windows and Mac. You can download Roblox Studio on a Chromebook, but you will need Linux. Please note that Linux devices (excluding Chromebooks), mobile devices, consoles, etc. will not work and are not compatible."
+    },
+    {
+      "title": "Click Start Creating.",
+      "content": "Click Start Creating . It should be the very large button in the middle of the screen."
+    },
+    {
+      "title": "Click Download Studio.",
+      "content": "Click Download Studio ."
+    },
+    {
+      "title": "Open up the download when it is complete.",
+      "content": "Open up the download when it is complete. This is the installation package. On Chrome, click the bottom box and the bottom of your screen. It will automatically open. If you closed it, you can use Ctrl + J to check the download. On Microsoft Edge, it will prompt you when it's done downloading."
+    },
+    {
+      "title": "Wait.",
+      "content": "Wait. A blue Roblox (Roblox Studio), will open up. It will tell you that it's installing. Depending on your network connection, the download time may vary, but it should be quick! After it's complete, it might close, but don't worry. That's part of the process. When it closes, a new menu will open afterward!"
+    },
+    {
+      "title": "Log in.",
+      "content": "Log in. After the installation menu closes, a new window will open up shortly. You'll see a log in menu. In the Username box, fill in your Roblox username. In the Password box, fill in your Roblox password corresponding to your account."
+    },
+    {
+      "title": "Click the \"New\" button on your left menu.",
+      "content": "Click the \"New\" button on your left menu. In there, select any template you want! Your template isn't too important, depending on what exactly you want your game to be like."
+    },
+    {
+      "title": "Wait for your game to open.",
+      "content": "Wait for your game to open. It might take some time!"
+    },
+    {
+      "title": "Click Model when your game opens up.",
+      "content": "Click Model when your game opens up. It should be located on the top menu. A \"model\" is a combined object of parts, but you only need a part to make a kill block."
+    },
+    {
+      "title": "Add a part.",
+      "content": "Add a part. Click Part under the model tab. There should be a drop-down button once you click on it. Select the type of block you want to use. It doesn't matter about the shape of the model. It all can be used as a kill block!"
+    },
+    {
+      "title": "Find your model in the Explorer menu.",
+      "content": "Find your model in the Explorer menu. The Explorer menu is the menu on the right side of your screen. Your part should be automatically named \"Part.\" Find your part and click on it. Remember to only click on it once."
+    },
+    {
+      "title": "Find the + sign right next to your part.",
+      "content": "Find the + sign right next to your part. It should be \"Part +\". Click on the + ."
+    },
+    {
+      "title": "Click Script in the menu that pops up.",
+      "content": "Click Script in the menu that pops up. It should look like a blue scroll."
+    },
+    {
+      "title": "Delete the print(\"Hello World\") that automatically appears.",
+      "content": "Delete the print(\"Hello World\") that automatically appears."
+    },
+    {
+      "title": "Type in the below code.",
+      "content": "Type in the below code. local trapPart = script . Parent local function onPartTouch ( otherPart ) local partParent = otherPart . Parent local humanoid = partParent : FindFirstChild ( \"Humanoid\" ) if humanoid then humanoid . Health = 0 end end trapPart . Touched : Connect ( onPartTouch )"
+    },
+    {
+      "title": "Close the script tab.",
+      "content": "Close the script tab. There should be a \"X\" button below your top menu. Remember, only close script! Your script will save automatically."
+    },
+    {
+      "title": "Test out your model!",
+      "content": "Test out your model! In the Test tab on your top menu, click the blue Play . Touch the block and you'll notice that you died!"
+    }
+  ]
+}

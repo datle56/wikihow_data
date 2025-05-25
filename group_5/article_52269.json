@@ -1,0 +1,154 @@
+{
+  "url": "https://www.wikihow.com/Clone-a-Steam-Deck-Ssd",
+  "title": "2 Ways to Clone Your Steam Deck’s Original SSD for an Upgrade",
+  "steps": [
+    {
+      "title": "Get what you need.",
+      "content": "Get what you need. In order to clone the SSD on your Steam Deck, you will need the following items: [1] X Research source A fully charged Steam Deck An M.2 2230 SSD. An external NVME enclosure. A USB-C to USB-C cable. Torx screwdrivers of various sizes (depending on your Steam Deck model). A spudger or plastic pry tool."
+    },
+    {
+      "title": "Switch to Desktop Mode.",
+      "content": "Switch to Desktop Mode. You will need to be in desktop mode to access the Konsole. Use the following steps to switch to desktop mode: Press the Steam button. Select Power . Select Switch to Desktop ."
+    },
+    {
+      "title": "Launch the Konsole.",
+      "content": "Launch the Konsole. The Konsole is the command line terminal for your Steam Deck. Use the following steps to launch the Konsole in Desktop Mode: Select the Application Launcher in the lower-left corner. Select System . Select the Konsole."
+    },
+    {
+      "title": "Set a super user password.",
+      "content": "Set a super user password. You will need this during the cloning process. It is recommended you select a password that is simple and easy to remember. Use the following steps to set a new password. Type passwd in the Konsole. Enter your new password. Enter the password again."
+    },
+    {
+      "title": "Mount your new SSD into the external enclosure.",
+      "content": "Mount your new SSD into the external enclosure. To do this, you will need a new M.2 2230 SSD (any bigger won't fit in the Steam Deck) and an external enclosure for the new SSD. The way you mount the SSD inside the enclosure will vary depending on the enclosure model. You will most likely need to open the enclosure, find where the SSD is inserted, and insert it. Then screw the top of the SSD down with the screw and reassemble the enclosure."
+    },
+    {
+      "title": "Connect the SSD enclosure to your Steam Deck.",
+      "content": "Connect the SSD enclosure to your Steam Deck. To do so, use a UBS-C to USB-C cable and connect the enclosure to the USB-C port on the top of your Steam Deck."
+    },
+    {
+      "title": "Boot your Steam Deck into Desktop Mode.",
+      "content": "Boot your Steam Deck into Desktop Mode. If your Steam Deck is not already powered on and in Desktop mode. If your Steam Deck is not in Desktop Mode, press and hold the power button and select Switch to Desktop ."
+    },
+    {
+      "title": "Open the Konsole.",
+      "content": "Open the Konsole. If the Konsole is not already launched, select the Application Launcher in the lower-left corner and then select System followed by Konsole . Alternatively, if you want to use a program that has a simple-to-use user interface instead of the console, you can download and install Balena Etcher to your Steam Deck and use that to clone your SSD ."
+    },
+    {
+      "title": "Enter the command to display your storage devices.",
+      "content": "Enter the command to display your storage devices. This will display your Steam Deck's internal storage as well as the connected SSD inside the enclosure. Enter the following command: sudo lsblock and enter your password."
+    },
+    {
+      "title": "Note the name of your internal storage and the enclosure storage device.",
+      "content": "Note the name of your internal storage and the enclosure storage device. You can generally tell which drive is which by the amount of storage each drive has. Typically the internal storage device will be named \"nvme0n1\" and the enclosure device will be named \"sda.\" Note if the names are different."
+    },
+    {
+      "title": "Enter the command to clone the SSD.",
+      "content": "Enter the command to clone the SSD. In the following example, we used \"nvme0n1\" as the internal storage device and \"sda\" as the drive in the enclosure. If the names are different on your Steam Deck, be sure to replace them with the correct names. This cloning process may take a while depending on how much data needs to transfer over. Enter the following command into the Konsole: sudo dd if=/dev/nvme0n1 of=/dev/sda conv=sync status=progress"
+    },
+    {
+      "title": "Mount your new SSD into the external enclosure.",
+      "content": "Mount your new SSD into the external enclosure. To do this, you will need a new M.2 2230 SSD (any bigger won't fit in the Steam Deck) and an external enclosure for the new SSD. The way you mount the SSD inside the enclosure will vary depending on the enclosure model. You will most likely need to open the enclosure, find where the SSD is inserted, and insert it. Then screw it down with the screen and reassemble the enclosure."
+    },
+    {
+      "title": "Connect the SSD enclosure to your Steam Deck.",
+      "content": "Connect the SSD enclosure to your Steam Deck. To do so, use a UBS-C to USB-C cable and connect the enclosure to the USB-C port on the top of your Steam Deck."
+    },
+    {
+      "title": "Boot your Steam Deck into desktop mode.",
+      "content": "Boot your Steam Deck into desktop mode. If your Steam Deck is not already powered on and in Desktop mode. If your Steam Deck is not in Desktop mode, press and hold the power button and select Switch to Desktop Mode ."
+    },
+    {
+      "title": "Download Balena Etcher.",
+      "content": "Download Balena Etcher. Balena Etcher is a free program for Windows, Mac, and Linux used to write, copy, and clone hard drives. Since your Steam Deck runs on a Linux operating system, you can download it to the Steam Deck. Use the following step to download Balena Etcher on your Steam Deck. Go to https://etcher.balena.io/ in a web browser. Scroll down and click Download next to \"ETCHER FOR LINUX X64 (64-BIT) (APPIMAGE).\""
+    },
+    {
+      "title": "Open Balena Etcher.",
+      "content": "Open Balena Etcher. You can find the Balena Etcher file in the Downloads folder. Use the following steps to launch Balena Etcher: Open the File Browser, which resembles a folder in the taskbar. Open the Downloads folder. Open the Balena Etcher app image file."
+    },
+    {
+      "title": "Select Clone Drive.",
+      "content": "Select Clone Drive . It's the third option on the far left in Balena Etcher."
+    },
+    {
+      "title": "Select Show hidden.",
+      "content": "Select Show hidden . This will display the internal storage drive as well as any Micro SD cards you have installed on your Steam Deck."
+    },
+    {
+      "title": "Select your internal storage.",
+      "content": "Select your internal storage. You can generally tell which storage is which by how much storage space they have. Select the radio option next to your system's internal storage and click Select at the bottom of the screen."
+    },
+    {
+      "title": "Select the new SSD in the enclosure.",
+      "content": "Select the new SSD in the enclosure. On the \"Select target\" screen, click the radio option next to your new SSD card. Then click Select ."
+    },
+    {
+      "title": "Select Flash.",
+      "content": "Select Flash . This will begin the process of cloning your hard drive. You may get a warning. If so, select Yes I'm sure ."
+    },
+    {
+      "title": "Enter your password and select Ok.",
+      "content": "Enter your password and select Ok . Finally, enter the admin password you set and select OK. It may take a while for your hard drive to clone."
+    },
+    {
+      "title": "Put your Steam Deck in Battery s\\Storage Mode.",
+      "content": "Put your Steam Deck in Battery s\\Storage Mode. Steam recommends putting your Steam Deck in battery storage mode before opening it up and doing any repairs or replacing any parts. This is to prevent it from trying to boot up while disassembled and to prevent damage to the device. While in Battery Storage Mode, it will not respond to the power buttons and can only be turned on by connecting it to a power cable. Use the following steps to put your Steam Deck in battery storage mode: Power your Steam Deck off. Press and hold the Volume Up and Power buttons. Release the buttons when your Steam Deck boots into BIOS. Select Setup Utility . Select the Power menu. Select Battery storage mode . Select Yes ."
+    },
+    {
+      "title": "Remove your Micro SD card.",
+      "content": "Remove your Micro SD card. If you have a Micro SD card inserted as extended storage, you will need to remove it to prevent damaging it. Go ahead and remove it from the expansion slot on the bottom."
+    },
+    {
+      "title": "Remove the back cover.",
+      "content": "Remove the back cover. To do so, place the Steam Deck face down and use a torx screwdriver to remove the 8 screws from the back panel. The use a plastic spudger or guitar pick tool to go along the seams and pry the back panel away. Once it is detached, lift the back panel away. It is recommended that you place the Steam Deck face down in its original case to prevent damage to the thumbsticks. Do not use a metal tool, such as a screwdriver to pry away the back panel. This can scratch up the plastic panels."
+    },
+    {
+      "title": "Disconnect any cables covering the shield cover.",
+      "content": "Disconnect any cables covering the shield cover. The shield cover is the large black or metallic cover that covers the SSD card and processor. If there are any ribbon cables taped over the top of it, disconnect the cables and gently peel them away from the shield cover."
+    },
+    {
+      "title": "Remove the shield cover.",
+      "content": "Remove the shield cover. Depending on which Steam Deck model you have, the shield cover will be held in place by two screws on the left side, or three screws with one under the foil tape. If the heat shield has a foil tape in the center, you will need to peel it back to access the screw underneath. Once all the screws are removed, remove the shield cover."
+    },
+    {
+      "title": "Disconnect the battery.",
+      "content": "Disconnect the battery. The cable that connects the battery is connected on the right side under the shield cover by a ribbon cable. Wiggle the connector loose and disconnect the battery."
+    },
+    {
+      "title": "Remove the old SSD.",
+      "content": "Remove the old SSD. The SSD is in the lower-left corner under the shield cover. It is inside a flexible metallic heat shield. Unscrew the screw holding the SSD in place and detach the SSD. Remove the metallic shield surrounding the SSD card."
+    },
+    {
+      "title": "Place the metallic shield around the new SSD.",
+      "content": "Place the metallic shield around the new SSD. You will need to get the new SSD out of the enclosure. Place the metallic shield that you just removed from the old SSD around the new SSD. If the metallic shield doesn't fit around the new SSD, you can peel it apart at the seam. Wrap it around the new SSD and reattach the shielding using the existing adhesive."
+    },
+    {
+      "title": "Insert the new SSD.",
+      "content": "Insert the new SSD. To do so, connect the new SSD to the terminal where the old SSD was connected. Press the top down and use the screw to screw the top down to hold it in place."
+    },
+    {
+      "title": "Reattach the battery cable.",
+      "content": "Reattach the battery cable. Reconnect the battery cable to the same port it was previously detached from. Use the plastic spudger if needed to make sure the connector is securely fastened to the terminal."
+    },
+    {
+      "title": "Reattach the shield cover.",
+      "content": "Reattach the shield cover. Place the shield back over the screw holes and use the screws to securely fasten it. If the shield cover has foil tape, place the foil tape back over the screw."
+    },
+    {
+      "title": "Reattach any cables that went over the shield cover.",
+      "content": "Reattach any cables that went over the shield cover. If the shield cover had a speaker cable that goes over the shield, reconnect the cable and make sure it sticks to the top of the shield cover."
+    },
+    {
+      "title": "Reattach the back panel.",
+      "content": "Reattach the back panel. Place the back panel back on and press down along the edges to make sure it is securely fastened. Then reattach the screws that were holding it in place."
+    },
+    {
+      "title": "Connect the Steam Deck to a power charger.",
+      "content": "Connect the Steam Deck to a power charger. The only way to get it out of Battery Storage mode is to reconnect it to a power charger. Go ahead and plug it in."
+    },
+    {
+      "title": "Power on the Steam Deck.",
+      "content": "Power on the Steam Deck. Go ahead and press the power button to turn it back on. It may take a little longer to boot up than normally, but it should boot up into Steam OS with all your games and data still intact. [2] X Research source To check to make sure the proper SSD is installed, you can go into Settings and Storage to check the storage space of the SSD installed."
+    }
+  ]
+}

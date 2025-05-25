@@ -1,0 +1,146 @@
+{
+  "url": "https://www.wikihow.com/Install-Software-in-Ubuntu",
+  "title": "Ubuntu Software Installation: The Complete Beginner's Guide",
+  "steps": [
+    {
+      "title": "Click the Ubuntu Software icon on the Dock.",
+      "content": "Click the Ubuntu Software icon on the Dock. It's the orange suitcase icon with an \"A\" inside. You can also open Ubuntu Software by searching for the word software in the Activities search bar. [1] X Research source Ubuntu Software is the simplest way to install software, as it has a handy graphical user interface that displays screenshots, space requirements, and even user reviews. If you already have a .deb package that you downloaded from the web, you can install it using Ubuntu Software—just double-click the .deb file to open it in Ubuntu Software, where you'll see an Install button."
+    },
+    {
+      "title": "Search or browse for an application.",
+      "content": "Search or browse for an application. Use the categories to find apps to install, or search for something in particular."
+    },
+    {
+      "title": "Select an application to learn more about it.",
+      "content": "Select an application to learn more about it. You'll see a description of the app, user ratings, the total installation size, screenshots, and other details. If the app is already installed, you'll see a Permissions button at the top, along with a red button that you can use if you'd like to uninstall it."
+    },
+    {
+      "title": "Click Install to install the app.",
+      "content": "Click Install to install the app. Once you enter your password to confirm, the software will download and install."
+    },
+    {
+      "title": "Uninstall with Ubuntu Software.",
+      "content": "Uninstall with Ubuntu Software. Removing software you installed through Ubuntu Software is just as easy as installing it. Here's how: Open Ubuntu Software and click Installed at the top. Locate the application you want to uninstall. You can use the search box to filter the list or just scroll until you find it. Click the application and select Remove . Enter your password to confirm. [2] X Research source"
+    },
+    {
+      "title": "Open a Terminal window.",
+      "content": "Open a Terminal window. If you know the name or type of software package you want to install, you can easily install it from the command line using the apt-get command. To launch the Terminal , press Ctrl + Alt + T on your keyboard. Apt is a great alternative to Ubuntu Software if you want to make sure you always have the latest versions of your favorite software. With Ubuntu Software, newer versions of the packages you install are not released nearly as often as they are on the various repositories available through Apt. You will need to use the sudo command to install packages with Apt. If you want to install software packages without root access, try the Snap Store ."
+    },
+    {
+      "title": "Run sudo apt-get update to update the package index.",
+      "content": "Run sudo apt-get update to update the package index. Before installing a software package, you'll always want to make sure the package index is up to date. If there's a package you're looking for that's only available from a certain repository, you can add the repository using the add-apt-repository command. Check the instructions for the package you want to install for the repository name, public key, and other information."
+    },
+    {
+      "title": "Search for a package to install.",
+      "content": "Search for a package to install. If you already know the name of the package you want to install, you can skip this step. If not, you can use the apt-cache search command to search for a specific string of letters in all existing software packages and their descriptions. For example, if you were looking for Firefox, you'd type apt-cache search firefox . All Firefox package names would appear in the search results. It's not necessary to use sudo when searching the package index, as root permissions aren't needed."
+    },
+    {
+      "title": "View more information about the package before installing.",
+      "content": "View more information about the package before installing. If you want to know the version number, languages available, and dependencies, you can use the command apt-cache showpkg <packagename> to view this information. For example, running apt-cache showpkg firefox displays information about the package called firefox ."
+    },
+    {
+      "title": "Use sudo apt-get install <packagename to install the package.",
+      "content": "Use sudo apt-get install <packagename to install the package. For example, to install the Firefox package, we'd use sudo apt-get install firefox . You can install multiple packages at a time by entering additional package names separated by spaces. For example, if you wanted to install both Firefox and the Chromium browser, you would enter sudo apt-get install firefox chromium-browser . If you already have the package installed and try to install it again, the package manager will check for a newer version and install it if it exists. After installing packages, you can use the sudo apt-get clean command to delete any package install files and free up some space on your hard drive."
+    },
+    {
+      "title": "Update installed software.",
+      "content": "Update installed software. You can also use Apt to install updates for all installed software or for individual software packages. First, run sudo apt-get update to update the package databases. If you just want to see which updates are available but not install them, use sudo apt-get list –upgradable . Then, run apt-get upgrade to check for and install updates for all software you've installed through apt-get. Or, if you just want to update one application, use sudo apt-get install <packagename instead."
+    },
+    {
+      "title": "Delete a package with apt-get.",
+      "content": "Delete a package with apt-get. If you want to uninstall software you installed from the package tool, just use sudo apt-get remove <packagename> . If you also want to delete the package configuration files from the software you're removing, use sudo apt-get remove <packagename> --purge . [3] X Research source"
+    },
+    {
+      "title": "Install Synaptic if you haven't already.",
+      "content": "Install Synaptic if you haven't already. Synaptic is a graphical interface for Apt that's great if you don't like to type commands but need more control than what you get with Ubuntu Software. With Synaptic, you can easily browse and manage repositories, install and remove programs, and update individual packages. To install Synaptic, you'll need to open a Terminal window and run sudo apt-get install synaptic ."
+    },
+    {
+      "title": "Open Synaptic.",
+      "content": "Open Synaptic. Once Synaptic is installed, you'll find it in System > Administration > Synaptic Package Manager . [4] X Research source"
+    },
+    {
+      "title": "Browse or search for packages.",
+      "content": "Browse or search for packages. You'll see categories in the left panel, which you can click to view packages. You can also search for package names or types by keyword using the Search option at the top of the window. If you need to add a repository or manage existing repositories, you can do so in Settings > Repositories . Synaptic shares its repository list with apt, so if you've added repositories to /etc/sources.list or used add-apt-repository in the past, that repository is already available in Synaptic."
+    },
+    {
+      "title": "View info about a package.",
+      "content": "View info about a package. Select a package and click Properties to view details, including required dependencies, a list of files to be installed, versions, and a description of the software."
+    },
+    {
+      "title": "Mark a package for installation.",
+      "content": "Mark a package for installation. If you find something you want to install, right-click the package and click Mark for Installation . You can install multiple packages at once by marking them each for installation before you continue. If prompted, click Mark to mark additional changes. [5] X Research source"
+    },
+    {
+      "title": "Click Apply, and then Apply again to confirm.",
+      "content": "Click Apply , and then Apply again to confirm. This installs all of the marked packages on your PC."
+    },
+    {
+      "title": "Update software.",
+      "content": "Update software. Updating packages is super easy with Synaptic: First, update the repository list by pressing Ctrl + R or clicking Reload . Right-click a package and select Mark for Upgrade . Mark additional packages for upgrade if desired, then click Apply . Click Apply again to confirm."
+    },
+    {
+      "title": "Uninstall software.",
+      "content": "Uninstall software. To remove a package you installed with Synaptic or Apt, just right-click the package and select Mark for Removal . Click Apply , and then Apply again to remove the package."
+    },
+    {
+      "title": "Install the Snap Store.",
+      "content": "Install the Snap Store. The Snap Store is another great place to install Ubuntu apps, especially if you want the most up-to-date versions of apps and don't want to worry about installing dependencies. [6] X Research source The Snap package manager comes preinstalled on Ubuntu, but if you want access to the Snap Store, you'll need to install it using the command sudo snap install snap-store in a Terminal window. Apps like Spotify , Slack , and Chromium can all be installed through the Snap Store. [7] X Research source If you have a file that ends with .snap already downloaded, you can install it without the Snap Store. Just run snap install ./filename.snap at the prompt, replacing filename.snap with the name of your file. If the file isn't signed, you can add the --dangerous flag to the end of the command to skip the signature verification."
+    },
+    {
+      "title": "Type snap-store into a terminal and press ↵ Enter.",
+      "content": "Type snap-store into a terminal and press ↵ Enter . This launches the Snap Store interface."
+    },
+    {
+      "title": "Search or browse for an application.",
+      "content": "Search or browse for an application. The Snap Store is divided into categories, such as Games, Productivity, and Photo and Video. You can also search for an app by name or type by typing keywords into the search field."
+    },
+    {
+      "title": "Click Install to install the app.",
+      "content": "Click Install to install the app. This downloads and installs the software on your Linux PC. Software installed from Snap packages update automatically, so there's no need to worry about updating your software. However, if you want to update your software manually, you can run the command snap refresh at the prompt, or run snap refresh --time to find out when the next update is scheduled. [8] X Research source You can also browse for and install Snaps from the command line, similar to using apt-get . Run the snap command alone to learn how to use it. [9] X Research source Run snap find <your search terms> to search for a title, developer, or type of software. Once you find a package name, you can learn more about it using snap info <packagename> . To install a package, run snap install <packagename> ."
+    },
+    {
+      "title": "Uninstall a snap.",
+      "content": "Uninstall a snap. To remove software you installed from a Snap, you'll want to use a Terminal. To see all installed snap packages, run snap list . To delete a package, use snap remove <packagename> ."
+    },
+    {
+      "title": "Add the Universe repository to your software sources.",
+      "content": "Add the Universe repository to your software sources. You can do this easily from the command line by typing sudo add-apt-repository universe and pressing Enter . To install software from an RPM in Ubuntu, you'll need a program called Alien. Alien can both install RPMs and convert them to DEB packages."
+    },
+    {
+      "title": "Type sudo apt update and press ↵ Enter.",
+      "content": "Type sudo apt update and press ↵ Enter . This updates the package list so you can download files from the Universe repository."
+    },
+    {
+      "title": "Type sudo apt install alien and press ↵ Enter.",
+      "content": "Type sudo apt install alien and press ↵ Enter . Follow the on-screen instructions to confirm the installation."
+    },
+    {
+      "title": "Use sudo alien package_name.rpm to install Alien.",
+      "content": "Use sudo alien package_name.rpm to install Alien. Replace package_name.rpm with the name of the RPM package you're installing. Alternatively, you can convert the RPM to DEB using sudo alien package_name.rpm . Once converted, you can install it with Dpkg using sudo dpkg package_name.rpm . [10] X Research source"
+    },
+    {
+      "title": "Install the build essential package.",
+      "content": "Install the build essential package. Whether you wrote your own program or downloaded software that needs to be compiled (often in the format of a .tgz or .tar.gz file ), you'll need to install the build-essential package first. This ensures you have the right tools for compiling from source code . [11] X Research source Open a Terminal window. Run sudo apt-get update to update the package database. Run sudo apt-get install build-essential to install the package."
+    },
+    {
+      "title": "Decompress the source code.",
+      "content": "Decompress the source code. If you downloaded software from the web, it'll typically be compressed into a tarball ending with the .tar.gz or .tar.bz2 file extension. First, use cd to enter the directory to which you saved the file. If the file ends with .tgz or .tar.gz, run the command tar -xvf <filename> . If the file ends with .tar.bz2, use the command tar -xjvf <filename> . Run the command ls -a to view the extracted files and folders."
+    },
+    {
+      "title": "Look for a README and/or INSTALL file that contains instructions.",
+      "content": "Look for a README and/or INSTALL file that contains instructions. Depending on the software you're building, it may contain a helpful file with special installation instructions. Use the cd command to enter the new directory from your decompressed file, then run ls -a to look for such a file. If you see a file with instructions, for example, one called README, you can read it using cat README (to display the whole file) or more README (to read it page-by-page). If both files are found, read them both!"
+    },
+    {
+      "title": "Run the configure script to prepare the files for compilation.",
+      "content": "Run the configure script to prepare the files for compilation. If your installation file tells you to use certain flags or to skip this step, stick to those instructions. Otherwise, run the command ./configure to prepare the installation. If there isn't a file called configure in this directory, re-read the instructions for installation steps. There may be additional instructions available where you downloaded the file, such as in a GitHub repository . Sometimes you'll find a script called install.sh instead—if you see this, make it executable using chmod u+x install.sh and then run it using ./install-sh . If you get an error about missing dependencies or libraries, you'll need to install whichever dependencies are required before you can compile the software. It'll be easiest to do this using a package manager like #Advanced Package Tool (Apt) rather than downloading and compiling more source code. Once the required packages are installed, re-run the configure script until there are no errors."
+    },
+    {
+      "title": "Run the make command.",
+      "content": "Run the make command. Just type make and press Enter to compile the source code into an executable program. This step may take a while, depending on the speed of your computer."
+    },
+    {
+      "title": "Run sudo make install to complete the installation.",
+      "content": "Run sudo make install to complete the installation. If you're just compiling something that you'll be using in your own home directory, this step isn't necessary. But if you want to add it to a system binary directory, run this command. Once you've done this, the program is installed."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Create-a-File-in-a-Directory-in-Linux",
+  "title": "How to Create a File in a Directory in Linux",
+  "steps": [
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. The Terminal is a command-line interface that is available on most Linux distributions. It typically has an icon that resembles a black screen with a white text cursor. You can either click the Terminal icon in the Apps menu, or press Ctrl + Alt + T at the same time to open the Terminal. [1] X Research source"
+    },
+    {
+      "title": "Navigate to the directory you want to create a file in.",
+      "content": "Navigate to the directory you want to create a file in. To do so, type cd followed by the path to the directory you want to create a file in and press Enter .. For example, you could type cd /home/username/Documents to navigate to your Documents folder. Alternatively, you can type cd / to navigate to the Root directory, or type cd ~ to navigate to your Home/User directory. [2] X Research source You can also type cd ~ followed by the path relative to your Home/User folder to navigate to a directory. For example, type cd ~/Documents and press enter to navigate to \"/home/user/Documents\" directory. Type pwd and press Enter to see what directory you are currently in. Type mkdir followed by the directory name to create a new directory in the directory you are currently in."
+    },
+    {
+      "title": "Type touch.",
+      "content": "Type touch . The \"touch\" command is used to create an empty file in Linux. This is the easiest way to create a file in Linux. [3] X Research source"
+    },
+    {
+      "title": "Type the name of the file and press ↵ Enter.",
+      "content": "Type the name of the file and press ↵ Enter . You can type the filename by itself (i.e. \"touch blank_file\"}} or add a file extension to the end of it (i.e. \"touch blank_file.txt\"). This creates a blank file. If you need to create large amounts of files, use the touch command as follows: touch filename{01..20}.txt. This will create 20 new files using that file name. Add multiple filenames after the \"touch\" command to create multiple files (i.e. \"touch file_1 file_2 file_3\"). Alternatively, you can create a file in any directory you want by adding the directory path after the \"touch\" command (i.e \"touch /home/username/Documents/blank_file.txt\") You can create a file in multiple directories by adding the directory names after the touch command. For example touch category/file1.txt subcategory/blank_file.txt or touch {category,subcategory}/blank_file.txt . If the file you are trying to create already exists in the directory, the time stamp for that file will be updated instead."
+    },
+    {
+      "title": "Type ls and press ↵ Enter.",
+      "content": "Type ls and press ↵ Enter . This displays a list of all files in your current directory and allows you to verify that the file you just created is present. [4] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. The Terminal is a command-line interface that is available on most Linux distributions. It typically has an icon that resembles a black screen with a white text cursor. You can either click the Terminal icon in the Apps menu, or press Ctrl + Alt + T at the same time to open the Terminal. [5] X Research source"
+    },
+    {
+      "title": "Navigate to the directory you want to create a file in.",
+      "content": "Navigate to the directory you want to create a file in. To do so, type cd followed by the path to the directory you want to create a file in and press Enter .. For example, you could type cd /home/username/Documents to navigate to your Documents folder. Alternatively, you can type cd / to navigate to the Root directory, or type cd ~ to navigate to your Home/User directory. [6] X Research source You can also type cd ~ followed by the path relative to your Home/User folder to navigate to a directory. For example, type cd ~/Documents and press enter to navigate to \"/home/user/Documents\" directory. Type pwd and press Enter to see what directory you are currently in. Type mkdir followed by the directory name to create a new directory in the directory you are currently in."
+    },
+    {
+      "title": "Type cat > followed by the file name and press +↵ Enter.",
+      "content": "Type cat > followed by the file name and press + ↵ Enter . For example, you can type cat >README.txt to create a new text file. You can type the filename by itself (i.e. \"README\") or add a file extension to the end of it (i.e. \"cat >hello.txt\"). Use the \"cat\" command to create files that contain text or code. [7] X Research source Alternatively, you can use the command cat >> to append an existing file. If no file exists with the specified file name, a new file will be created. If a file by that name already exists, then the text you add will be appended to the end of the file instead of replacing the existing text. [8] X Research source"
+    },
+    {
+      "title": "Type the text you want to go in the file.",
+      "content": "Type the text you want to go in the file. After creating a file using the \"cat\" command, the Terminal enters write mode allowing you to add text to the file. Type the text you want the file to contain on the next line."
+    },
+    {
+      "title": "Press Ctrl+d.",
+      "content": "Press Ctrl + d . This saves the file with the text and exits write mode in the Terminal. To view the text in the file, simply type \"cat\" (without the \">\" symbol) followed by the file name and press Enter (i.e. cat README.txt ). This displays the text in the Terminal."
+    },
+    {
+      "title": "Type ls and press ↵ Enter.",
+      "content": "Type ls and press ↵ Enter . This displays a list of all files in your current directory and allows you to verify that the file you just created is present. [9] X Research source"
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. The Terminal is a command-line interface that is available on most Linux distributions. It typically has an icon that resembles a black screen with a white text cursor. You can either click the Terminal icon in the Apps menu, or press Ctrl + Alt + T at the same time to open the Terminal. [10] X Research source"
+    },
+    {
+      "title": "Navigate to the directory you want to create a file in.",
+      "content": "Navigate to the directory you want to create a file in. To do so, type cd followed by the path to the directory you want to create a file in and press Enter .. For example, you could type cd /home/username/Documents to navigate to your Documents folder. Alternatively, you can type cd / to navigate to the Root directory, or type cd ~ to navigate to your Home/User directory. [11] X Research source You can also type cd ~ followed by the path relative to your Home/User folder to navigate to a directory. For example, type cd ~/Documents and press enter to navigate to \"/home/user/Documents\" directory. Type pwd and press Enter to see what directory you are currently in. Type mkdir followed by the directory name to create a new directory in the directory you are currently in."
+    },
+    {
+      "title": "Type nano followed by a file name and press ↵ Enter.",
+      "content": "Type nano followed by a file name and press ↵ Enter . You can type the filename by itself (i.e. \"nano text_file\"}} or add a file extension to the end of it (i.e. \"nano python_program.py\"). This creates a new file and opens it in Nano. Nano may not be available on all Linux distributions. To install Nano, type sudo apt install nano and press Enter to install Nano on Ubuntu/Debian. Type sudo yum install nano and press Enter to install Nano on CentOS/Fedora. You can also specify which directory you want to create the file in by entering the path of the directory after the \"vi\" command (i.e nano /home/username/Documents/website/main.php )."
+    },
+    {
+      "title": "Type the text you want your file to contain.",
+      "content": "Type the text you want your file to contain. As soon as Nano opens, you can begin entering your text."
+    },
+    {
+      "title": "Press Ctrl+X.",
+      "content": "Press Ctrl + X . Use this keyboard shortcut to save and exit Nano when you are done editing your text."
+    },
+    {
+      "title": "Press y followed by ↵ Enter.",
+      "content": "Press y followed by ↵ Enter . This confirms that you want to save your file and exits Nano. You will be returned to the standard Terminal command-line."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. The Terminal is a command-line interface that is available on most Linux distributions. It typically has an icon that resembles a black screen with a white text cursor. You can either click the Terminal icon in the Apps menu, or press Ctrl + Alt + T at the same time to open the Terminal. [12] X Research source"
+    },
+    {
+      "title": "Navigate to the directory you want to create a file in.",
+      "content": "Navigate to the directory you want to create a file in. To do so, type cd followed by the path to the directory you want to create a file in and press Enter .. For example, you could type cd /home/username/Documents to navigate to your Documents folder. Alternatively, you can type cd / to navigate to the Root directory, or type cd ~ to navigate to your Home/User directory. [13] X Research source You can also type cd ~ followed by the path relative to your Home/User folder to navigate to a directory. For example, type cd ~/Documents and press enter to navigate to \"/home/user/Documents\" directory. Type pwd and press Enter to see what directory you are currently in. Type mkdir followed by the directory name to create a new directory in the directory you are currently in."
+    },
+    {
+      "title": "Type echo followed by some text in quotations.",
+      "content": "Type echo followed by some text in quotations. The text you enter in quotations will be saved to the file. Use the \"echo\" command to create files with short lines of text. [14] X Research source"
+    },
+    {
+      "title": "Type > followed by the file name and press ↵ Enter.",
+      "content": "Type > followed by the file name and press ↵ Enter . The entire command should look something like this echo \"Hello World\" >hello_world.txt . This saves the file with the text in quotations. [15] X Research source Alternatively, you can add >> at the end of the text. This will create a new file if no file by the file name specified exists. If a file by that name already exists, the text will be appended to the end of the existing file text."
+    },
+    {
+      "title": "Type ls and press ↵ Enter.",
+      "content": "Type ls and press ↵ Enter . This displays a list of all files in your current directory and allows you to verify that the file you just created is present."
+    },
+    {
+      "title": "Press Ctrl+Alt+T to open the Terminal.",
+      "content": "Press Ctrl + Alt + T to open the Terminal. The Terminal is a command-line interface that is available on most Linux distributions. It typically has an icon that resembles a black screen with a white text cursor. You can either click the Terminal icon in the Apps menu, or press Ctrl + Alt + T at the same time to open the Terminal. [16] X Research source"
+    },
+    {
+      "title": "Navigate to the directory you want to create a file in.",
+      "content": "Navigate to the directory you want to create a file in. To do so, type cd followed by the path to the directory you want to create a file in and press Enter .. For example, you could type cd /home/username/Documents to navigate to your Documents folder. Alternatively, you can type cd / to navigate to the Root directory, or type cd ~ to navigate to your Home/User directory. [17] X Research source You can also type cd ~ followed by the path relative to your Home/User folder to navigate to a directory. For example, type cd ~/Documents and press enter to navigate to \"/home/user/Documents\" directory. Type pwd and press Enter to see what directory you are currently in. Type mkdir followed by the directory name to create a new directory in the directory you are currently in."
+    },
+    {
+      "title": "Type vi followed by the a file name and press ↵ Enter.",
+      "content": "Type vi followed by the a file name and press ↵ Enter . You can type the filename by itself (i.e. \"vi file1\"}} or add a file extension to the end of it (i.e. \"vi file1.txt\"). This creates a new file by the name specified and opens the file in the VI text editor. VI is a Terminal-based text editor. It is the oldest text editor for Linux and works in all versions of Linux. Alternatively, you can use the vim in place of the {[kbd|vi}} command. This opens the VIM text editor, which is a newer and more user-friendly version of VI. VIM may not be available on all Linux distributions. If VIM is not installed on your Linux distribution, type sudo apt install vim and press Enter to install VIM on Ubuntu/Debian. Type sudo yum install vim and press Enter to install VIM on CentOS/Fedora. [18] X Research source You can also specify which directory you want to create the file in by entering the path of the directory after the \"vi\" command (i.e., \"vi /home/username/Documents/Website/index.html\")."
+    },
+    {
+      "title": "Press i to switch to Insert mode.",
+      "content": "Press i to switch to Insert mode. VI has two modes, Command mode and Insert mode. Command mode allows you to perform various tasks using the keyboard keys. Insert mode allows you to enter text. Press I to switch to Insert mode."
+    },
+    {
+      "title": "Type the text you want to add.",
+      "content": "Type the text you want to add. Now that you are in \"Insert\" mode, you can type the text the way you would using any other text editor. Enter the text you want the file to contain."
+    },
+    {
+      "title": "Press Esc.",
+      "content": "Press Esc . This switches from Insert mode back to Command mode.. [19] X Research source"
+    },
+    {
+      "title": "Type the command to save and exit VI.",
+      "content": "Type the command to save and exit VI. To do so, type :wq and press Enter . This saves the file and returns to the standard Terminal command-line."
+    }
+  ]
+}

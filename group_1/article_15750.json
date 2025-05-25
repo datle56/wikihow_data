@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Enable-Task-Manager-in-Windows",
+  "title": "5 Ways to Enable Task Manager in Windows When It's Disabled",
+  "steps": [
+    {
+      "title": "Press Ctrl+⇧ Shift+Esc on your keyboard.",
+      "content": "Press Ctrl + ⇧ Shift + Esc on your keyboard. This will open the Task Manager . If needed, click More details to expand the full Task Manager view. Alternatively, you can open the Run menu with Win + R , type \"taskmgr\", and then press Enter . If you see an error that says \"Task Manager has been disabled by your administrator,\" or the option is grayed out, your account doesn't have permission to use the tool. If the PC is maintained by someone else, ask the admin to adjust your permissions. If you are the admin of the PC and can't open the Task Manager, it's likely been disabled in the registry. This usually happens when your computer is infected with malware. Scan your computer for malware , then see the next sections to enable Task Manager again."
+    },
+    {
+      "title": "Scan your computer for malware and viruses.",
+      "content": "Scan your computer for malware and viruses. If you see an error that says \"Task Manager has been disabled by your administrator,\" your PC may be infected with a virus. Do a full virus scan and follow your antivirus app's on-screen instructions to remove infections before you continue. See How to Remove Malware to learn more about removing viruses and other malware."
+    },
+    {
+      "title": "Press ⊞ Win+S to open the Windows search bar.",
+      "content": "Press ⊞ Win + S to open the Windows search bar. This keyboard shortcut works in all versions of Windows beginning with Vista."
+    },
+    {
+      "title": "Type regedit and press ↵ Enter.",
+      "content": "Type regedit and press ↵ Enter . This opens the Registry Editor. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Follow the on-screen instructions to grant permission for the Registry Editor to run and enter your admin password if prompted."
+    },
+    {
+      "title": "Open HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System.",
+      "content": "Open HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System . You'll do this using the navigation tree in the left column of the window. Begin by double-clicking HKEY_CURRENT_USER to expand its contents, where you'll double-click Software , followed by Microsoft , etc. Continue until you've double-clicked Policies under System . If you don't see the System option, skip to step 6."
+    },
+    {
+      "title": "Right-click DisableTaskMgr in the right panel and select Delete.",
+      "content": "Right-click DisableTaskMgr in the right panel and select Delete . This removes the flag that disabled the Task Manager for the current user. DisableTaskMgr only appears when the Task Manager is disabled in the registry for this user. If you don't see it, just continue to the next step."
+    },
+    {
+      "title": "Go to HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System.",
+      "content": "Go to HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System . Again, you'll use the tree in the left column to get there. If you don't see the System option, skip to step 8."
+    },
+    {
+      "title": "Right-click DisableTaskMgr in the right panel and select Delete.",
+      "content": "Right-click DisableTaskMgr in the right panel and select Delete . This removes the flag that disabled the Task Manager for the whole PC. DisableTaskMgr only appears when the Task Manager is disabled in the registry for the PC. If you don't see it, just continue to the next step."
+    },
+    {
+      "title": "Go to HKEY_USERS\\.DEFAULT\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System.",
+      "content": "Go to HKEY_USERS\\.DEFAULT\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System . If you haven't found the System at any of these paths, see the Enabling Task Manager in Group Policy Editor method."
+    },
+    {
+      "title": "Right-click DisableTaskMgr in the right panel and select Delete.",
+      "content": "Right-click DisableTaskMgr in the right panel and select Delete . This removes the final flag that could be blogging the Task Manager. If you didn't find DisableTaskMgr at any of these paths, see the Enabling Task Manager in Group Policy Editor method."
+    },
+    {
+      "title": "Restart your PC.",
+      "content": "Restart your PC. If you were able to delete the DisableTaskMgr option at one or more of those registry paths, you will now be able to launch the Task Manager normally."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. This application comes with your Windows computer. You can find this in your app list. You can also use another text editor."
+    },
+    {
+      "title": "Copy and paste the command.",
+      "content": "Copy and paste the command. The command is: Windows Registry Editor Version 5.00 [HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System] \"DisableTaskMgr\" =dword:00000000"
+    },
+    {
+      "title": "Save the file as DisableTaskMgr.reg.",
+      "content": "Save the file as DisableTaskMgr.reg . Once you save the file, close it."
+    },
+    {
+      "title": "Double-click the file.",
+      "content": "Double-click the file. This will open it. It may take a moment for the file to run."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Fully turn off your computer and then turn it on again. This will apply the changes."
+    },
+    {
+      "title": "Press ⊞ Win+R on your computer.",
+      "content": "Press ⊞ Win + R on your computer. If you see an error that says \"Task Manager has been disabled by your administrator\" when trying to open the Task Manager and were unable to fix it by editing the registry , the tool was likely disabled in the Group Policy Editor."
+    },
+    {
+      "title": "Type Gpedit.msc and press ↵ Enter.",
+      "content": "Type Gpedit.msc and press ↵ Enter . If prompted to enter your admin password or give permission for the app to run, follow the on-screen instructions. This will launch the Group Policy Editor. The Group Policy Editor is not usually found on Home editions of Windows."
+    },
+    {
+      "title": "Go to User Configuration\\Administrative Templates\\System\\Ctrl+Alt+Del Options.",
+      "content": "Go to User Configuration\\Administrative Templates\\System\\Ctrl+Alt+Del Options . You'll do this using the navigation tree in the left column of the window. Begin by double-clicking User Configuration to expand its contents, where you'll double-click Administrative Templates , followed by System , and finally Ctrl + Alt + Del Options ."
+    },
+    {
+      "title": "Double-click Remove Task Manager in the right panel.",
+      "content": "Double-click Remove Task Manager in the right panel. A window titled \"Remove Task Manager\" will open."
+    },
+    {
+      "title": "Select Not Configured or Disabled.",
+      "content": "Select Not Configured or Disabled . Both options will do the same thing—restore the Task Manager to the Ctrl + Alt + Del command."
+    },
+    {
+      "title": "Click OK to save your changes.",
+      "content": "Click OK to save your changes."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Once you log back in, you should have no trouble launching the Task Manager."
+    },
+    {
+      "title": "Press ⊞ Win+R.",
+      "content": "Press ⊞ Win + R . This will open the Run menu."
+    },
+    {
+      "title": "Type cmd.",
+      "content": "Type cmd . This goes in the text field."
+    },
+    {
+      "title": "Press Ctrl+⇧ Shift+↵ Enter.",
+      "content": "Press Ctrl + ⇧ Shift + ↵ Enter . This will run the command."
+    },
+    {
+      "title": "Click Yes.",
+      "content": "Click Yes . This is in the pop-up asking to run the Command Prompt as an administrator."
+    },
+    {
+      "title": "Copy and paste the command.",
+      "content": "Copy and paste the command. The command is: REG add HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 0 /f This goes into the Command Prompt ."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . This will send the command. The process may take a moment to complete."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Fully turn off your computer and then turn it on again. This will apply the changes."
+    }
+  ]
+}

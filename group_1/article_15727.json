@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikihow.com/Enable-Java-in-Firefox",
+  "title": "How to Enable Java in Firefox",
+  "steps": [
+    {
+      "title": "Open Firefox.",
+      "content": "Open Firefox. Its app icon resembles an orange fox wrapped around a blue globe."
+    },
+    {
+      "title": "Go to a site that uses Java.",
+      "content": "Go to a site that uses Java. If there's a particular site that you want to access using Java, go to that site."
+    },
+    {
+      "title": "Wait for a Java prompt to appear.",
+      "content": "Wait for a Java prompt to appear. You should see a link in the middle of the page (or the Java content area) that says \"Activate Java\" or something similar. [1] X Research source"
+    },
+    {
+      "title": "Click the \"Activate Java\" link.",
+      "content": "Click the \"Activate Java\" link. It should be on or near the Java content that you want to load. If you see a message that says Java is \"unsupported\", \"disabled\", \"not installed\", or something similar instead of the \"Activate Java\" link, you cannot run the site in question on Firefox."
+    },
+    {
+      "title": "Click Allow Now when prompted.",
+      "content": "Click Allow Now when prompted. It should appear in the upper-left side of the Firefox window. This will reload the website with the Java content enabled. You can also click Allow and Remember to place the site on Firefox's \"Allowed\" list."
+    },
+    {
+      "title": "Understand the limitations of this method.",
+      "content": "Understand the limitations of this method. Due to security issues, current versions of Firefox do not support Java, nor will future versions. To enable Java content, you'll have to install an old, 32-bit version of Firefox and then manually add the Java plugin. This is possible on Windows computers, but Firefox for Mac defaults to 64-bit, making it impossible to install Java for Firefox on a Mac. [2] X Research source Closing and re-opening Firefox may result in Firefox updating, which will render Java unusable. Using an old version of Firefox increases the risk of contracting a computer virus or running into malware. You can never update your old version of Firefox, as doing so will remove your Java support."
+    },
+    {
+      "title": "Open the Java website.",
+      "content": "Open the Java website. Go to https://www.java.com/en/download/ in a browser. You'll need to download and install Java before you can install it as a plugin in Firefox."
+    },
+    {
+      "title": "Download and install Java.",
+      "content": "Download and install Java. To do so: Click Free Java Download Click Agree and Start Free Download Double-click the downloaded Java setup file. Click Yes when prompted. Click Install at the bottom of the Java window."
+    },
+    {
+      "title": "Open the Firefox 51 download page.",
+      "content": "Open the Firefox 51 download page. Go to https://ftp.mozilla.org/pub/firefox/releases/51.0b9/ in a browser. This is where you can download the last version of Firefox that supported Java."
+    },
+    {
+      "title": "Select a 32-bit link.",
+      "content": "Select a 32-bit link. Click the firefox-51.0b9.win32.sdk.zip link near the bottom of the list of links on this page."
+    },
+    {
+      "title": "Open the downloaded ZIP folder.",
+      "content": "Open the downloaded ZIP folder. Double-click the ZIP folder to do so."
+    },
+    {
+      "title": "Extract the ZIP folder's contents.",
+      "content": "Extract the ZIP folder's contents. To do this: Click the Extract tab at the top of the window. Click Extract all in the resulting toolbar. Click Extract at the bottom of the pop-up window."
+    },
+    {
+      "title": "Open the extracted folder.",
+      "content": "Open the extracted folder. Double-click the firefox-51.0b9.win32.sdk folder (not the ZIP one) to open it."
+    },
+    {
+      "title": "Open the firefox-sdk folder.",
+      "content": "Open the firefox-sdk folder. It's the only folder in the window."
+    },
+    {
+      "title": "Open the bin folder.",
+      "content": "Open the bin folder. Double-click this folder, which is near the top of the window, to do so."
+    },
+    {
+      "title": "Scroll down and double-click the Firefox app icon.",
+      "content": "Scroll down and double-click the Firefox app icon. It's near the middle of the page. This will prompt the Firefox 51 app to open."
+    },
+    {
+      "title": "Disable automatic updates.",
+      "content": "Disable automatic updates. Type about:config into the Firefox address bar and press ↵ Enter , then do the following: Click I accept the risk! when prompted. Click the search bar at the top of the page. Type in app.update.auto Double-click the app.update.auto result to change its value from \"true\" to \"false\". Be sure to click Not now or Ask later if ever prompted to update."
+    },
+    {
+      "title": "Click ☰.",
+      "content": "Click ☰ . It's in the upper-right side of the window. A menu will appear."
+    },
+    {
+      "title": "Click Add-ons.",
+      "content": "Click Add-ons . This puzzle piece-shaped icon is in the menu. Doing so will open the Add-Ons page."
+    },
+    {
+      "title": "Click the Plugins tab.",
+      "content": "Click the Plugins tab. It's on the left side of the page."
+    },
+    {
+      "title": "Find the \"Java(TM) Platform\" option.",
+      "content": "Find the \"Java(TM) Platform\" option. You'll usually find this option near the bottom of the page."
+    },
+    {
+      "title": "Click the \"Ask to Activate\" drop-down box.",
+      "content": "Click the \"Ask to Activate\" drop-down box. It's to the right of the \"Java(TM) Platform\" heading. A drop-down menu will appear."
+    },
+    {
+      "title": "Click Always Activate.",
+      "content": "Click Always Activate . This option is in the drop-down menu. Doing so will activate Java for any website that you visit in this version of Firefox, though you must be careful not to update Firefox at all. If you accidentally update Firefox or an update gets pushed through, you can reinstall Firefox 51 by deleting the firefox-51.0b9.win32.sdk folder (not the ZIP version), opening the ZIP folder of the same name and re-extracting it, and then re-opening the Firefox 51 app from within the bin folder."
+    },
+    {
+      "title": "Open Firefox.",
+      "content": "Open Firefox. Its app icon resembles an orange fox wrapped around a blue globe."
+    },
+    {
+      "title": "Go to the configuration page.",
+      "content": "Go to the configuration page. Type in about:config and press ↵ Enter to do so."
+    },
+    {
+      "title": "Click I accept the risk! when prompted.",
+      "content": "Click I accept the risk! when prompted. It's a blue button in the middle of the page."
+    },
+    {
+      "title": "Search for the JavaScript option.",
+      "content": "Search for the JavaScript option. Click the search bar, then type in javascript.enabled to search for the matching result."
+    },
+    {
+      "title": "Review the JavaScript value.",
+      "content": "Review the JavaScript value. If you see \"true\" below the \"value\" heading that's on the right side of the page, JavaScript is currently enabled; this is the default Firefox setting. If you see \"false\" below the \"value\" heading, proceed."
+    },
+    {
+      "title": "Change the JavaScript value to \"true\" if necessary.",
+      "content": "Change the JavaScript value to \"true\" if necessary. Double-click javascript.enabled near the top of the page. You should see the status below the \"value\" heading change to \"true\"."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/System-Interrupts-100-Cpu",
+  "title": "How to Fix System Interrupts Using 100% CPU on Windows",
+  "steps": [
+    {
+      "title": "",
+      "content": "The \"System interrupts\" process you see in Task Manager helps your hardware and software communicate with each other. If your computer is acting normally, you won't see \"system interrupts\" take up too much CPU power, even though it's monitoring for interrupts in the background. Or, you may see it use 100% of your CPU for a few seconds before returning to a lower value. If \"system interrupts\" is using 100% of your CPU for more than a few seconds and it's slowing down your PC, there's either a hardware problem, or a problem with a driver."
+    },
+    {
+      "title": "Disconnect all external devices.",
+      "content": "Disconnect all external devices. If you have any USB devices connected to your PC, such as flash drives, external hard drives, SSDs, or USB hubs, disconnect them to rule out problems with those devices and their drivers. In many cases, the problem is related to external hardware, and disconnecting the problematic device will stop the issue. If your PC \"system interrupts\" stops hogging your CPU when you disconnect a device, there's a problem with that device or its driver. Try connecting the problem device to a different PC to see if the issue occurs. If it does, the hardware is faulty. If the device works fine on another PC, the issue is likely driver-related. Uninstall the device's driver, then reconnect the device to reinstall a fresh version."
+    },
+    {
+      "title": "Check Windows Update.",
+      "content": "Check Windows Update. Sometimes Windows' performance slows to a crawl when an update is ready, installing in the background, or is waiting for you to reboot. Updating Windows also updates any outdated drivers—if the \"system interrupts\" process is popping up because of a driver, an update could fix the issue. To check for updates: Go to Settings > Updates & Security (Windows 10) or Settings > Windows Update (Windows 11). If updates are available, download and install them. If you see a message that says updates have been downloaded and you need to restart your PC, go ahead and restart it."
+    },
+    {
+      "title": "Install the latest drivers for newly added hardware.",
+      "content": "Install the latest drivers for newly added hardware. If you notice system interrupts consuming 100% of your CPU after installing a new graphics card, sound card, or other type of hardware, you may need to replace the drivers that were installed by default with the ones provided by the manufacturer. Go to the manufacturer's website, select your product, then download and install the software provided."
+    },
+    {
+      "title": "End other processes using too many resources.",
+      "content": "End other processes using too many resources. If another application or service is slowing down your PC, the system interrupts process might appear for a long time in Task Manager to indicate it is currently working in the background to \"interrupt\" the bad communication between hardware and software. To see which processes are using the most resources, open Task Manager and click the CPU tab to display processes in order of utilization. Then try doing the same with the Memory (RAM) tab and Disk tab. If there's a process hogging resources, select it and click End Task . If the system interrupts process stops using 100% of your CPU, the process you ended could indicate where the problem lies."
+    },
+    {
+      "title": "Scan for malware.",
+      "content": "Scan for malware. A malware infection can cause problems that lead to the system interrupts process using 100% of your CPU. Fortunately, Windows has built-in software that makes it easy to scan for viruses and malware. The most reliable way to do this is to perform an offline scan with Microsoft Defender. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source On Windows 10, go to Start > Settings > Update & Security > Windows Security > Virus & threat protection . On Windows 11, go to Start > Settings > Privacy & security > Windows Security > Virus & Threat protection . Click Scan Options . Select Microsoft Defender Antivirus (offline scan) . Follow the on-screen instructions to check for and quarantine any viruses and malware found."
+    },
+    {
+      "title": "Run the Windows Reliability Monitor.",
+      "content": "Run the Windows Reliability Monitor. This tool displays critical hardware and software events, giving insight into which hardware or drivers are causing system interrupts to reach 100% utilization. To run the tool, open the command prompt , type perfmon /rel , and press Enter . Click the red \"X\" icon on any listed days to see which critical events happened that day. The yellow yield sign icons indicate warnings that are not critical but still important. Compare the date and time of the critical errors and warnings to when you noticed system interrupts using 100% CPU to identify the problem."
+    },
+    {
+      "title": "Check for file or operating system corruption.",
+      "content": "Check for file or operating system corruption. Use the \"chkdsk\" tool at the command prompt to scan for bad sectors and corruption. This tool can also repair such errors, which might resolve the system interrupts problem. Type cmd into the Windows search bar. Right-click \"Command prompt\" and select Run as administrator . At the elevated command prompt, type chkdsk /f and press Enter . [2] X Research source Do not close this window or turn off your computer while the tool is running. If you see the error \"Chkdsk cannot run because the volume is in use by another process. Would you like to schedule this volume to be checked the next time the system restarts? (Y/N),\" enter Y , then restart your computer. If Chkdsk finds errors, you'll be prompted to correct them."
+    },
+    {
+      "title": "Check the health of your hard drive or SSD.",
+      "content": "Check the health of your hard drive or SSD. A simple way to check the physical integrity of your storage device is to install a free popular Windows utility called CrystalDiskInfo. Go to https://crystalmark.info/en/software/crystaldiskinfo/ and click the blue CrystalDiskInfo button to download and run the installer. Once installed, open CrystalDiskInfo to instantly display information about the health of your hard drive or SSD. If you have multiple drives, click the Disk menu to view information about each. A blue health indicator means the status of the drive is \"Good.\" If the indicator is yellow, red, or gray, there is a problem with the drive or its drivers. [3] X Research source"
+    },
+    {
+      "title": "Uninstall recent updates.",
+      "content": "Uninstall recent updates. If Windows was updated shortly before you started noticing high utilization of the system interrupts process, you can try rolling back the latest update. Not all updates can be rolled back, but it's worth a try. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Windows 10: Go to Start > Settings > Update & Security > Windows Update > View update history > Uninstall updates . Click Uninstall next to a recent update to remove it. Windows 11: Go to Start > Settings > Windows Update > Update history > Uninstall updates . Click Uninstall next to a recent update to remove it."
+    },
+    {
+      "title": "Perform a system restore.",
+      "content": "Perform a system restore. System Restore restores Windows to an earlier point in time. You can use this feature to restore Windows to a date before the system interrupts process started consuming too many resources. Type control panel into the Windows Search bar and click Control Panel . Type recovery into the Control Panel search bar and select Recovery > Open System Restore . Select Next under \"Restore system files and settings.\" Select a restore point and click Scan for affected programs . This shows you which files will be deleted if you restore to this point in time. To proceed, select Close > Next > Finish ."
+    }
+  ]
+}

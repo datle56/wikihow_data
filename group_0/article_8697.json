@@ -1,0 +1,126 @@
+{
+  "url": "https://www.wikihow.com/Clear-Printer-Queue-in-Windows",
+  "title": "Clear the Printer Queue on Windows: Easy Guide + Troubleshooting",
+  "steps": [
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . Press the Windows key on your keyboard, then click the gear icon in your Start menu. You can also get to Settings by pressing Windows key + i ."
+    },
+    {
+      "title": "Click Devices.",
+      "content": "Click Devices . It’s the second icon at the top of the window."
+    },
+    {
+      "title": "Click Printers & scanners.",
+      "content": "Click Printers & scanners . It’s in the left column."
+    },
+    {
+      "title": "Click the printer.",
+      "content": "Click the printer. Connected printers appear in the right panel under “Printers & scanners.” Two buttons will appear beneath the printer’s name."
+    },
+    {
+      "title": "Click Open queue.",
+      "content": "Click Open queue . A list of pending print jobs will appear."
+    },
+    {
+      "title": "Right-click a document you want to remove from the queue.",
+      "content": "Right-click a document you want to remove from the queue. A context menu will appear."
+    },
+    {
+      "title": "Click Cancel.",
+      "content": "Click Cancel . This removes the document from the queue."
+    },
+    {
+      "title": "Repeat for other documents you want to cancel.",
+      "content": "Repeat for other documents you want to cancel. To cancel all documents at once, click the Printer menu at the top-left corner of the window, then select Cancel All Documents . If the files stay in the queue even after you’ve canceled them, try restarting the computer. If you can't clear the print queue, or clearing the queue doesn't fix your printer issues, see Restarting the Printer Spooler Service in Services.msc or at the command prompt for a fix."
+    },
+    {
+      "title": "Open your Windows Settings .",
+      "content": "Open your Windows Settings . Press the Windows key on your keyboard, then click the gear icon in your Start menu. You can also get to Settings by pressing Windows key + i ."
+    },
+    {
+      "title": "Click Bluetooth & devices.",
+      "content": "Click Bluetooth & devices . This option is near the top of the left panel."
+    },
+    {
+      "title": "Click Printers & scanners.",
+      "content": "Click Printers & scanners . You'll find this option in the right panel. A list of connected printers will appear."
+    },
+    {
+      "title": "Click your printer.",
+      "content": "Click your printer. This displays some printer settings, as well as the option to open the print queue."
+    },
+    {
+      "title": "Click Open print queue.",
+      "content": "Click Open print queue . This is near the top of the right panel. All print jobs in the queue will appear."
+    },
+    {
+      "title": "Click the three-dot menu and select Cancel all.",
+      "content": "Click the three-dot menu and select Cancel all . The three horizontal dots are near the top-right corner. All jobs will be removed from the print queue. If the files stay in the queue even after you’ve canceled them, try restarting the computer. If you can't clear the print queue, or clearing the queue doesn't fix your printer issues, see Restarting the Printer Spooler Service in Services.msc or at the command prompt for a fix."
+    },
+    {
+      "title": "Turn off your printer.",
+      "content": "Turn off your printer. If you can't clear the print queue, or print jobs keep getting stuck in the queue, you can use this method to fix problems with the printer spooler."
+    },
+    {
+      "title": "In the Windows Search bar, type services.msc and press ↵ Enter.",
+      "content": "In the Windows Search bar, type services.msc and press ↵ Enter . This opens the “Services” window."
+    },
+    {
+      "title": "Scroll down and right-click Print Spooler.",
+      "content": "Scroll down and right-click Print Spooler . It’s in the right panel. A context menu will appear."
+    },
+    {
+      "title": "Click Stop.",
+      "content": "Click Stop . Now that the queue is stopped, you can clear the documents."
+    },
+    {
+      "title": "Go back to the Windows Search bar.",
+      "content": "Go back to the Windows Search bar. Don’t close the Services window, as you’ll need it again in a few moments. Just click the search icon (or the search bar, if it’s permanently in your taskbar), or press the Windows key."
+    },
+    {
+      "title": "Type %systemroot%\\System32\\spool\\printers and press ↵ Enter.",
+      "content": "Type %systemroot%\\System32\\spool\\printers and press ↵ Enter . A folder will appear."
+    },
+    {
+      "title": "Select all files in the folder.",
+      "content": "Select all files in the folder. To do this, click a blank area inside the folder, then press Ctrl + A . You can also highlight all the files with your mouse."
+    },
+    {
+      "title": "Press the Del key on the keyboard.",
+      "content": "Press the Del key on the keyboard. This clears the print queue, and you can close this folder window."
+    },
+    {
+      "title": "Return to the “Services” window and right-click Print Spooler again.",
+      "content": "Return to the “Services” window and right-click Print Spooler again. The menu will expand. If you can't find the Services window, click the overlapping gear icons in the taskbar, or press Alt + Tab until it appears."
+    },
+    {
+      "title": "Click Start.",
+      "content": "Click Start . The print queue should now be completely clear."
+    },
+    {
+      "title": "Turn off your printer.",
+      "content": "Turn off your printer. If you can't clear the printer queue in Windows, try this method to stop the print spooler and clear the queue in the command prompt. It will work best if your printer is turned off."
+    },
+    {
+      "title": "Open the Windows command prompt as an administrator.",
+      "content": "Open the Windows command prompt as an administrator. Another way to clear the printer queue on any version of Windows is to use some simple commands at the command prompt. To open the prompt as an admin, follow these steps: Press the Windows key. Type cmd . Right-click Command Prompt . Click Run as administrator . Click Yes to confirm."
+    },
+    {
+      "title": "Type net stop spooler and press ↵ Enter.",
+      "content": "Type net stop spooler and press ↵ Enter . This command stops the printer spooler."
+    },
+    {
+      "title": "Type del %systemroot%\\System32\\spool\\printers* /Q and press ↵ Enter.",
+      "content": "Type del %systemroot%\\System32\\spool\\printers* /Q and press ↵ Enter . This command will clear the Windows print queue."
+    },
+    {
+      "title": "Type net start spooler and press ↵ Enter.",
+      "content": "Type net start spooler and press ↵ Enter . The printer spooler will now restart."
+    },
+    {
+      "title": "Turn your printer back on.",
+      "content": "Turn your printer back on. Try printing again. Now that you've stopped and restarted the print spooler and cleared the queue, you should be able to print."
+    }
+  ]
+}

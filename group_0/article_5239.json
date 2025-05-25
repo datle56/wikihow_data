@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Bypass-YouTube%27s-Regional-Filter",
+  "title": "Bypass YouTube Region Blocking to Watch Blocked Videos Anywhere",
+  "steps": [
+    {
+      "title": "Go to https://redirect.invidious.io.",
+      "content": "Go to https://redirect.invidious.io . Invidious is a website that links to multiple servers you can use to watch YouTube videos that are blocked in your country. The links on Invidious are frequently updated, as servers sometimes go offline after a while. To find out which countries can access the video, go to https://polsy.org.uk/stuff/ytrestrict.cgi and enter the video's URL."
+    },
+    {
+      "title": "Select a server.",
+      "content": "Select a server. At the time of writing, you can use Invidious to fake your location to Japan, Germany, Chile, Finland, and the Czech Republic."
+    },
+    {
+      "title": "Search for the video you want to watch.",
+      "content": "Search for the video you want to watch. Some servers allow you to paste the URL of the video into a form to pull it up, while others require you to search for the video. Once the video comes up, you can click the Play button to watch it, even if it's blocked in your region."
+    },
+    {
+      "title": "Install a VPN that allows you to change your location.",
+      "content": "Install a VPN that allows you to change your location. A Virtual Private Network allows you to hide your computer's real IP address behind a different one. If your VPN has a server in a country that isn't blocked by the YouTube video you want to watch, you can select that country to unblock the video. To find out which countries can access the video, go to https://polsy.org.uk/stuff/ytrestrict.cgi and enter the video's URL. Most free VPNs are slow, not as secure as paid options, and don't have as many regions. However, if you just quickly want to watch some YouTube videos that are blocked in your country, you can try a free option like Proton VPN's free plan , which has servers available in the Netherlands, Japan, Romania, Poland, and the US. [1] X Research source Check out our guide to choosing the best VPN for your needs. Reputable paid VPN options that let you change your location include Mullvad, Proton, SurfShark, and Private Internet Access."
+    },
+    {
+      "title": "Turn on your VPN.",
+      "content": "Turn on your VPN. If your VPN has a desktop or mobile app, open it and toggle on the VPN. This will activate the VPN for your internet connection. Each VPN has different connection steps, so consult your VPN's online support page if you don't know how to enable it."
+    },
+    {
+      "title": "Select a country or region.",
+      "content": "Select a country or region. Select a country other than the one in which you're currently located. As long as the country you select isn't blocked by YouTube for the video you want to watch, you will be able to view it. You may have to try several different countries before you find one for which the content isn't blocked."
+    },
+    {
+      "title": "Watch your YouTube video.",
+      "content": "Watch your YouTube video. Open YouTube and search for the video you want to watch. Click or tap the video that you want to watch to open it. If the video is allowed in your VPN's region, you will be able to watch the video like usual. Adjust your VPN's regional settings if you still can't watch the video."
+    },
+    {
+      "title": "Download and install Tor on your computer.",
+      "content": "Download and install Tor on your computer. You can use the Tor web browser to spoof your location to watch YouTube videos blocked in your region. To download, go to https://www.torproject.org/download , click your operating system, and save the installer. Once downloaded, double-click the installer and follow the on-screen instructions to install Tor."
+    },
+    {
+      "title": "Open the Tor configuration file.",
+      "content": "Open the Tor configuration file. First, open Tor at least once to create the file. Then, you'll need to open the configuration file for editing in a text editor like Notepad for Windows or TextEdit for Mac. Here's how: On Windows: Double-click the Tor Browser folder on your desktop. Navigate to the Browser > TorBrowser > Data > Tor subfolder. Right-click the file called torrc and select Open with > Notepad . On a Mac Open Finder and press Command + Shift + G . Paste ~/Library/Application Support/TorBrowser-Data into the field and click Go . Double-click the Tor folder. Control + click the file called torrc and select Open with > TextEdit ."
+    },
+    {
+      "title": "Add the ExitNotes line.",
+      "content": "Add the ExitNotes line. Go to the first empty line and paste ExitNodes {} StrictNodes 1 into the file."
+    },
+    {
+      "title": "Find the country code for a country where the video isn't blocked.",
+      "content": "Find the country code for a country where the video isn't blocked. To find out where a video is allowed, go to https://polsy.org.uk/stuff/ytrestrict.cgi and check the allowed list. Write down a few of the allowed country codes (e.g., CN for China, DE for Germany, MX for Mexico). To make sure Tor has a relay in the countries you choose, go to https://metrics.torproject.org/rs.html and type the two-digit county code into the search form. It's best to choose a few countries in case some don't have servers available."
+    },
+    {
+      "title": "Enter a country code between the two curly brackets.",
+      "content": "Enter a country code between the two curly brackets. For example, ExitNodes {de} StrictNodes 1 . Add multiple country codes by inserting more brackets and separating them with commas like this: ExitNodes {de},{cn},{mx} StrictNodes 1"
+    },
+    {
+      "title": "Save the file and restart Tor.",
+      "content": "Save the file and restart Tor. Press Ctrl + S (PC) or Cmd + S (Mac) to save the open text file, then close and reopen Tor."
+    },
+    {
+      "title": "Click Connect and watch the blocked YouTube video.",
+      "content": "Click Connect and watch the blocked YouTube video. Once you connect to the Tor network, you should have an IP address from one of the countries you entered into the torrc file. When you play the YouTube video that was blocked, YouTube will think you're in the country you're connected through and play the video as normal."
+    }
+  ]
+}

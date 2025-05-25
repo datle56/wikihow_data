@@ -1,0 +1,94 @@
+{
+  "url": "https://www.wikihow.com/Use-System-Restore-on-Windows-7",
+  "title": "How to Use System Restore on Windows 7",
+  "steps": [
+    {
+      "title": "Understand what System Restore does.",
+      "content": "Understand what System Restore does. Whenever a change is made to your computer, Windows will create a System Restore point. The is essentially a snapshot of your computer before the change was made (program installation or uninstallation, driver update, etc.). If something goes wrong because of the change you made, you can use the System Restore point to roll your system back without losing your files. System Restore can't help you recover lost text documents, but it could be helpful if a driver or software update isn't working on your computer. While a system restore shouldn't affect your personal files, it never hurts to have a recent backup in case something goes wrong. Click here for tips on quickly backing up your important files . If your computer will not boot into Windows, see the troubleshooting section."
+    },
+    {
+      "title": "Create a password reset disk (optional).",
+      "content": "Create a password reset disk (optional). This is recommended if you recently changed your Windows password, as the restore process may revert your password change. Click here for instructions on creating a password reset disk."
+    },
+    {
+      "title": "Click the Start menu and type \"system restore\".",
+      "content": "Click the Start menu and type \"system restore\". Select \"System Restore\" from the list of search results."
+    },
+    {
+      "title": "Select the restore point you want to use.",
+      "content": "Select the restore point you want to use. Windows will suggest a restore point, which will usually be the most recent one. If you need to select an older restore point, click Next > . Check the \"Show more restore points\" box to see all the available restore points. There may not be many to choose from, as Windows automatically deletes older restore points to save space. Each restore point will have a short description of what occurred to cause the restore point to be created."
+    },
+    {
+      "title": "Click the Scan for affected programs button after selecting a restore point.",
+      "content": "Click the Scan for affected programs button after selecting a restore point. This will show you all of the programs and drivers that will be uninstalled or reinstalled by performing the restore with that restore point. Any programs installed after the restore point was created will be uninstalled, while any programs uninstalled after the restore point was created will be reinstalled."
+    },
+    {
+      "title": "Review the restore point before restoring.",
+      "content": "Review the restore point before restoring. Before proceeding with the system restore, review the changes one last time. Click Finish to begin the restore process."
+    },
+    {
+      "title": "Wait for the restore process to complete.",
+      "content": "Wait for the restore process to complete. After confirming that you want to restore, the computer will reboot and the restore process will begin. This will likely take a few minutes."
+    },
+    {
+      "title": "Confirm that the restore was successful.",
+      "content": "Confirm that the restore was successful. Once the restore is complete, Windows will boot and a message will appear indicating that the restore was successful. Test your computer to see if the restore fixed your problem. If it didn't you can try restoring to an earlier restore point. [1] X Research source If the System Restore made things worse, or you want to go back to how your computer was, you can undo the most recent restore by launching the System Restore tool again and selecting \"Undo System Restore\"."
+    },
+    {
+      "title": "Ensure that System Restore is enabled.",
+      "content": "Ensure that System Restore is enabled. In order to use System Restore, it must be enabled for your computer. If System Restore isn't starting, check to make sure that it's turned on. Click the Start menu, right-click on Computer, and select \"Properties\". Click the \"System protection\" link, and then select the drive you are trying to run System Restore on. Click Configure... and then ensure that \"Turn on system protection\" is enabled."
+    },
+    {
+      "title": "Run System Restore from the Command Prompt if Windows won't boot.",
+      "content": "Run System Restore from the Command Prompt if Windows won't boot. You can run the System Restore tool from the Command Prompt if something has gone wrong and you can't start Windows normally. Reboot your computer and hold the F8 key. This will open the Advanced Boot Options menu. Select \"Safe Mode with Command Prompt\" from the Advanced Boot Options menu. Windows will load essential files and then take you to the Command Prompt. Type rstrui.exe and press Enter. This will start the System Restore utility. Follow the instructions in the section above to restore your computer. When performing a system restore from Safe Mode, you won't be able to undo it."
+    },
+    {
+      "title": "Run the Check Disk utility to check for problems with the hard drive.",
+      "content": "Run the Check Disk utility to check for problems with the hard drive. A failing hard drive could be causing System Restore to malfunction. Check Disk can potentially repair these issues. Click Start, right-click on Command Prompt, and select \"Run as administrator\". Type chkdisk /r and press Enter. Confirm that you want to reboot your computer. Check Disk will run before Windows starts and scan for errors. It will attempt to fix any errors that it finds."
+    },
+    {
+      "title": "Perform virus and malware scans.",
+      "content": "Perform virus and malware scans. Viruses may infect your restore points, or disable System Restore from starting. Removing these viruses will be the only way to get System Restore working again, short of reinstalling Windows completely. Click here for detailed instructions on removing viruses ."
+    },
+    {
+      "title": "Consider reinstalling Windows if the System Restore doesn't work.",
+      "content": "Consider reinstalling Windows if the System Restore doesn't work. If all else fails, reinstalling Windows may be the only way to fix your problems. If you have your important files backed up already, the reinstallation process will likely go faster than you think, and will typically improve your computer's performance. Click here for detail instructions on reinstalling Windows 7 ."
+    },
+    {
+      "title": "Click the Start menu, right-click \"Computer\", and then click \"Properties\".",
+      "content": "Click the Start menu, right-click \"Computer\", and then click \"Properties\". You can manually create System Restore points, which is very useful if you have your system working well and want to have a reference point you can revert back to in case things go wrong."
+    },
+    {
+      "title": "Click the \"System protection\" link in the left frame.",
+      "content": "Click the \"System protection\" link in the left frame. This will open the System Properties window to the System Protection tab."
+    },
+    {
+      "title": "Click the .",
+      "content": "Click the . Create... button. You'll be asked to enter in a brief description to help you identify it later."
+    },
+    {
+      "title": "Wait for the restore point to be created.",
+      "content": "Wait for the restore point to be created. This will likely take a few minutes. Restore points vary in size, but by default Windows reserves 5% of the hard drive or restore points. Older restore points are deleted automatically to make room for new ones."
+    },
+    {
+      "title": "Delete old restore points manually.",
+      "content": "Delete old restore points manually. If you're looking to free up some disk space, or are worried that your system restore points are corrupted, you can delete all of your system restore points. Open the System Protection of the \"System Properties\" window (see Step 1 of this section). Click Configure... and then click Delete to delete all of the system restore points. Note that any space you free up will be used up again when new system restore points are created."
+    },
+    {
+      "title": "Disable your antivirus if you aren't able to create restore points.",
+      "content": "Disable your antivirus if you aren't able to create restore points. Antivirus software may be conflicting with the restore point creation process. If you aren't able to create restore points, disabling your antivirus is the easiest fix to try first. [2] X Research source You can usually disable your antivirus by right-clicking on the icon in your System Tray and selecting \"Disable\" or \"Stop\"."
+    },
+    {
+      "title": "Try creating a restore point in Safe Mode.",
+      "content": "Try creating a restore point in Safe Mode. Something in Windows may be causing your problem, and you may be able to get around it by creating the restore point in Safe Mode. To access Safe Mode, reboot your computer and hold F8. Select \"Safe Mode\" from the Advanced Boot Options menu. Follow the steps above to attempt creating a restore point in Safe Mode."
+    },
+    {
+      "title": "Make sure you have enough disk space to create restore points.",
+      "content": "Make sure you have enough disk space to create restore points. If you don't have enough free space on your computer, you won't be able to create restore points. Windows will not create restore points on hard drives smaller than 1 GB. Click Start and select \"Computer\". Right-click the disk that Windows is installed on (usually C:) and select Properties. Ensure that you have at least 300 MB of free space on the disk. Ideally you'll want at least 2-3 GB free."
+    },
+    {
+      "title": "Try resetting your Windows Repository.",
+      "content": "Try resetting your Windows Repository. This may help fix problems with creating system restore points. Reboot your computer and hold F8. Select \"Safe Mode\" from the Advanced Boot Options menu. Click the Start menu, right-click on Command Prompt, and select \"Run as administrator\". Type net stop winmgmt and press Enter. Click Start and select \"Computer\". Navigate to C:\\Windows\\System32\\wbem and rename repository to repositoryold . Reboot your computer to enter Windows normally. Click the Start menu, right-click on Command Prompt, and select \"Run as administrator\". Type net stop winmgmt and press Enter. Then type winmgmt /resetRepository and press Enter. Reboot your computer one last time and then try to create a restore point."
+    }
+  ]
+}

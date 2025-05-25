@@ -1,0 +1,62 @@
+{
+  "url": "https://www.wikihow.com/Your-Device-Ran-Into-a-Problem",
+  "title": "How to Resolve the “Your Device Ran Into a Problem” Blue Screen Error",
+  "steps": [
+    {
+      "title": "There are many codes for this error.",
+      "content": "There are many codes for this error. Both hardware and software can be the source of the error, so search the code at the bottom of the message to quickly discover the source of your error. Common codes include SYSTEM_SERVICE_EXCEPTION DRIVER_POWER_STATE_FAILURE DPC_WATCHDOG_VIOLATION VIDEO_TDR_FAILURE PAGE_FAULT_IN_NONPAGED_AREA DRIVER_IRQL_NOT_LESS_OR_EQUAL SYSTEM_THREAD_EXCEPTION_NOT_HANDLED IRQL_NOT_LESS_OR_EQUAL VIDEO_DXGKRNL_FATAL_ERROR KMODE_EXCEPTION_NOT_HANDLED INACCESSIBLE_BOOT_DEVICE [1] X Research source You can also find hexadecimal codes like 0x0000003B, 0x0000009F, 0x00000133, 0x00000116, 0x00000050, 0x000000D1, 0x0000007E, 0x0000000A, 0x00000113, 0x0000001E, and more."
+    },
+    {
+      "title": "There are many reasons for this error.",
+      "content": "There are many reasons for this error. If you installed new hardware incorrectly or it isn't compatible, you'll see this message. If you have an outdated hardware driver, you'll see this message. Some common reasons other than hardware include a corrupted file system, a deleted registry file from the System32 folder, overheating issues. RAM running out, virus attack."
+    },
+    {
+      "title": "Remove recently installed hardware (optional).",
+      "content": "Remove recently installed hardware (optional). Only do this if you're getting the BSoD immediately after installing new hardware. If you notice that the blue/black screen error doesn't show up again, it was most likely your new hardware causing the error."
+    },
+    {
+      "title": "Hard reset your PC.",
+      "content": "Hard reset your PC. Even if you have a laptop, you can follow these steps to completely drain the power from your PC and restart it: Turn off your PC by pressing and holding the Power button for 10 seconds. Disconnect the AC adapter or power cable from the computer, and remove the battery from laptops (if you can). If you can't remove the battery and are using a Dell, reset the real-time clock at this point by reconnecting the AC power cable, then press and hold the Power button for 30-35 seconds (the LED light will blink three times). The RTC process will start when you release the Power button."
+    },
+    {
+      "title": "Boot into Safe Mode with networking.",
+      "content": "Boot into Safe Mode with networking. If your computer is stuck in a boot loop, you can try interrupting it and starting in Safe Mode . Follow these steps to start Safe Mode on Windows: Press and hold the Power button for 10 seconds to turn off your computer. Turn on the computer and, when you see the Windows logo, press the Power button for 10 seconds to turn it off. Turn your computer back on and, when you see the Windows logo, press the Power button for 10 seconds to turn it off. Turn your computer back on and it'll boot in Windows Recovery Environment (WinRE). Click Troubleshoot . Click Advanced Options . Click Startup Settings . Click Restart . Select 5 or F5 to \"Start in Safe Mode with Networking . Your computer will restart in Safe Mode with Networking."
+    },
+    {
+      "title": "Update Windows.",
+      "content": "Update Windows. When your computer restarts in Safe Mode with Networking, you can update it, updating any outdated drivers too. You can follow the steps in this wikiHow article to update your PC, which is in Update & security (Windows 10) or Windows Update (Windows 11)."
+    },
+    {
+      "title": "Disconnect external devices.",
+      "content": "Disconnect external devices. This includes peripherals like mice and keyboards. Restart your computer after unplugging everything to see if removing them worked to get rid of the error."
+    },
+    {
+      "title": "Repair missing or corrupted Windows files.",
+      "content": "Repair missing or corrupted Windows files. Use the command-line tool to repair and replace Windows files that aren't usable. If your computer won't stay on long enough to do this, run it in Safe Mode with Networking. Open Command Prompt. Enter sfc /scannow . Press Enter to send your command. Don't close the window until the process is 100% complete. Restart your computer to see if the blue/black screen issue is resolved. If the problem still exists, enter DISM.exe /Online /Cleanup-image /Restorehealth . If you need to use this command, make sure your computer is connected to the Internet via an ethernet cable since Safe Mode with Networking does not support Wi-Fi. Restart your computer to see if this resolves your blue/black screen error."
+    },
+    {
+      "title": "Use the Windows troubleshooter.",
+      "content": "Use the Windows troubleshooter. The troubleshooter will further diagnose your system and suggest fixes. To do this, open Get Help on your computer (search the Start menu for the app), then search for troubleshoot BSOD error . Then follow the guided troubleshooter to try to fix your issue. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Run the hardware diagnostic tool (Dell only).",
+      "content": "Run the hardware diagnostic tool (Dell only). If you have a Dell computer, you'll be able to use another troubleshooting tool to diagnose the cause of the blue/black screen error. Here are two different ways to use this tool: If your computer can't boot into Windows : Turn on your computer and repeatedly tap the F2 button until you get the \"One Time Boot Menu\" window. Select Diagnostics and follow the on-screen instructions to start the diagnostic test. A passing test means all the hardware in your system is working correctly. Write down or remember the Service tag, error code, and validation code if the test fails. If your computer can boot into Windows : Open SupportAssist. If you don't already have it installed, download it from https://www.dell.com/support . Click the Diagnostics tab and select Run Full Test . If the test fails, contact Dell Techical Support for more help. [3] X Research source"
+    },
+    {
+      "title": "Restore your computer with Windows System Restore.",
+      "content": "Restore your computer with Windows System Restore. Every Windows computer will have access to Windows System Restore, but using it requires you to have previously made a restore point. If you haven't made a restore point already, you won't have anything to restore to and can't use this troubleshooting step. To restore, open Control Panel, then select Recovery > Open System Restore > Next . Choose the restore point that you set up before you were seeing the BSoD. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source You will lose any apps and driver updates that you added to your computer since the restore point."
+    },
+    {
+      "title": "Check for malware.",
+      "content": "Check for malware. If restoring your computer didn't help and you still see the BSoD, you might have malware or a stubborn virus. Click the shield in your taskbar to run a scan with Windows Security."
+    },
+    {
+      "title": "Check for hardware problems.",
+      "content": "Check for hardware problems. Look for loose cables, gathering dust, or anything that can be responsible for your computer overheating and randomly shutting down. You can also run Task Manager to check your CPU."
+    },
+    {
+      "title": "Reinstall Windows and reset it to factory default settings.",
+      "content": "Reinstall Windows and reset it to factory default settings. The last option includes the one that will remove any customized configurations, data, and personal settings from your computer, so make sure you have a backup for all your data . You can find a reset option in Settings. If your computer doesn't load into Safe Mode and is stuck in a boot-loop, you'll need a bootable USB drive or CD with an installation of Windows."
+    }
+  ]
+}

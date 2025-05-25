@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Balance-Chemical-Equations-Using-Linear-Algebra",
+  "title": "How to Balance Chemical Equations Using Linear Algebra",
+  "steps": [
+    {
+      "title": "Identify the equation to balance.",
+      "content": "Identify the equation to balance. H 3 P O 4 + ( N H 4 ) 2 M o O 4 + H N O 3 → ( N H 4 ) 3 P O 4 ⋅ 12 M o O 3 + N H 4 N O 3 + H 2 O {\\displaystyle {\\begin{aligned}&\\mathrm {H} _{3}\\mathrm {PO} _{4}+(\\mathrm {NH} _{4})_{2}\\mathrm {MoO} _{4}+\\mathrm {HNO} _{3}\\\\&\\to (\\mathrm {NH} _{4})_{3}\\mathrm {PO} _{4}\\cdot 12\\,\\mathrm {MoO} _{3}+\\mathrm {NH} _{4}\\mathrm {NO} _{3}+\\mathrm {H} _{2}\\mathrm {O} \\end{aligned}}}"
+    },
+    {
+      "title": "Identify the elements.",
+      "content": "Identify the elements. The number of elements present in the equation determines how many rows will be in the vectors and matrices that we are going to construct. Below, the order we list corresponds to the order of the rows. H {\\displaystyle \\mathrm {H} } – Hydrogen P {\\displaystyle \\mathrm {P} } – Phosphorus O {\\displaystyle \\mathrm {O} } – Oxygen N {\\displaystyle \\mathrm {N} } – Nitrogen M o {\\displaystyle \\mathrm {Mo} } – Molybdenum"
+    },
+    {
+      "title": "Set up the vector equation.",
+      "content": "Set up the vector equation. The vector equation consists of column vectors corresponding to each compound in the equation. Each vector has a corresponding coefficient, labeled x 1 {\\displaystyle x_{1}} to x 6 , {\\displaystyle x_{6},} for which we are solving for. Make sure you understand how to count the number of atoms in a molecule. x 1 ( 3 1 4 0 0 ) + x 2 ( 8 0 4 2 1 ) + x 3 ( 1 0 3 1 0 ) = x 4 ( 12 1 40 3 12 ) + x 5 ( 4 0 3 2 0 ) + x 6 ( 2 0 1 0 0 ) {\\displaystyle x_{1}{\\begin{pmatrix}3\\\\1\\\\4\\\\0\\\\0\\end{pmatrix}}+x_{2}{\\begin{pmatrix}8\\\\0\\\\4\\\\2\\\\1\\end{pmatrix}}+x_{3}{\\begin{pmatrix}1\\\\0\\\\3\\\\1\\\\0\\end{pmatrix}}=x_{4}{\\begin{pmatrix}12\\\\1\\\\40\\\\3\\\\12\\end{pmatrix}}+x_{5}{\\begin{pmatrix}4\\\\0\\\\3\\\\2\\\\0\\end{pmatrix}}+x_{6}{\\begin{pmatrix}2\\\\0\\\\1\\\\0\\\\0\\end{pmatrix}}}"
+    },
+    {
+      "title": "Set the equation to 0 and obtain the augmented matrix.",
+      "content": "Set the equation to 0 and obtain the augmented matrix. There are two major points to consider here. First, recognize that a vector equation like the one above has the same solution set as a linear system with its corresponding augmented matrix. This is a fundamental idea in linear algebra. Second, when the augments are all 0, row-reduction does not change the augments. Therefore, we need not write them at all – row-reducing the coefficient matrix is all that is necessary. Note that moving everything to the left side causes the elements on the right side to negate. ( 3 8 1 − 12 − 4 − 2 1 0 0 − 1 0 0 4 4 3 − 40 − 3 − 1 0 2 1 − 3 − 2 0 0 1 0 − 12 0 0 ) {\\displaystyle {\\begin{pmatrix}3&8&1&-12&-4&-2\\\\1&0&0&-1&0&0\\\\4&4&3&-40&-3&-1\\\\0&2&1&-3&-2&0\\\\0&1&0&-12&0&0\\end{pmatrix}}}"
+    },
+    {
+      "title": "Row-reduce",
+      "content": "Row-reduce to reduced row-echelon form. For such a matrix, it is recommended that you use a calculator, although row-reducing by hand is always an option, albeit slower. ( 1 0 0 0 0 − 1 / 12 0 1 0 0 0 − 1 0 0 1 0 0 − 7 / 4 0 0 0 1 0 − 1 / 12 0 0 0 0 1 − 7 / 4 ) {\\displaystyle {\\begin{pmatrix}1&0&0&0&0&-1/12\\\\0&1&0&0&0&-1\\\\0&0&1&0&0&-7/4\\\\0&0&0&1&0&-1/12\\\\0&0&0&0&1&-7/4\\end{pmatrix}}} It is clear that there is a free variable x 6 {\\displaystyle x_{6}} here. Those with sharp minds would've seen this coming, for there are more variables than equations, and hence more columns than rows. This free variable means that x 6 {\\displaystyle x_{6}} can take on any value, and the resulting combination of x 1 {\\displaystyle x_{1}} to x 5 {\\displaystyle x_{5}} would be a valid solution (to our linear system, that is – the chemical equation results in further restrictions in this solution set)."
+    },
+    {
+      "title": "Reparameterize the free variable and solve for the variables.",
+      "content": "Reparameterize the free variable and solve for the variables. Let's set x 6 = t . {\\displaystyle x_{6}=t.} Since for positive values of t , {\\displaystyle t,} none of the variables become negative, so we are on the right track. x 1 = t / 12 {\\displaystyle x_{1}=t/12} x 2 = t {\\displaystyle x_{2}=t} x 3 = 7 t / 4 {\\displaystyle x_{3}=7t/4} x 4 = t / 12 {\\displaystyle x_{4}=t/12} x 5 = 7 t / 4 {\\displaystyle x_{5}=7t/4} x 6 = t {\\displaystyle x_{6}=t}"
+    },
+    {
+      "title": "Substitute an appropriate value for t {\\displaystyle t} .",
+      "content": "Substitute an appropriate value for t {\\displaystyle t} . Remember that the coefficients in the chemical equation must be integers. Therefore, set t = 12 , {\\displaystyle t=12,} the least common multiple. From our solution set, it is clear that while there are an infinite number of solutions, as we would expect, it is nonetheless a countably infinite set. x 1 = 1 {\\displaystyle x_{1}=1} x 2 = 12 {\\displaystyle x_{2}=12} x 3 = 21 {\\displaystyle x_{3}=21} x 4 = 1 {\\displaystyle x_{4}=1} x 5 = 21 {\\displaystyle x_{5}=21} x 6 = 12 {\\displaystyle x_{6}=12}"
+    },
+    {
+      "title": "Substitute the coefficients into the chemical equation.",
+      "content": "Substitute the coefficients into the chemical equation. The equation is now balanced. H 3 P O 4 + 12 ( N H 4 ) 2 M o O 4 + 21 H N O 3 → ( N H 4 ) 3 P O 4 ⋅ 12 M o O 3 + 21 N H 4 N O 3 + 12 H 2 O {\\displaystyle {\\begin{aligned}&\\mathrm {H} _{3}\\mathrm {PO} _{4}+12\\,(\\mathrm {NH} _{4})_{2}\\mathrm {MoO} _{4}+21\\,\\mathrm {HNO} _{3}\\\\&\\to (\\mathrm {NH} _{4})_{3}\\mathrm {PO} _{4}\\cdot 12\\,\\mathrm {MoO} _{3}+21\\,\\mathrm {NH} _{4}\\mathrm {NO} _{3}+12\\,\\mathrm {H} _{2}\\mathrm {O} \\end{aligned}}}"
+    }
+  ]
+}

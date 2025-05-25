@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Acquire-a-New-IP-Address",
+  "title": "A Step-By-Step Guide to Aquire a New IP Address",
+  "steps": [
+    {
+      "title": "Find your device's current IP address.",
+      "content": "Find your device's current IP address. In order to know whether or not your IP address change is ultimately successful, you need to know your device's current IP address. This method isn't guaranteed since your router might re-assign your old IP address."
+    },
+    {
+      "title": "Turn off your device.",
+      "content": "Turn off your device. This should be the computer, phone, or tablet whose IP address you would like to change. Since IP addresses are applied to every device accessing the internet, even your tablet has one, which you can reset by following these steps."
+    },
+    {
+      "title": "Unplug your modem and router from the Internet and power sources.",
+      "content": "Unplug your modem and router from the Internet and power sources. This will essentially reset your Wi-Fi. If your modem and router are comprised in the same unit, simply unplug the entire unit."
+    },
+    {
+      "title": "Wait for five minutes.",
+      "content": "Wait for five minutes. This should be enough time for your Internet Service Provider (ISP) to provide your network with a new public IP address."
+    },
+    {
+      "title": "Plug the modem back in.",
+      "content": "Plug the modem back in. It will begin lighting up. You'll want each light on the face of the modem to be on or flashing before you continue."
+    },
+    {
+      "title": "Reattach the router.",
+      "content": "Reattach the router. After a couple of moments, the router's light will begin flashing, then turn constant."
+    },
+    {
+      "title": "Turn on your device.",
+      "content": "Turn on your device. It should reconnect to the Internet once it finishes rebooting, though you may need to manually select a network and connect to it."
+    },
+    {
+      "title": "Check your IP address.",
+      "content": "Check your IP address. You can use any web browser to check Google and see if your IP address has changed. Simply search Google for \"what's my IP?\" If you don't see a different IP address, you may need to keep your router off for a longer period of time. Try turning it off for an entire night and then re-enabling it in the morning."
+    },
+    {
+      "title": "Open Command Prompt as an administrator.",
+      "content": "Open Command Prompt as an administrator. Press the Win key and type Command Prompt into the Start menu to find that program, then right-click the result for \"Command Prompt\" and select \"Run as administrator.\" Click Yes when prompted. This process will only work if your computer is on an Ethernet connection with other devices. Trying to change your public IP address (or your IP address on Wi-Fi) with this method won't work. You can change your private (or local) IP address for troubleshooting steps, like if your printer won't connect to your computer."
+    },
+    {
+      "title": "Type in ipconfig and press ↵ Enter.",
+      "content": "Type in ipconfig and press ↵ Enter . This command displays your current IP information."
+    },
+    {
+      "title": "Look at your current IP address.",
+      "content": "Look at your current IP address. It's to the right of the \"IPv4\" or \"IPv6\" value; the number here corresponds to your specific device on a local network."
+    },
+    {
+      "title": "Type in ipconfig /release and press ↵ Enter.",
+      "content": "Type in ipconfig /release and press ↵ Enter . Doing so releases your IP address."
+    },
+    {
+      "title": "Type in ipconfig /renew and press ↵ Enter.",
+      "content": "Type in ipconfig /renew and press ↵ Enter . This command assigns a new IP address to your device."
+    },
+    {
+      "title": "Look at your new IP address.",
+      "content": "Look at your new IP address. It will be to the right of the \"IPv4\" value. If the number here is different than it was before releasing and renewing your IP address, your device's local IP address has successfully been changed."
+    },
+    {
+      "title": "Click the Apple Menu .",
+      "content": "Click the Apple Menu . It's the apple-shaped icon in the top-left corner of the screen."
+    },
+    {
+      "title": "Click System Preferences.",
+      "content": "Click System Preferences . You'll see this option in the Apple Menu drop-down window."
+    },
+    {
+      "title": "Click Network.",
+      "content": "Click Network . This will open the Network window."
+    },
+    {
+      "title": "Select your current connection.",
+      "content": "Select your current connection. You'll do so from the left-hand pane in the Network window."
+    },
+    {
+      "title": "Click Advanced.",
+      "content": "Click Advanced . It's in the lower-right area of the window."
+    },
+    {
+      "title": "Click the TCP/IP tab.",
+      "content": "Click the TCP/IP tab. This tab is near the top of the Advanced window."
+    },
+    {
+      "title": "Look at the \"IPv4 Address\" value.",
+      "content": "Look at the \"IPv4 Address\" value. This number is your Mac's current IP address."
+    },
+    {
+      "title": "Click Renew DHCP Lease.",
+      "content": "Click Renew DHCP Lease . It's to the right of the IP address area. Doing so will refresh your device's current IP address."
+    },
+    {
+      "title": "Look at your new IP address.",
+      "content": "Look at your new IP address. It will be to the right of the \"IPv4\" value. If the number here is different than it was before releasing and renewing your IP address, your device's local IP address has successfully been changed. This process will only work if your computer is on an Ethernet connection with other devices. Trying to change your public IP address with this method won't work. If you aren't able to change your computer's IP address to one you want, try using a VPN . You can also use a Proxy or a Tor network to change your IP address ."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "url": "https://www.wikihow.com/Find-Your-Printer-IP-Address",
+  "title": "How to Find Your Printer's IP Address",
+  "steps": [
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the icon with the Windows logo. It's in the taskbar at the bottom of the screen. Make sure you have updated to the latest version of Windows."
+    },
+    {
+      "title": "Click Settings.",
+      "content": "Click Settings . It's in the list of pinned apps at the top of the Start menu. It has an icon that resembles a gear."
+    },
+    {
+      "title": "Click Bluetooth & devices.",
+      "content": "Click Bluetooth & devices . It's the second option in the menu panel to the left of the Settings window. It's next to an icon that resembles the Bluetooth logo. [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Click Printers & Scanners.",
+      "content": "Click Printers & Scanners . It's the third option in the Bluetooth & devices menu. This displays a list of all available printers. [2] X Research source"
+    },
+    {
+      "title": "Click a printer.",
+      "content": "Click a printer. All available printers are listed at the top of the menu. Click whichever printer you want to check the IP address of."
+    },
+    {
+      "title": "Click Printer Properties.",
+      "content": "Click Printer Properties . This displays the Properties window for that printer. [3] X Research source"
+    },
+    {
+      "title": "Click the General tab.",
+      "content": "Click the General tab. It's the first tab at the top of the Properties window. [4] X Research source"
+    },
+    {
+      "title": "Check the IP address.",
+      "content": "Check the IP address. The IP address will be in the field next to \"Location.\" It's the first field below the printer name."
+    },
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the icon with the Windows logo in the taskbar at the bottom of the screen. This displays the Windows Start menu."
+    },
+    {
+      "title": "Type Control Panel.",
+      "content": "Type Control Panel . This displays the Control Panel in the Windows Start menu."
+    },
+    {
+      "title": "Click Control Panel.",
+      "content": "Click Control Panel . It has an icon that resembles a blue screen with some graphs on it."
+    },
+    {
+      "title": "Click Hardware and Sound.",
+      "content": "Click Hardware and Sound . It's next to an icon that resembles a printer. If you don't see this option, click Devices and Printers instead."
+    },
+    {
+      "title": "Click Devices and printers.",
+      "content": "Click Devices and printers . It's at the top of the Hardware and Sound menu."
+    },
+    {
+      "title": "Right-click the printer you want to find the IP address for.",
+      "content": "Right-click the printer you want to find the IP address for. You should see all connected printers listed below \"Printers.\" Right-click a printer to display a pop-out menu."
+    },
+    {
+      "title": "Click Properties on the menu.",
+      "content": "Click Properties on the menu."
+    },
+    {
+      "title": "Click the Web Services tab.",
+      "content": "Click the Web Services tab. It's the third tab at the top of the page. If there are 5 tabs instead of three, click the Ports tab instead."
+    },
+    {
+      "title": "Note the IP address.",
+      "content": "Note the IP address. The printer's IP address appears next to \"IP address\" in the Troubleshooting Information panel."
+    },
+    {
+      "title": "Click the Start menu .",
+      "content": "Click the Start menu . It's the icon with the Windows logo in the taskbar at the bottom of the screen. This method will work on both Windows 10 and Windows 11."
+    },
+    {
+      "title": "Type cmd.",
+      "content": "Type cmd . This displays the Command Prompt in the Windows Start menu."
+    },
+    {
+      "title": "Click Command Prompt .",
+      "content": "Click Command Prompt . It has an icon that resembles a black screen."
+    },
+    {
+      "title": "Type ipconfig and press ↵ Enter.",
+      "content": "Type ipconfig and press ↵ Enter . This displays some information about your network."
+    },
+    {
+      "title": "Copy your IPv4 Gateway address.",
+      "content": "Copy your IPv4 Gateway address. This is the IP address for your router. Copy this number or write it down."
+    },
+    {
+      "title": "Type ping [your IPv4 address] and press ↵ Enter.",
+      "content": "Type ping [your IPv4 address] and press ↵ Enter . Replace \"[your IPv4 address]\" with the default gateway IPv4 address you copied. This will ping your router."
+    },
+    {
+      "title": "Type arp -a and press ↵ Enter.",
+      "content": "Type arp -a and press ↵ Enter . This displays a list of all devices connected to your network."
+    },
+    {
+      "title": "Check your printer's IP address.",
+      "content": "Check your printer's IP address. If you know your printer's MAC address , you can easily find your printer from the list of connected devices. If you don't know your printer's MAC address, you can copy the different IP addresses and paste them into a web browser. Your printer's IP address should take you to your printer's setup page."
+    },
+    {
+      "title": "Click the Apple icon .",
+      "content": "Click the Apple icon . It's the icon that resembles the Apple logo. It's in the upper-left corner of the menu bar at the top of the screen. This displays the Apple menu."
+    },
+    {
+      "title": "Click System Settings.",
+      "content": "Click System Settings . It's in the Apple menu. This will open the System Settings window with various options. On older versions of MacOS, click System Preferences instead."
+    },
+    {
+      "title": "Click Printers & Scanners A separate window should open with the installed printers shown in the left pane.",
+      "content": "Click Printers & Scanners A separate window should open with the installed printers shown in the left pane. On older versions of macOS, click Print and Scan instead."
+    },
+    {
+      "title": "Click the printer you want to see the IP address for.",
+      "content": "Click the printer you want to see the IP address for. It should be in the pane to the left. This displays a description section on the right, you will see a bunch of information."
+    },
+    {
+      "title": "Note the IP address.",
+      "content": "Note the IP address. You should see your printer's IP address next to \"Location\" in the information panel on the right."
+    },
+    {
+      "title": "Open the Terminal .",
+      "content": "Open the Terminal . You can find the Terminal in the \"Utilities\" folder in Applications using Finder, or you can click the magnifying glass icon in the upper-right corner and type Terminal . The Terminal has an icon that resembles a black screen. Click the Terminal icon when you find it."
+    },
+    {
+      "title": "Type cupsctl WebInterface=yes and press ⏎ Return.",
+      "content": "Type cupsctl WebInterface=yes and press ⏎ Return . This enables the Common Unix Printer System (CUPS) interface in your web browser, which you can use to check the printer's IP address."
+    },
+    {
+      "title": "Open Safari.",
+      "content": "Open Safari. Safari has an icon that resembles a blue compass. Click the Safari icon in your Dock at the bottom of the screen."
+    },
+    {
+      "title": "Type localhost:631/printers in the address bar and press ⏎ Return.",
+      "content": "Type localhost:631/printers in the address bar and press ⏎ Return . The address bar is at the top of Safari. This opens the CUPS web interface in Safari."
+    },
+    {
+      "title": "Note your printer's IP address.",
+      "content": "Note your printer's IP address. Your printer's IP address can be found under the \"Location\" section on the web interface."
+    },
+    {
+      "title": "Enter your router's default gateway address in a web browser.",
+      "content": "Enter your router's default gateway address in a web browser. In order to access your router's user interface , you need to enter your router's default gateway address into a web browser. Common default gateway addresses include; \"192.168.1.1,\" \"192.168.0.1,\" \"192.168.2.1,\" and \"10.0.0.1.\" [5] X Research source If you don't know what your router's default gateway address is, open the Command Prompt on Windows and type \"ipconfig\" and press Enter . Your router's default gateway address will be listed next to \"IPv4 Address. On Mac , open System Preferences , and click Network . Click your network connection and click the TCP/IP tab. Note your IPv4 Address."
+    },
+    {
+      "title": "Log in to your router.",
+      "content": "Log in to your router. Enter the username and password to log into your router and click the login button. If you have not changed your username and password, it should still be the default username and password. You may be able to find the default username and password on the bottom or back of your router, or in the user's manual that came with your router. The most common router username and password is either \"admin\" or just left blank."
+    },
+    {
+      "title": "Look for the DHCP Client Table or client list.",
+      "content": "Look for the DHCP Client Table or client list. The user interface for each router make and model is going to be different. Look for your DHCP Client Table or client list. This can usually be found in the Local Network section."
+    },
+    {
+      "title": "Open the client list.",
+      "content": "Open the client list. Once you find where the client list is located in your router's user interface, open it. You should see a list of connected devices."
+    },
+    {
+      "title": "Click on your printer.",
+      "content": "Click on your printer. You should see your printer's IP address next to \"Location,\" \"IPv4 Address,\" or something similar. [6] X Research source"
+    },
+    {
+      "title": "Find your printer's HP printer's IP address.",
+      "content": "Find your printer's HP printer's IP address. Use the following steps to find the IP address for an HP printer: Open the HP Smart app or go to https://www.hpsmart.com in a web browser. Log in or create an account if needed. Select Printer Settings . Select Printer Reports under \"Tools.\" Select Network Configuration to print a network configuration page. Locate your printer's IP address in the \"IPv4\" section of the network configuration page."
+    },
+    {
+      "title": "Find your Canon printer's IP address.",
+      "content": "Find your Canon printer's IP address. Use the following steps to find the IP address for your Canon printer: Select Settings and Adjustments on your printer. Select Set or Adjust in the menu and click Ok . Expand the IP Address menu. Select Interface Setup . Select TCP/IP . Open the Next tab. Select IPv4 Settings . Note your printer's IP address."
+    },
+    {
+      "title": "Using other printers.",
+      "content": "Using other printers. The way you find or print the network configuration page is different on each printer make and model. Check your user's manual or online documentation to find the exact method for your printer. In general, you can find the printer's configuration page using the following steps: Select Preferences , Options , Settings , Wireless Settings or similar. Select TCP/IP' , Network Status , Wi-Fi Status or something similar. Note your printer's IP address next to \"Location,\" \"IPv4 Address,\" or similar."
+    }
+  ]
+}

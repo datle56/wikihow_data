@@ -1,0 +1,114 @@
+{
+  "url": "https://www.wikihow.com/Set-Up-a-Tekkit-Server",
+  "title": "How to Set Up a Tekkit Server",
+  "steps": [
+    {
+      "title": "Make sure that you have the latest version of both Minecraft and Java.",
+      "content": "Make sure that you have the latest version of both Minecraft and Java. The easiest way to do this for Minecraft is by double-clicking the Minecraft launcher and waiting for it to update itself if necessary. For Java, open Internet Explorer, go to https://java.com/en/download/installed.jsp , click Agree and Continue , and follow any on-screen prompts. If nothing happens, your Java is up-to-date. Since most modern browsers don't support Java, using Internet Explorer is the best way to ensure you don't run into any errors."
+    },
+    {
+      "title": "Install the Java Development Kit if you don't have it.",
+      "content": "Install the Java Development Kit if you don't have it. The Java Development Kit (JDK) is necessary both to run Tekkit's launch file and to use Minecraft Forge later: Open the JDK website Check the \"Accept License Agreement\" box in the \"Java SE Development Kit 8u171\" section. Click the jdk-8u171-windows-x64.exe link to the right of the \"Windows x64\" heading. Double-click the downloaded Java file, then follow the on-screen setup instructions."
+    },
+    {
+      "title": "Open the Tekkit download page.",
+      "content": "Open the Tekkit download page. Go to https://www.technicpack.net/modpack/tekkit.552560 in your computer's web browser."
+    },
+    {
+      "title": "Click Server Download.",
+      "content": "Click Server Download . It's a blue button in the lower-right side of the page."
+    },
+    {
+      "title": "Extract the server folder.",
+      "content": "Extract the server folder. Right-click the Tekkit ZIP folder, click Extract All... in the resulting drop-down menu, and click Extract at the bottom of the pop-up window."
+    },
+    {
+      "title": "Change Tekkit's available RAM.",
+      "content": "Change Tekkit's available RAM. You can change Tekkit's memory allocation by doing the following: Right-click the launch file. Click Edit in the drop-down menu. Review the \"-Xmx[number]G -Xms[number]G\" values: The first number refers to the maximum number of gigabytes of RAM your server will use. The second number refers to the minimum RAM your server will use. Lower or raise the numbers to reflect your computer's specifications if necessary."
+    },
+    {
+      "title": "Run the Tekkit installation.",
+      "content": "Run the Tekkit installation. Double-click the launch file to do so. This will open a Command Prompt window in which Tekkit will begin running your server and unpacking its necessary files. You will have to click Allow access if prompted by Windows Firewall to allow the program."
+    },
+    {
+      "title": "Wait for the Command Prompt window to stop loading information.",
+      "content": "Wait for the Command Prompt window to stop loading information. Once your Command Prompt window finishes loading information, you're free to proceed with the next part of the setup process. You can close the server by typing in stop and pressing ↵ Enter ."
+    },
+    {
+      "title": "Find your computer's local IP address.",
+      "content": "Find your computer's local IP address. Go to https://www.whatismyip.com/ in your computer's web browser, then look at the number to the right of the \"Your Local IP is:\" heading."
+    },
+    {
+      "title": "Find your router's local IP address.",
+      "content": "Find your router's local IP address. You'll need this in order to open your router's page: Open Start Open Settings Click Network & Internet Click View your network properties near the bottom of the page. Scroll down to the \"Wi-Fi\" section, then look at the number next to the \"Default gateway\" heading."
+    },
+    {
+      "title": "Open your router's page.",
+      "content": "Open your router's page. Open a web browser, then enter the \"Default gateway\" address in your browser's address bar."
+    },
+    {
+      "title": "Log into your router if prompted.",
+      "content": "Log into your router if prompted. If you're greeted with a login page, enter your router's username and password before proceeding. You may also be prompted to log in upon opening the Port Forwarding section."
+    },
+    {
+      "title": "Find the \"Port Forwarding\" section and open it.",
+      "content": "Find the \"Port Forwarding\" section and open it. You may have to look for a Settings or Advanced Settings section first. Since all routers have slightly different pages, you may want to consult your router's manual for specific instructions."
+    },
+    {
+      "title": "Create a new port forwarding rule.",
+      "content": "Create a new port forwarding rule. Enter your computer's local IP address in the \"IP\" or \"Rule\" text box."
+    },
+    {
+      "title": "Set the protocol to TCP.",
+      "content": "Set the protocol to TCP. Click the \"UDP\" drop-down menu, then click TCP . In some cases, you'll check the box next to \"TCP\" instead. If your rule already has \"TCP\" next to it, skip this step."
+    },
+    {
+      "title": "Set the entry and exit ports as 25565.",
+      "content": "Set the entry and exit ports as 25565. Type 25565 into each of the \"Port\" text boxes."
+    },
+    {
+      "title": "Save and apply the rule.",
+      "content": "Save and apply the rule. Scroll down and click Save or apply, then wait for the page to refresh. At this point, your Minecraft port should be forwarded, allowing others to join your server. Your router may reboot itself after you set this rule."
+    },
+    {
+      "title": "Find your computer's public IP address.",
+      "content": "Find your computer's public IP address. Go to https://www.whatismyip.com/ in your computer's web browser, then look at the number to the right of the \"Your Public IPv4 is:\" heading."
+    },
+    {
+      "title": "Make sure Tekkit is running.",
+      "content": "Make sure Tekkit is running. If you closed the Tekkit Command Prompt window, double-click the launch file again to launch your server, then wait for it to finish booting up before proceeding."
+    },
+    {
+      "title": "Open Minecraft.",
+      "content": "Open Minecraft. Double-click the Minecraft launcher app icon, which resembles a block of grassy dirt, then click PLAY at the bottom of the launcher window."
+    },
+    {
+      "title": "Click Multiplayer.",
+      "content": "Click Multiplayer . It's in the middle of the Minecraft window."
+    },
+    {
+      "title": "Click Add Server.",
+      "content": "Click Add Server . You'll find it at the bottom of the window."
+    },
+    {
+      "title": "Enter a server name.",
+      "content": "Enter a server name. In the \"Server Name\" text box, type in the name you want to add to your server."
+    },
+    {
+      "title": "Set your computer as the server address.",
+      "content": "Set your computer as the server address. Type localhost into the \"Server Address\" text box."
+    },
+    {
+      "title": "Click Done.",
+      "content": "Click Done . It's at the bottom of the window. This will save your server and attempt to connect to it."
+    },
+    {
+      "title": "Add players to your server.",
+      "content": "Add players to your server. Once you've created your server, you can invite other people to your server by giving them your public IP address and having them do the following: Open Minecraft and click Multiplayer Click Add Server Enter your server's name into the \"Server Name\" text box. Enter your public IP address into the \"Server Address\" text box. Click Done , then select the server and click Join Server"
+    },
+    {
+      "title": "Add mods to your server.",
+      "content": "Add mods to your server. If you have any mods you've downloaded, you can add them to your server by default by placing their extracted JAR files in the \"mods\" folder which is inside the Tekkit Server folder. Adding multiple mods at once may cause your server to become unstable."
+    }
+  ]
+}

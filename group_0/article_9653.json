@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Convert-Measurements-Easily-in-Microsoft-Excel",
+  "title": "How to Convert Measurements Easily in Microsoft Excel",
+  "steps": [
+    {
+      "title": "Label column A with the original unit.",
+      "content": "Label column A with the original unit. For the purposes of this example, let's assume that the measurement you want to convert is in column A and you'd like to see the conversion results in column B (but really this method will work for any two columns). To label column A , click on cell A1 and type in the original unit (the one you'd like converted, e.g. inches, meters, or yards). This is also called the “from_unit.” For example: click on cell A1 and type “Inches”. In this example, we will convert 12 (number) inches (from_unit) to feet (to_unit). Excel’s convert function converts a “from unit,” into a “to-unit” (the unit you are converting the measurement to). Labeling your columns will help you organize your data."
+    },
+    {
+      "title": "Label column B.",
+      "content": "Label column B. Click on cell B1. This will be your “to_unit” column. Type in the unit you are converting the measurement to. This is also called the “to_unit”. For example: click on cell B1 and type “Feet”. [1] X Research source"
+    },
+    {
+      "title": "Enter your original measurement in cell A2.",
+      "content": "Enter your original measurement in cell A2. Type in the original measurement in numbers only. Do not enter in the units. For example: in cell A2, enter “12” (as in 12 inches). [2] X Research source"
+    },
+    {
+      "title": "Type “=Convert(” in cell B2.",
+      "content": "Type “=Convert(” in cell B2. Functions in Excel are not case-sensitive. Typing \"=CONVERT(\" has the same result as typing \"=convert(\"."
+    },
+    {
+      "title": "Enter the name of the cell that contains the original measurement.",
+      "content": "Enter the name of the cell that contains the original measurement. Excel's convert function calls this value the \"number\". For example: \"=Convert(A2\" When you are converting a single measurement, as in the example above, It is also possible to type an actual number (not a cell reference) in this spot. Instead of “=Convert(A2”, you would enter “=Covert(12”."
+    },
+    {
+      "title": "Add a comma.",
+      "content": "Add a comma. For example, your cell may now look like this: \"=Convert(A2,\" or “=Convert(12,”."
+    },
+    {
+      "title": "Enter in the “from_unit.”",
+      "content": "Enter in the “from_unit.” Now enter in the approved abbreviated form of the original unit. The “from_unit” is enclosed by a set of quotation marks and is followed by a comma. For example: “=Convert(A2, “in”,” or “=Convert(12, “in”,”. Some approved unit abbreviations are \"in\" \"cm\" \"ft\" and \"m\". Excel provides a comprehensive list of unit abbreviations here ."
+    },
+    {
+      "title": "Enter in the “to_unit.”",
+      "content": "Enter in the “to_unit.” Now enter in the approved abbreviation for the “to_unit.” The “to_unit” is enclosed by a set of quotation marks followed by a closing parenthesis. For example, your cell should look something like: “=Convert(A2, “in”, “ft”)” or “=Convert(12, “in”, “ft”)”. This example function will convert the contents of cell A2 from inches to feet."
+    },
+    {
+      "title": "Hit ↵ Enter to execute the function.",
+      "content": "Hit ↵ Enter to execute the function. The converted measurement will appear in your cell (in this case, cell B2). For example: B2 will contain “1” (as in 1 foot). [3] X Research source If the function returns the “#N/A” error, check the unit abbreviations again. Make sure the abbreviation is correct and that the two units belong to the same group (for example it is not possible to convert mass into length). Please note, unit names and prefixes ARE case-sensitive. If the function returns the “#VALUE!” error, this means you have entered the “number” incorrectly. Make sure you have only entered one value or cell reference. [4] X Research source"
+    },
+    {
+      "title": "Select B2 (where your original CONVERT function is).",
+      "content": "Select B2 (where your original CONVERT function is). For the purposes of this example, lets assume that in addition to entering an original measurement in cell A2, you also filled cells A3 and A4 with a measurement. You've already converted the measurement in cell A2 by entering a convert formula in cell B2. You can quickly convert the rest of your measurements (the ones in A3 and A4) by dragging the formula down into the cells in column B. For example: in cell A2, you entered “1”; in cell A3, you entered “5”; in cell A4, you entered “10”. The convert function you entered in cell B2 reads: “=Convert(A2, “in”, “cm”)”. When you are converting multiple measurements, you must enter the cell's name instead of your measurement in the \"number\" space."
+    },
+    {
+      "title": "Click and hold on the gray square in the lower right corner.",
+      "content": "Click and hold on the gray square in the lower right corner. When you select a cell, a small, gray square appears in the lower right corner."
+    },
+    {
+      "title": "Drag your cursor down column B to select multiple cells.",
+      "content": "Drag your cursor down column B to select multiple cells. Only select as many cells in column B as are filled with original measurements in column A. For example: since you entered measurements in cells A3 and A4, you will select cells B3 and B4. Alternately, you may apply the convert function to multiple cells using the “fill” method. After you've selected cell B2, hold down ⇧ Shift and select your cells from Column B. You should select all the cells that have corresponding measurements in column A. Click the “Home” tab. Select “Fill” then select and “Down.” The converted measurements will appear in column B."
+    },
+    {
+      "title": "Release the cursor once you've selected all the cells you wish to apply the convert function to.",
+      "content": "Release the cursor once you've selected all the cells you wish to apply the convert function to. The measurements listed in column A will be converted and appear in column B. For example: you will see “2.54” in cell B2; “12.7” in cell B3; and “25.4” in cell B4. [5] X Research source If the function returns the “#N/A” error, check the unit abbreviations again. Make sure the abbreviation is correct and that the two units belong to the same group (for example it is not possible to convert mass into length). Please note, unit names and prefixes ARE case-sensitive. If the function returns the “#VALUE!” error, this means you have entered the “number” incorrectly. Make sure you have only entered one value or cell reference. [6] X Research source"
+    },
+    {
+      "title": "Label column A.",
+      "content": "Label column A. For the purposes of this example, let's assume that the measurement you want to convert is in column A and you'd like to see the conversion results in column B (but in reality, this method will work for any two columns). Click on cell A1 and type in the original unit (the one you'd like converted, e.g. seconds, hours, or days). This is also called the “from_unit.” For example: type “Minutes” into cell A1. In this example, we will convert 21 (number) minutes (from_unit) to seconds (to_unit). Excel’s convert function converts a measurement from its original unit, or “from unit,” into a “to-unit” (the unit you're converting the measurement to). Labeling your columns will help you organize your data."
+    },
+    {
+      "title": "Label column B.",
+      "content": "Label column B. Click on cell B1. This will serve as your \"to_unit\" column. Type in the unit you are converting the measurement to (e.g. seconds or days). For example: enter “Seconds” into cell B1. [7] X Research source"
+    },
+    {
+      "title": "Enter your original measurement in cell A2.",
+      "content": "Enter your original measurement in cell A2. Type in the original measurement in numbers only. Do not enter in the units. For example: in cell A2, enter “21” (as in 21 minutes). [8] X Research source"
+    },
+    {
+      "title": "Open the“Formula Builder.”",
+      "content": "Open the“Formula Builder.” Instead of entering the convert function by hand, you can use Excel’s formula builder to help you create the formula. Select the “Formula” tab. Click “Formula Builder”. Select cell B2. Select “CONVERT.”"
+    },
+    {
+      "title": "Enter the name of the cell (letter followed by number) that contains the original measurement in the \"number\" text box.",
+      "content": "Enter the name of the cell (letter followed by number) that contains the original measurement in the \"number\" text box. Excel's convert function calls this value the \"number.\" For example: enter \"A2\". For a single conversion, as in this example, you may also type the actual measurement (“21”) instead of the cell name."
+    },
+    {
+      "title": "Enter the original unit in the \"from_unit\" text box.",
+      "content": "Enter the original unit in the \"from_unit\" text box. Enter in the approved abbreviated form of the original unit. For example: type “mn” (the abbreviation for minutes). Excel provides a comprehensive list of unit abbreviations here ."
+    },
+    {
+      "title": "Enter the \"to_unit.\"",
+      "content": "Enter the \"to_unit.\" Type in the approved abbreviation for the \"to_unit.\" For example: type “sec” (the abbreviation for seconds)."
+    },
+    {
+      "title": "Press ↵ Enter to execute the function.",
+      "content": "Press ↵ Enter to execute the function. The converted measurement will appear in your cell (in this case, cell B2). For example: in cell B2, you will see “1260” (as in 1260 seconds). [9] X Research source If you receive a “#N/A” error, check the unit abbreviations again. Make sure the abbreviation is correct and that the two units belong to the same group (for example, it is not possible to convert time into length). Please note, unit names and prefixes ARE case-sensitive. If you get a “#VALUE!” error, you may have entered the “number” incorrectly. Make sure you have only entered one value or cell reference. [10] X Research source"
+    }
+  ]
+}

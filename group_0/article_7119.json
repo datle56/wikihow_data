@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Check-Powershell-Version",
+  "title": "Check the Powershell Version: PowerShell Commands & Registry Editions",
+  "steps": [
+    {
+      "title": "Open PowerShell.",
+      "content": "Open PowerShell. There are multiple ways that you can run PowerShell : Press the Win key and search for PowerShell , and then click the system result. Press Win + X to open a menu and click PowerShell . However, you can change \"PowerShell\" here to \"Command Prompt,\" so this method may not work for you. This is the easiest and fastest method to find your PowerShell version."
+    },
+    {
+      "title": "Type $PSVersionTable into PowerShell and press ↵ Enter.",
+      "content": "Type $PSVersionTable into PowerShell and press ↵ Enter . Pressing Enter sends the command."
+    },
+    {
+      "title": "Look for your PowerShell version number.",
+      "content": "Look for your PowerShell version number. It's next to \"PSVersion\". Version 5.1 is the last supported Microsoft version, so that's most likely what your updated computer has. You can also use the commands get-host and $host.version , but those are less likely to give accurate answers. Use the $PSVersionTable command for the best results."
+    },
+    {
+      "title": "Open Registry Editor.",
+      "content": "Open Registry Editor. Press the Win key, type regedit , and click the app result."
+    },
+    {
+      "title": "Go to Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft.",
+      "content": "Go to Computer\\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft . You can enter that into the address bar or navigate the different folders."
+    },
+    {
+      "title": "Check your version of PowerShell.",
+      "content": "Check your version of PowerShell. Look for subfolders that indicate your version of PowerShell. For example, PowerShell 5 is in PowerShell\\3\\PowerShellEngine . PowerShell 7 is in PowerShellCore\\InstalledVersions\\31ab5147-9a97-4452-8443-d9709f0516e1 ."
+    },
+    {
+      "title": "Run winrm quickconfig on the remote computer as an Administrator.",
+      "content": "Run winrm quickconfig on the remote computer as an Administrator. You need to do this so the computer will let you use PowerShell remotely. You will only be able to use this method if Windows Management Framework is running."
+    },
+    {
+      "title": "Type the following command and press ↵ Enter:",
+      "content": "Type the following command and press ↵ Enter : Invoke-Command -ComputerName TESTCOMPUTERNAME -ScriptBlock {$PSVersionTable.PSVersion} -Credential $cred . Substitute the name of the computer where you see \"TESTCOMPUTERNAME.\" [1] X Research source"
+    },
+    {
+      "title": "Look for the PowerShell version number.",
+      "content": "Look for the PowerShell version number. It's next to \"PSVersion\"."
+    },
+    {
+      "title": "To upgrade PowerShell, you'll need to update Windows.",
+      "content": "To upgrade PowerShell, you'll need to update Windows. By updating Windows , you'll also update your PowerShell version if you have an out-of-date one. This method will not update you to PowerShell 7. To get that version, you can find it in Github where you can download the version for your OS. [2] X Research source"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Get-a-MAC-Address-from-an-IP-Remotely",
+  "title": "How to Get a MAC Address from an IP Remotely",
+  "steps": [
+    {
+      "title": "Open a command prompt or terminal window.",
+      "content": "Open a command prompt or terminal window. You can use the arp command on any operating system to find the MAC address of another computer on your network. If you're using Windows, type cmd into the Windows Search bar, right-click Command prompt , and then select Run as administrator . On macOS, type Terminal into Spotlight search, and then double-click Terminal . On Linux, press Ctrl + Alt + T or open a terminal window from your window manager. [3] X Research source"
+    },
+    {
+      "title": "Run ping ipaddress to contact the IP address.",
+      "content": "Run ping ipaddress to contact the IP address. You'll must make contact with the remote computer so its MAC address will be added to the cache—pinging is an easy way to do this. [4] X Research source If you have the computer's hostname but not its IP address, just ping the hostname—this will give you the IP address, which you'll need for the next step."
+    },
+    {
+      "title": "Run arp -a ipaddress to get the MAC address.",
+      "content": "Run arp -a ipaddress to get the MAC address. The MAC address will appear under \"Physical Address\" in the arp results for Windows, and \"HWaddress\" on macOS and Linux. [5] X Research source"
+    },
+    {
+      "title": "Open the command prompt.",
+      "content": "Open the command prompt. If you can log in to the computer remotely with administrative access (and it's also running Windows), you can use the getmac command to view every MAC address on that device. [6] X Research source Type cmd into the Windows Search bar, right-click Command prompt , and then select Run as administrator ."
+    },
+    {
+      "title": "Run the getmac command.",
+      "content": "Run the getmac command. The full command is getmac /s ipaddress /u username /p password . [7] X Research source Replace ipaddress with the IP address or hostname of the remote computer. Replace username and password with an actual username and password that has administrator rights on the remote computer."
+    },
+    {
+      "title": "Find all MAC addresses in the \"Physical Address\" column.",
+      "content": "Find all MAC addresses in the \"Physical Address\" column. Each MAC address will appear next to a description of the interface type. If the interface isn't active, you'll see \"Media disconnected\" next to that MAC address. [8] X Research source"
+    },
+    {
+      "title": "Install Nmap on your PC or Mac.",
+      "content": "Install Nmap on your PC or Mac. You can use Nmap for Linux, Windows, or macOS to scan your local network and display the MAC and IP addresses of all connected computers. [9] X Research source You can download and install Nmap from https://nmap.org/download.html ."
+    },
+    {
+      "title": "Open a new command prompt or terminal window.",
+      "content": "Open a new command prompt or terminal window. If you're using Windows, type cmd into the Windows Search bar, right-click Command prompt , and then select Run as administrator . On macOS, type Terminal into Spotlight search, and then double-click Terminal . On Linux, press Ctrl + Alt + T or open a terminal window from your window manager."
+    },
+    {
+      "title": "Find your own local IP address.",
+      "content": "Find your own local IP address. To scan your network, you'll need to know which subnet to scan. Windows: Run the ipconfig command. macOS: Open System Preferences and go to Network > Advanced > TCP/IP . [10] X Research source Linux: Run ifconfig or ip a ."
+    },
+    {
+      "title": "Run the nmap command.",
+      "content": "Run the nmap command. The full command is nmap -sn xxx.xxx.xxx.* . Replace xxx.xxx.xxx.* with the network you want to scan. After a few moments, you'll see a list of all IP addresses on the network and their corresponding MAC addresses. For example, if your IP address is 10.0.0.3 and you want to scan all hosts on your subnet, you would use nmap -sn 10.0.0.* ."
+    }
+  ]
+}

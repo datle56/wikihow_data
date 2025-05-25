@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Run-C-Program-in-Command-Prompt",
+  "title": "How to Run a C Program Using Developer Command Prompt",
+  "steps": [
+    {
+      "title": "Go to https://visualstudio.microsoft.com/downloads in a web browser.",
+      "content": "Go to https://visualstudio.microsoft.com/downloads in a web browser. Visual Studio not only contains an IDE that allows you to write and compile C programs, but it also contains a Developer Command Prompt that allows you to compile C programs. The Developer Command Prompt works just like the regular Windows Command Prompt, except it has environment variables that allow you to run commands to compile C programs."
+    },
+    {
+      "title": "Download the proper version of Visual Studio for your needs.",
+      "content": "Download the proper version of Visual Studio for your needs. If you are just learning how to write a program or using it for personal use, click Free Download below “Community.” This is the free version of Visual Studio. If you are working for a small team, you can click Free Trial below “Professional.” If you work for a large company, you can click Free Trial below “Enterprise.” This will download the Visual Studio installer."
+    },
+    {
+      "title": "Open the “VisualStudioSetup.exe” file and click Continue.",
+      "content": "Open the “VisualStudioSetup.exe” file and click Continue . You can find it in your downloads folder by default. This will launch the Visual Studio installer. Once the installer launches, it will inform you that you need to set up a few things to configure the installation. Click Continue to proceed."
+    },
+    {
+      "title": "Check the \"Desktop Development with C++\" box along with any other workloads you want.",
+      "content": "Check the \"Desktop Development with C++\" box along with any other workloads you want. Installing Desktop Development with C++ will install the components needed to write and compile C++ and C programs. You can also install any other languages you are interested in working on (i.e., Python development). [1] X Research source Depending on what you are interested in working on, you may want to install other C++ development workloads, such as Mobile development with C++ , Game development with C++ , or WinUI application development. Additionally, you can click the Individual Components tab at the top and check individual boxes next to the tools you want to install, such as C++/CLI support."
+    },
+    {
+      "title": "Click Install.",
+      "content": "Click Install . This will begin installing the development workloads you selected. This may take a while."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. You can use a basic text program such as Notepad to write basic C programs. Notepad comes pre-installed on Windows. You can find Notepad in the Windows Start menu. Alternatively, you can use a program such as Notepad++ or an integrated development environment such as Eclipse to write C programs. These programs have tools to assist you with writing code."
+    },
+    {
+      "title": "Write your code.",
+      "content": "Write your code. You can write your entire C program in Notepad . If you have no programming experience, you may want to take some time to learn. You can find plenty of tutorials online with examples of basic C programs. [2] X Research source"
+    },
+    {
+      "title": "Save your text document as a C file.",
+      "content": "Save your text document as a C file. Use the following steps to do so: Click File in the menu bar at the top. Click Save as in the drop-down menu. Select All files next to “Save as type.” Enter a filename for the file. Add the extension “.c” at the end of the filename. Click Save ."
+    },
+    {
+      "title": "Open the Developer Command Prompt as an administrator.",
+      "content": "Open the Developer Command Prompt as an administrator. Visual Studio installs a Developer Command Prompt that works just like CMD, but allows you to execute developer commands. Use the following steps to open the Developer Command Prompt. Click the Windows Start button. Type developer command prompt Right-click Developer Command Prompt for VS . Click Run as administrator ."
+    },
+    {
+      "title": "Change to the folder your C program is saved to.",
+      "content": "Change to the folder your C program is saved to. You can change directories using the “CD” command. Type cd followed by the path to the location of your C program and press Enter . For example; cd C:\\Users\\[username]\\Documents\\C Programs\\Hello ."
+    },
+    {
+      "title": "Type cl followed by the filename of your C program and press ↵ Enter.",
+      "content": "Type cl followed by the filename of your C program and press ↵ Enter . For example, cl hello.c . This will compile the program and output an executable (.exe) file. You can compile more than one file at a time. To do so, enter each filename after the “cl” command separated by a space. For example, cl file1.c file2.c file3.c If you want to change the name of the executable file, type /out: followed by the name you want to give the executable file at the end of the command. For example, cl hello.c /out:helloworld.exe"
+    },
+    {
+      "title": "Run the executable file.",
+      "content": "Run the executable file. To run the executable file in the command line, simply type the filename of the executable file (i.e., “helloworld.exe”) and press Enter . This will run the executable file."
+    }
+  ]
+}

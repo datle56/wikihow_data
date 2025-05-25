@@ -1,0 +1,58 @@
+{
+  "url": "https://www.wikihow.com/Err-Connection-Closed",
+  "title": "Troubleshoot “Err Connection Closed” on Google Chrome",
+  "steps": [
+    {
+      "title": "A bad connection will result in \"ERR_CONNECTION_CLOSED\" errors.",
+      "content": "A bad connection will result in \"ERR_CONNECTION_CLOSED\" errors. If the network you're using disappears while browsing a site, you'll see this error pop-up, even if you were just browsing it normally. You may need to swap from a Wi-Fi network to a data network if you don't have a strong signal."
+    },
+    {
+      "title": "Router misconfigurations can lead to the error.",
+      "content": "Router misconfigurations can lead to the error. Turning your router off and back on again will clear any temporary settings that can be causing the connection issue. According to Oppido, you can restart your router by unplugging it for 30 seconds, then plugging it back in and allowing it to boot up for about five minutes. If you've had your router for more than 3 years, Oppido recommends you replace it."
+    },
+    {
+      "title": "Corrupted or old data can cause the \"ERR_CONNECTION_CLOSED\" error.",
+      "content": "Corrupted or old data can cause the \"ERR_CONNECTION_CLOSED\" error. Here's how you can clear the browsing data in Chrome: Click ⋮ . Click Delete browsing data . Select \"Cookies and other data\" and \"Cached images and files\". Click Delete data ."
+    },
+    {
+      "title": "Outdated or corrupted cached files can cause the error.",
+      "content": "Outdated or corrupted cached files can cause the error. Flushing the cache will allow you to establish a brand-new connection with the websites. Here's how to flush the DNC cache on multiple platforms: Windows 11/10: Run Command Prompt as an administrator and enter \" ipconfig /flushdns \". Press Enter and you should see a message like, \"Successfully flushed the DNS Resolver Cache.\" Mac: Open Terminal and enter \" sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder \". Press Return and enter your admin username and password to confirm."
+    },
+    {
+      "title": "An outdated browser can prompt a connection error.",
+      "content": "An outdated browser can prompt a connection error. Your browser automatically updates whenever you open Chrome for the first time, but here's how you can do it manually: Click ⋮ . Hover your mouse over Help and click About Google Chrome . Click Relaunch if Chrome has an update available."
+    },
+    {
+      "title": "Some extensions block the connection and cause the error.",
+      "content": "Some extensions block the connection and cause the error. Even though many extensions are helpful and add to the browser's functionality, some extensions can interrupt your connection to websites. To turn off extensions: Click the extension to turn it off. Alternatively, click the jigsaw puzzle piece to the right of the URL bar and click Manage Extensions . There you can click the toggle to turn them off. Some extensions, like Bitdefender's anti-tracking extension, can be the source of the connection block. [1] X Research source"
+    },
+    {
+      "title": "Some custom settings in Chrome can interrupt a connection.",
+      "content": "Some custom settings in Chrome can interrupt a connection. If you see \"ERR_CONNECTION_CLOSED\" error and have recently made changes to your Chrome's settings, that might be the culprit. To reset Chrome's settings, go to ⋮ > Settings > Reset Settings > Restore settings to their original defaults > Reset settings . [2] X Research source"
+    },
+    {
+      "title": "Corrupted files can cause the error.",
+      "content": "Corrupted files can cause the error. Just deleting the current installation and installing a fresh version might not be enough since the old files still exist. Instead, follow these steps to ensure you're installing a clean, new version of Chrome: Windows: Open \"Apps & features\" to see a list of installed apps. Select Chrome and click Uninstall . Delete the folders called C:\\Users\\YOUNAME\\AppData\\Local\\Google\\ and C:\\Program Files (x86)\\Google\\ . Restart your computer and then reinstall Chrome from https://www.google.com/chrome/ . Mac: Make sure Chrome isn't running from the Activity Monitor, then find the application in the Application folder. Drag and drop it in the Trash. In Finder, select Go > Go to Folder and enter \" ~/Library/Application Support/Google/Chrome . Delete everything in that folder and restart your computer. Finally, reinstall Chrome from https://www.google.com/chrome/ . [3] X Research source"
+    },
+    {
+      "title": "Software meant to protect you can also cause the connection error.",
+      "content": "Software meant to protect you can also cause the connection error. You can temporarily disable your antivirus software or allow the site that's giving you the error through your firewall. Windows: Open Settings > Updates & Security (Windows 10 only) > Windows Security > Firewall & Network Protection > Microsoft Defender Firewall . [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Mac: Go to System Settings > Network > Firewall . [5] X Research source Click + to add a site to go through the firewall."
+    },
+    {
+      "title": "Either of these can malfunction and give you the connection error.",
+      "content": "Either of these can malfunction and give you the connection error. Turn these off and see if the error is fixed. If you recently installed an antivirus software and enabled VPN right before you started getting ERR_CONNECTION_CLOSED errors, Oppido suggests to check the VPN. Sometimes, these VPNs can take over your internet connection and cause it to not work properly."
+    },
+    {
+      "title": "Malware can create the error.",
+      "content": "Malware can create the error. Run Windows Security or your antimalware tool to run a scan and see if you can find any suspicious files. Any questionable files will be quarantined so you can delete them. Though it sounds strange that malware could affect your internet connection, Oppido says it does happen. These malware programs can interfere, stop, and block your connection completely."
+    },
+    {
+      "title": "If your DNS servers are down, you'll get this error.",
+      "content": "If your DNS servers are down, you'll get this error. See if changing servers gets rid of the issue. Windows: Open Control Panel, navigate to Network & Internet > Network and Sharing Center , then click on your network, and select Properties . Click Properties again next to \"Internet Protocol Version 4. Enter 8.8.8.8 under the \"Use the following DNS server address\" for the Preferred DNS server field and 8.8.4.4 for the Alternate DNS server field, then click OK . Mac: Go to System Settings > Network , then choose your network and click Details . Click + in the DNS section and add 8.8.8.8 . Click OK to apply the changes and close the window."
+    },
+    {
+      "title": "An unreachable address will also give this connection error.",
+      "content": "An unreachable address will also give this connection error. This isn't a frequent issue, but it can happen if you have an old website address that you want to visit again. It may no longer exist or you may have incorrectly written it down. Open Command Prompt (Windows) or Terminal (Mac) and enter \" ping YOUR SITE'S IP ADDRESS Or ping YOURSITE.com . If you don't get a ping back, the address is null or incorrect."
+    }
+  ]
+}

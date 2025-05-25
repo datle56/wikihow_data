@@ -1,0 +1,134 @@
+{
+  "url": "https://www.wikihow.com/Become-Root-in-Linux",
+  "title": "How to Become Root in Linux",
+  "steps": [
+    {
+      "title": "Open the terminal",
+      "content": "Open the terminal . Ubuntu and several other distributers lock the root account automatically to prevent you from using commands that can damage your system. You can unlock the root account in the terminal. If you're in the desktop environment, you can press ' Ctrl + Alt + T to start the terminal. [2] X Research source"
+    },
+    {
+      "title": "Type .",
+      "content": "Type . sudo passwd root and press ↵ Enter . When prompted for a password, enter your user password. [3] X Research source"
+    },
+    {
+      "title": "Set a new password.",
+      "content": "Set a new password. You'll be prompted to create a new password and enter it twice. Once a password has been set, the root account will be active. [4] X Research source"
+    },
+    {
+      "title": "Lock the root account again.",
+      "content": "Lock the root account again. If you want to lock the root account, enter the following command to remove the password and lock root: sudo passwd -dl root"
+    },
+    {
+      "title": "Open the terminal.",
+      "content": "Open the terminal. If the terminal is not already open, open it. Many distributions allow you to open it by pressing Ctrl + Alt + T . [5] X Research source"
+    },
+    {
+      "title": "Type .",
+      "content": "Type . su - and press ↵ Enter . This will attempt to log you in as \"super user.\" You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root. [6] X Research source"
+    },
+    {
+      "title": "Enter the root password when prompted.",
+      "content": "Enter the root password when prompted. After typing \"su -\" and pressing Enter . You'll be prompted for the root password. [7] X Research source If you get an \"authentication error\" message, your root account is likely locked. You will need to unlock the root account ."
+    },
+    {
+      "title": "Check the command prompt.",
+      "content": "Check the command prompt. When you are logged in as root, the command prompt will end with # instead of $ (if you're using the bash, bourne, or korn shell) or % (if you're using csh, tcsh, or zsh)."
+    },
+    {
+      "title": "Enter the commands that require root access.",
+      "content": "Enter the commands that require root access. Once you've used su - to log in as root, you can run any commands that require root access. The su command is preserved until the end of the session, so you don't need to keep re-entering the root password every time you need to run a command."
+    },
+    {
+      "title": "Consider using .",
+      "content": "Consider using . sudo instead of su - . sudo (\"super user do\") is a command that lets you run other commands as root temporarily. This is the best way for most users to run root commands, as the root environment is not maintained, and the user doesn't need to know the root password. Instead, the user will enter their own user password for temporary root access. [8] X Research source Type sudo command and press ↵ Enter (e.g. sudo ifconfig ). When prompted for the password, enter your user password, not the root password. sudo is the preferred method for distributions like Ubuntu, where it will work even when the root account is locked. This command is limited to users with administrator privileges. Users can be added or removed from /etc/sudoers ."
+    },
+    {
+      "title": "Open the terminal.",
+      "content": "Open the terminal. Ubuntu and several other distributers lock the root account automatically to prevent you from using commands that can damage your system. You can unlock the root account in the terminal. If you're in the desktop environment, you can press ' Ctrl + Alt + T to start the terminal. [9] X Research source"
+    },
+    {
+      "title": "Type sudo nano /etc/gdm3/custom.conf and press ↵ Enter.",
+      "content": "Type sudo nano /etc/gdm3/custom.conf and press ↵ Enter . This command allows you to edit the \"custom.conf\" file so that you can log in as the root account in the login page when you start your computer. [10] X Research source"
+    },
+    {
+      "title": "Enter your user password and press ↵ Enter.",
+      "content": "Enter your user password and press ↵ Enter . Before you can edit the \"custom.conf\" file, Ubuntu asks you to enter your user password. Enter your password and press Enter. ."
+    },
+    {
+      "title": "Add AllowRoot=True to the file.",
+      "content": "Add AllowRoot=True to the file. Go to the bottom of the file. Add \"AllowRoot=True\" below \"TimedLoginDelay = 10.\" [11] X Research source Add a few spaces so that the \"A\" in \"AllowRoot\" goes right below the \"T\" in \"TimedLoginDelay\"."
+    },
+    {
+      "title": "Press Ctrl+X.",
+      "content": "Press Ctrl + X . This displays a prompt that asks if you want to save the file."
+    },
+    {
+      "title": "Press Y followed by ↵ Enter.",
+      "content": "Press Y followed by ↵ Enter . This saves the \"Custom.conf\" file. You should return to the normal Terminal prompt."
+    },
+    {
+      "title": "Type sudo nano /etc/pam.d/gdm-password and press ↵ Enter.",
+      "content": "Type sudo nano /etc/pam.d/gdm-password and press ↵ Enter . This is the command to edit the password authentication manager file. [12] X Research source"
+    },
+    {
+      "title": "Enter your password and press ↵ Enter.",
+      "content": "Enter your password and press ↵ Enter . Before you can edit the file, you are required to enter your user password. Enter your password and press Enter to continue."
+    },
+    {
+      "title": "Place a # on the third line.",
+      "content": "Place a # on the third line. The third line says \"auth required pam_succeed_if.so user != root quiet_success.\" Simply place a hashtag (#) at the beginning of this line. The entire line should turn blue. This enables root log in using the root password. [13] X Research source"
+    },
+    {
+      "title": "Press Ctrl+X.",
+      "content": "Press Ctrl + X . This displays a prompt that asks if you want to save the file."
+    },
+    {
+      "title": "Press Y followed by ↵ Enter.",
+      "content": "Press Y followed by ↵ Enter . This saves the \"custom.conf\" file. You should return to the normal Terminal prompt. [14] X Research source"
+    },
+    {
+      "title": "Consider using other methods for gaining temporary root access.",
+      "content": "Consider using other methods for gaining temporary root access. Logging in as root is not recommended for regular use, as it is very easy to perform commands that will render your system inoperable, and it also poses a security risk, especially if you are running an SSH server on your machine. Only log in as root when performing emergency repairs, such as dealing with disk failures or restoring locked accounts. Using sudo or su instead of logging in as root will help prevent unintended damage while logged in as root. Using these commands gives the user a chance to think about the command before severe damage is done. Some distributions, such as Ubuntu, leave the root account locked until you manually unlock it. Not only does this prevent users from unknowingly doing too much damage using the root account. It also secures the system from potential hackers, as the root account is typically targeted first. With a locked root account, hackers aren't able to gain access to it. You will need to unlock the root account and allow root login before logging in to the root account."
+    },
+    {
+      "title": "Enter .",
+      "content": "Enter . root as the user when logging into Linux. If the root account is unlocked and you know the password, you can log in as root when you're prompted to log in with a user account. Enter \"root\" as the user when prompted to log in. If \"root\" is not listed as one of the log in accounts, click Not listed? and type \"root\" as the username. If you need root access to perform a command, use the method in the previous section."
+    },
+    {
+      "title": "Enter the root password as the user password.",
+      "content": "Enter the root password as the user password. After entering root as the username, enter the root password when prompted. In many cases, the root password may be \"password.\" If you don't know the root password, or have forgotten it, see the next section for instructions on resetting it. In Ubuntu, the root account is locked and cannot be used until it has been unlocked."
+    },
+    {
+      "title": "Avoid running complex programs while logged in as root.",
+      "content": "Avoid running complex programs while logged in as root. There's a chance that the program you intend to run will have a negative effect on your system when it has root access. It's highly recommended that you use sudo or su to run programs instead of logging in as root."
+    },
+    {
+      "title": "Reset the root password if it has been forgotten.",
+      "content": "Reset the root password if it has been forgotten. If you've forgotten the root password and your user password, you'll need to boot into recovery mode in order to change them. If you know your user password and need to change the root password , just type sudo passwd root , enter your user password, then create a new root password."
+    },
+    {
+      "title": "Reboot your computer and hold left-.",
+      "content": "Reboot your computer and hold left- . ⇧ Shift after the BIOS screen. This will open the GRUB menu. The timing on this can be tricky, so you may have to try multiple times."
+    },
+    {
+      "title": "Select the first .",
+      "content": "Select the first . (recovery mode) entry on the list. This will load recovery mode for your current distribution."
+    },
+    {
+      "title": "Select the .",
+      "content": "Select the . root option from the menu that appears. This will start the terminal with you logged in as the root account."
+    },
+    {
+      "title": "Remount the drive with write permissions.",
+      "content": "Remount the drive with write permissions. When you boot into recovery mode, you will typically only have read permissions. Enter the following command to enable write access: [15] X Research source mount -rw -o remount /"
+    },
+    {
+      "title": "Create a new password for any accounts you're locked out of.",
+      "content": "Create a new password for any accounts you're locked out of. Once you're logged in as root and have changed the access permissions, you can create a new password for any account: [16] X Research source Type passwd accountName and press ↵ Enter . If you need to change the root password, type passwd root . Enter the new password twice when prompted."
+    },
+    {
+      "title": "Reboot your computer after resetting passwords.",
+      "content": "Reboot your computer after resetting passwords. Once you're finished resetting passwords, you can reboot and use your computer as normal. Your new passwords will take effect immediately. [17] X Research source"
+    }
+  ]
+}

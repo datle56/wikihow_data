@@ -1,0 +1,38 @@
+{
+  "url": "https://www.wikihow.com/Discord-No-Route",
+  "title": "How to Solve the Discord \"No Route” Error",
+  "steps": [
+    {
+      "title": "Discord only works with VPNs that have UDP.",
+      "content": "Discord only works with VPNs that have UDP. UDP stands for \"user datagram protocol\" and is a network protocol, like TCP. Because Discord uses UDP for voice connections, [1] X Research source VPNs that only connect via TCP can leave you with a \"No Route\" error when trying to connect to a Discord voice channel. [2] X Research source If your VPN does not have UDP, you'll need to turn it off before using Discord voice chat."
+    },
+    {
+      "title": "Sometimes, Discord's Quality of Service settings can cause connection issues.",
+      "content": "Sometimes, Discord's Quality of Service settings can cause connection issues. Quality of Service (QoS) is a setting that notifies your router that the information Discord is sending is higher priority than other packets being sent. This usually makes Discord's connection better, but some routers or internet service providers don't work well with QoS. To disable QoS, open your Discord settings and click Voice & Video under the \"App Settings\" heading. Toggle off Enable Quality of Service High Packet Priority under the \"Quality of Service\" heading."
+    },
+    {
+      "title": "Discord can have a temporary glitch connecting to a specific server in a region.",
+      "content": "Discord can have a temporary glitch connecting to a specific server in a region. So changing it will force Discord to refresh the connection, and that can fix your \"No Route\" error. This step helps server owners get rid of the \"No Route\" message that won't go away. Open Channel Settings. If you're using the desktop app or browser, click the gear icon to the right of the voice channel. On mobile, tap and hold the voice channel's name and tap Edit channel . Scroll down and change \"Automatic\" in the \"Region Override\" drop-down menu to anything else. Click or tap Save Changes (Desktop) or Save (mobile) and talk in the voice channel. Return to Channel Settings and change the \"Region Override\" drop-down menu to \"Automatic.\" Click or tap Save Changes (Desktop) or Save (mobile). [3] X Research source"
+    },
+    {
+      "title": "Old or corrupted data in your DNS cache can cause Discord connection problems.",
+      "content": "Old or corrupted data in your DNS cache can cause Discord connection problems. Caches save data between sessions to help future sessions run faster, but sometimes the data in these caches can get old and corrupted, which leads to a plethora of issues. To flush your DNS cache, search for \"Command Prompt\" in the taskbar search bar and select Command Prompt . Type ipconfig /flushdns and press Enter . Once the command has finished running, close the Command Prompt. Restart Discord and try entering a voice channel again."
+    },
+    {
+      "title": "If Discord's servers are down, you won't be able to connect to chat.",
+      "content": "If Discord's servers are down, you won't be able to connect to chat. Go to https://discordstatus.com/ and make sure the servers aren't offline, especially voice servers in your region. You want to see \"Operational\" next to your region if you want to use voice chat without the \"No Route\" error."
+    },
+    {
+      "title": "Turning everything off and back on can make the \"No Route\" message disappear.",
+      "content": "Turning everything off and back on can make the \"No Route\" message disappear. It might sound too simple to work, but usually, the easiest fixes are the ones that work. You need to shut down your computer and unplug your modem and/or router, and computer. If you have a laptop with a battery, take out the battery. Leave your computer shut off and keep your modem/router unplugged for at least one minute. Leaving everything unplugged and turned off ensures that they are power cycling properly. After one minute, plug everything back in, re-insert the battery if you removed it, and turn your computer back on. The router and modem will take about 3 minutes to initialize before you can try using Discord again."
+    },
+    {
+      "title": "A firewall or antivirus can prevent Discord from connecting to the internet.",
+      "content": "A firewall or antivirus can prevent Discord from connecting to the internet. Without being able to connect, Discord will display the \"No Route\" error message. Go to your firewall/antivirus settings and make sure Discord is allowed to access the Internet."
+    },
+    {
+      "title": "If nothing fixes your issue, or if the fix is temporary, you can always get in touch with support.",
+      "content": "If nothing fixes your issue, or if the fix is temporary, you can always get in touch with support. You should have a screenshot of your console logs so the support staff can figure out what's wrong. To get this: Get Discord's PTB client or Canary client for Windows or Mac . Join the voice channel you're seeing the \"No Route\" message in. Press Ctrl + Shift + I (Windows) or Opt + Cmd + I (Mac) to open Developer Tools. Click the Console tab. Take a screenshot of the entire page . Make sure error messages are in the screenshot!"
+    }
+  ]
+}

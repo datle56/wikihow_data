@@ -1,0 +1,154 @@
+{
+  "url": "https://www.wikihow.com/Install-Macos-on-a-Virtual-Machine",
+  "title": "How to Install MacOS on a Virtual Machine Using VirtualBox",
+  "steps": [
+    {
+      "title": "Download macOS from the Mac App Store.",
+      "content": "Download macOS from the Mac App Store. You'll need the installer to install the latest version of macOS on a virtual machine. Unlike previous macOS versions, Sonoma (and all of its predecessors beginning with Big Sur, including Ventura) is only downloadable from the Mac App Store. If you're using a Mac, this is easy. On Windows and Linux, you'll need to find someone with a Mac to create the file for you. On a Mac, launch the App Store, search for macos sonoma , (or Ventura), click Get , and then click Download . [1] X Research source The remaining steps in this part of the process will walk you through creating the macOS Sonoma or Ventura installer on a Mac to use for your VM."
+    },
+    {
+      "title": "Open a Terminal.",
+      "content": "Open a Terminal. Open the Launchpad, type terminal , and select Terminal."
+    },
+    {
+      "title": "Create an empty disk image.",
+      "content": "Create an empty disk image. To do this, type the following command and press Return: hdiutil create -o /tmp/Sonoma -size 16384m -volname Sonoma -layout SPUD -fs HFS+J If you're using Ventura, you can replace Sonoma with Ventura in all of these steps."
+    },
+    {
+      "title": "Mount the empty disk image.",
+      "content": "Mount the empty disk image. To do this, you'll need to run another command: hdiutil attach /tmp/Sonoma.dmg -noverify -mountpoint /Volumes/Sonoma"
+    },
+    {
+      "title": "Create install media from the image.",
+      "content": "Create install media from the image. Run this command to do so: sudo /Applications/Install\\ macOS\\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/Sonoma --nointeraction Because you used the sudo command, you'll be prompted to type your Mac user password. Type your password (you won't see any characters while doing so) and press Return to start the process."
+    },
+    {
+      "title": "Unmount the new disk image.",
+      "content": "Unmount the new disk image. To do this, run this command: hdiutil eject -force /Volumes/Install\\ macOS\\ Sonoma ."
+    },
+    {
+      "title": "Create a file that you can turn into an ISO image.",
+      "content": "Create a file that you can turn into an ISO image. The following command turns your Sonoma image into a CDR file, which is easy to convert to the type of file you'll need to install macOS in your virtual machine: hdiutil convert /tmp/Sonoma.dmg -format UDTO -o ~/Desktop/Sonoma"
+    },
+    {
+      "title": "Convert the CDR file to an ISO.",
+      "content": "Convert the CDR file to an ISO. All you'll need to do is change the file's extension, which you can do by running this command: mv -v ~/Desktop/Sonoma.cdr ~/Desktop/Sonoma.iso You now have a file called Sonoma.iso on your desktop. You will use this file to install macOS on your virtual machine. If you want to install it on Windows, copy it to a flash drive or upload it to a cloud storage service like iCloud or Google Drive. To delete the file you originally downloaded, which is no longer needed, run this command: rm -fv /tmp/Sonoma.dmg"
+    },
+    {
+      "title": "Download VirtualBox.",
+      "content": "Download VirtualBox. VirtualBox is a virtual machine created by Oracle. You can use VirtualBox on Windows, Intel-based Macs, and Linux. [2] X Research source Go to https://www.virtualbox.org/wiki/Downloads in a web browser like Google Chrome . To install on Windows, click the Windows hosts link. On a Mac, click macOS/Intel hosts . On Linux, click Linux Distributions , then download the installation file for your version of Linux. Once downloaded, double-click the installer and follow the on-screen instructions to install."
+    },
+    {
+      "title": "Download the VirtualBox expansion pack.",
+      "content": "Download the VirtualBox expansion pack. This expansion pack enables USB 3.0 for keyboard and mouse support. Go to https://www.virtualbox.org/wiki/Downloads . Scroll down and click All supported platforms below \"VirtualBox 7.0.14 Oracle VM VirtualBox Extension Pack.\" Double-click the expansion pack file in your web browser or Downloads folder, click Install , and follow the on-screen instructions."
+    },
+    {
+      "title": "Create a new virtual machine in VirtualBox.",
+      "content": "Create a new virtual machine in VirtualBox. Open VirtualBox after installing, then use these steps to create a new virtual machine for your Mac installation: Click New below the blue icon that resembles a circle with jagged edges. Type a name for the new computer next to \"Name\" (e.g. macOS Sonoma ). Select a location on your computer to install the virtual machine. Be sure to choose a drive with plenty of space. Select the ISO file from the \"ISO Image\" menu. Select Mac OS X as the \"Type.\" Select Mac OS X (64-bit) as the version. Click Next ."
+    },
+    {
+      "title": "Allocate memory & CPU to the virtual machine and click Next.",
+      "content": "Allocate memory & CPU to the virtual machine and click Next . Click and drag the slider bar to allocate memory to the virtual machine. You can also type the amount of memory in megabytes (MB) in the box to the right of the slider bar. macOS needs at least 4 GB (8 GB recommended) to run. Also, allocate at least 2 CPU cores to macOS using the second slider. The more memory you allocate, the better it will run. You cannot allocate more memory than your computer has. [3] X Research source Don't allocate more than 40% of your RAM to your virtual machine; otherwise, it will slow down your operating system. The red line above the slider bar indicates how many CPU cores your operating system needs to run. Do not drag the slider bar past the green line to avoid performance issues."
+    },
+    {
+      "title": "Create a virtual hard disk.",
+      "content": "Create a virtual hard disk. Now, you'll need to allocate some hard drive space to your macOS installation. Ensure the radio option next to \"Create a virtual hard disk now\" is checked, and use the slider to dedicate at least 35 GB of hard drive space to your virtual Mac. If you have space to spare and plan to install software on your virtual Mac, allocate at least 128GB. [4] X Research source"
+    },
+    {
+      "title": "Click Finish.",
+      "content": "Click Finish . This creates a new virtual machine."
+    },
+    {
+      "title": "Select the virtual machine and click Settings.",
+      "content": "Select the virtual machine and click Settings . It's the yellow gear icon at the top of VirtualBox. This allows you to tweak the virtual machine settings."
+    },
+    {
+      "title": "Click System and uncheck \"Floppy.\"",
+      "content": "Click System and uncheck \"Floppy.\" \"System\" is in the menu panel to the left. Click this option and then click the checkbox next to \"Floppy\" in the \"Boot order\" box. This ensures the virtual machine will not try to boot from a floppy disk."
+    },
+    {
+      "title": "Ensure \"ICH9\" is selected next to \"Chipset.\"",
+      "content": "Ensure \"ICH9\" is selected next to \"Chipset.\" This drop-down menu is below the \"Boot order\" box. If it does not read \"ICH9\" by default, click the drop-down menu and select \"ICH9\" as the chipset."
+    },
+    {
+      "title": "Click Display in the menu panel to the left.",
+      "content": "Click Display in the menu panel to the left. This opens the Display menu for the virtual machine."
+    },
+    {
+      "title": "Allocate at least 128 MB of video memory.",
+      "content": "Allocate at least 128 MB of video memory. The \"Video Memory\" slider bar is at the top of the menu. Click and drag the slider to allocate video memory. You can also type the amount of video memory you want to allocate in the box to the right. Make sure you are allocating at least 128 MB of video memory. Additionally, check the box next to \"Enable 3D Acceleration\" if available."
+    },
+    {
+      "title": "Click the Network tab and select your adapters.",
+      "content": "Click the Network tab and select your adapters. You can leave the default selected on the Adapter 1 tab. Click the Adapter2 tab. On this tab, you'll select a backup adapter in case the first isn't available. Select Bridged , and then choose your Wi-Fi card."
+    },
+    {
+      "title": "Click USB and select \"USB 3.0 (xHCI) Controller.\"",
+      "content": "Click USB and select \"USB 3.0 (xHCI) Controller.\" The USB menu option is in the menu panel to the left. Click it and then click the radio option next to \"USB 3.0 (xHCI) Controller.\""
+    },
+    {
+      "title": "Close VirtualBox.",
+      "content": "Close VirtualBox. It's important that you quit VirtualBox before executing the following code. If you do not, it might not install properly."
+    },
+    {
+      "title": "Open the Command Prompt",
+      "content": "Open the Command Prompt as an Administrator. Before running the virtual machine, you must manually patch it using the Command Prompt. Use the following steps to open the Command Prompt as an administrator: [5] X Research source Click the Windows Start menu. Type \"CMD\". Right-click the Command Prompt . Click Run as Administrator . Click Yes ."
+    },
+    {
+      "title": "Change to the location of the VirtualBox installation in Command Prompt.",
+      "content": "Change to the location of the VirtualBox installation in Command Prompt. The VirtualBox installation is in the \"Oracle\" folder in \"Program Files\" by default. To change to the location of the VirtualBox installation in the command prompt, type cd \"C:\\Program Files\\Oracle\\VirtualBox\\\" or cd \"%programfiles%\\Oracle\\VirtualBox\\\" and press Enter . If you installed VirtualBox in a different directory, type \"cd\" followed by the exact location of the VirtualBox install location in quotation marks."
+    },
+    {
+      "title": "Enter the following commands and press ↵ Enter.",
+      "content": "Enter the following commands and press ↵ Enter . You'll need to enter the following commands in the Command Prompt individually. Copy and paste each of these long commands into the window and press Enter after each line. Replace \"VM Name\" with the actual name you gave your virtual machine (e.g., macOS Sonoma, MyMac, etc.). You'll use different commands for different processor types: [6] X Research source If you have an Intel processor: cd \"C:\\Program Files\\Oracle\\VirtualBox\\\" (If you installed VirtualBox in another directory, replace the path here) VBoxManage.exe modifyvm \"VM Name\" –-cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff VBoxManage setextradata \"VM Name\" VBoxInternal/Devices/efi/0/Config/DmiSystemProduct “MacBookPro15,1” VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/efi/0/Config/DmiBoardProduct\" \"Mac-551B86E5744E2388\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/smc/0/Config/DeviceKey\" \"ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC\" 1 If you have an AMD processor: cd \"C:\\Program Files\\Oracle\\VirtualBox\\\" (If you installed VirtualBox in another directory, replace the path here) VBoxManage.exe modifyvm \"VM Name\" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemProduct\" \"iMac11,3\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/efi/0/Config/DmiSystemVersion\" \"1.0\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/efi/0/Config/DmiBoardProduct\" \"Iloveapple\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/smc/0/Config/DeviceKey\" \"ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc\" VBoxManage setextradata \"VM Name\" \"VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC\" 1 VBoxManage modifyvm \"VM Name\" --cpu-profile \"Intel Core i7-6700K\""
+    },
+    {
+      "title": "Reopen VirtualBox and click Start.",
+      "content": "Reopen VirtualBox and click Start . This starts your new virtual machine. It may take several minutes for macOS to finish initializing. Especially the first time you launch macOS."
+    },
+    {
+      "title": "Select your language and click the arrow icon.",
+      "content": "Select your language and click the arrow icon."
+    },
+    {
+      "title": "Select Disk Utility and click Continue.",
+      "content": "Select Disk Utility and click Continue . You will need to format the virtual drive to install macOS Sonoma or Ventura. You can do that in Disk Utility."
+    },
+    {
+      "title": "Select VBOX HARDDISK Media and click Erase.",
+      "content": "Select VBOX HARDDISK Media and click Erase . Click \"VBOX HARDDISK Media\" on the panel to the left and then click Erase at the top. It has an icon that resembles a hard drive with an \"x\" in front of it."
+    },
+    {
+      "title": "Type a name for the hard disk and click Erase.",
+      "content": "Type a name for the hard disk and click Erase . Use the bar at the top of the pop-up to type a name for the hard drive (e.g., \"macOS HD\") and click Erase to format the drive."
+    },
+    {
+      "title": "Quit Disk Utility.",
+      "content": "Quit Disk Utility. When you're finished, click Done , then click the red circle at the top of the window to close Disk Utility."
+    },
+    {
+      "title": "Select Install macOS Sonoma (or Ventura) and click Continue.",
+      "content": "Select Install macOS Sonoma (or Ventura) and click Continue . It's the second option in the menu."
+    },
+    {
+      "title": "Agree to the Terms and Conditions.",
+      "content": "Agree to the Terms and Conditions. To agree to the Terms and Conditions, click Agree , and then Agree again."
+    },
+    {
+      "title": "Select the newly formatted hard drive and click Continue.",
+      "content": "Select the newly formatted hard drive and click Continue . The hard drive you just formatted should be listed at the bottom of the screen. Click this hard drive and click Continue to begin installing macOS."
+    },
+    {
+      "title": "Go through the macOS setup process.",
+      "content": "Go through the macOS setup process. Now that you've installed macOS, follow the on-screen instructions to set up the operating system like you'd set up a new Mac."
+    },
+    {
+      "title": "You're stuck in a boot loop.",
+      "content": "You're stuck in a boot loop. If you have an Intel processor and get stuck in a boot loop after a kernel panic during installation, it should fix itself after about 6 or 7 reboots. [7] X Research source If it doesn't, some people have had luck running this command in Command Prompt: VBoxManage setextradata “VM_NAME” “VBoxInternal/TM/TSCMode” “RealTSCOffset” Replace VM_NAME with the name of your VM."
+    },
+    {
+      "title": "Fix \"Failed to query SMC value from the host (VERR_INVALID_HANDLE).\"",
+      "content": "Fix \"Failed to query SMC value from the host (VERR_INVALID_HANDLE).\" If you get this error, try running this command at the command prompt: VBoxManage.exe setextradata “VM_NAME” “VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC” 0 Replace VM_NAME with the name of your VM. If you get a different error after that, try VBoxManage modifyvm \"macOS Sonoma\" --cpu-profile \"Intel Xeon X5482 3.20GHz\""
+    }
+  ]
+}

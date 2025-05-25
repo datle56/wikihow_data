@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Change-the-Icon-of-Removable-Drives",
+  "title": "How to Change the Icon of Removable Drives",
+  "steps": [
+    {
+      "title": "Create your icon, or find one online.",
+      "content": "Create your icon, or find one online. A good size is 34 pixels square."
+    },
+    {
+      "title": "Open Notepad to create your Autorun file.",
+      "content": "Open Notepad to create your Autorun file."
+    },
+    {
+      "title": "Type [AutoRun] in the first line.",
+      "content": "Type [AutoRun] in the first line."
+    },
+    {
+      "title": "Name your drive in the second line:",
+      "content": "Name your drive in the second line: label=Name"
+    },
+    {
+      "title": "Specify your icon in the third line:",
+      "content": "Specify your icon in the third line: ICON=your-icon-file.ico. If you wanted to call your drive \"My USB Drive\" with an icon named \"myusbdrive.ico\""
+    },
+    {
+      "title": "Click File, then Save As.",
+      "content": "Click File, then Save As. Change the file type to \"All\" and name it AUTORUN.inf"
+    },
+    {
+      "title": "Your autorun.inf file would look like this:",
+      "content": "Your autorun.inf file would look like this: [AutoRun] label=My USB Drive ICON=myusbdrive.ico"
+    },
+    {
+      "title": "Keep in mind that the ICON name should match the name of the icon you wish to use.",
+      "content": "Keep in mind that the ICON name should match the name of the icon you wish to use."
+    },
+    {
+      "title": "Note:",
+      "content": "Note: Depending on the label you choose, and the location of your icon file, you may need to wrap the label and folder names in quotes (\") to handle long filenames. It has been reported that on some systems your \".INF\" file extension may need to be capitalized in order to work."
+    },
+    {
+      "title": "Ensure that both your autorun.inf and any .ico files are in the ROOT of your removable drive, instead of a folder, unless you have specified the correct folder for the icon in your .inf file.",
+      "content": "Ensure that both your autorun.inf and any .ico files are in the ROOT of your removable drive, instead of a folder, unless you have specified the correct folder for the icon in your .inf file."
+    },
+    {
+      "title": "Highlight both files.",
+      "content": "Highlight both files. Right click and select properties, set files to \"hidden\" to hide files from view."
+    }
+  ]
+}

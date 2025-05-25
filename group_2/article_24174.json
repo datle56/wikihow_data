@@ -1,0 +1,282 @@
+{
+  "url": "https://www.wikihow.com/Install-a-Custom-ROM-on-Android",
+  "title": "Install Custom ROMs on Any Android Phone with Our Step-by-Step Guide",
+  "steps": [
+    {
+      "title": "Check if your manufacturer allows unlocking the bootloader.",
+      "content": "Check if your manufacturer allows unlocking the bootloader. Depending on your Android model, you may be able to unlock the bootloader with the manufacturer's help. Not all manufacturers allow this; even if they do, not all models may be supported. To see which models your manufacturer allows to be unlocked, search \"[manufacturer's name] unlock bootloader\" (e.g., \"HTC unlock bootloader\"). This will typically display the manufacturer's bootloader website as the first result."
+    },
+    {
+      "title": "Check if your carrier allows unlocking the bootloader.",
+      "content": "Check if your carrier allows unlocking the bootloader. Even if the device manufacturer allows unlocking the bootloader, your carrier may not allow it. Contact your cellular provider's customer service and ask if they allow you to unlock the bootloader."
+    },
+    {
+      "title": "Understand the risks and limitations.",
+      "content": "Understand the risks and limitations. Several risks are involved with unlocking your bootloader and installing a custom ROM: Void your warranty: Unlocking the bootloader voids any warranty on your device, and you will lose support from the manufacturer. Hardware and software issues: Certain features may not work properly or may not work as well, and some apps may not be able to run. Security risks: Many custom ROMs do not allow the same level of encryption that the manufacturer's ROM allows. Installing custom ROMs may make you more susceptible to malware, viruses, and security breaches. [1] X Research source Data loss: During installation, you may lose the data on your phone. Be sure to back up all data you want to keep before proceeding. You may brick your phone: In the worst-case scenario, installing a custom ROM may cause permanent damage to your phone and render it inoperable and unable to boot up."
+    },
+    {
+      "title": "Open your Android's Settings.",
+      "content": "Open your Android's Settings. To do so, swipe down from the top of the screen and tap the gear icon in the upper-right corner."
+    },
+    {
+      "title": "Scroll to the bottom and tap About phone.",
+      "content": "Scroll to the bottom and tap About phone . It's usually near the bottom of the Settings menu."
+    },
+    {
+      "title": "Tap the Build Number entry seven times.",
+      "content": "Tap the Build Number entry seven times. This will enable the Developer Options menu. \"Build number\" may be under \"Software Information\" on some phone models."
+    },
+    {
+      "title": "Return to Settings and tap Developer Options.",
+      "content": "Return to Settings and tap Developer Options . Press the back arrow to return to the previous menu and tap the newly created \"Developer Options\" menu."
+    },
+    {
+      "title": "Enable OEM unlocking (if present).",
+      "content": "Enable OEM unlocking (if present). Not all phones will display this option, and it is only necessary if it is there."
+    },
+    {
+      "title": "Enable USB debugging.",
+      "content": "Enable USB debugging . This allows you to send commands to your Android through ADB."
+    },
+    {
+      "title": "Download the Android SDK tools you'll need.",
+      "content": "Download the Android SDK tools you'll need. You'll need a few utilities on your computer to unlock your bootloader. Visit the [hhttps://developer.android.com/tools/releases/platform-tools Android developer website]. Scroll down and click the download for your operating system. Scroll down and click the checkbox to agree to the terms of service. Click Download Android SDK Platform Tools ."
+    },
+    {
+      "title": "Extract the ZIP file.",
+      "content": "Extract the ZIP file . Double-click the ZIP file after you've placed it in its folder and click the \"Extract\" option to extract the contents of the ZIP file . There should be a folder called \"cmdline-tools\" in the zip file. Place that folder in any location on your hard drive."
+    },
+    {
+      "title": "Download and install the USB drivers for your Android model.",
+      "content": "Download and install the USB drivers for your Android model. You can find these on your device's manufacturer's support page."
+    },
+    {
+      "title": "Connect your Android to your computer via USB.",
+      "content": "Connect your Android to your computer via USB. You can use the charger that came with your phone and connect it to a free USB port on your computer."
+    },
+    {
+      "title": "Open the \"Platform-tools\" folder.",
+      "content": "Open the \"Platform-tools\" folder. It's inside the folder that was created when you extracted the zip file you downloaded."
+    },
+    {
+      "title": "Open a command-line window.",
+      "content": "Open a command-line window. To do so, click the address bar at the top, type \"cmd\", and press Enter ."
+    },
+    {
+      "title": "Type adb devices and press ↵ Enter.",
+      "content": "Type adb devices and press ↵ Enter . You should see your device's serial number."
+    },
+    {
+      "title": "Connect your Android",
+      "content": "Connect your Android to your computer via USB. You can use the charger that came with your phone and connect it to a free USB port on your computer."
+    },
+    {
+      "title": "Open your device manufacturer's unlock code procedure instructions.",
+      "content": "Open your device manufacturer's unlock code procedure instructions. The following process will vary depending on your phone manufacturer. Be sure to follow the instructions they provide exactly. What follows here is a general guide."
+    },
+    {
+      "title": "Reboot your device",
+      "content": "Reboot your device into the fastboot menu. The process for this will vary depending on your device, but generally, you'll need to turn off your phone and then hold Power and Volume Down for 10 seconds."
+    },
+    {
+      "title": "Type the unlock key retrieval command in the command line.",
+      "content": "Type the unlock key retrieval command in the command line. This command is different for every manufacturer. For example, for HTC, you would type fastboot oem get_identifier_token . Make sure your Android device is still connected to your computer and that the Command Prompt window is open from the platform-tools folder."
+    },
+    {
+      "title": "Copy the device ID code.",
+      "content": "Copy the device ID code. You'll see a long code appear on the screen, which may be broken into several lines. Copy the entire code."
+    },
+    {
+      "title": "Submit your device ID code to the manufacturer.",
+      "content": "Submit your device ID code to the manufacturer. Use the bootloader unlock code request form to submit and request your unlock code. This can take a week or two, depending on the manufacturer."
+    },
+    {
+      "title": "Run the command specified by your manufacturer.",
+      "content": "Run the command specified by your manufacturer. When you receive your unlock code, you'll be given the command to apply it to your device. This command varies depending on the manufacturer. Your Android must be connected to your computer and in fastboot mode. For Nexus devices, run fastboot oem unlock , or fastboot flashing unlock for the Nexus 5X and newer. The command for your manufacturer may be different. For example, HTC users would type fastboot oem unlocktoken Unlock_code.bin after placing the Unlock_code.bin file received from HTC into the ADB folder."
+    },
+    {
+      "title": "Confirm that you want to unlock.",
+      "content": "Confirm that you want to unlock. You may be prompted by your phone to confirm the unlock."
+    },
+    {
+      "title": "Type fastboot reboot on your computer.",
+      "content": "Type fastboot reboot on your computer. This command will reboot your device and exit fastboot mode."
+    },
+    {
+      "title": "Look for the Bootloader Unlocked message.",
+      "content": "Look for the Bootloader Unlocked message. You'll see this message every time you turn on your device as a security measure. Make sure your device boots completely into the Android operating system as normal. You're now ready to install a custom recovery."
+    },
+    {
+      "title": "Find and follow a device-specific guide if you can't unlock the bootloader.",
+      "content": "Find and follow a device-specific guide if you can't unlock the bootloader. If your manufacturer or carrier will not allow you to unlock the bootloader, your only other option is to find and use an exploit to bypass it. This process is different for every phone model, and some phones cannot be unlocked at all. The best place to start is the XDA Forums . Find your phone model and look for any bootloader unlocks released by the community. When performing an unlock using an exploit, follow every step in the XDA thread exactly, as the risk of bricking your device increases dramatically when not using official methods."
+    },
+    {
+      "title": "Visit the TWRP website.",
+      "content": "Visit the TWRP website . This guide will cover installing TeamWinRecoveryProject (TWRP), one of the more popular recovery methods for Android ROMs. [2] X Research source Another popular recovery is ClockworkMod Recovery (CWM) . Both should work for installing most ROMs, though some will require a specific recovery environment."
+    },
+    {
+      "title": "Click the Devices tab.",
+      "content": "Click the Devices tab. It's in the upper-right corner of the web page."
+    },
+    {
+      "title": "Verify that your device is supported.",
+      "content": "Verify that your device is supported. If your device is not on this list, try a different recovery environment like CWM. Note that while your device might be supported, your carrier or region may not."
+    },
+    {
+      "title": "Click the link for your device.",
+      "content": "Click the link for your device. This will display more details for your specific device."
+    },
+    {
+      "title": "Click the Download link.",
+      "content": "Click the Download link. This will download TWRP in IMG format to your computer."
+    },
+    {
+      "title": "Copy the IMG file to your ADB folder.",
+      "content": "Copy the IMG file to your ADB folder. Place it in the same location as your ADB binary files. This will allow you to transfer it to your phone using ADB in the Command Prompt."
+    },
+    {
+      "title": "Rename the file to twrp.img.",
+      "content": "Rename the file to twrp.img. This will make it easy to enter the name during the transfer."
+    },
+    {
+      "title": "Type adb reboot bootloader in the Command Prompt.",
+      "content": "Type adb reboot bootloader in the Command Prompt. If you don't still have the Command Prompt open, hold Shift and right-click in the open platform-tools folder. Select \"Open command window here.\""
+    },
+    {
+      "title": "Type fastboot flash recovery twrp.img and press ↵ Enter.",
+      "content": "Type fastboot flash recovery twrp.img and press ↵ Enter . This will copy the TWRP image file to your Android device and replace your current recovery environment with it."
+    },
+    {
+      "title": "Type fastboot reboot and press ↵ Enter.",
+      "content": "Type fastboot reboot and press ↵ Enter . This will reboot your Android device."
+    },
+    {
+      "title": "Press and hold the Volume Up and Power buttons as the device reboots.",
+      "content": "Press and hold the Volume Up and Power buttons as the device reboots. This will enter recovery mode in most devices. Some devices may have a different button combination for entering recovery mode. Perform a web search for \" model recovery mode.\""
+    },
+    {
+      "title": "Enter your PIN if prompted.",
+      "content": "Enter your PIN if prompted. This will allow TWRP to access your encrypted device, which is essential for creating backups."
+    },
+    {
+      "title": "Back up your data.",
+      "content": "Back up your data. This will create a full system backup, allowing you to restore your device if something goes wrong. Use the following steps to create a backup: Tap Backup . Tap Boot . Tap System . Tap Data' . Swipe the bar to begin the backup."
+    },
+    {
+      "title": "Return to the Backup menu and clear all of the options.",
+      "content": "Return to the Backup menu and clear all of the options. Tap the back arrow until you return to the Backup menu."
+    },
+    {
+      "title": "Scroll to the bottom and select your special partition after Recovery.",
+      "content": "Scroll to the bottom and select your special partition after Recovery . This will have different names depending on your device (PDS, EFS, WiMAX, etc.), and your device may not have anything listed here."
+    },
+    {
+      "title": "Start another backup with your special partition selected.",
+      "content": "Start another backup with your special partition selected. This will back up your IMEI information, which will be essential for restoring connectivity if you break something later."
+    },
+    {
+      "title": "Visit the XDA forums.",
+      "content": "Visit the XDA forums . The XDA forums are the most popular Android development community on the internet, and you'll find virtually every available ROM here."
+    },
+    {
+      "title": "Open the subforum for your device.",
+      "content": "Open the subforum for your device. You'll see popular devices listed on the main page, or you can use the search bar to find your specific model. Make sure your model matches both your device and your carrier. The same device on two carriers will have two different model numbers, and you'll need a ROM matching your exact model."
+    },
+    {
+      "title": "Click the Development tab.",
+      "content": "Click the Development tab. It's at the top of the page. This filters development forums."
+    },
+    {
+      "title": "Find a ROM that looks interesting.",
+      "content": "Find a ROM that looks interesting. Threads that have a ROM for download will generally say \"[ROM]\" in the thread title. The number of ROMs available for your device heavily depends on its popularity. Some devices may only have one or two ROMs to choose from, while others may have dozens. Some devices don't have any ROMs available, but these are usually devices that don't have unlockable bootloaders. Different ROMs can accomplish different things. Some ROMs are designed to be as barebones as possible for maximum performance, while others will add a bunch of features that aren't normally available on your device."
+    },
+    {
+      "title": "Look for features and limitations.",
+      "content": "Look for features and limitations. ROMs often add new features but also have limitations that may not have been present on your original device. Make sure that you will be OK with the feature set of your new ROM."
+    },
+    {
+      "title": "Carefully read the entire post for the ROM.",
+      "content": "Carefully read the entire post for the ROM. Many ROMs will have special instructions you must follow during installation. It is imperative that you follow the author's instructions exactly , or you may encounter serious problems."
+    },
+    {
+      "title": "Click the Download link for the ROM file.",
+      "content": "Click the Download link for the ROM file. This will begin downloading the ROM file, usually in ZIP form. ROMs may be large, and the file could take a while to download."
+    },
+    {
+      "title": "Visit the GApps download site.",
+      "content": "Visit the GApps download site . This site lets you download Googe's proprietary apps like Gmail and the Play Store since ROMs cannot legally include them."
+    },
+    {
+      "title": "Select your device's configuration on the GApps site.",
+      "content": "Select your device's configuration on the GApps site. You'll need to select your device's architecture (platform), operating system version, and the variant you want. If you don't know your device's platform, you should be able to find it on the XDA Forum's device information page for your device. Make sure the OS version matches the ROM you are installing, not your current version. Most users can select Stock as the variant, including all the default GApps."
+    },
+    {
+      "title": "Click the Download button.",
+      "content": "Click the Download button. This will begin downloading your selected GApps package. You should now have two ZIP files: your chosen ROM and the GApps file."
+    },
+    {
+      "title": "Connect your Android to your computer.",
+      "content": "Connect your Android to your computer. If it isn't already, you'll need to connect your Android to your computer via USB to transfer the files onto the device's storage."
+    },
+    {
+      "title": "Open your Android's storage on your computer.",
+      "content": "Open your Android's storage on your computer. You can transfer the files to your Android's internal storage or the SD card if you have one inserted."
+    },
+    {
+      "title": "Copy the ROM and GApps ZIP files onto your Android.",
+      "content": "Copy the ROM and GApps ZIP files onto your Android. You can click and drag them to your device's storage. Make sure they are placed in the base directory for either the internal storage or the SD card (don't put them in folders)."
+    },
+    {
+      "title": "Disconnect your phone after transferring.",
+      "content": "Disconnect your phone after transferring. Disconnect the USB cord from your Android phone after the files finish transferring."
+    },
+    {
+      "title": "Power off your Android device.",
+      "content": "Power off your Android device. You'll need to open Recovery mode, which you'll do from the powered-off state."
+    },
+    {
+      "title": "Boot your Android into recovery mode.",
+      "content": "Boot your Android into recovery mode. This process will vary depending on your device, so perform a web search if you aren't sure. Generally, you'll hold Power and Volume Down until the recovery menu appears. You'll know you're in the right place when you see TWRP."
+    },
+    {
+      "title": "Tap Wipe.",
+      "content": "Tap Wipe . It is always recommended that you wipe your device before installing a new ROM. This will delete all of the data on the device."
+    },
+    {
+      "title": "Swipe the bar to perform a factory reset.",
+      "content": "Swipe the bar to perform a factory reset. The reset process will only take a few moments."
+    },
+    {
+      "title": "Tap Install on the TWRP main menu.",
+      "content": "Tap Install on the TWRP main menu. It's in the upper right corner."
+    },
+    {
+      "title": "Scroll down and tap the ZIP file for your ROM.",
+      "content": "Scroll down and tap the ZIP file for your ROM. Make sure to start with the ROM, not the GApps file."
+    },
+    {
+      "title": "Swipe the bar to start flashing.",
+      "content": "Swipe the bar to start flashing. The ROM file will begin installing, which may take several minutes to complete."
+    },
+    {
+      "title": "Return to the main menu after flashing and tap Install again.",
+      "content": "Return to the main menu after flashing and tap Install again. Now you'll be installing the GApps file"
+    },
+    {
+      "title": "Scroll down and tap the GApps ZIP file.",
+      "content": "Scroll down and tap the GApps ZIP file. It should be in the installation menu."
+    },
+    {
+      "title": "Swipe the bar to begin the installation.",
+      "content": "Swipe the bar to begin the installation. The GApps installation will begin, which may take as long or longer than the ROM installation."
+    },
+    {
+      "title": "Tap Wipe cache/dalvik and then swipe to confirm.",
+      "content": "Tap Wipe cache/dalvik and then swipe to confirm. This will clear the cache, which is necessary for starting the ROM the first time."
+    },
+    {
+      "title": "Tap Reboot System.",
+      "content": "Tap Reboot System . Your Android device will reboot, and if everything went smoothly, you'll load your ROM's home screen environment. It may take a long time for your new ROM to boot. This should only happen the first time you boot it up."
+    }
+  ]
+}

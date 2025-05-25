@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Type-Colored-Text-in-Minecraft-Chat-(Works-with-Command-Blocks)",
+  "title": "How to Add Colors To Text in Minecraft",
+  "steps": [
+    {
+      "title": "Copy the § symbol or find it on your keyboard.",
+      "content": "Copy the § symbol or find it on your keyboard. Open up the chat box in your game client by pressing the ↵ Enter button. Then, paste or type the § symbol into the chat box. [1] X Research source Alt code for §: Alt + 21 (Windows) or ⌥ Option + 6 (Mac) iPhone: Tap and hold the & key to pull up the § symbol. Android: Tap and hold the ¶ key to access the § symbol. Consoles: Scroll through the symbols pages to find the § symbol."
+    },
+    {
+      "title": "Type § followed by a number or letter to change the chat text color.",
+      "content": "Type § followed by a number or letter to change the chat text color. On Minecraft, the numbers 0 through 9 each represent a specific color, as well as the letters A through F. Type out a letter or number following the § symbol to change the text color—for example, typing §0 would make your text black, while §b would make it light blue. [2] X Research source Here’s the shorthand for all the different colors: Black: 0 Dark blue: 1 Green: 2 Cyan: 3 Dark red: 4 Purple: 5 Gold: 6 Light grey: 7 Grey: 8 Blue: 9 Light green: A/a Light blue: B/b Red: C/c Pink: D/d Yellow: E/e White: F/f"
+    },
+    {
+      "title": "Write out the rest of your message after the § code.",
+      "content": "Write out the rest of your message after the § code. Think of the § code as a short prefix attached to the rest of your text. Let’s say you wanted to send “Hey everyone!” in your chat— §cHey everyone! would be what you’d type in. §5How’s everyone doing? would send the message “How’s everyone doing?” in purple-colored text."
+    },
+    {
+      "title": "Use the § command multiple times to create a multicolored chat message.",
+      "content": "Use the § command multiple times to create a multicolored chat message. Whenever you switch colors, type the § symbol immediately followed by the corresponding number or letter code, followed by the words you’d like to send in that color. [3] X Research source Let’s say you wanted to type the message “This sentence will look like a rainbow” using all the colors of the rainbow. You would type it out as §CThis §6sentence §Ewill §2look §3like §9a §5rainbow ."
+    },
+    {
+      "title": "Spawn a command block in your world.",
+      "content": "Spawn a command block in your world. Enter a world that’s set to Creative mode, open the Game Menu, and tap the Options… button. From there, hit the Controls button and make sure that Operator Items Tab is toggled to ON. Then, return to your game, open your inventory, select the “Operator Utilities” tab, and click on the command block to add it to your inventory and spawn it into your game. [4] X Research source The “Operator Utilities” tab is in the bottom-right corner of the inventor, between the “Spawn Eggs” and “Survival Inventory.”"
+    },
+    {
+      "title": "Interact with the command block and enter a customized /tellraw command.",
+      "content": "Interact with the command block and enter a customized /tellraw command. In the “Console Command” bar, type in /tellraw , a command that sends messages out. Then, type @a so everyone in your game can see the message. Use this coding format to type out a message in a specific color: {\"text\":\"MESSAGE GOES HERE\",\"color\":\"color goes here\" }. To send “Hey, how’s everyone doing?” in green, you’d type \"text\":\"Hey, how’s everyone doing?\",\"color\":\"green\" . [5] X Research source Use “@p” to only send the message to the closest player, “@r” to send the message to a random player, and “@s” to send the message to just yourself. [6] X Research source If you’d like to customize your text color even more, copy your desired hex code color from a hex code site and paste it into the “color” portion of the code. Ex: /tellraw @a {\"text\":\"I love apples\",\"color\":\"#f2715d\" } Tip: Make sure that the buttons on your Console Command are set to Impulse , Unconditional , and Needs Redstone ."
+    },
+    {
+      "title": "Repeat the text/color code string to make your message multicolored.",
+      "content": "Repeat the text/color code string to make your message multicolored. Start off your code with [\"\", , followed by a colored text phrase, like {\"text\":\"These \",\"color\":\"blue\" }. Place a comma after this, then follow up with another colored text phrase. Continue adding as many multi-colored words as you’d like by separating each new phrase with commas. At the end, finish off the code with a ] . Example: /tellraw @a [\"\",{\"text\":\"These \",\"color\":\"blue\"},{\"text\":\"words\",\"color\":\"green\"},{\"text\":\" are \",\"color\":\"dark_red\"},{\"text\":\"different \",\"color\":\"gold\"},{\"text\":\"colors\",\"color\":\"yellow\"}] would generate a multicolored sentence reading “These words are different colors.” To save some time, use a site like Minecraft Tools to generate your code for you automatically."
+    },
+    {
+      "title": "Use Redstone to power up the command.",
+      "content": "Use Redstone to power up the command. Open up your inventory and add a Redstone device to your inventory, like a switch or button. While crouching, attach the button or lever to your command block. [7] X Research source Here’s a quick refresher on how to crouch: Windows/Mac: ⇧ Shift Smartphone: Double-tap the diamond button Consoles: Press down the right joystick on your controller"
+    },
+    {
+      "title": "Interact with your Redstone device to make the colorful message appear in chat.",
+      "content": "Interact with your Redstone device to make the colorful message appear in chat. Interact with the switch, lever, or other Redstone device to trigger the command block. A chat should now pop up on your screen with the exact words and coloring that you specified. [8] X Research source"
+    }
+  ]
+}

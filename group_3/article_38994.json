@@ -1,0 +1,46 @@
+{
+  "url": "https://www.wikihow.com/Set-a-Specific-Country-in-a-Tor-Browser",
+  "title": "How to Change Your Country in Tor on Windows, Mac, & Linux",
+  "steps": [
+    {
+      "title": "Open Tor at least once.",
+      "content": "Open Tor at least once. You'll need to run Tor at least once to create the file you'll be editing. Just double-click the Start Tor browser icon in the folder where you've installed Tor and click Connect at least one time. If you've already started Tor, close it—you'll need to make sure the app is closed so you can effectively edit the configuration file. Not all sites and regions permit traffic from Tor, so you may not be able to access all websites using the browser. The Tor Project does not recommend changing your configuration to specify a country, as this could compromise your anonymity. [1] X Research source The best way to spoof your country is to use a VPN ."
+    },
+    {
+      "title": "Navigate to the \"torrc\" file.",
+      "content": "Navigate to the \"torrc\" file. The location of the Tor configuration file varies depending on where you installed the app: Windows The default installation location for Tor is a file called \"Tor Browser\" on your desktop. The torrc file is located in the Browser/TorBrowser/Data/Tor within that \"Tor Browser\" folder. To get there, double-click Tor Browser on your desktop, double-click the Browser folder, double-click TorBrowser , double-click Data , then double-click Tor . Linux The default install location is a folder called \"Tor Browser\" on the desktop. [2] X Research source Double-click the Tor Browser folder to open it, double-click the Browser folder, double-click TorBrowser , double-click Data , then double-click Tor . If you don't see such a file, you can use the find command to locate it. Mac The default location for the torrc file is inside ~/Library/Application Support/TorBrowser-Data/Tor. To get there, open Finder, press Command + Shift + G , and enter or paste this address into the field: ~/Library/Application Support/TorBrowser-Data/Tor . [3] X Research source Click Go to open the folder."
+    },
+    {
+      "title": "Open torrc in a text editor.",
+      "content": "Open torrc in a text editor. To do this, double-click the file. If it doesn't automatically open a text editor, you'll be prompted to choose one (e.g., Notepad for Windows or TextEdit for macOS)."
+    },
+    {
+      "title": "Find a country with Tor nodes.",
+      "content": "Find a country with Tor nodes. To set Tor to a specific country, you'll need to make sure there are nodes available in that country. Go to https://metrics.torproject.org/rs.html#advanced , select a country from the \"Country\" menu, and click Advanced Search . If a list of nodes appears, you can use that country as your location. If only a couple of nodes are in that country, you might want to repeat the search for some backup countries to use. You can enter multiple countries, so if no nodes are available in your preferred country, Tor will use the next country on the list. Not all countries have Tor nodes. If you see \"No Tor relays matched your query\", there are no nodes in that country. Make note of the country's two-letter code, which appears after \"country:\" in the search box at the top-right corner of the Relay Search page—for example, FR for France and MD for Moldova. You'll need this code when setting your country."
+    },
+    {
+      "title": "Add the EntryNodes and ExitNodes lines to your torrc file.",
+      "content": "Add the EntryNodes and ExitNodes lines to your torrc file. On the first empty line, type EntryNodes {} StrictNodes 1 . On the next empty line, type ExitNodes {} StrictNodes 1 ."
+    },
+    {
+      "title": "Enter your country code(s) into the brackets.",
+      "content": "Enter your country code(s) into the brackets. Inside the curly brackets {} , type the code for the country you want websites to think you're in. For example, ExitNodes {eg} StrictNodes 1 means Tor will only use the country \"eg\" (Egypt) as an exit node, forcing your traffic to be routed through one of Tor's Egyptian exit nodes."
+    },
+    {
+      "title": "Add multiple countries.",
+      "content": "Add multiple countries. If you only enter one country code as your entry and exit nodes, that will be the only country through which your connection is routed. That can cause problems if no nodes are available in your chosen country when you want to connect. It's best to add multiple countries, especially if few nodes are available in your preferred country. To do this, enter more country codes inside of the brackets, separating them with commas. For example, to add Canada, Egypt, and Turkey to the \"ExitNodes\" line, you would have the following line: ExitNodes {ca},{eg},{tr} StrictNodes 1 Make sure there are no spaces between bracketed countries."
+    },
+    {
+      "title": "Consider disabling strict nodes.",
+      "content": "Consider disabling strict nodes. The \"StrictNodes 1\" value means Tor will not try to use countries other than those you've specified. However, it also means that if no nodes are available in the regions you entered, you won't be able to make the connection. You can replace StrictNodes 1 with StrictNodes 0 to ensure that Tor can still use other countries' codes if those specified aren't working."
+    },
+    {
+      "title": "Save and exit the file.",
+      "content": "Save and exit the file. If you're using Windows or macOS, just click File , select Save , and exit the app. Saving the file in Linux depends on which text editor you're using. If you're using a graphical text editor, you can usually press Ctrl + S to save."
+    },
+    {
+      "title": "Open Tor and visit a website.",
+      "content": "Open Tor and visit a website. Go to any website (e.g., wikihow.com) in Tor, and then click the padlock icon on the address bar at the top of the browser. Now you'll see the entry, middle, and exit nodes, which should match what you entered into the file. The Exit Node is the country the website thinks you're in."
+    }
+  ]
+}

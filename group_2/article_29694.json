@@ -1,0 +1,186 @@
+{
+  "url": "https://www.wikihow.com/Make-a-Program-Using-Notepad",
+  "title": "How to Make a Program Using Notepad",
+  "steps": [
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Notepad has an icon that resembles a blue Notepad. You can use the following steps to open Notepad in the Windows Start menu: [1] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source Click the Windows Start button. Type Notepad . Click the Notepad icon."
+    },
+    {
+      "title": "Determine your programming language.",
+      "content": "Determine your programming language. You can use any programming language in Notepad. However, it needs to be consistent throughout the entire program. You can also use batch script to create batch files that are executed in the Windows Command Prompt."
+    },
+    {
+      "title": "Press ↵ Enter after you complete each line of code.",
+      "content": "Press ↵ Enter after you complete each line of code. When writing code, you should always place each line of code on a separate line. This makes your code easier to read and easier to organize."
+    },
+    {
+      "title": "Use indentation.",
+      "content": "Use indentation. It is common practice in coding to indent lines of code that are part of the same block of code. Sometimes you may even have blocks of code within blocks of code. In this case, you may need to double or triple indent your lines of code. If a line of code has an open bracket, brace, or parenthesis, all lines of code after that should be indented until the there is a closing bracket, brace, or parenthesis. [2] X Research source"
+    },
+    {
+      "title": "Don't be afraid to comment out.",
+      "content": "Don't be afraid to comment out. Most programming languages have a way for you to comment out. [3] X Research source This renders a block of text inert so that it isn't compiled or interpreted. This allows you to add comments to your code. For example, you can add a comment next to a line of code that briefly explains what the line of code does."
+    },
+    {
+      "title": "Make sure the syntax is correct.",
+      "content": "Make sure the syntax is correct. Notepad doesn't have the ability to check or debug your code for you. You need to make sure the code you are entering is correct on your own. Do lots of proofreading. Make sure all your commands are spelled correctly and have the proper capitalization. Make sure you are using the correct opening and closing brackets or parenthesis for your coding language (e.g., { or [ ). Make sure all open lines of code have been closed. Make sure any special characters are being used correctly."
+    },
+    {
+      "title": "Be sure to save the program with the correct file extension.",
+      "content": "Be sure to save the program with the correct file extension. By default, Notepad saves files as a text (.txt) file. This will not allow you to compile or run your program. When you save your program, you need to add the correct file extension for your programming language at the end of the file name. The following are a few file extensions that are used by common programming langauges: Batch (BAT): - .bat HTML: - .html CSS: - .css Java: - .java Python - .py Ruby: .rb . C: - .c C++ - .cpp C#: - .cs"
+    },
+    {
+      "title": "Save your file the correct way.",
+      "content": "Save your file the correct way. When you are ready to save your file, use the following steps to add the correct file extension to your program and save it the correct way: Click File . Click Save as . Use the drop-down menu next to \"Save as type:\" to select All Files(*.*) . Type a name for the program or file next to \"File name.\" Add the correct file extension at the end fo the file name (including the period). Click Save ."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. You can use batch scripts to create a basic text-based program in the Command Prompt."
+    },
+    {
+      "title": "Enter your batch script commands.",
+      "content": "Enter your batch script commands. Batch script can be used to run basic programs and scripts for Windows in the Command Prompt. The following are a few basic batch commands: [4] X Research source @echo off - This removes all unnessessary text that can interfere with your program. This should always be the first command you enter. echo - This command displays whatever text is written after it in the Command Prompt (i.g. \"echo Hello World\" would display \"Hello World\" as a line of text in the Command Prompt.). echo. - The \"echo.\" command (with a period at the end) displays a blank line in the Command Prompt. This is useful to isolate lines of text and make them not look cluttered. pause - This command displays the prompt \"Press any key to continue...\" in the Command Prompt. This is used to create a break in your program. You can use this to allow the user time to read text in your program. cls - This command stands for \"clear screen.\" It clears all text from the screen. title - This command displays whatever text that follows in the title bar of the Command Prompt. color - This command allows you to change the color of the text in the Command Prompt by entering a corresponding letter or number after the command. You can see which letters and numbers corrispond to each color by typing \"color/?\" in the Command Prompt. exit - This command exits the program."
+    },
+    {
+      "title": "Make a complete script.",
+      "content": "Make a complete script. There's a lot you can do with batch scripts alone. You can make a calculator, make a program that locks and hides folders on your computer. You can even make a game . The following is an example of a script that creates a basic guessing game: [5] X Research source @ echo off color 0e title Guessing Game by seJma set /a guessnum = 0 set /a answer =% RANDOM % set variable1 = surf33 echo ------------------------------------------------- echo Welcome to the Guessing Game! echo . echo Try and Guess my Number! echo ------------------------------------------------- echo . : top echo . set /p guess = echo . if %guess% GTR %answer% ECHO Lower! if %guess% LSS %answer% ECHO Higher! if %guess% == %answer% GOTO EQUAL set /a guessnum =% guessnum % + 1 if %guess% == %variable1% ECHO Found the backdoor hey?, the answer is: %answer% goto top : equal echo Congratulations, You guessed right!!! echo . echo It took you %guessnum% guesses. echo . pause"
+    },
+    {
+      "title": "Save the file as a batch file.",
+      "content": "Save the file as a batch file. Use the following steps to save the script as a batch file: Click File . Click Save as . Use the drop-down menu next to \"Save as type:\" to select All Files(*.*) . Type a name for the program or file next to \"File name.\" Type \".bat\" after the file name. Click Save ."
+    },
+    {
+      "title": "Run the batch file.",
+      "content": "Run the batch file. After you save your batch file, simply navigate to the location you saved it to and double-click it to open the Command Prompt and run your batch script."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. HTML is primarily used for web design. It's a really simple language to learn and a good place to start if you are new to programming."
+    },
+    {
+      "title": "Type <!DOCTYPE html> and press ↵ Enter.",
+      "content": "Type <!DOCTYPE html> and press ↵ Enter . This line indicates to your web browser that this is an HTML document. [6] X Research source"
+    },
+    {
+      "title": "Type <html> and press ↵ Enter.",
+      "content": "Type <html> and press ↵ Enter . This is the opening tag for your entire HTML code . There will need to be a closing tag at the end of the document. All your HTML code will go in between these two tags."
+    },
+    {
+      "title": "Type <body> and press ↵ Enter.",
+      "content": "Type <body> and press ↵ Enter . This is the opening tag for the body of your HTML document. The body contains all the visual details of the document. This includes text, images, links, and embeded media. [7] X Research source"
+    },
+    {
+      "title": "Type <h1>Text</h1> and press ↵ Enter.",
+      "content": "Type <h1>Text</h1> and press ↵ Enter . This is the opening and closing tag for the text header of your document. This displays text in big, bold letters. Replace \"Text\" with whatever you want your header text to display. For example: to create a page with the heading \"Hello!\", you would type \" <h1>Hello!</h1> \" into Notepad."
+    },
+    {
+      "title": "Type <p>Text</p> and press ↵ Enter.",
+      "content": "Type <p>Text</p> and press ↵ Enter . This is the opening and closing tag for your paragraph text. This displays text in regular small print. Replace \"Text\" with whatever you want your paragraph text to be. [8] X Research source For example, you would type <p>How are you today?</p> into Notepad to display the phrase \"How are you today?\" below the heading."
+    },
+    {
+      "title": "Type </body> and press ↵ Enter.",
+      "content": "Type </body> and press ↵ Enter . This is the closing body tag. This ends the body section of your HTML document."
+    },
+    {
+      "title": "Type </html> into Notepad.",
+      "content": "Type </html> into Notepad. This is the closing tag of your HTML document. This closes out the entire document. This is usually the last line of code in an HTML document. [9] X Research source HTML is one of the easiest programming languages to learn. If you want to learn more about HTML, it is recommended you do some further reading onlne."
+    },
+    {
+      "title": "Review your program's code.",
+      "content": "Review your program's code. It should look something like this: <!DOCTYPE html> < html > < body > < h1 > Hello! </ h1 > < p > How are you today? </ p > </ body > </ html >"
+    },
+    {
+      "title": "Save the file as an HTML file.",
+      "content": "Save the file as an HTML file. Use the following steps to save the text as an HTML file: Click File . Click Save as . Use the drop-down menu next to \"Save as type:\" to select All Files(*.*) . Type a name for the file or file next to \"File name.\" Type \".html\" after the file name. Click Save ."
+    },
+    {
+      "title": "Open the HTML file in a web browser.",
+      "content": "Open the HTML file in a web browser. To see what you have created, navigate to where you saved your HTML file, right-click it and select Open with... Then select any web browser of your choice. This will open the HTML file in your web browser."
+    },
+    {
+      "title": "Install Python",
+      "content": "Install Python . In order to run Python files on your computer, you must first install Python. You can download Python from Python.org ."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. Using the \"print\" command in Python , you can display any text that you want to."
+    },
+    {
+      "title": "Type print(\" into Notepad.",
+      "content": "Type print(\" into Notepad. Make sure that there aren't any spaces when you type the opening command. [10] X Research source"
+    },
+    {
+      "title": "Type Hello World!",
+      "content": "Type Hello World! after the quotation mark. This is the text that will be displayed when the program runs. [11] X Research source If you want, you can replace \"Hello World!\" with any other text you want."
+    },
+    {
+      "title": "Type \") at the end of your text.",
+      "content": "Type \") at the end of your text. This program only requires one line of code. It should look something like the following: [12] X Research source print ( \"Hello!\" )"
+    },
+    {
+      "title": "Save the file as an Python file.",
+      "content": "Save the file as an Python file. Use the following steps to save the program as a Python file: Click File . Click Save as . Use the drop-down menu next to \"Save as type:\" to select All Files(*.*) . Type a name for the program or file next to \"File name.\" Type \".py\" after the file name. Click Save ."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. Use the following steps to open the Command Prompt in Windows: Click the Windows Start icon. Type CMD Click the Command Prompt icon."
+    },
+    {
+      "title": "Change to the file location of the Python file in the Command Prompt.",
+      "content": "Change to the file location of the Python file in the Command Prompt. You will need to know the exact location you saved the Python file to. Use the following steps to navigate to the folder the Python file is saved to in the Command Prompt: Navigate to the Python file in File Explorer . Right-click the folder name in the address bar at the top. Click Copy Address . Type cd in the Command Prompt (if it is located in a different drive location, such as a D: drive, you will need to type \"D:\" and press Enter to change to that drive location). Press Ctrl + V to paste the folder address. Press Enter"
+    },
+    {
+      "title": "Type the file name of the Python file and press ↵ Enter.",
+      "content": "Type the file name of the Python file and press ↵ Enter . This runs the file in the Command Prompt. For example, if the file name is \"hello.py\", you would type \"hello.py\" and press Enter to execute it."
+    },
+    {
+      "title": "Download and install a C++ compiler",
+      "content": "Download and install a C++ compiler . While you can write a C++ file in Notepad, you cannot compile a C++ program. For that you will need a separate compiler. There are a variety of C++ compilers for Windows, including Cygwin , Visual Basic, and GCC . Download and install a compiler of your choice."
+    },
+    {
+      "title": "Open Notepad.",
+      "content": "Open Notepad. You'll be using Notepad to create a basic C++ program that displays \"Hello World!\" when run."
+    },
+    {
+      "title": "Type in // followed by your program's title.",
+      "content": "Type in // followed by your program's title. Typing two slash marks is how you comment out in C++. Any text typed after the two slash marks will not be compiled by the compiler. Type two slash marks followed by the name of your program at the top of the page. [13] X Research source"
+    },
+    {
+      "title": "Type #include <iostream> and press ↵ Enter.",
+      "content": "Type #include <iostream> and press ↵ Enter . This is the preprocessor command. This command instructs C++ to run the following lines of code as a program."
+    },
+    {
+      "title": "Type int main () and press ↵ Enter.",
+      "content": "Type int main () and press ↵ Enter . This declares the program's function."
+    },
+    {
+      "title": "Type { and press ↵ Enter.",
+      "content": "Type { and press ↵ Enter . This creates an open bracket. Your program's main code will go between this open bracket and a closed bracket."
+    },
+    {
+      "title": "Type std::cout << \"Hello World!\"; and press ↵ Enter.",
+      "content": "Type std: :cout << \"Hello World!\"; and press ↵ Enter . This is the execution code of your program."
+    },
+    {
+      "title": "Type } .",
+      "content": "Type } . This adds the closing bracket and closes the program's execution phase."
+    },
+    {
+      "title": "Review your program.",
+      "content": "Review your program. It should look something like this: [14] X Research source //Hello World #include <iostream> int main () { std :: cout << \"Hello World!\" ; }"
+    },
+    {
+      "title": "Save the file as an C++ file.",
+      "content": "Save the file as an C++ file. Use the following steps to save the program as a C++ file: Click File . Click Save as . Use the drop-down menu next to \"Save as type:\" to select All Files(*.*) . Type a name for the program or file next to \"File name.\" Type \".cpp\" after the file name. Click Save ."
+    },
+    {
+      "title": "Compile your program.",
+      "content": "Compile your program. The way you compile your program depends on which compiler you download. For some compilers, you will need to open the C++ file in the compiler itself. For some compilers, you may need to navigate to the \".cpp\" file in the Command Prompt and type a specific command to compile the file. Once it is compiled, it will create an executable file (.exe) from the C++ file."
+    },
+    {
+      "title": "Open the executable file.",
+      "content": "Open the executable file. Once you compile the C++ file, double-click the executable file (.exe) to run the program."
+    }
+  ]
+}

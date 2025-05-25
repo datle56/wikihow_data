@@ -1,0 +1,22 @@
+{
+  "url": "https://www.wikihow.com/Check-Error-Logs-in-Putty",
+  "title": "How to Check Error Logs in PuTTY",
+  "steps": [
+    {
+      "title": "Open PuTTY.",
+      "content": "Open PuTTY. Double-click the PuTTY icon on your Desktop to open it or search your Start menu."
+    },
+    {
+      "title": "Connect to your server.",
+      "content": "Connect to your server. Enter your hostname (or IP address), port number, and password to connect to your server with PuTTY."
+    },
+    {
+      "title": "Navigate the PuTTY window to your logs.",
+      "content": "Navigate the PuTTY window to your logs. In most instances, you can use \" cd ~/logs \" or \" /var/www/vhosts/example.com/statistics/logs/ \". Unix logs are stored in a variety of locations, so you'll need to find the location of the error log before you can view them ."
+    },
+    {
+      "title": "Enter the command to see your error logs.",
+      "content": "Enter the command to see your error logs. The command varies between servers and operating systems, but the default is similar to: \" tail -n 10 error.log \". If you get an error message or don't receive an answer, your error logs might be in a different location. Check with your server's information to find the file path your logs are stored. Some commands will require root access and should start with \" sudo \" to work."
+    }
+  ]
+}

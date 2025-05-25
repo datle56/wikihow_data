@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Nvidia-Control-Panel-Not-Opening",
+  "title": "Why Is the NVIDIA Control Panel Not Opening? 11 Common Fixes",
+  "steps": [
+    {
+      "title": "Try running the NVIDIA Control Panel as an admin.",
+      "content": "Try running the NVIDIA Control Panel as an admin. This can sometimes fix problems where the NVIDIA Control Panel won't open. To do this, simply search for the NVIDIA Control Panel in the taskbar search bar, right-click it, and click Run as administrator ."
+    },
+    {
+      "title": "Use Task Manager to force close the NVIDIA Control Panel, then restart it.",
+      "content": "Use Task Manager to force close the NVIDIA Control Panel, then restart it. To do this, simply right-click on the taskbar, select Task Manager , then click on the NVIDIA Control Panel and click End Task . Then, restart the NVIDIA Control Panel to see if it opens normally."
+    },
+    {
+      "title": "Ensure NVIDIA's services are enabled in System Configuration.",
+      "content": "Ensure NVIDIA's services are enabled in System Configuration. If NVIDIA's services are disabled, the NVIDIA Control Panel will not open. To check if these services are enabled and enable them if not: Type msconfig in the taskbar search bar, then click on System Configuration . Click on the Services tab. Click on the Service column to sort the services alphabetically. Scroll down to find the NVIDIA services. If any of the NVIDIA services (NVIDIA Display Container LS, NVIDIA FrameView SDK service, or NVIDIA LocalSystem Container) are disabled, click the box next to them to enable them. Click Apply then OK to save your changes."
+    },
+    {
+      "title": "Restart NVIDIA's services.",
+      "content": "Restart NVIDIA's services. Even if NVIDIA's services are active, they may need to be restarted to start working properly. To restart these services: Press ⊞ Win + R to open the Run dialogue. Type services.msc and press ↵ Enter . Locate the NVIDIA services on the list. Right-click the NVIDIA service and click Restart . If Restart is grayed out, click Properties instead. Change the Startup type to \"Automatic\", then click Start ."
+    },
+    {
+      "title": "Download and install the latest NVIDIA drivers.",
+      "content": "Download and install the latest NVIDIA drivers. While the NVIDIA drivers are mainly for the function of your GPU, these drivers can also include updates to the NVIDIA Control Panel. If there's a bug affecting the Control Panel that keeps it from opening, a driver update can fix those issues. Download and install the latest driver for your GPU from NVIDIA's website . Use the manual driver search to look up the latest driver for your GPU."
+    },
+    {
+      "title": "Copy the NVIDIA Control Panel folder to your desktop with PowerShell.",
+      "content": "Copy the NVIDIA Control Panel folder to your desktop with PowerShell. If NVIDIA Control Panel won't open no matter what you try, try opening it with a PowerShell command. This command will copy the NVIDIA Control Panel's parent folder to the desktop and then open it. Note that once you run this command, you don't need to run it again; simply open the NVIDIA folder on your desktop and run the nvcplui.exe file instead. Open Windows PowerShell as an admin. To do this, right-click on the Windows icon in the lower-left corner of your screen, then click Windows PowerShell (Admin) . Run the following command: Get-AppxPackage 'NVIDIACorp.NVIDIAControlPanel' | % { Copy-Item -LiteralPath $_.InstallLocation -Destination $Env:USERPROFILE\\Desktop -Recurse -Force; Invoke-Item \"$Env:USERPROFILE\\Desktop\\NVIDIACorp.NVIDIAControlPanel_*\\nvcplui.exe\" } This command will automatically open the NVIDIA Control Panel after moving the folder to your desktop. [1] X Research source"
+    },
+    {
+      "title": "Try updating your computer to update various drivers.",
+      "content": "Try updating your computer to update various drivers. Windows Update will also update drivers for the .NET Framework and VC++ Redistributable. If either of these is outdated, the NVIDIA Control Panel will not work properly. To check for a Windows update, type \"Windows update\" in the taskbar search bar, then click Check for updates . If an update is available, install it from this window, then check to see if the issue is still occurring."
+    },
+    {
+      "title": "Fast Startup helps your PC boot quicker.",
+      "content": "Fast Startup helps your PC boot quicker. However, it may cause issues with the NVIDIA Control Panel. You can easily disable Fast Startup to see if this is the problem. Open up the Control Panel . Navigate to Hardware and Sound. Click the Power Options heading. On the left-hand side, select \"Choose what the power buttons do\". Select \"Change settings that are currently unavailable\" near the top. As this is an administrator function it may prompt you to put in an administrator password. Uncheck \"Turn on fast startup (recommended)\". This option should be midway down the page. Save your changes once you've unchecked this option."
+    },
+    {
+      "title": "Repair the NVIDIA Control Panel.",
+      "content": "Repair the NVIDIA Control Panel. You can do this from the Apps & Features menu on Windows 10, or the Installed Apps menu on Windows 11. Right-click the Windows button, then click Apps & Features on Windows 10 or Installed Apps on Windows 11. Scroll down to find the NVIDIA Control Panel. Click on the NVIDIA Control Panel, then click Advanced options . Scroll down and click Repair . Follow any on-screen instructions to complete this task."
+    },
+    {
+      "title": "Reset the NVIDIA Control Panel.",
+      "content": "Reset the NVIDIA Control Panel. If repairing the app doesn't fix this problem, try resetting it. However, note that this will delete all of the app's data (like any saved settings). Right-click the Windows button, then click Apps & Features on Windows 10 or Installed Apps on Windows 11. Scroll down to find the NVIDIA Control Panel. Click on the NVIDIA Control Panel, then click Advanced options . Scroll down and click Reset . Follow any on-screen instructions to complete this task."
+    },
+    {
+      "title": "Contact NVIDIA if nothing fixes your problem.",
+      "content": "Contact NVIDIA if nothing fixes your problem. NVIDIA support may be able to help you identify the issue and walk you through how to fix it if nothing else works. To contact NVIDIA, go to their consumer contact page and select Ask us a question to open a ticket, or Live chat to chat to an online support agent."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://www.wikihow.com/Add-Two-Cells-Containing-the-Sum-of-Other-Formulas-in-Excel",
+  "title": "How to Add Two Cells Containing the Sum of Other Formulas in Excel",
+  "steps": [
+    {
+      "title": "Open your spreadsheet in Microsoft Excel.",
+      "content": "Open your spreadsheet in Microsoft Excel. To do this, double-click the Excel document that contains your data in Finder (Macs) or File Explorer (Windows). Alternatively, if you already have Excel open, click File > Open and select the file that has the data you want to add."
+    },
+    {
+      "title": "Add =VALUE around the formulas in the cells you're adding together.",
+      "content": "Add =VALUE around the formulas in the cells you're adding together. If the cells you're adding together use formulas that contain non-numeric characters, then you'll need to add =VALUE at the start of those formulas in order to use the SUM function. [2] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If either of the cells you're adding contains anything other than the standard =SUM() formula, you'll have to enclose that whole formula within the parentheses of the =VALUE() function to avoid errors. Do the following in each of the cell you're adding: Double-click the cell containing the formula. If the formula is standard, such as =SUM(A1:A15) , you don't have to make any changes. [3] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source If the cell contains other functions (such as IF or AVERAGE ), letters, or quotes, enclose the formula within the parentheses of the =VALUE() function. For example, =SUM(AVERAGE(A1:A15),AVERAGE(B1:B15)) would become =VALUE(SUM(AVERAGE(A1:A15),AVERAGE(B1:B15) )) ."
+    },
+    {
+      "title": "Click an empty cell.",
+      "content": "Click an empty cell. This is where you'll enter the formula that adds the other two cells together."
+    },
+    {
+      "title": "Enter the SUM formula.",
+      "content": "Enter the SUM formula. Type =SUM() into your selected cell."
+    },
+    {
+      "title": "Enter the names of the cells that contain the sums you want to add.",
+      "content": "Enter the names of the cells that contain the sums you want to add. You'll enter these two cell names (e.g., A4 and B4 ) inside the parentheses, separated by a comma. [4] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source For example, if you're adding the values of cells A4 and B4, your formula should look like this: =SUM(A4,B4) If you're adding a range of cells, like an entire column, enter =SUM(A4:24) . You can also add multiple rows or columns to your equation, like =SUM(A4:24, C2:C10) [5] X Trustworthy Source Microsoft Support Technical support and product information from Microsoft. Go to source"
+    },
+    {
+      "title": "Press ↵ Enter or ⏎ Return.",
+      "content": "Press ↵ Enter or ⏎ Return . This adds the values of the two cells and displays the sum. If the value of either of the two added cells changes, the result of your new formula will also. You can update all formulas on the sheet by pressing F9 ."
+    }
+  ]
+}

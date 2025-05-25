@@ -1,0 +1,90 @@
+{
+  "url": "https://www.wikihow.com/Remove-Write-Protection-on-an-SD-Card",
+  "title": "3 Quick Ways to Permanently Remove Write Protection from an SD Card",
+  "steps": [
+    {
+      "title": "Position the SD card.",
+      "content": "Position the SD card. Place the SD card on a flat surface with the label facing upward. This helps you find the lock switch for the card. If you are using a micro- or mini-SD card, insert it into an SD card adapter, and place the adapter label-up on a flat surface."
+    },
+    {
+      "title": "Locate the lock switch.",
+      "content": "Locate the lock switch. It should be on the upper-left side of the SD card. The lock switch is typically a small white or silver tab that protrudes from the left side of the SD card."
+    },
+    {
+      "title": "Slide the switch upward to unlock the card.",
+      "content": "Slide the switch upward to unlock the card. If the lock switch is down, sliding it upward will unlock the card, allowing you to save and edit data. If the switch was already in the unlocked position or this didn't resolve your issue, continue to the next step."
+    },
+    {
+      "title": "Find the notch on the opposite side of the card.",
+      "content": "Find the notch on the opposite side of the card. Your SD card should also have a smaller notch on the right edge. This notch can prevent certain card readers and other devices from writing to the card, even when the card is unlocked."
+    },
+    {
+      "title": "Cover the right notch with a small piece of transparent tape.",
+      "content": "Cover the right notch with a small piece of transparent tape. The tape you use to cover the notch should be just large enough to cover it—don't use too much tape, or else it could prevent the SD card from seating properly. [1] X Research source If the unlock switch keeps falling down, you can use another small piece of tape to keep it in the unlocked position. If you still can't write to the card after covering the notch with tape, try inserting it into a computer and checking for digital write protection. Read on to learn how on Windows and macOS."
+    },
+    {
+      "title": "Make sure that you're using an administrator account.",
+      "content": "Make sure that you're using an administrator account. You'll need to be on an administrator account in order to open the Disk Partition tool, which is what you'll use to remove the write protection from your SD card."
+    },
+    {
+      "title": "Plug the SD card into your computer.",
+      "content": "Plug the SD card into your computer. If your computer has an SD card reader, the card should slide label-up and gold connectors-first into the reader. If your PC doesn't have a card reader, you'll need a USB SD card adapter to do this."
+    },
+    {
+      "title": "Open the Command Prompt.",
+      "content": "Open the Command Prompt. Press Windows key + S to activate the Windows search bar, and then type command prompt . Click Command Prompt in the search results to open it now."
+    },
+    {
+      "title": "Type diskpart and press ↵ Enter.",
+      "content": "Type diskpart and press ↵ Enter . You'll be asked if you want to allow the app to make changes."
+    },
+    {
+      "title": "Click Yes to continue.",
+      "content": "Click Yes to continue. The prompt in the Command Prompt window should now say \"DISKPART.\""
+    },
+    {
+      "title": "Type list disk and press ↵ Enter.",
+      "content": "Type list disk and press ↵ Enter . This displays a list of disks connected to your PC."
+    },
+    {
+      "title": "Determine your SD card's number.",
+      "content": "Determine your SD card's number. You can find your SD card by looking for a number of megabytes or gigabytes that correlates with your SD card's storage in the \"Size\" column; the number to the right of \"Disk\" on the far-left side of this value is your SD card's number. For example, if you see that the storage size for Disk 3 mirrors your SD card's remaining space, your SD card's number is \"3\". The top disk (Disk 0) will always be your computer's built-in hard drive."
+    },
+    {
+      "title": "Select your SD card.",
+      "content": "Select your SD card. Type in select disk number where \"number\" is replaced by the SD card's number, then press Enter . This tells Disk Partition to apply the next command to your SD card. For example, if your SD card is labeled as \"Disk 3\" in the list of computer disks, you'd type select disk 3 here."
+    },
+    {
+      "title": "Type attributes disk clear readonly and press ↵ Enter.",
+      "content": "Type attributes disk clear readonly and press ↵ Enter . You should see a line of text that reads \"Disk attributes cleared successfully\" appear in the window below your cursor, signifying that your SD card is no longer write-protected."
+    },
+    {
+      "title": "Plug your SD card into your Mac.",
+      "content": "Plug your SD card into your Mac. Attach your SD card adapter to one of your Mac's USB or USB-C ports, then plug the SD card itself into the adapter. If you have an older Mac, your Mac may have an SD card slot on its right side. If so, you can plug the SD card label side-up and gold connectors-first into the slot."
+    },
+    {
+      "title": "Look for a read-only file.",
+      "content": "Look for a read-only file. In some cases, having one read-only file can cause the whole SD card to lock down until the file is switched to \"Read and Write\" mode. You can check a file's status by clicking it, clicking File , clicking Get Info , and looking at the \"Sharing & Permissions\" heading. If your file is read-only, change it to \"Read and Write\" status to see if that removes your SD card's digital write protection."
+    },
+    {
+      "title": "Open the Spotlight search bar .",
+      "content": "Open the Spotlight search bar . Click the magnifying glass icon in the upper-right corner of the screen, or press Command + space bar to activate Spotlight search."
+    },
+    {
+      "title": "Open Disk Utility.",
+      "content": "Open Disk Utility. Type disk utility into the search bar, then double-click Disk Utility in the search results."
+    },
+    {
+      "title": "Select your SD card.",
+      "content": "Select your SD card. Click your SD card's name in the upper-left side of the Disk Utility window."
+    },
+    {
+      "title": "Click First Aid.",
+      "content": "Click First Aid . It's a tab near the top of the Disk Utility window. Doing so will prompt First Aid to begin running on your SD card. If prompted, follow any on-screen instructions while First Aid runs."
+    },
+    {
+      "title": "Allow First Aid to scan the SD card.",
+      "content": "Allow First Aid to scan the SD card. If your SD card is locked down due to an error, the error will be fixed by First Aid."
+    }
+  ]
+}

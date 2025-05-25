@@ -1,0 +1,70 @@
+{
+  "url": "https://www.wikihow.com/Change-Directories-in-Command-Prompt",
+  "title": "How to Navigate to a Different Folder in the Command Prompt",
+  "steps": [
+    {
+      "title": "Open the Windows Start menu .",
+      "content": "Open the Windows Start menu . To do so, click the icon with the Windows logo in the taskbar at the bottom of the screen. Alternatively, you can press the Windows key. For Windows 8, place your mouse cursor in the top-right corner of the screen, then click the magnifying glass icon when it appears."
+    },
+    {
+      "title": "Type in cmd.",
+      "content": "Type in cmd . This will bring up the Command Prompt icon at the top of the Start window."
+    },
+    {
+      "title": "Right-click Command Prompt .",
+      "content": "Right-click Command Prompt . It resembles a black box with a white cursor. This displays a drop-down menu."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . It's near the top of the drop-down menu. Doing so will open the Command Prompt with administrator privileges. Confirm this choice by clicking Yes when prompted. You won't be able to run Command Prompt in administrator mode if you are not signed into an Administrative account, or if you're on a restricted, public, or networked computer (e.g., a library or school computer)."
+    },
+    {
+      "title": "Type in cd followed by a space.",
+      "content": "Type in cd followed by a space. This command, which stands for \"change directory\", is the root of any directory change. Don't press the \" Enter \" key just yet. Alternatively, you can type chdir . This command does the exact same thing as \"cd.\" [1] X Research source"
+    },
+    {
+      "title": "Determine your directory's path.",
+      "content": "Determine your directory's path. A directory path is like a map to a specific folder. For example, if the directory to which you want to change is the \"System32\" folder that's, in the \"Windows\" folder on the hard drive, the path would be \"C:\\Windows\\System32\\.\" You can find a folder by navigating to it in File Explorer. Click the address bar at the top to display the path to the folder you are currently in. You can display a list of all directories in your current directory in the Command Prompt by typing dir and pressing \" Enter .\""
+    },
+    {
+      "title": "Type in your directory's path.",
+      "content": "Type in your directory's path. Your command or address goes after the \"cd\" command; make sure there is a space between \"cd\" and your command. For example, your whole command might look like cd Windows\\System32 . Alternatively, you can drag and drop a folder from File Explorer into the Command Prompt. If the directory is in the current drive you are in, you do not need to type the drive letter at the beginning of the path."
+    },
+    {
+      "title": "Press ↵ Enter.",
+      "content": "Press ↵ Enter . Doing so will change the Command Prompt directory to your selected one. The current directory you are in is listed next to the text cursor (i.e. \"C:\\Windows\\System32>\".)"
+    },
+    {
+      "title": "Type cd..",
+      "content": "Type cd.. and press ↵ Enter to go back a directory. If you want to go back one directory (i.e. change from \"C:\\Windows\\System32\" to \"C:\\Windows\"), simply type \"cd..\" with two periods and press \" Enter .\""
+    },
+    {
+      "title": "Type cd\\ and press ↵ Enter to return to the root of your drive.",
+      "content": "Type cd\\ and press ↵ Enter to return to the root of your drive. If you want to go back to the root of your drive (i.e. go from \"C:\\Windows\\System32\" to \"C:\\\"), simply type \"cd\\\" with a back slash and press \" Enter .\""
+    },
+    {
+      "title": "Type a drive letter and press ↵ Enter to change drives.",
+      "content": "Type a drive letter and press ↵ Enter to change drives. If you try using the \"cd\" command to change directories to a directory that is on another drive, you will notice it does not work. You need to change drives before changing to a directory on that drive. To do so, type the drive letter (i.e. \"D:\") with a colon and press \" Enter \" to change drives. Alternatively, you can type cd /d followed by the complete path (including the drive letter) of a directory on another drive to change directly to that drive (i.e. \"cd /d D:\\Documents\".)"
+    },
+    {
+      "title": "Type dir and press ↵ Enter to list directories in your current directory.",
+      "content": "Type dir and press ↵ Enter to list directories in your current directory. If you are not sure what directories are in your current directory, you can display a list of all the directories by typing \"dir\" and pressing \" Enter .\""
+    },
+    {
+      "title": "Check that you are spelling the directory name correctly.",
+      "content": "Check that you are spelling the directory name correctly. If you receive an error message that says \"The system cannot find the path specified,\" check to make sure you are spelling the name of the directory correctly. You can see a list of all directories in your current directory by typing dir and pressing \" Enter .\""
+    },
+    {
+      "title": "Check to make sure the directory exists.",
+      "content": "Check to make sure the directory exists. If you are spelling is correct and you are still getting the same error, open File Explorer and check to make sure the directory you are navigating to actually exists and that it's located where you think it's located. If the directory does not exist, you can create a new directory by typing mkdir followed by a space, followed by the name of the directory you want to create. Then press \" Enter .\""
+    },
+    {
+      "title": "Make sure the directory is located on the drive that you are currently in.",
+      "content": "Make sure the directory is located on the drive that you are currently in. The \"cd\" command will not allow you to change to a directory on another drive. If you are currently in the \"C:\" drive, but the directory you want to change to is on the \"D:\" drive, you will need to change drive letters before changing to a new directly. You can do so by typing the drive letter and pressing \" Enter .\""
+    },
+    {
+      "title": "Make sure you are running the Command Prompt as an administrator.",
+      "content": "Make sure you are running the Command Prompt as an administrator. If you are not running the Command Prompt as an administrator, you will be limited in what you can do with the Command Prompt. Make sure you are logged into Windows as an Administrator , then right-click the CMD icon in the Start menu and click Run as Administrator ."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.wikihow.com/Change-a-Computer-Password-Using-Command-Prompt",
+  "title": "How to Change a Windows Password Using Command Prompt",
+  "steps": [
+    {
+      "title": "Click the Windows Start menu .",
+      "content": "Click the Windows Start menu . It's the icon with the Windows logo in the taskbar at the bottom of the screen."
+    },
+    {
+      "title": "Type CMD.",
+      "content": "Type CMD . This displays the Command Prompt in the Windows Start menu. On Windows 8, you can bring up the \"Search\" bar by hovering your mouse in the top-right corner of the screen and clicking the magnifying glass when it appears. If you're using Windows XP , you'll instead click the Run app on the right side of the Start menu."
+    },
+    {
+      "title": "Right-click Command Prompt.",
+      "content": "Right-click Command Prompt . It has an icon that resembles a black screen with a white cursor. Right-clicking it will invoke a drop-down menu. [1] X Research source If you're using Windows XP, you'll instead type cmd into the Run window."
+    },
+    {
+      "title": "Click Run as administrator.",
+      "content": "Click Run as administrator . It's near the top of the drop-down menu. Doing so will open Command Prompt with administrator privileges. [2] X Research source You'll need to confirm this choice by clicking Yes when prompted. If you're using Windows XP, you'll click OK to open Command Prompt."
+    },
+    {
+      "title": "Type net user into the Command Prompt and press ↵ Enter.",
+      "content": "Type net user into the Command Prompt and press ↵ Enter . Make sure you include the space between the two words.[ [3] X Research source [Image:Change a Computer Password Using Command Prompt Step 5 Version 4.jpg|center]]"
+    },
+    {
+      "title": "Find the name of the account you wish to edit.",
+      "content": "Find the name of the account you wish to edit. If you're changing your own account password, it will be below the \"Administrator\" heading on the left side of the Command Prompt window; otherwise, the name will likely be beneath the \"Guest\" heading on the right. You can also add a new user using the Command Prompt ."
+    },
+    {
+      "title": "Type net user [username] * into Command Prompt and press ↵ Enter.",
+      "content": "Type net user [username] * into Command Prompt and press ↵ Enter . You'll need to replace \"[username]\" with the name of the account for which you wish to change the password. Type the account name exactly as it appears in the account name section of the Command Prompt. [4] X Research source If you instead see a group of lines that start with \"The syntax of this command is:\", type net user Administrator * in for an administrator account or net user Guest * for a guest account."
+    },
+    {
+      "title": "Type in a new password and press ↵ Enter.",
+      "content": "Type in a new password and press ↵ Enter . The cursor won't move or show the password. This is to hide the password from anyone who may be looking. [5] X Research source"
+    },
+    {
+      "title": "Re-type your password and press ↵ Enter.",
+      "content": "Re-type your password and press ↵ Enter . Again, it won't appear as you type, so take your time. Make sure you enter the password exactly as you entered it the first time. [6] X Research source For a quicker (but less discreet) option, type net user [username] [new_password] into the Command Prompt and press Enter . Replace \"[username]\" with the account name you wish to change the password for, and replace \"[new_password]\" with the password you want to set. [7] X Research source You can also find your Wi-Fi password using the Command Prompt"
+    }
+  ]
+}

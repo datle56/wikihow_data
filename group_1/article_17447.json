@@ -1,0 +1,54 @@
+{
+  "url": "https://www.wikihow.com/Fix-Error-3194-on-iOS",
+  "title": "How to Fix Error 3194 on iOS",
+  "steps": [
+    {
+      "title": "Quit iTunes.",
+      "content": "Quit iTunes. Make sure iTunes is completely closed before proceeding so that the changes you make take effect."
+    },
+    {
+      "title": "Open the hosts file on the computer.",
+      "content": "Open the hosts file on the computer. Error 3194 most often appears when you are trying to update or restore your iOS device through iTunes, and iTunes cannot connect to the Apple verification servers. This is common if you have jailbroken your device in the past or are trying to downgrade iOS. Windows - Navigate to C:\\Windows\\System32\\drivers\\etc and double-click the hosts file. Select \"Notepad\" from the list of available programs. Mac - Open the Terminal from the Utilities folder, type sudo nano /etc/hosts , and press ⏎ Return . This will open the hosts file in a text editor."
+    },
+    {
+      "title": "Find the bottom of the hosts file.",
+      "content": "Find the bottom of the hosts file. You'll be looking for an Apple address at the bottom. A standard hosts file will not have any lines without a # at the front."
+    },
+    {
+      "title": "Look for a .",
+      "content": "Look for a . 74.208.105.171 gs.apple.com entry. This redirects the signature verification process to the Cydia servers. [1] X Research source It is the presence or lack of this redirection that is causing the error. What you do next depends on whether or not you can find this line: If you have 74.208.105.171 gs.apple.com at the bottom of the file, add a # to the front. If you don't have the line, add 74.208.105.171 gs.apple.com to the bottom of the hosts file."
+    },
+    {
+      "title": "Save your changes.",
+      "content": "Save your changes. This should allow your iPhone to make the connection properly. [2] X Research source Windows - Click the File menu and select \"Save.\" Mac - Press Ctrl + O to save and Ctrl + X to quit."
+    },
+    {
+      "title": "Open iTunes and attempt your restore or update again.",
+      "content": "Open iTunes and attempt your restore or update again. In many cases, the changes you made to your hosts file should allow you to proceed. Note: If you're trying to downgrade to a previous version, it may not be possible with the version of the firmware you have downloaded. Try a normal restore using the firmware downloaded directly through iTunes."
+    },
+    {
+      "title": "Put your iOS device into Device Firmware Update (DFU) mode.",
+      "content": "Put your iOS device into Device Firmware Update (DFU) mode. This may be necessary if iTunes is still not able to connect. You will be prompted to restore your iPhone, which will erase all of the data on it: Connect the iOS device to your computer and turn it completely off. Press and hold the Power and Home buttons for 10 seconds. After 10 seconds, release the Power button but continue holding the Home button. You'll see a message in iTunes prompting you to restore the iPhone."
+    },
+    {
+      "title": "Log into the iCloud website or open the \"Find My iPhone\" app on another device.",
+      "content": "Log into the iCloud website or open the \"Find My iPhone\" app on another device. If you can't get the update process to work even after changing your hosts file, you can try remotely erasing your iOS device using iCloud. The device you're trying to erase will need to have internet access and \"Find My iPhone\" enabled. You'll be able to restore the device from any iCloud or iTunes backup after erasing it. You can access your iCloud account from any computer by visiting icloud.com . Log in with the Apple ID associated with your iOS device."
+    },
+    {
+      "title": "Open the Find My iPhone service in iCloud.",
+      "content": "Open the Find My iPhone service in iCloud. This will open a map with your registered iOS devices."
+    },
+    {
+      "title": "Select your iOS device from the top menu.",
+      "content": "Select your iOS device from the top menu. Click the \"All Devices\" menu and select the iOS device you want to restore."
+    },
+    {
+      "title": "Click the \"Erase\" button in the iOS device's card.",
+      "content": "Click the \"Erase\" button in the iOS device's card. After confirming, the iOS device will begin automatically resetting to factory settings. This may take a while to complete."
+    },
+    {
+      "title": "Setup your iOS device and restore your backup.",
+      "content": "Setup your iOS device and restore your backup. Start the iOS device setup process as if it were a new phone. You'll be given the choice to choose a backup from iCloud or iTunes, or you can proceed with a fresh install. Error 3194 means there is no compatibility between the upgrade or restore iOS version on your computer and iPhone. Most likely, it is an older iOS version. It is not possible to install it on your iPhone. To fix this, ensure you have the latest version of the Mac. If it is, verify your internet connection is working properly. If it is still an issue, attempt the upgrade using another computer."
+    }
+  ]
+}

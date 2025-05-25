@@ -1,0 +1,86 @@
+{
+  "url": "https://www.wikihow.com/Disable-a-Keyboard-on-Android",
+  "title": "4 Quick Ways to Disable a Keyboard on an Android Device",
+  "steps": [
+    {
+      "title": "Open the Settings app.",
+      "content": "Open the Settings app. You can disable or enable any keyboards installed on your phone or tablet using the Settings app. On your Android device’s home screen, tap the Settings icon."
+    },
+    {
+      "title": "Tap on Language & Input.",
+      "content": "Tap on Language & Input . In Samsung devices running Android 7.0, this option is located under General Management . Otherwise, you should find it in the main Settings menu."
+    },
+    {
+      "title": "Select Virtual keyboard.",
+      "content": "Select Virtual keyboard . Look for this option under the Keyboards header. Tap Virtual keyboard to open a list of all keyboard apps on your Android device. In some versions of Android, the header may say Keyboard and input methods ."
+    },
+    {
+      "title": "Tap the Manage keyboards option.",
+      "content": "Tap the Manage keyboards option. At the bottom of the list of keyboards, find the Manage keyboards button. Tap this button to open a new menu screen."
+    },
+    {
+      "title": "Toggle off any keyboards you want to disable.",
+      "content": "Toggle off any keyboards you want to disable. Each keyboard in the list will have a toggle button next to it. To disable a keyboard, tap the button so that it switches to the Off position. The button should turn from blue to grey when you turn the keyboard off."
+    },
+    {
+      "title": "Open Settings.",
+      "content": "Open Settings . If you want to uninstall a keyboard completely, you can do so under the Settings menu. Open the Settings app on your Android device’s homescreen. [1] X Research source"
+    },
+    {
+      "title": "Tap on Apps.",
+      "content": "Tap on Apps . Scroll down in the Settings menu until you find Apps , then tap on it. [2] X Research source"
+    },
+    {
+      "title": "Select the keyboard app you want to uninstall.",
+      "content": "Select the keyboard app you want to uninstall. In the list of apps, locate the keyboard app you’d like to remove from your Android phone or tablet. Tap on the app to open the App Info menu. [3] X Research source"
+    },
+    {
+      "title": "Tap on the Uninstall button.",
+      "content": "Tap on the Uninstall button. In the App Info screen, tap Uninstall . Follow the prompts to confirm your selection and uninstall the app. [4] X Research source If the keyboard came pre-installed on your device, you’ll need to select the Uninstall Updates option instead. [5] X Research source If you don’t see the option to uninstall the app under Settings , you may need to do it through the Play Store. To do this, open the Play Store app , then tap your profile icon in the top right. Select Manage apps & devices , tap Manage , and select your app from the list, then tap Uninstall ."
+    },
+    {
+      "title": "Open the Settings app.",
+      "content": "Open the Settings app. If your Android device is linked to a physical keyboard, you can switch it off from the Settings menu. Open the Settings app from your home screen to get started. [6] X Research source"
+    },
+    {
+      "title": "Select Language & input.",
+      "content": "Select Language & input . On most Android devices, this option is located under the Personal heading in the general Settings menu. [7] X Research source However, on Samsung devices running Android 7.0, you’ll need to select General Management first."
+    },
+    {
+      "title": "Select Default under Keyboard & Input Methods.",
+      "content": "Select Default under Keyboard & Input Methods. This will open a new window showing which keyboard you currently have selected as your default input method. [8] X Research source"
+    },
+    {
+      "title": "Set the Hardware option to Off.",
+      "content": "Set the Hardware option to Off. In the popup window, you should see a heading that says Hardware with Physical keyboard underneath. Press the blue ON button next to this heading to turn the physical keyboard off. [9] X Research source The button should turn grey once you switch the keyboard off."
+    },
+    {
+      "title": "Enable Developer Options on your phone.",
+      "content": "Enable Developer Options on your phone. This can be done in your settings. Do the following: Open Settings . Scroll down to About Phone . Tap Build Number 7 times. Return to Settings . Tap System . Tap Developer Options . Toggle on USB Debugging ."
+    },
+    {
+      "title": "Download ADB",
+      "content": "Download ADB on your computer. This program is needed to remove pre-installed apps and features from your Android device. [10] X Research source"
+    },
+    {
+      "title": "Connect your phone to your computer.",
+      "content": "Connect your phone to your computer. Use the wire that came with your device. Once plugged in, open your USB settings and select File transfer (MTP) mode."
+    },
+    {
+      "title": "Hold ⇧ Shift and right-click the ADB directory.",
+      "content": "Hold ⇧ Shift and right-click the ADB directory. A pop-up menu will open."
+    },
+    {
+      "title": "Click Open command/PowerShell window here.",
+      "content": "Click Open command/PowerShell window here . Windows PowerShell will open."
+    },
+    {
+      "title": "Type adb devices and press ↵ Enter.",
+      "content": "Type adb devices and press ↵ Enter . This will send the command. If prompted, tap Allow or OK on your phone to grant access. Once you see a string of numbers, move onto the next step."
+    },
+    {
+      "title": "Run the following command.",
+      "content": "Run the following command. This command will delete the Samsung keyboard from your phone. Type .\\adb shell pm disable-user --user 0 com.samsung.android.honeyboard and press Enter . Once the keyboard is deleted, you can disconnect your Android from your computer."
+    }
+  ]
+}

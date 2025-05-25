@@ -1,0 +1,34 @@
+{
+  "url": "https://www.wikihow.com/Linux-How-to-Symlink",
+  "title": "Create Symbolic Links in Linux: Everything You Need to Know",
+  "steps": [
+    {
+      "title": "To make a symlink to a file, use ln -s source_file link_name.",
+      "content": "To make a symlink to a file, use ln -s source_file link_name . Replace \"source_file\" with the full path to the file you want to link to, and \"link_name\" with the label you'd like to give it. For example, let's say you want to add a link to /etc/httpd/conf/httpd.conf to the current directory so you can edit it without typing the full path. In this example, we'll call the link \"apacheconf.\" To do this, run the command ln -s /etc/httpd/conf/httpd.conf apacheconf . You can omit the \"link_name\" to keep the same name as the original file. For example, if you enter ln -s /etc/httpd/conf/httpd.conf , this creates a symlink called \"httpd.conf\" in the current directory."
+    },
+    {
+      "title": "To create a symbolic link to a directory, use ln -s source_directory link_name.",
+      "content": "To create a symbolic link to a directory, use ln -s source_directory link_name . The command is the same as creating a symlink to a file. For example, let's say you want to add a link to /var/www/html to your home directory called \"website.\" If you're in your home directory, you'd use ln -s /var/www/html website . You can also specify a full path to the link destination, e.g., ln -s /var/www/html /home/myusername/website . Any permissions you apply to a directory's symlink will apply to that directory."
+    },
+    {
+      "title": "Use ls -l to view all symlinks in a directory and their destinations.",
+      "content": "Use ls -l to view all symlinks in a directory and their destinations. For example, if there is a symlink called \"log\" in the current directory that points to /var/log, you'll see log -> /var/log/ in the list of files and directories. You can also use readlink link_name to see where a specific symlink points."
+    },
+    {
+      "title": "Use ln -sf source_file/directory link_name to change a symlink's destination.",
+      "content": "Use ln -sf source_file/directory link_name to change a symlink's destination. For example, let's say you have a symlink called \"website\" in the current directory that points to /var/www/html but should be pointing to /var/www/html2. If you used ls -n /var/www/html2 website , you'd get an error because the symlink already exists. Instead, use ls -sf /var/www/html2 website to overwrite the existing symlink."
+    },
+    {
+      "title": "There are two ways to delete a symlink.",
+      "content": "There are two ways to delete a symlink. The first is to use rm , just as you would when deleting any other file. Using rm link_name only deletes the symlink—it will not delete the target file or directory. You can also use unlink link_name to delete a symlink. This command also deletes the symlink without harming the original file."
+    },
+    {
+      "title": "Use find directory_path -type l to see all symlinks in a directory.",
+      "content": "Use find directory_path -type l to see all symlinks in a directory. This command is recursive, so it will display all symlinks in the specified directory as well as its subdirectories. If there are symlinks that lead to other symlinks, you can view the entire chain using namei link_name ."
+    },
+    {
+      "title": "Use find directory_path -xtype l to view all symlinks without targets.",
+      "content": "Use find directory_path -xtype l to view all symlinks without targets. For example, to check for symlinks that don't point anywhere in /sbin, you'd use find /sbin/ -xtype l ."
+    }
+  ]
+}

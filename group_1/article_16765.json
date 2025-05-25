@@ -1,0 +1,98 @@
+{
+  "url": "https://www.wikihow.com/Find-Installed-Apps-on-Android",
+  "title": "How to Check What Apps You Have Installed on Android",
+  "steps": [
+    {
+      "title": "Go to your Home screen.",
+      "content": "Go to your Home screen. If you are currently in another app, tap the square at the bottom-center of the screen to return to your Home screen."
+    },
+    {
+      "title": "Swipe up from the bottom of the screen.",
+      "content": "Swipe up from the bottom of the screen. When you swipe up from the bottom of the screen on your Home screen, it opens the Apps menu. The Apps menu shows all apps you have installed, except for hidden apps . If you see an icon with 6 dots that says \"All Apps,\" tap this option to view all of your apps. [1] X Research source"
+    },
+    {
+      "title": "Swipe left and right to view different pages.",
+      "content": "Swipe left and right to view different pages. You will likely have multiple pages full of installed apps. Swipe left and right to move from one page to another. Tap an app in the apps menu to open it. Tap and hold an app icon to display options to uninstall or disable the app."
+    },
+    {
+      "title": "Open your Android’s Settings .",
+      "content": "Open your Android’s Settings . To do so, swipe down from the top of the screen to display the Quick Access menu, then tap the gear icon in the upper-right corner."
+    },
+    {
+      "title": "Scroll down and tap Apps, Manage apps, or similar.",
+      "content": "Scroll down and tap Apps , Manage apps , or similar. The Settings menu has a different layout depending on the make and model of your phone. You should see an option that says Apps , Manage apps , Apps management or something similar. [2] X Research source"
+    },
+    {
+      "title": "Tap All or See All # Apps.",
+      "content": "Tap All or See All # Apps . Depending on your Android model, you may see a tab at the top of the menu that says \"All\" or an option that says \"Show All # Apps\" (with \"#\" being the number of apps you have installed). Select this option to show a complete list of installed apps. If you are using a Samsung Galaxy, tap the arrow icon next to three uneven lines, then tap the radio option next to All below \"Filter.\""
+    },
+    {
+      "title": "Scroll through your list of apps.",
+      "content": "Scroll through your list of apps. This will show a complete list of apps you have installed on your Android smartphone or tablet. You can tap an app to view its details and options to force close the app , or uninstall or disable it."
+    },
+    {
+      "title": "Open the Play Store .",
+      "content": "Open the Play Store . It's the red, green, blue, and yellow triangle icon on your Home screen or in your app menu."
+    },
+    {
+      "title": "Tap your profile icon.",
+      "content": "Tap your profile icon. It's the round image in the upper-right corner. If you have not set a profile image for your Google account, you will see a colored icon with your initial in the middle instead of an image."
+    },
+    {
+      "title": "Tap Manage apps & device.",
+      "content": "Tap Manage apps & device . It's the first option at the top of the menu."
+    },
+    {
+      "title": "Tap Manage.",
+      "content": "Tap Manage . It's the second tap at the top of the menu. This displays a list of apps you have installed."
+    },
+    {
+      "title": "Select Installed.",
+      "content": "Select Installed . To do so, tap the first drop-down menu at the top of the screen, then tap Installed . This displays a list of all apps you have installed on your device. Alternatively, you can select Not installed to see a complete list of every app you've ever installed on any device associated with your Google account."
+    },
+    {
+      "title": "Install an app manager There are many app management tools you can download from the Play Store for free.",
+      "content": "Install an app manager There are many app management tools you can download from the Play Store for free. Open the Google Play Store and search \"App manager.\" Tap one of the available app manager tools and tap Install . There are several apps called \"App Manager\" as well as one called \"Smart App Manager.\" Tap whichever one has the highest star rating and the best reviews."
+    },
+    {
+      "title": "Open the app manager tool you've installed.",
+      "content": "Open the app manager tool you've installed. Once the app manager is finished installing, either tap Open inside the Google Play Store to open it or tap the app's icon on your Apps menu. The first time you open the app, you will need to tap Allow to grant it permission to access your apps and data."
+    },
+    {
+      "title": "Scroll through the list of apps.",
+      "content": "Scroll through the list of apps. Most app managers will display a complete list of apps you have installed as soon as you launch the app. Depending on the tool, you may also be able to delete and organize apps from a simple interface."
+    },
+    {
+      "title": "Download SDK Platform Tools to your computer.",
+      "content": "Download SDK Platform Tools to your computer. SDK Platform Tools is a set of tools for Android developers that allows your computer to interface with your Android phone via the Command Prompt or Terminal. To download SDK Platform Tools, go to https://developer.android.com/tools/releases/platform-tools in a web browser and download the correct version for your computer's operating system. SDK Platform Tools are available for Windows, Mac, and Linux. [3] X Research source"
+    },
+    {
+      "title": "Unzip the file you downloaded.",
+      "content": "Unzip the file you downloaded. SDK Platform Tools will be downloaded as a zip file. Extract the contents of the zip folder to any location on your computer."
+    },
+    {
+      "title": "Enable developer mode on your Android.",
+      "content": "Enable developer mode on your Android. To do so, open the Settings app and scroll down and tap About Phone . Tap the build number 7 times. You should see a message informing you that developer mode is now activated. [4] X Research source Developer Mode may not be available on all Android models."
+    },
+    {
+      "title": "Enable USB debugging.",
+      "content": "Enable USB debugging. To do so, open the Settings menu and tap Developer options. Then tap the toggle switch next to \"USB debugging.\" This allows you to interface with your phone on your computer."
+    },
+    {
+      "title": "Connect your phone to your computer.",
+      "content": "Connect your phone to your computer. Connect a USB charging cable to your phone and then plug it into any free USB port on your computer to connect them. The first time you connect your Android device to your computer, your Android device will ask \"Always allow from this computer?\" Tap Ok to allow your device to interface with your computer."
+    },
+    {
+      "title": "Open the Command Prompt or Terminal .",
+      "content": "Open the Command Prompt or Terminal . If you are using a Windows PC, open the Command Prompt, or Powershell. If you are using a Mac or Linux computer, open the Terminal. Use one of the following steps to do so: Windows: Click the Windows Start menu icon, type CMD , and click Command Prompt . Mac: Click the magnifying glass icon in the menu bar, type terminal , then click Terminal . Linux: Press Ctrl + Alt + T to open a Terminal."
+    },
+    {
+      "title": "Navigate to the location you extracted SDK.Platform Tools.",
+      "content": "Navigate to the location you extracted SDK.Platform Tools. To do so, type \"cd\" followed by the path to the SDK Platform Tools folder (i.e., \"cd C:\\Program Files\\platform-tools\"). Then press Enter ."
+    },
+    {
+      "title": "Type adb shell pm list package and press ↵ Enter.",
+      "content": "Type adb shell pm list package and press ↵ Enter . This will show a complete list of all the app packages you have installed on your Android device. You can filter your search by typing \"-d\" at the end to display only disabled apps. Add \"-i\" to only show enabled apps. Add \"-s\" to show only system apps."
+    }
+  ]
+}

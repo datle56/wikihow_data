@@ -1,0 +1,50 @@
+{
+  "url": "https://www.wikihow.com/Remove-an-Email-Account-from-Thunderbird",
+  "title": "How to Delete an Account from Thunderbird: Guide + Troubleshooting",
+  "steps": [
+    {
+      "title": "Right-click (or control-click) the account you want to remove.",
+      "content": "Right-click (or control-click) the account you want to remove. When you open Thunderbird, you'll see a list of email accounts you've added in the left sidebar. Right-click or control-click the email address to bring up a menu."
+    },
+    {
+      "title": "Click Settings on the menu.",
+      "content": "Click Settings on the menu. This displays the settings for the selected account."
+    },
+    {
+      "title": "Click the Account Actions menu.",
+      "content": "Click the Account Actions menu. It's near the bottom of the left panel."
+    },
+    {
+      "title": "Click Remove Account.",
+      "content": "Click Remove Account . A confirmation window will appear."
+    },
+    {
+      "title": "Choose whether to delete email messages.",
+      "content": "Choose whether to delete email messages. If you want to keep the messages you've downloaded from the server (both sent and received) in Thunderbird, check the box next to \"Remove account information\" only. If you also want to delete the emails you downloaded in Thunderbird, check the box next to \"Remove message data.\" If the email account uses IMAP, choosing \"Remove message data\" will not delete the messages from the server. To check if you're using IMAP, click the Server Settings at the top of the left column. If you see \"IMAP Mail Server\" next to \"Server Type,\" you're using IMAP. [1] X Research source If you see \"POP Mail Server,\" messages are deleted from the server once downloaded to Thunderbird unless there are checkmarks next to \"Leave messages on server\" and \"Until I delete them.\" If messages aren't stored on the server, the only copies of these emails are in Thunderbird. If you want to keep them, drag them to a folder under \"Local Folders\" or uncheck \"Remove message data.\""
+    },
+    {
+      "title": "Click Remove to confirm.",
+      "content": "Click Remove to confirm. This removes the selected email account from Thunderbird."
+    },
+    {
+      "title": "If I didn't choose \"Remove message data,\" where do my messages go?",
+      "content": "If I didn't choose \"Remove message data,\" where do my messages go? If you didn't select \"Remove message data,\" the email messages from that account will now be saved to your profile. To read them, you'll need to import them back into Thunderbird. First, you'll need to know the location of your messages. Click the menu ☰, go to Help > Troubleshooting Information , and click the Open Folder button next to \"Profile Folder.\" Double-click the folder called IMAP Mail . Copy the folder location by clicking the path in the address bar and pressing Ctrl + C . In Thunderbird, click the menu ☰ and select Tools > Import . Select the first option (\"from another Thunderbird installation\") and click Continue . Select \"Choose a profile folder\" and click Continue . Select the folder for the deleted account and click Open . Select the details you want to import. If you just want to read the old email messages, deselect everything except \"Mail Messages.\" Click Continue and then Start Import . When the import is complete, click Finish to close and reopen Thunderbird. You'll now see the imported messages under Local Folders in a new folder called \"Thunderbird Import.\""
+    },
+    {
+      "title": "Will removing an account from Thunderbird affect other computers?",
+      "content": "Will removing an account from Thunderbird affect other computers? If you use Thunderbird on multiple computers and want to remove an email account from one, the other computer will not be affected."
+    },
+    {
+      "title": "Why does Thunderbird still ask me for a password for the deleted account?",
+      "content": "Why does Thunderbird still ask me for a password for the deleted account? This usually happens if you linked that account's calendar (such as a Gmail calendar ) to Thunderbird. Click the Calendars tab, right-click or control-click the account you removed, and select Unsubscribe Calendar . This also may happen if you're using a Thunderbird extension linked to the previous email account. Check your extensions in ☰ > Add-ons and themes ."
+    },
+    {
+      "title": "What if the \"Remove Account\" option is grayed out?",
+      "content": "What if the \"Remove Account\" option is grayed out? If you can't click \"Remove Account,\" you are trying to delete the Local Folders account instead of an email account. Local Folders cannot be deleted. [2] X Research source"
+    },
+    {
+      "title": "Why does the removed account come back when I restart Thunderbird?",
+      "content": "Why does the removed account come back when I restart Thunderbird? This happens if Thunderbird is installed in a Windows folder that is only available to administrators. To fix the problem: Close Thunderbird. To start Thunderbird as an administrator, press the Windows key on your keyboard, type thunderbird , right-click Thunderbird , and select Run as Administrator . Remove the email account as you did earlier. Close Thunderbird. Reopen Thunderbird normally. The account will now be removed."
+    }
+  ]
+}

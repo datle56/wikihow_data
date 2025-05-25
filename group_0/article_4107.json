@@ -1,0 +1,166 @@
+{
+  "url": "https://www.wikihow.com/Block-Apps-on-PC-or-Mac",
+  "title": "How to Block Apps on PC or Mac",
+  "steps": [
+    {
+      "title": "Open your computer's Start menu.",
+      "content": "Open your computer's Start menu. Click the Windows icon in the lower-left corner of your screen to open the Start menu."
+    },
+    {
+      "title": "Type and search regedit on the Start menu.",
+      "content": "Type and search regedit on the Start menu. \"Regedit Run command\" should show up as the best match. Alternatively, you can click the icon next to the Start menu icon on the bottom-left, and do your search here."
+    },
+    {
+      "title": "Click regedit in the search results.",
+      "content": "Click regedit in the search results. The regedit icon looks like blue building blocks. It will open your Registry Editor in a new window."
+    },
+    {
+      "title": "Navigate to \"Policies\" on the sidebar.",
+      "content": "Navigate to \"Policies\" on the sidebar. Find the main folder named \"Computer\" on the left sidebar, and open \"Policies\" under it. In order to find Policies under Computer, you'll have to click HKEY_CURRENT_USER , Software , Microsoft , Windows , and CurrentVersion , respectively. Alternatively, you can click the address bar at the top, and enter Computer\\HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies ."
+    },
+    {
+      "title": "Right-click Policies on the sidebar.",
+      "content": "Right-click Policies on the sidebar. This will show your options on a pop-up menu."
+    },
+    {
+      "title": "Hover over New on the pop-up menu.",
+      "content": "Hover over New on the pop-up menu."
+    },
+    {
+      "title": "Select Key on the New menu.",
+      "content": "Select Key on the New menu. This will create a new key under Policies, and prompt you to name it."
+    },
+    {
+      "title": "Name your new key Explorer.",
+      "content": "Name your new key Explorer . Type this name and hit ↵ Enter or ⏎ Return on your keyboard to save it."
+    },
+    {
+      "title": "Right-click the Explorer key on the sidebar.",
+      "content": "Right-click the Explorer key on the sidebar. This will open your right-click options."
+    },
+    {
+      "title": "Hover over New on the right-click menu.",
+      "content": "Hover over New on the right-click menu."
+    },
+    {
+      "title": "Select DWORD (32-bit) Value on New menu.",
+      "content": "Select DWORD (32-bit) Value on New menu. This will create a new value inside the Explorer key, and prompt you to name it."
+    },
+    {
+      "title": "Name your new value DisallowRun.",
+      "content": "Name your new value DisallowRun . Type this name and hit ↵ Enter or ⏎ Return on your keyboard to save it."
+    },
+    {
+      "title": "Double-click the DisallowRun value.",
+      "content": "Double-click the DisallowRun value. This will allow you to edit the value in a new pop-up window."
+    },
+    {
+      "title": "Change the Value data from \"0\" to \"1.\"",
+      "content": "Change the Value data from \"0\" to \"1.\" Replace the \"0\" under Value data with \"1\" and click OK ."
+    },
+    {
+      "title": "Right-click the Explorer key on the sidebar.",
+      "content": "Right-click the Explorer key on the sidebar. This will open your options on a pop-up menu."
+    },
+    {
+      "title": "Hover over New on the right-click menu.",
+      "content": "Hover over New on the right-click menu."
+    },
+    {
+      "title": "Select Key on the New menu.",
+      "content": "Select Key on the New menu. This will create a new key under Explorer, and allow you to name your new key."
+    },
+    {
+      "title": "Name your new key DisallowRun.",
+      "content": "Name your new key DisallowRun . This key will show up below \"Explorer\" on the left sidebar."
+    },
+    {
+      "title": "Right-click the DisallowRun key.",
+      "content": "Right-click the DisallowRun key. You will have to create new string values inside the DisallowRun key in order to block apps from running."
+    },
+    {
+      "title": "Hover over New on the right-click menu.",
+      "content": "Hover over New on the right-click menu."
+    },
+    {
+      "title": "Select String Value on the New menu.",
+      "content": "Select String Value on the New menu. This will create a new string value in the DisallowRun key."
+    },
+    {
+      "title": "Name your new string value 1.",
+      "content": "Name your new string value 1 . Type this name and hit ↵ Enter or ⏎ Return to save it. If you want to block another app later, you'll have to add a new string value here. In this case, you can name your other string values 2 , 3 , 4 , and so forth."
+    },
+    {
+      "title": "Double-click your new string value.",
+      "content": "Double-click your new string value. This will allow you to edit the string in a new pop-up window."
+    },
+    {
+      "title": "Enter the name of the app you want to block into Value data.",
+      "content": "Enter the name of the app you want to block into Value data. Click the text field under the Value data heading, and type the name of the app you want to block from running. Make sure to enter the full name of the executable file here, and include the file extension. For example, if you want to block Notepad, enter notepad.exe ."
+    },
+    {
+      "title": "Click OK.",
+      "content": "Click OK . This will save your new string value, and block the specified app from running on your computer."
+    },
+    {
+      "title": "Restart your computer.",
+      "content": "Restart your computer. Some changes will only take effect after restarting."
+    },
+    {
+      "title": "Try running the blocked app on your computer.",
+      "content": "Try running the blocked app on your computer. You'll see a Restrictions pop-up letting you know the app is blocked."
+    },
+    {
+      "title": "Open knewsense.com/macappblocker/download in a browser.",
+      "content": "Open knewsense.com/macappblocker/download in a browser. Type or paste this link into your internet browser's address, and hit ↵ Enter or ⏎ Return on your keyboard. If the download doesn't start, click the click here button next to the shield icon near the top of the page. Mac App Blocker gives you a 15-day free trial period. After 15 days, you can purchase the full app, or try a different blocker app."
+    },
+    {
+      "title": "Run the installer file.",
+      "content": "Run the installer file. Find the Mac App Blocker installer in your Downloads folder, and double-click on its icon to begin the installation."
+    },
+    {
+      "title": "Verify the installation.",
+      "content": "Verify the installation. You may need to first allow the installer in order to begin installation. In this case: Click the Apple icon on the top-left. Click System Preferences . Click Security & Privacy . Click the Lock icon on the bottom-left, and enter your password. Click Allow next to MacAppBlocker."
+    },
+    {
+      "title": "Click Continue in the installer window.",
+      "content": "Click Continue in the installer window. This will take you to the License Agreement page."
+    },
+    {
+      "title": "Agree with the License agreement.",
+      "content": "Agree with the License agreement. Click Continue , and then Agree when you're prompted. Mac App Blocker is a third-party app. Make sure you've read and understood the license agreement here."
+    },
+    {
+      "title": "Select your computer's main drive.",
+      "content": "Select your computer's main drive. Click the drive you want to install the app on, and click Continue ."
+    },
+    {
+      "title": "Click the Install button.",
+      "content": "Click the Install button. This will install the Mac App Blocker app on your computer. If you're prompted, enter your account password to confirm installation."
+    },
+    {
+      "title": "Click Close.",
+      "content": "Click Close . This will close the installer window. If you're prompted, you can choose to keep the installer file, or move it to your trash bin."
+    },
+    {
+      "title": "Open the Mac App Blocker app.",
+      "content": "Open the Mac App Blocker app. Mac App Blocker icon looks like a blue shield. You can find it in your Applications folder."
+    },
+    {
+      "title": "Set up your Mac App Blocker password.",
+      "content": "Set up your Mac App Blocker password. Enter a secure password into the \"Password\" field, reenter into the \"Repeat\" field below, and click Continue . Make sure the box next to \"I have read and I understand this warning\" is checked."
+    },
+    {
+      "title": "Click the + icon on the bottom-left.",
+      "content": "Click the + icon on the bottom-left. This button is in the bottom-left corner of the Mac App Blocker window. It will open a list of all your apps."
+    },
+    {
+      "title": "Select the app you want to block.",
+      "content": "Select the app you want to block. Find the app you want to block in your Applications folder, and click on its name."
+    },
+    {
+      "title": "Click the Open button.",
+      "content": "Click the Open button. This will add the selected app to the list of blocked apps. When you try to run one of your blocked apps, you'll be prompted to enter your Mac App Blocker password."
+    }
+  ]
+}
